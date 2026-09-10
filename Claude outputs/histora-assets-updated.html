@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histora - App Store Assets (Updated)</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #163D31;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #D6A84F;
+            margin-bottom: 40px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .assets {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .asset-box {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+            border-left: 4px solid #D6A84F;
+        }
+
+        .asset-box h2 {
+            margin: 0 0 15px 0;
+            color: #163D31;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .asset-box p {
+            margin: 0 0 15px 0;
+            color: #666;
+            font-size: 13px;
+        }
+
+        .canvas {
+            width: 100%;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            display: block;
+        }
+
+        /* Icon preview */
+        .icon-preview {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        /* Screenshot preview */
+        .screenshot {
+            width: 100%;
+            max-width: 280px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        /* Feature banner */
+        .banner {
+            width: 100%;
+        }
+
+        .section-title {
+            grid-column: 1 / -1;
+            font-size: 24px;
+            color: #163D31;
+            margin: 40px 0 20px 0;
+            border-bottom: 3px solid #D6A84F;
+            padding-bottom: 10px;
+        }
+
+        .color-guide {
+            grid-column: 1 / -1;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #D6A84F;
+            margin-bottom: 20px;
+        }
+
+        .color-swatch {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            margin-right: 20px;
+            margin-bottom: 15px;
+            border: 2px solid #ddd;
+            vertical-align: middle;
+        }
+
+        .color-info {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 40px;
+        }
+
+        .color-info h3 {
+            margin: 0 0 5px 0;
+            font-size: 14px;
+            color: #163D31;
+        }
+
+        .color-info p {
+            margin: 0;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌍 Histora - App Store Assets</h1>
+        <p class="subtitle">Global History Learning App • Google Play Store</p>
+
+        <div class="assets">
+            <!-- COLOR GUIDE -->
+            <div class="color-guide">
+                <h3 style="margin-top: 0; color: #163D31;">Color Palette</h3>
+                <div>
+                    <div class="color-swatch" style="background-color: #163D31;"></div>
+                    <div class="color-info">
+                        <h3>Primary: Deep Green</h3>
+                        <p>#163D31 • Primary background and typography</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background-color: #D6A84F;"></div>
+                    <div class="color-info">
+                        <h3>Accent: Warm Gold</h3>
+                        <p>#D6A84F • Highlights and interactive elements</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background-color: #FFFFFF; border: 2px solid #163D31;"></div>
+                    <div class="color-info">
+                        <h3>White</h3>
+                        <p>#FFFFFF • Text, icons, and contrasting elements</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title">📱 Phone Assets</div>
+
+            <!-- APP ICON -->
+            <div class="asset-box">
+                <h2>📦 App Icon</h2>
+                <p>512×512px - Upload as app icon in Play Console</p>
+                <svg class="icon-preview canvas" viewBox="0 0 512 512">
+                    <!-- Background with gradient -->
+                    <defs>
+                        <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#163D31;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#0d2820;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="512" height="512" fill="url(#iconGrad)"/>
+
+                    <!-- White H with elegant design -->
+                    <g transform="translate(256, 256)">
+                        <!-- Left vertical bar -->
+                        <rect x="-70" y="-100" width="35" height="200" fill="#FFFFFF" rx="8"/>
+                        <!-- Right vertical bar -->
+                        <rect x="35" y="-100" width="35" height="200" fill="#FFFFFF" rx="8"/>
+                        <!-- Horizontal bridge -->
+                        <rect x="-70" y="-20" width="175" height="40" fill="#FFFFFF" rx="8"/>
+                    </g>
+
+                    <!-- Accent line for historical elegance -->
+                    <line x1="0" y1="500" x2="512" y2="500" stroke="#D6A84F" stroke-width="12"/>
+                </svg>
+            </div>
+
+            <!-- SCREENSHOT 1 - WELCOME -->
+            <div class="asset-box">
+                <h2>📸 Screenshot 1: Welcome Screen</h2>
+                <p>440×960px - Global history entry point</p>
+                <svg class="screenshot canvas" viewBox="0 0 280 560" style="background: white; border-radius: 40px; overflow: hidden;">
+                    <!-- Phone frame background -->
+                    <rect width="280" height="560" fill="#163D31"/>
+
+                    <!-- Content area -->
+                    <rect y="20" width="280" height="520" fill="#f8f7f5"/>
+
+                    <!-- Status bar -->
+                    <rect width="280" height="30" fill="#163D31"/>
+                    <text x="140" y="21" text-anchor="middle" font-size="11" fill="white" font-weight="bold">9:41</text>
+
+                    <!-- Header -->
+                    <text x="140" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="#163D31">Histora</text>
+                    <text x="140" y="110" text-anchor="middle" font-size="14" fill="#D6A84F">Learn World History</text>
+
+                    <!-- Large H icon with accent -->
+                    <circle cx="140" cy="200" r="50" fill="#163D31" opacity="0.08"/>
+                    <text x="140" y="220" text-anchor="middle" font-size="70" font-weight="bold" fill="#163D31">H</text>
+
+                    <!-- Featured content box - Global history -->
+                    <rect x="15" y="280" width="250" height="120" fill="white" rx="12" stroke="#D6A84F" stroke-width="2"/>
+                    <text x="140" y="310" text-anchor="middle" font-size="16" font-weight="bold" fill="#163D31">Ancient Civilizations</text>
+                    <text x="25" y="335" font-size="12" fill="#666">Explore Egypt, Rome, Greece</text>
+                    <text x="25" y="355" font-size="12" fill="#666">and civilizations worldwide</text>
+                    <rect x="150" y="330" width="80" height="35" fill="#D6A84F" rx="6"/>
+                    <text x="190" y="352" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Explore</text>
+
+                    <!-- Bottom action button -->
+                    <rect x="15" y="420" width="250" height="50" fill="#163D31" rx="10"/>
+                    <text x="140" y="452" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Start Learning</text>
+                </svg>
+            </div>
+
+            <!-- SCREENSHOT 2 - GLOBAL FIGURES -->
+            <div class="asset-box">
+                <h2>📸 Screenshot 2: Historical Figures</h2>
+                <p>440×960px - World history at your fingertips</p>
+                <svg class="screenshot canvas" viewBox="0 0 280 560" style="background: white; border-radius: 40px; overflow: hidden;">
+                    <rect width="280" height="560" fill="#163D31"/>
+                    <rect y="20" width="280" height="520" fill="#f8f7f5"/>
+
+                    <!-- Status bar -->
+                    <rect width="280" height="30" fill="#163D31"/>
+                    <text x="140" y="21" text-anchor="middle" font-size="11" fill="white" font-weight="bold">9:41</text>
+
+                    <!-- Header -->
+                    <rect y="30" width="280" height="50" fill="white"/>
+                    <text x="20" y="64" font-size="20" fill="#163D31">←</text>
+                    <text x="140" y="65" text-anchor="middle" font-size="16" font-weight="bold" fill="#163D31">Historical Figures</text>
+
+                    <!-- Figure card 1: Julius Caesar -->
+                    <rect x="15" y="100" width="250" height="85" fill="#163D31" rx="10" stroke="#D6A84F" stroke-width="2"/>
+                    <text x="140" y="125" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Julius Caesar</text>
+                    <text x="25" y="148" font-size="11" fill="#f0e6d2">Roman General & Statesman</text>
+                    <text x="25" y="163" font-size="11" fill="#f0e6d2">100 BC - 44 BC | Rome</text>
+
+                    <!-- Figure card 2: Cleopatra -->
+                    <rect x="15" y="200" width="250" height="85" fill="#163D31" rx="10" stroke="#D6A84F" stroke-width="2"/>
+                    <text x="140" y="225" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Cleopatra VII</text>
+                    <text x="25" y="248" font-size="11" fill="#f0e6d2">Queen of Egypt</text>
+                    <text x="25" y="263" font-size="11" fill="#f0e6d2">69 BC - 30 BC | Egypt</text>
+
+                    <!-- Figure card 3: Napoleon -->
+                    <rect x="15" y="300" width="250" height="85" fill="#163D31" rx="10" stroke="#D6A84F" stroke-width="2"/>
+                    <text x="140" y="325" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Napoleon Bonaparte</text>
+                    <text x="25" y="348" font-size="11" fill="#f0e6d2">French Military Commander</text>
+                    <text x="25" y="363" font-size="11" fill="#f0e6d2">1769 - 1821 | France</text>
+
+                    <!-- Scroll indicator -->
+                    <text x="140" y="500" text-anchor="middle" font-size="11" fill="#999">Swipe to explore more →</text>
+                </svg>
+            </div>
+
+            <!-- SCREENSHOT 3 - INTERACTIVE LEARNING -->
+            <div class="asset-box">
+                <h2>📸 Screenshot 3: Interactive Learning</h2>
+                <p>440×960px - Engage with history</p>
+                <svg class="screenshot canvas" viewBox="0 0 280 560" style="background: white; border-radius: 40px; overflow: hidden;">
+                    <rect width="280" height="560" fill="#163D31"/>
+                    <rect y="20" width="280" height="520" fill="#f8f7f5"/>
+
+                    <!-- Status bar -->
+                    <rect width="280" height="30" fill="#163D31"/>
+                    <text x="140" y="21" text-anchor="middle" font-size="11" fill="white" font-weight="bold">9:41</text>
+
+                    <!-- Progress -->
+                    <rect y="40" width="280" height="40" fill="white"/>
+                    <text x="20" y="65" font-size="12" fill="#666">Question 4 of 8</text>
+                    <rect x="20" y="75" width="240" height="4" fill="#e0e0e0" rx="2"/>
+                    <rect x="20" y="75" width="150" height="4" fill="#D6A84F" rx="2"/>
+
+                    <!-- Question about global history -->
+                    <rect x="15" y="95" width="250" height="80" fill="white" rx="10" stroke="#D6A84F" stroke-width="2"/>
+                    <text x="140" y="125" text-anchor="middle" font-size="14" font-weight="bold" fill="#163D31">Which empire built</text>
+                    <text x="140" y="145" text-anchor="middle" font-size="14" font-weight="bold" fill="#163D31">the Great Wall?</text>
+
+                    <!-- Answer options -->
+                    <g>
+                        <rect x="15" y="190" width="250" height="45" fill="white" rx="8" stroke="#ddd" stroke-width="1"/>
+                        <circle cx="30" cy="212" r="8" fill="none" stroke="#163D31" stroke-width="2"/>
+                        <text x="50" y="217" font-size="13" fill="#333">Persian Empire</text>
+
+                        <rect x="15" y="245" width="250" height="45" fill="#D6A84F" rx="8"/>
+                        <circle cx="30" cy="267" r="8" fill="none" stroke="white" stroke-width="2"/>
+                        <circle cx="30" cy="267" r="4" fill="white"/>
+                        <text x="50" y="272" font-size="13" fill="white" font-weight="bold">Chinese Empire</text>
+
+                        <rect x="15" y="300" width="250" height="45" fill="white" rx="8" stroke="#ddd" stroke-width="1"/>
+                        <circle cx="30" cy="322" r="8" fill="none" stroke="#163D31" stroke-width="2"/>
+                        <text x="50" y="327" font-size="13" fill="#333">Ottoman Empire</text>
+                    </g>
+
+                    <!-- Submit button -->
+                    <rect x="15" y="460" width="250" height="45" fill="#163D31" rx="10"/>
+                    <text x="140" y="490" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Check Answer</text>
+                </svg>
+            </div>
+
+            <!-- SCREENSHOT 4 - PROGRESS TRACKING -->
+            <div class="asset-box">
+                <h2>📸 Screenshot 4: Progress & Collection</h2>
+                <p>440×960px - Track your learning journey</p>
+                <svg class="screenshot canvas" viewBox="0 0 280 560" style="background: white; border-radius: 40px; overflow: hidden;">
+                    <rect width="280" height="560" fill="#163D31"/>
+                    <rect y="20" width="280" height="520" fill="#f8f7f5"/>
+
+                    <!-- Status bar -->
+                    <rect width="280" height="30" fill="#163D31"/>
+                    <text x="140" y="21" text-anchor="middle" font-size="11" fill="white" font-weight="bold">9:41</text>
+
+                    <!-- Header -->
+                    <rect y="30" width="280" height="50" fill="white"/>
+                    <text x="140" y="65" text-anchor="middle" font-size="16" font-weight="bold" fill="#163D31">Your Progress</text>
+
+                    <!-- Stats section -->
+                    <rect x="15" y="95" width="118" height="100" fill="white" rx="10" stroke="#D6A84F" stroke-width="2"/>
+                    <text x="74" y="120" text-anchor="middle" font-size="20" font-weight="bold" fill="#D6A84F">12</text>
+                    <text x="74" y="140" text-anchor="middle" font-size="12" fill="#666">Stories</text>
+                    <text x="74" y="155" text-anchor="middle" font-size="12" fill="#666">Completed</text>
+
+                    <rect x="147" y="95" width="118" height="100" fill="white" rx="10" stroke="#D6A84F" stroke-width="2"/>
+                    <text x="206" y="120" text-anchor="middle" font-size="20" font-weight="bold" fill="#D6A84F">87%</text>
+                    <text x="206" y="140" text-anchor="middle" font-size="12" fill="#666">Overall</text>
+                    <text x="206" y="155" text-anchor="middle" font-size="12" fill="#666">Progress</text>
+
+                    <!-- Recent achievements -->
+                    <text x="20" y="225" font-size="13" font-weight="bold" fill="#163D31">Recent Achievements</text>
+
+                    <rect x="15" y="240" width="250" height="50" fill="#163D31" rx="8" opacity="0.9"/>
+                    <text x="35" y="260" font-size="11" fill="white">🏛️  Learned about 5 Ancient Civilizations</text>
+                    <text x="35" y="275" font-size="10" fill="#D6A84F">Completed 2 days ago</text>
+
+                    <rect x="15" y="300" width="250" height="50" fill="#163D31" rx="8" opacity="0.9"/>
+                    <text x="35" y="320" font-size="11" fill="white">⚔️  Mastered Medieval Period Quiz</text>
+                    <text x="35" y="335" font-size="10" fill="#D6A84F">Completed 5 days ago</text>
+
+                    <!-- Continue learning button -->
+                    <rect x="15" y="470" width="250" height="45" fill="#D6A84F" rx="10"/>
+                    <text x="140" y="502" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Continue Learning</text>
+                </svg>
+            </div>
+
+            <div class="section-title">🎨 Store Graphics</div>
+
+            <!-- FEATURE GRAPHIC -->
+            <div class="asset-box" style="grid-column: 1 / -1;">
+                <h2>🎨 Feature Graphic</h2>
+                <p>1024×500px - Google Play Store featured image</p>
+                <svg class="banner canvas" viewBox="0 0 1024 500" style="background: white;">
+                    <!-- Background with gradient -->
+                    <defs>
+                        <linearGradient id="bannerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#163D31;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#0d2820;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="1024" height="500" fill="url(#bannerGrad)"/>
+
+                    <!-- Gold accent bar -->
+                    <rect y="450" width="1024" height="50" fill="#D6A84F"/>
+
+                    <!-- Large H icon (left side) -->
+                    <g transform="translate(150, 250)">
+                        <circle cx="0" cy="0" r="120" fill="#D6A84F" opacity="0.15"/>
+                        <text x="0" y="60" text-anchor="middle" font-size="180" font-weight="bold" fill="white" opacity="0.95">H</text>
+                    </g>
+
+                    <!-- Main text (center/right) -->
+                    <text x="550" y="120" font-size="72" font-weight="bold" fill="white">Histora</text>
+                    <text x="550" y="180" font-size="36" fill="#D6A84F">Learn World History</text>
+
+                    <!-- Tagline emphasizing global scope -->
+                    <text x="550" y="250" font-size="22" fill="white">Interactive stories • Global perspective • Engaging learning</text>
+
+                    <!-- Call to action -->
+                    <text x="550" y="320" font-size="18" fill="#D6A84F" font-weight="bold">Ancient • Medieval • Modern History</text>
+
+                    <!-- Decorative elements with gold accents -->
+                    <circle cx="950" cy="80" r="30" fill="#D6A84F" opacity="0.25"/>
+                    <circle cx="80" cy="420" r="40" fill="#D6A84F" opacity="0.2"/>
+                </svg>
+            </div>
+
+            <!-- SHORT DESCRIPTION BANNER -->
+            <div class="asset-box" style="grid-column: 1 / -1;">
+                <h2>📝 Play Store Descriptions</h2>
+                <p>Use these for your store listing</p>
+
+                <div style="background: #f8f7f5; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                    <h3 style="margin: 0 0 10px 0; color: #163D31; font-size: 13px;">Short Description (50 characters)</h3>
+                    <p style="margin: 0; font-size: 13px; color: #333; font-family: monospace;">Learn world history interactively</p>
+                </div>
+
+                <div style="background: #f8f7f5; padding: 15px; border-radius: 8px;">
+                    <h3 style="margin: 0 0 10px 0; color: #163D31; font-size: 13px;">Full Description</h3>
+                    <p style="margin: 0 0 10px 0; font-size: 13px; color: #333;">
+Histora brings world history to life through interactive stories, engaging quizzes, and fascinating characters from ancient civilizations to modern times.
+
+✨ <strong>Features:</strong>
+• Explore civilizations across all continents and eras
+• Learn about influential historical figures worldwide
+• Interactive quizzes to test your knowledge
+• Track your learning progress and achievements
+• Beautiful, intuitive interface for all ages
+
+📚 <strong>Topics Include:</strong>
+Ancient Egypt, Rome, Greece • Medieval kingdoms and empires • Renaissance and Enlightenment • Industrial Revolution • Modern history and beyond
+
+Perfect for students, history enthusiasts, and lifelong learners who want to understand the world's past.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Notes -->
+        <div style="margin-top: 60px; padding: 20px; background: white; border-radius: 12px; border-left: 4px solid #D6A84F;">
+            <h3 style="margin-top: 0; color: #163D31;">📋 Upload Instructions for Google Play Store</h3>
+            <ol style="color: #666; line-height: 1.8;">
+                <li><strong>App Icon:</strong> Save as PNG (512×512px minimum), upload to "Graphic assets" → "App icon"</li>
+                <li><strong>Screenshots:</strong> Upload 3-4 phone screenshots (440×960px), ordered by importance. Remove any testing/demo indicators.</li>
+                <li><strong>Feature Graphic:</strong> 1024×500px PNG. Upload to "Graphic assets" → "Feature graphic"</li>
+                <li><strong>Descriptions:</strong> Copy the short and full descriptions into "Store listing" section</li>
+                <li><strong>Colors:</strong> Primary: #163D31 | Accent: #D6A84F | All assets use consistent branding</li>
+                <li><strong>Scope:</strong> All assets emphasize GLOBAL history (not region-specific) with English language positioning</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        console.log('Histora Assets Generated Successfully');
+        console.log('Updated Color Scheme:');
+        console.log('- Primary Green: #163D31');
+        console.log('- Accent Gold: #D6A84F');
+        console.log('- White: #FFFFFF');
+        console.log('- Positioning: Global World History (English)');
+    </script>
+</body>
+</html>

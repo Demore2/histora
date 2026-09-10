@@ -34,7 +34,7 @@ Four features are code-complete and non-functional, all four blocked on the same
 | Progress Screen | ✅ **COMPLETE** | 4 stat cards from the correct stores, 6 era bars, 14 badges, points total | — |
 | Achievements | ✅ **COMPLETE** | 14 DB rows exactly matching `prestaties.ts`, derived unlock logic, modal mounted once, share with honest result handling, all 14 names in EN/NL/FR/DE | `user_achievements` and `achievement_progress` are **0 rows** — the sync path has never been exercised against a real account |
 | GDPR | ⚠️ **PARTIAL** | Delete-account edge function deployed and wired; local wipe; data request mailto | **Privacy policy is written but not published** — `PRIVACY_BELEID_URL` is still a placeholder, so Settings hides the link. Play requires a live URL. Terms of service: no document exists at all |
-| Supabase Integration | ✅ **COMPLETE** | Auth working, 17 tables all with RLS, 32 policies, 3 edge functions ACTIVE, 5 stores syncing with NetInfo/foreground triggers | — |
+| Supabase Integration | ✅ **COMPLETE** | Auth working, 17 tables all with RLS, 32 policies, 5 edge functions ACTIVE, 5 stores syncing with NetInfo/foreground triggers | — |
 
 **Build health:** `npx tsc --noEmit` clean (exit 0). `npm run validate:content` clean (20 stories,
 6 eras). `npm run lint` was **NOT** clean at audit time — 7 errors + 1 warning — and has since
@@ -429,7 +429,12 @@ Nothing identified.
   `auth.uid() = user_id` rather than `auth.role() = 'authenticated'` — the latter only checks
   *that* you are logged in, not *who* you are, which would have let anyone insert rows under
   someone else's `user_id` and stuff a poll.
-- **3 edge functions deployed and ACTIVE** — `delete-account`, `send-push`, `push-sweep` (v2).
+- **5 edge functions deployed and ACTIVE** — `delete-account`, `send-push`, `push-sweep` (v2),
+  `send-feedback-email` (v1), `send-feedback-discord` (v1). The last two are armed but inert: the
+  trigger `feedback_meldingen_na_insert` on `public.feedback` calls both, and needs the Vault
+  secret `service_role_key`, which does not exist. Nothing has gone out through either. Discord
+  needs nothing beyond that secret (both webhooks verified, `204` on a real POST); mail also needs
+  `RESEND_API_KEY`. See `supabase/README-feedback-discord.md` and `README-feedback-mail.md`.
 - **5 stores sync**, all through the one `SYNC_STORES` list in `use-voortgang-sync.ts`:
   `voortgang-store`, `story-progress-store`, `character-unlock-store`, `notificatie-store`,
   `achievement-store`.

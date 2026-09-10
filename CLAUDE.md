@@ -971,7 +971,9 @@ them; check with `curl -s <url> | grep -c Chronicles` afterwards.
 ### Account deletion & data requests (`supabase/functions/delete-account`, `useDeleteAccount.ts`)
 
 Instellingen → *Delete account* → one confirmation, and the account is gone: server and device,
-immediately, no mail in between. **This is the only Supabase edge function in the project.**
+immediately, no mail in between. It was once the only edge function in the project; there are now
+five (`delete-account`, `send-push`, `push-sweep`, `send-feedback-email`,
+`send-feedback-discord`).
 
 - **The delete cannot happen in the app, and the obvious version fails silently.** Every table has
   RLS with select/insert/update policies and **no delete policy** — a `.delete()` for which no
@@ -1004,6 +1006,80 @@ immediately, no mail in between. **This is the only Supabase edge function in th
   body to `SUPPORT_EMAIL`. An in-app export would be a second edge function plus a file format for
   a handful of rows; what the GDPR requires is a route that arrives and an answer within 30 days,
   and `docs/privacy-policy.html` promises exactly that. Those requests are handled by hand.
+
+### Feedback doorsturen (`send-feedback-discord`, `send-feedback-email`, trigger op `public.feedback`)
+
+Een rij in `public.feedback` bleef tot nu toe in het dashboard liggen tot iemand ging kijken. Eén
+trigger (`feedback_meldingen_na_insert` → `public.stuur_feedback_meldingen()`) zet daar nu twee
+aanroepen achter: **`send-feedback-discord`** zet de melding als embed in het bug- of ideeënkanaal,
+**`send-feedback-email`** mailt de beheerder en stuurt de lezer een ontvangstbevestiging. De
+draaiboeken staan in `supabase/README-feedback-discord.md` en `README-feedback-mail.md`; hier de
+regels die code raken.
+
+Wat voor allebei geldt:
+
+- **`feedback-modal.tsx` is niet gewijzigd, en dat is het ontwerp.** De app schrijft één rij en is
+  klaar. Alles wat daarna gebeurt hangt aan de database, dus een kapotte doorstuurkant kan de
+  feedback zelf nooit kosten — precies wat dat scherm belooft als het zegt dat "verzonden" hier verzonden
+  betekent.
+- **De trigger mag de insert niet laten mislukken**: `after insert`, een `exception`-blok dat alles
+  opvangt, en `net.http_post` dat het verzoek in een wachtrij zet in plaats van erop te wachten.
+- **Zonder het Vault-geheim `service_role_key` gaat er geen aanroep uit**, zelfde `where`-truc als
+  bij de cron `push-sweep-elk-uur`. Let op dat het **hetzelfde** geheim is: wie het zet voor de
+  feedback zet daarmee ook die sweep in werking. Ongevaarlijk zolang Firebase ontbreekt (die
+  antwoordt dan met een 200 en claimt niets), maar het is geen los knopje.
+- **Alleen het id gaat over de lijn**; elke function leest de rij zelf terug met de service role.
+  Zo staat er in Discord en in de mail per definitie wat er in de tabel staat, en is opnieuw
+  versturen dezelfde POST met hetzelfde id.
+- **Alleen de service role mag de functions aanroepen** (403 `alleen_service_role`), net als
+  `send-push`. `verify_jwt` laat elk geldig token door, dus ook dat van een lezer; zonder die
+  controle kan iedereen die inlogt een willekeurig `feedback_id` opgeven en zo andermans bericht
+  én e-mailadres laten doorsturen.
+- **Er is bewust géén logtabel en geen wachtrij.** Wat een melding deed staat in de logs van de
+  function en in `net._http_response`. Herpogen gebeurt alleen bínnen één aanroep, bij een 429 of
+  een 5xx; over aanroepen heen niet, want de rij in `public.feedback` is niet weg en dat is het
+  hele punt van die tabel.
+- 🚩 **Dit voegt verwerkers toe die `docs/privacy-policy.html` nog niet noemt.** Bericht,
+  gebruiker-id en e-mailadres gaan naar Discord en (straks) naar Resend. Werk die pagina bij.
+
+#### Discord (`send-feedback-discord`)
+
+- **De twee webhook-URL's staan als constante in het bestand**, op verzoek, met
+  `DISCORD_WEBHOOK_BUG` / `DISCORD_WEBHOOK_IDEE` als override. 🚩 **Een webhook-URL is een
+  wachtwoord en `Demore2/chronicles` is een publieke repo**: gepusht zijn ze openbaar en kan
+  iedereen in die kanalen plaatsen. De uitweg staat in de README; nieuwe webhooks aanmaken is de
+  enige echte, want een commit blijft in de geschiedenis staan.
+- **`allowed_mentions: { parse: [] }` staat in elke POST.** Het bericht is door een gebruiker
+  getypt; zonder die regel is `@everyone` in een bugmelding een `@everyone` in de server. Mentions
+  in een embed pingen op zichzelf al niet, maar dat is gedrag van Discord en geen garantie van ons.
+- **`soort` kiest het kanaal**, `bug` → rood, `idee` → blauw. Een derde soort bestaat niet en
+  belandt luidruchtig als `overgeslagen: onbekende_soort` in de logs in plaats van stilletjes
+  nergens.
+- **Bij een 429 wordt Discords eigen `retry_after` gebruikt**, niet een eigen verdubbeling: de
+  echte wachttijd is bij een webhooklimiet meestal een fractie van een seconde.
+- **Reacties op de berichten (👀/✅) kan een webhook niet.** Dat endpoint eist een bot token; een
+  webhook mag alleen plaatsen. Dat is een Discord-applicatie erbij, geen vlaggetje.
+
+#### Mail (`send-feedback-email`)
+
+- **Het bericht van de lezer wordt ge-escaped voordat het de HTML in gaat.** Dit is de enige plek
+  in het project waar door een gebruiker getypte tekst als HTML bij iemand anders belandt.
+- **Supabase heeft geen dienst om zelf een mail te versturen.** De SMTP-instelling onder
+  *Authentication → Emails* is uitsluitend voor de mails van GoTrue. Deze function praat daarom
+  met **Resend**, via één `fetch` en zonder SDK. Een andere aanbieder is `verstuur()` in
+  `index.ts` vervangen en verder niets.
+- **Ontbrekende configuratie is een 200, geen 500.** Zonder `RESEND_API_KEY` antwoordt de function
+  `overgeslagen: resend_niet_geconfigureerd` — zelfde afweging als
+  `firebase_niet_geconfigureerd` in `push-sweep`: een openstaande taak hoort geen terugkerend
+  alarm te worden.
+- **De bevestiging aan de lezer wacht op een geverifieerd domein.** Resend levert vanaf
+  `onboarding@resend.dev` alleen af op het adres van de Resend-account zelf, dus een bevestiging
+  naar een willekeurige lezer zou een 403 per feedbackregel zijn. Staat `FEEDBACK_MAIL_VAN` niet,
+  dan gaat alleen de beheerdersmail uit en zegt het antwoord dat ook.
+- **De taal komt uit `profiles.language`**, met Engels als terugval — dezelfde bron die
+  `push-sweep` gebruikt. Weet wat die kolom vandaag waard is: niets in de app schrijft hem na het
+  aanmaken van de rij, dus hij draagt de waarde van dat moment. Dat is het bekende gat onder
+  "Known gaps", geen reden om hier een tweede bron te verzinnen.
 
 ### Release & store assets (`eas.json`, `store/`, LAUNCH-PLAN.md A3/A6)
 
@@ -1472,7 +1548,7 @@ counts), full i18n (en/nl/fr/de) with a language picker, theme picker, email pre
 - **Settings & email** — six sections; reminder/streak/achievements locked "Always on"; email
   defaults are newsletter/new-stories/tips **on**, offers **off**; usage stats always on.
 - **Supabase integration** — 17 tables, RLS on every one, 32 policies (zero DELETE policies, by
-  design), 3 edge functions ACTIVE, 5 stores in `SYNC_STORES` with NetInfo + foreground triggers.
+  design), 5 edge functions ACTIVE, 5 stores in `SYNC_STORES` with NetInfo + foreground triggers.
 
 ### ⚠️ PARTIAL — the code is finished, but it cannot run as-is
 
@@ -1570,7 +1646,11 @@ Known gaps:
   completed *and* gated content behind it. Turn them back on only alongside a working purchase.
 - **Feedback needs `public.feedback`.** `feedback-modal.tsx` inserts into it, so a fresh Supabase
   project needs that table (see the migration `create_feedback_table`) or the send button fails
-  with a policy/relation error. Nothing reads the rows yet — they wait in the dashboard.
+  with a policy/relation error. There is now also a trigger on that table
+  (`feedback_meldingen_na_insert`) and two edge functions behind it — see "Feedback doorsturen".
+  **Both are armed and inert**: the Vault secret `service_role_key` does not exist, so nothing is
+  called. Discord needs only that secret; mail also needs `RESEND_API_KEY`. Until then the rows
+  still just wait in the dashboard.
 - ~~The privacy policy is written but not published~~ — **it is published**, and so are the terms
   of service; `PRIVACY_BELEID_URL` and `VOORWAARDEN_URL` both resolve, so Instellingen shows the
   links. The remaining step is pushing the rebrand so the live pages stop saying "Chronicles" —
