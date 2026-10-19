@@ -1,7 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
 import { useState } from 'react';
-import { KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { KeyboardAvoidingView, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import HistoraMark from '@/assets/images/mascotte/histora-mark.svg';
@@ -95,9 +95,11 @@ export default function SignupScreen() {
   return (
     <ThemedView style={styles.container}>
       <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
-        <KeyboardAvoidingView
-          style={styles.flex}
-          behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
+        {/* `padding` ook op Android. Hier stond `undefined` voor Android, in de veronderstelling
+            dat het venster zelf krimpt als het toetsenbord opent — maar de app draait
+            edge-to-edge, en dan krimpt er niets. Het toetsenbord lag over het wachtwoordveld en
+            de ScrollView had geen ruimte om naar te scrollen. */}
+        <KeyboardAvoidingView style={styles.flex} behavior="padding">
           <ScrollView
             contentContainerStyle={styles.scrollContent}
             keyboardShouldPersistTaps="handled"

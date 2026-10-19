@@ -241,9 +241,9 @@ const de: DeepPartial<Vertalingen> = {
     voordeelGeenAds: 'Keine Werbung',
 
     prijsMaand: '4,99 € / Monat',
-    prijsJaar: '49,99 € / Jahr',
+    prijsJaar: '39,99 € / Jahr',
     prijsMaandNoot: 'Monatsabo',
-    prijsJaarNoot: '17 % günstiger',
+    prijsJaarNoot: '33 % günstiger',
     abonneer: 'Abonnieren',
     misschienLater: 'Vielleicht später',
 

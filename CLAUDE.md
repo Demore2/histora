@@ -1325,6 +1325,52 @@ proefperiode, einddatum, auto-renew.
   Histora ooit mailen, dan horen ze bij het account en niet bij het toestel — dan is dit de
   store die naar Supabase gaat.
 
+#### Billing via RevenueCat (`lib/aankopen.ts`, `use-aankopen.ts`, `revenuecat-sync`)
+
+Het draaiboek staat in `supabase/README-billing.md`; hier de regels die code raken.
+
+- **Alleen de edge function `revenuecat-sync` zet premium**, met de service role. Na
+  `supabase/billing-migratie.sql` heeft de app geen update-policy meer op `user_subscriptions`, en
+  mag een insert alleen een gratis rij zonder data zijn. `cancelSubscription` is daarom uit de
+  store gehaald: opzeggen gebeurt in Google Play ("Manage subscription" in Instellingen).
+- **`revenuecat-sync` heeft twee ingangen**: de webhook van RevenueCat (het gedeelde geheim
+  `REVENUECAT_WEBHOOK_AUTH`) en de app na een aankoop of herstel (het token van de lezer; het id
+  komt uit `auth.getUser`, nooit uit de body). **`verify_jwt` staat uit**, omdat RevenueCat geen
+  Supabase-JWT stuurt.
+- **Het event wordt niet geloofd.** Bij elke aanroep wordt de stand opgehaald bij
+  `GET /v1/subscribers/{id}`, zodat webhooks in een andere volgorde niets uitmaken.
+- **Ontbrekende configuratie is hier een 500**, anders dan bij `push-sweep`: RevenueCat moet een
+  mislukte webhook opnieuw proberen, want anders heeft iemand betaald zonder Pro te krijgen.
+- **`product_id = null` is handmatig premium** (testaccounts, het eigenaarsaccount) en wordt nooit
+  naar free gezet.
+- **`appUserID` is het Supabase-user-id.** `useAankopen()` (één keer in de root layout) doet
+  `configure`/`logIn` bij inloggen en `logOut` bij uitloggen. Zonder dat koppelen komt een aankoop
+  bij een anonieme klant terecht die bij geen enkele rij hoort.
+- **`subscription-store.winkelPremiumTot` is alleen de weergave op dit toestel**: het recht zoals
+  de winkel het meldt, zodat Pro direct na het betalen zichtbaar is. `isAbonnementActief` weegt
+  het mee, de server leest het nooit.
+- **`lib/aankopen.ts` heeft de vorm van `lib/push.ts`**: lui `require`, alleen op Android, nooit
+  gooien. Zonder `EXPO_PUBLIC_REVENUECAT_ANDROID_KEY` (de publieke `goog_…`-sleutel) is
+  `aankopen.beschikbaar` onwaar en toont de paywall de oude "binnenkort"-stand. De geheime `sk_…`
+  hoort alleen in de secrets van de function.
+- **De prijzen komen van Google** (`product.priceString`), en het kortingspercentage wordt
+  uitgerekend. `pro.prijsMaand`/`prijsJaar` in i18n zijn alleen nog de terugval zonder winkel.
+- **`react-native-purchases` is native** en staat op `~10.11.0`: na het pullen is een
+  dev-client-rebuild nodig.
+- **`PRO_BANNER_ENABLED` en `VERHAAL_LIMIET_ENABLED` staan sinds 1.1.0 op `true`, maar dat
+  alleen zet niets aan.** Beide gelden pas als `store/aanbod-store.ts` `teKoop` meldt: RevenueCat
+  gaf een offering met minstens één pakket terug. Lees de limiet via `isLimietActief()` in
+  `abonnement-store` en het aanbod via `useProAanbodZichtbaar()` in `pro-access-banner.tsx`,
+  nooit via de kale vlag. Zonder producten, op web of bij een netwerkfout valt alles terug op
+  open, zodat er nooit een limiet staat zonder werkende aankoop. Gratis = 2 nieuwe verhalen per
+  dag, Pro = onbeperkt (keuze van de eigenaar, 2026-10-19). `AD_ONDERBREKING_ENABLED` blijft uit
+  tot er AdMob is.
+- **De stand op 2026-10-19:** de migratie is uitgevoerd en `revenuecat-sync` is gedeployd
+  (`verify_jwt` uit). De secrets en de webhook staan, en het testevent gaf een 200. Het
+  serviceaccount `revenuecat@historia-512118.iam.gserviceaccount.com` heeft Play-rechten. Nog
+  te doen: de abonnementen in de Play Console aanmaken (kan pas na upload van de 1.1.0-build), en
+  daarna de producten, het entitlement `premium` en de current offering in RevenueCat.
+
 ### Firebase-schakelaar (`EXPO_PUBLIC_FIREBASE_ENABLED`, `.env`, `app.config.js`)
 
 **Firebase staat uit voor de MVP, en dat is één vlag op drie plekken.** `google-services.json`
@@ -1571,8 +1617,13 @@ counts), full i18n (en/nl/fr/de) with a language picker, theme picker, email pre
 
 ### ⏳ IN PROGRESS / NOT STARTED
 
-- **Google Play Billing — NOT STARTED.** A stub. `useAbonnement()` reads the server row plus the
-  local credit; premium is set by hand in Supabase, and `setPremium()` is disabled.
+- **Google Play Billing — WIRED, PRODUCTS PENDING.** RevenueCat (`react-native-purchases`),
+  `lib/aankopen.ts`, `use-aankopen.ts`, a real paywall, the `revenuecat-sync` edge function
+  (deployed), the migration (applied: the update-policy hole is closed), the webhook (tested,
+  200), and the `goog_…` key (`.env.local` + EAS). Remaining: create the subscriptions in the
+  Play Console once the 1.1.0 build is uploaded, then the RevenueCat products, entitlement and
+  offering. Until that offering exists the limit and the Pro offer stay off by themselves (see
+  "Billing via RevenueCat").
 - **AdMob — NOT STARTED.** `ADS_ENABLED` is `false` and `<AdBanner />` renders `null`; the
   interstitial is a placeholder that says so.
 - **Collections — NOT STARTED.** `collecties.ts` exports `[]`.

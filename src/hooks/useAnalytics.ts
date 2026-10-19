@@ -2,8 +2,8 @@ import { useSegments } from 'expo-router';
 import { useEffect } from 'react';
 
 import { USER_PROPERTIES, type AnalyticsEvent, type UserProperty } from '@/constants/analytics';
+import { useAbonnement } from '@/hooks/use-abonnement';
 import { analytics } from '@/lib/analytics';
-import { useAbonnementStore } from '@/store/abonnement-store';
 import { useAnalyticsStore } from '@/store/analytics-store';
 import { useAuthStore } from '@/store/auth-store';
 import { useCharacterUnlockStore } from '@/store/character-unlock-store';
@@ -83,7 +83,9 @@ function schermNaamUitSegmenten(segments: string[]): string {
 export function useAnalytics(): void {
   const segments = useSegments();
   const user = useAuthStore((state) => state.user);
-  const isPro = useAbonnementStore((state) => state.isPro);
+  // `useAbonnement()` en niet `abonnement-store.isPro`: dat vlaggetje zet niets meer sinds
+  // "Simulate Pro" eruit is, dus elke betalende lezer telde hier als 'free'.
+  const { isPremium: isPro } = useAbonnement();
   const taal = useTaalStore((state) => state.taal);
   const aantalPersonages = useCharacterUnlockStore((state) => state.unlockedCharacters.length);
 

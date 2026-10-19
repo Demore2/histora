@@ -47,6 +47,7 @@ export function useAbonnement(): AbonnementStatus {
   const tier = useSubscriptionStore((state) => state.tier);
   const trialEndsAt = useSubscriptionStore((state) => state.trialEndsAt);
   const subscriptionEndsAt = useSubscriptionStore((state) => state.subscriptionEndsAt);
+  const winkelPremiumTot = useSubscriptionStore((state) => state.winkelPremiumTot);
   const [peilmoment, setPeilmoment] = useState(() => Date.now());
 
   useEffect(() => {
@@ -56,7 +57,10 @@ export function useAbonnement(): AbonnementStatus {
     return () => abonnement.remove();
   }, []);
 
-  const serverPro = isAbonnementActief({ tier, trialEndsAt, subscriptionEndsAt }, peilmoment);
+  const serverPro = isAbonnementActief(
+    { tier, trialEndsAt, subscriptionEndsAt, winkelPremiumTot },
+    peilmoment,
+  );
   const lokaalPro = isProActief({ isPro, proTot }, peilmoment);
 
   return {

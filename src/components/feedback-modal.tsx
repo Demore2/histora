@@ -152,9 +152,9 @@ export function FeedbackModal({ visible, onClose }: FeedbackModalProps) {
             dan zou het bericht halverwege zijn eigen versturen verdwijnen. */}
         <Pressable style={styles.buitenkant} onPress={bezig ? undefined : onClose} />
 
-        <KeyboardAvoidingView
-          behavior={Platform.OS === 'ios' ? 'padding' : undefined}
-          style={styles.blad}>
+        {/* `padding` ook op Android: de app draait edge-to-edge, dus het venster krimpt niet mee
+            met het toetsenbord en het tekstvak verdween eronder. Zie `signup.tsx`. */}
+        <KeyboardAvoidingView behavior="padding" style={styles.blad}>
           <View style={[styles.venster, { backgroundColor: theme.background }]}>
             <View style={styles.kop}>
               <View style={styles.kopTekst}>

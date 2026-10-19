@@ -9,31 +9,34 @@ import { Radii, Spacing } from '@/constants/theme';
 import { useAbonnement } from '@/hooks/use-abonnement';
 import { useTheme } from '@/hooks/use-theme';
 import { useVertaling } from '@/hooks/use-vertaling';
+import { useAanbodStore } from '@/store/aanbod-store';
 
 /**
  * Eén schakelaar voor het hele Pro-aanbod: deze banner én het paywall-venster erachter, ook waar
  * Instellingen het opent. Staat hij uit, dan is er nergens in de app een spoor van abonnementen.
  *
- * **Zet dit terug op `false` voordat er een productiebuild naar Play gaat, zolang Google Play
- * Billing niet echt gekoppeld is.** `useAbonnement()` geeft nog hardcoded `isPremium: false`
- * terug, dus "Subscribe" leidt tot een melding en niet tot een aankoop. Dat is eerlijk richting de
- * gebruiker (`pro-paywall.tsx` legt uit hoe), maar een reviewer die een prijs ziet en geen
- * werkende aankoop vindt, wijst de app af — dezelfde afweging als bij `ADS_ENABLED` in
- * `ad-banner.tsx`. Hij staat nu aan zodat het scherm te bekijken en te testen is.
- *
- * De `isPremium`-check hieronder is voorlopig dood, maar staat er zodat een betalende gebruiker
- * straks niet naar zijn eigen aanbieding zit te kijken.
+ * **Sinds Billing staat hij aan, maar dat alleen toont nog niets.** Het aanbod verschijnt pas als
+ * er ook echt iets te koop is (`useProAanbodZichtbaar()` = deze vlag én `aanbod-store.teKoop`).
+ * Zo ziet een reviewer nooit een prijs zonder werkende aankoop, ook niet in de periode tussen deze
+ * build en het aanmaken van de producten in Play. Zet de vlag op `false` om het hele aanbod in één
+ * keer weg te halen.
  */
-export const PRO_BANNER_ENABLED = false;
+export const PRO_BANNER_ENABLED = true;
 
-// TODO (v1.1): koppelen aan Google Play Billing; tot die tijd verkoopt dit scherm niets.
+/** Mag het Pro-aanbod nu getoond worden? Eén antwoord voor de banner en voor Instellingen. */
+export function useProAanbodZichtbaar(): boolean {
+  const teKoop = useAanbodStore((state) => state.teKoop);
+  return PRO_BANNER_ENABLED && teKoop;
+}
+
 export function ProAccessBanner() {
   const theme = useTheme();
   const { t } = useVertaling();
   const { isPremium } = useAbonnement();
+  const zichtbaar = useProAanbodZichtbaar();
   const [paywallOpen, setPaywallOpen] = useState(false);
 
-  if (!PRO_BANNER_ENABLED) return null;
+  if (!zichtbaar) return null;
   if (isPremium) return null;
 
   return (

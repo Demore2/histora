@@ -8,7 +8,7 @@ import { AnalyticsVoorkeuren } from '@/components/analytics-preferences';
 import { HerinneringRegel, HerinneringTijd } from '@/components/daily-reminder-settings';
 import { EmailVoorkeuren } from '@/components/email-preferences';
 import { MeldingenSectie, PushVoorkeuren } from '@/components/notification-preferences';
-import { PRO_BANNER_ENABLED } from '@/components/pro-access-banner';
+import { useProAanbodZichtbaar } from '@/components/pro-access-banner';
 import { ProPaywall } from '@/components/pro-paywall';
 import { SettingsItem, SettingsSectie } from '@/components/settings-section';
 import { SyncIndicator } from '@/components/sync-indicator';
@@ -34,7 +34,12 @@ import { useDeleteAccount } from '@/hooks/useDeleteAccount';
 import { taalCodes, taalNamen } from '@/i18n/taal-namen';
 import { useVerhalenVandaag } from '@/store/abonnement-store';
 import { useAuthStore } from '@/store/auth-store';
+import { useSubscriptionStore } from '@/store/subscription-store';
 import { useThemaStore, type ThemaVoorkeur } from '@/store/thema-store';
+
+/** Het abonnementenoverzicht van Google Play, gefilterd op deze app. */
+const PLAY_ABONNEMENTEN_URL =
+  'https://play.google.com/store/account/subscriptions?package=com.chronicles.historyapp';
 
 const THEMA_OPTIES: { waarde: ThemaVoorkeur; icoonNaam: IoniconNaam }[] = [
   { waarde: 'licht', icoonNaam: 'sunny-outline' },
@@ -81,6 +86,10 @@ export default function InstellingenScreen() {
   const themaVoorkeur = useThemaStore((state) => state.themaVoorkeur);
   const setThemaVoorkeur = useThemaStore((state) => state.setThemaVoorkeur);
   const { isPremium } = useAbonnement();
+  const winkelPremiumTot = useSubscriptionStore((s) => s.winkelPremiumTot);
+  // Zelfde poort als de banner en de leeslimiet: alleen als Pro écht te koop is.
+  const aanbodZichtbaar = useProAanbodZichtbaar();
+  const limietZichtbaar = VERHAAL_LIMIET_ENABLED && aanbodZichtbaar;
   const verhalenVandaag = useVerhalenVandaag();
   const [uitlogBezig, setUitlogBezig] = useState(false);
   const { verwijderAccount, isBezig: verwijderBezig } = useDeleteAccount();
@@ -340,6 +349,16 @@ export default function InstellingenScreen() {
             // toelichting op "Pro", geen tweede mededeling.
             uitleg={isPremium ? t((s) => s.instellingen.abonnementProVoordelen) : undefined}
           />
+          {/* Alleen voor wie via Google Play betaalt (de winkel kent een recht). Opzeggen kan
+              uitsluitend in Play, dus deze regel is de route ernaartoe; een met de hand
+              toegekend Pro heeft niets om te beheren. */}
+          {isPremium && winkelPremiumTot !== null ? (
+            <SettingsItem
+              icoon="open-outline"
+              label={t((s) => s.instellingen.abonnementBeheren)}
+              onPress={() => void Linking.openURL(PLAY_ABONNEMENTEN_URL)}
+            />
+          ) : null}
           {/* Alleen zichtbaar voor wie nog gratis is — een Pro-lezer een upgradeknop voorhouden is
               de bekendste manier om een betalende lezer te laten twijfelen of hij wel betaald
               heeft. Zonder de vlag draagt de regel "Soon" en zegt hij dat ook, in plaats van een
@@ -348,9 +367,9 @@ export default function InstellingenScreen() {
             <SettingsItem
               icoon="sparkles-outline"
               label={t((s) => s.instellingen.abonnementUpgrade)}
-              badge={PRO_BANNER_ENABLED ? undefined : binnenkortBadge}
+              badge={aanbodZichtbaar ? undefined : binnenkortBadge}
               onPress={
-                PRO_BANNER_ENABLED
+                aanbodZichtbaar
                   ? () => setPaywallOpen(true)
                   : () => nogNiet(t((s) => s.instellingen.abonnement))
               }
@@ -359,7 +378,7 @@ export default function InstellingenScreen() {
           {/* Wat de limiet vandaag nog toestaat. Informatie, geen knop: hij telt zichzelf vol en
               er valt hier niets aan te bedienen. Voor Pro staat er "Unlimited" in plaats van een
               teller die nooit iets doet. */}
-          {VERHAAL_LIMIET_ENABLED ? (
+          {limietZichtbaar ? (
             <SettingsItem
               icoon="book-outline"
               label={t((s) => s.instellingen.dagelijkseLimiet)}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Histora — Email confirmed</title>
+<!--
+  Waar Supabase naartoe stuurt nadat iemand op de bevestigingslink in zijn mail tikt
+  (Authentication → URL Configuration → Site URL). Daar stond `localhost`, en dat bestaat op een
+  telefoon niet: de bevestiging zelf was gelukt, maar de lezer zag "This site can't be reached".
+
+  Deze pagina doet niets met de tokens die Supabase in de hash meestuurt — de app logt zelf in
+  met e-mail en wachtwoord. Ze worden uit de adresbalk gehaald zodat ze niet in een gedeelde
+  schermafbeelding of de browsergeschiedenis blijven staan. Een verlopen of al gebruikte link komt
+  hier binnen als `#error=…` en krijgt zijn eigen tekst.
+
+  Zelfde regels als privacy-policy.html: één bestand, geen CDN, geen externe fonts, het beige
+  palet van de app met een donkere variant.
+-->
+<style>
+  :root {
+    --text: #211F1A;
+    --text-secondary: #6B6355;
+    --background: #F7F1E4;
+    --element: #EEE4D0;
+    --accent: #3B6E7D;
+    --succes: #3E7D4F;
+    --waarschuwing: #9A6B1E;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #F3ECDC;
+      --text-secondary: #A89E89;
+      --background: #1C1A16;
+      --element: #26231D;
+      --accent: #6FA8B8;
+      --succes: #7DB88D;
+      --waarschuwing: #D9A54A;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    padding: 2rem 16px;
+    background: var(--background);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main {
+    width: 100%;
+    max-width: 26rem;
+    text-align: center;
+  }
+  .merk { width: 72px; height: 72px; margin: 0 auto 1.5rem; display: block; }
+  .kaart {
+    background: var(--element);
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+  }
+  .status {
+    width: 56px; height: 56px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .status svg { width: 30px; height: 30px; }
+  .status.ok { background: color-mix(in srgb, var(--succes) 16%, transparent); color: var(--succes); }
+  .status.fout { background: color-mix(in srgb, var(--waarschuwing) 16%, transparent); color: var(--waarschuwing); }
+  h1 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 .6rem; }
+  p { margin: 0 0 .8rem; color: var(--text-secondary); }
+  p:last-child { margin-bottom: 0; }
+  .stap {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid color-mix(in srgb, var(--text-secondary) 25%, transparent);
+    color: var(--text);
+    font-weight: 600;
+  }
+  footer { margin-top: 1.5rem; font-size: .85rem; color: var(--text-secondary); }
+  footer a { color: var(--accent); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <svg class="merk" viewBox="0 0 1024 1024" role="img" aria-label="Histora">
+    <circle cx="512" cy="512" r="486" fill="#0EA5E9" fill-opacity="0.15" stroke="#0EA5E9" stroke-width="10"/>
+    <circle cx="512" cy="512" r="435" fill="#0EA5E9"/>
+    <g fill="#FFFFFF">
+      <rect x="374" y="332" width="60" height="360"/>
+      <rect x="590" y="332" width="60" height="360"/>
+      <rect x="374" y="485" width="276" height="54"/>
+    </g>
+  </svg>
+
+  <div class="kaart">
+    <div id="ok">
+      <div class="status ok" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+      </div>
+      <h1 data-t="okTitel">Your email is confirmed</h1>
+      <p data-t="okTekst">Thanks! Your Histora account is ready.</p>
+      <p class="stap" data-t="okStap">Go back to the Histora app and sign in with your email and password.</p>
+    </div>
+
+    <div id="fout" hidden>
+      <div class="status fout" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 7.5v6"/><path d="M12 17h.01"/></svg>
+      </div>
+      <h1 data-t="foutTitel">This link no longer works</h1>
+      <p data-t="foutTekst">Confirmation links expire after a while and can only be used once. If you already tapped it before, your email is probably confirmed already.</p>
+      <p class="stap" data-t="foutStap">Open the Histora app and try to sign in. If that fails, sign up again to receive a new link.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span data-t="hulp">Need help?</span>
+    <a href="contact.html" data-t="contact">Contact support</a>
+  </footer>
+</main>
+
+<script>
+  (function () {
+    var teksten = {
+      nl: {
+        okTitel: 'Je e-mailadres is bevestigd',
+        okTekst: 'Bedankt! Je Histora-account staat klaar.',
+        okStap: 'Ga terug naar de Histora-app en log in met je e-mailadres en wachtwoord.',
+        foutTitel: 'Deze link werkt niet meer',
+        foutTekst: 'Bevestigingslinks verlopen na een tijdje en werken maar één keer. Heb je er al eerder op getikt, dan is je e-mailadres waarschijnlijk al bevestigd.',
+        foutStap: 'Open de Histora-app en probeer in te loggen. Lukt dat niet, meld je dan opnieuw aan voor een nieuwe link.',
+        hulp: 'Hulp nodig?',
+        contact: 'Neem contact op',
+        titel: 'Histora — E-mail bevestigd'
+      },
+      de: {
+        okTitel: 'Deine E-Mail-Adresse ist bestätigt',
+        okTekst: 'Danke! Dein Histora-Konto ist bereit.',
+        okStap: 'Kehre zur Histora-App zurück und melde dich mit deiner E-Mail-Adresse und deinem Passwort an.',
+        foutTitel: 'Dieser Link funktioniert nicht mehr',
+        foutTekst: 'Bestätigungslinks laufen nach einer Weile ab und funktionieren nur einmal. Wenn du schon einmal darauf getippt hast, ist deine E-Mail-Adresse wahrscheinlich bereits bestätigt.',
+        foutStap: 'Öffne die Histora-App und versuche, dich anzumelden. Klappt das nicht, registriere dich erneut, um einen neuen Link zu erhalten.',
+        hulp: 'Brauchst du Hilfe?',
+        contact: 'Support kontaktieren',
+        titel: 'Histora — E-Mail bestätigt'
+      },
+      fr: {
+        okTitel: 'Votre adresse e-mail est confirmée',
+        okTekst: 'Merci ! Votre compte Histora est prêt.',
+        okStap: 'Retournez dans l’application Histora et connectez-vous avec votre e-mail et votre mot de passe.',
+        foutTitel: 'Ce lien ne fonctionne plus',
+        foutTekst: 'Les liens de confirmation expirent après un certain temps et ne fonctionnent qu’une seule fois. Si vous l’avez déjà ouvert, votre adresse est probablement déjà confirmée.',
+        foutStap: 'Ouvrez l’application Histora et essayez de vous connecter. Si cela échoue, inscrivez-vous à nouveau pour recevoir un nouveau lien.',
+        hulp: 'Besoin d’aide ?',
+        contact: 'Contacter le support',
+        titel: 'Histora — E-mail confirmé'
+      }
+    };
+
+    var taal = (navigator.language || 'en').slice(0, 2).toLowerCase();
+    var t = teksten[taal];
+    if (t) {
+      document.documentElement.lang = taal;
+      document.title = t.titel;
+      var velden = document.querySelectorAll('[data-t]');
+      for (var i = 0; i < velden.length; i++) {
+        var sleutel = velden[i].getAttribute('data-t');
+        if (t[sleutel]) velden[i].textContent = t[sleutel];
+      }
+    }
+
+    // Supabase zet een fout in de hash (#error=access_denied&error_code=otp_expired&…), soms ook
+    // in de query. Een geslaagde bevestiging draagt tokens in de hash; die gebruiken we niet.
+    var params = new URLSearchParams(location.hash.replace(/^#/, '') + '&' + location.search.replace(/^\?/, ''));
+    if (params.get('error') || params.get('error_code')) {
+      document.getElementById('ok').hidden = true;
+      document.getElementById('fout').hidden = false;
+    }
+
+    if (location.hash || location.search) {
+      try { history.replaceState(null, '', location.pathname); } catch (e) { /* niets aan te doen */ }
+    }
+  })();
+</script>
+</body>
+</html>

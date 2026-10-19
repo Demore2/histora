@@ -132,6 +132,9 @@ const nl: DeepPartial<Vertalingen> = {
     abonnementPro: 'Pro',
     abonnementUpgrade: 'Upgraden naar Pro',
     abonnementProVoordelen: 'Geen onderbrekingen · Onbeperkt lezen',
+    abonnementBeheren: 'Abonnement beheren',
+    abonnementLooptAf: (datum: string): string => `Loopt af op ${datum} · verlengt niet`,
+    abonnementVerlengt: (datum: string): string => `Verlengt op ${datum}`,
     dagelijkseLimiet: 'Vandaag gelezen',
     verhalenVandaag: (gebruikt: number, limiet: number): string =>
       `${gebruikt}/${limiet} verhalen vandaag`,
@@ -237,9 +240,9 @@ const nl: DeepPartial<Vertalingen> = {
     voordeelGeenAds: 'Nooit advertenties',
 
     prijsMaand: '€ 4,99 / maand',
-    prijsJaar: '€ 49,99 / jaar',
+    prijsJaar: '€ 39,99 / jaar',
     prijsMaandNoot: 'Maandabonnement',
-    prijsJaarNoot: '17% goedkoper',
+    prijsJaarNoot: '33% goedkoper',
     abonneer: 'Abonneren',
     misschienLater: 'Misschien later',
 
@@ -261,6 +264,31 @@ const nl: DeepPartial<Vertalingen> = {
     nogNietTitel: 'Nog niet beschikbaar',
     nogNietTekst:
       'Abonnementen komen in een latere versie van Histora. Er is niets afgeschreven.',
+
+    prijsPerMaand: (prijs: string) => `${prijs} / maand`,
+    prijsPerJaar: (prijs: string) => `${prijs} / jaar`,
+    bespaar: (procent: number) => `Bespaar ${procent}%`,
+    perMaandJaarlijks: (prijs: string) => `${prijs} per maand, jaarlijks gefactureerd`,
+    proefDagen: (dagen: number) => `${dagen} dagen gratis proberen`,
+    proefUitleg: (dagen: number, prijs: string) =>
+      `${dagen} dagen gratis, daarna ${prijs}. Zeg vóór het einde van de proefperiode op in Google Play en je betaalt niets.`,
+    verlengUitleg:
+      'Je abonnement verlengt automatisch tot je het opzegt in Google Play. De betaling loopt via je Google-account.',
+    plannenLaden: 'Abonnementen laden…',
+    geenPlannen: 'De abonnementen konden niet geladen worden. Controleer je verbinding en probeer opnieuw.',
+    bezig: 'Even geduld…',
+    herstel: 'Aankopen herstellen',
+    welkomTitel: 'Welkom bij Histora Pro',
+    welkomTekst: 'Bedankt! Pro staat nu aan op dit account.',
+    inBehandelingTitel: 'Betaling in behandeling',
+    inBehandelingTekst:
+      'Google verwerkt je betaling nog. Pro gaat aan zodra die rond is.',
+    misluktTitel: 'Aankoop mislukt',
+    misluktTekst: 'Er is niets afgeschreven. Probeer het zo nog eens.',
+    hersteldTitel: 'Aankopen hersteld',
+    hersteldTekst: 'Je Pro-abonnement staat weer aan op dit toestel.',
+    nietsGevondenTitel: 'Niets om te herstellen',
+    nietsGevondenTekst: 'We vonden geen lopend abonnement voor dit Google-account.',
   },
   limiet: {
     titel: 'Dat was vandaag',

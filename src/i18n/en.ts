@@ -192,6 +192,11 @@ const en = {
      * vandaag écht doet — geen belofte over inhoud die er niet is.
      */
     abonnementProVoordelen: 'No interruptions · Unlimited reading',
+    /** Opent het abonnementenoverzicht van Google Play; opzeggen kan alleen daar. */
+    abonnementBeheren: 'Manage subscription',
+    /** Onder "Your plan" voor een opgezegd abonnement dat nog loopt. */
+    abonnementLooptAf: (datum: string): string => `Ends on ${datum} · does not renew`,
+    abonnementVerlengt: (datum: string): string => `Renews on ${datum}`,
     dagelijkseLimiet: 'Today’s reading',
     /** Rechts van "Your plan" voor een gratis lezer: hoeveel van de dag nog over is. */
     verhalenVandaag: (gebruikt: number, limiet: number): string =>
@@ -390,11 +395,13 @@ const en = {
     voordeelGeenAds: 'No ads, ever',
 
     prijsMaand: '€4.99 / month',
-    prijsJaar: '€49.99 / year',
+    prijsJaar: '€39.99 / year',
     // Bijschrift onder de prijs. Bewust niet "Renews monthly": er verlengt niets, want er wordt
-    // niets afgeschreven. "Save 17%" is wél waar — het is 49,99 tegen 12 × 4,99.
+    // niets afgeschreven. "Save 33%" is wél waar — het is 39,99 tegen 12 × 4,99.
+    // Prijzen sinds 2026-10-19: €4,99/maand en €39,99/jaar, 7 dagen proef op beide. Met een
+    // winkel komen de bedragen van Google; dit zijn alleen de terugvalteksten.
     prijsMaandNoot: 'Monthly plan',
-    prijsJaarNoot: 'Save 17%',
+    prijsJaarNoot: 'Save 33%',
     abonneer: 'Subscribe',
     misschienLater: 'Maybe later',
 
@@ -428,6 +435,39 @@ const en = {
     nogNietTitel: 'Not available yet',
     nogNietTekst:
       'Subscriptions arrive with a later version of Histora. Nothing has been charged.',
+
+    /**
+     * **Met Billing (RevenueCat).** Vanaf hier komen de bedragen van Google, in de valuta van de
+     * lezer, en zijn "renews" en "cancel anytime" wél waar — daarom staan ze hier en nergens
+     * hierboven. De vaste bedragen in `prijsMaand`/`prijsJaar` zijn de terugval zolang er geen
+     * winkel is.
+     */
+    prijsPerMaand: (prijs: string) => `${prijs} / month`,
+    prijsPerJaar: (prijs: string) => `${prijs} / year`,
+    bespaar: (procent: number) => `Save ${procent}%`,
+    /** Onder het jaarplan: wat het per maand kost. Uitgerekend uit de echte Google-prijs. */
+    perMaandJaarlijks: (prijs: string) => `${prijs} per month, billed yearly`,
+    proefDagen: (dagen: number) => `${dagen}-day free trial`,
+    proefUitleg: (dagen: number, prijs: string) =>
+      `Free for ${dagen} days, then ${prijs}. Cancel anytime in Google Play before the trial ends and you pay nothing.`,
+    // Play eist dat prijs, periode en automatisch verlengen bij de koopknop staan.
+    verlengUitleg:
+      'Your subscription renews automatically until you cancel it in Google Play. Payment is charged to your Google account.',
+    plannenLaden: 'Loading plans…',
+    geenPlannen: 'Plans could not be loaded. Check your connection and try again.',
+    bezig: 'One moment…',
+    herstel: 'Restore purchases',
+    welkomTitel: 'Welcome to Histora Pro',
+    welkomTekst: 'Thank you! Pro is now active on this account.',
+    inBehandelingTitel: 'Payment pending',
+    inBehandelingTekst:
+      'Google is still processing your payment. Pro switches on as soon as it goes through.',
+    misluktTitel: 'Purchase failed',
+    misluktTekst: 'Nothing has been charged. Please try again in a moment.',
+    hersteldTitel: 'Purchases restored',
+    hersteldTekst: 'Your Pro subscription is active again on this device.',
+    nietsGevondenTitel: 'Nothing to restore',
+    nietsGevondenTekst: 'We found no active subscription for this Google account.',
   },
   /**
    * De dagelijkse leeslimiet voor gratis lezers (`story-limit-modal.tsx`).

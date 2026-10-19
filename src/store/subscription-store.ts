@@ -45,12 +45,23 @@ export interface SubscriptionState {
   userId: string | null;
   loading: boolean;
   error: string | null;
+  /**
+   * Tot wanneer Google Play (via RevenueCat) zegt dat deze lezer premium is, epoch-ms;
+   * `Infinity` voor levenslang, `null` voor geen.
+   *
+   * **Alleen voor de weergave op dít toestel, en daarom niet in de serverrij.** Na een aankoop
+   * duurt het even voordat `revenuecat-sync` de rij heeft bijgewerkt; zonder deze waarde staat er
+   * direct na het betalen nog "Free". Hij geeft niemand iets wat de winkel niet al toekende, en
+   * de server leest hem nooit — dezelfde afweging als het lokale tegoed `proTot`.
+   */
+  winkelPremiumTot: number | null;
 
   // Computed
   isPremium: () => boolean;
 
   // Actions
   loadSubscription: (userId: string) => Promise<void>;
+  pasWinkelstandToe: (premiumTot: number | null) => void;
   // UITGESCHAKELD TOT GOOGLE PLAY BILLING — allebei, en om dezelfde reden: de client schreef
   // `tier: 'premium'` naar zijn eigen rij zonder dat er een bon werd geverifieerd. `setPremium`
   // stond al uit; `setTrial` kreeg in FASE 3 een aanroeper in `pro-paywall.tsx` en was daarmee
@@ -58,7 +69,10 @@ export interface SubscriptionState {
   // Premium zetten gebeurt tot die tijd met de hand in Supabase (zie docs/TEST_ACCOUNTS.md).
   // setTrial: (days: number) => Promise<boolean>;
   // setPremium: (planType: 'yearly' | 'monthly') => Promise<void>;
-  cancelSubscription: () => Promise<void>;
+  // `cancelSubscription` is er met Billing uit: hij schreef `tier: 'free'` naar de eigen rij, en
+  // na `supabase/billing-migratie.sql` is er geen update-policy meer, dus hij raakte nul rijen
+  // zonder fout. Opzeggen gebeurt in Google Play (Instellingen → "Manage subscription"); de
+  // webhook zet de rij daarna bij.
   reset: () => void;
 }
 
@@ -90,9 +104,11 @@ function loptNog(moment: string | null, nu: number): boolean {
  * laat een scherm dat al uren openstaat op een verlopen abonnement staan).
  */
 export function isAbonnementActief(
-  rij: Pick<SubscriptionState, 'tier' | 'trialEndsAt' | 'subscriptionEndsAt'>,
+  rij: Pick<SubscriptionState, 'tier' | 'trialEndsAt' | 'subscriptionEndsAt' | 'winkelPremiumTot'>,
   nu: number,
 ): boolean {
+  // De winkelstand eerst: direct na een aankoop is dat de enige bron die het al weet.
+  if (rij.winkelPremiumTot !== null && rij.winkelPremiumTot > nu) return true;
   if (rij.tier !== 'premium') return false;
   return loptNog(rij.trialEndsAt, nu) || loptNog(rij.subscriptionEndsAt, nu);
 }
@@ -105,6 +121,7 @@ export const useSubscriptionStore = create<SubscriptionState>((set, get) => ({
   userId: null,
   loading: false,
   error: null,
+  winkelPremiumTot: null,
 
   /**
    * Premium is `tier === 'premium'` **én** een datum die nog loopt.
@@ -280,35 +297,7 @@ export const useSubscriptionStore = create<SubscriptionState>((set, get) => ({
   //   }
   // },
 
-  cancelSubscription: async () => {
-    const { userId } = get();
-    if (!userId) return;
-
-    try {
-      const { error } = await supabase
-        .from('user_subscriptions')
-        .update({
-          tier: 'free',
-          subscription_ends_at: null,
-          trial_ends_at: null,
-          auto_renew: false,
-          updated_at: new Date().toISOString(),
-        })
-        .eq('user_id', userId);
-
-      if (error) throw error;
-
-      set({
-        tier: 'free',
-        subscriptionEndsAt: null,
-        trialEndsAt: null,
-        autoRenew: false,
-        error: null,
-      });
-    } catch (fout: unknown) {
-      set({ error: foutTekst(fout) });
-    }
-  },
+  pasWinkelstandToe: (premiumTot) => set({ winkelPremiumTot: premiumTot }),
 
   /**
    * Terug naar de beginstand. Hoort bij het uitloggen: laat je de vorige lezer staan, dan ziet de
@@ -326,6 +315,7 @@ export const useSubscriptionStore = create<SubscriptionState>((set, get) => ({
       userId: null,
       loading: false,
       error: null,
+      winkelPremiumTot: null,
     }),
 }));
 

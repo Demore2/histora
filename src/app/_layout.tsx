@@ -16,6 +16,7 @@ import { SplashScreen } from '@/components/splash-screen';
 import { AchievementUnlockModal } from '@/components/achievement-unlock-modal';
 import { PrestatieMelding } from '@/components/prestatie-melding';
 import { ShareAchievementModal } from '@/components/share-achievement-modal';
+import { useAankopen } from '@/hooks/use-aankopen';
 import { useDagelijkseHerinnering } from '@/hooks/use-dagelijkse-herinnering';
 import { usePrestaties } from '@/hooks/use-prestaties';
 import { usePushRegistratie } from '@/hooks/use-push-registratie';
@@ -55,6 +56,10 @@ export default function RootLayout() {
       resetSubscription();
     }
   }, [user?.id, loadSubscription, resetSubscription]);
+
+  // En de winkelkant daarvan: RevenueCat koppelen aan deze lezer, en de server laten bijwerken
+  // als Google Play al premium zegt en de rij nog niet. Zonder sleutel of op web doet hij niets.
+  useAankopen();
 
   // Even zo: de enige plek die voortgang met Supabase synchroniseert (deel 3). Hij haalt op bij
   // een nieuwe sessie en probeert het opnieuw zodra het netwerk of de app terugkomt.

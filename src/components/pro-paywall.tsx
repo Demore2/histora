@@ -1,16 +1,19 @@
 import { Ionicons } from '@expo/vector-icons';
 import { useEffect, useState } from 'react';
-import { Modal, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { ActivityIndicator, Modal, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import { AnimatedPressable } from '@/components/animated-pressable';
 import { ThemedText } from '@/components/themed-text';
 import { ANALYTICS_EVENTS } from '@/constants/analytics';
 import { meld } from '@/constants/dialoog';
+import { haptics } from '@/constants/haptics';
 import { Radii, Spacing, withAlpha } from '@/constants/theme';
 import type { IoniconNaam } from '@/constants/types';
 import { useTheme } from '@/hooks/use-theme';
 import { useVertaling } from '@/hooks/use-vertaling';
 import { logStoryEvent } from '@/hooks/useAnalytics';
+import { aankopen, premiumTot, type Pakket } from '@/lib/aankopen';
+import { useSubscriptionStore } from '@/store/subscription-store';
 // `useSubscriptionStore` is hier bewust wég. Het venster las er `setTrial` en `loading` uit; de
 // eerste is het gat dat hierboven beschreven staat, de tweede diende alleen om de knop tijdens
 // het activeren te blokkeren. Nevengevolg: dit venster staat op vier plekken permanent
@@ -62,10 +65,244 @@ type ProPaywallProps = {
  *
  * Zie `pro-access-banner.tsx` voor de vlag die het hele aanbod aan- en uitzet.
  */
+/** Hoeveel dagen een gratis proefperiode duurt, uit de Google-prijsfase. `null` = geen proef. */
+function proefDagen(pakket: Pakket | undefined): number | null {
+  const fase = pakket?.product.defaultOption?.freePhase;
+  if (!fase) return null;
+  const { unit, value } = fase.billingPeriod;
+  const perEenheid = unit === 'WEEK' ? 7 : unit === 'MONTH' ? 30 : unit === 'YEAR' ? 365 : 1;
+  return value * perEenheid;
+}
+
+/**
+ * De winkelkant van het venster: pakketten van Google, kopen, herstellen.
+ *
+ * Alleen gemonteerd als `aankopen.beschikbaar` en het venster open staat, zodat de
+ * offerings pas worden opgevraagd wanneer iemand werkelijk kijkt. Zonder sleutel of op web blijft
+ * de oude "binnenkort"-stand van `ProPaywall` staan — precies wat de build tot nu toe deed.
+ */
+function Winkel({ bron, onGekocht }: { bron: PaywallBron; onGekocht: () => void }) {
+  const theme = useTheme();
+  const { t, taal } = useVertaling();
+  const pasWinkelstandToe = useSubscriptionStore((s) => s.pasWinkelstandToe);
+  const [pakketten, setPakketten] = useState<Pakket[] | null>(null);
+  const [gekozen, setGekozen] = useState<string | null>(null);
+  const [bezig, setBezig] = useState(false);
+
+  useEffect(() => {
+    let afgebroken = false;
+    void aankopen.haalPakkettenOp().then((lijst) => {
+      if (afgebroken) return;
+      setPakketten(lijst);
+      // Het jaar staat standaard aan: dat is het plan dat de meeste lezers het minst kost.
+      const jaar = lijst.find((p) => p.packageType === 'ANNUAL') ?? lijst[0];
+      setGekozen(jaar?.identifier ?? null);
+    });
+    return () => {
+      afgebroken = true;
+    };
+  }, []);
+
+  if (pakketten === null) {
+    return (
+      <View style={styles.laden}>
+        <ActivityIndicator color={theme.accent} />
+        <ThemedText type="caption" themeColor="textSecondary">
+          {t((s) => s.pro.plannenLaden)}
+        </ThemedText>
+      </View>
+    );
+  }
+
+  if (pakketten.length === 0) {
+    return (
+      <ThemedText type="small" themeColor="textSecondary" style={styles.gecentreerd}>
+        {t((s) => s.pro.geenPlannen)}
+      </ThemedText>
+    );
+  }
+
+  const maand = pakketten.find((p) => p.packageType === 'MONTHLY');
+  const jaar = pakketten.find((p) => p.packageType === 'ANNUAL');
+  // Echt uitgerekend uit de Google-prijzen, niet overgetypt: in een andere valuta of na een
+  // prijswijziging klopt een vast "17%" niet meer.
+  const besparing =
+    maand && jaar && maand.product.price > 0
+      ? Math.round((1 - jaar.product.price / (12 * maand.product.price)) * 100)
+      : null;
+
+  // De jaarprijs gedeeld door twaalf, in de valuta en de schrijfwijze van de lezer ("€3,33",
+  // "3,33 €"). Lukt het formatteren niet (onbekende valutacode), dan valt de regel weg in plaats
+  // van een kaal getal te tonen.
+  const perMaand = (p: Pakket): string | null => {
+    try {
+      return new Intl.NumberFormat(taal, {
+        style: 'currency',
+        currency: p.product.currencyCode,
+      }).format(p.product.price / 12);
+    } catch {
+      return null;
+    }
+  };
+
+  const keuze = pakketten.find((p) => p.identifier === gekozen) ?? pakketten[0];
+  const dagen = proefDagen(keuze);
+  const prijsLabel = (p: Pakket) =>
+    p.packageType === 'ANNUAL'
+      ? t((s) => s.pro.prijsPerJaar)(p.product.priceString)
+      : p.packageType === 'MONTHLY'
+        ? t((s) => s.pro.prijsPerMaand)(p.product.priceString)
+        : p.product.priceString;
+
+  async function koop() {
+    if (bezig || !keuze) return;
+    setBezig(true);
+    const uitkomst = await aankopen.koop(keuze);
+    setBezig(false);
+
+    logStoryEvent(ANALYTICS_EVENTS.SUBSCRIPTION_ATTEMPT, {
+      tier: 'pro',
+      source: bron,
+      status: uitkomst.soort,
+      plan: keuze.packageType,
+    });
+
+    if (uitkomst.soort === 'gekocht') {
+      pasWinkelstandToe(premiumTot(uitkomst.info));
+      haptics.succes();
+      meld(t((s) => s.pro.welkomTitel), t((s) => s.pro.welkomTekst), t((s) => s.instellingen.ok));
+      onGekocht();
+    } else if (uitkomst.soort === 'in-behandeling') {
+      meld(
+        t((s) => s.pro.inBehandelingTitel),
+        t((s) => s.pro.inBehandelingTekst),
+        t((s) => s.instellingen.ok),
+      );
+    } else if (uitkomst.soort === 'mislukt') {
+      meld(t((s) => s.pro.misluktTitel), t((s) => s.pro.misluktTekst), t((s) => s.instellingen.ok));
+    }
+    // 'afgebroken': de lezer sloot het Google-venster zelf. Daar hoort geen melding achteraan.
+  }
+
+  async function herstel() {
+    if (bezig) return;
+    setBezig(true);
+    const uitkomst = await aankopen.herstel();
+    setBezig(false);
+    if (uitkomst.soort === 'hersteld') {
+      pasWinkelstandToe(premiumTot(uitkomst.info));
+      meld(t((s) => s.pro.hersteldTitel), t((s) => s.pro.hersteldTekst), t((s) => s.instellingen.ok));
+      onGekocht();
+    } else if (uitkomst.soort === 'niets-gevonden') {
+      meld(
+        t((s) => s.pro.nietsGevondenTitel),
+        t((s) => s.pro.nietsGevondenTekst),
+        t((s) => s.instellingen.ok),
+      );
+    } else {
+      meld(t((s) => s.pro.misluktTitel), t((s) => s.pro.misluktTekst), t((s) => s.instellingen.ok));
+    }
+  }
+
+  return (
+    <>
+      <View style={styles.planSelectie}>
+        {pakketten.map((pakket) => {
+          const actief = pakket.identifier === keuze?.identifier;
+          return (
+            <Pressable
+              key={pakket.identifier}
+              onPress={() => setGekozen(pakket.identifier)}
+              accessibilityRole="radio"
+              accessibilityState={{ selected: actief }}
+              style={[
+                styles.planButton,
+                {
+                  backgroundColor: actief ? theme.accent : theme.backgroundElement,
+                  borderWidth: actief ? 0 : 1,
+                  borderColor: theme.textSecondary,
+                },
+              ]}>
+              <ThemedText
+                type="bodyBold"
+                style={{ color: actief ? theme.background : theme.text, textAlign: 'center' }}>
+                {prijsLabel(pakket)}
+              </ThemedText>
+              {pakket.packageType === 'ANNUAL' && besparing !== null && besparing > 0 ? (
+                <ThemedText
+                  type="caption"
+                  style={{
+                    color: actief ? theme.background : theme.textSecondary,
+                    textAlign: 'center',
+                  }}>
+                  {t((s) => s.pro.bespaar)(besparing)}
+                </ThemedText>
+              ) : null}
+              {pakket.packageType === 'ANNUAL' && perMaand(pakket) ? (
+                <ThemedText
+                  type="caption"
+                  style={{
+                    color: actief ? theme.background : theme.textSecondary,
+                    textAlign: 'center',
+                  }}>
+                  {t((s) => s.pro.perMaandJaarlijks)(perMaand(pakket) as string)}
+                </ThemedText>
+              ) : null}
+            </Pressable>
+          );
+        })}
+      </View>
+
+      {dagen !== null && keuze ? (
+        <View style={[styles.trialBox, { backgroundColor: withAlpha(theme.accent, 0.1) }]}>
+          <Ionicons name="gift-outline" size={20} color={theme.accent} />
+          <View style={{ flex: 1 }}>
+            <ThemedText type="bodyBold" themeColor="accent">
+              {t((s) => s.pro.proefDagen)(dagen)}
+            </ThemedText>
+            <ThemedText type="caption" themeColor="textSecondary">
+              {t((s) => s.pro.proefUitleg)(dagen, prijsLabel(keuze))}
+            </ThemedText>
+          </View>
+        </View>
+      ) : null}
+
+      <AnimatedPressable
+        onPress={koop}
+        disabled={bezig}
+        haptisch={false}
+        accessibilityRole="button"
+        accessibilityState={{ disabled: bezig, busy: bezig }}
+        style={[styles.hoofdKnop, { backgroundColor: bezig ? theme.inactive : theme.accent }]}>
+        <ThemedText type="bodyBold" style={{ color: bezig ? theme.text : theme.background }}>
+          {bezig
+            ? t((s) => s.pro.bezig)
+            : dagen !== null
+              ? t((s) => s.pro.startTrial)
+              : t((s) => s.pro.abonneer)}
+        </ThemedText>
+      </AnimatedPressable>
+
+      <ThemedText type="caption" themeColor="textSecondary" style={styles.gecentreerd}>
+        {t((s) => s.pro.verlengUitleg)}
+      </ThemedText>
+
+      <Pressable onPress={herstel} disabled={bezig} accessibilityRole="button" style={styles.laterKnop}>
+        <ThemedText type="link" themeColor="textSecondary">
+          {t((s) => s.pro.herstel)}
+        </ThemedText>
+      </Pressable>
+    </>
+  );
+}
+
 export function ProPaywall({ visible, onClose, bron }: ProPaywallProps) {
   const theme = useTheme();
   const { t } = useVertaling();
   const [selectedPlan, setSelectedPlan] = useState<'monthly' | 'yearly'>('yearly');
+  // Gelezen bij het renderen en niet in state: dit verandert niet terwijl de app draait (sleutel en
+  // native module liggen bij het bouwen vast).
+  const winkelOpen = aankopen.beschikbaar;
 
   // Twee echte verschillen plus één eerlijke reden. De eerste twee komen letterlijk uit
   // `monetisatie.ts` en staan met dezelfde woorden in `StoryLimitModal` — wie de limietmelding
@@ -168,6 +405,10 @@ export function ProPaywall({ visible, onClose, bron }: ProPaywallProps) {
               ))}
             </View>
 
+            {winkelOpen ? (
+              visible ? <Winkel bron={bron} onGekocht={sluit} /> : null
+            ) : (
+            <>
             {/* Plan selection */}
             <View style={styles.planSelectie}>
               <Pressable
@@ -262,6 +503,8 @@ export function ProPaywall({ visible, onClose, bron }: ProPaywallProps) {
                 {t((s) => s.pro.startTrialComingSoon)}
               </ThemedText>
             </AnimatedPressable>
+            </>
+            )}
 
             <Pressable onPress={sluit} accessibilityRole="button" style={styles.laterKnop}>
               <ThemedText type="link" themeColor="textSecondary">
@@ -347,6 +590,11 @@ const styles = StyleSheet.create({
   },
   laterKnop: {
     paddingVertical: Spacing.one,
+  },
+  laden: {
+    alignItems: 'center',
+    gap: Spacing.two,
+    paddingVertical: Spacing.four,
   },
   planSelectie: {
     width: '100%',

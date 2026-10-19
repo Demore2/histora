@@ -5,7 +5,11 @@
  * verhalen per dag en krijgt na een uitgelezen verhaal een onderbreking te zien; een Pro-lezer
  * krijgt geen van beide. Wat "Pro" betekent leest `useAbonnement()` uit `abonnement-store`.
  *
- * **Beide vlaggen hieronder zijn releaseblokkers zolang Google Play Billing een stub is.** Dat is
+ * **Sinds Billing (RevenueCat) geldt de limiet alleen als er ook iets te koop is** — zie
+ * `VERHAAL_LIMIET_ENABLED` hieronder en `store/aanbod-store.ts`. De onderbreking blijft uit tot
+ * er echte advertenties (AdMob) achter zitten. Wat volgt is de oorspronkelijke afweging:
+ *
+ * **Beide vlaggen hieronder waren releaseblokkers zolang Google Play Billing een stub was.** Dat is
  * dezelfde afweging als bij `PRO_BANNER_ENABLED` in `pro-access-banner.tsx` en `ADS_ENABLED` in
  * `ad-banner.tsx`, maar hier weegt hij zwaarder: een limiet die je alleen met een aankoop kunt
  * opheffen terwijl er niets te kopen valt, is een muur zonder deur. Een reviewer die daar
@@ -28,8 +32,15 @@
  */
 export const DAGELIJKSE_VERHAAL_LIMIET = 2;
 
-/** De dagelijkse leeslimiet zelf. `false` = elke lezer leest onbeperkt, zoals vóór deze fase. */
-export const VERHAAL_LIMIET_ENABLED = false;
+/**
+ * De dagelijkse leeslimiet zelf. `false` = elke lezer leest onbeperkt.
+ *
+ * **Sinds Billing staat hij aan, maar dat alleen zet hem niet aan.** Hij geldt pas als er ook
+ * echt iets te koop is (`isLimietActief()` in `abonnement-store` = deze vlag én
+ * `isAanbodTeKoop()`). Zolang de abonnementen niet in Play/RevenueCat bestaan, of de offerings niet
+ * laden, leest iedereen onbeperkt — zodat er nooit een limiet zonder werkende aankoop staat.
+ */
+export const VERHAAL_LIMIET_ENABLED = true;
 
 /**
  * De onderbreking ná een uitgelezen verhaal (`ad-modal.tsx`).

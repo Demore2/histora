@@ -3,6 +3,7 @@ import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 
 import { DAGELIJKSE_VERHAAL_LIMIET, VERHAAL_LIMIET_ENABLED } from '@/constants/monetisatie';
+import { isAanbodTeKoop } from '@/store/aanbod-store';
 import { isAbonnementActief, useSubscriptionStore } from '@/store/subscription-store';
 import { vandaagSleutel } from '@/store/voortgang-store';
 
@@ -107,6 +108,14 @@ export function isProActief(state: Pick<AbonnementState, 'isPro' | 'proTot'>, nu
  * één moment. **Wijzigt de een, wijzig de ander mee**; twee antwoorden op "heeft deze lezer Pro"
  * is precies de bug die hierboven beschreven staat.
  */
+/**
+ * Geldt de dagelijkse limiet nu? De vlag zegt dat we hem willen, `isAanbodTeKoop()` dat er een
+ * deur in de muur zit. Zonder werkende aankoop is er geen limiet — zie `aanbod-store.ts`.
+ */
+export function isLimietActief(): boolean {
+  return VERHAAL_LIMIET_ENABLED && isAanbodTeKoop();
+}
+
 export function heeftProNu(nu: number = Date.now()): boolean {
   if (isProActief(useAbonnementStore.getState(), nu)) return true;
   return isAbonnementActief(useSubscriptionStore.getState(), nu);
@@ -148,7 +157,7 @@ export const useAbonnementStore = create<AbonnementState>()(
           // moment dat hij daadwerkelijk een deur opende, en niet eerder. Een Pro-lezer verbruikt
           // niets: voor hem was er geen deur.
           const gebruiktBonus =
-            VERHAAL_LIMIET_ENABLED &&
+            isLimietActief() &&
             !heeftProNu() &&
             vanVandaag.length >= DAGELIJKSE_VERHAAL_LIMIET &&
             state.bonusVerhalen > 0;
@@ -197,7 +206,7 @@ export const useAbonnementStore = create<AbonnementState>()(
         const state = get();
         // `heeftProNu()` en niet `isProActief(state, …)`: die laatste kent alleen het tegoed op dit
         // toestel en liet een lezer met een serverabonnement tegen de limiet aanlopen.
-        if (!VERHAAL_LIMIET_ENABLED || heeftProNu()) return true;
+        if (!isLimietActief() || heeftProNu()) return true;
         const vanVandaag = verhalenVanVandaag(state);
         // Al geopend vandaag: dan is de plek al betaald. Anders zou je middenin een verhaal
         // buitengesloten worden zodra je terugloopt naar het hoofdstukoverzicht.
