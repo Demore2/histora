@@ -67,7 +67,7 @@ type FeedbackRij = {
   discord_bericht_id: string | null;
 };
 
-type TicketStatus = 'nieuw' | 'in_behandeling' | 'klaar';
+type TicketStatus = 'nieuw' | 'in_behandeling' | 'wacht' | 'klaar';
 
 type Beheerder = { id: string; naam: string; discord_id: string | null };
 
@@ -109,16 +109,19 @@ const LABEL: Record<FeedbackSoort, string> = {
 
 /**
  * Zodra er iets mee gebeurt neemt de status de kleur over, met dezelfde kleuren als het bord:
- * oranje = iemand is ermee bezig, groen = klaar. Een nieuw ticket houdt de kleur van zijn soort.
+ * oranje = iemand is ermee bezig, paars = wacht ergens op, groen = klaar. Een nieuw ticket houdt
+ * de kleur van zijn soort.
  */
 const STATUS_KLEUR: Partial<Record<TicketStatus, number>> = {
   in_behandeling: 0xfdab3d,
+  wacht: 0x784bd1,
   klaar: 0x00c875,
 };
 
 const STATUS_LABEL: Record<TicketStatus, string> = {
   nieuw: '🆕 New',
   in_behandeling: '🟠 In progress',
+  wacht: '⏸️ Waiting',
   klaar: '✅ Done',
 };
 

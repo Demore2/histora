@@ -1077,6 +1077,10 @@ lokaal: `npx http-server docs -p 5510`.
 - De migraties (`feedback-beheer-migratie.sql` en `-2.sql`) zijn met de hand in de SQL Editor
   gedraaid; `apply_migration` via MCP wordt in dit project geweigerd.
 - Lezerstekst gaat op het bord alleen via `textContent`, nooit `innerHTML`.
+- **Tickets zijn gegroepeerd op status** (Nieuw → Mee bezig → Wacht op → Klaar; `wacht` sinds
+  `-3.sql`), niet op persoon, en een rij naar een groep slepen zet die status. Eigenaar is een
+  kolom plus filter. Bewust: slepen betekent zo altijd één ding. HTML5-slepen werkt niet op touch;
+  daar blijven de klikmenu's.
 - **Drie tabbladen.** *Tickets*; de *Ideeënhub* (`public.beheer_notities`: idee/doel/taak, vastpinnen,
   afgerond — alleen voor de beheerders); en *Statistieken* (`beheer_statistieken()`, één jsonb).
 - **Interne tickets (`feedback.bron = 'intern'`) komen bewust niet in Discord** — beide triggers

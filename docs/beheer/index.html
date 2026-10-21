@@ -31,7 +31,9 @@
 
     --st-nieuw: #c4c4c4;
     --st-bezig: #fdab3d;
+    --st-wacht: #784bd1;
     --st-klaar: #00c875;
+    --grp-nieuw: #797e93;
     --pr-hoog: #e2445c;
     --pr-normaal: #a25ddc;
     --pr-laag: #579bfc;
@@ -253,6 +255,13 @@
   }
   .rij > div:last-child { border-right: 0; }
   .rij.ticket:hover, .rij.ticket.actief { background: var(--hover); }
+
+  /* Slepen: een rij pak je overal vast; de groep waar je boven hangt licht op. */
+  .rij.ticket[draggable="true"] { cursor: grab; }
+  .rij.ticket.sleept { opacity: .4; }
+  .groep.drop-doel .tabel { outline: 2px dashed var(--grp); outline-offset: 2px; }
+  .groep.drop-doel .groep-kop h2 { text-decoration: underline; }
+  body.aan-het-slepen .groep[data-dicht="true"] .groep-kop { outline: 2px dashed var(--line); border-radius: 6px; padding: 4px 8px; }
 
   .tekst-cel { cursor: pointer; gap: 8px; }
   .tekst-cel .tekst { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -649,6 +658,10 @@
         <option value="app">Van lezers</option>
         <option value="intern">Intern</option>
       </select>
+      <select id="filter-eigenaar" aria-label="Eigenaar">
+        <option value="">Alle eigenaren</option>
+        <option value="-">Nog niemand</option>
+      </select>
       <button class="chip-knop" type="button" id="filter-mijn" aria-pressed="false">Alleen mijn tickets</button>
       <button class="chip-knop" type="button" data-actie="vernieuwen" title="Vernieuwen">↻</button>
       <span class="rechts" id="bijgewerkt"></span>
@@ -806,10 +819,12 @@
     auth: { persistSession: true, autoRefreshToken: true, storageKey: 'histora-beheer' },
   });
 
+  // De volgorde hier is ook de volgorde van de groepen op het bord.
   const STATUS = {
-    nieuw:          { label: 'Nieuw',          kleur: 'var(--st-nieuw)' },
-    in_behandeling: { label: 'In behandeling', kleur: 'var(--st-bezig)' },
-    klaar:          { label: 'Klaar',          kleur: 'var(--st-klaar)' },
+    nieuw:          { label: 'Nieuw',     kleur: 'var(--st-nieuw)', groep: 'var(--grp-nieuw)', leeg: 'Niets nieuws. 🎉' },
+    in_behandeling: { label: 'Mee bezig', kleur: 'var(--st-bezig)', groep: 'var(--st-bezig)', leeg: 'Niemand is ergens mee bezig.' },
+    wacht:          { label: 'Wacht op',  kleur: 'var(--st-wacht)', groep: 'var(--st-wacht)', leeg: 'Nergens op aan het wachten.' },
+    klaar:          { label: 'Klaar',     kleur: 'var(--st-klaar)', groep: 'var(--st-klaar)', leeg: 'Nog niets afgevinkt.' },
   };
   const PRIORITEIT = {
     hoog:    { label: 'Hoog',    kleur: 'var(--pr-hoog)' },
@@ -836,6 +851,7 @@
     zoek: '',
     soort: '',
     bron: '',
+    eigenaar: '',
     alleenMijn: false,
     dicht: (() => {
       try { return JSON.parse(leesLokaal('histora-beheer-dicht', '{"klaar":true}')); } catch { return { klaar: true }; }
@@ -1009,6 +1025,10 @@
       if (!stil) toast(foutTekst(lijst.error || mensen.error), true);
       return;
     }
+    if (!staat.beheerders.length) {
+      // De eigenaarfilter vullen we één keer, zodra we weten wie er beheerder is.
+      $('#filter-eigenaar').append(...(mensen.data || []).map((b) => el('option', { value: b.id, tekst: b.naam })));
+    }
     staat.beheerders = mensen.data || [];
     staat.tickets = lijst.data || [];
     staat.geladenOp = new Date();
@@ -1057,6 +1077,8 @@
     if (staat.soort && t.soort !== staat.soort) return false;
     if (staat.bron && (t.bron || 'app') !== staat.bron) return false;
     if (staat.alleenMijn && t.toegewezen_aan !== staat.ik.id) return false;
+    if (staat.eigenaar === '-' && t.toegewezen_aan) return false;
+    if (staat.eigenaar && staat.eigenaar !== '-' && t.toegewezen_aan !== staat.eigenaar) return false;
     if (staat.zoek) {
       const z = staat.zoek.toLowerCase();
       const hooiberg = [t.bericht, t.notitie, t.lezer_email, t.platform, t.app_versie].join(' ').toLowerCase();
@@ -1067,6 +1089,10 @@
 
   const PRIO_VOLGORDE = { hoog: 0, normaal: 1, laag: 2 };
   function sorteer(a, b) {
+    // Zonder eigenaar eerst: dat is wat nog opgepakt moet worden.
+    const ea = a.toegewezen_aan ? 1 : 0;
+    const eb = b.toegewezen_aan ? 1 : 0;
+    if (ea !== eb) return ea - eb;
     const pa = PRIO_VOLGORDE[a.prioriteit] ?? 1.5;
     const pb = PRIO_VOLGORDE[b.prioriteit] ?? 1.5;
     if (pa !== pb) return pa - pb;
@@ -1081,32 +1107,22 @@
       ? `Bijgewerkt ${staat.geladenOp.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`
       : '';
 
-    const groepen = [
-      {
-        id: 'open',
-        titel: 'Nog toe te wijzen',
-        kleur: 'var(--grp-open)',
-        tickets: tickets.filter((t) => t.status !== 'klaar' && !t.toegewezen_aan),
-        leeg: 'Alles heeft een eigenaar. 🎉',
-      },
-      ...staat.beheerders.map((b) => ({
-        id: 'b-' + b.id,
-        titel: b.naam,
-        kleur: b.kleur,
-        tickets: tickets.filter((t) => t.status !== 'klaar' && t.toegewezen_aan === b.id),
-        leeg: `${b.naam} heeft niets openstaan.`,
-      })),
-      {
-        id: 'klaar',
-        titel: 'Klaar',
-        kleur: 'var(--grp-klaar)',
-        tickets: tickets
-          .filter((t) => t.status === 'klaar')
-          .sort((a, b) => new Date(b.afgehandeld_op || 0) - new Date(a.afgehandeld_op || 0)),
-        leeg: 'Nog niets afgevinkt.',
-        alGesorteerd: true,
-      },
-    ];
+    // Eén groep per status. Een ticket met een status die het bord niet kent valt in "Nieuw",
+    // zodat het nooit stilletjes verdwijnt.
+    const groepen = Object.entries(STATUS).map(([status, s]) => {
+      const lijst = tickets.filter((t) => (STATUS[t.status] ? t.status : 'nieuw') === status);
+      return {
+        id: status === 'klaar' ? 'klaar' : 's-' + status,
+        status,
+        titel: s.label,
+        kleur: s.groep,
+        leeg: s.leeg,
+        tickets: status === 'klaar'
+          ? lijst.sort((a, b) => new Date(b.afgehandeld_op || 0) - new Date(a.afgehandeld_op || 0))
+          : lijst,
+        alGesorteerd: status === 'klaar',
+      };
+    });
 
     $('#bord').replaceChildren(...groepen.map(tekenGroep));
   }
@@ -1142,15 +1158,69 @@
       lijst.length ? lijst.map(tekenRij) : el('div', { class: 'leeg-groep', tekst: g.leeg }),
     );
 
-    return el('section', { class: 'groep', style: `--grp:${g.kleur}`, 'data-dicht': String(dicht) }, kop, tabel);
+    // Elke groep is een plek om op te laten vallen; ook ingeklapt (dan op de kop).
+    let diepte = 0;
+    const sectie = el('section', {
+      class: 'groep',
+      style: `--grp:${g.kleur}`,
+      'data-dicht': String(dicht),
+      ondragenter: (e) => {
+        if (!sleepId) return;
+        e.preventDefault();
+        diepte++;
+        sectie.classList.add('drop-doel');
+      },
+      ondragover: (e) => {
+        if (!sleepId) return;
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+      },
+      ondragleave: () => {
+        if (--diepte <= 0) { diepte = 0; sectie.classList.remove('drop-doel'); }
+      },
+      ondrop: (e) => {
+        e.preventDefault();
+        diepte = 0;
+        sectie.classList.remove('drop-doel');
+        const id = sleepId || e.dataTransfer.getData('text/plain');
+        const t = staat.tickets.find((x) => x.id === id);
+        if (!t || t.status === g.status) return;
+        werkBij(id, { status: g.status }).then((ok) => {
+          if (ok) toast(g.status === 'klaar' ? 'Afgevinkt ✓' : `Naar “${g.titel}”`);
+        });
+      },
+    }, kop, tabel);
+    return sectie;
   }
+
+  // Het id van de rij die nu versleept wordt. `dataTransfer` is tijdens dragover niet leesbaar,
+  // en zo reageren de groepen niet op iets anders dat over de pagina gesleept wordt.
+  let sleepId = null;
 
   function tekenRij(t) {
     const eigenaar = beheerder(t.toegewezen_aan);
     const st = STATUS[t.status] || STATUS.nieuw;
     const pr = PRIORITEIT[t.prioriteit];
 
-    return el('div', { class: 'rij ticket' + (staat.open === t.id ? ' actief' : ''), role: 'row' },
+    return el('div', {
+      class: 'rij ticket' + (staat.open === t.id ? ' actief' : ''),
+      role: 'row',
+      draggable: 'true',
+      ondragstart: (e) => {
+        sleepId = t.id;
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/plain', t.id);
+        e.currentTarget.classList.add('sleept');
+        document.body.classList.add('aan-het-slepen');
+        sluitMenu();
+      },
+      ondragend: (e) => {
+        sleepId = null;
+        e.currentTarget.classList.remove('sleept');
+        document.body.classList.remove('aan-het-slepen');
+        for (const s of document.querySelectorAll('.groep.drop-doel')) s.classList.remove('drop-doel');
+      },
+    },
       el('div', { class: 'tekst-cel', onclick: () => openPaneel(t.id), title: 'Openen' },
         t.bron === 'intern' ? el('span', { class: 'label-intern', tekst: 'intern' }) : null,
         el('span', { class: 'tekst', tekst: t.bericht }),
@@ -1692,6 +1762,7 @@
   $('#zoek').addEventListener('input', (e) => { staat.zoek = e.target.value.trim(); teken(); });
   $('#filter-soort').addEventListener('change', (e) => { staat.soort = e.target.value; teken(); });
   $('#filter-bron').addEventListener('change', (e) => { staat.bron = e.target.value; teken(); });
+  $('#filter-eigenaar').addEventListener('change', (e) => { staat.eigenaar = e.target.value; teken(); });
   $('#filter-mijn').addEventListener('click', (e) => {
     staat.alleenMijn = !staat.alleenMijn;
     e.currentTarget.setAttribute('aria-pressed', String(staat.alleenMijn));
