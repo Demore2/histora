@@ -3,7 +3,7 @@
 > **Superseded — do not publish this file.**
 > The privacy policy that Histora actually points at is
 > [`privacy-policy.html`](privacy-policy.html), the page served at
-> `https://demore2.github.io/chronicles/privacy-policy.html` and named by `PRIVACY_BELEID_URL` in
+> `https://demore2.github.io/histora/privacy-policy.html` and named by `PRIVACY_BELEID_URL` in
 > `src/constants/juridisch.ts`. This Markdown draft predates the account, the progress sync and
 > the poll/choice answers, so it still says progress never leaves the device. It is kept only
 > because this project does not delete superseded files. Read the HTML page instead.

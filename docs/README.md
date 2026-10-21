@@ -20,7 +20,7 @@ niet andersom.
 
 ## Publiceren via GitHub Pages
 
-De doel-URL is **`https://demore2.github.io/chronicles/`**. Zo staat hij ingevuld in
+De doel-URL is **`https://demore2.github.io/histora/`**. Zo staat hij ingevuld in
 `src/constants/juridisch.ts` (`PRIVACY_BELEID_URL`) en `src/constants/app-info.ts`
 (`VOORWAARDEN_URL`), en zo hoort hij in de Play Console.
 
@@ -28,22 +28,22 @@ Deze repo heeft nog **geen remote**. Eenmalig, en dit is handwerk — er is geen
 machine:
 
 1. Maak op GitHub het account **`Demore2`** aan, als dat er nog niet is, en daaronder een
-   **publieke** repository met de naam **`chronicles`**. De naam bepaalt het pad in de URL, dus
+   **publieke** repository met de naam **`histora`** (tot 2026-10-21 heette hij `chronicles`; een aparte repo met die oude naam verwijst nog door). De naam bepaalt het pad in de URL, dus
    die twee moeten letterlijk kloppen. Let op het verschil in hoofdletters: de repo-URL houdt de
    schrijfwijze van het account aan (`github.com/Demore2/…`), de Pages-URL is altijd kleine
    letters (`demore2.github.io/…`).
 2. Koppel en push:
    ```bash
-   git remote add origin https://github.com/Demore2/chronicles.git
+   git remote add origin https://github.com/Demore2/histora.git
    git push -u origin master
    ```
 3. GitHub → **Settings → Pages** → *Source*: `Deploy from a branch`, *Branch*: `master`,
    *Folder*: **`/docs`** → Save.
 4. Na ongeveer een minuut staan de pagina's op:
    ```
-   https://demore2.github.io/chronicles/
-   https://demore2.github.io/chronicles/privacy-policy.html
-   https://demore2.github.io/chronicles/terms-of-service.html
+   https://demore2.github.io/histora/
+   https://demore2.github.io/histora/privacy-policy.html
+   https://demore2.github.io/histora/terms-of-service.html
    ```
    **Controleer alle drie in een browser voordat je verder gaat.** Een Pages-site die nog aan het
    bouwen is geeft een 404 die op een foute URL lijkt.

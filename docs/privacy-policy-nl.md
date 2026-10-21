@@ -3,7 +3,7 @@
 > **Vervallen — publiceer dit bestand niet.**
 > Het privacybeleid waar Histora naar verwijst is
 > [`privacy-policy.html`](privacy-policy.html), de pagina op
-> `https://demore2.github.io/chronicles/privacy-policy.html` en de waarde van `PRIVACY_BELEID_URL`
+> `https://demore2.github.io/histora/privacy-policy.html` en de waarde van `PRIVACY_BELEID_URL`
 > in `src/constants/juridisch.ts`. Deze Markdown-versie is van vóór het account, de
 > voortgangssync en de antwoorden op peilingen, en beweert dus nog dat je voortgang het toestel
 > nooit verlaat. Hij blijft staan omdat dit project niets weggooit. Lees de HTML-pagina.

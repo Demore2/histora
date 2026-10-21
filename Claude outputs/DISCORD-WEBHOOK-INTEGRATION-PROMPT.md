@@ -16,7 +16,7 @@ I want to receive bug reports and ideas directly in my Discord server instead of
 
 ### Current Setup
 
-**App:** React Native/Expo (Chronicles - Dutch history learning app)
+**App:** React Native/Expo (Histora - Dutch history learning app)
 
 **Supabase Table:** `public.feedback`
 ```

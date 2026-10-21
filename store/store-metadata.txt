@@ -104,17 +104,14 @@ Website                : —  (optioneel; de GitHub Pages-map uit docs/ kan hier
 Phone                  : —  (optioneel, laat leeg)
 
 
-URL'S — BEIDE NOG NIET GEPUBLICEERD
+URL'S
 -----------------------------------
-PRIVACY POLICY URL     : https://demore2.github.io/chronicles/privacy-policy.html
-TERMS URL              : https://demore2.github.io/chronicles/terms-of-service.html
+PRIVACY POLICY URL     : https://demore2.github.io/histora/privacy-policy.html
+TERMS URL              : https://demore2.github.io/histora/terms-of-service.html
 
-Deze twee staan zo in `src/constants/juridisch.ts` en `src/constants/app-info.ts` en
-zijn bij de rebrand **bewust niet gewijzigd**: het pad `/chronicles/` is de naam van de
-GitHub-repository die de pagina's serveert, niet de merknaam in de tekst (die pagina's
-zelf zeggen nu wél "Histora"). Wil je `/histora/` in de URL, dan is dat één handeling
-buiten deze repo — hernoem de repository op GitHub — gevolgd door het bijwerken van
-beide constanten, `docs/README.md` en dit bestand.
+Deze twee staan zo in `src/constants/juridisch.ts` en `src/constants/app-info.ts`.
+Tot 2026-10-21 was het pad `/chronicles/`; de repository is toen hernoemd naar `histora`
+en een aparte repo `chronicles` verwijst de oude adressen door.
 
 De pagina's zijn nog nergens gepubliceerd, dus beide URL's geven op dit moment een 404.
 Een bereikbare privacy-URL is een **harde blocker** voor de inzending.

@@ -4,9 +4,9 @@ Plak deze VOLLEDIGE prompt in Claude in VS Code:
 
 ---
 
-## Task: Voeg Contact Page toe aan Chronicles repo
+## Task: Voeg Contact Page toe aan Histora repo
 
-Ik wil een contact pagina (`contact.html`) toevoegen aan mijn GitHub repository `demore2/chronicles` in de `/public` folder.
+Ik wil een contact pagina (`contact.html`) toevoegen aan mijn GitHub repository `demore2/histora` in de `/public` folder.
 
 ### Wat je moet doen:
 

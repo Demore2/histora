@@ -33,7 +33,7 @@
  * (404), dan blijft het weg: alleen een nieuw ticket plaatst een bericht.
  *
  * **De webhook-URL's staan in de secrets `DISCORD_WEBHOOK_BUG` / `DISCORD_WEBHOOK_IDEE`, niet in
- * de code.** Een webhook-URL is een wachtwoord en `github.com/Demore2/chronicles` is publiek. Zie
+ * de code.** Een webhook-URL is een wachtwoord en `github.com/Demore2/histora` is publiek. Zie
  * `webhookVoor` hieronder.
  */
 
@@ -72,7 +72,7 @@ type TicketStatus = 'nieuw' | 'in_behandeling' | 'wacht' | 'klaar';
 type Beheerder = { id: string; naam: string; discord_id: string | null };
 
 /** Waar het bord staat; komt als link in elke embed. */
-const BORD_URL = 'https://demore2.github.io/chronicles/beheer/';
+const BORD_URL = 'https://demore2.github.io/histora/beheer/';
 
 // --------------------------------------------------------------------------------------------
 // De twee kanalen

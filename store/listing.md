@@ -90,7 +90,7 @@ Histora is free.
 | Contact e-mail | businessdemore@gmail.com | Verplicht en **publiek zichtbaar** in de listing. Hetzelfde adres als `SUPPORT_EMAIL` in `src/constants/app-info.ts` en als de privacypagina — dat is met opzet: hier stond een persóónlijk adres, en dan staan er drie adressen voor één app waarvan de lezer niet weet welke gelezen wordt. Wijzig je er één, wijzig ze alle drie. |
 | Website | — | Optioneel. Als je `docs/` via GitHub Pages publiceert kun je die repo-pagina gebruiken. |
 | Phone | — | Optioneel, laat leeg. |
-| Privacy policy | `https://demore2.github.io/chronicles/privacy-policy.html` | Dezelfde URL als `PRIVACY_BELEID_URL` in `src/constants/juridisch.ts`. Wijzig je de host, wijzig ze samen. |
+| Privacy policy | `https://demore2.github.io/histora/privacy-policy.html` | Dezelfde URL als `PRIVACY_BELEID_URL` in `src/constants/juridisch.ts`. Wijzig je de host, wijzig ze samen. |
 | Ads | **No, my app does not contain ads** | Klopt: `ADS_ENABLED = false` in `src/components/ad-banner.tsx`. |
 | In-app purchases | **No** | Billing is een stub, en de drie vlaggen die een aanbod toonden staan uit: `PRO_BANNER_ENABLED`, `VERHAAL_LIMIET_ENABLED`, `AD_ONDERBREKING_ENABLED`. Er is dus nergens een prijs te zien. |
 | Content rating | IARC-vragenlijst, zie hieronder | |

@@ -8,7 +8,7 @@ Naast deze staat `send-feedback-email` met zijn eigen README. Eén trigger roept
 
 ## De webhook-URL's staan in secrets, niet in de code
 
-**Een Discord-webhook-URL is een wachtwoord**, en `github.com/Demore2/chronicles` is publiek.
+**Een Discord-webhook-URL is een wachtwoord**, en `github.com/Demore2/histora` is publiek.
 De function leest de URL's daarom uitsluitend uit twee secrets (Dashboard → Edge Functions →
 Secrets):
 

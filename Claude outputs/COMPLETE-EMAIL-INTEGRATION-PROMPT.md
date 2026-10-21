@@ -6,7 +6,7 @@ Paste this **entire prompt** into Claude in VS Code (or claude.ai) and Claude wi
 
 ## Task: Complete Email Integration Implementation with Resend
 
-I have a React Native (Expo) history learning app called Chronicles with a feedback system. Currently emails don't send when users submit bug reports or ideas. I need you to build the **complete solution** including:
+I have a React Native (Expo) history learning app called Histora with a feedback system. Currently emails don't send when users submit bug reports or ideas. I need you to build the **complete solution** including:
 
 1. Working Supabase edge function with Resend integration
 2. Complete setup instructions
@@ -15,7 +15,7 @@ I have a React Native (Expo) history learning app called Chronicles with a feedb
 
 ### Current Setup
 
-**App:** React Native/Expo (Chronicles - Dutch history learning app)
+**App:** React Native/Expo (Histora - Dutch history learning app)
 
 **Supabase Table:** `public.feedback`
 ```
@@ -152,7 +152,7 @@ await supabase.from('feedback').insert({
 I prefer **Option 1** because I want to understand each step and verify it works before moving forward.
 
 ### My Supabase Project Details (for reference)
-- Project: Chronicles app
+- Project: Histora app
 - Table: public.feedback (already exists with RLS)
 - Auth method: Supabase Auth with email
 - Frontend: React Native/Expo

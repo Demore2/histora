@@ -961,12 +961,13 @@ Data Safety answers, so the page and the form can't drift apart. If you change w
 change both.
 
 `PRIVACY_BELEID_URL` is the single place the URL lives, and **it is now a real, reachable URL** —
-`https://demore2.github.io/chronicles/privacy-policy.html`, served by GitHub Pages out of `docs/`,
+`https://demore2.github.io/histora/privacy-policy.html`, served by GitHub Pages out of `docs/`,
 alongside `terms-of-service.html`. `privacyBeleidIsGepubliceerd` derives from it, and Profiel's
 "About" section renders only when it's true, so a placeholder can never ship as a dead link.
-**The published pages lag the repo by one rebrand**: the live copies still say "Chronicles"
-throughout, because the rebrand commit has not been pushed to `origin/master`. Pushing republishes
-them; check with `curl -s <url> | grep -c Chronicles` afterwards.
+**The repository was renamed `chronicles` → `histora` on 2026-10-21**, and with it every Pages URL.
+A separate repo `Demore2/chronicles` holds nothing but redirect pages (plus a `404.html` that rewrites
+any path), because build 9 and older Discord messages still carry `/chronicles/` links. Don't delete
+that repo while a build with the old URLs can still be installed.
 
 ### Account deletion & data requests (`supabase/functions/delete-account`, `useDeleteAccount.ts`)
 
@@ -1045,7 +1046,7 @@ Wat voor allebei geldt:
 #### Discord (`send-feedback-discord`)
 
 - **De webhook-URL's staan uitsluitend in de secrets `DISCORD_WEBHOOK_BUG` / `DISCORD_WEBHOOK_IDEE`**,
-  nooit in de code: een webhook-URL is een wachtwoord en `Demore2/chronicles` is publiek. De oude
+  nooit in de code: een webhook-URL is een wachtwoord en `Demore2/histora` is publiek. De oude
   URL's in de git-geschiedenis zijn op 2026-10-21 in Discord verwijderd en geven 404.
 - **`allowed_mentions: { parse: [] }` staat in elke POST.** Het bericht is door een gebruiker
   getypt; zonder die regel is `@everyone` in een bugmelding een `@everyone` in de server. Mentions
@@ -1061,7 +1062,7 @@ Wat voor allebei geldt:
 #### Het feedbackbord (`docs/beheer/index.html`, `supabase/feedback-beheer-migratie.sql`)
 
 Een monday-achtig bord waarop Quinten en Mike tickets toewijzen, op "in behandeling" zetten en
-afvinken. Statische pagina in `docs/`, dus GitHub Pages serveert hem (`/chronicles/beheer/`);
+afvinken. Statische pagina in `docs/`, dus GitHub Pages serveert hem (`/histora/beheer/`);
 lokaal: `npx http-server docs -p 5510`.
 
 - **Toegang is `public.beheerders` (op e-mail), niet premium.** Premium kan straks iedereen kopen.
@@ -1648,8 +1649,7 @@ counts), full i18n (en/nl/fr/de) with a language picker, theme picker, email pre
   The three *local* notifications (daily reminder, streak, milestones) do work.
 - **GDPR** — account deletion genuinely deletes (edge function deployed, cascade verified, local
   wipe correct), the data-request mailto is live, and the **privacy policy and terms of service are
-  published** at `https://demore2.github.io/chronicles/` (both return 200). What is still open is a
-  push: the live pages are the pre-rebrand copies and still read "Chronicles".
+  published** at `https://demore2.github.io/histora/` (renamed from `/chronicles/`, which redirects).
 
 ### ⏳ IN PROGRESS / NOT STARTED
 
@@ -1740,27 +1740,24 @@ Known gaps:
   still just wait in the dashboard.
 - ~~The privacy policy is written but not published~~ — **it is published**, and so are the terms
   of service; `PRIVACY_BELEID_URL` and `VOORWAARDEN_URL` both resolve, so Instellingen shows the
-  links. The remaining step is pushing the rebrand so the live pages stop saying "Chronicles" —
-  see "Legal & privacy" below.
+  links. See "Legal & privacy" for the repo rename.
 - **All eight store screenshots are stale.** Fase 8 fixed the reader's safe-area inset, the
   "chapters done" counter and the streak, so `phone-3/4/7` show a header that no longer looks
   like that and the excluded Profiel/Voortgang shots are now worth taking. Recapture before the
   production build — see `store/listing.md`.
-- **The app is called Histora; four identifiers still say chronicles, on purpose.** The rebrand
-  changed every user-visible name and every document, and deliberately left the strings that are
-  an *identity* rather than a name: `android.package` = `com.chronicles.historyapp` (the Play
+- **The app is called Histora; three identifiers still say chronicles, on purpose.** They are an
+  *identity* rather than a name: `android.package` = `com.chronicles.historyapp` (the Play
   identity — change it and it is a different app, with a different listing and no update path),
-  the GitHub Pages URLs `https://demore2.github.io/chronicles/…` in `constants/juridisch.ts` and
-  `constants/app-info.ts` (the path is the repository name; renaming the repo is a step outside
-  this repo), the keystore alias `chronicles`, and the test-account domain `@chronicles.app`.
+  the keystore alias `chronicles` (it lives inside the upload key), and the test-account domain
+  `@chronicles.app` (those are logins). The repo, the Pages URLs and the EAS slug were renamed to
+  `histora` on 2026-10-21.
   The story text in `oudheid/personen.ts` also still reads "chronicles" in three places — that
   is the English noun in Ashoka’s story, not the brand. Do not "finish the rebrand" by
   touching any of these.
-- 🚩 **`app.json`’s slug is now `histora`, but the EAS project is still named `chronicles-app`.**
-  `extra.eas.projectId` is what actually binds the two, so a build still resolves, but eas-cli
-  warns on the mismatch and offers to reconcile it. Rename the project on expo.dev (Project
-  settings → name) to match, or put the slug back — one or the other, not both drifting.
-- **The release pipeline is linked**: the project is `@quinten1234/chronicles-app`
+- **`app.json`’s slug is `histora`, and the EAS project must carry the same name.**
+  `extra.eas.projectId` is what binds the two, so a build resolves either way, but eas-cli warns
+  when slug and project name differ. The project was `chronicles-app` until 2026-10-21.
+- **The release pipeline is linked**: the project is `@quinten1234/histora` (was `chronicles-app`)
   (`extra.eas.projectId` in `app.json`), EAS holds the Android keystore
   (`Build Credentials xHGwqm8DSF`) and the Supabase env vars. What still needs the Play Console —
   developer account, service-account key for `eas submit`, the listing itself — is in

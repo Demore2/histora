@@ -10,7 +10,7 @@ I want bug reports and ideas to go directly to my Discord server via webhooks. H
 
 ### My Setup
 
-**App:** React Native/Expo (Chronicles - Dutch history learning app)
+**App:** React Native/Expo (Histora - Dutch history learning app)
 
 **Supabase Table:** `public.feedback`
 ```
