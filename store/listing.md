@@ -57,7 +57,7 @@ Contemporary Era — Nelson Mandela, Steve Jobs, Malala Yousafzai
 
 HOW IT READS
 
-Chapters unlock one at a time, so you never have to remember where you left off. Every chapter opens with an illustrated scene, and quotes, key dates and short "did you know" notes break the text up instead of burying you in it.
+Chapters unlock one at a time, so you never have to remember where you left off. Every chapter opens with an illustrated scene, and the people speak in their own words where the sources let them. Many chapters end with a short quiz or a poll that shows how other readers answered.
 
 COLLECT THE PEOPLE
 
@@ -73,10 +73,12 @@ One reminder a day, at a time you pick, and you can switch it off.
 
 The interface is available in English, Dutch, French and German. The stories themselves are in English. Light and dark themes, and a reading streak if you want one.
 
-Histora is free.
+FREE AND PRO
+
+Histora is free to download and read: two new stories a day, and every story you have started stays open. Histora Pro removes the daily limit. It is a monthly or yearly subscription through Google Play, with a 7-day free trial for new subscribers, and you can cancel any time in the Play Store.
 ```
 
-(1.710/4000.)
+(2.054/4000.)
 
 ---
 
