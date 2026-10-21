@@ -1749,15 +1749,17 @@ Known gaps:
   *identity* rather than a name: `android.package` = `com.chronicles.historyapp` (the Play
   identity — change it and it is a different app, with a different listing and no update path),
   the keystore alias `chronicles` (it lives inside the upload key), and the test-account domain
-  `@chronicles.app` (those are logins). The repo, the Pages URLs and the EAS slug were renamed to
-  `histora` on 2026-10-21.
+  `@chronicles.app` (those are logins). The repo and the Pages URLs were renamed to `histora` on
+  2026-10-21; the EAS slug stays `chronicles-app` (see below).
   The story text in `oudheid/personen.ts` also still reads "chronicles" in three places — that
   is the English noun in Ashoka’s story, not the brand. Do not "finish the rebrand" by
   touching any of these.
-- **`app.json`’s slug is `histora`, and the EAS project must carry the same name.**
-  `extra.eas.projectId` is what binds the two, so a build resolves either way, but eas-cli warns
-  when slug and project name differ. The project was `chronicles-app` until 2026-10-21.
-- **The release pipeline is linked**: the project is `@quinten1234/histora` (was `chronicles-app`)
+- **`app.json`’s slug stays `chronicles-app`, on purpose.** Expo cannot rename the slug of an
+  existing project (only the display name, which is now `histora`), and eas-cli *refuses*
+  `build`/`submit`/`project:info` when `app.json`’s slug differs from the project’s. The slug is
+  invisible to users. A new project with slug `histora` would mean re-linking the upload key, the
+  EAS env vars and the versionCode counter — not worth it for a hidden key.
+- **The release pipeline is linked**: the project is `@quinten1234/chronicles-app` (display name `histora`)
   (`extra.eas.projectId` in `app.json`), EAS holds the Android keystore
   (`Build Credentials xHGwqm8DSF`) and the Supabase env vars. What still needs the Play Console —
   developer account, service-account key for `eas submit`, the listing itself — is in
