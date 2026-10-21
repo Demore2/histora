@@ -61,6 +61,41 @@ de enige plek waar de URL staat.
 De pagina en het formulier moeten hetzelfde zeggen. Wat hier staat, en dus wat je in de Play
 Console aankruist:
 
+### ✅ Geldend vanaf 21 oktober 2026 (1.1.0+: billing aan, Firebase uit)
+
+Dit is de stand die nu ingevuld hoort te zijn. Alles onder dit kopje is ouder en blijft staan als
+achtergrond; bij verschil wint deze tabel.
+
+**Algemeen:** verzamelt de app gegevens → **Yes** · versleuteld onderweg → **Yes** (alles via
+HTTPS) · verwijderen mogelijk → **Yes**, "Users can delete their account in the app" én "Users can
+request that their data is deleted", met als URL `https://demore2.github.io/histora/contact.html`.
+
+**"Shared" is overal *No*.** Supabase, RevenueCat, Google Play en Discord verwerken in onze
+opdracht (*service providers*); volgens Google's definitie is dat geen *delen*. Niets gaat naar
+een derde voor diens eigen doeleinden.
+
+| Categorie → type | Collected | Shared | Doel | Optioneel? | Waar het vandaan komt |
+|---|---|---|---|---|---|
+| Personal info → **Email address** | Yes | No | Account management | Required | Supabase Auth; ook in de feedbackmelding in Discord |
+| Personal info → **User IDs** | Yes | No | Account management, App functionality | Required | Supabase-user-id; RevenueCat gebruikt het als `appUserID` |
+| Financial info → **Purchase history** | Yes | No | App functionality | **Optional** (alleen wie Pro neemt) | `user_subscriptions` + RevenueCat |
+| App activity → **App interactions** | Yes | No | App functionality | Required | voortgang, ontgrendelde personages, `user_daily_reads` (dagteller) |
+| App activity → **Other user-generated content** | Yes | No | App functionality | Optional | feedbackberichten, peiling- en keuze-antwoorden |
+| Location (approximate/precise) | No | — | — | — | geen Firebase, geen locatiepermissie |
+| Device or other IDs | No | — | — | — | geen Firebase, geen pushtoken |
+| Photos | No | — | — | — | de avatar blijft op het toestel |
+| Crash logs / diagnostics | No | — | — | — | |
+
+Wordt `EXPO_PUBLIC_FIREBASE_ENABLED` ooit `true`, dan komen er App interactions (Analytics),
+Approximate location en Device or other IDs bij, en gaat *Shared* daar op Google — zie de oudere
+tabel hieronder. Controleer bij een upgrade van `react-native-purchases` ook RevenueCat's eigen
+Data Safety-richtlijn in hun documentatie:
+die zegt welke typen hun SDK zelf verzamelt.
+
+---
+
+### Ouder (vóór billing) — ter achtergrond
+
 > **Deze tabel is verouderd en moet vóór de productiebuild opnieuw worden ingevuld.** Ze is
 > geschreven voor een app die niets verstuurde. Daarna kwamen er een account (R8.AUTH), een
 > voortgangssync (R8.SYNC-B), interactief lezen en nu Firebase Analytics bij. De regels hieronder

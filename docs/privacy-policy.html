@@ -59,12 +59,13 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">Histora &mdash; last updated 20 August 2026</p>
+  <p class="meta">Histora &mdash; last updated 21 October 2026</p>
 
   <div class="callout">
     <p><strong>In short:</strong> Histora needs an account, so it stores your e-mail address and
-    your reading progress on a server. It also measures how the app is used. We sell nothing to
-    anyone, and the stories themselves are read from the app, not from us.</p>
+    your reading progress on a server. If you subscribe to Pro, Google Play takes the payment and we
+    never see your card. We sell no data to anyone, and the stories themselves are read from the
+    app, not from us.</p>
   </div>
 
   <h2>Who we are</h2>
@@ -94,7 +95,12 @@
     <li>your reading streak and the date you last read something;</li>
     <li>your notification preferences &mdash; whether the daily reminder is on and the time you
     picked for it, your time zone, and whether you allow the two kinds of notification we send
-    from our servers.</li>
+    from our servers;</li>
+    <li>which <em>new</em> stories you opened today and when, so that the free daily limit counts
+    per account rather than per phone;</li>
+    <li>your invite code, the account identifiers of friends who signed up with it, and the
+    rewards that earned you. Nothing about your contacts is read or uploaded &mdash; an invitation
+    is a message you send yourself, from your own messaging app.</li>
   </ul>
 
   <h3>Your answers</h3>
@@ -103,9 +109,24 @@
   <em>are</em> stored, one row per question, so the app can show how other readers answered. Other
   readers only ever see totals; nobody can look up how you voted.</p>
 
+  <h3>Your subscription</h3>
+  <p>Histora Pro is a monthly or yearly subscription bought through <strong>Google Play</strong>.
+  Google takes the payment; we never receive your card or bank details. To know whether your
+  account has Pro, we store against your account the plan you chose, whether you are in a free
+  trial, the date it renews or ends, whether it renews automatically, and the store it was bought
+  in.</p>
+  <p>Purchases are checked and kept in sync by <strong>RevenueCat</strong>, a subscription service
+  that receives the purchase from Google Play and from the app. RevenueCat holds your account
+  identifier (a random code, not your e-mail address), the purchase token Google issues, the
+  product, the purchase, renewal and expiry dates, price, currency and country, and basic
+  technical details such as the app version, the Android version and the app language.</p>
+
   <h3>Feedback you send</h3>
   <p>If you send us a bug report or an idea from inside the app, we store the message you typed
-  together with the app version and the platform. Feedback goes nowhere else.</p>
+  together with the app version and the platform. So that we see it, the message is also posted,
+  with your e-mail address and your account identifier, to a private channel in the
+  <strong>Discord</strong> workspace of the two people who build Histora. Nobody else has access
+  to that channel. We use your e-mail address only to answer you.</p>
 
   <h3>Usage statistics</h3>
   <p><strong>This version of Histora sends no usage statistics.</strong> It contains no
@@ -158,23 +179,28 @@
     and reading tips are on unless you switch them off in <em>Settings &rarr; Email</em>; offers
     are off until you switch them on. Once we do start sending, every message carries an
     unsubscribe link at the bottom, and that link is the way to stop them for good;</li>
-    <li>how many stories you have opened today, for the free daily limit;</li>
-    <li>your invite code and who joined with it. The code is derived from your account
-    identifier; alongside it we store the account identifiers of friends who signed up with it and
-    how many rewards that earned you. Nothing about your contacts is read or uploaded &mdash; an
-    invitation is a message you send yourself, from your own messaging app;</li>
     <li>a copy of your reading progress, so the app also works without a connection.</li>
   </ul>
 
   <h2>Who else sees it</h2>
-  <p>We do not sell data and we do not share it for advertising. One company processes data on
-  our behalf, because the app could not work without it:</p>
+  <p>We do not sell data and we do not share it for advertising. These companies process data
+  on our behalf, each only for the job described:</p>
   <ul>
     <li><strong>Supabase</strong> (Supabase, Inc.) &mdash; the database and sign-in service
-    holding your account, your reading progress, your poll and choice answers, your invite code
-    and your feedback.</li>
+    holding your account, your reading progress, your poll and choice answers, your invite code,
+    your subscription status and your feedback.</li>
+    <li><strong>Google</strong> (Google Play) &mdash; only if you subscribe: Google takes the
+    payment and manages the subscription under its own
+    <a href="https://policies.google.com/privacy">privacy policy</a>.</li>
+    <li><strong>RevenueCat</strong> (RevenueCat, Inc.) &mdash; only if you subscribe: verifies
+    purchases and keeps their status in sync, as described under &ldquo;Your subscription&rdquo;.</li>
+    <li><strong>Discord</strong> (Discord Inc.) &mdash; only if you send feedback: hosts the private
+    channel where your message reaches us.</li>
   </ul>
-  <p>Everything travels over an encrypted connection (HTTPS).</p>
+  <p>RevenueCat and Discord are based in the United States, so data you send them may be processed
+  there, under the safeguards those companies provide for transfers from the EU (such as the
+  EU&ndash;US Data Privacy Framework or the European Commission&rsquo;s standard contractual
+  clauses). Everything travels over an encrypted connection (HTTPS).</p>
 
   <h2>Your rights</h2>
   <p>If you are in the European Economic Area or the United Kingdom you have the right to access,
@@ -189,6 +215,13 @@
     sent are removed from our database in a single step, and the same data is cleared from the device you are
     holding. There is no backup to restore from and no way to undo it. You do not need to write to
     us and we do not keep a copy.</li>
+    <li><strong>A subscription is not cancelled by deleting your account.</strong> Google Play
+    keeps billing until you cancel it yourself, in the Play Store under <em>Payments &amp;
+    subscriptions &rarr; Subscriptions</em> (or <em>Settings &rarr; Manage subscription</em> in
+    the app). Cancel first, then delete.</li>
+    <li><strong>What deleting does not reach.</strong> A copy of feedback you sent stays in our
+    private Discord channel, and RevenueCat keeps a record of past purchases. Write to us and we
+    remove both. Google keeps its own record of purchases under its own policy.</li>
     <li><strong>Ask for a copy of your data</strong> &mdash; <em>Settings &rarr; Request my
     data</em>, which opens an e-mail to us with the request already written. We answer within 30
     days, normally much sooner. There is no automatic export button; the data is sent to the
@@ -257,6 +290,8 @@
     silently stop after every reboot.</li>
     <li><code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> &mdash; used to sign you in,
     synchronise your progress and load the polls and choice points.</li>
+    <li><code>com.android.vending.BILLING</code> &mdash; lets the app open Google Play&rsquo;s
+    payment screen when you choose to subscribe. It gives no access to your payment details.</li>
   </ul>
   <p>The app declares no permission for advertising or for identifying you across other apps, and
   no permission relating to push messaging: the reminder is scheduled by your own
@@ -275,10 +310,9 @@
   created an account, write to us and we will remove it.</p>
 
   <h2>Advertising and payment</h2>
-  <p>This version of Histora shows <strong>no advertising</strong> and contains <strong>no
-  working purchase</strong>. A subscription screen exists and describes a paid tier, but nothing
-  can be bought yet, and the screen says so itself. If real advertising or a real purchase is added
-  in a future version, this policy is updated before that version is published.</p>
+  <p>Histora shows <strong>no advertising</strong> and contains no advertising SDK. The only
+  payment is the optional Pro subscription, handled by Google Play as described above. If
+  advertising is ever added, this policy is updated before that version is published.</p>
 
   <h2>Changes to this policy</h2>
   <p>If this policy changes, the updated version is published on this page with a new date at the
@@ -296,7 +330,7 @@
   e-mail at all in this version.</p>
 
   <footer>
-    <p>Histora &mdash; Privacy Policy &mdash; 20 August 2026 &mdash;
+    <p>Histora &mdash; Privacy Policy &mdash; 21 October 2026 &mdash;
     <a href="./terms-of-service.html">Terms of Service</a></p>
   </footer>
 </main>

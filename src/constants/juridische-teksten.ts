@@ -22,7 +22,7 @@ import { SUPPORT_EMAIL } from '@/constants/app-info';
  * verandert — een automatische "vandaag" zou elke dag een nieuwe versie suggereren en is precies
  * het tegenovergestelde van wat "laatst bijgewerkt" moet vertellen.
  */
-export const JURIDISCH_BIJGEWERKT = '19 August 2026';
+export const JURIDISCH_BIJGEWERKT = '21 October 2026';
 
 /**
  * Eén alinea. `label` is de vetgedrukte aanhef ("What we collect:"); zonder label is het gewoon
@@ -41,6 +41,11 @@ export const VOORWAARDEN_ALINEAS: JuridischeAlinea[] = [
   {
     tekst:
       'Histora provides historical stories and educational content, available in a Free tier and an optional Pro subscription with additional features.',
+  },
+  {
+    label: 'Pro subscription',
+    tekst:
+      'a monthly or yearly subscription bought through Google Play, at the price Google Play shows before you confirm. New subscribers get a 7-day free trial. It renews automatically until you cancel it in the Play Store (Payments & subscriptions → Subscriptions); you keep Pro until the end of the paid period. Deleting your Histora account does not cancel it. Payment and refunds follow Google Play’s terms, and your statutory consumer rights are not affected.',
   },
   {
     tekst:
@@ -70,8 +75,10 @@ export const PRIVACY_TITEL = 'Privacy Policy — Histora';
  * Een beleid dat méér verzameling opgeeft dan er plaatsvindt is net zo goed onjuist als een dat
  * er minder opgeeft, en Play legt deze tekst naast het Data Safety-formulier.
  *
- * De verwerker die er wél is, is Supabase: account, voortgang, peiling- en keuze-antwoorden,
- * uitnodigingen en feedback staan daar. Zet je Firebase later aan, zet dan de alinea over
+ * De verwerkers die er wél zijn: Supabase (account, voortgang, peiling- en keuze-antwoorden,
+ * uitnodigingen, dagteller, abonnementsstatus, feedback), Google Play en RevenueCat (alleen bij
+ * een abonnement) en Discord (alleen bij feedback: het bericht plus e-mailadres in het
+ * privékanaal van de makers). Zet je Firebase later aan, zet dan de alinea over
  * gebruiksstatistieken terug — `docs/privacy-policy.html` heeft die tekst nog, achter een
  * HTML-commentaar, zodat hij niet opnieuw geschreven hoeft te worden.
  */
@@ -82,7 +89,17 @@ export const PRIVACY_ALINEAS: JuridischeAlinea[] = [
   {
     label: 'What we collect',
     tekst:
-      'your account (email address and username), your reading progress, the characters you have unlocked, your answers to polls and choice points, and any feedback you send us from inside the app. We do not collect the text you read, and quiz answers are never stored.',
+      'your account (email address and username), your reading progress, the characters you have unlocked, your answers to polls and choice points, which new stories you opened today (for the free daily limit), your invite code, your subscription status, and any feedback you send us from inside the app. We do not collect the text you read, and quiz answers are never stored.',
+  },
+  {
+    label: 'Subscription',
+    tekst:
+      'if you subscribe to Pro, Google Play takes the payment and we never see your card. RevenueCat checks the purchase and keeps its status in sync; it receives your account identifier (not your email), the purchase token, product, dates, price, currency, country and basic app and device details.',
+  },
+  {
+    label: 'Feedback',
+    tekst:
+      'a message you send from inside the app is also posted, with your email address, to a private channel in the Discord workspace of the two people who build Histora, so that we see it and can reply.',
   },
   {
     label: 'Account',
@@ -96,7 +113,7 @@ export const PRIVACY_ALINEAS: JuridischeAlinea[] = [
   {
     label: 'On this device only',
     tekst:
-      'your language, your theme, your profile picture, your email preferences and your daily reading count stay on this phone and are never uploaded.',
+      'your language, your theme, your profile picture and your email preferences stay on this phone and are never uploaded.',
   },
   {
     label: 'Email',
@@ -106,12 +123,12 @@ export const PRIVACY_ALINEAS: JuridischeAlinea[] = [
   {
     label: 'Your rights (EU/GDPR)',
     tekst:
-      'you can access, correct, or delete your data at any time. Delete your account from Settings, or contact us for other requests.',
+      'you can access, correct, or delete your data at any time. Delete your account from Settings, or contact us for other requests. Deleting your account does not cancel a Google Play subscription, and copies in our Discord channel and at RevenueCat are removed on request.',
   },
   {
     label: 'Third parties',
     tekst:
-      'your data is stored and processed on our behalf by Supabase (Supabase, Inc.). We do not sell your data and we do not share it for advertising.',
+      'your data is processed on our behalf by Supabase (database and sign-in), and only where relevant by Google Play (payments), RevenueCat (subscription status) and Discord (feedback). RevenueCat and Discord are US companies and may process data there. We do not sell your data and we do not share it for advertising.',
   },
   {
     label: 'Changes',
