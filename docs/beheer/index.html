@@ -1722,6 +1722,7 @@
     if (document.hidden || !staat.ik) return;
     if (staat.tab === 'tickets') laad(true);
     else if (staat.tab === 'hub') laadNotities(true);
+    else if (staat.tab === 'stats') laadStats(true);
   }
   setInterval(ververs, VERVERS_MS);
   document.addEventListener('visibilitychange', ververs);

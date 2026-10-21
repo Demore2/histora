@@ -1081,6 +1081,11 @@ lokaal: `npx http-server docs -p 5510`.
   afgerond — alleen voor de beheerders); en *Statistieken* (`beheer_statistieken()`, één jsonb).
 - **Interne tickets (`feedback.bron = 'intern'`) komen bewust niet in Discord** — beide triggers
   stoppen er vroeg op. Discord is alleen voor lezersfeedback; dat is een wens van de eigenaar.
+- **Premium-meldingen** (`send-premium-discord` + trigger `premium_melding_na_wijziging` op
+  `user_subscriptions`, `supabase/premium-melding-migratie.sql`): proef / betalend (met ping naar
+  de beheerders) en opgezegd / verlopen, afgeleid uit de overgang oud→nieuw zodat een gewone
+  verlenging stil blijft. Rijen zonder `product_id` (handmatig premium) blijven stil. Webhook in
+  secret `DISCORD_WEBHOOK_PREMIUM`.
 - **Statistieken tellen accounts, geen downloads** (die staan in Google Play), en "actief" is elke
   schrijfactie of login in de periode; de app openen zonder iets te doen telt niet. Beheerders en
   `@chronicles.app`-testaccounts tellen standaard niet mee.
