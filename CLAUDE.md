@@ -1091,7 +1091,8 @@ lokaal: `npx http-server docs -p 5510`.
   stoppen er vroeg op. Discord is alleen voor lezersfeedback; dat is een wens van de eigenaar.
 - **Premium-meldingen** (`send-premium-discord` + trigger `premium_melding_na_wijziging` op
   `user_subscriptions`, `supabase/premium-melding-migratie.sql`): proef / betalend (met ping naar
-  de beheerders) en opgezegd / verlopen, afgeleid uit de overgang oud→nieuw zodat een gewone
+  de beheerders) en opgezegd; *verlopen* detecteert de trigger wel, maar de function meldt hem
+  bewust niet (wens van de eigenaars: alleen gekocht en opgezegd), afgeleid uit de overgang oud→nieuw zodat een gewone
   verlenging stil blijft. Rijen zonder `product_id` (handmatig premium) blijven stil. Webhook in
   secret `DISCORD_WEBHOOK_PREMIUM`.
 - **Statistieken tellen accounts, geen downloads** (die staan in Google Play), en "actief" is elke

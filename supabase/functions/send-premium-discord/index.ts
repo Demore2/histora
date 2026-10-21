@@ -9,7 +9,7 @@
  *   proef      gratis → premium met een proefperiode           (ping)
  *   betalend   gratis → premium zonder proef, of proef → betaald (ping)
  *   opgezegd   auto_renew aan → uit terwijl premium nog loopt
- *   verlopen   premium → gratis
+ *   verlopen   premium → gratis                              (wordt niet gemeld, zie hieronder)
  *
  * Bewust zo:
  * - **Alleen de service role**, net als `send-feedback-discord`: `verify_jwt` laat ook een
@@ -87,6 +87,11 @@ Deno.serve(async (req: Request) => {
     return antwoord(400, { error: 'ongeldige_body' });
   }
   if (!userId || !gebeurtenis) return antwoord(400, { error: 'user_id_of_gebeurtenis_ontbreekt' });
+
+  // Alleen gekocht (proef/betalend) en opgezegd komen in het kanaal — wens van de eigenaars,
+  // 2026-10-21. Een verlopen abonnement volgt op een opzegging die al gemeld is en is dan ruis.
+  // De trigger blijft hem wel doorgeven, zodat terugzetten één regel hier is.
+  if (gebeurtenis === 'verlopen') return antwoord(200, { ok: true, overgeslagen: 'verlopen_wordt_niet_gemeld' });
 
   const admin = createClient(url, serviceKey, { auth: { persistSession: false } });
 
