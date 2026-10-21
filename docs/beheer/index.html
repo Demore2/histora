@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Histora Feedbackbord</title>
+<!--
+  Het feedbackbord voor Quinten en Mike. Statisch, zodat GitHub Pages het vanuit docs/ serveert.
+
+  Er staat hier niets geheims in: de publishable key mag publiek zijn, en wat je ziet bepaalt de
+  database. Inloggen gaat met je gewone Histora-account; daarna vraagt de pagina `beheer_ik()`
+  aan, en alleen wie in `public.beheerders` staat (op e-mail) krijgt iets terug. Alle lees- en
+  schrijfwerk loopt via de security-definer-functies uit supabase/feedback-beheer-migratie.sql —
+  een gewone lezer, ook een premium-lezer, krijgt `geen_beheerder`.
+
+  Wat lezers getypt hebben komt hier uitsluitend via textContent op het scherm, nooit via
+  innerHTML: dit is de tweede plek waar door gebruikers getypte tekst bij iemand anders belandt.
+-->
+<style>
+  :root {
+    --bg: #f6f7fb;
+    --panel: #ffffff;
+    --text: #323338;
+    --muted: #676879;
+    --line: #e6e9ef;
+    --hover: #f5f6f8;
+    --accent: #0073ea;
+    --shadow: 0 4px 16px rgba(0, 0, 0, .12);
+
+    --st-nieuw: #c4c4c4;
+    --st-bezig: #fdab3d;
+    --st-klaar: #00c875;
+    --pr-hoog: #e2445c;
+    --pr-normaal: #a25ddc;
+    --pr-laag: #579bfc;
+    --bug: #e2445c;
+    --idee: #579bfc;
+    --grp-open: #e2445c;
+    --grp-toegewezen: #fdab3d;
+    --grp-klaar: #00c875;
+    --on-colour: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #181b34;
+      --panel: #1f2341;
+      --text: #d5d8df;
+      --muted: #9699a6;
+      --line: #393d5c;
+      --hover: #2b2f52;
+      --accent: #579bfc;
+      --shadow: 0 4px 16px rgba(0, 0, 0, .5);
+      --st-nieuw: #5c5f78;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #181b34;
+    --panel: #1f2341;
+    --text: #d5d8df;
+    --muted: #9699a6;
+    --line: #393d5c;
+    --hover: #2b2f52;
+    --accent: #579bfc;
+    --shadow: 0 4px 16px rgba(0, 0, 0, .5);
+    --st-nieuw: #5c5f78;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 14px;
+    min-height: 100vh;
+  }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  [hidden] { display: none !important; }
+
+  /* ---------- Login ---------- */
+  .login {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 16px;
+  }
+  .login form {
+    background: var(--panel);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 32px 28px;
+    width: 100%;
+    max-width: 380px;
+    display: grid;
+    gap: 14px;
+  }
+  .login h1 { font-size: 22px; }
+  .login p { color: var(--muted); line-height: 1.5; }
+  .login label { display: grid; gap: 6px; font-weight: 600; font-size: 13px; }
+  .login input {
+    border: 1px solid var(--line);
+    background: var(--bg);
+    border-radius: 6px;
+    padding: 10px 12px;
+  }
+  .knop {
+    border: 0;
+    border-radius: 6px;
+    padding: 10px 14px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .knop.stil {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--line);
+  }
+  .knop:disabled { opacity: .6; cursor: default; }
+  .fout { color: var(--pr-hoog); font-size: 13px; min-height: 1em; }
+
+  /* ---------- Bord ---------- */
+  header.kop {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 24px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+  header.kop h1 { font-size: 20px; flex: 1; min-width: 0; }
+  header.kop h1 small { color: var(--muted); font-weight: 400; font-size: 14px; margin-left: 6px; }
+  .wie { display: flex; align-items: center; gap: 8px; color: var(--muted); }
+
+  .balk {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 14px 24px;
+    align-items: center;
+  }
+  .balk input[type="search"], .balk select {
+    border: 1px solid var(--line);
+    background: var(--panel);
+    border-radius: 6px;
+    padding: 7px 10px;
+  }
+  .balk input[type="search"] { min-width: 200px; flex: 1; max-width: 320px; }
+  .chip-knop {
+    border: 1px solid var(--line);
+    background: var(--panel);
+    border-radius: 6px;
+    padding: 7px 12px;
+    cursor: pointer;
+  }
+  .chip-knop[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+  .balk .rechts { margin-left: auto; color: var(--muted); font-size: 12px; }
+
+  main.bord { padding: 0 24px 48px; display: grid; gap: 28px; }
+
+  .groep-kop {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    user-select: none;
+    background: none;
+    border: 0;
+    text-align: left;
+  }
+  .groep-kop h2 { font-size: 17px; color: var(--grp); }
+  .groep-kop .pijl { color: var(--grp); transition: transform .15s; display: inline-block; }
+  .groep[data-dicht="true"] .groep-kop .pijl { transform: rotate(-90deg); }
+  .groep[data-dicht="true"] .tabel { display: none; }
+  .teller { color: var(--muted); font-size: 13px; }
+
+  .tabel {
+    background: var(--panel);
+    border-radius: 8px;
+    overflow: hidden;
+    border-left: 6px solid var(--grp);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .06);
+  }
+  .rij {
+    display: grid;
+    grid-template-columns: minmax(240px, 1fr) 90px 130px 150px 120px 110px;
+    align-items: stretch;
+    border-bottom: 1px solid var(--line);
+    min-height: 40px;
+  }
+  .rij:last-child { border-bottom: 0; }
+  .rij.kopregel {
+    color: var(--muted);
+    font-size: 12px;
+    min-height: 34px;
+  }
+  .rij.kopregel > div { justify-content: center; }
+  .rij.kopregel > div:first-child { justify-content: flex-start; }
+  .rij > div {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-right: 1px solid var(--line);
+    min-width: 0;
+  }
+  .rij > div:last-child { border-right: 0; }
+  .rij.ticket:hover { background: var(--hover); }
+  .rij.ticket.actief { background: var(--hover); }
+
+  .tekst-cel {
+    cursor: pointer;
+    gap: 8px;
+  }
+  .tekst-cel .tekst {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .tekst-cel .notitie-stip {
+    flex: none;
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .soort { font-size: 12px; font-weight: 600; gap: 6px; justify-content: center; }
+  .soort.bug { color: var(--bug); }
+  .soort.idee { color: var(--idee); }
+
+  .vol {
+    padding: 0 !important;
+  }
+  .vol > button {
+    width: 100%;
+    height: 100%;
+    min-height: 40px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--on-colour);
+    background: var(--kleur, var(--st-nieuw));
+    transition: filter .1s;
+  }
+  .vol > button:hover { filter: brightness(1.08); }
+  .vol > button.leeg { background: transparent; color: var(--muted); font-weight: 400; }
+  .vol > button.leeg:hover { background: var(--hover); filter: none; }
+
+  .eigenaar-cel { justify-content: center; }
+  .eigenaar-knop {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 16px;
+  }
+  .eigenaar-knop:hover { background: var(--hover); }
+  .avatar {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    display: inline-grid;
+    place-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    flex: none;
+  }
+  .avatar.leeg {
+    background: transparent;
+    border: 1.5px dashed var(--muted);
+    color: var(--muted);
+  }
+
+  .datum { color: var(--muted); font-size: 12px; justify-content: center; }
+
+  .leeg-groep { padding: 14px 16px; color: var(--muted); }
+
+  /* ---------- Menu ---------- */
+  .menu {
+    position: fixed;
+    z-index: 30;
+    background: var(--panel);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 8px;
+    display: grid;
+    gap: 4px;
+    min-width: 170px;
+  }
+  .menu button {
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 10px;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+  }
+  .menu button.kleur {
+    background: var(--kleur);
+    color: var(--on-colour);
+    font-weight: 600;
+    justify-content: center;
+  }
+  .menu button:hover { filter: brightness(1.08); background-color: var(--hover); }
+  .menu button.kleur:hover { background: var(--kleur); }
+
+  /* ---------- Zijpaneel ---------- */
+  .paneel {
+    position: fixed;
+    top: 0; right: 0; bottom: 0;
+    width: min(520px, 100%);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(105%);
+    transition: transform .2s ease;
+  }
+  .paneel.open { transform: none; }
+  .paneel-kop {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 20px;
+    border-bottom: 1px solid var(--line);
+  }
+  .paneel-kop h2 { font-size: 17px; flex: 1; }
+  .sluit {
+    border: 0; background: none; cursor: pointer;
+    font-size: 22px; line-height: 1; color: var(--muted);
+    padding: 4px 8px; border-radius: 4px;
+  }
+  .sluit:hover { background: var(--hover); }
+  .paneel-inhoud { padding: 20px; overflow-y: auto; display: grid; gap: 20px; align-content: start; }
+  .bericht {
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1.55;
+    background: var(--bg);
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .eigenschappen {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 8px 12px;
+    font-size: 13px;
+  }
+  .eigenschappen dt { color: var(--muted); }
+  .eigenschappen dd { word-break: break-all; }
+  .eigenschappen a { color: var(--accent); }
+  .paneel-acties { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .paneel-acties .vol > button { border-radius: 6px; }
+  .paneel h3 { font-size: 13px; color: var(--muted); font-weight: 600; margin-bottom: 6px; }
+  .paneel textarea {
+    width: 100%;
+    min-height: 110px;
+    border: 1px solid var(--line);
+    background: var(--bg);
+    border-radius: 6px;
+    padding: 10px 12px;
+    resize: vertical;
+    line-height: 1.5;
+  }
+  .notitie-voet { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+  .notitie-voet span { color: var(--muted); font-size: 12px; }
+
+  .toast {
+    position: fixed;
+    left: 50%;
+    bottom: 24px;
+    transform: translateX(-50%);
+    background: #323338;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    z-index: 40;
+    max-width: calc(100% - 32px);
+  }
+  .toast.fout-toast { background: var(--pr-hoog); }
+
+  /* ---------- Smal scherm: rijen worden kaartjes ---------- */
+  @media (max-width: 860px) {
+    header.kop, .balk { padding-left: 16px; padding-right: 16px; }
+    main.bord { padding: 0 16px 40px; }
+    .rij.kopregel { display: none; }
+    .rij {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "tekst tekst"
+        "status eigenaar"
+        "prio soort"
+        "datum datum";
+    }
+    .rij > div { border-right: 0; min-height: 38px; }
+    .rij > .tekst-cel { grid-area: tekst; padding: 10px; }
+    .rij > .tekst-cel .tekst { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .rij > .status-cel { grid-area: status; }
+    .rij > .eigenaar-cel { grid-area: eigenaar; }
+    .rij > .prio-cel { grid-area: prio; }
+    .rij > .soort { grid-area: soort; }
+    .rij > .datum { grid-area: datum; justify-content: flex-start; }
+    .balk input[type="search"] { max-width: none; min-width: 0; flex-basis: 100%; }
+    .wie .naam { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Inloggen -->
+<section class="login" id="login" hidden>
+  <form id="login-form" autocomplete="on">
+    <h1>Feedbackbord</h1>
+    <p>Log in met je Histora-account. Alleen beheerders zien hier iets.</p>
+    <label>E-mail
+      <input type="email" name="email" autocomplete="username" required>
+    </label>
+    <label>Wachtwoord
+      <input type="password" name="wachtwoord" autocomplete="current-password" required>
+    </label>
+    <button class="knop" type="submit">Inloggen</button>
+    <div class="fout" id="login-fout" role="alert"></div>
+  </form>
+</section>
+
+<!-- Geen toegang -->
+<section class="login" id="geen-toegang" hidden>
+  <form onsubmit="return false">
+    <h1>Geen toegang</h1>
+    <p>Je bent ingelogd als <strong id="geen-toegang-email"></strong>, maar dat account staat niet
+      in de lijst met beheerders.</p>
+    <button class="knop stil" type="button" data-actie="uitloggen">Uitloggen</button>
+  </form>
+</section>
+
+<!-- Het bord -->
+<div id="app" hidden>
+  <header class="kop">
+    <h1>Feedback <small id="totaal"></small></h1>
+    <div class="wie">
+      <span class="avatar" id="ik-avatar"></span>
+      <span class="naam" id="ik-naam"></span>
+      <button class="knop stil" type="button" data-actie="uitloggen">Uitloggen</button>
+    </div>
+  </header>
+
+  <div class="balk">
+    <input type="search" id="zoek" placeholder="Zoek in tickets…" aria-label="Zoeken">
+    <select id="filter-soort" aria-label="Soort">
+      <option value="">Alle soorten</option>
+      <option value="bug">🐛 Bugs</option>
+      <option value="idee">💡 Ideeën</option>
+    </select>
+    <button class="chip-knop" type="button" id="filter-mijn" aria-pressed="false">Alleen mijn tickets</button>
+    <button class="chip-knop" type="button" data-actie="vernieuwen" title="Vernieuwen">↻</button>
+    <span class="rechts" id="bijgewerkt"></span>
+  </div>
+
+  <main class="bord" id="bord"></main>
+</div>
+
+<!-- Zijpaneel met één ticket -->
+<aside class="paneel" id="paneel" aria-hidden="true">
+  <div class="paneel-kop">
+    <h2 id="paneel-titel"></h2>
+    <button class="sluit" type="button" data-actie="sluit-paneel" aria-label="Sluiten">×</button>
+  </div>
+  <div class="paneel-inhoud" id="paneel-inhoud"></div>
+</aside>
+
+<div class="menu" id="menu" hidden></div>
+<div class="toast" id="toast" hidden></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.3/dist/umd/supabase.js"></script>
+<script>
+(() => {
+  'use strict';
+
+  // Publiek, staat ook in elke app-bundel. Wat iemand mag, bepaalt de database.
+  const SUPABASE_URL = 'https://nxwdhuuouhbmykgykbov.supabase.co';
+  const SUPABASE_KEY = 'sb_publishable_SkJtEUm7Sq61fyfQEOTNhA_HRIjpGNk';
+  const VERVERS_MS = 60_000;
+
+  const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY, {
+    auth: { persistSession: true, autoRefreshToken: true, storageKey: 'histora-beheer' },
+  });
+
+  const STATUS = {
+    nieuw:          { label: 'Nieuw',          kleur: 'var(--st-nieuw)' },
+    in_behandeling: { label: 'In behandeling', kleur: 'var(--st-bezig)' },
+    klaar:          { label: 'Klaar',          kleur: 'var(--st-klaar)' },
+  };
+  const PRIORITEIT = {
+    hoog:    { label: 'Hoog',    kleur: 'var(--pr-hoog)' },
+    normaal: { label: 'Normaal', kleur: 'var(--pr-normaal)' },
+    laag:    { label: 'Laag',    kleur: 'var(--pr-laag)' },
+  };
+  const SOORT = {
+    bug:  { label: 'Bug',  icoon: '🐛' },
+    idee: { label: 'Idee', icoon: '💡' },
+  };
+
+  const staat = {
+    ik: null,
+    beheerders: [],
+    tickets: [],
+    zoek: '',
+    soort: '',
+    alleenMijn: false,
+    dicht: leesDicht(),
+    open: null,          // id van het ticket in het zijpaneel
+    geladenOp: null,
+  };
+
+  // ---------- kleine helpers ----------
+
+  const $ = (sel) => document.querySelector(sel);
+
+  /** Maakt een element; tekst gaat altijd via textContent. */
+  function el(tag, props = {}, ...kinderen) {
+    const e = document.createElement(tag);
+    for (const [k, v] of Object.entries(props)) {
+      if (v == null || v === false) continue;
+      if (k === 'class') e.className = v;
+      else if (k === 'tekst') e.textContent = v;
+      else if (k === 'style') e.style.cssText = v;
+      else if (k.startsWith('on')) e.addEventListener(k.slice(2), v);
+      else if (k in e && k !== 'list') e[k] = v;
+      else e.setAttribute(k, v === true ? '' : v);
+    }
+    for (const kind of kinderen.flat()) if (kind != null) e.append(kind);
+    return e;
+  }
+
+  function leesDicht() {
+    try { return JSON.parse(localStorage.getItem('histora-beheer-dicht') || '{"klaar":true}'); }
+    catch { return { klaar: true }; }
+  }
+  function bewaarDicht() {
+    try { localStorage.setItem('histora-beheer-dicht', JSON.stringify(staat.dicht)); } catch { /* privévenster */ }
+  }
+
+  function beheerder(id) { return staat.beheerders.find((b) => b.id === id) || null; }
+
+  function avatar(b) {
+    if (!b) return el('span', { class: 'avatar leeg', tekst: '+' });
+    return el('span', { class: 'avatar', style: `background:${b.kleur}`, tekst: b.naam.slice(0, 1).toUpperCase(), title: b.naam });
+  }
+
+  const datumFmt = new Intl.DateTimeFormat('nl-NL', { day: 'numeric', month: 'short' });
+  const datumTijdFmt = new Intl.DateTimeFormat('nl-NL', { dateStyle: 'medium', timeStyle: 'short' });
+  function relatief(iso) {
+    const d = new Date(iso);
+    const dagen = Math.floor((Date.now() - d.getTime()) / 86_400_000);
+    if (dagen <= 0) return 'vandaag';
+    if (dagen === 1) return 'gisteren';
+    if (dagen < 7) return `${dagen} dagen geleden`;
+    return datumFmt.format(d);
+  }
+
+  let toastTimer = null;
+  function toast(tekst, isFout = false) {
+    const t = $('#toast');
+    t.textContent = tekst;
+    t.classList.toggle('fout-toast', isFout);
+    t.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => { t.hidden = true; }, isFout ? 6000 : 2500);
+  }
+
+  function foutTekst(error) {
+    const m = error?.message || String(error);
+    if (m.includes('geen_beheerder')) return 'Je hebt geen beheerrechten.';
+    if (m.includes('Invalid login credentials')) return 'E-mail of wachtwoord klopt niet.';
+    if (m.includes('Email not confirmed')) return 'Dit e-mailadres is nog niet bevestigd.';
+    if (m.includes('Failed to fetch')) return 'Geen verbinding met Supabase.';
+    return m;
+  }
+
+  // ---------- schermen ----------
+
+  function toon(scherm) {
+    for (const id of ['login', 'geen-toegang', 'app']) $('#' + id).hidden = id !== scherm;
+    if (scherm !== 'app') sluitPaneel();
+  }
+
+  async function start() {
+    const { data } = await sb.auth.getSession();
+    if (!data.session) return toon('login');
+    await naInloggen(data.session);
+  }
+
+  async function naInloggen(sessie) {
+    const { data: ik, error } = await sb.rpc('beheer_ik');
+    if (error) {
+      toon('login');
+      $('#login-fout').textContent = foutTekst(error);
+      return;
+    }
+    if (!ik) {
+      $('#geen-toegang-email').textContent = sessie.user.email || '';
+      return toon('geen-toegang');
+    }
+    staat.ik = ik;
+    const av = $('#ik-avatar');
+    av.textContent = ik.naam.slice(0, 1).toUpperCase();
+    av.style.background = ik.kleur;
+    $('#ik-naam').textContent = ik.naam;
+    toon('app');
+    await laad();
+  }
+
+  $('#login-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const knop = form.querySelector('button');
+    $('#login-fout').textContent = '';
+    knop.disabled = true;
+    const { data, error } = await sb.auth.signInWithPassword({
+      email: form.email.value.trim(),
+      password: form.wachtwoord.value,
+    });
+    knop.disabled = false;
+    if (error) { $('#login-fout').textContent = foutTekst(error); return; }
+    form.wachtwoord.value = '';
+    await naInloggen(data.session);
+  });
+
+  async function uitloggen() {
+    await sb.auth.signOut();
+    staat.ik = null;
+    staat.tickets = [];
+    toon('login');
+  }
+
+  // ---------- data ----------
+
+  let laadt = false;
+  async function laad(stil = false) {
+    if (laadt || !staat.ik) return;
+    laadt = true;
+    const [lijst, mensen] = await Promise.all([
+      sb.rpc('beheer_feedback_lijst'),
+      staat.beheerders.length ? Promise.resolve({ data: staat.beheerders }) : sb.rpc('beheer_beheerders'),
+    ]);
+    laadt = false;
+    if (lijst.error || mensen.error) {
+      if (!stil) toast(foutTekst(lijst.error || mensen.error), true);
+      return;
+    }
+    staat.beheerders = mensen.data || [];
+    staat.tickets = lijst.data || [];
+    staat.geladenOp = new Date();
+    teken();
+    if (staat.open) tekenPaneel();
+  }
+
+  /**
+   * Optimistisch: eerst het scherm, dan de database. Mislukt het, dan gaat het ticket terug naar
+   * hoe het was en zegt een toast waarom. Leeg ('') wist een veld; undefined laat het staan.
+   */
+  async function werkBij(id, wijziging) {
+    const t = staat.tickets.find((x) => x.id === id);
+    if (!t) return;
+    const vorig = { ...t };
+
+    // Wie iets op "in behandeling" zet zonder eigenaar, pakt het zelf op.
+    if (wijziging.status === 'in_behandeling' && !t.toegewezen_aan && wijziging.toegewezen_aan === undefined) {
+      wijziging.toegewezen_aan = staat.ik.id;
+    }
+
+    for (const [k, v] of Object.entries(wijziging)) t[k] = v === '' ? null : v;
+    if (wijziging.status === 'klaar' && vorig.status !== 'klaar') t.afgehandeld_op = new Date().toISOString();
+    if (wijziging.status && wijziging.status !== 'klaar') t.afgehandeld_op = null;
+    teken();
+    if (staat.open === id) tekenPaneel();
+
+    const { error } = await sb.rpc('beheer_feedback_bijwerken', {
+      p_id: id,
+      p_status: wijziging.status ?? null,
+      p_toegewezen_aan: wijziging.toegewezen_aan ?? null,
+      p_prioriteit: wijziging.prioriteit ?? null,
+      p_notitie: wijziging.notitie ?? null,
+    });
+    if (error) {
+      Object.assign(t, vorig);
+      teken();
+      if (staat.open === id) tekenPaneel();
+      toast('Niet opgeslagen: ' + foutTekst(error), true);
+      return false;
+    }
+    return true;
+  }
+
+  // ---------- het bord ----------
+
+  function zichtbaar(t) {
+    if (staat.soort && t.soort !== staat.soort) return false;
+    if (staat.alleenMijn && t.toegewezen_aan !== staat.ik.id) return false;
+    if (staat.zoek) {
+      const z = staat.zoek.toLowerCase();
+      const hooiberg = [t.bericht, t.notitie, t.lezer_email, t.platform, t.app_versie].join(' ').toLowerCase();
+      if (!hooiberg.includes(z)) return false;
+    }
+    return true;
+  }
+
+  const PRIO_VOLGORDE = { hoog: 0, normaal: 1, laag: 2 };
+  function sorteer(a, b) {
+    const pa = PRIO_VOLGORDE[a.prioriteit] ?? 1.5;
+    const pb = PRIO_VOLGORDE[b.prioriteit] ?? 1.5;
+    if (pa !== pb) return pa - pb;
+    return new Date(b.created_at) - new Date(a.created_at);
+  }
+
+  function teken() {
+    const tickets = staat.tickets.filter(zichtbaar);
+    const open = staat.tickets.filter((t) => t.status !== 'klaar').length;
+    $('#totaal').textContent = `${open} open · ${staat.tickets.length} totaal`;
+    $('#bijgewerkt').textContent = staat.geladenOp
+      ? `Bijgewerkt ${staat.geladenOp.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`
+      : '';
+
+    const groepen = [
+      {
+        id: 'open',
+        titel: 'Nog toe te wijzen',
+        kleur: 'var(--grp-open)',
+        tickets: tickets.filter((t) => t.status !== 'klaar' && !t.toegewezen_aan),
+        leeg: 'Alles heeft een eigenaar. 🎉',
+      },
+      ...staat.beheerders.map((b) => ({
+        id: 'b-' + b.id,
+        titel: b.naam,
+        kleur: b.kleur,
+        tickets: tickets.filter((t) => t.status !== 'klaar' && t.toegewezen_aan === b.id),
+        leeg: `${b.naam} heeft niets openstaan.`,
+      })),
+      {
+        id: 'klaar',
+        titel: 'Klaar',
+        kleur: 'var(--grp-klaar)',
+        tickets: tickets
+          .filter((t) => t.status === 'klaar')
+          .sort((a, b) => new Date(b.afgehandeld_op || 0) - new Date(a.afgehandeld_op || 0)),
+        leeg: 'Nog niets afgevinkt.',
+        alGesorteerd: true,
+      },
+    ];
+
+    const bord = $('#bord');
+    bord.replaceChildren(...groepen.map(tekenGroep));
+  }
+
+  function tekenGroep(g) {
+    const dicht = !!staat.dicht[g.id];
+    const lijst = g.alGesorteerd ? g.tickets : [...g.tickets].sort(sorteer);
+
+    const kop = el('button', {
+      class: 'groep-kop',
+      type: 'button',
+      'aria-expanded': String(!dicht),
+      onclick: () => {
+        staat.dicht[g.id] = !staat.dicht[g.id];
+        bewaarDicht();
+        teken();
+      },
+    },
+      el('span', { class: 'pijl', tekst: '▾' }),
+      el('h2', { tekst: g.titel }),
+      el('span', { class: 'teller', tekst: `${g.tickets.length} ${g.tickets.length === 1 ? 'ticket' : 'tickets'}` }),
+    );
+
+    const tabel = el('div', { class: 'tabel', role: 'table' },
+      el('div', { class: 'rij kopregel', role: 'row' },
+        el('div', { tekst: 'Ticket' }),
+        el('div', { tekst: 'Soort' }),
+        el('div', { tekst: 'Eigenaar' }),
+        el('div', { tekst: 'Status' }),
+        el('div', { tekst: 'Prioriteit' }),
+        el('div', { tekst: 'Binnen' }),
+      ),
+      lijst.length ? lijst.map(tekenRij) : el('div', { class: 'leeg-groep', tekst: g.leeg }),
+    );
+
+    return el('section', { class: 'groep', style: `--grp:${g.kleur}`, 'data-dicht': String(dicht) }, kop, tabel);
+  }
+
+  function tekenRij(t) {
+    const eigenaar = beheerder(t.toegewezen_aan);
+    const st = STATUS[t.status] || STATUS.nieuw;
+    const pr = PRIORITEIT[t.prioriteit];
+
+    return el('div', { class: 'rij ticket' + (staat.open === t.id ? ' actief' : ''), role: 'row' },
+      el('div', { class: 'tekst-cel', onclick: () => openPaneel(t.id), title: 'Openen' },
+        el('span', { class: 'tekst', tekst: t.bericht }),
+        t.notitie ? el('span', { class: 'notitie-stip', title: 'Heeft een notitie' }) : null,
+      ),
+      el('div', { class: 'soort ' + t.soort, tekst: `${SOORT[t.soort]?.icoon ?? ''} ${SOORT[t.soort]?.label ?? t.soort}` }),
+      el('div', { class: 'eigenaar-cel' },
+        el('button', {
+          class: 'eigenaar-knop',
+          type: 'button',
+          title: eigenaar ? `Eigenaar: ${eigenaar.naam}` : 'Toewijzen',
+          onclick: (e) => menuEigenaar(e.currentTarget, t),
+        }, avatar(eigenaar), eigenaar ? el('span', { tekst: eigenaar.naam }) : null),
+      ),
+      el('div', { class: 'vol status-cel' },
+        el('button', {
+          type: 'button',
+          style: `--kleur:${st.kleur}`,
+          tekst: st.label,
+          onclick: (e) => menuStatus(e.currentTarget, t),
+        }),
+      ),
+      el('div', { class: 'vol prio-cel' },
+        el('button', {
+          type: 'button',
+          class: pr ? '' : 'leeg',
+          style: pr ? `--kleur:${pr.kleur}` : '',
+          tekst: pr ? pr.label : '—',
+          onclick: (e) => menuPrioriteit(e.currentTarget, t),
+        }),
+      ),
+      el('div', { class: 'datum', tekst: relatief(t.created_at), title: datumTijdFmt.format(new Date(t.created_at)) }),
+    );
+  }
+
+  // ---------- keuzemenu's ----------
+
+  const menu = $('#menu');
+  function openMenu(anker, items) {
+    menu.replaceChildren(...items);
+    menu.hidden = false;
+    const r = anker.getBoundingClientRect();
+    const m = menu.getBoundingClientRect();
+    const links = Math.min(Math.max(8, r.left + r.width / 2 - m.width / 2), window.innerWidth - m.width - 8);
+    const onder = r.bottom + 6 + m.height < window.innerHeight;
+    menu.style.left = links + 'px';
+    menu.style.top = (onder ? r.bottom + 6 : Math.max(8, r.top - 6 - m.height)) + 'px';
+    menu.querySelector('button')?.focus();
+  }
+  function sluitMenu() { menu.hidden = true; }
+  document.addEventListener('mousedown', (e) => {
+    if (!menu.hidden && !menu.contains(e.target)) sluitMenu();
+  });
+  window.addEventListener('scroll', sluitMenu, true);
+  window.addEventListener('resize', sluitMenu);
+
+  function menuKnop(tekst, kleur, actie) {
+    return el('button', {
+      type: 'button',
+      class: kleur ? 'kleur' : '',
+      style: kleur ? `--kleur:${kleur}` : '',
+      tekst,
+      onclick: () => { sluitMenu(); actie(); },
+    });
+  }
+
+  function menuStatus(anker, t) {
+    openMenu(anker, Object.entries(STATUS).map(([id, s]) =>
+      menuKnop(s.label, s.kleur, () => {
+        if (t.status !== id) werkBij(t.id, { status: id }).then((ok) => ok && id === 'klaar' && toast('Afgevinkt ✓'));
+      })));
+  }
+
+  function menuPrioriteit(anker, t) {
+    openMenu(anker, [
+      ...Object.entries(PRIORITEIT).map(([id, p]) =>
+        menuKnop(p.label, p.kleur, () => { if (t.prioriteit !== id) werkBij(t.id, { prioriteit: id }); })),
+      menuKnop('Geen', null, () => { if (t.prioriteit) werkBij(t.id, { prioriteit: '' }); }),
+    ]);
+  }
+
+  function menuEigenaar(anker, t) {
+    const items = staat.beheerders.map((b) => {
+      const knop = el('button', {
+        type: 'button',
+        onclick: () => { sluitMenu(); if (t.toegewezen_aan !== b.id) werkBij(t.id, { toegewezen_aan: b.id }); },
+      }, avatar(b), el('span', { tekst: b.id === staat.ik.id ? `${b.naam} (ik)` : b.naam }));
+      return knop;
+    });
+    if (t.toegewezen_aan) {
+      items.push(el('button', {
+        type: 'button',
+        onclick: () => { sluitMenu(); werkBij(t.id, { toegewezen_aan: '' }); },
+      }, avatar(null), el('span', { tekst: 'Niemand' })));
+    }
+    openMenu(anker, items);
+  }
+
+  // ---------- zijpaneel ----------
+
+  const paneel = $('#paneel');
+  function openPaneel(id) {
+    staat.open = id;
+    tekenPaneel();
+    paneel.classList.add('open');
+    paneel.setAttribute('aria-hidden', 'false');
+    teken();
+  }
+  function sluitPaneel() {
+    if (!staat.open) return;
+    staat.open = null;
+    paneel.classList.remove('open');
+    paneel.setAttribute('aria-hidden', 'true');
+    if (staat.ik) teken();
+  }
+
+  function tekenPaneel() {
+    const t = staat.tickets.find((x) => x.id === staat.open);
+    if (!t) return sluitPaneel();
+    const eigenaar = beheerder(t.toegewezen_aan);
+    const st = STATUS[t.status] || STATUS.nieuw;
+    const pr = PRIORITEIT[t.prioriteit];
+
+    $('#paneel-titel').textContent = `${SOORT[t.soort]?.icoon ?? ''} ${SOORT[t.soort]?.label ?? t.soort}`;
+
+    // Antwoorden gaat per mail, met het bericht als citaat: dat is de enige route naar de lezer.
+    let antwoord = null;
+    if (t.lezer_email) {
+      const onderwerp = t.soort === 'bug' ? 'Your Histora bug report' : 'Your Histora idea';
+      const citaat = t.bericht.split('\n').map((r) => '> ' + r).join('\n');
+      antwoord = el('a', {
+        href: `mailto:${encodeURIComponent(t.lezer_email)}?subject=${encodeURIComponent(onderwerp)}&body=${encodeURIComponent('\n\n' + citaat)}`,
+        tekst: t.lezer_email,
+      });
+    }
+
+    const notitie = el('textarea', {
+      id: 'notitie',
+      maxLength: 2000,
+      placeholder: 'Alleen voor ons — wat is er gedaan, wat is de oorzaak, wie moet wat…',
+      value: t.notitie || '',
+    });
+    const opgeslagen = el('span');
+    const bewaar = el('button', {
+      class: 'knop',
+      type: 'button',
+      tekst: 'Notitie opslaan',
+      onclick: async () => {
+        bewaar.disabled = true;
+        const ok = await werkBij(t.id, { notitie: notitie.value.trim() });
+        bewaar.disabled = false;
+        if (ok) toast('Notitie opgeslagen');
+      },
+    });
+
+    $('#paneel-inhoud').replaceChildren(
+      el('div', { class: 'bericht', tekst: t.bericht }),
+      el('div', { class: 'paneel-acties' },
+        el('div', { class: 'vol' },
+          el('button', { type: 'button', style: `--kleur:${st.kleur}`, tekst: st.label, onclick: (e) => menuStatus(e.currentTarget, t) })),
+        el('div', { class: 'vol' },
+          el('button', {
+            type: 'button',
+            class: pr ? '' : 'leeg',
+            style: pr ? `--kleur:${pr.kleur}` : 'border:1px solid var(--line)',
+            tekst: pr ? pr.label : 'Prioriteit',
+            onclick: (e) => menuPrioriteit(e.currentTarget, t),
+          })),
+        el('div', { class: 'vol' },
+          el('button', {
+            type: 'button',
+            class: eigenaar ? '' : 'leeg',
+            style: eigenaar ? `--kleur:${eigenaar.kleur}` : 'border:1px solid var(--line)',
+            tekst: eigenaar ? eigenaar.naam : 'Toewijzen',
+            onclick: (e) => menuEigenaar(e.currentTarget, t),
+          })),
+      ),
+      el('div', {},
+        el('h3', { tekst: 'Interne notitie' }),
+        notitie,
+        el('div', { class: 'notitie-voet' }, bewaar, opgeslagen),
+      ),
+      el('dl', { class: 'eigenschappen' },
+        el('dt', { tekst: 'Van' }), el('dd', {}, antwoord || el('span', { tekst: '—' })),
+        el('dt', { tekst: 'Binnen' }), el('dd', { tekst: datumTijdFmt.format(new Date(t.created_at)) }),
+        el('dt', { tekst: 'Platform' }), el('dd', { tekst: t.platform || '—' }),
+        el('dt', { tekst: 'App-versie' }), el('dd', { tekst: t.app_versie || '—' }),
+        el('dt', { tekst: 'Bijgewerkt' }), el('dd', { tekst: t.bijgewerkt_op ? datumTijdFmt.format(new Date(t.bijgewerkt_op)) : '—' }),
+        el('dt', { tekst: 'Afgevinkt' }), el('dd', { tekst: t.afgehandeld_op ? datumTijdFmt.format(new Date(t.afgehandeld_op)) : '—' }),
+        el('dt', { tekst: 'Ticket-id' }), el('dd', { tekst: t.id }),
+      ),
+    );
+  }
+
+  // ---------- bediening ----------
+
+  document.addEventListener('click', (e) => {
+    const actie = e.target.closest('[data-actie]')?.dataset.actie;
+    if (actie === 'uitloggen') uitloggen();
+    else if (actie === 'vernieuwen') laad();
+    else if (actie === 'sluit-paneel') sluitPaneel();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    if (!menu.hidden) sluitMenu();
+    else sluitPaneel();
+  });
+
+  $('#zoek').addEventListener('input', (e) => { staat.zoek = e.target.value.trim(); teken(); });
+  $('#filter-soort').addEventListener('change', (e) => { staat.soort = e.target.value; teken(); });
+  $('#filter-mijn').addEventListener('click', (e) => {
+    staat.alleenMijn = !staat.alleenMijn;
+    e.currentTarget.setAttribute('aria-pressed', String(staat.alleenMijn));
+    teken();
+  });
+
+  // Vers houden zonder realtime: elke minuut, en zodra je terugkomt naar het tabblad.
+  setInterval(() => { if (!document.hidden) laad(true); }, VERVERS_MS);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) laad(true); });
+
+  sb.auth.onAuthStateChange((event) => {
+    if (event === 'SIGNED_OUT') { staat.ik = null; toon('login'); }
+  });
+
+  start();
+})();
+</script>
+</body>
+</html>

@@ -23,12 +23,18 @@
  * - **Een mislukte webhook is een logregel, geen 500.** Er is niemand die het antwoord leest en
  *   erop handelt; wat er misging hoort in de logs en in de body, niet in een statuscode.
  *
- * **De webhook-URL's staan hieronder in de code**, zoals gevraagd — dan werkt deze function
- * meteen na het deployen, zonder een tweede stap. Ze zijn te overschrijven met de omgevings-
- * variabelen `DISCORD_WEBHOOK_BUG` en `DISCORD_WEBHOOK_IDEE`, wat de weg is om ze te wisselen
- * zonder de code aan te raken. ⚠️ **Een webhook-URL is een wachtwoord**: wie hem heeft kan in dat
- * kanaal plaatsen wat hij wil. `github.com/Demore2/chronicles` is een publieke repository, dus
- * zodra dit bestand gepusht wordt staan ze op straat. Zie `supabase/README-feedback-discord.md`.
+ * **Het bericht leeft mee met het feedbackbord** (`docs/beheer/`). Bij plaatsen vragen we Discord
+ * met `?wait=true` om het bericht terug en bewaren we het id in `feedback.discord_bericht_id`.
+ * De trigger `feedback_discord_na_update` roept ons daarna met `actie: 'bijwerken'` aan zodra
+ * status of toewijzing verandert: dan wordt hetzelfde bericht ge-PATCHt (kleur, status, wie het
+ * oppakt) in plaats van dat er een tweede bij komt. Een bewerking pingt in Discord nooit, dus
+ * een nieuwe toewijzing krijgt een eigen kort bericht met alleen díe beheerder in
+ * `allowed_mentions.users`. Is het oorspronkelijke bericht weg (404) of nooit bewaard, dan
+ * plaatsen we het opnieuw en bewaren dat id.
+ *
+ * **De webhook-URL's staan in de secrets `DISCORD_WEBHOOK_BUG` / `DISCORD_WEBHOOK_IDEE`, niet in
+ * de code.** Een webhook-URL is een wachtwoord en `github.com/Demore2/chronicles` is publiek. Zie
+ * `webhookVoor` hieronder.
  */
 
 import { createClient } from 'jsr:@supabase/supabase-js@2';
@@ -56,26 +62,38 @@ type FeedbackRij = {
   app_versie: string | null;
   platform: string | null;
   created_at: string;
+  status: TicketStatus;
+  toegewezen_aan: string | null;
+  discord_bericht_id: string | null;
 };
+
+type TicketStatus = 'nieuw' | 'in_behandeling' | 'klaar';
+
+type Beheerder = { id: string; naam: string; discord_id: string | null };
+
+/** Waar het bord staat; komt als link in elke embed. */
+const BORD_URL = 'https://demore2.github.io/chronicles/beheer/';
 
 // --------------------------------------------------------------------------------------------
 // De twee kanalen
 // --------------------------------------------------------------------------------------------
 
-/** Kanaal "Buggsy". */
-const WEBHOOK_BUG =
-  'https://discord.com/api/webhooks/1547696764289548378/gSdvRA3oExkD5jtyGwXdCPPJ4Y261ntV3TnY2YvmWSeM9_RYxAfsBLCu-gGKssljQa45';
-
-/** Kanaal "Smartass". */
-const WEBHOOK_IDEE =
-  'https://discord.com/api/webhooks/1547697059975405689/KwjFSnBBMUlXCqxiDKtU1vTP-WQ9bQxpuYWYIek4XxvTaUxMxXkXY3oM9M52MOH-8QCt';
-
-function webhookVoor(soort: FeedbackSoort): string {
+/**
+ * Uit de secrets van de function, nergens anders: deze repository is publiek, en een webhook-URL
+ * is een wachtwoord. `DISCORD_WEBHOOK_BUG` hoort bij "Bugs Bot" (kanaal Buggsy),
+ * `DISCORD_WEBHOOK_IDEE` bij "Idea Bot" (kanaal Smartass). De URL's die hier tot 2026-10-21 als
+ * constante stonden zijn in Discord verwijderd.
+ *
+ * Let op bij wisselen: Discord laat een bericht alleen bewerken door de webhook die het plaatste.
+ * Na een nieuwe webhook geeft PATCH op een oud bericht een 404, en `plaatsEmbed` plaatst het
+ * ticket dan opnieuw — er komt dus één nieuw bericht per ticket dat daarna bijgewerkt wordt.
+ */
+function webhookVoor(soort: FeedbackSoort): string | null {
   const uitOmgeving =
     soort === 'bug'
       ? Deno.env.get('DISCORD_WEBHOOK_BUG')
       : Deno.env.get('DISCORD_WEBHOOK_IDEE');
-  return uitOmgeving?.trim() || (soort === 'bug' ? WEBHOOK_BUG : WEBHOOK_IDEE);
+  return uitOmgeving?.trim() || null;
 }
 
 /** Rood voor bugs, blauw voor ideeën. Discord wil een getal, geen `#rrggbb`. */
@@ -87,6 +105,21 @@ const KLEUR: Record<FeedbackSoort, number> = {
 const LABEL: Record<FeedbackSoort, string> = {
   bug: '🐛 Bug report',
   idee: '💡 Idea',
+};
+
+/**
+ * Zodra er iets mee gebeurt neemt de status de kleur over, met dezelfde kleuren als het bord:
+ * oranje = iemand is ermee bezig, groen = klaar. Een nieuw ticket houdt de kleur van zijn soort.
+ */
+const STATUS_KLEUR: Partial<Record<TicketStatus, number>> = {
+  in_behandeling: 0xfdab3d,
+  klaar: 0x00c875,
+};
+
+const STATUS_LABEL: Record<TicketStatus, string> = {
+  nieuw: '🆕 New',
+  in_behandeling: '🟠 In progress',
+  klaar: '✅ Done',
 };
 
 /** Gelijk aan de `check`-constraint op `public.feedback.bericht` en aan `MAX_TEKENS` in de app. */
@@ -115,9 +148,18 @@ function veld(naam: string, waarde: string | null | undefined, inline = true): V
 function bouwEmbed(
   rij: FeedbackRij,
   lezerEmail: string | null,
-  projectRef: string | null
+  projectRef: string | null,
+  behandelaar: Beheerder | null
 ): Record<string, unknown> {
+  const status: TicketStatus = rij.status ?? 'nieuw';
   const velden: Veld[] = [
+    veld('Status', STATUS_LABEL[status]),
+    // Een embed-mention pingt niet, maar toont wel de naam zoals Discord hem kent.
+    veld(
+      'Assigned to',
+      behandelaar ? (behandelaar.discord_id ? `<@${behandelaar.discord_id}>` : behandelaar.naam) : null
+    ),
+    veld('Board', `[Open](${BORD_URL})`),
     veld('Platform', rij.platform),
     veld('App version', rij.app_versie),
     veld('Submitted', `<t:${Math.floor(new Date(rij.created_at).getTime() / 1000)}:R>`),
@@ -143,12 +185,12 @@ function bouwEmbed(
   }
 
   return {
-    title: LABEL[rij.soort],
+    title: status === 'klaar' ? `${LABEL[rij.soort]} — done` : LABEL[rij.soort],
     // Het bericht zelf, zonder opsmuk. Markdown erin rendert gewoon; dat is voor een tekst die
     // iemand zelf typte eerder een dienst dan een probleem, en pingen kan het niet (zie
     // `allowed_mentions` hieronder).
     description: rij.bericht.slice(0, MAX_DESCRIPTION),
-    color: KLEUR[rij.soort],
+    color: STATUS_KLEUR[status] ?? KLEUR[rij.soort],
     fields: velden,
     timestamp: new Date(rij.created_at).toISOString(),
     footer: { text: `Histora · ${rij.id}` },
@@ -159,7 +201,9 @@ function bouwEmbed(
 // Versturen
 // --------------------------------------------------------------------------------------------
 
-type Uitkomst = { ok: true; status: number } | { ok: false; fout: string };
+type Uitkomst =
+  | { ok: true; status: number; data: Record<string, unknown> | null }
+  | { ok: false; status: number | null; fout: string };
 
 /**
  * Drie pogingen, en alleen bij iets dat vanzelf overgaat: een 429 of een 5xx. Een 404 (webhook
@@ -173,21 +217,25 @@ type Uitkomst = { ok: true; status: number } | { ok: false; fout: string };
 const POGINGEN = 3;
 const STANDAARD_WACHT_MS = 800;
 
-async function plaats(webhook: string, embed: Record<string, unknown>): Promise<Uitkomst> {
+/**
+ * Eén verzoek naar Discord, met de pogingen hierboven. `payload` moet zelf al
+ * `allowed_mentions` bevatten — zie `plaatsEmbed` en `pingBehandelaar`.
+ */
+async function stuur(
+  url: string,
+  method: 'POST' | 'PATCH',
+  payload: Record<string, unknown>
+): Promise<Uitkomst> {
   let laatste = 'onbekend';
+  let laatsteStatus: number | null = null;
 
   for (let poging = 1; poging <= POGINGEN; poging++) {
     let respons: Response;
     try {
-      respons = await fetch(webhook, {
-        method: 'POST',
+      respons = await fetch(url, {
+        method,
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          embeds: [embed],
-          // Het bericht is door een gebruiker getypt. Zonder deze regel is `@everyone` in een
-          // bugmelding een `@everyone` in de server.
-          allowed_mentions: { parse: [] },
-        }),
+        body: JSON.stringify(payload),
       });
     } catch (fout) {
       laatste = `netwerk: ${String(fout)}`;
@@ -197,11 +245,18 @@ async function plaats(webhook: string, embed: Record<string, unknown>): Promise<
     }
 
     if (respons.ok) {
-      console.log(`[send-feedback-discord] geplaatst (${respons.status}) na poging ${poging}`);
-      return { ok: true, status: respons.status };
+      console.log(`[send-feedback-discord] ${method} ok (${respons.status}) na poging ${poging}`);
+      let data: Record<string, unknown> | null = null;
+      try {
+        data = respons.status === 204 ? null : await respons.json();
+      } catch {
+        data = null;
+      }
+      return { ok: true, status: respons.status, data };
     }
 
     const tekst = await respons.text();
+    laatsteStatus = respons.status;
     laatste = `${respons.status} ${tekst.slice(0, 300)}`;
     console.error(`[send-feedback-discord] poging ${poging}: ${laatste}`);
 
@@ -228,7 +283,74 @@ async function plaats(webhook: string, embed: Record<string, unknown>): Promise<
     break;
   }
 
-  return { ok: false, fout: laatste };
+  return { ok: false, status: laatsteStatus, fout: laatste };
+}
+
+/**
+ * Plaatst de embed, of werkt het bestaande bericht bij als we het id hebben. `?wait=true` is
+ * wat Discord het bericht laat teruggeven — zonder dat is het antwoord een lege 204 en kunnen
+ * we het nooit meer terugvinden.
+ */
+async function plaatsEmbed(
+  webhook: string,
+  embed: Record<string, unknown>,
+  berichtId: string | null
+): Promise<{ uitkomst: Uitkomst; berichtId: string | null; kanaalId: string | null }> {
+  // Het bericht is door een gebruiker getypt. Zonder deze regel is `@everyone` in een
+  // bugmelding een `@everyone` in de server.
+  const payload = { embeds: [embed], allowed_mentions: { parse: [] } };
+
+  if (berichtId) {
+    const bewerkt = await stuur(`${webhook}/messages/${berichtId}`, 'PATCH', payload);
+    if (bewerkt.ok) {
+      return {
+        uitkomst: bewerkt,
+        berichtId,
+        kanaalId: typeof bewerkt.data?.channel_id === 'string' ? bewerkt.data.channel_id : null,
+      };
+    }
+    // Iemand heeft het bericht in Discord weggehaald: plaats het opnieuw. Elke andere fout
+    // geven we door — dan zou opnieuw plaatsen een dubbel bericht opleveren.
+    if (bewerkt.status !== 404) return { uitkomst: bewerkt, berichtId, kanaalId: null };
+  }
+
+  const geplaatst = await stuur(`${webhook}?wait=true`, 'POST', payload);
+  const nieuwId = geplaatst.ok && typeof geplaatst.data?.id === 'string' ? geplaatst.data.id : null;
+  const kanaalId =
+    geplaatst.ok && typeof geplaatst.data?.channel_id === 'string' ? geplaatst.data.channel_id : null;
+  return { uitkomst: geplaatst, berichtId: nieuwId, kanaalId };
+}
+
+/**
+ * Een kort bericht dat precies één beheerder pingt. Bewerkingen pingen in Discord nooit, dus een
+ * toewijzing moet wel een nieuw bericht zijn. `allowed_mentions.users` met alleen dat id: de
+ * lezerstekst staat hier niet in, maar ook een fragment ervan mag niemand anders pingen.
+ */
+async function pingBehandelaar(
+  webhook: string,
+  behandelaar: Beheerder & { discord_id: string },
+  rij: FeedbackRij,
+  berichtId: string | null,
+  kanaalId: string | null
+): Promise<Uitkomst> {
+  let link = '';
+  if (berichtId && kanaalId) {
+    // De guild staat niet in het bericht zelf, wel in de webhook.
+    try {
+      const info = await (await fetch(webhook)).json();
+      if (typeof info?.guild_id === 'string') {
+        link = ` → https://discord.com/channels/${info.guild_id}/${kanaalId}/${berichtId}`;
+      }
+    } catch {
+      // Zonder link is de ping nog steeds de ping.
+    }
+  }
+  const fragment = rij.bericht.replace(/\s+/g, ' ').slice(0, 80);
+  const meer = rij.bericht.length > 80 ? '…' : '';
+  return await stuur(`${webhook}?wait=true`, 'POST', {
+    content: `📌 <@${behandelaar.discord_id}> ${LABEL[rij.soort]} assigned to you: “${fragment}${meer}”${link}`,
+    allowed_mentions: { parse: [], users: [behandelaar.discord_id] },
+  });
 }
 
 // --------------------------------------------------------------------------------------------
@@ -261,10 +383,19 @@ Deno.serve(async (req: Request) => {
   // `{ feedback_id }` is wat de trigger stuurt. `{ record }` is de vorm van een Database Webhook
   // uit het Supabase-dashboard; die ook accepteren kost één regel en scheelt een aanroep die
   // zwijgend niets doet.
+  //
+  // `actie: 'bijwerken'` komt van de trigger `feedback_discord_na_update` (status of toewijzing
+  // gewijzigd op het bord), met `vorige_toegewezen` zodat we alleen pingen bij een échte nieuwe
+  // toewijzing. Zonder `actie` is het een nieuw ticket; heeft dat al een bericht, dan werken we
+  // dat bij in plaats van een tweede te plaatsen, zodat opnieuw aanroepen veilig is.
   let feedbackId = '';
+  let actie: 'plaats' | 'bijwerken' = 'plaats';
+  let vorigeToegewezen: string | null = null;
   try {
     const body = await req.json();
     feedbackId = String(body?.feedback_id ?? body?.record?.id ?? '');
+    if (body?.actie === 'bijwerken') actie = 'bijwerken';
+    vorigeToegewezen = typeof body?.vorige_toegewezen === 'string' ? body.vorige_toegewezen : null;
   } catch {
     return antwoord(400, { error: 'ongeldige_body' });
   }
@@ -274,7 +405,9 @@ Deno.serve(async (req: Request) => {
 
   const { data: rij, error: leesFout } = await admin
     .from('feedback')
-    .select('id, user_id, soort, bericht, app_versie, platform, created_at')
+    .select(
+      'id, user_id, soort, bericht, app_versie, platform, created_at, status, toegewezen_aan, discord_bericht_id'
+    )
     .eq('id', feedbackId)
     .maybeSingle<FeedbackRij>();
 
@@ -299,13 +432,64 @@ Deno.serve(async (req: Request) => {
   // Het projectref zit al in de URL (`https://<ref>.supabase.co`) en hoeft geen eigen variabele.
   const projectRef = url.match(/^https:\/\/([a-z0-9]+)\.supabase\./)?.[1] ?? null;
 
-  const uitkomst = await plaats(webhookVoor(rij.soort), bouwEmbed(rij, lezerEmail, projectRef));
+  let behandelaar: Beheerder | null = null;
+  if (rij.toegewezen_aan) {
+    const { data } = await admin
+      .from('beheerders')
+      .select('id, naam, discord_id')
+      .eq('id', rij.toegewezen_aan)
+      .maybeSingle<Beheerder>();
+    behandelaar = data ?? null;
+  }
+
+  const webhook = webhookVoor(rij.soort);
+  if (!webhook) {
+    // Een 200, geen 500: zelfde afweging als `resend_niet_geconfigureerd` in de mail-function.
+    console.error(`[send-feedback-discord] geen webhook-secret voor soort '${rij.soort}'`);
+    return antwoord(200, { ok: true, overgeslagen: 'webhook_niet_ingesteld', soort: rij.soort });
+  }
+  const { uitkomst, berichtId, kanaalId } = await plaatsEmbed(
+    webhook,
+    bouwEmbed(rij, lezerEmail, projectRef, behandelaar),
+    rij.discord_bericht_id
+  );
+
+  if (berichtId && berichtId !== rij.discord_bericht_id) {
+    const { error } = await admin
+      .from('feedback')
+      .update({ discord_bericht_id: berichtId })
+      .eq('id', rij.id);
+    if (error) console.error('[send-feedback-discord] bericht-id bewaren mislukt:', error.message);
+  }
+
+  let ping: string | null = null;
+  if (
+    actie === 'bijwerken' &&
+    behandelaar?.discord_id &&
+    behandelaar.id !== vorigeToegewezen &&
+    rij.status !== 'klaar'
+  ) {
+    const p = await pingBehandelaar(
+      webhook,
+      behandelaar as Beheerder & { discord_id: string },
+      rij,
+      berichtId,
+      kanaalId
+    );
+    ping = p.ok ? 'verstuurd' : `mislukt: ${p.fout}`;
+  }
 
   return antwoord(200, {
     ok: true,
     feedback_id: rij.id,
+    actie,
     soort: rij.soort,
     kanaal: rij.soort === 'bug' ? 'bugs' : 'ideas',
-    discord: uitkomst.ok ? 'geplaatst' : `mislukt: ${uitkomst.fout}`,
+    discord: uitkomst.ok
+      ? berichtId === rij.discord_bericht_id
+        ? 'bijgewerkt'
+        : 'geplaatst'
+      : `mislukt: ${uitkomst.fout}`,
+    ping,
   });
 });

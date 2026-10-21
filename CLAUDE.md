@@ -1044,11 +1044,9 @@ Wat voor allebei geldt:
 
 #### Discord (`send-feedback-discord`)
 
-- **De twee webhook-URL's staan als constante in het bestand**, op verzoek, met
-  `DISCORD_WEBHOOK_BUG` / `DISCORD_WEBHOOK_IDEE` als override. 🚩 **Een webhook-URL is een
-  wachtwoord en `Demore2/chronicles` is een publieke repo**: gepusht zijn ze openbaar en kan
-  iedereen in die kanalen plaatsen. De uitweg staat in de README; nieuwe webhooks aanmaken is de
-  enige echte, want een commit blijft in de geschiedenis staan.
+- **De webhook-URL's staan uitsluitend in de secrets `DISCORD_WEBHOOK_BUG` / `DISCORD_WEBHOOK_IDEE`**,
+  nooit in de code: een webhook-URL is een wachtwoord en `Demore2/chronicles` is publiek. De oude
+  URL's in de git-geschiedenis zijn op 2026-10-21 in Discord verwijderd en geven 404.
 - **`allowed_mentions: { parse: [] }` staat in elke POST.** Het bericht is door een gebruiker
   getypt; zonder die regel is `@everyone` in een bugmelding een `@everyone` in de server. Mentions
   in een embed pingen op zichzelf al niet, maar dat is gedrag van Discord en geen garantie van ons.
@@ -1059,6 +1057,25 @@ Wat voor allebei geldt:
   echte wachttijd is bij een webhooklimiet meestal een fractie van een seconde.
 - **Reacties op de berichten (👀/✅) kan een webhook niet.** Dat endpoint eist een bot token; een
   webhook mag alleen plaatsen. Dat is een Discord-applicatie erbij, geen vlaggetje.
+
+#### Het feedbackbord (`docs/beheer/index.html`, `supabase/feedback-beheer-migratie.sql`)
+
+Een monday-achtig bord waarop Quinten en Mike tickets toewijzen, op "in behandeling" zetten en
+afvinken. Statische pagina in `docs/`, dus GitHub Pages serveert hem (`/chronicles/beheer/`);
+lokaal: `npx http-server docs -p 5510`.
+
+- **Toegang is `public.beheerders` (op e-mail), niet premium.** Premium kan straks iedereen kopen.
+  Inloggen gaat met het gewone Histora-account; de pagina bevat alleen de publishable key en doet
+  alles via vier `security definer`-RPC's (`beheer_ik`, `beheer_beheerders`,
+  `beheer_feedback_lijst`, `beheer_feedback_bijwerken`) die `geen_beheerder` gooien voor ieder
+  ander. De RLS op `feedback` is niet verruimd: lezers zien nog steeds alleen hun eigen rijen.
+- **Discord leeft mee.** `send-feedback-discord` plaatst met `?wait=true` en bewaart
+  `feedback.discord_bericht_id`; de trigger `feedback_discord_na_update` (alleen bij status of
+  toewijzing, niet bij de interne notitie) laat hem hetzelfde bericht PATCHen. Een toewijzing
+  pingt de nieuwe eigenaar in een apart kort bericht, maar alleen als `beheerders.discord_id` is
+  ingevuld — een bewerking pingt in Discord nooit.
+- De migratie is met de hand in de SQL Editor gedraaid (de MCP-migratie werd geweigerd).
+- Lezerstekst gaat op het bord alleen via `textContent`, nooit `innerHTML`.
 
 #### Mail (`send-feedback-email`)
 

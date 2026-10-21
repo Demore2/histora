@@ -6,36 +6,23 @@ De app-kant (`src/components/feedback-modal.tsx`) is **niet gewijzigd** en weet 
 
 Naast deze staat `send-feedback-email` met zijn eigen README. Eén trigger roept ze allebei aan.
 
-## ⚠️ Eerst dit: de webhook-URL's staan in de code, en de repository is publiek
+## De webhook-URL's staan in secrets, niet in de code
 
-De twee URL's staan als constante boven in `supabase/functions/send-feedback-discord/index.ts`,
-zoals gevraagd — dan werkt de function meteen na het deployen, zonder een tweede stap.
+**Een Discord-webhook-URL is een wachtwoord**, en `github.com/Demore2/chronicles` is publiek.
+De function leest de URL's daarom uitsluitend uit twee secrets (Dashboard → Edge Functions →
+Secrets):
 
-**Een Discord-webhook-URL is een wachtwoord.** Wie hem heeft kan in dat kanaal plaatsen wat hij
-wil, zonder account en zonder in de server te zitten. En `github.com/Demore2/chronicles` is een
-**publieke** repository (dat moet ook, want GitHub Pages serveert `docs/` daarvandaan). Zodra dit
-bestand gepusht wordt staan beide URL's dus openbaar op internet, waar ze door scrapers gevonden
-worden.
+| Secret | Webhook | Kanaal |
+|---|---|---|
+| `DISCORD_WEBHOOK_BUG` | Bugs Bot | Buggsy |
+| `DISCORD_WEBHOOK_IDEE` | Idea Bot | Smartass |
 
-Drie manieren om daarmee om te gaan, in oplopende netheid:
+Ontbreekt er een, dan antwoordt de function `overgeslagen: webhook_niet_ingesteld` (een 200).
 
-1. **Niets doen.** Werkt, en het ergste wat er kan gebeuren is spam in twee kanalen die je zelf
-   hebt gemaakt. Een webhook is met één klik te verwijderen en opnieuw aan te maken.
-2. **De URL's naar Supabase-secrets verhuizen.** De function leest `DISCORD_WEBHOOK_BUG` en
-   `DISCORD_WEBHOOK_IDEE` en gebruikt die vóór de constanten, dus dit is geen codewijziging:
-
-   ```bash
-   supabase secrets set DISCORD_WEBHOOK_BUG=https://discord.com/api/webhooks/... --project-ref nxwdhuuouhbmykgykbov
-   supabase secrets set DISCORD_WEBHOOK_IDEE=https://discord.com/api/webhooks/... --project-ref nxwdhuuouhbmykgykbov
-   ```
-
-   Daarna kunnen de twee constanten in het bestand op een lege string, en is er niets meer te
-   lekken.
-3. **Beide**: eerst de secrets zetten, dan in Discord de oude webhooks verwijderen en nieuwe
-   aanmaken. Alleen zo zijn de URL's die nu in deze chat en in dit bestand staan echt waardeloos.
-
-Staan ze eenmaal in een commit, dan blijven ze in de geschiedenis staan ook als je ze later
-weghaalt. Nieuwe webhooks maken is dan de enige echte oplossing.
+Tot 2026-10-21 stonden de URL's als constante in `index.ts` en dus in de git-geschiedenis. Die
+webhooks zijn in Discord verwijderd (geven 404) en vervangen; wat er in oude commits staat is
+waardeloos. **Wissel je ooit weer van webhook**: Discord laat een bericht alleen bewerken door de
+webhook die het plaatste, dus elk ticket krijgt bij de volgende statuswijziging één nieuw bericht.
 
 ## De stand van vandaag
 
@@ -114,7 +101,7 @@ Dit is de snelste manier om te zien of een URL nog leeft en hoe een embed eruitz
 in een terminal:
 
 ```bash
-curl -X POST "https://discord.com/api/webhooks/1547696764289548378/gSdvRA3oExkD5jtyGwXdCPPJ4Y261ntV3TnY2YvmWSeM9_RYxAfsBLCu-gGKssljQa45" \
+curl -X POST "$DISCORD_WEBHOOK_BUG" \
   -H "Content-Type: application/json" \
   -d '{
     "embeds": [{
