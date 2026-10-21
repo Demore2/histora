@@ -1074,8 +1074,16 @@ lokaal: `npx http-server docs -p 5510`.
   toewijzing, niet bij de interne notitie) laat hem hetzelfde bericht PATCHen. Een toewijzing
   pingt de nieuwe eigenaar in een apart kort bericht, maar alleen als `beheerders.discord_id` is
   ingevuld — een bewerking pingt in Discord nooit.
-- De migratie is met de hand in de SQL Editor gedraaid (de MCP-migratie werd geweigerd).
+- De migraties (`feedback-beheer-migratie.sql` en `-2.sql`) zijn met de hand in de SQL Editor
+  gedraaid; `apply_migration` via MCP wordt in dit project geweigerd.
 - Lezerstekst gaat op het bord alleen via `textContent`, nooit `innerHTML`.
+- **Drie tabbladen.** *Tickets*; de *Ideeënhub* (`public.beheer_notities`: idee/doel/taak, vastpinnen,
+  afgerond — alleen voor de beheerders); en *Statistieken* (`beheer_statistieken()`, één jsonb).
+- **Interne tickets (`feedback.bron = 'intern'`) komen bewust niet in Discord** — beide triggers
+  stoppen er vroeg op. Discord is alleen voor lezersfeedback; dat is een wens van de eigenaar.
+- **Statistieken tellen accounts, geen downloads** (die staan in Google Play), en "actief" is elke
+  schrijfactie of login in de periode; de app openen zonder iets te doen telt niet. Beheerders en
+  `@chronicles.app`-testaccounts tellen standaard niet mee.
 
 #### Mail (`send-feedback-email`)
 
