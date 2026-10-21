@@ -40,11 +40,14 @@ function antwoord(status: number, body: Record<string, unknown>): Response {
   });
 }
 
-/** `histora_pro:yearly` → "jaar". Zelfde regel als `beheer_statistieken`. */
+/** `histora_pro:yearly` → "Jaarlijks". Zelfde regel als `beheer_statistieken`. */
 function plan(productId: string | null): string {
   if (!productId) return '—';
-  return /year|annual/i.test(productId) ? 'Jaar' : 'Maand';
+  return /year|annual/i.test(productId) ? 'Jaarlijks' : 'Maandelijks';
 }
+
+/** Er is één product; de technische id (`histora_pro:monthly`) zegt in Discord niemand iets. */
+const PRODUCTNAAM = 'Pro-abonnement';
 
 function discordTijd(iso: string | null, stijl: 'D' | 'R' = 'D'): string {
   if (!iso) return '—';
@@ -106,7 +109,7 @@ Deno.serve(async (req: Request) => {
   const opmaak = OPMAAK[gebeurtenis];
   const velden = [
     { name: 'Plan', value: plan(abo?.product_id ?? null), inline: true },
-    { name: 'Product', value: `\`${abo?.product_id ?? '—'}\``, inline: true },
+    { name: 'Product', value: PRODUCTNAAM, inline: true },
   ];
   if (gebeurtenis === 'proef') {
     velden.push({ name: 'Proef loopt tot', value: discordTijd(abo?.trial_ends_at ?? null), inline: true });
@@ -135,9 +138,9 @@ Deno.serve(async (req: Request) => {
       embeds: [{
         title: opmaak.titel,
         color: opmaak.kleur,
+        // Geen footer en geen timestamp: Discord zet de tijd al bij het bericht, en het
+        // gebruiker-id zegt in het kanaal niemand iets (het account staat erboven).
         fields: velden,
-        timestamp: new Date().toISOString(),
-        footer: { text: `Histora · ${userId}` },
       }],
       allowed_mentions: { parse: [], users: mentions },
     }),

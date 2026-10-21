@@ -88,10 +88,13 @@ type RcEntitlement = {
   expires_date: string | null;
   grace_period_expires_date?: string | null;
   product_identifier: string;
+  /** Het basisplan bij Google (`monthly` / `yearly`); `product_identifier` is dan alleen `histora_pro`. */
+  product_plan_identifier?: string | null;
 };
 
 type RcAbonnement = {
   expires_date: string | null;
+  product_plan_identifier?: string | null;
   period_type?: 'normal' | 'trial' | 'intro' | string;
   unsubscribe_detected_at?: string | null;
   store?: string;
@@ -140,6 +143,13 @@ async function synchroniseer(
   if (actief && recht) {
     const abonnement = klant.subscriber.subscriptions?.[recht.product_identifier];
     const eindMoment = eind ?? LEVENSLANG;
+    // Google kent één abonnement (`histora_pro`) met twee basisplannen; zonder het plan erbij is
+    // een jaarabonnement niet van een maandabonnement te onderscheiden — en dat doen zowel de
+    // statistieken als de premium-melding in Discord. Dus `histora_pro:monthly` / `:yearly`.
+    const plan = recht.product_plan_identifier ?? abonnement?.product_plan_identifier ?? null;
+    const productId = plan && !recht.product_identifier.includes(':')
+      ? `${recht.product_identifier}:${plan}`
+      : recht.product_identifier;
     const { error } = await admin.from('user_subscriptions').upsert(
       {
         user_id: userId,
@@ -149,7 +159,7 @@ async function synchroniseer(
         // Opgezegd is nog geen verlopen: de lezer houdt Pro tot de einddatum, alleen verlengt
         // het niet meer. `auto_renew` is wat Instellingen daarover zegt.
         auto_renew: eind !== null && !abonnement?.unsubscribe_detected_at,
-        product_id: recht.product_identifier,
+        product_id: productId,
         winkel: abonnement?.store ?? null,
         updated_at: new Date().toISOString(),
       },
