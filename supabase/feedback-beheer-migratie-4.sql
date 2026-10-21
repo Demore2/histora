@@ -119,3 +119,46 @@ grant execute on function
   public.beheer_notitie_opslaan(uuid, text, text, text, boolean, text, text, text),
   public.beheer_notitie_bijwerken(uuid, text, text, text, boolean)
 to authenticated;
+
+-- ---------------------------------------------------------------------------------------------
+-- Discord: wie wees toe?
+-- ---------------------------------------------------------------------------------------------
+--
+-- De trigger geeft nu mee welke beheerder de wijziging deed (`door`), zodat `send-feedback-discord`
+-- iemand die zichzelf toewijst niet pingt. Een ping is er alleen voor "Quinten wijst iets aan Mike
+-- toe" en andersom. Een statuswijziging plaatst nooit een nieuw bericht (dat regelt de function).
+
+create or replace function public.werk_feedback_discord_bij()
+returns trigger
+language plpgsql security definer set search_path = ''
+as $$
+declare
+  sleutel text;
+  door    text;
+begin
+  if new.bron = 'intern' then
+    return new;
+  end if;
+
+  select decrypted_secret into sleutel from vault.decrypted_secrets
+   where name = 'service_role_key' limit 1;
+  if sleutel is null then return new; end if;
+
+  select b.id into door from public.beheerders b
+   where lower(b.email) = lower(coalesce(auth.jwt() ->> 'email', ''));
+
+  perform net.http_post(
+    url                  := 'https://nxwdhuuouhbmykgykbov.supabase.co/functions/v1/send-feedback-discord',
+    headers              := jsonb_build_object('Content-Type', 'application/json',
+                                               'Authorization', 'Bearer ' || sleutel),
+    body                 := jsonb_build_object('feedback_id', new.id, 'actie', 'bijwerken',
+                                               'vorige_toegewezen', old.toegewezen_aan,
+                                               'door', door),
+    timeout_milliseconds := 15000
+  );
+  return new;
+exception when others then
+  raise warning '[feedback-discord-bijwerken] niet gestart voor %: %', new.id, sqlerrm;
+  return new;
+end;
+$$;

@@ -28,9 +28,9 @@
  * De trigger `feedback_discord_na_update` roept ons daarna met `actie: 'bijwerken'` aan zodra
  * status of toewijzing verandert: dan wordt hetzelfde bericht ge-PATCHt (kleur, status, wie het
  * oppakt) in plaats van dat er een tweede bij komt. Een bewerking pingt in Discord nooit, dus
- * een nieuwe toewijzing krijgt een eigen kort bericht met alleen díe beheerder in
- * `allowed_mentions.users`. Is het oorspronkelijke bericht weg (404) of nooit bewaard, dan
- * plaatsen we het opnieuw en bewaren dat id.
+ * een toewijzing aan de ánder krijgt een eigen kort bericht met alleen díe beheerder in
+ * `allowed_mentions.users`; jezelf toewijzen blijft stil. Is het oorspronkelijke bericht weg
+ * (404), dan blijft het weg: alleen een nieuw ticket plaatst een bericht.
  *
  * **De webhook-URL's staan in de secrets `DISCORD_WEBHOOK_BUG` / `DISCORD_WEBHOOK_IDEE`, niet in
  * de code.** Een webhook-URL is een wachtwoord en `github.com/Demore2/chronicles` is publiek. Zie
@@ -297,7 +297,8 @@ async function stuur(
 async function plaatsEmbed(
   webhook: string,
   embed: Record<string, unknown>,
-  berichtId: string | null
+  berichtId: string | null,
+  magPlaatsen: boolean
 ): Promise<{ uitkomst: Uitkomst; berichtId: string | null; kanaalId: string | null }> {
   // Het bericht is door een gebruiker getypt. Zonder deze regel is `@everyone` in een
   // bugmelding een `@everyone` in de server.
@@ -312,9 +313,15 @@ async function plaatsEmbed(
         kanaalId: typeof bewerkt.data?.channel_id === 'string' ? bewerkt.data.channel_id : null,
       };
     }
-    // Iemand heeft het bericht in Discord weggehaald: plaats het opnieuw. Elke andere fout
-    // geven we door — dan zou opnieuw plaatsen een dubbel bericht opleveren.
+    // Elke andere fout dan 404 geven we door — opnieuw plaatsen zou een dubbel bericht opleveren.
     if (bewerkt.status !== 404) return { uitkomst: bewerkt, berichtId, kanaalId: null };
+  }
+
+  // Een bijwerking vanaf het bord plaatst nooit iets nieuws: is het bericht weggehaald (404) of
+  // nooit bewaard, dan blijft het weg. Een statuswijziging hoort in Discord stil te zijn; alleen
+  // een nieuw ticket komt binnen als bericht (wens van de eigenaar, 2026-10-21).
+  if (!magPlaatsen) {
+    return { uitkomst: { ok: true, status: 204, data: null }, berichtId: null, kanaalId: null };
   }
 
   const geplaatst = await stuur(`${webhook}?wait=true`, 'POST', payload);
@@ -394,11 +401,14 @@ Deno.serve(async (req: Request) => {
   let feedbackId = '';
   let actie: 'plaats' | 'bijwerken' = 'plaats';
   let vorigeToegewezen: string | null = null;
+  let door: string | null = null;
   try {
     const body = await req.json();
     feedbackId = String(body?.feedback_id ?? body?.record?.id ?? '');
     if (body?.actie === 'bijwerken') actie = 'bijwerken';
     vorigeToegewezen = typeof body?.vorige_toegewezen === 'string' ? body.vorige_toegewezen : null;
+    // Welke beheerder de wijziging deed (uit de trigger). Wie zichzelf toewijst, pingen we niet.
+    door = typeof body?.door === 'string' ? body.door : null;
   } catch {
     return antwoord(400, { error: 'ongeldige_body' });
   }
@@ -454,7 +464,8 @@ Deno.serve(async (req: Request) => {
   const { uitkomst, berichtId, kanaalId } = await plaatsEmbed(
     webhook,
     bouwEmbed(rij, lezerEmail, projectRef, behandelaar),
-    rij.discord_bericht_id
+    rij.discord_bericht_id,
+    actie === 'plaats'
   );
 
   if (berichtId && berichtId !== rij.discord_bericht_id) {
@@ -470,6 +481,7 @@ Deno.serve(async (req: Request) => {
     actie === 'bijwerken' &&
     behandelaar?.discord_id &&
     behandelaar.id !== vorigeToegewezen &&
+    behandelaar.id !== door &&
     rij.status !== 'klaar'
   ) {
     const p = await pingBehandelaar(
@@ -488,11 +500,13 @@ Deno.serve(async (req: Request) => {
     actie,
     soort: rij.soort,
     kanaal: rij.soort === 'bug' ? 'bugs' : 'ideas',
-    discord: uitkomst.ok
-      ? berichtId === rij.discord_bericht_id
-        ? 'bijgewerkt'
-        : 'geplaatst'
-      : `mislukt: ${uitkomst.fout}`,
+    discord: !uitkomst.ok
+      ? `mislukt: ${uitkomst.fout}`
+      : !berichtId
+        ? 'bericht_bestaat_niet_meer'
+        : berichtId === rij.discord_bericht_id
+          ? 'bijgewerkt'
+          : 'geplaatst',
     ping,
   });
 });
