@@ -454,48 +454,6 @@
   .keuzes label:has(input:checked) { background: var(--kleur, var(--accent)); border-color: transparent; color: var(--on-colour); }
   .keuzes label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-  /* ---------- Ideeënhub ---------- */
-  .hub { padding: 0 24px 48px; }
-  .hub-raster {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 14px;
-  }
-  .kaart {
-    background: var(--panel);
-    border: 0;
-    border-radius: 10px;
-    border-top: 5px solid var(--kleur);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .06);
-    padding: 14px 16px;
-    display: grid;
-    gap: 8px;
-    align-content: start;
-    cursor: pointer;
-    text-align: left;
-    min-height: 140px;
-  }
-  .kaart:hover { box-shadow: var(--shadow); }
-  .kaart.afgerond { opacity: .6; }
-  .kaart.afgerond h3 { text-decoration: line-through; }
-  .kaart-kop { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); }
-  .kaart-kop .soort-chip { font-weight: 700; color: var(--kleur); }
-  .kaart-kop .speld { margin-left: auto; }
-  .kaart h3 { font-size: 15px; line-height: 1.35; word-break: break-word; }
-  .kaart p {
-    white-space: pre-wrap;
-    word-break: break-word;
-    color: var(--muted);
-    line-height: 1.5;
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-  .kaart-voet { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); margin-top: auto; }
-  .kaart-voet .avatar { width: 22px; height: 22px; font-size: 11px; }
-  .hub-leeg { color: var(--muted); padding: 24px 0; }
-
   /* ---------- Statistieken ---------- */
   .stats { padding: 0 24px 48px; display: grid; gap: 16px; }
   .tegels {
@@ -680,9 +638,12 @@
         <button type="button" data-soort="taak" aria-pressed="false">🗓️ Taken</button>
       </div>
       <input type="search" id="hub-zoek" placeholder="Zoek in de hub…" aria-label="Zoeken in de hub">
-      <label class="schakel"><input type="checkbox" id="hub-afgerond"> Toon afgerond</label>
+      <select id="hub-eigenaar" aria-label="Eigenaar">
+        <option value="">Alle eigenaren</option>
+        <option value="-">Nog niemand</option>
+      </select>
     </div>
-    <div class="hub"><div class="hub-raster" id="hub-raster"></div></div>
+    <main class="bord" id="hub-bord"></main>
   </section>
 
   <!-- Statistieken -->
@@ -789,9 +750,31 @@
     <label class="veld">Inhoud
       <textarea name="inhoud" maxlength="10000" placeholder="Uitwerking, links, stappen…"></textarea>
     </label>
-    <div class="vinkjes">
-      <label><input type="checkbox" name="vastgepind"> 📌 Vastpinnen</label>
-      <label><input type="checkbox" name="afgerond"> ✓ Afgerond</label>
+    <div class="rijtje">
+      <label class="veld">Status
+        <select name="status">
+          <option value="open">Open</option>
+          <option value="in_behandeling">Mee bezig</option>
+          <option value="wacht">Wacht op</option>
+          <option value="afgerond">Afgerond</option>
+        </select>
+      </label>
+      <label class="veld">Prioriteit
+        <select name="prioriteit">
+          <option value="">Geen</option>
+          <option value="hoog">🔴 Hoog</option>
+          <option value="medium">🟠 Medium</option>
+          <option value="lang">🔵 Lange termijn</option>
+        </select>
+      </label>
+    </div>
+    <div class="rijtje">
+      <label class="veld">Eigenaar
+        <select name="eigenaar"></select>
+      </label>
+      <div class="vinkjes" style="align-self:end;padding-bottom:9px">
+        <label><input type="checkbox" name="vastgepind"> 📌 Vastpinnen (bovenaan)</label>
+      </div>
     </div>
     <div class="knoppen">
       <button class="knop gevaar links" type="button" data-actie="verwijder-notitie" id="knop-verwijder">Verwijderen</button>
@@ -860,7 +843,7 @@
     geladenOp: null,
     hubSoort: '',
     hubZoek: '',
-    hubAfgerond: false,
+    hubEigenaar: '',
     notitieId: null,
     stap: 'week',
     internMeetellen: false,
@@ -1027,7 +1010,9 @@
     }
     if (!staat.beheerders.length) {
       // De eigenaarfilter vullen we één keer, zodra we weten wie er beheerder is.
-      $('#filter-eigenaar').append(...(mensen.data || []).map((b) => el('option', { value: b.id, tekst: b.naam })));
+      for (const kiezer of ['#filter-eigenaar', '#hub-eigenaar']) {
+        $(kiezer).append(...(mensen.data || []).map((b) => el('option', { value: b.id, tekst: b.naam })));
+      }
     }
     staat.beheerders = mensen.data || [];
     staat.tickets = lijst.data || [];
@@ -1447,8 +1432,22 @@
   });
 
   // =========================================================================================
-  // Ideeënhub
+  // Ideeënhub — hetzelfde bord als de tickets, met eigen statussen en prioriteiten
   // =========================================================================================
+
+  // De volgorde hier is ook de volgorde van de groepen.
+  const HUB_STATUS = {
+    open:           { label: 'Open',      kleur: 'var(--st-nieuw)', groep: 'var(--grp-nieuw)', leeg: 'Niets open.' },
+    in_behandeling: { label: 'Mee bezig', kleur: 'var(--st-bezig)', groep: 'var(--st-bezig)', leeg: 'Niemand is ergens mee bezig.' },
+    wacht:          { label: 'Wacht op',  kleur: 'var(--st-wacht)', groep: 'var(--st-wacht)', leeg: 'Nergens op aan het wachten.' },
+    afgerond:       { label: 'Afgerond',  kleur: 'var(--st-klaar)', groep: 'var(--st-klaar)', leeg: 'Nog niets afgerond.' },
+  };
+  const HUB_PRIO = {
+    hoog:   { label: 'Hoog',          kleur: 'var(--pr-hoog)' },
+    medium: { label: 'Medium',        kleur: 'var(--st-bezig)' },
+    lang:   { label: 'Lange termijn', kleur: 'var(--pr-laag)' },
+  };
+  const HUB_PRIO_VOLGORDE = { hoog: 0, medium: 1, lang: 2 };
 
   let laadtHub = false;
   async function laadNotities(stil = false) {
@@ -1461,49 +1460,227 @@
     tekenHub();
   }
 
+  /** Optimistisch, net als `werkBij` voor tickets. Leeg ('') wist een veld. */
+  async function werkNotitieBij(id, wijziging) {
+    const n = staat.notities.find((x) => x.id === id);
+    if (!n) return false;
+    const vorig = { ...n };
+    if (wijziging.status === 'in_behandeling' && !n.eigenaar && wijziging.eigenaar === undefined) {
+      wijziging.eigenaar = staat.ik.id;
+    }
+    for (const [k, v] of Object.entries(wijziging)) n[k] = v === '' ? null : v;
+    n.bijgewerkt_op = new Date().toISOString();
+    tekenHub();
+
+    const { error } = await sb.rpc('beheer_notitie_bijwerken', {
+      p_id: id,
+      p_status: wijziging.status ?? null,
+      p_prioriteit: wijziging.prioriteit ?? null,
+      p_eigenaar: wijziging.eigenaar ?? null,
+      p_vastgepind: wijziging.vastgepind ?? null,
+    });
+    if (error) {
+      Object.assign(n, vorig);
+      tekenHub();
+      toast('Niet opgeslagen: ' + foutTekst(error), true);
+      return false;
+    }
+    return true;
+  }
+
+  function hubZichtbaar(n) {
+    if (staat.hubSoort && n.soort !== staat.hubSoort) return false;
+    if (staat.hubEigenaar === '-' && n.eigenaar) return false;
+    if (staat.hubEigenaar && staat.hubEigenaar !== '-' && n.eigenaar !== staat.hubEigenaar) return false;
+    const z = staat.hubZoek.toLowerCase();
+    return !z || (n.titel + ' ' + n.inhoud).toLowerCase().includes(z);
+  }
+
+  /** Vastgepind eerst, dan prioriteit (hoog → lange termijn → geen), dan het laatst bijgewerkt. */
+  function hubSorteer(a, b) {
+    if (a.vastgepind !== b.vastgepind) return a.vastgepind ? -1 : 1;
+    const pa = HUB_PRIO_VOLGORDE[a.prioriteit] ?? 3;
+    const pb = HUB_PRIO_VOLGORDE[b.prioriteit] ?? 3;
+    if (pa !== pb) return pa - pb;
+    return new Date(b.bijgewerkt_op) - new Date(a.bijgewerkt_op);
+  }
+
   function tekenHub() {
-    const open = staat.notities.filter((n) => !n.afgerond).length;
+    const open = staat.notities.filter((n) => n.status !== 'afgerond').length;
     $('#tel-hub').textContent = open ? ` ${open}` : '';
 
-    const z = staat.hubZoek.toLowerCase();
-    const lijst = staat.notities.filter((n) =>
-      (!staat.hubSoort || n.soort === staat.hubSoort) &&
-      (staat.hubAfgerond || !n.afgerond) &&
-      (!z || (n.titel + ' ' + n.inhoud).toLowerCase().includes(z)));
-
-    const raster = $('#hub-raster');
-    if (!lijst.length) {
-      raster.replaceChildren(el('p', {
-        class: 'hub-leeg',
-        tekst: staat.notities.length
-          ? 'Niets dat bij dit filter past.'
-          : 'Nog leeg. Zet hier ideeën, doelen en taken voor de lange termijn neer — klik op “+ Nieuw”.',
-      }));
-      return;
-    }
-    raster.replaceChildren(...lijst.map((n) => {
-      const s = HUB_SOORT[n.soort] || HUB_SOORT.idee;
-      const auteur = beheerder(n.auteur);
-      return el('button', {
-        class: 'kaart' + (n.afgerond ? ' afgerond' : ''),
-        type: 'button',
-        style: `--kleur:${s.kleur}`,
-        onclick: () => openNotitie(n.id),
-      },
-        el('div', { class: 'kaart-kop' },
-          el('span', { class: 'soort-chip', tekst: `${s.icoon} ${s.label}` }),
-          n.afgerond ? el('span', { tekst: '✓ afgerond' }) : null,
-          n.vastgepind ? el('span', { class: 'speld', tekst: '📌', title: 'Vastgepind' }) : null,
-        ),
-        el('h3', { tekst: n.titel }),
-        n.inhoud ? el('p', { tekst: n.inhoud }) : null,
-        el('div', { class: 'kaart-voet' },
-          auteur ? avatar(auteur) : null,
-          el('span', { tekst: `${auteur ? auteur.naam + ' · ' : ''}${relatief(n.bijgewerkt_op)}` }),
-        ),
-      );
+    const lijst = staat.notities.filter(hubZichtbaar);
+    const groepen = Object.entries(HUB_STATUS).map(([status, s]) => ({
+      id: 'h-' + status,
+      status,
+      titel: s.label,
+      kleur: s.groep,
+      leeg: s.leeg,
+      items: lijst.filter((n) => (HUB_STATUS[n.status] ? n.status : 'open') === status).sort(hubSorteer),
     }));
+    $('#hub-bord').replaceChildren(...groepen.map(tekenHubGroep));
   }
+
+  // Afgerond staat standaard dicht, net als Klaar bij de tickets.
+  function hubDicht(id) {
+    return id in staat.dicht ? !!staat.dicht[id] : id === 'h-afgerond';
+  }
+
+  let sleepNotitieId = null;
+
+  function tekenHubGroep(g) {
+    const dicht = hubDicht(g.id);
+    const kop = el('button', {
+      class: 'groep-kop',
+      type: 'button',
+      'aria-expanded': String(!dicht),
+      onclick: () => {
+        staat.dicht[g.id] = !hubDicht(g.id);
+        bewaarLokaal('histora-beheer-dicht', JSON.stringify(staat.dicht));
+        tekenHub();
+      },
+    },
+      el('span', { class: 'pijl', tekst: '▾' }),
+      el('h2', { tekst: g.titel }),
+      el('span', { class: 'teller', tekst: `${g.items.length} ${g.items.length === 1 ? 'item' : 'items'}` }),
+    );
+
+    const tabel = el('div', { class: 'tabel', role: 'table' },
+      el('div', { class: 'rij kopregel', role: 'row' },
+        el('div', { tekst: 'Item' }),
+        el('div', { tekst: 'Soort' }),
+        el('div', { tekst: 'Eigenaar' }),
+        el('div', { tekst: 'Status' }),
+        el('div', { tekst: 'Prioriteit' }),
+        el('div', { tekst: 'Bijgewerkt' }),
+      ),
+      g.items.length ? g.items.map(tekenHubRij) : el('div', { class: 'leeg-groep', tekst: g.leeg }),
+    );
+
+    let diepte = 0;
+    const sectie = el('section', {
+      class: 'groep',
+      style: `--grp:${g.kleur}`,
+      'data-dicht': String(dicht),
+      ondragenter: (e) => {
+        if (!sleepNotitieId) return;
+        e.preventDefault();
+        diepte++;
+        sectie.classList.add('drop-doel');
+      },
+      ondragover: (e) => {
+        if (!sleepNotitieId) return;
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+      },
+      ondragleave: () => {
+        if (--diepte <= 0) { diepte = 0; sectie.classList.remove('drop-doel'); }
+      },
+      ondrop: (e) => {
+        e.preventDefault();
+        diepte = 0;
+        sectie.classList.remove('drop-doel');
+        const id = sleepNotitieId;
+        const n = staat.notities.find((x) => x.id === id);
+        if (!n || n.status === g.status) return;
+        werkNotitieBij(id, { status: g.status }).then((ok) => {
+          if (ok) toast(g.status === 'afgerond' ? 'Afgerond ✓' : `Naar “${g.titel}”`);
+        });
+      },
+    }, kop, tabel);
+    return sectie;
+  }
+
+  function tekenHubRij(n) {
+    const s = HUB_SOORT[n.soort] || HUB_SOORT.idee;
+    const st = HUB_STATUS[n.status] || HUB_STATUS.open;
+    const pr = HUB_PRIO[n.prioriteit];
+    const eigenaar = beheerder(n.eigenaar);
+
+    return el('div', {
+      class: 'rij ticket',
+      role: 'row',
+      draggable: 'true',
+      ondragstart: (e) => {
+        sleepNotitieId = n.id;
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/plain', n.id);
+        e.currentTarget.classList.add('sleept');
+        document.body.classList.add('aan-het-slepen');
+        sluitMenu();
+      },
+      ondragend: (e) => {
+        sleepNotitieId = null;
+        e.currentTarget.classList.remove('sleept');
+        document.body.classList.remove('aan-het-slepen');
+        for (const x of document.querySelectorAll('.groep.drop-doel')) x.classList.remove('drop-doel');
+      },
+    },
+      el('div', { class: 'tekst-cel', onclick: () => openNotitie(n.id), title: n.inhoud || 'Openen' },
+        n.vastgepind ? el('span', { tekst: '📌', title: 'Vastgepind' }) : null,
+        el('span', { class: 'tekst', tekst: n.titel }),
+        n.inhoud ? el('span', { class: 'notitie-stip', title: 'Heeft een uitwerking' }) : null,
+      ),
+      el('div', { class: 'soort', style: `color:${s.kleur}`, tekst: `${s.icoon} ${s.label}` }),
+      el('div', { class: 'eigenaar-cel' },
+        el('button', {
+          class: 'eigenaar-knop',
+          type: 'button',
+          title: eigenaar ? `Eigenaar: ${eigenaar.naam}` : 'Toewijzen',
+          onclick: (e) => hubMenuEigenaar(e.currentTarget, n),
+        }, avatar(eigenaar), eigenaar ? el('span', { tekst: eigenaar.naam }) : null),
+      ),
+      el('div', { class: 'vol status-cel' },
+        el('button', {
+          type: 'button',
+          style: `--kleur:${st.kleur}`,
+          tekst: st.label,
+          onclick: (e) => hubMenuStatus(e.currentTarget, n),
+        }),
+      ),
+      el('div', { class: 'vol prio-cel' },
+        el('button', {
+          type: 'button',
+          class: pr ? '' : 'leeg',
+          style: pr ? `--kleur:${pr.kleur}` : '',
+          tekst: pr ? pr.label : '—',
+          onclick: (e) => hubMenuPrioriteit(e.currentTarget, n),
+        }),
+      ),
+      el('div', { class: 'datum', tekst: relatief(n.bijgewerkt_op), title: datumTijdFmt.format(new Date(n.bijgewerkt_op)) }),
+    );
+  }
+
+  function hubMenuStatus(anker, n) {
+    openMenu(anker, Object.entries(HUB_STATUS).map(([id, s]) =>
+      menuKnop(s.label, s.kleur, () => {
+        if (n.status !== id) werkNotitieBij(n.id, { status: id }).then((ok) => ok && id === 'afgerond' && toast('Afgerond ✓'));
+      })));
+  }
+
+  function hubMenuPrioriteit(anker, n) {
+    openMenu(anker, [
+      ...Object.entries(HUB_PRIO).map(([id, p]) =>
+        menuKnop(p.label, p.kleur, () => { if (n.prioriteit !== id) werkNotitieBij(n.id, { prioriteit: id }); })),
+      menuKnop('Geen', null, () => { if (n.prioriteit) werkNotitieBij(n.id, { prioriteit: '' }); }),
+    ]);
+  }
+
+  function hubMenuEigenaar(anker, n) {
+    const items = staat.beheerders.map((b) => el('button', {
+      type: 'button',
+      onclick: () => { sluitMenu(); if (n.eigenaar !== b.id) werkNotitieBij(n.id, { eigenaar: b.id }); },
+    }, avatar(b), el('span', { tekst: b.id === staat.ik.id ? `${b.naam} (ik)` : b.naam })));
+    if (n.eigenaar) {
+      items.push(el('button', {
+        type: 'button',
+        onclick: () => { sluitMenu(); werkNotitieBij(n.id, { eigenaar: '' }); },
+      }, avatar(null), el('span', { tekst: 'Niemand' })));
+    }
+    openMenu(anker, items);
+  }
+
+  // ---------- het venster: nieuw item of bewerken ----------
 
   const vensterNotitie = $('#venster-notitie');
   function openNotitie(id) {
@@ -1513,12 +1690,18 @@
     const n = id ? staat.notities.find((x) => x.id === id) : null;
     $('#notitie-titel').textContent = n ? 'Bewerken' : 'Nieuw in de hub';
     $('#knop-verwijder').hidden = !n;
+    form.eigenaar.replaceChildren(
+      el('option', { value: '', tekst: 'Niemand' }),
+      ...staat.beheerders.map((b) => el('option', { value: b.id, tekst: b.id === staat.ik.id ? `${b.naam} (ik)` : b.naam })),
+    );
     if (n) {
       form.soort.value = n.soort;
       form.titel.value = n.titel;
       form.inhoud.value = n.inhoud;
       form.vastgepind.checked = n.vastgepind;
-      form.afgerond.checked = n.afgerond;
+      form.status.value = HUB_STATUS[n.status] ? n.status : 'open';
+      form.prioriteit.value = n.prioriteit || '';
+      form.eigenaar.value = n.eigenaar || '';
     } else if (staat.hubSoort) {
       form.soort.value = staat.hubSoort;
     }
@@ -1539,7 +1722,9 @@
       p_titel: titel,
       p_inhoud: form.inhoud.value,
       p_vastgepind: form.vastgepind.checked,
-      p_afgerond: form.afgerond.checked,
+      p_status: form.status.value,
+      p_prioriteit: form.prioriteit.value,
+      p_eigenaar: form.eigenaar.value,
     });
     knop.disabled = false;
     if (error) { toast('Niet opgeslagen: ' + foutTekst(error), true); return; }
@@ -1777,7 +1962,7 @@
     tekenHub();
   });
   $('#hub-zoek').addEventListener('input', (e) => { staat.hubZoek = e.target.value.trim(); tekenHub(); });
-  $('#hub-afgerond').addEventListener('change', (e) => { staat.hubAfgerond = e.target.checked; tekenHub(); });
+  $('#hub-eigenaar').addEventListener('change', (e) => { staat.hubEigenaar = e.target.value; tekenHub(); });
 
   $('#reeks-stap').addEventListener('click', (e) => {
     const knop = e.target.closest('button');

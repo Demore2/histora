@@ -1081,8 +1081,10 @@ lokaal: `npx http-server docs -p 5510`.
   `-3.sql`), niet op persoon, en een rij naar een groep slepen zet die status. Eigenaar is een
   kolom plus filter. Bewust: slepen betekent zo altijd één ding. HTML5-slepen werkt niet op touch;
   daar blijven de klikmenu's.
-- **Drie tabbladen.** *Tickets*; de *Ideeënhub* (`public.beheer_notities`: idee/doel/taak, vastpinnen,
-  afgerond — alleen voor de beheerders); en *Statistieken* (`beheer_statistieken()`, één jsonb).
+- **Drie tabbladen.** *Tickets*; de *Ideeënhub* (`public.beheer_notities`: idee/doel/taak — alleen
+  voor de beheerders; sinds `-4.sql` hetzelfde bord als de tickets, met status
+  open/in_behandeling/wacht/afgerond, prioriteit hoog/medium/lang en een eigenaar; de oude kolom
+  `afgerond` loopt mee met `status = 'afgerond'`); en *Statistieken* (`beheer_statistieken()`, één jsonb).
 - **Interne tickets (`feedback.bron = 'intern'`) komen bewust niet in Discord** — beide triggers
   stoppen er vroeg op. Discord is alleen voor lezersfeedback; dat is een wens van de eigenaar.
 - **Premium-meldingen** (`send-premium-discord` + trigger `premium_melding_na_wijziging` op
