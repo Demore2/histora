@@ -1040,8 +1040,9 @@ Wat voor allebei geldt:
   function en in `net._http_response`. Herpogen gebeurt alleen bínnen één aanroep, bij een 429 of
   een 5xx; over aanroepen heen niet, want de rij in `public.feedback` is niet weg en dat is het
   hele punt van die tabel.
-- 🚩 **Dit voegt verwerkers toe die `docs/privacy-policy.html` nog niet noemt.** Bericht,
-  gebruiker-id en e-mailadres gaan naar Discord en (straks) naar Resend. Werk die pagina bij.
+- **Discord staat sinds 2026-10-21 in het privacybeleid** (en RevenueCat en Google Play ook):
+  bericht, gebruiker-id en e-mailadres gaan naar het privékanaal. **Resend staat er nog niet in** —
+  zet het erbij zodra `RESEND_API_KEY` gezet wordt en er dus echt mail uitgaat.
 
 #### Discord (`send-feedback-discord`)
 
