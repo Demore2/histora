@@ -1,8 +1,10 @@
 import { SettingsItem, SettingsSectie } from '@/components/settings-section';
 import { useVertaling } from '@/hooks/use-vertaling';
+import { toonPrivacyKeuzes } from '@/lib/advertenties';
+import { useAdvertentieStore } from '@/store/advertentie-store';
 
 /**
- * De privacysectie van Instellingen: één regel over de gebruiksstatistieken.
+ * De privacysectie van Instellingen: de gebruiksstatistieken, en sinds v1.2 de advertentiekeuzes.
  *
  * **De schakelaar is eruit.** Het meten hoort bij de app en staat vast aan; wat overblijft is de
  * mededeling dát het gebeurt, met de voetnoot die zegt wát er gemeten wordt.
@@ -21,9 +23,15 @@ import { useVertaling } from '@/hooks/use-vertaling';
  *
  * De uitleg zegt bewust niet "anoniem": zodra je bent ingelogd hangt de meting aan je account
  * (`analytics.zetGebruiker`). "Pseudoniem" is het juiste woord.
+ *
+ * **De advertentiekeuzes verschijnen alleen als Google's UMP zegt dat ze nodig zijn** (EU, VK,
+ * Zwitserland). Daar is het geen gunst maar een eis: wie toestemming gaf moet die even makkelijk
+ * kunnen intrekken. Buiten die landen, voor Pro (die komt nooit door de toestemmingsronde) en op
+ * web is de regel er niet, en de sectie tekent dan ook geen scheidingslijn voor hem.
  */
 export function AnalyticsVoorkeuren() {
   const { t } = useVertaling();
+  const privacyKeuzesNodig = useAdvertentieStore((s) => s.privacyKeuzesNodig);
 
   return (
     <SettingsSectie titel={t((s) => s.instellingen.sectiePrivacy)}>
@@ -33,6 +41,14 @@ export function AnalyticsVoorkeuren() {
         uitleg={t((s) => s.instellingen.analyticsUitleg)}
         waarde={t((s) => s.instellingen.altijdAan)}
       />
+      {privacyKeuzesNodig && (
+        <SettingsItem
+          icoon="megaphone-outline"
+          label={t((s) => s.instellingen.advertentieKeuzes)}
+          uitleg={t((s) => s.instellingen.advertentieKeuzesUitleg)}
+          onPress={() => void toonPrivacyKeuzes()}
+        />
+      )}
     </SettingsSectie>
   );
 }

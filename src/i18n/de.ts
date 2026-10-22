@@ -172,6 +172,8 @@ const de: DeepPartial<Vertalingen> = {
     sectiePrivacy: 'Datenschutz',
     analytics: 'Nutzungsstatistiken',
     analyticsUitleg: 'So machen wir Histora besser.',
+    advertentieKeuzes: 'Werbeeinstellungen',
+    advertentieKeuzesUitleg: 'Ändere, wozu du bei Werbung zugestimmt hast.',
     analyticsVoet:
       'Histora zählt Bildschirme, abgeschlossene Kapitel und Tipps auf Schaltflächen, dazu Gerätetyp und Land — nie, was du selbst schreibst. Es ist mit deinem Konto verknüpft und läuft über Google Firebase; um zu widersprechen oder es löschen zu lassen, schreib uns oder lösche unten dein Konto.',
 

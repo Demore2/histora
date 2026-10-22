@@ -17,6 +17,7 @@ import { AchievementUnlockModal } from '@/components/achievement-unlock-modal';
 import { PrestatieMelding } from '@/components/prestatie-melding';
 import { ShareAchievementModal } from '@/components/share-achievement-modal';
 import { useAankopen } from '@/hooks/use-aankopen';
+import { useAdvertenties } from '@/hooks/use-advertenties';
 import { useDagelijkseHerinnering } from '@/hooks/use-dagelijkse-herinnering';
 import { usePrestaties } from '@/hooks/use-prestaties';
 import { usePushRegistratie } from '@/hooks/use-push-registratie';
@@ -60,6 +61,10 @@ export default function RootLayout() {
   // En de winkelkant daarvan: RevenueCat koppelen aan deze lezer, en de server laten bijwerken
   // als Google Play al premium zegt en de rij nog niet. Zonder sleutel of op web doet hij niets.
   useAankopen();
+
+  // AdMob (v1.2): toestemming vragen en de SDK starten, alleen voor een gratis lezer en pas als
+  // diens abonnement binnen is — anders krijgt een Pro-lezer het toestemmingsvenster te zien.
+  useAdvertenties();
 
   // Even zo: de enige plek die voortgang met Supabase synchroniseert (deel 3). Hij haalt op bij
   // een nieuwe sessie en probeert het opnieuw zodra het netwerk of de app terugkomt.

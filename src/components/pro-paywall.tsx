@@ -309,7 +309,7 @@ export function ProPaywall({ visible, onClose, bron }: ProPaywallProps) {
   // zag, moet hier hetzelfde teruglezen in plaats van vijf andere beloften.
   const voordelen: { icoon: IoniconNaam; tekst: string }[] = [
     { icoon: 'infinite-outline', tekst: t((s) => s.pro.voordeelOnbeperkt) },
-    { icoon: 'eye-off-outline', tekst: t((s) => s.pro.voordeelGeenOnderbreking) },
+    { icoon: 'eye-off-outline', tekst: t((s) => s.pro.voordeelGeenAds) },
     { icoon: 'heart-outline', tekst: t((s) => s.pro.voordeelSupport) },
   ];
 

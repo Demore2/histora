@@ -258,6 +258,8 @@ const en = {
     sectiePrivacy: 'Privacy',
     analytics: 'Usage statistics',
     analyticsUitleg: 'Helps us improve Histora.',
+    advertentieKeuzes: 'Ad choices',
+    advertentieKeuzesUitleg: 'Change what you agreed to for ads.',
     /**
      * Ingekort tot twee zinnen, maar niet geschrapt, en de twee dingen die moesten blijven staan
      * er nog: wát er gemeten wordt (bewust niet "anoniem" — ingelogd hangt het aan je account) en
@@ -385,9 +387,12 @@ const en = {
      */
     voordeelOnbeperkt: 'Read as many stories as you like',
     voordeelGeenOnderbreking: 'No interruptions between stories',
+    // Sinds v1.2 (AdMob) wél een echt verschil: een gratis lezer ziet een banner op Home en het
+    // tijdperk-scherm en een interstitial na elk uitgelezen verhaal; Pro ziet geen van drie. Staat
+    // dus weer in de paywall en de limietmelding, in plaats van `voordeelGeenOnderbreking`.
     voordeelSupport: 'Support the development of Histora',
 
-    // Met opzet niet in gebruik — zie de opmerking hierboven.
+    // Met opzet niet in gebruik — zie de opmerking hierboven (behalve `voordeelGeenAds`, sinds v1.2).
     voordeelVerhalen: 'Stories from six eras',
     voordeelPersonages: 'Every character portrait in your collection',
     voordeelVroeg: 'New stories first, as soon as they land',

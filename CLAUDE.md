@@ -1242,14 +1242,36 @@ npm run generate:interactief -- --apply      # na het nalezen: naar Supabase
   Anthropic-sleutel zou dan in de bundel zitten en de insert zou hoe dan ook op RLS stuklopen.
   Zie `scripts/seed/interactief/README.md`.
 
-### Ads (`src/components/ad-banner.tsx`, LAUNCH-PLAN.md A4)
+### Ads — AdMob (`src/lib/advertenties.ts`, `ad-banner.tsx`, v1.2)
 
-**`ADS_ENABLED` is `false` and `<AdBanner />` renders `null`.** The banner was a placeholder box
-reading "Advertisement", and `useAbonnement()` hardcodes `isPremium: false`, so every user saw it —
-a classic Play rejection reason. Per the no-delete convention the component, all four call sites
-(`collectie/[id]`, `regio/[id]`, `tijdperk/[id]`, `verhaal/[id]/reader`) and the
-`advertentie.label` i18n key all stay put; v1.1 flips one flag alongside a real AdMob integration.
-Don't re-enable it while it's still a placeholder.
+`react-native-google-mobile-ads` (~17.2, **native** — a dev-client rebuild is needed after pulling).
+Placement, chosen by the owner on 2026-10-22: **a banner on Home (between "Continue reading" and the
+era rows) and on `tijdperk/[id]`, plus an interstitial after a finished story** — after the
+character modal closes, never between chapters. **No banner in the reader**: the text is the product.
+Pro sees none of the three.
+
+- **`lib/advertenties.ts` has the shape of `lib/aankopen.ts`**: lazy `require`, Android only, never
+  throws. `startAdvertenties()` runs Google's **UMP consent first** (`gatherConsent`, which only shows
+  a form where the law requires one) and only then calls `initialize()`. It sets
+  `maxAdContentRating: PG`.
+- **`useAdvertenties()` (root layout) waits until *this* reader's subscription has loaded**, then
+  starts the SDK only for free readers. Without that wait every Pro reader would see the consent form
+  on each cold start, because `tier` is `free` until the row arrives.
+- **`ADMOB_EENHEDEN` in `constants/advertenties.ts` holds the real unit IDs, and `null` means nothing
+  shows in a production build.** `__DEV__` always uses Google's `TestIds`, even when the real IDs are
+  filled in: tapping your own live ad is invalid traffic and gets accounts suspended. The **app ID** is
+  in `app.json` (plugin block), because it has to be in the manifest. It is still Google's sample ID
+  there: replace both together.
+- `AdBanner` renders **nothing** until an ad has actually loaded (no grey placeholder strip), and it
+  takes its width from its own layout, not the screen.
+- `toonInterstitial()` always resolves: `false` straight away if nothing is preloaded, so the reader
+  never waits on an ad. `showAdModal` in the reader stays on while it is visible, for
+  `zetOnderbreking`.
+- **Settings → Privacy → "Ad choices"** (`toonPrivacyKeuzes`) appears only when UMP reports
+  `privacyOptionsRequirementStatus === REQUIRED`. In the EU that row is a requirement.
+- The SDK merges the **`AD_ID` permission**. Data Safety, the privacy policy and Play's "Contains ads"
+  must match. See the 1.2 compliance list in `docs/README.md` / `store/listing.md`.
+- `ad-modal.tsx` (the 30-second placeholder) is **orphaned** since v1.2.
 
 ### Gratis vs Pro (`src/constants/monetisatie.ts`, `abonnement-store.ts`)
 
@@ -1581,6 +1603,7 @@ delete it, and don't wire it back up without reading why it was dropped.
 | `components/tijdperk-kaart.tsx`, `components/tijdperken-carousel.tsx` | superseded by `tijdperk-rij.tsx` (R4) |
 | `components/prestatie-raster.tsx` | mijlpalen alleen nog op Voortgang (`achievements-grid.tsx`) |
 | `VasteMeldingRegel` in `components/notification-preferences.tsx` | streak-/mijlpaalregels uit Instellingen gehaald |
+| `components/ad-modal.tsx` | v1.2 — replaced by the AdMob interstitial (`toonInterstitial`) |
 | `components/placeholder-screen.tsx` | Voortgang/Profiel are fully built |
 | `components/profile-card-collection.tsx` | superseded by `profile-character-collection.tsx` (kaarten i.p.v. cirkelraster) |
 | `verhaal/[id]/quiz.tsx`, `verhaal/[id]/chapter-quiz.tsx` | quizzes removed; now tombstone screens |
@@ -1662,8 +1685,9 @@ counts), full i18n (en/nl/fr/de) with a language picker, theme picker, email pre
   Play Console once the 1.1.0 build is uploaded, then the RevenueCat products, entitlement and
   offering. Until that offering exists the limit and the Pro offer stay off by themselves (see
   "Billing via RevenueCat").
-- **AdMob — NOT STARTED.** `ADS_ENABLED` is `false` and `<AdBanner />` renders `null`; the
-  interstitial is a placeholder that says so.
+- **AdMob — CODE DONE (v1.2), IDS PENDING.** See "Ads — AdMob". Still open: the real app ID and
+  unit IDs, and the compliance work (privacy policy, Data Safety, "Contains ads", listing, feature
+  graphic).
 - **Collections — NOT STARTED.** `collecties.ts` exports `[]`.
 - **Rich block types outside the Oudheid (B3b)** — deferred to v1.1. No code is missing; it is
   fact-checked writing.

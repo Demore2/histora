@@ -36,7 +36,7 @@ export function StoryLimitModal({ visible, onClose }: StoryLimitModalProps) {
 
   const voordelen: { icoon: IoniconNaam; tekst: string }[] = [
     { icoon: 'infinite-outline', tekst: t((s) => s.limiet.voordeelOnbeperkt) },
-    { icoon: 'eye-off-outline', tekst: t((s) => s.limiet.voordeelGeenAds) },
+    { icoon: 'eye-off-outline', tekst: t((s) => s.pro.voordeelGeenAds) },
     { icoon: 'people-outline', tekst: t((s) => s.limiet.voordeelAlles) },
   ];
 

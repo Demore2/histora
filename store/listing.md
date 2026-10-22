@@ -29,8 +29,11 @@ Six eras, 20 stories, eight chapters each. Finish one, unlock the figure.
 
 Alternatieven binnen de limiet, mocht je willen A/B'en:
 
-- `History as short stories. 20 lives and events, eight chapters each. No ads.` (75)
-- `Read history one chapter at a time. 20 stories, six eras, no ads.` (65)
+- `History as short stories. 20 lives and events, eight chapters each.` (67)
+- `Read history one chapter at a time. 20 stories, six eras.` (57)
+
+(Hier stond twee keer "no ads". Sinds 1.2 heeft de gratis versie advertenties, dus die belofte is
+eruit. Dat staat ook onder het kopje "Ads" verderop.)
 
 ## Full description (max 4000)
 
@@ -65,8 +68,8 @@ Finish a story and its figure joins your collection. Twenty cards, filled in one
 
 BUILT TO STAY OUT OF THE WAY
 
-No ads.
-No tracking, no advertising profiles, and nothing sold to anyone.
+No ads inside a chapter: the free version shows a banner on the home screen and one short ad after you finish a story. Pro removes them.
+Nothing sold to anyone.
 A free account, so your chapters, characters and streak follow you to a new phone.
 Every story and every image is inside the app, so reading keeps working without a connection.
 One reminder a day, at a time you pick, and you can switch it off.
@@ -75,10 +78,10 @@ The interface is available in English, Dutch, French and German. The stories the
 
 FREE AND PRO
 
-Histora is free to download and read: two new stories a day, and every story you have started stays open. Histora Pro removes the daily limit. It is a monthly or yearly subscription through Google Play, with a 7-day free trial for new subscribers, and you can cancel any time in the Play Store.
+Histora is free to download and read: two new stories a day, and every story you have started stays open. Histora Pro removes the daily limit and all ads. It is a monthly or yearly subscription through Google Play, with a 7-day free trial for new subscribers, and you can cancel any time in the Play Store.
 ```
 
-(2.054/4000.)
+(2.153/4000.)
 
 ---
 
@@ -93,8 +96,8 @@ Histora is free to download and read: two new stories a day, and every story you
 | Website | — | Optioneel. Als je `docs/` via GitHub Pages publiceert kun je die repo-pagina gebruiken. |
 | Phone | — | Optioneel, laat leeg. |
 | Privacy policy | `https://demore2.github.io/histora/privacy-policy.html` | Dezelfde URL als `PRIVACY_BELEID_URL` in `src/constants/juridisch.ts`. Wijzig je de host, wijzig ze samen. |
-| Ads | **No, my app does not contain ads** | Klopt: `ADS_ENABLED = false` in `src/components/ad-banner.tsx`. |
-| In-app purchases | **No** | Billing is een stub, en de drie vlaggen die een aanbod toonden staan uit: `PRO_BANNER_ENABLED`, `VERHAAL_LIMIET_ENABLED`, `AD_ONDERBREKING_ENABLED`. Er is dus nergens een prijs te zien. |
+| Ads | **Yes, my app contains ads** (vanaf 1.2) | AdMob: banners op Home en het tijdperk-scherm, een interstitial na een uitgelezen verhaal; Pro ziet niets. Zet dit pas om met de 1.2-build. 1.1.x had "No". Zie ook "Advertising ID" in `docs/README.md`. |
+| In-app purchases | **Yes** (sinds 1.1.0) | Histora Pro via Google Play Billing / RevenueCat (`histora_pro`, maand en jaar). Hier stond "No" uit de tijd dat Billing nog een stub was. |
 | Content rating | IARC-vragenlijst, zie hieronder | |
 | Target audience | **13+** | Bewust niet onder 13: dan val je onder het Families-programma met een eigen set eisen. |
 | App access | **All or some functionality is restricted** | De hele app zit achter `AuthPoort`, dus Play heeft **testgegevens** nodig: geef het account uit `docs/TEST_ACCOUNTS.md` op bij "App access → Add new instructions". Zonder dat komt de reviewer niet voorbij het loginscherm en volgt een afwijzing. |
@@ -135,8 +138,9 @@ Alles staat in `store/assets/`, gegenereerd met `npm run generate:store-assets`.
 De feature graphic is **geen** PNG die je met de hand bewerkt: de bron is `store/feature-graphic.html`
 en het script rendert die met headless Chrome. Wijzig de HTML en draai het script opnieuw.
 
-⚠️ De feature graphic zegt letterlijk **"20 STORIES · 6 ERAS · NO ADS"**. Verandert een van die drie
-(v1.1 met advertenties, extra verhalen), pas dan de HTML aan en render opnieuw.
+⚠️ De feature graphic zegt letterlijk **"20 STORIES · 6 ERAS · 160 CHAPTERS"**. Tot 1.2 stond daar
+"NO ADS", maar dat is sinds AdMob niet meer waar. Verandert een van de drie (bijvoorbeeld extra
+verhalen), pas dan de HTML aan en render opnieuw.
 
 ### Screenshot-volgorde
 

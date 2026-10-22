@@ -171,6 +171,8 @@ const nl: DeepPartial<Vertalingen> = {
     sectiePrivacy: 'Privacy',
     analytics: 'Gebruiksstatistieken',
     analyticsUitleg: 'Zo maken we Histora beter.',
+    advertentieKeuzes: 'Advertentiekeuzes',
+    advertentieKeuzesUitleg: 'Wijzig waar je voor advertenties mee hebt ingestemd.',
     analyticsVoet:
       'Histora telt schermen, afgeronde hoofdstukken en tikken, samen met je toesteltype en land — nooit wat je zelf typt. Het hangt aan je account en loopt via Google Firebase; wil je bezwaar maken of het laten verwijderen, schrijf ons dan of verwijder hieronder je account.',
 

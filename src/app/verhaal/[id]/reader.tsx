@@ -10,8 +10,6 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { AdBanner } from '@/components/ad-banner';
-import { AdModal } from '@/components/ad-modal';
 import { AnimatedPressable } from '@/components/animated-pressable';
 import { BlokWeergave } from '@/components/blok-weergave';
 import { CharacterUnlockModal } from '@/components/character-unlock-modal';
@@ -28,6 +26,7 @@ import { getTijdperk } from '@/constants/tijdperken';
 import { getVerhaal } from '@/content/verhalen';
 import { useAbonnement } from '@/hooks/use-abonnement';
 import { biedHerinneringAan } from '@/hooks/use-dagelijkse-herinnering';
+import { toonInterstitial } from '@/lib/advertenties';
 import { useTheme } from '@/hooks/use-theme';
 import { useStoryProgress } from '@/hooks/use-story-progress';
 import { logStoryEvent } from '@/hooks/useAnalytics';
@@ -78,9 +77,9 @@ export default function ReaderScreen() {
   const hoofdstukGestartOp = useRef<number | null>(null);
 
   /**
-   * Krijgt deze lezer de onderbreking na het uitlezen te zien? De reader beslist dat zelf en laat
-   * het niet aan `AdModal` over: die kan `null` renderen, en dan zou het scherm blijven wachten op
-   * een `onClose` die nooit komt.
+   * Krijgt deze lezer de onderbreking na het uitlezen te zien? De reader beslist dat zelf. (Hier
+   * hing tot v1.2 het placeholdervenster `AdModal` achter, dat `null` kon renderen en het scherm
+   * dan liet wachten op een `onClose` die nooit kwam; de interstitial lost altijd zijn belofte in.)
    */
   const toontOnderbreking = AD_ONDERBREKING_ENABLED && !isPremium;
 
@@ -244,15 +243,19 @@ export default function ReaderScreen() {
     // De onderbreking komt ná het ontgrendelen, niet ervoor: het personage is de beloning voor
     // acht hoofdstukken, en daar hoort geen advertentie tussen te staan. Zonder onderbreking (Pro,
     // of de vlag uit) gaat het scherm meteen dicht, precies zoals daarvoor.
+    //
+    // Sinds v1.2 is dat een echte AdMob-interstitial. Hij wordt vooraf geladen; is er niets geladen
+    // (offline, geen vulling, nog geen toestemming), dan geeft `toonInterstitial()` meteen `false`
+    // en gaat de lezer door zonder te wachten. `showAdModal` blijft aan zolang hij in beeld is,
+    // zodat de mijlpaal er niet als deelvenster onder klaarligt.
     if (toontOnderbreking) {
       setShowAdModal(true);
+      void toonInterstitial().finally(() => {
+        setShowAdModal(false);
+        verlaatVerhaal();
+      });
       return;
     }
-    verlaatVerhaal();
-  }
-
-  function handleCloseAdModal() {
-    setShowAdModal(false);
     verlaatVerhaal();
   }
 
@@ -337,9 +340,9 @@ export default function ReaderScreen() {
           accent={tijdperk?.kleur ?? theme.accent}
         />
 
-        <View style={styles.advertentie}>
-          <AdBanner />
-        </View>
+        {/* Hier stond de banner. Sinds v1.2 bewust niet meer in de reader: de tekst is het product,
+            en een banner onder elk hoofdstuk is acht onderbrekingen per verhaal. De advertentie in
+            de reader is de interstitial ná het personage, één keer per verhaal. */}
       </Animated.ScrollView>
 
       <View
@@ -404,8 +407,6 @@ export default function ReaderScreen() {
           onClose={handleCloseUnlockModal}
         />
       </Modal>
-
-      <AdModal visible={showAdModal} onClose={handleCloseAdModal} />
     </ThemedView>
   );
 }
@@ -454,10 +455,6 @@ const styles = StyleSheet.create({
   },
   blokken: {
     gap: Spacing.four,
-  },
-  advertentie: {
-    marginTop: Spacing.four,
-    marginHorizontal: -Spacing.four,
   },
   footer: {
     flexDirection: 'row',

@@ -1,53 +1,67 @@
-import { Ionicons } from '@expo/vector-icons';
+import { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import { ThemedText } from '@/components/themed-text';
-import { Radii, Spacing } from '@/constants/theme';
+import { ADS_ENABLED } from '@/constants/advertenties';
+import { Spacing } from '@/constants/theme';
 import { useAbonnement } from '@/hooks/use-abonnement';
-import { useTheme } from '@/hooks/use-theme';
 import { useVertaling } from '@/hooks/use-vertaling';
+import { eenheidVoor, laadAdSdk } from '@/lib/advertenties';
+import { useAdvertentieStore } from '@/store/advertentie-store';
 
 /**
- * Advertenties staan uit in v1.0 (LAUNCH-PLAN.md A4).
+ * Een AdMob-banner (v1.2). Hier stond tot v1.1 een placeholder — een vakje met "Advertisement" —
+ * dat achter `ADS_ENABLED = false` verstopt zat, omdat een placeholder bij Play-review afwijst.
  *
- * Deze banner was een placeholder — een leeg vakje met de tekst "Advertisement" — en die kreeg
- * élke gebruiker te zien op vier schermen, omdat `useAbonnement()` hardcoded `isPremium: false`
- * teruggeeft. Placeholder-content is een klassieke afwijsreden bij Play-review, dus de vlag
- * hieronder staat op `false` en het component rendert niets.
+ * Rendert **niets** zolang er geen echte advertentie is: voor Pro, op web, vóór de toestemming,
+ * zonder eenheid in een productiebuild, en ook als AdMob geen vulling heeft. Een lege grijze
+ * strook waar een advertentie had kunnen staan is slechter dan geen strook.
  *
- * Zet dit pas op `true` samen met een échte AdMob-integratie (v1.1); zolang het een placeholder
- * is, hoort er niets op het scherm te staan. De call-sites in `collectie/[id]`, `regio/[id]`,
- * `tijdperk/[id]` en `verhaal/[id]/reader` blijven bewust staan, zodat de plekken bekend blijven.
+ * De breedte komt uit de eigen layout en niet van het scherm: de banner staat in gewone
+ * scrollinhoud met marges, en een adaptieve banner op schermbreedte steekt daar aan beide kanten
+ * uit. Staat op Home en het tijdperk-scherm (en de lege collectie-/regio-schermen), bewust niet in
+ * de reader — zie `constants/advertenties.ts`.
  */
-const ADS_ENABLED = false;
-
-// TODO (v1.1): vervangen door een echte AdMob-banner en `ADS_ENABLED` weer aanzetten.
 export function AdBanner() {
   const { isPremium } = useAbonnement();
-  const theme = useTheme();
+  const klaar = useAdvertentieStore((s) => s.klaar);
   const { t } = useVertaling();
+  const [breedte, setBreedte] = useState(0);
+  const [geladen, setGeladen] = useState(false);
+  const [mislukt, setMislukt] = useState(false);
 
-  if (!ADS_ENABLED) return null;
-  if (isPremium) return null;
+  if (!ADS_ENABLED || isPremium || !klaar || mislukt) return null;
+  const ad = laadAdSdk();
+  const eenheid = eenheidVoor('banner');
+  if (!ad || !eenheid) return null;
 
   return (
-    <View style={[styles.container, { backgroundColor: theme.backgroundElement }]}>
-      <Ionicons name="megaphone-outline" size={18} color={theme.textSecondary} />
-      <ThemedText type="small" themeColor="textSecondary">
-        {t((s) => s.advertentie.label)}
-      </ThemedText>
+    <View style={styles.container} onLayout={(e) => setBreedte(Math.floor(e.nativeEvent.layout.width))}>
+      {geladen && (
+        <ThemedText type="small" themeColor="textSecondary" style={styles.label}>
+          {t((s) => s.advertentie.label)}
+        </ThemedText>
+      )}
+      {breedte > 0 && (
+        <ad.BannerAd
+          unitId={eenheid}
+          size={ad.BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
+          width={breedte}
+          onAdLoaded={() => setGeladen(true)}
+          onAdFailedToLoad={() => setMislukt(true)}
+        />
+      )}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    height: 64,
-    borderRadius: Radii.card,
-    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    gap: Spacing.two,
     marginHorizontal: Spacing.four,
+  },
+  label: {
+    fontSize: 11,
+    marginBottom: Spacing.one,
   },
 });

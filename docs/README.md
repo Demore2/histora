@@ -61,6 +61,39 @@ de enige plek waar de URL staat.
 De pagina en het formulier moeten hetzelfde zeggen. Wat hier staat, en dus wat je in de Play
 Console aankruist:
 
+### 🆕 Vanaf 1.2 (AdMob): invullen vóórdat de 1.2-build naar productie gaat
+
+**Nog niet invullen zolang 1.1.x de live versie is.** Dan klopt de tabel hieronder ("21 oktober")
+nog. Pas zodra 1.2 met `react-native-google-mobile-ads` naar Play gaat, komen er vier rijen bij,
+en voor het eerst staat *Shared* ergens op **Yes**. Google AdMob verwerkt namelijk niet alleen in
+onze opdracht, maar gebruikt de gegevens ook voor eigen advertentiedoeleinden. Dat is precies
+Google's definitie van *delen*, en hun eigen Data Safety-richtlijn voor de Mobile Ads SDK zegt
+hetzelfde.
+
+Alles uit de tabel van 21 oktober blijft staan. Wat erbij komt of verandert:
+
+| Categorie → type | Collected | Shared | Doel | Optioneel? | Waarom |
+|---|---|---|---|---|---|
+| Location → **Approximate location** | Yes | **Yes** | Advertising or marketing, Analytics, Fraud prevention | Required | AdMob leidt het af uit het IP-adres |
+| App activity → **App interactions** | Yes (stond al) | **Yes** (nieuw) | + Advertising or marketing, Analytics | Required | vertoningen en tikken op advertenties gaan naar Google |
+| App info and performance → **Diagnostics** | Yes | **Yes** | Analytics, Fraud prevention | Required | de SDK stuurt prestatie- en foutgegevens van advertenties mee |
+| Device or other IDs | **Yes** | **Yes** | Advertising or marketing, Analytics, Fraud prevention | Required | advertentie-ID + app set ID |
+
+- **"Required" en niet "Optional"**: een gratis lezer kan advertenties niet uitzetten zonder Pro, en
+  ook wie personalisatie weigert stuurt nog steeds het IP-adres en de apparaatgegevens. Optioneel
+  betekent in Google's formulier "de gebruiker kan dit weigeren en de app blijft werken", en dat
+  is hier niet het geval.
+- **Onderaan het formulier**: "Is your app's data collection compliant with the Families
+  Policy?" is niet van toepassing (doelgroep 13+).
+- **Elders in de Play Console** horen er nog twee bij:
+  - **App content → Ads → "Yes, my app contains ads".**
+  - **App content → Advertising ID**: "Yes", met als doel *Advertising or marketing*. Zonder die
+    verklaring weigert Play een build die `AD_ID` declareert, en die permissie voegt de SDK zelf
+    in het manifest toe.
+- `docs/privacy-policy.html` en `src/constants/juridische-teksten.ts` beschrijven dit al vanaf
+  22 oktober 2026, met de toevoeging "vanaf versie 1.2", zodat publiceren vóór de release
+  geen onware tekst oplevert.
+
 ### ✅ Geldend vanaf 21 oktober 2026 (1.1.0+: billing aan, Firebase uit)
 
 Dit is de stand die nu ingevuld hoort te zijn. Alles onder dit kopje is ouder en blijft staan als

@@ -43,14 +43,15 @@ export const DAGELIJKSE_VERHAAL_LIMIET = 2;
 export const VERHAAL_LIMIET_ENABLED = true;
 
 /**
- * De onderbreking ná een uitgelezen verhaal (`ad-modal.tsx`).
+ * De onderbreking ná een uitgelezen verhaal: sinds v1.2 een AdMob-interstitial
+ * (`toonInterstitial()` in `lib/advertenties.ts`), aangeroepen door de reader nadat het
+ * personagevenster dicht is. Eén keer per verhaal, nooit tussen hoofdstukken.
  *
- * Los van `ADS_ENABLED` in `ad-banner.tsx`, dat over de vaste banner op vier schermen gaat en
- * bewust uit blijft. Dit is een ander moment en een andere afweging: één scherm aan het eind van
- * acht hoofdstukken, met een aftelling en een uitweg. Ook dit is nog een placeholder — er zit geen
- * AdMob achter — en het scherm zegt dat er ook bij.
+ * Los van `ADS_ENABLED` in `constants/advertenties.ts`, dat over de vaste banner gaat. Tot v1.2
+ * hing hier het placeholdervenster `ad-modal.tsx` aan (met de aftelling hieronder); dat is nu
+ * orphaned. Zonder echte eenheid in `ADMOB_EENHEDEN` toont een productiebuild niets.
  */
-export const AD_ONDERBREKING_ENABLED = false;
+export const AD_ONDERBREKING_ENABLED = true;
 
 /**
  * Hoeveel seconden de onderbreking blijft staan voordat hij weggeklikt kan worden.

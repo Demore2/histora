@@ -22,7 +22,7 @@ import { SUPPORT_EMAIL } from '@/constants/app-info';
  * verandert — een automatische "vandaag" zou elke dag een nieuwe versie suggereren en is precies
  * het tegenovergestelde van wat "laatst bijgewerkt" moet vertellen.
  */
-export const JURIDISCH_BIJGEWERKT = '21 October 2026';
+export const JURIDISCH_BIJGEWERKT = '22 October 2026';
 
 /**
  * Eén alinea. `label` is de vetgedrukte aanhef ("What we collect:"); zonder label is het gewoon
@@ -108,7 +108,12 @@ export const PRIVACY_ALINEAS: JuridischeAlinea[] = [
   {
     label: 'Usage statistics',
     tekst:
-      'this version of Histora sends no usage statistics and contains no analytics or advertising SDK.',
+      'this version of Histora sends no usage statistics and contains no analytics SDK.',
+  },
+  {
+    label: 'Advertising',
+    tekst:
+      'without Pro, Histora shows ads from Google AdMob: a banner on the home screen and the era pages, and one full-screen ad after you finish a story. Google receives your advertising ID, IP address (approximate location), device and app details and how you interact with the ads, never your email or what you read. In the EU, UK and Switzerland you are asked for consent first and can change it under Settings → Privacy → Ad choices. Pro readers see no ads.',
   },
   {
     label: 'On this device only',
@@ -128,7 +133,7 @@ export const PRIVACY_ALINEAS: JuridischeAlinea[] = [
   {
     label: 'Third parties',
     tekst:
-      'your data is processed on our behalf by Supabase (database and sign-in), and only where relevant by Google Play (payments), RevenueCat (subscription status) and Discord (feedback). RevenueCat and Discord are US companies and may process data there. We do not sell your data and we do not share it for advertising.',
+      'your data is processed on our behalf by Supabase (database and sign-in), and only where relevant by Google Play (payments), RevenueCat (subscription status) and Discord (feedback). RevenueCat and Discord are US companies and may process data there. Without Pro, Google AdMob shows ads and uses the data described above under its own privacy policy. We do not sell your data.',
   },
   {
     label: 'Changes',

@@ -59,7 +59,7 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">Histora &mdash; last updated 21 October 2026</p>
+  <p class="meta">Histora &mdash; last updated 22 October 2026</p>
 
   <div class="callout">
     <p><strong>In short:</strong> Histora needs an account, so it stores your e-mail address and
@@ -130,11 +130,36 @@
 
   <h3>Usage statistics</h3>
   <p><strong>This version of Histora sends no usage statistics.</strong> It contains no
-  analytics SDK and no advertising SDK, and it measures nothing about how you use the app. The
-  only data that leaves your phone is the data described above &mdash; your account, your
-  progress, your poll and choice answers, and any feedback you choose to send.</p>
-  <p>Histora asks for no location permission, reads no GPS, and holds no advertising
-  identifier.</p>
+  analytics SDK and measures nothing about how you use the app. Apart from the advertising
+  described next, the only data that leaves your phone is the data described above &mdash; your
+  account, your progress, your poll and choice answers, and any feedback you choose to send.</p>
+  <p>Histora asks for no location permission and reads no GPS.</p>
+
+  <h3>Advertising (from version 1.2, without Pro)</h3>
+  <p>If you read Histora without a Pro subscription, the app shows ads from
+  <strong>Google AdMob</strong>: a banner on the home screen and on each era&rsquo;s page, and one
+  full-screen ad after you finish a story &mdash; never inside a chapter. <strong>Pro readers see
+  no ads</strong>, and for them the advertising SDK is not started at all.</p>
+  <p>To choose, show and measure ads, and to prevent fraud, Google AdMob receives:</p>
+  <ul>
+    <li>your device&rsquo;s <strong>advertising ID</strong>;</li>
+    <li>your IP address, from which Google derives an <strong>approximate location</strong>;</li>
+    <li>device and app information such as the phone model, Android version, app version and
+    language;</li>
+    <li>how you interact with the ads (whether one was shown or tapped).</li>
+  </ul>
+  <p>It never receives your e-mail address, your account identifier or what you read.</p>
+  <p><strong>In the European Economic Area, the United Kingdom and Switzerland the app asks for
+  your consent first</strong>, using Google&rsquo;s consent form, and shows no ads until you have
+  made a choice. If you decline personalised ads, Google may still show non-personalised ads,
+  which use the information above only to show, measure and protect the ad. You can change your
+  choice at any time under <em>Settings &rarr; Privacy &rarr; Ad choices</em>. On any Android
+  phone you can also reset or delete your advertising ID under <em>Android Settings &rarr; Privacy
+  &rarr; Ads</em>.</p>
+  <p>Ads are limited to content suitable for a general audience. Google processes this data under
+  its own privacy policy; see
+  <a href="https://policies.google.com/technologies/partner-sites">how Google uses information
+  from apps that use its services</a>.</p>
 
   <!-- Bewaard, niet geschrapt. Zodra EXPO_PUBLIC_FIREBASE_ENABLED op true staat en
        google-services.json bestaat, wordt er wél gemeten en hoort onderstaande tekst terug op
@@ -183,8 +208,8 @@
   </ul>
 
   <h2>Who else sees it</h2>
-  <p>We do not sell data and we do not share it for advertising. These companies process data
-  on our behalf, each only for the job described:</p>
+  <p>We do not sell data. These companies process data on our behalf, each only for the job
+  described &mdash; with one exception, Google AdMob, noted below:</p>
   <ul>
     <li><strong>Supabase</strong> (Supabase, Inc.) &mdash; the database and sign-in service
     holding your account, your reading progress, your poll and choice answers, your invite code,
@@ -196,6 +221,10 @@
     purchases and keeps their status in sync, as described under &ldquo;Your subscription&rdquo;.</li>
     <li><strong>Discord</strong> (Discord Inc.) &mdash; only if you send feedback: hosts the private
     channel where your message reaches us.</li>
+    <li><strong>Google</strong> (Google AdMob) &mdash; only if you read without Pro: shows the ads
+    described under &ldquo;Advertising&rdquo;. For advertising, Google does not only act for us but
+    also decides for itself how it uses this data, under its own privacy policy. That is why the
+    consent form asks you, and not only us.</li>
   </ul>
   <p>RevenueCat and Discord are based in the United States, so data you send them may be processed
   there, under the safeguards those companies provide for transfers from the EU (such as the
@@ -292,9 +321,12 @@
     synchronise your progress and load the polls and choice points.</li>
     <li><code>com.android.vending.BILLING</code> &mdash; lets the app open Google Play&rsquo;s
     payment screen when you choose to subscribe. It gives no access to your payment details.</li>
+    <li><code>com.google.android.gms.permission.AD_ID</code> &mdash; lets Google AdMob read the
+    advertising ID described under &ldquo;Advertising&rdquo;. It is only used for readers without
+    Pro, and you can reset or delete the ID in your phone&rsquo;s settings.</li>
   </ul>
-  <p>The app declares no permission for advertising or for identifying you across other apps, and
-  no permission relating to push messaging: the reminder is scheduled by your own
+  <p>Apart from <code>AD_ID</code>, the app declares no permission for identifying you across other
+  apps, and no permission relating to push messaging: the reminder is scheduled by your own
   device&rsquo;s alarm clock, and no push token is ever requested.</p>
 
   <h2>Offline use</h2>
@@ -310,9 +342,10 @@
   created an account, write to us and we will remove it.</p>
 
   <h2>Advertising and payment</h2>
-  <p>Histora shows <strong>no advertising</strong> and contains no advertising SDK. The only
-  payment is the optional Pro subscription, handled by Google Play as described above. If
-  advertising is ever added, this policy is updated before that version is published.</p>
+  <p>From version 1.2, Histora is free to read with ads from Google AdMob, as described under
+  &ldquo;Advertising&rdquo;. The optional Pro subscription, handled by Google Play as described
+  above, removes the daily story limit and all ads. Versions before 1.2 contain no advertising
+  SDK.</p>
 
   <h2>Changes to this policy</h2>
   <p>If this policy changes, the updated version is published on this page with a new date at the

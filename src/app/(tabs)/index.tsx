@@ -3,6 +3,7 @@ import { useRouter } from 'expo-router';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { AdBanner } from '@/components/ad-banner';
 import { CollectieKaart } from '@/components/collectie-kaart';
 import { HorizontaleRij } from '@/components/horizontale-rij';
 import { LegeStaat } from '@/components/lege-staat';
@@ -150,6 +151,11 @@ export default function OntdekScreen() {
               />
             )}
           </View>
+
+          {/* De banner (v1.2) staat tussen "Verder lezen" en de tijdperk-rijen: halverwege de pagina,
+              niet boven de hero en niet tussen twee rijen van hetzelfde soort. Rendert niets voor
+              Pro of zolang er geen echte advertentie geladen is, dan sluit de `gap` gewoon aan. */}
+          <AdBanner />
 
           {SHOW_STORYLINES && (
             <View style={styles.sectie}>
