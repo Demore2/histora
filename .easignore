@@ -67,3 +67,6 @@ supabase/
 
 # Agent-configuratie en skill-symlinks. Zie de toelichting bovenaan.
 .claude/
+
+# Supabase CLI cache (versiecheck), geen projectbestand
+supabase/.temp/
