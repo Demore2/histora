@@ -1097,7 +1097,10 @@ lokaal: `npx http-server docs -p 5510`.
   secret `DISCORD_WEBHOOK_PREMIUM`.
 - **Statistieken tellen accounts, geen downloads** (die staan in Google Play), en "actief" is elke
   schrijfactie of login in de periode; de app openen zonder iets te doen telt niet. Beheerders en
-  `@chronicles.app`-testaccounts tellen standaard niet mee.
+  test- en robotaccounts tellen standaard niet mee. Welke dat zijn staat op één plek:
+  `public.is_testaccount(email)` (`-5.sql`): `@chronicles.app`, de nep-domeinen van RFC 2606 en de
+  adressen die Google Play's pre-launch-robot en reviewers gebruiken. Daar zijn er bij elke ingediende
+  versie nieuwe van; zie je een nieuw nep-adres opduiken, vul dan die functie aan.
 
 #### Mail (`send-feedback-email`)
 
