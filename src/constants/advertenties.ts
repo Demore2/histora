@@ -10,8 +10,8 @@
  * reden voor AdMob om een account te blokkeren — daarom nooit een echte eenheid in `__DEV__`.
  *
  * Het **app-ID** staat niet hier maar in `app.json` (plugin `react-native-google-mobile-ads`),
- * want het moet in het manifest staan vóórdat er één regel JS draait. Daar staat nu nog het
- * voorbeeld-ID van Google; vervang het samen met de eenheden hieronder.
+ * want het moet in het manifest staan vóórdat er één regel JS draait: `ca-app-pub-5960565412463172~2661644668`
+ * (account Demore, sinds 2026-10-22). Het iOS-ID daar is nog het voorbeeld-ID van Google; er is geen iOS-app.
  *
  * **Het app-ID staat twee keer in `app.json`, en beide moeten gelijk blijven**: in het plugin-blok
  * (`androidAppId`, voor het manifest) én als top-level-sleutel `react-native-google-mobile-ads`
@@ -21,8 +21,8 @@
  * die extra sleutel negeert. Dat klopt, want hij is alleen voor Gradle bedoeld.
  */
 export const ADMOB_EENHEDEN: { banner: string | null; interstitial: string | null } = {
-  banner: null,
-  interstitial: null,
+  banner: 'ca-app-pub-5960565412463172/4405971174', // banner-main
+  interstitial: 'ca-app-pub-5960565412463172/3587713526', // interstitial-story-end
 };
 
 /**
