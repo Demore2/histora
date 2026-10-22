@@ -262,8 +262,13 @@ export default function ReaderScreen() {
   function verlaatVerhaal() {
     // Alles wat er voor dit verhaal op de stack ligt afpellen in plaats van Home er bovenop te
     // duwen; anders loopt de terugknop na het ontgrendelen weer door de reader heen.
+    //
+    // `dismissAll()` alleen landt op het tabblad dat het laatst openstond — vaak Profiel of
+    // Voortgang — terwijl de knop "Continue to Home" heet. `navigate('/')` daarna wisselt naar de
+    // Home-tab zonder een tweede Home op de stack te zetten.
     if (router.canDismiss()) {
       router.dismissAll();
+      router.navigate('/');
       return;
     }
     router.replace('/');
