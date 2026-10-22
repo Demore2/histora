@@ -113,7 +113,7 @@ export const PRIVACY_ALINEAS: JuridischeAlinea[] = [
   {
     label: 'Advertising',
     tekst:
-      'without Pro, Histora shows ads from Google AdMob: a banner on the home screen and the era pages, and one full-screen ad after you finish a story. Google receives your advertising ID, IP address (approximate location), device and app details and how you interact with the ads, never your email or what you read. In the EU, UK and Switzerland you are asked for consent first and can change it under Settings → Privacy → Ad choices. Pro readers see no ads.',
+      'without Pro, Histora shows ads from Google AdMob: a banner on the home screen and the era pages, and one full-screen ad after you finish a story. Google receives your advertising ID, IP address (approximate location), device and app details and how you interact with the ads, never your email or what you read. In the EU, UK and Switzerland you are asked for consent first; in US states with their own privacy law you can opt out of the "sale or sharing" of your data. Both are under Settings → Privacy → Ad choices. Pro readers see no ads.',
   },
   {
     label: 'On this device only',
