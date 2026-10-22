@@ -177,15 +177,11 @@ function bouwEmbed(
     velden.push(veld('Length', `${rij.bericht.length} / ${MAX_TEKENS} characters`, true));
   }
 
-  if (projectRef) {
-    velden.push(
-      veld(
-        'Dashboard',
-        `[Open the feedback table](https://supabase.com/dashboard/project/${projectRef}/editor)`,
-        false
-      )
-    );
-  }
+  // Hier stond een veld "Dashboard" met een link naar de tabel in Supabase, en onderaan een voetregel
+  // met het rij-id en het tijdstip. Op verzoek van de eigenaar (2026-10-22) zijn die eruit: het bord
+  // (`Board`) is de ingang, en "Submitted" zegt al wanneer. `projectRef` blijft als parameter staan voor
+  // als de link ooit terug moet.
+  void projectRef;
 
   return {
     title: status === 'klaar' ? `${LABEL[rij.soort]} — done` : LABEL[rij.soort],
@@ -195,8 +191,6 @@ function bouwEmbed(
     description: rij.bericht.slice(0, MAX_DESCRIPTION),
     color: STATUS_KLEUR[status] ?? KLEUR[rij.soort],
     fields: velden,
-    timestamp: new Date(rij.created_at).toISOString(),
-    footer: { text: `Histora · ${rij.id}` },
   };
 }
 
