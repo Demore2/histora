@@ -758,6 +758,11 @@ const en = {
     keuzeKop: 'Your call',
     keuzeVoor: 'What would you have done?',
     keuzeNa: 'History went its own way — this is how other readers decided.',
+    vragenTitel: 'Before you go on',
+    vragenStap: (n: number, totaal: number): string => `Question ${n} of ${totaal}`,
+    vragenVolgende: 'Next question',
+    vragenKlaar: 'Finish chapter',
+    vragenHint: 'Answer to continue. Any answer counts.',
   },
   personage: {
     ontgrendeldTitel: 'Character Unlocked!',

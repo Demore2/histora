@@ -204,8 +204,10 @@ not in the component.
 **There is no `quiz` variant** — `verhaal/[id]/quiz.tsx` and `verhaal/[id]/chapter-quiz.tsx` are
 "Quiz verwijderd" tombstone screens, and `scripts/validate-content.mjs` still carries a dead
 `case 'quiz'` branch that nothing can trigger. Er is sinds "Interactief lezen" wél weer een quiz,
-maar die is **geen `Blok` en geen scherm**: hij komt uit Supabase en staat ónder de blokken. Wat
-verwijderd is en verwijderd blijft, is de quiz als route die het volgende hoofdstuk blokkeerde.
+maar die is **geen `Blok` en geen scherm**: hij komt uit Supabase. Sinds 2026-10-22 staat hij niet
+meer onder de blokken maar in een **verplicht paneel ná "Mark Complete"** (`hoofdstuk-vragen.tsx`), op
+wens van de eigenaar. De oude route (een apart quizscherm) blijft een grafsteen; zie "Interactief lezen"
+voor wat het paneel wél en níet blokkeert.
 
 `Collectie` is a curated cross-cutting list of `verhaalIds`. **`src/content/collecties.ts`
 currently exports an empty array**, so Home's "Storylines" row and `collectie/[id]` render nothing.
@@ -1194,11 +1196,24 @@ server komt** — de verhalen zelf zitten in de bundel en werken offline, deze n
   andermans `user_id` mee invoegen en een peiling volstemmen. Unique constraints op
   `(poll_id, user_id)` en `(choice_id, user_id)` houden dubbel stemmen tegen; de client schrijft
   met `ignoreDuplicates` (`on conflict do nothing`), zodat daar geen update-policy voor nodig is.
-- **Alles is additief en blokkeert niets.** `InteractieveSectie` staat ná de blokken en vóór de
-  advertentiebalk, rendert `null` bij laden, mislukken óf een hoofdstuk zonder interactie, en laat
-  "Mark Complete" ongemoeid. Een mislukte fetch geeft géén foutmelding: de app kan "netwerk stuk"
-  niet onderscheiden van "hier is niets", en de meeste hoofdstukken hebben niets — een melding zou
-  offline dus onder vrijwel elk hoofdstuk verschijnen over iets dat er niet was.
+- **De vragen zijn verplicht, maar alleen als ze er zijn** (sinds 2026-10-22, wens van de eigenaar:
+  "zodat mensen ook echt leren"). "Mark Complete" opent `HoofdstukVragen`, een paneel met quiz →
+  peiling → keuzepunt na elkaar, zonder kruisje of skip. Pas na de laatste vraag wordt het hoofdstuk
+  afgerond (streak, volgende hoofdstuk, mijlpalen). Vier regels houden dat veilig:
+  - **Alleen een geladen, niet-lege interactie opent het paneel** (`handleMarkeerVoltooid` in de
+    reader). Nog aan het laden, offline, mislukt of gewoon geen vragen: dan wordt meteen afgerond.
+    De verhalen werken offline en de vragen niet; een paneel dat op het netwerk wacht, zou offline
+    lezen onmogelijk maken. Getest met vliegtuigmodus.
+  - **Elk antwoord telt, ook een fout.** De quiz toont het juiste antwoord met toelichting en gaat
+    door. Verplicht antwoorden, niet verplicht goed antwoorden.
+  - **Een stem telt op het moment van de tik**, niet pas als de server hem heeft. `stemOpPoll` draait
+    een mislukte stem terug; het paneel houdt zijn eigen `beantwoord`-set bij, anders zit je offline
+    vast achter een uitgeschakelde knop.
+  - **Herlezen geeft geen paneel**: "Mark Complete" bestaat alleen voor een hoofdstuk dat nog niet af
+    is. Het paneel heeft `key={verhaal#hoofdstuk}`, omdat de reader via `router.replace` gemonteerd
+    blijft.
+  Een mislukte fetch geeft nog steeds géén foutmelding: de app kan "netwerk stuk" niet onderscheiden
+  van "hier is niets". `InteractieveSectie` (de oude kaarten onder de tekst) is orphaned.
 - **Quizantwoorden worden niet bewaard** (er is geen `quiz_responses`-tabel): een quiz is een
   zelftest tijdens het lezen, geen cijfer. De uitslag verschijnt **inline**, niet in een modal —
   die zwaarte is voor het ontgrendelde personage en de onderbreking daarna.
@@ -1607,6 +1622,7 @@ delete it, and don't wire it back up without reading why it was dropped.
 | `components/prestatie-raster.tsx` | mijlpalen alleen nog op Voortgang (`achievements-grid.tsx`) |
 | `VasteMeldingRegel` in `components/notification-preferences.tsx` | streak-/mijlpaalregels uit Instellingen gehaald |
 | `components/ad-modal.tsx` | v1.2 — replaced by the AdMob interstitial (`toonInterstitial`) |
+| `components/interactieve-sectie.tsx` | 2026-10-22 — vragen verhuisd naar het verplichte paneel `hoofdstuk-vragen.tsx` |
 | `components/placeholder-screen.tsx` | Voortgang/Profiel are fully built |
 | `components/profile-card-collection.tsx` | superseded by `profile-character-collection.tsx` (kaarten i.p.v. cirkelraster) |
 | `verhaal/[id]/quiz.tsx`, `verhaal/[id]/chapter-quiz.tsx` | quizzes removed; now tombstone screens |

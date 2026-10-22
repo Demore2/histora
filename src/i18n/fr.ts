@@ -464,6 +464,11 @@ const fr: DeepPartial<Vertalingen> = {
     keuzeKop: 'À vous de décider',
     keuzeVoor: "Qu'auriez-vous fait ?",
     keuzeNa: "L'histoire a suivi son cours — voici ce qu'ont décidé les autres lecteurs.",
+    vragenTitel: 'Avant de continuer',
+    vragenStap: (n: number, totaal: number): string => `Question ${n} sur ${totaal}`,
+    vragenVolgende: 'Question suivante',
+    vragenKlaar: 'Terminer le chapitre',
+    vragenHint: 'Répondez pour continuer. Toute réponse compte.',
   },
   personage: {
     ontgrendeldTitel: 'Personnage débloqué !',

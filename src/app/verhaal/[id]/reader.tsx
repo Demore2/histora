@@ -13,7 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AnimatedPressable } from '@/components/animated-pressable';
 import { BlokWeergave } from '@/components/blok-weergave';
 import { CharacterUnlockModal } from '@/components/character-unlock-modal';
-import { InteractieveSectie } from '@/components/interactieve-sectie';
+import { HoofdstukVragen } from '@/components/hoofdstuk-vragen';
 import { LegeStaat } from '@/components/lege-staat';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
@@ -25,8 +25,10 @@ import { MAX_LEESBREEDTE, Radii, Spacing } from '@/constants/theme';
 import { getTijdperk } from '@/constants/tijdperken';
 import { getVerhaal } from '@/content/verhalen';
 import { useAbonnement } from '@/hooks/use-abonnement';
+import { useHoofdstukInteractie } from '@/hooks/use-interactie';
 import { biedHerinneringAan } from '@/hooks/use-dagelijkse-herinnering';
 import { toonInterstitial } from '@/lib/advertenties';
+import { isLeeg } from '@/lib/interactief';
 import { useTheme } from '@/hooks/use-theme';
 import { useStoryProgress } from '@/hooks/use-story-progress';
 import { logStoryEvent } from '@/hooks/useAnalytics';
@@ -58,6 +60,7 @@ export default function ReaderScreen() {
 
   const [showUnlockModal, setShowUnlockModal] = useState(false);
   const [showAdModal, setShowAdModal] = useState(false);
+  const [toonVragen, setToonVragen] = useState(false);
 
   /**
    * Wanneer dit hoofdstuk in beeld kwam, voor `time_spent_seconds` bij het afvinken.
@@ -101,6 +104,16 @@ export default function ReaderScreen() {
   const chapterId = chapterIdParam ? parseInt(chapterIdParam, 10) : 1;
   const chapter = verhaal?.chapters.find((ch) => ch.id === chapterId);
   const progress = useStoryProgress(verhaal?.id ?? '', verhaal?.chapters.length ?? 0);
+
+  // De quiz, peiling en het keuzepunt van dit hoofdstuk (Supabase). Opgehaald zodra het hoofdstuk
+  // opengaat, zodat ze er al zijn als de lezer onderaan op "Mark Complete" tikt. Hier en niet in
+  // `HoofdstukVragen`: de reader moet bij die tik weten óf er vragen zijn.
+  const {
+    interactie,
+    status: interactieStatus,
+    stemOpPoll,
+    kiesOptie,
+  } = useHoofdstukInteractie(verhaal?.id ?? '', chapterId);
 
   useEffect(() => {
     hoofdstukGestartOp.current = Date.now();
@@ -166,6 +179,30 @@ export default function ReaderScreen() {
   const tijdperk = getTijdperk(verhaal!.tijdperkId);
   const isLastChapter = chapterId === verhaal!.chapters.length;
   const nextChapterUnlocked = progress.isChapterUnlocked(chapterId + 1);
+
+  /**
+   * "Mark Complete": heeft dit hoofdstuk vragen, dan eerst die (wens van de eigenaar, 2026-10-22),
+   * anders meteen afronden.
+   *
+   * **Alleen een geladen, niet-lege interactie opent het paneel.** Nog aan het laden, offline,
+   * mislukt of gewoon geen vragen: dan wordt er direct afgerond. De vragen komen van de server en
+   * de verhalen niet; een paneel dat op het netwerk wacht, zou offline lezen onmogelijk maken.
+   *
+   * Herlezen geeft geen paneel: deze knop bestaat alleen voor een hoofdstuk dat nog niet af is.
+   * Daarna staat er "Next Chapter".
+   */
+  function handleMarkeerVoltooid() {
+    if (interactieStatus === 'klaar' && !isLeeg(interactie)) {
+      setToonVragen(true);
+      return;
+    }
+    handleCompleteChapter();
+  }
+
+  function handleVragenKlaar() {
+    setToonVragen(false);
+    handleCompleteChapter();
+  }
 
   function handleCompleteChapter() {
     haptics.succes();
@@ -335,15 +372,9 @@ export default function ReaderScreen() {
           ))}
         </View>
 
-        {/* De quiz, de peiling en het keuzepunt van dit hoofdstuk (Supabase). Staan ná de blokken
-            en vóór de banner, en renderen `null` als er niets is of de verbinding ontbreekt — het
-            hoofdstuk leest zonder ze precies zoals daarvoor. Ze blokkeren "Mark Complete" niet:
-            dat is het verschil met het oude quizscherm, dat er als aparte route tussen stond. */}
-        <InteractieveSectie
-          verhaalId={verhaal.id}
-          chapterId={chapterId}
-          accent={tijdperk?.kleur ?? theme.accent}
-        />
+        {/* Hier stonden de quiz, de peiling en het keuzepunt als optionele kaarten
+            (`InteractieveSectie`). Sinds 2026-10-22 komen ze in een paneel ná "Mark Complete";
+            zie `handleMarkeerVoltooid` en `HoofdstukVragen`. */}
 
         {/* Hier stond de banner. Sinds v1.2 bewust niet meer in de reader: de tekst is het product,
             en een banner onder elk hoofdstuk is acht onderbrekingen per verhaal. De advertentie in
@@ -359,7 +390,7 @@ export default function ReaderScreen() {
             modal dat doet (ontgrendelen) — anders voel je twee tikjes achter elkaar. */}
         {!progress.isChapterCompleted(chapterId) ? (
           <AnimatedPressable
-            onPress={handleCompleteChapter}
+            onPress={handleMarkeerVoltooid}
             haptisch={false}
             style={[
               styles.footerKnop,
@@ -404,6 +435,20 @@ export default function ReaderScreen() {
           </AnimatedPressable>
         )}
       </View>
+
+      {/* `key` per hoofdstuk: "Next Chapter" gaat via `router.replace`, dus de reader blijft gemonteerd
+          en zonder key zou het paneel van hoofdstuk 4 beginnen bij de laatste stap van hoofdstuk 3. */}
+      <HoofdstukVragen
+        key={`${verhaal.id}#${chapterId}`}
+        zichtbaar={toonVragen}
+        interactie={interactie}
+        accent={tijdperk?.kleur ?? theme.accent}
+        verhaalId={verhaal.id}
+        chapterId={chapterId}
+        onStem={stemOpPoll}
+        onKies={kiesOptie}
+        onKlaar={handleVragenKlaar}
+      />
 
       <Modal visible={showUnlockModal} animationType="fade" transparent={true}>
         <CharacterUnlockModal

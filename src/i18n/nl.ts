@@ -489,6 +489,11 @@ const nl: DeepPartial<Vertalingen> = {
     keuzeKop: 'Jouw keuze',
     keuzeVoor: 'Wat had jij gedaan?',
     keuzeNa: 'De geschiedenis ging haar eigen gang — zo besloten andere lezers.',
+    vragenTitel: 'Voordat je verdergaat',
+    vragenStap: (n: number, totaal: number): string => `Vraag ${n} van ${totaal}`,
+    vragenVolgende: 'Volgende vraag',
+    vragenKlaar: 'Hoofdstuk afronden',
+    vragenHint: 'Beantwoord om verder te gaan. Elk antwoord telt.',
   },
   personage: {
     ontgrendeldTitel: 'Personage ontgrendeld!',

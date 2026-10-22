@@ -13,8 +13,8 @@ import { foutTekst } from '@/store/sync-hulp';
  *
  * **Let op: dit is niet de oude quiz terug.** `verhaal/[id]/quiz.tsx` was een apart scherm dat
  * tussen jou en het volgende hoofdstuk stond; dat is verwijderd en blijft verwijderd. Deze quiz
- * staat ín het hoofdstuk, is optioneel en blokkeert niets: je kunt eroverheen scrollen naar
- * "Mark Complete" zonder hem aan te raken.
+ * verschijnt sinds 2026-10-22 in een verplicht paneel ná "Mark Complete" (`hoofdstuk-vragen.tsx`),
+ * maar alleen als hij geladen is: offline of zonder vragen rondt het hoofdstuk gewoon af.
  */
 
 /** Eén meerkeuzevraag met een goed antwoord. Antwoorden worden niet bewaard — zie `story-quiz`. */

@@ -465,6 +465,11 @@ const de: DeepPartial<Vertalingen> = {
     keuzeKop: 'Deine Entscheidung',
     keuzeVoor: 'Was hättest du getan?',
     keuzeNa: 'Die Geschichte nahm ihren eigenen Lauf — so haben andere entschieden.',
+    vragenTitel: 'Bevor es weitergeht',
+    vragenStap: (n: number, totaal: number): string => `Frage ${n} von ${totaal}`,
+    vragenVolgende: 'Nächste Frage',
+    vragenKlaar: 'Kapitel abschließen',
+    vragenHint: 'Antworte, um weiterzumachen. Jede Antwort zählt.',
   },
   personage: {
     ontgrendeldTitel: 'Figur freigeschaltet!',

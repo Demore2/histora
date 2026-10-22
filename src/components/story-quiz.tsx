@@ -19,8 +19,8 @@ const LETTERS = 'ABCDEF';
  *
  * **Dit is niet het oude quizscherm terug.** Dat stond als aparte route tussen jou en het
  * volgende hoofdstuk en is daarom verwijderd (`verhaal/[id]/quiz.tsx` is nu een grafsteen). Deze
- * quiz blokkeert niets: hij staat onder de laatste alinea, "Mark Complete" zit er gewoon achter,
- * en je kunt er zonder één tik overheen scrollen.
+ * quiz staat in het paneel na "Mark Complete" (`hoofdstuk-vragen.tsx`) en is daar verplicht, maar
+ * alleen als hij geladen is; offline blokkeert hij niets.
  *
  * De uitslag verschijnt **onder de vraag, niet in een venster**. Een modal over de reader zou de
  * plek in de tekst wegnemen die je net aan het lezen was, en de app bewaart die zwaarte voor de
@@ -42,7 +42,7 @@ export function StoryQuiz({
    *
    * Bewust een callback en geen `logEvent` in dit component: de quiz weet niet bij welk verhaal
    * of hoofdstuk hij hoort, en die twee alleen voor de meting doorgeven zou het component
-   * afhankelijk maken van iets waar het verder niets mee doet. `InteractieveSectie` heeft ze al.
+   * afhankelijk maken van iets waar het verder niets mee doet. `HoofdstukVragen` heeft ze al.
    */
   onBeantwoord?: (gekozen: number, goed: boolean) => void;
 }) {
