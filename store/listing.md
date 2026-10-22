@@ -22,15 +22,20 @@ omdat "Histora" op zichzelf niets over de inhoud zegt in een zoekresultaat.
 ## Short description (max 80)
 
 ```
-Six eras, 20 stories, eight chapters each. Finish one, unlock the figure.
+Read history one chapter at a time. Finish a story, unlock the figure.
 ```
 
-(73/80.)
+(70/80.)
+
+**Bewust zonder getallen** (wens van de eigenaar, 2026-10-22): er komen nog veel verhalen bij, en een
+listing met "20 stories" veroudert bij elk nieuw verhaal. Hetzelfde geldt voor de volledige beschrijving
+en de feature graphic. Het enige getal dat er nog in staat is de dagelijkse limiet ("two new stories a
+day"), want dat is een regel van het product en geen telling van de inhoud.
 
 Alternatieven binnen de limiet, mocht je willen A/B'en:
 
-- `History as short stories. 20 lives and events, eight chapters each.` (67)
-- `Read history one chapter at a time. 20 stories, six eras.` (57)
+- `History as short stories. Real lives and events, one chapter at a time.` (71)
+- `Short chapters about real people. Finish a story, unlock the figure.` (69)
 
 (Hier stond twee keer "no ads". Sinds 1.2 heeft de gratis versie advertenties, dus die belofte is
 eruit. Dat staat ook onder het kopje "Ads" verderop.)
@@ -45,11 +50,11 @@ eruit. Dat staat ook onder het kopje "Ads" verderop.)
 ```
 Histora turns history into something you actually finish.
 
-Every figure and every event is one story, split into eight short chapters. Read one on the bus, one before bed. A chapter takes a few minutes; a whole story takes about ten.
+Every figure and every event is one story, split into short chapters. Read one on the bus, one before bed. A chapter takes a few minutes; a whole story takes about ten.
 
 WHAT'S INSIDE
 
-Twenty stories across six eras, from the founding of Rome to the present day.
+Stories from every era, from the founding of Rome to the present day. Among them:
 
 Antiquity — Julius Caesar, Spartacus, Ashoka the Great, the rise of Rome, the eruption of Vesuvius
 Middle Ages — Joan of Arc, Charlemagne, Richard the Lionheart
@@ -64,7 +69,7 @@ Chapters unlock one at a time, so you never have to remember where you left off.
 
 COLLECT THE PEOPLE
 
-Finish a story and its figure joins your collection. Twenty cards, filled in one at a time — a quiet reason to come back for the next one.
+Finish a story and its figure joins your collection. A card for every story, filled in one at a time — a quiet reason to come back for the next one.
 
 BUILT TO STAY OUT OF THE WAY
 
@@ -81,7 +86,7 @@ FREE AND PRO
 Histora is free to download and read: two new stories a day, and every story you have started stays open. Histora Pro removes the daily limit and all ads. It is a monthly or yearly subscription through Google Play, with a 7-day free trial for new subscribers, and you can cancel any time in the Play Store.
 ```
 
-(2.153/4000.)
+(2.161/4000.)
 
 ---
 
@@ -138,9 +143,9 @@ Alles staat in `store/assets/`, gegenereerd met `npm run generate:store-assets`.
 De feature graphic is **geen** PNG die je met de hand bewerkt: de bron is `store/feature-graphic.html`
 en het script rendert die met headless Chrome. Wijzig de HTML en draai het script opnieuw.
 
-⚠️ De feature graphic zegt letterlijk **"20 STORIES · 6 ERAS · 160 CHAPTERS"**. Tot 1.2 stond daar
-"NO ADS", maar dat is sinds AdMob niet meer waar. Verandert een van de drie (bijvoorbeeld extra
-verhalen), pas dan de HTML aan en render opnieuw.
+⚠️ De feature graphic zegt **"REAL PEOPLE · SHORT CHAPTERS · ROME TO TODAY"**, bewust zonder getallen,
+zodat hij niet veroudert als er verhalen bijkomen. Tot 1.2 stond daar "NO ADS", en dat is sinds AdMob niet
+meer waar.
 
 ### Screenshot-volgorde
 
