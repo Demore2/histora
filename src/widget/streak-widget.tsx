@@ -2,6 +2,7 @@ import {
   FlexWidget,
   ImageWidget,
   OverlapWidget,
+  SvgWidget,
   TextWidget,
   type ColorProp,
 } from 'react-native-android-widget';
@@ -33,6 +34,18 @@ const FASE_BEELD: Record<StreakFase, number> = {
 };
 
 
+/**
+ * Het vlammetje naast het getal. Een tekening en geen 🔥: een emoji wordt in de lettertypekleur van
+ * de launcher getekend (op Samsung een ander vuurtje dan op Pixel) en leest als getypt. Wit met de
+ * fasekleur als hart, zodat hij bij elke achtergrond hoort.
+ */
+function vlam(hart: string) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path fill="#FFFFFF" d="M12 23c-4.4 0-8-3.1-8-7.8 0-3.2 2.1-6 4.4-8.3.4-.4 1.1-.1 1.1.5 0 1.3.8 2.6 1.9 3.1C11.1 7 12 3.9 14.2 1.6c.4-.4 1-.2 1.1.3.6 3 3.7 5.5 4.5 8.2.4 1.4.2 2.7.2 3.7 0 5.3-3.6 9.2-8 9.2z"/>
+<path fill="${hart}" d="M12 21c-2.2 0-4-1.6-4-3.9 0-1.9 1.4-3.2 2.6-4.5.3-.3.8-.1.8.3 0 .9.6 1.6 1.4 1.6.9 0 1.4-.8 1.3-1.7 0-.4.4-.6.7-.4C16 13.6 16 15.4 16 17c0 2.3-1.8 4-4 4z"/>
+</svg>`;
+}
+
 /** Vanaf deze breedte (dp) de brede indeling. Een 2×2-widget is op de meeste launchers ±150 dp. */
 const BREED_VANAF = 230;
 const WIT: ColorProp = '#FFFFFF';
@@ -57,18 +70,33 @@ export function StreakWidget({ stand, breedte, hoogte, dagenTekst, zin, weekdage
   // Home en Voortgang (`useStreak`). Dan draagt de zin het alleen.
   const toonGetal = stand.dagen > 0;
 
+  // Alleen het getal naast de vlam: iedereen weet dat het dagen zijn (wens van de eigenaar, naar het
+  // voorbeeld van Blend). `dagenTekst` blijft voor de schermlezer.
+  const getalMaat = breed ? 30 : 28;
   const tekstblok = (
-    <FlexWidget style={{ flexDirection: 'column', flexGap: 2 }}>
+    <FlexWidget
+      style={{ flexDirection: 'column', flexGap: 2, alignItems: breed ? 'flex-start' : 'center' }}>
       {toonGetal ? (
-        <TextWidget
-          text={`🔥 ${dagenTekst}`}
-          style={{ fontSize: breed ? 22 : 18, fontWeight: 'bold', color: WIT }}
-          maxLines={1}
-        />
+        <FlexWidget style={{ flexDirection: 'row', alignItems: 'center', flexGap: 4 }}>
+          <SvgWidget
+            svg={vlam(String(kleur.naar))}
+            style={{ width: getalMaat, height: getalMaat }}
+          />
+          <TextWidget
+            text={String(stand.dagen)}
+            style={{ fontSize: getalMaat, fontWeight: 'bold', color: WIT }}
+            maxLines={1}
+          />
+        </FlexWidget>
       ) : null}
       <TextWidget
         text={zin}
-        style={{ fontSize: breed ? 15 : 13, fontWeight: '500', color: toonGetal ? WIT_ZACHT : WIT }}
+        style={{
+          fontSize: breed ? 16 : 15,
+          fontWeight: '600',
+          color: toonGetal ? WIT_ZACHT : WIT,
+          textAlign: breed ? 'left' : 'center',
+        }}
         maxLines={2}
         truncate="END"
       />
@@ -96,7 +124,9 @@ export function StreakWidget({ stand, breedte, hoogte, dagenTekst, zin, weekdage
           }}>
           <ImageWidget image={beeld} imageWidth={vosMaat} imageHeight={vosMaat} />
         </FlexWidget>
-        <FlexWidget style={{ width: 'match_parent', padding: 12 }}>{tekstblok}</FlexWidget>
+        <FlexWidget style={{ width: 'match_parent', alignItems: 'center', padding: 14 }}>
+          {tekstblok}
+        </FlexWidget>
       </OverlapWidget>
     );
   }
