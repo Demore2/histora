@@ -30,8 +30,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.join(__dirname, '..');
 
 const SIZE = 96;
-const source = path.join(projectRoot, 'assets/images/mascotte/histora-mark-compact.svg');
-const target = path.join(projectRoot, 'assets/images/notification-icon.png');
+// Sinds 1.3.1 de vos als silhouet (oren + uitgespaarde bril) in plaats van de H-ring. De H staat er
+// nog als `histora-mark-compact.svg`; die geef je mee als eerste argument om terug te gaan. Het
+// tweede argument is een ander doelbestand, voor een proefversie die de echte niet overschrijft.
+const source = path.resolve(projectRoot, process.argv[2] ?? 'assets/images/vos/vos-silhouet.svg');
+const target = path.resolve(projectRoot, process.argv[3] ?? 'assets/images/notification-icon.png');
 const tempPagina = path.join(projectRoot, '.tmp-notification-icon.html');
 
 const BROWSERS = [

@@ -127,6 +127,12 @@ Three things about the drawing are deliberate, and undoing any of them breaks a 
 - **The depth is the halo, not an `feGaussianBlur`.** SVG filters are the least-supported corner of
   `react-native-svg`, and a glow that silently drops out on one platform is worse than none.
 
+**Sinds 1.3.1 is het meldingsicoon de vos** (`assets/images/vos/vos-silhouet.svg`): een effen kop
+met puntoren, wangpluimen en een spitse kin, de bril met een masker uitgesneden. Het script
+neemt die als standaardbron; `node scripts/generate-notification-icon.mjs assets/images/mascotte/histora-mark-compact.svg`
+zet de H-ring terug. Wat hieronder over de ring staat, geldt nog steeds als regel: een silhouet,
+geen gevulde vorm met iets erin.
+
 **The notification icon needs a ring, not the disc.** Android repaints every non-transparent pixel
 of it in the tint colour, so a filled disc with a white H flattens into a plain white blob and takes
 the H with it. `generate-notification-icon.mjs` therefore renders `histora-mark-compact.svg`, and

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="Histora">
+  <!--
+    De vos als silhouet: de bron van het Android-meldingsicoon (1.3.1).
+
+    Android kleurt elk niet-doorzichtig pixel van een meldingsicoon in één tint, dus
+    een gezicht met kleuren wordt een vlek. Wat de vos in één kleur herkenbaar houdt
+    zijn de vormen: puntoren, wangpluimen, een spitse kin — dat maakt hem een vos en
+    geen kat — en de ronde bril. Die bril is **uitgesneden** met een masker: het montuur,
+    het brugje en de pupillen zijn doorzichtig, de glazen blijven staan.
+
+    Lijnen zijn bewust dik (montuur 60 op 1024): het icoon wordt 24 dp, en wat dunner
+    is dan een paar pixels verdwijnt in de statusbalk.
+
+    Alleen bedoeld voor generate-notification-icon.mjs (headless Chrome rendert het
+    masker). De app zelf laadt dit bestand niet; react-native-svg en maskers zijn geen
+    vrienden. Wit op transparant, zodat het script niets hoeft te vervangen.
+  -->
+  <defs>
+    <mask id="bril" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <rect width="1024" height="1024" fill="#FFFFFF"/>
+      <g fill="none" stroke="#000000">
+        <circle cx="372" cy="545" r="98" stroke-width="60"/>
+        <circle cx="652" cy="545" r="98" stroke-width="60"/>
+        <line x1="462" y1="530" x2="562" y2="530" stroke-width="40"/>
+      </g>
+      <g fill="#000000">
+        <circle cx="390" cy="560" r="34"/>
+        <circle cx="670" cy="560" r="34"/>
+      </g>
+    </mask>
+  </defs>
+  <path fill="#FFFFFF" mask="url(#bril)" d="
+    M512 950
+    L330 800
+    L120 690
+    L175 600
+    C185 520 195 450 225 385
+    L180 70
+    L415 245
+    C460 232 564 232 609 245
+    L844 70
+    L799 385
+    C829 450 839 520 849 600
+    L904 690
+    L694 800
+    Z"/>
+</svg>
