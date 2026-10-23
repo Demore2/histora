@@ -46,29 +46,32 @@ export default function ProfielScreen() {
   return (
     <ThemedView style={styles.container}>
       <SafeAreaView edges={['top']} style={styles.safeArea}>
-        <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
-          <View style={styles.topBalk}>
-            <ThemedText type="display" style={styles.titel}>
-              {t((s) => s.profiel.titel)}
-            </ThemedText>
-            <Pressable
-              onPress={() => setFeedbackOpen(true)}
-              hitSlop={12}
-              accessibilityRole="button"
-              accessibilityLabel={t((s) => s.profiel.feedbackOpenen)}
-              style={styles.icoonKnop}>
-              <Ionicons name="chatbubble-ellipses-outline" size={22} color={theme.text} />
-            </Pressable>
-            <Pressable
-              onPress={() => router.push('/profiel/settings')}
-              hitSlop={12}
-              accessibilityRole="button"
-              accessibilityLabel={t((s) => s.profiel.instellingenOpenen)}
-              style={styles.icoonKnop}>
-              <Ionicons name="settings-outline" size={22} color={theme.text} />
-            </Pressable>
-          </View>
+        {/* Buiten de ScrollView, zodat feedback en instellingen bereikbaar blijven terwijl je door
+            je collectie scrolt (wens van de eigenaar, 1.2.1). De achtergrond is nodig: zonder
+            schuift de inhoud zichtbaar onder de icoontjes door. */}
+        <View style={[styles.topBalk, { backgroundColor: theme.background }]}>
+          <ThemedText type="display" style={styles.titel}>
+            {t((s) => s.profiel.titel)}
+          </ThemedText>
+          <Pressable
+            onPress={() => setFeedbackOpen(true)}
+            hitSlop={12}
+            accessibilityRole="button"
+            accessibilityLabel={t((s) => s.profiel.feedbackOpenen)}
+            style={styles.icoonKnop}>
+            <Ionicons name="chatbubble-ellipses-outline" size={22} color={theme.text} />
+          </Pressable>
+          <Pressable
+            onPress={() => router.push('/profiel/settings')}
+            hitSlop={12}
+            accessibilityRole="button"
+            accessibilityLabel={t((s) => s.profiel.instellingenOpenen)}
+            style={styles.icoonKnop}>
+            <Ionicons name="settings-outline" size={22} color={theme.text} />
+          </Pressable>
+        </View>
 
+        <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
           <ProfileHeader />
           <ProfileStats />
           <ProfileCharacterCollection />
@@ -99,6 +102,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   scrollContent: {
+    paddingTop: Spacing.three,
     paddingBottom: Spacing.six,
     gap: Spacing.five,
   },
@@ -108,6 +112,7 @@ const styles = StyleSheet.create({
     gap: Spacing.three,
     paddingHorizontal: Spacing.four,
     paddingTop: Spacing.three,
+    paddingBottom: Spacing.two,
   },
   titel: {
     flex: 1,

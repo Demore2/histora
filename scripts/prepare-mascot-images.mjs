@@ -26,7 +26,7 @@ const DOEL = 'assets/images/vos';
 const MAAT = 1024;
 const ONDERKANT = 1000; // y van de voeten
 const STAANDE_HOOGTE = 640; // hoogte van een staande vos in de uitvoer
-const STAAND = ['fase-1-gevierd', 'fase-2-ochtend', 'fase-3-middag', 'fase-4-avond', 'fase-5-paniek'];
+const STAAND = ['zwaaiend', 'fase-1-gevierd', 'fase-2-ochtend', 'fase-3-middag', 'fase-4-avond', 'fase-5-paniek'];
 const ZEKER = 14; // afstand tot de achtergrondkleur waaronder een pixel zeker achtergrond is
 const RAND = 70; // ... en waarboven hij zeker voorgrond is
 
@@ -118,7 +118,8 @@ function plaats(bron, kd, schaal) {
   return uit;
 }
 
-const bestanden = fs.readdirSync(BRON).filter((f) => /^fase-.*\.png$/.test(f)).sort();
+// De fases plus de zwaaiende vos van het opstartscherm (`derive-fox-icon.mjs` snijdt die bij).
+const bestanden = fs.readdirSync(BRON).filter((f) => /^(fase-.*|zwaaiend)\.png$/.test(f)).sort();
 const vrij = bestanden.map((f) => {
   const bron = verwijderAchtergrond(PNG.sync.read(fs.readFileSync(path.join(BRON, f))));
   return { naam: f.replace(/\.png$/, ''), bron, kd: kader(bron) };

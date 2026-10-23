@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Animated, View, StyleSheet } from 'react-native';
-import HistoraMark from '@/assets/images/mascotte/histora-mark.svg';
+import { Image } from 'expo-image';
 import { useTheme } from '@/hooks/use-theme';
 import { useVertaling } from '@/hooks/use-vertaling';
 import { ThemedText } from './themed-text';
@@ -41,11 +41,17 @@ export function SplashScreen({ onFinish }: SplashScreenProps) {
           merkteken is in beide thema's één kleur, en #0EA5E9 draagt zowel op het
           beige #F7F1E4 als op het donkerbruine #1C1A16.
         */}
+        {/* Sinds 1.2.1 de zwaaiende vos (de mascotte) in plaats van de blauwe H — hetzelfde
+            beeld als het systeem-opstartscherm (`app-splash.png`), zodat de overgang van het ene
+            naar het andere naadloos is. Het merk is groter dan de H was: een figuur heeft meer
+            hoogte nodig dan een schijf om dezelfde aanwezigheid te hebben. */}
         <View style={styles.logoContainer}>
-          {/* De schijf vult ~85% van zijn eigen canvas (de boekversie ~53%), dus 96
-              op de tekening levert optisch zo'n 80 px inkt — in balans met de 32 px
-              titel. Vergroten naar 132 laat het merk over de titel heen domineren. */}
-          <HistoraMark width={96} height={96} />
+          <Image
+            source={require('@/assets/images/app-splash.png')}
+            style={styles.vos}
+            contentFit="contain"
+            accessibilityIgnoresInvertColors
+          />
         </View>
 
         {/*
@@ -81,10 +87,14 @@ const styles = StyleSheet.create({
     gap: 24,
   },
   logoContainer: {
-    width: 96,
-    height: 96,
+    width: 180,
+    height: 180,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  vos: {
+    width: '100%',
+    height: '100%',
   },
   title: {
     fontSize: 32,

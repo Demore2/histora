@@ -93,6 +93,17 @@ Unreferenced by any code or config right now: `chronicles-logo.webp`, `icon.png`
 
 ### Brand mark (`assets/images/mascotte/`)
 
+> **Sinds 1.2.1 zijn het app-icoon en het opstartbeeld de vos, niet meer de blauwe H.** De mascotte
+> (rode vos, ronde bruine bril, sjaal in `#0EA5E9`) staat in `assets/images/vos/` — bronnen van
+> Higgsfield in `vos/bron/`, transparante versies via `node scripts/prepare-mascot-images.mjs`, en
+> het icoon + `app-splash.png` via `node scripts/derive-fox-icon.mjs` (daarna
+> `npm run generate:store-assets`). Dat script vervangt stap 1-2 van de pijplijn hieronder voor het
+> icoon: het gezicht loopt tot de randen, dus `derive-icon-variants.mjs` (dat een los merk op een
+> egale achtergrond zoekt) past er niet op. `adaptiveIcon.backgroundColor` is nu de vachtkleur
+> `#E4682B`. **Wat nog de H is**: `login.tsx`/`signup.tsx` (40 px) en het meldingsicoon — dat moet
+> een silhouet blijven, en een vossengezicht wordt in één tintkleur een vlek. Het verhaal
+> hieronder over de H klopt nog voor die plekken.
+
 **The logo is a hand-built SVG, not generated art.** `assets/images/mascotte/` holds the source —
 a blue disc with a white **H** — plus a `preview.html` that shows every variant at real UI sizes,
 and its own README with the full story. It replaced an open-book-with-an-H mark; per the no-delete

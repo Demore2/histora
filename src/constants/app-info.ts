@@ -26,9 +26,10 @@ export const ANDROID_PAKKET = 'com.chronicles.historyapp';
  * Staat de app in de Play Store?
  *
  * Zolang dit `false` is toont Instellingen "Rate app" als binnenkort-item: de listing bestaat nog
- * niet, dus de link zou een foutpagina openen. Zet dit op `true` zodra de app live is.
+ * niet, dus de link zou een foutpagina openen. Sinds 1.2.1 `true`: de app staat live (1.1.1 ging op
+ * 2026-10-22 naar productie).
  */
-export const APP_IS_GEPUBLICEERD = false;
+export const APP_IS_GEPUBLICEERD = true;
 
 /** De listing waar "Rate app" naartoe gaat zodra `APP_IS_GEPUBLICEERD` aan staat. */
 export const PLAY_STORE_URL = `https://play.google.com/store/apps/details?id=${ANDROID_PAKKET}`;
