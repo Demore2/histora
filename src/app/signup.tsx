@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { KeyboardAvoidingView, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import HistoraMark from '@/assets/images/mascotte/histora-mark.svg';
+import { Image } from 'expo-image';
 import { AuthKnop } from '@/components/auth-knop';
 import { AuthVeld } from '@/components/auth-veld';
 import { ThemedText } from '@/components/themed-text';
@@ -105,7 +105,13 @@ export default function SignupScreen() {
             keyboardShouldPersistTaps="handled"
             showsVerticalScrollIndicator={false}>
             <View style={styles.kop}>
-              <HistoraMark width={40} height={40} />
+              {/* Sinds 1.3.1 de zwaaiende vos (Phoxy) in plaats van de blauwe H, net als het icoon en het opstartscherm. */}
+              <Image
+                source={require('@/assets/images/vos/zwaaiend.png')}
+                style={{ width: 72, height: 72 }}
+                contentFit="contain"
+                accessibilityIgnoresInvertColors
+              />
               <ThemedText type="title">{t((s) => s.auth.signupTitel)}</ThemedText>
               <ThemedText type="small" themeColor="textSecondary">
                 {t((s) => s.auth.signupOndertitel)}

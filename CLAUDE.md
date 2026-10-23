@@ -100,7 +100,7 @@ Unreferenced by any code or config right now: `chronicles-logo.webp`, `icon.png`
 > `npm run generate:store-assets`). Dat script vervangt stap 1-2 van de pijplijn hieronder voor het
 > icoon: het gezicht loopt tot de randen, dus `derive-icon-variants.mjs` (dat een los merk op een
 > egale achtergrond zoekt) past er niet op. `adaptiveIcon.backgroundColor` is nu de vachtkleur
-> `#E4682B`. **Wat nog de H is**: `login.tsx`/`signup.tsx` (40 px) en het meldingsicoon — dat moet
+> `#E4682B`. **Sinds 1.3.1 ook niet meer op** `login.tsx`/`signup.tsx` (de zwaaiende vos, 72 px) en het meldingsicoon (zie hieronder). Dat laatste moet
 > een silhouet blijven, en een vossengezicht wordt in één tintkleur een vlek. Het verhaal
 > hieronder over de H klopt nog voor die plekken.
 
