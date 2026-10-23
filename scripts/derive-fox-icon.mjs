@@ -125,4 +125,17 @@ const bw = uitsnede.width * schaal, bh = uitsnede.height * schaal;
 teken(splash, uitsnede, (1024 - bw) / 2, (1024 - bh) / 2, bw, bh);
 schrijf('app-splash.png', splash);
 
+// Widgetversies van de fases (1.3). Kleiner, omdat een widget als RemoteViews in het geheugen van
+// de launcher leeft en Android daar een plafond op heeft (ongeveer 1,5× een schermvullende bitmap,
+// voor álle afbeeldingen samen). 1024² ARGB is 4 MB per stuk; 384² is 0,6 MB en nog scherp op een
+// widget van 4×2 cellen.
+const WIDGET_MAAT = 384;
+fs.mkdirSync('assets/images/vos/widget', { recursive: true });
+for (const f of fs.readdirSync('assets/images/vos').filter((n) => /^fase-.*\.png$/.test(n))) {
+  const klein = new PNG({ width: WIDGET_MAAT, height: WIDGET_MAAT });
+  teken(klein, lees(`assets/images/vos/${f}`), 0, 0, WIDGET_MAAT, WIDGET_MAAT);
+  fs.writeFileSync(`assets/images/vos/widget/${f}`, PNG.sync.write(klein));
+}
+console.log(`vos/widget/: fases op ${WIDGET_MAAT}px`);
+
 console.log(`\nadaptiveIcon.backgroundColor in app.json hoort te zijn: ${vachtHex}`);

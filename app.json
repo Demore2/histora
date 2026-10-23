@@ -61,6 +61,27 @@
       ],
       "expo-localization",
       [
+        "react-native-android-widget",
+        {
+          "widgets": [
+            {
+              "name": "Streak",
+              "label": "Histora streak",
+              "description": "Your reading streak and the fox, who gets more worried as midnight comes closer.",
+              "minWidth": "110dp",
+              "minHeight": "110dp",
+              "targetCellWidth": 2,
+              "targetCellHeight": 2,
+              "maxResizeWidth": "420dp",
+              "maxResizeHeight": "240dp",
+              "resizeMode": "horizontal|vertical",
+              "previewImage": "./assets/images/vos/widget/fase-1-gevierd.png",
+              "updatePeriodMillis": 1800000
+            }
+          ]
+        }
+      ],
+      [
         "expo-notifications",
         {
           "icon": "./assets/images/notification-icon.png",

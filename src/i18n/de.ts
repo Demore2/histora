@@ -288,6 +288,22 @@ const de: DeepPartial<Vertalingen> = {
     pro: 'Offline lesen mit Histora Pro',
     terug: 'Zurück',
   },
+  widget: {
+    dagen: (n: number): string => (n === 1 ? '1 Tag' : `${n} Tage`),
+    zinnen: {
+      gevierd: 'Serie gerettet!',
+      ochtend: 'Zeit für ein Kapitel?',
+      middag: 'Hast du fünf Minuten?',
+      avond: 'Lass sie nicht reißen!',
+      paniek: 'Letzte Chance!',
+      skelet: 'Deine Serie ist weg…',
+      slaap: 'Starte eine neue Serie',
+    },
+    toevoegen: 'Widget hinzufügen',
+    toevoegenUitleg: 'Deine Serie und der Fuchs auf dem Startbildschirm.',
+    handmatig: 'Dein Launcher kann es von hier nicht hinzufügen. Halte eine leere Stelle auf dem Startbildschirm gedrückt, wähle Widgets und suche Histora.',
+    weekdagen: ['M', 'D', 'M', 'D', 'F', 'S', 'S'],
+  },
   feedback: {
     titel: 'Feedback senden',
     ondertitel: 'Was ist schiefgelaufen, oder was wünschst du dir?',

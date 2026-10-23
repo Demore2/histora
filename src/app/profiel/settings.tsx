@@ -22,6 +22,7 @@ import {
   supportEmailIsIngesteld,
 } from '@/constants/app-info';
 import { bevestig, meld } from '@/constants/dialoog';
+import { vraagWidgetToevoegen, widgetKanToevoegen } from '@/widget/vernieuw-widget';
 import { DAGELIJKSE_VERHAAL_LIMIET, VERHAAL_LIMIET_ENABLED } from '@/constants/monetisatie';
 import { notificaties } from '@/constants/notificaties';
 import { Radii, Spacing } from '@/constants/theme';
@@ -295,6 +296,28 @@ export default function InstellingenScreen() {
                 })}
               </View>
             </View>
+          ) : null}
+
+          {/* De streak-widget (1.3). Alleen waar hij bestaat (Android); de launcher toont daarna zijn
+              eigen venster, en een launcher die dat niet kan krijgt de uitleg om hem zelf te
+              plaatsen in plaats van een knop die niets doet. */}
+          {widgetKanToevoegen() ? (
+            <SettingsItem
+              icoon="apps-outline"
+              label={t((s) => s.widget.toevoegen)}
+              uitleg={t((s) => s.widget.toevoegenUitleg)}
+              onPress={() => {
+                void vraagWidgetToevoegen().then((gelukt) => {
+                  if (!gelukt) {
+                    meld(
+                      t((s) => s.widget.toevoegen),
+                      t((s) => s.widget.handmatig),
+                      t((s) => s.instellingen.ok),
+                    );
+                  }
+                });
+              }}
+            />
           ) : null}
 
           {/* Hier stond de "App icon"-regel met een "Soon"-badge. Weggehaald: alternatieve

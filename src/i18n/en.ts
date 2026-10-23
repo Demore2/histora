@@ -1,5 +1,6 @@
 import type { PrestatieId } from '@/constants/prestaties';
 import type { AanbevelingReden } from '@/content/aanbeveling';
+import type { StreakFase } from '@/widget/streak-fase';
 
 // Bron van waarheid voor alle UI-sleutels. nl/fr/de moeten dezelfde
 // structuur volgen; ontbrekende sleutels daar vallen terug op deze Engelse
@@ -502,6 +503,29 @@ const en = {
     opnieuw: 'Try again',
     pro: 'Read offline with Histora Pro',
     terug: 'Go back',
+  },
+  /**
+   * De streak-widget op het homescreen (`src/widget/`). `zinnen` is getypeerd tegen `StreakFase`,
+   * net als `prestatie.namen`: een fase erbij zonder zin is een compileerfout.
+   */
+  widget: {
+    dagen: (n: number): string => (n === 1 ? '1 day' : `${n} days`),
+    zinnen: {
+      gevierd: 'Streak saved!',
+      ochtend: 'Time for a chapter?',
+      middag: 'Got five minutes?',
+      avond: 'Don’t let it break!',
+      paniek: 'Last chance!',
+      skelet: 'Your streak is gone…',
+      slaap: 'Start a new streak',
+    } satisfies Record<StreakFase, string>,
+    /** Instellingen → Algemeen: de launcher vragen de widget toe te voegen. */
+    toevoegen: 'Add the widget',
+    toevoegenUitleg: 'Your streak and the fox on your home screen.',
+    /** Als de launcher het venster niet kan tonen: zo zet je hem zelf neer. */
+    handmatig: 'Your launcher can’t add it from here. Touch and hold an empty spot on your home screen, choose Widgets and look for Histora.',
+    /** Beginletters, maandag eerst — de weekbalk op de brede widget. */
+    weekdagen: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
   },
   /**
    * Het feedbackvenster achter het spreekwolkje op Profiel (`feedback-modal.tsx`).

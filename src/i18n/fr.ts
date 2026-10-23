@@ -287,6 +287,22 @@ const fr: DeepPartial<Vertalingen> = {
     pro: 'Lire hors ligne avec Histora Pro',
     terug: 'Retour',
   },
+  widget: {
+    dagen: (n: number): string => (n === 1 ? '1 jour' : `${n} jours`),
+    zinnen: {
+      gevierd: 'Série sauvée !',
+      ochtend: 'L’heure d’un chapitre ?',
+      middag: 'Vous avez cinq minutes ?',
+      avond: 'Ne la laissez pas filer !',
+      paniek: 'Dernière chance !',
+      skelet: 'Votre série est perdue…',
+      slaap: 'Commencez une nouvelle série',
+    },
+    toevoegen: 'Ajouter le widget',
+    toevoegenUitleg: 'Votre série et le renard sur l’écran d’accueil.',
+    handmatig: 'Votre lanceur ne peut pas l’ajouter d’ici. Appuyez longuement sur un espace vide de l’écran d’accueil, choisissez Widgets et cherchez Histora.',
+    weekdagen: ['L', 'M', 'M', 'J', 'V', 'S', 'D'],
+  },
   feedback: {
     titel: 'Envoyer un commentaire',
     ondertitel: "Qu'est-ce qui n'a pas marché, ou que souhaiteriez-vous voir ?",

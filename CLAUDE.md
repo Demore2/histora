@@ -471,6 +471,34 @@ Three rules, all of them the fix for a real bug:
 The store is `persist` **version 1**; the `migrate` clears the phantom `streakDagen: 1` that v0
 seeded for users who never read anything.
 
+### Streak-widget (`src/widget/`, `use-streak-widget.ts`, 1.3)
+
+Een homescreen-widget met de streak en de vos (`react-native-android-widget`, **exact 0.22.1** —
+de versies erna waren bij het installeren een of twee dagen oud). Android-only, **native** (rebuild).
+
+- **`index.js` is nu het startpunt** (`main` in package.json, was `expo-router/entry`). Daar wordt de
+  headless task geregistreerd, want Android start die ook als de app dicht is en dan wordt geen
+  enkel scherm gemonteerd. Achter een `Platform`-controle met `require`: de bibliotheek gooit bij
+  het importeren als de native module er niet is (`TurboModuleRegistry.getEnforcing`), dus op web.
+  Om dezelfde reden laadt `vernieuw-widget.ts` hem lui, in de vorm van `lib/push.ts`.
+- **`streak-fase.ts` is de logica en is zuiver.** De fases tellen af naar **middernacht** (dan
+  verloopt een streak die gisteren gelezen is, zie `berekenHuidigeStreak`), niet naar 24 uur na de
+  laatste lezing — anders toont de widget een skelet naast een app die nog een levende streak laat
+  zien. Het skelet staat er alleen op de dag ná het verlopen; daarna de slapende vos.
+- **Geen tekst in de plaatjes**: het getal en de zin komen uit i18n (`widget.zinnen`, getypeerd tegen
+  `StreakFase`), dus één set plaatjes voor vier talen. De plaatjes zijn de 384-px-versies in
+  `assets/images/vos/widget/` (`derive-fox-icon.mjs`) — RemoteViews hebben een geheugenplafond.
+- **Eén widget, twee indelingen** op de breedte die de launcher meldt (≥ 230 dp: getal, zin en
+  weekbalk links, vos rechts). De weekbalk is afgeleid: een streak is een aaneengesloten reeks die
+  op `laatsteActiviteitDatum` eindigt.
+- **Verversen**: Android elke 30 minuten (`updatePeriodMillis`, het minimum) plus
+  `useStreakWidget()` in de root layout bij een streak- of taalwissel en als de app naar de
+  achtergrond gaat — anders smeekt de vos nog een half uur na een afgerond hoofdstuk.
+  `maakStreakWidget` wacht op de hydratie van de stores, want de headless task start koud.
+- Instellingen → Weergave → "Add the widget" (`requestPinWidget`); een launcher die dat niet kan
+  krijgt uitleg in plaats van een knop die niets doet.
+- Nog niet: de ijsblok-fase (`fase-8-ijs.png` ligt klaar) wacht op de streakbevriezingen.
+
 ### Notifications (`src/constants/notificaties.ts`, `use-dagelijkse-herinnering.ts`, B6)
 
 One daily reminder, **always on**, at a time the user picks (19:00 local to start with). Same

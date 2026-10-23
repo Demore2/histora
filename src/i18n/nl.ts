@@ -312,6 +312,22 @@ const nl: DeepPartial<Vertalingen> = {
     pro: 'Lees offline met Histora Pro',
     terug: 'Terug',
   },
+  widget: {
+    dagen: (n: number): string => (n === 1 ? '1 dag' : `${n} dagen`),
+    zinnen: {
+      gevierd: 'Streak gered!',
+      ochtend: 'Tijd voor een hoofdstuk?',
+      middag: 'Heb je vijf minuten?',
+      avond: 'Laat hem niet breken!',
+      paniek: 'Laatste kans!',
+      skelet: 'Je streak is weg…',
+      slaap: 'Begin een nieuwe streak',
+    },
+    toevoegen: 'Widget toevoegen',
+    toevoegenUitleg: 'Je streak en de vos op je homescreen.',
+    handmatig: 'Je launcher kan hem niet vanuit hier toevoegen. Houd een lege plek op je homescreen ingedrukt, kies Widgets en zoek Histora.',
+    weekdagen: ['M', 'D', 'W', 'D', 'V', 'Z', 'Z'],
+  },
   feedback: {
     titel: 'Feedback sturen',
     ondertitel: 'Wat ging er mis, of wat zou je graag zien?',
