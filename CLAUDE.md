@@ -1247,6 +1247,12 @@ the Play Console** — `listing.md` (all copy plus the answer to every Console f
   the PNG. Play **rejects a feature graphic with an alpha channel**, so the script flattens the
   browser's RGBA output to colour type 2; the 512×512 icon keeps its (fully opaque) alpha because
   Play wants a 32-bit PNG there.
+- **Since 1.3 the phone screenshots are a template too**: `store/screenshots.html` (six slides, the fox from
+  `assets/images/vos/` next to a phone) → `npm run generate:store-screenshots` →
+  `store/assets/screenshots-1.3/`. The screens inside are real captures in `store/screenshots-bron/`
+  at the emulator's **native 1080×2400** — don't `wm size` the emulator for these: the letterboxed
+  display changes the launcher grid, so the widget renders at a size no phone uses. Hide the dev
+  client's Tools button (dev menu → "Tools button") and dismiss LogBox first.
 - **Phone screenshots must be 9:16 or 16:9.** The Pixel_8 emulator is 1080×2400 (9:20), so capture
   with `adb shell wm size 1080x1920` and `wm size reset` afterwards. `adb exec-out screencap -p >
   file` **corrupts the PNG in PowerShell 5.1** (BOM + text encoding) — use `adb shell screencap -p
