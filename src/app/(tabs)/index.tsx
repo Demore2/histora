@@ -14,7 +14,7 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { TijdperkRij } from '@/components/tijdperk-rij';
 import { VerhaalKaart } from '@/components/verhaal-kaart';
-import { CardDimensions, Radii, Spacing } from '@/constants/theme';
+import { CardDimensions, Radii, Spacing, VLAM_KLEUR } from '@/constants/theme';
 import { getActieveTijdperken } from '@/constants/tijdperken';
 import type { Verhaal } from '@/constants/types';
 import { collecties } from '@/content/collecties';
@@ -53,7 +53,7 @@ export default function OntdekScreen() {
               <View style={styles.kopRechts}>
                 {streakDagen > 0 && (
                   <View style={[styles.streak, { backgroundColor: theme.backgroundElement }]}>
-                    <Ionicons name="flame" size={18} color={theme.accent} />
+                    <Ionicons name="flame" size={18} color={VLAM_KLEUR} />
                     <ThemedText type="smallBold">{streakDagen}</ThemedText>
                   </View>
                 )}
@@ -85,7 +85,7 @@ export default function OntdekScreen() {
               {/* Geen vlammetje met een 0 ernaast: zonder streak is er niets te tonen (B6). */}
               {streakDagen > 0 && (
                 <View style={[styles.streak, { backgroundColor: theme.backgroundElement }]}>
-                  <Ionicons name="flame" size={18} color={theme.accent} />
+                  <Ionicons name="flame" size={18} color={VLAM_KLEUR} />
                   <ThemedText type="smallBold">{streakDagen}</ThemedText>
                 </View>
               )}

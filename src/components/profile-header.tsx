@@ -6,7 +6,7 @@ import { StyleSheet, View } from 'react-native';
 
 import { AnimatedPressable } from '@/components/animated-pressable';
 import { ThemedText } from '@/components/themed-text';
-import { Radii, Spacing } from '@/constants/theme';
+import { Radii, Spacing, VLAM_KLEUR } from '@/constants/theme';
 import { useStreak } from '@/hooks/use-streak';
 import { useTheme } from '@/hooks/use-theme';
 import { useVertaling } from '@/hooks/use-vertaling';
@@ -88,7 +88,7 @@ export function ProfileHeader() {
 
       {streak > 0 && (
         <View style={[styles.streak, { backgroundColor: theme.backgroundElement }]}>
-          <Ionicons name="flame" size={14} color={theme.accent} />
+          <Ionicons name="flame" size={14} color={VLAM_KLEUR} />
           <ThemedText type="smallBold">{t((s) => s.voortgang.streak)(streak)}</ThemedText>
         </View>
       )}

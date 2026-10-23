@@ -46,6 +46,9 @@ function vlam(hart: string) {
 </svg>`;
 }
 
+/** De plaatjes in `assets/images/vos/widget/` zijn 384 px; het vak bepaalt de getekende maat. */
+const VOS_BRON = 384;
+
 /** Vanaf deze breedte (dp) de brede indeling. Een 2×2-widget is op de meeste launchers ±150 dp. */
 const BREED_VANAF = 230;
 const WIT: ColorProp = '#FFFFFF';
@@ -104,7 +107,11 @@ export function StreakWidget({ stand, breedte, hoogte, dagenTekst, zin, weekdage
   );
 
   if (!breed) {
-    const vosMaat = Math.max(64, Math.min(breedte, hoogte) - 8);
+    // De vos schaalt mee met de widget (`contain` in een vak tot de onderrand) in plaats van met
+    // `hoogte`: launchers melden een minimum, niet de maat die ze echt tekenen. Het vak begint
+    // 36 dp onder de bovenrand en loopt dus achter de tekst langs — dat kan, want het bovenste
+    // derde van elk faseplaatje is leeg (zie `assets/images/vos/`), dus de vos zelf begint pas
+    // onder de zin.
     return (
       <OverlapWidget
         clickAction="OPEN_APP"
@@ -116,13 +123,14 @@ export function StreakWidget({ stand, breedte, hoogte, dagenTekst, zin, weekdage
           backgroundGradient: { from: kleur.van, to: kleur.naar, orientation: 'TOP_BOTTOM' },
         }}>
         <FlexWidget
-          style={{
-            height: 'match_parent',
-            width: 'match_parent',
-            justifyContent: 'flex-end',
-            alignItems: 'center',
-          }}>
-          <ImageWidget image={beeld} imageWidth={vosMaat} imageHeight={vosMaat} />
+          style={{ height: 'match_parent', width: 'match_parent', paddingTop: 36, alignItems: 'center' }}>
+          <ImageWidget
+            image={beeld}
+            imageWidth={VOS_BRON}
+            imageHeight={VOS_BRON}
+            resizeMode="contain"
+            style={{ width: 'match_parent', height: 'match_parent' }}
+          />
         </FlexWidget>
         <FlexWidget style={{ width: 'match_parent', alignItems: 'center', padding: 14 }}>
           {tekstblok}

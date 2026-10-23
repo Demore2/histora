@@ -67,6 +67,12 @@ export const Fonts = Platform.select({
   },
 });
 
+/**
+ * De streakvlam. Vast oranje (de vacht van de vos) en niet `theme.accent`: in teal las de vlam op
+ * Home en Profiel als een waterdruppel. Zelfde kleur in beide thema's, zoals het merk.
+ */
+export const VLAM_KLEUR = '#E8743B';
+
 export const Spacing = {
   half: 2,
   one: 4,
