@@ -82,7 +82,7 @@ export function StreakKaart() {
         </View>
 
         <Pressable
-          onPress={() => router.push('/winkel')}
+          onPress={() => router.push('/shop')}
           accessibilityRole="button"
           style={styles.chip}>
           <ThemedText type="smallBold" style={{ color: WIT }}>

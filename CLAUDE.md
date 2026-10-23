@@ -499,12 +499,16 @@ de versies erna waren bij het installeren een of twee dagen oud). Android-only, 
   krijgt uitleg in plaats van een knop die niets doet.
 - Nog niet: de ijsblok-fase (`fase-8-ijs.png` ligt klaar) wacht op de streakbevriezingen.
 
-### De winkel: Dukaten en streakbevriezers (`(tabs)/winkel.tsx`, `winkel-store.ts`, `use-winkel.ts`, 1.3)
+### De winkel: Dukaten en streakbevriezers (`app/shop.tsx`, `winkel-store.ts`, `use-winkel.ts`, 1.3)
 
 Keuzes van de eigenaar (2026-10-23): munt = **Dukaten**, verdiend met lezen (10 per hoofdstuk, 40
 per uitgelezen verhaal); een **streakbevriezer** kost 300 (eerst 150 — te goedkoop: één verhaal levert 120 op) en je hebt er hooguit **2**; gratis lezers
 krijgen er geen cadeau, **Pro 2 per maand**. Echt geld komt later als **Dukaten-pakketten** (1.3b).
 
+- **De winkel is geen tabblad maar een stack-scherm (`/shop`)**, bereikbaar via het Dukaten-knopje in
+  **`KopActies`** (`components/kop-acties.tsx`): saldo, feedback en instellingen rechtsboven op Home,
+  Voortgang, Profiel en de winkel zelf (wens van de eigenaar). Feedback en Instellingen stonden
+  eerder alleen op Profiel. `(tabs)/winkel.tsx` is een omleiding met `href: null`.
 - **De server is de bron** (`supabase/winkel-migratie.sql`). Drie tabellen met alleen een
   select-policy en vijf `security definer`-functies (`winkel_stand`, `dukaten_verdien`,
   `koop_bevriezer`, `pro_bevriezers_aanvullen`, `gebruik_bevriezers`). De bedragen staan alleen in

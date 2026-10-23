@@ -1,10 +1,7 @@
-import { Ionicons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
-import { useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { FeedbackModal } from '@/components/feedback-modal';
+import { KopActies } from '@/components/kop-acties';
 import { ProAccessBanner } from '@/components/pro-access-banner';
 import { ProfileCharacterCollection } from '@/components/profile-character-collection';
 import { ProfileHeader } from '@/components/profile-header';
@@ -32,16 +29,6 @@ import { useVertaling } from '@/hooks/use-vertaling';
 export default function ProfielScreen() {
   const theme = useTheme();
   const { t } = useVertaling();
-  const router = useRouter();
-
-  /**
-   * Het spreekwolkje opent nu een venster in de app in plaats van een mailprogramma. Dat scheelt
-   * de gebruiker een contextwissel, en het werkt óók op een toestel zonder mailclient en zonder
-   * dat `SUPPORT_EMAIL` is ingevuld — het bericht gaat naar Supabase (zie `feedback-modal.tsx`).
-   * "Contact support" in Instellingen blijft wél een mailto: dat is een gesprek, dit is een
-   * melding.
-   */
-  const [feedbackOpen, setFeedbackOpen] = useState(false);
 
   return (
     <ThemedView style={styles.container}>
@@ -50,25 +37,12 @@ export default function ProfielScreen() {
             je collectie scrolt (wens van de eigenaar, 1.2.1). De achtergrond is nodig: zonder
             schuift de inhoud zichtbaar onder de icoontjes door. */}
         <View style={[styles.topBalk, { backgroundColor: theme.background }]}>
-          <ThemedText type="display" style={styles.titel}>
+          <ThemedText type="display" numberOfLines={1} adjustsFontSizeToFit style={styles.titel}>
             {t((s) => s.profiel.titel)}
           </ThemedText>
-          <Pressable
-            onPress={() => setFeedbackOpen(true)}
-            hitSlop={12}
-            accessibilityRole="button"
-            accessibilityLabel={t((s) => s.profiel.feedbackOpenen)}
-            style={styles.icoonKnop}>
-            <Ionicons name="chatbubble-ellipses-outline" size={22} color={theme.text} />
-          </Pressable>
-          <Pressable
-            onPress={() => router.push('/profiel/settings')}
-            hitSlop={12}
-            accessibilityRole="button"
-            accessibilityLabel={t((s) => s.profiel.instellingenOpenen)}
-            style={styles.icoonKnop}>
-            <Ionicons name="settings-outline" size={22} color={theme.text} />
-          </Pressable>
+          {/* Feedback, instellingen en het saldo: hetzelfde kopje als op Home en Voortgang. Het
+              spreekwolkje opent een venster in de app (`feedback-modal.tsx`), geen mailprogramma. */}
+          <KopActies />
         </View>
 
         <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
@@ -88,8 +62,6 @@ export default function ProfielScreen() {
             `PRO_BANNER_ENABLED` uit gaat — zie `pro-access-banner.tsx`. */}
         <ProAccessBanner />
       </SafeAreaView>
-
-      <FeedbackModal visible={feedbackOpen} onClose={() => setFeedbackOpen(false)} />
     </ThemedView>
   );
 }
@@ -116,8 +88,5 @@ const styles = StyleSheet.create({
   },
   titel: {
     flex: 1,
-  },
-  icoonKnop: {
-    padding: Spacing.one,
   },
 });

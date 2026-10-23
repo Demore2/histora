@@ -6,6 +6,7 @@ import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
 import { AdBanner } from '@/components/ad-banner';
 import { CollectieKaart } from '@/components/collectie-kaart';
 import { HorizontaleRij } from '@/components/horizontale-rij';
+import { KopActies } from '@/components/kop-acties';
 import { LegeStaat } from '@/components/lege-staat';
 import { RecommendedStoryCard } from '@/components/recommended-story-card';
 import { SectieKop } from '@/components/sectie-kop';
@@ -48,13 +49,16 @@ export default function OntdekScreen() {
         <SafeAreaView edges={['top']} style={styles.safeArea}>
           <ScrollView contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 80 }]} showsVerticalScrollIndicator={false}>
             <View style={styles.headerRow}>
-              <ThemedText type="display">{t((s) => s.tabs.ontdek)}</ThemedText>
-              {streakDagen > 0 && (
-                <View style={[styles.streak, { backgroundColor: theme.backgroundElement }]}>
-                  <Ionicons name="flame" size={18} color={theme.accent} />
-                  <ThemedText type="smallBold">{streakDagen}</ThemedText>
-                </View>
-              )}
+              <ThemedText type="display" numberOfLines={1} adjustsFontSizeToFit style={styles.kopTitel}>{t((s) => s.tabs.ontdek)}</ThemedText>
+              <View style={styles.kopRechts}>
+                {streakDagen > 0 && (
+                  <View style={[styles.streak, { backgroundColor: theme.backgroundElement }]}>
+                    <Ionicons name="flame" size={18} color={theme.accent} />
+                    <ThemedText type="smallBold">{streakDagen}</ThemedText>
+                  </View>
+                )}
+                <KopActies />
+              </View>
             </View>
             <LegeStaat
               icoonNaam="book-outline"
@@ -76,14 +80,18 @@ export default function OntdekScreen() {
       <SafeAreaView edges={['top']} style={styles.safeArea}>
         <ScrollView contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 80 }]} showsVerticalScrollIndicator={false}>
           <View style={styles.headerRow}>
-            <ThemedText type="display">{t((s) => s.tabs.ontdek)}</ThemedText>
-            {/* Geen vlammetje met een 0 ernaast: zonder streak is er niets te tonen (B6). */}
-            {streakDagen > 0 && (
-              <View style={[styles.streak, { backgroundColor: theme.backgroundElement }]}>
-                <Ionicons name="flame" size={18} color={theme.accent} />
-                <ThemedText type="smallBold">{streakDagen}</ThemedText>
-              </View>
-            )}
+            <ThemedText type="display" numberOfLines={1} adjustsFontSizeToFit style={styles.kopTitel}>{t((s) => s.tabs.ontdek)}</ThemedText>
+            <View style={styles.kopRechts}>
+              {/* Geen vlammetje met een 0 ernaast: zonder streak is er niets te tonen (B6). */}
+              {streakDagen > 0 && (
+                <View style={[styles.streak, { backgroundColor: theme.backgroundElement }]}>
+                  <Ionicons name="flame" size={18} color={theme.accent} />
+                  <ThemedText type="smallBold">{streakDagen}</ThemedText>
+                </View>
+              )}
+              {/* Saldo, feedback en instellingen: op elk hoofdscherm rechtsboven (1.3). */}
+              <KopActies />
+            </View>
           </View>
 
           <Pressable
@@ -246,6 +254,14 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: Spacing.four,
     paddingTop: Spacing.three,
+  },
+  kopTitel: {
+    flexShrink: 1,
+  },
+  kopRechts: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.two,
   },
   streak: {
     flexDirection: 'row',

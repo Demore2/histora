@@ -2,6 +2,7 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AchievementsGrid } from '@/components/achievements-grid';
+import { KopActies } from '@/components/kop-acties';
 import { EraProgressBars } from '@/components/era-progress-bars';
 import { StreakKaart } from '@/components/streak-kaart';
 import { ThemedText } from '@/components/themed-text';
@@ -31,7 +32,10 @@ export default function VoortgangScreen() {
       <SafeAreaView edges={['top']} style={styles.safeArea}>
         <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
           <View style={styles.headerRow}>
-            <ThemedText type="display">{t((s) => s.voortgang.titel)}</ThemedText>
+            <ThemedText type="display" numberOfLines={1} adjustsFontSizeToFit style={styles.kopTitel}>
+              {t((s) => s.voortgang.titel)}
+            </ThemedText>
+            <KopActies />
           </View>
 
           <View style={styles.statsBlok}>
@@ -64,8 +68,14 @@ const styles = StyleSheet.create({
     gap: Spacing.five,
   },
   headerRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     paddingHorizontal: Spacing.four,
     paddingTop: Spacing.three,
+  },
+  kopTitel: {
+    flexShrink: 1,
   },
   statsBlok: {
     gap: Spacing.two,

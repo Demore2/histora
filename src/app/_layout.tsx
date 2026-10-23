@@ -141,6 +141,9 @@ export default function RootLayout() {
               niet als link naar buiten: ze werken zo offline en hangen niet af van een URL die
               nog niet gepubliceerd is. Play wil dat privacybeleid daarnaast nog steeds op een
               bereikbare URL; dat staat uitgelegd in het privacyscherm zelf. */}
+          {/* De winkel (1.3). Een stack-scherm en geen tabblad: je komt er via het Dukaten-knopje
+              rechtsboven (`KopActies`). `(tabs)/winkel.tsx` is een omleiding hierheen. */}
+          <Stack.Screen name="shop" />
           <Stack.Screen name="profiel/terms" />
           <Stack.Screen name="profiel/privacy" />
           {/* Grafsteen: het dev-dashboard is eruit gehaald. Niets linkt hierheen; de route blijft

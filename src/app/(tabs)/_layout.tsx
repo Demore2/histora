@@ -62,12 +62,6 @@ export default function TabsLayout() {
         name="voortgang"
         options={{ title: t((s) => s.tabs.voortgang), tabBarIcon: tabIcon('stats-chart', 'stats-chart-outline') }}
       />
-      {/* De winkel (1.3): Dukaten en streakbevriezers. Vóór Profiel, zodat Profiel rechts blijft
-          staan waar lezers hem gewend zijn. */}
-      <Tabs.Screen
-        name="winkel"
-        options={{ title: t((s) => s.tabs.winkel), tabBarIcon: tabIcon('storefront', 'storefront-outline') }}
-      />
       <Tabs.Screen
         name="profiel"
         options={{ title: t((s) => s.tabs.profiel), tabBarIcon: tabIcon('person', 'person-outline') }}
@@ -78,6 +72,9 @@ export default function TabsLayout() {
       {/* Kaart-tab uitgefaseerd (REFACTOR-PLAN.md R1): geen Regio/Continent meer in de UX.
           Kon niet worden verwijderd (Remove-Item is geblokkeerd) — href: null verbergt 'm. */}
       <Tabs.Screen name="kaart" options={{ href: null }} />
+      {/* De winkel was in 1.3 even een tabblad en is nu een stack-scherm (`/shop`), bereikbaar via
+          het Dukaten-knopje rechtsboven. Dit bestand is een omleiding; href: null verbergt 'm. */}
+      <Tabs.Screen name="winkel" options={{ href: null }} />
     </Tabs>
   );
 }
