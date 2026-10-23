@@ -5,7 +5,7 @@
  *   store/assets/screenshots-1.3/phone-<n>.png   1080x1920 (9:16), 24-bit, no alpha
  *
  * Same approach as generate-store-assets.mjs: the HTML is the source, headless Chrome renders
- * it once per slide (`?n=1` … `?n=6`), and the browser's RGBA output is flattened because Play
+ * it once per slide (`?n=1` … `?n=4`), and the browser's RGBA output is flattened because Play
  * is fussy about alpha in listing images. The app screens inside the slides are real emulator
  * captures in store/screenshots-bron/ — recapture those, then re-run this.
  *
@@ -28,7 +28,7 @@ const bron = path.join(projectRoot, 'store/screenshots.html');
 const outDir = path.join(projectRoot, 'store/assets/screenshots-1.3');
 const BREED = 1080;
 const HOOG = 1920;
-const AANTAL = 6;
+const AANTAL = 4;
 
 const BROWSERS = [
   'C:/Program Files/Google/Chrome/Application/chrome.exe',

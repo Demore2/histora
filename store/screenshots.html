@@ -4,7 +4,7 @@
 
   Zelfde aanpak als feature-graphic.html: dit bestand is de bron, de PNG's niet. Elke dia is
   1080×1920 (9:16, wat Play wil) en wordt door `npm run generate:store-screenshots` met headless
-  Chrome gerenderd — één keer per dia, met `?n=1` t/m `?n=6`. Open hem in een browser met
+  Chrome gerenderd — één keer per dia, met `?n=1` t/m `?n=4`. Open hem in een browser met
   `?n=3` om één dia te bekijken.
 
   De schermen zelf zijn echte emulator-screenshots (`store/screenshots-bron/`, 1080×2400). De
@@ -154,24 +154,12 @@
       scene: 'scenes/klaar/scene-2-streak.png', achtergrond: '#FFEBC2', tekst: '#4A2C1A', sceneLinks: -324,
     },
     {
-      kop: 'Your streak on<br>your home screen',
-      sub: 'Add the widget and the fox reminds you before midnight.',
-      van: '#FFEBC2', naar: '#FDD48E', tekst: '#4A2C1A',
-      scherm: 'homescreen.png', statusbalk: '#CED1DB', vos: 'fase-4-avond.png', kant: 'rechts', spiegel: true,
-    },
-    {
       kop: 'Earn Ducats,<br>save your streak',
       sub: 'Read to earn coins and buy a streak freeze for busy days.',
       van: '#38BDF8', naar: '#1D4ED8',
       scherm: 'shop.png', vos: 'fase-8-ijs.png', kant: 'links',
       // Telefoon links-midden, vos op het ijsblok rechts: zo vallen allebei binnen de 1080 px.
       scene: 'scenes/klaar/scene-3-shop.png', achtergrond: '#FFEBC2', tekst: '#4A2C1A', sceneLinks: -550,
-    },
-    {
-      kop: 'Unlock chapter<br>after chapter',
-      sub: 'Finish a story to add its hero to your collection.',
-      van: '#FFEBC2', naar: '#FDD48E', tekst: '#4A2C1A',
-      scherm: 'hoofdstukken.png', vos: 'zwaaiend.png', kant: 'rechts', spiegel: true,
     },
   ];
 
