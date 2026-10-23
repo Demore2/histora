@@ -39,6 +39,7 @@ import { useVertaling } from '@/hooks/use-vertaling';
 import { useCharacterUnlockStore } from '@/store/character-unlock-store';
 import { usePrestatieStore } from '@/store/prestatie-store';
 import { useVoortgangStore } from '@/store/voortgang-store';
+import { dukatenSleutel, useWinkelStore } from '@/store/winkel-store';
 
 /**
  * Hoeveel hele seconden er sinds `start` voorbij zijn, of `undefined` als er geen start is.
@@ -242,6 +243,9 @@ export default function ReaderScreen() {
     }
 
     progress.completeChapter(chapterId);
+    // Dukaten voor de winkel (1.3). De server telt elk hoofdstuk één keer; offline (Pro) blijft de
+    // sleutel in de wachtrij staan tot de volgende ronde van `useWinkel`.
+    useWinkelStore.getState().verdien([dukatenSleutel.hoofdstuk(verhaal!.id, chapterId)]);
     // Een afgerond hoofdstuk is de enige actie die als "vandaag gelezen" telt (B6). Het openen
     // van een verhaal deed dat eerst ook, waardoor je een streak kon opbouwen zonder te lezen.
     voortgangStore.registreerLeesactiviteit();
@@ -276,6 +280,7 @@ export default function ReaderScreen() {
     if (verhaal) {
       voortgangStore.markStoryCompleted(verhaal.id);
       characterStore.unlockCharacter(verhaal.id, verhaal.personage.naam);
+      useWinkelStore.getState().verdien([dukatenSleutel.verhaal(verhaal.id)]);
       logStoryEvent(ANALYTICS_EVENTS.CHAR_UNLOCKED, {
         story_id: verhaal.id,
         era: verhaal.tijdperkId,

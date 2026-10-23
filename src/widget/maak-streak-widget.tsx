@@ -4,6 +4,7 @@ import { getVertalingen } from '@/i18n';
 import { useTaalStore } from '@/store/taal-store';
 import { useVoortgangStore } from '@/store/voortgang-store';
 import { wachtOpHydratie } from '@/store/sync-hulp';
+import { useWinkelStore } from '@/store/winkel-store';
 import { bepaalStreakStand } from '@/widget/streak-fase';
 import { StreakWidget } from '@/widget/streak-widget';
 
@@ -21,10 +22,18 @@ export const STREAK_WIDGET = 'Streak';
  * gelezen is — dan zou elke widget-update een slapende vos tonen.
  */
 export async function maakStreakWidget(info: WidgetInfo) {
-  await Promise.all([wachtOpHydratie(useVoortgangStore), wachtOpHydratie(useTaalStore)]);
+  await Promise.all([
+    wachtOpHydratie(useVoortgangStore),
+    wachtOpHydratie(useTaalStore),
+    wachtOpHydratie(useWinkelStore),
+  ]);
   const { streakDagen, laatsteActiviteitDatum } = useVoortgangStore.getState();
   const s = getVertalingen(useTaalStore.getState().taal).widget;
-  const stand = bepaalStreakStand(streakDagen, laatsteActiviteitDatum);
+  const { bevriezers, bevrorenDagen } = useWinkelStore.getState();
+  const stand = bepaalStreakStand(streakDagen, laatsteActiviteitDatum, new Date(), {
+    bevriezers,
+    bevrorenDagen,
+  });
 
   return (
     <StreakWidget

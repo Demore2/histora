@@ -62,6 +62,12 @@ export default function TabsLayout() {
         name="voortgang"
         options={{ title: t((s) => s.tabs.voortgang), tabBarIcon: tabIcon('stats-chart', 'stats-chart-outline') }}
       />
+      {/* De winkel (1.3): Dukaten en streakbevriezers. Vóór Profiel, zodat Profiel rechts blijft
+          staan waar lezers hem gewend zijn. */}
+      <Tabs.Screen
+        name="winkel"
+        options={{ title: t((s) => s.tabs.winkel), tabBarIcon: tabIcon('storefront', 'storefront-outline') }}
+      />
       <Tabs.Screen
         name="profiel"
         options={{ title: t((s) => s.tabs.profiel), tabBarIcon: tabIcon('person', 'person-outline') }}

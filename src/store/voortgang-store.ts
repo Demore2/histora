@@ -17,6 +17,12 @@ type VoortgangState = {
   markStoryCompleted: (verhaalId: string) => void;
   isStoryCompleted: (verhaalId: string) => boolean;
   registreerLeesactiviteit: () => void;
+  /**
+   * Een streakbevriezer heeft de dagen tot en met `datum` overbrugd (1.3, `winkel-store`). Zet
+   * `laatsteActiviteitDatum` op die dag zodat `berekenHuidigeStreak` de streak weer als levend ziet;
+   * `streakDagen` blijft staan — een bevroren dag houdt de streak vast, hij telt niet mee.
+   */
+  overbrugTot: (datum: string) => void;
 
   // --- Supabase-sync (R8.AUTH deel 3) ---
   isSyncing: boolean;
@@ -202,6 +208,13 @@ export const useVoortgangStore = create<VoortgangState>()(
           ...bijgewerkteStreak(state.laatsteActiviteitDatum, state.streakDagen),
           heeftOnverzondenWijzigingen: true,
         }));
+        plandeSync();
+      },
+      overbrugTot: (datum) => {
+        // Datumsleutels zijn `YYYY-MM-DD`, dus een stringvergelijking is een datumvergelijking.
+        // Nooit terug in de tijd: een trage serverronde mag een intussen gelezen dag niet wissen.
+        if (get().laatsteActiviteitDatum !== null && get().laatsteActiviteitDatum! >= datum) return;
+        set({ laatsteActiviteitDatum: datum, heeftOnverzondenWijzigingen: true });
         plandeSync();
       },
 

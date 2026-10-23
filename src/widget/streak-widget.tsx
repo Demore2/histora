@@ -27,6 +27,7 @@ const FASE_BEELD: Record<StreakFase, number> = {
   middag: require('@/assets/images/vos/widget/fase-3-middag.png'),
   avond: require('@/assets/images/vos/widget/fase-4-avond.png'),
   paniek: require('@/assets/images/vos/widget/fase-5-paniek.png'),
+  ijs: require('@/assets/images/vos/widget/fase-8-ijs.png'),
   skelet: require('@/assets/images/vos/widget/fase-6-skelet.png'),
   slaap: require('@/assets/images/vos/widget/fase-7-slaap.png'),
 };
@@ -42,6 +43,7 @@ const FASE_KLEUR: Record<StreakFase, { van: ColorProp; naar: ColorProp }> = {
   middag: { van: '#818CF8', naar: '#4F46E5' },
   avond: { van: '#C084FC', naar: '#9333EA' },
   paniek: { van: '#F87171', naar: '#B91C1C' },
+  ijs: { van: '#7DD3FC', naar: '#0369A1' },
   skelet: { van: '#374151', naar: '#111827' },
   slaap: { van: '#1E40AF', naar: '#172554' },
 };
@@ -131,7 +133,7 @@ export function StreakWidget({ stand, breedte, hoogte, dagenTekst, zin, weekdage
       <FlexWidget style={{ flex: 1, flexDirection: 'column', flexGap: 10 }}>
         {tekstblok}
         <FlexWidget style={{ flexDirection: 'row', flexGap: 6 }}>
-          {stand.week.map((gelezen, i) => (
+          {stand.week.map((dag, i) => (
             <FlexWidget key={i} style={{ flexDirection: 'column', alignItems: 'center', flexGap: 2 }}>
               <TextWidget
                 text={weekdagen[i]}
@@ -144,12 +146,14 @@ export function StreakWidget({ stand, breedte, hoogte, dagenTekst, zin, weekdage
                   borderRadius: 9,
                   justifyContent: 'center',
                   alignItems: 'center',
-                  backgroundColor: gelezen ? WIT : 'rgba(255, 255, 255, 0.25)',
+                  backgroundColor: dag === 'gelezen' ? WIT : 'rgba(255, 255, 255, 0.25)',
                   borderWidth: i === stand.vandaagIndex ? 2 : 0,
                   borderColor: WIT,
                 }}>
-                {gelezen ? (
+                {dag === 'gelezen' ? (
                   <TextWidget text="✓" style={{ fontSize: 11, fontWeight: 'bold', color: kleur.naar }} />
+                ) : dag === 'bevroren' ? (
+                  <TextWidget text="❄" style={{ fontSize: 11, color: WIT }} />
                 ) : null}
               </FlexWidget>
             </FlexWidget>

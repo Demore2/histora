@@ -10,6 +10,7 @@ import { useReferralStore } from '@/store/referral-store';
 import { useStoryProgressStore } from '@/store/story-progress-store';
 import { wisAbonnementCache } from '@/store/subscription-store';
 import { useVoortgangStore } from '@/store/voortgang-store';
+import { useWinkelStore } from '@/store/winkel-store';
 
 /**
  * Wist alles wat dít toestel over de ingelogde lezer bewaart.
@@ -73,6 +74,11 @@ export function wisLokaleGebruikersgegevens(): void {
     heeftOnverzondenWijzigingen: false,
   });
   useCharacterUnlockStore.setState({ unlockedCharacters: [], heeftOnverzondenWijzigingen: false });
+
+  // De winkel (1.3): het saldo is een kopie van een serverstand die met het account verdwijnt, en
+  // de wachtrij `teVerzilveren` zou de hoofdstukken van de verwijderde lezer als Dukaten op het
+  // volgende account op dit toestel bijschrijven.
+  useWinkelStore.getState().reset();
 
   // De aanbevelingen zijn afgeleid uit voortgang die hierboven net is gewist, dus ze zeggen niets
   // meer — maar ze zijn wél een lijstje verhaal-id's van de verwijderde lezer, en de samenvoeging

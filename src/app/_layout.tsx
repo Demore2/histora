@@ -23,6 +23,7 @@ import { usePrestaties } from '@/hooks/use-prestaties';
 import { usePushRegistratie } from '@/hooks/use-push-registratie';
 import { useStreakHerinnering } from '@/hooks/use-streak-herinnering';
 import { useStreakWidget } from '@/hooks/use-streak-widget';
+import { useWinkel } from '@/hooks/use-winkel';
 import { useEffectieveKleurenSchema, useTheme } from '@/hooks/use-theme';
 import { useVoortgangSync } from '@/hooks/use-voortgang-sync';
 import { useAnalytics } from '@/hooks/useAnalytics';
@@ -74,6 +75,10 @@ export default function RootLayout() {
   // De streak-widget op het homescreen (1.3) direct bijwerken als de streak of de taal verandert,
   // en als de app naar de achtergrond gaat. Zonder widget of buiten Android doet hij niets.
   useStreakWidget();
+
+  // De winkel (1.3): Dukaten inleveren, Pro-bevriezers aanvullen, de stand ophalen en zo nodig een
+  // gemiste dag met een bevriezer overbruggen. Bij een sessie en bij elke terugkeer naar de app.
+  useWinkel();
 
   // En de enige plek die Firebase Analytics aanstuurt: hij past de opgeslagen toestemming toe,
   // koppelt de metingen aan de ingelogde gebruiker en meldt elke schermwissel. Losse

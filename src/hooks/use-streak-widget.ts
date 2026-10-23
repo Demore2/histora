@@ -3,6 +3,7 @@ import { AppState } from 'react-native';
 
 import { useTaalStore } from '@/store/taal-store';
 import { useVoortgangStore } from '@/store/voortgang-store';
+import { useWinkelStore } from '@/store/winkel-store';
 import { vernieuwStreakWidget } from '@/widget/vernieuw-widget';
 
 /**
@@ -31,6 +32,12 @@ export function useStreakWidget(): void {
     const stopTaal = useTaalStore.subscribe((nu, vorig) => {
       if (nu.taal !== vorig.taal) vernieuwStreakWidget();
     });
+    // Een gekochte of ingezette bevriezer verandert de vos (het ijsblok).
+    const stopWinkel = useWinkelStore.subscribe((nu, vorig) => {
+      if (nu.bevriezers !== vorig.bevriezers || nu.bevrorenDagen !== vorig.bevrorenDagen) {
+        vernieuwStreakWidget();
+      }
+    });
     const appState = AppState.addEventListener('change', (status) => {
       if (status === 'background') vernieuwStreakWidget();
     });
@@ -38,6 +45,7 @@ export function useStreakWidget(): void {
     return () => {
       stopStreak();
       stopTaal();
+      stopWinkel();
       appState.remove();
     };
   }, []);

@@ -499,6 +499,32 @@ de versies erna waren bij het installeren een of twee dagen oud). Android-only, 
   krijgt uitleg in plaats van een knop die niets doet.
 - Nog niet: de ijsblok-fase (`fase-8-ijs.png` ligt klaar) wacht op de streakbevriezingen.
 
+### De winkel: Dukaten en streakbevriezers (`(tabs)/winkel.tsx`, `winkel-store.ts`, `use-winkel.ts`, 1.3)
+
+Keuzes van de eigenaar (2026-10-23): munt = **Dukaten**, verdiend met lezen (10 per hoofdstuk, 40
+per uitgelezen verhaal); een **streakbevriezer** kost 300 (eerst 150 — te goedkoop: één verhaal levert 120 op) en je hebt er hooguit **2**; gratis lezers
+krijgen er geen cadeau, **Pro 2 per maand**. Echt geld komt later als **Dukaten-pakketten** (1.3b).
+
+- **De server is de bron** (`supabase/winkel-migratie.sql`). Drie tabellen met alleen een
+  select-policy en vijf `security definer`-functies (`winkel_stand`, `dukaten_verdien`,
+  `koop_bevriezer`, `pro_bevriezers_aanvullen`, `gebruik_bevriezers`). De bedragen staan alleen in
+  `winkel_instellingen()`; de app leest ze uit de stand. `winkel-store` is een kopie, géén achtste
+  regel in `SYNC_STORES` — een saldo dat de app mag pushen kan iedereen pushen.
+- **Het saldo is een kasboek** (`dukaten_mutaties`, uniek op `(user_id, sleutel)`): een hoofdstuk
+  levert één keer iets op, dus de wachtrij `teVerzilveren` mag eindeloos opnieuw verstuurd worden.
+  De sleutels (`dukatenSleutel`) en de controle in `dukaten_verdien` horen bij elkaar.
+- **Wat de server niet controleert** is of een hoofdstuk echt gelezen is (`story_progress` loopt
+  met een debounce achter). Wel dat het verhaal in `story_catalog` staat — het maximum dat iemand
+  kan verdienen is dus begrensd door de inhoud.
+- **Eenmalig per account wordt de leesgeschiedenis ingeleverd** (`inhaalGedaanVoor`), anders begint
+  de trouwste lezer op nul.
+- **Bevriezen gebeurt bij het openen van de app**, niet om middernacht (dan draait er niets):
+  `useWinkel` rekent de gemiste dagen uit (`gemisteDagen` in `streak-fase.ts`) en zet ze alles-of-
+  niets in; daarna `voortgang-store.overbrugTot(gisteren)`. Tot dan voorspelt de widget met
+  dezelfde rekensom het ijsblok (`fase 'ijs'`).
+- `wisLokaleGebruikersgegevens()` reset de winkel — anders schrijft de wachtrij de hoofdstukken van
+  een verwijderde lezer als Dukaten bij het volgende account bij.
+
 ### Notifications (`src/constants/notificaties.ts`, `use-dagelijkse-herinnering.ts`, B6)
 
 One daily reminder, **always on**, at a time the user picks (19:00 local to start with). Same

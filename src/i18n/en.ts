@@ -22,6 +22,7 @@ const en = {
     ontdek: 'Home',
     voortgang: 'Progress',
     profiel: 'Profile',
+    winkel: 'Shop',
   },
   ontdek: {
     uitgelicht: 'Featured',
@@ -508,6 +509,26 @@ const en = {
    * De streak-widget op het homescreen (`src/widget/`). `zinnen` is getypeerd tegen `StreakFase`,
    * net als `prestatie.namen`: een fase erbij zonder zin is een compileerfout.
    */
+  /** Het tabblad Winkel (`(tabs)/winkel.tsx`, 1.3). De bedragen komen van de server. */
+  winkel: {
+    titel: 'Shop',
+    ondertitel: 'Spend the Ducats you earn by reading.',
+    saldoLabel: 'Your Ducats',
+    dukaten: (n: number): string => (n === 1 ? '1 Ducat' : `${n} Ducats`),
+    verdienKop: 'How to earn Ducats',
+    verdienHoofdstuk: (n: number): string => `+${n} for every chapter you finish`,
+    verdienVerhaal: (n: number): string => `+${n} for every story you finish`,
+    bevriezerTitel: 'Streak freeze',
+    bevriezerUitleg: 'Miss a day and a freeze keeps your streak alive. It is used automatically.',
+    bevriezerStand: (n: number, max: number): string => `${n} of ${max} equipped`,
+    koop: (prijs: number): string => `Buy for ${prijs}`,
+    vol: 'Fully stocked',
+    tekort: (n: number): string => `${n} more Ducats needed`,
+    gekocht: 'Freeze equipped!',
+    mislukt: 'That didn’t work. Check your connection and try again.',
+    proRegel: (n: number): string => `With Pro you get ${n} free freezes every month.`,
+    pakkettenBinnenkort: 'Ducat bundles are coming soon.',
+  },
   widget: {
     dagen: (n: number): string => (n === 1 ? '1 day' : `${n} days`),
     zinnen: {
@@ -516,6 +537,7 @@ const en = {
       middag: 'Got five minutes?',
       avond: 'Don’t let it break!',
       paniek: 'Last chance!',
+      ijs: 'Frozen — your streak is safe',
       skelet: 'Your streak is gone…',
       slaap: 'Start a new streak',
     } satisfies Record<StreakFase, string>,

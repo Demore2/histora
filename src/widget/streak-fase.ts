@@ -15,6 +15,7 @@ export type StreakFase =
   | 'middag' // 12:00-18:00
   | 'avond' // 18:00-22:00
   | 'paniek' // laatste twee uur
+  | 'ijs' // een streakbevriezer houdt de streak vast (1.3, de winkel)
   | 'skelet' // de streak verliep vannacht (alleen die ene dag)
   | 'slaap'; // nooit gelezen, of langer geleden: tijd voor een nieuwe start
 
@@ -23,16 +24,19 @@ const MIDDAG_VANAF = 12;
 const AVOND_VANAF = 18;
 const PANIEK_VANAF = 22;
 
+/** Eén vakje van de weekbalk. */
+export type WeekDag = 'gelezen' | 'bevroren' | null;
+
 export type StreakStand = {
   fase: StreakFase;
   /** De streak zoals de app hem toont (0 als hij verlopen is). */
   dagen: number;
   /**
-   * De zeven dagen van deze week (maandag eerst): `true` als het een leesdag binnen de lopende
-   * streak was. Afgeleid, niet bijgehouden: de streak is per definitie een aaneengesloten reeks
+   * De zeven dagen van deze week (maandag eerst): een leesdag binnen de lopende streak, een dag
+   * die een bevriezer overbrugde, of niets. Afgeleid, niet bijgehouden: de streak is per definitie een aaneengesloten reeks
    * dagen die eindigt op `laatsteActiviteitDatum`.
    */
-  week: boolean[];
+  week: WeekDag[];
   /** Index (0 = maandag) van vandaag in `week`. */
   vandaagIndex: number;
 };
@@ -41,17 +45,51 @@ function eergisteren(nu: Date): string {
   return vandaagSleutel(new Date(nu.getFullYear(), nu.getMonth(), nu.getDate() - 2));
 }
 
+/**
+ * De dagen tussen de laatste leesdag en vandaag (exclusief beide), als lokale datumsleutels.
+ * Leeg als de streak nog leeft (laatst gelezen vandaag of gisteren).
+ */
+export function gemisteDagen(laatsteActiviteitDatum: string | null, nu: Date = new Date()): string[] {
+  if (!laatsteActiviteitDatum) return [];
+  const [j, m, d] = laatsteActiviteitDatum.split('-').map(Number);
+  const dagen: string[] = [];
+  for (let i = 1; i < 30; i++) {
+    const dag = vandaagSleutel(new Date(j, m - 1, d + i));
+    if (dag >= vandaagSleutel(nu)) break;
+    dagen.push(dag);
+  }
+  return dagen;
+}
+
+/** Wat de winkel weet over bevriezers (`winkel-store`); leeg als die nog niets geladen heeft. */
+export type Bevriezing = { bevriezers: number; bevrorenDagen: string[] };
+
 export function bepaalStreakStand(
   streakDagen: number,
   laatsteActiviteitDatum: string | null,
   nu: Date = new Date(),
+  bevriezing: Bevriezing = { bevriezers: 0, bevrorenDagen: [] },
 ): StreakStand {
-  const dagen = berekenHuidigeStreak(streakDagen, laatsteActiviteitDatum, nu);
+  let dagen = berekenHuidigeStreak(streakDagen, laatsteActiviteitDatum, nu);
   const vandaag = vandaagSleutel(nu);
+  const gisteren = vandaagSleutel(new Date(nu.getFullYear(), nu.getMonth(), nu.getDate() - 1));
   const uur = nu.getHours();
+  const gemist = gemisteDagen(laatsteActiviteitDatum, nu);
+  // De streak is (straks) gered door een bevriezer: óf dat gebeurde al voor gisteren, óf de dagen
+  // zijn gemist en er liggen genoeg bevriezers klaar die `useWinkel` bij het openen van de app
+  // inzet. Dat tweede is een voorspelling — de widget draait ook als de app dicht is, en dan kan
+  // er niets ingezet worden — maar dezelfde rekensom als in de hook, dus hij klopt zodra de app
+  // opengaat. Een gelezen dag gaat altijd voor: dan juicht de vos gewoon.
+  const bevroren =
+    laatsteActiviteitDatum !== vandaag &&
+    streakDagen > 0 &&
+    (bevriezing.bevrorenDagen.includes(gisteren) ||
+      (gemist.length > 0 && gemist.length <= bevriezing.bevriezers));
+  if (bevroren && dagen === 0) dagen = streakDagen;
 
   let fase: StreakFase;
   if (laatsteActiviteitDatum === vandaag) fase = 'gevierd';
+  else if (bevroren) fase = 'ijs';
   else if (dagen > 0) {
     fase =
       uur >= PANIEK_VANAF ? 'paniek'
@@ -66,16 +104,24 @@ export function bepaalStreakStand(
 
   // Maandag = 0. `getDay()` begint op zondag.
   const vandaagIndex = (nu.getDay() + 6) % 7;
+  const ijsdagen = new Set([...bevriezing.bevrorenDagen, ...(bevroren ? gemist : [])]);
   const leesdagen = new Set<string>();
   if (dagen > 0 && laatsteActiviteitDatum) {
+    // Terugtellen vanaf de laatste leesdag; een bevroren dag houdt de reeks vast maar telt niet als
+    // leesdag, dus die wordt overgeslagen zonder de telling op te maken.
     const [j, m, d] = laatsteActiviteitDatum.split('-').map(Number);
-    for (let i = 0; i < Math.min(dagen, 7); i++) {
-      leesdagen.add(vandaagSleutel(new Date(j, m - 1, d - i)));
+    let over = Math.min(dagen, 7);
+    for (let i = 0; over > 0 && i < 14; i++) {
+      const dag = vandaagSleutel(new Date(j, m - 1, d - i));
+      if (ijsdagen.has(dag)) continue;
+      leesdagen.add(dag);
+      over--;
     }
   }
-  const week = Array.from({ length: 7 }, (_, i) =>
-    leesdagen.has(vandaagSleutel(new Date(nu.getFullYear(), nu.getMonth(), nu.getDate() - vandaagIndex + i))),
-  );
+  const week: WeekDag[] = Array.from({ length: 7 }, (_, i) => {
+    const dag = vandaagSleutel(new Date(nu.getFullYear(), nu.getMonth(), nu.getDate() - vandaagIndex + i));
+    return leesdagen.has(dag) ? 'gelezen' : ijsdagen.has(dag) ? 'bevroren' : null;
+  });
 
   return { fase, dagen, week, vandaagIndex };
 }
