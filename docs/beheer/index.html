@@ -528,6 +528,10 @@
   .kengetal .label { color: var(--muted); font-size: 12px; font-weight: 600; }
   .kengetal .waarde { font-size: 22px; font-weight: 600; }
   .kengetal .sub { color: var(--muted); font-size: 12px; }
+  .onderhoud { min-height: calc(100vh - 140px); display: grid; place-content: center; justify-items: center; gap: 10px; text-align: center; padding: 24px; }
+  .onderhoud-icoon { font-size: 48px; }
+  .onderhoud h2 { font-size: 22px; }
+  .onderhoud p { color: var(--muted); max-width: 420px; line-height: 1.5; }
   .leeg-melding { color: var(--muted); font-size: 13px; padding: 8px 0; }
 
   .toast {
@@ -611,6 +615,7 @@
       <button class="tab" type="button" role="tab" data-tab="tickets" aria-selected="true">Tickets<span class="tel" id="tel-tickets"></span></button>
       <button class="tab" type="button" role="tab" data-tab="hub" aria-selected="false">Ideeënhub<span class="tel" id="tel-hub"></span></button>
       <button class="tab" type="button" role="tab" data-tab="stats" aria-selected="false">Statistieken</button>
+      <button class="tab" type="button" role="tab" data-tab="trends" aria-selected="false">Trends</button>
     </nav>
     <div class="wie">
       <span class="avatar" id="ik-avatar"></span>
@@ -665,6 +670,16 @@
   </section>
 
   <!-- Statistieken -->
+  <!-- Trends: een lege plek voor de Google Trends-koppeling (zoekwoorden voor ads en content). -->
+  <section id="tab-trends" hidden>
+    <div class="onderhoud">
+      <div class="onderhoud-icoon">🛠️</div>
+      <h2>In onderhoud</h2>
+      <p>Hier komen de dagelijkse zoektrends rond geschiedenis en leren, voor ads en content.</p>
+      <p class="zacht">Voor Quinten en Mike</p>
+    </div>
+  </section>
+
   <section id="tab-stats" hidden>
     <div class="balk">
       <label class="schakel"><input type="checkbox" id="stats-intern"> Eigen accounts en testaccounts meetellen</label>
@@ -965,7 +980,7 @@
   }
 
   function kiesTab(tab) {
-    if (!['tickets', 'hub', 'stats'].includes(tab)) tab = 'tickets';
+    if (!['tickets', 'hub', 'stats', 'trends'].includes(tab)) tab = 'tickets';
     staat.tab = tab;
     bewaarLokaal('histora-beheer-tab', tab);
     for (const knop of document.querySelectorAll('.tab')) {
@@ -974,6 +989,7 @@
     $('#tab-tickets').hidden = tab !== 'tickets';
     $('#tab-hub').hidden = tab !== 'hub';
     $('#tab-stats').hidden = tab !== 'stats';
+    $('#tab-trends').hidden = tab !== 'trends';
     if (tab !== 'tickets') sluitPaneel();
     if (tab === 'hub') laadNotities();
     if (tab === 'stats') laadStats();
