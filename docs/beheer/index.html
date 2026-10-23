@@ -516,6 +516,19 @@
   details.tabelweergave th, details.tabelweergave td { padding: 4px 6px; border-bottom: 1px solid var(--line); text-align: right; }
   details.tabelweergave th:first-child, details.tabelweergave td:first-child { text-align: left; }
   .voetnoot { color: var(--muted); font-size: 12px; line-height: 1.5; }
+  table.lijst { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+  table.lijst th { color: var(--muted); font-size: 12px; font-weight: 600; text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  table.lijst td { padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+  table.lijst .getal { text-align: right; white-space: nowrap; }
+  .zacht { color: var(--muted); font-size: 12px; }
+  .trechter { display: flex; align-items: flex-end; gap: 2px; height: 22px; min-width: 96px; }
+  .trechter i { flex: 1; background: var(--serie-1); border-radius: 2px 2px 0 0; min-height: 2px; opacity: .85; }
+  .kengetallen { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .kengetal { background: var(--hover); border-radius: 8px; padding: 10px 12px; display: grid; gap: 2px; }
+  .kengetal .label { color: var(--muted); font-size: 12px; font-weight: 600; }
+  .kengetal .waarde { font-size: 22px; font-weight: 600; }
+  .kengetal .sub { color: var(--muted); font-size: 12px; }
+  .leeg-melding { color: var(--muted); font-size: 13px; padding: 8px 0; }
 
   .toast {
     position: fixed;
@@ -686,6 +699,29 @@
       <section class="grafiek">
         <div class="grafiek-kop"><h2>Totaal aantal gebruikers</h2></div>
         <div class="canvas-houder"><canvas id="grafiek-totaal" role="img" aria-label="Totaal aantal gebruikers in de tijd"></canvas></div>
+      </section>
+      <div class="grafieken">
+        <section class="grafiek">
+          <div class="grafiek-kop"><h2>Populairste verhalen</h2></div>
+          <div id="verhalen-lijst"></div>
+        </section>
+        <div style="display:grid;gap:16px;align-content:start;min-width:0">
+          <section class="grafiek">
+            <div class="grafiek-kop"><h2>Retentie</h2></div>
+            <div class="kengetallen" id="retentie"></div>
+          </section>
+          <section class="grafiek">
+            <div class="grafiek-kop"><h2>Winkel</h2></div>
+            <div class="kengetallen" id="winkel"></div>
+          </section>
+        </div>
+      </div>
+      <section class="grafiek">
+        <div class="grafiek-kop">
+          <h2>Top 10 streaks</h2>
+          <button class="knop stil klein" type="button" data-actie="streaks-downloaden">Download CSV</button>
+        </div>
+        <div id="streaks-lijst"></div>
       </section>
       <p class="voetnoot">
         <strong>Gebruikers</strong> zijn accounts, geen downloads: downloads houdt Google Play bij
@@ -1761,6 +1797,96 @@
     if (error) { if (!stil) toast(foutTekst(error), true); return; }
     staat.stats = data;
     tekenStats();
+    // De inzichten zijn een tweede functie (ronde 6). Ontbreekt die nog, dan blijft de rest staan.
+    const inz = await sb.rpc('beheer_inzichten', { p_intern_meetellen: staat.internMeetellen });
+    staat.inzichten = inz.error ? null : inz.data;
+    if (inz.error && !stil) console.warn('beheer_inzichten:', inz.error.message);
+    tekenInzichten();
+  }
+
+  function kengetal(label, waarde, sub) {
+    return el('div', { class: 'kengetal' },
+      el('span', { class: 'label', tekst: label }),
+      el('span', { class: 'waarde', tekst: waarde }),
+      sub ? el('span', { class: 'sub', tekst: sub }) : null,
+    );
+  }
+
+  function tekenInzichten() {
+    const z = staat.inzichten;
+    if (!z) {
+      $('#verhalen-lijst').replaceChildren(el('p', { class: 'leeg-melding', tekst: 'Nog niet beschikbaar: draai supabase/feedback-beheer-migratie-6.sql.' }));
+      $('#retentie').replaceChildren();
+      $('#winkel').replaceChildren();
+      $('#streaks-lijst').replaceChildren();
+      return;
+    }
+
+    // Verhalen: begonnen en uitgelezen, plus een mini-trechter van hoofdstuk 1 t/m 8.
+    const verhalen = (z.verhalen || []).filter((v) => v.begonnen > 0);
+    $('#verhalen-lijst').replaceChildren(verhalen.length
+      ? el('table', { class: 'lijst' },
+          el('thead', {}, el('tr', {},
+            el('th', { tekst: 'Verhaal' }), el('th', { class: 'getal', tekst: 'Begonnen' }),
+            el('th', { class: 'getal', tekst: 'Uitgelezen' }), el('th', { tekst: 'Hoofdstuk 1 → 8' }))),
+          el('tbody', {}, verhalen.map((v) => {
+            const trechter = v.trechter || [];
+            const max = Math.max(1, ...trechter);
+            return el('tr', {},
+              el('td', {}, el('div', { tekst: v.titel }), el('div', { class: 'zacht', tekst: v.tijdperk })),
+              el('td', { class: 'getal', tekst: String(v.begonnen) }),
+              el('td', { class: 'getal', tekst: `${v.uitgelezen} (${pctFmt.format(v.uitgelezen / v.begonnen)})` }),
+              el('td', { title: trechter.map((n, i) => `H${i + 1}: ${n}`).join(' · ') },
+                el('div', { class: 'trechter' }, trechter.map((n) =>
+                  el('i', { style: `height:${Math.round((n / max) * 100)}%` })))),
+            );
+          })))
+      : el('p', { class: 'leeg-melding', tekst: 'Nog niemand is aan een verhaal begonnen.' }));
+
+    const r = z.retentie || {};
+    const quote = (terug, basis) => (basis ? pctFmt.format(terug / basis) : '—');
+    $('#retentie').replaceChildren(
+      kengetal('Kwam terug (D1)', quote(r.d1_terug, r.d1_basis), `${r.d1_terug || 0} van ${r.d1_basis || 0} lezers`),
+      kengetal('Na een week nog actief (D7)', quote(r.d7_terug, r.d7_basis), `${r.d7_terug || 0} van ${r.d7_basis || 0} lezers`),
+    );
+
+    const w = z.winkel || {};
+    $('#winkel').replaceChildren(
+      kengetal('Dukaten verdiend', getalFmt.format(w.verdiend || 0)),
+      kengetal('Dukaten uitgegeven', getalFmt.format(w.uitgegeven || 0)),
+      kengetal('Bevriezers gekocht', getalFmt.format(w.bevriezers_gekocht || 0), `${w.bevriezers_voorraad || 0} nu op voorraad`),
+      kengetal('Bevriezers gebruikt', getalFmt.format(w.bevriezers_gebruikt || 0), 'dagen gered'),
+    );
+
+    const top = z.streaks?.top || [];
+    $('#streaks-lijst').replaceChildren(top.length
+      ? el('div', {},
+          el('table', { class: 'lijst' },
+            el('thead', {}, el('tr', {},
+              el('th', { tekst: '#' }), el('th', { tekst: 'Lezer' }),
+              el('th', { class: 'getal', tekst: 'Dagen' }), el('th', { class: 'getal', tekst: 'Laatst gelezen' }))),
+            el('tbody', {}, top.map((s, i) => el('tr', {},
+              el('td', { class: 'zacht', tekst: String(i + 1) }),
+              el('td', { tekst: s.naam }),
+              el('td', { class: 'getal', tekst: '🔥 ' + s.dagen }),
+              el('td', { class: 'getal zacht', tekst: new Date(s.laatst).toLocaleDateString('nl-NL', { day: 'numeric', month: 'short' }) }))))),
+          el('p', { class: 'zacht', style: 'margin-top:8px', tekst: `${z.streaks.levend} lezer(s) hebben nu een lopende streak.` }))
+      : el('p', { class: 'leeg-melding', tekst: 'Nog geen lopende streaks.' }));
+  }
+
+  function downloadStreaks() {
+    const top = staat.inzichten?.streaks?.top || [];
+    if (!top.length) return toast('Er zijn nog geen streaks om te downloaden.', true);
+    const veld = (x) => '"' + String(x).replace(/"/g, '""') + '"';
+    const csv = ['plek,lezer,dagen,laatst_gelezen',
+      ...top.map((s, i) => [i + 1, veld(s.naam), s.dagen, s.laatst].join(','))].join('\n');
+    const a = el('a', {
+      href: URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' })),
+      download: `histora-top-streaks-${new Date().toISOString().slice(0, 10)}.csv`,
+    });
+    document.body.append(a);
+    a.click();
+    a.remove();
   }
 
   function kleur(naam) {
@@ -1942,6 +2068,7 @@
     else if (actie === 'verwijder-notitie') verwijderNotitie();
     else if (actie === 'sluit-venster') e.target.closest('dialog')?.close();
     else if (actie === 'stats-vernieuwen') laadStats();
+    else if (actie === 'streaks-downloaden') downloadStreaks();
   });
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
