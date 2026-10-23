@@ -150,6 +150,8 @@
       sub: 'One chapter a day. The fox cheers you on.',
       van: '#22C55E', naar: '#166534',
       scherm: 'progress.png', vos: 'fase-1-gevierd.png', kant: 'links',
+      // Hier staat de telefoon in het midden van de scène, dus gecentreerd: 540 − 640 × 1,35.
+      scene: 'scenes/klaar/scene-2-streak.png', achtergrond: '#FFEBC2', tekst: '#4A2C1A', sceneLinks: -324,
     },
     {
       kop: 'Your streak on<br>your home screen',
@@ -187,7 +189,7 @@
     dia.style.color = d.tekst;
     dia.innerHTML = `
       <div class="kop"><h1>${d.kop}</h1><p>${d.sub}</p></div>
-      <img class="scene" src="${d.scene}" alt="">
+      <img class="scene" src="${d.scene}" alt=""${d.sceneLinks != null ? ` style="left:${d.sceneLinks}px"` : ''}>
     `;
   } else dia.innerHTML = `
     <div class="kop"><h1>${d.kop}</h1><p>${d.sub}</p></div>

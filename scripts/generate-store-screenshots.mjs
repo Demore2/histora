@@ -46,7 +46,22 @@ fs.mkdirSync(outDir, { recursive: true });
 
 // Higgsfield-scènes: het echte scherm in het groene vlak zetten (scripts/plaats-scherm.mjs).
 // Scène in store/scenes/, screenshot in store/screenshots-bron/, uitkomst in store/scenes/klaar/.
-const SCENES = [['scene-1-home.png', 'home.png']];
+// Scène 2 kwam met een groene achtergrond uit Higgsfield; vervang-achtergrond.mjs maakt er
+// eerst het warme verloop van scène 1 van (scene-2-streak-origineel.png → scene-2-streak.png).
+execFileSync(
+  process.execPath,
+  [
+    path.join(__dirname, 'vervang-achtergrond.mjs'),
+    path.join(projectRoot, 'store/scenes/scene-2-streak-origineel.png'),
+    path.join(projectRoot, 'store/scenes/scene-1-home.png'),
+    path.join(projectRoot, 'store/scenes/scene-2-streak.png'),
+  ],
+  { stdio: 'inherit' }
+);
+const SCENES = [
+  ['scene-1-home.png', 'home.png'],
+  ['scene-2-streak.png', 'progress.png'],
+];
 fs.mkdirSync(path.join(projectRoot, 'store/scenes/klaar'), { recursive: true });
 for (const [scene, scherm] of SCENES) {
   execFileSync(
