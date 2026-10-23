@@ -53,11 +53,11 @@ if (x1 < 0) throw new Error('geen groen scherm gevonden in ' + sceneBestand);
 const breed = x1 - x0 + 1;
 const hoog = y1 - y0 + 1;
 
-// Schaal: de breedte van het groen. Bron-y begint onder de statusbalk.
-const schaal = scherm.width / breed;
-if ((scherm.height - STATUSBALK) / schaal < hoog) {
-  throw new Error(`het screenshot is te kort voor dit scherm (${breed}×${hoog})`);
-}
+// Schaal: de breedte van het groen. Is het groen naar verhouding langer dan het screenshot
+// (zonder statusbalk), dan op de hoogte schalen en links en rechts gelijk een strookje afsnijden.
+// Bron-y begint onder de statusbalk.
+const schaal = Math.min(scherm.width / breed, (scherm.height - STATUSBALK) / hoog);
+const bronX = (scherm.width - breed * schaal) / 2;
 
 /** Bilineair bemonsteren van het screenshot. */
 function monster(sx, sy, kanaal) {
@@ -79,7 +79,7 @@ for (let y = Math.max(0, y0 - MARGE); y <= Math.min(scene.height - 1, y1 + MARGE
     const a = groenheid(i);
     if (a === 0) continue;
     // Middelpunt van de doelpixel, terug naar het screenshot.
-    const sx = (x - x0 + 0.5) * schaal - 0.5;
+    const sx = bronX + (x - x0 + 0.5) * schaal - 0.5;
     const sy = STATUSBALK + (y - y0 + 0.5) * schaal - 0.5;
     for (let c = 0; c < 3; c++) {
       // Bij een half-groene randpixel ook het groen uit de oude kleur halen (de-spill).

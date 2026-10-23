@@ -36,7 +36,7 @@
     content: '';
     position: absolute;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.22);
   }
   .dia::before { width: 900px; height: 900px; right: -320px; top: 520px; }
   .dia::after { width: 560px; height: 560px; left: -220px; top: 1180px; }
@@ -142,7 +142,7 @@
     {
       kop: 'Stories that read<br>like a novel',
       sub: 'Short chapters with an illustrated scene to open each one.',
-      van: '#E8743B', naar: '#9A3412',
+      van: '#FFEBC2', naar: '#FDD48E', tekst: '#4A2C1A',
       scherm: 'reader.png', vos: 'fase-2-ochtend.png', kant: 'rechts', spiegel: true,
     },
     {
@@ -156,7 +156,7 @@
     {
       kop: 'Your streak on<br>your home screen',
       sub: 'Add the widget and the fox reminds you before midnight.',
-      van: '#1E293B', naar: '#0B1120',
+      van: '#FFEBC2', naar: '#FDD48E', tekst: '#4A2C1A',
       scherm: 'homescreen.png', statusbalk: '#CED1DB', vos: 'fase-4-avond.png', kant: 'rechts', spiegel: true,
     },
     {
@@ -164,11 +164,13 @@
       sub: 'Read to earn coins and buy a streak freeze for busy days.',
       van: '#38BDF8', naar: '#1D4ED8',
       scherm: 'shop.png', vos: 'fase-8-ijs.png', kant: 'links',
+      // Telefoon links-midden, vos op het ijsblok rechts: zo vallen allebei binnen de 1080 px.
+      scene: 'scenes/klaar/scene-3-shop.png', achtergrond: '#FFEBC2', tekst: '#4A2C1A', sceneLinks: -550,
     },
     {
       kop: 'Unlock chapter<br>after chapter',
       sub: 'Finish a story to add its hero to your collection.',
-      van: '#B45309', naar: '#78350F',
+      van: '#FFEBC2', naar: '#FDD48E', tekst: '#4A2C1A',
       scherm: 'hoofdstukken.png', vos: 'zwaaiend.png', kant: 'rechts', spiegel: true,
     },
   ];
@@ -176,7 +178,9 @@
   const n = Math.min(DIAS.length, Math.max(1, Number(new URLSearchParams(location.search).get('n')) || 1));
   const d = DIAS[n - 1];
   const dia = document.getElementById('dia');
-  dia.style.background = `linear-gradient(160deg, ${d.van} 0%, ${d.naar} 100%)`;
+  // Alle dia's in het warme verloop van de Higgsfield-scènes (Phoxy-stijl), met donkerbruine koppen.
+  dia.style.background = `linear-gradient(180deg, ${d.van} 0%, ${d.naar} 100%)`;
+  if (d.tekst) dia.style.color = d.tekst;
   if (d.statusbalk) dia.style.setProperty('--statusbalk', d.statusbalk);
 
   const statusKleur = '#211F1A';

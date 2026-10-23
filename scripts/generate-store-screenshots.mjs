@@ -61,6 +61,7 @@ execFileSync(
 const SCENES = [
   ['scene-1-home.png', 'home.png'],
   ['scene-2-streak.png', 'progress.png'],
+  ['scene-3-shop.png', 'shop.png'],
 ];
 fs.mkdirSync(path.join(projectRoot, 'store/scenes/klaar'), { recursive: true });
 for (const [scene, scherm] of SCENES) {
