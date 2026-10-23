@@ -65,7 +65,7 @@ Contemporary Era — Nelson Mandela, Steve Jobs, Malala Yousafzai
 
 HOW IT READS
 
-Chapters unlock one at a time, so you never have to remember where you left off. Every chapter opens with an illustrated scene, and the people speak in their own words where the sources let them. Many chapters end with a short quiz or a poll that shows how other readers answered.
+Chapters unlock one at a time, so you never have to remember where you left off. Every chapter opens with an illustrated scene, and the people speak in their own words where the sources let them. After a chapter you answer a short question about what you just read — a quiz, a poll that shows how other readers answered, or a choice the people in the story faced.
 
 COLLECT THE PEOPLE
 
@@ -76,17 +76,17 @@ BUILT TO STAY OUT OF THE WAY
 No ads inside a chapter: the free version shows a banner on the home screen and one short ad after you finish a story. Pro removes them.
 Nothing sold to anyone.
 A free account, so your chapters, characters and streak follow you to a new phone.
-Every story and every image is inside the app, so reading keeps working without a connection.
+With Pro, every story and every image is inside the app, so reading keeps working without a connection.
 One reminder a day, at a time you pick, and you can switch it off.
 
 The interface is available in English, Dutch, French and German. The stories themselves are in English. Light and dark themes, and a reading streak if you want one.
 
 FREE AND PRO
 
-Histora is free to download and read: two new stories a day, and every story you have started stays open. Histora Pro removes the daily limit and all ads. It is a monthly or yearly subscription through Google Play, with a 7-day free trial for new subscribers, and you can cancel any time in the Play Store.
+Histora is free to download and read online: two new stories a day, and every story you have started stays open. Histora Pro removes the daily limit and all ads, and lets you read offline. It is a monthly or yearly subscription through Google Play, with a 7-day free trial for new subscribers, and you can cancel any time in the Play Store.
 ```
 
-(2.161/4000.)
+(2.288/4000.)
 
 ---
 
