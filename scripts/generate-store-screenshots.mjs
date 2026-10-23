@@ -44,6 +44,23 @@ if (!browser) throw new Error('no Chrome/Edge found — add its path to BROWSERS
 
 fs.mkdirSync(outDir, { recursive: true });
 
+// Higgsfield-scènes: het echte scherm in het groene vlak zetten (scripts/plaats-scherm.mjs).
+// Scène in store/scenes/, screenshot in store/screenshots-bron/, uitkomst in store/scenes/klaar/.
+const SCENES = [['scene-1-home.png', 'home.png']];
+fs.mkdirSync(path.join(projectRoot, 'store/scenes/klaar'), { recursive: true });
+for (const [scene, scherm] of SCENES) {
+  execFileSync(
+    process.execPath,
+    [
+      path.join(__dirname, 'plaats-scherm.mjs'),
+      path.join(projectRoot, 'store/scenes', scene),
+      path.join(projectRoot, 'store/screenshots-bron', scherm),
+      path.join(projectRoot, 'store/scenes/klaar', scene),
+    ],
+    { stdio: 'inherit' }
+  );
+}
+
 for (let n = 1; n <= AANTAL; n++) {
   const file = path.join(outDir, `phone-${n}.png`);
   execFileSync(

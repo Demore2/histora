@@ -113,6 +113,17 @@
   .vos.links { left: -60px; bottom: 30px; }
   .vos.rechts { right: -60px; bottom: 30px; }
   .vos.gespiegeld { transform: scaleX(-1); }
+
+  /* Dia's met een Higgsfield-scène in plaats van de getekende telefoon. */
+  .dia.met-scene::before, .dia.met-scene::after { display: none; }
+  .scene {
+    position: absolute;
+    width: 1728px;   /* 1280 × 1,35: zo groot mogelijk zonder de vos of de telefoon af te snijden */
+    left: -223px;    /* de telefoon staat rechts van het midden in de scène; zo blijft de vos heel */
+    bottom: 0;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 220px);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 220px);
+  }
 </style>
 </head>
 <body>
@@ -126,6 +137,7 @@
       sub: 'Real stories about the people and moments that shaped our world.',
       van: '#0EA5E9', naar: '#075985',
       scherm: 'home.png', vos: 'zwaaiend.png', kant: 'links',
+      scene: 'scenes/klaar/scene-1-home.png', achtergrond: '#FFEBC2', tekst: '#4A2C1A',
     },
     {
       kop: 'Stories that read<br>like a novel',
@@ -166,7 +178,18 @@
   if (d.statusbalk) dia.style.setProperty('--statusbalk', d.statusbalk);
 
   const statusKleur = '#211F1A';
-  dia.innerHTML = `
+  if (d.scene) {
+    // Een Higgsfield-scène: vos + telefoon + achtergrond in één beeld, het echte scherm er al in
+    // gezet door scripts/plaats-scherm.mjs. Het beeld is vierkant; erboven loopt de effen kleur
+    // van zijn bovenrand door, met een zachte overgang zodat er geen naad te zien is.
+    dia.classList.add('met-scene');
+    dia.style.background = d.achtergrond;
+    dia.style.color = d.tekst;
+    dia.innerHTML = `
+      <div class="kop"><h1>${d.kop}</h1><p>${d.sub}</p></div>
+      <img class="scene" src="${d.scene}" alt="">
+    `;
+  } else dia.innerHTML = `
     <div class="kop"><h1>${d.kop}</h1><p>${d.sub}</p></div>
     <div class="telefoon">
       <div class="scherm">
