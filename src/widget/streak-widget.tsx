@@ -6,7 +6,7 @@ import {
   type ColorProp,
 } from 'react-native-android-widget';
 
-import type { StreakFase, StreakStand } from '@/widget/streak-fase';
+import { FASE_KLEUR, type StreakFase, type StreakStand } from '@/widget/streak-fase';
 
 /**
  * De streak-widget op het homescreen (1.3). Geen React Native-component: dit wordt door
@@ -32,21 +32,6 @@ const FASE_BEELD: Record<StreakFase, number> = {
   slaap: require('@/assets/images/vos/widget/fase-7-slaap.png'),
 };
 
-/**
- * Achtergrond per fase, van rustig naar alarm — de kleur vertelt het verhaal al voordat je de vos
- * ziet. Een verloop in plaats van een vlak, want een effen widget tussen app-icoontjes leest als
- * een leeg vak.
- */
-const FASE_KLEUR: Record<StreakFase, { van: ColorProp; naar: ColorProp }> = {
-  gevierd: { van: '#22C55E', naar: '#15803D' },
-  ochtend: { van: '#38BDF8', naar: '#0284C7' },
-  middag: { van: '#818CF8', naar: '#4F46E5' },
-  avond: { van: '#C084FC', naar: '#9333EA' },
-  paniek: { van: '#F87171', naar: '#B91C1C' },
-  ijs: { van: '#7DD3FC', naar: '#0369A1' },
-  skelet: { van: '#374151', naar: '#111827' },
-  slaap: { van: '#1E40AF', naar: '#172554' },
-};
 
 /** Vanaf deze breedte (dp) de brede indeling. Een 2×2-widget is op de meeste launchers ±150 dp. */
 const BREED_VANAF = 230;

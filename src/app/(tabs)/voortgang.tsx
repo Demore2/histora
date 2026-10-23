@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AchievementsGrid } from '@/components/achievements-grid';
 import { EraProgressBars } from '@/components/era-progress-bars';
-import { ProgressStatsHeader } from '@/components/progress-stats-header';
+import { StreakKaart } from '@/components/streak-kaart';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
@@ -13,8 +13,9 @@ import { useVertaling } from '@/hooks/use-vertaling';
 /**
  * Voortgang, in drie lagen: waar je staat, waar je aan werkt, wat je hebt verdiend.
  *
- * De streakkaart die hier stond is opgegaan in `ProgressStatsHeader` — hij is nu een van de vier
- * tellers. Wat daaruit is meegenomen is de **lege stand als uitnodiging**: bij een streak van nul
+ * **Sinds 1.3 staat bovenaan de streak-kaart met de vos** (`StreakKaart`), met dezelfde fases als
+ * de widget. De vier tellers die hier stonden (`ProgressStatsHeader`, nu orphaned) zijn eruit: drie
+ * ervan staan ook op Profiel. Daarvóór was de streakkaart opgegaan in die vier tellers. Wat daaruit is meegenomen is de **lege stand als uitnodiging**: bij een streak van nul
  * staat er niet "0 dagen" met een uitleg over hoe je hem behoudt, maar een regel die zegt wat je
  * moet doen om er een te beginnen (LAUNCH-PLAN.md B6).
  *
@@ -34,7 +35,7 @@ export default function VoortgangScreen() {
           </View>
 
           <View style={styles.statsBlok}>
-            <ProgressStatsHeader />
+            <StreakKaart />
             <ThemedText type="small" themeColor="textSecondary" style={styles.streakRegel}>
               {streakDagen > 0
                 ? t((s) => s.voortgang.streakBeschrijving)

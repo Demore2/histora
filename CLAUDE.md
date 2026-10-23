@@ -1712,6 +1712,7 @@ delete it, and don't wire it back up without reading why it was dropped.
 | `components/interactieve-sectie.tsx` | 2026-10-22 — vragen verhuisd naar het verplichte paneel `hoofdstuk-vragen.tsx` |
 | `components/placeholder-screen.tsx` | Voortgang/Profiel are fully built |
 | `components/profile-card-collection.tsx` | superseded by `profile-character-collection.tsx` (kaarten i.p.v. cirkelraster) |
+| `components/progress-stats-header.tsx` | 1.3 — Voortgang toont `streak-kaart.tsx` (de vos); de tellers staan op Profiel |
 | `verhaal/[id]/quiz.tsx`, `verhaal/[id]/chapter-quiz.tsx` | quizzes removed; now tombstone screens |
 | `profiel/analytics.tsx` | dev analytics dashboard removed; now a tombstone screen |
 | `app/land/[landId]/**`, `components/story-card.tsx`, `components/tijdperk-section.tsx`, `constants/stub-data.ts` | pre-Regio/Tijdperk content model; last three are empty stubs |

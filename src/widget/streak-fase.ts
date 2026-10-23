@@ -19,6 +19,23 @@ export type StreakFase =
   | 'skelet' // de streak verliep vannacht (alleen die ene dag)
   | 'slaap'; // nooit gelezen, of langer geleden: tijd voor een nieuwe start
 
+/**
+ * Achtergrond per fase, van rustig naar alarm — de kleur vertelt het verhaal al voordat je de vos
+ * ziet. Gedeeld door de widget (verloop van `van` naar `naar`) en de streak-kaart op Voortgang
+ * (effen `van`). Een verloop in plaats van een vlak, want een effen widget tussen app-icoontjes leest als
+ * een leeg vak.
+ */
+export const FASE_KLEUR: Record<StreakFase, { van: `#${string}`; naar: `#${string}` }> = {
+  gevierd: { van: '#22C55E', naar: '#15803D' },
+  ochtend: { van: '#38BDF8', naar: '#0284C7' },
+  middag: { van: '#818CF8', naar: '#4F46E5' },
+  avond: { van: '#C084FC', naar: '#9333EA' },
+  paniek: { van: '#F87171', naar: '#B91C1C' },
+  ijs: { van: '#7DD3FC', naar: '#0369A1' },
+  skelet: { van: '#374151', naar: '#111827' },
+  slaap: { van: '#1E40AF', naar: '#172554' },
+};
+
 /** Grenzen in lokale uren. Het eerste uur waarop de fase begint. */
 const MIDDAG_VANAF = 12;
 const AVOND_VANAF = 18;
