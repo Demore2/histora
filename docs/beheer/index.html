@@ -158,7 +158,8 @@
 
   /* ---------- Kop & tabbladen ---------- */
   header.kop {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     gap: 12px;
     padding: 12px 24px;
@@ -168,8 +169,10 @@
     top: 0;
     z-index: 5;
   }
-  header.kop h1 { font-size: 18px; white-space: nowrap; }
-  .tabs { display: flex; gap: 4px; flex: 1; min-width: 0; }
+  header.kop h1 { display: flex; align-items: center; justify-self: start; }
+  header.kop h1 img { width: 36px; height: 36px; border-radius: 10px; display: block; }
+  header.kop .wie { justify-self: end; }
+  .tabs { display: flex; gap: 4px; justify-content: center; min-width: 0; }
   .tab {
     border: 0;
     background: none;
@@ -531,8 +534,8 @@
 
   /* ---------- Smal scherm ---------- */
   @media (max-width: 860px) {
-    header.kop { flex-wrap: wrap; padding: 10px 16px; }
-    .tabs { order: 3; flex-basis: 100%; }
+    header.kop { grid-template-columns: auto 1fr; row-gap: 8px; padding: 10px 16px; }
+    .tabs { order: 3; grid-column: 1 / -1; }
     .balk { padding-left: 16px; padding-right: 16px; }
     main.bord, .hub, .stats { padding: 0 16px 40px; }
     .rij.kopregel { display: none; }
@@ -590,7 +593,7 @@
 <!-- De app -->
 <div id="app" hidden>
   <header class="kop">
-    <h1>Histora</h1>
+    <h1><img src="favicon.png" alt="Histora" title="Histora"></h1>
     <nav class="tabs" role="tablist" aria-label="Onderdelen">
       <button class="tab" type="button" role="tab" data-tab="tickets" aria-selected="true">Tickets<span class="tel" id="tel-tickets"></span></button>
       <button class="tab" type="button" role="tab" data-tab="hub" aria-selected="false">Ideeënhub<span class="tel" id="tel-hub"></span></button>
