@@ -280,6 +280,13 @@ const fr: DeepPartial<Vertalingen> = {
     upgrade: 'Découvrir Histora Pro',
     morgen: 'À demain',
   },
+  offline: {
+    titel: 'Vous êtes hors ligne',
+    tekst: 'La lecture gratuite nécessite une connexion Internet. Connectez-vous au Wi-Fi ou aux données mobiles et reprenez là où vous en étiez — votre progression est enregistrée.',
+    opnieuw: 'Réessayer',
+    pro: 'Lire hors ligne avec Histora Pro',
+    terug: 'Retour',
+  },
   feedback: {
     titel: 'Envoyer un commentaire',
     ondertitel: "Qu'est-ce qui n'a pas marché, ou que souhaiteriez-vous voir ?",

@@ -495,6 +495,14 @@ const en = {
     upgrade: 'See Histora Pro',
     morgen: 'Come back tomorrow',
   },
+  /** `offline-modal.tsx`: een gratis lezer zonder internet (`useOnlinePoort`). */
+  offline: {
+    titel: 'You’re offline',
+    tekst: 'Free reading needs an internet connection. Connect to Wi-Fi or mobile data and carry on where you left off — your progress is saved.',
+    opnieuw: 'Try again',
+    pro: 'Read offline with Histora Pro',
+    terug: 'Go back',
+  },
   /**
    * Het feedbackvenster achter het spreekwolkje op Profiel (`feedback-modal.tsx`).
    *

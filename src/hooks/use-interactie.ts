@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { ANALYTICS_EVENTS } from '@/constants/analytics';
 import { logStoryEvent } from '@/hooks/useAnalytics';
@@ -44,11 +44,19 @@ function maakSleutel(verhaalId: string, chapterId: number): string {
  * mededeling over één moment in het lezen, geen groeiende toestand die per se moet aankomen; een
  * stem die een uur later alsnog vertrekt is verwarrender dan geen stem.
  */
-export function useHoofdstukInteractie(verhaalId: string, chapterId: number) {
+export function useHoofdstukInteractie(verhaalId: string, chapterId: number, poging = 0) {
   const user = useAuthStore((state) => state.user);
   const sleutel = maakSleutel(verhaalId, chapterId);
 
   const [geladen, setGeladen] = useState<Geladen | null>(null);
+  /**
+   * Welk hoofdstuk al met succes geladen is. `poging` (de reader geeft `useOnlinePoort().herstelTeller`
+   * mee) laat het effect na elke herstelde verbinding opnieuw draaien — sinds 1.2.1, want een gratis
+   * lezer die offline een hoofdstuk opende kreeg anders na het terugkomen van het netwerk nog steeds
+   * "mislukt", en dan sloeg "Mark Complete" de vragen over. Wat al binnen is wordt niet opnieuw
+   * opgehaald: dat zou antwoorden die de lezer al gaf weer uit beeld halen.
+   */
+  const klaarVoor = useRef<string | null>(null);
 
   useEffect(() => {
     if (!verhaalId) return;
@@ -58,10 +66,12 @@ export function useHoofdstukInteractie(verhaalId: string, chapterId: number) {
     // van hoofdstuk 3 de state van hoofdstuk 4 over.
     let geannuleerd = false;
     const dezeSleutel = maakSleutel(verhaalId, chapterId);
+    if (klaarVoor.current === dezeSleutel) return;
 
     haalHoofdstukInteractie(verhaalId, chapterId)
       .then((interactie) => {
         if (geannuleerd) return;
+        klaarVoor.current = dezeSleutel;
         setGeladen({ sleutel: dezeSleutel, status: 'klaar', interactie });
       })
       .catch((fout: unknown) => {
@@ -77,7 +87,7 @@ export function useHoofdstukInteractie(verhaalId: string, chapterId: number) {
     return () => {
       geannuleerd = true;
     };
-  }, [verhaalId, chapterId]);
+  }, [verhaalId, chapterId, poging]);
 
   const hoortErbij = geladen?.sleutel === sleutel;
   const status: InteractieStatus = hoortErbij ? geladen.status : 'laden';

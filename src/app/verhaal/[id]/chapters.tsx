@@ -12,6 +12,7 @@ import Animated, {
 import { AnimatedPressable } from '@/components/animated-pressable';
 import { HoofdstukTegel } from '@/components/hoofdstuk-tegel';
 import { LegeStaat } from '@/components/lege-staat';
+import { OfflineModal } from '@/components/offline-modal';
 import { StoryLimitModal } from '@/components/story-limit-modal';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
@@ -23,6 +24,7 @@ import { getTijdperk } from '@/constants/tijdperken';
 import { berekenLeestijdMinuten } from '@/content/leestijd';
 import { getVerhaal } from '@/content/verhalen';
 import { haalVerhalenVandaagOp, logVerhaalGeopend } from '@/lib/leeslimiet';
+import { useOnlinePoort } from '@/hooks/use-online-poort';
 import { useTheme } from '@/hooks/use-theme';
 import { useStoryProgress } from '@/hooks/use-story-progress';
 import { logStoryEvent } from '@/hooks/useAnalytics';
@@ -68,6 +70,9 @@ export default function ChaptersScreen() {
   // stuurt hierheen door), dus hier wordt geteld en hier wordt tegengehouden. In de reader zou het
   // te laat zijn: dan staat de lezer al in hoofdstuk één.
   const [limietBereikt, setLimietBereikt] = useState(false);
+  // Gratis lezen kan alleen online (zie `useOnlinePoort`). Hier én in de reader: dit scherm is de
+  // trechter, de reader vangt een deeplink rechtstreeks naar een hoofdstuk.
+  const { geblokkeerd: offlineGeblokkeerd, opnieuwProberen } = useOnlinePoort();
   const verhaalId = verhaal?.id;
   const tijdperkId = verhaal?.tijdperkId;
   const aantalHoofdstukken = verhaal?.chapters.length ?? 0;
@@ -174,7 +179,7 @@ export default function ChaptersScreen() {
 
   function handleChapterPress(chapterId: number) {
     // Vangnet: de melding ligt over het scherm, dus hier komt normaal geen tik doorheen.
-    if (limietBereikt) return;
+    if (limietBereikt || offlineGeblokkeerd) return;
     if (progress.isChapterUnlocked(chapterId)) {
       router.push({
         pathname: '/verhaal/[id]/reader',
@@ -267,6 +272,12 @@ export default function ChaptersScreen() {
       </ScrollView>
 
       <StoryLimitModal visible={limietBereikt} onClose={handleLimietSluiten} />
+      {/* Nooit twee vensters tegelijk: de limiet is het definitievere antwoord. */}
+      <OfflineModal
+        visible={offlineGeblokkeerd && !limietBereikt}
+        onOpnieuw={opnieuwProberen}
+        onTerug={handleHome}
+      />
     </ThemedView>
   );
 }

@@ -281,6 +281,13 @@ const de: DeepPartial<Vertalingen> = {
     upgrade: 'Histora Pro ansehen',
     morgen: 'Bis morgen',
   },
+  offline: {
+    titel: 'Du bist offline',
+    tekst: 'Kostenloses Lesen braucht eine Internetverbindung. Verbinde dich mit WLAN oder mobilen Daten und lies weiter, wo du warst — dein Fortschritt ist gespeichert.',
+    opnieuw: 'Erneut versuchen',
+    pro: 'Offline lesen mit Histora Pro',
+    terug: 'Zurück',
+  },
   feedback: {
     titel: 'Feedback senden',
     ondertitel: 'Was ist schiefgelaufen, oder was wünschst du dir?',

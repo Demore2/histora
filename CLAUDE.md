@@ -1097,6 +1097,12 @@ lokaal: `npx http-server docs -p 5510`.
   bewust niet (wens van de eigenaars: alleen gekocht en opgezegd), afgeleid uit de overgang oud→nieuw zodat een gewone
   verlenging stil blijft. Rijen zonder `product_id` (handmatig premium) blijven stil. Webhook in
   secret `DISCORD_WEBHOOK_PREMIUM`.
+- **Nieuwe-lezermeldingen** (`supabase/nieuwe-lezer-melding-migratie.sql`, 2026-10-23): trigger
+  `nieuwe_lezer_na_insert` op `auth.users` post bij elke registratie "er heeft iemand een account
+  aangemaakt" + het totaal aantal lezers naar Discord. **Zonder edge function**: de trigger post zelf
+  via `net.http_post`, de webhook-URL staat in het Vault-geheim `discord_webhook_nieuwe_lezers` (niet
+  `service_role_key`). Geen e-mail, naam of id in het bericht; beheerders en `is_testaccount` tellen
+  niet mee en blijven stil. Tijdelijk bedoeld voor de beginperiode — uitzetten staat bovenaan het bestand.
 - **Statistieken tellen accounts, geen downloads** (die staan in Google Play), en "actief" is elke
   schrijfactie of login in de periode; de app openen zonder iets te doen telt niet. Beheerders en
   test- en robotaccounts tellen standaard niet mee. Welke dat zijn staat op één plek:
@@ -1298,6 +1304,22 @@ eind van een uitgelezen verhaal. Pro heft beide op. Alle schakelaars staan in
 **`src/constants/monetisatie.ts`** — `DAGELIJKSE_VERHAAL_LIMIET` (2), `VERHAAL_LIMIET_ENABLED` en
 `AD_ONDERBREKING_ENABLED`, allebei nu `false`.
 
+- **Gratis lezen kan alleen online, Pro leest ook offline** (1.2.1, keuze van de eigenaar).
+  `useOnlinePoort()` (`hooks/use-online-poort.ts`) + `OfflineModal`, in `chapters.tsx` én de reader.
+  Technisch is het niet nodig — de verhalen zitten in de bundel — maar zonder netwerk laden de vragen
+  niet, en vliegtuigmodus omzeilde zo de vragen, de daglimiet (faalt open) en de advertenties.
+  Drie regels: **twijfel is online** (alleen een expliciete `false` van NetInfo blokkeert);
+  **een Pro-lezer wordt nooit geblokkeerd omdat zijn abonnement nog laadt** (er wordt pas beslist
+  als de rij van déze lezer binnen is, offline uit de cache — zelfde wachtregel als
+  `useAdvertenties`); en **de poort gaat vanzelf open** als het netwerk terugkomt.
+  `herstelTeller` laat `useHoofdstukInteractie` dan opnieuw laden, anders blijft een offline geopend
+  hoofdstuk op "mislukt" staan en slaat "Mark Complete" de vragen alsnog over. De Pro-regel in het
+  venster verschijnt alleen als er echt iets te koop is (`useProAanbodZichtbaar`); de paywall krijgt
+  `bron="offline"`.
+- **De reviewvraag** (`lib/beoordeling.ts`, `expo-store-review` — native, dus een rebuild) komt ná
+  een uitgelezen verhaal, vanuit `verlaatVerhaal()` in de reader: na het personage en na de
+  interstitial. Hooguit eens per 120 dagen per toestel, vastgelegd vóórdat het venster gevraagd
+  wordt — Play zegt niet of het verscheen, en te vaak vragen maakt zijn quotum op.
 - **Allebei die vlaggen zijn releaseblokkers zolang Billing een stub is**, en zwaarder dan
   `PRO_BANNER_ENABLED`: een limiet die alleen met een aankoop opgeheven kan worden terwijl er niets
   te kopen valt, is een muur zonder deur. Ze staan daarom uit voor de Play-inzending. Wil je het

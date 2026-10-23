@@ -27,8 +27,10 @@ import { useSubscriptionStore } from '@/store/subscription-store';
  * uit zichzelf gaat kijken; `limit` en `ad` zijn iemand die tegen een muur liep. Als de conversie
  * ergens vandaan komt, komt hij van die laatste twee — en zonder deze parameter zie je dat niet.
  * Een vijfde ingang moet daarom een keuze maken in plaats van in een `undefined` te vallen.
+ * Die is er sinds 1.2.1: `offline`, een gratis lezer zonder internet (`offline-modal.tsx`) — ook
+ * een muur.
  */
-export type PaywallBron = 'banner' | 'settings' | 'limit' | 'ad';
+export type PaywallBron = 'banner' | 'settings' | 'limit' | 'ad' | 'offline';
 
 type ProPaywallProps = {
   visible: boolean;

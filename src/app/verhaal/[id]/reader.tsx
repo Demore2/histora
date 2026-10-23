@@ -15,6 +15,7 @@ import { BlokWeergave } from '@/components/blok-weergave';
 import { CharacterUnlockModal } from '@/components/character-unlock-modal';
 import { HoofdstukVragen } from '@/components/hoofdstuk-vragen';
 import { LegeStaat } from '@/components/lege-staat';
+import { OfflineModal } from '@/components/offline-modal';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { ANALYTICS_EVENTS } from '@/constants/analytics';
@@ -26,8 +27,10 @@ import { getTijdperk } from '@/constants/tijdperken';
 import { getVerhaal } from '@/content/verhalen';
 import { useAbonnement } from '@/hooks/use-abonnement';
 import { useHoofdstukInteractie } from '@/hooks/use-interactie';
+import { useOnlinePoort } from '@/hooks/use-online-poort';
 import { biedHerinneringAan } from '@/hooks/use-dagelijkse-herinnering';
 import { toonInterstitial } from '@/lib/advertenties';
+import { vraagOmBeoordeling } from '@/lib/beoordeling';
 import { isLeeg } from '@/lib/interactief';
 import { useTheme } from '@/hooks/use-theme';
 import { useStoryProgress } from '@/hooks/use-story-progress';
@@ -108,12 +111,17 @@ export default function ReaderScreen() {
   // De quiz, peiling en het keuzepunt van dit hoofdstuk (Supabase). Opgehaald zodra het hoofdstuk
   // opengaat, zodat ze er al zijn als de lezer onderaan op "Mark Complete" tikt. Hier en niet in
   // `HoofdstukVragen`: de reader moet bij die tik weten óf er vragen zijn.
+  //
+  // Gratis lezen kan alleen online (`useOnlinePoort`, sinds 1.2.1) — juist hierom: zonder netwerk
+  // laden de vragen niet en sloeg "Mark Complete" ze over. `herstelTeller` laadt ze opnieuw zodra
+  // de verbinding terugkomt, anders blijft een offline geopend hoofdstuk op "mislukt" staan.
+  const { geblokkeerd: offlineGeblokkeerd, opnieuwProberen, herstelTeller } = useOnlinePoort();
   const {
     interactie,
     status: interactieStatus,
     stemOpPoll,
     kiesOptie,
-  } = useHoofdstukInteractie(verhaal?.id ?? '', chapterId);
+  } = useHoofdstukInteractie(verhaal?.id ?? '', chapterId, herstelTeller);
 
   useEffect(() => {
     hoofdstukGestartOp.current = Date.now();
@@ -187,11 +195,16 @@ export default function ReaderScreen() {
    * **Alleen een geladen, niet-lege interactie opent het paneel.** Nog aan het laden, offline,
    * mislukt of gewoon geen vragen: dan wordt er direct afgerond. De vragen komen van de server en
    * de verhalen niet; een paneel dat op het netwerk wacht, zou offline lezen onmogelijk maken.
+   * (Sinds 1.2.1 geldt dat offline-pad alleen nog voor Pro: een gratis lezer houdt de
+   * `OfflineModal` tegen.)
    *
    * Herlezen geeft geen paneel: deze knop bestaat alleen voor een hoofdstuk dat nog niet af is.
    * Daarna staat er "Next Chapter".
    */
   function handleMarkeerVoltooid() {
+    // Vangnet: het offline-venster ligt dan over het scherm. Zonder deze regel rondt een tik die er
+    // toch doorheen komt af zónder vragen, en dat is precies het gat dat de poort dicht.
+    if (offlineGeblokkeerd) return;
     if (interactieStatus === 'klaar' && !isLeeg(interactie)) {
       setToonVragen(true);
       return;
@@ -297,6 +310,11 @@ export default function ReaderScreen() {
   }
 
   function verlaatVerhaal() {
+    // Net een verhaal uitgelezen en een personage verdiend: het moment om om een beoordeling te
+    // vragen (1.2.1). Ná het personage en ná de interstitial, en de functie wacht zelf tot de lezer
+    // op Home staat. Hij bewaakt ook zelf dat het hooguit eens per 120 dagen gebeurt.
+    void vraagOmBeoordeling();
+
     // Alles wat er voor dit verhaal op de stack ligt afpellen in plaats van Home er bovenop te
     // duwen; anders loopt de terugknop na het ontgrendelen weer door de reader heen.
     //
@@ -448,6 +466,15 @@ export default function ReaderScreen() {
         onStem={stemOpPoll}
         onKies={kiesOptie}
         onKlaar={handleVragenKlaar}
+      />
+
+      {/* Niet over een ander venster heen: twee `Modal`s tegelijk is op Android vaak één onzichtbare.
+          Wie midden in de vragen of de viering de verbinding verliest, maakt die gewoon af — de
+          vragen staan dan al op het scherm, en de stemmen draaien zelf terug als ze niet aankomen. */}
+      <OfflineModal
+        visible={offlineGeblokkeerd && !toonVragen && !showUnlockModal && !showAdModal}
+        onOpnieuw={opnieuwProberen}
+        onTerug={handleTerugNaarOverzicht}
       />
 
       <Modal visible={showUnlockModal} animationType="fade" transparent={true}>
