@@ -4,8 +4,7 @@ import Animated, { FadeInRight } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AnimatedPressable } from '@/components/animated-pressable';
-import { StoryChoice } from '@/components/story-choice';
-import { StoryPoll } from '@/components/story-poll';
+import { PhoxyLeraar } from '@/components/phoxy-leraar';
 import { StoryQuiz } from '@/components/story-quiz';
 import { ThemedText } from '@/components/themed-text';
 import { ANALYTICS_EVENTS } from '@/constants/analytics';
@@ -14,25 +13,10 @@ import { MAX_LEESBREEDTE, Radii, Spacing, withAlpha } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 import { logStoryEvent } from '@/hooks/useAnalytics';
 import { useVertaling } from '@/hooks/use-vertaling';
-import type { HoofdstukInteractie, Keuzepunt, Poll, Quiz } from '@/lib/interactief';
+import type { HoofdstukInteractie } from '@/lib/interactief';
 
-type Stap =
-  | { soort: 'quiz'; id: string; quiz: Quiz }
-  | { soort: 'poll'; id: string; poll: Poll }
-  | { soort: 'keuze'; id: string; keuzepunt: Keuzepunt };
-
-/** Feitelijk → persoonlijk, dezelfde volgorde als de kaarten onder de tekst vroeger stonden. */
-function maakStappen(interactie: HoofdstukInteractie): Stap[] {
-  return [
-    ...interactie.quizzes.map((quiz) => ({ soort: 'quiz' as const, id: quiz.id, quiz })),
-    ...interactie.polls.map((poll) => ({ soort: 'poll' as const, id: poll.id, poll })),
-    ...interactie.keuzepunten.map((keuzepunt) => ({
-      soort: 'keuze' as const,
-      id: keuzepunt.id,
-      keuzepunt,
-    })),
-  ];
-}
+/** Hoe de lezer de huidige vraag beantwoordde, plus welke van Phoxy's zinnen erbij hoort. */
+type Reactie = { goed: boolean; zin: number };
 
 /**
  * De vragen van een hoofdstuk, ná "Mark Complete" en vóór het hoofdstuk echt af is.
@@ -44,13 +28,15 @@ function maakStappen(interactie: HoofdstukInteractie): Stap[] {
  * al geladen zijn. Offline, een mislukte fetch of een hoofdstuk zonder vragen geeft dus geen
  * paneel, en daarmee loopt niemand ooit vast op iets wat er niet is.
  *
+ * **Alleen quizvragen, sinds 1.4** (wens van de eigenaar, 2026-10-26). Elk hoofdstuk heeft er
+ * precies één; de peilingen en keuzepunten staan nog in de database en komen nog uit de RPC —
+ * oudere app-versies tonen ze — maar dit paneel slaat ze over. Met een handvol lezers zei "wat
+ * stemden anderen" nog niets. `StoryPoll` en `StoryChoice` zijn daarmee orphaned.
+ *
  * **Elk antwoord telt, ook een fout.** De quiz toont het juiste antwoord met toelichting, en daarna
  * gaat het door. Verplicht antwoorden, niet verplicht goed antwoorden: wie vastloopt op een vraag
- * die hij niet weet, leert niets bij en sluit de app.
- *
- * **Een stem telt als beantwoord op het moment van de tik**, niet pas als de server hem heeft.
- * `stemOpPoll` draait de stem terug als het schrijven mislukt; zonder deze eigen administratie zou
- * de lezer offline dan met een uitgeschakelde knop blijven zitten.
+ * die hij niet weet, leert niets bij en sluit de app. Phoxy reageert daarom op een fout antwoord
+ * bemoedigend, niet teleurgesteld.
  *
  * Geen kruisje en de hardwareknop doet niets: het paneel is verplicht. Het hoofdstuk zelf blijft
  * daaronder gewoon staan; wie het paneel niet wil, heeft het hoofdstuk nog niet afgerond.
@@ -61,8 +47,6 @@ export function HoofdstukVragen({
   accent,
   verhaalId,
   chapterId,
-  onStem,
-  onKies,
   onKlaar,
 }: {
   zichtbaar: boolean;
@@ -70,8 +54,6 @@ export function HoofdstukVragen({
   accent: string;
   verhaalId: string;
   chapterId: number;
-  onStem: (pollId: string, optie: number) => void;
-  onKies: (keuzeId: string, optie: number) => void;
   /** Alle vragen beantwoord: nu pas wordt het hoofdstuk afgerond. */
   onKlaar: () => void;
 }) {
@@ -79,21 +61,20 @@ export function HoofdstukVragen({
   const { t } = useVertaling();
   const insets = useSafeAreaInsets();
   const [stapIndex, setStapIndex] = useState(0);
-  const [beantwoord, setBeantwoord] = useState<ReadonlySet<string>>(() => new Set());
+  const [reactie, setReactie] = useState<Reactie | null>(null);
 
-  const stappen = maakStappen(interactie);
-  const stap = stappen[Math.min(stapIndex, stappen.length - 1)];
-  if (!stap) return null;
+  const quizzes = interactie.quizzes;
+  const quiz = quizzes[Math.min(stapIndex, quizzes.length - 1)];
+  if (!quiz) return null;
 
-  const markeer = (id: string) => setBeantwoord((huidig) => new Set(huidig).add(id));
+  const zinnenGoed = t((s) => s.interactief.phoxyGoed);
+  const zinnenFout = t((s) => s.interactief.phoxyFout);
+  const phoxyTekst = !reactie
+    ? t((s) => s.interactief.phoxyVraag)
+    : (reactie.goed ? zinnenGoed : zinnenFout)[reactie.zin];
 
-  // Een peiling waar je al eerder op stemde (bijvoorbeeld vóór deze versie, toen hij nog onder de
-  // tekst stond) is ook beantwoord; de server weet dat en geeft `mijnKeuze` mee.
-  const isBeantwoord =
-    beantwoord.has(stap.id) ||
-    (stap.soort === 'poll' && stap.poll.mijnKeuze !== null) ||
-    (stap.soort === 'keuze' && stap.keuzepunt.mijnKeuze !== null);
-  const isLaatste = stapIndex >= stappen.length - 1;
+  const isBeantwoord = reactie !== null;
+  const isLaatste = stapIndex >= quizzes.length - 1;
 
   function verder() {
     if (!isBeantwoord) return;
@@ -101,6 +82,7 @@ export function HoofdstukVragen({
       onKlaar();
       return;
     }
+    setReactie(null);
     setStapIndex((i) => i + 1);
   }
 
@@ -116,9 +98,9 @@ export function HoofdstukVragen({
             <ThemedText type="smallBold" style={{ color: accent }}>
               {t((s) => s.interactief.vragenTitel)}
             </ThemedText>
-            {stappen.length > 1 && (
+            {quizzes.length > 1 && (
               <ThemedText type="small" themeColor="textSecondary">
-                {t((s) => s.interactief.vragenStap)(stapIndex + 1, stappen.length)}
+                {t((s) => s.interactief.vragenStap)(stapIndex + 1, quizzes.length)}
               </ThemedText>
             )}
           </View>
@@ -127,43 +109,31 @@ export function HoofdstukVragen({
             style={styles.inhoud}
             contentContainerStyle={styles.inhoudContainer}
             showsVerticalScrollIndicator={false}>
-            {/* `key` per stap: elke vraag begint met een schone eigen state, en de animatie speelt
+            <PhoxyLeraar
+              stand={!reactie ? 'vraag' : reactie.goed ? 'goed' : 'fout'}
+              tekst={phoxyTekst}
+            />
+
+            {/* `key` per vraag: elke vraag begint met een schone eigen state, en de animatie speelt
                 bij elke nieuwe vraag opnieuw. */}
-            <Animated.View key={stap.id} entering={FadeInRight.duration(Motion.duration.normaal)}>
-              {stap.soort === 'quiz' ? (
-                <StoryQuiz
-                  quiz={stap.quiz}
-                  accent={accent}
-                  onBeantwoord={(gekozen, goed) => {
-                    markeer(stap.id);
-                    logStoryEvent(ANALYTICS_EVENTS.QUIZ_ANSWER, {
-                      story_id: verhaalId,
-                      chapter_index: chapterId,
-                      quiz_id: stap.quiz.id,
-                      selected_option: gekozen,
-                      correct: goed,
-                    });
-                  }}
-                />
-              ) : stap.soort === 'poll' ? (
-                <StoryPoll
-                  poll={stap.poll}
-                  accent={accent}
-                  onStem={(pollId, optie) => {
-                    markeer(stap.id);
-                    onStem(pollId, optie);
-                  }}
-                />
-              ) : (
-                <StoryChoice
-                  keuzepunt={stap.keuzepunt}
-                  accent={accent}
-                  onKies={(keuzeId, optie) => {
-                    markeer(stap.id);
-                    onKies(keuzeId, optie);
-                  }}
-                />
-              )}
+            <Animated.View key={quiz.id} entering={FadeInRight.duration(Motion.duration.normaal)}>
+              <StoryQuiz
+                quiz={quiz}
+                accent={accent}
+                onBeantwoord={(gekozen, goed) => {
+                  // De zin wordt hier gekozen, bij het antwoord, en niet tijdens het renderen:
+                  // anders wisselt Phoxy van woorden bij elke hertekening.
+                  const zinnen = goed ? zinnenGoed : zinnenFout;
+                  setReactie({ goed, zin: Math.floor(Math.random() * zinnen.length) });
+                  logStoryEvent(ANALYTICS_EVENTS.QUIZ_ANSWER, {
+                    story_id: verhaalId,
+                    chapter_index: chapterId,
+                    quiz_id: quiz.id,
+                    selected_option: gekozen,
+                    correct: goed,
+                  });
+                }}
+              />
             </Animated.View>
           </ScrollView>
 
@@ -199,7 +169,7 @@ const styles = StyleSheet.create({
     width: '100%',
     maxWidth: MAX_LEESBREEDTE,
     alignSelf: 'center',
-    maxHeight: '88%',
+    maxHeight: '92%',
     borderTopLeftRadius: Radii.card,
     borderTopRightRadius: Radii.card,
     paddingTop: Spacing.four,
@@ -215,6 +185,7 @@ const styles = StyleSheet.create({
     flexGrow: 0,
   },
   inhoudContainer: {
+    gap: Spacing.two,
     paddingBottom: Spacing.two,
   },
   knop: {

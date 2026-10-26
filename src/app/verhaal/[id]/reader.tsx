@@ -31,7 +31,7 @@ import { useOnlinePoort } from '@/hooks/use-online-poort';
 import { biedHerinneringAan } from '@/hooks/use-dagelijkse-herinnering';
 import { toonInterstitial } from '@/lib/advertenties';
 import { vraagOmBeoordeling } from '@/lib/beoordeling';
-import { isLeeg } from '@/lib/interactief';
+import { heeftVragen } from '@/lib/interactief';
 import { useTheme } from '@/hooks/use-theme';
 import { useStoryProgress } from '@/hooks/use-story-progress';
 import { logStoryEvent } from '@/hooks/useAnalytics';
@@ -117,12 +117,11 @@ export default function ReaderScreen() {
   // laden de vragen niet en sloeg "Mark Complete" ze over. `herstelTeller` laadt ze opnieuw zodra
   // de verbinding terugkomt, anders blijft een offline geopend hoofdstuk op "mislukt" staan.
   const { geblokkeerd: offlineGeblokkeerd, opnieuwProberen, herstelTeller } = useOnlinePoort();
-  const {
-    interactie,
-    status: interactieStatus,
-    stemOpPoll,
-    kiesOptie,
-  } = useHoofdstukInteractie(verhaal?.id ?? '', chapterId, herstelTeller);
+  const { interactie, status: interactieStatus } = useHoofdstukInteractie(
+    verhaal?.id ?? '',
+    chapterId,
+    herstelTeller
+  );
 
   useEffect(() => {
     hoofdstukGestartOp.current = Date.now();
@@ -206,7 +205,7 @@ export default function ReaderScreen() {
     // Vangnet: het offline-venster ligt dan over het scherm. Zonder deze regel rondt een tik die er
     // toch doorheen komt af zónder vragen, en dat is precies het gat dat de poort dicht.
     if (offlineGeblokkeerd) return;
-    if (interactieStatus === 'klaar' && !isLeeg(interactie)) {
+    if (interactieStatus === 'klaar' && heeftVragen(interactie)) {
       setToonVragen(true);
       return;
     }
@@ -468,8 +467,6 @@ export default function ReaderScreen() {
         accent={tijdperk?.kleur ?? theme.accent}
         verhaalId={verhaal.id}
         chapterId={chapterId}
-        onStem={stemOpPoll}
-        onKies={kiesOptie}
         onKlaar={handleVragenKlaar}
       />
 

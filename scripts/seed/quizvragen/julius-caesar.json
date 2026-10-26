@@ -1,0 +1,342 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "With whom did Caesar form the First Triumvirate?",
+      "options": [
+        "Marius and Sulla",
+        "Pompey and Crassus",
+        "Brutus and Cassius",
+        "Antony and Octavian"
+      ],
+      "explanation": "It was a private deal rather than an official office, yet it was enough to win Caesar the consulship in 59 BC.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Met wie vormde Caesar het Eerste Triumviraat?",
+          "options": [
+            "Marius en Sulla",
+            "Pompeius en Crassus",
+            "Brutus en Cassius",
+            "Antonius en Octavianus"
+          ],
+          "explanation": "Het was een onderhandse afspraak en geen officieel ambt, maar het volstond om Caesar in 59 v.Chr. het consulaat te bezorgen."
+        },
+        "fr": {
+          "question": "Avec qui César forma-t-il le premier triumvirat ?",
+          "options": [
+            "Marius et Sylla",
+            "Pompée et Crassus",
+            "Brutus et Cassius",
+            "Antoine et Octave"
+          ],
+          "explanation": "Il s'agissait d'un accord privé, sans caractère officiel, mais il suffit à faire élire César consul en 59 av. J.-C."
+        },
+        "de": {
+          "question": "Mit wem bildete Caesar das erste Triumvirat?",
+          "options": [
+            "Marius und Sulla",
+            "Pompeius und Crassus",
+            "Brutus und Cassius",
+            "Antonius und Octavian"
+          ],
+          "explanation": "Es war eine private Absprache, kein offizielles Amt – doch sie reichte, um Caesar 59 v. Chr. das Konsulat zu verschaffen."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Why would Caesar not return to Rome without his army?",
+      "options": [
+        "His legions had mutinied",
+        "Pompey had invaded Gaul",
+        "He feared prosecution",
+        "He planned to conquer Britain"
+      ],
+      "explanation": "Without troops he would be exposed to trials over his conduct in Gaul. When the Senate revoked his command in January 49 BC, crossing the Rubicon with an army was the only alternative to ruin, and it meant civil war.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom wilde Caesar niet zonder zijn leger naar Rome terugkeren?",
+          "options": [
+            "Zijn legioenen waren gemuit",
+            "Pompeius was Gallië binnengevallen",
+            "Hij vreesde vervolging",
+            "Hij wilde Brittannië veroveren"
+          ],
+          "explanation": "Zonder troepen kon hij vervolgd worden voor zijn optreden in Gallië. Toen de Senaat in januari 49 v.Chr. zijn bevel introk, bleef alleen de oversteek van de Rubicon over – en dat betekende burgeroorlog."
+        },
+        "fr": {
+          "question": "Pourquoi César refusait-il de rentrer à Rome sans son armée ?",
+          "options": [
+            "Ses légions s'étaient mutinées",
+            "Pompée avait envahi la Gaule",
+            "Il craignait des poursuites",
+            "Il voulait envahir la Grande-Bretagne"
+          ],
+          "explanation": "Sans troupes, il risquait d'être traduit en justice pour ses actes en Gaule. Lorsque le Sénat lui retira son commandement en janvier 49 av. J.-C., franchir le Rubicon en armes restait la seule issue, et cela signifiait la guerre civile."
+        },
+        "de": {
+          "question": "Warum wollte Caesar nicht ohne sein Heer nach Rom zurückkehren?",
+          "options": [
+            "Seine Legionen hatten gemeutert",
+            "Pompeius war in Gallien eingefallen",
+            "Er fürchtete eine Anklage",
+            "Er wollte Britannien erobern"
+          ],
+          "explanation": "Ohne Truppen drohten ihm Prozesse wegen seines Vorgehens in Gallien. Als der Senat ihm im Januar 49 v. Chr. das Kommando entzog, blieb nur der Marsch über den Rubikon – und das hieß Bürgerkrieg."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Where did Caesar decisively defeat Pompey's army?",
+      "options": [
+        "Philippi",
+        "Actium",
+        "Cannae",
+        "Pharsalus"
+      ],
+      "explanation": "Pharsalus in Greece, 48 BC. Pompey fled to Egypt and was murdered as he stepped ashore, leaving Caesar with no rival of equal standing.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar versloeg Caesar het leger van Pompeius beslissend?",
+          "options": [
+            "Philippi",
+            "Actium",
+            "Cannae",
+            "Pharsalus"
+          ],
+          "explanation": "Pharsalus in Griekenland, 48 v.Chr. Pompeius vluchtte naar Egypte en werd vermoord toen hij aan land stapte; Caesar had geen gelijkwaardige rivaal meer."
+        },
+        "fr": {
+          "question": "Où César écrasa-t-il l'armée de Pompée ?",
+          "options": [
+            "Philippes",
+            "Actium",
+            "Cannes",
+            "Pharsale"
+          ],
+          "explanation": "À Pharsale, en Grèce, en 48 av. J.-C. Pompée s'enfuit en Égypte, où il fut assassiné au moment de débarquer ; César n'avait plus de rival à sa mesure."
+        },
+        "de": {
+          "question": "Wo schlug Caesar das Heer des Pompeius entscheidend?",
+          "options": [
+            "Philippi",
+            "Actium",
+            "Cannae",
+            "Pharsalos"
+          ],
+          "explanation": "Bei Pharsalos in Griechenland, 48 v. Chr. Pompeius floh nach Ägypten und wurde beim Betreten des Ufers ermordet – Caesar hatte keinen ebenbürtigen Rivalen mehr."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Which group viewed Caesar's reforms with alarm?",
+      "options": [
+        "Senate aristocrats",
+        "The common people",
+        "His veteran soldiers",
+        "The middle classes"
+      ],
+      "explanation": "Caesar came from that same class, but his Rome rested on the will of one man rather than the shared power of the old families, and they could see their privileges slipping away.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke groep bekeek de hervormingen van Caesar met argwaan?",
+          "options": [
+            "De aristocraten in de Senaat",
+            "Het gewone volk",
+            "Zijn veteranen",
+            "De middenklasse"
+          ],
+          "explanation": "Caesar kwam zelf uit die kringen, maar zijn Rome rustte op de wil van één man in plaats van op de gedeelde macht van de oude families – en zij zagen hun voorrechten wegglippen."
+        },
+        "fr": {
+          "question": "Quel groupe voyait les réformes de César d'un œil inquiet ?",
+          "options": [
+            "Les aristocrates du Sénat",
+            "Le petit peuple",
+            "Ses soldats vétérans",
+            "Les classes moyennes"
+          ],
+          "explanation": "César était lui-même issu de ce milieu, mais sa Rome reposait sur la volonté d'un seul homme plutôt que sur le pouvoir partagé des vieilles familles, qui voyaient leurs privilèges leur échapper."
+        },
+        "de": {
+          "question": "Welche Gruppe sah Caesars Reformen mit Sorge?",
+          "options": [
+            "Die Senatsaristokraten",
+            "Das einfache Volk",
+            "Seine Veteranen",
+            "Die Mittelschicht"
+          ],
+          "explanation": "Caesar stammte selbst aus diesem Stand, doch sein Rom beruhte auf dem Willen eines Einzelnen statt auf der geteilten Macht der alten Familien – und die sahen ihre Privilegien schwinden."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Who became Rome's first emperor after Caesar's death?",
+      "options": [
+        "Mark Antony",
+        "Octavian",
+        "Brutus",
+        "Crassus"
+      ],
+      "explanation": "Caesar's adopted heir took the name Augustus in 27 BC. The murder meant to save the Republic ended up bringing in the one-man rule Caesar had begun.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie werd na de dood van Caesar de eerste keizer van Rome?",
+          "options": [
+            "Marcus Antonius",
+            "Octavianus",
+            "Brutus",
+            "Crassus"
+          ],
+          "explanation": "Caesars adoptiefzoon nam in 27 v.Chr. de naam Augustus aan. De moord die de Republiek had moeten redden, leidde zo juist tot de alleenheerschappij die Caesar had ingezet."
+        },
+        "fr": {
+          "question": "Qui devint le premier empereur de Rome après la mort de César ?",
+          "options": [
+            "Marc Antoine",
+            "Octave",
+            "Brutus",
+            "Crassus"
+          ],
+          "explanation": "L'héritier adoptif de César prit le nom d'Auguste en 27 av. J.-C. Le meurtre censé sauver la République aboutit ainsi au pouvoir d'un seul homme que César avait amorcé."
+        },
+        "de": {
+          "question": "Wer wurde nach Caesars Tod der erste Kaiser Roms?",
+          "options": [
+            "Marcus Antonius",
+            "Octavian",
+            "Brutus",
+            "Crassus"
+          ],
+          "explanation": "Caesars Adoptivsohn nahm 27 v. Chr. den Namen Augustus an. Der Mord, der die Republik retten sollte, führte so genau zu der Alleinherrschaft, die Caesar begonnen hatte."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Which month of the year carries Caesar's name?",
+      "options": [
+        "March",
+        "August",
+        "June",
+        "July"
+      ],
+      "explanation": "The month of his birth was called Quintilis until 44 BC, when it was renamed in his honour, and the name never changed back.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke maand draagt de naam van Caesar?",
+          "options": [
+            "Maart",
+            "Augustus",
+            "Juni",
+            "Juli"
+          ],
+          "explanation": "Tot 44 v.Chr. heette zijn geboortemaand Quintilis; toen werd ze naar hem vernoemd, en die naam is nooit meer veranderd."
+        },
+        "fr": {
+          "question": "Quel mois de l'année porte le nom de César ?",
+          "options": [
+            "Mars",
+            "Août",
+            "Juin",
+            "Juillet"
+          ],
+          "explanation": "Le mois de sa naissance s'appelait Quintilis jusqu'en 44 av. J.-C., date à laquelle il fut rebaptisé en son honneur, et ce nom n'a jamais changé depuis."
+        },
+        "de": {
+          "question": "Welcher Monat trägt Caesars Namen?",
+          "options": [
+            "März",
+            "August",
+            "Juni",
+            "Juli"
+          ],
+          "explanation": "Sein Geburtsmonat hieß bis 44 v. Chr. Quintilis; dann wurde er ihm zu Ehren umbenannt – und dabei blieb es."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "a9f06cfc-9a8a-4174-9f60-e2917bbd1ec6",
+      "chapter_index": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Bij welk beleg versloeg Caesar Vercingetorix en voltooide hij de verovering van Gallië?",
+          "options": [
+            "Alesia",
+            "Actium",
+            "Cannae",
+            "Zama"
+          ],
+          "explanation": "Alesia, 52 v.Chr. Caesar liet twee ringen van verschansingen bouwen – één naar binnen gericht op Vercingetorix, één naar buiten tegen het ontzettingsleger – en hield beide stand."
+        },
+        "fr": {
+          "question": "Lors de quel siège César vainquit-il Vercingétorix et acheva-t-il la conquête de la Gaule ?",
+          "options": [
+            "Alésia",
+            "Actium",
+            "Cannes",
+            "Zama"
+          ],
+          "explanation": "Alésia, 52 av. J.-C. César fit construire deux lignes de fortifications — l'une tournée vers Vercingétorix, l'autre vers l'armée de secours — et tint les deux."
+        },
+        "de": {
+          "question": "Bei welcher Belagerung besiegte Caesar Vercingetorix und vollendete die Eroberung Galliens?",
+          "options": [
+            "Alesia",
+            "Actium",
+            "Cannae",
+            "Zama"
+          ],
+          "explanation": "Alesia, 52 v. Chr. Caesar ließ zwei Befestigungsringe errichten – einen nach innen gegen Vercingetorix, einen nach außen gegen das Entsatzheer – und hielt beide."
+        }
+      }
+    },
+    {
+      "id": "8849ac04-593f-4df8-8d25-845f075743c0",
+      "chapter_index": 6,
+      "vertalingen": {
+        "nl": {
+          "question": "In welk jaar werd Caesar vermoord?",
+          "options": [
+            "63 v.Chr.",
+            "49 v.Chr.",
+            "44 v.Chr.",
+            "31 v.Chr."
+          ],
+          "explanation": "Op de Iden van maart, 15 maart 44 v.Chr. Slechts enkele weken eerder was hij tot dictator voor het leven benoemd."
+        },
+        "fr": {
+          "question": "En quelle année César fut-il assassiné ?",
+          "options": [
+            "63 av. J.-C.",
+            "49 av. J.-C.",
+            "44 av. J.-C.",
+            "31 av. J.-C."
+          ],
+          "explanation": "Aux ides de mars, le 15 mars 44 av. J.-C. Il avait été nommé dictateur à vie quelques semaines plus tôt seulement."
+        },
+        "de": {
+          "question": "In welchem Jahr wurde Caesar ermordet?",
+          "options": [
+            "63 v. Chr.",
+            "49 v. Chr.",
+            "44 v. Chr.",
+            "31 v. Chr."
+          ],
+          "explanation": "An den Iden des März, am 15. März 44 v. Chr. Erst wenige Wochen zuvor war er zum Diktator auf Lebenszeit ernannt worden."
+        }
+      }
+    }
+  ]
+}

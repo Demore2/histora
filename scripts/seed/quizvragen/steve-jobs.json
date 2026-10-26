@@ -1,0 +1,189 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Whom did Steve Jobs meet as a teenager and later found Apple with?",
+      "options": ["Bill Gates", "Steve Wozniak", "Tim Cook", "John Sculley"],
+      "explanation": "Wozniak was a little older and already brilliant with electronics. Jobs himself had been adopted as a baby by Paul and Clara Jobs, a machinist and an accountant.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie leerde Steve Jobs als tiener kennen, met wie hij later Apple oprichtte?",
+          "options": ["Bill Gates", "Steve Wozniak", "Tim Cook", "John Sculley"],
+          "explanation": "Wozniak was iets ouder en al briljant met elektronica. Jobs zelf was als baby geadopteerd door Paul en Clara Jobs, een machinebankwerker en een boekhoudster."
+        },
+        "fr": {
+          "question": "Qui Steve Jobs rencontra-t-il adolescent, avant de fonder Apple avec lui ?",
+          "options": ["Bill Gates", "Steve Wozniak", "Tim Cook", "John Sculley"],
+          "explanation": "Wozniak était un peu plus âgé et déjà brillant en électronique. Jobs avait lui-même été adopté bébé par Paul et Clara Jobs, un mécanicien et une comptable."
+        },
+        "de": {
+          "question": "Wen lernte Steve Jobs als Teenager kennen, mit dem er später Apple gründete?",
+          "options": ["Bill Gates", "Steve Wozniak", "Tim Cook", "John Sculley"],
+          "explanation": "Wozniak war etwas älter und schon ein Genie in Elektronik. Jobs selbst war als Baby von Paul und Clara Jobs adoptiert worden, einem Maschinisten und einer Buchhalterin."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What made the 1984 Macintosh revolutionary?",
+      "options": ["It was the first portable computer", "You could point and click with a mouse", "It was the cheapest computer on sale", "It had a touchscreen"],
+      "explanation": "Instead of typing commands, people clicked on what they saw. It was expensive and limited, but it set Apple's course: how you use technology matters as much as what is inside.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat maakte de Macintosh van 1984 revolutionair?",
+          "options": ["Het was de eerste draagbare computer", "Je kon wijzen en klikken met een muis", "Het was de goedkoopste computer te koop", "Hij had een aanraakscherm"],
+          "explanation": "In plaats van commando's te typen klikte je op wat je zag. Hij was duur en beperkt, maar zette Apples koers uit: hoe je technologie gebruikt, telt net zo zwaar als wat erin zit."
+        },
+        "fr": {
+          "question": "Qu'est-ce qui rendait le Macintosh de 1984 révolutionnaire ?",
+          "options": ["C'était le premier ordinateur portable", "On pouvait pointer et cliquer avec une souris", "C'était l'ordinateur le moins cher du marché", "Il avait un écran tactile"],
+          "explanation": "Au lieu de taper des commandes, on cliquait sur ce qu'on voyait. Il était cher et limité, mais il fixa le cap d'Apple : la façon d'utiliser la technologie compte autant que ce qu'elle contient."
+        },
+        "de": {
+          "question": "Was machte den Macintosh von 1984 revolutionär?",
+          "options": ["Er war der erste tragbare Computer", "Man konnte mit einer Maus zeigen und klicken", "Er war der billigste Computer auf dem Markt", "Er hatte einen Touchscreen"],
+          "explanation": "Statt Befehle zu tippen, klickte man auf das, was man sah. Er war teuer und begrenzt, gab Apple aber die Richtung vor: Wie man Technik benutzt, zählt so viel wie das, was in ihr steckt."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Which 2001 device was built to work hand in hand with iTunes?",
+      "options": ["The iMac", "The iPod", "The iPhone", "The iPad"],
+      "explanation": "Hardware, software and music were designed as one system. That integration became Apple's defining strength after Jobs returned in 1997.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk apparaat uit 2001 was gemaakt om naadloos samen te werken met iTunes?",
+          "options": ["De iMac", "De iPod", "De iPhone", "De iPad"],
+          "explanation": "Hardware, software en muziek werden als één systeem ontworpen. Die samenhang werd Apples grootste kracht nadat Jobs in 1997 terugkeerde."
+        },
+        "fr": {
+          "question": "Quel appareil de 2001 fut conçu pour fonctionner main dans la main avec iTunes ?",
+          "options": ["L'iMac", "L'iPod", "L'iPhone", "L'iPad"],
+          "explanation": "Matériel, logiciel et musique furent pensés comme un seul système. Cette intégration devint la grande force d'Apple après le retour de Jobs en 1997."
+        },
+        "de": {
+          "question": "Welches Gerät von 2001 war dafür gebaut, Hand in Hand mit iTunes zu arbeiten?",
+          "options": ["Der iMac", "Der iPod", "Das iPhone", "Das iPad"],
+          "explanation": "Hardware, Software und Musik wurden als ein System entworfen. Diese Verzahnung wurde nach Jobs' Rückkehr 1997 zu Apples größter Stärke."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Which product did Jobs introduce in 2010, while already ill?",
+      "options": ["The MacBook Air", "The iPad", "The Apple Watch", "The first iPod"],
+      "explanation": "He had been diagnosed with cancer in 2004 and kept working. He believed simplicity was the ultimate sophistication, and cut any feature he thought unnecessary.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk product presenteerde Jobs in 2010, toen hij al ziek was?",
+          "options": ["De MacBook Air", "De iPad", "De Apple Watch", "De eerste iPod"],
+          "explanation": "In 2004 was kanker bij hem vastgesteld, en hij bleef werken. Hij vond eenvoud de ultieme verfijning en schrapte elke functie die hij overbodig vond."
+        },
+        "fr": {
+          "question": "Quel produit Jobs présenta-t-il en 2010, alors qu'il était déjà malade ?",
+          "options": ["Le MacBook Air", "L'iPad", "L'Apple Watch", "Le premier iPod"],
+          "explanation": "On lui avait diagnostiqué un cancer en 2004, et il continua de travailler. Pour lui, la simplicité était la sophistication suprême, et il supprimait toute fonction qu'il jugeait inutile."
+        },
+        "de": {
+          "question": "Welches Produkt stellte Jobs 2010 vor, als er bereits krank war?",
+          "options": ["Das MacBook Air", "Das iPad", "Die Apple Watch", "Den ersten iPod"],
+          "explanation": "2004 war bei ihm Krebs festgestellt worden, und er arbeitete weiter. Für ihn war Einfachheit die höchste Raffinesse, und er strich jede Funktion, die er für unnötig hielt."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Which two companies did Jobs turn into great successes?",
+      "options": ["Apple and NeXT", "Apple and Pixar", "Apple and Microsoft", "Pixar and Disney"],
+      "explanation": "NeXT never made money, but Apple and Pixar changed computers, animated film, music, phones and tablets. He died in 2011, aged fifty-six.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke twee bedrijven maakte Jobs tot een groot succes?",
+          "options": ["Apple en NeXT", "Apple en Pixar", "Apple en Microsoft", "Pixar en Disney"],
+          "explanation": "NeXT verdiende nooit geld, maar Apple en Pixar veranderden computers, animatiefilms, muziek, telefoons en tablets. Hij stierf in 2011, zesenvijftig jaar oud."
+        },
+        "fr": {
+          "question": "Quelles deux entreprises Jobs mena-t-il à un grand succès ?",
+          "options": ["Apple et NeXT", "Apple et Pixar", "Apple et Microsoft", "Pixar et Disney"],
+          "explanation": "NeXT ne gagna jamais d'argent, mais Apple et Pixar transformèrent l'informatique, le cinéma d'animation, la musique, le téléphone et la tablette. Il mourut en 2011, à cinquante-six ans."
+        },
+        "de": {
+          "question": "Welche zwei Unternehmen machte Jobs zu großen Erfolgen?",
+          "options": ["Apple und NeXT", "Apple und Pixar", "Apple und Microsoft", "Pixar und Disney"],
+          "explanation": "NeXT verdiente nie Geld, doch Apple und Pixar veränderten Computer, Animationsfilm, Musik, Telefone und Tablets. Er starb 2011 mit sechsundfünfzig Jahren."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "b3d89920-989b-47c0-9c63-ffd40eacc1b0",
+      "chapter_index": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat maakte de Apple II anders dan andere personal computers in 1977?",
+          "options": ["Hij werd volledig gemonteerd en klaar voor gebruik geleverd", "Hij werd als bouwpakket verkocht om zelf te solderen", "Hij had helemaal geen scherm nodig", "Hij bewaarde gegevens alleen op diskettes"],
+          "explanation": "De afgewerkte plastic behuizing telde net zo zwaar als de schakelingen: zo kon een machine van hobbyisten op een bureau thuis of in een klein kantoor staan zonder eruit te zien als een experiment."
+        },
+        "fr": {
+          "question": "Qu'est-ce qui distinguait l'Apple II des autres ordinateurs personnels vendus en 1977 ?",
+          "options": ["Il était livré entièrement monté et prêt à l'emploi", "Il était vendu en kit à souder soi-même", "Il n'avait besoin d'aucun écran", "Il stockait les données uniquement sur disquettes"],
+          "explanation": "Le boîtier en plastique fini comptait autant que les circuits : il permettait à une machine conçue par des amateurs de trôner sur un bureau, à la maison ou dans une petite entreprise, sans avoir l'air d'une expérience."
+        },
+        "de": {
+          "question": "Was unterschied den Apple II von anderen Personal Computern im Jahr 1977?",
+          "options": ["Er kam fertig montiert und betriebsbereit", "Er wurde als Bausatz zum Selbstlöten verkauft", "Er brauchte überhaupt keinen Bildschirm", "Er speicherte Daten nur auf Disketten"],
+          "explanation": "Das fertige Kunststoffgehäuse zählte so viel wie die Schaltungen: So konnte eine Maschine von Bastlern auf einem Schreibtisch zu Hause oder im kleinen Büro stehen, ohne wie ein Experiment auszusehen."
+        }
+      }
+    },
+    {
+      "id": "870bd050-962f-48aa-8f25-b766ab4c771d",
+      "chapter_index": 4,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke onderneming van Jobs uit zijn twaalf jaar weg bij Apple werd nooit een commercieel succes?",
+          "options": ["NeXT", "Pixar", "Apple Computer", "Toy Story"],
+          "explanation": "NeXT-computers werden bewonderd en waren onbetaalbaar. De mislukking leerde Jobs werken zonder Apples marktpositie achter zich – een les die hij in 1997 meenam terug."
+        },
+        "fr": {
+          "question": "Laquelle des entreprises de Jobs, pendant ses douze ans loin d'Apple, ne connut jamais le succès commercial ?",
+          "options": ["NeXT", "Pixar", "Apple Computer", "Toy Story"],
+          "explanation": "Les ordinateurs NeXT étaient admirés et inabordables. L'échec apprit à Jobs à travailler sans la position d'Apple derrière lui – une leçon qu'il rapporta en 1997."
+        },
+        "de": {
+          "question": "Welches von Jobs' Unternehmen in seinen zwölf Jahren ohne Apple wurde nie ein kommerzieller Erfolg?",
+          "options": ["NeXT", "Pixar", "Apple Computer", "Toy Story"],
+          "explanation": "NeXT-Rechner wurden bewundert und waren unbezahlbar. Das Scheitern lehrte Jobs, ohne Apples Marktstellung im Rücken zu arbeiten – eine Lehre, die er 1997 mit zurückbrachte."
+        }
+      }
+    },
+    {
+      "id": "2c780b27-2391-4174-ac33-169f3ddac7eb",
+      "chapter_index": 6,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar presenteerde Jobs op 9 januari 2007 de iPhone?",
+          "options": ["Op de Macworld-conferentie", "Op een persmoment bij NeXT", "Op een filmpremière van Pixar", "Bij een iTunes-lancering in New York"],
+          "explanation": "Hij vertelde het publiek dat Apple de telefoon opnieuw ging uitvinden, en binnen een paar jaar ontwierp elke fabrikant zijn producten opnieuw als antwoord erop."
+        },
+        "fr": {
+          "question": "Où Jobs présenta-t-il l'iPhone le 9 janvier 2007 ?",
+          "options": ["À la conférence Macworld", "Lors d'un événement de presse chez NeXT", "À une avant-première de Pixar", "Lors d'un lancement d'iTunes à New York"],
+          "explanation": "Il annonça au public qu'Apple allait réinventer le téléphone, et en quelques années tous les fabricants repensèrent leurs produits en réponse."
+        },
+        "de": {
+          "question": "Wo stellte Jobs am 9. Januar 2007 das iPhone vor?",
+          "options": ["Auf der Macworld-Konferenz", "Bei einem Pressetermin von NeXT", "Bei einer Pixar-Filmpremiere", "Bei einem iTunes-Start in New York"],
+          "explanation": "Er sagte dem Publikum, Apple werde das Telefon neu erfinden, und binnen weniger Jahre gestaltete jeder Hersteller seine Produkte als Antwort darauf neu."
+        }
+      }
+    }
+  ]
+}

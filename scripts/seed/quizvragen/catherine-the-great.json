@@ -1,0 +1,189 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What was Catherine's name at birth?",
+      "options": ["Elizabeth", "Sophie", "Anna", "Maria"],
+      "explanation": "Sophie Augusta Frederica, daughter of a minor German prince of Anhalt-Zerbst. The future empress of Russia was not Russian at all.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe heette Catharina bij haar geboorte?",
+          "options": ["Elisabeth", "Sophie", "Anna", "Maria"],
+          "explanation": "Sophie Augusta Frederika, dochter van een kleine Duitse vorst uit Anhalt-Zerbst. De toekomstige keizerin van Rusland was helemaal niet Russisch."
+        },
+        "fr": {
+          "question": "Quel était le nom de naissance de Catherine ?",
+          "options": ["Élisabeth", "Sophie", "Anna", "Maria"],
+          "explanation": "Sophie Augusta Frédérique, fille d'un petit prince allemand d'Anhalt-Zerbst. La future impératrice de Russie n'était pas russe du tout."
+        },
+        "de": {
+          "question": "Wie hieß Katharina bei ihrer Geburt?",
+          "options": ["Elisabeth", "Sophie", "Anna", "Maria"],
+          "explanation": "Sophie Auguste Friederike, Tochter eines kleinen deutschen Fürsten von Anhalt-Zerbst. Die künftige Kaiserin von Russland war gar keine Russin."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "How did Catherine make herself indispensable at the Russian court?",
+      "options": ["She raised her own regiment", "She learned Russian and embraced Orthodoxy", "She paid the nobles from her dowry", "She ran the court in Peter's name"],
+      "explanation": "While Peter played with toy soldiers, she studied Russian history and faith and won over the court and the army. She also bore a son, Paul, which secured the succession.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe maakte Catharina zich onmisbaar aan het Russische hof?",
+          "options": ["Ze stelde een eigen regiment op", "Ze leerde Russisch en omarmde het orthodoxe geloof", "Ze betaalde de edelen uit haar bruidsschat", "Ze bestuurde het hof uit naam van Peter"],
+          "explanation": "Terwijl Peter met tinnen soldaatjes speelde, bestudeerde zij de Russische geschiedenis en het geloof en won ze het hof en het leger voor zich. Ze baarde ook een zoon, Paul, wat de opvolging veiligstelde."
+        },
+        "fr": {
+          "question": "Comment Catherine se rendit-elle indispensable à la cour de Russie ?",
+          "options": ["Elle leva son propre régiment", "Elle apprit le russe et embrassa l'orthodoxie", "Elle paya les nobles avec sa dot", "Elle dirigea la cour au nom de Pierre"],
+          "explanation": "Pendant que Pierre jouait aux soldats de plomb, elle étudia l'histoire et la foi russes et gagna la cour et l'armée. Elle donna aussi naissance à un fils, Paul, assurant la succession."
+        },
+        "de": {
+          "question": "Wie machte sich Katharina am russischen Hof unentbehrlich?",
+          "options": ["Sie stellte ein eigenes Regiment auf", "Sie lernte Russisch und nahm den orthodoxen Glauben an", "Sie bezahlte die Adligen mit ihrer Mitgift", "Sie führte den Hof in Peters Namen"],
+          "explanation": "Während Peter mit Zinnsoldaten spielte, studierte sie russische Geschichte und Religion und gewann Hof und Armee für sich. Sie gebar auch einen Sohn, Paul, was die Thronfolge sicherte."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Which movement's ideas did Catherine bring into Russian government?",
+      "options": ["The Reformation", "The Enlightenment", "Romanticism", "The Renaissance"],
+      "explanation": "She had read its philosophers since girlhood. Her reforms to law, administration and education were careful ones, designed not to upset the nobility she depended on.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "De ideeën van welke stroming bracht Catharina in het Russische bestuur?",
+          "options": ["De Reformatie", "De Verlichting", "De romantiek", "De renaissance"],
+          "explanation": "Ze las de filosofen ervan al als meisje. Haar hervormingen van recht, bestuur en onderwijs waren voorzichtig, zodat de adel waarop ze steunde niet in opstand kwam."
+        },
+        "fr": {
+          "question": "Les idées de quel mouvement Catherine introduisit-elle dans le gouvernement russe ?",
+          "options": ["La Réforme", "Les Lumières", "Le romantisme", "La Renaissance"],
+          "explanation": "Elle lisait ses philosophes depuis l'enfance. Ses réformes du droit, de l'administration et de l'éducation restèrent prudentes, pour ne pas froisser la noblesse dont elle dépendait."
+        },
+        "de": {
+          "question": "Die Ideen welcher Bewegung brachte Katharina in die russische Regierung?",
+          "options": ["Die Reformation", "Die Aufklärung", "Die Romantik", "Die Renaissance"],
+          "explanation": "Sie las deren Philosophen seit ihrer Kindheit. Ihre Reformen von Recht, Verwaltung und Bildung waren behutsam, um den Adel nicht zu verärgern, auf den sie angewiesen war."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Which French philosophers did Catherine correspond with?",
+      "options": ["Descartes and Pascal", "Voltaire and Diderot", "Montaigne and Rabelais", "Rousseau and Robespierre"],
+      "explanation": "She read voraciously and wanted Russia to be a centre of learning as well as power. The Winter Palace filled with the art she collected.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Met welke Franse filosofen correspondeerde Catharina?",
+          "options": ["Descartes en Pascal", "Voltaire en Diderot", "Montaigne en Rabelais", "Rousseau en Robespierre"],
+          "explanation": "Ze las alles wat ze kon krijgen en wilde dat Rusland een centrum van kennis werd, niet alleen van macht. Het Winterpaleis vulde zich met de kunst die ze verzamelde."
+        },
+        "fr": {
+          "question": "Avec quels philosophes français Catherine correspondait-elle ?",
+          "options": ["Descartes et Pascal", "Voltaire et Diderot", "Montaigne et Rabelais", "Rousseau et Robespierre"],
+          "explanation": "Lectrice insatiable, elle voulait que la Russie soit un foyer de savoir autant que de puissance. Le palais d'Hiver se remplit de l'art qu'elle collectionnait."
+        },
+        "de": {
+          "question": "Mit welchen französischen Philosophen stand Katharina im Briefwechsel?",
+          "options": ["Descartes und Pascal", "Voltaire und Diderot", "Montaigne und Rabelais", "Rousseau und Robespierre"],
+          "explanation": "Sie las unersättlich und wollte Russland zu einem Zentrum der Bildung machen, nicht nur der Macht. Der Winterpalast füllte sich mit der Kunst, die sie sammelte."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "How long did Catherine rule Russia?",
+      "options": ["Six months", "Twelve years", "Thirty-four years", "Fifty years"],
+      "explanation": "She seized the throne at thirty-three and died in 1796. She left Russia larger and a major European power, with serfdom as the great failure of her reign.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe lang regeerde Catharina over Rusland?",
+          "options": ["Zes maanden", "Twaalf jaar", "Vierendertig jaar", "Vijftig jaar"],
+          "explanation": "Ze greep de troon op haar drieëndertigste en stierf in 1796. Ze liet een groter Rusland achter dat een Europese grootmacht was, met de lijfeigenschap als grote mislukking van haar bewind."
+        },
+        "fr": {
+          "question": "Combien de temps Catherine régna-t-elle sur la Russie ?",
+          "options": ["Six mois", "Douze ans", "Trente-quatre ans", "Cinquante ans"],
+          "explanation": "Elle s'empara du trône à trente-trois ans et mourut en 1796. Elle laissa une Russie plus vaste et devenue grande puissance européenne, le servage restant le grand échec de son règne."
+        },
+        "de": {
+          "question": "Wie lange regierte Katharina Russland?",
+          "options": ["Sechs Monate", "Zwölf Jahre", "Vierunddreißig Jahre", "Fünfzig Jahre"],
+          "explanation": "Sie riss mit dreiunddreißig den Thron an sich und starb 1796. Sie hinterließ ein größeres Russland als europäische Großmacht, mit der Leibeigenschaft als großem Versagen ihrer Herrschaft."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "57d52ff8-48a7-4d90-b075-19495ab1cf4c",
+      "chapter_index": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe lang zat Peter III op de troon voordat Catharina tegen hem in actie kwam?",
+          "options": ["Zes weken", "Zes maanden", "Twee jaar", "Tien jaar"],
+          "explanation": "In een half jaar had hij het leger, de adel en de Kerk tegelijk beledigd. Catharina hoefde geen aanhang op te bouwen; die stond al klaar."
+        },
+        "fr": {
+          "question": "Depuis combien de temps Pierre III était-il sur le trône quand Catherine agit contre lui ?",
+          "options": ["Six semaines", "Six mois", "Deux ans", "Dix ans"],
+          "explanation": "En six mois, il avait offensé à la fois l'armée, la noblesse et l'Église. Catherine n'eut pas à bâtir un parti : il l'attendait déjà."
+        },
+        "de": {
+          "question": "Wie lange saß Peter III. auf dem Thron, bevor Katharina gegen ihn vorging?",
+          "options": ["Sechs Wochen", "Sechs Monate", "Zwei Jahre", "Zehn Jahre"],
+          "explanation": "In einem halben Jahr hatte er Armee, Adel und Kirche zugleich vor den Kopf gestoßen. Katharina musste keine Anhängerschaft aufbauen – sie stand schon bereit."
+        }
+      }
+    },
+    {
+      "id": "a3fd4be3-7031-4aec-ad4b-5cffd78e8ec0",
+      "chapter_index": 5,
+      "vertalingen": {
+        "nl": {
+          "question": "Tegen welke macht vocht Catharina om Rusland toegang tot de Zwarte Zee te geven?",
+          "options": ["Het Ottomaanse Rijk", "Pruisen", "Oostenrijk", "Zweden"],
+          "explanation": "De Ottomanen bezaten de zuidelijke gebieden die Rusland wilde. Pruisen en Oostenrijk waren eerder partners bij de deling van Polen dan vijanden – voorlopig."
+        },
+        "fr": {
+          "question": "Contre quelle puissance Catherine combattit-elle pour ouvrir à la Russie l'accès à la mer Noire ?",
+          "options": ["L'Empire ottoman", "La Prusse", "L'Autriche", "La Suède"],
+          "explanation": "Les Ottomans tenaient les territoires du sud que convoitait la Russie. La Prusse et l'Autriche étaient alors des partenaires dans le partage de la Pologne plutôt que des ennemis – pour le moment."
+        },
+        "de": {
+          "question": "Gegen welche Macht kämpfte Katharina, um Russland Zugang zum Schwarzen Meer zu verschaffen?",
+          "options": ["Das Osmanische Reich", "Preußen", "Österreich", "Schweden"],
+          "explanation": "Die Osmanen hielten die südlichen Gebiete, die Russland wollte. Preußen und Österreich waren bei der Teilung Polens eher Partner als Feinde – vorerst."
+        }
+      }
+    },
+    {
+      "id": "ddd734d4-5a0f-4be3-977d-65dfe9224533",
+      "chapter_index": 7,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie leidde de grote boerenopstand van de jaren 1770?",
+          "options": ["Grigori Orlov", "Jemeljan Poegatsjov", "Peter III", "Paul"],
+          "explanation": "Poegatsjov was een Kozak, en de opstand haalde zijn kracht juist uit de lijfeigenen wier onvrijheid Catharina daarna nog verder aanscherpte."
+        },
+        "fr": {
+          "question": "Qui mena la grande révolte paysanne des années 1770 ?",
+          "options": ["Grigori Orlov", "Iemelian Pougatchev", "Pierre III", "Paul"],
+          "explanation": "Pougatchev était un Cosaque, et le soulèvement tira sa force de ces serfs mêmes dont Catherine allait ensuite durcir la servitude."
+        },
+        "de": {
+          "question": "Wer führte den großen Bauernaufstand der 1770er-Jahre an?",
+          "options": ["Grigori Orlow", "Jemeljan Pugatschow", "Peter III.", "Paul"],
+          "explanation": "Pugatschow war Kosak, und der Aufstand schöpfte seine Kraft gerade aus den Leibeigenen, deren Unfreiheit Katharina danach noch verschärfte."
+        }
+      }
+    }
+  ]
+}

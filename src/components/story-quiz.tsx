@@ -10,7 +10,7 @@ import { Motion } from '@/constants/motion';
 import { Radii, Spacing, withAlpha } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 import { useVertaling } from '@/hooks/use-vertaling';
-import type { Quiz } from '@/lib/interactief';
+import { quizInTaal, type Quiz } from '@/lib/interactief';
 
 const LETTERS = 'ABCDEF';
 
@@ -31,7 +31,7 @@ const LETTERS = 'ABCDEF';
  * de vraag weer open — dat is bij een zelftest een feature.
  */
 export function StoryQuiz({
-  quiz,
+  quiz: bron,
   accent,
   onBeantwoord,
 }: {
@@ -47,7 +47,8 @@ export function StoryQuiz({
   onBeantwoord?: (gekozen: number, goed: boolean) => void;
 }) {
   const theme = useTheme();
-  const { t } = useVertaling();
+  const { t, taal } = useVertaling();
+  const quiz = quizInTaal(bron, taal);
 
   const [gekozen, setGekozen] = useState<number | null>(null);
   const [gecontroleerd, setGecontroleerd] = useState(false);

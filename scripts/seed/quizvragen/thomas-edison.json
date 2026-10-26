@@ -1,0 +1,195 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "How long did Edison attend school?",
+      "options": ["Three months", "Three years", "Six years", "He never went"],
+      "explanation": "His teacher found him difficult, so his mother taught him at home. He set up a chemistry lab in the basement and later printed a newspaper on a train.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe lang ging Edison naar school?",
+          "options": ["Drie maanden", "Drie jaar", "Zes jaar", "Nooit"],
+          "explanation": "Zijn leraar vond hem lastig, dus gaf zijn moeder hem thuis les. Hij richtte in de kelder een scheikundelab in en drukte later een krant in een trein."
+        },
+        "fr": {
+          "question": "Combien de temps Edison alla-t-il à l'école ?",
+          "options": ["Trois mois", "Trois ans", "Six ans", "Il n'y alla jamais"],
+          "explanation": "Son instituteur le trouvait difficile, alors sa mère lui fit la classe à la maison. Il installa un laboratoire de chimie à la cave, puis imprima un journal à bord d'un train."
+        },
+        "de": {
+          "question": "Wie lange ging Edison zur Schule?",
+          "options": ["Drei Monate", "Drei Jahre", "Sechs Jahre", "Nie"],
+          "explanation": "Sein Lehrer hielt ihn für schwierig, also unterrichtete ihn seine Mutter zu Hause. Er richtete im Keller ein Chemielabor ein und druckte später in einem Zug eine Zeitung."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What did Edison invent at Menlo Park in 1877?",
+      "options": ["The telephone", "The phonograph", "The radio", "The typewriter"],
+      "explanation": "It recorded sound on a tinfoil cylinder and played it back, the first machine to capture a human voice. It made him a celebrity overnight.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat vond Edison in 1877 uit in Menlo Park?",
+          "options": ["De telefoon", "De fonograaf", "De radio", "De typemachine"],
+          "explanation": "Hij nam geluid op op een cilinder van tinfolie en speelde het weer af – de eerste machine die een menselijke stem kon vastleggen. Het maakte hem in één klap beroemd."
+        },
+        "fr": {
+          "question": "Qu'inventa Edison à Menlo Park en 1877 ?",
+          "options": ["Le téléphone", "Le phonographe", "La radio", "La machine à écrire"],
+          "explanation": "Il enregistrait le son sur un cylindre de papier d'étain et le restituait : la première machine capable de capter une voix humaine. Edison devint célèbre du jour au lendemain."
+        },
+        "de": {
+          "question": "Was erfand Edison 1877 in Menlo Park?",
+          "options": ["Das Telefon", "Den Phonographen", "Das Radio", "Die Schreibmaschine"],
+          "explanation": "Er zeichnete Schall auf einer Zinnfolienwalze auf und spielte ihn wieder ab – die erste Maschine, die eine menschliche Stimme festhielt. Sie machte ihn über Nacht berühmt."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Which system won the \"War of Currents\" for long-distance power?",
+      "options": ["Edison's direct current", "Alternating current", "Battery power", "Gas lighting"],
+      "explanation": "Westinghouse and Tesla's AC carried power over long distances far better. Edison fought it hard, even staging electrocutions to make it look dangerous.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk systeem won de \"stroomoorlog\" voor transport over lange afstand?",
+          "options": ["Edisons gelijkstroom", "Wisselstroom", "Batterijstroom", "Gasverlichting"],
+          "explanation": "De wisselstroom van Westinghouse en Tesla bracht stroom veel beter over grote afstanden. Edison vocht er fel tegen en organiseerde zelfs elektrocuties om het gevaarlijk te laten lijken."
+        },
+        "fr": {
+          "question": "Quel système remporta la « guerre des courants » pour le transport à longue distance ?",
+          "options": ["Le courant continu d'Edison", "Le courant alternatif", "Les batteries", "L'éclairage au gaz"],
+          "explanation": "Le courant alternatif de Westinghouse et Tesla transportait bien mieux l'électricité sur de longues distances. Edison le combattit durement, allant jusqu'à organiser des électrocutions pour le faire paraître dangereux."
+        },
+        "de": {
+          "question": "Welches System gewann den „Stromkrieg“ für die Übertragung über weite Strecken?",
+          "options": ["Edisons Gleichstrom", "Wechselstrom", "Batteriestrom", "Gasbeleuchtung"],
+          "explanation": "Der Wechselstrom von Westinghouse und Tesla übertrug Strom über große Entfernungen weit besser. Edison bekämpfte ihn hart und inszenierte sogar Hinrichtungen durch Strom, um ihn gefährlich wirken zu lassen."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Roughly how many patents did Edison hold?",
+      "options": ["About a hundred", "Over a thousand", "About ten thousand", "Just one"],
+      "explanation": "Besides light and sound they covered storage batteries, telephone improvements and a motion picture camera. Some changed the world; many did not.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoeveel octrooien had Edison ongeveer?",
+          "options": ["Zo'n honderd", "Ruim duizend", "Zo'n tienduizend", "Maar één"],
+          "explanation": "Naast licht en geluid ging het om accu's, verbeteringen aan de telefoon en een filmcamera. Sommige veranderden de wereld, veel andere niet."
+        },
+        "fr": {
+          "question": "Combien de brevets Edison détenait-il environ ?",
+          "options": ["Une centaine", "Plus de mille", "Environ dix mille", "Un seul"],
+          "explanation": "Outre la lumière et le son, ils portaient sur les accumulateurs, des améliorations du téléphone et une caméra de cinéma. Certains changèrent le monde, beaucoup non."
+        },
+        "de": {
+          "question": "Wie viele Patente hielt Edison ungefähr?",
+          "options": ["Etwa hundert", "Über tausend", "Etwa zehntausend", "Nur eines"],
+          "explanation": "Neben Licht und Ton betrafen sie Akkumulatoren, Verbesserungen am Telefon und eine Filmkamera. Manche veränderten die Welt, viele nicht."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What is Edison's greatest legacy, beyond any single invention?",
+      "options": ["The lone genius and his sudden insight", "Invention as organised teamwork in a lab", "Free electricity for everyone", "The modern patent office"],
+      "explanation": "He showed invention could be systematic: skilled people, a well-equipped lab and patient experiment. The research labs of today's big companies follow his model.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat is Edisons grootste nalatenschap, los van welke uitvinding ook?",
+          "options": ["Het eenzame genie met zijn plotselinge inval", "Uitvinden als georganiseerd teamwerk in een lab", "Gratis elektriciteit voor iedereen", "Het moderne octrooibureau"],
+          "explanation": "Hij liet zien dat uitvinden systematisch kon: vakmensen, een goed uitgerust lab en geduldig experimenteren. De onderzoekslabs van grote bedrijven volgen nu zijn model."
+        },
+        "fr": {
+          "question": "Quel est le plus grand héritage d'Edison, au-delà de toute invention particulière ?",
+          "options": ["Le génie solitaire et son éclair d'inspiration", "L'invention comme travail d'équipe organisé en laboratoire", "L'électricité gratuite pour tous", "L'office des brevets moderne"],
+          "explanation": "Il montra que l'invention pouvait être méthodique : des gens qualifiés, un laboratoire bien équipé et des expériences patientes. Les laboratoires de recherche des grandes entreprises suivent son modèle."
+        },
+        "de": {
+          "question": "Was ist Edisons größtes Vermächtnis, jenseits jeder einzelnen Erfindung?",
+          "options": ["Das einsame Genie mit seinem Geistesblitz", "Erfinden als organisierte Teamarbeit im Labor", "Kostenloser Strom für alle", "Das moderne Patentamt"],
+          "explanation": "Er zeigte, dass Erfinden systematisch sein kann: Fachleute, ein gut ausgestattetes Labor und geduldiges Experimentieren. Die Forschungslabore großer Unternehmen folgen seinem Modell."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "6e062579-0e33-45be-8895-4efb87cbe93b",
+      "chapter_index": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was Edisons eerste belangrijke uitvinding, toen hij als telegrafist werkte?",
+          "options": ["De beurstikker", "Een automatische telegraafherhaler", "De fonograaf", "De accu"],
+          "explanation": "De herhaler gaf signalen door over grote afstanden zonder dat er iemand aan de seinsleutel zat. De beurstikker kwam daarna in New York, en dát apparaat – niet de herhaler – leverde hem voor het eerst geld op."
+        },
+        "fr": {
+          "question": "Quelle fut la première invention importante d'Edison, quand il était télégraphiste ?",
+          "options": ["Le téléscripteur boursier", "Un répéteur télégraphique automatique", "Le phonographe", "L'accumulateur"],
+          "explanation": "Le répéteur relayait les signaux sur de longues distances sans opérateur au manipulateur. Le téléscripteur vint ensuite, à New York, et c'est lui – pas le répéteur – qui lui rapporta ses premiers gains."
+        },
+        "de": {
+          "question": "Was war Edisons erste bedeutende Erfindung, als er als Telegrafist arbeitete?",
+          "options": ["Der Börsenticker", "Ein automatischer Telegrafenverstärker", "Der Phonograph", "Der Akkumulator"],
+          "explanation": "Der Verstärker gab Signale über weite Strecken weiter, ohne dass jemand an der Taste saß. Der Börsenticker kam danach in New York, und erst er – nicht der Verstärker – brachte ihm Geld ein."
+        }
+      }
+    },
+    {
+      "id": "a1613cb1-223c-449d-a90d-4f2d2bffe1cd",
+      "chapter_index": 4,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke gloeidraad testte Edison op 21 oktober 1879 in de lamp die ruim dertien uur brandde?",
+          "options": ["Verkoold bamboe", "Platinadraad", "Verkoold katoen", "Wolfraam"],
+          "explanation": "Katoen bewees het principe, bamboe het product. In 1880 hield een gloeidraad van verkoold bamboe het ruim 1200 uur vol, en daarmee kon licht als dienst verkocht worden."
+        },
+        "fr": {
+          "question": "Quel filament Edison testa-t-il le 21 octobre 1879 dans l'ampoule qui brilla plus de treize heures ?",
+          "options": ["Du bambou carbonisé", "Un fil de platine", "Du coton carbonisé", "Du tungstène"],
+          "explanation": "Le coton prouva le principe, le bambou le produit. En 1880, un filament de bambou carbonisé tenait plus de 1 200 heures, ce qui permit de vendre la lumière comme un service."
+        },
+        "de": {
+          "question": "Welchen Glühfaden testete Edison am 21. Oktober 1879 in der Lampe, die über dreizehn Stunden brannte?",
+          "options": ["Verkohlter Bambus", "Platindraht", "Verkohlte Baumwolle", "Wolfram"],
+          "explanation": "Baumwolle bewies das Prinzip, Bambus das Produkt. 1880 hielt ein Glühfaden aus verkohltem Bambus über 1.200 Stunden, und damit ließ sich Licht als Dienstleistung verkaufen."
+        }
+      }
+    },
+    {
+      "id": "9f0b1fac-5386-4a1e-9e9f-de7b9d03e838",
+      "chapter_index": 7,
+      "correctie": {
+        "question": "Who asked Americans to dim their electric lights for a minute when Edison died?",
+        "options": ["Henry Ford", "President Herbert Hoover", "Nikola Tesla", "His son Charles"],
+        "correct_answer": 1,
+        "explanation": "On the evening of his funeral in 1931, lights across the country dimmed or went out for one minute. The gesture showed how much of America now had something to switch off."
+      },
+      "vertalingen": {
+        "nl": {
+          "question": "Wie vroeg de Amerikanen om bij Edisons dood een minuut lang hun elektrische licht te dimmen?",
+          "options": ["Henry Ford", "President Herbert Hoover", "Nikola Tesla", "Zijn zoon Charles"],
+          "explanation": "Op de avond van zijn begrafenis in 1931 werden overal in het land de lichten een minuut gedimd of gedoofd. Het gebaar liet zien hoeveel van Amerika inmiddels iets had om uit te zetten."
+        },
+        "fr": {
+          "question": "Qui demanda aux Américains de baisser leurs lumières électriques pendant une minute à la mort d'Edison ?",
+          "options": ["Henry Ford", "Le président Herbert Hoover", "Nikola Tesla", "Son fils Charles"],
+          "explanation": "Le soir de ses funérailles, en 1931, les lumières baissèrent ou s'éteignirent une minute dans tout le pays. Le geste montrait quelle part de l'Amérique avait désormais quelque chose à éteindre."
+        },
+        "de": {
+          "question": "Wer bat die Amerikaner, bei Edisons Tod eine Minute lang ihr elektrisches Licht zu dimmen?",
+          "options": ["Henry Ford", "Präsident Herbert Hoover", "Nikola Tesla", "Sein Sohn Charles"],
+          "explanation": "Am Abend seiner Beerdigung 1931 wurden im ganzen Land die Lichter eine Minute lang gedimmt oder gelöscht. Die Geste zeigte, wie viel von Amerika inzwischen etwas zum Ausschalten hatte."
+        }
+      }
+    }
+  ]
+}

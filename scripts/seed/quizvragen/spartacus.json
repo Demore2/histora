@@ -1,0 +1,192 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "In which city was Spartacus held at a gladiator school in 73 BC?",
+      "options": ["Pompeii", "Capua", "Ostia", "Rome"],
+      "explanation": "Capua, in Campania, was the centre of gladiator training. Spartacus belonged to Batiatus, a lanista who bought, trained and hired out fighters for the games.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "In welke stad zat Spartacus in 73 v.Chr. op een gladiatorenschool?",
+          "options": ["Pompeii", "Capua", "Ostia", "Rome"],
+          "explanation": "Capua, in Campanië, was het centrum van de gladiatorenopleiding. Spartacus was eigendom van Batiatus, een lanista die vechters kocht, trainde en verhuurde voor de spelen."
+        },
+        "fr": {
+          "question": "Dans quelle ville Spartacus était-il retenu dans une école de gladiateurs en 73 av. J.-C. ?",
+          "options": ["Pompéi", "Capoue", "Ostie", "Rome"],
+          "explanation": "Capoue, en Campanie, était le grand centre de formation des gladiateurs. Spartacus appartenait à Batiatus, un laniste qui achetait, entraînait et louait des combattants pour les jeux."
+        },
+        "de": {
+          "question": "In welcher Stadt war Spartakus 73 v. Chr. in einer Gladiatorenschule?",
+          "options": ["Pompeji", "Capua", "Ostia", "Rom"],
+          "explanation": "Capua in Kampanien war das Zentrum der Gladiatorenausbildung. Spartakus gehörte Batiatus, einem Lanista, der Kämpfer kaufte, ausbildete und für die Spiele vermietete."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Why did most gladiator fights end in surrender rather than death?",
+      "options": ["A law forbade killing", "Crowds disliked bloodshed", "Trained gladiators were expensive", "Gladiators refused to fight"],
+      "explanation": "Owners like Batiatus hired their fighters out to the men who staged the games. A dead gladiator was years of training and a lot of money lost.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom eindigden de meeste gladiatorengevechten met overgave in plaats van de dood?",
+          "options": ["Een wet verbood doden", "Het publiek hield niet van bloed", "Getrainde gladiatoren waren duur", "Gladiatoren weigerden te vechten"],
+          "explanation": "Eigenaren als Batiatus verhuurden hun vechters aan wie de spelen organiseerde. Een dode gladiator betekende jaren training en veel geld kwijt."
+        },
+        "fr": {
+          "question": "Pourquoi la plupart des combats de gladiateurs se terminaient-ils par une reddition plutôt que par la mort ?",
+          "options": ["Une loi interdisait de tuer", "Le public détestait le sang", "Un gladiateur entraîné coûtait cher", "Les gladiateurs refusaient de combattre"],
+          "explanation": "Des propriétaires comme Batiatus louaient leurs combattants aux organisateurs des jeux. Un gladiateur mort, c'étaient des années d'entraînement et beaucoup d'argent perdus."
+        },
+        "de": {
+          "question": "Warum endeten die meisten Gladiatorenkämpfe mit Aufgabe statt mit dem Tod?",
+          "options": ["Ein Gesetz verbot das Töten", "Das Publikum mochte kein Blut", "Ausgebildete Gladiatoren waren teuer", "Gladiatoren weigerten sich zu kämpfen"],
+          "explanation": "Besitzer wie Batiatus vermieteten ihre Kämpfer an die Veranstalter der Spiele. Ein toter Gladiator bedeutete jahrelange Ausbildung und viel verlorenes Geld."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Roughly how many gladiators broke out of Capua with Spartacus?",
+      "options": ["About seven", "About seventy", "About seven hundred", "About seven thousand"],
+      "explanation": "A small band of seventy or eighty. Within months, field workers, servants and miners had swelled it to tens of thousands.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Ongeveer hoeveel gladiatoren ontsnapten met Spartacus uit Capua?",
+          "options": ["Zo'n zeven", "Zo'n zeventig", "Zo'n zevenhonderd", "Zo'n zevenduizend"],
+          "explanation": "Een kleine groep van zeventig à tachtig man. Binnen enkele maanden waren er door landarbeiders, bedienden en mijnwerkers tienduizenden van geworden."
+        },
+        "fr": {
+          "question": "Combien de gladiateurs s'évadèrent environ de Capoue avec Spartacus ?",
+          "options": ["Environ sept", "Environ soixante-dix", "Environ sept cents", "Environ sept mille"],
+          "explanation": "Une petite troupe de soixante-dix ou quatre-vingts hommes. En quelques mois, ouvriers agricoles, domestiques et mineurs la portèrent à des dizaines de milliers."
+        },
+        "de": {
+          "question": "Wie viele Gladiatoren brachen ungefähr mit Spartakus aus Capua aus?",
+          "options": ["Etwa sieben", "Etwa siebzig", "Etwa siebenhundert", "Etwa siebentausend"],
+          "explanation": "Eine kleine Schar von siebzig oder achtzig Mann. Binnen Monaten wuchs sie durch Feldarbeiter, Diener und Bergleute auf Zehntausende an."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Where did Spartacus lead his army before turning back south?",
+      "options": ["To Sicily", "To the Alps", "To the gates of Rome", "To Greece"],
+      "explanation": "Beyond the Alps lay Gaul and freedom, but many of his followers wanted to fight on, and some had families still enslaved in the south.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar leidde Spartacus zijn leger heen voordat hij weer naar het zuiden keerde?",
+          "options": ["Naar Sicilië", "Naar de Alpen", "Naar de poorten van Rome", "Naar Griekenland"],
+          "explanation": "Achter de Alpen lagen Gallië en de vrijheid, maar veel volgelingen wilden doorvechten en sommigen hadden nog familie in slavernij in het zuiden."
+        },
+        "fr": {
+          "question": "Où Spartacus mena-t-il son armée avant de faire demi-tour vers le sud ?",
+          "options": ["En Sicile", "Vers les Alpes", "Aux portes de Rome", "En Grèce"],
+          "explanation": "Au-delà des Alpes s'étendaient la Gaule et la liberté, mais beaucoup de ses partisans voulaient continuer le combat, et certains avaient encore de la famille réduite en esclavage dans le sud."
+        },
+        "de": {
+          "question": "Wohin führte Spartakus sein Heer, bevor er wieder nach Süden umkehrte?",
+          "options": ["Nach Sizilien", "Zu den Alpen", "Vor die Tore Roms", "Nach Griechenland"],
+          "explanation": "Jenseits der Alpen lagen Gallien und die Freiheit, doch viele seiner Anhänger wollten weiterkämpfen, und manche hatten noch versklavte Familie im Süden."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What punishment did Crassus revive to restore discipline in his legions?",
+      "options": ["Decimation", "Crucifixion", "Exile", "Branding"],
+      "explanation": "In a unit that had broken, one man in ten was chosen by lot and killed by his own comrades. It had hardly been used in generations.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke straf voerde Crassus opnieuw in om de discipline in zijn legioenen te herstellen?",
+          "options": ["Decimering", "Kruisiging", "Verbanning", "Brandmerken"],
+          "explanation": "In een eenheid die was gevlucht werd één op de tien man door loting aangewezen en door zijn eigen kameraden gedood. Die straf was al generaties nauwelijks toegepast."
+        },
+        "fr": {
+          "question": "Quel châtiment Crassus remit-il en usage pour rétablir la discipline dans ses légions ?",
+          "options": ["La décimation", "La crucifixion", "L'exil", "Le marquage au fer"],
+          "explanation": "Dans une unité qui avait fui, un homme sur dix était tiré au sort et tué par ses propres camarades. On ne l'avait presque plus appliqué depuis des générations."
+        },
+        "de": {
+          "question": "Welche Strafe führte Crassus wieder ein, um die Disziplin in seinen Legionen herzustellen?",
+          "options": ["Dezimierung", "Kreuzigung", "Verbannung", "Brandmarkung"],
+          "explanation": "In einer Einheit, die geflohen war, wurde jeder zehnte Mann ausgelost und von den eigenen Kameraden getötet. Seit Generationen war das kaum noch angewandt worden."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What did Rome do about slavery after the revolt?",
+      "options": ["Freed the slaves of Italy", "Kept relying on it for centuries", "Banned gladiator schools", "Gave slaves citizenship"],
+      "explanation": "Nothing changed in the system. What lasted was the name: later slave revolts were smaller, while Spartacus became a symbol borrowed by revolutionaries, a Soviet sports club and Hollywood.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed Rome na de opstand met de slavernij?",
+          "options": ["Het liet de slaven in Italië vrij", "Het bleef er eeuwenlang op steunen", "Het verbood gladiatorenscholen", "Het gaf slaven burgerrecht"],
+          "explanation": "Aan het systeem veranderde niets. Wat bleef was de naam: latere slavenopstanden waren kleiner, terwijl Spartacus een symbool werd voor revolutionairen, een Sovjet-sportclub en Hollywood."
+        },
+        "fr": {
+          "question": "Que fit Rome de l'esclavage après la révolte ?",
+          "options": ["Elle libéra les esclaves d'Italie", "Elle continua d'en dépendre pendant des siècles", "Elle interdit les écoles de gladiateurs", "Elle donna la citoyenneté aux esclaves"],
+          "explanation": "Rien ne changea dans le système. Ce qui resta, c'est le nom : les révoltes d'esclaves suivantes furent plus modestes, tandis que Spartacus devint un symbole repris par des révolutionnaires, un club sportif soviétique et Hollywood."
+        },
+        "de": {
+          "question": "Was tat Rom nach dem Aufstand mit der Sklaverei?",
+          "options": ["Es ließ die Sklaven Italiens frei", "Es stützte sich noch jahrhundertelang darauf", "Es verbot die Gladiatorenschulen", "Es gab Sklaven das Bürgerrecht"],
+          "explanation": "Am System änderte sich nichts. Was blieb, war der Name: Spätere Sklavenaufstände waren kleiner, während Spartakus zum Symbol wurde – für Revolutionäre, einen sowjetischen Sportverein und Hollywood."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "f029fd82-59fe-49b2-b806-5476b287865c",
+      "chapter_index": 4,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar zochten Spartacus en zijn volgelingen na hun ontsnapping uit de gladiatorenschool voor het eerst hun toevlucht?",
+          "options": ["De Vesuvius", "De Etna", "De Alpen", "Sicilië"],
+          "explanation": "Ze sloegen hun kamp op op de Vesuvius. Toen Romeinse troepen het enige pad naar beneden afsloten, vlochten de opstandelingen ladders van wilde wijnranken en daalden ze achter hen de rotswanden af."
+        },
+        "fr": {
+          "question": "Où Spartacus et ses compagnons trouvèrent-ils refuge après leur évasion de l'école de gladiateurs ?",
+          "options": ["Le Vésuve", "L'Etna", "Les Alpes", "La Sicile"],
+          "explanation": "Ils campèrent sur le Vésuve. Quand les troupes romaines bloquèrent le seul sentier de descente, les rebelles tressèrent des échelles de vignes sauvages et descendirent les falaises derrière elles."
+        },
+        "de": {
+          "question": "Wo suchten Spartakus und seine Anhänger nach der Flucht aus der Gladiatorenschule zuerst Zuflucht?",
+          "options": ["Am Vesuv", "Am Ätna", "In den Alpen", "Auf Sizilien"],
+          "explanation": "Sie lagerten am Vesuv. Als römische Truppen den einzigen Weg hinunter versperrten, flochten die Rebellen Leitern aus wilden Weinranken und stiegen hinter ihnen die Felswände hinab."
+        }
+      }
+    },
+    {
+      "id": "b2663023-c805-4355-bf19-ec831bb2b288",
+      "chapter_index": 7,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke Romeinse bevelhebber versloeg Spartacus uiteindelijk in 71 v.Chr.?",
+          "options": ["Pompeius", "Marcus Licinius Crassus", "Sulla", "Cato de Jongere"],
+          "explanation": "Crassus brak de opstand in Lucanië. Pompeius ving de vluchtende overlevenden op en eiste in Rome de eer op – een wrok die de oorlog overleefde."
+        },
+        "fr": {
+          "question": "Quel général romain vainquit finalement Spartacus en 71 av. J.-C. ?",
+          "options": ["Pompée", "Marcus Licinius Crassus", "Sylla", "Caton d'Utique"],
+          "explanation": "Crassus écrasa la révolte en Lucanie. Pompée captura les survivants en fuite et s'en attribua le mérite à Rome – une rancune qui survécut à la guerre."
+        },
+        "de": {
+          "question": "Welcher römische Feldherr besiegte Spartakus schließlich 71 v. Chr.?",
+          "options": ["Pompeius", "Marcus Licinius Crassus", "Sulla", "Cato der Jüngere"],
+          "explanation": "Crassus schlug den Aufstand in Lukanien nieder. Pompeius fing die fliehenden Überlebenden ab und beanspruchte in Rom den Ruhm – ein Groll, der den Krieg überdauerte."
+        }
+      }
+    }
+  ]
+}

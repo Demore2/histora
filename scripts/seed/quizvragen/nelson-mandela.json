@@ -1,0 +1,189 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Into which people's royal family was Mandela born?",
+      "options": ["The Zulu", "The Thembu", "The Sotho", "The Swazi"],
+      "explanation": "His father was a chief and counsellor to the Thembu royal house. Mandela went on to study law at the University of Witwatersrand, where he met his lifelong comrade Oliver Tambo.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "In de koninklijke familie van welk volk werd Mandela geboren?",
+          "options": ["De Zoeloe", "De Thembu", "De Sotho", "De Swazi"],
+          "explanation": "Zijn vader was hoofdman en raadgever van het Thembu-koningshuis. Mandela studeerde later rechten aan de universiteit van de Witwatersrand, waar hij zijn levenslange kameraad Oliver Tambo leerde kennen."
+        },
+        "fr": {
+          "question": "Dans la famille royale de quel peuple Mandela est-il né ?",
+          "options": ["Les Zoulous", "Les Thembu", "Les Sotho", "Les Swazi"],
+          "explanation": "Son père était chef et conseiller de la maison royale thembu. Mandela étudia ensuite le droit à l'université du Witwatersrand, où il rencontra son camarade de toujours, Oliver Tambo."
+        },
+        "de": {
+          "question": "In die Königsfamilie welches Volkes wurde Mandela geboren?",
+          "options": ["Die Zulu", "Die Thembu", "Die Sotho", "Die Swasi"],
+          "explanation": "Sein Vater war Häuptling und Berater des Thembu-Königshauses. Mandela studierte später Jura an der Universität des Witwatersrand, wo er seinen lebenslangen Mitstreiter Oliver Tambo kennenlernte."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Which organisation did Mandela join in 1944?",
+      "options": ["The National Party", "The African National Congress", "Umkhonto we Sizwe", "The Pan Africanist Congress"],
+      "explanation": "The ANC began with nonviolent protest, boycotts and negotiation, following Gandhi's example. The government answered with police violence, arrests and bans.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Bij welke organisatie sloot Mandela zich in 1944 aan?",
+          "options": ["De Nasionale Party", "Het Afrikaans Nationaal Congres", "Umkhonto we Sizwe", "Het Pan-Afrikanistisch Congres"],
+          "explanation": "Het ANC begon met geweldloos protest, boycots en onderhandelingen, naar het voorbeeld van Gandhi. De regering antwoordde met politiegeweld, arrestaties en verboden."
+        },
+        "fr": {
+          "question": "Quelle organisation Mandela rejoignit-il en 1944 ?",
+          "options": ["Le Parti national", "Le Congrès national africain", "Umkhonto we Sizwe", "Le Congrès panafricain"],
+          "explanation": "L'ANC commença par la protestation non violente, le boycott et la négociation, sur l'exemple de Gandhi. Le gouvernement répondit par la violence policière, les arrestations et les interdictions."
+        },
+        "de": {
+          "question": "Welcher Organisation trat Mandela 1944 bei?",
+          "options": ["Der Nasionale Party", "Dem African National Congress", "Umkhonto we Sizwe", "Dem Pan Africanist Congress"],
+          "explanation": "Der ANC begann mit gewaltlosem Protest, Boykotten und Verhandlungen nach Gandhis Vorbild. Die Regierung antwortete mit Polizeigewalt, Verhaftungen und Verboten."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Which language did Mandela learn in prison?",
+      "options": ["English", "Afrikaans", "Zulu", "Dutch"],
+      "explanation": "It was the language of the government and of his guards. He studied his jailers to understand their fears, convinced that apartheid could only end in reconciliation.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke taal leerde Mandela in de gevangenis?",
+          "options": ["Engels", "Afrikaans", "Zoeloe", "Nederlands"],
+          "explanation": "Het was de taal van de regering en van zijn bewakers. Hij bestudeerde zijn cipiers om hun angsten te begrijpen, overtuigd dat apartheid alleen met verzoening kon eindigen."
+        },
+        "fr": {
+          "question": "Quelle langue Mandela apprit-il en prison ?",
+          "options": ["L'anglais", "L'afrikaans", "Le zoulou", "Le néerlandais"],
+          "explanation": "C'était la langue du gouvernement et de ses gardiens. Il étudia ses geôliers pour comprendre leurs peurs, convaincu que l'apartheid ne pourrait finir que par la réconciliation."
+        },
+        "de": {
+          "question": "Welche Sprache lernte Mandela im Gefängnis?",
+          "options": ["Englisch", "Afrikaans", "Zulu", "Niederländisch"],
+          "explanation": "Es war die Sprache der Regierung und seiner Wärter. Er studierte seine Bewacher, um ihre Ängste zu verstehen, überzeugt, dass die Apartheid nur durch Versöhnung enden konnte."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "How long had Mandela been in prison when he was released in 1990?",
+      "options": ["Seven years", "Seventeen years", "Twenty-seven years", "Thirty-seven years"],
+      "explanation": "He walked out at seventy-one. In the talks that followed with President de Klerk he asked for equal rights, not revenge on the men who had jailed him.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe lang had Mandela vastgezeten toen hij in 1990 werd vrijgelaten?",
+          "options": ["Zeven jaar", "Zeventien jaar", "Zevenentwintig jaar", "Zevenendertig jaar"],
+          "explanation": "Hij liep naar buiten op zijn eenenzeventigste. In de onderhandelingen met president De Klerk die volgden, vroeg hij om gelijke rechten, niet om wraak op wie hem had opgesloten."
+        },
+        "fr": {
+          "question": "Depuis combien de temps Mandela était-il en prison à sa libération en 1990 ?",
+          "options": ["Sept ans", "Dix-sept ans", "Vingt-sept ans", "Trente-sept ans"],
+          "explanation": "Il sortit à soixante et onze ans. Dans les négociations qui suivirent avec le président de Klerk, il demanda l'égalité des droits, pas la vengeance contre ceux qui l'avaient emprisonné."
+        },
+        "de": {
+          "question": "Wie lange war Mandela inhaftiert, als er 1990 freikam?",
+          "options": ["Sieben Jahre", "Siebzehn Jahre", "Siebenundzwanzig Jahre", "Siebenunddreißig Jahre"],
+          "explanation": "Er kam mit einundsiebzig frei. In den folgenden Verhandlungen mit Präsident de Klerk verlangte er gleiche Rechte, keine Rache an denen, die ihn eingesperrt hatten."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "How old was Mandela when he died in 2013?",
+      "options": ["Seventy-five", "Eighty-five", "Ninety-five", "A hundred and five"],
+      "explanation": "After one term as president he worked on HIV/AIDS prevention, poverty and conflict resolution. He is remembered for choosing reconciliation over revenge.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe oud was Mandela toen hij in 2013 stierf?",
+          "options": ["Vijfenzeventig", "Vijfentachtig", "Vijfennegentig", "Honderdvijf"],
+          "explanation": "Na één termijn als president zette hij zich in voor de bestrijding van hiv/aids, armoede en conflicten. Hij wordt herinnerd omdat hij koos voor verzoening in plaats van wraak."
+        },
+        "fr": {
+          "question": "Quel âge avait Mandela à sa mort en 2013 ?",
+          "options": ["Soixante-quinze ans", "Quatre-vingt-cinq ans", "Quatre-vingt-quinze ans", "Cent cinq ans"],
+          "explanation": "Après un seul mandat de président, il s'engagea contre le VIH/sida, la pauvreté et les conflits. On se souvient de lui pour avoir choisi la réconciliation plutôt que la vengeance."
+        },
+        "de": {
+          "question": "Wie alt war Mandela, als er 2013 starb?",
+          "options": ["Fünfundsiebzig", "Fünfundachtzig", "Fünfundneunzig", "Hundertfünf"],
+          "explanation": "Nach einer Amtszeit als Präsident setzte er sich gegen HIV/Aids, Armut und Konflikte ein. In Erinnerung bleibt er, weil er Versöhnung statt Rache wählte."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "f0c10460-b6d8-4dd9-b32c-c71b2993162d",
+      "chapter_index": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe heette de gewapende vleugel van het ANC die Mandela in 1961 mee oprichtte?",
+          "options": ["Umkhonto we Sizwe", "De ANC-jeugdliga", "Speer van de Thembu", "De Free Mandela-beweging"],
+          "explanation": "De naam betekent Speer van de Natie. Het oorspronkelijke plan was sabotage van overheidsinstallaties, niet aanslagen op mensen – een onderscheid dat Mandela bij zijn proces benadrukte."
+        },
+        "fr": {
+          "question": "Comment s'appelait la branche armée de l'ANC que Mandela cofonda en 1961 ?",
+          "options": ["Umkhonto we Sizwe", "La Ligue de la jeunesse de l'ANC", "La Lance des Thembu", "Le mouvement Free Mandela"],
+          "explanation": "Le nom signifie la Lance de la nation. Son plan initial visait à saboter des installations gouvernementales plutôt qu'à s'en prendre aux personnes, une distinction que Mandela défendit lors de son procès."
+        },
+        "de": {
+          "question": "Wie hieß der bewaffnete Flügel des ANC, den Mandela 1961 mitgründete?",
+          "options": ["Umkhonto we Sizwe", "Die ANC-Jugendliga", "Speer der Thembu", "Die Free-Mandela-Bewegung"],
+          "explanation": "Der Name bedeutet Speer der Nation. Der ursprüngliche Plan war Sabotage an Regierungsanlagen, keine Angriffe auf Menschen – eine Unterscheidung, auf die Mandela in seinem Prozess pochte."
+        }
+      }
+    },
+    {
+      "id": "7848b8a6-2b0d-40bc-96f6-1f2faf3f26bd",
+      "chapter_index": 4,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk werk moesten gevangenen op Robbeneiland doen?",
+          "options": ["Kalksteen breken in een groeve", "Vissen voor de kust van het eiland", "De gevangenismuren bouwen", "De akkers van het eiland bewerken"],
+          "explanation": "De schittering van de witte kalksteen beschadigde Mandela's ogen blijvend – jaren later werden fotografen gevraagd in zijn buurt geen flits te gebruiken."
+        },
+        "fr": {
+          "question": "Quel travail les prisonniers de Robben Island étaient-ils forcés d'accomplir ?",
+          "options": ["Casser du calcaire dans une carrière", "Pêcher au large de l'île", "Construire les murs de la prison", "Cultiver les champs de l'île"],
+          "explanation": "L'éclat du calcaire blanc abîma durablement les yeux de Mandela – des années plus tard, on demandait aux photographes de ne pas utiliser de flash près de lui."
+        },
+        "de": {
+          "question": "Welche Arbeit mussten die Gefangenen auf Robben Island verrichten?",
+          "options": ["Kalkstein in einem Steinbruch brechen", "Vor der Küste der Insel fischen", "Die Gefängnismauern bauen", "Die Felder der Insel bestellen"],
+          "explanation": "Das grelle Licht des weißen Kalksteins schädigte Mandelas Augen dauerhaft – Jahre später wurden Fotografen gebeten, in seiner Nähe kein Blitzlicht zu benutzen."
+        }
+      }
+    },
+    {
+      "id": "3e4282a9-d1ac-419a-86fb-15a76e2a117c",
+      "chapter_index": 7,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke instelling richtte Mandela als president op om de misdaden onder de apartheid te behandelen?",
+          "options": ["De Waarheids- en Verzoeningscommissie", "De Springbok-raad", "Het Tribunaal voor Nationale Eenheid", "Het Robbeneiland-onderzoek"],
+          "explanation": "Daders konden bekennen en vergeven worden, terwijl slachtoffers gehoord werden. Het doel was de cirkel van wraak te doorbreken, niet de rechtbanken te vullen."
+        },
+        "fr": {
+          "question": "Quelle institution Mandela créa-t-il comme président pour traiter les crimes de l'apartheid ?",
+          "options": ["La Commission de la vérité et de la réconciliation", "Le Conseil des Springboks", "Le Tribunal de l'unité nationale", "L'enquête de Robben Island"],
+          "explanation": "Les auteurs pouvaient avouer et être pardonnés, tandis que les victimes étaient entendues. Le but était de briser le cycle de la vengeance, pas de remplir les tribunaux."
+        },
+        "de": {
+          "question": "Welche Institution schuf Mandela als Präsident, um die Verbrechen der Apartheid aufzuarbeiten?",
+          "options": ["Die Wahrheits- und Versöhnungskommission", "Den Springbok-Rat", "Das Tribunal der nationalen Einheit", "Die Robben-Island-Untersuchung"],
+          "explanation": "Täter konnten gestehen und Vergebung erhalten, während Opfer gehört wurden. Ziel war, den Kreislauf der Rache zu durchbrechen, nicht die Gerichte zu füllen."
+        }
+      }
+    }
+  ]
+}

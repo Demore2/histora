@@ -817,6 +817,10 @@ const en = {
     vragenVolgende: 'Next question',
     vragenKlaar: 'Finish chapter',
     vragenHint: 'Answer to continue. Any answer counts.',
+    /** Phoxy's tekstwolkje naast de vraag (1.4). Eén zin wordt per antwoord willekeurig gekozen. */
+    phoxyVraag: "Here's one for you!",
+    phoxyGoed: ['Great job!', 'Spot on!', 'You really know your history!'],
+    phoxyFout: ["So close! Next time you've got it.", 'Good try. Now you know!', 'History is tricky. Keep going!'],
   },
   personage: {
     ontgrendeldTitel: 'Character Unlocked!',

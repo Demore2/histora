@@ -1,0 +1,189 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What had Malala's father founded in Swat?",
+      "options": ["A hospital", "A school for girls", "A newspaper", "A political party"],
+      "explanation": "Ziauddin Yousafzai was an educator and activist, and a girls' school was unusual in the conservative valley. Malala grew up dreaming of becoming a doctor or a politician.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat had Malala's vader in Swat opgericht?",
+          "options": ["Een ziekenhuis", "Een meisjesschool", "Een krant", "Een politieke partij"],
+          "explanation": "Ziauddin Yousafzai was onderwijzer en activist, en een meisjesschool was ongewoon in de behoudende vallei. Malala droomde ervan arts of politicus te worden."
+        },
+        "fr": {
+          "question": "Qu'avait fondé le père de Malala dans la vallée de Swat ?",
+          "options": ["Un hôpital", "Une école pour filles", "Un journal", "Un parti politique"],
+          "explanation": "Ziauddin Yousafzai était enseignant et militant, et une école pour filles était rare dans cette vallée conservatrice. Malala rêvait de devenir médecin ou femme politique."
+        },
+        "de": {
+          "question": "Was hatte Malalas Vater im Swat-Tal gegründet?",
+          "options": ["Ein Krankenhaus", "Eine Mädchenschule", "Eine Zeitung", "Eine politische Partei"],
+          "explanation": "Ziauddin Yousafzai war Lehrer und Aktivist, und eine Mädchenschule war im konservativen Tal ungewöhnlich. Malala träumte davon, Ärztin oder Politikerin zu werden."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What happened in Swat after the army's operation against the Taliban in 2009?",
+      "options": ["The Taliban took full control", "Girls' schools reopened", "Malala's family moved to England", "The BBC shut down her blog"],
+      "explanation": "Malala went back to class along with girls who had been kept home for years. By then she was giving interviews to media around the world.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er in Swat na de legeroperatie tegen de taliban in 2009?",
+          "options": ["De taliban kregen de volledige macht", "De meisjesscholen gingen weer open", "Malala's familie verhuisde naar Engeland", "De BBC stopte haar blog"],
+          "explanation": "Malala ging weer naar de les, samen met meisjes die jarenlang thuis hadden moeten blijven. Inmiddels gaf ze interviews aan media over de hele wereld."
+        },
+        "fr": {
+          "question": "Que se passa-t-il dans la vallée de Swat après l'opération de l'armée contre les talibans en 2009 ?",
+          "options": ["Les talibans prirent le contrôle total", "Les écoles de filles rouvrirent", "La famille de Malala partit en Angleterre", "La BBC ferma son blog"],
+          "explanation": "Malala retourna en classe avec des filles privées d'école depuis des années. Elle donnait déjà des interviews aux médias du monde entier."
+        },
+        "de": {
+          "question": "Was geschah im Swat-Tal nach dem Militäreinsatz gegen die Taliban 2009?",
+          "options": ["Die Taliban übernahmen die volle Kontrolle", "Die Mädchenschulen öffneten wieder", "Malalas Familie zog nach England", "Die BBC stellte ihren Blog ein"],
+          "explanation": "Malala ging wieder zur Schule, zusammen mit Mädchen, die jahrelang zu Hause bleiben mussten. Inzwischen gab sie Medien in aller Welt Interviews."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Where did Malala speak on her sixteenth birthday in 2013?",
+      "options": ["At the Nobel ceremony", "At the United Nations", "In the Pakistani parliament", "At Oxford University"],
+      "explanation": "She called for education for every child, whatever their sex, religion or ethnicity. The speech went around the world less than a year after she was shot.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar sprak Malala op haar zestiende verjaardag in 2013?",
+          "options": ["Bij de Nobelprijsuitreiking", "Bij de Verenigde Naties", "In het Pakistaanse parlement", "Aan de universiteit van Oxford"],
+          "explanation": "Ze riep op tot onderwijs voor elk kind, ongeacht geslacht, geloof of afkomst. De toespraak ging de wereld rond, nog geen jaar nadat ze was neergeschoten."
+        },
+        "fr": {
+          "question": "Où Malala prit-elle la parole le jour de ses seize ans, en 2013 ?",
+          "options": ["À la cérémonie du Nobel", "Aux Nations unies", "Au Parlement pakistanais", "À l'université d'Oxford"],
+          "explanation": "Elle réclama l'éducation pour chaque enfant, quels que soient son sexe, sa religion ou son origine. Le discours fit le tour du monde, moins d'un an après qu'on lui eut tiré dessus."
+        },
+        "de": {
+          "question": "Wo sprach Malala an ihrem sechzehnten Geburtstag 2013?",
+          "options": ["Bei der Nobelpreisverleihung", "Bei den Vereinten Nationen", "Im pakistanischen Parlament", "An der Universität Oxford"],
+          "explanation": "Sie forderte Bildung für jedes Kind, unabhängig von Geschlecht, Religion oder Herkunft. Die Rede ging um die Welt, weniger als ein Jahr nachdem auf sie geschossen worden war."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Roughly how many children worldwide are out of school, according to Malala?",
+      "options": ["2.5 million", "25 million", "Over 250 million", "2.5 billion"],
+      "explanation": "Poverty, conflict and discrimination keep them out, and girls face extra barriers. She argues education is a right, not a privilege.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoeveel kinderen wereldwijd gaan volgens Malala ongeveer niet naar school?",
+          "options": ["2,5 miljoen", "25 miljoen", "Ruim 250 miljoen", "2,5 miljard"],
+          "explanation": "Armoede, oorlog en discriminatie houden hen buiten, en meisjes stuiten op extra drempels. Volgens haar is onderwijs een recht, geen voorrecht."
+        },
+        "fr": {
+          "question": "Combien d'enfants environ ne vont pas à l'école dans le monde, selon Malala ?",
+          "options": ["2,5 millions", "25 millions", "Plus de 250 millions", "2,5 milliards"],
+          "explanation": "La pauvreté, les conflits et les discriminations les en tiennent éloignés, et les filles se heurtent à des obstacles de plus. Pour elle, l'éducation est un droit, pas un privilège."
+        },
+        "de": {
+          "question": "Wie viele Kinder weltweit gehen laut Malala ungefähr nicht zur Schule?",
+          "options": ["2,5 Millionen", "25 Millionen", "Über 250 Millionen", "2,5 Milliarden"],
+          "explanation": "Armut, Konflikte und Diskriminierung halten sie fern, und Mädchen stoßen auf zusätzliche Hürden. Für sie ist Bildung ein Recht, kein Privileg."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Where did Malala go to university?",
+      "options": ["Harvard", "Oxford", "Islamabad", "Birmingham"],
+      "explanation": "Birmingham was where she was treated and where her family settled. Alongside her studies she kept working with organisations in conflict zones and poor countries.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar ging Malala studeren?",
+          "options": ["Harvard", "Oxford", "Islamabad", "Birmingham"],
+          "explanation": "In Birmingham werd ze behandeld en vestigde haar familie zich. Naast haar studie bleef ze werken met organisaties in conflictgebieden en arme landen."
+        },
+        "fr": {
+          "question": "Où Malala fit-elle ses études universitaires ?",
+          "options": ["Harvard", "Oxford", "Islamabad", "Birmingham"],
+          "explanation": "C'est à Birmingham qu'elle fut soignée et que sa famille s'installa. En parallèle de ses études, elle continua de travailler avec des organisations dans des zones de conflit et des pays pauvres."
+        },
+        "de": {
+          "question": "Wo studierte Malala?",
+          "options": ["Harvard", "Oxford", "Islamabad", "Birmingham"],
+          "explanation": "In Birmingham wurde sie behandelt, und dort ließ sich ihre Familie nieder. Neben dem Studium arbeitete sie weiter mit Organisationen in Konfliktgebieten und armen Ländern."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "47558a36-9999-490c-9b9d-7631fa1b352f",
+      "chapter_index": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe vertelde Malala de wereld voor het eerst hoe het leven onder de taliban was?",
+          "options": ["Met een blog voor BBC Urdu, onder een schuilnaam", "Met een brief aan de Pakistaanse premier", "Met een toespraak op de school van haar vader", "In een interview met een krant in Birmingham"],
+          "explanation": "De schuilnaam moest haar beschermen. Binnen een paar jaar werd haar identiteit bekend, en toen wisten de taliban precies wiens stem ze hadden gelezen."
+        },
+        "fr": {
+          "question": "Comment Malala fit-elle d'abord connaître au monde la vie sous les talibans ?",
+          "options": ["Par un blog pour la BBC en ourdou, sous un pseudonyme", "Par une lettre au Premier ministre pakistanais", "Par un discours à l'école de son père", "Par une interview dans un journal de Birmingham"],
+          "explanation": "Le pseudonyme devait la protéger. Son identité fut révélée en deux ans à peine, et les talibans surent alors exactement quelle voix ils avaient lue."
+        },
+        "de": {
+          "question": "Wie erzählte Malala der Welt zum ersten Mal vom Leben unter den Taliban?",
+          "options": ["In einem Blog für BBC Urdu, unter einem Pseudonym", "In einem Brief an den pakistanischen Premierminister", "In einer Rede an der Schule ihres Vaters", "In einem Interview mit einer Zeitung in Birmingham"],
+          "explanation": "Das Pseudonym sollte sie schützen. Binnen weniger Jahre wurde ihre Identität bekannt, und dann wussten die Taliban genau, wessen Stimme sie gelesen hatten."
+        }
+      }
+    },
+    {
+      "id": "2d129e5c-e331-45be-8e76-4ac3759906ea",
+      "chapter_index": 4,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar werd Malala na de aanslag heen gebracht voor haar langere behandeling?",
+          "options": ["Mingora", "Islamabad", "Birmingham, Engeland", "Oslo"],
+          "explanation": "Ze werd eerst in Pakistan geopereerd en daarna naar Birmingham gevlogen. De stad werd het thuis van haar familie, en later studeerde ze in Oxford."
+        },
+        "fr": {
+          "question": "Où Malala fut-elle emmenée pour la suite de ses soins après l'attentat ?",
+          "options": ["Mingora", "Islamabad", "Birmingham, en Angleterre", "Oslo"],
+          "explanation": "Elle fut d'abord opérée au Pakistan, puis transférée par avion à Birmingham. La ville devint le foyer de sa famille, et elle étudia plus tard à Oxford."
+        },
+        "de": {
+          "question": "Wohin wurde Malala nach dem Anschlag zur längeren Behandlung gebracht?",
+          "options": ["Mingora", "Islamabad", "Birmingham, England", "Oslo"],
+          "explanation": "Sie wurde zuerst in Pakistan operiert und dann nach Birmingham geflogen. Die Stadt wurde zum Zuhause ihrer Familie, und später studierte sie in Oxford."
+        }
+      }
+    },
+    {
+      "id": "b9aa8214-2bcc-4c06-9519-ac2ab861af59",
+      "chapter_index": 6,
+      "vertalingen": {
+        "nl": {
+          "question": "Met wie deelde Malala de Nobelprijs voor de Vrede van 2014?",
+          "options": ["Kailash Satyarthi", "Ziauddin Yousafzai", "Muhammad Ali Jinnah", "Kofi Annan"],
+          "explanation": "Satyarthi voerde al tientallen jaren campagne tegen kinderarbeid in India. Een Pakistaans meisje en een Indiase man samen bekronen was een bewuste keuze van het comité."
+        },
+        "fr": {
+          "question": "Avec qui Malala partagea-t-elle le prix Nobel de la paix 2014 ?",
+          "options": ["Kailash Satyarthi", "Ziauddin Yousafzai", "Muhammad Ali Jinnah", "Kofi Annan"],
+          "explanation": "Satyarthi menait depuis des décennies une campagne contre le travail des enfants en Inde. Associer une jeune Pakistanaise à un Indien était un choix délibéré du comité."
+        },
+        "de": {
+          "question": "Mit wem teilte Malala den Friedensnobelpreis 2014?",
+          "options": ["Kailash Satyarthi", "Ziauddin Yousafzai", "Muhammad Ali Jinnah", "Kofi Annan"],
+          "explanation": "Satyarthi kämpfte seit Jahrzehnten gegen Kinderarbeit in Indien. Ein pakistanisches Mädchen und einen indischen Mann gemeinsam auszuzeichnen, war eine bewusste Entscheidung des Komitees."
+        }
+      }
+    }
+  ]
+}

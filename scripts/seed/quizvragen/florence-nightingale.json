@@ -1,0 +1,189 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Why did Florence's family oppose her becoming a nurse?",
+      "options": ["They wanted her to be a doctor", "Nursing was not respectable for a woman of her class", "Women were banned from hospitals", "They could not afford her training"],
+      "explanation": "Nurses were seen as rough and uneducated. A wealthy daughter was expected to marry well and run a household, not tend the sick.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom was Florence' familie ertegen dat ze verpleegster werd?",
+          "options": ["Ze wilden dat ze arts werd", "Verpleging was niet fatsoenlijk voor een vrouw van haar stand", "Vrouwen mochten niet in ziekenhuizen komen", "Ze konden haar opleiding niet betalen"],
+          "explanation": "Verpleegsters golden als ruw en ongeschoold. Van een rijke dochter werd verwacht dat ze goed trouwde en een huishouden leidde, niet dat ze zieken verzorgde."
+        },
+        "fr": {
+          "question": "Pourquoi la famille de Florence s'opposait-elle à ce qu'elle devienne infirmière ?",
+          "options": ["Ils voulaient qu'elle soit médecin", "Le métier n'était pas respectable pour une femme de son rang", "Les femmes étaient interdites dans les hôpitaux", "Ils ne pouvaient pas payer sa formation"],
+          "explanation": "Les infirmières passaient pour des femmes frustes et sans instruction. D'une fille de famille riche, on attendait un beau mariage et la tenue d'une maison, pas les soins aux malades."
+        },
+        "de": {
+          "question": "Warum war Florences Familie dagegen, dass sie Krankenschwester wurde?",
+          "options": ["Sie sollte Ärztin werden", "Krankenpflege galt für eine Frau ihres Standes als unschicklich", "Frauen durften keine Krankenhäuser betreten", "Sie konnten ihre Ausbildung nicht bezahlen"],
+          "explanation": "Krankenschwestern galten als grob und ungebildet. Von einer reichen Tochter erwartete man eine gute Heirat und einen eigenen Haushalt, nicht die Pflege von Kranken."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What happened when Florence improved sanitation at the Barrack Hospital?",
+      "options": ["The army closed the hospital", "The death rate fell sharply", "Doctors refused to work with her", "Nothing changed until the war ended"],
+      "explanation": "Fresh air, clean bedding, better water and proper waste disposal kept patients alive, and her records proved it beyond doubt.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er toen Florence de hygiëne in het kazernehospitaal verbeterde?",
+          "options": ["Het leger sloot het ziekenhuis", "Het sterftecijfer daalde sterk", "Artsen weigerden met haar samen te werken", "Er veranderde niets tot het einde van de oorlog"],
+          "explanation": "Frisse lucht, schoon beddengoed, beter water en een goede afvalafvoer hielden patiënten in leven, en haar cijfers bewezen het zonder twijfel."
+        },
+        "fr": {
+          "question": "Que se passa-t-il quand Florence améliora l'hygiène de l'hôpital de la caserne ?",
+          "options": ["L'armée ferma l'hôpital", "La mortalité chuta fortement", "Les médecins refusèrent de travailler avec elle", "Rien ne changea avant la fin de la guerre"],
+          "explanation": "L'air frais, une literie propre, une meilleure eau et l'évacuation des déchets sauvèrent des patients, et ses registres le prouvèrent sans le moindre doute."
+        },
+        "de": {
+          "question": "Was geschah, als Florence die Hygiene im Kasernenhospital verbesserte?",
+          "options": ["Die Armee schloss das Hospital", "Die Sterblichkeit sank stark", "Ärzte weigerten sich, mit ihr zu arbeiten", "Bis zum Kriegsende änderte sich nichts"],
+          "explanation": "Frische Luft, saubere Bettwäsche, besseres Wasser und eine geordnete Abfallentsorgung hielten Patienten am Leben, und ihre Aufzeichnungen bewiesen es zweifelsfrei."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Which book by Florence Nightingale became a classic?",
+      "options": ["On the Origin of Species", "Notes on Nursing", "The Lady with the Lamp", "A Christmas Carol"],
+      "explanation": "A chronic illness kept her mostly at home after the war, yet she went on writing reports, advising ministers and analysing data for decades.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk boek van Florence Nightingale werd een klassieker?",
+          "options": ["Over het ontstaan van soorten", "Notes on Nursing", "The Lady with the Lamp", "Een kerstlied"],
+          "explanation": "Na de oorlog hield een chronische ziekte haar grotendeels aan huis, maar ze bleef nog tientallen jaren rapporten schrijven, ministers adviseren en gegevens analyseren."
+        },
+        "fr": {
+          "question": "Quel livre de Florence Nightingale est devenu un classique ?",
+          "options": ["L'Origine des espèces", "Notes on Nursing", "The Lady with the Lamp", "Un chant de Noël"],
+          "explanation": "Une maladie chronique la retint surtout chez elle après la guerre, mais elle continua pendant des décennies à écrire des rapports, conseiller les ministres et analyser des données."
+        },
+        "de": {
+          "question": "Welches Buch von Florence Nightingale wurde zum Klassiker?",
+          "options": ["Über die Entstehung der Arten", "Notes on Nursing", "The Lady with the Lamp", "Eine Weihnachtsgeschichte"],
+          "explanation": "Nach dem Krieg hielt eine chronische Krankheit sie meist zu Hause, doch sie schrieb noch jahrzehntelang Berichte, beriet Minister und wertete Daten aus."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Which scientific idea, accepted during her lifetime, confirmed her reforms?",
+      "options": ["Evolution", "Germ theory", "The theory of the four humours", "Relativity"],
+      "explanation": "Once it was understood that disease spreads through contamination, her cleanliness, ventilation and waste disposal became standard practice. She died in 1910, aged ninety.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk wetenschappelijk inzicht, aanvaard tijdens haar leven, bevestigde haar hervormingen?",
+          "options": ["De evolutietheorie", "De kiemtheorie", "De leer van de vier lichaamssappen", "De relativiteitstheorie"],
+          "explanation": "Toen eenmaal duidelijk was dat ziekte zich via besmetting verspreidt, werden haar hygiëne, ventilatie en afvalafvoer gewone praktijk. Ze stierf in 1910, negentig jaar oud."
+        },
+        "fr": {
+          "question": "Quelle idée scientifique, admise de son vivant, confirma ses réformes ?",
+          "options": ["L'évolution", "La théorie des germes", "La théorie des quatre humeurs", "La relativité"],
+          "explanation": "Une fois admis que la maladie se propage par contamination, la propreté, l'aération et l'évacuation des déchets qu'elle prônait devinrent la norme. Elle mourut en 1910, à quatre-vingt-dix ans."
+        },
+        "de": {
+          "question": "Welche wissenschaftliche Erkenntnis, zu ihren Lebzeiten anerkannt, bestätigte ihre Reformen?",
+          "options": ["Die Evolutionstheorie", "Die Keimtheorie", "Die Vier-Säfte-Lehre", "Die Relativitätstheorie"],
+          "explanation": "Sobald klar war, dass Krankheiten sich durch Ansteckung verbreiten, wurden ihre Sauberkeit, Belüftung und Abfallentsorgung zur Regel. Sie starb 1910 mit neunzig Jahren."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Which tool did Nightingale pioneer in healthcare?",
+      "options": ["Anaesthesia", "Statistics", "Vaccination", "X-rays"],
+      "explanation": "Counted deaths and clear charts convinced officials where pleas for pity had not. Using data to improve care is still central to public health.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk instrument zette Nightingale als eerste in voor de gezondheidszorg?",
+          "options": ["Verdoving", "Statistiek", "Vaccinatie", "Röntgenstraling"],
+          "explanation": "Getelde doden en heldere grafieken overtuigden ambtenaren waar oproepen tot medelijden dat niet deden. Data gebruiken om zorg te verbeteren is nog steeds de kern van de volksgezondheid."
+        },
+        "fr": {
+          "question": "Quel outil Nightingale a-t-elle introduit dans les soins de santé ?",
+          "options": ["L'anesthésie", "La statistique", "La vaccination", "Les rayons X"],
+          "explanation": "Des morts comptés et des graphiques clairs convainquirent les responsables là où les appels à la pitié avaient échoué. Utiliser les données pour améliorer les soins reste au cœur de la santé publique."
+        },
+        "de": {
+          "question": "Welches Werkzeug führte Nightingale in die Gesundheitsversorgung ein?",
+          "options": ["Die Narkose", "Die Statistik", "Die Impfung", "Röntgenstrahlen"],
+          "explanation": "Gezählte Tote und klare Diagramme überzeugten Beamte, wo Appelle ans Mitleid gescheitert waren. Daten zur Verbesserung der Versorgung zu nutzen, ist bis heute Kern der öffentlichen Gesundheit."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "49b32e4e-7a6d-4e81-a93d-826b058dfd1a",
+      "chapter_index": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat doodde volgens het hoofdstuk de meeste Britse soldaten in de Krimoorlog?",
+          "options": ["Vijandelijke kogels", "Honger", "Tyfus, dysenterie, buiktyfus en cholera", "Wonden die chirurgen onbehandeld lieten"],
+          "explanation": "Krantenberichten over die doden veroorzaakten thuis grote verontwaardiging, en dat maakte een officiële uitnodiging aan Nightingale politiek mogelijk."
+        },
+        "fr": {
+          "question": "D'après le chapitre, qu'est-ce qui tuait la plupart des soldats britanniques pendant la guerre de Crimée ?",
+          "options": ["Les balles ennemies", "La famine", "Le typhus, la dysenterie, la typhoïde et le choléra", "Des blessures laissées sans soins par les chirurgiens"],
+          "explanation": "Les articles de presse sur ces morts provoquèrent l'indignation au pays, ce qui rendit politiquement possible une invitation officielle adressée à Nightingale."
+        },
+        "de": {
+          "question": "Was tötete laut dem Kapitel die meisten britischen Soldaten im Krimkrieg?",
+          "options": ["Feindliche Kugeln", "Hunger", "Fleckfieber, Ruhr, Typhus und Cholera", "Von Chirurgen unbehandelte Wunden"],
+          "explanation": "Zeitungsberichte über diese Toten lösten in der Heimat Empörung aus, und das machte eine offizielle Einladung an Nightingale politisch möglich."
+        }
+      }
+    },
+    {
+      "id": "d3537475-9435-41f2-86be-ed95906d055a",
+      "chapter_index": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat liet Florence Nightingales analyse van de ziekenhuisgegevens in Scutari zien?",
+          "options": ["De meeste doden vielen door oorlogswonden", "De meeste doden vielen door ziekten als gevolg van slechte hygiëne", "De meeste doden vielen door gebrek aan medicijnen", "De meeste doden vielen door kou"],
+          "explanation": "Haar grafieken maakten van een discussie over hygiëne een kwestie van getelde doden – moeilijker voor ambtenaren om weg te wuiven dan welk beroep op medelijden ook."
+        },
+        "fr": {
+          "question": "Qu'a révélé l'analyse des registres de l'hôpital de Scutari par Florence Nightingale ?",
+          "options": ["La plupart des morts venaient des blessures de guerre", "La plupart des morts venaient de maladies dues au manque d'hygiène", "La plupart des morts venaient du manque de médicaments", "La plupart des morts venaient du froid"],
+          "explanation": "Ses graphiques firent d'un débat sur la propreté une affaire de morts comptés – plus difficile à écarter pour les responsables que n'importe quel appel à la pitié."
+        },
+        "de": {
+          "question": "Was zeigte Florence Nightingales Auswertung der Krankenhausakten in Scutari?",
+          "options": ["Die meisten starben an Kriegswunden", "Die meisten starben an Krankheiten durch mangelnde Hygiene", "Die meisten starben an Medikamentenmangel", "Die meisten starben an Kälte"],
+          "explanation": "Ihre Diagramme machten aus einem Streit über Sauberkeit eine Frage gezählter Toter – für Beamte schwerer abzutun als jeder Appell ans Mitleid."
+        }
+      }
+    },
+    {
+      "id": "5f473383-7fec-4fef-ac6e-f223cdcaf28b",
+      "chapter_index": 5,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar richtte Florence Nightingale in 1860 haar opleiding voor verpleegsters op?",
+          "options": ["St Thomas' Hospital in Londen", "Het kazernehospitaal in Scutari", "Een opleidingsinstituut in Duitsland", "Een privékliniek in Harley Street"],
+          "explanation": "Scholen naar hetzelfde model volgden in Amerika en heel Europa, zodat één Londense afdeling het patroon werd voor een wereldwijd beroep."
+        },
+        "fr": {
+          "question": "Où Florence Nightingale fonda-t-elle son école d'infirmières en 1860 ?",
+          "options": ["Au St Thomas' Hospital, à Londres", "À l'hôpital de la caserne de Scutari", "Dans un institut de formation en Allemagne", "Dans une clinique privée de Harley Street"],
+          "explanation": "Des écoles sur le même modèle suivirent en Amérique et dans toute l'Europe : un seul service londonien devint le modèle d'une profession mondiale."
+        },
+        "de": {
+          "question": "Wo gründete Florence Nightingale 1860 ihre Schule für Krankenschwestern?",
+          "options": ["Im St Thomas' Hospital in London", "Im Kasernenhospital in Scutari", "In einer Ausbildungsanstalt in Deutschland", "In einer Privatklinik in der Harley Street"],
+          "explanation": "Schulen nach demselben Vorbild folgten in Amerika und ganz Europa, sodass eine einzige Londoner Station zum Muster eines weltweiten Berufs wurde."
+        }
+      }
+    }
+  ]
+}

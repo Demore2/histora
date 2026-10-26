@@ -1,0 +1,195 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "In which city was Martin Luther King Jr. born?",
+      "options": ["Montgomery", "Atlanta", "Memphis", "Birmingham"],
+      "explanation": "Atlanta, Georgia, in 1929, under Jim Crow segregation. His father was a prominent minister, and Martin entered Morehouse College at fifteen.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "In welke stad werd Martin Luther King Jr. geboren?",
+          "options": ["Montgomery", "Atlanta", "Memphis", "Birmingham"],
+          "explanation": "In Atlanta, Georgia, in 1929, onder de rassenscheiding van Jim Crow. Zijn vader was een vooraanstaand dominee, en Martin ging op zijn vijftiende naar Morehouse College."
+        },
+        "fr": {
+          "question": "Dans quelle ville est né Martin Luther King Jr. ?",
+          "options": ["Montgomery", "Atlanta", "Memphis", "Birmingham"],
+          "explanation": "À Atlanta, en Géorgie, en 1929, sous la ségrégation des lois Jim Crow. Son père était un pasteur réputé, et Martin entra au Morehouse College à quinze ans."
+        },
+        "de": {
+          "question": "In welcher Stadt wurde Martin Luther King Jr. geboren?",
+          "options": ["Montgomery", "Atlanta", "Memphis", "Birmingham"],
+          "explanation": "In Atlanta, Georgia, 1929, unter der Rassentrennung der Jim-Crow-Gesetze. Sein Vater war ein angesehener Pastor, und Martin kam mit fünfzehn ans Morehouse College."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Whose philosophy of nonviolent resistance shaped King's methods?",
+      "options": ["Malcolm X", "Mahatma Gandhi", "Nelson Mandela", "Frederick Douglass"],
+      "explanation": "Break unjust laws openly, accept the punishment without fighting back, and let the suffering expose the injustice. King joined Gandhi's method to Christian ethics.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wiens filosofie van geweldloos verzet vormde de methoden van King?",
+          "options": ["Malcolm X", "Mahatma Gandhi", "Nelson Mandela", "Frederick Douglass"],
+          "explanation": "Overtreed onrechtvaardige wetten openlijk, aanvaard de straf zonder terug te vechten, en laat het lijden het onrecht blootleggen. King verbond Gandhi's methode met christelijke ethiek."
+        },
+        "fr": {
+          "question": "Quelle philosophie de la résistance non violente a inspiré les méthodes de King ?",
+          "options": ["Celle de Malcolm X", "Celle du Mahatma Gandhi", "Celle de Nelson Mandela", "Celle de Frederick Douglass"],
+          "explanation": "Enfreindre ouvertement les lois injustes, accepter la sanction sans riposter, et laisser la souffrance révéler l'injustice. King unit la méthode de Gandhi à l'éthique chrétienne."
+        },
+        "de": {
+          "question": "Wessen Philosophie des gewaltlosen Widerstands prägte Kings Methoden?",
+          "options": ["Die von Malcolm X", "Die von Mahatma Gandhi", "Die von Nelson Mandela", "Die von Frederick Douglass"],
+          "explanation": "Ungerechte Gesetze offen brechen, die Strafe ohne Gegenwehr annehmen und das Leiden die Ungerechtigkeit sichtbar machen lassen. King verband Gandhis Methode mit christlicher Ethik."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Where did the 1960 lunch-counter sit-ins begin?",
+      "options": ["Selma, Alabama", "Greensboro, North Carolina", "Little Rock, Arkansas", "Birmingham, Alabama"],
+      "explanation": "College students sat at a whites-only counter and refused to leave, enduring abuse without fighting back. The next year, Freedom Riders took on segregation on interstate buses.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar begonnen in 1960 de sit-ins aan de lunchbalies?",
+          "options": ["Selma, Alabama", "Greensboro, North Carolina", "Little Rock, Arkansas", "Birmingham, Alabama"],
+          "explanation": "Studenten gingen aan een balie zitten die alleen voor witten was en weigerden te vertrekken; ze verdroegen scheldpartijen zonder terug te vechten. Een jaar later namen de Freedom Riders de scheiding in interstatelijke bussen onder vuur."
+        },
+        "fr": {
+          "question": "Où commencèrent en 1960 les sit-in aux comptoirs des snack-bars ?",
+          "options": ["Selma, Alabama", "Greensboro, Caroline du Nord", "Little Rock, Arkansas", "Birmingham, Alabama"],
+          "explanation": "Des étudiants s'assirent à un comptoir réservé aux Blancs et refusèrent de partir, supportant les insultes sans riposter. L'année suivante, les Freedom Riders s'attaquèrent à la ségrégation dans les bus entre États."
+        },
+        "de": {
+          "question": "Wo begannen 1960 die Sit-ins an den Imbisstheken?",
+          "options": ["Selma, Alabama", "Greensboro, North Carolina", "Little Rock, Arkansas", "Birmingham, Alabama"],
+          "explanation": "Studenten setzten sich an eine Theke nur für Weiße und weigerten sich zu gehen; Beschimpfungen ertrugen sie ohne Gegenwehr. Im Jahr darauf nahmen die Freedom Riders die Trennung in Überlandbussen ins Visier."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Which campaign did King start to fight economic injustice?",
+      "options": ["The New Deal", "The Poor People's Campaign", "The Great Society", "Freedom Summer"],
+      "explanation": "It reached out to poor people of every race. He also opposed the Vietnam War for draining money needed to fight poverty at home.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke campagne begon King om economisch onrecht te bestrijden?",
+          "options": ["De New Deal", "De Poor People's Campaign", "De Great Society", "Freedom Summer"],
+          "explanation": "Ze richtte zich op arme mensen van elk ras. Hij verzette zich ook tegen de Vietnamoorlog, omdat die geld opslokte dat nodig was om armoede in eigen land te bestrijden."
+        },
+        "fr": {
+          "question": "Quelle campagne King lança-t-il pour combattre l'injustice économique ?",
+          "options": ["Le New Deal", "La Poor People's Campaign", "La Great Society", "Le Freedom Summer"],
+          "explanation": "Elle s'adressait aux pauvres de toutes origines. Il s'opposa aussi à la guerre du Viêt Nam, qui engloutissait l'argent nécessaire pour lutter contre la pauvreté dans le pays."
+        },
+        "de": {
+          "question": "Welche Kampagne startete King gegen wirtschaftliche Ungerechtigkeit?",
+          "options": ["Den New Deal", "Die Poor People's Campaign", "Die Great Society", "Den Freedom Summer"],
+          "explanation": "Sie wandte sich an Arme jeder Hautfarbe. Er stellte sich auch gegen den Vietnamkrieg, weil der Geld verschlang, das gegen die Armut im eigenen Land gebraucht wurde."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Where was King assassinated in April 1968?",
+      "options": ["Atlanta", "Memphis", "Selma", "Washington, DC"],
+      "explanation": "He was thirty-nine. He did not live to see his dream fulfilled, but the civil rights laws he helped bring about still protect millions.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar werd King in april 1968 vermoord?",
+          "options": ["Atlanta", "Memphis", "Selma", "Washington, DC"],
+          "explanation": "Hij was negenendertig. Hij maakte de vervulling van zijn droom niet mee, maar de burgerrechtenwetten die hij mee afdwong beschermen nog steeds miljoenen mensen."
+        },
+        "fr": {
+          "question": "Où King fut-il assassiné en avril 1968 ?",
+          "options": ["Atlanta", "Memphis", "Selma", "Washington"],
+          "explanation": "Il avait trente-neuf ans. Il ne vit pas son rêve s'accomplir, mais les lois sur les droits civiques qu'il contribua à obtenir protègent encore des millions de personnes."
+        },
+        "de": {
+          "question": "Wo wurde King im April 1968 ermordet?",
+          "options": ["Atlanta", "Memphis", "Selma", "Washington, D.C."],
+          "explanation": "Er war neununddreißig. Die Erfüllung seines Traums erlebte er nicht, doch die Bürgerrechtsgesetze, die er mit durchsetzte, schützen bis heute Millionen."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "6cd30952-fa2b-4d24-971f-76d4af25de46",
+      "chapter_index": 3,
+      "correctie": {
+        "question": "How long did the Montgomery Bus Boycott last?",
+        "options": ["54 days", "90 days", "381 days", "Just over two years"],
+        "correct_answer": 2,
+        "explanation": "It ended only when the Supreme Court ruled bus segregation unconstitutional. King was still in his twenties, and no longer a local pastor but a national figure."
+      },
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe lang duurde de busboycot van Montgomery?",
+          "options": ["54 dagen", "90 dagen", "381 dagen", "Iets meer dan twee jaar"],
+          "explanation": "Hij eindigde pas toen het Hooggerechtshof rassenscheiding in bussen ongrondwettig verklaarde. King was nog geen dertig, en geen plaatselijke dominee meer maar een landelijke figuur."
+        },
+        "fr": {
+          "question": "Combien de temps dura le boycott des bus de Montgomery ?",
+          "options": ["54 jours", "90 jours", "381 jours", "Un peu plus de deux ans"],
+          "explanation": "Il ne prit fin que lorsque la Cour suprême déclara la ségrégation dans les bus inconstitutionnelle. King n'avait pas trente ans et n'était plus un pasteur local, mais une figure nationale."
+        },
+        "de": {
+          "question": "Wie lange dauerte der Busboykott von Montgomery?",
+          "options": ["54 Tage", "90 Tage", "381 Tage", "Etwas mehr als zwei Jahre"],
+          "explanation": "Er endete erst, als der Oberste Gerichtshof die Rassentrennung in Bussen für verfassungswidrig erklärte. King war noch keine dreißig und kein örtlicher Pastor mehr, sondern eine landesweite Figur."
+        }
+      }
+    },
+    {
+      "id": "02f6c13f-42e0-4fdf-8bf3-be367621e90c",
+      "chapter_index": 5,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoeveel mensen kwamen er op 28 augustus 1963 bijeen in Washington?",
+          "options": ["Zo'n 20.000", "Zo'n 75.000", "Meer dan 200.000", "Meer dan twee miljoen"],
+          "explanation": "Het was de grootste politieke betoging in de Amerikaanse geschiedenis tot dan toe. Het Congres nam het jaar daarop de Civil Rights Act aan, en de mars wordt algemeen gezien als de duw die daarvoor nodig was."
+        },
+        "fr": {
+          "question": "Combien de personnes se rassemblèrent à Washington le 28 août 1963 ?",
+          "options": ["Environ 20 000", "Environ 75 000", "Plus de 200 000", "Plus de deux millions"],
+          "explanation": "Ce fut la plus grande manifestation politique de l'histoire américaine jusque-là. Le Congrès vota le Civil Rights Act l'année suivante, et la marche est largement considérée comme ce qui l'a fait adopter."
+        },
+        "de": {
+          "question": "Wie viele Menschen versammelten sich am 28. August 1963 in Washington?",
+          "options": ["Etwa 20.000", "Etwa 75.000", "Mehr als 200.000", "Mehr als zwei Millionen"],
+          "explanation": "Es war die bis dahin größte politische Demonstration der amerikanischen Geschichte. Der Kongress verabschiedete im Jahr darauf den Civil Rights Act, und der Marsch gilt weithin als der Anstoß dafür."
+        }
+      }
+    },
+    {
+      "id": "64ce23a7-f0b6-48ed-96fe-9babf0ac9c47",
+      "chapter_index": 6,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke wet volgde op de mars van Selma naar Montgomery in 1965?",
+          "options": ["De Voting Rights Act van 1965", "De Civil Rights Act van 1964", "Een uitspraak van het Hooggerechtshof over interstatelijke bussen", "Het wetsvoorstel van de Poor People's Campaign"],
+          "explanation": "De politie viel de betogers aan, en de landelijke verontwaardiging deed het politieke werk dat petities niet hadden gedaan. King had maanden eerder, op zijn vijfendertigste, de Nobelprijs voor de Vrede gekregen."
+        },
+        "fr": {
+          "question": "Quelle loi suivit la marche de Selma à Montgomery en 1965 ?",
+          "options": ["Le Voting Rights Act de 1965", "Le Civil Rights Act de 1964", "Un arrêt de la Cour suprême sur les bus entre États", "Le projet de loi de la Poor People's Campaign"],
+          "explanation": "La police attaqua les marcheurs, et l'indignation nationale fit le travail politique que les pétitions n'avaient pas fait. King avait reçu le prix Nobel de la paix quelques mois plus tôt, à trente-cinq ans."
+        },
+        "de": {
+          "question": "Welches Gesetz folgte auf den Marsch von Selma nach Montgomery 1965?",
+          "options": ["Der Voting Rights Act von 1965", "Der Civil Rights Act von 1964", "Ein Urteil des Obersten Gerichtshofs zu Überlandbussen", "Der Gesetzentwurf der Poor People's Campaign"],
+          "explanation": "Die Polizei griff die Marschierenden an, und die landesweite Empörung leistete die politische Arbeit, die Petitionen nicht geschafft hatten. King hatte wenige Monate zuvor mit fünfunddreißig den Friedensnobelpreis erhalten."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "In whose Florence workshop did the young Leonardo train?",
+      "options": ["Michelangelo", "Andrea del Verrocchio", "Raphael", "Titian"],
+      "explanation": "As the illegitimate son of a notary he could not go to university. In Verrocchio's workshop painters, sculptors and engineers worked side by side, and art and science stopped being separate things for him.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "In wiens Florentijnse werkplaats ging de jonge Leonardo in de leer?",
+          "options": ["Michelangelo", "Andrea del Verrocchio", "Rafaël", "Titiaan"],
+          "explanation": "Als onwettige zoon van een notaris mocht hij niet naar de universiteit. In de werkplaats van Verrocchio werkten schilders, beeldhouwers en ingenieurs zij aan zij, en hielden kunst en wetenschap voor hem op aparte dingen te zijn."
+        },
+        "fr": {
+          "question": "Dans l'atelier florentin de qui le jeune Léonard se forma-t-il ?",
+          "options": ["Michel-Ange", "Andrea del Verrocchio", "Raphaël", "Titien"],
+          "explanation": "Fils illégitime d'un notaire, il ne pouvait pas aller à l'université. Dans l'atelier de Verrocchio, peintres, sculpteurs et ingénieurs travaillaient côte à côte, et pour lui l'art et la science cessèrent d'être deux choses séparées."
+        },
+        "de": {
+          "question": "In wessen Florentiner Werkstatt ging der junge Leonardo in die Lehre?",
+          "options": ["Michelangelo", "Andrea del Verrocchio", "Raffael", "Tizian"],
+          "explanation": "Als unehelicher Sohn eines Notars durfte er nicht studieren. In Verrocchios Werkstatt arbeiteten Maler, Bildhauer und Ingenieure Seite an Seite, und Kunst und Wissenschaft waren für ihn keine getrennten Dinge mehr."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Why did Leonardo dissect corpses?",
+      "options": ["He was training as a surgeon", "To paint the human body accurately", "On the orders of the Church", "To sell anatomy books"],
+      "explanation": "It was controversial and dangerous. His drawings came out so precise that modern surgeons study them, and he grasped how the heart worked centuries before medicine could prove it.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom ontleedde Leonardo lijken?",
+          "options": ["Hij leerde voor chirurg", "Om het menselijk lichaam precies te kunnen schilderen", "In opdracht van de Kerk", "Om anatomieboeken te verkopen"],
+          "explanation": "Het was omstreden en gevaarlijk. Zijn tekeningen werden zo nauwkeurig dat hedendaagse chirurgen ze bestuderen, en hij begreep de werking van het hart eeuwen voordat de geneeskunde het kon bewijzen."
+        },
+        "fr": {
+          "question": "Pourquoi Léonard disséquait-il des cadavres ?",
+          "options": ["Il se formait à la chirurgie", "Pour peindre le corps humain avec exactitude", "Sur ordre de l'Église", "Pour vendre des livres d'anatomie"],
+          "explanation": "C'était controversé et dangereux. Ses dessins furent si précis que des chirurgiens les étudient encore, et il comprit le fonctionnement du cœur des siècles avant que la médecine ne puisse le prouver."
+        },
+        "de": {
+          "question": "Warum sezierte Leonardo Leichen?",
+          "options": ["Er ließ sich zum Chirurgen ausbilden", "Um den menschlichen Körper genau malen zu können", "Im Auftrag der Kirche", "Um Anatomiebücher zu verkaufen"],
+          "explanation": "Das war umstritten und gefährlich. Seine Zeichnungen wurden so genau, dass heutige Chirurgen sie studieren, und er verstand die Arbeit des Herzens Jahrhunderte, bevor die Medizin es beweisen konnte."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What did Leonardo watch for hours while designing his flying machines?",
+      "options": ["Birds", "Kites", "Falling leaves", "Clouds"],
+      "explanation": "He sketched their wings and theorised about air currents, and drew parachutes and helicopter-like machines centuries before they existed. He never flew himself.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar keek Leonardo urenlang naar terwijl hij zijn vliegmachines ontwierp?",
+          "options": ["Vogels", "Vliegers", "Vallende bladeren", "Wolken"],
+          "explanation": "Hij schetste hun vleugels, dacht na over luchtstromen en tekende parachutes en helikopterachtige machines eeuwen voordat ze bestonden. Zelf heeft hij nooit gevlogen."
+        },
+        "fr": {
+          "question": "Qu'observait Léonard pendant des heures en concevant ses machines volantes ?",
+          "options": ["Les oiseaux", "Les cerfs-volants", "Les feuilles qui tombent", "Les nuages"],
+          "explanation": "Il dessinait leurs ailes, réfléchissait aux courants d'air et imagina parachutes et engins proches de l'hélicoptère des siècles avant leur existence. Lui-même ne vola jamais."
+        },
+        "de": {
+          "question": "Was beobachtete Leonardo stundenlang, als er seine Flugmaschinen entwarf?",
+          "options": ["Vögel", "Drachen", "Fallende Blätter", "Wolken"],
+          "explanation": "Er skizzierte ihre Flügel, dachte über Luftströmungen nach und entwarf Fallschirme und hubschrauberartige Maschinen Jahrhunderte vor ihrer Erfindung. Selbst flog er nie."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Which painting did Leonardo make after returning to Florence?",
+      "options": ["The Last Supper", "The Mona Lisa", "The Birth of Venus", "Girl with a Pearl Earring"],
+      "explanation": "Her famous smile comes from his command of light and shadow, which lets the expression shift as you look at it. The Last Supper, by contrast, was painted on a wall in Milan.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk schilderij maakte Leonardo na zijn terugkeer in Florence?",
+          "options": ["Het Laatste Avondmaal", "De Mona Lisa", "De geboorte van Venus", "Meisje met de parel"],
+          "explanation": "Haar beroemde glimlach komt van zijn beheersing van licht en schaduw, waardoor de uitdrukking verschuift terwijl je kijkt. Het Laatste Avondmaal schilderde hij juist op een muur in Milaan."
+        },
+        "fr": {
+          "question": "Quel tableau Léonard peignit-il après son retour à Florence ?",
+          "options": ["La Cène", "La Joconde", "La Naissance de Vénus", "La Jeune Fille à la perle"],
+          "explanation": "Son célèbre sourire vient de sa maîtrise de la lumière et de l'ombre, qui fait changer l'expression à mesure qu'on la regarde. La Cène, elle, fut peinte sur un mur à Milan."
+        },
+        "de": {
+          "question": "Welches Gemälde schuf Leonardo nach seiner Rückkehr nach Florenz?",
+          "options": ["Das Abendmahl", "Die Mona Lisa", "Die Geburt der Venus", "Das Mädchen mit dem Perlenohrring"],
+          "explanation": "Ihr berühmtes Lächeln entsteht durch seine Beherrschung von Licht und Schatten, die den Ausdruck beim Betrachten verändert. Das Abendmahl dagegen malte er auf eine Wand in Mailand."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What made Leonardo the model of a Renaissance mind?",
+      "options": ["He finished everything he started", "He treated art and science as one pursuit", "He mastered Latin and Greek", "He was the richest artist of his age"],
+      "explanation": "He left many projects unfinished and mastered no single field completely. What he had was the conviction that everything was worth understanding.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat maakte Leonardo tot het voorbeeld van de renaissancegeest?",
+          "options": ["Hij maakte alles af wat hij begon", "Hij zag kunst en wetenschap als één zoektocht", "Hij beheerste Latijn en Grieks", "Hij was de rijkste kunstenaar van zijn tijd"],
+          "explanation": "Hij liet veel projecten onaf en beheerste geen enkel vak helemaal. Wat hij had, was de overtuiging dat alles het begrijpen waard was."
+        },
+        "fr": {
+          "question": "Qu'est-ce qui fit de Léonard le modèle de l'esprit de la Renaissance ?",
+          "options": ["Il achevait tout ce qu'il commençait", "Il voyait l'art et la science comme une seule quête", "Il maîtrisait le latin et le grec", "Il était l'artiste le plus riche de son temps"],
+          "explanation": "Il laissa de nombreux projets inachevés et ne maîtrisa complètement aucun domaine. Ce qu'il avait, c'était la conviction que tout méritait d'être compris."
+        },
+        "de": {
+          "question": "Was machte Leonardo zum Vorbild des Renaissance-Geistes?",
+          "options": ["Er vollendete alles, was er begann", "Er sah Kunst und Wissenschaft als ein Streben", "Er beherrschte Latein und Griechisch", "Er war der reichste Künstler seiner Zeit"],
+          "explanation": "Er ließ viele Projekte unvollendet und beherrschte kein Fach ganz. Was er hatte, war die Überzeugung, dass alles es wert war, verstanden zu werden."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "ab07ed3b-87b4-463a-ac4a-c308942610a8",
+      "chapter_index": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat bood Leonardo vooral aan toen hij rond 1482 hertog Ludovico Sforza van Milaan schreef?",
+          "options": ["Zijn talent als schilder van altaarstukken", "Zijn diensten als ingenieur en wapenontwerper", "Zijn kennis van Latijn en filosofie", "Zijn ervaring met marmerbeeldhouwen"],
+          "explanation": "Hij begon met militair en bouwkundig werk, want daarvoor betaalden vorsten. De schilderopdrachten volgden toen hij eenmaal aan het hof zat."
+        },
+        "fr": {
+          "question": "Lorsque Léonard écrivit au duc Ludovic Sforza de Milan vers 1482, qu'offrait-il surtout ?",
+          "options": ["Son talent de peintre de retables", "Ses services d'ingénieur et de concepteur d'armes", "Sa connaissance du latin et de la philosophie", "Son expérience de la sculpture sur marbre"],
+          "explanation": "Il mit en avant le travail militaire et architectural, parce que c'était ce que payaient les princes. Les commandes de peinture suivirent une fois qu'il fut à la cour."
+        },
+        "de": {
+          "question": "Was bot Leonardo vor allem an, als er um 1482 an Herzog Ludovico Sforza von Mailand schrieb?",
+          "options": ["Sein Können als Maler von Altarbildern", "Seine Dienste als Ingenieur und Waffenkonstrukteur", "Seine Kenntnisse in Latein und Philosophie", "Seine Erfahrung als Marmorbildhauer"],
+          "explanation": "Er stellte militärische und bauliche Arbeit voran, denn dafür bezahlten Fürsten. Die Malaufträge folgten, als er erst am Hof war."
+        }
+      }
+    },
+    {
+      "id": "0344a6e1-3cb8-4483-bbc5-1b2f5f7c8ffb",
+      "chapter_index": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe schreef Leonardo de duizenden aantekeningen in zijn Milanese notitieboeken?",
+          "options": ["In Latijnse verzen", "In spiegelschrift, achterstevoren", "In een cijfercode", "In Grieks steno"],
+          "explanation": "Het omgekeerde handschrift hield zijn bladzijden zo goed als privé, en het versnipperde zijn ideeën eeuwenlang – veel ervan werd pas lang na zijn dood gelezen of gepubliceerd."
+        },
+        "fr": {
+          "question": "Comment Léonard écrivit-il les milliers d'observations de ses carnets milanais ?",
+          "options": ["En vers latins", "En écriture spéculaire, à l'envers", "En chiffres codés", "En sténographie grecque"],
+          "explanation": "L'écriture inversée gardait ses pages presque privées, et elle dispersa ses idées pendant des siècles – une grande partie ne fut lue ou publiée que longtemps après sa mort."
+        },
+        "de": {
+          "question": "Wie schrieb Leonardo die Tausenden Beobachtungen in seinen Mailänder Notizbüchern?",
+          "options": ["In lateinischen Versen", "In Spiegelschrift, rückwärts", "In verschlüsselten Zahlen", "In griechischer Kurzschrift"],
+          "explanation": "Die umgekehrte Schrift hielt seine Seiten praktisch privat und zerstreute seine Ideen über Jahrhunderte – vieles wurde erst lange nach seinem Tod gelesen oder veröffentlicht."
+        }
+      }
+    },
+    {
+      "id": "351531e2-ec79-4967-958a-b507e7035748",
+      "chapter_index": 7,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoeveel voltooide schilderijen liet Leonardo na bij zijn dood in 1519?",
+          "options": ["Minder dan twintig", "Ongeveer vijftig", "Meer dan honderd", "Precies zeven"],
+          "explanation": "Tegenover die paar voltooide panelen staan duizenden bladzijden aantekeningen. De onafgemaakte opdrachten kostten hem bij leven beschermheren en maakten na zijn dood zijn naam."
+        },
+        "fr": {
+          "question": "Combien de tableaux achevés Léonard laissa-t-il à sa mort en 1519 ?",
+          "options": ["Moins de vingt", "Une cinquantaine", "Plus de cent", "Sept exactement"],
+          "explanation": "Face à ces quelques panneaux achevés, il y a des milliers de pages de carnets. Les commandes inachevées lui coûtèrent des mécènes de son vivant et firent sa réputation après sa mort."
+        },
+        "de": {
+          "question": "Wie viele vollendete Gemälde hinterließ Leonardo bei seinem Tod 1519?",
+          "options": ["Weniger als zwanzig", "Etwa fünfzig", "Mehr als hundert", "Genau sieben"],
+          "explanation": "Diesen wenigen vollendeten Tafeln stehen Tausende Notizbuchseiten gegenüber. Die unvollendeten Aufträge kosteten ihn zu Lebzeiten Gönner und begründeten nach seinem Tod seinen Ruf."
+        }
+      }
+    }
+  ]
+}

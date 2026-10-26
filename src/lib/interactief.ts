@@ -1,3 +1,4 @@
+import type { TaalCode } from '@/constants/types';
 import { supabase } from '@/lib/supabase';
 import { foutTekst } from '@/store/sync-hulp';
 
@@ -17,13 +18,19 @@ import { foutTekst } from '@/store/sync-hulp';
  * maar alleen als hij geladen is: offline of zonder vragen rondt het hoofdstuk gewoon af.
  */
 
-/** Eén meerkeuzevraag met een goed antwoord. Antwoorden worden niet bewaard — zie `story-quiz`. */
-export type Quiz = {
+/** De tekst van een quiz in één taal. De opties staan in dezelfde volgorde als in het Engels. */
+type QuizTekst = { vraag: string; opties: string[]; toelichting: string | null };
+
+/**
+ * Eén meerkeuzevraag met een goed antwoord. Antwoorden worden niet bewaard — zie `story-quiz`.
+ *
+ * `vraag`/`opties`/`toelichting` zijn het Engels; de andere talen staan in `vertalingen`
+ * (kolom `story_quizzes.vertalingen`, sinds 1.4). Lees een quiz voor het scherm via `quizInTaal`.
+ */
+export type Quiz = QuizTekst & {
   id: string;
-  vraag: string;
-  opties: string[];
   juisteAntwoord: number;
-  toelichting: string | null;
+  vertalingen: Partial<Record<TaalCode, QuizTekst>>;
 };
 
 /** Een peiling zonder goed antwoord. `resultaten` is altijd even lang als `opties`. */
@@ -56,6 +63,15 @@ export const LEGE_INTERACTIE: HoofdstukInteractie = {
   polls: [],
   keuzepunten: [],
 };
+
+/**
+ * Of het vragenpaneel na "Mark Complete" iets te vragen heeft. Sinds 1.4 toont dat paneel alleen
+ * quizvragen; een hoofdstuk met alleen een peiling zou anders een paneel openen dat niets toont,
+ * en de lezer zat vast.
+ */
+export function heeftVragen(interactie: HoofdstukInteractie): boolean {
+  return interactie.quizzes.length > 0;
+}
 
 export function isLeeg(interactie: HoofdstukInteractie): boolean {
   return (
@@ -106,7 +122,35 @@ function leesQuiz(rij: Record<string, unknown>): Quiz | null {
     opties,
     juisteAntwoord: juist,
     toelichting: typeof rij.explanation === 'string' ? rij.explanation : null,
+    vertalingen: leesQuizVertalingen(rij.vertalingen, opties.length),
   };
+}
+
+/**
+ * Een vertaling telt alleen als hij precies evenveel opties heeft als het Engels: `juisteAntwoord`
+ * is een index die voor alle talen geldt, dus een vertaling met een optie te weinig zou het goede
+ * antwoord naar een andere optie verschuiven. Zo'n taal valt terug op het Engels.
+ */
+function leesQuizVertalingen(waarde: unknown, aantalOpties: number): Quiz['vertalingen'] {
+  if (!waarde || typeof waarde !== 'object' || Array.isArray(waarde)) return {};
+  const uit: Quiz['vertalingen'] = {};
+  for (const [taal, tekst] of Object.entries(waarde as Record<string, unknown>)) {
+    if (!tekst || typeof tekst !== 'object') continue;
+    const { question, options, explanation } = tekst as Record<string, unknown>;
+    if (typeof question !== 'string' || !isTekstArray(options) || options.length !== aantalOpties) continue;
+    uit[taal as TaalCode] = {
+      vraag: question,
+      opties: options,
+      toelichting: typeof explanation === 'string' ? explanation : null,
+    };
+  }
+  return uit;
+}
+
+/** De quiz in de taal van de lezer, met het Engels als terugval — dezelfde regel als `v()`. */
+export function quizInTaal(quiz: Quiz, taal: TaalCode): Quiz {
+  const tekst = quiz.vertalingen[taal];
+  return tekst ? { ...quiz, ...tekst } : quiz;
 }
 
 function leesPoll(rij: Record<string, unknown>): Poll | null {

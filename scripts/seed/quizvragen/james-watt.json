@@ -1,0 +1,189 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What trade did the young Watt go to London to learn?",
+      "options": ["Ship carpentry", "Instrument making", "Blacksmithing", "Printing"],
+      "explanation": "Precision instruments for science and navigation. After a year he went home to Scotland, and that skill later put him in a workshop at the University of Glasgow.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk vak ging de jonge Watt in Londen leren?",
+          "options": ["Scheepstimmerman", "Instrumentmaker", "Smid", "Drukker"],
+          "explanation": "Precisie-instrumenten voor wetenschap en navigatie. Na een jaar keerde hij terug naar Schotland, en dat vak bracht hem later in een werkplaats van de universiteit van Glasgow."
+        },
+        "fr": {
+          "question": "Quel métier le jeune Watt alla-t-il apprendre à Londres ?",
+          "options": ["Charpentier de marine", "Fabricant d'instruments", "Forgeron", "Imprimeur"],
+          "explanation": "Des instruments de précision pour la science et la navigation. Au bout d'un an, il rentra en Écosse, et ce savoir-faire le mena plus tard dans un atelier de l'université de Glasgow."
+        },
+        "de": {
+          "question": "Welches Handwerk ging der junge Watt in London lernen?",
+          "options": ["Schiffszimmermann", "Instrumentenbauer", "Schmied", "Drucker"],
+          "explanation": "Präzisionsinstrumente für Wissenschaft und Navigation. Nach einem Jahr kehrte er nach Schottland zurück, und dieses Handwerk brachte ihn später in eine Werkstatt der Universität Glasgow."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Why could factories with Watt's engines be built almost anywhere?",
+      "options": ["Coal was found everywhere", "They no longer needed a river for waterwheels", "The engines needed no workers", "The government paid for new sites"],
+      "explanation": "Mills, foundries and breweries were freed from the riverbank. Watt himself doubted steam for transport, but within decades of his death it drove locomotives and steamships.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom konden fabrieken met Watts machines bijna overal gebouwd worden?",
+          "options": ["Er was overal steenkool", "Ze hadden geen rivier meer nodig voor waterraderen", "De machines hadden geen arbeiders nodig", "De overheid betaalde nieuwe locaties"],
+          "explanation": "Spinnerijen, gieterijen en brouwerijen waren niet langer aan de rivieroever gebonden. Watt zelf twijfelde aan stoom voor vervoer, maar binnen enkele decennia na zijn dood dreef het locomotieven en stoomschepen aan."
+        },
+        "fr": {
+          "question": "Pourquoi les usines équipées des machines de Watt pouvaient-elles s'installer presque partout ?",
+          "options": ["Il y avait du charbon partout", "Elles n'avaient plus besoin d'une rivière pour les roues à aubes", "Les machines n'exigeaient aucun ouvrier", "L'État payait les nouveaux sites"],
+          "explanation": "Filatures, fonderies et brasseries furent libérées des berges. Watt lui-même doutait de la vapeur pour les transports, mais quelques décennies après sa mort elle faisait avancer locomotives et bateaux."
+        },
+        "de": {
+          "question": "Warum konnten Fabriken mit Watts Maschinen fast überall gebaut werden?",
+          "options": ["Kohle gab es überall", "Sie brauchten keinen Fluss mehr für Wasserräder", "Die Maschinen brauchten keine Arbeiter", "Der Staat bezahlte neue Standorte"],
+          "explanation": "Spinnereien, Gießereien und Brauereien waren nicht mehr ans Flussufer gebunden. Watt selbst zweifelte an Dampf für den Verkehr, doch wenige Jahrzehnte nach seinem Tod trieb er Lokomotiven und Dampfschiffe an."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What does the unit named after James Watt measure?",
+      "options": ["Voltage", "Power", "Electric current", "Temperature"],
+      "explanation": "The watt is used for both electrical and mechanical power. Watt himself lived to eighty-three and saw the age of steam he had helped begin.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat meet de eenheid die naar James Watt is genoemd?",
+          "options": ["Spanning", "Vermogen", "Elektrische stroom", "Temperatuur"],
+          "explanation": "De watt wordt gebruikt voor elektrisch én mechanisch vermogen. Watt zelf werd drieëntachtig en zag het stoomtijdperk aanbreken dat hij mee had ingeluid."
+        },
+        "fr": {
+          "question": "Que mesure l'unité qui porte le nom de James Watt ?",
+          "options": ["La tension", "La puissance", "Le courant électrique", "La température"],
+          "explanation": "Le watt sert à mesurer la puissance électrique comme mécanique. Watt lui-même vécut jusqu'à quatre-vingt-trois ans et vit naître l'âge de la vapeur qu'il avait contribué à lancer."
+        },
+        "de": {
+          "question": "Was misst die nach James Watt benannte Einheit?",
+          "options": ["Spannung", "Leistung", "Elektrischen Strom", "Temperatur"],
+          "explanation": "Das Watt misst elektrische wie mechanische Leistung. Watt selbst wurde dreiundachtzig und erlebte das Dampfzeitalter, das er mit eingeleitet hatte."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Which of these came with the Industrial Revolution as well as its wealth?",
+      "options": ["The end of coal mining", "Child labour in factories", "A fall in world trade", "Fewer people in cities"],
+      "explanation": "Overcrowded cities, pollution and the breakdown of old ways of life came too. Living standards rose eventually, but only after years of hardship.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat bracht de Industriële Revolutie naast welvaart ook met zich mee?",
+          "options": ["Het einde van de steenkolenmijnen", "Kinderarbeid in fabrieken", "Een daling van de wereldhandel", "Minder mensen in de steden"],
+          "explanation": "Ook overvolle steden, vervuiling en het verdwijnen van oude manieren van leven. De levensstandaard steeg uiteindelijk, maar pas na jaren van ontbering."
+        },
+        "fr": {
+          "question": "Qu'apporta aussi la révolution industrielle, en plus de la richesse ?",
+          "options": ["La fin des mines de charbon", "Le travail des enfants dans les usines", "Un recul du commerce mondial", "Moins d'habitants dans les villes"],
+          "explanation": "Aussi des villes surpeuplées, la pollution et la disparition de modes de vie anciens. Le niveau de vie finit par s'élever, mais seulement après des années de misère."
+        },
+        "de": {
+          "question": "Was brachte die Industrielle Revolution neben dem Wohlstand auch mit sich?",
+          "options": ["Das Ende des Kohlebergbaus", "Kinderarbeit in Fabriken", "Einen Rückgang des Welthandels", "Weniger Menschen in den Städten"],
+          "explanation": "Auch überfüllte Städte, Umweltverschmutzung und das Ende alter Lebensweisen. Der Lebensstandard stieg schließlich, aber erst nach Jahren der Not."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Which way of working did Watt help make the basis of engineering?",
+      "options": ["Build first, measure later", "Find the waste, reason it out, then improve", "Copy what works abroad", "Trust instinct over calculation"],
+      "explanation": "It is exactly how he fixed the Newcomen engine: he saw where the fuel went, worked out why, and changed the design until the waste was gone.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke werkwijze hielp Watt tot de basis van de techniek te maken?",
+          "options": ["Eerst bouwen, later meten", "De verspilling vinden, doordenken en dan verbeteren", "Kopiëren wat in het buitenland werkt", "Gevoel boven berekening"],
+          "explanation": "Zo repareerde hij precies de machine van Newcomen: hij zag waar de brandstof bleef, begreep waarom en paste het ontwerp aan tot de verspilling weg was."
+        },
+        "fr": {
+          "question": "Quelle méthode de travail Watt contribua-t-il à poser comme base de l'ingénierie ?",
+          "options": ["Construire d'abord, mesurer ensuite", "Repérer le gaspillage, le raisonner, puis améliorer", "Copier ce qui marche à l'étranger", "Se fier à l'instinct plutôt qu'au calcul"],
+          "explanation": "C'est exactement ainsi qu'il corrigea la machine de Newcomen : il vit où partait le combustible, comprit pourquoi et modifia la conception jusqu'à supprimer le gaspillage."
+        },
+        "de": {
+          "question": "Welche Arbeitsweise half Watt zur Grundlage des Ingenieurwesens zu machen?",
+          "options": ["Erst bauen, später messen", "Die Verschwendung finden, durchdenken, dann verbessern", "Kopieren, was im Ausland funktioniert", "Gefühl vor Berechnung"],
+          "explanation": "Genau so verbesserte er Newcomens Maschine: Er sah, wo der Brennstoff blieb, verstand warum und änderte die Konstruktion, bis die Verschwendung weg war."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "fb19a07a-3c8a-4597-84df-7bda60a104d2",
+      "chapter_index": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was de hoofdfout van de Newcomen-machine volgens Watt?",
+          "options": ["Hij kon niet groot genoeg gebouwd worden", "Dezelfde kamer werd bij elke slag verhit en afgekoeld", "Hij vergde te veel geschoolde bedieners", "Zijn cilinder was van het verkeerde metaal"],
+          "explanation": "Newcomen-machines pompten al tientallen jaren mijnwater weg toen Watt een model kreeg om te repareren – niemand vond de verspilling de moeite waard omdat steenkool bij de mijn bijna gratis was."
+        },
+        "fr": {
+          "question": "Quel était le défaut central de la machine de Newcomen relevé par Watt ?",
+          "options": ["Elle ne pouvait pas être construite assez grande", "La même chambre était chauffée puis refroidie à chaque cycle", "Elle exigeait trop d'opérateurs qualifiés", "Son cylindre était fait du mauvais métal"],
+          "explanation": "Les machines de Newcomen pompaient l'eau des mines depuis des décennies quand on confia un modèle à réparer à Watt – personne n'avait jugé le gaspillage digne d'être corrigé, car le charbon était presque gratuit au pied de la mine."
+        },
+        "de": {
+          "question": "Was war der zentrale Fehler der Newcomen-Maschine, den Watt erkannte?",
+          "options": ["Sie ließ sich nicht groß genug bauen", "Dieselbe Kammer wurde bei jedem Takt erhitzt und abgekühlt", "Sie brauchte zu viele geschulte Bediener", "Ihr Zylinder bestand aus dem falschen Metall"],
+          "explanation": "Newcomen-Maschinen pumpten schon seit Jahrzehnten Grubenwasser ab, als Watt ein Modell zur Reparatur bekam – niemand hielt die Verschwendung für behebenswert, weil Kohle an der Zeche fast nichts kostete."
+        }
+      }
+    },
+    {
+      "id": "6025bab0-61be-4aad-a8d7-b3b97fe25a07",
+      "chapter_index": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoeveel brandstof gebruikte Watts verbeterde ontwerp vergeleken met een Newcomen-machine voor hetzelfde werk?",
+          "options": ["Ongeveer de helft", "Ongeveer een kwart", "Ongeveer driekwart", "Ongeveer evenveel, maar sneller"],
+          "explanation": "Die besparing verkocht de machines: Boulton en Watt rekenden klanten vaak een deel van de brandstof die ze niet meer verbruikten."
+        },
+        "fr": {
+          "question": "Combien de combustible la machine améliorée de Watt consommait-elle par rapport à une machine de Newcomen pour le même travail ?",
+          "options": ["Environ la moitié", "Environ un quart", "Environ les trois quarts", "À peu près autant, mais plus vite"],
+          "explanation": "C'est l'économie qui faisait vendre les machines : Boulton et Watt facturaient souvent aux clients une part du combustible qu'ils ne brûlaient plus."
+        },
+        "de": {
+          "question": "Wie viel Brennstoff verbrauchte Watts verbesserte Konstruktion im Vergleich zu einer Newcomen-Maschine bei gleicher Arbeit?",
+          "options": ["Etwa die Hälfte", "Etwa ein Viertel", "Etwa drei Viertel", "Etwa gleich viel, aber schneller"],
+          "explanation": "Die Ersparnis verkaufte die Maschinen: Boulton und Watt berechneten Kunden oft einen Anteil des Brennstoffs, den sie nicht mehr verfeuerten."
+        }
+      }
+    },
+    {
+      "id": "2a2447a9-7094-4513-9e01-d0e9e4d065d7",
+      "chapter_index": 5,
+      "vertalingen": {
+        "nl": {
+          "question": "Bij welke groep bij Birmingham sloot Watt zich aan om over wetenschap en de toepassingen ervan te praten?",
+          "options": ["De Royal Society", "De Lunar Society", "De Glasgow Philosophical Club", "De Society of Instrument Makers"],
+          "explanation": "De Lunar Society was informeel en kwam samen bij de leden thuis, maar haar gesprekken vormden een groot deel van de Britse industrie – Boulton hoorde bij dezelfde kring."
+        },
+        "fr": {
+          "question": "Quel cercle près de Birmingham Watt rejoignit-il pour discuter de science et de ses applications ?",
+          "options": ["La Royal Society", "La Lunar Society", "Le Glasgow Philosophical Club", "La Society of Instrument Makers"],
+          "explanation": "La Lunar Society était informelle et se réunissait chez ses membres, mais ses conversations façonnèrent une grande partie de l'industrie britannique – Boulton appartenait au même cercle."
+        },
+        "de": {
+          "question": "Welcher Runde bei Birmingham schloss sich Watt an, um über Wissenschaft und ihren Nutzen zu sprechen?",
+          "options": ["Der Royal Society", "Der Lunar Society", "Dem Glasgow Philosophical Club", "Der Society of Instrument Makers"],
+          "explanation": "Die Lunar Society war informell und traf sich in den Häusern ihrer Mitglieder, doch ihre Gespräche prägten einen großen Teil der britischen Industrie – Boulton gehörte zum selben Kreis."
+        }
+      }
+    }
+  ]
+}

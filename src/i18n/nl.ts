@@ -538,6 +538,9 @@ const nl: DeepPartial<Vertalingen> = {
     vragenVolgende: 'Volgende vraag',
     vragenKlaar: 'Hoofdstuk afronden',
     vragenHint: 'Beantwoord om verder te gaan. Elk antwoord telt.',
+    phoxyVraag: 'Eentje voor jou!',
+    phoxyGoed: ['Goed gedaan!', 'Helemaal goed!', 'Jij kent je geschiedenis!'],
+    phoxyFout: ['Bijna! Volgende keer heb je hem.', 'Goed geprobeerd. Nu weet je het!', 'Geschiedenis is lastig. Ga zo door!'],
   },
   personage: {
     ontgrendeldTitel: 'Personage ontgrendeld!',

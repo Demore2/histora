@@ -514,6 +514,9 @@ const de: DeepPartial<Vertalingen> = {
     vragenVolgende: 'Nächste Frage',
     vragenKlaar: 'Kapitel abschließen',
     vragenHint: 'Antworte, um weiterzumachen. Jede Antwort zählt.',
+    phoxyVraag: 'Eine Frage für dich!',
+    phoxyGoed: ['Gut gemacht!', 'Genau richtig!', 'Du kennst dich mit Geschichte aus!'],
+    phoxyFout: ['Knapp daneben! Nächstes Mal klappt’s.', 'Guter Versuch. Jetzt weißt du’s!', 'Geschichte ist knifflig. Bleib dran!'],
   },
   personage: {
     ontgrendeldTitel: 'Figur freigeschaltet!',

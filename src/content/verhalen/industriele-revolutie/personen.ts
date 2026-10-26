@@ -569,7 +569,7 @@ export const thomas: Verhaal = {
       },
         {
           type: 'tekst',
-          inhoud: { en: 'Edison died on October 18, 1931, at the age of eighty-four. At his funeral, his colleague Henry Ford suggested that people turn off their electric lights for a minute in honor of Edison\'s passing. Across the United States, millions of electric lights went dark for one minute, a fitting tribute to the man who had lit up the modern world. The event symbolized how thoroughly Edison\'s inventions had transformed modern life. From the light in our homes to the power that runs our industries, Edison\'s legacy surrounds us.' }
+          inhoud: { en: 'Edison died on October 18, 1931, at the age of eighty-four. On the evening of his funeral, President Herbert Hoover asked Americans to dim or switch off their electric lights for one minute in honor of Edison\'s passing. Across the United States, millions of electric lights went dark for one minute, a fitting tribute to the man who had lit up the modern world. The event symbolized how thoroughly Edison\'s inventions had transformed modern life. From the light in our homes to the power that runs our industries, Edison\'s legacy surrounds us.' }
         }
       ]
     },

@@ -1,0 +1,189 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Where did Churchill's mother come from?",
+      "options": ["France", "America", "Ireland", "Canada"],
+      "explanation": "She was an American heiress; his father, Lord Randolph Churchill, was a leading Conservative. Winston was a mediocre pupil but a gifted writer, and his books about soldiering made him famous before politics did.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar kwam de moeder van Churchill vandaan?",
+          "options": ["Frankrijk", "Amerika", "Ierland", "Canada"],
+          "explanation": "Ze was een Amerikaanse erfgename; zijn vader, Lord Randolph Churchill, was een vooraanstaand conservatief politicus. Winston was een middelmatige leerling maar een begaafd schrijver, en zijn boeken over het soldatenleven maakten hem beroemd nog vóór de politiek dat deed."
+        },
+        "fr": {
+          "question": "D'où venait la mère de Churchill ?",
+          "options": ["De France", "D'Amérique", "D'Irlande", "Du Canada"],
+          "explanation": "C'était une riche héritière américaine ; son père, Lord Randolph Churchill, était un conservateur en vue. Élève médiocre mais écrivain doué, Winston devint célèbre par ses livres sur la vie de soldat avant de l'être par la politique."
+        },
+        "de": {
+          "question": "Woher stammte Churchills Mutter?",
+          "options": ["Aus Frankreich", "Aus Amerika", "Aus Irland", "Aus Kanada"],
+          "explanation": "Sie war eine amerikanische Erbin; sein Vater, Lord Randolph Churchill, ein führender Konservativer. Winston war ein mittelmäßiger Schüler, aber ein begabter Schreiber, und seine Bücher über das Soldatenleben machten ihn berühmt, noch bevor es die Politik tat."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What did Churchill offer the British people in his first speech as Prime Minister?",
+      "options": ["\"Peace in our time\"", "\"Blood, toil, tears and sweat\"", "\"Keep calm and carry on\"", "\"Liberty, equality, fraternity\""],
+      "explanation": "In May 1940, at sixty-five, he refused to negotiate with Hitler. \"Peace in our time\" had been Chamberlain's promise two years earlier.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat bood Churchill de Britten aan in zijn eerste toespraak als premier?",
+          "options": ["\"Vrede in onze tijd\"", "\"Bloed, zwoegen, tranen en zweet\"", "\"Blijf kalm en ga door\"", "\"Vrijheid, gelijkheid, broederschap\""],
+          "explanation": "In mei 1940, op zijn vijfenzestigste, weigerde hij met Hitler te onderhandelen. \"Vrede in onze tijd\" was twee jaar eerder de belofte van Chamberlain geweest."
+        },
+        "fr": {
+          "question": "Qu'offrit Churchill aux Britanniques dans son premier discours de Premier ministre ?",
+          "options": ["« La paix pour notre temps »", "« Du sang, de la peine, des larmes et de la sueur »", "« Restez calmes et continuez »", "« Liberté, égalité, fraternité »"],
+          "explanation": "En mai 1940, à soixante-cinq ans, il refusa de négocier avec Hitler. « La paix pour notre temps » avait été la promesse de Chamberlain deux ans plus tôt."
+        },
+        "de": {
+          "question": "Was bot Churchill den Briten in seiner ersten Rede als Premierminister an?",
+          "options": ["„Frieden für unsere Zeit“", "„Blut, Mühsal, Tränen und Schweiß“", "„Ruhe bewahren und weitermachen“", "„Freiheit, Gleichheit, Brüderlichkeit“"],
+          "explanation": "Im Mai 1940, mit fünfundsechzig, weigerte er sich, mit Hitler zu verhandeln. „Frieden für unsere Zeit“ war zwei Jahre zuvor Chamberlains Versprechen gewesen."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "How old was Churchill when he became Prime Minister again in 1951?",
+      "options": ["56", "66", "76", "86"],
+      "explanation": "His second term saw Britain build its own nuclear weapons. He retired in 1955 at eighty, but stayed an MP until 1964.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe oud was Churchill toen hij in 1951 opnieuw premier werd?",
+          "options": ["56", "66", "76", "86"],
+          "explanation": "In zijn tweede termijn bouwde Groot-Brittannië eigen kernwapens. Hij trad in 1955 af op zijn tachtigste, maar bleef tot 1964 parlementslid."
+        },
+        "fr": {
+          "question": "Quel âge avait Churchill quand il redevint Premier ministre en 1951 ?",
+          "options": ["56 ans", "66 ans", "76 ans", "86 ans"],
+          "explanation": "Pendant son second mandat, la Grande-Bretagne se dota de ses propres armes nucléaires. Il se retira en 1955 à quatre-vingts ans, mais resta député jusqu'en 1964."
+        },
+        "de": {
+          "question": "Wie alt war Churchill, als er 1951 erneut Premierminister wurde?",
+          "options": ["56", "66", "76", "86"],
+          "explanation": "In seiner zweiten Amtszeit baute Großbritannien eigene Atomwaffen. Er trat 1955 mit achtzig zurück, blieb aber bis 1964 Abgeordneter."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Which Nobel Prize did Churchill win in 1953?",
+      "options": ["Peace", "Literature", "Economics", "Physics"],
+      "explanation": "It honoured his war memoirs and historical writing, including the multi-volume The Second World War. For Churchill, words were a weapon.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke Nobelprijs won Churchill in 1953?",
+          "options": ["Vrede", "Literatuur", "Economie", "Natuurkunde"],
+          "explanation": "Hij kreeg hem voor zijn oorlogsmemoires en historische werk, waaronder het meerdelige The Second World War. Voor Churchill waren woorden een wapen."
+        },
+        "fr": {
+          "question": "Quel prix Nobel Churchill reçut-il en 1953 ?",
+          "options": ["La paix", "La littérature", "L'économie", "La physique"],
+          "explanation": "Il récompensait ses mémoires de guerre et ses écrits historiques, dont les nombreux volumes de La Seconde Guerre mondiale. Pour Churchill, les mots étaient une arme."
+        },
+        "de": {
+          "question": "Welchen Nobelpreis erhielt Churchill 1953?",
+          "options": ["Frieden", "Literatur", "Wirtschaft", "Physik"],
+          "explanation": "Er ehrte seine Kriegserinnerungen und Geschichtswerke, darunter das mehrbändige Der Zweite Weltkrieg. Für Churchill waren Worte eine Waffe."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "How old was Churchill when he died in 1965?",
+      "options": ["Seventy", "Eighty", "Ninety", "A hundred"],
+      "explanation": "His death was mourned worldwide as the end of an era. He is remembered above all for refusing to give in when others counselled surrender in 1940.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe oud was Churchill toen hij in 1965 stierf?",
+          "options": ["Zeventig", "Tachtig", "Negentig", "Honderd"],
+          "explanation": "Zijn dood werd wereldwijd betreurd als het einde van een tijdperk. Hij wordt vooral herinnerd omdat hij in 1940 weigerde toe te geven toen anderen aanraadden zich over te geven."
+        },
+        "fr": {
+          "question": "Quel âge avait Churchill à sa mort en 1965 ?",
+          "options": ["Soixante-dix ans", "Quatre-vingts ans", "Quatre-vingt-dix ans", "Cent ans"],
+          "explanation": "Sa mort fut pleurée dans le monde entier comme la fin d'une époque. On se souvient surtout de son refus de céder en 1940, quand d'autres conseillaient de capituler."
+        },
+        "de": {
+          "question": "Wie alt war Churchill, als er 1965 starb?",
+          "options": ["Siebzig", "Achtzig", "Neunzig", "Hundert"],
+          "explanation": "Sein Tod wurde weltweit als Ende einer Ära betrauert. In Erinnerung bleibt vor allem, dass er 1940 nicht nachgab, als andere zur Kapitulation rieten."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "da6b562b-d71a-40d6-a9a7-427b4170938b",
+      "chapter_index": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke veldtocht, gesteund door Churchill als Eerste Lord van de Admiraliteit, schaadde zijn naam en leidde tot zijn aftreden?",
+          "options": ["De slag om Gallipoli", "Het Somme-offensief", "De Noorse veldtocht", "Het beleg van Ladysmith"],
+          "explanation": "Door de zware verliezen werd hij een makkelijke zondebok, en hij bleef jarenlang een politieke paria die zijn aanzien terugwon met journalistiek en boeken."
+        },
+        "fr": {
+          "question": "Quelle campagne, soutenue par Churchill comme Premier Lord de l'Amirauté, nuisit à sa réputation et entraîna sa démission ?",
+          "options": ["L'expédition des Dardanelles", "L'offensive de la Somme", "La campagne de Norvège", "Le siège de Ladysmith"],
+          "explanation": "Les lourdes pertes en firent un bouc émissaire commode, et il resta des années un paria politique, regagnant son crédit par le journalisme et les livres."
+        },
+        "de": {
+          "question": "Welcher Feldzug, den Churchill als Erster Lord der Admiralität unterstützte, schadete seinem Ruf und führte zu seinem Rücktritt?",
+          "options": ["Die Schlacht von Gallipoli", "Die Somme-Offensive", "Der Norwegenfeldzug", "Die Belagerung von Ladysmith"],
+          "explanation": "Die schweren Verluste machten ihn zum bequemen Sündenbock, und er blieb jahrelang ein politischer Außenseiter, der sein Ansehen mit Journalismus und Büchern zurückgewann."
+        }
+      }
+    },
+    {
+      "id": "b054ef7f-1474-44ad-b827-ed0ccc222368",
+      "chapter_index": 4,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat overkwam Churchill in juli 1945, enkele weken na de capitulatie van Duitsland?",
+          "options": ["Hij werd oppositieleider na een verkiezingsnederlaag", "Hij trad af vanwege de atoombom", "Hij werd herkozen met een grote meerderheid", "Hij verliet het parlement helemaal"],
+          "explanation": "De Britse kiezers kozen voor Labour. Churchill vond dat het land hem slecht beloonde voor zijn leiderschap in de oorlog, maar hij bleef in het parlement in plaats van zich terug te trekken."
+        },
+        "fr": {
+          "question": "Que se passa-t-il pour Churchill en juillet 1945, quelques semaines après la capitulation allemande ?",
+          "options": ["Il devint chef de l'opposition après une défaite électorale", "Il démissionna à cause de la bombe atomique", "Il fut réélu avec une large majorité", "Il quitta complètement le Parlement"],
+          "explanation": "Les électeurs britanniques choisirent les travaillistes. Churchill trouva que le pays récompensait mal son rôle pendant la guerre, mais il resta au Parlement au lieu de se retirer."
+        },
+        "de": {
+          "question": "Was geschah mit Churchill im Juli 1945, wenige Wochen nach der deutschen Kapitulation?",
+          "options": ["Nach einer Wahlniederlage wurde er Oppositionsführer", "Er trat wegen der Atombombe zurück", "Er wurde mit großer Mehrheit wiedergewählt", "Er verließ das Parlament ganz"],
+          "explanation": "Die britischen Wähler entschieden sich für Labour. Churchill fand, das Land danke ihm seine Kriegsführung schlecht, blieb aber im Parlament, statt sich zurückzuziehen."
+        }
+      }
+    },
+    {
+      "id": "5bafcd31-cd48-4629-8253-ea317399f1be",
+      "chapter_index": 5,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar hield Churchill in 1946 zijn toespraak over een \"IJzeren Gordijn\" dwars door Europa?",
+          "options": ["Fulton, Missouri", "Jalta", "Westminster", "Chicago"],
+          "explanation": "Hij sprak samen met president Truman, en de uitdrukking overleefde hen allebei als hét beeld voor een verdeeld Europa."
+        },
+        "fr": {
+          "question": "Où Churchill prononça-t-il en 1946 son discours sur un « rideau de fer » à travers l'Europe ?",
+          "options": ["Fulton, Missouri", "Yalta", "Westminster", "Chicago"],
+          "explanation": "Il parla aux côtés du président Truman, et l'expression leur survécut à tous deux comme l'image même d'une Europe divisée."
+        },
+        "de": {
+          "question": "Wo hielt Churchill 1946 seine Rede über einen „Eisernen Vorhang“ quer durch Europa?",
+          "options": ["Fulton, Missouri", "Jalta", "Westminster", "Chicago"],
+          "explanation": "Er sprach gemeinsam mit Präsident Truman, und der Ausdruck überlebte beide als das Bild für ein geteiltes Europa."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Who was Richard's mother?",
+      "options": ["Matilda of England", "Eleanor of Aquitaine", "Isabella of France", "Blanche of Castile"],
+      "explanation": "As a second son, Richard was expected to inherit her lands in Aquitaine rather than the English crown, which was meant for his older brother Henry.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie was de moeder van Richard?",
+          "options": ["Mathilde van Engeland", "Eleonora van Aquitanië", "Isabella van Frankrijk", "Blanca van Castilië"],
+          "explanation": "Als tweede zoon zou Richard haar gebieden in Aquitanië erven en niet de Engelse kroon, die voor zijn oudere broer Hendrik bestemd was."
+        },
+        "fr": {
+          "question": "Qui était la mère de Richard ?",
+          "options": ["Mathilde d'Angleterre", "Aliénor d'Aquitaine", "Isabelle de France", "Blanche de Castille"],
+          "explanation": "Fils cadet, Richard devait hériter de ses terres d'Aquitaine plutôt que de la couronne d'Angleterre, promise à son frère aîné Henri."
+        },
+        "de": {
+          "question": "Wer war Richards Mutter?",
+          "options": ["Mathilde von England", "Eleonore von Aquitanien", "Isabella von Frankreich", "Blanka von Kastilien"],
+          "explanation": "Als zweiter Sohn sollte Richard ihre Ländereien in Aquitanien erben und nicht die englische Krone, die seinem älteren Bruder Heinrich zugedacht war."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "With whom did Richard ally against his own father in 1189?",
+      "options": ["Saladin", "Philip II of France", "The Duke of Austria", "His brother John"],
+      "explanation": "Henry II was forced to give Richard what he demanded and died within weeks. Richard became king, and almost at once took the cross.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Met wie sloot Richard in 1189 een bondgenootschap tegen zijn eigen vader?",
+          "options": ["Saladin", "Filips II van Frankrijk", "De hertog van Oostenrijk", "Zijn broer Jan"],
+          "explanation": "Hendrik II moest Richard geven wat hij eiste en stierf binnen enkele weken. Richard werd koning en nam vrijwel meteen het kruis aan."
+        },
+        "fr": {
+          "question": "Avec qui Richard s'allia-t-il contre son propre père en 1189 ?",
+          "options": ["Saladin", "Philippe II de France", "Le duc d'Autriche", "Son frère Jean"],
+          "explanation": "Henri II dut céder à Richard ce qu'il exigeait et mourut quelques semaines plus tard. Richard devint roi et prit la croix presque aussitôt."
+        },
+        "de": {
+          "question": "Mit wem verbündete sich Richard 1189 gegen seinen eigenen Vater?",
+          "options": ["Saladin", "Philipp II. von Frankreich", "Dem Herzog von Österreich", "Seinem Bruder Johann"],
+          "explanation": "Heinrich II. musste Richard geben, was er verlangte, und starb wenige Wochen später. Richard wurde König und nahm fast sofort das Kreuz."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Besides his deeds in battle, what did Richard leave behind that still survives?",
+      "options": ["Paintings", "Some of his own poems", "A cathedral", "A chronicle of the crusade"],
+      "explanation": "He loved poetry and music, which fitted the knightly ideal of a warrior who was also cultured. The nickname Lionheart came from his courage in battle.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat liet Richard, naast zijn daden op het slagveld, na dat nog steeds bestaat?",
+          "options": ["Schilderijen", "Enkele van zijn eigen gedichten", "Een kathedraal", "Een kroniek van de kruistocht"],
+          "explanation": "Hij hield van poëzie en muziek, wat paste bij het ridderideaal van een strijder die ook beschaafd was. De bijnaam Leeuwenhart dankte hij aan zijn moed in de strijd."
+        },
+        "fr": {
+          "question": "En dehors de ses exploits guerriers, qu'a laissé Richard qui existe encore ?",
+          "options": ["Des peintures", "Quelques-uns de ses poèmes", "Une cathédrale", "Une chronique de la croisade"],
+          "explanation": "Il aimait la poésie et la musique, à l'image de l'idéal chevaleresque du guerrier cultivé. Son surnom de Cœur de Lion lui venait de son courage au combat."
+        },
+        "de": {
+          "question": "Was hinterließ Richard außer seinen Taten im Kampf, das bis heute erhalten ist?",
+          "options": ["Gemälde", "Einige seiner eigenen Gedichte", "Eine Kathedrale", "Eine Chronik des Kreuzzugs"],
+          "explanation": "Er liebte Dichtung und Musik, ganz im Sinne des ritterlichen Ideals vom gebildeten Krieger. Den Beinamen Löwenherz verdankte er seinem Mut im Kampf."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Which document was Richard's brother John forced to grant in 1215?",
+      "options": ["The Domesday Book", "Magna Carta", "The Bill of Rights", "The Treaty of Verdun"],
+      "explanation": "It limited the king's power and became a founding text of the rule of law. John had already lost most of the lands in France that Richard had fought to keep.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk document moest Richards broer Jan in 1215 toekennen?",
+          "options": ["Het Domesday Book", "De Magna Carta", "De Bill of Rights", "Het Verdrag van Verdun"],
+          "explanation": "Het beperkte de macht van de koning en werd een grondtekst van de rechtsstaat. Jan was toen al het grootste deel van de Franse gebieden kwijt waarvoor Richard had gevochten."
+        },
+        "fr": {
+          "question": "Quel document le frère de Richard, Jean, fut-il contraint d'accorder en 1215 ?",
+          "options": ["Le Domesday Book", "La Magna Carta", "Le Bill of Rights", "Le traité de Verdun"],
+          "explanation": "Elle limitait le pouvoir du roi et devint un texte fondateur de l'État de droit. Jean avait déjà perdu la plupart des terres françaises que Richard avait défendues."
+        },
+        "de": {
+          "question": "Welche Urkunde musste Richards Bruder Johann 1215 gewähren?",
+          "options": ["Das Domesday Book", "Die Magna Carta", "Die Bill of Rights", "Den Vertrag von Verdun"],
+          "explanation": "Sie begrenzte die Macht des Königs und wurde ein Gründungstext des Rechtsstaats. Johann hatte da schon die meisten französischen Gebiete verloren, für die Richard gekämpft hatte."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Why was Richard called \"the Lionheart\"?",
+      "options": ["For the lion on his shield", "For his courage in battle", "For killing a lion in the Holy Land", "For his red-gold hair"],
+      "explanation": "The name was earned by his reputation as a fighter. Storytellers have since made him everything from a noble hero to a greedy warmonger.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom werd Richard \"Leeuwenhart\" genoemd?",
+          "options": ["Om de leeuw op zijn schild", "Om zijn moed in de strijd", "Omdat hij in het Heilige Land een leeuw doodde", "Om zijn roodblonde haar"],
+          "explanation": "Hij verdiende de naam met zijn reputatie als strijder. Vertellers hebben hem sindsdien van alles gemaakt, van nobele held tot hebzuchtige oorlogszoeker."
+        },
+        "fr": {
+          "question": "Pourquoi Richard était-il appelé « Cœur de Lion » ?",
+          "options": ["Pour le lion sur son bouclier", "Pour son courage au combat", "Pour avoir tué un lion en Terre sainte", "Pour ses cheveux d'un blond roux"],
+          "explanation": "Il gagna ce nom par sa réputation de combattant. Les conteurs en ont fait depuis tout et son contraire, du noble héros au va-t-en-guerre avide."
+        },
+        "de": {
+          "question": "Warum wurde Richard „Löwenherz“ genannt?",
+          "options": ["Wegen des Löwen auf seinem Schild", "Wegen seines Mutes im Kampf", "Weil er im Heiligen Land einen Löwen tötete", "Wegen seines rotblonden Haares"],
+          "explanation": "Den Namen verdiente er sich durch seinen Ruf als Kämpfer. Erzähler haben ihn seither zu allem gemacht, vom edlen Helden bis zum gierigen Kriegstreiber."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "6479e705-4efb-40d2-b55c-4d8258542a9b",
+      "chapter_index": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed Richard nadat een storm zijn vloot bij Cyprus had laten vergaan?",
+          "options": ["Hij veroverde het eiland en verkocht het", "Hij keerde terug naar Engeland voor reparaties", "Hij eiste schepen van Filips II", "Hij overwinterde er tot de lente"],
+          "explanation": "De verkoop bekostigde een kruistocht die zijn schatkist al leegtrok – Cyprus betaalde de veldtocht die volgde, en bleef nog lang na Richards vertrek in Latijnse handen."
+        },
+        "fr": {
+          "question": "Que fit Richard après qu'une tempête eut dispersé sa flotte au large de Chypre ?",
+          "options": ["Il conquit l'île et la vendit", "Il rentra en Angleterre pour réparer", "Il exigea des navires de Philippe II", "Il y passa l'hiver jusqu'au printemps"],
+          "explanation": "La vente finança une croisade qui vidait déjà son trésor – Chypre paya la campagne qui suivit, et resta aux mains des Latins bien après le départ de Richard."
+        },
+        "de": {
+          "question": "Was tat Richard, nachdem ein Sturm seine Flotte vor Zypern zerschlagen hatte?",
+          "options": ["Er eroberte die Insel und verkaufte sie", "Er kehrte zur Reparatur nach England zurück", "Er forderte Schiffe von Philipp II.", "Er überwinterte dort bis zum Frühjahr"],
+          "explanation": "Der Verkauf finanzierte einen Kreuzzug, der seine Kasse schon leerte – Zypern bezahlte den folgenden Feldzug und blieb noch lange nach Richards Abreise in lateinischer Hand."
+        }
+      }
+    },
+    {
+      "id": "e5dedbd3-1486-4907-b774-a6912856e148",
+      "chapter_index": 4,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat leverde het bestand van 1192 met Saladin de christenen werkelijk op?",
+          "options": ["De stad Jeruzalem zelf", "Een veilige doortocht voor pelgrims naar Jeruzalem", "De bekering van Saladin", "Een terugtrekking van de moslims uit Palestina"],
+          "explanation": "Jeruzalem bleef in moslimhanden, maar Richard behield een groot deel van de Palestijnse kust – de kustvestingen overleefden hem generaties lang."
+        },
+        "fr": {
+          "question": "Qu'apporta réellement aux chrétiens la trêve de 1192 avec Saladin ?",
+          "options": ["La ville de Jérusalem elle-même", "Un libre passage des pèlerins vers Jérusalem", "La conversion de Saladin", "Un retrait musulman de Palestine"],
+          "explanation": "Jérusalem resta sous contrôle musulman, mais Richard conserva une grande partie de la côte palestinienne – les forteresses côtières lui survécurent des générations."
+        },
+        "de": {
+          "question": "Was sicherte der Waffenstillstand von 1192 mit Saladin den Christen tatsächlich?",
+          "options": ["Die Stadt Jerusalem selbst", "Sicheres Geleit für Pilger nach Jerusalem", "Saladins Bekehrung", "Einen muslimischen Rückzug aus Palästina"],
+          "explanation": "Jerusalem blieb unter muslimischer Herrschaft, doch Richard behielt einen großen Teil der palästinensischen Küste – die Küstenfestungen überdauerten ihn um Generationen."
+        }
+      }
+    },
+    {
+      "id": "e52f9cae-1fa9-4e86-bacc-af819340b71e",
+      "chapter_index": 5,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe behandelde Richard de kruisboogschutter die hem in 1199 verwondde?",
+          "options": ["Hij liet hem aan de muren ophangen", "Hij vergaf hem en liet hem vrij", "Hij kwam nooit te weten wie had geschoten", "Hij nam hem op in zijn hofhouding"],
+          "explanation": "Richard belegerde slechts een onbeduidend kasteel toen de pijl hem trof. De wond zelf doodde hem niet – de infectie die volgde wel, binnen enkele dagen."
+        },
+        "fr": {
+          "question": "Comment Richard traita-t-il l'arbalétrier qui le blessa en 1199 ?",
+          "options": ["Il le fit pendre aux remparts", "Il lui pardonna et ordonna sa libération", "Il ne sut jamais qui avait tiré", "Il le prit à son service"],
+          "explanation": "Richard n'assiégeait qu'un château secondaire quand le carreau l'atteignit. La blessure elle-même ne le tua pas – l'infection qui suivit, si, en quelques jours."
+        },
+        "de": {
+          "question": "Wie behandelte Richard den Armbrustschützen, der ihn 1199 verwundete?",
+          "options": ["Er ließ ihn an den Mauern aufhängen", "Er vergab ihm und ließ ihn frei", "Er erfuhr nie, wer geschossen hatte", "Er nahm ihn in seinen Haushalt auf"],
+          "explanation": "Richard belagerte nur eine unbedeutende Burg, als ihn der Bolzen traf. Nicht die Wunde selbst tötete ihn, sondern die Infektion, die folgte – binnen weniger Tage."
+        }
+      }
+    }
+  ]
+}

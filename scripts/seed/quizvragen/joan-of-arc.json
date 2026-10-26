@@ -1,0 +1,189 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Which war was tearing France apart when Jeanne was born?",
+      "options": ["The Wars of the Roses", "The Hundred Years' War", "The Thirty Years' War", "The Crusades"],
+      "explanation": "France and England had been fighting for nearly a century. The English held much of northern France, and the French king seemed powerless to stop them.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke oorlog verscheurde Frankrijk toen Jeanne werd geboren?",
+          "options": ["De Rozenoorlogen", "De Honderdjarige Oorlog", "De Dertigjarige Oorlog", "De kruistochten"],
+          "explanation": "Frankrijk en Engeland vochten al bijna een eeuw. De Engelsen hielden een groot deel van Noord-Frankrijk bezet, en de Franse koning leek machteloos."
+        },
+        "fr": {
+          "question": "Quelle guerre déchirait la France à la naissance de Jeanne ?",
+          "options": ["La guerre des Deux-Roses", "La guerre de Cent Ans", "La guerre de Trente Ans", "Les croisades"],
+          "explanation": "La France et l'Angleterre se battaient depuis près d'un siècle. Les Anglais occupaient une grande partie du nord de la France, et le roi semblait impuissant à les arrêter."
+        },
+        "de": {
+          "question": "Welcher Krieg zerriss Frankreich, als Jeanne geboren wurde?",
+          "options": ["Die Rosenkriege", "Der Hundertjährige Krieg", "Der Dreißigjährige Krieg", "Die Kreuzzüge"],
+          "explanation": "Frankreich und England kämpften seit fast einem Jahrhundert. Die Engländer hielten große Teile Nordfrankreichs, und der französische König wirkte machtlos."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Whose voices did Jeanne say she heard?",
+      "options": ["The Virgin Mary and Saint Peter", "Saints Michael, Catherine and Margaret", "Saint Denis and Saint Louis", "Saint George and Saint Martin"],
+      "explanation": "They began when she was about thirteen. By seventeen, she said, they had given her a mission: go to the king and lead his armies.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wiens stemmen zei Jeanne te horen?",
+          "options": ["De Maagd Maria en Petrus", "De heiligen Michaël, Catharina en Margaretha", "De heiligen Dionysius en Lodewijk", "De heiligen Joris en Maarten"],
+          "explanation": "Ze begonnen toen ze een jaar of dertien was. Op haar zeventiende, zei ze, hadden ze haar een opdracht gegeven: naar de koning gaan en zijn legers aanvoeren."
+        },
+        "fr": {
+          "question": "Quelles voix Jeanne disait-elle entendre ?",
+          "options": ["La Vierge Marie et saint Pierre", "Saint Michel, sainte Catherine et sainte Marguerite", "Saint Denis et saint Louis", "Saint Georges et saint Martin"],
+          "explanation": "Elles commencèrent vers ses treize ans. À dix-sept ans, disait-elle, elles lui avaient confié une mission : aller trouver le roi et mener ses armées."
+        },
+        "de": {
+          "question": "Wessen Stimmen sagte Jeanne zu hören?",
+          "options": ["Die der Jungfrau Maria und des Petrus", "Die der Heiligen Michael, Katharina und Margareta", "Die der Heiligen Dionysius und Ludwig", "Die der Heiligen Georg und Martin"],
+          "explanation": "Sie begannen, als sie etwa dreizehn war. Mit siebzehn, sagte sie, hätten sie ihr einen Auftrag gegeben: zum König gehen und seine Heere anführen."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Which besieged city did Jeanne help relieve in May 1429?",
+      "options": ["Paris", "Orléans", "Rouen", "Reims"],
+      "explanation": "The English had been winning for years and withdrew after her charge. From then on she was known as the Maid of Orléans.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke belegerde stad hielp Jeanne in mei 1429 ontzetten?",
+          "options": ["Parijs", "Orléans", "Rouen", "Reims"],
+          "explanation": "De Engelsen hadden jarenlang gewonnen en trokken zich na haar aanval terug. Vanaf toen heette ze de Maagd van Orléans."
+        },
+        "fr": {
+          "question": "Quelle ville assiégée Jeanne aida-t-elle à libérer en mai 1429 ?",
+          "options": ["Paris", "Orléans", "Rouen", "Reims"],
+          "explanation": "Les Anglais gagnaient depuis des années et se retirèrent après son assaut. Dès lors, on l'appela la Pucelle d'Orléans."
+        },
+        "de": {
+          "question": "Welche belagerte Stadt half Jeanne im Mai 1429 zu befreien?",
+          "options": ["Paris", "Orléans", "Rouen", "Reims"],
+          "explanation": "Die Engländer hatten jahrelang gesiegt und zogen sich nach ihrem Angriff zurück. Von da an hieß sie die Jungfrau von Orléans."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "What did the Church do twenty-five years after Jeanne's execution?",
+      "options": ["Made her a saint", "Declared her trial invalid", "Confirmed the verdict", "Excommunicated her judges"],
+      "explanation": "She was officially rehabilitated as a victim of injustice. Sainthood came much later, in 1920.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed de Kerk vijfentwintig jaar na de terechtstelling van Jeanne?",
+          "options": ["Ze verklaarde haar heilig", "Ze verklaarde haar proces ongeldig", "Ze bevestigde het vonnis", "Ze excommuniceerde haar rechters"],
+          "explanation": "Ze werd officieel gerehabiliteerd als slachtoffer van onrecht. De heiligverklaring kwam pas veel later, in 1920."
+        },
+        "fr": {
+          "question": "Que fit l'Église vingt-cinq ans après l'exécution de Jeanne ?",
+          "options": ["Elle la déclara sainte", "Elle déclara son procès nul", "Elle confirma le verdict", "Elle excommunia ses juges"],
+          "explanation": "Jeanne fut officiellement réhabilitée comme victime d'une injustice. La canonisation vint bien plus tard, en 1920."
+        },
+        "de": {
+          "question": "Was tat die Kirche fünfundzwanzig Jahre nach Jeannes Hinrichtung?",
+          "options": ["Sie sprach sie heilig", "Sie erklärte ihren Prozess für ungültig", "Sie bestätigte das Urteil", "Sie exkommunizierte ihre Richter"],
+          "explanation": "Sie wurde offiziell als Opfer eines Unrechts rehabilitiert. Die Heiligsprechung kam erst viel später, 1920."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "How old was Jeanne when she died?",
+      "options": ["Fifteen", "Nineteen", "Twenty-five", "Thirty-one"],
+      "explanation": "She was burned at Rouen on 30 May 1431. In that short life she went from a peasant's daughter to the commander who turned the Hundred Years' War.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe oud was Jeanne toen ze stierf?",
+          "options": ["Vijftien", "Negentien", "Vijfentwintig", "Eenendertig"],
+          "explanation": "Ze werd op 30 mei 1431 in Rouen verbrand. In dat korte leven ging ze van boerendochter naar de aanvoerder die de Honderdjarige Oorlog deed kantelen."
+        },
+        "fr": {
+          "question": "Quel âge avait Jeanne à sa mort ?",
+          "options": ["Quinze ans", "Dix-neuf ans", "Vingt-cinq ans", "Trente et un ans"],
+          "explanation": "Elle fut brûlée à Rouen le 30 mai 1431. En si peu de temps, elle passa de fille de paysans à la cheffe de guerre qui renversa le cours de la guerre de Cent Ans."
+        },
+        "de": {
+          "question": "Wie alt war Jeanne, als sie starb?",
+          "options": ["Fünfzehn", "Neunzehn", "Fünfundzwanzig", "Einunddreißig"],
+          "explanation": "Sie wurde am 30. Mai 1431 in Rouen verbrannt. In diesem kurzen Leben wurde aus der Bauerntochter die Anführerin, die den Hundertjährigen Krieg wendete."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "1f930ac6-5293-43b2-baf7-6b483deb51bc",
+      "chapter_index": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe stelde Karel VII Jeanne op de proef toen ze in Chinon aankwam?",
+          "options": ["Hij verstopte zich als bediende tussen zijn hovelingen", "Hij liet haar een brief voorlezen", "Hij stuurde haar om te debatteren voor de universiteit", "Hij liet haar een ongetemd paard berijden"],
+          "explanation": "De herkenningsproef deed ertoe omdat de wettigheid van de koning zelf werd betwijfeld: als Gods boodschapper hem herkende, moest iedereen dat doen. De theologen in Poitiers ondervroegen haar daarna nog wekenlang."
+        },
+        "fr": {
+          "question": "Comment Charles VII mit-il Jeanne à l'épreuve à son arrivée à Chinon ?",
+          "options": ["Il se cacha parmi ses courtisans, vêtu comme un serviteur", "Il lui demanda de lire une lettre à voix haute", "Il l'envoya débattre devant l'université", "Il lui ordonna de monter un cheval non dressé"],
+          "explanation": "L'épreuve comptait parce que la légitimité même du roi était mise en doute : si la messagère de Dieu le reconnaissait, tous devaient le reconnaître. Les théologiens de Poitiers l'interrogèrent encore pendant des semaines."
+        },
+        "de": {
+          "question": "Wie stellte Karl VII. Jeanne auf die Probe, als sie in Chinon ankam?",
+          "options": ["Er versteckte sich als Diener verkleidet unter seinen Höflingen", "Er ließ sie einen Brief vorlesen", "Er schickte sie zum Disput vor die Universität", "Er ließ sie ein ungezähmtes Pferd reiten"],
+          "explanation": "Die Erkennungsprobe zählte, weil die Rechtmäßigkeit des Königs selbst angezweifelt wurde: Erkannte ihn Gottes Botin, sollten es alle tun. Die Theologen in Poitiers befragten sie danach noch wochenlang."
+        }
+      }
+    },
+    {
+      "id": "21e04b3b-0e0d-4be5-a9b8-12da947ecaf3",
+      "chapter_index": 5,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar reisde Karel VII in juli 1429 heen voor zijn kroning?",
+          "options": ["Reims", "Rouen", "Chinon", "Orléans"],
+          "explanation": "Reims was de traditionele kroningsstad, en de veldtocht langs de Loire opende de weg erheen. Twee jaar later zou Jeanne berecht worden in Rouen, een stad die nog in Engelse handen was."
+        },
+        "fr": {
+          "question": "Où Charles VII se rendit-il en juillet 1429 pour son sacre ?",
+          "options": ["Reims", "Rouen", "Chinon", "Orléans"],
+          "explanation": "Reims était la ville traditionnelle du sacre, et la campagne de la Loire en ouvrit la route. Deux ans plus tard, Jeanne serait jugée à Rouen, ville encore tenue par les Anglais."
+        },
+        "de": {
+          "question": "Wohin reiste Karl VII. im Juli 1429 zu seiner Krönung?",
+          "options": ["Reims", "Rouen", "Chinon", "Orléans"],
+          "explanation": "Reims war die traditionelle Krönungsstadt, und der Feldzug an der Loire öffnete den Weg dorthin. Zwei Jahre später wurde Jeanne in Rouen der Prozess gemacht, einer Stadt noch in englischer Hand."
+        }
+      }
+    },
+    {
+      "id": "97489ebd-443c-43e0-818d-a49ab64660fb",
+      "chapter_index": 6,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie nam Jeanne in mei 1430 gevangen?",
+          "options": ["Bourgondische troepen bij Compiègne", "Engelse boogschutters bij Orléans", "Franse collaborateurs in Reims", "De bewakers van het tribunaal in Rouen"],
+          "explanation": "De Bourgondiërs verkochten haar voor een flinke som door aan de Engelsen. Als gevangen aanvoerder had ze tegen losgeld vastgehouden moeten worden, maar er werd nooit losgeld voor haar geboden."
+        },
+        "fr": {
+          "question": "Qui fit Jeanne prisonnière en mai 1430 ?",
+          "options": ["Les troupes bourguignonnes à Compiègne", "Les archers anglais à Orléans", "Des collaborateurs français à Reims", "Les gardes du tribunal à Rouen"],
+          "explanation": "Les Bourguignons la vendirent aux Anglais pour une forte somme. Chef de guerre capturé, elle aurait dû être retenue contre rançon, mais personne n'en offrit jamais pour elle."
+        },
+        "de": {
+          "question": "Wer nahm Jeanne im Mai 1430 gefangen?",
+          "options": ["Burgundische Truppen bei Compiègne", "Englische Bogenschützen bei Orléans", "Französische Kollaborateure in Reims", "Die Wachen des Tribunals in Rouen"],
+          "explanation": "Die Burgunder verkauften sie für eine große Summe an die Engländer. Als gefangene Anführerin hätte man sie gegen Lösegeld festhalten müssen, doch für sie wurde nie Lösegeld geboten."
+        }
+      }
+    }
+  ]
+}

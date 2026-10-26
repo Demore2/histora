@@ -1,0 +1,186 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What was Galileo supposed to study at the University of Pisa?",
+      "options": ["Law", "Medicine", "Theology", "Music"],
+      "explanation": "Mathematics and physics won him over instead, and he became a professor of mathematics. He wanted to test what had been accepted for centuries, not just teach it.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat moest Galileo aan de universiteit van Pisa studeren?",
+          "options": ["Rechten", "Geneeskunde", "Theologie", "Muziek"],
+          "explanation": "Wiskunde en natuurkunde trokken hem meer, en hij werd hoogleraar wiskunde. Hij wilde toetsen wat eeuwenlang was aangenomen, niet het alleen doorgeven."
+        },
+        "fr": {
+          "question": "Qu'était censé étudier Galilée à l'université de Pise ?",
+          "options": ["Le droit", "La médecine", "La théologie", "La musique"],
+          "explanation": "Les mathématiques et la physique l'attirèrent davantage, et il devint professeur de mathématiques. Il voulait vérifier ce qu'on admettait depuis des siècles, pas seulement l'enseigner."
+        },
+        "de": {
+          "question": "Was sollte Galilei an der Universität Pisa studieren?",
+          "options": ["Recht", "Medizin", "Theologie", "Musik"],
+          "explanation": "Mathematik und Physik zogen ihn stärker an, und er wurde Mathematikprofessor. Er wollte prüfen, was seit Jahrhunderten galt, und es nicht nur lehren."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Who proposed that the Earth orbits the Sun?",
+      "options": ["Ptolemy", "Copernicus", "Aristotle", "Kepler"],
+      "explanation": "The Polish astronomer put the idea forward in the 1500s. For over a thousand years before that, the Church and almost every European scholar had placed the Earth at the centre.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie stelde voor dat de aarde om de zon draait?",
+          "options": ["Ptolemaeus", "Copernicus", "Aristoteles", "Kepler"],
+          "explanation": "De Poolse astronoom bracht het idee in de 16e eeuw naar voren. Ruim duizend jaar lang hadden de Kerk en bijna alle Europese geleerden de aarde in het middelpunt gezet."
+        },
+        "fr": {
+          "question": "Qui a proposé que la Terre tourne autour du Soleil ?",
+          "options": ["Ptolémée", "Copernic", "Aristote", "Kepler"],
+          "explanation": "L'astronome polonais avança l'idée au XVIe siècle. Pendant plus de mille ans, l'Église et presque tous les savants européens avaient placé la Terre au centre."
+        },
+        "de": {
+          "question": "Wer schlug vor, dass die Erde um die Sonne kreist?",
+          "options": ["Ptolemäus", "Kopernikus", "Aristoteles", "Kepler"],
+          "explanation": "Der polnische Astronom brachte die Idee im 16. Jahrhundert vor. Über tausend Jahre lang hatten die Kirche und fast alle europäischen Gelehrten die Erde in die Mitte gesetzt."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "What did Galileo work out about falling objects?",
+      "options": ["They fall at a constant speed", "They accelerate at a constant rate", "Heavier ones fall faster", "They slow down near the ground"],
+      "explanation": "Newton later built that principle into his laws of motion. Galileo kept working on motion, projectiles and pendulums under house arrest until his death in 1642.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat ontdekte Galileo over vallende voorwerpen?",
+          "options": ["Ze vallen met een constante snelheid", "Ze versnellen gelijkmatig", "Zware voorwerpen vallen sneller", "Ze vertragen vlak bij de grond"],
+          "explanation": "Newton verwerkte dat principe later in zijn bewegingswetten. Galileo bleef onder huisarrest tot zijn dood in 1642 werken aan beweging, projectielen en slingers."
+        },
+        "fr": {
+          "question": "Qu'a découvert Galilée sur la chute des corps ?",
+          "options": ["Ils tombent à vitesse constante", "Ils accélèrent de façon constante", "Les plus lourds tombent plus vite", "Ils ralentissent près du sol"],
+          "explanation": "Newton intégra plus tard ce principe dans ses lois du mouvement. Assigné à résidence, Galilée continua d'étudier le mouvement, les projectiles et les pendules jusqu'à sa mort en 1642."
+        },
+        "de": {
+          "question": "Was fand Galilei über fallende Körper heraus?",
+          "options": ["Sie fallen mit konstanter Geschwindigkeit", "Sie beschleunigen gleichmäßig", "Schwerere fallen schneller", "Sie werden in Bodennähe langsamer"],
+          "explanation": "Newton baute dieses Prinzip später in seine Bewegungsgesetze ein. Galilei arbeitete unter Hausarrest bis zu seinem Tod 1642 weiter an Bewegung, Geschossen und Pendeln."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "For Galileo, what was the final authority on how nature works?",
+      "options": ["Aristotle's writings", "Observation and experiment", "Scripture", "Logic alone"],
+      "explanation": "Not ancient texts or powerful institutions, but evidence from nature itself. That idea became the foundation of modern science, and he held to it under pressure from the Church.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was voor Galileo het hoogste gezag over hoe de natuur werkt?",
+          "options": ["De geschriften van Aristoteles", "Waarneming en experiment", "De Schrift", "Alleen logica"],
+          "explanation": "Niet oude teksten of machtige instellingen, maar bewijs uit de natuur zelf. Dat idee werd het fundament van de moderne wetenschap, en hij hield eraan vast onder druk van de Kerk."
+        },
+        "fr": {
+          "question": "Pour Galilée, quelle était l'autorité ultime sur le fonctionnement de la nature ?",
+          "options": ["Les écrits d'Aristote", "L'observation et l'expérience", "Les Écritures", "La logique seule"],
+          "explanation": "Non pas les textes anciens ou les institutions puissantes, mais les preuves tirées de la nature elle-même. Cette idée devint le fondement de la science moderne, et il la défendit sous la pression de l'Église."
+        },
+        "de": {
+          "question": "Was war für Galilei die letzte Instanz dafür, wie die Natur funktioniert?",
+          "options": ["Die Schriften des Aristoteles", "Beobachtung und Experiment", "Die Heilige Schrift", "Reine Logik"],
+          "explanation": "Nicht alte Texte oder mächtige Institutionen, sondern Belege aus der Natur selbst. Diese Idee wurde zum Fundament der modernen Wissenschaft, und er hielt unter dem Druck der Kirche daran fest."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "36c5dd16-f229-4747-9211-8f853e29ab4a",
+      "chapter_index": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat verklaarde volgens Galileo, anders dan Aristoteles beweerde, waarom een veer langzaam valt?",
+          "options": ["Haar geringere gewicht", "Luchtweerstand", "De vorm van haar randen", "Haar afstand tot de grond"],
+          "explanation": "Haal de lucht weg, betoogde hij, en kanonskogel en veer komen tegelijk neer. Geleerden hadden de regel van Aristoteles tweeduizend jaar herhaald zonder hem één keer te toetsen."
+        },
+        "fr": {
+          "question": "Selon Galilée, contrairement à Aristote, qu'est-ce qui expliquait la chute lente d'une plume ?",
+          "options": ["Son poids plus léger", "La résistance de l'air", "La forme de ses bords", "Sa distance au sol"],
+          "explanation": "Supprimez l'air, soutenait-il, et le boulet de canon et la plume toucheront le sol ensemble. Les savants avaient répété la règle d'Aristote pendant deux mille ans sans jamais la vérifier."
+        },
+        "de": {
+          "question": "Was erklärte laut Galilei, anders als Aristoteles meinte, den langsamen Fall einer Feder?",
+          "options": ["Ihr geringeres Gewicht", "Der Luftwiderstand", "Die Form ihrer Ränder", "Ihr Abstand zum Boden"],
+          "explanation": "Nimmt man die Luft weg, argumentierte er, landen Kanonenkugel und Feder gleichzeitig. Gelehrte hatten Aristoteles' Regel zweitausend Jahre lang wiederholt, ohne sie ein einziges Mal zu prüfen."
+        }
+      }
+    },
+    {
+      "id": "7506b081-8182-4ada-af4e-3710ab75a8d7",
+      "chapter_index": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoeveel vergrootte Galileo's eigen telescoop ongeveer?",
+          "options": ["Zo'n drie keer", "Zo'n tien keer", "Zo'n dertig keer", "Zo'n honderd keer"],
+          "explanation": "Dertig keer was genoeg om kraters op de maan en vier lichtpuntjes naast Jupiter te zien. Hij bouwde hem binnen enkele weken, alleen op basis van geruchten over de Nederlandse kijker, zonder er ooit een gezien te hebben."
+        },
+        "fr": {
+          "question": "Combien de fois environ la lunette de Galilée grossissait-elle ce qu'il observait ?",
+          "options": ["Environ trois fois", "Environ dix fois", "Environ trente fois", "Environ cent fois"],
+          "explanation": "Trente fois suffisait pour voir des cratères sur la Lune et quatre points lumineux près de Jupiter. Il la construisit en quelques semaines, sur la seule rumeur de la longue-vue hollandaise, sans jamais en avoir vu une."
+        },
+        "de": {
+          "question": "Wie stark vergrößerte Galileis eigenes Fernrohr ungefähr?",
+          "options": ["Etwa dreifach", "Etwa zehnfach", "Etwa dreißigfach", "Etwa hundertfach"],
+          "explanation": "Dreißigfach genügte, um Krater auf dem Mond und vier Lichtpunkte neben Jupiter zu sehen. Er baute es binnen Wochen, nur aufgrund von Gerüchten über das holländische Fernrohr, ohne je eines gesehen zu haben."
+        }
+      }
+    },
+    {
+      "id": "10d7be91-e13f-4cbc-b7b2-501882eb579c",
+      "chapter_index": 5,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk boek maakte Galileo in 1610 beroemd – en gevaarlijk?",
+          "options": ["De Sterrenboodschapper", "Dialoog over de twee voornaamste wereldsystemen", "Twee nieuwe wetenschappen", "Over de omwentelingen van de hemelsferen"],
+          "explanation": "De Sterrenboodschapper bracht de ontdekkingen met de telescoop bij een groot publiek. Roem sneed aan twee kanten: Rome wist nu precies wie hij was, en in 1616 ontbood paus Paulus V hem."
+        },
+        "fr": {
+          "question": "Quel livre rendit Galilée célèbre en 1610 – et le désigna comme dangereux ?",
+          "options": ["Le Messager des étoiles", "Dialogue sur les deux grands systèmes du monde", "Deux sciences nouvelles", "Des révolutions des sphères célestes"],
+          "explanation": "Le Messager des étoiles fit connaître à un large public les découvertes de la lunette. La gloire avait deux tranchants : Rome savait désormais exactement qui il était, et en 1616 le pape Paul V le convoqua."
+        },
+        "de": {
+          "question": "Welches Buch machte Galilei 1610 berühmt – und gefährlich?",
+          "options": ["Der Sternenbote", "Dialog über die beiden hauptsächlichen Weltsysteme", "Zwei neue Wissenschaften", "Über die Umschwünge der himmlischen Kreise"],
+          "explanation": "Der Sternenbote machte die Entdeckungen mit dem Fernrohr einem breiten Publikum bekannt. Ruhm hatte zwei Seiten: Rom wusste nun genau, wer er war, und 1616 bestellte Papst Paul V. ihn ein."
+        }
+      }
+    },
+    {
+      "id": "51e27254-b08b-4820-a394-5ff333505bcd",
+      "chapter_index": 6,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar werd Galileo heen gestuurd nadat de inquisitie hem in 1633 had veroordeeld?",
+          "options": ["Ballingschap in Nederland", "Een gevangeniscel in Rome", "Huisarrest in Arcetri bij Florence", "Een klooster in Pisa"],
+          "explanation": "Hij mocht niet publiceren, niet over het heliocentrisme praten en geen bezoek ontvangen zonder toestemming. Juist in Arcetri, onder die voorwaarden, schreef hij Twee nieuwe wetenschappen."
+        },
+        "fr": {
+          "question": "Où Galilée fut-il envoyé après sa condamnation par l'Inquisition en 1633 ?",
+          "options": ["En exil aux Pays-Bas", "Dans une cellule à Rome", "En résidence surveillée à Arcetri, près de Florence", "Dans un monastère à Pise"],
+          "explanation": "Il lui était interdit de publier, de parler d'héliocentrisme et de recevoir des visites sans autorisation. C'est à Arcetri, dans ces conditions, qu'il écrivit les Deux sciences nouvelles."
+        },
+        "de": {
+          "question": "Wohin wurde Galilei geschickt, nachdem die Inquisition ihn 1633 verurteilt hatte?",
+          "options": ["Ins Exil in die Niederlande", "In eine Gefängniszelle in Rom", "In Hausarrest in Arcetri bei Florenz", "In ein Kloster in Pisa"],
+          "explanation": "Er durfte nicht veröffentlichen, nicht über das heliozentrische Weltbild sprechen und keinen ungenehmigten Besuch empfangen. Gerade in Arcetri, unter diesen Bedingungen, schrieb er die Zwei neuen Wissenschaften."
+        }
+      }
+    }
+  ]
+}

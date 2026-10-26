@@ -1,0 +1,192 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Why did Maria study at secret \"floating schools\" in Warsaw?",
+      "options": ["Her family could not pay the fees", "Women were barred from university", "Science was banned in Poland", "Her school had burned down"],
+      "explanation": "Under Russian rule, university was closed to women. The classes moved from house to house to stay ahead of the authorities, until Paris offered what Warsaw would not.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom studeerde Maria in Warschau op geheime \"vliegende scholen\"?",
+          "options": ["Haar familie kon het lesgeld niet betalen", "Vrouwen mochten niet naar de universiteit", "Wetenschap was verboden in Polen", "Haar school was afgebrand"],
+          "explanation": "Onder Russisch bestuur was de universiteit gesloten voor vrouwen. De lessen verhuisden van huis naar huis om de autoriteiten voor te blijven, tot Parijs bood wat Warschau weigerde."
+        },
+        "fr": {
+          "question": "Pourquoi Maria étudiait-elle dans des « universités volantes » secrètes à Varsovie ?",
+          "options": ["Sa famille ne pouvait pas payer les frais", "L'université était interdite aux femmes", "La science était interdite en Pologne", "Son école avait brûlé"],
+          "explanation": "Sous la domination russe, l'université était fermée aux femmes. Les cours changeaient de maison pour échapper aux autorités, jusqu'à ce que Paris offre ce que Varsovie refusait."
+        },
+        "de": {
+          "question": "Warum studierte Maria in Warschau an geheimen „fliegenden Universitäten“?",
+          "options": ["Ihre Familie konnte die Gebühren nicht zahlen", "Frauen waren von der Universität ausgeschlossen", "Wissenschaft war in Polen verboten", "Ihre Schule war abgebrannt"],
+          "explanation": "Unter russischer Herrschaft blieb die Universität Frauen verschlossen. Der Unterricht wechselte von Haus zu Haus, um den Behörden zu entgehen – bis Paris bot, was Warschau verweigerte."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Who was Pierre Curie when Marie met him in 1894?",
+      "options": ["Her physics professor", "A scientist known for work on crystals", "A Polish exile in Paris", "A wealthy patron of science"],
+      "explanation": "A Polish physicist friend introduced them. They married in July 1895, and the partnership produced some of the great discoveries of the age.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie was Pierre Curie toen Marie hem in 1894 ontmoette?",
+          "options": ["Haar natuurkundeprofessor", "Een wetenschapper bekend om zijn werk aan kristallen", "Een Poolse balling in Parijs", "Een rijke beschermheer van de wetenschap"],
+          "explanation": "Een bevriende Poolse natuurkundige stelde hen aan elkaar voor. Ze trouwden in juli 1895, en hun samenwerking leverde enkele van de grootste ontdekkingen van die tijd op."
+        },
+        "fr": {
+          "question": "Qui était Pierre Curie lorsque Marie le rencontra en 1894 ?",
+          "options": ["Son professeur de physique", "Un scientifique connu pour ses travaux sur les cristaux", "Un exilé polonais à Paris", "Un riche mécène de la science"],
+          "explanation": "Un ami physicien polonais les présenta l'un à l'autre. Ils se marièrent en juillet 1895, et leur collaboration produisit certaines des plus grandes découvertes de l'époque."
+        },
+        "de": {
+          "question": "Wer war Pierre Curie, als Marie ihn 1894 kennenlernte?",
+          "options": ["Ihr Physikprofessor", "Ein Wissenschaftler, bekannt für Arbeiten über Kristalle", "Ein polnischer Exilant in Paris", "Ein reicher Förderer der Wissenschaft"],
+          "explanation": "Ein befreundeter polnischer Physiker machte sie miteinander bekannt. Sie heirateten im Juli 1895, und ihre Zusammenarbeit brachte einige der großen Entdeckungen ihrer Zeit hervor."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Why was Marie included in the 1903 Nobel Prize in Physics?",
+      "options": ["The committee chose her first", "Pierre insisted on it", "Becquerel gave up his share", "The French government demanded it"],
+      "explanation": "The committee had planned to honour only Pierre and Henri Becquerel. Three years later Pierre was killed by a horse-drawn wagon in a Paris street.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom kreeg Marie een deel van de Nobelprijs voor Natuurkunde van 1903?",
+          "options": ["Het comité koos eerst voor haar", "Pierre stond erop", "Becquerel zag af van zijn deel", "De Franse regering eiste het"],
+          "explanation": "Het comité wilde alleen Pierre en Henri Becquerel eren. Drie jaar later kwam Pierre in een Parijse straat om het leven onder een paard-en-wagen."
+        },
+        "fr": {
+          "question": "Pourquoi Marie fut-elle associée au prix Nobel de physique de 1903 ?",
+          "options": ["Le comité l'avait choisie en premier", "Pierre l'exigea", "Becquerel renonça à sa part", "Le gouvernement français l'imposa"],
+          "explanation": "Le comité comptait honorer seulement Pierre et Henri Becquerel. Trois ans plus tard, Pierre mourut renversé par une voiture à cheval dans une rue de Paris."
+        },
+        "de": {
+          "question": "Warum erhielt Marie einen Anteil am Physik-Nobelpreis von 1903?",
+          "options": ["Das Komitee hatte sie zuerst gewählt", "Pierre bestand darauf", "Becquerel verzichtete auf seinen Anteil", "Die französische Regierung verlangte es"],
+          "explanation": "Das Komitee wollte nur Pierre und Henri Becquerel ehren. Drei Jahre später kam Pierre in einer Pariser Straße unter einem Pferdewagen ums Leben."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What did Marie bring to the front in the First World War?",
+      "options": ["Radium medicine", "Mobile X-ray units", "Field telephones", "Ambulance trains"],
+      "explanation": "X-rays let surgeons find bullets and shrapnel. She paid for vans with her own money and donations, drove them herself and trained others to use them.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat bracht Marie in de Eerste Wereldoorlog naar het front?",
+          "options": ["Radiummedicijnen", "Mobiele röntgenwagens", "Veldtelefoons", "Ambulancetreinen"],
+          "explanation": "Met röntgenfoto's konden chirurgen kogels en granaatscherven vinden. Ze betaalde de wagens met eigen geld en giften, reed er zelf mee en leidde anderen op om ermee te werken."
+        },
+        "fr": {
+          "question": "Qu'apporta Marie au front pendant la Première Guerre mondiale ?",
+          "options": ["Des remèdes au radium", "Des unités mobiles de radiologie", "Des téléphones de campagne", "Des trains sanitaires"],
+          "explanation": "Les rayons X permettaient aux chirurgiens de localiser balles et éclats d'obus. Elle paya les voitures avec son argent et des dons, les conduisit elle-même et forma d'autres opérateurs."
+        },
+        "de": {
+          "question": "Was brachte Marie im Ersten Weltkrieg an die Front?",
+          "options": ["Radiumarznei", "Mobile Röntgenwagen", "Feldtelefone", "Lazarettzüge"],
+          "explanation": "Mit Röntgenstrahlen fanden Chirurgen Kugeln und Granatsplitter. Sie bezahlte die Wagen mit eigenem Geld und Spenden, fuhr sie selbst und bildete andere darin aus."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "What illness caused Marie Curie's death in 1934?",
+      "options": ["Tuberculosis", "Aplastic anaemia", "Typhus", "Influenza"],
+      "explanation": "A blood disorder almost certainly caused by decades of handling radioactive material without protection. Element 96, curium, now carries the Curies' name.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Aan welke ziekte overleed Marie Curie in 1934?",
+          "options": ["Tuberculose", "Aplastische anemie", "Tyfus", "Griep"],
+          "explanation": "Een bloedziekte die vrijwel zeker kwam door tientallen jaren werken met radioactief materiaal zonder bescherming. Element 96, curium, draagt nu de naam van de Curies."
+        },
+        "fr": {
+          "question": "De quelle maladie Marie Curie mourut-elle en 1934 ?",
+          "options": ["La tuberculose", "L'anémie aplasique", "Le typhus", "La grippe"],
+          "explanation": "Une maladie du sang presque certainement due à des décennies de manipulation de matières radioactives sans protection. L'élément 96, le curium, porte aujourd'hui le nom des Curie."
+        },
+        "de": {
+          "question": "An welcher Krankheit starb Marie Curie 1934?",
+          "options": ["Tuberkulose", "Aplastische Anämie", "Typhus", "Grippe"],
+          "explanation": "Eine Blutkrankheit, fast sicher verursacht durch jahrzehntelangen ungeschützten Umgang mit radioaktivem Material. Element 96, Curium, trägt heute den Namen der Curies."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Which cancer treatment grew out of the Curies' work?",
+      "options": ["Chemotherapy", "Radiotherapy", "Vaccination", "Antibiotics"],
+      "explanation": "Radioactivity also became the foundation of nuclear physics and nuclear energy, and medical isotopes descended from her research are used every day.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke kankerbehandeling kwam voort uit het werk van de Curies?",
+          "options": ["Chemotherapie", "Bestraling", "Vaccinatie", "Antibiotica"],
+          "explanation": "Radioactiviteit werd ook de basis van de kernfysica en kernenergie, en medische isotopen die op haar onderzoek teruggaan worden elke dag gebruikt."
+        },
+        "fr": {
+          "question": "Quel traitement du cancer est né des travaux des Curie ?",
+          "options": ["La chimiothérapie", "La radiothérapie", "La vaccination", "Les antibiotiques"],
+          "explanation": "La radioactivité devint aussi le fondement de la physique et de l'énergie nucléaires, et des isotopes médicaux issus de ses recherches sont utilisés chaque jour."
+        },
+        "de": {
+          "question": "Welche Krebsbehandlung ging aus der Arbeit der Curies hervor?",
+          "options": ["Chemotherapie", "Strahlentherapie", "Impfung", "Antibiotika"],
+          "explanation": "Radioaktivität wurde auch zur Grundlage von Kernphysik und Kernenergie, und medizinische Isotope, die auf ihre Forschung zurückgehen, werden täglich eingesetzt."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "efa1b439-dfc2-4383-8515-a7bdabb301cc",
+      "chapter_index": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke twee elementen ontdekten Marie en Pierre Curie in 1898?",
+          "options": ["Polonium en radium", "Uranium en thorium", "Radon en radium", "Polonium en plutonium"],
+          "explanation": "Polonium werd genoemd naar Maries bezette vaderland, Polen. Een gram radium isoleren kostte jaren van tonnen pekblende met de hand inkoken."
+        },
+        "fr": {
+          "question": "Quels deux éléments Marie et Pierre Curie découvrirent-ils en 1898 ?",
+          "options": ["Le polonium et le radium", "L'uranium et le thorium", "Le radon et le radium", "Le polonium et le plutonium"],
+          "explanation": "Le polonium doit son nom à la patrie occupée de Marie, la Pologne. Isoler un gramme de radium demanda des années à faire bouillir à la main des tonnes de pechblende."
+        },
+        "de": {
+          "question": "Welche zwei Elemente entdeckten Marie und Pierre Curie 1898?",
+          "options": ["Polonium und Radium", "Uran und Thorium", "Radon und Radium", "Polonium und Plutonium"],
+          "explanation": "Polonium wurde nach Maries besetzter Heimat Polen benannt. Ein Gramm Radium zu isolieren, kostete Jahre, in denen Tonnen von Pechblende von Hand eingekocht wurden."
+        }
+      }
+    },
+    {
+      "id": "cd8443ac-ec15-4b3a-87de-1f0c9d6f03d5",
+      "chapter_index": 5,
+      "vertalingen": {
+        "nl": {
+          "question": "Marie Curie is de enige die Nobelprijzen won in welke twee wetenschappen?",
+          "options": ["Natuurkunde en scheikunde", "Natuurkunde en geneeskunde", "Scheikunde en geneeskunde", "Natuurkunde en vrede"],
+          "explanation": "Natuurkunde in 1903, gedeeld met Pierre en Henri Becquerel, en scheikunde in 1911, helemaal alleen."
+        },
+        "fr": {
+          "question": "Marie Curie est la seule personne à avoir reçu un prix Nobel dans quelles deux sciences ?",
+          "options": ["Physique et chimie", "Physique et médecine", "Chimie et médecine", "Physique et paix"],
+          "explanation": "La physique en 1903, partagée avec Pierre et Henri Becquerel, et la chimie en 1911, seule."
+        },
+        "de": {
+          "question": "Marie Curie ist der einzige Mensch mit Nobelpreisen in welchen zwei Wissenschaften?",
+          "options": ["Physik und Chemie", "Physik und Medizin", "Chemie und Medizin", "Physik und Frieden"],
+          "explanation": "Physik 1903, geteilt mit Pierre und Henri Becquerel, und Chemie 1911, allein."
+        }
+      }
+    }
+  ]
+}

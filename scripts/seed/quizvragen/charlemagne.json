@@ -1,0 +1,189 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Who was Charles's father?",
+      "options": ["Charles Martel", "Pepin the Short", "Clovis", "Louis the Pious"],
+      "explanation": "Pepin had pushed aside the last Merovingian kings and founded the Carolingian dynasty. When he died in 768, Frankish custom split the kingdom between Charles and his brother Carloman.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie was de vader van Karel?",
+          "options": ["Karel Martel", "Pepijn de Korte", "Clovis", "Lodewijk de Vrome"],
+          "explanation": "Pepijn had de laatste Merovingische koningen opzijgeschoven en de Karolingische dynastie gesticht. Toen hij in 768 stierf, werd het rijk volgens Frankisch gebruik verdeeld tussen Karel en zijn broer Karloman."
+        },
+        "fr": {
+          "question": "Qui était le père de Charles ?",
+          "options": ["Charles Martel", "Pépin le Bref", "Clovis", "Louis le Pieux"],
+          "explanation": "Pépin avait écarté les derniers rois mérovingiens et fondé la dynastie carolingienne. À sa mort en 768, la coutume franque partagea le royaume entre Charles et son frère Carloman."
+        },
+        "de": {
+          "question": "Wer war Karls Vater?",
+          "options": ["Karl Martell", "Pippin der Jüngere", "Chlodwig", "Ludwig der Fromme"],
+          "explanation": "Pippin hatte die letzten merowingischen Könige verdrängt und die Dynastie der Karolinger gegründet. Als er 768 starb, teilte fränkischer Brauch das Reich zwischen Karl und seinem Bruder Karlmann."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Where did Charles set up his palace school?",
+      "options": ["Paris", "Rome", "Aachen", "Ravenna"],
+      "explanation": "Scholars from across Europe came to teach there. The Carolingian Renaissance it started helped carry the learning of the ancient world through the Middle Ages.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar richtte Karel zijn paleisschool op?",
+          "options": ["Parijs", "Rome", "Aken", "Ravenna"],
+          "explanation": "Geleerden uit heel Europa kwamen er lesgeven. De Karolingische renaissance die daar begon, hielp de kennis van de oudheid door de middeleeuwen te dragen."
+        },
+        "fr": {
+          "question": "Où Charles installa-t-il son école palatine ?",
+          "options": ["Paris", "Rome", "Aix-la-Chapelle", "Ravenne"],
+          "explanation": "Des savants de toute l'Europe vinrent y enseigner. La renaissance carolingienne qui y naquit aida à transmettre le savoir de l'Antiquité à travers le Moyen Âge."
+        },
+        "de": {
+          "question": "Wo richtete Karl seine Hofschule ein?",
+          "options": ["Paris", "Rom", "Aachen", "Ravenna"],
+          "explanation": "Gelehrte aus ganz Europa kamen dorthin, um zu lehren. Die karolingische Renaissance, die dort begann, half, das Wissen der Antike durch das Mittelalter zu tragen."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What did Charles keep under his pillow?",
+      "options": ["A sword", "Holy relics", "Tablets to practise writing", "The keys to his treasury"],
+      "explanation": "He learned to write late and his hand stayed clumsy all his life. The emperor who made learning the heart of his empire never fully mastered it himself.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat bewaarde Karel onder zijn kussen?",
+          "options": ["Een zwaard", "Heilige relieken", "Tabletten om te oefenen met schrijven", "De sleutels van zijn schatkist"],
+          "explanation": "Hij leerde pas laat schrijven en zijn handschrift bleef zijn hele leven onbeholpen. De keizer die geleerdheid tot het hart van zijn rijk maakte, beheerste het zelf nooit helemaal."
+        },
+        "fr": {
+          "question": "Que gardait Charles sous son oreiller ?",
+          "options": ["Une épée", "Des reliques", "Des tablettes pour s'exercer à écrire", "Les clés de son trésor"],
+          "explanation": "Il apprit à écrire sur le tard et garda toute sa vie une écriture maladroite. L'empereur qui plaça le savoir au cœur de son empire ne le maîtrisa jamais tout à fait lui-même."
+        },
+        "de": {
+          "question": "Was bewahrte Karl unter seinem Kopfkissen auf?",
+          "options": ["Ein Schwert", "Heilige Reliquien", "Tafeln zum Schreibenüben", "Die Schlüssel zu seiner Schatzkammer"],
+          "explanation": "Er lernte spät schreiben, und seine Schrift blieb zeitlebens unbeholfen. Der Kaiser, der Bildung zum Herzen seines Reiches machte, beherrschte sie selbst nie ganz."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "How did Charles's monasteries save much of the ancient world's writing?",
+      "options": ["By printing books", "By copying manuscripts", "By founding universities", "By translating it into Frankish"],
+      "explanation": "Many ancient texts survive only because Carolingian monks copied them. Charles insisted the clergy be educated and set strict rules for monastic life.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe redden Karels kloosters een groot deel van de antieke geschriften?",
+          "options": ["Door boeken te drukken", "Door handschriften over te schrijven", "Door universiteiten te stichten", "Door ze in het Frankisch te vertalen"],
+          "explanation": "Veel antieke teksten bestaan alleen nog omdat Karolingische monniken ze overschreven. Karel eiste dat de geestelijkheid goed geschoold was en legde het kloosterleven strenge regels op."
+        },
+        "fr": {
+          "question": "Comment les monastères de Charles sauvèrent-ils une grande partie des écrits antiques ?",
+          "options": ["En imprimant des livres", "En recopiant les manuscrits", "En fondant des universités", "En les traduisant en francique"],
+          "explanation": "Beaucoup de textes antiques n'existent encore que parce que des moines carolingiens les ont recopiés. Charles exigeait un clergé instruit et imposa des règles strictes à la vie monastique."
+        },
+        "de": {
+          "question": "Wie retteten Karls Klöster einen großen Teil der antiken Schriften?",
+          "options": ["Durch den Buchdruck", "Durch das Abschreiben von Handschriften", "Durch die Gründung von Universitäten", "Durch Übersetzung ins Fränkische"],
+          "explanation": "Viele antike Texte gibt es nur noch, weil karolingische Mönche sie abschrieben. Karl verlangte eine gebildete Geistlichkeit und gab dem Klosterleben strenge Regeln."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What is Charlemagne often called today?",
+      "options": ["The Hammer", "The Father of Europe", "The Last of the Romans", "The Lion of the North"],
+      "explanation": "His empire fell apart, but the kingdoms it split into became the nations of Europe. The title leaves out a darker side: the Saxon wars brought mass killing and forced conversion.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe wordt Karel de Grote tegenwoordig vaak genoemd?",
+          "options": ["De Hamer", "De vader van Europa", "De laatste der Romeinen", "De Leeuw van het Noorden"],
+          "explanation": "Zijn rijk viel uiteen, maar de koninkrijken die eruit voortkwamen werden de naties van Europa. De titel verzwijgt een donkere kant: de oorlogen tegen de Saksen brachten massamoord en gedwongen bekering."
+        },
+        "fr": {
+          "question": "Comment appelle-t-on souvent Charlemagne aujourd'hui ?",
+          "options": ["Le Marteau", "Le père de l'Europe", "Le dernier des Romains", "Le Lion du Nord"],
+          "explanation": "Son empire se défit, mais les royaumes qui en naquirent devinrent les nations d'Europe. Le titre tait une face sombre : les guerres saxonnes apportèrent massacres et conversions forcées."
+        },
+        "de": {
+          "question": "Wie wird Karl der Große heute oft genannt?",
+          "options": ["Der Hammer", "Der Vater Europas", "Der letzte Römer", "Der Löwe aus Mitternacht"],
+          "explanation": "Sein Reich zerfiel, doch aus den Teilreichen wurden die Nationen Europas. Der Titel verschweigt eine dunkle Seite: Die Sachsenkriege brachten Massentötungen und Zwangsbekehrung."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "828a873a-fe89-4cd6-8931-2ee6d998655f",
+      "chapter_index": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom riep paus Adrianus in 773 de hulp van Karel in?",
+          "options": ["Byzantijnse legers waren in Italië geland", "De Longobarden bedreigden het pauselijk gebied", "De Saksen hadden Rome geplunderd", "Moslimtroepen waren de Pyreneeën overgestoken"],
+          "explanation": "Karel versloeg de Longobarden en nam daarna zelf hun kroon. Het land dat hij vervolgens aan de Kerk schonk, verbond pausdom en Frankische troon eeuwenlang met elkaar."
+        },
+        "fr": {
+          "question": "Pourquoi le pape Adrien appela-t-il Charles à l'aide en 773 ?",
+          "options": ["Des armées byzantines avaient débarqué en Italie", "Les Lombards menaçaient les terres pontificales", "Les Saxons avaient attaqué Rome", "Des troupes musulmanes avaient franchi les Pyrénées"],
+          "explanation": "Charles battit les Lombards puis prit leur couronne. Les terres qu'il donna ensuite à l'Église lièrent papauté et trône franc pour des siècles."
+        },
+        "de": {
+          "question": "Warum rief Papst Hadrian Karl im Jahr 773 zu Hilfe?",
+          "options": ["Byzantinische Heere waren in Italien gelandet", "Die Langobarden bedrohten das päpstliche Gebiet", "Die Sachsen hatten Rom überfallen", "Muslimische Truppen hatten die Pyrenäen überquert"],
+          "explanation": "Karl besiegte die Langobarden und nahm dann selbst ihre Krone. Das Land, das er danach der Kirche schenkte, verband Papsttum und fränkischen Thron für Jahrhunderte."
+        }
+      }
+    },
+    {
+      "id": "54239922-4723-4e7a-86ea-4cb11e65ed2d",
+      "chapter_index": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke titel gaf paus Leo III aan Karel op eerste kerstdag 800?",
+          "options": ["Koning der Longobarden", "Keizer der Romeinen", "Beschermer van de Heilige Stoel", "Koning van alle Franken"],
+          "explanation": "Hij was de eerste heerser in West-Europa met een keizerstitel sinds de val van Rome. In Constantinopel, waar nog een echte Romeinse keizer zat, werd de kroning als een belediging opgevat."
+        },
+        "fr": {
+          "question": "Quel titre le pape Léon III donna-t-il à Charles le jour de Noël 800 ?",
+          "options": ["Roi des Lombards", "Empereur des Romains", "Protecteur du Saint-Siège", "Roi de tous les Francs"],
+          "explanation": "Il fut le premier souverain d'Europe occidentale à porter un titre impérial depuis la chute de Rome. À Constantinople, où siégeait encore un véritable empereur romain, ce couronnement fut perçu comme une insulte."
+        },
+        "de": {
+          "question": "Welchen Titel verlieh Papst Leo III. Karl am Weihnachtstag des Jahres 800?",
+          "options": ["König der Langobarden", "Kaiser der Römer", "Beschützer des Heiligen Stuhls", "König aller Franken"],
+          "explanation": "Er war der erste Herrscher in Westeuropa mit einem Kaisertitel seit dem Fall Roms. In Konstantinopel, wo noch ein echter römischer Kaiser saß, galt die Krönung als Beleidigung."
+        }
+      }
+    },
+    {
+      "id": "8972fead-9237-41d9-a253-9dc454f5facb",
+      "chapter_index": 7,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er met het rijk na de dood van Karels zoon Lodewijk de Vrome?",
+          "options": ["Het ging in zijn geheel naar één kleinzoon", "Lodewijks drie zonen verdeelden het onder elkaar", "De paus nam het onder zijn gezag", "Het werd veroverd door de Saksen"],
+          "explanation": "Volgens Frankisch gebruik werden erfenissen verdeeld – hetzelfde gebruik dat Karel ooit had gedwongen te delen met zijn broer Karloman. Dit keer stierf er geen broer vroeg om de deling ongedaan te maken."
+        },
+        "fr": {
+          "question": "Que devint l'empire après la mort du fils de Charles, Louis le Pieux ?",
+          "options": ["Il passa tout entier à un seul petit-fils", "Les trois fils de Louis se le partagèrent", "Le pape le prit sous son autorité", "Il fut conquis par les Saxons"],
+          "explanation": "La coutume franque partageait les héritages – la même coutume qui avait jadis obligé Charles à partager avec son frère Carloman. Cette fois, aucun frère ne mourut tôt pour défaire le partage."
+        },
+        "de": {
+          "question": "Was wurde aus dem Reich nach dem Tod von Karls Sohn Ludwig dem Frommen?",
+          "options": ["Es ging ungeteilt an einen Enkel", "Ludwigs drei Söhne teilten es unter sich auf", "Der Papst stellte es unter seine Herrschaft", "Es wurde von den Sachsen erobert"],
+          "explanation": "Fränkischer Brauch teilte Erbschaften – derselbe Brauch, der Karl einst gezwungen hatte, mit seinem Bruder Karlmann zu teilen. Diesmal starb kein Bruder früh, um die Teilung rückgängig zu machen."
+        }
+      }
+    }
+  ]
+}

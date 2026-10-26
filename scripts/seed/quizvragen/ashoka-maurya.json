@@ -1,0 +1,189 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What did Seleucus receive from Chandragupta in exchange for the lands beyond the Indus?",
+      "options": ["A royal bride", "Five hundred war elephants", "A fleet of river ships", "The city of Pataliputra"],
+      "explanation": "Seleucus took the elephants west and used them at Ipsus in 301 BC, where their charge helped decide who inherited Alexander's empire.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat kreeg Seleucus van Chandragupta in ruil voor de gebieden voorbij de Indus?",
+          "options": ["Een koninklijke bruid", "Vijfhonderd oorlogsolifanten", "Een vloot rivierschepen", "De stad Pataliputra"],
+          "explanation": "Seleucus nam de olifanten mee naar het westen en zette ze in 301 v.Chr. in bij Ipsus, waar hun charge mee besliste wie het rijk van Alexander erfde."
+        },
+        "fr": {
+          "question": "Qu'est-ce que Séleucos reçut de Chandragupta en échange des terres au-delà de l'Indus ?",
+          "options": ["Une épouse royale", "Cinq cents éléphants de guerre", "Une flotte de bateaux fluviaux", "La ville de Pataliputra"],
+          "explanation": "Séleucos emmena les éléphants vers l'ouest et les engagea à Ipsos en 301 av. J.-C., où leur charge contribua à décider qui hériterait de l'empire d'Alexandre."
+        },
+        "de": {
+          "question": "Was bekam Seleukos von Chandragupta im Tausch für die Gebiete jenseits des Indus?",
+          "options": ["Eine königliche Braut", "Fünfhundert Kriegselefanten", "Eine Flotte von Flussschiffen", "Die Stadt Pataliputra"],
+          "explanation": "Seleukos brachte die Elefanten nach Westen und setzte sie 301 v. Chr. bei Ipsos ein, wo ihr Angriff mit entschied, wer Alexanders Reich erbte."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Why do historians think Ashoka had to fight for his throne?",
+      "options": ["His edicts boast of killing rivals", "Greek envoys described a civil war", "Four years passed before his consecration", "He was crowned far from the capital"],
+      "explanation": "He dated his reign from his consecration, not his accession. The legend of ninety-nine murdered half-brothers came centuries later, and his own edicts speak warmly of his brothers' households.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom denken historici dat Ashoka voor zijn troon moest vechten?",
+          "options": ["Zijn edicten pochen over gedode rivalen", "Griekse gezanten beschreven een burgeroorlog", "Er zaten vier jaar tussen troonsbestijging en wijding", "Hij werd ver van de hoofdstad gekroond"],
+          "explanation": "Hij telde zijn regeringsjaren vanaf zijn wijding, niet vanaf zijn troonsbestijging. Het verhaal over negenennegentig vermoorde halfbroers ontstond eeuwen later, en zijn eigen edicten spreken hartelijk over de huishoudens van zijn broers."
+        },
+        "fr": {
+          "question": "Pourquoi les historiens pensent-ils qu'Ashoka dut se battre pour son trône ?",
+          "options": ["Ses édits se vantent d'avoir tué ses rivaux", "Des envoyés grecs décrivent une guerre civile", "Quatre ans séparent son accession de son sacre", "Il fut couronné loin de la capitale"],
+          "explanation": "Il datait son règne de son sacre, pas de son accession. La légende des quatre-vingt-dix-neuf demi-frères assassinés est apparue des siècles plus tard, et ses propres édits parlent avec chaleur des maisonnées de ses frères."
+        },
+        "de": {
+          "question": "Warum glauben Historiker, dass Ashoka um seinen Thron kämpfen musste?",
+          "options": ["Seine Edikte prahlen mit getöteten Rivalen", "Griechische Gesandte beschrieben einen Bürgerkrieg", "Zwischen Thronfolge und Weihe lagen vier Jahre", "Er wurde fern der Hauptstadt gekrönt"],
+          "explanation": "Er zählte seine Regierungsjahre ab der Weihe, nicht ab der Thronfolge. Die Legende von neunundneunzig ermordeten Halbbrüdern entstand Jahrhunderte später, und seine eigenen Edikte sprechen herzlich von den Haushalten seiner Brüder."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What did excavations at Pataliputra find that confirmed the Greek envoy's account?",
+      "options": ["A stone citadel", "A royal tomb", "Remains of huge wooden walls", "A library of palm-leaf texts"],
+      "explanation": "Megasthenes described a timber palisade with sixty-four gates. It sounded like a traveller's tale until the waterlogged walls and a great pillared hall turned up at Bulandi Bagh and Kumrahar.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat vonden opgravingen in Pataliputra dat het verslag van de Griekse gezant bevestigde?",
+          "options": ["Een stenen burcht", "Een koninklijk graf", "Resten van enorme houten muren", "Een bibliotheek van palmbladteksten"],
+          "explanation": "Megasthenes beschreef een houten palissade met vierenzestig poorten. Dat klonk als een reizigersverhaal, tot bij Bulandi Bagh en Kumrahar de doorweekte muren en een grote zuilenhal tevoorschijn kwamen."
+        },
+        "fr": {
+          "question": "Qu'ont trouvé les fouilles de Pataliputra qui confirmait le récit de l'envoyé grec ?",
+          "options": ["Une citadelle de pierre", "Un tombeau royal", "Les restes d'immenses murailles en bois", "Une bibliothèque de textes sur feuilles de palmier"],
+          "explanation": "Mégasthène décrivait une palissade de bois percée de soixante-quatre portes. On y voyait un récit de voyageur, jusqu'à ce que les murailles gorgées d'eau et une grande salle à colonnes réapparaissent à Bulandi Bagh et Kumrahar."
+        },
+        "de": {
+          "question": "Was fanden Ausgrabungen in Pataliputra, das den Bericht des griechischen Gesandten bestätigte?",
+          "options": ["Eine steinerne Zitadelle", "Ein Königsgrab", "Reste riesiger Holzmauern", "Eine Bibliothek aus Palmblatttexten"],
+          "explanation": "Megasthenes beschrieb einen Holzwall mit vierundsechzig Toren. Das klang nach Reiseerzählung, bis bei Bulandi Bagh und Kumrahar die durchnässten Mauern und eine große Säulenhalle zum Vorschein kamen."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What did Ashoka mean by 'dhamma-vijaya'?",
+      "options": ["Victory by righteousness", "Victory by trade", "Rule by the monks", "Conquest by marriage"],
+      "explanation": "It replaced conquest by arms. He even listed the Greek kings he claimed to have reached, from Antiochus in Syria to Ptolemy in Egypt, though no Greek source records the missions.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat bedoelde Ashoka met 'dhamma-vijaya'?",
+          "options": ["Overwinning door rechtvaardigheid", "Overwinning door handel", "Heerschappij van de monniken", "Verovering door huwelijk"],
+          "explanation": "Het kwam in de plaats van verovering met wapens. Hij somde zelfs de Griekse koningen op die hij bereikt zou hebben, van Antiochus in Syrië tot Ptolemaeus in Egypte – al vermeldt geen enkele Griekse bron die gezantschappen."
+        },
+        "fr": {
+          "question": "Qu'entendait Ashoka par « dhamma-vijaya » ?",
+          "options": ["La victoire par la justice", "La victoire par le commerce", "Le gouvernement des moines", "La conquête par le mariage"],
+          "explanation": "Elle remplaçait la conquête par les armes. Il énumérait même les rois grecs qu'il disait avoir atteints, d'Antiochos en Syrie à Ptolémée en Égypte, bien qu'aucune source grecque ne mentionne ces missions."
+        },
+        "de": {
+          "question": "Was meinte Ashoka mit „dhamma-vijaya“?",
+          "options": ["Sieg durch Rechtschaffenheit", "Sieg durch Handel", "Herrschaft der Mönche", "Eroberung durch Heirat"],
+          "explanation": "Er ersetzte die Eroberung mit Waffen. Er zählte sogar die griechischen Könige auf, die er erreicht haben wollte, von Antiochos in Syrien bis Ptolemaios in Ägypten – obwohl keine griechische Quelle diese Gesandtschaften erwähnt."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "According to tradition, whom did Ashoka send to bring Buddhism to Sri Lanka?",
+      "options": ["His queen Karuvaki", "His son Mahinda", "His minister Kautilya", "His general Pushyamitra"],
+      "explanation": "His daughter Sanghamitta followed with a cutting of the Bodhi tree. Buddhism was preserved in Sri Lanka in a written canon while it faded in India itself.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie stuurde Ashoka volgens de overlevering om het boeddhisme naar Sri Lanka te brengen?",
+          "options": ["Zijn koningin Karuvaki", "Zijn zoon Mahinda", "Zijn minister Kautilya", "Zijn generaal Pushyamitra"],
+          "explanation": "Zijn dochter Sanghamitta volgde met een stek van de bodhiboom. In Sri Lanka bleef het boeddhisme in een geschreven canon bewaard, terwijl het in India zelf verdween."
+        },
+        "fr": {
+          "question": "Selon la tradition, qui Ashoka envoya-t-il porter le bouddhisme au Sri Lanka ?",
+          "options": ["Sa reine Karuvaki", "Son fils Mahinda", "Son ministre Kautilya", "Son général Pushyamitra"],
+          "explanation": "Sa fille Sanghamitta suivit avec une bouture de l'arbre de la Bodhi. Le bouddhisme fut préservé au Sri Lanka dans un canon écrit, tandis qu'il s'effaçait en Inde même."
+        },
+        "de": {
+          "question": "Wen schickte Ashoka der Überlieferung nach, um den Buddhismus nach Sri Lanka zu bringen?",
+          "options": ["Seine Königin Karuvaki", "Seinen Sohn Mahinda", "Seinen Minister Kautilya", "Seinen General Pushyamitra"],
+          "explanation": "Seine Tochter Sanghamitta folgte mit einem Ableger des Bodhi-Baums. In Sri Lanka blieb der Buddhismus in einem schriftlichen Kanon erhalten, während er in Indien selbst verblasste."
+        }
+      }
+    }
+  ],
+  "vertalingen": [
+    {
+      "id": "7cb215e5-b8da-44e0-a5e5-d6a9d22b9f24",
+      "chapter_index": 4,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke cijfers geeft Ashoka's eigen Rotsedict XIII voor de prijs van de oorlog tegen Kalinga?",
+          "options": ["100.000 gedeporteerd, 150.000 gedood", "150.000 gedeporteerd, 100.000 gedood", "150.000 gedood, geen deportaties vermeld", "100.000 gedeporteerd en 100.000 gedood"],
+          "explanation": "De deportaties waren misschien de wreedste helft: dorpelingen honderden kilometers ver laten lopen om nieuw land te ontginnen, kostte nog lang na de gevechten levens door honger en ziekte."
+        },
+        "fr": {
+          "question": "Quels chiffres l'édit sur rocher XIII d'Ashoka donne-t-il pour le coût de la guerre du Kalinga ?",
+          "options": ["100 000 déportés, 150 000 tués", "150 000 déportés, 100 000 tués", "150 000 tués, aucune déportation mentionnée", "100 000 déportés et 100 000 tués"],
+          "explanation": "Les déportations furent peut-être la moitié la plus cruelle : faire marcher des villageois sur des centaines de kilomètres pour défricher de nouvelles terres tua par la faim et la maladie bien après la fin des combats."
+        },
+        "de": {
+          "question": "Welche Zahlen nennt Ashokas eigenes Felsenedikt XIII für den Preis des Krieges gegen Kalinga?",
+          "options": ["100.000 verschleppt, 150.000 getötet", "150.000 verschleppt, 100.000 getötet", "150.000 getötet, keine Verschleppungen genannt", "100.000 verschleppt und 100.000 getötet"],
+          "explanation": "Die Verschleppungen waren vielleicht die grausamere Hälfte: Dorfbewohner Hunderte Kilometer weit zu treiben, um neues Land urbar zu machen, tötete durch Hunger und Krankheit noch lange nach dem Ende der Kämpfe."
+        }
+      }
+    },
+    {
+      "id": "f2179742-08e9-43a0-af85-c21c76064c8b",
+      "chapter_index": 6,
+      "vertalingen": {
+        "nl": {
+          "question": "In welke talen werd Ashoka's boodschap in Kandahar in Afghanistan uitgehouwen?",
+          "options": ["Prakrit en Brahmi", "Grieks en Aramees", "Kharoshthi en Perzisch", "Sanskriet en Grieks"],
+          "explanation": "De tweetalige steen werd in 1958 door arbeiders gevonden. Ashoka predikte het afzien van doden tot de nazaten van Alexanders garnizoenen, in de taal van Plato."
+        },
+        "fr": {
+          "question": "À Kandahar, en Afghanistan, dans quelles langues le message d'Ashoka fut-il gravé ?",
+          "options": ["Prakrit et brahmi", "Grec et araméen", "Kharoshthi et persan", "Sanskrit et grec"],
+          "explanation": "La dalle bilingue fut découverte par des ouvriers en 1958. Ashoka prêchait de renoncer à tuer aux descendants des garnisons d'Alexandre, dans la langue de Platon."
+        },
+        "de": {
+          "question": "In welchen Sprachen wurde Ashokas Botschaft in Kandahar in Afghanistan eingemeißelt?",
+          "options": ["Prakrit und Brahmi", "Griechisch und Aramäisch", "Kharoshthi und Persisch", "Sanskrit und Griechisch"],
+          "explanation": "Die zweisprachige Steinplatte wurde 1958 von Arbeitern gefunden. Ashoka predigte den Nachfahren von Alexanders Garnisonen den Verzicht aufs Töten, in der Sprache Platons."
+        }
+      }
+    },
+    {
+      "id": "1118a77b-6ef8-4e68-bb12-5b9d7a176857",
+      "chapter_index": 8,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie ontcijferde het Brahmi-schrift en maakte de edicten weer leesbaar?",
+          "options": ["Megasthenes", "Firuz Shah Tughluq", "James Prinsep", "H. G. Wells"],
+          "explanation": "Prinsep kraakte het schrift in 1837, maar de koning die hij las noemde zichzelf alleen Devanampiya Piyadasi. De naam Ashoka werd pas in 1915 op steen bevestigd, toen de inscriptie van Maski opdook."
+        },
+        "fr": {
+          "question": "Qui déchiffra l'écriture brahmi et rendit les édits à nouveau lisibles ?",
+          "options": ["Mégasthène", "Firuz Shah Tughluq", "James Prinsep", "H. G. Wells"],
+          "explanation": "Prinsep perça l'écriture en 1837, mais le roi qu'il lisait se nommait seulement Devanampiya Piyadasi. Le nom d'Ashoka ne fut confirmé dans la pierre qu'en 1915, avec la découverte de l'inscription de Maski."
+        },
+        "de": {
+          "question": "Wer entzifferte die Brahmi-Schrift und machte die Edikte wieder lesbar?",
+          "options": ["Megasthenes", "Firuz Shah Tughluq", "James Prinsep", "H. G. Wells"],
+          "explanation": "Prinsep knackte die Schrift 1837, doch der König, den er las, nannte sich nur Devanampiya Piyadasi. Der Name Ashoka wurde erst 1915 auf Stein bestätigt, als die Inschrift von Maski auftauchte."
+        }
+      }
+    }
+  ]
+}

@@ -19,6 +19,7 @@ npm run generate:map-data      # regenerate src/constants/map-data.ts (orphaned 
 npm run generate:images:r9     # Replicate portrait generation (R9, not wired into the app yet)
 npm run generate:images:scenes # Replicate scene generation, one per chapter (all 20 stories)
 npm run generate:batch         # orchestration-controller.mjs batch content/image runs
+npm run generate:quizvragen    # één quizvraag per hoofdstuk, 4 talen (--controleer / --apply, zie "1.4")
 npm run generate:logo          # histora-mark-tile PNG + app-splash.png (see "Brand mark")
 npm run generate:store-assets  # store/assets/ icon-512.png + feature-graphic.png (see "Store assets")
 npm run generate:notification-icon # assets/images/notification-icon.png (white-on-transparent, 96px)
@@ -150,7 +151,9 @@ measures the result (nothing non-white, not more than 60% opaque) rather than as
 3. `npm run generate:store-assets` — `store/assets/icon-512.png` is a 2× downscale of
    `app-icon.png`, and `store/feature-graphic.html` embeds `app-icon.png`, so both follow.
 
-`app.json`'s `adaptiveIcon.backgroundColor` and the `expo-notifications` `color` are `#0EA5E9`; the
+`app.json`'s `adaptiveIcon.backgroundColor` and the `expo-notifications` `color` were `#0EA5E9`
+(both are the fox fur `#E4682B` now — the notification `color` is the tint Android paints the
+silhouette in, so it has to follow the icon; 1.3.1 shipped the fox with the old blue); the
 splash `backgroundColor` stays `#F7F1E4`, because the splash PNG is transparent so the plate behind
 it matches the app's own background.
 
@@ -1316,6 +1319,28 @@ server komt** — de verhalen zelf zitten in de bundel en werken offline, deze n
   (zie hieronder). Unique constraints op `(story_id, chapter_index, question)` en
   `(story_id, choice_point_id)` maken opnieuw seeden idempotent.
 
+#### 1.4: één quizvraag per hoofdstuk, in vier talen, met Phoxy
+
+- **Elk hoofdstuk heeft precies één quizvraag (160) en het paneel toont alléén die.** Peilingen en
+  keuzepunten staan nog in de database én in de RPC `hoofdstuk_interactie`, omdat app-versies
+  t/m 1.3.1 ze verwachten; haal ze daar pas weg als die versies uitgestorven zijn. De reader opent
+  het paneel op `heeftVragen()` (quizzen), niet meer op `!isLeeg()` — anders opent een hoofdstuk
+  met alleen een peiling een leeg paneel en zit de lezer vast.
+- **Vertalingen staan in `story_quizzes.vertalingen` (jsonb)**: `{ nl|fr|de: { question, options,
+  explanation } }`, Engels blijft in de gewone kolommen. De opties staan in dezelfde volgorde,
+  want `correct_answer` is één index voor alle talen; `leesQuizVertalingen` gooit een taal met een
+  afwijkend aantal opties weg. Resolven doe je met `quizInTaal(quiz, taal)`, zoals `v()`.
+  Migraties: `supabase/quiz-vertalingen-migratie.sql` (kolom) en `-2.sql` (RPC).
+- **De vragen zijn met de hand geschreven** (in een Claude Code-sessie, zonder API-kosten) en
+  staan nagelezen in `scripts/seed/quizvragen/<id>.json` + `.md`. `npm run generate:quizvragen`
+  kan ze ook via de API genereren; `-- --controleer` toetst de JSON en schrijft de `.md`,
+  `-- --apply` zet ze in Supabase en leest dáárvoor van schijf, niet uit een nieuwe generatie. Een
+  `correctie` in een vertaling-entry overschrijft ook de Engelse vraag (Edison: Hoover, niet Ford).
+- **Phoxy (`phoxy-leraar.tsx`) staat boven de vraag**: wijzend, na het antwoord juichend of
+  bemoedigend, met een tekstwolkje uit i18n (`interactief.phoxyGoed`/`phoxyFout`, drie zinnen per
+  uitkomst, gekozen bij het antwoord en niet tijdens het renderen). De plaatjes komen uit
+  `scripts/prepare-teacher-fox.mjs` (groen scherm → transparant, geschaald op sjaal-tot-benen).
+
 #### Interactie genereren (`scripts/audit-interactive-content.mjs`, `generate-interactive-content.mjs`)
 
 ```bash
@@ -1726,6 +1751,7 @@ delete it, and don't wire it back up without reading why it was dropped.
 | `VasteMeldingRegel` in `components/notification-preferences.tsx` | streak-/mijlpaalregels uit Instellingen gehaald |
 | `components/ad-modal.tsx` | v1.2 — replaced by the AdMob interstitial (`toonInterstitial`) |
 | `components/interactieve-sectie.tsx` | 2026-10-22 — vragen verhuisd naar het verplichte paneel `hoofdstuk-vragen.tsx` |
+| `components/story-poll.tsx`, `components/story-choice.tsx`, `components/interactie-stem.tsx` | 1.4 — het vragenpaneel toont alleen nog quizvragen (peilingen/keuzepunten blijven in de database voor oudere app-versies) |
 | `components/placeholder-screen.tsx` | Voortgang/Profiel are fully built |
 | `components/profile-card-collection.tsx` | superseded by `profile-character-collection.tsx` (kaarten i.p.v. cirkelraster) |
 | `components/progress-stats-header.tsx` | 1.3 — Voortgang toont `streak-kaart.tsx` (de vos); de tellers staan op Profiel |
