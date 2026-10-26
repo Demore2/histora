@@ -4,6 +4,8 @@ import { SCENE_IMAGES } from '@/constants/scene-images';
 
 export const joanOfArc: Verhaal = {
   id: 'joan-of-arc',
+  beginJaar: 1412,
+  toegevoegdOp: '2026-07-23',
   titel: { en: 'Joan of Arc' },
   ondertitel: { en: 'The Peasant Girl Who Heard Divine Voices' },
   teaser: { en: 'From humble fields to legendary military leader, Joan of Arc changed the course of the Hundred Years War.' },
@@ -205,6 +207,8 @@ export const joanOfArc: Verhaal = {
 
 export const charlemagne: Verhaal = {
   id: 'charlemagne',
+  beginJaar: 748,
+  toegevoegdOp: '2026-07-23',
   titel: { en: 'Charlemagne' },
   ondertitel: { en: 'The Father of Europe' },
   teaser: { en: 'A warrior king who united much of Europe and became the first Holy Roman Emperor since ancient times.' },
@@ -406,6 +410,8 @@ export const charlemagne: Verhaal = {
 
 export const richardTheLionheart: Verhaal = {
   id: 'richard-the-lionheart',
+  beginJaar: 1157,
+  toegevoegdOp: '2026-07-23',
   titel: { en: 'Richard the Lionheart' },
   ondertitel: { en: 'The Crusader King of England' },
   teaser: { en: 'A legendary medieval warrior king who led the Third Crusade and became an icon of chivalry.' },

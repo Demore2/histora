@@ -8,6 +8,8 @@ import { SCENE_IMAGES } from '@/constants/scene-images';
 
 export const steveJobs: Verhaal = {
   id: 'steve-jobs',
+  beginJaar: 1955,
+  toegevoegdOp: '2026-07-23',
   titel: { en: 'Steve Jobs' },
   ondertitel: { en: 'Apple Founder and Tech Visionary' },
   teaser: { en: 'From garage startup to revolutionary technology, Jobs showed that design and simplicity could change the world.' },
@@ -196,6 +198,8 @@ export const steveJobs: Verhaal = {
 
 export const malala: Verhaal = {
   id: 'malala-yousafzai',
+  beginJaar: 1997,
+  toegevoegdOp: '2026-07-23',
   titel: { en: 'Malala Yousafzai' },
   ondertitel: { en: 'Education Activist Who Stood Up to Extremism' },
   teaser: { en: 'A schoolgirl\'s blog became a global voice for the right to education.' },
@@ -384,6 +388,8 @@ export const malala: Verhaal = {
 
 export const nelson: Verhaal = {
   id: 'nelson-mandela',
+  beginJaar: 1918,
+  toegevoegdOp: '2026-07-23',
   titel: { en: 'Nelson Mandela' },
   ondertitel: { en: 'The Anti-Apartheid Leader Who United a Nation' },
   teaser: { en: 'After 27 years in prison, he emerged to lead South Africa to democracy.' },

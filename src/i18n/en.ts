@@ -41,6 +41,29 @@ const en = {
     nieuwToegevoegd: 'New hot topics',
     toonAlles: 'Show all',
   },
+  /** De reiskaart bovenaan Home (`reis-kaart.tsx`): de tijdlijn van Rome tot vandaag. */
+  reis: {
+    beginKop: 'Your journey starts here',
+    beginTitel: 'From the founding of Rome to the world today',
+    beginTekst: (titel: string) => `First stop: ${titel}`,
+    beginKnop: 'Begin the journey',
+    verderKop: 'Continue your journey',
+    verderKnop: 'Continue',
+    hoofdstukVan: (hoofdstuk: number, totaal: number) => `Chapter ${hoofdstuk} of ${totaal}`,
+    volgendeKop: 'Next on your journey',
+    volgendeKnop: 'Start reading',
+    positie: (positie: number, totaal: number) => `Stop ${positie} of ${totaal}`,
+    klaarKop: 'Journey complete',
+    klaarTitel: 'You travelled all the way from Rome to today',
+    klaarTekst: 'New stories are on their way. Until then, test what you remember.',
+    klaarKnop: 'Play Explore',
+    tijdperkGelezen: (uit: number, totaal: number) => `${uit}/${totaal} read`,
+    routeBegin: 'Start at the beginning',
+    routeVerder: 'Continue the route',
+    routeKlaar: 'You finished this era',
+    halteVolgende: 'Next stop',
+    halteBezig: (hoofdstuk: number, totaal: number) => `Chapter ${hoofdstuk} of ${totaal}`,
+  },
   /**
    * Het opstartscherm (`components/splash-screen.tsx`). De merknaam erboven komt uit `app.name`
    * en blijft onvertaald; deze regel is een zin en hoort dus wél mee te gaan met de taal.

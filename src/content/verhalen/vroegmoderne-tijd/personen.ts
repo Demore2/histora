@@ -4,6 +4,8 @@ import { SCENE_IMAGES } from '@/constants/scene-images';
 
 export const leonardo: Verhaal = {
   id: 'leonardo-da-vinci',
+  beginJaar: 1452,
+  toegevoegdOp: '2026-07-23',
   titel: { en: 'Leonardo da Vinci' },
   ondertitel: { en: 'Renaissance Master of Art, Science, and Invention' },
   teaser: { en: 'A mind that saw possibilities in everything—from a perfect smile to the mechanics of flight.' },
@@ -193,6 +195,8 @@ export const leonardo: Verhaal = {
 
 export const galileo: Verhaal = {
   id: 'galileo-galilei',
+  beginJaar: 1564,
+  toegevoegdOp: '2026-07-23',
   titel: { en: 'Galileo Galilei' },
   ondertitel: { en: 'The Stargazer Who Changed Science' },
   teaser: { en: 'When Galileo looked through his telescope, he didn\'t just see the stars—he saw a universe that contradicted everything people believed.' },
@@ -382,6 +386,8 @@ export const galileo: Verhaal = {
 
 export const catherine: Verhaal = {
   id: 'catherine-the-great',
+  beginJaar: 1729,
+  toegevoegdOp: '2026-07-23',
   titel: { en: 'Catherine the Great' },
   ondertitel: { en: 'The Empress Who Transformed Russia' },
   teaser: { en: 'Born a princess in a small German state, she became ruler of the vast Russian Empire through intelligence, determination, and one of history\'s boldest power grabs.' },

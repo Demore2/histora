@@ -4,6 +4,8 @@ import { SCENE_IMAGES } from '@/constants/scene-images';
 
 export const romesRise: Verhaal = {
   id: 'rome-rise',
+  beginJaar: -753,
+  toegevoegdOp: '2026-07-22',
   titel: { en: "Rome's Rise" },
   ondertitel: { en: 'From settlement to superpower in the ancient world' },
   teaser: { en: 'A muddy village became an empire through genius, ambition, and relentless expansion.' },
@@ -32,6 +34,8 @@ export const romesRise: Verhaal = {
 
 export const pompeiiDisaster: Verhaal = {
   id: 'pompeii-disaster',
+  beginJaar: 79,
+  toegevoegdOp: '2026-07-22',
   titel: { en: 'Pompeii Disaster' },
   ondertitel: { en: 'A thriving Roman city frozen in time by volcanic catastrophe' },
   teaser: { en: 'In a single day, Mount Vesuvius destroyed an entire city and preserved it for the ages.' },

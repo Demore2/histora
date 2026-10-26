@@ -126,6 +126,22 @@ for (const verhaal of verhalen) {
     errors.push(`${path}.tijdperkId: "${verhaal.tijdperkId}" does not match any Tijdperk`);
   }
 
+  // De plek op de tijdlijn van de reiskaart op Home (1.4.2). Begint het verhaal ná zijn eigen
+  // eindjaar, dan is het bijna zeker een typefout (vergeten minteken bij v.Chr.).
+  if (typeof verhaal.beginJaar !== 'number' || !Number.isFinite(verhaal.beginJaar)) {
+    errors.push(`${path}.beginJaar: expected a number (start year, negative = BC), got ${JSON.stringify(verhaal.beginJaar)}`);
+  } else if (typeof verhaal.jaar === 'number' && verhaal.beginJaar > verhaal.jaar) {
+    errors.push(`${path}.beginJaar: ${verhaal.beginJaar} is after the story's end year ${verhaal.jaar}`);
+  }
+
+  // De volgorde van "New hot topics" (1.4.2). Een datum in de toekomst zet een verhaal wekenlang
+  // vooraan, dus ook die keuren we af.
+  if (typeof verhaal.toegevoegdOp !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(verhaal.toegevoegdOp)) {
+    errors.push(`${path}.toegevoegdOp: expected 'YYYY-MM-DD', got ${JSON.stringify(verhaal.toegevoegdOp)}`);
+  } else if (verhaal.toegevoegdOp > new Date().toISOString().slice(0, 10)) {
+    errors.push(`${path}.toegevoegdOp: ${verhaal.toegevoegdOp} lies in the future`);
+  }
+
   if (typeof verhaal.portretKleur !== 'string') {
     errors.push(`${path}.portretKleur: missing or not a string`);
   } else if (!/^#[0-9A-Fa-f]{6}$/.test(verhaal.portretKleur)) {

@@ -4,6 +4,8 @@ import { SCENE_IMAGES } from '@/constants/scene-images';
 
 export const juliusCaesar: Verhaal = {
   id: 'julius-caesar',
+  beginJaar: -100,
+  toegevoegdOp: '2026-07-22',
   titel: { en: 'Julius Caesar' },
   ondertitel: { en: 'Roman military commander and statesman' },
   teaser: { en: 'From modest origins to the most powerful man in Rome—a story of ambition, genius, and tragedy.' },
@@ -303,6 +305,8 @@ export const juliusCaesar: Verhaal = {
 
 export const spartacus: Verhaal = {
   id: 'spartacus',
+  beginJaar: -109,
+  toegevoegdOp: '2026-07-22',
   titel: { en: 'Spartacus' },
   ondertitel: { en: 'Gladiator and leader of the greatest slave revolt in Roman history' },
   teaser: { en: 'From the arena to freedom—a man who dared to challenge an empire.' },
@@ -331,6 +335,8 @@ export const spartacus: Verhaal = {
 
 export const ashoka: Verhaal = {
   id: 'ashoka-maurya',
+  beginJaar: -304,
+  toegevoegdOp: '2026-08-19',
   titel: { en: 'Ashoka' },
   ondertitel: { en: 'The emperor who renounced conquest' },
   teaser: { en: 'He drenched Kalinga in blood, then carved his remorse into rock across half a subcontinent. How did India\'s most ruthless conqueror become its most famous preacher of mercy?' },

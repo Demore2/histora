@@ -815,7 +815,13 @@ bewaard** — zelfde scheiding als bij de mijlpalen.
   redenen er in plaats daarvan bij het lezen uit, net als `leesServerPrestaties` met onbekende
   `achievement_id`s. Er is om dezelfde reden geen foreign key naar `story_catalog`: die tabel is
   afgeleid en met de hand gesynchroniseerd.
-- **`RecommendedStoryCard` op Home is de enige aanroeper**, en meet opnieuw zodra `progress`
+- ⚠️ **Sinds 1.4.2 staat `RecommendedStoryCard` niet meer op Home** (vervangen door de reiskaart, zie
+  "Home: de reis van Rome tot vandaag") en is hij **orphaned**. Daarmee roept niets in de app
+  `genereerAanbeveling()` nog aan: `story_recommendations` groeit niet meer, en `push_kandidaten`
+  valt terug op zijn eigen afleiding (op smaak, niet op de tijdlijn). Pas dat aan zodra de push live
+  gaat, anders noemt de melding een ander verhaal dan de reiskaart. Wat hieronder over de kaart
+  staat, beschrijft de toestand tot 1.4.1.
+- **`RecommendedStoryCard` op Home was de enige aanroeper**, en meet opnieuw zodra `progress`
   wijzigt — een afgerond hoofdstuk levert dus meteen een verse suggestie. De kaart staat direct
   onder de hero: de hero is de redactionele keuze (`uitgelicht`), dit is de keuze op maat. Hij
   navigeert zelf (zoals `VerhaalCarouselKaart`) en krijgt geen props, want er is precies één
@@ -941,6 +947,39 @@ De reader is de enige aanroeper die hem meegeeft.
   `auth.users`. `wisLokaleGebruikersgegevens()` wist de rij ook lokaal, om dezelfde reden als bij
   de personages: anders tilt de samenvoeging bij de volgende login de gegevens van de verwijderde
   lezer naar het nieuwe account.
+
+### Home: de reis van Rome tot vandaag (`reis-kaart.tsx`, `getTijdlijn`/`bepaalReis` in `queries.ts`, 1.4.2)
+
+Bovenaan Home staat één kaart met één actie (wens van de eigenaar, 2026-10-26). Hij vervangt de
+redactionele hero ("Featured", `getUitgelichtVerhaal`), `RecommendedStoryCard` en de vaste rij
+"Continue reading".
+
+- **Alle verhalen vormen één tijdlijn** (`getTijdlijn()`): op tijdperk (`Tijdperk.nummer`), dan op
+  **`Verhaal.beginJaar`**, dan op id. Het eerste verhaal is `rome-rise` (753 v.Chr.).
+- **`beginJaar` is verplicht** (geboortejaar of begin van de gebeurtenis, negatief = v.Chr.) — een
+  nieuw verhaal zonder valt dus niet stilletjes buiten de volgorde maar is een compileerfout, en
+  `validate:content` keurt een `beginJaar` na `jaar` af. `jaar` blijft het eindpunt.
+- **`bepaalReis(progress, completedStories)`** is zuiver en geeft vier standen: `begin` (nog niets
+  gelezen → het eerste verhaal), `verder` (een verhaal half open → het vroegste daarvan op de
+  tijdlijn, met "Chapter n of 8"), `volgende` (het eerste niet-uitgelezen verhaal) en `klaar`
+  (alles uit → knop naar Explore). Half open gaat vóór volgende: anders verdwijnt een half gelezen
+  boek van de pagina.
+- **De kaart wacht op de hydratie** van `story-progress-store` en `voortgang-store`, en tikken gaat
+  naar het hoofdstukkenoverzicht (`/verhaal/[id]`), niet de reader in: daar staan de poorten.
+- **"Continue reading" verschijnt alleen nog als er nóg een half open verhaal is** naast dat van de
+  kaart, en heeft geen lege staat meer.
+- **Volgorde op Home:** reiskaart → New hot topics → advertentie → Continue reading → één
+  **`TijdperkTegel`** per tijdperk, onder elkaar (scène + waas in de tijdperkkleur + Phoxy-kop uit
+  `ERA_KOP` + "x/y read"). De carrousels per tijdperk (`TijdperkRij`) zijn weg.
+- **New hot topics sorteert op `Verhaal.toegevoegdOp`** (`'YYYY-MM-DD'`, verplicht): het nieuwste
+  staat helemaal links. Voorheen pakte `getNieuwToegevoegd()` de laatste zes uit de bundel — dat
+  waren altijd de Hedendaags-verhalen. **Zet bij een nieuw verhaal de datum van vandaag**;
+  `validate:content` weigert een datum in de toekomst.
+- **`tijdperk/[id]` is een routekaart** (`bepaalRoute()`): de haltes zigzaggen van boven naar
+  beneden, verbonden door een SVG-pad (`react-native-svg`), doorgetrokken na een uitgelezen
+  verhaal en gestippeld daarna. De volgende halte pulseert en daar staat Phoxy (`ROUTE_VOS`, op weg met kaart en
+  tas, uit `scripts/prepare-route-fox.mjs`). **Elke halte is vrij aan te klikken** — de route is een volgorde, geen
+  slot. Bovenaan "Start at the beginning" / "Continue the route".
 
 ### Images (portretten + scènes — gebundeld, LAUNCH-PLAN.md B1/B2)
 
@@ -1795,12 +1834,14 @@ delete it, and don't wire it back up without reading why it was dropped.
 | `components/continent-map.tsx`, `app/continent/[continentId].tsx` | superseded by the old WorldMap flow |
 | `components/flag.tsx` | R2 — only consumers are orphaned |
 | `components/tijdperk-kaart.tsx`, `components/tijdperken-carousel.tsx` | superseded by `tijdperk-rij.tsx` (R4) |
+| `components/tijdperk-rij.tsx` | 1.4.2 — Home toont één `TijdperkTegel` per tijdperk; de verhalen staan op de routekaart |
 | `components/prestatie-raster.tsx` | mijlpalen alleen nog op Voortgang (`achievements-grid.tsx`) |
 | `VasteMeldingRegel` in `components/notification-preferences.tsx` | streak-/mijlpaalregels uit Instellingen gehaald |
 | `components/ad-modal.tsx` | v1.2 — replaced by the AdMob interstitial (`toonInterstitial`) |
 | `components/interactieve-sectie.tsx` | 2026-10-22 — vragen verhuisd naar het verplichte paneel `hoofdstuk-vragen.tsx` |
 | `components/story-poll.tsx`, `components/story-choice.tsx`, `components/interactie-stem.tsx` | 1.4 — het vragenpaneel toont alleen nog quizvragen (peilingen/keuzepunten blijven in de database voor oudere app-versies) |
 | `components/placeholder-screen.tsx` | Voortgang/Profiel are fully built |
+| `components/recommended-story-card.tsx` | 1.4.2 — Home toont de reiskaart (`reis-kaart.tsx`); zie de waarschuwing bij "Aanbevelingen" |
 | `components/profile-card-collection.tsx` | superseded by `profile-character-collection.tsx` (kaarten i.p.v. cirkelraster) |
 | `components/progress-stats-header.tsx` | 1.3 — Voortgang toont `streak-kaart.tsx` (de vos); de tellers staan op Profiel |
 | `verhaal/[id]/quiz.tsx`, `verhaal/[id]/chapter-quiz.tsx` | quizzes removed; now tombstone screens |

@@ -4,6 +4,8 @@ import { SCENE_IMAGES } from '@/constants/scene-images';
 
 export const james: Verhaal = {
   id: 'james-watt',
+  beginJaar: 1736,
+  toegevoegdOp: '2026-07-23',
   titel: { en: 'James Watt' },
   ondertitel: { en: 'Scottish Engineer Who Perfected the Steam Engine' },
   teaser: { en: 'A mind obsessed with efficiency transformed the world through steam.' },
@@ -205,6 +207,8 @@ export const james: Verhaal = {
 
 export const florence: Verhaal = {
   id: 'florence-nightingale',
+  beginJaar: 1820,
+  toegevoegdOp: '2026-07-23',
   titel: { en: 'Florence Nightingale' },
   ondertitel: { en: 'The Pioneer Who Transformed Modern Nursing' },
   teaser: { en: 'She defied her family, revolutionized healthcare, and proved that data could save lives.' },
@@ -402,6 +406,8 @@ export const florence: Verhaal = {
 
 export const thomas: Verhaal = {
   id: 'thomas-edison',
+  beginJaar: 1847,
+  toegevoegdOp: '2026-07-23',
   titel: { en: 'Thomas Edison' },
   ondertitel: { en: 'The Inventor Who Lit Up the World' },
   teaser: { en: 'With over a thousand patents, he transformed daily life through practical innovation and relentless experimentation.' },

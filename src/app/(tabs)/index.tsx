@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
-import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AdBanner } from '@/components/ad-banner';
@@ -8,21 +8,22 @@ import { CollectieKaart } from '@/components/collectie-kaart';
 import { HorizontaleRij } from '@/components/horizontale-rij';
 import { KopActies } from '@/components/kop-acties';
 import { LegeStaat } from '@/components/lege-staat';
-import { RecommendedStoryCard } from '@/components/recommended-story-card';
+import { ReisKaart } from '@/components/reis-kaart';
 import { SectieKop } from '@/components/sectie-kop';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { TijdperkRij } from '@/components/tijdperk-rij';
+import { TijdperkTegel } from '@/components/tijdperk-tegel';
 import { VerhaalKaart } from '@/components/verhaal-kaart';
 import { CardDimensions, Radii, Spacing, VLAM_KLEUR } from '@/constants/theme';
 import { getActieveTijdperken } from '@/constants/tijdperken';
 import type { Verhaal } from '@/constants/types';
 import { collecties } from '@/content/collecties';
-import { getNieuwToegevoegd, getUitgelichteVerhalenVoorTijdperk, getUitgelichtVerhaal } from '@/content/queries';
+import { bepaalReis, getNieuwToegevoegd } from '@/content/queries';
 import { getVerhaal, verhalen as allVerhalen } from '@/content/verhalen';
 import { useStreak } from '@/hooks/use-streak';
 import { useTheme } from '@/hooks/use-theme';
 import { useVertaling } from '@/hooks/use-vertaling';
+import { useStoryProgressStore } from '@/store/story-progress-store';
 import { useVoortgangStore } from '@/store/voortgang-store';
 
 const SHOW_STORYLINES = false;
@@ -31,19 +32,29 @@ export default function OntdekScreen() {
   const insets = useSafeAreaInsets();
   const theme = useTheme();
   const router = useRouter();
-  const { t, v } = useVertaling();
+  const { t } = useVertaling();
   const gelezenIds = useVoortgangStore((state) => state.gelezenIds);
   const bekekenIds = useVoortgangStore((state) => state.bekekenIds);
   const completedStories = useVoortgangStore((state) => state.completedStories);
   const streakDagen = useStreak();
 
-  const uitgelicht = getUitgelichtVerhaal();
+  const voortgang = useStoryProgressStore((state) => state.progress);
+  // Het verhaal op de reiskaart staat niet nóg eens in "Continue reading" (1.4.2): die rij is er
+  // alleen nog voor wie meerdere verhalen tegelijk open heeft, en verdwijnt als dat er geen zijn.
+  const reis = bepaalReis(voortgang, completedStories);
+  const reisVerhaalId = reis.soort === 'klaar' ? null : reis.verhaal.id;
   const verderLezen = [...bekekenIds]
     .map((id) => getVerhaal(id))
-    .filter((verhaal): verhaal is Verhaal => verhaal !== undefined && !gelezenIds.has(verhaal.id) && !completedStories.has(verhaal.id));
+    .filter(
+      (verhaal): verhaal is Verhaal =>
+        verhaal !== undefined &&
+        verhaal.id !== reisVerhaalId &&
+        !gelezenIds.has(verhaal.id) &&
+        !completedStories.has(verhaal.id)
+    );
   const nieuwToegevoegd = getNieuwToegevoegd();
 
-  if (!uitgelicht) {
+  if (allVerhalen.length === 0) {
     return (
       <ThemedView style={styles.container}>
         <SafeAreaView edges={['top']} style={styles.safeArea}>
@@ -94,29 +105,11 @@ export default function OntdekScreen() {
             </View>
           </View>
 
-          <Pressable
-            onPress={() => openVerhaal(uitgelicht.id)}
-            style={[styles.hero, { backgroundColor: theme.backgroundElement }]}>
-            <ThemedText type="caption" themeColor="accent">
-              {t((s) => s.ontdek.uitgelicht)}
-            </ThemedText>
-            <ThemedText type="display" style={styles.heroTitel}>
-              {v(uitgelicht.titel)}
-            </ThemedText>
-            <ThemedText themeColor="textSecondary">{v(uitgelicht.teaser)}</ThemedText>
-            <View style={[styles.heroKnop, { backgroundColor: theme.accent }]}>
-              <ThemedText type="smallBold" style={{ color: theme.background }}>
-                {t((s) => s.ontdek.leesNu)}
-              </ThemedText>
-            </View>
-          </Pressable>
-
           {/*
-            Direct onder de hero: de hero is de redactionele keuze (`uitgelicht`), dit is de keuze
-            op maat van deze lezer. Ze staan bewust naast elkaar en niet door elkaar — de kaart
-            haalt zijn eigen suggestie op, dus Home hoeft er niets voor te weten.
+            De reiskaart (1.4.2) vervangt de redactionele hero en "Recommended for you": één kaart met
+            één actie — beginnen bij Rome, verder waar je was, of de volgende halte op de tijdlijn.
           */}
-          <RecommendedStoryCard />
+          <ReisKaart />
 
           <View style={styles.sectie}>
             <SectieKop titel={t((s) => s.ontdek.nieuwToegevoegd)} />
@@ -135,15 +128,14 @@ export default function OntdekScreen() {
             />
           </View>
 
-          <View style={styles.sectie}>
-            <SectieKop titel={t((s) => s.ontdek.verderLezen)} />
-            {verderLezen.length === 0 ? (
-              <LegeStaat
-                icoonNaam="book-outline"
-                titel={t((s) => s.ontdek.verderLezenLegeTitel)}
-                beschrijving={t((s) => s.ontdek.verderLezenLegeBeschrijving)}
-              />
-            ) : (
+          {/* De banner (v1.2) staat sinds 1.4.2 tussen "New hot topics" en "Continue reading"
+              (wens van de eigenaar). Rendert niets voor Pro of zolang er geen echte advertentie
+              geladen is, dan sluit de `gap` gewoon aan. */}
+          <AdBanner />
+
+          {verderLezen.length > 0 && (
+            <View style={styles.sectie}>
+              <SectieKop titel={t((s) => s.ontdek.verderLezen)} />
               <HorizontaleRij
                 data={verderLezen}
                 keyExtractor={(verhaal) => verhaal.id}
@@ -157,13 +149,9 @@ export default function OntdekScreen() {
                   />
                 )}
               />
-            )}
-          </View>
+            </View>
+          )}
 
-          {/* De banner (v1.2) staat tussen "Verder lezen" en de tijdperk-rijen: halverwege de pagina,
-              niet boven de hero en niet tussen twee rijen van hetzelfde soort. Rendert niets voor
-              Pro of zolang er geen echte advertentie geladen is, dan sluit de `gap` gewoon aan. */}
-          <AdBanner />
 
           {SHOW_STORYLINES && (
             <View style={styles.sectie}>
@@ -183,54 +171,10 @@ export default function OntdekScreen() {
             </View>
           )}
 
-          {getActieveTijdperken().map((tijdperk) => {
-            let highlighted = getUitgelichteVerhalenVoorTijdperk(tijdperk.id);
-            highlighted = highlighted.filter((v) => !completedStories.has(v.id));
-
-            if (highlighted.length === 0) {
-              const allVerhalenInEra = allVerhalen.filter((v) => v.tijdperkId === tijdperk.id);
-              highlighted = allVerhalenInEra
-                .filter((v) => !completedStories.has(v.id))
-                .sort((a, b) => (a.volgorde ?? Number.MAX_SAFE_INTEGER) - (b.volgorde ?? Number.MAX_SAFE_INTEGER))
-                .slice(0, 5);
-            }
-
-            if (highlighted.length === 0) {
-              return (
-                <View key={tijdperk.id} style={styles.emptyEraSection}>
-                  <View style={styles.kop}>
-                    <View style={styles.titelArea}>
-                      <ThemedText type="title">{v(tijdperk.titel)}</ThemedText>
-                      <ThemedText type="small" themeColor="textSecondary">
-                        {v(tijdperk.korteBeschrijving)}
-                      </ThemedText>
-                    </View>
-                  </View>
-                  <ThemedText type="small" themeColor="textSecondary" style={styles.emptyMessage}>
-                    {t((s) => s.voortgang.noMoreStories)}
-                  </ThemedText>
-                  <Pressable
-                    onPress={() => router.push({ pathname: '/tijdperk/[id]', params: { id: tijdperk.id } })}
-                    style={[styles.button, { backgroundColor: theme.accent }]}>
-                    <ThemedText type="smallBold" style={{ color: theme.background }}>
-                      {t((s) => s.ontdek.ontdekMeer)}
-                    </ThemedText>
-                  </Pressable>
-                </View>
-              );
-            }
-
-            return (
-              <TijdperkRij
-                key={tijdperk.id}
-                tijdperk={tijdperk}
-                verhalen={highlighted}
-                gelezenIds={gelezenIds}
-                onPressVerhaal={openVerhaal}
-                onPressOntdekMeer={() => router.push({ pathname: '/tijdperk/[id]', params: { id: tijdperk.id } })}
-              />
-            );
-          })}
+          {/* Eén tegel per tijdperk, onder elkaar (1.4.2): tikken opent de routekaart. */}
+          {getActieveTijdperken().map((tijdperk) => (
+            <TijdperkTegel key={tijdperk.id} tijdperk={tijdperk} />
+          ))}
         </ScrollView>
       </SafeAreaView>
     </ThemedView>
@@ -271,47 +215,11 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.one,
     borderRadius: Radii.button,
   },
-  hero: {
-    marginHorizontal: Spacing.four,
-    padding: Spacing.four,
-    borderRadius: Radii.card,
-    gap: Spacing.two,
-  },
-  heroTitel: {
-    marginTop: Spacing.one,
-  },
-  heroKnop: {
-    alignSelf: 'flex-start',
-    marginTop: Spacing.two,
-    paddingHorizontal: Spacing.four,
-    paddingVertical: Spacing.two,
-    borderRadius: Radii.button,
-  },
   sectie: {
     gap: Spacing.three,
   },
   rij: {
     gap: Spacing.three,
     paddingHorizontal: Spacing.four,
-  },
-  emptyEraSection: {
-    gap: Spacing.three,
-    paddingHorizontal: Spacing.four,
-  },
-  kop: {
-    gap: Spacing.one,
-  },
-  titelArea: {
-    gap: Spacing.half,
-  },
-  emptyMessage: {
-    marginHorizontal: Spacing.four,
-  },
-  button: {
-    marginHorizontal: Spacing.four,
-    paddingVertical: Spacing.two,
-    borderRadius: Radii.button,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });

@@ -7,6 +7,8 @@ import { SCENE_IMAGES } from '@/constants/scene-images';
 
 export const marieCurie: Verhaal = {
   id: 'marie-curie',
+  beginJaar: 1867,
+  toegevoegdOp: '2026-07-23',
   titel: { en: 'Marie Curie' },
   ondertitel: { en: 'The Scientist Who Unveiled the Power of Atoms' },
   teaser: { en: 'Born in Warsaw, she discovered the hidden forces within matter itself—and changed science forever.' },
@@ -208,6 +210,8 @@ export const marieCurie: Verhaal = {
 
 export const winstonChurchill: Verhaal = {
   id: 'winston-churchill',
+  beginJaar: 1874,
+  toegevoegdOp: '2026-07-23',
   titel: { en: 'Winston Churchill' },
   ondertitel: { en: 'The Statesman Who Led Britain Through Its Darkest Hour' },
   teaser: { en: 'A determined leader who rallied a nation against tyranny and changed the course of history.' },
@@ -396,6 +400,8 @@ export const winstonChurchill: Verhaal = {
 
 export const martinLutherKingJr: Verhaal = {
   id: 'martin-luther-king-jr',
+  beginJaar: 1929,
+  toegevoegdOp: '2026-07-23',
   titel: { en: 'Martin Luther King Jr.' },
   ondertitel: { en: 'The Dreamer Who Changed America' },
   teaser: { en: 'Through nonviolent resistance, he shattered the chains of racial segregation and inspired a nation.' },

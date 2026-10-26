@@ -74,6 +74,19 @@ export type Verhaal = {
   ondertitel: VertaaldVeld;
   teaser: VertaaldVeld;
   jaar: number;
+  /**
+   * Het jaar waarin het verhaal begint (negatief = v.Chr.): een geboortejaar, of het begin van de
+   * gebeurtenis. Bepaalt de plek op de tijdlijn van de reiskaart op Home (`getTijdlijn()`), binnen
+   * het tijdperk. **Verplicht**, zodat een nieuw verhaal niet stilletjes buiten de volgorde valt.
+   * `jaar` is iets anders: dat is het eindpunt (sterfjaar), en Rome eindigt pas in 27 v.Chr.
+   */
+  beginJaar: number;
+  /**
+   * De dag waarop het verhaal aan de app is toegevoegd (`'YYYY-MM-DD'`). Bepaalt de volgorde van
+   * "New hot topics" op Home: het nieuwste staat helemaal links (`getNieuwToegevoegd()`).
+   * **Verplicht**, net als `beginJaar`: zet hier bij een nieuw verhaal de datum van vandaag.
+   */
+  toegevoegdOp: string;
   periodeLabel: string;
   /** Whether this story is about a person or an event (REFACTOR-PLAN.md R8). */
   soort: 'persoon' | 'gebeurtenis';
