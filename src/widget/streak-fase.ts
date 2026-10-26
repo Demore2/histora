@@ -24,16 +24,21 @@ export type StreakFase =
  * ziet. Gedeeld door de widget (verloop van `van` naar `naar`) en de streak-kaart op Voortgang
  * (effen `van`). Een verloop in plaats van een vlak, want een effen widget tussen app-icoontjes leest als
  * een leeg vak.
+ *
+ * **Bewust gedempt** (sinds 1.4.1): de fel verzadigde Tailwind-tinten (`#22C55E` …) staken tussen
+ * andere widgets af als een neonbord en pasten niet bij de getekende vos. Elke fase houdt zijn
+ * tint, maar met minder verzadiging — matte, cartoonachtige kleuren. Wit moet erop leesbaar
+ * blijven: maak `van` niet lichter dan dit.
  */
 export const FASE_KLEUR: Record<StreakFase, { van: `#${string}`; naar: `#${string}` }> = {
-  gevierd: { van: '#22C55E', naar: '#15803D' },
-  ochtend: { van: '#38BDF8', naar: '#0284C7' },
-  middag: { van: '#818CF8', naar: '#4F46E5' },
-  avond: { van: '#C084FC', naar: '#9333EA' },
-  paniek: { van: '#F87171', naar: '#B91C1C' },
-  ijs: { van: '#7DD3FC', naar: '#0369A1' },
-  skelet: { van: '#374151', naar: '#111827' },
-  slaap: { van: '#1E40AF', naar: '#172554' },
+  gevierd: { van: '#5E9E6A', naar: '#3F7A4C' },
+  ochtend: { van: '#6A9FC2', naar: '#4A7C9E' },
+  middag: { van: '#7F86BE', naar: '#5A6098' },
+  avond: { van: '#9572AE', naar: '#6F5089' },
+  paniek: { van: '#C8746A', naar: '#9E4D45' },
+  ijs: { van: '#7FAFC6', naar: '#4D7F99' },
+  skelet: { van: '#4B5058', naar: '#2A2E35' },
+  slaap: { van: '#4F5E8C', naar: '#2E385C' },
 };
 
 /** Grenzen in lokale uren. Het eerste uur waarop de fase begint. */

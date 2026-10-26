@@ -1,0 +1,327 @@
+[
+  {
+    "moeilijkheid": 1,
+    "question": "Who made the first powered, controlled aeroplane flight, in 1903?",
+    "options": ["The Wright brothers", "The Montgolfier brothers", "The Lumière brothers", "Louis Blériot"],
+    "correct_answer": 0,
+    "explanation": "At Kitty Hawk in North Carolina, Orville Wright flew for 12 seconds and 37 metres. Within 66 years, people would walk on the Moon.",
+    "bron": "Wright Flyer, 17 December 1903.",
+    "vertalingen": {
+      "nl": { "question": "Wie maakte in 1903 de eerste gemotoriseerde, bestuurbare vlucht met een vliegtuig?", "options": ["De gebroeders Wright", "De gebroeders Montgolfier", "De gebroeders Lumière", "Louis Blériot"], "explanation": "Bij Kitty Hawk in North Carolina vloog Orville Wright 12 seconden en 37 meter. Binnen 66 jaar zouden mensen op de maan lopen." },
+      "fr": { "question": "Qui réalisa en 1903 le premier vol motorisé et contrôlé en avion ?", "options": ["Les frères Wright", "Les frères Montgolfier", "Les frères Lumière", "Louis Blériot"], "explanation": "À Kitty Hawk, en Caroline du Nord, Orville Wright vola 12 secondes sur 37 mètres. Moins de 66 ans plus tard, l'homme marchait sur la Lune." },
+      "de": { "question": "Wer gelang 1903 der erste gesteuerte Motorflug mit einem Flugzeug?", "options": ["Die Brüder Wright", "Die Brüder Montgolfier", "Die Brüder Lumière", "Louis Blériot"], "explanation": "Bei Kitty Hawk in North Carolina flog Orville Wright 12 Sekunden und 37 Meter weit. Nur 66 Jahre später betraten Menschen den Mond." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Who discovered penicillin, the first antibiotic, in 1928?",
+    "options": ["Louis Pasteur", "Alexander Fleming", "Robert Koch", "Jonas Salk"],
+    "correct_answer": 1,
+    "explanation": "He noticed that mould on a forgotten dish had killed the bacteria around it. Mass-produced during the Second World War, penicillin saved millions of lives.",
+    "bron": "Fleming's discovery of penicillin, September 1928.",
+    "vertalingen": {
+      "nl": { "question": "Wie ontdekte in 1928 penicilline, het eerste antibioticum?", "options": ["Louis Pasteur", "Alexander Fleming", "Robert Koch", "Jonas Salk"], "explanation": "Hij zag dat schimmel op een vergeten schaaltje de bacteriën eromheen had gedood. In de Tweede Wereldoorlog werd penicilline massaal gemaakt en redde het miljoenen levens." },
+      "fr": { "question": "Qui découvrit la pénicilline, le premier antibiotique, en 1928 ?", "options": ["Louis Pasteur", "Alexander Fleming", "Robert Koch", "Jonas Salk"], "explanation": "Il remarqua qu'une moisissure sur une boîte oubliée avait tué les bactéries autour d'elle. Produite en masse pendant la Seconde Guerre mondiale, la pénicilline sauva des millions de vies." },
+      "de": { "question": "Wer entdeckte 1928 das Penicillin, das erste Antibiotikum?", "options": ["Louis Pasteur", "Alexander Fleming", "Robert Koch", "Jonas Salk"], "explanation": "Er bemerkte, dass Schimmel auf einer vergessenen Schale die Bakterien ringsum abgetötet hatte. Im Zweiten Weltkrieg in Massen hergestellt, rettete Penicillin Millionen Leben." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which prime minister led Britain through most of the Second World War, from 1940?",
+    "options": ["Neville Chamberlain", "Clement Attlee", "Winston Churchill", "Anthony Eden"],
+    "correct_answer": 2,
+    "explanation": "He took office in May 1940, just as Germany attacked France. His speeches, such as \"We shall fight on the beaches\", kept up British morale.",
+    "bron": "Churchill, Prime Minister from 10 May 1940.",
+    "vertalingen": {
+      "nl": { "question": "Welke premier leidde Groot-Brittannië vanaf 1940 door het grootste deel van de Tweede Wereldoorlog?", "options": ["Neville Chamberlain", "Clement Attlee", "Winston Churchill", "Anthony Eden"], "explanation": "Hij trad aan in mei 1940, net toen Duitsland Frankrijk aanviel. Zijn toespraken, zoals \"We shall fight on the beaches\", hielden de moed erin." },
+      "fr": { "question": "Quel Premier ministre dirigea la Grande-Bretagne pendant la majeure partie de la Seconde Guerre mondiale, à partir de 1940 ?", "options": ["Neville Chamberlain", "Clement Attlee", "Winston Churchill", "Anthony Eden"], "explanation": "Il prit ses fonctions en mai 1940, au moment où l'Allemagne attaquait la France. Ses discours, comme « Nous nous battrons sur les plages », soutinrent le moral britannique." },
+      "de": { "question": "Welcher Premierminister führte Großbritannien ab 1940 durch den größten Teil des Zweiten Weltkriegs?", "options": ["Neville Chamberlain", "Clement Attlee", "Winston Churchill", "Anthony Eden"], "explanation": "Er trat im Mai 1940 sein Amt an, gerade als Deutschland Frankreich angriff. Seine Reden wie „We shall fight on the beaches“ hielten die britische Moral aufrecht." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which organisation was founded in 1945 to keep world peace after the Second World War?",
+    "options": ["The League of Nations", "NATO", "The European Union", "The United Nations"],
+    "correct_answer": 3,
+    "explanation": "It started with 51 member states and is based in New York. It replaced the League of Nations, which had failed to prevent the war.",
+    "bron": "UN Charter in force, 24 October 1945.",
+    "vertalingen": {
+      "nl": { "question": "Welke organisatie werd in 1945 opgericht om na de Tweede Wereldoorlog de wereldvrede te bewaren?", "options": ["De Volkenbond", "De NAVO", "De Europese Unie", "De Verenigde Naties"], "explanation": "Ze begon met 51 lidstaten en zetelt in New York. Ze verving de Volkenbond, die de oorlog niet had kunnen voorkomen." },
+      "fr": { "question": "Quelle organisation fut fondée en 1945 pour préserver la paix mondiale après la Seconde Guerre mondiale ?", "options": ["La Société des Nations", "L'OTAN", "L'Union européenne", "L'Organisation des Nations unies"], "explanation": "Elle commença avec 51 États membres et siège à New York. Elle remplaça la Société des Nations, qui n'avait pas su empêcher la guerre." },
+      "de": { "question": "Welche Organisation wurde 1945 gegründet, um nach dem Zweiten Weltkrieg den Weltfrieden zu sichern?", "options": ["Der Völkerbund", "Die NATO", "Die Europäische Union", "Die Vereinten Nationen"], "explanation": "Sie begann mit 51 Mitgliedstaaten und hat ihren Sitz in New York. Sie ersetzte den Völkerbund, der den Krieg nicht hatte verhindern können." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "In which country did a long war end with the fall of Saigon in 1975?",
+    "options": ["Vietnam", "Korea", "Cambodia", "Laos"],
+    "correct_answer": 0,
+    "explanation": "North Vietnamese forces took the southern capital, and the last Americans were flown out by helicopter. The country was reunited under communist rule.",
+    "bron": "Fall of Saigon, 30 April 1975.",
+    "vertalingen": {
+      "nl": { "question": "In welk land eindigde een lange oorlog met de val van Saigon in 1975?", "options": ["Vietnam", "Korea", "Cambodja", "Laos"], "explanation": "Noord-Vietnamese troepen namen de zuidelijke hoofdstad in, en de laatste Amerikanen werden per helikopter weggehaald. Het land werd onder communistisch bewind herenigd." },
+      "fr": { "question": "Dans quel pays une longue guerre prit-elle fin avec la chute de Saïgon en 1975 ?", "options": ["Le Viêt Nam", "La Corée", "Le Cambodge", "Le Laos"], "explanation": "Les forces nord-vietnamiennes prirent la capitale du Sud, et les derniers Américains furent évacués en hélicoptère. Le pays fut réunifié sous un régime communiste." },
+      "de": { "question": "In welchem Land endete ein langer Krieg mit dem Fall Saigons 1975?", "options": ["Vietnam", "Korea", "Kambodscha", "Laos"], "explanation": "Nordvietnamesische Truppen nahmen die Hauptstadt des Südens ein, die letzten Amerikaner wurden per Hubschrauber ausgeflogen. Das Land wurde unter kommunistischer Herrschaft wiedervereinigt." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which band from Liverpool set off \"Beatlemania\" in the 1960s?",
+    "options": ["The Rolling Stones", "The Beatles", "The Who", "The Kinks"],
+    "correct_answer": 1,
+    "explanation": "John, Paul, George and Ringo. When they first appeared on American television in 1964, some 73 million people watched.",
+    "bron": "The Ed Sullivan Show, 9 February 1964.",
+    "vertalingen": {
+      "nl": { "question": "Welke band uit Liverpool ontketende in de jaren 60 de \"Beatlemania\"?", "options": ["The Rolling Stones", "The Beatles", "The Who", "The Kinks"], "explanation": "John, Paul, George en Ringo. Toen ze in 1964 voor het eerst op de Amerikaanse televisie verschenen, keken er zo'n 73 miljoen mensen." },
+      "fr": { "question": "Quel groupe de Liverpool déclencha la « Beatlemania » dans les années 1960 ?", "options": ["Les Rolling Stones", "Les Beatles", "The Who", "The Kinks"], "explanation": "John, Paul, George et Ringo. Lors de leur première apparition à la télévision américaine en 1964, quelque 73 millions de personnes les regardèrent." },
+      "de": { "question": "Welche Band aus Liverpool löste in den 1960er-Jahren die „Beatlemania“ aus?", "options": ["Die Rolling Stones", "Die Beatles", "The Who", "The Kinks"], "explanation": "John, Paul, George und Ringo. Bei ihrem ersten Auftritt im US-Fernsehen 1964 sahen rund 73 Millionen Menschen zu." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which US president was assassinated in Dallas in November 1963?",
+    "options": ["Franklin D. Roosevelt", "Richard Nixon", "John F. Kennedy", "Lyndon B. Johnson"],
+    "correct_answer": 2,
+    "explanation": "He was shot while riding in an open car through the city. Vice-President Lyndon B. Johnson was sworn in aboard Air Force One the same day.",
+    "bron": "Assassination of John F. Kennedy, 22 November 1963.",
+    "vertalingen": {
+      "nl": { "question": "Welke Amerikaanse president werd in november 1963 in Dallas vermoord?", "options": ["Franklin D. Roosevelt", "Richard Nixon", "John F. Kennedy", "Lyndon B. Johnson"], "explanation": "Hij werd neergeschoten terwijl hij in een open auto door de stad reed. Vicepresident Lyndon B. Johnson werd dezelfde dag aan boord van Air Force One beëdigd." },
+      "fr": { "question": "Quel président américain fut assassiné à Dallas en novembre 1963 ?", "options": ["Franklin D. Roosevelt", "Richard Nixon", "John F. Kennedy", "Lyndon B. Johnson"], "explanation": "Il fut abattu alors qu'il traversait la ville en voiture décapotable. Le vice-président Lyndon B. Johnson prêta serment le jour même à bord d'Air Force One." },
+      "de": { "question": "Welcher US-Präsident wurde im November 1963 in Dallas ermordet?", "options": ["Franklin D. Roosevelt", "Richard Nixon", "John F. Kennedy", "Lyndon B. Johnson"], "explanation": "Er wurde erschossen, als er im offenen Wagen durch die Stadt fuhr. Vizepräsident Lyndon B. Johnson wurde noch am selben Tag an Bord der Air Force One vereidigt." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which carmaker introduced the moving assembly line in 1913, making cars affordable for ordinary people?",
+    "options": ["Karl Benz", "Louis Renault", "Enzo Ferrari", "Henry Ford"],
+    "correct_answer": 3,
+    "explanation": "Building a Model T dropped from about 12 hours to around 90 minutes. Ford famously said customers could have any colour \"so long as it is black\".",
+    "bron": "Highland Park moving assembly line, 1913.",
+    "vertalingen": {
+      "nl": { "question": "Welke autobouwer voerde in 1913 de lopende band in, waardoor auto's betaalbaar werden voor gewone mensen?", "options": ["Karl Benz", "Louis Renault", "Enzo Ferrari", "Henry Ford"], "explanation": "Het bouwen van een Model T ging van zo'n 12 uur naar ongeveer 90 minuten. Ford zei beroemd genoeg dat klanten elke kleur konden krijgen \"zolang het zwart is\"." },
+      "fr": { "question": "Quel constructeur automobile introduisit en 1913 la chaîne de montage mobile, rendant la voiture abordable pour tous ?", "options": ["Karl Benz", "Louis Renault", "Enzo Ferrari", "Henry Ford"], "explanation": "Le montage d'une Ford T passa d'environ 12 heures à quelque 90 minutes. Ford disait que les clients pouvaient choisir n'importe quelle couleur « pourvu que ce soit noir »." },
+      "de": { "question": "Welcher Autobauer führte 1913 das Fließband ein und machte Autos für normale Menschen bezahlbar?", "options": ["Carl Benz", "Louis Renault", "Enzo Ferrari", "Henry Ford"], "explanation": "Der Bau eines Model T sank von etwa 12 Stunden auf rund 90 Minuten. Ford sagte berühmt, Kunden könnten jede Farbe haben, „solange sie schwarz ist“." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "What was the name of the first artificial satellite, launched by the Soviet Union in 1957?",
+    "options": ["Sputnik 1", "Vostok 1", "Explorer 1", "Apollo 1"],
+    "correct_answer": 0,
+    "explanation": "The metal ball, about the size of a beach ball, beeped as it circled the Earth. The shock in America started the Space Race.",
+    "bron": "Sputnik 1, launched 4 October 1957.",
+    "vertalingen": {
+      "nl": { "question": "Hoe heette de eerste kunstmaan, in 1957 gelanceerd door de Sovjet-Unie?", "options": ["Spoetnik 1", "Vostok 1", "Explorer 1", "Apollo 1"], "explanation": "De metalen bol, zo groot als een strandbal, piepte terwijl hij om de aarde draaide. De schrik in Amerika zette de ruimtewedloop in gang." },
+      "fr": { "question": "Comment s'appelait le premier satellite artificiel, lancé par l'Union soviétique en 1957 ?", "options": ["Spoutnik 1", "Vostok 1", "Explorer 1", "Apollo 1"], "explanation": "Cette sphère métallique de la taille d'un ballon de plage émettait des bips en tournant autour de la Terre. Le choc en Amérique lança la course à l'espace." },
+      "de": { "question": "Wie hieß der erste künstliche Satellit, 1957 von der Sowjetunion gestartet?", "options": ["Sputnik 1", "Wostok 1", "Explorer 1", "Apollo 1"], "explanation": "Die Metallkugel, etwa so groß wie ein Wasserball, piepte, während sie die Erde umkreiste. Der Schock in Amerika löste den Wettlauf ins All aus." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which country did Mao Zedong rule after his communists won its civil war in 1949?",
+    "options": ["Korea", "China", "Vietnam", "Mongolia"],
+    "correct_answer": 1,
+    "explanation": "He proclaimed the People's Republic in Beijing on 1 October 1949. The defeated Nationalists fled to Taiwan.",
+    "bron": "Proclamation of the People's Republic of China, 1 October 1949.",
+    "vertalingen": {
+      "nl": { "question": "Over welk land regeerde Mao Zedong nadat zijn communisten in 1949 de burgeroorlog wonnen?", "options": ["Korea", "China", "Vietnam", "Mongolië"], "explanation": "Hij riep op 1 oktober 1949 in Peking de Volksrepubliek uit. De verslagen nationalisten vluchtten naar Taiwan." },
+      "fr": { "question": "Sur quel pays Mao Zedong régna-t-il après la victoire de ses communistes dans la guerre civile en 1949 ?", "options": ["La Corée", "La Chine", "Le Viêt Nam", "La Mongolie"], "explanation": "Il proclama la République populaire à Pékin le 1er octobre 1949. Les nationalistes vaincus s'enfuirent à Taïwan." },
+      "de": { "question": "Über welches Land herrschte Mao Zedong, nachdem seine Kommunisten 1949 den Bürgerkrieg gewonnen hatten?", "options": ["Korea", "China", "Vietnam", "Mongolei"], "explanation": "Er rief am 1. Oktober 1949 in Peking die Volksrepublik aus. Die besiegten Nationalisten flohen nach Taiwan." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "What was the \"Iron Curtain\"?",
+    "options": ["A defensive wall along the French border", "A Soviet nuclear weapons programme", "The dividing line between communist Eastern Europe and the West", "A ban on Western films in the Soviet Union"],
+    "correct_answer": 2,
+    "explanation": "Winston Churchill made the phrase famous in a speech in 1946. Along much of it ran real fences, minefields and watchtowers.",
+    "bron": "Churchill, \"Sinews of Peace\" speech, Fulton, 5 March 1946.",
+    "vertalingen": {
+      "nl": { "question": "Wat was het \"IJzeren Gordijn\"?", "options": ["Een verdedigingsmuur langs de Franse grens", "Een Sovjet-kernwapenprogramma", "De scheidslijn tussen communistisch Oost-Europa en het Westen", "Een verbod op westerse films in de Sovjet-Unie"], "explanation": "Winston Churchill maakte de term in 1946 beroemd in een toespraak. Over een groot deel ervan liepen echte hekken, mijnenvelden en wachttorens." },
+      "fr": { "question": "Qu'était le « rideau de fer » ?", "options": ["Un mur défensif le long de la frontière française", "Un programme d'armes nucléaires soviétique", "La ligne séparant l'Europe de l'Est communiste de l'Ouest", "Une interdiction des films occidentaux en URSS"], "explanation": "Winston Churchill rendit l'expression célèbre dans un discours en 1946. Sur une grande partie de son tracé couraient de vraies clôtures, des champs de mines et des miradors." },
+      "de": { "question": "Was war der „Eiserne Vorhang“?", "options": ["Eine Verteidigungsmauer an der französischen Grenze", "Ein sowjetisches Atomwaffenprogramm", "Die Trennlinie zwischen dem kommunistischen Osteuropa und dem Westen", "Ein Verbot westlicher Filme in der Sowjetunion"], "explanation": "Winston Churchill machte den Begriff 1946 in einer Rede berühmt. Über weite Strecken verliefen dort echte Zäune, Minenfelder und Wachtürme." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which British ocean liner was sunk by a German U-boat in 1915, killing nearly 1,200 people?",
+    "options": ["Britannic", "Olympic", "Mauretania", "Lusitania"],
+    "correct_answer": 3,
+    "explanation": "Among the dead were 128 Americans. The outrage helped turn American opinion against Germany, though the US only entered the war in 1917.",
+    "bron": "Sinking of RMS Lusitania, 7 May 1915.",
+    "vertalingen": {
+      "nl": { "question": "Welk Brits passagiersschip werd in 1915 door een Duitse U-boot tot zinken gebracht, waarbij bijna 1.200 mensen omkwamen?", "options": ["Britannic", "Olympic", "Mauretania", "Lusitania"], "explanation": "Onder de doden waren 128 Amerikanen. De woede hielp de Amerikaanse publieke opinie tegen Duitsland te keren, al ging de VS pas in 1917 de oorlog in." },
+      "fr": { "question": "Quel paquebot britannique fut coulé par un sous-marin allemand en 1915, faisant près de 1 200 morts ?", "options": ["Britannic", "Olympic", "Mauretania", "Lusitania"], "explanation": "Parmi les victimes figuraient 128 Américains. L'indignation retourna l'opinion américaine contre l'Allemagne, même si les États-Unis n'entrèrent en guerre qu'en 1917." },
+      "de": { "question": "Welcher britische Ozeandampfer wurde 1915 von einem deutschen U-Boot versenkt, wobei fast 1.200 Menschen starben?", "options": ["Britannic", "Olympic", "Mauretania", "Lusitania"], "explanation": "Unter den Toten waren 128 Amerikaner. Die Empörung wandte die öffentliche Meinung in den USA gegen Deutschland, auch wenn die USA erst 1917 in den Krieg eintraten." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Who became the first woman to fly solo across the Atlantic, in 1932?",
+    "options": ["Amelia Earhart", "Amy Johnson", "Bessie Coleman", "Jacqueline Cochran"],
+    "correct_answer": 0,
+    "explanation": "She flew from Newfoundland to a field in Northern Ireland in about 15 hours. In 1937 she vanished over the Pacific while trying to fly around the world.",
+    "bron": "Earhart's transatlantic solo flight, 20–21 May 1932.",
+    "vertalingen": {
+      "nl": { "question": "Wie werd in 1932 de eerste vrouw die in haar eentje over de Atlantische Oceaan vloog?", "options": ["Amelia Earhart", "Amy Johnson", "Bessie Coleman", "Jacqueline Cochran"], "explanation": "Ze vloog in zo'n 15 uur van Newfoundland naar een weiland in Noord-Ierland. In 1937 verdween ze boven de Stille Oceaan tijdens een poging om de wereld rond te vliegen." },
+      "fr": { "question": "Qui devint en 1932 la première femme à traverser l'Atlantique seule en avion ?", "options": ["Amelia Earhart", "Amy Johnson", "Bessie Coleman", "Jacqueline Cochran"], "explanation": "Elle relia Terre-Neuve à un champ d'Irlande du Nord en une quinzaine d'heures. En 1937, elle disparut au-dessus du Pacifique en tentant un tour du monde." },
+      "de": { "question": "Wer flog 1932 als erste Frau allein über den Atlantik?", "options": ["Amelia Earhart", "Amy Johnson", "Bessie Coleman", "Jacqueline Cochran"], "explanation": "Sie flog in etwa 15 Stunden von Neufundland zu einer Wiese in Nordirland. 1937 verschwand sie über dem Pazifik beim Versuch, die Welt zu umrunden." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which pandemic of 1918–1920 killed more people than the First World War?",
+    "options": ["The Black Death", "The Spanish flu", "Smallpox", "Cholera"],
+    "correct_answer": 1,
+    "explanation": "It infected about a third of the world's population; estimates of the dead run to 50 million. It was not Spanish: neutral Spain simply reported on it openly, while warring countries censored the news.",
+    "bron": "1918 influenza pandemic (CDC).",
+    "vertalingen": {
+      "nl": { "question": "Welke pandemie van 1918–1920 maakte meer slachtoffers dan de Eerste Wereldoorlog?", "options": ["De Zwarte Dood", "De Spaanse griep", "Pokken", "Cholera"], "explanation": "Ongeveer een derde van de wereldbevolking raakte besmet; schattingen lopen op tot 50 miljoen doden. Spaans was ze niet: het neutrale Spanje berichtte er gewoon openlijk over, terwijl oorlogvoerende landen het nieuws censureerden." },
+      "fr": { "question": "Quelle pandémie de 1918–1920 tua plus de personnes que la Première Guerre mondiale ?", "options": ["La peste noire", "La grippe espagnole", "La variole", "Le choléra"], "explanation": "Elle infecta environ un tiers de la population mondiale ; les estimations vont jusqu'à 50 millions de morts. Elle n'était pas espagnole : l'Espagne neutre en parlait ouvertement, tandis que les pays en guerre censuraient l'information." },
+      "de": { "question": "Welche Pandemie von 1918–1920 forderte mehr Tote als der Erste Weltkrieg?", "options": ["Der Schwarze Tod", "Die Spanische Grippe", "Die Pocken", "Die Cholera"], "explanation": "Etwa ein Drittel der Weltbevölkerung wurde angesteckt; Schätzungen reichen bis 50 Millionen Tote. Spanisch war sie nicht: Das neutrale Spanien berichtete einfach offen darüber, während die Krieg führenden Länder zensierten." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "How did the Western Allies keep West Berlin supplied during the Soviet blockade of 1948–49?",
+    "options": ["Through a secret tunnel", "By ship along the river Spree", "By air, in a huge airlift", "By train through Poland"],
+    "correct_answer": 2,
+    "explanation": "For almost a year, planes landed every few minutes with food and coal. Pilots who dropped sweets for children were nicknamed \"candy bombers\".",
+    "bron": "Berlin Airlift, June 1948 – September 1949.",
+    "vertalingen": {
+      "nl": { "question": "Hoe hielden de westerse geallieerden West-Berlijn bevoorraad tijdens de Sovjetblokkade van 1948–49?", "options": ["Via een geheime tunnel", "Per schip over de Spree", "Door de lucht, met een enorme luchtbrug", "Per trein door Polen"], "explanation": "Bijna een jaar lang landden er om de paar minuten vliegtuigen met voedsel en steenkool. Piloten die snoep voor kinderen afwierpen, kregen de bijnaam \"rozijnenbommenwerpers\"." },
+      "fr": { "question": "Comment les Alliés occidentaux ravitaillèrent-ils Berlin-Ouest pendant le blocus soviétique de 1948–49 ?", "options": ["Par un tunnel secret", "Par bateau sur la Spree", "Par les airs, grâce à un immense pont aérien", "Par le train à travers la Pologne"], "explanation": "Pendant près d'un an, des avions atterrirent toutes les quelques minutes avec nourriture et charbon. Les pilotes qui larguaient des bonbons aux enfants furent surnommés « bombardiers à bonbons »." },
+      "de": { "question": "Wie versorgten die Westalliierten West-Berlin während der sowjetischen Blockade 1948–49?", "options": ["Durch einen geheimen Tunnel", "Per Schiff über die Spree", "Aus der Luft, mit einer riesigen Luftbrücke", "Per Zug durch Polen"], "explanation": "Fast ein Jahr lang landeten alle paar Minuten Flugzeuge mit Lebensmitteln und Kohle. Piloten, die Süßigkeiten für Kinder abwarfen, hießen „Rosinenbomber“." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Whose nearly intact tomb did Howard Carter discover in Egypt's Valley of the Kings in 1922?",
+    "options": ["Ramesses II", "Khufu", "Akhenaten", "Tutankhamun"],
+    "correct_answer": 3,
+    "explanation": "Asked if he could see anything, Carter is said to have answered: \"Yes, wonderful things.\" The golden death mask became one of the world's most famous objects.",
+    "bron": "Discovery of KV62, November 1922.",
+    "vertalingen": {
+      "nl": { "question": "Wiens vrijwel ongeschonden graf ontdekte Howard Carter in 1922 in de Egyptische Vallei der Koningen?", "options": ["Ramses II", "Cheops", "Achnaton", "Toetanchamon"], "explanation": "Gevraagd of hij iets zag, zou Carter hebben geantwoord: \"Ja, prachtige dingen.\" Het gouden dodenmasker werd een van de beroemdste voorwerpen ter wereld." },
+      "fr": { "question": "De qui Howard Carter découvrit-il la tombe presque intacte dans la Vallée des Rois en 1922 ?", "options": ["Ramsès II", "Khéops", "Akhenaton", "Toutânkhamon"], "explanation": "À la question de savoir s'il voyait quelque chose, Carter aurait répondu : « Oui, des choses merveilleuses. » Le masque funéraire en or devint l'un des objets les plus célèbres du monde." },
+      "de": { "question": "Wessen fast unberührtes Grab entdeckte Howard Carter 1922 im ägyptischen Tal der Könige?", "options": ["Ramses II.", "Cheops", "Echnaton", "Tutanchamun"], "explanation": "Gefragt, ob er etwas sehe, soll Carter geantwortet haben: „Ja, wunderbare Dinge.“ Die goldene Totenmaske wurde zu einem der berühmtesten Objekte der Welt." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which general won the Spanish Civil War and ruled Spain as a dictator until 1975?",
+    "options": ["Francisco Franco", "Miguel Primo de Rivera", "António Salazar", "Benito Mussolini"],
+    "correct_answer": 0,
+    "explanation": "The war of 1936–1939 was a rehearsal for the Second World War: Germany and Italy helped Franco. Picasso's painting Guernica shows the bombing of a Basque town.",
+    "bron": "Spanish Civil War, 1936–1939; Franco died 20 November 1975.",
+    "vertalingen": {
+      "nl": { "question": "Welke generaal won de Spaanse Burgeroorlog en regeerde Spanje als dictator tot 1975?", "options": ["Francisco Franco", "Miguel Primo de Rivera", "António Salazar", "Benito Mussolini"], "explanation": "De oorlog van 1936–1939 was een generale repetitie voor de Tweede Wereldoorlog: Duitsland en Italië hielpen Franco. Picasso's Guernica toont het bombardement op een Baskisch stadje." },
+      "fr": { "question": "Quel général remporta la guerre civile espagnole et dirigea l'Espagne en dictateur jusqu'en 1975 ?", "options": ["Francisco Franco", "Miguel Primo de Rivera", "António Salazar", "Benito Mussolini"], "explanation": "La guerre de 1936–1939 fut une répétition de la Seconde Guerre mondiale : l'Allemagne et l'Italie aidèrent Franco. Le tableau Guernica de Picasso montre le bombardement d'une ville basque." },
+      "de": { "question": "Welcher General gewann den Spanischen Bürgerkrieg und regierte Spanien bis 1975 als Diktator?", "options": ["Francisco Franco", "Miguel Primo de Rivera", "António Salazar", "Benito Mussolini"], "explanation": "Der Krieg von 1936–1939 war eine Generalprobe für den Zweiten Weltkrieg: Deutschland und Italien halfen Franco. Picassos Guernica zeigt die Bombardierung einer baskischen Stadt." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which country did the Soviet Union invade in December 1979?",
+    "options": ["Iran", "Afghanistan", "Poland", "Turkey"],
+    "correct_answer": 1,
+    "explanation": "The war lasted almost ten years and has been called the Soviet Union's Vietnam. The last Soviet troops left in February 1989.",
+    "bron": "Soviet–Afghan War, December 1979 – February 1989.",
+    "vertalingen": {
+      "nl": { "question": "Welk land viel de Sovjet-Unie in december 1979 binnen?", "options": ["Iran", "Afghanistan", "Polen", "Turkije"], "explanation": "De oorlog duurde bijna tien jaar en wordt wel het Vietnam van de Sovjet-Unie genoemd. De laatste Sovjettroepen vertrokken in februari 1989." },
+      "fr": { "question": "Quel pays l'Union soviétique envahit-elle en décembre 1979 ?", "options": ["L'Iran", "L'Afghanistan", "La Pologne", "La Turquie"], "explanation": "La guerre dura près de dix ans et fut surnommée le Viêt Nam de l'Union soviétique. Les dernières troupes soviétiques partirent en février 1989." },
+      "de": { "question": "In welches Land marschierte die Sowjetunion im Dezember 1979 ein?", "options": ["Iran", "Afghanistan", "Polen", "Türkei"], "explanation": "Der Krieg dauerte fast zehn Jahre und wird das Vietnam der Sowjetunion genannt. Die letzten sowjetischen Truppen zogen im Februar 1989 ab." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "At which nuclear power plant in Ukraine did a reactor explode in 1986?",
+    "options": ["Three Mile Island", "Fukushima", "Chernobyl", "Windscale"],
+    "correct_answer": 2,
+    "explanation": "It was the worst nuclear accident in history. The nearby town of Pripyat was evacuated and is still abandoned today.",
+    "bron": "Chernobyl disaster, 26 April 1986.",
+    "vertalingen": {
+      "nl": { "question": "In welke kerncentrale in Oekraïne explodeerde in 1986 een reactor?", "options": ["Three Mile Island", "Fukushima", "Tsjernobyl", "Windscale"], "explanation": "Het was het ergste kernongeluk uit de geschiedenis. Het nabijgelegen stadje Pripjat werd geëvacueerd en staat nog altijd leeg." },
+      "fr": { "question": "Dans quelle centrale nucléaire d'Ukraine un réacteur explosa-t-il en 1986 ?", "options": ["Three Mile Island", "Fukushima", "Tchernobyl", "Windscale"], "explanation": "Ce fut le pire accident nucléaire de l'histoire. La ville voisine de Prypiat fut évacuée et reste abandonnée aujourd'hui." },
+      "de": { "question": "In welchem Kernkraftwerk in der Ukraine explodierte 1986 ein Reaktor?", "options": ["Three Mile Island", "Fukushima", "Tschernobyl", "Windscale"], "explanation": "Es war der schwerste Atomunfall der Geschichte. Die nahe Stadt Prypjat wurde evakuiert und ist bis heute verlassen." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "At which conference in February 1945 did Churchill, Roosevelt and Stalin plan post-war Europe?",
+    "options": ["Potsdam", "Tehran", "Casablanca", "Yalta"],
+    "correct_answer": 3,
+    "explanation": "Held in Crimea, it agreed to divide Germany into zones of occupation. Poland's future, decided there, became one of the first quarrels of the Cold War.",
+    "bron": "Yalta Conference, 4–11 February 1945.",
+    "vertalingen": {
+      "nl": { "question": "Op welke conferentie in februari 1945 planden Churchill, Roosevelt en Stalin het naoorlogse Europa?", "options": ["Potsdam", "Teheran", "Casablanca", "Jalta"], "explanation": "Op de Krim spraken ze af Duitsland in bezettingszones te verdelen. De toekomst van Polen, die er werd besproken, werd een van de eerste twistpunten van de Koude Oorlog." },
+      "fr": { "question": "Lors de quelle conférence de février 1945 Churchill, Roosevelt et Staline organisèrent-ils l'Europe d'après-guerre ?", "options": ["Potsdam", "Téhéran", "Casablanca", "Yalta"], "explanation": "Tenue en Crimée, elle décida du partage de l'Allemagne en zones d'occupation. L'avenir de la Pologne, réglé là, devint l'une des premières querelles de la guerre froide." },
+      "de": { "question": "Auf welcher Konferenz im Februar 1945 planten Churchill, Roosevelt und Stalin das Nachkriegseuropa?", "options": ["Potsdam", "Teheran", "Casablanca", "Jalta"], "explanation": "Auf der Krim beschlossen sie die Aufteilung Deutschlands in Besatzungszonen. Die dort verhandelte Zukunft Polens wurde einer der ersten Streitpunkte des Kalten Krieges." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "In which country was a popular uprising crushed by Soviet tanks in 1956?",
+    "options": ["Hungary", "Czechoslovakia", "Poland", "Yugoslavia"],
+    "correct_answer": 0,
+    "explanation": "The revolution began in Budapest in October and was crushed within weeks. Some 200,000 Hungarians fled to the West.",
+    "bron": "Hungarian Revolution, 23 October – 10 November 1956.",
+    "vertalingen": {
+      "nl": { "question": "In welk land werd in 1956 een volksopstand door Sovjettanks neergeslagen?", "options": ["Hongarije", "Tsjecho-Slowakije", "Polen", "Joegoslavië"], "explanation": "De revolutie begon in oktober in Boedapest en werd binnen enkele weken neergeslagen. Zo'n 200.000 Hongaren vluchtten naar het Westen." },
+      "fr": { "question": "Dans quel pays un soulèvement populaire fut-il écrasé par les chars soviétiques en 1956 ?", "options": ["La Hongrie", "La Tchécoslovaquie", "La Pologne", "La Yougoslavie"], "explanation": "La révolution commença à Budapest en octobre et fut écrasée en quelques semaines. Quelque 200 000 Hongrois fuirent vers l'Ouest." },
+      "de": { "question": "In welchem Land wurde 1956 ein Volksaufstand von sowjetischen Panzern niedergeschlagen?", "options": ["Ungarn", "Tschechoslowakei", "Polen", "Jugoslawien"], "explanation": "Die Revolution begann im Oktober in Budapest und wurde binnen Wochen niedergeschlagen. Rund 200.000 Ungarn flohen in den Westen." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "From which French port were some 338,000 Allied soldiers evacuated in 1940?",
+    "options": ["Calais", "Dunkirk", "Cherbourg", "Le Havre"],
+    "correct_answer": 1,
+    "explanation": "Hundreds of small civilian boats helped carry men from the beaches to warships. The army's equipment was lost, but its soldiers lived to fight on.",
+    "bron": "Operation Dynamo, 26 May – 4 June 1940.",
+    "vertalingen": {
+      "nl": { "question": "Vanuit welke Franse haven werden in 1940 zo'n 338.000 geallieerde soldaten geëvacueerd?", "options": ["Calais", "Duinkerke", "Cherbourg", "Le Havre"], "explanation": "Honderden kleine burgerbootjes hielpen de mannen van de stranden naar oorlogsschepen te brengen. Het materieel ging verloren, maar de soldaten konden verder vechten." },
+      "fr": { "question": "De quel port français quelque 338 000 soldats alliés furent-ils évacués en 1940 ?", "options": ["Calais", "Dunkerque", "Cherbourg", "Le Havre"], "explanation": "Des centaines de petits bateaux civils aidèrent à transporter les hommes des plages vers les navires de guerre. Le matériel fut perdu, mais les soldats purent continuer le combat." },
+      "de": { "question": "Aus welchem französischen Hafen wurden 1940 rund 338.000 alliierte Soldaten evakuiert?", "options": ["Calais", "Dünkirchen", "Cherbourg", "Le Havre"], "explanation": "Hunderte kleiner ziviler Boote halfen, die Männer von den Stränden zu den Kriegsschiffen zu bringen. Die Ausrüstung ging verloren, doch die Soldaten konnten weiterkämpfen." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "What was the Marshall Plan, launched in 1948?",
+    "options": ["A Soviet plan to take over Berlin", "A plan to divide Germany into four zones", "American aid to rebuild Western Europe after the war", "The Allied plan for the Normandy landings"],
+    "correct_answer": 2,
+    "explanation": "Over four years the United States gave some 13 billion dollars. The Netherlands was one of the largest recipients per person.",
+    "bron": "European Recovery Program, 1948–1952.",
+    "vertalingen": {
+      "nl": { "question": "Wat was het Marshallplan, gestart in 1948?", "options": ["Een Sovjetplan om Berlijn in te nemen", "Een plan om Duitsland in vier zones te verdelen", "Amerikaanse hulp voor de wederopbouw van West-Europa na de oorlog", "Het geallieerde plan voor de landing in Normandië"], "explanation": "In vier jaar gaven de Verenigde Staten zo'n 13 miljard dollar. Nederland was per inwoner een van de grootste ontvangers." },
+      "fr": { "question": "Qu'était le plan Marshall, lancé en 1948 ?", "options": ["Un plan soviétique pour prendre Berlin", "Un plan de partage de l'Allemagne en quatre zones", "L'aide américaine à la reconstruction de l'Europe de l'Ouest après la guerre", "Le plan allié du débarquement en Normandie"], "explanation": "En quatre ans, les États-Unis versèrent quelque 13 milliards de dollars. Les Pays-Bas furent l'un des plus grands bénéficiaires par habitant." },
+      "de": { "question": "Was war der Marshallplan, gestartet 1948?", "options": ["Ein sowjetischer Plan zur Einnahme Berlins", "Ein Plan zur Teilung Deutschlands in vier Zonen", "Amerikanische Hilfe für den Wiederaufbau Westeuropas nach dem Krieg", "Der alliierte Plan für die Landung in der Normandie"], "explanation": "In vier Jahren gaben die Vereinigten Staaten rund 13 Milliarden Dollar. Die Niederlande gehörten pro Kopf zu den größten Empfängern." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "What was the name of the Polish trade union, led by Lech Wałęsa, that challenged communist rule from 1980?",
+    "options": ["Unity", "Freedom", "Brotherhood", "Solidarity"],
+    "correct_answer": 3,
+    "explanation": "It was born in a strike at the Gdańsk shipyard and soon had about ten million members. In 1989 it won Poland's first partly free elections.",
+    "bron": "Solidarność, founded August–September 1980; elections June 1989.",
+    "vertalingen": {
+      "nl": { "question": "Hoe heette de Poolse vakbond onder leiding van Lech Wałęsa die vanaf 1980 het communistische bewind uitdaagde?", "options": ["Eenheid", "Vrijheid", "Broederschap", "Solidariteit"], "explanation": "Hij ontstond tijdens een staking op de scheepswerf van Gdańsk en had al snel zo'n tien miljoen leden. In 1989 won hij de eerste deels vrije verkiezingen in Polen." },
+      "fr": { "question": "Comment s'appelait le syndicat polonais dirigé par Lech Wałęsa, qui défia le pouvoir communiste à partir de 1980 ?", "options": ["Unité", "Liberté", "Fraternité", "Solidarité"], "explanation": "Né d'une grève au chantier naval de Gdańsk, il compta bientôt une dizaine de millions de membres. En 1989, il remporta les premières élections partiellement libres de Pologne." },
+      "de": { "question": "Wie hieß die polnische Gewerkschaft unter Lech Wałęsa, die ab 1980 die kommunistische Herrschaft herausforderte?", "options": ["Einheit", "Freiheit", "Brüderlichkeit", "Solidarität"], "explanation": "Sie entstand bei einem Streik auf der Danziger Werft und hatte bald rund zehn Millionen Mitglieder. 1989 gewann sie Polens erste teilweise freie Wahlen." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Who became the world's first elected female prime minister, in Sri Lanka in 1960?",
+    "options": ["Sirimavo Bandaranaike", "Indira Gandhi", "Golda Meir", "Margaret Thatcher"],
+    "correct_answer": 0,
+    "explanation": "She took over the party after her husband, the prime minister, was assassinated. Indira Gandhi followed in India in 1966 and Golda Meir in Israel in 1969.",
+    "bron": "Sirimavo Bandaranaike, Prime Minister of Ceylon from 21 July 1960.",
+    "vertalingen": {
+      "nl": { "question": "Wie werd in 1960 in Sri Lanka 's werelds eerste gekozen vrouwelijke premier?", "options": ["Sirimavo Bandaranaike", "Indira Gandhi", "Golda Meir", "Margaret Thatcher"], "explanation": "Ze nam de partij over nadat haar man, de premier, was vermoord. Indira Gandhi volgde in 1966 in India en Golda Meir in 1969 in Israël." },
+      "fr": { "question": "Qui devint en 1960, au Sri Lanka, la première femme Première ministre élue au monde ?", "options": ["Sirimavo Bandaranaike", "Indira Gandhi", "Golda Meir", "Margaret Thatcher"], "explanation": "Elle prit la tête du parti après l'assassinat de son mari, Premier ministre. Indira Gandhi suivit en Inde en 1966 et Golda Meir en Israël en 1969." },
+      "de": { "question": "Wer wurde 1960 in Sri Lanka die erste gewählte Premierministerin der Welt?", "options": ["Sirimavo Bandaranaike", "Indira Gandhi", "Golda Meir", "Margaret Thatcher"], "explanation": "Sie übernahm die Partei, nachdem ihr Mann, der Premierminister, ermordet worden war. Indira Gandhi folgte 1966 in Indien und Golda Meir 1969 in Israel." }
+    }
+  }
+]

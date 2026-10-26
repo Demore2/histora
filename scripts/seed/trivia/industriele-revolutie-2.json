@@ -1,0 +1,327 @@
+[
+  {
+    "moeilijkheid": 1,
+    "question": "In which city was the Eiffel Tower built for the World's Fair of 1889?",
+    "options": ["Paris", "Brussels", "London", "Vienna"],
+    "correct_answer": 0,
+    "explanation": "At 300 metres it was the tallest structure in the world until 1930. Many Parisians first hated it, and it was only meant to stand for twenty years.",
+    "bron": "Exposition Universelle, Paris, 1889.",
+    "vertalingen": {
+      "nl": { "question": "In welke stad werd de Eiffeltoren gebouwd voor de wereldtentoonstelling van 1889?", "options": ["Parijs", "Brussel", "Londen", "Wenen"], "explanation": "Met 300 meter was hij tot 1930 het hoogste bouwwerk ter wereld. Veel Parijzenaars vonden hem eerst afschuwelijk, en hij mocht maar twintig jaar blijven staan." },
+      "fr": { "question": "Dans quelle ville la tour Eiffel fut-elle construite pour l'Exposition universelle de 1889 ?", "options": ["Paris", "Bruxelles", "Londres", "Vienne"], "explanation": "Avec ses 300 mètres, elle fut la plus haute structure du monde jusqu'en 1930. Beaucoup de Parisiens la détestèrent d'abord, et elle ne devait rester que vingt ans." },
+      "de": { "question": "In welcher Stadt wurde der Eiffelturm für die Weltausstellung von 1889 gebaut?", "options": ["Paris", "Brüssel", "London", "Wien"], "explanation": "Mit 300 Metern war er bis 1930 das höchste Bauwerk der Welt. Viele Pariser hassten ihn zunächst, und er sollte nur zwanzig Jahre stehen bleiben." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "In which country did the first public railway with steam locomotives open, in 1825?",
+    "options": ["Germany", "Britain", "Belgium", "The United States"],
+    "correct_answer": 1,
+    "explanation": "The Stockton and Darlington Railway in northern England carried coal and passengers. Within decades railways criss-crossed Europe and America.",
+    "bron": "Stockton and Darlington Railway, opened 27 September 1825.",
+    "vertalingen": {
+      "nl": { "question": "In welk land opende in 1825 de eerste openbare spoorlijn met stoomlocomotieven?", "options": ["Duitsland", "Groot-Brittannië", "België", "De Verenigde Staten"], "explanation": "De Stockton and Darlington Railway in Noord-Engeland vervoerde steenkool en passagiers. Binnen enkele decennia doorkruisten spoorlijnen heel Europa en Amerika." },
+      "fr": { "question": "Dans quel pays ouvrit en 1825 la première ligne de chemin de fer publique à locomotives à vapeur ?", "options": ["L'Allemagne", "La Grande-Bretagne", "La Belgique", "Les États-Unis"], "explanation": "Le Stockton and Darlington Railway, dans le nord de l'Angleterre, transportait charbon et voyageurs. En quelques décennies, les rails sillonnèrent l'Europe et l'Amérique." },
+      "de": { "question": "In welchem Land wurde 1825 die erste öffentliche Eisenbahn mit Dampflokomotiven eröffnet?", "options": ["Deutschland", "Großbritannien", "Belgien", "Die Vereinigten Staaten"], "explanation": "Die Stockton and Darlington Railway in Nordengland beförderte Kohle und Fahrgäste. Innerhalb weniger Jahrzehnte durchzogen Eisenbahnen ganz Europa und Amerika." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which raw material did the great mills of Manchester spin and weave?",
+    "options": ["Wool", "Silk", "Cotton", "Linen"],
+    "correct_answer": 2,
+    "explanation": "Manchester was nicknamed \"Cottonopolis\". Much of its cotton was grown by enslaved people in the American South.",
+    "bron": "Lancashire cotton industry, 19th century.",
+    "vertalingen": {
+      "nl": { "question": "Welke grondstof sponnen en weefden de grote fabrieken van Manchester?", "options": ["Wol", "Zijde", "Katoen", "Linnen"], "explanation": "Manchester kreeg de bijnaam \"Cottonopolis\". Veel van dat katoen werd in het zuiden van de VS door slaafgemaakten geteeld." },
+      "fr": { "question": "Quelle matière première les grandes filatures de Manchester filaient-elles et tissaient-elles ?", "options": ["La laine", "La soie", "Le coton", "Le lin"], "explanation": "Manchester était surnommée « Cottonopolis ». Une grande partie de ce coton était cultivée par des esclaves dans le Sud des États-Unis." },
+      "de": { "question": "Welchen Rohstoff spannen und webten die großen Fabriken von Manchester?", "options": ["Wolle", "Seide", "Baumwolle", "Leinen"], "explanation": "Manchester bekam den Spitznamen „Cottonopolis“. Ein Großteil der Baumwolle wurde im Süden der USA von versklavten Menschen angebaut." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Who wrote Oliver Twist and A Christmas Carol?",
+    "options": ["Jane Austen", "Thomas Hardy", "Charlotte Brontë", "Charles Dickens"],
+    "correct_answer": 3,
+    "explanation": "As a boy he worked in a factory while his father sat in a debtors' prison. His novels showed readers the poverty of industrial London.",
+    "bron": "Dickens, Oliver Twist (1837–39), A Christmas Carol (1843).",
+    "vertalingen": {
+      "nl": { "question": "Wie schreef Oliver Twist en A Christmas Carol?", "options": ["Jane Austen", "Thomas Hardy", "Charlotte Brontë", "Charles Dickens"], "explanation": "Als jongen werkte hij in een fabriek terwijl zijn vader in de schuldgevangenis zat. Zijn romans lieten lezers de armoede van het industriële Londen zien." },
+      "fr": { "question": "Qui a écrit Oliver Twist et Un chant de Noël ?", "options": ["Jane Austen", "Thomas Hardy", "Charlotte Brontë", "Charles Dickens"], "explanation": "Enfant, il travailla en usine pendant que son père était en prison pour dettes. Ses romans montrèrent aux lecteurs la misère du Londres industriel." },
+      "de": { "question": "Wer schrieb Oliver Twist und Eine Weihnachtsgeschichte?", "options": ["Jane Austen", "Thomas Hardy", "Charlotte Brontë", "Charles Dickens"], "explanation": "Als Junge arbeitete er in einer Fabrik, während sein Vater im Schuldgefängnis saß. Seine Romane zeigten den Lesern die Armut des industriellen London." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which fuel powered most of the steam engines of the Industrial Revolution?",
+    "options": ["Coal", "Oil", "Natural gas", "Peat"],
+    "correct_answer": 0,
+    "explanation": "Britain sat on huge coal reserves, which is one reason the Industrial Revolution started there. The smoke turned whole cities black.",
+    "bron": "Coal and the British Industrial Revolution.",
+    "vertalingen": {
+      "nl": { "question": "Welke brandstof dreef de meeste stoommachines van de Industriële Revolutie aan?", "options": ["Steenkool", "Olie", "Aardgas", "Turf"], "explanation": "Groot-Brittannië zat op enorme steenkoolvoorraden, een van de redenen dat de Industriële Revolutie daar begon. De rook kleurde hele steden zwart." },
+      "fr": { "question": "Quel combustible alimentait la plupart des machines à vapeur de la révolution industrielle ?", "options": ["Le charbon", "Le pétrole", "Le gaz naturel", "La tourbe"], "explanation": "La Grande-Bretagne possédait d'énormes réserves de charbon, l'une des raisons pour lesquelles la révolution industrielle y commença. La fumée noircit des villes entières." },
+      "de": { "question": "Welcher Brennstoff trieb die meisten Dampfmaschinen der Industriellen Revolution an?", "options": ["Kohle", "Erdöl", "Erdgas", "Torf"], "explanation": "Großbritannien besaß riesige Kohlevorräte – ein Grund, warum die Industrielle Revolution dort begann. Der Rauch färbte ganze Städte schwarz." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "What did Morse code use to send letters over the telegraph?",
+    "options": ["Different colours of light", "Short and long signals: dots and dashes", "Numbers from 1 to 26", "Musical notes"],
+    "correct_answer": 1,
+    "explanation": "In 1844 Samuel Morse sent the message \"What hath God wrought\" from Washington to Baltimore. News could now cross a country in minutes instead of days.",
+    "bron": "First Morse telegraph message, 24 May 1844.",
+    "vertalingen": {
+      "nl": { "question": "Waarmee verstuurde de morsecode letters via de telegraaf?", "options": ["Verschillende kleuren licht", "Korte en lange signalen: punten en strepen", "Getallen van 1 tot 26", "Muzieknoten"], "explanation": "In 1844 seinde Samuel Morse het bericht \"What hath God wrought\" van Washington naar Baltimore. Nieuws kon een land nu in minuten oversteken in plaats van dagen." },
+      "fr": { "question": "Avec quoi le code Morse transmettait-il les lettres par télégraphe ?", "options": ["Des lumières de couleurs différentes", "Des signaux courts et longs : points et traits", "Des nombres de 1 à 26", "Des notes de musique"], "explanation": "En 1844, Samuel Morse envoya le message « What hath God wrought » de Washington à Baltimore. Une nouvelle pouvait désormais traverser un pays en quelques minutes au lieu de plusieurs jours." },
+      "de": { "question": "Womit übertrug der Morsecode Buchstaben per Telegraf?", "options": ["Mit verschiedenfarbigem Licht", "Mit kurzen und langen Signalen: Punkten und Strichen", "Mit Zahlen von 1 bis 26", "Mit Musiknoten"], "explanation": "1844 sendete Samuel Morse die Nachricht „What hath God wrought“ von Washington nach Baltimore. Nachrichten durchquerten ein Land nun in Minuten statt in Tagen." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Where did the gold rush that began in 1848 take place?",
+    "options": ["The Yukon", "Australia", "California", "South Africa"],
+    "correct_answer": 2,
+    "explanation": "Gold was found at Sutter's Mill, and some 300,000 people poured in. San Francisco grew from a village into a city within a few years.",
+    "bron": "California Gold Rush, from January 1848.",
+    "vertalingen": {
+      "nl": { "question": "Waar vond de goudkoorts plaats die in 1848 begon?", "options": ["De Yukon", "Australië", "Californië", "Zuid-Afrika"], "explanation": "Er werd goud gevonden bij Sutter's Mill, en zo'n 300.000 mensen stroomden toe. San Francisco groeide binnen een paar jaar van dorp tot stad." },
+      "fr": { "question": "Où eut lieu la ruée vers l'or qui commença en 1848 ?", "options": ["Au Yukon", "En Australie", "En Californie", "En Afrique du Sud"], "explanation": "De l'or fut découvert à Sutter's Mill, et quelque 300 000 personnes affluèrent. San Francisco passa de village à ville en quelques années." },
+      "de": { "question": "Wo fand der Goldrausch statt, der 1848 begann?", "options": ["Im Yukon", "In Australien", "In Kalifornien", "In Südafrika"], "explanation": "Bei Sutter's Mill wurde Gold gefunden, und rund 300.000 Menschen strömten herbei. San Francisco wuchs in wenigen Jahren vom Dorf zur Stadt." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which Dutch painter made The Starry Night in 1889?",
+    "options": ["Claude Monet", "Paul Cézanne", "Paul Gauguin", "Vincent van Gogh"],
+    "correct_answer": 3,
+    "explanation": "He painted it from his room in an asylum in Saint-Rémy, France. He sold very few paintings during his life.",
+    "bron": "Van Gogh, The Starry Night, June 1889 (MoMA).",
+    "vertalingen": {
+      "nl": { "question": "Welke Nederlandse schilder maakte in 1889 De sterrennacht?", "options": ["Claude Monet", "Paul Cézanne", "Paul Gauguin", "Vincent van Gogh"], "explanation": "Hij schilderde het vanuit zijn kamer in een inrichting in Saint-Rémy in Frankrijk. Tijdens zijn leven verkocht hij maar heel weinig schilderijen." },
+      "fr": { "question": "Quel peintre néerlandais réalisa La Nuit étoilée en 1889 ?", "options": ["Claude Monet", "Paul Cézanne", "Paul Gauguin", "Vincent van Gogh"], "explanation": "Il la peignit depuis sa chambre d'asile à Saint-Rémy-de-Provence. Il vendit très peu de tableaux de son vivant." },
+      "de": { "question": "Welcher niederländische Maler schuf 1889 Die Sternennacht?", "options": ["Claude Monet", "Paul Cézanne", "Paul Gauguin", "Vincent van Gogh"], "explanation": "Er malte sie aus seinem Zimmer in einer Heilanstalt in Saint-Rémy in Frankreich. Zu Lebzeiten verkaufte er nur sehr wenige Bilder." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which famous statue, dedicated in New York harbour in 1886, was a gift from France?",
+    "options": ["The Statue of Liberty", "The Lincoln Memorial", "Mount Rushmore", "The Thinker"],
+    "correct_answer": 0,
+    "explanation": "It was designed by Frédéric Bartholdi, and Gustave Eiffel built its iron frame. For millions of immigrants arriving by ship, it was their first sight of America.",
+    "bron": "Statue of Liberty, dedicated 28 October 1886.",
+    "vertalingen": {
+      "nl": { "question": "Welk beroemd beeld, in 1886 onthuld in de haven van New York, was een geschenk van Frankrijk?", "options": ["Het Vrijheidsbeeld", "Het Lincoln Memorial", "Mount Rushmore", "De Denker"], "explanation": "Het werd ontworpen door Frédéric Bartholdi; Gustave Eiffel bouwde het ijzeren geraamte. Voor miljoenen immigranten die per schip aankwamen, was het hun eerste glimp van Amerika." },
+      "fr": { "question": "Quelle statue célèbre, inaugurée dans le port de New York en 1886, était un cadeau de la France ?", "options": ["La statue de la Liberté", "Le Lincoln Memorial", "Le mont Rushmore", "Le Penseur"], "explanation": "Elle fut conçue par Frédéric Bartholdi, et Gustave Eiffel construisit sa structure en fer. Pour des millions d'immigrants arrivant par bateau, ce fut leur première vision de l'Amérique." },
+      "de": { "question": "Welche berühmte Statue, 1886 im Hafen von New York eingeweiht, war ein Geschenk Frankreichs?", "options": ["Die Freiheitsstatue", "Das Lincoln Memorial", "Mount Rushmore", "Der Denker"], "explanation": "Entworfen wurde sie von Frédéric Bartholdi, das eiserne Gerüst baute Gustave Eiffel. Für Millionen Einwanderer, die per Schiff ankamen, war sie der erste Blick auf Amerika." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Who invented the cotton gin in 1793, a machine that separated cotton fibres from their seeds?",
+    "options": ["Richard Arkwright", "Eli Whitney", "Samuel Slater", "Cyrus McCormick"],
+    "correct_answer": 1,
+    "explanation": "It made cotton growing hugely profitable. The tragic result was that slavery in the American South expanded rather than declined.",
+    "bron": "Whitney's cotton gin patent, 1794.",
+    "vertalingen": {
+      "nl": { "question": "Wie vond in 1793 de katoenzuiveringsmachine (cotton gin) uit, die de vezels van de zaden scheidde?", "options": ["Richard Arkwright", "Eli Whitney", "Samuel Slater", "Cyrus McCormick"], "explanation": "Ze maakte katoenteelt enorm winstgevend. Het tragische gevolg was dat de slavernij in het zuiden van de VS groeide in plaats van afnam." },
+      "fr": { "question": "Qui inventa en 1793 l'égreneuse de coton, une machine séparant les fibres de leurs graines ?", "options": ["Richard Arkwright", "Eli Whitney", "Samuel Slater", "Cyrus McCormick"], "explanation": "Elle rendit la culture du coton extrêmement rentable. Conséquence tragique : l'esclavage dans le Sud des États-Unis s'étendit au lieu de reculer." },
+      "de": { "question": "Wer erfand 1793 die Entkörnungsmaschine (Cotton Gin), die Baumwollfasern von den Samen trennte?", "options": ["Richard Arkwright", "Eli Whitney", "Samuel Slater", "Cyrus McCormick"], "explanation": "Sie machte den Baumwollanbau enorm profitabel. Die tragische Folge: Die Sklaverei im Süden der USA wuchs, statt zu schrumpfen." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Russian tsar abolished serfdom in 1861?",
+    "options": ["Nicholas I", "Peter III", "Alexander II", "Nicholas II"],
+    "correct_answer": 2,
+    "explanation": "Some 23 million privately owned serfs became legally free. He was later assassinated by revolutionaries in 1881.",
+    "bron": "Emancipation Reform of 1861; assassination of Alexander II, 1881.",
+    "vertalingen": {
+      "nl": { "question": "Welke Russische tsaar schafte in 1861 de lijfeigenschap af?", "options": ["Nicolaas I", "Peter III", "Alexander II", "Nicolaas II"], "explanation": "Zo'n 23 miljoen lijfeigenen van particuliere landheren werden wettelijk vrij. Hij werd in 1881 door revolutionairen vermoord." },
+      "fr": { "question": "Quel tsar russe abolit le servage en 1861 ?", "options": ["Nicolas Ier", "Pierre III", "Alexandre II", "Nicolas II"], "explanation": "Quelque 23 millions de serfs appartenant à des propriétaires privés devinrent légalement libres. Il fut assassiné par des révolutionnaires en 1881." },
+      "de": { "question": "Welcher russische Zar schaffte 1861 die Leibeigenschaft ab?", "options": ["Nikolaus I.", "Peter III.", "Alexander II.", "Nikolaus II."], "explanation": "Rund 23 Millionen Leibeigene privater Gutsherren wurden rechtlich frei. 1881 wurde er von Revolutionären ermordet." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Who were the Luddites in early 19th-century England?",
+    "options": ["Factory owners who lowered wages", "A religious movement against alcohol", "Engineers who built the first railways", "Textile workers who smashed machines that threatened their jobs"],
+    "correct_answer": 3,
+    "explanation": "They named themselves after a mythical \"General Ludd\". The government sent thousands of soldiers, and machine-breaking became a crime punishable by death.",
+    "bron": "Luddite uprisings, 1811–1816; Frame Breaking Act 1812.",
+    "vertalingen": {
+      "nl": { "question": "Wie waren de luddieten in het Engeland van begin 19e eeuw?", "options": ["Fabriekseigenaren die de lonen verlaagden", "Een religieuze beweging tegen alcohol", "Ingenieurs die de eerste spoorlijnen bouwden", "Textielarbeiders die machines vernielden die hun werk bedreigden"], "explanation": "Ze noemden zich naar een verzonnen \"Generaal Ludd\". De regering stuurde duizenden soldaten, en machines vernielen werd een misdaad waarop de doodstraf stond." },
+      "fr": { "question": "Qui étaient les luddites dans l'Angleterre du début du XIXe siècle ?", "options": ["Des patrons d'usine qui baissaient les salaires", "Un mouvement religieux contre l'alcool", "Des ingénieurs qui bâtirent les premiers chemins de fer", "Des ouvriers du textile qui brisaient les machines menaçant leur emploi"], "explanation": "Ils se réclamaient d'un mythique « général Ludd ». Le gouvernement envoya des milliers de soldats, et le bris de machines devint passible de la peine de mort." },
+      "de": { "question": "Wer waren die Ludditen im England des frühen 19. Jahrhunderts?", "options": ["Fabrikbesitzer, die die Löhne senkten", "Eine religiöse Bewegung gegen Alkohol", "Ingenieure, die die ersten Eisenbahnen bauten", "Textilarbeiter, die Maschinen zerstörten, die ihre Arbeit bedrohten"], "explanation": "Sie benannten sich nach einem erfundenen „General Ludd“. Die Regierung schickte Tausende Soldaten, und Maschinenstürmerei wurde mit dem Tod bestraft." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which leader, known as \"the Liberator\", freed much of South America from Spanish rule?",
+    "options": ["Simón Bolívar", "Pancho Villa", "Benito Juárez", "Emiliano Zapata"],
+    "correct_answer": 0,
+    "explanation": "He led the independence of what are now Venezuela, Colombia, Ecuador, Peru and Bolivia. Bolivia is named after him.",
+    "bron": "Spanish American wars of independence, 1810s–1820s.",
+    "vertalingen": {
+      "nl": { "question": "Welke leider, bekend als \"de Bevrijder\", bevrijdde een groot deel van Zuid-Amerika van de Spaanse heerschappij?", "options": ["Simón Bolívar", "Pancho Villa", "Benito Juárez", "Emiliano Zapata"], "explanation": "Hij leidde de onafhankelijkheid van het huidige Venezuela, Colombia, Ecuador, Peru en Bolivia. Bolivia is naar hem vernoemd." },
+      "fr": { "question": "Quel dirigeant, surnommé « le Libérateur », affranchit une grande partie de l'Amérique du Sud de la domination espagnole ?", "options": ["Simón Bolívar", "Pancho Villa", "Benito Juárez", "Emiliano Zapata"], "explanation": "Il mena l'indépendance des actuels Venezuela, Colombie, Équateur, Pérou et Bolivie. La Bolivie porte son nom." },
+      "de": { "question": "Welcher Anführer, bekannt als „der Befreier“, befreite große Teile Südamerikas von der spanischen Herrschaft?", "options": ["Simón Bolívar", "Pancho Villa", "Benito Juárez", "Emiliano Zapata"], "explanation": "Er führte die Unabhängigkeit der heutigen Staaten Venezuela, Kolumbien, Ecuador, Peru und Bolivien an. Bolivien ist nach ihm benannt." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which chemist published the first periodic table of the elements in 1869?",
+    "options": ["John Dalton", "Dmitri Mendeleev", "Antoine Lavoisier", "Robert Bunsen"],
+    "correct_answer": 1,
+    "explanation": "He left gaps for elements nobody had found yet and predicted their properties. When gallium and germanium were discovered, they matched.",
+    "bron": "Mendeleev's periodic table, 1869.",
+    "vertalingen": {
+      "nl": { "question": "Welke scheikundige publiceerde in 1869 het eerste periodiek systeem der elementen?", "options": ["John Dalton", "Dmitri Mendelejev", "Antoine Lavoisier", "Robert Bunsen"], "explanation": "Hij liet gaten open voor elementen die nog niemand had gevonden en voorspelde hun eigenschappen. Toen gallium en germanium werden ontdekt, klopte het." },
+      "fr": { "question": "Quel chimiste publia en 1869 le premier tableau périodique des éléments ?", "options": ["John Dalton", "Dmitri Mendeleïev", "Antoine Lavoisier", "Robert Bunsen"], "explanation": "Il laissa des cases vides pour des éléments encore inconnus et prédit leurs propriétés. Quand le gallium et le germanium furent découverts, ils correspondaient." },
+      "de": { "question": "Welcher Chemiker veröffentlichte 1869 das erste Periodensystem der Elemente?", "options": ["John Dalton", "Dmitri Mendelejew", "Antoine Lavoisier", "Robert Bunsen"], "explanation": "Er ließ Lücken für noch unentdeckte Elemente und sagte ihre Eigenschaften voraus. Als Gallium und Germanium entdeckt wurden, passten sie." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Who built the first practical car powered by a petrol engine, patented in 1886?",
+    "options": ["Gottlieb Daimler", "Rudolf Diesel", "Karl Benz", "Henry Ford"],
+    "correct_answer": 2,
+    "explanation": "His three-wheeled Motorwagen became famous when his wife Bertha drove it over 100 kilometres to visit her mother, without telling him.",
+    "bron": "Benz Patent-Motorwagen, patent 29 January 1886; Bertha Benz's drive 1888.",
+    "vertalingen": {
+      "nl": { "question": "Wie bouwde de eerste bruikbare auto met benzinemotor, gepatenteerd in 1886?", "options": ["Gottlieb Daimler", "Rudolf Diesel", "Karl Benz", "Henry Ford"], "explanation": "Zijn driewielige Motorwagen werd beroemd toen zijn vrouw Bertha er ruim 100 kilometer mee naar haar moeder reed, zonder het hem te vertellen." },
+      "fr": { "question": "Qui construisit la première voiture pratique à moteur à essence, brevetée en 1886 ?", "options": ["Gottlieb Daimler", "Rudolf Diesel", "Karl Benz", "Henry Ford"], "explanation": "Son Motorwagen à trois roues devint célèbre quand sa femme Bertha parcourut plus de 100 kilomètres avec pour rendre visite à sa mère, sans le prévenir." },
+      "de": { "question": "Wer baute das erste praxistaugliche Auto mit Benzinmotor, patentiert 1886?", "options": ["Gottlieb Daimler", "Rudolf Diesel", "Carl Benz", "Henry Ford"], "explanation": "Sein dreirädriger Motorwagen wurde berühmt, als seine Frau Bertha damit über 100 Kilometer zu ihrer Mutter fuhr, ohne es ihm zu sagen." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Who led the great slave revolt in the French colony of Saint-Domingue, which became Haiti?",
+    "options": ["Simón Bolívar", "Frederick Douglass", "Nat Turner", "Toussaint Louverture"],
+    "correct_answer": 3,
+    "explanation": "Formerly enslaved himself, he became the revolt's leading general. He died in a French prison in 1803; a year later Haiti declared independence as the first state founded by a successful slave revolt.",
+    "bron": "Haitian Revolution, 1791–1804.",
+    "vertalingen": {
+      "nl": { "question": "Wie leidde de grote slavenopstand in de Franse kolonie Saint-Domingue, die Haïti werd?", "options": ["Simón Bolívar", "Frederick Douglass", "Nat Turner", "Toussaint Louverture"], "explanation": "Zelf ooit tot slaaf gemaakt, werd hij de belangrijkste generaal van de opstand. Hij stierf in 1803 in een Franse gevangenis; een jaar later werd Haïti onafhankelijk, als eerste staat gesticht door een geslaagde slavenopstand." },
+      "fr": { "question": "Qui mena la grande révolte des esclaves dans la colonie française de Saint-Domingue, devenue Haïti ?", "options": ["Simón Bolívar", "Frederick Douglass", "Nat Turner", "Toussaint Louverture"], "explanation": "Ancien esclave lui-même, il devint le principal général de la révolte. Il mourut dans une prison française en 1803 ; un an plus tard, Haïti proclamait son indépendance, premier État né d'une révolte d'esclaves victorieuse." },
+      "de": { "question": "Wer führte den großen Sklavenaufstand in der französischen Kolonie Saint-Domingue an, aus der Haiti wurde?", "options": ["Simón Bolívar", "Frederick Douglass", "Nat Turner", "Toussaint Louverture"], "explanation": "Selbst einst versklavt, wurde er der wichtigste General des Aufstands. Er starb 1803 in einem französischen Gefängnis; ein Jahr später erklärte Haiti seine Unabhängigkeit – als erster Staat, der aus einem erfolgreichen Sklavenaufstand hervorging." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which country did the American Commodore Matthew Perry force to open its ports to trade in 1853–54?",
+    "options": ["Japan", "China", "Korea", "Siam"],
+    "correct_answer": 0,
+    "explanation": "He arrived with steam-powered warships, the \"black ships\". The shock helped bring down the shogunate and set off Japan's rapid modernisation.",
+    "bron": "Perry Expedition; Convention of Kanagawa, 1854.",
+    "vertalingen": {
+      "nl": { "question": "Welk land dwong de Amerikaanse commodore Matthew Perry in 1853–54 zijn havens open te stellen voor handel?", "options": ["Japan", "China", "Korea", "Siam"], "explanation": "Hij kwam met door stoom aangedreven oorlogsschepen, de \"zwarte schepen\". De schok hielp het shogunaat ten val te brengen en zette Japans snelle modernisering in gang." },
+      "fr": { "question": "Quel pays le commodore américain Matthew Perry força-t-il à ouvrir ses ports au commerce en 1853–54 ?", "options": ["Le Japon", "La Chine", "La Corée", "Le Siam"], "explanation": "Il arriva avec des navires de guerre à vapeur, les « navires noirs ». Le choc contribua à la chute du shogunat et lança la modernisation rapide du Japon." },
+      "de": { "question": "Welches Land zwang der amerikanische Commodore Matthew Perry 1853–54, seine Häfen für den Handel zu öffnen?", "options": ["Japan", "China", "Korea", "Siam"], "explanation": "Er kam mit dampfgetriebenen Kriegsschiffen, den „schwarzen Schiffen“. Der Schock trug zum Sturz des Shogunats bei und löste Japans rasche Modernisierung aus." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which disease did John Snow trace to a contaminated water pump in London in 1854?",
+    "options": ["Smallpox", "Cholera", "Tuberculosis", "Typhus"],
+    "correct_answer": 1,
+    "explanation": "He mapped the deaths around a pump on Broad Street and had its handle removed. His map is seen as the start of modern epidemiology.",
+    "bron": "Broad Street cholera outbreak, 1854.",
+    "vertalingen": {
+      "nl": { "question": "Welke ziekte herleidde John Snow in 1854 in Londen tot een besmette waterpomp?", "options": ["Pokken", "Cholera", "Tuberculose", "Vlektyfus"], "explanation": "Hij zette de sterfgevallen rond een pomp in Broad Street op een kaart en liet de zwengel verwijderen. Zijn kaart geldt als het begin van de moderne epidemiologie." },
+      "fr": { "question": "Quelle maladie John Snow relia-t-il à une pompe à eau contaminée à Londres en 1854 ?", "options": ["La variole", "Le choléra", "La tuberculose", "Le typhus"], "explanation": "Il cartographia les décès autour d'une pompe de Broad Street et en fit retirer le levier. Sa carte est considérée comme le début de l'épidémiologie moderne." },
+      "de": { "question": "Welche Krankheit führte John Snow 1854 in London auf eine verseuchte Wasserpumpe zurück?", "options": ["Pocken", "Cholera", "Tuberkulose", "Fleckfieber"], "explanation": "Er trug die Todesfälle rund um eine Pumpe in der Broad Street in eine Karte ein und ließ ihren Schwengel entfernen. Seine Karte gilt als Beginn der modernen Epidemiologie." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which monk discovered the basic laws of heredity by crossing pea plants?",
+    "options": ["Charles Darwin", "Louis Pasteur", "Gregor Mendel", "Alfred Russel Wallace"],
+    "correct_answer": 2,
+    "explanation": "He grew some 28,000 pea plants in his monastery garden in Brno. His 1866 paper was ignored until 1900, sixteen years after his death.",
+    "bron": "Mendel, Experiments on Plant Hybridization (1866).",
+    "vertalingen": {
+      "nl": { "question": "Welke monnik ontdekte de basiswetten van de erfelijkheid door erwtenplanten te kruisen?", "options": ["Charles Darwin", "Louis Pasteur", "Gregor Mendel", "Alfred Russel Wallace"], "explanation": "Hij kweekte zo'n 28.000 erwtenplanten in de kloostertuin in Brno. Zijn artikel van 1866 werd genegeerd tot 1900, zestien jaar na zijn dood." },
+      "fr": { "question": "Quel moine découvrit les lois fondamentales de l'hérédité en croisant des plants de pois ?", "options": ["Charles Darwin", "Louis Pasteur", "Gregor Mendel", "Alfred Russel Wallace"], "explanation": "Il cultiva quelque 28 000 plants de pois dans le jardin de son monastère à Brno. Son article de 1866 resta ignoré jusqu'en 1900, seize ans après sa mort." },
+      "de": { "question": "Welcher Mönch entdeckte die Grundgesetze der Vererbung, indem er Erbsenpflanzen kreuzte?", "options": ["Charles Darwin", "Louis Pasteur", "Gregor Mendel", "Alfred Russel Wallace"], "explanation": "Er zog rund 28.000 Erbsenpflanzen im Klostergarten in Brünn. Seine Arbeit von 1866 blieb bis 1900 unbeachtet, sechzehn Jahre nach seinem Tod." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Who wrote The Wealth of Nations (1776), the founding book of modern economics?",
+    "options": ["David Ricardo", "John Stuart Mill", "Thomas Malthus", "Adam Smith"],
+    "correct_answer": 3,
+    "explanation": "He argued that free markets and the division of labour make nations rich. His famous example was a pin factory, where specialised workers made thousands of pins a day.",
+    "bron": "Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations (1776).",
+    "vertalingen": {
+      "nl": { "question": "Wie schreef The Wealth of Nations (1776), het grondleggende boek van de moderne economie?", "options": ["David Ricardo", "John Stuart Mill", "Thomas Malthus", "Adam Smith"], "explanation": "Hij betoogde dat vrije markten en arbeidsdeling landen rijk maken. Zijn beroemde voorbeeld was een speldenfabriek, waar gespecialiseerde arbeiders duizenden spelden per dag maakten." },
+      "fr": { "question": "Qui écrivit La Richesse des nations (1776), le livre fondateur de l'économie moderne ?", "options": ["David Ricardo", "John Stuart Mill", "Thomas Malthus", "Adam Smith"], "explanation": "Il soutenait que le libre marché et la division du travail enrichissent les nations. Son exemple célèbre était une fabrique d'épingles où des ouvriers spécialisés en produisaient des milliers par jour." },
+      "de": { "question": "Wer schrieb Der Wohlstand der Nationen (1776), das Gründungswerk der modernen Ökonomie?", "options": ["David Ricardo", "John Stuart Mill", "Thomas Malthus", "Adam Smith"], "explanation": "Er vertrat, dass freie Märkte und Arbeitsteilung Nationen reich machen. Sein berühmtes Beispiel war eine Stecknadelfabrik, in der spezialisierte Arbeiter Tausende Nadeln am Tag herstellten." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which British law of 1832 gave new industrial cities such as Manchester their own seats in Parliament?",
+    "options": ["The Great Reform Act", "The Corn Laws", "The Factory Act", "The Poor Law Amendment Act"],
+    "correct_answer": 0,
+    "explanation": "Before it, tiny \"rotten boroughs\" with a handful of voters sent members to Parliament while growing cities had none. Still only about one in five adult men could vote afterwards.",
+    "bron": "Representation of the People Act 1832.",
+    "vertalingen": {
+      "nl": { "question": "Welke Britse wet van 1832 gaf nieuwe industriesteden zoals Manchester eigen zetels in het parlement?", "options": ["De Great Reform Act", "De Graanwetten", "De Fabriekswet", "De Armenwet"], "explanation": "Daarvoor stuurden piepkleine \"rotten boroughs\" met een handvol kiezers leden naar het parlement, terwijl groeiende steden er geen hadden. Ook daarna mocht maar ongeveer één op de vijf volwassen mannen stemmen." },
+      "fr": { "question": "Quelle loi britannique de 1832 donna à de nouvelles villes industrielles comme Manchester leurs propres sièges au Parlement ?", "options": ["Le Great Reform Act", "Les Corn Laws", "Le Factory Act", "La loi sur les pauvres"], "explanation": "Auparavant, de minuscules « bourgs pourris » à poignée d'électeurs envoyaient des députés, tandis que les villes en plein essor n'en avaient aucun. Même après, seul un homme adulte sur cinq environ pouvait voter." },
+      "de": { "question": "Welches britische Gesetz von 1832 gab neuen Industriestädten wie Manchester eigene Sitze im Parlament?", "options": ["Der Great Reform Act", "Die Corn Laws", "Der Factory Act", "Das Armengesetz"], "explanation": "Zuvor schickten winzige „rotten boroughs“ mit einer Handvoll Wählern Abgeordnete ins Parlament, während wachsende Städte keine hatten. Auch danach durfte nur etwa jeder fünfte erwachsene Mann wählen." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which uprising in China, from 1850 to 1864, was one of the deadliest wars of the 19th century?",
+    "options": ["The Boxer Rebellion", "The Taiping Rebellion", "The Opium War", "The White Lotus Rebellion"],
+    "correct_answer": 1,
+    "explanation": "Its leader Hong Xiuquan believed he was the younger brother of Jesus. Estimates of the dead run from 20 to 30 million.",
+    "bron": "Taiping Rebellion, 1850–1864.",
+    "vertalingen": {
+      "nl": { "question": "Welke opstand in China, van 1850 tot 1864, was een van de dodelijkste oorlogen van de 19e eeuw?", "options": ["De Bokseropstand", "De Taipingopstand", "De Opiumoorlog", "De Witte Lotusopstand"], "explanation": "Leider Hong Xiuquan geloofde dat hij de jongere broer van Jezus was. Schattingen van het aantal doden lopen van 20 tot 30 miljoen." },
+      "fr": { "question": "Quelle révolte en Chine, de 1850 à 1864, fut l'une des guerres les plus meurtrières du XIXe siècle ?", "options": ["La révolte des Boxers", "La révolte des Taiping", "La guerre de l'opium", "La révolte du Lotus blanc"], "explanation": "Son chef Hong Xiuquan se croyait le frère cadet de Jésus. Les estimations des morts vont de 20 à 30 millions." },
+      "de": { "question": "Welcher Aufstand in China, von 1850 bis 1864, war einer der tödlichsten Kriege des 19. Jahrhunderts?", "options": ["Der Boxeraufstand", "Der Taiping-Aufstand", "Der Opiumkrieg", "Der Aufstand des Weißen Lotus"], "explanation": "Sein Anführer Hong Xiuquan hielt sich für den jüngeren Bruder Jesu. Die Schätzungen der Toten reichen von 20 bis 30 Millionen." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which British engineer built the Great Western Railway and the iron steamship SS Great Britain?",
+    "options": ["Thomas Telford", "George Stephenson", "Isambard Kingdom Brunel", "Robert Stephenson"],
+    "correct_answer": 2,
+    "explanation": "The SS Great Britain of 1843 was the first iron-hulled, propeller-driven ship to cross the Atlantic. Brunel was famous for his tall stovepipe hat.",
+    "bron": "Great Western Railway (1838–41); SS Great Britain (1843).",
+    "vertalingen": {
+      "nl": { "question": "Welke Britse ingenieur bouwde de Great Western Railway en het ijzeren stoomschip SS Great Britain?", "options": ["Thomas Telford", "George Stephenson", "Isambard Kingdom Brunel", "Robert Stephenson"], "explanation": "De SS Great Britain van 1843 was het eerste schip met ijzeren romp en schroef dat de Atlantische Oceaan overstak. Brunel stond bekend om zijn hoge kachelpijphoed." },
+      "fr": { "question": "Quel ingénieur britannique construisit le Great Western Railway et le navire à vapeur en fer SS Great Britain ?", "options": ["Thomas Telford", "George Stephenson", "Isambard Kingdom Brunel", "Robert Stephenson"], "explanation": "Le SS Great Britain de 1843 fut le premier navire à coque en fer et à hélice à traverser l'Atlantique. Brunel était célèbre pour son haut chapeau en tuyau de poêle." },
+      "de": { "question": "Welcher britische Ingenieur baute die Great Western Railway und das eiserne Dampfschiff SS Great Britain?", "options": ["Thomas Telford", "George Stephenson", "Isambard Kingdom Brunel", "Robert Stephenson"], "explanation": "Die SS Great Britain von 1843 war das erste Schiff mit Eisenrumpf und Schraube, das den Atlantik überquerte. Brunel war für seinen hohen Zylinderhut bekannt." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which uprising of 1857 led the British government to take direct rule over India?",
+    "options": ["The Anglo-Mysore War", "The Vellore Mutiny", "The Maratha War", "The Indian Rebellion"],
+    "correct_answer": 3,
+    "explanation": "It began among Indian soldiers of the East India Company. After it was crushed, the Company was stripped of its power and India came under the Crown in 1858.",
+    "bron": "Indian Rebellion of 1857; Government of India Act 1858.",
+    "vertalingen": {
+      "nl": { "question": "Welke opstand van 1857 bracht de Britse regering ertoe India direct te gaan besturen?", "options": ["De Anglo-Mysore-oorlog", "De muiterij van Vellore", "De Maratha-oorlog", "De Indiase Opstand"], "explanation": "Hij begon onder Indiase soldaten van de Oost-Indische Compagnie. Nadat hij was neergeslagen, verloor de Compagnie haar macht en kwam India in 1858 onder de Kroon." },
+      "fr": { "question": "Quel soulèvement de 1857 conduisit le gouvernement britannique à gouverner directement l'Inde ?", "options": ["La guerre anglo-mysoréenne", "La mutinerie de Vellore", "La guerre marathe", "La révolte des cipayes"], "explanation": "Elle commença parmi les soldats indiens de la Compagnie des Indes orientales. Après sa répression, la Compagnie perdit son pouvoir et l'Inde passa sous la Couronne en 1858." },
+      "de": { "question": "Welcher Aufstand von 1857 brachte die britische Regierung dazu, Indien direkt zu regieren?", "options": ["Der Mysore-Krieg", "Die Meuterei von Vellore", "Der Marathenkrieg", "Der Indische Aufstand"], "explanation": "Er begann unter indischen Soldaten der Ostindien-Kompanie. Nach seiner Niederschlagung verlor die Kompanie ihre Macht, und Indien kam 1858 unter die Krone." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which treaty after the First Opium War handed Hong Kong Island to Britain in 1842?",
+    "options": ["The Treaty of Nanking", "The Treaty of Tientsin", "The Treaty of Shimonoseki", "The Convention of Peking"],
+    "correct_answer": 0,
+    "explanation": "Britain had gone to war to keep selling opium to China. Hong Kong stayed British until 1997.",
+    "bron": "Treaty of Nanking, 29 August 1842.",
+    "vertalingen": {
+      "nl": { "question": "Welk verdrag na de Eerste Opiumoorlog droeg in 1842 het eiland Hongkong over aan Groot-Brittannië?", "options": ["Het Verdrag van Nanking", "Het Verdrag van Tientsin", "Het Verdrag van Shimonoseki", "De Conventie van Peking"], "explanation": "Groot-Brittannië was oorlog gaan voeren om opium aan China te kunnen blijven verkopen. Hongkong bleef Brits tot 1997." },
+      "fr": { "question": "Quel traité, après la première guerre de l'opium, céda l'île de Hong Kong à la Grande-Bretagne en 1842 ?", "options": ["Le traité de Nankin", "Le traité de Tianjin", "Le traité de Shimonoseki", "La convention de Pékin"], "explanation": "La Grande-Bretagne avait fait la guerre pour continuer à vendre de l'opium à la Chine. Hong Kong resta britannique jusqu'en 1997." },
+      "de": { "question": "Welcher Vertrag nach dem Ersten Opiumkrieg trat 1842 die Insel Hongkong an Großbritannien ab?", "options": ["Der Vertrag von Nanking", "Der Vertrag von Tianjin", "Der Vertrag von Shimonoseki", "Die Konvention von Peking"], "explanation": "Großbritannien hatte Krieg geführt, um weiter Opium an China verkaufen zu können. Hongkong blieb bis 1997 britisch." }
+    }
+  }
+]

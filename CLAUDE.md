@@ -504,6 +504,9 @@ de versies erna waren bij het installeren een of twee dagen oud). Android-only, 
   `useStreakWidget()` in de root layout bij een streak- of taalwissel en als de app naar de
   achtergrond gaat — anders smeekt de vos nog een half uur na een afgerond hoofdstuk.
   `maakStreakWidget` wacht op de hydratie van de stores, want de headless task start koud.
+- **Kleuren: `FASE_KLEUR` in `streak-fase.ts`**, gedeeld door de widget en `streak-kaart.tsx` op
+  Voortgang. Sinds 1.4.1 gedempt (wens van de eigenaar: de felle Tailwind-tinten staken af tussen
+  andere widgets). Niet terug naar `#22C55E`-achtige kleuren.
 - Instellingen → Weergave → "Add the widget" (`requestPinWidget`); een launcher die dat niet kan
   krijgt uitleg in plaats van een knop die niets doet.
 - Nog niet: de ijsblok-fase (`fase-8-ijs.png` ligt klaar) wacht op de streakbevriezingen.
@@ -1340,6 +1343,51 @@ server komt** — de verhalen zelf zitten in de bundel en werken offline, deze n
   bemoedigend, met een tekstwolkje uit i18n (`interactief.phoxyGoed`/`phoxyFout`, drie zinnen per
   uitkomst, gekozen bij het antwoord en niet tijdens het renderen). De plaatjes komen uit
   `scripts/prepare-teacher-fox.mjs` (groen scherm → transparant, geschaald op sjaal-tot-benen).
+
+### Explore: trivia met het draaiwiel (`(tabs)/explore.tsx`, `lib/trivia.ts`, `trivia-store.ts`, 1.4.1)
+
+Tweede tabblad. Draai het wiel (zes vakken, één per tijdperk, met Phoxy in het hoofddeksel van dat
+tijdperk), beantwoord een A/B/C/D-vraag uit dat tijdperk; drie goed op rij geeft een kroonvraag
+(moeilijkheid ≥ 2) uit een tijdperk naar keuze, en alle zes kroontjes is gewonnen. Keuzes van de
+eigenaar (2026-10-26): **kroontjes en score, geen Dukaten**, en **levens** voor gratis lezers.
+
+- **De vragenbank (`public.trivia_vragen`) is voor de app onleesbaar**: RLS aan, géén policy.
+  Alles loopt via `trivia_trek` (vraag zónder antwoord en toelichting) en `trivia_antwoord`
+  (controleert, schrijft bij een fout een leven af, geeft dán pas antwoord en toelichting). Een
+  select-policy maakt de levens met één REST-aanroep omzeilbaar. Migratie:
+  `supabase/trivia-migratie.sql`.
+- **Levens staan op de server** (`trivia_levens`), 5 stuks, +1 per 4 uur, lui bijgewerkt bij elke
+  aanroep (geen cron). Pro (`user_subscriptions`, zelfde controle als de winkel) speelt onbeperkt.
+  De getallen staan alleen in `trivia_instellingen()`.
+- **De spelstand is lokaal** (`trivia-store`: kroontjes, reeks, score, beste score) en
+  synchroniseert niet: er hangt niets aan. `wisLokaleGebruikersgegevens()` zet hem terug.
+- **Het wiel kiest het vak vóór het draaien** en draait er dan naartoe (eerlijk verdeeld, en het
+  scherm weet zeker waar hij stopt). De koppen draaien tegen het wiel in en staan dus altijd
+  rechtop; een gewonnen tijdperk krijgt een gouden kroontje op zijn vak — dat ís het
+  kroonoverzicht, er is geen apart rijtje meer.
+- **Vragen: `scripts/seed/trivia/<tijdperk>.json` plus vervolgrondes `<tijdperk>-2.json`, `-3`, …**,
+  met de hand geschreven en met een `bron` per vraag, in vier talen (nu 45 per tijdperk). Een nieuwe
+  ronde komt in een nieuw bestand; controleer vooraf op dubbelingen met de eerdere bestanden én met
+  de hoofdstukvragen. `npm run trivia:apply -- --controleer` toetst (4 opties, antwoordindex,
+  vertalingen, verdeling over niveaus en A/B/C/D), zonder vlag wordt er ge-upsert op
+  `(tijdperk_id, question)`. Een vraag haal je weg met `actief: false`, nooit door hem te
+  schrappen.
+- **De hoofdstukvragen tellen automatisch mee** (`supabase/trivia-migratie-2.sql`): `trivia_trek`
+  trekt uit `trivia_vragen` ∪ `story_quizzes` (via `story_catalog.tijdperk_id`), alleen vragen met
+  precies 4 opties en zonder "chapter" in de tekst, als moeilijkheid 2. Een nieuw verhaal vult de
+  trivia dus vanzelf aan zodra zijn quizvragen en zijn `story_catalog`-rij er staan.
+  `trivia_antwoord` zoekt in beide tabellen.
+- **Kroonmeter, in beide standen**: goed vult hem, fout laat hem staan, een kroonvraag (goed of
+  fout) zet hem op nul. Solo 3, duel 2 (`KROON_REEKS` / `DUEL_KROON_REEKS`), doel 6 kroontjes.
+- **"vs Robot"** (`lib/robot.ts`, `robot-beurt.tsx`): `speelRobotBeurt` is zuiver (60% goed, 50%
+  op een kroonvraag), rekent de hele beurt in één keer uit en `RobotBeurt` onthult de stappen.
+  Een fout van de speler geeft de beurt aan de robot. Geen levens voor de robot, wél voor jou.
+- **`KroontjesBlok` op Progress** (boven "By Era") toont `kroonTotaal` per tijdperk — alle ooit
+  gewonnen kroontjes, niet die van het lopende spel.
+- **De tabnamen en de koppen van Home/Progress/Profile zijn in elke taal Engels** (wens van de
+  eigenaar): nl/fr/de vertalen `tabs` en `voortgang.titel`/`profiel.titel` bewust niet.
+- Beelden: `scripts/prepare-era-heads.mjs` (koppen) en `prepare-teacher-fox.mjs` (leraar), allebei
+  op `scripts/groen-scherm.mjs` (groen scherm → transparant).
 
 #### Interactie genereren (`scripts/audit-interactive-content.mjs`, `generate-interactive-content.mjs`)
 

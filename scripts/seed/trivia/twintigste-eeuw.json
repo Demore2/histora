@@ -1,0 +1,262 @@
+[
+  {
+    "moeilijkheid": 1,
+    "question": "In which year did the First World War begin?",
+    "options": ["1914", "1918", "1939", "1905"],
+    "correct_answer": 0,
+    "explanation": "It lasted until November 1918 and killed around 17 million people, soldiers and civilians together.",
+    "bron": "First World War, 28 July 1914 – 11 November 1918.",
+    "vertalingen": {
+      "nl": { "question": "In welk jaar begon de Eerste Wereldoorlog?", "options": ["1914", "1918", "1939", "1905"], "explanation": "Hij duurde tot november 1918 en kostte zo'n 17 miljoen mensen het leven, soldaten en burgers samen." },
+      "fr": { "question": "En quelle année la Première Guerre mondiale commença-t-elle ?", "options": ["1914", "1918", "1939", "1905"], "explanation": "Elle dura jusqu'en novembre 1918 et fit environ 17 millions de morts, soldats et civils confondus." },
+      "de": { "question": "In welchem Jahr begann der Erste Weltkrieg?", "options": ["1914", "1918", "1939", "1905"], "explanation": "Er dauerte bis November 1918 und kostete rund 17 Millionen Menschen das Leben, Soldaten und Zivilisten zusammen." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Who was the first person to walk on the Moon, in 1969?",
+    "options": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "John Glenn"],
+    "correct_answer": 1,
+    "explanation": "He stepped out of Apollo 11's lunar module on 20 July 1969, with Buzz Aldrin following him minutes later.",
+    "bron": "Apollo 11, 20–21 July 1969.",
+    "vertalingen": {
+      "nl": { "question": "Wie zette in 1969 als eerste mens voet op de maan?", "options": ["Buzz Aldrin", "Neil Armstrong", "Joeri Gagarin", "John Glenn"], "explanation": "Hij stapte op 20 juli 1969 uit de maanlander van Apollo 11, een paar minuten later gevolgd door Buzz Aldrin." },
+      "fr": { "question": "Qui fut le premier homme à marcher sur la Lune, en 1969 ?", "options": ["Buzz Aldrin", "Neil Armstrong", "Youri Gagarine", "John Glenn"], "explanation": "Il sortit du module lunaire d'Apollo 11 le 20 juillet 1969, suivi quelques minutes plus tard par Buzz Aldrin." },
+      "de": { "question": "Wer betrat 1969 als erster Mensch den Mond?", "options": ["Buzz Aldrin", "Neil Armstrong", "Juri Gagarin", "John Glenn"], "explanation": "Er stieg am 20. Juli 1969 aus der Mondfähre von Apollo 11, wenige Minuten später folgte Buzz Aldrin." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "In which year did the Berlin Wall fall?",
+    "options": ["1961", "1975", "1989", "1991"],
+    "correct_answer": 2,
+    "explanation": "On 9 November 1989 East Germany opened the border crossings, and crowds began tearing down the wall. Germany reunited less than a year later.",
+    "bron": "Fall of the Berlin Wall, 9 November 1989; reunification 3 October 1990.",
+    "vertalingen": {
+      "nl": { "question": "In welk jaar viel de Berlijnse Muur?", "options": ["1961", "1975", "1989", "1991"], "explanation": "Op 9 november 1989 opende Oost-Duitsland de grensovergangen, en mensenmassa's begonnen de muur af te breken. Nog geen jaar later was Duitsland herenigd." },
+      "fr": { "question": "En quelle année le mur de Berlin est-il tombé ?", "options": ["1961", "1975", "1989", "1991"], "explanation": "Le 9 novembre 1989, l'Allemagne de l'Est ouvrit les points de passage, et la foule se mit à abattre le mur. L'Allemagne fut réunifiée moins d'un an plus tard." },
+      "de": { "question": "In welchem Jahr fiel die Berliner Mauer?", "options": ["1961", "1975", "1989", "1991"], "explanation": "Am 9. November 1989 öffnete die DDR die Grenzübergänge, und Menschenmengen begannen, die Mauer abzureißen. Weniger als ein Jahr später war Deutschland wiedervereinigt." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which ship sank on its first voyage in April 1912?",
+    "options": ["The Lusitania", "The Britannic", "The Mayflower", "The Titanic"],
+    "correct_answer": 3,
+    "explanation": "It struck an iceberg in the North Atlantic. There were lifeboats for barely half of those on board, and about 1,500 people died.",
+    "bron": "Sinking of RMS Titanic, 15 April 1912.",
+    "vertalingen": {
+      "nl": { "question": "Welk schip zonk in april 1912 tijdens zijn eerste reis?", "options": ["De Lusitania", "De Britannic", "De Mayflower", "De Titanic"], "explanation": "Het ramde een ijsberg in de Noord-Atlantische Oceaan. Er waren reddingsboten voor amper de helft van de opvarenden, en zo'n 1500 mensen kwamen om." },
+      "fr": { "question": "Quel navire a sombré lors de sa première traversée, en avril 1912 ?", "options": ["Le Lusitania", "Le Britannic", "Le Mayflower", "Le Titanic"], "explanation": "Il heurta un iceberg dans l'Atlantique Nord. Les canots ne suffisaient qu'à peine pour la moitié des personnes à bord, et environ 1 500 personnes périrent." },
+      "de": { "question": "Welches Schiff sank im April 1912 auf seiner Jungfernfahrt?", "options": ["Die Lusitania", "Die Britannic", "Die Mayflower", "Die Titanic"], "explanation": "Sie rammte im Nordatlantik einen Eisberg. Rettungsboote gab es für kaum die Hälfte der Menschen an Bord, und etwa 1.500 kamen ums Leben." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which country did Germany invade on 1 September 1939, starting the Second World War in Europe?",
+    "options": ["Poland", "France", "Belgium", "Czechoslovakia"],
+    "correct_answer": 0,
+    "explanation": "Britain and France declared war two days later. Germany had already taken over Czechoslovakia without a fight.",
+    "bron": "German invasion of Poland, 1 September 1939; declarations of war 3 September 1939.",
+    "vertalingen": {
+      "nl": { "question": "Welk land viel Duitsland op 1 september 1939 binnen, het begin van de Tweede Wereldoorlog in Europa?", "options": ["Polen", "Frankrijk", "België", "Tsjecho-Slowakije"], "explanation": "Groot-Brittannië en Frankrijk verklaarden twee dagen later de oorlog. Tsjecho-Slowakije had Duitsland al zonder strijd ingelijfd." },
+      "fr": { "question": "Quel pays l'Allemagne envahit-elle le 1er septembre 1939, déclenchant la Seconde Guerre mondiale en Europe ?", "options": ["La Pologne", "La France", "La Belgique", "La Tchécoslovaquie"], "explanation": "La Grande-Bretagne et la France déclarèrent la guerre deux jours plus tard. L'Allemagne avait déjà mis la main sur la Tchécoslovaquie sans combat." },
+      "de": { "question": "Welches Land überfiel Deutschland am 1. September 1939 und begann damit den Zweiten Weltkrieg in Europa?", "options": ["Polen", "Frankreich", "Belgien", "Die Tschechoslowakei"], "explanation": "Großbritannien und Frankreich erklärten zwei Tage später den Krieg. Die Tschechoslowakei hatte Deutschland bereits ohne Kampf übernommen." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Who led the Soviet Union during the Second World War?",
+    "options": ["Vladimir Lenin", "Joseph Stalin", "Nikita Khrushchev", "Mikhail Gorbachev"],
+    "correct_answer": 1,
+    "explanation": "He ruled from the late 1920s until his death in 1953. The Soviet Union lost more people in the war than any other country.",
+    "bron": "Stalin's rule c. 1924/1927–1953; Soviet war losses c. 27 million.",
+    "vertalingen": {
+      "nl": { "question": "Wie leidde de Sovjet-Unie tijdens de Tweede Wereldoorlog?", "options": ["Vladimir Lenin", "Jozef Stalin", "Nikita Chroesjtsjov", "Michail Gorbatsjov"], "explanation": "Hij regeerde van eind jaren 1920 tot zijn dood in 1953. De Sovjet-Unie verloor in de oorlog meer mensen dan welk ander land ook." },
+      "fr": { "question": "Qui dirigeait l'Union soviétique pendant la Seconde Guerre mondiale ?", "options": ["Vladimir Lénine", "Joseph Staline", "Nikita Khrouchtchev", "Mikhaïl Gorbatchev"], "explanation": "Il gouverna de la fin des années 1920 jusqu'à sa mort en 1953. L'Union soviétique perdit plus de vies dans la guerre que tout autre pays." },
+      "de": { "question": "Wer führte die Sowjetunion im Zweiten Weltkrieg?", "options": ["Wladimir Lenin", "Josef Stalin", "Nikita Chruschtschow", "Michail Gorbatschow"], "explanation": "Er herrschte von Ende der 1920er-Jahre bis zu seinem Tod 1953. Die Sowjetunion verlor im Krieg mehr Menschen als jedes andere Land." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "On which city was an atomic bomb first used in war, in August 1945?",
+    "options": ["Tokyo", "Nagasaki", "Hiroshima", "Osaka"],
+    "correct_answer": 2,
+    "explanation": "On 6 August 1945. Nagasaki was hit three days later, and Japan surrendered within the week.",
+    "bron": "Hiroshima 6 August, Nagasaki 9 August 1945; Japan's surrender announced 15 August.",
+    "vertalingen": {
+      "nl": { "question": "Op welke stad werd in augustus 1945 voor het eerst een atoombom in oorlog gebruikt?", "options": ["Tokio", "Nagasaki", "Hiroshima", "Osaka"], "explanation": "Op 6 augustus 1945. Nagasaki werd drie dagen later getroffen, en Japan capituleerde binnen een week." },
+      "fr": { "question": "Sur quelle ville une bombe atomique fut-elle utilisée pour la première fois en temps de guerre, en août 1945 ?", "options": ["Tokyo", "Nagasaki", "Hiroshima", "Osaka"], "explanation": "Le 6 août 1945. Nagasaki fut frappée trois jours plus tard, et le Japon capitula dans la semaine." },
+      "de": { "question": "Auf welche Stadt wurde im August 1945 erstmals im Krieg eine Atombombe abgeworfen?", "options": ["Tokio", "Nagasaki", "Hiroshima", "Osaka"], "explanation": "Am 6. August 1945. Nagasaki wurde drei Tage später getroffen, und Japan kapitulierte binnen einer Woche." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Whose diary, written while hiding from the Nazis in Amsterdam, became famous worldwide?",
+    "options": ["Sophie Scholl", "Etty Hillesum", "Hannah Arendt", "Anne Frank"],
+    "correct_answer": 3,
+    "explanation": "She hid in a secret annex with her family for two years before they were betrayed in 1944. She died in Bergen-Belsen; her father published the diary in 1947.",
+    "bron": "Het Achterhuis (1947); arrest 4 August 1944.",
+    "vertalingen": {
+      "nl": { "question": "Wiens dagboek, geschreven tijdens het onderduiken voor de nazi's in Amsterdam, werd wereldberoemd?", "options": ["Sophie Scholl", "Etty Hillesum", "Hannah Arendt", "Anne Frank"], "explanation": "Ze zat twee jaar met haar familie ondergedoken in het Achterhuis, tot ze in 1944 werden verraden. Ze stierf in Bergen-Belsen; haar vader gaf het dagboek in 1947 uit." },
+      "fr": { "question": "Quel journal, écrit alors que son autrice se cachait des nazis à Amsterdam, est devenu mondialement célèbre ?", "options": ["Celui de Sophie Scholl", "Celui d'Etty Hillesum", "Celui de Hannah Arendt", "Celui d'Anne Frank"], "explanation": "Elle vécut deux ans cachée avec sa famille dans une annexe secrète, jusqu'à leur dénonciation en 1944. Elle mourut à Bergen-Belsen ; son père publia le journal en 1947." },
+      "de": { "question": "Wessen Tagebuch, geschrieben im Versteck vor den Nazis in Amsterdam, wurde weltberühmt?", "options": ["Sophie Scholls", "Etty Hillesums", "Hannah Arendts", "Anne Franks"], "explanation": "Sie versteckte sich zwei Jahre mit ihrer Familie im Hinterhaus, bis sie 1944 verraten wurden. Sie starb in Bergen-Belsen; ihr Vater veröffentlichte das Tagebuch 1947." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Whose assassination in Sarajevo in June 1914 set off the First World War?",
+    "options": ["Archduke Franz Ferdinand", "Tsar Nicholas II", "Kaiser Wilhelm II", "King Albert I"],
+    "correct_answer": 0,
+    "explanation": "The heir to the Austro-Hungarian throne was shot by a Bosnian Serb student. Within six weeks alliances had dragged most of Europe into war.",
+    "bron": "Assassination in Sarajevo, 28 June 1914 (Gavrilo Princip).",
+    "vertalingen": {
+      "nl": { "question": "Wiens moord in Sarajevo in juni 1914 ontketende de Eerste Wereldoorlog?", "options": ["Aartshertog Frans Ferdinand", "Tsaar Nicolaas II", "Keizer Wilhelm II", "Koning Albert I"], "explanation": "De troonopvolger van Oostenrijk-Hongarije werd doodgeschoten door een Bosnisch-Servische student. Binnen zes weken hadden bondgenootschappen het grootste deel van Europa de oorlog in getrokken." },
+      "fr": { "question": "Quel assassinat à Sarajevo, en juin 1914, déclencha la Première Guerre mondiale ?", "options": ["Celui de l'archiduc François-Ferdinand", "Celui du tsar Nicolas II", "Celui de l'empereur Guillaume II", "Celui du roi Albert Ier"], "explanation": "L'héritier du trône d'Autriche-Hongrie fut abattu par un étudiant serbe de Bosnie. En six semaines, le jeu des alliances entraîna la majeure partie de l'Europe dans la guerre." },
+      "de": { "question": "Wessen Ermordung in Sarajevo im Juni 1914 löste den Ersten Weltkrieg aus?", "options": ["Die Erzherzog Franz Ferdinands", "Die Zar Nikolaus' II.", "Die Kaiser Wilhelms II.", "Die König Alberts I."], "explanation": "Der Thronfolger Österreich-Ungarns wurde von einem bosnisch-serbischen Studenten erschossen. Binnen sechs Wochen hatten die Bündnisse fast ganz Europa in den Krieg gezogen." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Who led India's nonviolent struggle against British rule?",
+    "options": ["Jawaharlal Nehru", "Mahatma Gandhi", "Muhammad Ali Jinnah", "Indira Gandhi"],
+    "correct_answer": 1,
+    "explanation": "His 1930 Salt March, a walk of almost 400 km to the sea to make salt in defiance of a British tax, drew the world's attention. India became independent in 1947.",
+    "bron": "Salt March, March–April 1930; Indian independence 15 August 1947.",
+    "vertalingen": {
+      "nl": { "question": "Wie leidde de geweldloze strijd van India tegen het Britse bestuur?", "options": ["Jawaharlal Nehru", "Mahatma Gandhi", "Muhammad Ali Jinnah", "Indira Gandhi"], "explanation": "Zijn Zoutmars van 1930, een tocht van bijna 400 km naar zee om zout te winnen in strijd met een Britse belasting, trok wereldwijd de aandacht. India werd in 1947 onafhankelijk." },
+      "fr": { "question": "Qui mena la lutte non violente de l'Inde contre la domination britannique ?", "options": ["Jawaharlal Nehru", "Mahatma Gandhi", "Muhammad Ali Jinnah", "Indira Gandhi"], "explanation": "Sa marche du sel de 1930, près de 400 km jusqu'à la mer pour récolter du sel en défiant une taxe britannique, attira l'attention du monde. L'Inde devint indépendante en 1947." },
+      "de": { "question": "Wer führte Indiens gewaltlosen Kampf gegen die britische Herrschaft?", "options": ["Jawaharlal Nehru", "Mahatma Gandhi", "Muhammad Ali Jinnah", "Indira Gandhi"], "explanation": "Sein Salzmarsch von 1930, fast 400 km zum Meer, um entgegen einer britischen Steuer Salz zu gewinnen, erregte weltweit Aufsehen. Indien wurde 1947 unabhängig." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "What happened on D-Day, 6 June 1944?",
+    "options": ["The attack on Pearl Harbor", "The end of the war in Europe", "The Allied landings in Normandy", "The Battle of Britain"],
+    "correct_answer": 2,
+    "explanation": "About 156,000 Allied troops came ashore on five beaches, the largest seaborne invasion in history. Paris was liberated less than three months later.",
+    "bron": "Operation Overlord, 6 June 1944; liberation of Paris 25 August 1944.",
+    "vertalingen": {
+      "nl": { "question": "Wat gebeurde er op D-Day, 6 juni 1944?", "options": ["De aanval op Pearl Harbor", "Het einde van de oorlog in Europa", "De geallieerde landingen in Normandië", "De Slag om Engeland"], "explanation": "Zo'n 156.000 geallieerde soldaten kwamen aan land op vijf stranden, de grootste invasie over zee uit de geschiedenis. Parijs werd nog geen drie maanden later bevrijd." },
+      "fr": { "question": "Que s'est-il passé le jour J, le 6 juin 1944 ?", "options": ["L'attaque de Pearl Harbor", "La fin de la guerre en Europe", "Le débarquement allié en Normandie", "La bataille d'Angleterre"], "explanation": "Environ 156 000 soldats alliés débarquèrent sur cinq plages, la plus grande invasion maritime de l'histoire. Paris fut libéré moins de trois mois plus tard." },
+      "de": { "question": "Was geschah am D-Day, dem 6. Juni 1944?", "options": ["Der Angriff auf Pearl Harbor", "Das Kriegsende in Europa", "Die Landung der Alliierten in der Normandie", "Die Luftschlacht um England"], "explanation": "Rund 156.000 alliierte Soldaten gingen an fünf Stränden an Land – die größte Landung über See der Geschichte. Paris wurde keine drei Monate später befreit." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Who led the Bolsheviks to power in Russia in 1917?",
+    "options": ["Joseph Stalin", "Nicholas II", "Alexander Kerensky", "Vladimir Lenin"],
+    "correct_answer": 3,
+    "explanation": "In the October Revolution they overthrew Kerensky's provisional government, which had replaced the tsar earlier that year.",
+    "bron": "October Revolution, 25 October (7 November) 1917.",
+    "vertalingen": {
+      "nl": { "question": "Wie bracht de bolsjewieken in 1917 aan de macht in Rusland?", "options": ["Jozef Stalin", "Nicolaas II", "Aleksandr Kerenski", "Vladimir Lenin"], "explanation": "In de Oktoberrevolutie wierpen ze de voorlopige regering van Kerenski omver, die eerder dat jaar de tsaar had vervangen." },
+      "fr": { "question": "Qui porta les bolcheviks au pouvoir en Russie en 1917 ?", "options": ["Joseph Staline", "Nicolas II", "Alexandre Kerenski", "Vladimir Lénine"], "explanation": "Lors de la révolution d'Octobre, ils renversèrent le gouvernement provisoire de Kerenski, qui avait remplacé le tsar plus tôt cette année-là." },
+      "de": { "question": "Wer brachte die Bolschewiki 1917 in Russland an die Macht?", "options": ["Josef Stalin", "Nikolaus II.", "Alexander Kerenski", "Wladimir Lenin"], "explanation": "In der Oktoberrevolution stürzten sie Kerenskis Provisorische Regierung, die früher im selben Jahr den Zaren abgelöst hatte." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which event of October 1929 helped start the Great Depression?",
+    "options": ["The Wall Street Crash", "The Treaty of Versailles", "The end of Prohibition", "The Dust Bowl"],
+    "correct_answer": 0,
+    "explanation": "Share prices in New York collapsed within days. Banks failed, and by 1933 about a quarter of American workers had no job.",
+    "bron": "Wall Street Crash, 24–29 October 1929; US unemployment c. 25% in 1933.",
+    "vertalingen": {
+      "nl": { "question": "Welke gebeurtenis in oktober 1929 hielp de Grote Depressie op gang te brengen?", "options": ["De beurskrach op Wall Street", "Het Verdrag van Versailles", "Het einde van de drooglegging", "De Dust Bowl"], "explanation": "Binnen enkele dagen stortten de aandelenkoersen in New York in. Banken gingen failliet, en in 1933 had ongeveer een kwart van de Amerikaanse werknemers geen baan." },
+      "fr": { "question": "Quel événement d'octobre 1929 contribua au déclenchement de la Grande Dépression ?", "options": ["Le krach de Wall Street", "Le traité de Versailles", "La fin de la Prohibition", "Le Dust Bowl"], "explanation": "Les cours de la Bourse de New York s'effondrèrent en quelques jours. Des banques firent faillite, et en 1933 environ un quart des travailleurs américains étaient sans emploi." },
+      "de": { "question": "Welches Ereignis im Oktober 1929 trug zum Beginn der Großen Depression bei?", "options": ["Der Börsenkrach an der Wall Street", "Der Versailler Vertrag", "Das Ende der Prohibition", "Die Dust Bowl"], "explanation": "Die Aktienkurse in New York brachen binnen Tagen ein. Banken gingen pleite, und 1933 war etwa ein Viertel der amerikanischen Arbeitskräfte arbeitslos." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which crisis of 1962 brought the United States and the Soviet Union closest to nuclear war?",
+    "options": ["The Berlin Blockade", "The Cuban Missile Crisis", "The Korean War", "The Suez Crisis"],
+    "correct_answer": 1,
+    "explanation": "For thirteen days Kennedy and Khrushchev faced off over Soviet missiles on Cuba. The missiles were withdrawn, and a hotline between Washington and Moscow followed.",
+    "bron": "Cuban Missile Crisis, 16–28 October 1962; Moscow–Washington hotline 1963.",
+    "vertalingen": {
+      "nl": { "question": "Welke crisis bracht de Verenigde Staten en de Sovjet-Unie in 1962 het dichtst bij een kernoorlog?", "options": ["De Berlijnse blokkade", "De Cubacrisis", "De Koreaanse Oorlog", "De Suezcrisis"], "explanation": "Dertien dagen lang stonden Kennedy en Chroesjtsjov tegenover elkaar om Sovjetraketten op Cuba. De raketten werden teruggetrokken, en er kwam een hotline tussen Washington en Moskou." },
+      "fr": { "question": "Quelle crise de 1962 amena les États-Unis et l'URSS au plus près de la guerre nucléaire ?", "options": ["Le blocus de Berlin", "La crise des missiles de Cuba", "La guerre de Corée", "La crise de Suez"], "explanation": "Pendant treize jours, Kennedy et Khrouchtchev s'affrontèrent au sujet des missiles soviétiques à Cuba. Les missiles furent retirés, et un « téléphone rouge » relia ensuite Washington et Moscou." },
+      "de": { "question": "Welche Krise brachte die USA und die Sowjetunion 1962 am nächsten an einen Atomkrieg?", "options": ["Die Berlin-Blockade", "Die Kubakrise", "Der Koreakrieg", "Die Suezkrise"], "explanation": "Dreizehn Tage lang standen sich Kennedy und Chruschtschow wegen sowjetischer Raketen auf Kuba gegenüber. Die Raketen wurden abgezogen, und es folgte ein heißer Draht zwischen Washington und Moskau." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which treaty of 1957 created the European Economic Community?",
+    "options": ["The Treaty of Maastricht", "The Treaty of Paris", "The Treaty of Rome", "The Treaty of Lisbon"],
+    "correct_answer": 2,
+    "explanation": "Six countries signed it: France, West Germany, Italy, Belgium, the Netherlands and Luxembourg. It grew into today's European Union.",
+    "bron": "Treaty of Rome, 25 March 1957.",
+    "vertalingen": {
+      "nl": { "question": "Welk verdrag van 1957 richtte de Europese Economische Gemeenschap op?", "options": ["Het Verdrag van Maastricht", "Het Verdrag van Parijs", "Het Verdrag van Rome", "Het Verdrag van Lissabon"], "explanation": "Zes landen tekenden: Frankrijk, West-Duitsland, Italië, België, Nederland en Luxemburg. Het groeide uit tot de huidige Europese Unie." },
+      "fr": { "question": "Quel traité de 1957 créa la Communauté économique européenne ?", "options": ["Le traité de Maastricht", "Le traité de Paris", "Le traité de Rome", "Le traité de Lisbonne"], "explanation": "Six pays le signèrent : la France, la RFA, l'Italie, la Belgique, les Pays-Bas et le Luxembourg. Il donna naissance à l'actuelle Union européenne." },
+      "de": { "question": "Welcher Vertrag von 1957 gründete die Europäische Wirtschaftsgemeinschaft?", "options": ["Der Vertrag von Maastricht", "Der Vertrag von Paris", "Die Römischen Verträge", "Der Vertrag von Lissabon"], "explanation": "Sechs Länder unterzeichneten: Frankreich, die Bundesrepublik, Italien, Belgien, die Niederlande und Luxemburg. Daraus wurde die heutige Europäische Union." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Who became the first human in space, in 1961?",
+    "options": ["Neil Armstrong", "Alan Shepard", "Valentina Tereshkova", "Yuri Gagarin"],
+    "correct_answer": 3,
+    "explanation": "The Soviet pilot orbited the Earth once in Vostok 1, a flight of 108 minutes. Tereshkova became the first woman in space two years later.",
+    "bron": "Vostok 1, 12 April 1961; Vostok 6, June 1963.",
+    "vertalingen": {
+      "nl": { "question": "Wie werd in 1961 de eerste mens in de ruimte?", "options": ["Neil Armstrong", "Alan Shepard", "Valentina Teresjkova", "Joeri Gagarin"], "explanation": "De Sovjetpiloot draaide in de Vostok 1 één keer om de aarde, een vlucht van 108 minuten. Teresjkova werd twee jaar later de eerste vrouw in de ruimte." },
+      "fr": { "question": "Qui devint le premier homme dans l'espace, en 1961 ?", "options": ["Neil Armstrong", "Alan Shepard", "Valentina Terechkova", "Youri Gagarine"], "explanation": "Le pilote soviétique fit une fois le tour de la Terre à bord de Vostok 1, un vol de 108 minutes. Terechkova devint la première femme dans l'espace deux ans plus tard." },
+      "de": { "question": "Wer war 1961 der erste Mensch im Weltall?", "options": ["Neil Armstrong", "Alan Shepard", "Valentina Tereschkowa", "Juri Gagarin"], "explanation": "Der sowjetische Pilot umrundete in Wostok 1 einmal die Erde, ein Flug von 108 Minuten. Tereschkowa wurde zwei Jahre später die erste Frau im All." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which country was the first to give women the vote in national elections, in 1893?",
+    "options": ["New Zealand", "Finland", "The United Kingdom", "The United States"],
+    "correct_answer": 0,
+    "explanation": "After petitions signed by almost a third of the adult women, led by Kate Sheppard. Finland followed in 1906, and also let women stand for parliament.",
+    "bron": "Electoral Act 1893 (New Zealand); Finland 1906.",
+    "vertalingen": {
+      "nl": { "question": "Welk land gaf in 1893 als eerste vrouwen stemrecht bij landelijke verkiezingen?", "options": ["Nieuw-Zeeland", "Finland", "Het Verenigd Koninkrijk", "De Verenigde Staten"], "explanation": "Na petities, getekend door bijna een derde van de volwassen vrouwen, onder leiding van Kate Sheppard. Finland volgde in 1906 en liet vrouwen ook verkiesbaar zijn voor het parlement." },
+      "fr": { "question": "Quel pays fut le premier à accorder le droit de vote aux femmes aux élections nationales, en 1893 ?", "options": ["La Nouvelle-Zélande", "La Finlande", "Le Royaume-Uni", "Les États-Unis"], "explanation": "Après des pétitions signées par près d'un tiers des femmes adultes, menées par Kate Sheppard. La Finlande suivit en 1906, en permettant aussi aux femmes d'être élues au parlement." },
+      "de": { "question": "Welches Land führte 1893 als erstes das Frauenwahlrecht bei landesweiten Wahlen ein?", "options": ["Neuseeland", "Finnland", "Das Vereinigte Königreich", "Die Vereinigten Staaten"], "explanation": "Nach Petitionen, die fast ein Drittel der erwachsenen Frauen unterschrieben hatte, angeführt von Kate Sheppard. Finnland folgte 1906 und ließ Frauen auch ins Parlament wählen." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which treaty of 1919 set the peace terms between the Allies and Germany after the First World War?",
+    "options": ["The Treaty of Brest-Litovsk", "The Treaty of Versailles", "The Treaty of Trianon", "The Locarno Treaties"],
+    "correct_answer": 1,
+    "explanation": "Germany lost territory, had to pay reparations and accept blame for the war. Resentment over its terms helped the Nazis rise to power.",
+    "bron": "Treaty of Versailles, signed 28 June 1919.",
+    "vertalingen": {
+      "nl": { "question": "Welk verdrag van 1919 legde de vredesvoorwaarden tussen de geallieerden en Duitsland vast na de Eerste Wereldoorlog?", "options": ["De Vrede van Brest-Litovsk", "Het Verdrag van Versailles", "Het Verdrag van Trianon", "De Verdragen van Locarno"], "explanation": "Duitsland verloor grondgebied, moest herstelbetalingen doen en de schuld voor de oorlog aanvaarden. De wrok daarover hielp de nazi's aan de macht." },
+      "fr": { "question": "Quel traité de 1919 fixa les conditions de paix entre les Alliés et l'Allemagne après la Première Guerre mondiale ?", "options": ["Le traité de Brest-Litovsk", "Le traité de Versailles", "Le traité de Trianon", "Les accords de Locarno"], "explanation": "L'Allemagne perdit des territoires, dut payer des réparations et accepter la responsabilité de la guerre. Le ressentiment qu'il suscita aida les nazis à prendre le pouvoir." },
+      "de": { "question": "Welcher Vertrag von 1919 legte die Friedensbedingungen zwischen den Alliierten und Deutschland nach dem Ersten Weltkrieg fest?", "options": ["Der Friede von Brest-Litowsk", "Der Versailler Vertrag", "Der Vertrag von Trianon", "Die Locarno-Verträge"], "explanation": "Deutschland verlor Gebiete, musste Reparationen zahlen und die Kriegsschuld anerkennen. Der Groll darüber half den Nationalsozialisten an die Macht." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which battle of 1942–43 became the turning point of the war on the Eastern Front?",
+    "options": ["El Alamein", "Leningrad", "Stalingrad", "Berlin"],
+    "correct_answer": 2,
+    "explanation": "The German Sixth Army was surrounded in the city and surrendered in February 1943. From then on the Soviets were mostly on the advance.",
+    "bron": "Battle of Stalingrad, August 1942 – 2 February 1943.",
+    "vertalingen": {
+      "nl": { "question": "Welke slag van 1942–43 werd het keerpunt van de oorlog aan het oostfront?", "options": ["El Alamein", "Leningrad", "Stalingrad", "Berlijn"], "explanation": "Het Duitse Zesde Leger werd in de stad omsingeld en gaf zich in februari 1943 over. Vanaf dat moment rukten de Sovjets vooral op." },
+      "fr": { "question": "Quelle bataille de 1942–1943 marqua le tournant de la guerre sur le front de l'Est ?", "options": ["El Alamein", "Leningrad", "Stalingrad", "Berlin"], "explanation": "La VIe armée allemande fut encerclée dans la ville et capitula en février 1943. Dès lors, les Soviétiques furent le plus souvent à l'offensive." },
+      "de": { "question": "Welche Schlacht von 1942–43 wurde zum Wendepunkt des Krieges an der Ostfront?", "options": ["El Alamein", "Leningrad", "Stalingrad", "Berlin"], "explanation": "Die deutsche 6. Armee wurde in der Stadt eingekesselt und kapitulierte im Februar 1943. Von da an waren meist die Sowjets auf dem Vormarsch." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which new state was created alongside India when British rule ended in 1947?",
+    "options": ["Bangladesh", "Sri Lanka", "Burma", "Pakistan"],
+    "correct_answer": 3,
+    "explanation": "The partition along religious lines forced some 15 million people to leave their homes. East Pakistan broke away in 1971 to become Bangladesh.",
+    "bron": "Partition of India, August 1947; independence of Bangladesh 1971.",
+    "vertalingen": {
+      "nl": { "question": "Welke nieuwe staat ontstond naast India toen het Britse bestuur in 1947 eindigde?", "options": ["Bangladesh", "Sri Lanka", "Birma", "Pakistan"], "explanation": "De deling langs religieuze lijnen dwong zo'n 15 miljoen mensen hun huis te verlaten. Oost-Pakistan scheurde zich in 1971 af en werd Bangladesh." },
+      "fr": { "question": "Quel nouvel État fut créé aux côtés de l'Inde à la fin de la domination britannique, en 1947 ?", "options": ["Le Bangladesh", "Le Sri Lanka", "La Birmanie", "Le Pakistan"], "explanation": "La partition selon des critères religieux força quelque 15 millions de personnes à quitter leur foyer. Le Pakistan oriental fit sécession en 1971 pour devenir le Bangladesh." },
+      "de": { "question": "Welcher neue Staat entstand neben Indien, als die britische Herrschaft 1947 endete?", "options": ["Bangladesch", "Sri Lanka", "Birma", "Pakistan"], "explanation": "Die Teilung entlang religiöser Linien zwang rund 15 Millionen Menschen, ihre Heimat zu verlassen. Ostpakistan spaltete sich 1971 ab und wurde Bangladesch." }
+    }
+  }
+]

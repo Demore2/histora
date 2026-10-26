@@ -1,0 +1,262 @@
+[
+  {
+    "moeilijkheid": 1,
+    "question": "Which French leader crowned himself emperor in 1804?",
+    "options": ["Napoleon Bonaparte", "Louis XVIII", "Charles de Gaulle", "Louis-Philippe"],
+    "correct_answer": 0,
+    "explanation": "At Notre-Dame he took the crown from the pope's hands and placed it on his own head. His legal code still shapes law in much of Europe.",
+    "bron": "Coronation of Napoleon, 2 December 1804; Code civil (1804).",
+    "vertalingen": {
+      "nl": { "question": "Welke Franse leider kroonde zichzelf in 1804 tot keizer?", "options": ["Napoleon Bonaparte", "Lodewijk XVIII", "Charles de Gaulle", "Lodewijk Filips"], "explanation": "In de Notre-Dame nam hij de kroon uit de handen van de paus en zette hem zelf op. Zijn wetboek bepaalt nog altijd het recht in een groot deel van Europa." },
+      "fr": { "question": "Quel dirigeant français se couronna empereur en 1804 ?", "options": ["Napoléon Bonaparte", "Louis XVIII", "Charles de Gaulle", "Louis-Philippe"], "explanation": "À Notre-Dame, il prit la couronne des mains du pape et la posa lui-même sur sa tête. Son Code civil façonne encore le droit d'une grande partie de l'Europe." },
+      "de": { "question": "Welcher französische Herrscher krönte sich 1804 selbst zum Kaiser?", "options": ["Napoleon Bonaparte", "Ludwig XVIII.", "Charles de Gaulle", "Louis-Philippe"], "explanation": "In Notre-Dame nahm er dem Papst die Krone aus der Hand und setzte sie sich selbst auf. Sein Gesetzbuch prägt bis heute das Recht in weiten Teilen Europas." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Where was Napoleon finally defeated in 1815?",
+    "options": ["Austerlitz", "Waterloo", "Leipzig", "Trafalgar"],
+    "correct_answer": 1,
+    "explanation": "British troops under Wellington and Prussians under Blücher beat him south of Brussels. He spent his last years in exile on Saint Helena.",
+    "bron": "Battle of Waterloo, 18 June 1815.",
+    "vertalingen": {
+      "nl": { "question": "Waar werd Napoleon in 1815 definitief verslagen?", "options": ["Austerlitz", "Waterloo", "Leipzig", "Trafalgar"], "explanation": "Britse troepen onder Wellington en Pruisen onder Blücher versloegen hem ten zuiden van Brussel. Hij bracht zijn laatste jaren door in ballingschap op Sint-Helena." },
+      "fr": { "question": "Où Napoléon fut-il définitivement vaincu en 1815 ?", "options": ["Austerlitz", "Waterloo", "Leipzig", "Trafalgar"], "explanation": "Les Britanniques de Wellington et les Prussiens de Blücher le battirent au sud de Bruxelles. Il finit ses jours en exil à Sainte-Hélène." },
+      "de": { "question": "Wo wurde Napoleon 1815 endgültig geschlagen?", "options": ["Austerlitz", "Waterloo", "Leipzig", "Trafalgar"], "explanation": "Briten unter Wellington und Preußen unter Blücher besiegten ihn südlich von Brüssel. Seine letzten Jahre verbrachte er im Exil auf St. Helena." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Who set out the theory of evolution by natural selection in 1859?",
+    "options": ["Gregor Mendel", "Louis Pasteur", "Charles Darwin", "Isaac Newton"],
+    "correct_answer": 2,
+    "explanation": "On the Origin of Species drew on what he saw on the voyage of the Beagle, including the finches and tortoises of the Galápagos.",
+    "bron": "Darwin, On the Origin of Species (1859).",
+    "vertalingen": {
+      "nl": { "question": "Wie zette in 1859 de evolutietheorie door natuurlijke selectie uiteen?", "options": ["Gregor Mendel", "Louis Pasteur", "Charles Darwin", "Isaac Newton"], "explanation": "Over het ontstaan van soorten steunde op wat hij zag tijdens de reis met de Beagle, waaronder de vinken en schildpadden van de Galápagos." },
+      "fr": { "question": "Qui exposa en 1859 la théorie de l'évolution par sélection naturelle ?", "options": ["Gregor Mendel", "Louis Pasteur", "Charles Darwin", "Isaac Newton"], "explanation": "L'Origine des espèces s'appuyait sur ses observations du voyage du Beagle, dont les pinsons et les tortues des Galápagos." },
+      "de": { "question": "Wer legte 1859 die Evolutionstheorie durch natürliche Auslese dar?", "options": ["Gregor Mendel", "Louis Pasteur", "Charles Darwin", "Isaac Newton"], "explanation": "Über die Entstehung der Arten stützte sich auf seine Beobachtungen auf der Reise der Beagle, darunter die Finken und Schildkröten der Galápagos-Inseln." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which US president led the Union through the American Civil War?",
+    "options": ["George Washington", "Ulysses S. Grant", "Thomas Jefferson", "Abraham Lincoln"],
+    "correct_answer": 3,
+    "explanation": "His Emancipation Proclamation of 1863 turned the war into a fight against slavery. He was assassinated in April 1865, days after the war's end.",
+    "bron": "Emancipation Proclamation (1863); assassination, 14–15 April 1865.",
+    "vertalingen": {
+      "nl": { "question": "Welke Amerikaanse president leidde de Unie door de Amerikaanse Burgeroorlog?", "options": ["George Washington", "Ulysses S. Grant", "Thomas Jefferson", "Abraham Lincoln"], "explanation": "Zijn Emancipatieproclamatie van 1863 maakte van de oorlog een strijd tegen de slavernij. Hij werd in april 1865 vermoord, enkele dagen na het einde van de oorlog." },
+      "fr": { "question": "Quel président américain mena l'Union pendant la guerre de Sécession ?", "options": ["George Washington", "Ulysses S. Grant", "Thomas Jefferson", "Abraham Lincoln"], "explanation": "Sa proclamation d'émancipation de 1863 fit de la guerre un combat contre l'esclavage. Il fut assassiné en avril 1865, quelques jours après la fin de la guerre." },
+      "de": { "question": "Welcher US-Präsident führte die Union durch den Amerikanischen Bürgerkrieg?", "options": ["George Washington", "Ulysses S. Grant", "Thomas Jefferson", "Abraham Lincoln"], "explanation": "Seine Emanzipationsproklamation von 1863 machte den Krieg zu einem Kampf gegen die Sklaverei. Er wurde im April 1865 ermordet, wenige Tage nach Kriegsende." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Who received the first patent for the telephone, in 1876?",
+    "options": ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Samuel Morse"],
+    "correct_answer": 0,
+    "explanation": "His first words over the line were to his assistant: \"Mr. Watson, come here, I want to see you.\" Morse had invented the telegraph code decades earlier.",
+    "bron": "US Patent 174,465 (March 1876); Bell's notebook, 10 March 1876.",
+    "vertalingen": {
+      "nl": { "question": "Wie kreeg in 1876 het eerste octrooi op de telefoon?", "options": ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Samuel Morse"], "explanation": "Zijn eerste woorden over de lijn waren voor zijn assistent: \"Mr. Watson, kom hier, ik wil je zien.\" Morse had de telegraafcode tientallen jaren eerder bedacht." },
+      "fr": { "question": "Qui obtint le premier brevet du téléphone, en 1876 ?", "options": ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Samuel Morse"], "explanation": "Ses premiers mots transmis s'adressaient à son assistant : « Monsieur Watson, venez, je veux vous voir. » Morse avait inventé le code télégraphique des décennies plus tôt." },
+      "de": { "question": "Wer erhielt 1876 das erste Patent auf das Telefon?", "options": ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Samuel Morse"], "explanation": "Seine ersten Worte über die Leitung galten seinem Assistenten: „Mr. Watson, kommen Sie her, ich will Sie sehen.“ Morse hatte den Telegrafencode Jahrzehnte zuvor erfunden." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which queen gave her name to an era of British history, from 1837 to 1901?",
+    "options": ["Elizabeth I", "Victoria", "Anne", "Mary II"],
+    "correct_answer": 1,
+    "explanation": "She reigned for 63 years, over an empire that covered about a quarter of the world's land.",
+    "bron": "Reign of Queen Victoria, 20 June 1837 – 22 January 1901.",
+    "vertalingen": {
+      "nl": { "question": "Welke koningin gaf haar naam aan een tijdperk in de Britse geschiedenis, van 1837 tot 1901?", "options": ["Elizabeth I", "Victoria", "Anna", "Maria II"], "explanation": "Ze regeerde 63 jaar, over een rijk dat ongeveer een kwart van het land op aarde besloeg." },
+      "fr": { "question": "Quelle reine a donné son nom à une époque de l'histoire britannique, de 1837 à 1901 ?", "options": ["Élisabeth Ire", "Victoria", "Anne", "Marie II"], "explanation": "Elle régna 63 ans, sur un empire qui couvrait environ un quart des terres émergées." },
+      "de": { "question": "Welche Königin gab einer Epoche der britischen Geschichte von 1837 bis 1901 ihren Namen?", "options": ["Elisabeth I.", "Victoria", "Anne", "Maria II."], "explanation": "Sie regierte 63 Jahre über ein Weltreich, das etwa ein Viertel der Landfläche der Erde umfasste." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "What was Stephenson's Rocket, built in 1829?",
+    "options": ["A hot-air balloon", "A steamship", "A steam locomotive", "A naval cannon"],
+    "correct_answer": 2,
+    "explanation": "It won the Rainhill Trials and pulled trains on the new Liverpool and Manchester Railway, the first intercity line run entirely by steam.",
+    "bron": "Rainhill Trials, October 1829; Liverpool and Manchester Railway (1830).",
+    "vertalingen": {
+      "nl": { "question": "Wat was de Rocket van Stephenson, gebouwd in 1829?", "options": ["Een heteluchtballon", "Een stoomschip", "Een stoomlocomotief", "Een scheepskanon"], "explanation": "Hij won de Rainhill-proeven en trok treinen op de nieuwe spoorlijn Liverpool-Manchester, de eerste lijn tussen twee steden die volledig op stoom reed." },
+      "fr": { "question": "Qu'était la Rocket de Stephenson, construite en 1829 ?", "options": ["Une montgolfière", "Un bateau à vapeur", "Une locomotive à vapeur", "Un canon de marine"], "explanation": "Elle remporta les essais de Rainhill et tira les trains de la nouvelle ligne Liverpool-Manchester, la première liaison entre deux villes entièrement à vapeur." },
+      "de": { "question": "Was war Stephensons Rocket, gebaut 1829?", "options": ["Ein Heißluftballon", "Ein Dampfschiff", "Eine Dampflokomotive", "Eine Schiffskanone"], "explanation": "Sie gewann das Rennen von Rainhill und zog Züge auf der neuen Bahn zwischen Liverpool und Manchester, der ersten Städteverbindung ganz mit Dampf." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which canal, opened in 1869, links the Mediterranean and the Red Sea?",
+    "options": ["The Panama Canal", "The Kiel Canal", "The Corinth Canal", "The Suez Canal"],
+    "correct_answer": 3,
+    "explanation": "It spared ships the long voyage around Africa, cutting the sea route from Europe to India by thousands of kilometres.",
+    "bron": "Suez Canal opened 17 November 1869.",
+    "vertalingen": {
+      "nl": { "question": "Welk kanaal, geopend in 1869, verbindt de Middellandse Zee met de Rode Zee?", "options": ["Het Panamakanaal", "Het Kielerkanaal", "Het Kanaal van Korinthe", "Het Suezkanaal"], "explanation": "Het bespaarde schepen de lange tocht om Afrika heen en maakte de zeeroute van Europa naar India duizenden kilometers korter." },
+      "fr": { "question": "Quel canal, ouvert en 1869, relie la Méditerranée à la mer Rouge ?", "options": ["Le canal de Panama", "Le canal de Kiel", "Le canal de Corinthe", "Le canal de Suez"], "explanation": "Il épargna aux navires le long contournement de l'Afrique, raccourcissant de milliers de kilomètres la route maritime de l'Europe vers l'Inde." },
+      "de": { "question": "Welcher 1869 eröffnete Kanal verbindet das Mittelmeer mit dem Roten Meer?", "options": ["Der Panamakanal", "Der Nord-Ostsee-Kanal", "Der Kanal von Korinth", "Der Suezkanal"], "explanation": "Er ersparte Schiffen die lange Fahrt um Afrika und verkürzte den Seeweg von Europa nach Indien um Tausende Kilometer." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "What set off the Great Famine in Ireland in the 1840s?",
+    "options": ["A potato blight", "A long drought", "A war with England", "An earthquake"],
+    "correct_answer": 0,
+    "explanation": "A plant disease destroyed the crop most of the poor lived on. About a million people died and another million emigrated, while food exports from Ireland continued.",
+    "bron": "Great Famine 1845–1852 (Phytophthora infestans).",
+    "vertalingen": {
+      "nl": { "question": "Wat veroorzaakte in de jaren 1840 de Grote Hongersnood in Ierland?", "options": ["Een aardappelziekte", "Een lange droogte", "Een oorlog met Engeland", "Een aardbeving"], "explanation": "Een plantenziekte vernietigde het gewas waar de meeste armen van leefden. Ongeveer een miljoen mensen stierven en nog een miljoen emigreerden, terwijl Ierland voedsel bleef uitvoeren." },
+      "fr": { "question": "Qu'est-ce qui déclencha la Grande Famine en Irlande dans les années 1840 ?", "options": ["Le mildiou de la pomme de terre", "Une longue sécheresse", "Une guerre contre l'Angleterre", "Un tremblement de terre"], "explanation": "Une maladie détruisit la culture dont vivaient la plupart des pauvres. Environ un million de personnes moururent et un autre million émigra, tandis que l'Irlande continuait d'exporter de la nourriture." },
+      "de": { "question": "Was löste in den 1840er-Jahren die Große Hungersnot in Irland aus?", "options": ["Die Kartoffelfäule", "Eine lange Dürre", "Ein Krieg mit England", "Ein Erdbeben"], "explanation": "Eine Pflanzenkrankheit vernichtete die Feldfrucht, von der die meisten Armen lebten. Rund eine Million Menschen starb, eine weitere Million wanderte aus, während Irland weiter Lebensmittel exportierte." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Who wrote The Communist Manifesto in 1848?",
+    "options": ["Lenin and Trotsky", "Marx and Engels", "Adam Smith and David Ricardo", "Proudhon and Bakunin"],
+    "correct_answer": 1,
+    "explanation": "It opens with \"A spectre is haunting Europe\" and ends with a call for the workers of all countries to unite.",
+    "bron": "Manifest der Kommunistischen Partei, London, February 1848.",
+    "vertalingen": {
+      "nl": { "question": "Wie schreven in 1848 het Communistisch Manifest?", "options": ["Lenin en Trotski", "Marx en Engels", "Adam Smith en David Ricardo", "Proudhon en Bakoenin"], "explanation": "Het begint met \"Een spook waart door Europa\" en eindigt met de oproep aan de arbeiders van alle landen om zich te verenigen." },
+      "fr": { "question": "Qui écrivit le Manifeste du Parti communiste en 1848 ?", "options": ["Lénine et Trotski", "Marx et Engels", "Adam Smith et David Ricardo", "Proudhon et Bakounine"], "explanation": "Il commence par « Un spectre hante l'Europe » et se termine par l'appel aux prolétaires de tous les pays à s'unir." },
+      "de": { "question": "Wer schrieb 1848 das Kommunistische Manifest?", "options": ["Lenin und Trotzki", "Marx und Engels", "Adam Smith und David Ricardo", "Proudhon und Bakunin"], "explanation": "Es beginnt mit „Ein Gespenst geht um in Europa“ und endet mit dem Aufruf an die Proletarier aller Länder, sich zu vereinigen." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Prussian statesman united Germany and founded the German Empire in 1871?",
+    "options": ["Kaiser Wilhelm II", "Klemens von Metternich", "Otto von Bismarck", "Frederick the Great"],
+    "correct_answer": 2,
+    "explanation": "He did it through three short wars, and the empire was proclaimed in the Hall of Mirrors at Versailles, on defeated French soil.",
+    "bron": "Proclamation of the German Empire, Versailles, 18 January 1871.",
+    "vertalingen": {
+      "nl": { "question": "Welke Pruisische staatsman verenigde Duitsland en stichtte in 1871 het Duitse Keizerrijk?", "options": ["Keizer Wilhelm II", "Klemens von Metternich", "Otto von Bismarck", "Frederik de Grote"], "explanation": "Hij deed het met drie korte oorlogen, en het keizerrijk werd uitgeroepen in de Spiegelzaal van Versailles, op verslagen Franse bodem." },
+      "fr": { "question": "Quel homme d'État prussien unifia l'Allemagne et fonda l'Empire allemand en 1871 ?", "options": ["L'empereur Guillaume II", "Klemens von Metternich", "Otto von Bismarck", "Frédéric le Grand"], "explanation": "Il y parvint par trois guerres courtes, et l'empire fut proclamé dans la galerie des Glaces de Versailles, sur le sol de la France vaincue." },
+      "de": { "question": "Welcher preußische Staatsmann einte Deutschland und gründete 1871 das Deutsche Kaiserreich?", "options": ["Kaiser Wilhelm II.", "Klemens von Metternich", "Otto von Bismarck", "Friedrich der Große"], "explanation": "Er erreichte es mit drei kurzen Kriegen, und das Kaiserreich wurde im Spiegelsaal von Versailles ausgerufen – auf dem Boden des besiegten Frankreich." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "In which year did Britain pass the law abolishing slavery in most of its colonies?",
+    "options": ["1776", "1807", "1865", "1833"],
+    "correct_answer": 3,
+    "explanation": "The Slavery Abolition Act came into force in 1834. In 1807 Britain had already banned the slave trade, but not slavery itself.",
+    "bron": "Slavery Abolition Act 1833; Slave Trade Act 1807.",
+    "vertalingen": {
+      "nl": { "question": "In welk jaar nam Groot-Brittannië de wet aan die de slavernij in de meeste koloniën afschafte?", "options": ["1776", "1807", "1865", "1833"], "explanation": "De Slavery Abolition Act ging in 1834 in. In 1807 had Groot-Brittannië de slavenhandel al verboden, maar de slavernij zelf nog niet." },
+      "fr": { "question": "En quelle année la Grande-Bretagne vota-t-elle la loi abolissant l'esclavage dans la plupart de ses colonies ?", "options": ["1776", "1807", "1865", "1833"], "explanation": "Le Slavery Abolition Act entra en vigueur en 1834. En 1807, la Grande-Bretagne avait déjà interdit la traite, mais pas l'esclavage lui-même." },
+      "de": { "question": "In welchem Jahr verabschiedete Großbritannien das Gesetz, das die Sklaverei in den meisten Kolonien abschaffte?", "options": ["1776", "1807", "1865", "1833"], "explanation": "Der Slavery Abolition Act trat 1834 in Kraft. 1807 hatte Großbritannien bereits den Sklavenhandel verboten, aber noch nicht die Sklaverei selbst." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which scientist gave his name to heating milk to kill germs, and made a vaccine against rabies?",
+    "options": ["Louis Pasteur", "Robert Koch", "Joseph Lister", "Edward Jenner"],
+    "correct_answer": 0,
+    "explanation": "He showed that microbes cause fermentation and disease. In 1885 his rabies vaccine saved a nine-year-old boy bitten by a rabid dog.",
+    "bron": "Pasteurisation (1860s); rabies vaccination of Joseph Meister, July 1885.",
+    "vertalingen": {
+      "nl": { "question": "Naar welke wetenschapper is het verhitten van melk om ziektekiemen te doden genoemd, en wie maakte een vaccin tegen hondsdolheid?", "options": ["Louis Pasteur", "Robert Koch", "Joseph Lister", "Edward Jenner"], "explanation": "Hij toonde aan dat microben gisting en ziekte veroorzaken. In 1885 redde zijn vaccin tegen hondsdolheid een jongen van negen die door een dolle hond was gebeten." },
+      "fr": { "question": "Quel savant a donné son nom au chauffage du lait pour tuer les germes et mis au point un vaccin contre la rage ?", "options": ["Louis Pasteur", "Robert Koch", "Joseph Lister", "Edward Jenner"], "explanation": "Il montra que les microbes causent la fermentation et les maladies. En 1885, son vaccin contre la rage sauva un garçon de neuf ans mordu par un chien enragé." },
+      "de": { "question": "Nach welchem Wissenschaftler ist das Erhitzen von Milch zum Abtöten von Keimen benannt, und wer entwickelte einen Impfstoff gegen Tollwut?", "options": ["Louis Pasteur", "Robert Koch", "Joseph Lister", "Edward Jenner"], "explanation": "Er zeigte, dass Mikroben Gärung und Krankheiten verursachen. 1885 rettete sein Tollwutimpfstoff einen neunjährigen Jungen, den ein tollwütiger Hund gebissen hatte." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which general led the Redshirts in the struggle to unify Italy?",
+    "options": ["Camillo di Cavour", "Giuseppe Garibaldi", "Giuseppe Mazzini", "Victor Emmanuel II"],
+    "correct_answer": 1,
+    "explanation": "In 1860 his Expedition of the Thousand conquered Sicily and Naples, which he then handed to King Victor Emmanuel II.",
+    "bron": "Expedition of the Thousand, 1860; Kingdom of Italy proclaimed 1861.",
+    "vertalingen": {
+      "nl": { "question": "Welke generaal leidde de Roodhemden in de strijd voor de eenwording van Italië?", "options": ["Camillo di Cavour", "Giuseppe Garibaldi", "Giuseppe Mazzini", "Victor Emanuel II"], "explanation": "In 1860 veroverde zijn Tocht van de Duizend Sicilië en Napels, die hij daarna aan koning Victor Emanuel II overdroeg." },
+      "fr": { "question": "Quel général mena les Chemises rouges dans la lutte pour l'unification de l'Italie ?", "options": ["Camillo di Cavour", "Giuseppe Garibaldi", "Giuseppe Mazzini", "Victor-Emmanuel II"], "explanation": "En 1860, son expédition des Mille conquit la Sicile et Naples, qu'il remit ensuite au roi Victor-Emmanuel II." },
+      "de": { "question": "Welcher General führte die Rothemden im Kampf um die Einigung Italiens?", "options": ["Camillo di Cavour", "Giuseppe Garibaldi", "Giuseppe Mazzini", "Viktor Emanuel II."], "explanation": "1860 eroberte sein Zug der Tausend Sizilien und Neapel, die er anschließend König Viktor Emanuel II. übergab." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "In which year did the American Civil War end?",
+    "options": ["1848", "1861", "1865", "1877"],
+    "correct_answer": 2,
+    "explanation": "General Lee surrendered at Appomattox in April 1865, four years after the war began. Later that year the 13th Amendment abolished slavery.",
+    "bron": "Surrender at Appomattox, 9 April 1865; 13th Amendment ratified December 1865.",
+    "vertalingen": {
+      "nl": { "question": "In welk jaar eindigde de Amerikaanse Burgeroorlog?", "options": ["1848", "1861", "1865", "1877"], "explanation": "Generaal Lee gaf zich in april 1865 over bij Appomattox, vier jaar na het begin van de oorlog. Later dat jaar schafte het 13e amendement de slavernij af." },
+      "fr": { "question": "En quelle année la guerre de Sécession prit-elle fin ?", "options": ["1848", "1861", "1865", "1877"], "explanation": "Le général Lee capitula à Appomattox en avril 1865, quatre ans après le début de la guerre. Plus tard cette année-là, le 13e amendement abolit l'esclavage." },
+      "de": { "question": "In welchem Jahr endete der Amerikanische Bürgerkrieg?", "options": ["1848", "1861", "1865", "1877"], "explanation": "General Lee kapitulierte im April 1865 bei Appomattox, vier Jahre nach Kriegsbeginn. Später im selben Jahr schaffte der 13. Zusatzartikel die Sklaverei ab." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which country broke away from the Netherlands in the revolution of 1830?",
+    "options": ["Luxembourg", "Switzerland", "Denmark", "Belgium"],
+    "correct_answer": 3,
+    "explanation": "The revolt began after an opera performance in Brussels. In 1831 the new kingdom chose Leopold I as its first king.",
+    "bron": "Belgian Revolution, August 1830; Leopold I sworn in 21 July 1831.",
+    "vertalingen": {
+      "nl": { "question": "Welk land scheurde zich in de revolutie van 1830 af van Nederland?", "options": ["Luxemburg", "Zwitserland", "Denemarken", "België"], "explanation": "De opstand begon na een operavoorstelling in Brussel. In 1831 koos het nieuwe koninkrijk Leopold I als eerste koning." },
+      "fr": { "question": "Quel pays se sépara des Pays-Bas lors de la révolution de 1830 ?", "options": ["Le Luxembourg", "La Suisse", "Le Danemark", "La Belgique"], "explanation": "La révolte éclata après une représentation d'opéra à Bruxelles. En 1831, le nouveau royaume choisit Léopold Ier comme premier roi." },
+      "de": { "question": "Welches Land löste sich in der Revolution von 1830 von den Niederlanden?", "options": ["Luxemburg", "Die Schweiz", "Dänemark", "Belgien"], "explanation": "Der Aufstand begann nach einer Opernaufführung in Brüssel. 1831 wählte das neue Königreich Leopold I. zu seinem ersten König." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which period of rapid modernisation in Japan began in 1868?",
+    "options": ["The Meiji Restoration", "The Tokugawa shogunate", "The Edo period", "The Taishō era"],
+    "correct_answer": 0,
+    "explanation": "Power returned from the shoguns to the emperor, and within a few decades Japan built railways, factories and a modern army and navy.",
+    "bron": "Meiji Restoration, 1868.",
+    "vertalingen": {
+      "nl": { "question": "Welke periode van snelle modernisering in Japan begon in 1868?", "options": ["De Meiji-restauratie", "Het Tokugawa-shogunaat", "De Edo-periode", "Het Taishō-tijdperk"], "explanation": "De macht ging van de shoguns terug naar de keizer, en binnen enkele decennia bouwde Japan spoorwegen, fabrieken en een modern leger en een moderne vloot." },
+      "fr": { "question": "Quelle période de modernisation rapide commença au Japon en 1868 ?", "options": ["La restauration de Meiji", "Le shogunat Tokugawa", "L'époque d'Edo", "L'ère Taishō"], "explanation": "Le pouvoir passa des shoguns à l'empereur, et en quelques décennies le Japon se dota de chemins de fer, d'usines, d'une armée et d'une marine modernes." },
+      "de": { "question": "Welche Phase rascher Modernisierung begann 1868 in Japan?", "options": ["Die Meiji-Restauration", "Das Tokugawa-Shogunat", "Die Edo-Zeit", "Die Taishō-Zeit"], "explanation": "Die Macht ging von den Shogunen an den Kaiser zurück, und binnen weniger Jahrzehnte baute Japan Eisenbahnen, Fabriken sowie eine moderne Armee und Flotte auf." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "In which year did revolutions break out across Europe, from Paris to Vienna and Berlin?",
+    "options": ["1830", "1848", "1871", "1789"],
+    "correct_answer": 1,
+    "explanation": "The \"Springtime of Peoples\" demanded constitutions and national unity. Most of the uprisings were crushed within two years, but serfdom ended in Austria.",
+    "bron": "Revolutions of 1848.",
+    "vertalingen": {
+      "nl": { "question": "In welk jaar braken er overal in Europa revoluties uit, van Parijs tot Wenen en Berlijn?", "options": ["1830", "1848", "1871", "1789"], "explanation": "De \"Lente der Volkeren\" eiste grondwetten en nationale eenheid. De meeste opstanden werden binnen twee jaar neergeslagen, maar in Oostenrijk verdween de horigheid." },
+      "fr": { "question": "En quelle année des révolutions éclatèrent-elles dans toute l'Europe, de Paris à Vienne et Berlin ?", "options": ["1830", "1848", "1871", "1789"], "explanation": "Le « Printemps des peuples » réclamait des constitutions et l'unité nationale. La plupart des soulèvements furent écrasés en deux ans, mais le servage disparut en Autriche." },
+      "de": { "question": "In welchem Jahr brachen in ganz Europa Revolutionen aus, von Paris bis Wien und Berlin?", "options": ["1830", "1848", "1871", "1789"], "explanation": "Der „Völkerfrühling“ forderte Verfassungen und nationale Einheit. Die meisten Aufstände wurden binnen zwei Jahren niedergeschlagen, doch in Österreich endete die Leibeigenschaft." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "At the Berlin Conference of 1884–85, European powers set rules for what?",
+    "options": ["The unification of Germany", "Ending the slave trade", "Dividing Africa among themselves", "Standard railway gauges"],
+    "correct_answer": 2,
+    "explanation": "No African was present. Within thirty years almost the whole continent was under European rule, with borders drawn on maps in Europe.",
+    "bron": "Berlin Conference, November 1884 – February 1885.",
+    "vertalingen": {
+      "nl": { "question": "Waarover maakten Europese mogendheden afspraken op de Conferentie van Berlijn in 1884–85?", "options": ["De eenwording van Duitsland", "Het einde van de slavenhandel", "De verdeling van Afrika onder elkaar", "Een standaard spoorbreedte"], "explanation": "Er was geen enkele Afrikaan bij. Binnen dertig jaar viel bijna het hele continent onder Europees bestuur, met grenzen die in Europa op kaarten waren getekend." },
+      "fr": { "question": "Lors de la conférence de Berlin de 1884–1885, les puissances européennes fixèrent des règles pour quoi ?", "options": ["L'unification de l'Allemagne", "La fin de la traite", "Le partage de l'Afrique entre elles", "L'écartement standard des rails"], "explanation": "Aucun Africain n'y était présent. En trente ans, presque tout le continent passa sous domination européenne, avec des frontières tracées sur des cartes en Europe." },
+      "de": { "question": "Worüber legten die europäischen Mächte auf der Berliner Konferenz 1884–85 Regeln fest?", "options": ["Die Einigung Deutschlands", "Das Ende des Sklavenhandels", "Die Aufteilung Afrikas unter sich", "Eine einheitliche Spurweite"], "explanation": "Kein einziger Afrikaner war anwesend. Binnen dreißig Jahren stand fast der ganze Kontinent unter europäischer Herrschaft, mit Grenzen, die in Europa auf Karten gezogen worden waren." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Who wrote Uncle Tom's Cabin (1852), the novel that stirred anti-slavery feeling in the United States?",
+    "options": ["Mark Twain", "Frederick Douglass", "Louisa May Alcott", "Harriet Beecher Stowe"],
+    "correct_answer": 3,
+    "explanation": "It was the best-selling novel of the 19th century in America and deepened the split between North and South in the years before the Civil War.",
+    "bron": "Stowe, Uncle Tom's Cabin (1852).",
+    "vertalingen": {
+      "nl": { "question": "Wie schreef De negerhut van oom Tom (1852), de roman die in de Verenigde Staten het verzet tegen slavernij aanwakkerde?", "options": ["Mark Twain", "Frederick Douglass", "Louisa May Alcott", "Harriet Beecher Stowe"], "explanation": "Het was de best verkochte roman van de 19e eeuw in Amerika en verdiepte in de jaren voor de Burgeroorlog de kloof tussen Noord en Zuid." },
+      "fr": { "question": "Qui écrivit La Case de l'oncle Tom (1852), le roman qui attisa le sentiment antiesclavagiste aux États-Unis ?", "options": ["Mark Twain", "Frederick Douglass", "Louisa May Alcott", "Harriet Beecher Stowe"], "explanation": "Ce fut le roman le plus vendu du XIXe siècle en Amérique, et il creusa le fossé entre le Nord et le Sud dans les années précédant la guerre de Sécession." },
+      "de": { "question": "Wer schrieb Onkel Toms Hütte (1852), den Roman, der in den USA die Stimmung gegen die Sklaverei anheizte?", "options": ["Mark Twain", "Frederick Douglass", "Louisa May Alcott", "Harriet Beecher Stowe"], "explanation": "Es war der meistverkaufte Roman des 19. Jahrhunderts in Amerika und vertiefte in den Jahren vor dem Bürgerkrieg die Kluft zwischen Norden und Süden." }
+    }
+  }
+]

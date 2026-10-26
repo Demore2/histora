@@ -101,6 +101,7 @@
     "audit:interactief": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/audit-interactive-content.mjs",
     "generate:interactief": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/generate-interactive-content.mjs",
     "generate:quizvragen": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/generate-chapter-quizzes.mjs",
+    "trivia:apply": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/apply-trivia.mjs",
     "generate:batch": "node orchestration-controller.mjs",
     "generate:batch:dev": "node orchestration-controller.mjs",
     "generate:batch:validate": "npm run validate:content && npx tsc --noEmit && npm run lint",

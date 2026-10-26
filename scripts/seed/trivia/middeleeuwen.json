@@ -1,0 +1,262 @@
+[
+  {
+    "moeilijkheid": 1,
+    "question": "Who was crowned emperor in Rome on Christmas Day in the year 800?",
+    "options": ["Charlemagne", "William the Conqueror", "Otto the Great", "Frederick Barbarossa"],
+    "correct_answer": 0,
+    "explanation": "Pope Leo III crowned the king of the Franks Emperor of the Romans, the first imperial title in western Europe since Rome fell.",
+    "bron": "Coronation of Charlemagne, St Peter's, 25 December 800.",
+    "vertalingen": {
+      "nl": { "question": "Wie werd op eerste kerstdag van het jaar 800 in Rome tot keizer gekroond?", "options": ["Karel de Grote", "Willem de Veroveraar", "Otto de Grote", "Frederik Barbarossa"], "explanation": "Paus Leo III kroonde de koning van de Franken tot keizer der Romeinen, de eerste keizerstitel in West-Europa sinds de val van Rome." },
+      "fr": { "question": "Qui fut couronné empereur à Rome le jour de Noël de l'an 800 ?", "options": ["Charlemagne", "Guillaume le Conquérant", "Otton le Grand", "Frédéric Barberousse"], "explanation": "Le pape Léon III couronna le roi des Francs empereur des Romains, premier titre impérial en Europe occidentale depuis la chute de Rome." },
+      "de": { "question": "Wer wurde am Weihnachtstag des Jahres 800 in Rom zum Kaiser gekrönt?", "options": ["Karl der Große", "Wilhelm der Eroberer", "Otto der Große", "Friedrich Barbarossa"], "explanation": "Papst Leo III. krönte den König der Franken zum Kaiser der Römer – der erste Kaisertitel in Westeuropa seit dem Fall Roms." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "In which year was the Battle of Hastings fought?",
+    "options": ["1215", "1066", "1346", "1415"],
+    "correct_answer": 1,
+    "explanation": "William of Normandy defeated King Harold of England and was crowned that Christmas. The Normans changed England's language, law and buildings for good.",
+    "bron": "Battle of Hastings, 14 October 1066.",
+    "vertalingen": {
+      "nl": { "question": "In welk jaar werd de Slag bij Hastings uitgevochten?", "options": ["1215", "1066", "1346", "1415"], "explanation": "Willem van Normandië versloeg koning Harold van Engeland en werd met Kerstmis gekroond. De Normandiërs veranderden de taal, het recht en de gebouwen van Engeland voorgoed." },
+      "fr": { "question": "En quelle année eut lieu la bataille d'Hastings ?", "options": ["1215", "1066", "1346", "1415"], "explanation": "Guillaume de Normandie vainquit le roi Harold d'Angleterre et fut couronné à Noël. Les Normands transformèrent durablement la langue, le droit et l'architecture de l'Angleterre." },
+      "de": { "question": "In welchem Jahr wurde die Schlacht bei Hastings geschlagen?", "options": ["1215", "1066", "1346", "1415"], "explanation": "Wilhelm von der Normandie besiegte König Harold von England und wurde zu Weihnachten gekrönt. Die Normannen veränderten Englands Sprache, Recht und Bauten für immer." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which disease killed between a third and half of Europe's people in the 14th century?",
+    "options": ["Smallpox", "Cholera", "The Black Death", "Leprosy"],
+    "correct_answer": 2,
+    "explanation": "Bubonic plague arrived in 1347 and swept the continent within a few years. The shortage of workers that followed raised wages and loosened serfdom.",
+    "bron": "Black Death, 1347–1351; mortality estimates 30–50%.",
+    "vertalingen": {
+      "nl": { "question": "Welke ziekte doodde in de 14e eeuw tussen een derde en de helft van de Europeanen?", "options": ["Pokken", "Cholera", "De Zwarte Dood", "Lepra"], "explanation": "De builenpest kwam in 1347 aan en raasde binnen een paar jaar over het continent. Het tekort aan arbeiders dat volgde, dreef de lonen op en maakte de horigheid losser." },
+      "fr": { "question": "Quelle maladie tua entre un tiers et la moitié des Européens au XIVe siècle ?", "options": ["La variole", "Le choléra", "La peste noire", "La lèpre"], "explanation": "La peste bubonique arriva en 1347 et balaya le continent en quelques années. La pénurie de main-d'œuvre qui suivit fit monter les salaires et relâcha le servage." },
+      "de": { "question": "Welche Krankheit tötete im 14. Jahrhundert zwischen einem Drittel und der Hälfte der Menschen in Europa?", "options": ["Pocken", "Cholera", "Der Schwarze Tod", "Lepra"], "explanation": "Die Beulenpest kam 1347 an und fegte binnen weniger Jahre über den Kontinent. Der folgende Mangel an Arbeitskräften trieb die Löhne hoch und lockerte die Leibeigenschaft." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "What were the seafaring raiders and traders from Scandinavia called?",
+    "options": ["Saxons", "Huns", "Goths", "Vikings"],
+    "correct_answer": 3,
+    "explanation": "From the late 8th century their longships reached from Ireland to the Caspian Sea. They settled as much as they raided, from Normandy to Kyiv.",
+    "bron": "Viking Age, from the Lindisfarne raid (793).",
+    "vertalingen": {
+      "nl": { "question": "Hoe noemde men de zeevarende plunderaars en handelaars uit Scandinavië?", "options": ["Saksen", "Hunnen", "Goten", "Vikingen"], "explanation": "Vanaf het eind van de 8e eeuw voeren hun langschepen van Ierland tot de Kaspische Zee. Ze vestigden zich net zo vaak als ze plunderden, van Normandië tot Kiev." },
+      "fr": { "question": "Comment appelait-on les pillards et marchands navigateurs venus de Scandinavie ?", "options": ["Les Saxons", "Les Huns", "Les Goths", "Les Vikings"], "explanation": "Dès la fin du VIIIe siècle, leurs drakkars allèrent de l'Irlande à la mer Caspienne. Ils s'installèrent autant qu'ils pillèrent, de la Normandie à Kiev." },
+      "de": { "question": "Wie nannte man die seefahrenden Plünderer und Händler aus Skandinavien?", "options": ["Sachsen", "Hunnen", "Goten", "Wikinger"], "explanation": "Ab dem späten 8. Jahrhundert fuhren ihre Langschiffe von Irland bis zum Kaspischen Meer. Sie siedelten ebenso oft, wie sie plünderten, von der Normandie bis Kiew." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which traveller from Venice wrote a famous account of his years in China?",
+    "options": ["Marco Polo", "Christopher Columbus", "Vasco da Gama", "Ibn Battuta"],
+    "correct_answer": 0,
+    "explanation": "He spent some seventeen years at the court of Kublai Khan. His book later inspired Columbus to look for a sea route to Asia.",
+    "bron": "Marco Polo in China c. 1275–1292; The Travels; Columbus's annotated copy.",
+    "vertalingen": {
+      "nl": { "question": "Welke reiziger uit Venetië schreef een beroemd verslag over zijn jaren in China?", "options": ["Marco Polo", "Christoffel Columbus", "Vasco da Gama", "Ibn Battuta"], "explanation": "Hij verbleef zo'n zeventien jaar aan het hof van Koeblai Khan. Zijn boek inspireerde later Columbus om een zeeroute naar Azië te zoeken." },
+      "fr": { "question": "Quel voyageur vénitien écrivit un célèbre récit de ses années en Chine ?", "options": ["Marco Polo", "Christophe Colomb", "Vasco de Gama", "Ibn Battuta"], "explanation": "Il passa quelque dix-sept ans à la cour de Kubilai Khan. Son livre inspira plus tard Colomb à chercher une route maritime vers l'Asie." },
+      "de": { "question": "Welcher Reisende aus Venedig schrieb einen berühmten Bericht über seine Jahre in China?", "options": ["Marco Polo", "Christoph Kolumbus", "Vasco da Gama", "Ibn Battuta"], "explanation": "Er verbrachte rund siebzehn Jahre am Hof Kublai Khans. Sein Buch inspirierte später Kolumbus, einen Seeweg nach Asien zu suchen." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "What were the medieval Christian military expeditions to the Holy Land called?",
+    "options": ["The Reconquista", "The Crusades", "The Hundred Years' War", "The Wars of the Roses"],
+    "correct_answer": 1,
+    "explanation": "The First Crusade took Jerusalem in 1099. The Reconquista was the Christian fight for the Iberian peninsula.",
+    "bron": "First Crusade, capture of Jerusalem 1099.",
+    "vertalingen": {
+      "nl": { "question": "Hoe noemt men de middeleeuwse christelijke legertochten naar het Heilige Land?", "options": ["De Reconquista", "De kruistochten", "De Honderdjarige Oorlog", "De Rozenoorlogen"], "explanation": "De Eerste Kruistocht veroverde Jeruzalem in 1099. De Reconquista was de christelijke strijd om het Iberisch Schiereiland." },
+      "fr": { "question": "Comment appelle-t-on les expéditions militaires chrétiennes médiévales vers la Terre sainte ?", "options": ["La Reconquista", "Les croisades", "La guerre de Cent Ans", "La guerre des Deux-Roses"], "explanation": "La première croisade prit Jérusalem en 1099. La Reconquista fut la lutte chrétienne pour la péninsule Ibérique." },
+      "de": { "question": "Wie nennt man die mittelalterlichen christlichen Kriegszüge ins Heilige Land?", "options": ["Die Reconquista", "Die Kreuzzüge", "Der Hundertjährige Krieg", "Die Rosenkriege"], "explanation": "Der Erste Kreuzzug eroberte 1099 Jerusalem. Die Reconquista war der christliche Kampf um die Iberische Halbinsel." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Who united the Mongol tribes and began their great empire in the 13th century?",
+    "options": ["Attila", "Saladin", "Genghis Khan", "Tamerlane"],
+    "correct_answer": 2,
+    "explanation": "Proclaimed Great Khan in 1206, he built the largest land empire the world had seen. His grandson Kublai went on to rule China.",
+    "bron": "Kurultai of 1206; Mongol Empire.",
+    "vertalingen": {
+      "nl": { "question": "Wie verenigde de Mongoolse stammen en begon in de 13e eeuw hun grote rijk?", "options": ["Attila", "Saladin", "Dzjengis Khan", "Timoer Lenk"], "explanation": "In 1206 tot Grote Khan uitgeroepen, bouwde hij het grootste landrijk dat de wereld tot dan toe had gezien. Zijn kleinzoon Koeblai ging later over China heersen." },
+      "fr": { "question": "Qui unifia les tribus mongoles et fonda leur grand empire au XIIIe siècle ?", "options": ["Attila", "Saladin", "Gengis Khan", "Tamerlan"], "explanation": "Proclamé grand khan en 1206, il bâtit le plus vaste empire terrestre que le monde ait connu. Son petit-fils Kubilai régna ensuite sur la Chine." },
+      "de": { "question": "Wer einte die mongolischen Stämme und begründete im 13. Jahrhundert ihr großes Reich?", "options": ["Attila", "Saladin", "Dschingis Khan", "Timur Lenk"], "explanation": "1206 zum Großkhan ausgerufen, schuf er das größte Landreich, das die Welt bis dahin gesehen hatte. Sein Enkel Kublai herrschte später über China." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which city was the capital of the Byzantine Empire?",
+    "options": ["Rome", "Athens", "Alexandria", "Constantinople"],
+    "correct_answer": 3,
+    "explanation": "The eastern half of the Roman Empire lasted a thousand years after the west fell, until the Ottomans took the city in 1453. Today it is Istanbul.",
+    "bron": "Byzantine Empire 330–1453.",
+    "vertalingen": {
+      "nl": { "question": "Welke stad was de hoofdstad van het Byzantijnse Rijk?", "options": ["Rome", "Athene", "Alexandrië", "Constantinopel"], "explanation": "De oostelijke helft van het Romeinse Rijk hield na de val van het westen nog duizend jaar stand, tot de Ottomanen de stad in 1453 innamen. Nu heet ze Istanbul." },
+      "fr": { "question": "Quelle ville était la capitale de l'Empire byzantin ?", "options": ["Rome", "Athènes", "Alexandrie", "Constantinople"], "explanation": "La moitié orientale de l'Empire romain survécut mille ans à la chute de l'Occident, jusqu'à la prise de la ville par les Ottomans en 1453. C'est aujourd'hui Istanbul." },
+      "de": { "question": "Welche Stadt war die Hauptstadt des Byzantinischen Reiches?", "options": ["Rom", "Athen", "Alexandria", "Konstantinopel"], "explanation": "Die östliche Hälfte des Römischen Reiches überdauerte den Fall des Westens um tausend Jahre, bis die Osmanen die Stadt 1453 eroberten. Heute heißt sie Istanbul." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "What did Johannes Gutenberg bring to Europe around 1450?",
+    "options": ["Printing with movable metal type", "The magnetic compass", "Gunpowder", "The mechanical clock"],
+    "correct_answer": 0,
+    "explanation": "His Bible, printed in Mainz around 1455, showed that books could be made in hundreds of identical copies. Within fifty years there were presses across Europe.",
+    "bron": "Gutenberg Bible, Mainz, c. 1454–1455.",
+    "vertalingen": {
+      "nl": { "question": "Wat bracht Johannes Gutenberg rond 1450 naar Europa?", "options": ["Drukken met losse metalen letters", "Het magnetische kompas", "Buskruit", "De mechanische klok"], "explanation": "Zijn Bijbel, rond 1455 in Mainz gedrukt, liet zien dat boeken in honderden identieke exemplaren gemaakt konden worden. Binnen vijftig jaar stonden er drukpersen in heel Europa." },
+      "fr": { "question": "Qu'a apporté Johannes Gutenberg à l'Europe vers 1450 ?", "options": ["L'imprimerie à caractères métalliques mobiles", "La boussole magnétique", "La poudre à canon", "L'horloge mécanique"], "explanation": "Sa Bible, imprimée à Mayence vers 1455, montra qu'on pouvait produire des livres en centaines d'exemplaires identiques. En cinquante ans, l'Europe se couvrit de presses." },
+      "de": { "question": "Was brachte Johannes Gutenberg um 1450 nach Europa?", "options": ["Den Druck mit beweglichen Metalllettern", "Den Magnetkompass", "Das Schießpulver", "Die mechanische Uhr"], "explanation": "Seine Bibel, um 1455 in Mainz gedruckt, zeigte, dass sich Bücher in Hunderten gleicher Exemplare herstellen ließen. Binnen fünfzig Jahren standen in ganz Europa Druckerpressen." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Ottoman sultan conquered Constantinople in 1453?",
+    "options": ["Suleiman the Magnificent", "Mehmed II", "Osman I", "Selim I"],
+    "correct_answer": 1,
+    "explanation": "He was twenty-one. Huge cannons broke the city's ancient walls, and Constantinople became the Ottoman capital.",
+    "bron": "Fall of Constantinople, 29 May 1453.",
+    "vertalingen": {
+      "nl": { "question": "Welke Ottomaanse sultan veroverde Constantinopel in 1453?", "options": ["Süleyman de Prachtlievende", "Mehmed II", "Osman I", "Selim I"], "explanation": "Hij was eenentwintig. Enorme kanonnen braken de eeuwenoude muren, en Constantinopel werd de Ottomaanse hoofdstad." },
+      "fr": { "question": "Quel sultan ottoman conquit Constantinople en 1453 ?", "options": ["Soliman le Magnifique", "Mehmed II", "Osman Ier", "Sélim Ier"], "explanation": "Il avait vingt et un ans. D'énormes canons brisèrent les antiques murailles, et Constantinople devint la capitale ottomane." },
+      "de": { "question": "Welcher osmanische Sultan eroberte 1453 Konstantinopel?", "options": ["Süleyman der Prächtige", "Mehmed II.", "Osman I.", "Selim I."], "explanation": "Er war einundzwanzig. Riesige Kanonen durchbrachen die uralten Mauern, und Konstantinopel wurde osmanische Hauptstadt." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which city's House of Wisdom made it a great centre of learning in the 9th century?",
+    "options": ["Mecca", "Cairo", "Baghdad", "Damascus"],
+    "correct_answer": 2,
+    "explanation": "Under the Abbasid caliphs, scholars there translated Greek, Persian and Indian works into Arabic and pushed mathematics and astronomy forward.",
+    "bron": "Bayt al-Hikma, Abbasid Baghdad (al-Ma'mun, 813–833).",
+    "vertalingen": {
+      "nl": { "question": "Welke stad werd in de 9e eeuw dankzij haar Huis der Wijsheid een groot centrum van kennis?", "options": ["Mekka", "Caïro", "Bagdad", "Damascus"], "explanation": "Onder de Abbasidische kaliefen vertaalden geleerden daar Griekse, Perzische en Indiase werken in het Arabisch en brachten ze wiskunde en sterrenkunde verder." },
+      "fr": { "question": "Quelle ville devint au IXe siècle un grand foyer du savoir grâce à sa Maison de la sagesse ?", "options": ["La Mecque", "Le Caire", "Bagdad", "Damas"], "explanation": "Sous les califes abbassides, des savants y traduisirent en arabe des œuvres grecques, persanes et indiennes, et firent progresser les mathématiques et l'astronomie." },
+      "de": { "question": "Welche Stadt wurde im 9. Jahrhundert durch ihr Haus der Weisheit zu einem großen Zentrum der Gelehrsamkeit?", "options": ["Mekka", "Kairo", "Bagdad", "Damaskus"], "explanation": "Unter den abbasidischen Kalifen übersetzten Gelehrte dort griechische, persische und indische Werke ins Arabische und brachten Mathematik und Astronomie voran." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "What was a serf in medieval Europe?",
+    "options": ["A knight's servant", "A monk", "A travelling merchant", "A peasant bound to a lord's land"],
+    "correct_answer": 3,
+    "explanation": "Serfs were not slaves and could not be sold, but they could not leave the land either, and owed their lord labour and part of their harvest.",
+    "bron": "Medieval manorialism and serfdom.",
+    "vertalingen": {
+      "nl": { "question": "Wat was een horige in middeleeuws Europa?", "options": ["De knecht van een ridder", "Een monnik", "Een rondtrekkende koopman", "Een boer die aan het land van een heer gebonden was"], "explanation": "Horigen waren geen slaven en konden niet verkocht worden, maar ze mochten het land ook niet verlaten en waren hun heer arbeid en een deel van hun oogst verschuldigd." },
+      "fr": { "question": "Qu'était un serf dans l'Europe médiévale ?", "options": ["Le serviteur d'un chevalier", "Un moine", "Un marchand ambulant", "Un paysan attaché à la terre d'un seigneur"], "explanation": "Les serfs n'étaient pas des esclaves et ne pouvaient être vendus, mais ils ne pouvaient pas non plus quitter la terre, et devaient à leur seigneur du travail et une part de leur récolte." },
+      "de": { "question": "Was war ein Leibeigener im mittelalterlichen Europa?", "options": ["Der Diener eines Ritters", "Ein Mönch", "Ein reisender Kaufmann", "Ein Bauer, der an das Land eines Grundherrn gebunden war"], "explanation": "Leibeigene waren keine Sklaven und konnten nicht verkauft werden, durften das Land aber auch nicht verlassen und schuldeten ihrem Herrn Arbeit und einen Teil der Ernte." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "At which battle in 1415 did English longbowmen defeat a much larger French army?",
+    "options": ["Agincourt", "Hastings", "Bannockburn", "Tours"],
+    "correct_answer": 0,
+    "explanation": "Henry V's archers shot into French knights struggling through deep mud. Shakespeare later made the battle the climax of his play Henry V.",
+    "bron": "Battle of Agincourt, 25 October 1415.",
+    "vertalingen": {
+      "nl": { "question": "Bij welke slag in 1415 versloegen Engelse boogschutters een veel groter Frans leger?", "options": ["Azincourt", "Hastings", "Bannockburn", "Poitiers"], "explanation": "De boogschutters van Hendrik V schoten op Franse ridders die door diepe modder ploeterden. Shakespeare maakte de slag later tot hoogtepunt van zijn toneelstuk Henry V." },
+      "fr": { "question": "Lors de quelle bataille, en 1415, des archers anglais battirent-ils une armée française bien plus nombreuse ?", "options": ["Azincourt", "Hastings", "Bannockburn", "Poitiers"], "explanation": "Les archers d'Henri V tirèrent sur des chevaliers français qui s'enlisaient dans une boue profonde. Shakespeare en fit plus tard le sommet de sa pièce Henri V." },
+      "de": { "question": "In welcher Schlacht 1415 besiegten englische Langbogenschützen ein viel größeres französisches Heer?", "options": ["Azincourt", "Hastings", "Bannockburn", "Tours und Poitiers"], "explanation": "Die Bogenschützen Heinrichs V. schossen auf französische Ritter, die sich durch tiefen Schlamm kämpften. Shakespeare machte die Schlacht später zum Höhepunkt seines Stücks Heinrich V." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which West African empire was ruled by Mansa Musa, famed for his wealth?",
+    "options": ["Ghana", "Mali", "Songhai", "Ethiopia"],
+    "correct_answer": 1,
+    "explanation": "On his pilgrimage to Mecca in 1324 he gave away so much gold in Cairo that its value there fell for years. Timbuktu grew into a centre of learning under his rule.",
+    "bron": "Mansa Musa's hajj, 1324 (al-Umari's account of Cairo gold prices).",
+    "vertalingen": {
+      "nl": { "question": "Over welk West-Afrikaans rijk heerste Mansa Musa, beroemd om zijn rijkdom?", "options": ["Ghana", "Mali", "Songhai", "Ethiopië"], "explanation": "Op zijn pelgrimstocht naar Mekka in 1324 deelde hij in Caïro zoveel goud uit dat het er jarenlang minder waard was. Onder zijn bewind groeide Timboektoe uit tot een centrum van kennis." },
+      "fr": { "question": "Sur quel empire d'Afrique de l'Ouest régnait Mansa Moussa, célèbre pour sa richesse ?", "options": ["Le Ghana", "Le Mali", "Le Songhaï", "L'Éthiopie"], "explanation": "Lors de son pèlerinage à La Mecque en 1324, il distribua tant d'or au Caire que sa valeur y baissa pendant des années. Sous son règne, Tombouctou devint un foyer du savoir." },
+      "de": { "question": "Über welches westafrikanische Reich herrschte Mansa Musa, berühmt für seinen Reichtum?", "options": ["Ghana", "Mali", "Songhai", "Äthiopien"], "explanation": "Auf seiner Pilgerreise nach Mekka 1324 verschenkte er in Kairo so viel Gold, dass es dort jahrelang an Wert verlor. Unter seiner Herrschaft wurde Timbuktu zu einem Zentrum der Gelehrsamkeit." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Norse explorer reached North America around the year 1000?",
+    "options": ["Erik the Red", "Harald Hardrada", "Leif Erikson", "Ragnar Lodbrok"],
+    "correct_answer": 2,
+    "explanation": "Nearly five hundred years before Columbus. A Norse settlement found at L'Anse aux Meadows in Newfoundland confirms the sagas.",
+    "bron": "Vinland sagas; L'Anse aux Meadows (excavated 1960s, dated c. 1021).",
+    "vertalingen": {
+      "nl": { "question": "Welke Noorse ontdekkingsreiziger bereikte rond het jaar 1000 Noord-Amerika?", "options": ["Erik de Rode", "Harald Hardrada", "Leif Eriksson", "Ragnar Lodbrok"], "explanation": "Bijna vijfhonderd jaar vóór Columbus. Een Noorse nederzetting bij L'Anse aux Meadows op Newfoundland bevestigt de sagen." },
+      "fr": { "question": "Quel explorateur scandinave atteignit l'Amérique du Nord vers l'an 1000 ?", "options": ["Erik le Rouge", "Harald Hardrada", "Leif Erikson", "Ragnar Lodbrok"], "explanation": "Près de cinq cents ans avant Colomb. Un établissement scandinave découvert à L'Anse aux Meadows, à Terre-Neuve, confirme les sagas." },
+      "de": { "question": "Welcher nordische Entdecker erreichte um das Jahr 1000 Nordamerika?", "options": ["Erik der Rote", "Harald Hardrada", "Leif Eriksson", "Ragnar Lodbrok"], "explanation": "Fast fünfhundert Jahre vor Kolumbus. Eine nordische Siedlung bei L'Anse aux Meadows auf Neufundland bestätigt die Sagas." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which building style used pointed arches, flying buttresses and huge stained-glass windows?",
+    "options": ["Romanesque", "Baroque", "Byzantine", "Gothic"],
+    "correct_answer": 3,
+    "explanation": "It began in France in the 12th century. Moving the weight onto outside supports let walls become windows, as at Chartres and Notre-Dame.",
+    "bron": "Gothic architecture, Saint-Denis (c. 1140) onwards.",
+    "vertalingen": {
+      "nl": { "question": "Welke bouwstijl gebruikte spitsbogen, luchtbogen en enorme glas-in-loodramen?", "options": ["Romaans", "Barok", "Byzantijns", "Gotiek"], "explanation": "Hij begon in de 12e eeuw in Frankrijk. Doordat het gewicht naar steunberen buiten ging, konden muren ramen worden, zoals in Chartres en de Notre-Dame." },
+      "fr": { "question": "Quel style architectural utilisait l'arc brisé, les arcs-boutants et d'immenses vitraux ?", "options": ["Le roman", "Le baroque", "Le byzantin", "Le gothique"], "explanation": "Il naquit en France au XIIe siècle. En reportant le poids sur des appuis extérieurs, les murs purent devenir des fenêtres, comme à Chartres et à Notre-Dame." },
+      "de": { "question": "Welcher Baustil nutzte Spitzbögen, Strebebögen und riesige Buntglasfenster?", "options": ["Romanik", "Barock", "Byzantinischer Stil", "Gotik"], "explanation": "Er entstand im 12. Jahrhundert in Frankreich. Weil das Gewicht auf äußere Stützen verlagert wurde, konnten Wände zu Fenstern werden, wie in Chartres und Notre-Dame." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Who wrote the Divine Comedy, a journey through Hell, Purgatory and Paradise?",
+    "options": ["Dante Alighieri", "Petrarch", "Giovanni Boccaccio", "Geoffrey Chaucer"],
+    "correct_answer": 0,
+    "explanation": "Written in the early 14th century in Tuscan rather than Latin, it helped make that dialect the basis of the Italian language.",
+    "bron": "Dante, Commedia (c. 1308–1321).",
+    "vertalingen": {
+      "nl": { "question": "Wie schreef de Goddelijke Komedie, een reis door hel, vagevuur en paradijs?", "options": ["Dante Alighieri", "Petrarca", "Giovanni Boccaccio", "Geoffrey Chaucer"], "explanation": "Hij schreef haar begin 14e eeuw in het Toscaans in plaats van het Latijn, en hielp dat dialect zo de basis van het Italiaans te worden." },
+      "fr": { "question": "Qui écrivit la Divine Comédie, un voyage à travers l'Enfer, le Purgatoire et le Paradis ?", "options": ["Dante Alighieri", "Pétrarque", "Boccace", "Geoffrey Chaucer"], "explanation": "Écrite au début du XIVe siècle en toscan plutôt qu'en latin, elle contribua à faire de ce dialecte la base de la langue italienne." },
+      "de": { "question": "Wer schrieb die Göttliche Komödie, eine Reise durch Hölle, Fegefeuer und Paradies?", "options": ["Dante Alighieri", "Petrarca", "Giovanni Boccaccio", "Geoffrey Chaucer"], "explanation": "Anfang des 14. Jahrhunderts auf Toskanisch statt Latein geschrieben, half sie, diesen Dialekt zur Grundlage der italienischen Sprache zu machen." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "In which year did Muslim armies cross into Spain, beginning nearly 800 years of Muslim rule in parts of Iberia?",
+    "options": ["632", "711", "1066", "1492"],
+    "correct_answer": 1,
+    "explanation": "Tariq ibn Ziyad landed at the rock later named after him: Gibraltar. The last Muslim kingdom, Granada, fell in 1492.",
+    "bron": "Umayyad conquest of Hispania, 711; fall of Granada 1492.",
+    "vertalingen": {
+      "nl": { "question": "In welk jaar trokken moslimlegers Spanje binnen, het begin van bijna 800 jaar islamitisch bestuur in delen van Iberië?", "options": ["632", "711", "1066", "1492"], "explanation": "Tariq ibn Ziyad landde bij de rots die later naar hem werd vernoemd: Gibraltar. Het laatste islamitische koninkrijk, Granada, viel in 1492." },
+      "fr": { "question": "En quelle année des armées musulmanes passèrent-elles en Espagne, ouvrant près de 800 ans de domination musulmane sur une partie de la péninsule Ibérique ?", "options": ["632", "711", "1066", "1492"], "explanation": "Tariq ibn Ziyad débarqua au rocher qui porte depuis son nom : Gibraltar. Le dernier royaume musulman, Grenade, tomba en 1492." },
+      "de": { "question": "In welchem Jahr setzten muslimische Heere nach Spanien über und begannen fast 800 Jahre muslimischer Herrschaft in Teilen Iberiens?", "options": ["632", "711", "1066", "1492"], "explanation": "Tariq ibn Ziyad landete an dem Felsen, der später nach ihm benannt wurde: Gibraltar. Das letzte muslimische Königreich, Granada, fiel 1492." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which treaty of 843 divided Charlemagne's empire among his grandsons?",
+    "options": ["The Peace of Westphalia", "The Treaty of Tordesillas", "The Treaty of Verdun", "The Treaty of Utrecht"],
+    "correct_answer": 2,
+    "explanation": "The western part grew into France and the eastern part into Germany. The strip between them was fought over for a thousand years.",
+    "bron": "Treaty of Verdun, August 843.",
+    "vertalingen": {
+      "nl": { "question": "Welk verdrag verdeelde in 843 het rijk van Karel de Grote onder zijn kleinzonen?", "options": ["De Vrede van Westfalen", "Het Verdrag van Tordesillas", "Het Verdrag van Verdun", "De Vrede van Utrecht"], "explanation": "Het westelijke deel groeide uit tot Frankrijk en het oostelijke tot Duitsland. Om de strook ertussen werd duizend jaar gevochten." },
+      "fr": { "question": "Quel traité de 843 partagea l'empire de Charlemagne entre ses petits-fils ?", "options": ["Les traités de Westphalie", "Le traité de Tordesillas", "Le traité de Verdun", "Le traité d'Utrecht"], "explanation": "La partie occidentale devint la France, la partie orientale l'Allemagne. La bande entre les deux fut disputée pendant mille ans." },
+      "de": { "question": "Welcher Vertrag teilte 843 das Reich Karls des Großen unter seinen Enkeln auf?", "options": ["Der Westfälische Friede", "Der Vertrag von Tordesillas", "Der Vertrag von Verdun", "Der Friede von Utrecht"], "explanation": "Aus dem westlichen Teil wurde Frankreich, aus dem östlichen Deutschland. Um den Streifen dazwischen wurde tausend Jahre lang gekämpft." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which dynasty ruled China when Marco Polo arrived?",
+    "options": ["The Tang", "The Song", "The Ming", "The Yuan"],
+    "correct_answer": 3,
+    "explanation": "The Mongol Yuan dynasty, founded by Kublai Khan, ruled from 1271 to 1368. The Ming who drove them out later rebuilt the Great Wall.",
+    "bron": "Yuan dynasty 1271–1368; Marco Polo's stay c. 1275–1292.",
+    "vertalingen": {
+      "nl": { "question": "Welke dynastie regeerde over China toen Marco Polo aankwam?", "options": ["De Tang", "De Song", "De Ming", "De Yuan"], "explanation": "De Mongoolse Yuan-dynastie, gesticht door Koeblai Khan, regeerde van 1271 tot 1368. De Ming die hen verdreven, bouwden later de Chinese Muur opnieuw op." },
+      "fr": { "question": "Quelle dynastie régnait sur la Chine à l'arrivée de Marco Polo ?", "options": ["Les Tang", "Les Song", "Les Ming", "Les Yuan"], "explanation": "La dynastie mongole des Yuan, fondée par Kubilai Khan, régna de 1271 à 1368. Les Ming, qui la chassèrent, reconstruisirent plus tard la Grande Muraille." },
+      "de": { "question": "Welche Dynastie herrschte über China, als Marco Polo ankam?", "options": ["Die Tang", "Die Song", "Die Ming", "Die Yuan"], "explanation": "Die mongolische Yuan-Dynastie, von Kublai Khan gegründet, herrschte von 1271 bis 1368. Die Ming, die sie vertrieben, bauten später die Chinesische Mauer neu auf." }
+    }
+  }
+]

@@ -1,0 +1,327 @@
+[
+  {
+    "moeilijkheid": 1,
+    "question": "Who was the Greek god of the sea?",
+    "options": ["Zeus", "Hades", "Apollo", "Poseidon"],
+    "correct_answer": 3,
+    "explanation": "He was the brother of Zeus and Hades and carried a trident. The Romans knew him as Neptune.",
+    "bron": "Greek mythology; Roman equivalent Neptune.",
+    "vertalingen": {
+      "nl": { "question": "Wie was de Griekse god van de zee?", "options": ["Zeus", "Hades", "Apollo", "Poseidon"], "explanation": "Hij was de broer van Zeus en Hades en droeg een drietand. De Romeinen noemden hem Neptunus." },
+      "fr": { "question": "Qui était le dieu grec de la mer ?", "options": ["Zeus", "Hadès", "Apollon", "Poséidon"], "explanation": "Frère de Zeus et d'Hadès, il portait un trident. Les Romains l'appelaient Neptune." },
+      "de": { "question": "Wer war der griechische Gott des Meeres?", "options": ["Zeus", "Hades", "Apollon", "Poseidon"], "explanation": "Er war der Bruder von Zeus und Hades und trug einen Dreizack. Die Römer nannten ihn Neptun." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which queen of Egypt allied herself with Julius Caesar and later Mark Antony?",
+    "options": ["Cleopatra", "Nefertiti", "Hatshepsut", "Boudica"],
+    "correct_answer": 0,
+    "explanation": "Cleopatra VII was the last active ruler of Ptolemaic Egypt. After Antony's defeat she died in 30 BC, and Egypt became a Roman province.",
+    "bron": "Cleopatra VII (r. 51–30 BC).",
+    "vertalingen": {
+      "nl": { "question": "Welke koningin van Egypte verbond zich met Julius Caesar en later Marcus Antonius?", "options": ["Cleopatra", "Nefertiti", "Hatsjepsoet", "Boudicca"], "explanation": "Cleopatra VII was de laatste regerende vorst van het Ptolemeïsche Egypte. Na de nederlaag van Antonius stierf ze in 30 v.Chr., en Egypte werd een Romeinse provincie." },
+      "fr": { "question": "Quelle reine d'Égypte s'allia à Jules César, puis à Marc Antoine ?", "options": ["Cléopâtre", "Néfertiti", "Hatchepsout", "Boadicée"], "explanation": "Cléopâtre VII fut la dernière souveraine de l'Égypte ptolémaïque. Après la défaite d'Antoine, elle mourut en 30 av. J.-C. et l'Égypte devint une province romaine." },
+      "de": { "question": "Welche Königin Ägyptens verbündete sich mit Julius Caesar und später mit Marcus Antonius?", "options": ["Kleopatra", "Nofretete", "Hatschepsut", "Boudicca"], "explanation": "Kleopatra VII. war die letzte regierende Herrscherin des ptolemäischen Ägypten. Nach Antonius' Niederlage starb sie 30 v. Chr., und Ägypten wurde römische Provinz." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which two epic poems are attributed to Homer?",
+    "options": ["The Aeneid and the Georgics", "The Iliad and the Odyssey", "The Republic and the Laws", "The Epic of Gilgamesh and the Book of the Dead"],
+    "correct_answer": 1,
+    "explanation": "One tells of the Trojan War, the other of Odysseus's ten-year journey home. Virgil wrote the Aeneid centuries later, in Latin.",
+    "bron": "Homeric epics, c. 8th century BC.",
+    "vertalingen": {
+      "nl": { "question": "Welke twee epische gedichten worden aan Homerus toegeschreven?", "options": ["De Aeneis en de Georgica", "De Ilias en de Odyssee", "De Staat en de Wetten", "Het Gilgamesj-epos en het Dodenboek"], "explanation": "Het ene vertelt over de Trojaanse Oorlog, het andere over de tien jaar lange thuisreis van Odysseus. Vergilius schreef de Aeneis eeuwen later, in het Latijn." },
+      "fr": { "question": "Quels deux poèmes épiques sont attribués à Homère ?", "options": ["L'Énéide et les Géorgiques", "L'Iliade et l'Odyssée", "La République et les Lois", "L'Épopée de Gilgamesh et le Livre des morts"], "explanation": "L'un raconte la guerre de Troie, l'autre le retour d'Ulysse, long de dix ans. Virgile écrivit l'Énéide des siècles plus tard, en latin." },
+      "de": { "question": "Welche zwei Epen werden Homer zugeschrieben?", "options": ["Die Aeneis und die Georgica", "Die Ilias und die Odyssee", "Der Staat und die Gesetze", "Das Gilgamesch-Epos und das Totenbuch"], "explanation": "Das eine erzählt vom Trojanischen Krieg, das andere von Odysseus' zehnjähriger Heimreise. Vergil schrieb die Aeneis Jahrhunderte später auf Latein." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which Roman building could hold around 50,000 spectators for gladiator games?",
+    "options": ["The Pantheon", "The Forum", "The Colosseum", "The Senate House"],
+    "correct_answer": 2,
+    "explanation": "Opened in AD 80, it also staged animal hunts and executions. Its official name was the Flavian Amphitheatre.",
+    "bron": "Colosseum (Flavian Amphitheatre), inaugurated AD 80.",
+    "vertalingen": {
+      "nl": { "question": "Welk Romeins gebouw bood plaats aan zo'n 50.000 toeschouwers bij gladiatorengevechten?", "options": ["Het Pantheon", "Het Forum", "Het Colosseum", "Het senaatsgebouw"], "explanation": "Het werd in 80 n.Chr. geopend en hield er ook dierenjachten en terechtstellingen. De officiële naam was het Flavisch Amfitheater." },
+      "fr": { "question": "Quel bâtiment romain pouvait accueillir environ 50 000 spectateurs pour les combats de gladiateurs ?", "options": ["Le Panthéon", "Le Forum", "Le Colisée", "La Curie"], "explanation": "Inauguré en 80 apr. J.-C., il accueillait aussi des chasses d'animaux et des exécutions. Son nom officiel était l'amphithéâtre Flavien." },
+      "de": { "question": "Welches römische Bauwerk fasste rund 50.000 Zuschauer für Gladiatorenkämpfe?", "options": ["Das Pantheon", "Das Forum", "Das Kolosseum", "Das Senatsgebäude"], "explanation": "Im Jahr 80 n. Chr. eröffnet, gab es dort auch Tierhetzen und Hinrichtungen. Der offizielle Name war Flavisches Amphitheater." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which ancient city was home to a famous library founded under the Ptolemies?",
+    "options": ["Athens", "Rome", "Babylon", "Alexandria"],
+    "correct_answer": 3,
+    "explanation": "It aimed to collect every book in the known world. Scholars there worked on geometry, astronomy and the texts of Homer.",
+    "bron": "Library of Alexandria, founded 3rd century BC.",
+    "vertalingen": {
+      "nl": { "question": "In welke oude stad stond een beroemde bibliotheek, gesticht onder de Ptolemaeën?", "options": ["Athene", "Rome", "Babylon", "Alexandrië"], "explanation": "Ze wilde elk boek uit de bekende wereld verzamelen. Geleerden werkten er aan meetkunde, sterrenkunde en de teksten van Homerus." },
+      "fr": { "question": "Quelle cité antique abritait une célèbre bibliothèque fondée sous les Ptolémées ?", "options": ["Athènes", "Rome", "Babylone", "Alexandrie"], "explanation": "Elle voulait rassembler tous les livres du monde connu. Les savants y étudiaient la géométrie, l'astronomie et les textes d'Homère." },
+      "de": { "question": "In welcher antiken Stadt stand eine berühmte Bibliothek, gegründet unter den Ptolemäern?", "options": ["Athen", "Rom", "Babylon", "Alexandria"], "explanation": "Sie wollte jedes Buch der bekannten Welt sammeln. Gelehrte arbeiteten dort an Geometrie, Astronomie und den Texten Homers." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "On which mountain did the Greek gods live, according to myth?",
+    "options": ["Mount Olympus", "Mount Etna", "Mount Sinai", "Mount Ararat"],
+    "correct_answer": 0,
+    "explanation": "Greece's highest mountain, nearly 2,920 metres. Zeus ruled the other gods from its summit.",
+    "bron": "Mount Olympus (2,918 m).",
+    "vertalingen": {
+      "nl": { "question": "Op welke berg woonden volgens de mythen de Griekse goden?", "options": ["De Olympus", "De Etna", "De Sinaï", "De Ararat"], "explanation": "De hoogste berg van Griekenland, bijna 2920 meter. Vanaf de top heerste Zeus over de andere goden." },
+      "fr": { "question": "Sur quelle montagne vivaient les dieux grecs, selon la mythologie ?", "options": ["Le mont Olympe", "L'Etna", "Le mont Sinaï", "Le mont Ararat"], "explanation": "La plus haute montagne de Grèce, près de 2 920 mètres. Depuis son sommet, Zeus régnait sur les autres dieux." },
+      "de": { "question": "Auf welchem Berg lebten der Sage nach die griechischen Götter?", "options": ["Dem Olymp", "Dem Ätna", "Dem Sinai", "Dem Ararat"], "explanation": "Der höchste Berg Griechenlands, fast 2.920 Meter. Von seinem Gipfel aus herrschte Zeus über die anderen Götter." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "In which city did democracy first develop, around 508 BC?",
+    "options": ["Sparta", "Athens", "Rome", "Carthage"],
+    "correct_answer": 1,
+    "explanation": "Free adult male citizens could vote in the assembly. Women, slaves and foreigners could not.",
+    "bron": "Cleisthenes' reforms, 508/507 BC.",
+    "vertalingen": {
+      "nl": { "question": "In welke stad ontstond rond 508 v.Chr. de eerste democratie?", "options": ["Sparta", "Athene", "Rome", "Carthago"], "explanation": "Vrije volwassen mannelijke burgers mochten stemmen in de volksvergadering. Vrouwen, slaven en vreemdelingen niet." },
+      "fr": { "question": "Dans quelle cité la démocratie est-elle apparue, vers 508 av. J.-C. ?", "options": ["Sparte", "Athènes", "Rome", "Carthage"], "explanation": "Les citoyens hommes, libres et adultes pouvaient voter à l'assemblée. Les femmes, les esclaves et les étrangers, non." },
+      "de": { "question": "In welcher Stadt entstand um 508 v. Chr. die erste Demokratie?", "options": ["Sparta", "Athen", "Rom", "Karthago"], "explanation": "Freie, erwachsene männliche Bürger durften in der Volksversammlung abstimmen. Frauen, Sklaven und Fremde nicht." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "How did the ancient Egyptians prepare the dead for the afterlife?",
+    "options": ["They cremated them", "They froze them in ice", "They mummified them", "They buried them at sea"],
+    "correct_answer": 2,
+    "explanation": "Organs were removed, the body was dried with natron salt and wrapped in linen. The whole process took about seventy days.",
+    "bron": "Egyptian mummification (Herodotus, Histories 2.86).",
+    "vertalingen": {
+      "nl": { "question": "Hoe bereidden de oude Egyptenaren hun doden voor op het hiernamaals?", "options": ["Ze cremeerden ze", "Ze vroren ze in ijs in", "Ze mummificeerden ze", "Ze begroeven ze op zee"], "explanation": "De organen werden verwijderd, het lichaam met natronzout gedroogd en in linnen gewikkeld. Het hele proces duurde zo'n zeventig dagen." },
+      "fr": { "question": "Comment les anciens Égyptiens préparaient-ils les morts pour l'au-delà ?", "options": ["Ils les incinéraient", "Ils les conservaient dans la glace", "Ils les momifiaient", "Ils les immergeaient en mer"], "explanation": "On retirait les organes, on desséchait le corps au natron et on l'enveloppait de lin. L'opération durait environ soixante-dix jours." },
+      "de": { "question": "Wie bereiteten die alten Ägypter ihre Toten auf das Jenseits vor?", "options": ["Sie verbrannten sie", "Sie froren sie in Eis ein", "Sie mumifizierten sie", "Sie bestatteten sie auf See"], "explanation": "Die Organe wurden entnommen, der Körper mit Natronsalz getrocknet und in Leinen gewickelt. Das Ganze dauerte etwa siebzig Tage." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which Athenian philosopher was sentenced to death by drinking hemlock in 399 BC?",
+    "options": ["Plato", "Diogenes", "Epicurus", "Socrates"],
+    "correct_answer": 3,
+    "explanation": "He was accused of corrupting the young and not honouring the city's gods. He wrote nothing himself; we know him through his student Plato.",
+    "bron": "Trial of Socrates, 399 BC (Plato, Apology and Phaedo).",
+    "vertalingen": {
+      "nl": { "question": "Welke Atheense filosoof werd in 399 v.Chr. veroordeeld tot het drinken van de gifbeker?", "options": ["Plato", "Diogenes", "Epicurus", "Socrates"], "explanation": "Hij werd beschuldigd van het bederven van de jeugd en het niet eren van de goden van de stad. Zelf schreef hij niets; we kennen hem via zijn leerling Plato." },
+      "fr": { "question": "Quel philosophe athénien fut condamné à boire la ciguë en 399 av. J.-C. ?", "options": ["Platon", "Diogène", "Épicure", "Socrate"], "explanation": "On l'accusait de corrompre la jeunesse et de ne pas honorer les dieux de la cité. Il n'écrivit rien ; nous le connaissons par son élève Platon." },
+      "de": { "question": "Welcher athenische Philosoph wurde 399 v. Chr. zum Trinken des Schierlingsbechers verurteilt?", "options": ["Platon", "Diogenes", "Epikur", "Sokrates"], "explanation": "Man warf ihm vor, die Jugend zu verderben und die Götter der Stadt nicht zu ehren. Er schrieb selbst nichts; wir kennen ihn durch seinen Schüler Platon." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Persian king's army was defeated by the Athenians at Marathon in 490 BC?",
+    "options": ["Darius I", "Cyrus the Great", "Xerxes I", "Cambyses II"],
+    "correct_answer": 0,
+    "explanation": "His son Xerxes returned ten years later with a far larger force. The modern marathon race recalls the run to Athens with news of the victory.",
+    "bron": "Battle of Marathon, 490 BC (Herodotus, Book 6).",
+    "vertalingen": {
+      "nl": { "question": "Het leger van welke Perzische koning werd in 490 v.Chr. bij Marathon door de Atheners verslagen?", "options": ["Darius I", "Cyrus de Grote", "Xerxes I", "Cambyses II"], "explanation": "Zijn zoon Xerxes kwam tien jaar later terug met een veel groter leger. De hardloopwedstrijd marathon verwijst naar de loop naar Athene met het nieuws van de overwinning." },
+      "fr": { "question": "L'armée de quel roi perse fut vaincue par les Athéniens à Marathon en 490 av. J.-C. ?", "options": ["Darius Ier", "Cyrus le Grand", "Xerxès Ier", "Cambyse II"], "explanation": "Son fils Xerxès revint dix ans plus tard avec une armée bien plus grande. La course du marathon rappelle le messager qui courut annoncer la victoire à Athènes." },
+      "de": { "question": "Das Heer welches persischen Königs schlugen die Athener 490 v. Chr. bei Marathon?", "options": ["Dareios I.", "Kyros der Große", "Xerxes I.", "Kambyses II."], "explanation": "Sein Sohn Xerxes kam zehn Jahre später mit einem weit größeren Heer zurück. Der Marathonlauf erinnert an den Läufer, der die Siegesnachricht nach Athen brachte." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "What was the Silk Road?",
+    "options": ["A Roman military road", "Trade routes linking China and the West", "A canal across Egypt", "A royal road in Persia"],
+    "correct_answer": 1,
+    "explanation": "Not one road but a web of routes across Central Asia. Silk went west, while ideas, religions and diseases travelled in both directions.",
+    "bron": "Silk Road trade networks from the Han dynasty (2nd century BC).",
+    "vertalingen": {
+      "nl": { "question": "Wat was de Zijderoute?", "options": ["Een Romeinse heerweg", "Handelsroutes tussen China en het Westen", "Een kanaal door Egypte", "Een koninklijke weg in Perzië"], "explanation": "Geen enkele weg maar een netwerk van routes door Centraal-Azië. Zijde ging naar het westen, terwijl ideeën, religies en ziekten beide kanten op reisden." },
+      "fr": { "question": "Qu'était la route de la soie ?", "options": ["Une voie militaire romaine", "Des routes commerciales reliant la Chine à l'Occident", "Un canal traversant l'Égypte", "Une route royale en Perse"], "explanation": "Non pas une route, mais un réseau d'itinéraires à travers l'Asie centrale. La soie partait vers l'ouest, tandis qu'idées, religions et maladies voyageaient dans les deux sens." },
+      "de": { "question": "Was war die Seidenstraße?", "options": ["Eine römische Heerstraße", "Handelswege zwischen China und dem Westen", "Ein Kanal durch Ägypten", "Eine Königsstraße in Persien"], "explanation": "Keine einzelne Straße, sondern ein Netz von Routen durch Zentralasien. Seide ging nach Westen, während Ideen, Religionen und Krankheiten in beide Richtungen reisten." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which religion was founded by Siddhartha Gautama in ancient India?",
+    "options": ["Hinduism", "Jainism", "Buddhism", "Zoroastrianism"],
+    "correct_answer": 2,
+    "explanation": "He became known as the Buddha, \"the awakened one\", in the 5th century BC. Hinduism has no single founder.",
+    "bron": "Siddhartha Gautama, c. 5th century BC.",
+    "vertalingen": {
+      "nl": { "question": "Welke religie werd in het oude India gesticht door Siddhartha Gautama?", "options": ["Het hindoeïsme", "Het jaïnisme", "Het boeddhisme", "Het zoroastrisme"], "explanation": "In de 5e eeuw v.Chr. werd hij bekend als de Boeddha, \"de ontwaakte\". Het hindoeïsme heeft geen enkele stichter." },
+      "fr": { "question": "Quelle religion fut fondée par Siddhartha Gautama dans l'Inde antique ?", "options": ["L'hindouisme", "Le jaïnisme", "Le bouddhisme", "Le zoroastrisme"], "explanation": "Au Ve siècle av. J.-C., il fut appelé le Bouddha, « l'Éveillé ». L'hindouisme n'a pas de fondateur unique." },
+      "de": { "question": "Welche Religion wurde im alten Indien von Siddhartha Gautama begründet?", "options": ["Der Hinduismus", "Der Jainismus", "Der Buddhismus", "Der Zoroastrismus"], "explanation": "Im 5. Jahrhundert v. Chr. wurde er als der Buddha bekannt, „der Erwachte“. Der Hinduismus hat keinen einzelnen Gründer." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Chinese thinker taught respect for family, elders and good government around 500 BC?",
+    "options": ["Laozi", "Sun Tzu", "Mencius", "Confucius"],
+    "correct_answer": 3,
+    "explanation": "His sayings, collected by students in the Analects, shaped Chinese education and government for more than two thousand years.",
+    "bron": "Confucius (551–479 BC); the Analects.",
+    "vertalingen": {
+      "nl": { "question": "Welke Chinese denker leerde rond 500 v.Chr. respect voor familie, ouderen en goed bestuur?", "options": ["Laozi", "Sun Tzu", "Mencius", "Confucius"], "explanation": "Zijn uitspraken, door leerlingen verzameld in de Analecten, bepaalden ruim tweeduizend jaar het Chinese onderwijs en bestuur." },
+      "fr": { "question": "Quel penseur chinois enseignait vers 500 av. J.-C. le respect de la famille, des aînés et du bon gouvernement ?", "options": ["Laozi", "Sun Tzu", "Mencius", "Confucius"], "explanation": "Ses paroles, réunies par ses disciples dans les Entretiens, ont façonné l'éducation et le gouvernement chinois pendant plus de deux mille ans." },
+      "de": { "question": "Welcher chinesische Denker lehrte um 500 v. Chr. Respekt vor Familie, Älteren und guter Regierung?", "options": ["Laozi", "Sunzi", "Mengzi", "Konfuzius"], "explanation": "Seine Aussprüche, von Schülern in den Gesprächen gesammelt, prägten Chinas Bildung und Verwaltung über zweitausend Jahre." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which of the Seven Wonders stood at the harbour of Rhodes?",
+    "options": ["The Colossus", "The Lighthouse", "The Mausoleum", "The Temple of Artemis"],
+    "correct_answer": 0,
+    "explanation": "A bronze statue of the sun god Helios, about 33 metres tall. An earthquake toppled it around 226 BC, barely sixty years after it was built.",
+    "bron": "Colossus of Rhodes, completed c. 280 BC; earthquake c. 226 BC.",
+    "vertalingen": {
+      "nl": { "question": "Welk van de zeven wereldwonderen stond bij de haven van Rhodos?", "options": ["De Kolossus", "De vuurtoren", "Het mausoleum", "De tempel van Artemis"], "explanation": "Een bronzen beeld van de zonnegod Helios, zo'n 33 meter hoog. Rond 226 v.Chr. viel het om bij een aardbeving, nauwelijks zestig jaar na de bouw." },
+      "fr": { "question": "Laquelle des sept merveilles se dressait dans le port de Rhodes ?", "options": ["Le colosse", "Le phare", "Le mausolée", "Le temple d'Artémis"], "explanation": "Une statue de bronze du dieu soleil Hélios, haute d'environ 33 mètres. Un séisme l'abattit vers 226 av. J.-C., à peine soixante ans après sa construction." },
+      "de": { "question": "Welches der sieben Weltwunder stand am Hafen von Rhodos?", "options": ["Der Koloss", "Der Leuchtturm", "Das Mausoleum", "Der Artemistempel"], "explanation": "Eine Bronzestatue des Sonnengottes Helios, etwa 33 Meter hoch. Ein Erdbeben warf sie um 226 v. Chr. um, kaum sechzig Jahre nach ihrem Bau." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which wall did the Romans begin building across northern Britain in AD 122?",
+    "options": ["The Antonine Wall", "Hadrian's Wall", "The Servian Wall", "The Aurelian Walls"],
+    "correct_answer": 1,
+    "explanation": "It ran about 117 km from coast to coast, with forts along the way. The Antonine Wall further north came twenty years later and was soon abandoned.",
+    "bron": "Hadrian's Wall, begun AD 122; Antonine Wall c. AD 142.",
+    "vertalingen": {
+      "nl": { "question": "Aan welke muur dwars door Noord-Brittannië begonnen de Romeinen in 122 n.Chr.?", "options": ["De Muur van Antoninus", "De Muur van Hadrianus", "De Servische Muur", "De Aureliaanse Muur"], "explanation": "Hij liep zo'n 117 km van kust tot kust, met forten onderweg. De Muur van Antoninus, verder naar het noorden, kwam twintig jaar later en werd al snel opgegeven." },
+      "fr": { "question": "Quel mur les Romains commencèrent-ils à bâtir à travers le nord de la Bretagne en 122 ?", "options": ["Le mur d'Antonin", "Le mur d'Hadrien", "Le mur Servien", "Le mur d'Aurélien"], "explanation": "Il courait sur environ 117 km d'une côte à l'autre, jalonné de forts. Le mur d'Antonin, plus au nord, vint vingt ans plus tard et fut vite abandonné." },
+      "de": { "question": "Mit welcher Mauer quer durch Nordbritannien begannen die Römer im Jahr 122?", "options": ["Dem Antoninuswall", "Dem Hadrianswall", "Der Servianischen Mauer", "Der Aurelianischen Mauer"], "explanation": "Er verlief etwa 117 km von Küste zu Küste, mit Kastellen entlang des Weges. Der Antoninuswall weiter nördlich kam zwanzig Jahre später und wurde bald aufgegeben." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Celtic queen led a revolt against Roman rule in Britain around AD 60?",
+    "options": ["Cleopatra", "Zenobia", "Boudica", "Cartimandua"],
+    "correct_answer": 2,
+    "explanation": "Her rebels burned Londinium, the Roman town that became London. The revolt was crushed, and she is said to have taken poison.",
+    "bron": "Boudican revolt, AD 60/61 (Tacitus, Annals 14).",
+    "vertalingen": {
+      "nl": { "question": "Welke Keltische koningin leidde rond 60 n.Chr. een opstand tegen het Romeinse gezag in Brittannië?", "options": ["Cleopatra", "Zenobia", "Boudicca", "Cartimandua"], "explanation": "Haar opstandelingen staken Londinium in brand, de Romeinse stad die Londen werd. De opstand werd neergeslagen, en ze zou gif hebben ingenomen." },
+      "fr": { "question": "Quelle reine celte mena une révolte contre la domination romaine en Bretagne vers 60 ?", "options": ["Cléopâtre", "Zénobie", "Boadicée", "Cartimandua"], "explanation": "Ses rebelles incendièrent Londinium, la ville romaine devenue Londres. La révolte fut écrasée, et elle se serait empoisonnée." },
+      "de": { "question": "Welche keltische Königin führte um 60 n. Chr. einen Aufstand gegen die römische Herrschaft in Britannien an?", "options": ["Kleopatra", "Zenobia", "Boudicca", "Cartimandua"], "explanation": "Ihre Aufständischen brannten Londinium nieder, die römische Stadt, aus der London wurde. Der Aufstand wurde niedergeschlagen, und sie soll Gift genommen haben." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "From which plant did the ancient Egyptians make their writing sheets?",
+    "options": ["Bamboo", "Flax", "Lotus", "Papyrus"],
+    "correct_answer": 3,
+    "explanation": "Strips of the reed's stem were laid crosswise, pressed and dried. Our word \"paper\" comes from it.",
+    "bron": "Papyrus manufacture (Pliny the Elder, Natural History 13).",
+    "vertalingen": {
+      "nl": { "question": "Van welke plant maakten de oude Egyptenaren hun schrijfvellen?", "options": ["Bamboe", "Vlas", "Lotus", "Papyrus"], "explanation": "Repen van de stengel van het riet werden kruiselings gelegd, geperst en gedroogd. Ons woord \"papier\" komt ervan." },
+      "fr": { "question": "À partir de quelle plante les anciens Égyptiens fabriquaient-ils leurs feuilles d'écriture ?", "options": ["Le bambou", "Le lin", "Le lotus", "Le papyrus"], "explanation": "Des lamelles de la tige du roseau étaient croisées, pressées et séchées. Notre mot « papier » en vient." },
+      "de": { "question": "Aus welcher Pflanze machten die alten Ägypter ihre Schreibblätter?", "options": ["Bambus", "Flachs", "Lotos", "Papyrus"], "explanation": "Streifen aus dem Stängel der Pflanze wurden über Kreuz gelegt, gepresst und getrocknet. Unser Wort „Papier“ stammt davon." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which edict of AD 313 made Christianity legal throughout the Roman Empire?",
+    "options": ["The Edict of Milan", "The Edict of Nantes", "The Edict of Worms", "The Edict of Thessalonica"],
+    "correct_answer": 0,
+    "explanation": "It granted freedom of worship and returned confiscated church property. The Edict of Thessalonica in 380 went further and made Christianity the state religion.",
+    "bron": "Edict of Milan, 313; Edict of Thessalonica, 380.",
+    "vertalingen": {
+      "nl": { "question": "Welk edict van 313 n.Chr. maakte het christendom in het hele Romeinse Rijk legaal?", "options": ["Het Edict van Milaan", "Het Edict van Nantes", "Het Edict van Worms", "Het Edict van Thessaloniki"], "explanation": "Het gaf vrijheid van godsdienst en gaf in beslag genomen kerkbezit terug. Het Edict van Thessaloniki ging in 380 verder en maakte het christendom staatsgodsdienst." },
+      "fr": { "question": "Quel édit de 313 rendit le christianisme légal dans tout l'Empire romain ?", "options": ["L'édit de Milan", "L'édit de Nantes", "L'édit de Worms", "L'édit de Thessalonique"], "explanation": "Il accordait la liberté de culte et restituait les biens confisqués aux Églises. L'édit de Thessalonique, en 380, alla plus loin et fit du christianisme la religion d'État." },
+      "de": { "question": "Welches Edikt von 313 machte das Christentum im ganzen Römischen Reich legal?", "options": ["Das Edikt von Mailand", "Das Edikt von Nantes", "Das Wormser Edikt", "Das Edikt von Thessaloniki"], "explanation": "Es gewährte Religionsfreiheit und gab beschlagnahmten Kirchenbesitz zurück. Das Edikt von Thessaloniki ging 380 weiter und machte das Christentum zur Staatsreligion." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Greek mathematician is said to have shouted \"Eureka!\" in his bath?",
+    "options": ["Euclid", "Archimedes", "Pythagoras", "Eratosthenes"],
+    "correct_answer": 1,
+    "explanation": "The story goes that he realised how to measure a crown's volume by the water it displaced. He also designed war machines to defend Syracuse.",
+    "bron": "Vitruvius, De Architectura 9; Archimedes of Syracuse (c. 287–212 BC).",
+    "vertalingen": {
+      "nl": { "question": "Welke Griekse wiskundige zou in zijn bad \"Eureka!\" hebben geroepen?", "options": ["Euclides", "Archimedes", "Pythagoras", "Eratosthenes"], "explanation": "Het verhaal wil dat hij begreep hoe hij het volume van een kroon kon meten aan het water dat die verplaatste. Hij ontwierp ook oorlogsmachines om Syracuse te verdedigen." },
+      "fr": { "question": "Quel mathématicien grec aurait crié « Eurêka ! » dans son bain ?", "options": ["Euclide", "Archimède", "Pythagore", "Ératosthène"], "explanation": "Selon l'histoire, il comprit comment mesurer le volume d'une couronne grâce à l'eau déplacée. Il conçut aussi des machines de guerre pour défendre Syracuse." },
+      "de": { "question": "Welcher griechische Mathematiker soll in seinem Bad „Heureka!“ gerufen haben?", "options": ["Euklid", "Archimedes", "Pythagoras", "Eratosthenes"], "explanation": "Der Geschichte nach erkannte er, wie sich das Volumen einer Krone über das verdrängte Wasser messen lässt. Er baute auch Kriegsmaschinen zur Verteidigung von Syrakus." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Who measured the Earth's circumference with remarkable accuracy around 240 BC?",
+    "options": ["Archimedes", "Ptolemy", "Eratosthenes", "Aristarchus"],
+    "correct_answer": 2,
+    "explanation": "He compared the angle of the noon sun in Syene and Alexandria on the same day. His result was within a few percent of the true figure.",
+    "bron": "Eratosthenes of Cyrene; reported by Cleomedes.",
+    "vertalingen": {
+      "nl": { "question": "Wie mat rond 240 v.Chr. met opmerkelijke nauwkeurigheid de omtrek van de aarde?", "options": ["Archimedes", "Ptolemaeus", "Eratosthenes", "Aristarchus"], "explanation": "Hij vergeleek op dezelfde dag de hoek van de middagzon in Syene en Alexandrië. Zijn uitkomst zat er maar een paar procent naast." },
+      "fr": { "question": "Qui mesura la circonférence de la Terre avec une précision remarquable vers 240 av. J.-C. ?", "options": ["Archimède", "Ptolémée", "Ératosthène", "Aristarque"], "explanation": "Il compara, le même jour, l'angle du soleil de midi à Syène et à Alexandrie. Son résultat ne s'écartait de la réalité que de quelques pour cent." },
+      "de": { "question": "Wer bestimmte um 240 v. Chr. den Erdumfang mit bemerkenswerter Genauigkeit?", "options": ["Archimedes", "Ptolemäus", "Eratosthenes", "Aristarchos"], "explanation": "Er verglich am selben Tag den Winkel der Mittagssonne in Syene und Alexandria. Sein Ergebnis lag nur wenige Prozent daneben." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which city was the capital of the Hittite Empire?",
+    "options": ["Nineveh", "Persepolis", "Ur", "Hattusa"],
+    "correct_answer": 3,
+    "explanation": "In central Anatolia, in modern Turkey. Its archives held the world's oldest known peace treaty, made with Egypt after the Battle of Kadesh.",
+    "bron": "Hattusa (Boğazkale); Egyptian–Hittite treaty, c. 1259 BC.",
+    "vertalingen": {
+      "nl": { "question": "Welke stad was de hoofdstad van het Hettitische Rijk?", "options": ["Nineve", "Persepolis", "Ur", "Hattusa"], "explanation": "In Centraal-Anatolië, in het huidige Turkije. Het archief bevatte het oudst bekende vredesverdrag, gesloten met Egypte na de Slag bij Kadesh." },
+      "fr": { "question": "Quelle ville était la capitale de l'Empire hittite ?", "options": ["Ninive", "Persépolis", "Ur", "Hattusa"], "explanation": "Au centre de l'Anatolie, dans l'actuelle Turquie. Ses archives contenaient le plus ancien traité de paix connu, conclu avec l'Égypte après la bataille de Qadesh." },
+      "de": { "question": "Welche Stadt war die Hauptstadt des Hethiterreichs?", "options": ["Ninive", "Persepolis", "Ur", "Hattuša"], "explanation": "In Zentralanatolien, in der heutigen Türkei. Ihr Archiv enthielt den ältesten bekannten Friedensvertrag, geschlossen mit Ägypten nach der Schlacht bei Kadesch." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which Babylonian king captured Jerusalem in 587 BC and took many of its people into exile?",
+    "options": ["Nebuchadnezzar II", "Hammurabi", "Sargon of Akkad", "Ashurbanipal"],
+    "correct_answer": 0,
+    "explanation": "The temple was destroyed and the Babylonian exile began. It ended when Cyrus the Great of Persia took Babylon in 539 BC.",
+    "bron": "Fall of Jerusalem, 587/586 BC; Cyrus takes Babylon, 539 BC.",
+    "vertalingen": {
+      "nl": { "question": "Welke Babylonische koning nam in 587 v.Chr. Jeruzalem in en voerde veel inwoners in ballingschap?", "options": ["Nebukadnezar II", "Hammurabi", "Sargon van Akkad", "Assurbanipal"], "explanation": "De tempel werd verwoest en de Babylonische ballingschap begon. Die eindigde toen Cyrus de Grote van Perzië in 539 v.Chr. Babylon innam." },
+      "fr": { "question": "Quel roi de Babylone prit Jérusalem en 587 av. J.-C. et déporta une grande partie de ses habitants ?", "options": ["Nabuchodonosor II", "Hammurabi", "Sargon d'Akkad", "Assurbanipal"], "explanation": "Le Temple fut détruit et l'exil à Babylone commença. Il prit fin quand Cyrus le Grand, roi de Perse, s'empara de Babylone en 539 av. J.-C." },
+      "de": { "question": "Welcher babylonische König eroberte 587 v. Chr. Jerusalem und verschleppte viele Einwohner ins Exil?", "options": ["Nebukadnezar II.", "Hammurabi", "Sargon von Akkad", "Assurbanipal"], "explanation": "Der Tempel wurde zerstört, und das Babylonische Exil begann. Es endete, als Kyros der Große von Persien 539 v. Chr. Babylon einnahm." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which sea battle in 31 BC ended Rome's civil wars with the defeat of Antony and Cleopatra?",
+    "options": ["Pharsalus", "Actium", "Philippi", "Zama"],
+    "correct_answer": 1,
+    "explanation": "Octavian's fleet, led by Agrippa, won off the western coast of Greece. Pharsalus and Philippi were land battles of the same civil wars.",
+    "bron": "Battle of Actium, 2 September 31 BC.",
+    "vertalingen": {
+      "nl": { "question": "Welke zeeslag in 31 v.Chr. maakte met de nederlaag van Antonius en Cleopatra een einde aan de Romeinse burgeroorlogen?", "options": ["Pharsalus", "Actium", "Philippi", "Zama"], "explanation": "De vloot van Octavianus, onder leiding van Agrippa, won voor de westkust van Griekenland. Pharsalus en Philippi waren landslagen uit dezelfde burgeroorlogen." },
+      "fr": { "question": "Quelle bataille navale de 31 av. J.-C. mit fin aux guerres civiles romaines par la défaite d'Antoine et Cléopâtre ?", "options": ["Pharsale", "Actium", "Philippes", "Zama"], "explanation": "La flotte d'Octave, menée par Agrippa, l'emporta au large de la côte ouest de la Grèce. Pharsale et Philippes furent des batailles terrestres des mêmes guerres civiles." },
+      "de": { "question": "Welche Seeschlacht 31 v. Chr. beendete mit der Niederlage von Antonius und Kleopatra die römischen Bürgerkriege?", "options": ["Pharsalos", "Actium", "Philippi", "Zama"], "explanation": "Octavians Flotte unter Agrippa siegte vor der Westküste Griechenlands. Pharsalos und Philippi waren Landschlachten derselben Bürgerkriege." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which city-state defeated Athens in the Peloponnesian War (431–404 BC)?",
+    "options": ["Thebes", "Corinth", "Sparta", "Macedon"],
+    "correct_answer": 2,
+    "explanation": "With Persian money for a fleet, Sparta finally beat Athens at sea. Thucydides, an Athenian general, wrote the war's history.",
+    "bron": "Peloponnesian War; Thucydides, History.",
+    "vertalingen": {
+      "nl": { "question": "Welke stadstaat versloeg Athene in de Peloponnesische Oorlog (431–404 v.Chr.)?", "options": ["Thebe", "Korinthe", "Sparta", "Macedonië"], "explanation": "Met Perzisch geld voor een vloot versloeg Sparta Athene uiteindelijk op zee. Thucydides, een Atheense generaal, schreef de geschiedenis van de oorlog." },
+      "fr": { "question": "Quelle cité vainquit Athènes lors de la guerre du Péloponnèse (431–404 av. J.-C.) ?", "options": ["Thèbes", "Corinthe", "Sparte", "La Macédoine"], "explanation": "Grâce à l'argent perse pour se doter d'une flotte, Sparte finit par battre Athènes sur mer. Thucydide, un stratège athénien, écrivit l'histoire de cette guerre." },
+      "de": { "question": "Welcher Stadtstaat besiegte Athen im Peloponnesischen Krieg (431–404 v. Chr.)?", "options": ["Theben", "Korinth", "Sparta", "Makedonien"], "explanation": "Mit persischem Geld für eine Flotte schlug Sparta Athen schließlich zur See. Thukydides, ein athenischer Feldherr, schrieb die Geschichte des Krieges." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which of the Seven Wonders was the tomb of a Persian governor named Mausolus?",
+    "options": ["The Temple of Artemis", "The Statue of Zeus", "The Lighthouse of Alexandria", "The Mausoleum at Halicarnassus"],
+    "correct_answer": 3,
+    "explanation": "It was so grand that his name became the word for any large tomb. It stood in what is now Bodrum, in Turkey.",
+    "bron": "Mausoleum at Halicarnassus, c. 350 BC.",
+    "vertalingen": {
+      "nl": { "question": "Welk van de zeven wereldwonderen was het graf van een Perzische gouverneur genaamd Mausolos?", "options": ["De tempel van Artemis", "Het beeld van Zeus", "De vuurtoren van Alexandrië", "Het mausoleum van Halicarnassus"], "explanation": "Het was zo groots dat zijn naam het woord werd voor elk groot grafmonument. Het stond in het huidige Bodrum, in Turkije." },
+      "fr": { "question": "Laquelle des sept merveilles était le tombeau d'un gouverneur perse nommé Mausole ?", "options": ["Le temple d'Artémis", "La statue de Zeus", "Le phare d'Alexandrie", "Le mausolée d'Halicarnasse"], "explanation": "Il était si grandiose que son nom désigne désormais tout grand tombeau. Il se dressait dans l'actuelle Bodrum, en Turquie." },
+      "de": { "question": "Welches der sieben Weltwunder war das Grab eines persischen Statthalters namens Mausolos?", "options": ["Der Artemistempel", "Die Zeusstatue", "Der Leuchtturm von Alexandria", "Das Mausoleum von Halikarnassos"], "explanation": "Es war so prächtig, dass sein Name zum Wort für jedes große Grabmal wurde. Es stand im heutigen Bodrum in der Türkei." }
+    }
+  }
+]

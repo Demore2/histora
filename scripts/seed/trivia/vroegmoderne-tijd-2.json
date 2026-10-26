@@ -1,0 +1,327 @@
+[
+  {
+    "moeilijkheid": 1,
+    "question": "Who introduced printing with movable metal type in Europe around 1450?",
+    "options": ["Johannes Gutenberg", "William Caxton", "Aldus Manutius", "Laurens Janszoon Coster"],
+    "correct_answer": 0,
+    "explanation": "His workshop in Mainz printed the famous Gutenberg Bible around 1455. Books became far cheaper, and ideas spread faster than ever.",
+    "bron": "Gutenberg Bible, Mainz, c. 1455.",
+    "vertalingen": {
+      "nl": { "question": "Wie introduceerde rond 1450 in Europa het drukken met losse metalen letters?", "options": ["Johannes Gutenberg", "William Caxton", "Aldus Manutius", "Laurens Janszoon Coster"], "explanation": "Zijn werkplaats in Mainz drukte rond 1455 de beroemde Gutenbergbijbel. Boeken werden veel goedkoper en ideeën verspreidden zich sneller dan ooit." },
+      "fr": { "question": "Qui introduisit en Europe, vers 1450, l'imprimerie à caractères métalliques mobiles ?", "options": ["Johannes Gutenberg", "William Caxton", "Alde Manuce", "Laurens Janszoon Coster"], "explanation": "Son atelier de Mayence imprima vers 1455 la célèbre Bible de Gutenberg. Les livres devinrent bien moins chers et les idées circulèrent plus vite que jamais." },
+      "de": { "question": "Wer führte um 1450 in Europa den Buchdruck mit beweglichen Metalllettern ein?", "options": ["Johannes Gutenberg", "William Caxton", "Aldus Manutius", "Laurens Janszoon Coster"], "explanation": "Seine Werkstatt in Mainz druckte um 1455 die berühmte Gutenberg-Bibel. Bücher wurden viel billiger, und Ideen verbreiteten sich schneller als je zuvor." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "How many times was King Henry VIII of England married?",
+    "options": ["Four times", "Six times", "Three times", "Eight times"],
+    "correct_answer": 1,
+    "explanation": "Two of his wives were divorced, two beheaded, one died and one outlived him. His wish to end his first marriage led England to break with Rome.",
+    "bron": "Henry VIII (r. 1509–1547); Act of Supremacy 1534.",
+    "vertalingen": {
+      "nl": { "question": "Hoe vaak was koning Hendrik VIII van Engeland getrouwd?", "options": ["Vier keer", "Zes keer", "Drie keer", "Acht keer"], "explanation": "Van twee vrouwen scheidde hij, twee liet hij onthoofden, één stierf en één overleefde hem. Zijn wens om zijn eerste huwelijk te beëindigen leidde tot de breuk van Engeland met Rome." },
+      "fr": { "question": "Combien de fois le roi Henri VIII d'Angleterre s'est-il marié ?", "options": ["Quatre fois", "Six fois", "Trois fois", "Huit fois"], "explanation": "Deux épouses furent répudiées, deux décapitées, une mourut et une lui survécut. Sa volonté de mettre fin à son premier mariage mena l'Angleterre à rompre avec Rome." },
+      "de": { "question": "Wie oft war König Heinrich VIII. von England verheiratet?", "options": ["Viermal", "Sechsmal", "Dreimal", "Achtmal"], "explanation": "Von zwei Frauen ließ er sich trennen, zwei ließ er enthaupten, eine starb und eine überlebte ihn. Sein Wunsch, die erste Ehe zu beenden, führte Englands Bruch mit Rom herbei." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "In which Italian city did the Renaissance begin, under the patronage of the Medici family?",
+    "options": ["Venice", "Rome", "Florence", "Milan"],
+    "correct_answer": 2,
+    "explanation": "The Medici bankers paid artists such as Botticelli and Michelangelo. Brunelleschi's dome on the cathedral became a symbol of the new age.",
+    "bron": "Florentine Renaissance; Medici patronage, 15th century.",
+    "vertalingen": {
+      "nl": { "question": "In welke Italiaanse stad begon de renaissance, met de familie De' Medici als beschermheer?", "options": ["Venetië", "Rome", "Florence", "Milaan"], "explanation": "De bankiersfamilie betaalde kunstenaars als Botticelli en Michelangelo. Brunelleschi's koepel op de kathedraal werd het symbool van de nieuwe tijd." },
+      "fr": { "question": "Dans quelle ville italienne la Renaissance commença-t-elle, sous le mécénat des Médicis ?", "options": ["Venise", "Rome", "Florence", "Milan"], "explanation": "Les banquiers Médicis payaient des artistes comme Botticelli et Michel-Ange. La coupole de Brunelleschi sur la cathédrale devint le symbole de l'époque nouvelle." },
+      "de": { "question": "In welcher italienischen Stadt begann die Renaissance, gefördert von der Familie Medici?", "options": ["Venedig", "Rom", "Florenz", "Mailand"], "explanation": "Die Bankiersfamilie bezahlte Künstler wie Botticelli und Michelangelo. Brunelleschis Kuppel auf dem Dom wurde zum Symbol der neuen Zeit." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which English queen was known as the Virgin Queen?",
+    "options": ["Mary I", "Anne", "Victoria", "Elizabeth I"],
+    "correct_answer": 3,
+    "explanation": "She never married and ruled for 44 years, from 1558 to 1603. The American colony of Virginia was named after her.",
+    "bron": "Elizabeth I (r. 1558–1603).",
+    "vertalingen": {
+      "nl": { "question": "Welke Engelse koningin stond bekend als de Maagdelijke Koningin?", "options": ["Maria I", "Anna", "Victoria", "Elizabeth I"], "explanation": "Ze trouwde nooit en regeerde 44 jaar, van 1558 tot 1603. De Amerikaanse kolonie Virginia werd naar haar vernoemd." },
+      "fr": { "question": "Quelle reine d'Angleterre était surnommée la Reine vierge ?", "options": ["Marie Ire", "Anne", "Victoria", "Élisabeth Ire"], "explanation": "Elle ne se maria jamais et régna 44 ans, de 1558 à 1603. La colonie américaine de Virginie porte son nom." },
+      "de": { "question": "Welche englische Königin war als die jungfräuliche Königin bekannt?", "options": ["Maria I.", "Anna", "Victoria", "Elisabeth I."], "explanation": "Sie heiratete nie und regierte 44 Jahre, von 1558 bis 1603. Die amerikanische Kolonie Virginia wurde nach ihr benannt." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which crop from the Americas became a staple food across Europe, above all in Ireland?",
+    "options": ["The potato", "Rice", "Wheat", "The turnip"],
+    "correct_answer": 0,
+    "explanation": "Brought from the Andes by the Spanish in the 16th century, it fed far more people per field than grain. Ireland's dependence on it made the later famine so deadly.",
+    "bron": "Columbian Exchange; spread of the potato in Europe.",
+    "vertalingen": {
+      "nl": { "question": "Welk gewas uit Amerika werd een hoofdvoedsel in heel Europa, vooral in Ierland?", "options": ["De aardappel", "Rijst", "Tarwe", "De raap"], "explanation": "De Spanjaarden brachten haar in de 16e eeuw uit de Andes mee. Per akker voedde ze veel meer mensen dan graan. Ierlands afhankelijkheid ervan maakte de latere hongersnood zo dodelijk." },
+      "fr": { "question": "Quelle plante venue des Amériques devint un aliment de base dans toute l'Europe, surtout en Irlande ?", "options": ["La pomme de terre", "Le riz", "Le blé", "Le navet"], "explanation": "Rapportée des Andes par les Espagnols au XVIe siècle, elle nourrissait bien plus de monde par champ que les céréales. La dépendance de l'Irlande à son égard rendit la famine ultérieure si meurtrière." },
+      "de": { "question": "Welche Pflanze aus Amerika wurde in ganz Europa, vor allem in Irland, zum Grundnahrungsmittel?", "options": ["Die Kartoffel", "Reis", "Weizen", "Die Rübe"], "explanation": "Die Spanier brachten sie im 16. Jahrhundert aus den Anden mit. Pro Feld ernährte sie viel mehr Menschen als Getreide. Irlands Abhängigkeit von ihr machte die spätere Hungersnot so tödlich." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "What was the name of the pirates' flag with a skull and crossbones?",
+    "options": ["The Union Jack", "The Jolly Roger", "The Black Pearl", "The Blue Peter"],
+    "correct_answer": 1,
+    "explanation": "It was meant to scare a ship into surrendering without a fight. The Golden Age of Piracy ran roughly from 1650 to 1730.",
+    "bron": "Golden Age of Piracy, c. 1650–1730.",
+    "vertalingen": {
+      "nl": { "question": "Hoe heette de piratenvlag met de doodskop en gekruiste beenderen?", "options": ["De Union Jack", "De Jolly Roger", "De Black Pearl", "De Blue Peter"], "explanation": "Hij moest een schip bang maken zodat het zich zonder gevecht overgaf. De gouden eeuw van de piraterij liep ruwweg van 1650 tot 1730." },
+      "fr": { "question": "Comment s'appelait le drapeau pirate à tête de mort et tibias croisés ?", "options": ["L'Union Jack", "Le Jolly Roger", "Le Black Pearl", "Le Blue Peter"], "explanation": "Il devait effrayer un navire pour qu'il se rende sans combattre. L'âge d'or de la piraterie s'étend à peu près de 1650 à 1730." },
+      "de": { "question": "Wie hieß die Piratenflagge mit Totenkopf und gekreuzten Knochen?", "options": ["Der Union Jack", "Der Jolly Roger", "Die Black Pearl", "Der Blue Peter"], "explanation": "Sie sollte ein Schiff einschüchtern, damit es sich kampflos ergab. Das goldene Zeitalter der Piraterie reichte etwa von 1650 bis 1730." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which city became the capital of the Ottoman Empire after its conquest in 1453?",
+    "options": ["Ankara", "Baghdad", "Istanbul", "Cairo"],
+    "correct_answer": 2,
+    "explanation": "As Constantinople it had been the Byzantine capital for over a thousand years. Sultan Mehmed II took it and made it the heart of his empire.",
+    "bron": "Fall of Constantinople, 29 May 1453.",
+    "vertalingen": {
+      "nl": { "question": "Welke stad werd na de verovering in 1453 de hoofdstad van het Ottomaanse Rijk?", "options": ["Ankara", "Bagdad", "Istanboel", "Caïro"], "explanation": "Als Constantinopel was ze ruim duizend jaar de Byzantijnse hoofdstad geweest. Sultan Mehmet II nam haar in en maakte haar het hart van zijn rijk." },
+      "fr": { "question": "Quelle ville devint la capitale de l'Empire ottoman après sa conquête en 1453 ?", "options": ["Ankara", "Bagdad", "Istanbul", "Le Caire"], "explanation": "Sous le nom de Constantinople, elle avait été la capitale byzantine pendant plus de mille ans. Le sultan Mehmed II la prit et en fit le cœur de son empire." },
+      "de": { "question": "Welche Stadt wurde nach ihrer Eroberung 1453 die Hauptstadt des Osmanischen Reiches?", "options": ["Ankara", "Bagdad", "Istanbul", "Kairo"], "explanation": "Als Konstantinopel war sie über tausend Jahre die byzantinische Hauptstadt gewesen. Sultan Mehmed II. eroberte sie und machte sie zum Herzen seines Reiches." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which Dutch trading company, founded in 1602, dominated the spice trade with Asia?",
+    "options": ["The Hudson's Bay Company", "The West India Company", "The Muscovy Company", "The Dutch East India Company (VOC)"],
+    "correct_answer": 3,
+    "explanation": "It was the first company to issue shares to the public. It had its own ships, soldiers and forts, and could even wage war.",
+    "bron": "Vereenigde Oostindische Compagnie, founded 1602.",
+    "vertalingen": {
+      "nl": { "question": "Welke Nederlandse handelscompagnie, opgericht in 1602, beheerste de specerijenhandel met Azië?", "options": ["De Hudson's Bay Company", "De West-Indische Compagnie", "De Muscovy Company", "De Verenigde Oostindische Compagnie (VOC)"], "explanation": "Het was het eerste bedrijf dat aandelen aan het publiek uitgaf. Het had eigen schepen, soldaten en forten en mocht zelfs oorlog voeren." },
+      "fr": { "question": "Quelle compagnie commerciale néerlandaise, fondée en 1602, domina le commerce des épices avec l'Asie ?", "options": ["La Compagnie de la baie d'Hudson", "La Compagnie des Indes occidentales", "La Compagnie de Moscovie", "La Compagnie néerlandaise des Indes orientales (VOC)"], "explanation": "Ce fut la première entreprise à vendre des actions au public. Elle avait ses propres navires, soldats et forts, et pouvait même faire la guerre." },
+      "de": { "question": "Welche niederländische Handelsgesellschaft, gegründet 1602, beherrschte den Gewürzhandel mit Asien?", "options": ["Die Hudson's Bay Company", "Die Westindische Kompanie", "Die Muscovy Company", "Die Niederländische Ostindien-Kompanie (VOC)"], "explanation": "Sie war das erste Unternehmen, das Aktien an die Öffentlichkeit ausgab. Sie hatte eigene Schiffe, Soldaten und Festungen und durfte sogar Krieg führen." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "After which explorer were the Americas named?",
+    "options": ["Amerigo Vespucci", "Christopher Columbus", "John Cabot", "Vasco Núñez de Balboa"],
+    "correct_answer": 0,
+    "explanation": "He argued that the lands across the Atlantic were a new continent, not Asia. A German mapmaker put \"America\" on his world map of 1507.",
+    "bron": "Waldseemüller map, 1507.",
+    "vertalingen": {
+      "nl": { "question": "Naar welke ontdekkingsreiziger is Amerika vernoemd?", "options": ["Amerigo Vespucci", "Christoffel Columbus", "John Cabot", "Vasco Núñez de Balboa"], "explanation": "Hij betoogde dat de landen over de Atlantische Oceaan een nieuw continent waren en geen Azië. Een Duitse kaartenmaker zette \"America\" op zijn wereldkaart van 1507." },
+      "fr": { "question": "D'après quel explorateur les Amériques ont-elles été nommées ?", "options": ["Amerigo Vespucci", "Christophe Colomb", "Jean Cabot", "Vasco Núñez de Balboa"], "explanation": "Il soutint que les terres au-delà de l'Atlantique formaient un nouveau continent, et non l'Asie. Un cartographe allemand inscrivit « America » sur sa carte du monde de 1507." },
+      "de": { "question": "Nach welchem Entdecker wurde Amerika benannt?", "options": ["Amerigo Vespucci", "Christoph Kolumbus", "John Cabot", "Vasco Núñez de Balboa"], "explanation": "Er vertrat, dass die Länder jenseits des Atlantiks ein neuer Kontinent seien und nicht Asien. Ein deutscher Kartograf schrieb 1507 „America“ auf seine Weltkarte." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "What was Tulip Mania, which peaked in the Dutch Republic in 1637?",
+    "options": ["A disease that destroyed the tulip fields", "A speculative bubble in tulip bulbs", "A festival celebrating spring", "A law forbidding the export of bulbs"],
+    "correct_answer": 1,
+    "explanation": "Rare bulbs were traded for the price of a house until the market suddenly collapsed. It is often called the first recorded financial bubble.",
+    "bron": "Dutch tulip mania, collapse February 1637.",
+    "vertalingen": {
+      "nl": { "question": "Wat was de tulpenmanie, die in 1637 in de Republiek haar hoogtepunt bereikte?", "options": ["Een ziekte die de tulpenvelden vernietigde", "Een speculatiezeepbel in tulpenbollen", "Een lentefeest", "Een wet die de uitvoer van bollen verbood"], "explanation": "Zeldzame bollen gingen voor de prijs van een huis van eigenaar, tot de markt plots instortte. Ze wordt vaak de eerste beschreven financiële zeepbel genoemd." },
+      "fr": { "question": "Qu'était la tulipomanie, qui culmina dans les Provinces-Unies en 1637 ?", "options": ["Une maladie qui détruisit les champs de tulipes", "Une bulle spéculative sur les bulbes de tulipe", "Une fête du printemps", "Une loi interdisant l'exportation des bulbes"], "explanation": "Des bulbes rares s'échangeaient au prix d'une maison, jusqu'à l'effondrement soudain du marché. On la qualifie souvent de première bulle financière documentée." },
+      "de": { "question": "Was war die Tulpenmanie, die 1637 in der Niederländischen Republik ihren Höhepunkt erreichte?", "options": ["Eine Krankheit, die die Tulpenfelder vernichtete", "Eine Spekulationsblase mit Tulpenzwiebeln", "Ein Frühlingsfest", "Ein Gesetz gegen die Ausfuhr von Zwiebeln"], "explanation": "Seltene Zwiebeln wechselten für den Preis eines Hauses den Besitzer, bis der Markt plötzlich zusammenbrach. Sie gilt oft als erste dokumentierte Finanzblase." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Russian tsar founded Saint Petersburg in 1703?",
+    "options": ["Ivan the Terrible", "Catherine the Great", "Peter the Great", "Alexander I"],
+    "correct_answer": 2,
+    "explanation": "He wanted a \"window on Europe\" on the Baltic Sea and made it Russia's capital. He had travelled through Western Europe in disguise, partly to study shipbuilding in Holland.",
+    "bron": "Founding of Saint Petersburg, 1703; Grand Embassy 1697–98.",
+    "vertalingen": {
+      "nl": { "question": "Welke Russische tsaar stichtte in 1703 Sint-Petersburg?", "options": ["Ivan de Verschrikkelijke", "Catharina de Grote", "Peter de Grote", "Alexander I"], "explanation": "Hij wilde een \"venster op Europa\" aan de Oostzee en maakte er de Russische hoofdstad van. Hij had incognito door West-Europa gereisd, onder meer om in Holland scheepsbouw te leren." },
+      "fr": { "question": "Quel tsar russe fonda Saint-Pétersbourg en 1703 ?", "options": ["Ivan le Terrible", "Catherine la Grande", "Pierre le Grand", "Alexandre Ier"], "explanation": "Il voulait une « fenêtre sur l'Europe » au bord de la Baltique et en fit la capitale de la Russie. Il avait parcouru l'Europe occidentale incognito, notamment pour étudier la construction navale en Hollande." },
+      "de": { "question": "Welcher russische Zar gründete 1703 Sankt Petersburg?", "options": ["Iwan der Schreckliche", "Katharina die Große", "Peter der Große", "Alexander I."], "explanation": "Er wollte ein „Fenster nach Europa“ an der Ostsee und machte die Stadt zur Hauptstadt Russlands. Inkognito war er durch Westeuropa gereist, unter anderem um in Holland den Schiffbau zu lernen." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which English king was put on trial and beheaded in 1649?",
+    "options": ["James I", "Henry VIII", "Richard II", "Charles I"],
+    "correct_answer": 3,
+    "explanation": "He lost the English Civil War against Parliament. For eleven years England had no king, and Oliver Cromwell ruled as Lord Protector.",
+    "bron": "Execution of Charles I, 30 January 1649.",
+    "vertalingen": {
+      "nl": { "question": "Welke Engelse koning werd in 1649 berecht en onthoofd?", "options": ["Jacobus I", "Hendrik VIII", "Richard II", "Karel I"], "explanation": "Hij verloor de Engelse Burgeroorlog tegen het parlement. Elf jaar lang had Engeland geen koning en regeerde Oliver Cromwell als Lord Protector." },
+      "fr": { "question": "Quel roi d'Angleterre fut jugé et décapité en 1649 ?", "options": ["Jacques Ier", "Henri VIII", "Richard II", "Charles Ier"], "explanation": "Il perdit la guerre civile anglaise contre le Parlement. Pendant onze ans, l'Angleterre n'eut pas de roi et Oliver Cromwell gouverna comme Lord Protecteur." },
+      "de": { "question": "Welcher englische König wurde 1649 vor Gericht gestellt und enthauptet?", "options": ["Jakob I.", "Heinrich VIII.", "Richard II.", "Karl I."], "explanation": "Er verlor den Englischen Bürgerkrieg gegen das Parlament. Elf Jahre lang hatte England keinen König, und Oliver Cromwell regierte als Lordprotektor." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "What was New York called when it was a Dutch colony?",
+    "options": ["New Amsterdam", "New Rotterdam", "New Haarlem", "Fort Zeeland"],
+    "correct_answer": 0,
+    "explanation": "The Dutch settled Manhattan in the 1620s. The English took it in 1664 and renamed it after the Duke of York.",
+    "bron": "New Amsterdam, 1625–1664.",
+    "vertalingen": {
+      "nl": { "question": "Hoe heette New York toen het een Nederlandse kolonie was?", "options": ["Nieuw-Amsterdam", "Nieuw-Rotterdam", "Nieuw-Haarlem", "Fort Zeeland"], "explanation": "De Nederlanders vestigden zich in de jaren 1620 op Manhattan. De Engelsen namen het in 1664 over en vernoemden het naar de hertog van York." },
+      "fr": { "question": "Comment s'appelait New York quand c'était une colonie néerlandaise ?", "options": ["La Nouvelle-Amsterdam", "La Nouvelle-Rotterdam", "La Nouvelle-Haarlem", "Fort Zélande"], "explanation": "Les Néerlandais s'installèrent à Manhattan dans les années 1620. Les Anglais la prirent en 1664 et la rebaptisèrent en l'honneur du duc d'York." },
+      "de": { "question": "Wie hieß New York, als es eine niederländische Kolonie war?", "options": ["Nieuw Amsterdam", "Nieuw Rotterdam", "Nieuw Haarlem", "Fort Zeeland"], "explanation": "Die Niederländer siedelten sich in den 1620er-Jahren auf Manhattan an. Die Engländer übernahmen es 1664 und benannten es nach dem Herzog von York." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Dutch scientist was the first to see bacteria, through microscopes he made himself?",
+    "options": ["Christiaan Huygens", "Antonie van Leeuwenhoek", "Jan Swammerdam", "Herman Boerhaave"],
+    "correct_answer": 1,
+    "explanation": "A cloth merchant from Delft, he ground tiny lenses that magnified around 270 times. In the 1670s he described the \"little animals\" he found in water and in scrapings from his teeth.",
+    "bron": "Van Leeuwenhoek's letters to the Royal Society, 1676 and 1683.",
+    "vertalingen": {
+      "nl": { "question": "Welke Nederlandse wetenschapper zag als eerste bacteriën, door microscopen die hij zelf maakte?", "options": ["Christiaan Huygens", "Antonie van Leeuwenhoek", "Jan Swammerdam", "Herman Boerhaave"], "explanation": "Deze Delftse lakenkoopman sleep piepkleine lenzen die zo'n 270 keer vergrootten. In de jaren 1670 beschreef hij de \"diertjes\" die hij in water en in tandaanslag vond." },
+      "fr": { "question": "Quel savant néerlandais fut le premier à observer des bactéries, grâce à des microscopes de sa fabrication ?", "options": ["Christiaan Huygens", "Antoni van Leeuwenhoek", "Jan Swammerdam", "Herman Boerhaave"], "explanation": "Ce drapier de Delft polissait de minuscules lentilles grossissant environ 270 fois. Dans les années 1670, il décrivit les « petits animaux » trouvés dans l'eau et dans le tartre de ses dents." },
+      "de": { "question": "Welcher niederländische Forscher sah als Erster Bakterien, durch Mikroskope, die er selbst baute?", "options": ["Christiaan Huygens", "Antoni van Leeuwenhoek", "Jan Swammerdam", "Herman Boerhaave"], "explanation": "Der Tuchhändler aus Delft schliff winzige Linsen, die etwa 270-fach vergrößerten. In den 1670er-Jahren beschrieb er die „Tierchen“, die er in Wasser und in seinem Zahnbelag fand." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "In which year did the Great Fire of London destroy much of the city?",
+    "options": ["1606", "1642", "1666", "1688"],
+    "correct_answer": 2,
+    "explanation": "It started in a bakery on Pudding Lane and burned for four days, destroying some 13,000 houses and old St Paul's Cathedral. Christopher Wren designed the new St Paul's.",
+    "bron": "Great Fire of London, 2–6 September 1666.",
+    "vertalingen": {
+      "nl": { "question": "In welk jaar verwoestte de Grote Brand van Londen een groot deel van de stad?", "options": ["1606", "1642", "1666", "1688"], "explanation": "Hij begon in een bakkerij aan Pudding Lane en woedde vier dagen. Zo'n 13.000 huizen en de oude St Paul's Cathedral gingen verloren. Christopher Wren ontwierp de nieuwe St Paul's." },
+      "fr": { "question": "En quelle année le grand incendie de Londres détruisit-il une grande partie de la ville ?", "options": ["1606", "1642", "1666", "1688"], "explanation": "Parti d'une boulangerie de Pudding Lane, il dura quatre jours et détruisit quelque 13 000 maisons ainsi que l'ancienne cathédrale Saint-Paul. Christopher Wren conçut la nouvelle." },
+      "de": { "question": "In welchem Jahr zerstörte der Große Brand von London einen großen Teil der Stadt?", "options": ["1606", "1642", "1666", "1688"], "explanation": "Er begann in einer Bäckerei in der Pudding Lane und wütete vier Tage. Rund 13.000 Häuser und die alte St Paul's Cathedral brannten nieder. Christopher Wren entwarf die neue." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Who wrote Don Quixote, the story of a man who believes he is a knight?",
+    "options": ["Lope de Vega", "Francisco de Quevedo", "Calderón de la Barca", "Miguel de Cervantes"],
+    "correct_answer": 3,
+    "explanation": "The first part appeared in 1605. Its hero famously attacks windmills he takes for giants, and the book is often called the first modern novel.",
+    "bron": "Cervantes, Don Quixote, parts I (1605) and II (1615).",
+    "vertalingen": {
+      "nl": { "question": "Wie schreef Don Quichot, het verhaal van een man die denkt dat hij een ridder is?", "options": ["Lope de Vega", "Francisco de Quevedo", "Calderón de la Barca", "Miguel de Cervantes"], "explanation": "Het eerste deel verscheen in 1605. De held valt beroemd genoeg windmolens aan die hij voor reuzen houdt, en het boek wordt vaak de eerste moderne roman genoemd." },
+      "fr": { "question": "Qui a écrit Don Quichotte, l'histoire d'un homme qui se croit chevalier ?", "options": ["Lope de Vega", "Francisco de Quevedo", "Calderón de la Barca", "Miguel de Cervantes"], "explanation": "La première partie parut en 1605. Son héros attaque des moulins à vent qu'il prend pour des géants, et le livre est souvent considéré comme le premier roman moderne." },
+      "de": { "question": "Wer schrieb Don Quijote, die Geschichte eines Mannes, der sich für einen Ritter hält?", "options": ["Lope de Vega", "Francisco de Quevedo", "Calderón de la Barca", "Miguel de Cervantes"], "explanation": "Der erste Teil erschien 1605. Sein Held greift berühmt Windmühlen an, die er für Riesen hält, und das Buch gilt oft als erster moderner Roman." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which empire did Suleiman the Magnificent rule in the 16th century?",
+    "options": ["The Ottoman Empire", "The Mughal Empire", "The Safavid Empire", "The Holy Roman Empire"],
+    "correct_answer": 0,
+    "explanation": "During his reign from 1520 to 1566 the empire reached the gates of Vienna. His own people called him \"the Lawgiver\".",
+    "bron": "Suleiman I (r. 1520–1566); first siege of Vienna 1529.",
+    "vertalingen": {
+      "nl": { "question": "Over welk rijk regeerde Süleyman de Prachtlievende in de 16e eeuw?", "options": ["Het Ottomaanse Rijk", "Het Mogolrijk", "Het Safavidische Rijk", "Het Heilige Roomse Rijk"], "explanation": "Tijdens zijn regering van 1520 tot 1566 reikte het rijk tot aan de poorten van Wenen. Zijn eigen volk noemde hem \"de Wetgever\"." },
+      "fr": { "question": "Sur quel empire régna Soliman le Magnifique au XVIe siècle ?", "options": ["L'Empire ottoman", "L'Empire moghol", "L'Empire safavide", "Le Saint-Empire romain germanique"], "explanation": "Sous son règne, de 1520 à 1566, l'empire atteignit les portes de Vienne. Son propre peuple l'appelait « le Législateur »." },
+      "de": { "question": "Über welches Reich herrschte Süleyman der Prächtige im 16. Jahrhundert?", "options": ["Das Osmanische Reich", "Das Mogulreich", "Das Safawidenreich", "Das Heilige Römische Reich"], "explanation": "Während seiner Herrschaft von 1520 bis 1566 reichte das Reich bis vor die Tore Wiens. Sein eigenes Volk nannte ihn „den Gesetzgeber“." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "What is the Catholic Church's reform movement in answer to the Protestant Reformation called?",
+    "options": ["The Enlightenment", "The Counter-Reformation", "The Great Schism", "The Inquisition"],
+    "correct_answer": 1,
+    "explanation": "The Council of Trent (1545–1563) tightened church discipline, and new orders such as the Jesuits spread Catholic teaching through schools and missions.",
+    "bron": "Council of Trent, 1545–1563; Society of Jesus founded 1540.",
+    "vertalingen": {
+      "nl": { "question": "Hoe heet de hervormingsbeweging van de katholieke Kerk als antwoord op de Reformatie?", "options": ["De Verlichting", "De Contrareformatie", "Het Grote Schisma", "De Inquisitie"], "explanation": "Het Concilie van Trente (1545–1563) verscherpte de kerkelijke tucht, en nieuwe orden zoals de jezuïeten verspreidden de katholieke leer via scholen en missies." },
+      "fr": { "question": "Comment s'appelle le mouvement de réforme de l'Église catholique en réponse à la Réforme protestante ?", "options": ["Les Lumières", "La Contre-Réforme", "Le Grand Schisme", "L'Inquisition"], "explanation": "Le concile de Trente (1545–1563) renforça la discipline de l'Église, et de nouveaux ordres comme les jésuites diffusèrent l'enseignement catholique par les écoles et les missions." },
+      "de": { "question": "Wie heißt die Reformbewegung der katholischen Kirche als Antwort auf die Reformation?", "options": ["Die Aufklärung", "Die Gegenreformation", "Das Große Schisma", "Die Inquisition"], "explanation": "Das Konzil von Trient (1545–1563) verschärfte die kirchliche Disziplin, und neue Orden wie die Jesuiten verbreiteten die katholische Lehre über Schulen und Missionen." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Japanese shogunate closed the country to most foreigners from the 1630s?",
+    "options": ["The Kamakura shogunate", "The Ashikaga shogunate", "The Tokugawa shogunate", "The Minamoto shogunate"],
+    "correct_answer": 2,
+    "explanation": "For over two centuries only Dutch and Chinese traders were allowed in, the Dutch on the small artificial island of Dejima in Nagasaki.",
+    "bron": "Sakoku edicts, 1633–1639; Dejima trading post 1641–1859.",
+    "vertalingen": {
+      "nl": { "question": "Welk Japans shogunaat sloot het land vanaf de jaren 1630 af voor de meeste buitenlanders?", "options": ["Het Kamakura-shogunaat", "Het Ashikaga-shogunaat", "Het Tokugawa-shogunaat", "Het Minamoto-shogunaat"], "explanation": "Ruim twee eeuwen lang mochten alleen Nederlandse en Chinese handelaren erin, de Nederlanders op het kleine kunstmatige eiland Deshima in Nagasaki." },
+      "fr": { "question": "Quel shogunat japonais ferma le pays à la plupart des étrangers à partir des années 1630 ?", "options": ["Le shogunat de Kamakura", "Le shogunat Ashikaga", "Le shogunat Tokugawa", "Le shogunat Minamoto"], "explanation": "Pendant plus de deux siècles, seuls les marchands néerlandais et chinois furent admis, les Néerlandais sur la petite île artificielle de Dejima, à Nagasaki." },
+      "de": { "question": "Welches japanische Shogunat schloss das Land ab den 1630er-Jahren für die meisten Ausländer?", "options": ["Das Kamakura-Shogunat", "Das Ashikaga-Shogunat", "Das Tokugawa-Shogunat", "Das Minamoto-Shogunat"], "explanation": "Über zwei Jahrhunderte durften nur niederländische und chinesische Händler hinein, die Niederländer auf der kleinen künstlichen Insel Dejima in Nagasaki." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which leader of the Dutch Revolt against Spain was assassinated in Delft in 1584?",
+    "options": ["Maurice of Nassau", "Johan van Oldenbarnevelt", "Count Egmont", "William of Orange"],
+    "correct_answer": 3,
+    "explanation": "Known as William the Silent, he is called the \"Father of the Fatherland\". The Dutch national anthem, the Wilhelmus, is about him.",
+    "bron": "Assassination of William of Orange, 10 July 1584.",
+    "vertalingen": {
+      "nl": { "question": "Welke leider van de Nederlandse Opstand tegen Spanje werd in 1584 in Delft vermoord?", "options": ["Maurits van Nassau", "Johan van Oldenbarnevelt", "Graaf van Egmont", "Willem van Oranje"], "explanation": "Ook wel Willem de Zwijger genoemd, en de \"Vader des Vaderlands\". Het Nederlandse volkslied, het Wilhelmus, gaat over hem." },
+      "fr": { "question": "Quel chef de la révolte des Pays-Bas contre l'Espagne fut assassiné à Delft en 1584 ?", "options": ["Maurice de Nassau", "Johan van Oldenbarnevelt", "Le comte d'Egmont", "Guillaume d'Orange"], "explanation": "Surnommé Guillaume le Taciturne, il est appelé le « Père de la patrie ». L'hymne national néerlandais, le Wilhelmus, lui est consacré." },
+      "de": { "question": "Welcher Anführer des niederländischen Aufstands gegen Spanien wurde 1584 in Delft ermordet?", "options": ["Moritz von Oranien", "Johan van Oldenbarnevelt", "Graf Egmont", "Wilhelm von Oranien"], "explanation": "Auch Wilhelm der Schweiger genannt, gilt er als „Vater des Vaterlandes“. Die niederländische Nationalhymne, das Wilhelmus, handelt von ihm." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which philosopher wrote \"I think, therefore I am\"?",
+    "options": ["René Descartes", "Blaise Pascal", "Baruch Spinoza", "John Locke"],
+    "correct_answer": 0,
+    "explanation": "He wanted to doubt everything that could be doubted, and found that his own thinking was the one thing he could not. He wrote his Discourse on Method while living in the Dutch Republic.",
+    "bron": "Descartes, Discourse on the Method (Leiden, 1637).",
+    "vertalingen": {
+      "nl": { "question": "Welke filosoof schreef \"Ik denk, dus ik ben\"?", "options": ["René Descartes", "Blaise Pascal", "Baruch Spinoza", "John Locke"], "explanation": "Hij wilde aan alles twijfelen wat te betwijfelen viel, en ontdekte dat zijn eigen denken het enige was waaraan hij niet kon twijfelen. Zijn Vertoog over de methode schreef hij terwijl hij in de Republiek woonde." },
+      "fr": { "question": "Quel philosophe a écrit « Je pense, donc je suis » ?", "options": ["René Descartes", "Blaise Pascal", "Baruch Spinoza", "John Locke"], "explanation": "Il voulait douter de tout ce dont on peut douter, et constata que sa propre pensée était la seule chose dont il ne pouvait douter. Il écrivit son Discours de la méthode alors qu'il vivait dans les Provinces-Unies." },
+      "de": { "question": "Welcher Philosoph schrieb „Ich denke, also bin ich“?", "options": ["René Descartes", "Blaise Pascal", "Baruch de Spinoza", "John Locke"], "explanation": "Er wollte an allem zweifeln, woran man zweifeln kann, und fand, dass sein eigenes Denken das Einzige war, woran er nicht zweifeln konnte. Seinen Discours de la méthode schrieb er in der Niederländischen Republik." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which massacre of 1572 killed thousands of French Protestants, starting in Paris?",
+    "options": ["The Sicilian Vespers", "The St Bartholomew's Day massacre", "The Massacre of Vassy", "The Siege of La Rochelle"],
+    "correct_answer": 1,
+    "explanation": "It began days after a royal wedding meant to reconcile Catholics and Huguenots. The killing spread from Paris to other cities for weeks.",
+    "bron": "St Bartholomew's Day massacre, 24 August 1572.",
+    "vertalingen": {
+      "nl": { "question": "Bij welk bloedbad in 1572 kwamen duizenden Franse protestanten om, te beginnen in Parijs?", "options": ["De Siciliaanse Vespers", "De Bartholomeusnacht", "Het bloedbad van Vassy", "Het beleg van La Rochelle"], "explanation": "Het begon enkele dagen na een koninklijke bruiloft die katholieken en hugenoten juist moest verzoenen. Het moorden verspreidde zich wekenlang van Parijs naar andere steden." },
+      "fr": { "question": "Quel massacre de 1572 tua des milliers de protestants français, à commencer par Paris ?", "options": ["Les Vêpres siciliennes", "Le massacre de la Saint-Barthélemy", "Le massacre de Wassy", "Le siège de La Rochelle"], "explanation": "Il commença quelques jours après un mariage royal censé réconcilier catholiques et huguenots. Les tueries s'étendirent de Paris à d'autres villes pendant des semaines." },
+      "de": { "question": "Bei welchem Massaker von 1572 wurden Tausende französische Protestanten getötet, zuerst in Paris?", "options": ["Die Sizilianische Vesper", "Die Bartholomäusnacht", "Das Massaker von Wassy", "Die Belagerung von La Rochelle"], "explanation": "Es begann wenige Tage nach einer königlichen Hochzeit, die Katholiken und Hugenotten versöhnen sollte. Das Morden breitete sich wochenlang von Paris auf andere Städte aus." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which Polish king led the army that broke the Ottoman siege of Vienna in 1683?",
+    "options": ["Sigismund III", "Stephen Báthory", "John III Sobieski", "Augustus II"],
+    "correct_answer": 2,
+    "explanation": "His winged hussars charged down the Kahlenberg in one of the largest cavalry charges in history. The Ottomans never threatened Central Europe that seriously again.",
+    "bron": "Battle of Vienna, 12 September 1683.",
+    "vertalingen": {
+      "nl": { "question": "Welke Poolse koning leidde het leger dat in 1683 het Ottomaanse beleg van Wenen brak?", "options": ["Sigismund III", "Stefan Báthory", "Jan III Sobieski", "August II"], "explanation": "Zijn gevleugelde huzaren stormden van de Kahlenberg in een van de grootste cavaleriecharges uit de geschiedenis. Zo ernstig bedreigden de Ottomanen Centraal-Europa nooit meer." },
+      "fr": { "question": "Quel roi de Pologne mena l'armée qui brisa le siège ottoman de Vienne en 1683 ?", "options": ["Sigismond III", "Étienne Báthory", "Jean III Sobieski", "Auguste II"], "explanation": "Ses hussards ailés dévalèrent le Kahlenberg dans l'une des plus grandes charges de cavalerie de l'histoire. Les Ottomans ne menacèrent plus jamais l'Europe centrale aussi sérieusement." },
+      "de": { "question": "Welcher polnische König führte das Heer, das 1683 die osmanische Belagerung Wiens brach?", "options": ["Sigismund III.", "Stephan Báthory", "Johann III. Sobieski", "August II."], "explanation": "Seine geflügelten Husaren stürmten in einem der größten Kavallerieangriffe der Geschichte vom Kahlenberg herab. Nie wieder bedrohten die Osmanen Mitteleuropa so ernsthaft." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which event of 1688 replaced King James II of England with William III and Mary II?",
+    "options": ["The Restoration", "The English Civil War", "The Act of Union", "The Glorious Revolution"],
+    "correct_answer": 3,
+    "explanation": "William, the Dutch stadtholder, landed in England with an army at the invitation of English nobles. The Bill of Rights of 1689 then limited the power of the crown.",
+    "bron": "Glorious Revolution, 1688; Bill of Rights 1689.",
+    "vertalingen": {
+      "nl": { "question": "Welke gebeurtenis van 1688 verving koning Jacobus II van Engeland door Willem III en Maria II?", "options": ["De Restauratie", "De Engelse Burgeroorlog", "De Act of Union", "De Glorious Revolution"], "explanation": "Willem, de Nederlandse stadhouder, landde op uitnodiging van Engelse edelen met een leger in Engeland. De Bill of Rights van 1689 beperkte daarna de macht van de kroon." },
+      "fr": { "question": "Quel événement de 1688 remplaça le roi Jacques II d'Angleterre par Guillaume III et Marie II ?", "options": ["La Restauration", "La guerre civile anglaise", "L'Acte d'Union", "La Glorieuse Révolution"], "explanation": "Guillaume, stathouder néerlandais, débarqua en Angleterre avec une armée à l'invitation de nobles anglais. Le Bill of Rights de 1689 limita ensuite le pouvoir de la couronne." },
+      "de": { "question": "Welches Ereignis von 1688 ersetzte König Jakob II. von England durch Wilhelm III. und Maria II.?", "options": ["Die Restauration", "Der Englische Bürgerkrieg", "Der Act of Union", "Die Glorreiche Revolution"], "explanation": "Wilhelm, der niederländische Statthalter, landete auf Einladung englischer Adliger mit einem Heer in England. Die Bill of Rights von 1689 beschränkte danach die Macht der Krone." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which coastline did Captain James Cook chart for Europeans in 1770?",
+    "options": ["The east coast of Australia", "The coast of Alaska", "The coast of Patagonia", "The west coast of Africa"],
+    "correct_answer": 0,
+    "explanation": "Aboard HMS Endeavour he landed at Botany Bay and claimed the coast for Britain, land that had been home to Aboriginal peoples for tens of thousands of years.",
+    "bron": "First voyage of James Cook (1768–1771); Botany Bay, April 1770.",
+    "vertalingen": {
+      "nl": { "question": "Welke kustlijn bracht kapitein James Cook in 1770 voor Europeanen in kaart?", "options": ["De oostkust van Australië", "De kust van Alaska", "De kust van Patagonië", "De westkust van Afrika"], "explanation": "Met HMS Endeavour landde hij in Botany Bay en eiste de kust op voor Groot-Brittannië: land waar Aboriginals al tienduizenden jaren woonden." },
+      "fr": { "question": "Quel littoral le capitaine James Cook cartographia-t-il pour les Européens en 1770 ?", "options": ["La côte est de l'Australie", "La côte de l'Alaska", "La côte de Patagonie", "La côte ouest de l'Afrique"], "explanation": "À bord du HMS Endeavour, il débarqua à Botany Bay et revendiqua la côte pour la Grande-Bretagne, une terre habitée par les Aborigènes depuis des dizaines de milliers d'années." },
+      "de": { "question": "Welche Küste kartierte Kapitän James Cook 1770 für die Europäer?", "options": ["Die Ostküste Australiens", "Die Küste Alaskas", "Die Küste Patagoniens", "Die Westküste Afrikas"], "explanation": "Mit der HMS Endeavour landete er in der Botany Bay und beanspruchte die Küste für Großbritannien – Land, auf dem Aborigines seit Zehntausenden Jahren lebten." }
+    }
+  }
+]

@@ -3,6 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AchievementsGrid } from '@/components/achievements-grid';
 import { KopActies } from '@/components/kop-acties';
+import { KroontjesBlok } from '@/components/kroontjes-blok';
 import { EraProgressBars } from '@/components/era-progress-bars';
 import { StreakKaart } from '@/components/streak-kaart';
 import { ThemedText } from '@/components/themed-text';
@@ -46,6 +47,8 @@ export default function VoortgangScreen() {
                 : t((s) => s.voortgang.streakLeegBeschrijving)}
             </ThemedText>
           </View>
+
+          <KroontjesBlok />
 
           <EraProgressBars />
 

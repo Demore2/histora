@@ -1,0 +1,327 @@
+[
+  {
+    "moeilijkheid": 1,
+    "question": "What was the water-filled ditch around a castle called?",
+    "options": ["A moat", "A keep", "A drawbridge", "A battlement"],
+    "correct_answer": 0,
+    "explanation": "It kept attackers and their siege towers away from the walls and made tunnelling underneath much harder.",
+    "bron": "Medieval castle defences.",
+    "vertalingen": {
+      "nl": { "question": "Hoe heette de met water gevulde gracht rond een kasteel?", "options": ["Een slotgracht", "Een donjon", "Een ophaalbrug", "Een kanteel"], "explanation": "Ze hield aanvallers en hun belegeringstorens bij de muren weg en maakte het graven van tunnels eronder veel moeilijker." },
+      "fr": { "question": "Comment appelait-on le fossé rempli d'eau autour d'un château ?", "options": ["Des douves", "Un donjon", "Un pont-levis", "Un créneau"], "explanation": "Elles tenaient les assaillants et leurs tours de siège à distance des murs et rendaient beaucoup plus difficile le creusement de tunnels." },
+      "de": { "question": "Wie hieß der mit Wasser gefüllte Graben um eine Burg?", "options": ["Ein Burggraben", "Ein Bergfried", "Eine Zugbrücke", "Eine Zinne"], "explanation": "Er hielt Angreifer und ihre Belagerungstürme von den Mauern fern und erschwerte das Graben von Tunneln darunter erheblich." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which language did the Catholic Church use for its services in medieval Western Europe?",
+    "options": ["Greek", "Latin", "French", "Hebrew"],
+    "correct_answer": 1,
+    "explanation": "Most churchgoers did not understand it. Latin also remained the language of scholars, law and universities.",
+    "bron": "Latin liturgy of the Western Church.",
+    "vertalingen": {
+      "nl": { "question": "Welke taal gebruikte de katholieke Kerk in het middeleeuwse West-Europa voor haar diensten?", "options": ["Grieks", "Latijn", "Frans", "Hebreeuws"], "explanation": "De meeste kerkgangers verstonden het niet. Latijn bleef ook de taal van geleerden, recht en universiteiten." },
+      "fr": { "question": "Quelle langue l'Église catholique utilisait-elle pour ses offices dans l'Europe occidentale médiévale ?", "options": ["Le grec", "Le latin", "Le français", "L'hébreu"], "explanation": "La plupart des fidèles ne la comprenaient pas. Le latin resta aussi la langue des savants, du droit et des universités." },
+      "de": { "question": "Welche Sprache verwendete die katholische Kirche im mittelalterlichen Westeuropa für ihre Gottesdienste?", "options": ["Griechisch", "Latein", "Französisch", "Hebräisch"], "explanation": "Die meisten Gläubigen verstanden es nicht. Latein blieb auch die Sprache der Gelehrten, des Rechts und der Universitäten." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which Norse god carried a hammer called Mjölnir?",
+    "options": ["Odin", "Loki", "Thor", "Freyr"],
+    "correct_answer": 2,
+    "explanation": "The god of thunder was hugely popular with ordinary Vikings, who wore small hammer amulets. Thursday is named after him.",
+    "bron": "Norse mythology; Thor's hammer amulets.",
+    "vertalingen": {
+      "nl": { "question": "Welke Noordse god droeg een hamer genaamd Mjölnir?", "options": ["Odin", "Loki", "Thor", "Freyr"], "explanation": "De dondergod was enorm populair bij gewone Vikingen, die kleine hamerhangers droegen. Donderdag is naar hem vernoemd." },
+      "fr": { "question": "Quel dieu nordique portait un marteau appelé Mjöllnir ?", "options": ["Odin", "Loki", "Thor", "Freyr"], "explanation": "Le dieu du tonnerre était très populaire chez les Vikings ordinaires, qui portaient de petits marteaux en amulette. Le « Thursday » anglais lui doit son nom." },
+      "de": { "question": "Welcher nordische Gott trug einen Hammer namens Mjölnir?", "options": ["Odin", "Loki", "Thor", "Freyr"], "explanation": "Der Donnergott war bei einfachen Wikingern sehr beliebt, die kleine Hammeramulette trugen. Der Donnerstag ist nach ihm benannt." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which legendary English outlaw robbed from the rich to give to the poor?",
+    "options": ["William Wallace", "King Arthur", "Dick Turpin", "Robin Hood"],
+    "correct_answer": 3,
+    "explanation": "Ballads about him go back to the 15th century and place him in Sherwood Forest near Nottingham. Whether a real Robin ever lived is unknown.",
+    "bron": "Robin Hood ballads, 15th century (e.g. A Gest of Robyn Hode).",
+    "vertalingen": {
+      "nl": { "question": "Welke legendarische Engelse vogelvrije stal van de rijken om aan de armen te geven?", "options": ["William Wallace", "Koning Arthur", "Dick Turpin", "Robin Hood"], "explanation": "Liederen over hem gaan terug tot de 15e eeuw en plaatsen hem in Sherwood Forest bij Nottingham. Of er ooit een echte Robin heeft bestaan, is onbekend." },
+      "fr": { "question": "Quel hors-la-loi anglais légendaire volait aux riches pour donner aux pauvres ?", "options": ["William Wallace", "Le roi Arthur", "Dick Turpin", "Robin des Bois"], "explanation": "Les ballades qui le racontent remontent au XVe siècle et le situent dans la forêt de Sherwood, près de Nottingham. On ignore si un vrai Robin a existé." },
+      "de": { "question": "Welcher legendäre englische Geächtete stahl von den Reichen, um den Armen zu geben?", "options": ["William Wallace", "König Artus", "Dick Turpin", "Robin Hood"], "explanation": "Balladen über ihn reichen bis ins 15. Jahrhundert zurück und verorten ihn im Sherwood Forest bei Nottingham. Ob es je einen echten Robin gab, ist unbekannt." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which legendary king gathered the Knights of the Round Table?",
+    "options": ["King Arthur", "Alfred the Great", "Richard III", "Edward I"],
+    "correct_answer": 0,
+    "explanation": "The round table meant no knight sat above another. The stories were shaped by medieval writers such as Geoffrey of Monmouth and Thomas Malory.",
+    "bron": "Arthurian legend; Geoffrey of Monmouth (c. 1136), Malory (1485).",
+    "vertalingen": {
+      "nl": { "question": "Welke legendarische koning verzamelde de Ridders van de Ronde Tafel?", "options": ["Koning Arthur", "Alfred de Grote", "Richard III", "Edward I"], "explanation": "Aan een ronde tafel zat geen ridder boven een ander. De verhalen kregen vorm bij middeleeuwse schrijvers als Geoffrey van Monmouth en Thomas Malory." },
+      "fr": { "question": "Quel roi légendaire réunit les chevaliers de la Table ronde ?", "options": ["Le roi Arthur", "Alfred le Grand", "Richard III", "Édouard Ier"], "explanation": "À une table ronde, aucun chevalier ne siégeait au-dessus d'un autre. Les récits furent façonnés par des auteurs médiévaux comme Geoffroy de Monmouth et Thomas Malory." },
+      "de": { "question": "Welcher legendäre König versammelte die Ritter der Tafelrunde?", "options": ["König Artus", "Alfred der Große", "Richard III.", "Eduard I."], "explanation": "An einem runden Tisch saß kein Ritter über einem anderen. Die Geschichten formten mittelalterliche Autoren wie Geoffrey von Monmouth und Thomas Malory." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Fleas carried by which animals helped spread the Black Death?",
+    "options": ["Cats", "Rats", "Pigeons", "Horses"],
+    "correct_answer": 1,
+    "explanation": "Rat fleas carried the plague bacterium along trade routes and onto ships. Historians think human fleas and lice spread it further once it arrived.",
+    "bron": "Yersinia pestis transmission; rat flea (Xenopsylla cheopis) and human ectoparasite hypotheses.",
+    "vertalingen": {
+      "nl": { "question": "Vlooien van welke dieren hielpen de Zwarte Dood te verspreiden?", "options": ["Katten", "Ratten", "Duiven", "Paarden"], "explanation": "Rattenvlooien droegen de pestbacterie langs handelsroutes en op schepen. Historici denken dat mensenvlooien en luizen haar na aankomst verder verspreidden." },
+      "fr": { "question": "Les puces de quels animaux ont contribué à propager la peste noire ?", "options": ["Les chats", "Les rats", "Les pigeons", "Les chevaux"], "explanation": "Les puces de rat transportaient la bactérie de la peste le long des routes commerciales et à bord des navires. Les historiens pensent que puces et poux humains l'ont ensuite propagée." },
+      "de": { "question": "Flöhe welcher Tiere halfen, den Schwarzen Tod zu verbreiten?", "options": ["Katzen", "Ratten", "Tauben", "Pferde"], "explanation": "Rattenflöhe trugen das Pestbakterium entlang der Handelswege und auf Schiffe. Historiker vermuten, dass Menschenflöhe und Läuse es nach der Ankunft weiterverbreiteten." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "In which modern country is the Alhambra, the palace of the Moorish kings of Granada?",
+    "options": ["Morocco", "Turkey", "Spain", "Egypt"],
+    "correct_answer": 2,
+    "explanation": "Built mostly in the 13th and 14th centuries, it is famous for its courtyards, fountains and carved plasterwork.",
+    "bron": "Alhambra, Granada (Nasrid dynasty).",
+    "vertalingen": {
+      "nl": { "question": "In welk huidig land staat het Alhambra, het paleis van de Moorse koningen van Granada?", "options": ["Marokko", "Turkije", "Spanje", "Egypte"], "explanation": "Grotendeels gebouwd in de 13e en 14e eeuw, beroemd om zijn binnenplaatsen, fonteinen en gesneden stucwerk." },
+      "fr": { "question": "Dans quel pays actuel se trouve l'Alhambra, le palais des rois maures de Grenade ?", "options": ["Le Maroc", "La Turquie", "L'Espagne", "L'Égypte"], "explanation": "Bâti surtout aux XIIIe et XIVe siècles, il est célèbre pour ses cours, ses fontaines et ses stucs sculptés." },
+      "de": { "question": "In welchem heutigen Land steht die Alhambra, der Palast der maurischen Könige von Granada?", "options": ["Marokko", "Türkei", "Spanien", "Ägypten"], "explanation": "Größtenteils im 13. und 14. Jahrhundert erbaut, berühmt für ihre Innenhöfe, Brunnen und geschnitzten Stuckarbeiten." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which religion began with the Prophet Muhammad in the 7th century?",
+    "options": ["Christianity", "Judaism", "Zoroastrianism", "Islam"],
+    "correct_answer": 3,
+    "explanation": "It began in Mecca and Medina in Arabia. Within a century of Muhammad's death in 632, Muslim rule stretched from Spain to Central Asia.",
+    "bron": "Rise of Islam; death of Muhammad 632.",
+    "vertalingen": {
+      "nl": { "question": "Welke religie begon in de 7e eeuw met de profeet Mohammed?", "options": ["Het christendom", "Het jodendom", "Het zoroastrisme", "De islam"], "explanation": "Ze begon in Mekka en Medina op het Arabisch Schiereiland. Binnen een eeuw na Mohammeds dood in 632 reikte het islamitisch bestuur van Spanje tot Centraal-Azië." },
+      "fr": { "question": "Quelle religion est née avec le prophète Mahomet au VIIe siècle ?", "options": ["Le christianisme", "Le judaïsme", "Le zoroastrisme", "L'islam"], "explanation": "Elle naquit à La Mecque et à Médine, en Arabie. Moins d'un siècle après la mort de Mahomet en 632, le pouvoir musulman s'étendait de l'Espagne à l'Asie centrale." },
+      "de": { "question": "Welche Religion begann im 7. Jahrhundert mit dem Propheten Mohammed?", "options": ["Das Christentum", "Das Judentum", "Der Zoroastrismus", "Der Islam"], "explanation": "Sie begann in Mekka und Medina auf der Arabischen Halbinsel. Binnen eines Jahrhunderts nach Mohammeds Tod 632 reichte muslimische Herrschaft von Spanien bis Zentralasien." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "What was the code of honourable behaviour that medieval knights were expected to follow?",
+    "options": ["Chivalry", "Bushido", "Feudalism", "Monasticism"],
+    "correct_answer": 0,
+    "explanation": "It asked for courage, loyalty and protection of the weak. Bushido was the comparable code of the Japanese samurai.",
+    "bron": "Medieval chivalric ideals.",
+    "vertalingen": {
+      "nl": { "question": "Hoe heette de erecode waaraan middeleeuwse ridders zich moesten houden?", "options": ["Ridderlijkheid", "Bushido", "Feodalisme", "Kloosterleven"], "explanation": "Ze vroeg om moed, trouw en bescherming van de zwakken. Bushido was de vergelijkbare code van de Japanse samoerai." },
+      "fr": { "question": "Comment s'appelait le code d'honneur que les chevaliers médiévaux devaient suivre ?", "options": ["La chevalerie", "Le bushido", "La féodalité", "Le monachisme"], "explanation": "Il exigeait courage, loyauté et protection des faibles. Le bushido était le code comparable des samouraïs japonais." },
+      "de": { "question": "Wie hieß der Ehrenkodex, an den sich mittelalterliche Ritter halten sollten?", "options": ["Die Ritterlichkeit", "Bushidō", "Der Feudalismus", "Das Mönchtum"], "explanation": "Er verlangte Mut, Treue und den Schutz der Schwachen. Bushidō war der vergleichbare Kodex der japanischen Samurai." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Scottish leader defeated the English at Stirling Bridge in 1297?",
+    "options": ["Robert the Bruce", "William Wallace", "Macbeth", "Rob Roy"],
+    "correct_answer": 1,
+    "explanation": "He led the victory together with Andrew Moray. He was captured in 1305 and executed in London; Robert the Bruce later won independence at Bannockburn.",
+    "bron": "Battle of Stirling Bridge, 11 September 1297; Bannockburn 1314.",
+    "vertalingen": {
+      "nl": { "question": "Welke Schotse leider versloeg de Engelsen in 1297 bij Stirling Bridge?", "options": ["Robert the Bruce", "William Wallace", "Macbeth", "Rob Roy"], "explanation": "Hij behaalde de overwinning samen met Andrew Moray. In 1305 werd hij gevangen en in Londen terechtgesteld; Robert the Bruce dwong later bij Bannockburn de onafhankelijkheid af." },
+      "fr": { "question": "Quel chef écossais vainquit les Anglais au pont de Stirling en 1297 ?", "options": ["Robert Bruce", "William Wallace", "Macbeth", "Rob Roy"], "explanation": "Il remporta la victoire avec Andrew Moray. Capturé en 1305, il fut exécuté à Londres ; Robert Bruce arracha plus tard l'indépendance à Bannockburn." },
+      "de": { "question": "Welcher schottische Anführer besiegte die Engländer 1297 an der Stirling Bridge?", "options": ["Robert the Bruce", "William Wallace", "Macbeth", "Rob Roy"], "explanation": "Er errang den Sieg gemeinsam mit Andrew Moray. 1305 wurde er gefangen und in London hingerichtet; Robert the Bruce erkämpfte später bei Bannockburn die Unabhängigkeit." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "What was a guild in a medieval town?",
+    "options": ["A town council", "A church tax", "An association of craftsmen or merchants", "A city wall"],
+    "correct_answer": 2,
+    "explanation": "Guilds set prices and quality standards, trained apprentices and looked after members' widows. Becoming a master meant producing a \"masterpiece\".",
+    "bron": "Medieval craft and merchant guilds.",
+    "vertalingen": {
+      "nl": { "question": "Wat was een gilde in een middeleeuwse stad?", "options": ["Een stadsbestuur", "Een kerkbelasting", "Een vereniging van ambachtslieden of kooplieden", "Een stadsmuur"], "explanation": "Gilden bepaalden prijzen en kwaliteitseisen, leidden leerlingen op en zorgden voor weduwen van leden. Meester werd je met een \"meesterproef\"." },
+      "fr": { "question": "Qu'était une guilde dans une ville médiévale ?", "options": ["Un conseil municipal", "Un impôt ecclésiastique", "Une association d'artisans ou de marchands", "Un rempart"], "explanation": "Les guildes fixaient prix et normes de qualité, formaient les apprentis et aidaient les veuves de leurs membres. On devenait maître en réalisant un « chef-d'œuvre »." },
+      "de": { "question": "Was war eine Zunft oder Gilde in einer mittelalterlichen Stadt?", "options": ["Ein Stadtrat", "Eine Kirchensteuer", "Ein Zusammenschluss von Handwerkern oder Kaufleuten", "Eine Stadtmauer"], "explanation": "Zünfte legten Preise und Qualitätsregeln fest, bildeten Lehrlinge aus und sorgten für die Witwen ihrer Mitglieder. Meister wurde man mit einem „Meisterstück“." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which king of England was killed at the Battle of Bosworth in 1485?",
+    "options": ["Henry V", "Edward IV", "Henry VI", "Richard III"],
+    "correct_answer": 3,
+    "explanation": "Henry Tudor won and became Henry VII. Richard's remains were found under a car park in Leicester in 2012.",
+    "bron": "Battle of Bosworth Field, 22 August 1485; Leicester excavation 2012.",
+    "vertalingen": {
+      "nl": { "question": "Welke koning van Engeland sneuvelde in 1485 in de Slag bij Bosworth?", "options": ["Hendrik V", "Edward IV", "Hendrik VI", "Richard III"], "explanation": "Hendrik Tudor won en werd Hendrik VII. Richards stoffelijk overschot werd in 2012 onder een parkeerplaats in Leicester gevonden." },
+      "fr": { "question": "Quel roi d'Angleterre fut tué à la bataille de Bosworth en 1485 ?", "options": ["Henri V", "Édouard IV", "Henri VI", "Richard III"], "explanation": "Henri Tudor l'emporta et devint Henri VII. Les restes de Richard furent retrouvés sous un parking de Leicester en 2012." },
+      "de": { "question": "Welcher König von England fiel 1485 in der Schlacht von Bosworth?", "options": ["Heinrich V.", "Eduard IV.", "Heinrich VI.", "Richard III."], "explanation": "Henry Tudor siegte und wurde Heinrich VII. Richards Überreste wurden 2012 unter einem Parkplatz in Leicester gefunden." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "In which year did Muhammad's journey from Mecca to Medina, the Hijra, take place?",
+    "options": ["622", "570", "632", "711"],
+    "correct_answer": 0,
+    "explanation": "The Islamic calendar counts its years from it. Muhammad was born around 570 and died in 632.",
+    "bron": "Hijra, AD 622; start of the Hijri calendar.",
+    "vertalingen": {
+      "nl": { "question": "In welk jaar vond Mohammeds tocht van Mekka naar Medina plaats, de Hidjra?", "options": ["622", "570", "632", "711"], "explanation": "De islamitische jaartelling begint ermee. Mohammed werd rond 570 geboren en stierf in 632." },
+      "fr": { "question": "En quelle année eut lieu le départ de Mahomet de La Mecque vers Médine, l'Hégire ?", "options": ["622", "570", "632", "711"], "explanation": "Le calendrier musulman compte ses années à partir d'elle. Mahomet naquit vers 570 et mourut en 632." },
+      "de": { "question": "In welchem Jahr fand Mohammeds Auswanderung von Mekka nach Medina statt, die Hidschra?", "options": ["622", "570", "632", "711"], "explanation": "Der islamische Kalender zählt seine Jahre ab diesem Ereignis. Mohammed wurde um 570 geboren und starb 632." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which wars were fought between the royal houses of Lancaster and York?",
+    "options": ["The Hundred Years' War", "The Wars of the Roses", "The Barons' Wars", "The Thirty Years' War"],
+    "correct_answer": 1,
+    "explanation": "Named after the red rose of Lancaster and the white rose of York, they ended in 1485 with the Tudors on the throne.",
+    "bron": "Wars of the Roses, 1455–1485.",
+    "vertalingen": {
+      "nl": { "question": "Welke oorlogen werden uitgevochten tussen de koningshuizen Lancaster en York?", "options": ["De Honderdjarige Oorlog", "De Rozenoorlogen", "De Baronnenoorlogen", "De Dertigjarige Oorlog"], "explanation": "Vernoemd naar de rode roos van Lancaster en de witte roos van York; ze eindigden in 1485 met de Tudors op de troon." },
+      "fr": { "question": "Quelles guerres opposèrent les maisons royales de Lancastre et d'York ?", "options": ["La guerre de Cent Ans", "La guerre des Deux-Roses", "Les guerres des Barons", "La guerre de Trente Ans"], "explanation": "Nommées d'après la rose rouge de Lancastre et la rose blanche d'York, elles s'achevèrent en 1485 avec les Tudor sur le trône." },
+      "de": { "question": "Welche Kriege wurden zwischen den Königshäusern Lancaster und York ausgetragen?", "options": ["Der Hundertjährige Krieg", "Die Rosenkriege", "Die Kriege der Barone", "Der Dreißigjährige Krieg"], "explanation": "Benannt nach der roten Rose von Lancaster und der weißen Rose von York, endeten sie 1485 mit den Tudors auf dem Thron." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Frankish leader stopped an Umayyad army at the Battle of Tours in 732?",
+    "options": ["Charlemagne", "Clovis", "Charles Martel", "Pepin the Short"],
+    "correct_answer": 2,
+    "explanation": "His nickname means \"the Hammer\". He was Charlemagne's grandfather.",
+    "bron": "Battle of Tours (Poitiers), October 732.",
+    "vertalingen": {
+      "nl": { "question": "Welke Frankische leider hield in 732 bij de Slag bij Poitiers een Umayyadisch leger tegen?", "options": ["Karel de Grote", "Clovis", "Karel Martel", "Pepijn de Korte"], "explanation": "Zijn bijnaam betekent \"de Hamer\". Hij was de grootvader van Karel de Grote." },
+      "fr": { "question": "Quel chef franc arrêta une armée omeyyade à la bataille de Poitiers en 732 ?", "options": ["Charlemagne", "Clovis", "Charles Martel", "Pépin le Bref"], "explanation": "Son surnom signifie « le Marteau ». Il était le grand-père de Charlemagne." },
+      "de": { "question": "Welcher fränkische Anführer stoppte 732 in der Schlacht von Tours und Poitiers ein umayyadisches Heer?", "options": ["Karl der Große", "Chlodwig", "Karl Martell", "Pippin der Jüngere"], "explanation": "Sein Beiname bedeutet „der Hammer“. Er war der Großvater Karls des Großen." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "In which Spanish city was the Great Mosque, later turned into a cathedral, built by the Umayyads?",
+    "options": ["Toledo", "Seville", "Granada", "Córdoba"],
+    "correct_answer": 3,
+    "explanation": "Its forest of red-and-white striped arches was begun in 785. After the Christian conquest in 1236, a cathedral was built inside it.",
+    "bron": "Mosque–Cathedral of Córdoba, begun 785; Christian conquest 1236.",
+    "vertalingen": {
+      "nl": { "question": "In welke Spaanse stad bouwden de Umayyaden de Grote Moskee die later een kathedraal werd?", "options": ["Toledo", "Sevilla", "Granada", "Córdoba"], "explanation": "Het woud van roodwit gestreepte bogen werd in 785 begonnen. Na de christelijke verovering in 1236 werd er binnenin een kathedraal gebouwd." },
+      "fr": { "question": "Dans quelle ville espagnole les Omeyyades bâtirent-ils la Grande Mosquée, devenue plus tard cathédrale ?", "options": ["Tolède", "Séville", "Grenade", "Cordoue"], "explanation": "Sa forêt d'arcs rayés de rouge et de blanc fut commencée en 785. Après la conquête chrétienne de 1236, une cathédrale fut construite en son sein." },
+      "de": { "question": "In welcher spanischen Stadt bauten die Umayyaden die Große Moschee, die später zur Kathedrale wurde?", "options": ["Toledo", "Sevilla", "Granada", "Córdoba"], "explanation": "Ihr Wald aus rot-weiß gestreiften Bögen wurde 785 begonnen. Nach der christlichen Eroberung 1236 wurde in ihrem Inneren eine Kathedrale gebaut." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "What was the Domesday Book, completed in 1086?",
+    "options": ["A survey of land and property in England", "A book of prophecies", "The first English Bible", "A list of crusaders"],
+    "correct_answer": 0,
+    "explanation": "William the Conqueror ordered it to know what his new kingdom held and what it could be taxed. Its name compared it to the Last Judgement: there was no appeal.",
+    "bron": "Domesday Book, 1086 (The National Archives).",
+    "vertalingen": {
+      "nl": { "question": "Wat was het Domesday Book, voltooid in 1086?", "options": ["Een inventaris van land en bezit in Engeland", "Een boek met voorspellingen", "De eerste Engelse Bijbel", "Een lijst van kruisvaarders"], "explanation": "Willem de Veroveraar liet het maken om te weten wat zijn nieuwe koninkrijk bezat en wat er te belasten viel. De naam vergeleek het met het Laatste Oordeel: beroep was er niet." },
+      "fr": { "question": "Qu'était le Domesday Book, achevé en 1086 ?", "options": ["Un inventaire des terres et des biens en Angleterre", "Un livre de prophéties", "La première Bible anglaise", "Une liste de croisés"], "explanation": "Guillaume le Conquérant le fit établir pour savoir ce que contenait son nouveau royaume et ce qu'on pouvait y taxer. Son nom l'assimilait au Jugement dernier : aucun appel possible." },
+      "de": { "question": "Was war das Domesday Book, vollendet 1086?", "options": ["Eine Bestandsaufnahme von Land und Besitz in England", "Ein Buch mit Prophezeiungen", "Die erste englische Bibel", "Eine Liste von Kreuzfahrern"], "explanation": "Wilhelm der Eroberer ließ es erstellen, um zu wissen, was sein neues Königreich besaß und was sich besteuern ließ. Der Name verglich es mit dem Jüngsten Gericht: Einspruch gab es nicht." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Byzantine emperor's law code became the foundation of much of European law?",
+    "options": ["Constantine", "Justinian I", "Basil II", "Heraclius"],
+    "correct_answer": 1,
+    "explanation": "His Corpus Juris Civilis gathered centuries of Roman law in the 530s. He also built the Hagia Sophia.",
+    "bron": "Corpus Juris Civilis (529–534); Hagia Sophia (537).",
+    "vertalingen": {
+      "nl": { "question": "Het wetboek van welke Byzantijnse keizer werd de basis van veel Europees recht?", "options": ["Constantijn", "Justinianus I", "Basileios II", "Herakleios"], "explanation": "Zijn Corpus Juris Civilis bundelde in de jaren 530 eeuwen Romeins recht. Hij bouwde ook de Hagia Sophia." },
+      "fr": { "question": "Le code de lois de quel empereur byzantin devint le fondement d'une grande partie du droit européen ?", "options": ["Constantin", "Justinien Ier", "Basile II", "Héraclius"], "explanation": "Son Corpus juris civilis rassembla dans les années 530 des siècles de droit romain. Il fit aussi bâtir Sainte-Sophie." },
+      "de": { "question": "Das Gesetzbuch welches byzantinischen Kaisers wurde zur Grundlage großer Teile des europäischen Rechts?", "options": ["Konstantin", "Justinian I.", "Basileios II.", "Herakleios"], "explanation": "Sein Corpus Iuris Civilis fasste in den 530er-Jahren Jahrhunderte römischen Rechts zusammen. Er ließ auch die Hagia Sophia bauen." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "In medieval Japan, what was the title of the military ruler who held real power?",
+    "options": ["Emperor", "Samurai", "Shogun", "Daimyo"],
+    "correct_answer": 2,
+    "explanation": "From 1192 the shogun governed while the emperor in Kyoto kept a mostly ceremonial role. Samurai were the warrior class; daimyo were regional lords.",
+    "bron": "Kamakura shogunate, from 1192.",
+    "vertalingen": {
+      "nl": { "question": "Wat was in middeleeuws Japan de titel van de militaire heerser die de echte macht had?", "options": ["Keizer", "Samoerai", "Shogun", "Daimyo"], "explanation": "Vanaf 1192 bestuurde de shogun, terwijl de keizer in Kyoto een vooral ceremoniële rol hield. Samoerai waren de krijgersklasse; daimyo waren regionale heren." },
+      "fr": { "question": "Dans le Japon médiéval, quel était le titre du chef militaire qui détenait le pouvoir réel ?", "options": ["Empereur", "Samouraï", "Shogun", "Daimyo"], "explanation": "À partir de 1192, le shogun gouvernait, tandis que l'empereur, à Kyoto, gardait un rôle surtout cérémoniel. Les samouraïs formaient la classe guerrière ; les daimyos étaient des seigneurs régionaux." },
+      "de": { "question": "Wie hieß im mittelalterlichen Japan der militärische Herrscher, der die eigentliche Macht hatte?", "options": ["Kaiser", "Samurai", "Shōgun", "Daimyō"], "explanation": "Ab 1192 regierte der Shōgun, während der Kaiser in Kyoto eine weitgehend zeremonielle Rolle behielt. Samurai waren die Kriegerklasse, Daimyō regionale Fürsten." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which pope called the First Crusade in 1095?",
+    "options": ["Gregory VII", "Innocent III", "Leo IX", "Urban II"],
+    "correct_answer": 3,
+    "explanation": "At the Council of Clermont he answered a Byzantine plea for help against the Seljuk Turks. The crowd is said to have shouted \"God wills it!\"",
+    "bron": "Council of Clermont, November 1095.",
+    "vertalingen": {
+      "nl": { "question": "Welke paus riep in 1095 op tot de Eerste Kruistocht?", "options": ["Gregorius VII", "Innocentius III", "Leo IX", "Urbanus II"], "explanation": "Op het Concilie van Clermont beantwoordde hij een Byzantijnse hulpvraag tegen de Seltsjoekse Turken. De menigte zou \"God wil het!\" hebben geroepen." },
+      "fr": { "question": "Quel pape appela à la première croisade en 1095 ?", "options": ["Grégoire VII", "Innocent III", "Léon IX", "Urbain II"], "explanation": "Au concile de Clermont, il répondit à un appel à l'aide byzantin contre les Turcs seldjoukides. La foule aurait crié « Dieu le veut ! »." },
+      "de": { "question": "Welcher Papst rief 1095 zum Ersten Kreuzzug auf?", "options": ["Gregor VII.", "Innozenz III.", "Leo IX.", "Urban II."], "explanation": "Auf dem Konzil von Clermont antwortete er auf einen byzantinischen Hilferuf gegen die Seldschuken. Die Menge soll „Gott will es!“ gerufen haben." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which emperor stood in the snow at Canossa in 1077 to seek the pope's forgiveness?",
+    "options": ["Henry IV", "Frederick Barbarossa", "Otto I", "Charles V"],
+    "correct_answer": 0,
+    "explanation": "He had been excommunicated in a quarrel with Pope Gregory VII over who could appoint bishops. \"Going to Canossa\" still means humbling yourself.",
+    "bron": "Walk to Canossa, January 1077; Investiture Controversy.",
+    "vertalingen": {
+      "nl": { "question": "Welke keizer stond in 1077 in de sneeuw bij Canossa om de paus om vergeving te vragen?", "options": ["Hendrik IV", "Frederik Barbarossa", "Otto I", "Karel V"], "explanation": "Hij was geëxcommuniceerd in een conflict met paus Gregorius VII over wie bisschoppen mocht benoemen. \"Naar Canossa gaan\" betekent nog steeds door het stof gaan." },
+      "fr": { "question": "Quel empereur attendit dans la neige à Canossa en 1077 pour obtenir le pardon du pape ?", "options": ["Henri IV", "Frédéric Barberousse", "Otton Ier", "Charles Quint"], "explanation": "Il avait été excommunié dans un conflit avec le pape Grégoire VII sur la nomination des évêques. « Aller à Canossa » veut encore dire s'humilier." },
+      "de": { "question": "Welcher Kaiser stand 1077 im Schnee vor Canossa, um den Papst um Vergebung zu bitten?", "options": ["Heinrich IV.", "Friedrich Barbarossa", "Otto I.", "Karl V."], "explanation": "Er war im Streit mit Papst Gregor VII. darüber, wer Bischöfe einsetzen darf, gebannt worden. „Gang nach Canossa“ bedeutet bis heute, sich zu demütigen." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which empire took Timbuktu in 1468 and became the largest state in West African history?",
+    "options": ["Ghana", "Songhai", "Kanem-Bornu", "Benin"],
+    "correct_answer": 1,
+    "explanation": "Under Sunni Ali and Askia Muhammad it overtook Mali. A Moroccan army with firearms broke it in 1591.",
+    "bron": "Songhai Empire; capture of Timbuktu 1468; Battle of Tondibi 1591.",
+    "vertalingen": {
+      "nl": { "question": "Welk rijk nam in 1468 Timboektoe in en werd de grootste staat uit de West-Afrikaanse geschiedenis?", "options": ["Ghana", "Songhai", "Kanem-Bornu", "Benin"], "explanation": "Onder Sunni Ali en Askia Mohammed streefde het Mali voorbij. Een Marokkaans leger met vuurwapens brak het in 1591." },
+      "fr": { "question": "Quel empire prit Tombouctou en 1468 et devint le plus grand État de l'histoire de l'Afrique de l'Ouest ?", "options": ["Le Ghana", "L'Empire songhaï", "Le Kanem-Bornou", "Le Bénin"], "explanation": "Sous Sonni Ali et Askia Mohammed, il supplanta le Mali. Une armée marocaine dotée d'armes à feu le brisa en 1591." },
+      "de": { "question": "Welches Reich eroberte 1468 Timbuktu und wurde zum größten Staat der westafrikanischen Geschichte?", "options": ["Ghana", "Songhai", "Kanem-Bornu", "Benin"], "explanation": "Unter Sonni Ali und Askia Mohammed überflügelte es Mali. Ein marokkanisches Heer mit Feuerwaffen zerschlug es 1591." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which royal house began with Henry II of England in 1154?",
+    "options": ["The Tudors", "The Normans", "The Plantagenets", "The Stuarts"],
+    "correct_answer": 2,
+    "explanation": "Through his marriage to Eleanor of Aquitaine he ruled from Scotland's border to the Pyrenees. Richard the Lionheart and King John were his sons.",
+    "bron": "Accession of Henry II, 1154; Angevin Empire.",
+    "vertalingen": {
+      "nl": { "question": "Welk koningshuis begon in 1154 met Hendrik II van Engeland?", "options": ["De Tudors", "De Normandiërs", "De Plantagenets", "De Stuarts"], "explanation": "Dankzij zijn huwelijk met Eleonora van Aquitanië regeerde hij van de Schotse grens tot de Pyreneeën. Richard Leeuwenhart en Jan zonder Land waren zijn zonen." },
+      "fr": { "question": "Quelle maison royale commença avec Henri II d'Angleterre en 1154 ?", "options": ["Les Tudor", "Les Normands", "Les Plantagenêt", "Les Stuart"], "explanation": "Grâce à son mariage avec Aliénor d'Aquitaine, il régna de la frontière écossaise aux Pyrénées. Richard Cœur de Lion et Jean sans Terre étaient ses fils." },
+      "de": { "question": "Welches Königshaus begann 1154 mit Heinrich II. von England?", "options": ["Die Tudors", "Die Normannen", "Die Plantagenets", "Die Stuarts"], "explanation": "Durch seine Ehe mit Eleonore von Aquitanien herrschte er von der schottischen Grenze bis zu den Pyrenäen. Richard Löwenherz und Johann Ohneland waren seine Söhne." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which battle of 1071 opened Anatolia to the Seljuk Turks?",
+    "options": ["Hattin", "Nicopolis", "Kosovo", "Manzikert"],
+    "correct_answer": 3,
+    "explanation": "The Byzantine emperor Romanos IV was captured. The losses that followed led Byzantium to ask the West for help, which became the First Crusade.",
+    "bron": "Battle of Manzikert, 26 August 1071.",
+    "vertalingen": {
+      "nl": { "question": "Welke slag in 1071 opende Anatolië voor de Seltsjoekse Turken?", "options": ["Hattin", "Nicopolis", "Kosovo", "Mantzikert"], "explanation": "De Byzantijnse keizer Romanos IV werd gevangengenomen. De verliezen die volgden brachten Byzantium ertoe het Westen om hulp te vragen, wat de Eerste Kruistocht werd." },
+      "fr": { "question": "Quelle bataille de 1071 ouvrit l'Anatolie aux Turcs seldjoukides ?", "options": ["Hattin", "Nicopolis", "Kosovo", "Manzikert"], "explanation": "L'empereur byzantin Romain IV fut fait prisonnier. Les pertes qui suivirent poussèrent Byzance à demander l'aide de l'Occident, ce qui devint la première croisade." },
+      "de": { "question": "Welche Schlacht von 1071 öffnete Anatolien für die Seldschuken?", "options": ["Hattin", "Nikopolis", "Amselfeld", "Manzikert"], "explanation": "Der byzantinische Kaiser Romanos IV. geriet in Gefangenschaft. Die folgenden Verluste brachten Byzanz dazu, den Westen um Hilfe zu bitten – daraus wurde der Erste Kreuzzug." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Who wrote The Canterbury Tales, stories told by pilgrims on their way to Canterbury?",
+    "options": ["Thomas Malory", "Giovanni Boccaccio", "Petrarch", "Geoffrey Chaucer"],
+    "correct_answer": 3,
+    "explanation": "Written in the late 14th century in Middle English, not French or Latin. It helped make English a language for serious literature.",
+    "bron": "Chaucer, The Canterbury Tales (c. 1387–1400).",
+    "vertalingen": {
+      "nl": { "question": "Wie schreef The Canterbury Tales, verhalen van pelgrims op weg naar Canterbury?", "options": ["Thomas Malory", "Giovanni Boccaccio", "Petrarca", "Geoffrey Chaucer"], "explanation": "Geschreven eind 14e eeuw in het Middelengels, niet in het Frans of Latijn. Het hielp het Engels een taal voor serieuze literatuur te worden." },
+      "fr": { "question": "Qui écrivit Les Contes de Canterbury, récits de pèlerins en route vers Canterbury ?", "options": ["Thomas Malory", "Boccace", "Pétrarque", "Geoffrey Chaucer"], "explanation": "Écrits à la fin du XIVe siècle en moyen anglais, et non en français ou en latin, ils aidèrent l'anglais à devenir une langue littéraire à part entière." },
+      "de": { "question": "Wer schrieb die Canterbury-Erzählungen, Geschichten von Pilgern auf dem Weg nach Canterbury?", "options": ["Thomas Malory", "Giovanni Boccaccio", "Petrarca", "Geoffrey Chaucer"], "explanation": "Ende des 14. Jahrhunderts auf Mittelenglisch statt Französisch oder Latein geschrieben, halfen sie, Englisch zu einer Sprache ernsthafter Literatur zu machen." }
+    }
+  }
+]

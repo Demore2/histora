@@ -1,0 +1,262 @@
+[
+  {
+    "moeilijkheid": 1,
+    "question": "In which year did the September 11 attacks on New York and Washington take place?",
+    "options": ["2001", "1999", "2003", "2005"],
+    "correct_answer": 0,
+    "explanation": "Hijacked planes destroyed the Twin Towers and hit the Pentagon, killing nearly 3,000 people. The United States invaded Afghanistan within a month.",
+    "bron": "11 September 2001; invasion of Afghanistan from 7 October 2001.",
+    "vertalingen": {
+      "nl": { "question": "In welk jaar vonden de aanslagen van 11 september op New York en Washington plaats?", "options": ["2001", "1999", "2003", "2005"], "explanation": "Gekaapte vliegtuigen verwoestten de Twin Towers en troffen het Pentagon; bijna 3000 mensen kwamen om. Binnen een maand vielen de Verenigde Staten Afghanistan binnen." },
+      "fr": { "question": "En quelle année eurent lieu les attentats du 11 septembre contre New York et Washington ?", "options": ["2001", "1999", "2003", "2005"], "explanation": "Des avions détournés détruisirent les tours jumelles et frappèrent le Pentagone, tuant près de 3 000 personnes. Les États-Unis envahirent l'Afghanistan moins d'un mois plus tard." },
+      "de": { "question": "In welchem Jahr fanden die Anschläge vom 11. September auf New York und Washington statt?", "options": ["2001", "1999", "2003", "2005"], "explanation": "Entführte Flugzeuge zerstörten die Twin Towers und trafen das Pentagon; fast 3.000 Menschen starben. Binnen eines Monats marschierten die USA in Afghanistan ein." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which currency went into people's pockets as coins and notes in twelve European countries in 2002?",
+    "options": ["The pound sterling", "The euro", "The Swiss franc", "The US dollar"],
+    "correct_answer": 1,
+    "explanation": "It had existed for banks since 1999. On 1 January 2002 the guilder, franc, mark and lira gave way to euro cash.",
+    "bron": "Euro banknotes and coins introduced 1 January 2002.",
+    "vertalingen": {
+      "nl": { "question": "Welke munteenheid kwam in 2002 in twaalf Europese landen als munten en biljetten in omloop?", "options": ["Het Britse pond", "De euro", "De Zwitserse frank", "De Amerikaanse dollar"], "explanation": "Voor banken bestond hij al sinds 1999. Op 1 januari 2002 maakten de gulden, de frank, de mark en de lire plaats voor euromunten en -biljetten." },
+      "fr": { "question": "Quelle monnaie arriva dans les poches sous forme de pièces et de billets dans douze pays européens en 2002 ?", "options": ["La livre sterling", "L'euro", "Le franc suisse", "Le dollar américain"], "explanation": "Elle existait pour les banques depuis 1999. Le 1er janvier 2002, le florin, le franc, le mark et la lire cédèrent la place aux pièces et billets en euros." },
+      "de": { "question": "Welche Währung kam 2002 in zwölf europäischen Ländern als Münzen und Scheine in Umlauf?", "options": ["Das britische Pfund", "Der Euro", "Der Schweizer Franken", "Der US-Dollar"], "explanation": "Für Banken gab es ihn schon seit 1999. Am 1. Januar 2002 machten Gulden, Franc, Mark und Lira dem Euro-Bargeld Platz." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Who became the first Black president of the United States, in 2009?",
+    "options": ["Bill Clinton", "Joe Biden", "Barack Obama", "Colin Powell"],
+    "correct_answer": 2,
+    "explanation": "He served two terms, until 2017. Joe Biden was his vice-president.",
+    "bron": "Obama presidency, 20 January 2009 – 20 January 2017.",
+    "vertalingen": {
+      "nl": { "question": "Wie werd in 2009 de eerste zwarte president van de Verenigde Staten?", "options": ["Bill Clinton", "Joe Biden", "Barack Obama", "Colin Powell"], "explanation": "Hij diende twee termijnen, tot 2017. Joe Biden was zijn vicepresident." },
+      "fr": { "question": "Qui devint le premier président noir des États-Unis, en 2009 ?", "options": ["Bill Clinton", "Joe Biden", "Barack Obama", "Colin Powell"], "explanation": "Il exerça deux mandats, jusqu'en 2017. Joe Biden était son vice-président." },
+      "de": { "question": "Wer wurde 2009 der erste schwarze Präsident der Vereinigten Staaten?", "options": ["Bill Clinton", "Joe Biden", "Barack Obama", "Colin Powell"], "explanation": "Er regierte zwei Amtszeiten, bis 2017. Joe Biden war sein Vizepräsident." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which company introduced the iPhone in 2007?",
+    "options": ["Nokia", "Samsung", "Google", "Apple"],
+    "correct_answer": 3,
+    "explanation": "Steve Jobs presented it as a phone, an iPod and an internet device in one. Within a few years the smartphone had changed how the world communicates.",
+    "bron": "iPhone announced at Macworld, 9 January 2007.",
+    "vertalingen": {
+      "nl": { "question": "Welk bedrijf bracht in 2007 de iPhone uit?", "options": ["Nokia", "Samsung", "Google", "Apple"], "explanation": "Steve Jobs presenteerde hem als telefoon, iPod en internetapparaat in één. Binnen een paar jaar had de smartphone veranderd hoe de wereld communiceert." },
+      "fr": { "question": "Quelle entreprise a lancé l'iPhone en 2007 ?", "options": ["Nokia", "Samsung", "Google", "Apple"], "explanation": "Steve Jobs le présenta comme un téléphone, un iPod et un appareil internet réunis. En quelques années, le smartphone avait changé la façon dont le monde communique." },
+      "de": { "question": "Welches Unternehmen brachte 2007 das iPhone heraus?", "options": ["Nokia", "Samsung", "Google", "Apple"], "explanation": "Steve Jobs stellte es als Telefon, iPod und Internetgerät in einem vor. Binnen weniger Jahre hatte das Smartphone verändert, wie die Welt kommuniziert." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which social network did Mark Zuckerberg launch from his university dorm in 2004?",
+    "options": ["Facebook", "Twitter", "MySpace", "Instagram"],
+    "correct_answer": 0,
+    "explanation": "It began for Harvard students only and opened to everyone over thirteen in 2006. Its company later bought Instagram and WhatsApp.",
+    "bron": "Facebook launched February 2004; open registration September 2006.",
+    "vertalingen": {
+      "nl": { "question": "Welk sociaal netwerk lanceerde Mark Zuckerberg in 2004 vanuit zijn studentenkamer?", "options": ["Facebook", "Twitter", "MySpace", "Instagram"], "explanation": "Het begon alleen voor studenten van Harvard en ging in 2006 open voor iedereen vanaf dertien. Het bedrijf kocht later Instagram en WhatsApp." },
+      "fr": { "question": "Quel réseau social Mark Zuckerberg lança-t-il depuis sa chambre d'étudiant en 2004 ?", "options": ["Facebook", "Twitter", "MySpace", "Instagram"], "explanation": "Réservé d'abord aux étudiants de Harvard, il s'ouvrit à tous les plus de treize ans en 2006. Son entreprise racheta ensuite Instagram et WhatsApp." },
+      "de": { "question": "Welches soziale Netzwerk startete Mark Zuckerberg 2004 aus seinem Studentenzimmer?", "options": ["Facebook", "Twitter", "MySpace", "Instagram"], "explanation": "Es begann nur für Harvard-Studenten und öffnete sich 2006 für alle ab dreizehn. Sein Unternehmen kaufte später Instagram und WhatsApp." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which country voted to leave the European Union in a 2016 referendum?",
+    "options": ["Greece", "The United Kingdom", "Norway", "Denmark"],
+    "correct_answer": 1,
+    "explanation": "52 percent voted to leave. After years of negotiation it formally left on 31 January 2020. Norway was never a member.",
+    "bron": "EU referendum, 23 June 2016; UK withdrawal 31 January 2020.",
+    "vertalingen": {
+      "nl": { "question": "Welk land stemde in een referendum in 2016 voor het verlaten van de Europese Unie?", "options": ["Griekenland", "Het Verenigd Koninkrijk", "Noorwegen", "Denemarken"], "explanation": "52 procent stemde voor vertrek. Na jaren van onderhandelen trad het land op 31 januari 2020 officieel uit. Noorwegen is nooit lid geweest." },
+      "fr": { "question": "Quel pays a voté pour quitter l'Union européenne lors d'un référendum en 2016 ?", "options": ["La Grèce", "Le Royaume-Uni", "La Norvège", "Le Danemark"], "explanation": "52 % votèrent pour le départ. Après des années de négociations, il quitta officiellement l'Union le 31 janvier 2020. La Norvège n'en a jamais été membre." },
+      "de": { "question": "Welches Land stimmte 2016 in einem Referendum für den Austritt aus der Europäischen Union?", "options": ["Griechenland", "Das Vereinigte Königreich", "Norwegen", "Dänemark"], "explanation": "52 Prozent stimmten für den Austritt. Nach jahrelangen Verhandlungen trat es am 31. Januar 2020 offiziell aus. Norwegen war nie Mitglied." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which disease did the World Health Organization declare a pandemic in March 2020?",
+    "options": ["SARS", "Ebola", "COVID-19", "Swine flu"],
+    "correct_answer": 2,
+    "explanation": "Within weeks much of the world was in lockdown. Vaccines were developed and approved in under a year, far faster than ever before.",
+    "bron": "WHO pandemic declaration, 11 March 2020; first vaccine approvals December 2020.",
+    "vertalingen": {
+      "nl": { "question": "Welke ziekte riep de Wereldgezondheidsorganisatie in maart 2020 uit tot pandemie?", "options": ["SARS", "Ebola", "COVID-19", "Mexicaanse griep"], "explanation": "Binnen enkele weken ging een groot deel van de wereld in lockdown. Vaccins werden in minder dan een jaar ontwikkeld en goedgekeurd, veel sneller dan ooit." },
+      "fr": { "question": "Quelle maladie l'Organisation mondiale de la santé a-t-elle déclarée pandémie en mars 2020 ?", "options": ["Le SRAS", "Ebola", "La COVID-19", "La grippe porcine"], "explanation": "En quelques semaines, une grande partie du monde fut confinée. Des vaccins furent mis au point et autorisés en moins d'un an, bien plus vite que jamais." },
+      "de": { "question": "Welche Krankheit erklärte die Weltgesundheitsorganisation im März 2020 zur Pandemie?", "options": ["SARS", "Ebola", "COVID-19", "Schweinegrippe"], "explanation": "Binnen Wochen ging ein großer Teil der Welt in den Lockdown. Impfstoffe wurden in weniger als einem Jahr entwickelt und zugelassen, viel schneller als je zuvor." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which online encyclopedia, written by volunteers, was launched in 2001?",
+    "options": ["Britannica Online", "Encarta", "Google Books", "Wikipedia"],
+    "correct_answer": 3,
+    "explanation": "Anyone can edit it. It grew into one of the most visited websites in the world, in hundreds of languages.",
+    "bron": "Wikipedia launched 15 January 2001.",
+    "vertalingen": {
+      "nl": { "question": "Welke online encyclopedie, geschreven door vrijwilligers, werd in 2001 gelanceerd?", "options": ["Britannica Online", "Encarta", "Google Books", "Wikipedia"], "explanation": "Iedereen kan haar bewerken. Ze groeide uit tot een van de meest bezochte websites ter wereld, in honderden talen." },
+      "fr": { "question": "Quelle encyclopédie en ligne, rédigée par des bénévoles, fut lancée en 2001 ?", "options": ["Britannica Online", "Encarta", "Google Livres", "Wikipédia"], "explanation": "Tout le monde peut la modifier. Elle est devenue l'un des sites les plus visités au monde, en des centaines de langues." },
+      "de": { "question": "Welche Online-Enzyklopädie, geschrieben von Freiwilligen, startete 2001?", "options": ["Britannica Online", "Encarta", "Google Books", "Wikipedia"], "explanation": "Jeder kann sie bearbeiten. Sie wurde zu einer der meistbesuchten Websites der Welt, in Hunderten Sprachen." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "What struck the coasts around the Indian Ocean on 26 December 2004?",
+    "options": ["A tsunami", "A volcanic eruption", "A hurricane", "A drought"],
+    "correct_answer": 0,
+    "explanation": "An undersea earthquake off Sumatra sent waves across the ocean, killing about 230,000 people in fourteen countries.",
+    "bron": "2004 Indian Ocean earthquake and tsunami (magnitude 9.1).",
+    "vertalingen": {
+      "nl": { "question": "Wat trof op 26 december 2004 de kusten rond de Indische Oceaan?", "options": ["Een tsunami", "Een vulkaanuitbarsting", "Een orkaan", "Een droogte"], "explanation": "Een zeebeving voor de kust van Sumatra joeg golven over de oceaan, die in veertien landen zo'n 230.000 mensen doodden." },
+      "fr": { "question": "Qu'est-ce qui frappa les côtes de l'océan Indien le 26 décembre 2004 ?", "options": ["Un tsunami", "Une éruption volcanique", "Un ouragan", "Une sécheresse"], "explanation": "Un séisme sous-marin au large de Sumatra provoqua des vagues à travers l'océan, qui tuèrent environ 230 000 personnes dans quatorze pays." },
+      "de": { "question": "Was traf am 26. Dezember 2004 die Küsten rund um den Indischen Ozean?", "options": ["Ein Tsunami", "Ein Vulkanausbruch", "Ein Hurrikan", "Eine Dürre"], "explanation": "Ein Seebeben vor Sumatra schickte Wellen über den Ozean, die in vierzehn Ländern rund 230.000 Menschen töteten." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which wave of protests began in Tunisia in late 2010 and spread across the Arab world?",
+    "options": ["The Green Revolution", "The Arab Spring", "The Velvet Revolution", "The Orange Revolution"],
+    "correct_answer": 1,
+    "explanation": "It started after a street vendor set himself on fire in protest. Leaders fell in Tunisia, Egypt, Libya and Yemen, and Syria slid into civil war.",
+    "bron": "Arab Spring, from December 2010 (Mohamed Bouazizi).",
+    "vertalingen": {
+      "nl": { "question": "Welke golf van protesten begon eind 2010 in Tunesië en verspreidde zich over de Arabische wereld?", "options": ["De Groene Revolutie", "De Arabische Lente", "De Fluwelen Revolutie", "De Oranjerevolutie"], "explanation": "Hij begon nadat een straatverkoper zichzelf uit protest in brand had gestoken. Leiders vielen in Tunesië, Egypte, Libië en Jemen, en Syrië gleed af naar een burgeroorlog." },
+      "fr": { "question": "Quelle vague de contestation partit de Tunisie fin 2010 et gagna le monde arabe ?", "options": ["La révolution verte", "Le Printemps arabe", "La révolution de velours", "La révolution orange"], "explanation": "Elle commença après qu'un vendeur ambulant s'immola par le feu en signe de protestation. Des dirigeants tombèrent en Tunisie, en Égypte, en Libye et au Yémen, et la Syrie sombra dans la guerre civile." },
+      "de": { "question": "Welche Protestwelle begann Ende 2010 in Tunesien und breitete sich über die arabische Welt aus?", "options": ["Die Grüne Revolution", "Der Arabische Frühling", "Die Samtene Revolution", "Die Orange Revolution"], "explanation": "Sie begann, nachdem sich ein Straßenhändler aus Protest selbst angezündet hatte. In Tunesien, Ägypten, Libyen und im Jemen stürzten Machthaber, Syrien glitt in einen Bürgerkrieg." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "In which country did the Fukushima nuclear disaster happen in 2011?",
+    "options": ["Russia", "Ukraine", "Japan", "South Korea"],
+    "correct_answer": 2,
+    "explanation": "An earthquake and tsunami knocked out the cooling at the power plant, and three reactors melted down. Germany decided soon after to phase out nuclear power.",
+    "bron": "Fukushima Daiichi accident, March 2011; German phase-out decision, June 2011.",
+    "vertalingen": {
+      "nl": { "question": "In welk land vond in 2011 de kernramp van Fukushima plaats?", "options": ["Rusland", "Oekraïne", "Japan", "Zuid-Korea"], "explanation": "Een aardbeving en tsunami schakelden de koeling van de centrale uit, en in drie reactoren smolt de kern. Duitsland besloot kort daarna uit kernenergie te stappen." },
+      "fr": { "question": "Dans quel pays la catastrophe nucléaire de Fukushima s'est-elle produite en 2011 ?", "options": ["En Russie", "En Ukraine", "Au Japon", "En Corée du Sud"], "explanation": "Un séisme et un tsunami mirent hors service le refroidissement de la centrale, et trois réacteurs entrèrent en fusion. L'Allemagne décida peu après de sortir du nucléaire." },
+      "de": { "question": "In welchem Land ereignete sich 2011 die Atomkatastrophe von Fukushima?", "options": ["Russland", "Ukraine", "Japan", "Südkorea"], "explanation": "Ein Erdbeben und ein Tsunami legten die Kühlung des Kraftwerks lahm, und in drei Reaktoren kam es zur Kernschmelze. Deutschland beschloss kurz darauf den Atomausstieg." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which agreement of 2015 committed almost every country to limit global warming?",
+    "options": ["The Kyoto Protocol", "The Montreal Protocol", "The Rio Declaration", "The Paris Agreement"],
+    "correct_answer": 3,
+    "explanation": "It aims to keep warming well below 2°C above pre-industrial levels, and each country sets its own targets. The Montreal Protocol dealt with the ozone layer.",
+    "bron": "Paris Agreement, adopted 12 December 2015.",
+    "vertalingen": {
+      "nl": { "question": "Welk akkoord van 2015 verplichtte bijna elk land om de opwarming van de aarde te beperken?", "options": ["Het Kyotoprotocol", "Het Protocol van Montreal", "De Verklaring van Rio", "Het Akkoord van Parijs"], "explanation": "Het wil de opwarming ruim onder 2 °C boven het pre-industriële niveau houden, en elk land stelt zijn eigen doelen. Het Protocol van Montreal ging over de ozonlaag." },
+      "fr": { "question": "Quel accord de 2015 engagea presque tous les pays à limiter le réchauffement climatique ?", "options": ["Le protocole de Kyoto", "Le protocole de Montréal", "La déclaration de Rio", "L'accord de Paris"], "explanation": "Il vise à maintenir le réchauffement bien en dessous de 2 °C par rapport à l'ère préindustrielle, chaque pays fixant ses propres objectifs. Le protocole de Montréal concernait la couche d'ozone." },
+      "de": { "question": "Welches Abkommen von 2015 verpflichtete fast alle Länder, die Erderwärmung zu begrenzen?", "options": ["Das Kyoto-Protokoll", "Das Montreal-Protokoll", "Die Rio-Erklärung", "Das Pariser Abkommen"], "explanation": "Es will die Erwärmung deutlich unter 2 °C über dem vorindustriellen Niveau halten, und jedes Land setzt sich eigene Ziele. Das Montreal-Protokoll betraf die Ozonschicht." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Who became the youngest Nobel Peace Prize laureate ever, in 2014?",
+    "options": ["Malala Yousafzai", "Greta Thunberg", "Nadia Murad", "Kailash Satyarthi"],
+    "correct_answer": 0,
+    "explanation": "She was seventeen, two years after the Taliban shot her for campaigning for girls' education. She shared the prize with Kailash Satyarthi.",
+    "bron": "Nobel Peace Prize 2014.",
+    "vertalingen": {
+      "nl": { "question": "Wie werd in 2014 de jongste winnaar ooit van de Nobelprijs voor de Vrede?", "options": ["Malala Yousafzai", "Greta Thunberg", "Nadia Murad", "Kailash Satyarthi"], "explanation": "Ze was zeventien, twee jaar nadat de taliban haar hadden neergeschoten omdat ze opkwam voor onderwijs voor meisjes. Ze deelde de prijs met Kailash Satyarthi." },
+      "fr": { "question": "Qui devint en 2014 la plus jeune lauréate de l'histoire du prix Nobel de la paix ?", "options": ["Malala Yousafzai", "Greta Thunberg", "Nadia Murad", "Kailash Satyarthi"], "explanation": "Elle avait dix-sept ans, deux ans après que les talibans lui eurent tiré dessus pour son combat en faveur de l'éducation des filles. Elle partagea le prix avec Kailash Satyarthi." },
+      "de": { "question": "Wer wurde 2014 die jüngste Friedensnobelpreisträgerin aller Zeiten?", "options": ["Malala Yousafzai", "Greta Thunberg", "Nadia Murad", "Kailash Satyarthi"], "explanation": "Sie war siebzehn, zwei Jahre nachdem die Taliban auf sie geschossen hatten, weil sie sich für Bildung für Mädchen einsetzte. Sie teilte den Preis mit Kailash Satyarthi." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which country annexed the Crimean peninsula in 2014?",
+    "options": ["Turkey", "Russia", "Belarus", "Poland"],
+    "correct_answer": 1,
+    "explanation": "It took the peninsula from Ukraine after a referendum that most countries did not recognise, and fighting broke out in eastern Ukraine the same year.",
+    "bron": "Annexation of Crimea, March 2014; UN General Assembly Resolution 68/262.",
+    "vertalingen": {
+      "nl": { "question": "Welk land annexeerde in 2014 het schiereiland de Krim?", "options": ["Turkije", "Rusland", "Wit-Rusland", "Polen"], "explanation": "Het nam het schiereiland af van Oekraïne na een referendum dat de meeste landen niet erkenden, en datzelfde jaar braken er gevechten uit in het oosten van Oekraïne." },
+      "fr": { "question": "Quel pays a annexé la péninsule de Crimée en 2014 ?", "options": ["La Turquie", "La Russie", "La Biélorussie", "La Pologne"], "explanation": "Il prit la péninsule à l'Ukraine après un référendum que la plupart des pays ne reconnurent pas, et des combats éclatèrent la même année dans l'est de l'Ukraine." },
+      "de": { "question": "Welches Land annektierte 2014 die Halbinsel Krim?", "options": ["Die Türkei", "Russland", "Belarus", "Polen"], "explanation": "Es nahm die Halbinsel der Ukraine nach einem Referendum ab, das die meisten Länder nicht anerkannten, und im selben Jahr begannen Kämpfe im Osten der Ukraine." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which bank's collapse in September 2008 deepened the global financial crisis?",
+    "options": ["Goldman Sachs", "Deutsche Bank", "Lehman Brothers", "Barings Bank"],
+    "correct_answer": 2,
+    "explanation": "It was the largest bankruptcy in US history. The crisis, rooted in risky mortgages, pushed much of the world into recession and forced governments to rescue other banks.",
+    "bron": "Lehman Brothers bankruptcy filing, 15 September 2008.",
+    "vertalingen": {
+      "nl": { "question": "De val van welke bank in september 2008 verergerde de wereldwijde financiële crisis?", "options": ["Goldman Sachs", "Deutsche Bank", "Lehman Brothers", "Barings Bank"], "explanation": "Het was het grootste faillissement uit de Amerikaanse geschiedenis. De crisis, geworteld in riskante hypotheken, duwde een groot deel van de wereld in een recessie en dwong regeringen andere banken te redden." },
+      "fr": { "question": "La faillite de quelle banque, en septembre 2008, aggrava la crise financière mondiale ?", "options": ["Goldman Sachs", "Deutsche Bank", "Lehman Brothers", "Barings Bank"], "explanation": "Ce fut la plus grande faillite de l'histoire des États-Unis. La crise, née de prêts immobiliers risqués, plongea une grande partie du monde dans la récession et força les États à sauver d'autres banques." },
+      "de": { "question": "Der Zusammenbruch welcher Bank im September 2008 verschärfte die globale Finanzkrise?", "options": ["Goldman Sachs", "Deutsche Bank", "Lehman Brothers", "Barings Bank"], "explanation": "Es war die größte Pleite der US-Geschichte. Die Krise, ausgelöst durch riskante Immobilienkredite, stürzte große Teile der Welt in eine Rezession und zwang Regierungen, andere Banken zu retten." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which country became independent in 2011 and joined the United Nations as its newest member?",
+    "options": ["Kosovo", "East Timor", "Montenegro", "South Sudan"],
+    "correct_answer": 3,
+    "explanation": "It broke away from Sudan after a referendum in which almost 99 percent voted for independence, ending decades of civil war.",
+    "bron": "Independence of South Sudan, 9 July 2011; UN membership 14 July 2011.",
+    "vertalingen": {
+      "nl": { "question": "Welk land werd in 2011 onafhankelijk en trad toe tot de Verenigde Naties als nieuwste lid?", "options": ["Kosovo", "Oost-Timor", "Montenegro", "Zuid-Soedan"], "explanation": "Het scheidde zich af van Soedan na een referendum waarin bijna 99 procent voor onafhankelijkheid stemde, na tientallen jaren burgeroorlog." },
+      "fr": { "question": "Quel pays devint indépendant en 2011 et entra aux Nations unies comme membre le plus récent ?", "options": ["Le Kosovo", "Le Timor oriental", "Le Monténégro", "Le Soudan du Sud"], "explanation": "Il se sépara du Soudan après un référendum où près de 99 % votèrent pour l'indépendance, mettant fin à des décennies de guerre civile." },
+      "de": { "question": "Welches Land wurde 2011 unabhängig und trat als jüngstes Mitglied den Vereinten Nationen bei?", "options": ["Kosovo", "Osttimor", "Montenegro", "Südsudan"], "explanation": "Es trennte sich vom Sudan nach einem Referendum, in dem fast 99 Prozent für die Unabhängigkeit stimmten, nach Jahrzehnten des Bürgerkriegs." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which pope resigned in 2013, the first to step down in nearly 600 years?",
+    "options": ["Benedict XVI", "John Paul II", "Francis", "Paul VI"],
+    "correct_answer": 0,
+    "explanation": "He cited his age and failing strength. The last pope to resign before him was Gregory XII, in 1415. Francis was elected to succeed him.",
+    "bron": "Resignation of Benedict XVI, 28 February 2013.",
+    "vertalingen": {
+      "nl": { "question": "Welke paus trad in 2013 af, de eerste in bijna 600 jaar?", "options": ["Benedictus XVI", "Johannes Paulus II", "Franciscus", "Paulus VI"], "explanation": "Hij noemde zijn leeftijd en afnemende krachten. De vorige paus die aftrad was Gregorius XII, in 1415. Franciscus werd tot zijn opvolger gekozen." },
+      "fr": { "question": "Quel pape a renoncé à sa charge en 2013, le premier depuis près de 600 ans ?", "options": ["Benoît XVI", "Jean-Paul II", "François", "Paul VI"], "explanation": "Il invoqua son âge et ses forces déclinantes. Le dernier pape à avoir renoncé avant lui était Grégoire XII, en 1415. François fut élu pour lui succéder." },
+      "de": { "question": "Welcher Papst trat 2013 zurück, als erster seit fast 600 Jahren?", "options": ["Benedikt XVI.", "Johannes Paul II.", "Franziskus", "Paul VI."], "explanation": "Er nannte sein Alter und schwindende Kräfte. Der letzte Papst vor ihm, der zurücktrat, war Gregor XII. im Jahr 1415. Franziskus wurde zu seinem Nachfolger gewählt." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "In which country did the 2004 Orange Revolution take place?",
+    "options": ["Georgia", "Ukraine", "Belarus", "Kyrgyzstan"],
+    "correct_answer": 1,
+    "explanation": "Mass protests in Kyiv against a rigged presidential election forced a re-run of the vote, which the opposition candidate won.",
+    "bron": "Orange Revolution, November 2004 – January 2005.",
+    "vertalingen": {
+      "nl": { "question": "In welk land vond in 2004 de Oranjerevolutie plaats?", "options": ["Georgië", "Oekraïne", "Wit-Rusland", "Kirgizië"], "explanation": "Massale protesten in Kiev tegen vervalste presidentsverkiezingen dwongen een nieuwe stemronde af, die de kandidaat van de oppositie won." },
+      "fr": { "question": "Dans quel pays la révolution orange a-t-elle eu lieu en 2004 ?", "options": ["La Géorgie", "L'Ukraine", "La Biélorussie", "Le Kirghizistan"], "explanation": "Des manifestations massives à Kiev contre une élection présidentielle truquée imposèrent un nouveau scrutin, remporté par le candidat de l'opposition." },
+      "de": { "question": "In welchem Land fand 2004 die Orange Revolution statt?", "options": ["Georgien", "Ukraine", "Belarus", "Kirgisistan"], "explanation": "Massenproteste in Kiew gegen eine gefälschte Präsidentenwahl erzwangen eine Wiederholung, die der Kandidat der Opposition gewann." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "In which year did ten countries, most of them in Central and Eastern Europe, join the European Union at once?",
+    "options": ["1995", "2000", "2004", "2013"],
+    "correct_answer": 2,
+    "explanation": "It was the largest enlargement in the EU's history, bringing in Poland, the Baltic states and others only fifteen years after the fall of the Berlin Wall.",
+    "bron": "EU enlargement, 1 May 2004.",
+    "vertalingen": {
+      "nl": { "question": "In welk jaar traden tien landen, de meeste uit Midden- en Oost-Europa, tegelijk toe tot de Europese Unie?", "options": ["1995", "2000", "2004", "2013"], "explanation": "Het was de grootste uitbreiding in de geschiedenis van de EU, met onder meer Polen en de Baltische staten, slechts vijftien jaar na de val van de Berlijnse Muur." },
+      "fr": { "question": "En quelle année dix pays, pour la plupart d'Europe centrale et orientale, rejoignirent-ils ensemble l'Union européenne ?", "options": ["1995", "2000", "2004", "2013"], "explanation": "Ce fut le plus grand élargissement de l'histoire de l'UE, avec notamment la Pologne et les pays baltes, quinze ans seulement après la chute du mur de Berlin." },
+      "de": { "question": "In welchem Jahr traten zehn Länder, die meisten aus Mittel- und Osteuropa, gleichzeitig der Europäischen Union bei?", "options": ["1995", "2000", "2004", "2013"], "explanation": "Es war die größte Erweiterung der EU-Geschichte, unter anderem mit Polen und den baltischen Staaten, nur fünfzehn Jahre nach dem Fall der Berliner Mauer." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which space telescope, launched in 2021, is the successor to Hubble?",
+    "options": ["Kepler", "Spitzer", "Chandra", "The James Webb Space Telescope"],
+    "correct_answer": 3,
+    "explanation": "It sees in infrared from a point 1.5 million kilometres from Earth, and has photographed galaxies that formed not long after the Big Bang.",
+    "bron": "JWST launched 25 December 2021; orbit around Sun–Earth L2.",
+    "vertalingen": {
+      "nl": { "question": "Welke ruimtetelescoop, gelanceerd in 2021, is de opvolger van Hubble?", "options": ["Kepler", "Spitzer", "Chandra", "De James Webb-ruimtetelescoop"], "explanation": "Hij kijkt in infrarood vanaf een punt 1,5 miljoen kilometer van de aarde, en heeft sterrenstelsels gefotografeerd die niet lang na de oerknal ontstonden." },
+      "fr": { "question": "Quel télescope spatial, lancé en 2021, a succédé à Hubble ?", "options": ["Kepler", "Spitzer", "Chandra", "Le télescope spatial James Webb"], "explanation": "Il observe dans l'infrarouge depuis un point situé à 1,5 million de kilomètres de la Terre, et a photographié des galaxies formées peu après le Big Bang." },
+      "de": { "question": "Welches Weltraumteleskop, 2021 gestartet, ist der Nachfolger von Hubble?", "options": ["Kepler", "Spitzer", "Chandra", "Das James-Webb-Weltraumteleskop"], "explanation": "Es beobachtet im Infrarotbereich von einem Punkt 1,5 Millionen Kilometer von der Erde aus und hat Galaxien fotografiert, die kurz nach dem Urknall entstanden." }
+    }
+  }
+]

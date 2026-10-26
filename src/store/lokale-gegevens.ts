@@ -9,6 +9,7 @@ import { useRecommendationStore } from '@/store/recommendation-store';
 import { useReferralStore } from '@/store/referral-store';
 import { useStoryProgressStore } from '@/store/story-progress-store';
 import { wisAbonnementCache } from '@/store/subscription-store';
+import { useTriviaStore } from '@/store/trivia-store';
 import { useVoortgangStore } from '@/store/voortgang-store';
 import { useWinkelStore } from '@/store/winkel-store';
 
@@ -79,6 +80,19 @@ export function wisLokaleGebruikersgegevens(): void {
   // de wachtrij `teVerzilveren` zou de hoofdstukken van de verwijderde lezer als Dukaten op het
   // volgende account op dit toestel bijschrijven.
   useWinkelStore.getState().reset();
+
+  // Explore (1.5): het lopende spel en de beste score horen bij de lezer, niet bij het toestel.
+  // De levens staan op de server en verdwijnen met het account.
+  useTriviaStore.getState().nieuwSpel();
+  useTriviaStore.getState().nieuwDuel();
+  useTriviaStore.setState({
+    besteScore: 0,
+    gewonnenSpellen: 0,
+    duelsGewonnen: 0,
+    duelsVerloren: 0,
+    kroonTotaal: {},
+    gezien: [],
+  });
 
   // De aanbevelingen zijn afgeleid uit voortgang die hierboven net is gewist, dus ze zeggen niets
   // meer — maar ze zijn wél een lijstje verhaal-id's van de verwijderde lezer, en de samenvoeging

@@ -1,0 +1,262 @@
+[
+  {
+    "moeilijkheid": 1,
+    "question": "In which year did Christopher Columbus first reach the Americas?",
+    "options": ["1492", "1453", "1517", "1588"],
+    "correct_answer": 0,
+    "explanation": "He was looking for a western sea route to Asia and landed in the Bahamas, convinced to the end that he had reached the Indies.",
+    "bron": "First voyage of Columbus, landfall 12 October 1492.",
+    "vertalingen": {
+      "nl": { "question": "In welk jaar bereikte Christoffel Columbus voor het eerst Amerika?", "options": ["1492", "1453", "1517", "1588"], "explanation": "Hij zocht een westelijke zeeroute naar Azië en landde op de Bahama's, tot het einde overtuigd dat hij Indië had bereikt." },
+      "fr": { "question": "En quelle année Christophe Colomb atteignit-il pour la première fois l'Amérique ?", "options": ["1492", "1453", "1517", "1588"], "explanation": "Il cherchait une route maritime vers l'Asie par l'ouest et débarqua aux Bahamas, persuadé jusqu'au bout d'avoir atteint les Indes." },
+      "de": { "question": "In welchem Jahr erreichte Christoph Kolumbus erstmals Amerika?", "options": ["1492", "1453", "1517", "1588"], "explanation": "Er suchte einen westlichen Seeweg nach Asien und landete auf den Bahamas – bis zuletzt überzeugt, Indien erreicht zu haben." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Who painted the ceiling of the Sistine Chapel?",
+    "options": ["Raphael", "Michelangelo", "Leonardo da Vinci", "Botticelli"],
+    "correct_answer": 1,
+    "explanation": "He worked on it from 1508 to 1512, mostly standing on scaffolding and painting upwards. He considered himself a sculptor first.",
+    "bron": "Sistine Chapel ceiling, 1508–1512, commissioned by Pope Julius II.",
+    "vertalingen": {
+      "nl": { "question": "Wie schilderde het plafond van de Sixtijnse Kapel?", "options": ["Rafaël", "Michelangelo", "Leonardo da Vinci", "Botticelli"], "explanation": "Hij werkte er van 1508 tot 1512 aan, meestal staand op een steiger en naar boven schilderend. Zelf zag hij zich in de eerste plaats als beeldhouwer." },
+      "fr": { "question": "Qui a peint le plafond de la chapelle Sixtine ?", "options": ["Raphaël", "Michel-Ange", "Léonard de Vinci", "Botticelli"], "explanation": "Il y travailla de 1508 à 1512, le plus souvent debout sur un échafaudage, en peignant vers le haut. Il se considérait avant tout comme sculpteur." },
+      "de": { "question": "Wer malte die Decke der Sixtinischen Kapelle?", "options": ["Raffael", "Michelangelo", "Leonardo da Vinci", "Botticelli"], "explanation": "Er arbeitete von 1508 bis 1512 daran, meist stehend auf einem Gerüst und nach oben malend. Sich selbst sah er vor allem als Bildhauer." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Who started the Protestant Reformation with his 95 theses in 1517?",
+    "options": ["John Calvin", "Erasmus", "Martin Luther", "Henry VIII"],
+    "correct_answer": 2,
+    "explanation": "The German monk attacked the sale of indulgences. Thanks to the printing press his arguments spread across Germany within weeks.",
+    "bron": "Ninety-five Theses, Wittenberg, 31 October 1517.",
+    "vertalingen": {
+      "nl": { "question": "Wie begon in 1517 met zijn 95 stellingen de protestantse Reformatie?", "options": ["Johannes Calvijn", "Erasmus", "Maarten Luther", "Hendrik VIII"], "explanation": "De Duitse monnik viel de verkoop van aflaten aan. Dankzij de drukpers verspreidden zijn argumenten zich binnen enkele weken door heel Duitsland." },
+      "fr": { "question": "Qui lança la Réforme protestante avec ses 95 thèses en 1517 ?", "options": ["Jean Calvin", "Érasme", "Martin Luther", "Henri VIII"], "explanation": "Le moine allemand s'en prenait au commerce des indulgences. Grâce à l'imprimerie, ses arguments se répandirent dans toute l'Allemagne en quelques semaines." },
+      "de": { "question": "Wer löste 1517 mit seinen 95 Thesen die Reformation aus?", "options": ["Johannes Calvin", "Erasmus", "Martin Luther", "Heinrich VIII."], "explanation": "Der deutsche Mönch griff den Ablasshandel an. Dank des Buchdrucks verbreiteten sich seine Argumente binnen Wochen in ganz Deutschland." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which ship carried the Pilgrims to America in 1620?",
+    "options": ["The Santa María", "The Victoria", "The Golden Hind", "The Mayflower"],
+    "correct_answer": 3,
+    "explanation": "About a hundred passengers, many seeking religious freedom, founded Plymouth Colony in what is now Massachusetts.",
+    "bron": "Mayflower voyage, landing at Plymouth, December 1620.",
+    "vertalingen": {
+      "nl": { "question": "Welk schip bracht de Pilgrims in 1620 naar Amerika?", "options": ["De Santa María", "De Victoria", "De Golden Hind", "De Mayflower"], "explanation": "Ongeveer honderd passagiers, velen op zoek naar godsdienstvrijheid, stichtten de kolonie Plymouth in wat nu Massachusetts is." },
+      "fr": { "question": "Quel navire transporta les Pères pèlerins en Amérique en 1620 ?", "options": ["La Santa María", "La Victoria", "Le Golden Hind", "Le Mayflower"], "explanation": "Une centaine de passagers, nombreux à chercher la liberté religieuse, fondèrent la colonie de Plymouth, dans l'actuel Massachusetts." },
+      "de": { "question": "Welches Schiff brachte die Pilgerväter 1620 nach Amerika?", "options": ["Die Santa María", "Die Victoria", "Die Golden Hind", "Die Mayflower"], "explanation": "Rund hundert Passagiere, viele auf der Suche nach Religionsfreiheit, gründeten die Plymouth-Kolonie im heutigen Massachusetts." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which country's 17th-century Golden Age produced Rembrandt and Vermeer?",
+    "options": ["The Dutch Republic", "Spain", "England", "Portugal"],
+    "correct_answer": 0,
+    "explanation": "Trade made the young republic one of the richest places on earth, and its merchants bought paintings for their own homes, not just for churches.",
+    "bron": "Dutch Golden Age, c. 1588–1672.",
+    "vertalingen": {
+      "nl": { "question": "De Gouden Eeuw van welk land bracht in de 17e eeuw Rembrandt en Vermeer voort?", "options": ["De Republiek der Nederlanden", "Spanje", "Engeland", "Portugal"], "explanation": "Handel maakte de jonge republiek tot een van de rijkste plekken op aarde, en kooplieden kochten schilderijen voor hun eigen huis, niet alleen voor kerken." },
+      "fr": { "question": "Le Siècle d'or de quel pays a produit Rembrandt et Vermeer au XVIIe siècle ?", "options": ["Les Provinces-Unies", "L'Espagne", "L'Angleterre", "Le Portugal"], "explanation": "Le commerce fit de la jeune république l'un des endroits les plus riches du monde, et ses marchands achetaient des tableaux pour leurs maisons, pas seulement pour les églises." },
+      "de": { "question": "Das Goldene Zeitalter welches Landes brachte im 17. Jahrhundert Rembrandt und Vermeer hervor?", "options": ["Die Republik der Vereinigten Niederlande", "Spanien", "England", "Portugal"], "explanation": "Der Handel machte die junge Republik zu einem der reichsten Orte der Welt, und ihre Kaufleute kauften Gemälde für das eigene Haus, nicht nur für Kirchen." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Who wrote Romeo and Juliet and Hamlet?",
+    "options": ["Christopher Marlowe", "William Shakespeare", "Molière", "Miguel de Cervantes"],
+    "correct_answer": 1,
+    "explanation": "He wrote around 37 plays for the London stage at the turn of the 17th century, and many everyday English phrases come from them.",
+    "bron": "Shakespeare's canon, c. 1590–1613.",
+    "vertalingen": {
+      "nl": { "question": "Wie schreef Romeo en Julia en Hamlet?", "options": ["Christopher Marlowe", "William Shakespeare", "Molière", "Miguel de Cervantes"], "explanation": "Rond 1600 schreef hij zo'n 37 toneelstukken voor het Londense theater, en veel alledaagse Engelse uitdrukkingen komen eruit voort." },
+      "fr": { "question": "Qui a écrit Roméo et Juliette et Hamlet ?", "options": ["Christopher Marlowe", "William Shakespeare", "Molière", "Miguel de Cervantès"], "explanation": "Il écrivit une trentaine de pièces pour les théâtres londoniens autour de 1600, et bien des expressions anglaises courantes en viennent." },
+      "de": { "question": "Wer schrieb Romeo und Julia und Hamlet?", "options": ["Christopher Marlowe", "William Shakespeare", "Molière", "Miguel de Cervantes"], "explanation": "Um 1600 schrieb er rund 37 Stücke für die Londoner Bühne, und viele englische Redewendungen stammen daraus." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which French king called himself the Sun King and built the palace of Versailles?",
+    "options": ["Louis XVI", "Henry IV", "Louis XIV", "Francis I"],
+    "correct_answer": 2,
+    "explanation": "He reigned for 72 years, from 1643 to 1715, and kept the nobility close at Versailles so they could not plot against him in the provinces.",
+    "bron": "Reign of Louis XIV, 1643–1715.",
+    "vertalingen": {
+      "nl": { "question": "Welke Franse koning noemde zich de Zonnekoning en bouwde het paleis van Versailles?", "options": ["Lodewijk XVI", "Hendrik IV", "Lodewijk XIV", "Frans I"], "explanation": "Hij regeerde 72 jaar, van 1643 tot 1715, en hield de adel dicht bij zich in Versailles, zodat die in de provincie niet tegen hem kon samenzweren." },
+      "fr": { "question": "Quel roi de France se fit appeler le Roi-Soleil et bâtit le château de Versailles ?", "options": ["Louis XVI", "Henri IV", "Louis XIV", "François Ier"], "explanation": "Il régna 72 ans, de 1643 à 1715, et garda la noblesse près de lui à Versailles pour l'empêcher de comploter en province." },
+      "de": { "question": "Welcher französische König nannte sich Sonnenkönig und baute das Schloss Versailles?", "options": ["Ludwig XVI.", "Heinrich IV.", "Ludwig XIV.", "Franz I."], "explanation": "Er regierte 72 Jahre, von 1643 bis 1715, und hielt den Adel in Versailles in seiner Nähe, damit er in den Provinzen nicht gegen ihn intrigieren konnte." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "In which year did the American colonies declare their independence?",
+    "options": ["1607", "1688", "1789", "1776"],
+    "correct_answer": 3,
+    "explanation": "On 4 July 1776 the Continental Congress adopted the Declaration of Independence, written mainly by Thomas Jefferson.",
+    "bron": "Declaration of Independence, adopted 4 July 1776.",
+    "vertalingen": {
+      "nl": { "question": "In welk jaar verklaarden de Amerikaanse koloniën zich onafhankelijk?", "options": ["1607", "1688", "1789", "1776"], "explanation": "Op 4 juli 1776 nam het Continentaal Congres de Onafhankelijkheidsverklaring aan, grotendeels geschreven door Thomas Jefferson." },
+      "fr": { "question": "En quelle année les colonies américaines proclamèrent-elles leur indépendance ?", "options": ["1607", "1688", "1789", "1776"], "explanation": "Le 4 juillet 1776, le Congrès continental adopta la Déclaration d'indépendance, rédigée surtout par Thomas Jefferson." },
+      "de": { "question": "In welchem Jahr erklärten die amerikanischen Kolonien ihre Unabhängigkeit?", "options": ["1607", "1688", "1789", "1776"], "explanation": "Am 4. Juli 1776 nahm der Kontinentalkongress die Unabhängigkeitserklärung an, die vor allem Thomas Jefferson verfasst hatte." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Whose expedition was the first to sail all the way around the world, in 1519–1522?",
+    "options": ["Ferdinand Magellan's", "Francis Drake's", "James Cook's", "Vasco da Gama's"],
+    "correct_answer": 0,
+    "explanation": "Magellan himself was killed in the Philippines in 1521. Juan Sebastián Elcano brought one ship and eighteen men home to Spain.",
+    "bron": "Magellan–Elcano expedition, 1519–1522.",
+    "vertalingen": {
+      "nl": { "question": "Wiens expeditie voer in 1519–1522 als eerste helemaal rond de wereld?", "options": ["Die van Ferdinand Magellaan", "Die van Francis Drake", "Die van James Cook", "Die van Vasco da Gama"], "explanation": "Magellaan zelf werd in 1521 op de Filipijnen gedood. Juan Sebastián Elcano bracht één schip en achttien man terug naar Spanje." },
+      "fr": { "question": "Quelle expédition fut la première à faire le tour du monde, en 1519–1522 ?", "options": ["Celle de Fernand de Magellan", "Celle de Francis Drake", "Celle de James Cook", "Celle de Vasco de Gama"], "explanation": "Magellan lui-même fut tué aux Philippines en 1521. Juan Sebastián Elcano ramena un navire et dix-huit hommes en Espagne." },
+      "de": { "question": "Wessen Expedition umsegelte 1519–1522 als erste die ganze Welt?", "options": ["Die Ferdinand Magellans", "Die Francis Drakes", "Die James Cooks", "Die Vasco da Gamas"], "explanation": "Magellan selbst wurde 1521 auf den Philippinen getötet. Juan Sebastián Elcano brachte ein Schiff und achtzehn Mann nach Spanien zurück." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Aztec capital did Hernán Cortés conquer in 1521?",
+    "options": ["Cusco", "Tenochtitlan", "Machu Picchu", "Chichén Itzá"],
+    "correct_answer": 1,
+    "explanation": "A city of perhaps 200,000 people built on an island in a lake. Mexico City now stands on its ruins.",
+    "bron": "Fall of Tenochtitlan, 13 August 1521.",
+    "vertalingen": {
+      "nl": { "question": "Welke Azteekse hoofdstad veroverde Hernán Cortés in 1521?", "options": ["Cusco", "Tenochtitlan", "Machu Picchu", "Chichén Itzá"], "explanation": "Een stad van misschien 200.000 inwoners, gebouwd op een eiland in een meer. Mexico-Stad staat nu op de ruïnes." },
+      "fr": { "question": "Quelle capitale aztèque Hernán Cortés conquit-il en 1521 ?", "options": ["Cuzco", "Tenochtitlan", "Machu Picchu", "Chichén Itzá"], "explanation": "Une ville d'environ 200 000 habitants bâtie sur une île au milieu d'un lac. Mexico s'élève aujourd'hui sur ses ruines." },
+      "de": { "question": "Welche Hauptstadt der Azteken eroberte Hernán Cortés 1521?", "options": ["Cusco", "Tenochtitlan", "Machu Picchu", "Chichén Itzá"], "explanation": "Eine Stadt mit vielleicht 200.000 Einwohnern, erbaut auf einer Insel in einem See. Mexiko-Stadt steht heute auf ihren Ruinen." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Who published the laws of motion and universal gravitation in 1687?",
+    "options": ["Galileo Galilei", "Johannes Kepler", "Isaac Newton", "Robert Boyle"],
+    "correct_answer": 2,
+    "explanation": "His Principia showed that the same force that makes an apple fall keeps the Moon in its orbit.",
+    "bron": "Newton, Philosophiæ Naturalis Principia Mathematica (1687).",
+    "vertalingen": {
+      "nl": { "question": "Wie publiceerde in 1687 de bewegingswetten en de wet van de universele zwaartekracht?", "options": ["Galileo Galilei", "Johannes Kepler", "Isaac Newton", "Robert Boyle"], "explanation": "Zijn Principia liet zien dat dezelfde kracht die een appel laat vallen, de maan in haar baan houdt." },
+      "fr": { "question": "Qui publia en 1687 les lois du mouvement et de la gravitation universelle ?", "options": ["Galilée", "Johannes Kepler", "Isaac Newton", "Robert Boyle"], "explanation": "Ses Principia montrèrent que la force qui fait tomber une pomme est la même qui maintient la Lune sur son orbite." },
+      "de": { "question": "Wer veröffentlichte 1687 die Bewegungsgesetze und das Gravitationsgesetz?", "options": ["Galileo Galilei", "Johannes Kepler", "Isaac Newton", "Robert Boyle"], "explanation": "Seine Principia zeigten, dass dieselbe Kraft, die einen Apfel fallen lässt, den Mond auf seiner Bahn hält." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which fleet did England defeat in 1588?",
+    "options": ["The Ottoman fleet", "The French navy", "The Dutch fleet", "The Spanish Armada"],
+    "correct_answer": 3,
+    "explanation": "Philip II sent it to invade England. English fire ships scattered it, and storms wrecked many of the ships on the way home around Scotland and Ireland.",
+    "bron": "Spanish Armada, 1588; Battle of Gravelines.",
+    "vertalingen": {
+      "nl": { "question": "Welke vloot versloeg Engeland in 1588?", "options": ["De Ottomaanse vloot", "De Franse marine", "De Nederlandse vloot", "De Spaanse Armada"], "explanation": "Filips II stuurde haar om Engeland binnen te vallen. Engelse branders dreven haar uiteen, en stormen lieten veel schepen op de terugweg langs Schotland en Ierland vergaan." },
+      "fr": { "question": "Quelle flotte l'Angleterre vainquit-elle en 1588 ?", "options": ["La flotte ottomane", "La marine française", "La flotte hollandaise", "L'Invincible Armada"], "explanation": "Philippe II l'avait envoyée envahir l'Angleterre. Les brûlots anglais la dispersèrent, et les tempêtes coulèrent de nombreux navires sur le chemin du retour, autour de l'Écosse et de l'Irlande." },
+      "de": { "question": "Welche Flotte besiegte England im Jahr 1588?", "options": ["Die osmanische Flotte", "Die französische Marine", "Die niederländische Flotte", "Die spanische Armada"], "explanation": "Philipp II. hatte sie zur Invasion Englands geschickt. Englische Brander zerstreuten sie, und Stürme ließen viele Schiffe auf dem Heimweg um Schottland und Irland sinken." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which treaty of 1494 divided newly discovered lands between Spain and Portugal?",
+    "options": ["The Treaty of Tordesillas", "The Peace of Westphalia", "The Treaty of Utrecht", "The Treaty of Paris"],
+    "correct_answer": 0,
+    "explanation": "A line drawn down the Atlantic gave Portugal the east and Spain the west. It is why Brazil speaks Portuguese.",
+    "bron": "Treaty of Tordesillas, 7 June 1494.",
+    "vertalingen": {
+      "nl": { "question": "Welk verdrag verdeelde in 1494 de nieuw ontdekte gebieden tussen Spanje en Portugal?", "options": ["Het Verdrag van Tordesillas", "De Vrede van Westfalen", "De Vrede van Utrecht", "Het Verdrag van Parijs"], "explanation": "Een lijn door de Atlantische Oceaan gaf Portugal het oosten en Spanje het westen. Daarom spreekt Brazilië Portugees." },
+      "fr": { "question": "Quel traité de 1494 partagea les terres nouvellement découvertes entre l'Espagne et le Portugal ?", "options": ["Le traité de Tordesillas", "Les traités de Westphalie", "Le traité d'Utrecht", "Le traité de Paris"], "explanation": "Une ligne tracée à travers l'Atlantique donna l'est au Portugal et l'ouest à l'Espagne. C'est pourquoi le Brésil parle portugais." },
+      "de": { "question": "Welcher Vertrag teilte 1494 neu entdeckte Länder zwischen Spanien und Portugal auf?", "options": ["Der Vertrag von Tordesillas", "Der Westfälische Friede", "Der Friede von Utrecht", "Der Vertrag von Paris"], "explanation": "Eine Linie durch den Atlantik gab Portugal den Osten und Spanien den Westen. Deshalb spricht man in Brasilien Portugiesisch." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which war, fought from 1618 to 1648, devastated much of Central Europe?",
+    "options": ["The Seven Years' War", "The Thirty Years' War", "The Hundred Years' War", "The War of the Spanish Succession"],
+    "correct_answer": 1,
+    "explanation": "It began as a religious conflict inside the Holy Roman Empire and drew in most of Europe. Parts of Germany lost a third of their people or more.",
+    "bron": "Thirty Years' War, 1618–1648.",
+    "vertalingen": {
+      "nl": { "question": "Welke oorlog, van 1618 tot 1648, verwoestte een groot deel van Midden-Europa?", "options": ["De Zevenjarige Oorlog", "De Dertigjarige Oorlog", "De Honderdjarige Oorlog", "De Spaanse Successieoorlog"], "explanation": "Hij begon als een godsdienstconflict binnen het Heilige Roomse Rijk en trok het grootste deel van Europa erin. Delen van Duitsland verloren een derde van hun bevolking of meer." },
+      "fr": { "question": "Quelle guerre, de 1618 à 1648, dévasta une grande partie de l'Europe centrale ?", "options": ["La guerre de Sept Ans", "La guerre de Trente Ans", "La guerre de Cent Ans", "La guerre de Succession d'Espagne"], "explanation": "Née d'un conflit religieux au sein du Saint-Empire, elle entraîna presque toute l'Europe. Certaines régions d'Allemagne perdirent un tiers de leur population, voire davantage." },
+      "de": { "question": "Welcher Krieg verwüstete von 1618 bis 1648 große Teile Mitteleuropas?", "options": ["Der Siebenjährige Krieg", "Der Dreißigjährige Krieg", "Der Hundertjährige Krieg", "Der Spanische Erbfolgekrieg"], "explanation": "Er begann als Religionskonflikt im Heiligen Römischen Reich und zog fast ganz Europa hinein. Teile Deutschlands verloren ein Drittel ihrer Bevölkerung oder mehr." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which event of 14 July 1789 is seen as the start of the French Revolution?",
+    "options": ["The execution of Louis XVI", "The Reign of Terror", "The storming of the Bastille", "Napoleon's seizure of power"],
+    "correct_answer": 2,
+    "explanation": "A Paris crowd took the royal fortress-prison to seize gunpowder. It held only seven prisoners, but its fall became the symbol of the old order collapsing.",
+    "bron": "Storming of the Bastille, 14 July 1789.",
+    "vertalingen": {
+      "nl": { "question": "Welke gebeurtenis van 14 juli 1789 geldt als het begin van de Franse Revolutie?", "options": ["De terechtstelling van Lodewijk XVI", "De Terreur", "De bestorming van de Bastille", "De machtsgreep van Napoleon"], "explanation": "Een Parijse menigte nam de koninklijke vesting-gevangenis in om buskruit te halen. Er zaten maar zeven gevangenen, maar de val ervan werd het symbool van de ineenstorting van de oude orde." },
+      "fr": { "question": "Quel événement du 14 juillet 1789 est considéré comme le début de la Révolution française ?", "options": ["L'exécution de Louis XVI", "La Terreur", "La prise de la Bastille", "La prise de pouvoir de Napoléon"], "explanation": "La foule parisienne prit la forteresse-prison royale pour s'emparer de poudre. Elle ne comptait que sept prisonniers, mais sa chute devint le symbole de l'effondrement de l'Ancien Régime." },
+      "de": { "question": "Welches Ereignis vom 14. Juli 1789 gilt als Beginn der Französischen Revolution?", "options": ["Die Hinrichtung Ludwigs XVI.", "Die Schreckensherrschaft", "Der Sturm auf die Bastille", "Napoleons Machtergreifung"], "explanation": "Eine Pariser Menge stürmte die königliche Festung, um Schießpulver zu erbeuten. Sie hielt nur sieben Gefangene, doch ihr Fall wurde zum Symbol für den Zusammenbruch der alten Ordnung." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Mughal emperor built the Taj Mahal as a tomb for his wife?",
+    "options": ["Akbar", "Babur", "Aurangzeb", "Shah Jahan"],
+    "correct_answer": 3,
+    "explanation": "Mumtaz Mahal died in 1631. Thousands of craftsmen worked for more than twenty years on the white marble mausoleum at Agra.",
+    "bron": "Taj Mahal, Agra, begun 1632.",
+    "vertalingen": {
+      "nl": { "question": "Welke Mogolkeizer liet de Taj Mahal bouwen als graf voor zijn vrouw?", "options": ["Akbar", "Babur", "Aurangzeb", "Shah Jahan"], "explanation": "Mumtaz Mahal stierf in 1631. Duizenden ambachtslieden werkten meer dan twintig jaar aan het witmarmeren mausoleum in Agra." },
+      "fr": { "question": "Quel empereur moghol fit construire le Taj Mahal comme tombeau pour son épouse ?", "options": ["Akbar", "Babur", "Aurangzeb", "Shah Jahan"], "explanation": "Mumtaz Mahal mourut en 1631. Des milliers d'artisans travaillèrent plus de vingt ans à ce mausolée de marbre blanc à Agra." },
+      "de": { "question": "Welcher Mogulkaiser ließ das Taj Mahal als Grabmal für seine Frau errichten?", "options": ["Akbar", "Babur", "Aurangzeb", "Shah Jahan"], "explanation": "Mumtaz Mahal starb 1631. Tausende Handwerker arbeiteten über zwanzig Jahre an dem Mausoleum aus weißem Marmor in Agra." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which peace treaties of 1648 ended the Thirty Years' War and recognised Dutch independence?",
+    "options": ["The Peace of Westphalia", "The Peace of Augsburg", "The Treaty of Utrecht", "The Treaty of Nijmegen"],
+    "correct_answer": 0,
+    "explanation": "Signed at Münster and Osnabrück, they also ended the Eighty Years' War between Spain and the Dutch, and shaped the idea of sovereign states.",
+    "bron": "Peace of Westphalia (Münster and Osnabrück), 1648.",
+    "vertalingen": {
+      "nl": { "question": "Welke vredesverdragen van 1648 beëindigden de Dertigjarige Oorlog en erkenden de Nederlandse onafhankelijkheid?", "options": ["De Vrede van Westfalen", "De Godsdienstvrede van Augsburg", "De Vrede van Utrecht", "De Vrede van Nijmegen"], "explanation": "Ze werden getekend in Münster en Osnabrück, beëindigden ook de Tachtigjarige Oorlog tussen Spanje en de Nederlanden, en vormden het idee van soevereine staten." },
+      "fr": { "question": "Quels traités de paix de 1648 mirent fin à la guerre de Trente Ans et reconnurent l'indépendance néerlandaise ?", "options": ["Les traités de Westphalie", "La paix d'Augsbourg", "Le traité d'Utrecht", "Le traité de Nimègue"], "explanation": "Signés à Münster et Osnabrück, ils mirent aussi fin à la guerre de Quatre-Vingts Ans entre l'Espagne et les Provinces-Unies, et façonnèrent l'idée d'États souverains." },
+      "de": { "question": "Welche Friedensverträge von 1648 beendeten den Dreißigjährigen Krieg und erkannten die niederländische Unabhängigkeit an?", "options": ["Der Westfälische Friede", "Der Augsburger Religionsfriede", "Der Friede von Utrecht", "Der Friede von Nimwegen"], "explanation": "In Münster und Osnabrück unterzeichnet, beendeten sie auch den Achtzigjährigen Krieg zwischen Spanien und den Niederlanden und prägten die Idee souveräner Staaten." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Who wrote The Prince, a ruthless guide to winning and keeping power, in 1513?",
+    "options": ["Thomas More", "Niccolò Machiavelli", "Erasmus", "Thomas Hobbes"],
+    "correct_answer": 1,
+    "explanation": "The Florentine diplomat argued that a ruler must be ready to act immorally when needed. His name became a word for cunning politics.",
+    "bron": "Machiavelli, Il Principe (written 1513, published 1532).",
+    "vertalingen": {
+      "nl": { "question": "Wie schreef in 1513 De vorst, een meedogenloze handleiding voor het winnen en houden van macht?", "options": ["Thomas More", "Niccolò Machiavelli", "Erasmus", "Thomas Hobbes"], "explanation": "De Florentijnse diplomaat betoogde dat een heerser zo nodig bereid moet zijn immoreel te handelen. Zijn naam werd een woord voor sluwe politiek." },
+      "fr": { "question": "Qui écrivit Le Prince, un guide impitoyable pour conquérir et garder le pouvoir, en 1513 ?", "options": ["Thomas More", "Nicolas Machiavel", "Érasme", "Thomas Hobbes"], "explanation": "Le diplomate florentin soutenait qu'un souverain doit être prêt à agir de façon immorale si nécessaire. Son nom devint synonyme de politique rusée." },
+      "de": { "question": "Wer schrieb 1513 Der Fürst, eine rücksichtslose Anleitung zum Erringen und Halten der Macht?", "options": ["Thomas Morus", "Niccolò Machiavelli", "Erasmus", "Thomas Hobbes"], "explanation": "Der Florentiner Diplomat vertrat, ein Herrscher müsse notfalls bereit sein, unmoralisch zu handeln. Sein Name wurde zum Begriff für gerissene Politik." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which Inca ruler was captured by Francisco Pizarro in 1532?",
+    "options": ["Moctezuma", "Pachacuti", "Atahualpa", "Manco Cápac"],
+    "correct_answer": 2,
+    "explanation": "He filled a room with gold as ransom and was executed anyway, in 1533. Moctezuma was the Aztec ruler Cortés had faced in Mexico.",
+    "bron": "Capture of Atahualpa at Cajamarca, 16 November 1532.",
+    "vertalingen": {
+      "nl": { "question": "Welke Inca-heerser werd in 1532 gevangengenomen door Francisco Pizarro?", "options": ["Moctezuma", "Pachacuti", "Atahualpa", "Manco Cápac"], "explanation": "Hij vulde een kamer met goud als losgeld en werd in 1533 toch terechtgesteld. Moctezuma was de Azteekse heerser tegenover wie Cortés in Mexico stond." },
+      "fr": { "question": "Quel souverain inca fut capturé par Francisco Pizarro en 1532 ?", "options": ["Moctezuma", "Pachacutec", "Atahualpa", "Manco Cápac"], "explanation": "Il remplit une salle d'or pour sa rançon et fut pourtant exécuté en 1533. Moctezuma était le souverain aztèque que Cortés avait affronté au Mexique." },
+      "de": { "question": "Welcher Inka-Herrscher wurde 1532 von Francisco Pizarro gefangen genommen?", "options": ["Moctezuma", "Pachacútec", "Atahualpa", "Manco Cápac"], "explanation": "Er füllte als Lösegeld einen Raum mit Gold und wurde 1533 trotzdem hingerichtet. Moctezuma war der Aztekenherrscher, dem Cortés in Mexiko gegenüberstand." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which Portuguese navigator was the first to sail from Europe to India around Africa, in 1498?",
+    "options": ["Bartolomeu Dias", "Pedro Álvares Cabral", "Henry the Navigator", "Vasco da Gama"],
+    "correct_answer": 3,
+    "explanation": "He reached Calicut on India's west coast. Dias had rounded the Cape of Good Hope ten years earlier but turned back; Henry the Navigator never sailed these voyages himself.",
+    "bron": "Vasco da Gama reaches Calicut, May 1498; Dias rounds the Cape, 1488.",
+    "vertalingen": {
+      "nl": { "question": "Welke Portugese zeevaarder voer in 1498 als eerste van Europa om Afrika heen naar India?", "options": ["Bartolomeu Dias", "Pedro Álvares Cabral", "Hendrik de Zeevaarder", "Vasco da Gama"], "explanation": "Hij bereikte Calicut aan de westkust van India. Dias had tien jaar eerder Kaap de Goede Hoop gerond maar keerde om; Hendrik de Zeevaarder voer zelf nooit mee." },
+      "fr": { "question": "Quel navigateur portugais fut le premier à relier l'Europe à l'Inde en contournant l'Afrique, en 1498 ?", "options": ["Bartolomeu Dias", "Pedro Álvares Cabral", "Henri le Navigateur", "Vasco de Gama"], "explanation": "Il atteignit Calicut, sur la côte ouest de l'Inde. Dias avait doublé le cap de Bonne-Espérance dix ans plus tôt mais avait fait demi-tour ; Henri le Navigateur ne prit jamais la mer lui-même." },
+      "de": { "question": "Welcher portugiesische Seefahrer segelte 1498 als Erster von Europa um Afrika herum nach Indien?", "options": ["Bartolomeu Dias", "Pedro Álvares Cabral", "Heinrich der Seefahrer", "Vasco da Gama"], "explanation": "Er erreichte Calicut an der Westküste Indiens. Dias hatte zehn Jahre zuvor das Kap der Guten Hoffnung umrundet, war aber umgekehrt; Heinrich der Seefahrer fuhr selbst nie mit." }
+    }
+  }
+]

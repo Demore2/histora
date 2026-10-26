@@ -18,8 +18,14 @@ const en = {
     name: 'Histora',
     description: 'Learn history through interactive stories',
   },
+  /**
+   * **De tabnamen zijn in elke taal Engels** (keuze van de eigenaar, 2026-10-26): nl/fr/de
+   * vertalen deze sectie bewust niet, zodat ze via `diepeMerge` op dit Engels terugvallen. Voeg
+   * hier dus geen vertaling aan toe in de andere talen.
+   */
   tabs: {
     ontdek: 'Home',
+    explore: 'Explore',
     voortgang: 'Progress',
     profiel: 'Profile',
     winkel: 'Shop',
@@ -62,6 +68,7 @@ const en = {
     leegTekst: 'Nothing left to suggest — finish one you started, or read a favourite again.',
   },
   voortgang: {
+    /** Net als de tabnamen in elke taal Engels: nl/fr/de vertalen hem bewust niet. */
     titel: 'Progress',
     streak: (n: number) => (n === 1 ? `${n} day streak` : `${n} days streak`),
     streakBeschrijving: 'Finish a chapter every day to keep your streak going.',
@@ -73,6 +80,10 @@ const en = {
     storiesCompleted: 'stories completed',
     perTijdperk: 'By era',
     byEra: 'By Era',
+    kroontjes: 'Crowns',
+    kroontjesLabel: (n: number): string => `${n} crowns won in Explore. Open Explore.`,
+    kroontjesTekst: (n: number): string => (n === 1 ? '1 crown won in Explore' : `${n} crowns won in Explore`),
+    kroontjesLeeg: 'Win crowns in Explore: every three right answers earn a crown question.',
     aantalVerhalen: (gelezen: number, totaal: number) => `${gelezen}/${totaal} stories`,
     storiesOfEra: (completed: number, total: number) => `${completed} of ${total} stories`,
     noMoreStories: 'All stories explored! View all via Discover more.',
@@ -94,6 +105,7 @@ const en = {
     eraPercentage: (procent: number): string => `${procent}%`,
   },
   profiel: {
+    /** Net als de tabnamen in elke taal Engels: nl/fr/de vertalen hem bewust niet. */
     titel: 'Profile',
     characterCollection: 'Character Collection',
     // Functies, geen strings: het getal staat als los `display`-cijfer boven het label, dus
@@ -821,6 +833,51 @@ const en = {
     phoxyVraag: "Here's one for you!",
     phoxyGoed: ['Great job!', 'Spot on!', 'You really know your history!'],
     phoxyFout: ["So close! Next time you've got it.", 'Good try. Now you know!', 'History is tricky. Keep going!'],
+  },
+  /** Explore: trivia met het draaiwiel (1.5). */
+  explore: {
+    modusSolo: 'Solo',
+    modusDuel: 'vs Robot',
+    jij: 'You',
+    robot: 'Robot',
+    duelStand: (gewonnen: number, verloren: number): string => `Duels won ${gewonnen} · lost ${verloren}`,
+    duelUitleg: (n: number): string =>
+      `Take turns with the robot. Every ${n} right answers earn a crown question; a wrong answer passes the turn. First to six crowns wins.`,
+    naarRobot: "Not quite. Now it's the robot's turn!",
+    robotBeurtTitel: "The robot's turn",
+    robotKijk: 'Watch the robot play',
+    robotKroonvraag: (tijdperk: string): string => `Crown question · ${tijdperk}`,
+    robotKroonGewonnen: (n: number): string => (n === 1 ? 'The robot won a crown.' : `The robot won ${n} crowns.`),
+    robotGeenKroon: 'No crown for the robot this turn.',
+    jouwBeurt: 'Your turn',
+    duelGewonnenTitel: 'You beat the robot!',
+    duelVerlorenTitel: 'The robot won this time',
+    nieuwDuel: 'New duel',
+    draai: 'Spin',
+    uitleg: (n: number): string =>
+      `Spin the wheel and answer a question from that era. Every ${n} right answers earn a crown question. Collect all six crowns.`,
+    score: (n: number): string => `Score ${n}`,
+    meterLabel: (n: number, max: number): string => `Crown meter: ${n} of ${max}`,
+    kroontjesLabel: (n: number): string => `${n} of 6 crowns`,
+    levensLabel: (n: number, max: number): string => `${n} of ${max} lives`,
+    duur: (uren: number, minuten: number): string => (uren > 0 ? `${uren}h ${minuten}m` : `${minuten}m`),
+    volgendLeven: (tijd: string): string => `Next life in ${tijd}`,
+    onbeperkt: 'Unlimited lives with Pro',
+    geenLevensTitel: 'Out of lives',
+    geenLevensTekst: (tijd: string): string => `Your next life arrives in ${tijd}. Why not read a chapter in the meantime?`,
+    proKnop: 'Play without limits with Pro',
+    kroonKlaarTitel: 'Crown question!',
+    kroonKlaarTekst: 'Choose an era. Answer correctly and its crown is yours.',
+    kroonvraagKop: (tijdperk: string): string => `Crown question · ${tijdperk}`,
+    kroonGewonnen: (tijdperk: string): string => `The ${tijdperk} crown is yours!`,
+    verder: 'Continue',
+    laden: (tijdperk: string): string => `Finding a question from the ${tijdperk}…`,
+    trekMislukt: "Couldn't fetch a question. Check your connection.",
+    antwoordMislukt: "Your answer didn't reach us. Please pick again.",
+    opnieuw: 'Try again',
+    gewonnenTitel: 'All six crowns!',
+    gewonnenTekst: (score: number, beste: number): string => `You scored ${score}. Your best: ${beste}.`,
+    nieuwSpel: 'New game',
   },
   personage: {
     ontgrendeldTitel: 'Character Unlocked!',

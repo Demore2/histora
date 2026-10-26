@@ -1,0 +1,327 @@
+[
+  {
+    "moeilijkheid": 1,
+    "question": "Which video platform was founded in 2005 and bought by Google a year later?",
+    "options": ["YouTube", "Netflix", "Vimeo", "Twitch"],
+    "correct_answer": 0,
+    "explanation": "The first video ever uploaded, \"Me at the zoo\", lasted 19 seconds. Google paid 1.65 billion dollars for the site in 2006.",
+    "bron": "YouTube founded February 2005; acquired by Google November 2006.",
+    "vertalingen": {
+      "nl": { "question": "Welk videoplatform werd in 2005 opgericht en een jaar later door Google gekocht?", "options": ["YouTube", "Netflix", "Vimeo", "Twitch"], "explanation": "De allereerste geüploade video, \"Me at the zoo\", duurde 19 seconden. Google betaalde in 2006 1,65 miljard dollar voor de site." },
+      "fr": { "question": "Quelle plateforme vidéo fut fondée en 2005 et rachetée par Google un an plus tard ?", "options": ["YouTube", "Netflix", "Vimeo", "Twitch"], "explanation": "La toute première vidéo mise en ligne, « Me at the zoo », durait 19 secondes. Google paya 1,65 milliard de dollars pour le site en 2006." },
+      "de": { "question": "Welche Videoplattform wurde 2005 gegründet und ein Jahr später von Google gekauft?", "options": ["YouTube", "Netflix", "Vimeo", "Twitch"], "explanation": "Das allererste hochgeladene Video, „Me at the zoo“, dauerte 19 Sekunden. Google zahlte 2006 1,65 Milliarden Dollar für die Seite." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which company did Larry Page and Sergey Brin found in 1998?",
+    "options": ["Yahoo", "Google", "Amazon", "Microsoft"],
+    "correct_answer": 1,
+    "explanation": "It began as a research project at Stanford University and ran from a rented garage. Its name is a play on \"googol\", the number 1 followed by 100 zeros.",
+    "bron": "Google incorporated September 1998.",
+    "vertalingen": {
+      "nl": { "question": "Welk bedrijf richtten Larry Page en Sergey Brin in 1998 op?", "options": ["Yahoo", "Google", "Amazon", "Microsoft"], "explanation": "Het begon als onderzoeksproject aan Stanford en draaide vanuit een gehuurde garage. De naam is een woordspel op \"googol\": een 1 met 100 nullen." },
+      "fr": { "question": "Quelle entreprise Larry Page et Sergey Brin fondèrent-ils en 1998 ?", "options": ["Yahoo", "Google", "Amazon", "Microsoft"], "explanation": "Elle naquit d'un projet de recherche à l'université Stanford et démarra dans un garage loué. Son nom joue sur « googol », un 1 suivi de 100 zéros." },
+      "de": { "question": "Welches Unternehmen gründeten Larry Page und Sergey Brin 1998?", "options": ["Yahoo", "Google", "Amazon", "Microsoft"], "explanation": "Es begann als Forschungsprojekt an der Stanford University und lief aus einer gemieteten Garage. Der Name spielt auf „Googol“ an, eine 1 mit 100 Nullen." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which country hosted the Summer Olympic Games of 2008?",
+    "options": ["Japan", "Greece", "China", "Britain"],
+    "correct_answer": 2,
+    "explanation": "The games in Beijing opened on 8-8-08 at 8 pm, as eight is a lucky number in China. Swimmer Michael Phelps won a record eight gold medals.",
+    "bron": "Beijing 2008 Olympic Games, opened 8 August 2008.",
+    "vertalingen": {
+      "nl": { "question": "Welk land organiseerde de Olympische Zomerspelen van 2008?", "options": ["Japan", "Griekenland", "China", "Groot-Brittannië"], "explanation": "De Spelen in Peking openden op 8-8-08 om 20.00 uur, want acht is in China een geluksgetal. Zwemmer Michael Phelps won een record van acht gouden medailles." },
+      "fr": { "question": "Quel pays accueillit les Jeux olympiques d'été de 2008 ?", "options": ["Le Japon", "La Grèce", "La Chine", "La Grande-Bretagne"], "explanation": "Les Jeux de Pékin s'ouvrirent le 8-8-08 à 20 heures, car le huit porte bonheur en Chine. Le nageur Michael Phelps y remporta un record de huit médailles d'or." },
+      "de": { "question": "Welches Land richtete die Olympischen Sommerspiele 2008 aus?", "options": ["Japan", "Griechenland", "China", "Großbritannien"], "explanation": "Die Spiele in Peking begannen am 8.8.08 um 20 Uhr, denn die Acht ist in China eine Glückszahl. Schwimmer Michael Phelps gewann einen Rekord von acht Goldmedaillen." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which princess died in a car crash in Paris in 1997?",
+    "options": ["Princess Grace", "Princess Margaret", "Princess Anne", "Princess Diana"],
+    "correct_answer": 3,
+    "explanation": "Her funeral was watched by an estimated 2.5 billion people worldwide. Elton John sang a new version of \"Candle in the Wind\" for her.",
+    "bron": "Death of Diana, Princess of Wales, 31 August 1997.",
+    "vertalingen": {
+      "nl": { "question": "Welke prinses kwam in 1997 om bij een auto-ongeluk in Parijs?", "options": ["Prinses Grace", "Prinses Margaret", "Prinses Anne", "Prinses Diana"], "explanation": "Naar schatting 2,5 miljard mensen wereldwijd keken naar haar uitvaart. Elton John zong er een nieuwe versie van \"Candle in the Wind\"." },
+      "fr": { "question": "Quelle princesse mourut dans un accident de voiture à Paris en 1997 ?", "options": ["La princesse Grace", "La princesse Margaret", "La princesse Anne", "La princesse Diana"], "explanation": "Ses funérailles furent suivies par environ 2,5 milliards de personnes dans le monde. Elton John y chanta une nouvelle version de « Candle in the Wind »." },
+      "de": { "question": "Welche Prinzessin starb 1997 bei einem Autounfall in Paris?", "options": ["Fürstin Gracia", "Prinzessin Margaret", "Prinzessin Anne", "Prinzessin Diana"], "explanation": "Ihre Beerdigung sahen schätzungsweise 2,5 Milliarden Menschen weltweit. Elton John sang eine neue Version von „Candle in the Wind“." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which company did Jeff Bezos start in 1994 as an online bookshop?",
+    "options": ["Amazon", "eBay", "Alibaba", "PayPal"],
+    "correct_answer": 0,
+    "explanation": "He began in his garage near Seattle. He named it after the world's largest river, hoping it would become the largest shop.",
+    "bron": "Amazon founded July 1994, launched 1995.",
+    "vertalingen": {
+      "nl": { "question": "Welk bedrijf begon Jeff Bezos in 1994 als online boekwinkel?", "options": ["Amazon", "eBay", "Alibaba", "PayPal"], "explanation": "Hij begon in zijn garage bij Seattle. Hij vernoemde het naar de grootste rivier ter wereld, in de hoop dat het de grootste winkel zou worden." },
+      "fr": { "question": "Quelle entreprise Jeff Bezos lança-t-il en 1994 comme librairie en ligne ?", "options": ["Amazon", "eBay", "Alibaba", "PayPal"], "explanation": "Il démarra dans son garage près de Seattle. Il la baptisa du nom du plus grand fleuve du monde, espérant en faire le plus grand magasin." },
+      "de": { "question": "Welches Unternehmen startete Jeff Bezos 1994 als Online-Buchhandlung?", "options": ["Amazon", "eBay", "Alibaba", "PayPal"], "explanation": "Er begann in seiner Garage bei Seattle. Er benannte es nach dem größten Fluss der Welt, in der Hoffnung, es werde der größte Laden." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which former planet was reclassified as a dwarf planet in 2006?",
+    "options": ["Mercury", "Pluto", "Neptune", "Ceres"],
+    "correct_answer": 1,
+    "explanation": "Astronomers had found other icy worlds of a similar size beyond Neptune. Since then the solar system officially has eight planets.",
+    "bron": "IAU General Assembly, Prague, 24 August 2006.",
+    "vertalingen": {
+      "nl": { "question": "Welke voormalige planeet werd in 2006 een dwergplaneet?", "options": ["Mercurius", "Pluto", "Neptunus", "Ceres"], "explanation": "Sterrenkundigen hadden voorbij Neptunus andere ijswereldjes van vergelijkbare grootte gevonden. Sindsdien heeft het zonnestelsel officieel acht planeten." },
+      "fr": { "question": "Quelle ancienne planète fut reclassée planète naine en 2006 ?", "options": ["Mercure", "Pluton", "Neptune", "Cérès"], "explanation": "Les astronomes avaient découvert au-delà de Neptune d'autres mondes glacés de taille comparable. Depuis, le système solaire compte officiellement huit planètes." },
+      "de": { "question": "Welcher frühere Planet wurde 2006 zum Zwergplaneten erklärt?", "options": ["Merkur", "Pluto", "Neptun", "Ceres"], "explanation": "Astronomen hatten jenseits des Neptun weitere eisige Welten ähnlicher Größe entdeckt. Seitdem hat das Sonnensystem offiziell acht Planeten." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "What opened in 1994 to link Britain and France by rail?",
+    "options": ["The Øresund Bridge", "The Great Belt Bridge", "The Channel Tunnel", "The Gotthard Base Tunnel"],
+    "correct_answer": 2,
+    "explanation": "At about 50 kilometres it has the longest undersea section of any tunnel in the world. Eurostar trains run from London to Paris in under two and a half hours.",
+    "bron": "Channel Tunnel, opened 6 May 1994.",
+    "vertalingen": {
+      "nl": { "question": "Wat werd in 1994 geopend om Groot-Brittannië en Frankrijk per spoor te verbinden?", "options": ["De Sontbrug", "De Grote Beltbrug", "De Kanaaltunnel", "De Gotthard-basistunnel"], "explanation": "Met zo'n 50 kilometer heeft hij het langste onderzeese deel van alle tunnels ter wereld. Eurostar-treinen rijden in minder dan tweeënhalf uur van Londen naar Parijs." },
+      "fr": { "question": "Qu'est-ce qui fut inauguré en 1994 pour relier la Grande-Bretagne et la France par le rail ?", "options": ["Le pont de l'Øresund", "Le pont du Grand Belt", "Le tunnel sous la Manche", "Le tunnel de base du Saint-Gothard"], "explanation": "Avec une cinquantaine de kilomètres, il possède la plus longue section sous-marine de tous les tunnels du monde. L'Eurostar relie Londres à Paris en moins de deux heures et demie." },
+      "de": { "question": "Was wurde 1994 eröffnet, um Großbritannien und Frankreich per Bahn zu verbinden?", "options": ["Die Öresundbrücke", "Die Storebæltbrücke", "Der Eurotunnel", "Der Gotthard-Basistunnel"], "explanation": "Mit rund 50 Kilometern hat er den längsten Unterwasserabschnitt aller Tunnel der Welt. Eurostar-Züge fahren in unter zweieinhalb Stunden von London nach Paris." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which electric car company, led by Elon Musk, launched its Model S in 2012?",
+    "options": ["Rivian", "BYD", "Nissan", "Tesla"],
+    "correct_answer": 3,
+    "explanation": "The company is named after the inventor Nikola Tesla. The Model S showed that an electric car could be fast and travel hundreds of kilometres on one charge.",
+    "bron": "Tesla Model S deliveries began June 2012.",
+    "vertalingen": {
+      "nl": { "question": "Welk elektrisch automerk, onder leiding van Elon Musk, bracht in 2012 de Model S uit?", "options": ["Rivian", "BYD", "Nissan", "Tesla"], "explanation": "Het bedrijf is vernoemd naar uitvinder Nikola Tesla. De Model S liet zien dat een elektrische auto snel kon zijn en honderden kilometers op één lading kon rijden." },
+      "fr": { "question": "Quelle marque de voitures électriques, dirigée par Elon Musk, lança sa Model S en 2012 ?", "options": ["Rivian", "BYD", "Nissan", "Tesla"], "explanation": "L'entreprise porte le nom de l'inventeur Nikola Tesla. La Model S montra qu'une voiture électrique pouvait être rapide et parcourir des centaines de kilomètres avec une charge." },
+      "de": { "question": "Welche Elektroautofirma unter Elon Musk brachte 2012 ihr Model S heraus?", "options": ["Rivian", "BYD", "Nissan", "Tesla"], "explanation": "Das Unternehmen ist nach dem Erfinder Nikola Tesla benannt. Das Model S zeigte, dass ein Elektroauto schnell sein und mit einer Ladung Hunderte Kilometer fahren kann." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which messaging app did Facebook buy in 2014 for about 19 billion dollars?",
+    "options": ["WhatsApp", "Telegram", "Snapchat", "Skype"],
+    "correct_answer": 0,
+    "explanation": "It was then the largest purchase ever of a company backed by venture capital. At the time, the app had about 450 million users and only around 55 employees.",
+    "bron": "Facebook acquisition of WhatsApp, announced 19 February 2014.",
+    "vertalingen": {
+      "nl": { "question": "Welke berichtenapp kocht Facebook in 2014 voor zo'n 19 miljard dollar?", "options": ["WhatsApp", "Telegram", "Snapchat", "Skype"], "explanation": "Het was destijds de grootste overname ooit van een door durfkapitaal gesteund bedrijf. De app had toen zo'n 450 miljoen gebruikers en maar ongeveer 55 werknemers." },
+      "fr": { "question": "Quelle application de messagerie Facebook racheta-t-il en 2014 pour environ 19 milliards de dollars ?", "options": ["WhatsApp", "Telegram", "Snapchat", "Skype"], "explanation": "C'était alors le plus gros rachat jamais réalisé d'une entreprise financée par du capital-risque. L'application comptait quelque 450 millions d'utilisateurs pour environ 55 employés." },
+      "de": { "question": "Welche Messenger-App kaufte Facebook 2014 für rund 19 Milliarden Dollar?", "options": ["WhatsApp", "Telegram", "Snapchat", "Skype"], "explanation": "Es war damals der größte Kauf eines wagniskapitalfinanzierten Unternehmens. Die App hatte rund 450 Millionen Nutzer und nur etwa 55 Mitarbeiter." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which country split peacefully into two independent states on 1 January 1993?",
+    "options": ["Yugoslavia", "Czechoslovakia", "The Soviet Union", "Sudan"],
+    "correct_answer": 1,
+    "explanation": "It became the Czech Republic and Slovakia without a shot being fired, which is why it is called the \"Velvet Divorce\".",
+    "bron": "Dissolution of Czechoslovakia, 1 January 1993.",
+    "vertalingen": {
+      "nl": { "question": "Welk land splitste zich op 1 januari 1993 vreedzaam in twee onafhankelijke staten?", "options": ["Joegoslavië", "Tsjecho-Slowakije", "De Sovjet-Unie", "Soedan"], "explanation": "Het werd Tsjechië en Slowakije zonder dat er één schot viel. Daarom heet het de \"Fluwelen Scheiding\"." },
+      "fr": { "question": "Quel pays se scinda pacifiquement en deux États indépendants le 1er janvier 1993 ?", "options": ["La Yougoslavie", "La Tchécoslovaquie", "L'Union soviétique", "Le Soudan"], "explanation": "Il devint la Tchéquie et la Slovaquie sans qu'un coup de feu ne soit tiré, d'où le nom de « divorce de velours »." },
+      "de": { "question": "Welches Land teilte sich am 1. Januar 1993 friedlich in zwei unabhängige Staaten?", "options": ["Jugoslawien", "Die Tschechoslowakei", "Die Sowjetunion", "Sudan"], "explanation": "Es wurde ohne einen einzigen Schuss zu Tschechien und der Slowakei – deshalb spricht man von der „samtenen Scheidung“." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which city endured the longest siege of a capital in modern warfare, from 1992 to 1996?",
+    "options": ["Belgrade", "Zagreb", "Sarajevo", "Mostar"],
+    "correct_answer": 2,
+    "explanation": "The capital of Bosnia and Herzegovina was surrounded for almost four years. Residents ran across \"Sniper Alley\" to fetch water and food.",
+    "bron": "Siege of Sarajevo, April 1992 – February 1996.",
+    "vertalingen": {
+      "nl": { "question": "Welke stad doorstond van 1992 tot 1996 het langste beleg van een hoofdstad in de moderne oorlogvoering?", "options": ["Belgrado", "Zagreb", "Sarajevo", "Mostar"], "explanation": "De hoofdstad van Bosnië en Herzegovina was bijna vier jaar omsingeld. Inwoners renden over de \"Sniper Alley\" om water en eten te halen." },
+      "fr": { "question": "Quelle ville subit, de 1992 à 1996, le plus long siège d'une capitale de la guerre moderne ?", "options": ["Belgrade", "Zagreb", "Sarajevo", "Mostar"], "explanation": "La capitale de la Bosnie-Herzégovine fut encerclée pendant près de quatre ans. Les habitants traversaient en courant « Sniper Alley » pour aller chercher eau et nourriture." },
+      "de": { "question": "Welche Stadt erlebte von 1992 bis 1996 die längste Belagerung einer Hauptstadt in der modernen Kriegsführung?", "options": ["Belgrad", "Zagreb", "Sarajevo", "Mostar"], "explanation": "Die Hauptstadt von Bosnien und Herzegowina war fast vier Jahre eingeschlossen. Bewohner rannten über die „Sniper Alley“, um Wasser und Essen zu holen." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "In which country did a genocide in 1994 kill around 800,000 people in about 100 days?",
+    "options": ["Burundi", "Congo", "Uganda", "Rwanda"],
+    "correct_answer": 3,
+    "explanation": "Extremists of the Hutu majority murdered Tutsi and moderate Hutu. A small UN force was present but was not allowed to intervene.",
+    "bron": "Rwandan genocide, April–July 1994.",
+    "vertalingen": {
+      "nl": { "question": "In welk land werden bij een genocide in 1994 in ongeveer 100 dagen zo'n 800.000 mensen vermoord?", "options": ["Burundi", "Congo", "Oeganda", "Rwanda"], "explanation": "Extremisten uit de Hutu-meerderheid vermoordden Tutsi's en gematigde Hutu's. Een kleine VN-macht was aanwezig maar mocht niet ingrijpen." },
+      "fr": { "question": "Dans quel pays un génocide fit-il environ 800 000 morts en une centaine de jours en 1994 ?", "options": ["Le Burundi", "Le Congo", "L'Ouganda", "Le Rwanda"], "explanation": "Des extrémistes de la majorité hutue massacrèrent Tutsis et Hutus modérés. Une petite force de l'ONU était présente mais n'avait pas le droit d'intervenir." },
+      "de": { "question": "In welchem Land wurden 1994 bei einem Völkermord in etwa 100 Tagen rund 800.000 Menschen getötet?", "options": ["Burundi", "Kongo", "Uganda", "Ruanda"], "explanation": "Extremisten der Hutu-Mehrheit ermordeten Tutsi und gemäßigte Hutu. Eine kleine UN-Truppe war vor Ort, durfte aber nicht eingreifen." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which agreement of 1998 largely ended three decades of conflict in Northern Ireland?",
+    "options": ["The Good Friday Agreement", "The Dayton Agreement", "The Oslo Accords", "The Belfast Charter"],
+    "correct_answer": 0,
+    "explanation": "It ended \"the Troubles\", in which more than 3,500 people had died since the late 1960s. Voters on both sides of the Irish border approved it in referendums.",
+    "bron": "Good Friday (Belfast) Agreement, 10 April 1998.",
+    "vertalingen": {
+      "nl": { "question": "Welk akkoord van 1998 maakte grotendeels een einde aan dertig jaar conflict in Noord-Ierland?", "options": ["Het Goedevrijdagakkoord", "Het Daytonakkoord", "De Oslo-akkoorden", "Het Handvest van Belfast"], "explanation": "Het beëindigde \"the Troubles\", waarin sinds eind jaren 60 ruim 3.500 mensen waren omgekomen. Kiezers aan beide kanten van de Ierse grens stemden er in referenda mee in." },
+      "fr": { "question": "Quel accord de 1998 mit largement fin à trente ans de conflit en Irlande du Nord ?", "options": ["L'accord du Vendredi saint", "Les accords de Dayton", "Les accords d'Oslo", "La charte de Belfast"], "explanation": "Il mit fin aux « Troubles », qui avaient fait plus de 3 500 morts depuis la fin des années 1960. Les électeurs des deux côtés de la frontière irlandaise l'approuvèrent par référendum." },
+      "de": { "question": "Welches Abkommen von 1998 beendete weitgehend drei Jahrzehnte Konflikt in Nordirland?", "options": ["Das Karfreitagsabkommen", "Das Dayton-Abkommen", "Die Oslo-Abkommen", "Die Belfast-Charta"], "explanation": "Es beendete „the Troubles“, in denen seit Ende der 1960er-Jahre über 3.500 Menschen gestorben waren. Wähler auf beiden Seiten der irischen Grenze stimmten in Referenden zu." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "What was the name of the sheep that became the first mammal cloned from an adult cell, in 1996?",
+    "options": ["Molly", "Dolly", "Polly", "Holly"],
+    "correct_answer": 1,
+    "explanation": "She was created at the Roslin Institute in Scotland. She was named after the singer Dolly Parton, because the cell came from a mammary gland.",
+    "bron": "Dolly the sheep, born 5 July 1996 (Roslin Institute).",
+    "vertalingen": {
+      "nl": { "question": "Hoe heette het schaap dat in 1996 het eerste zoogdier werd dat uit een volwassen cel was gekloond?", "options": ["Molly", "Dolly", "Polly", "Holly"], "explanation": "Ze werd gemaakt in het Roslin Institute in Schotland en vernoemd naar zangeres Dolly Parton, omdat de cel uit een melkklier kwam." },
+      "fr": { "question": "Comment s'appelait la brebis devenue en 1996 le premier mammifère cloné à partir d'une cellule adulte ?", "options": ["Molly", "Dolly", "Polly", "Holly"], "explanation": "Elle fut créée à l'institut Roslin, en Écosse, et baptisée d'après la chanteuse Dolly Parton, car la cellule provenait d'une glande mammaire." },
+      "de": { "question": "Wie hieß das Schaf, das 1996 als erstes Säugetier aus einer erwachsenen Zelle geklont wurde?", "options": ["Molly", "Dolly", "Polly", "Holly"], "explanation": "Es entstand am Roslin Institute in Schottland und wurde nach der Sängerin Dolly Parton benannt, weil die Zelle aus einer Milchdrüse stammte." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which international project announced in 2003 that it had mapped almost all of human DNA?",
+    "options": ["The Manhattan Project", "The Apollo programme", "The Human Genome Project", "The Large Hadron Collider"],
+    "correct_answer": 2,
+    "explanation": "It took 13 years and laboratories in six countries to read the roughly three billion letters of our genetic code.",
+    "bron": "Human Genome Project, completed April 2003.",
+    "vertalingen": {
+      "nl": { "question": "Welk internationaal project maakte in 2003 bekend dat het bijna al het menselijk DNA in kaart had gebracht?", "options": ["Het Manhattanproject", "Het Apolloprogramma", "Het Humaan Genoomproject", "De Large Hadron Collider"], "explanation": "Het kostte 13 jaar en laboratoria in zes landen om de zo'n drie miljard letters van onze genetische code te lezen." },
+      "fr": { "question": "Quel projet international annonça en 2003 avoir cartographié presque tout l'ADN humain ?", "options": ["Le projet Manhattan", "Le programme Apollo", "Le projet Génome humain", "Le Grand collisionneur de hadrons"], "explanation": "Il fallut 13 ans et des laboratoires de six pays pour lire les quelque trois milliards de lettres de notre code génétique." },
+      "de": { "question": "Welches internationale Projekt gab 2003 bekannt, fast die gesamte menschliche DNA entschlüsselt zu haben?", "options": ["Das Manhattan-Projekt", "Das Apollo-Programm", "Das Humangenomprojekt", "Der Large Hadron Collider"], "explanation": "Es brauchte 13 Jahre und Labore in sechs Ländern, um die rund drei Milliarden Buchstaben unseres Erbguts zu lesen." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which treaty, signed in 1992, created the European Union?",
+    "options": ["The Treaty of Rome", "The Treaty of Lisbon", "The Schengen Agreement", "The Treaty of Maastricht"],
+    "correct_answer": 3,
+    "explanation": "Signed in the Dutch city of Maastricht, it also laid the groundwork for a shared currency, the euro.",
+    "bron": "Treaty on European Union, signed 7 February 1992, in force 1 November 1993.",
+    "vertalingen": {
+      "nl": { "question": "Welk verdrag, getekend in 1992, richtte de Europese Unie op?", "options": ["Het Verdrag van Rome", "Het Verdrag van Lissabon", "Het Schengenakkoord", "Het Verdrag van Maastricht"], "explanation": "Getekend in Maastricht, legde het ook de basis voor een gezamenlijke munt: de euro." },
+      "fr": { "question": "Quel traité, signé en 1992, créa l'Union européenne ?", "options": ["Le traité de Rome", "Le traité de Lisbonne", "L'accord de Schengen", "Le traité de Maastricht"], "explanation": "Signé dans la ville néerlandaise de Maastricht, il posa aussi les bases d'une monnaie commune, l'euro." },
+      "de": { "question": "Welcher Vertrag, unterzeichnet 1992, gründete die Europäische Union?", "options": ["Die Römischen Verträge", "Der Vertrag von Lissabon", "Das Schengener Abkommen", "Der Vertrag von Maastricht"], "explanation": "In der niederländischen Stadt Maastricht unterzeichnet, legte er auch den Grundstein für eine gemeinsame Währung, den Euro." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which space station has had people living aboard without a break since November 2000?",
+    "options": ["The International Space Station", "Mir", "Skylab", "Tiangong"],
+    "correct_answer": 0,
+    "explanation": "It is built and run by the United States, Russia, Europe, Japan and Canada. It circles the Earth about 16 times a day.",
+    "bron": "ISS continuously crewed since 2 November 2000 (NASA).",
+    "vertalingen": {
+      "nl": { "question": "Welk ruimtestation is sinds november 2000 onafgebroken bewoond?", "options": ["Het Internationaal Ruimtestation", "Mir", "Skylab", "Tiangong"], "explanation": "Het wordt gebouwd en beheerd door de Verenigde Staten, Rusland, Europa, Japan en Canada. Het draait zo'n 16 keer per dag om de aarde." },
+      "fr": { "question": "Quelle station spatiale est habitée sans interruption depuis novembre 2000 ?", "options": ["La Station spatiale internationale", "Mir", "Skylab", "Tiangong"], "explanation": "Elle est construite et exploitée par les États-Unis, la Russie, l'Europe, le Japon et le Canada. Elle fait environ 16 fois le tour de la Terre par jour." },
+      "de": { "question": "Welche Raumstation ist seit November 2000 ununterbrochen bewohnt?", "options": ["Die Internationale Raumstation", "Mir", "Skylab", "Tiangong"], "explanation": "Sie wird von den USA, Russland, Europa, Japan und Kanada gebaut und betrieben. Sie umkreist die Erde etwa 16-mal am Tag." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which particle, predicted in 1964, was finally detected at CERN in 2012?",
+    "options": ["The electron", "The Higgs boson", "The neutrino", "The positron"],
+    "correct_answer": 1,
+    "explanation": "It explains why other particles have mass. Peter Higgs and François Englert, who had predicted it, received the Nobel Prize in 2013.",
+    "bron": "CERN announcement, 4 July 2012; Nobel Prize in Physics 2013.",
+    "vertalingen": {
+      "nl": { "question": "Welk deeltje, voorspeld in 1964, werd in 2012 eindelijk bij CERN aangetoond?", "options": ["Het elektron", "Het higgsboson", "Het neutrino", "Het positron"], "explanation": "Het verklaart waarom andere deeltjes massa hebben. Peter Higgs en François Englert, die het hadden voorspeld, kregen in 2013 de Nobelprijs." },
+      "fr": { "question": "Quelle particule, prédite en 1964, fut enfin détectée au CERN en 2012 ?", "options": ["L'électron", "Le boson de Higgs", "Le neutrino", "Le positron"], "explanation": "Il explique pourquoi les autres particules ont une masse. Peter Higgs et François Englert, qui l'avaient prédit, reçurent le prix Nobel en 2013." },
+      "de": { "question": "Welches Teilchen, 1964 vorhergesagt, wurde 2012 endlich am CERN nachgewiesen?", "options": ["Das Elektron", "Das Higgs-Boson", "Das Neutrino", "Das Positron"], "explanation": "Es erklärt, warum andere Teilchen Masse haben. Peter Higgs und François Englert, die es vorhergesagt hatten, erhielten 2013 den Nobelpreis." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Who was prime minister of the United Kingdom from 1997 to 2007?",
+    "options": ["John Major", "Gordon Brown", "Tony Blair", "David Cameron"],
+    "correct_answer": 2,
+    "explanation": "He won three elections in a row for Labour. His support for the Iraq War of 2003 made him deeply controversial.",
+    "bron": "Tony Blair, Prime Minister 2 May 1997 – 27 June 2007.",
+    "vertalingen": {
+      "nl": { "question": "Wie was van 1997 tot 2007 premier van het Verenigd Koninkrijk?", "options": ["John Major", "Gordon Brown", "Tony Blair", "David Cameron"], "explanation": "Hij won voor Labour drie verkiezingen op rij. Zijn steun aan de Irakoorlog van 2003 maakte hem zeer omstreden." },
+      "fr": { "question": "Qui fut Premier ministre du Royaume-Uni de 1997 à 2007 ?", "options": ["John Major", "Gordon Brown", "Tony Blair", "David Cameron"], "explanation": "Il remporta trois élections d'affilée pour le Parti travailliste. Son soutien à la guerre d'Irak de 2003 le rendit très controversé." },
+      "de": { "question": "Wer war von 1997 bis 2007 Premierminister des Vereinigten Königreichs?", "options": ["John Major", "Gordon Brown", "Tony Blair", "David Cameron"], "explanation": "Er gewann für Labour drei Wahlen in Folge. Seine Unterstützung des Irakkriegs von 2003 machte ihn sehr umstritten." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which country hosted the first FIFA World Cup held in Africa, in 2010?",
+    "options": ["Nigeria", "Egypt", "Morocco", "South Africa"],
+    "correct_answer": 3,
+    "explanation": "The tournament is remembered for the droning vuvuzela horns. Spain won the final against the Netherlands 1–0 after extra time.",
+    "bron": "2010 FIFA World Cup, 11 June – 11 July 2010.",
+    "vertalingen": {
+      "nl": { "question": "Welk land organiseerde in 2010 het eerste WK voetbal in Afrika?", "options": ["Nigeria", "Egypte", "Marokko", "Zuid-Afrika"], "explanation": "Het toernooi wordt herinnerd om de zoemende vuvuzela's. Spanje won de finale na verlenging met 1–0 van Nederland." },
+      "fr": { "question": "Quel pays accueillit en 2010 la première Coupe du monde de football organisée en Afrique ?", "options": ["Le Nigeria", "L'Égypte", "Le Maroc", "L'Afrique du Sud"], "explanation": "On se souvient du tournoi pour le bourdonnement des vuvuzelas. L'Espagne battit les Pays-Bas 1–0 en finale après prolongation." },
+      "de": { "question": "Welches Land richtete 2010 die erste Fußball-WM in Afrika aus?", "options": ["Nigeria", "Ägypten", "Marokko", "Südafrika"], "explanation": "Das Turnier ist für die dröhnenden Vuvuzelas in Erinnerung. Spanien gewann das Finale nach Verlängerung 1:0 gegen die Niederlande." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which NASA rover landed on Mars in 2012, lowered to the ground by a \"sky crane\"?",
+    "options": ["Curiosity", "Spirit", "Sojourner", "Perseverance"],
+    "correct_answer": 0,
+    "explanation": "The car-sized rover found that Gale Crater once held a lake that could have supported microbial life. Engineers called the landing \"seven minutes of terror\".",
+    "bron": "Mars Science Laboratory, landed 6 August 2012.",
+    "vertalingen": {
+      "nl": { "question": "Welke NASA-rover landde in 2012 op Mars, neergelaten door een \"hemelkraan\"?", "options": ["Curiosity", "Spirit", "Sojourner", "Perseverance"], "explanation": "De rover zo groot als een auto ontdekte dat de Galekrater ooit een meer bevatte waarin microbieel leven had kunnen bestaan. Ingenieurs noemden de landing \"zeven minuten terreur\"." },
+      "fr": { "question": "Quel rover de la NASA se posa sur Mars en 2012, déposé au sol par une « grue céleste » ?", "options": ["Curiosity", "Spirit", "Sojourner", "Perseverance"], "explanation": "Ce rover de la taille d'une voiture découvrit que le cratère Gale avait abrité un lac propice à une vie microbienne. Les ingénieurs appelèrent l'atterrissage « sept minutes de terreur »." },
+      "de": { "question": "Welcher NASA-Rover landete 2012 auf dem Mars, abgesetzt von einem „Himmelskran“?", "options": ["Curiosity", "Spirit", "Sojourner", "Perseverance"], "explanation": "Der autogroße Rover fand heraus, dass der Gale-Krater einst einen See enthielt, in dem mikrobielles Leben möglich gewesen wäre. Ingenieure nannten die Landung „sieben Minuten des Schreckens“." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Who became Germany's first female chancellor, in 2005?",
+    "options": ["Ursula von der Leyen", "Angela Merkel", "Annalena Baerbock", "Annegret Kramp-Karrenbauer"],
+    "correct_answer": 1,
+    "explanation": "A physicist who grew up in communist East Germany, she led the country for 16 years, until 2021.",
+    "bron": "Angela Merkel, Chancellor 22 November 2005 – 8 December 2021.",
+    "vertalingen": {
+      "nl": { "question": "Wie werd in 2005 de eerste vrouwelijke bondskanselier van Duitsland?", "options": ["Ursula von der Leyen", "Angela Merkel", "Annalena Baerbock", "Annegret Kramp-Karrenbauer"], "explanation": "Deze natuurkundige, opgegroeid in het communistische Oost-Duitsland, leidde het land 16 jaar lang, tot 2021." },
+      "fr": { "question": "Qui devint en 2005 la première femme chancelière d'Allemagne ?", "options": ["Ursula von der Leyen", "Angela Merkel", "Annalena Baerbock", "Annegret Kramp-Karrenbauer"], "explanation": "Physicienne ayant grandi dans l'Allemagne de l'Est communiste, elle dirigea le pays pendant 16 ans, jusqu'en 2021." },
+      "de": { "question": "Wer wurde 2005 die erste Bundeskanzlerin Deutschlands?", "options": ["Ursula von der Leyen", "Angela Merkel", "Annalena Baerbock", "Annegret Kramp-Karrenbauer"], "explanation": "Die Physikerin, aufgewachsen in der kommunistischen DDR, führte das Land 16 Jahre lang, bis 2021." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "In which country did the Asian financial crisis of 1997 begin?",
+    "options": ["Japan", "Indonesia", "Thailand", "South Korea"],
+    "correct_answer": 2,
+    "explanation": "It started when Thailand could no longer hold its currency, the baht, steady against the dollar. Panic then spread to Indonesia, South Korea and beyond.",
+    "bron": "Float of the Thai baht, 2 July 1997.",
+    "vertalingen": {
+      "nl": { "question": "In welk land begon de Aziatische financiële crisis van 1997?", "options": ["Japan", "Indonesië", "Thailand", "Zuid-Korea"], "explanation": "Ze begon toen Thailand zijn munt, de baht, niet langer stabiel kon houden tegenover de dollar. De paniek sloeg daarna over naar Indonesië, Zuid-Korea en verder." },
+      "fr": { "question": "Dans quel pays la crise financière asiatique de 1997 commença-t-elle ?", "options": ["Le Japon", "L'Indonésie", "La Thaïlande", "La Corée du Sud"], "explanation": "Elle débuta quand la Thaïlande ne put plus maintenir sa monnaie, le baht, stable face au dollar. La panique gagna ensuite l'Indonésie, la Corée du Sud et au-delà." },
+      "de": { "question": "In welchem Land begann die Asienkrise von 1997?", "options": ["Japan", "Indonesien", "Thailand", "Südkorea"], "explanation": "Sie begann, als Thailand seine Währung, den Baht, nicht mehr stabil zum Dollar halten konnte. Die Panik griff dann auf Indonesien, Südkorea und weitere Länder über." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which Icelandic volcano's eruption in 2010 grounded most flights in Europe for days?",
+    "options": ["Hekla", "Katla", "Grímsvötn", "Eyjafjallajökull"],
+    "correct_answer": 3,
+    "explanation": "Its ash cloud could damage jet engines, so about 100,000 flights were cancelled. Many newsreaders struggled to pronounce its name.",
+    "bron": "Eyjafjallajökull eruption, April 2010.",
+    "vertalingen": {
+      "nl": { "question": "Door de uitbarsting van welke IJslandse vulkaan lag in 2010 het meeste vliegverkeer in Europa dagenlang stil?", "options": ["Hekla", "Katla", "Grímsvötn", "Eyjafjallajökull"], "explanation": "De aswolk kon straalmotoren beschadigen, dus werden zo'n 100.000 vluchten geschrapt. Veel nieuwslezers hadden moeite met de naam." },
+      "fr": { "question": "L'éruption de quel volcan islandais cloua au sol la plupart des vols en Europe pendant des jours en 2010 ?", "options": ["L'Hekla", "Le Katla", "Le Grímsvötn", "L'Eyjafjallajökull"], "explanation": "Son nuage de cendres pouvait endommager les réacteurs, si bien qu'environ 100 000 vols furent annulés. Beaucoup de présentateurs peinèrent à prononcer son nom." },
+      "de": { "question": "Durch den Ausbruch welches isländischen Vulkans stand 2010 der Flugverkehr in Europa tagelang weitgehend still?", "options": ["Hekla", "Katla", "Grímsvötn", "Eyjafjallajökull"], "explanation": "Seine Aschewolke konnte Triebwerke beschädigen, deshalb wurden rund 100.000 Flüge gestrichen. Viele Nachrichtensprecher kämpften mit dem Namen." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which treaty of 1997 set the first binding targets for industrialised countries to cut greenhouse gases?",
+    "options": ["The Kyoto Protocol", "The Montreal Protocol", "The Rio Declaration", "The Copenhagen Accord"],
+    "correct_answer": 0,
+    "explanation": "It came into force in 2005. The United States signed it but never ratified it; the Paris Agreement of 2015 later replaced it.",
+    "bron": "Kyoto Protocol, adopted 11 December 1997, in force 16 February 2005.",
+    "vertalingen": {
+      "nl": { "question": "Welk verdrag van 1997 legde voor het eerst bindende doelen vast voor industrielanden om broeikasgassen te verminderen?", "options": ["Het Kyotoprotocol", "Het Montrealprotocol", "De Verklaring van Rio", "Het Akkoord van Kopenhagen"], "explanation": "Het trad in 2005 in werking. De Verenigde Staten tekenden wel maar ratificeerden nooit; het Akkoord van Parijs van 2015 verving het later." },
+      "fr": { "question": "Quel traité de 1997 fixa les premiers objectifs contraignants de réduction des gaz à effet de serre pour les pays industrialisés ?", "options": ["Le protocole de Kyoto", "Le protocole de Montréal", "La déclaration de Rio", "L'accord de Copenhague"], "explanation": "Il entra en vigueur en 2005. Les États-Unis le signèrent sans jamais le ratifier ; l'accord de Paris de 2015 le remplaça ensuite." },
+      "de": { "question": "Welcher Vertrag von 1997 legte erstmals verbindliche Ziele für Industrieländer zur Senkung von Treibhausgasen fest?", "options": ["Das Kyoto-Protokoll", "Das Montreal-Protokoll", "Die Rio-Erklärung", "Der Copenhagen Accord"], "explanation": "Es trat 2005 in Kraft. Die USA unterzeichneten, ratifizierten aber nie; das Pariser Abkommen von 2015 löste es später ab." }
+    }
+  }
+]

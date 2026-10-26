@@ -59,6 +59,10 @@ export default function TabsLayout() {
         options={{ title: t((s) => s.tabs.ontdek), tabBarIcon: tabIcon('compass', 'compass-outline') }}
       />
       <Tabs.Screen
+        name="explore"
+        options={{ title: t((s) => s.tabs.explore), tabBarIcon: tabIcon('aperture', 'aperture-outline') }}
+      />
+      <Tabs.Screen
         name="voortgang"
         options={{ title: t((s) => s.tabs.voortgang), tabBarIcon: tabIcon('stats-chart', 'stats-chart-outline') }}
       />

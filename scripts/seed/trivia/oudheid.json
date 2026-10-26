@@ -1,0 +1,262 @@
+[
+  {
+    "moeilijkheid": 1,
+    "question": "Which of the Seven Wonders of the Ancient World is still standing?",
+    "options": ["The Colossus of Rhodes", "The Lighthouse of Alexandria", "The Great Pyramid of Giza", "The Hanging Gardens of Babylon"],
+    "correct_answer": 2,
+    "explanation": "Built around 2560 BC for the pharaoh Khufu, it is the oldest of the seven and the only one that survives.",
+    "bron": "Standard list of the Seven Wonders; Great Pyramid dated to Khufu's reign (4th Dynasty).",
+    "vertalingen": {
+      "nl": { "question": "Welk van de zeven wereldwonderen van de oudheid staat er nog?", "options": ["De Kolossus van Rhodos", "De vuurtoren van Alexandrië", "De grote piramide van Gizeh", "De hangende tuinen van Babylon"], "explanation": "Gebouwd rond 2560 v.Chr. voor farao Cheops; het is het oudste van de zeven en het enige dat nog bestaat." },
+      "fr": { "question": "Laquelle des sept merveilles du monde antique est encore debout ?", "options": ["Le colosse de Rhodes", "Le phare d'Alexandrie", "La grande pyramide de Gizeh", "Les jardins suspendus de Babylone"], "explanation": "Construite vers 2560 av. J.-C. pour le pharaon Khéops, c'est la plus ancienne des sept et la seule qui subsiste." },
+      "de": { "question": "Welches der sieben Weltwunder der Antike steht heute noch?", "options": ["Der Koloss von Rhodos", "Der Leuchtturm von Alexandria", "Die Cheops-Pyramide von Gizeh", "Die Hängenden Gärten von Babylon"], "explanation": "Um 2560 v. Chr. für den Pharao Cheops erbaut, ist sie das älteste der sieben und das einzige, das erhalten ist." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Where were the ancient Olympic Games held?",
+    "options": ["Olympia", "Athens", "Sparta", "Delphi"],
+    "correct_answer": 0,
+    "explanation": "A sanctuary of Zeus in the western Peloponnese. The games ran from 776 BC, by tradition, for more than a thousand years.",
+    "bron": "Traditional founding date 776 BC; Olympia as sanctuary of Zeus.",
+    "vertalingen": {
+      "nl": { "question": "Waar werden de Olympische Spelen in de oudheid gehouden?", "options": ["Olympia", "Athene", "Sparta", "Delphi"], "explanation": "Een heiligdom van Zeus in het westen van de Peloponnesos. De spelen werden volgens de overlevering vanaf 776 v.Chr. ruim duizend jaar lang gehouden." },
+      "fr": { "question": "Où se déroulaient les Jeux olympiques antiques ?", "options": ["Olympie", "Athènes", "Sparte", "Delphes"], "explanation": "Un sanctuaire de Zeus dans l'ouest du Péloponnèse. Selon la tradition, les jeux s'y tinrent à partir de 776 av. J.-C., pendant plus de mille ans." },
+      "de": { "question": "Wo fanden die Olympischen Spiele der Antike statt?", "options": ["Olympia", "Athen", "Sparta", "Delphi"], "explanation": "Ein Heiligtum des Zeus im Westen der Peloponnes. Der Überlieferung nach fanden die Spiele ab 776 v. Chr. über tausend Jahre lang statt." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which river was the lifeline of ancient Egypt?",
+    "options": ["The Tigris", "The Nile", "The Euphrates", "The Jordan"],
+    "correct_answer": 1,
+    "explanation": "Its yearly flood left fertile black mud along the banks, and almost all of Egypt lived on that narrow strip.",
+    "bron": "Annual Nile inundation as basis of Egyptian agriculture.",
+    "vertalingen": {
+      "nl": { "question": "Welke rivier was de levensader van het oude Egypte?", "options": ["De Tigris", "De Nijl", "De Eufraat", "De Jordaan"], "explanation": "De jaarlijkse overstroming liet vruchtbaar zwart slib op de oevers achter, en vrijwel heel Egypte leefde op die smalle strook." },
+      "fr": { "question": "Quel fleuve était la source de vie de l'Égypte antique ?", "options": ["Le Tigre", "Le Nil", "L'Euphrate", "Le Jourdain"], "explanation": "Sa crue annuelle déposait un limon noir et fertile sur les rives, et presque toute l'Égypte vivait sur cette étroite bande." },
+      "de": { "question": "Welcher Fluss war die Lebensader des alten Ägypten?", "options": ["Der Tigris", "Der Nil", "Der Euphrat", "Der Jordan"], "explanation": "Seine jährliche Überschwemmung hinterließ fruchtbaren schwarzen Schlamm an den Ufern, und fast ganz Ägypten lebte von diesem schmalen Streifen." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "What were the kings of ancient Egypt called?",
+    "options": ["Emperors", "Caesars", "Pharaohs", "Sultans"],
+    "correct_answer": 2,
+    "explanation": "The word comes from the Egyptian for \"great house\", the royal palace, and only later came to mean the king himself.",
+    "bron": "Etymology of pharaoh (pr-ꜥꜣ, 'great house').",
+    "vertalingen": {
+      "nl": { "question": "Hoe heetten de koningen van het oude Egypte?", "options": ["Keizers", "Caesars", "Farao's", "Sultans"], "explanation": "Het woord komt van het Egyptische woord voor \"groot huis\", het paleis, en ging pas later de koning zelf betekenen." },
+      "fr": { "question": "Comment appelait-on les rois de l'Égypte antique ?", "options": ["Les empereurs", "Les césars", "Les pharaons", "Les sultans"], "explanation": "Le mot vient de l'égyptien « grande maison », le palais royal, et n'a désigné le roi lui-même que plus tard." },
+      "de": { "question": "Wie nannte man die Könige des alten Ägypten?", "options": ["Kaiser", "Cäsaren", "Pharaonen", "Sultane"], "explanation": "Das Wort stammt vom ägyptischen Ausdruck für „großes Haus“, den Palast, und bezeichnete erst später den König selbst." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which philosopher was the teacher of Alexander the Great?",
+    "options": ["Plato", "Socrates", "Pythagoras", "Aristotle"],
+    "correct_answer": 3,
+    "explanation": "Philip II of Macedon hired him to tutor his son from about 343 BC. Aristotle had himself been a student of Plato.",
+    "bron": "Aristotle's tutorship of Alexander at Mieza, c. 343 BC.",
+    "vertalingen": {
+      "nl": { "question": "Welke filosoof was de leraar van Alexander de Grote?", "options": ["Plato", "Socrates", "Pythagoras", "Aristoteles"], "explanation": "Filips II van Macedonië nam hem rond 343 v.Chr. in dienst als leraar van zijn zoon. Aristoteles was zelf een leerling van Plato geweest." },
+      "fr": { "question": "Quel philosophe fut le précepteur d'Alexandre le Grand ?", "options": ["Platon", "Socrate", "Pythagore", "Aristote"], "explanation": "Philippe II de Macédoine l'engagea vers 343 av. J.-C. pour instruire son fils. Aristote avait lui-même été l'élève de Platon." },
+      "de": { "question": "Welcher Philosoph war der Lehrer Alexanders des Großen?", "options": ["Platon", "Sokrates", "Pythagoras", "Aristoteles"], "explanation": "Philipp II. von Makedonien holte ihn um 343 v. Chr. als Lehrer seines Sohnes. Aristoteles war selbst Schüler Platons gewesen." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "What did the Romans build to carry fresh water into their cities?",
+    "options": ["Aqueducts", "Pyramids", "Ziggurats", "Amphitheatres"],
+    "correct_answer": 0,
+    "explanation": "Mostly underground channels that let gravity do the work. The famous arched bridges were only the parts that crossed a valley.",
+    "bron": "Roman aqueduct engineering (gravity flow; most of the length below ground).",
+    "vertalingen": {
+      "nl": { "question": "Wat bouwden de Romeinen om vers water naar hun steden te brengen?", "options": ["Aquaducten", "Piramides", "Ziggoerats", "Amfitheaters"], "explanation": "Vooral ondergrondse kanalen waarin de zwaartekracht het werk deed. De beroemde bogenbruggen waren alleen de stukken die een dal overstaken." },
+      "fr": { "question": "Qu'ont construit les Romains pour amener l'eau douce dans leurs villes ?", "options": ["Des aqueducs", "Des pyramides", "Des ziggourats", "Des amphithéâtres"], "explanation": "Surtout des canaux souterrains où la pente faisait tout le travail. Les célèbres ponts à arches n'étaient que les tronçons qui franchissaient une vallée." },
+      "de": { "question": "Was bauten die Römer, um frisches Wasser in ihre Städte zu leiten?", "options": ["Aquädukte", "Pyramiden", "Zikkurate", "Amphitheater"], "explanation": "Meist unterirdische Kanäle, in denen das Gefälle die Arbeit tat. Die berühmten Bogenbrücken waren nur die Abschnitte, die ein Tal überquerten." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which wall was built to protect China's northern frontier?",
+    "options": ["Hadrian's Wall", "The Great Wall", "The Walls of Babylon", "The Theodosian Walls"],
+    "correct_answer": 1,
+    "explanation": "Its first long stretches were joined under China's first emperor around 220 BC. Most of what visitors see today was built much later, under the Ming.",
+    "bron": "Qin-era wall linking; surviving brick sections are Ming dynasty (1368–1644).",
+    "vertalingen": {
+      "nl": { "question": "Welke muur werd gebouwd om de noordgrens van China te beschermen?", "options": ["De Muur van Hadrianus", "De Chinese Muur", "De muren van Babylon", "De Theodosiaanse muren"], "explanation": "De eerste lange stukken werden rond 220 v.Chr. onder de eerste keizer van China aan elkaar verbonden. Het meeste wat bezoekers nu zien, is veel later onder de Ming gebouwd." },
+      "fr": { "question": "Quelle muraille fut construite pour protéger la frontière nord de la Chine ?", "options": ["Le mur d'Hadrien", "La Grande Muraille", "Les murailles de Babylone", "Les murailles théodosiennes"], "explanation": "Ses premiers longs tronçons furent reliés sous le premier empereur de Chine, vers 220 av. J.-C. L'essentiel de ce que voient les visiteurs a été bâti bien plus tard, sous les Ming." },
+      "de": { "question": "Welche Mauer wurde zum Schutz der Nordgrenze Chinas gebaut?", "options": ["Der Hadrianswall", "Die Chinesische Mauer", "Die Mauern von Babylon", "Die Theodosianische Landmauer"], "explanation": "Ihre ersten langen Abschnitte wurden um 220 v. Chr. unter Chinas erstem Kaiser verbunden. Das meiste, was Besucher heute sehen, entstand viel später unter den Ming." }
+    }
+  },
+  {
+    "moeilijkheid": 1,
+    "question": "Which Greek city-state was famous for its harsh military upbringing?",
+    "options": ["Athens", "Corinth", "Sparta", "Thebes"],
+    "correct_answer": 2,
+    "explanation": "Spartan boys left home at about seven for the agoge, a state training system that made the whole citizen body an army.",
+    "bron": "Spartan agoge (Plutarch, Life of Lycurgus).",
+    "vertalingen": {
+      "nl": { "question": "Welke Griekse stadstaat stond bekend om zijn harde militaire opvoeding?", "options": ["Athene", "Korinthe", "Sparta", "Thebe"], "explanation": "Spartaanse jongens gingen rond hun zevende het huis uit voor de agoge, een opleiding van de staat die van alle burgers samen een leger maakte." },
+      "fr": { "question": "Quelle cité grecque était célèbre pour son éducation militaire impitoyable ?", "options": ["Athènes", "Corinthe", "Sparte", "Thèbes"], "explanation": "Vers sept ans, les garçons spartiates quittaient leur famille pour l'agogè, une formation d'État qui faisait de l'ensemble des citoyens une armée." },
+      "de": { "question": "Welcher griechische Stadtstaat war für seine harte militärische Erziehung berühmt?", "options": ["Athen", "Korinth", "Sparta", "Theben"], "explanation": "Spartanische Jungen verließen mit etwa sieben Jahren ihr Zuhause für die Agoge, eine staatliche Ausbildung, die die gesamte Bürgerschaft zu einem Heer machte." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which writing system did the ancient Egyptians carve on their monuments?",
+    "options": ["Cuneiform", "Hieroglyphs", "Linear B", "Runes"],
+    "correct_answer": 1,
+    "explanation": "Signs that stood for sounds, words and ideas at once. Cuneiform was the wedge-shaped script of Mesopotamia.",
+    "bron": "Egyptian hieroglyphic script; cuneiform as Mesopotamian.",
+    "vertalingen": {
+      "nl": { "question": "Welk schrift hakten de oude Egyptenaren in hun monumenten?", "options": ["Spijkerschrift", "Hiërogliefen", "Lineair B", "Runen"], "explanation": "Tekens die tegelijk klanken, woorden en begrippen konden weergeven. Spijkerschrift was het wigvormige schrift van Mesopotamië." },
+      "fr": { "question": "Quelle écriture les anciens Égyptiens gravaient-ils sur leurs monuments ?", "options": ["Le cunéiforme", "Les hiéroglyphes", "Le linéaire B", "Les runes"], "explanation": "Des signes qui notaient à la fois des sons, des mots et des idées. Le cunéiforme était l'écriture en forme de coins de la Mésopotamie." },
+      "de": { "question": "Welche Schrift meißelten die alten Ägypter in ihre Monumente?", "options": ["Keilschrift", "Hieroglyphen", "Linear B", "Runen"], "explanation": "Zeichen, die zugleich Laute, Wörter und Begriffe darstellen konnten. Die Keilschrift war die Schrift Mesopotamiens." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "What did the Rosetta Stone allow scholars to do?",
+    "options": ["Read Egyptian hieroglyphs", "Date the pyramids", "Locate the city of Troy", "Map the course of the Nile"],
+    "correct_answer": 0,
+    "explanation": "It carries the same decree in hieroglyphs, demotic and Greek. Jean-François Champollion used it to crack the script in 1822.",
+    "bron": "Rosetta Stone (196 BC decree); Champollion's Lettre à M. Dacier, 1822.",
+    "vertalingen": {
+      "nl": { "question": "Wat konden geleerden dankzij de Steen van Rosetta?", "options": ["Egyptische hiërogliefen lezen", "De piramides dateren", "De stad Troje vinden", "De loop van de Nijl in kaart brengen"], "explanation": "Er staat hetzelfde decreet op in hiërogliefen, demotisch en Grieks. Jean-François Champollion kraakte er in 1822 het schrift mee." },
+      "fr": { "question": "Que la pierre de Rosette a-t-elle permis aux savants de faire ?", "options": ["Lire les hiéroglyphes égyptiens", "Dater les pyramides", "Localiser la ville de Troie", "Cartographier le cours du Nil"], "explanation": "Elle porte le même décret en hiéroglyphes, en démotique et en grec. Jean-François Champollion s'en servit pour déchiffrer l'écriture en 1822." },
+      "de": { "question": "Was ermöglichte der Stein von Rosette den Gelehrten?", "options": ["Ägyptische Hieroglyphen zu lesen", "Die Pyramiden zu datieren", "Die Stadt Troja zu finden", "Den Lauf des Nils zu kartieren"], "explanation": "Er trägt dasselbe Dekret in Hieroglyphen, Demotisch und Griechisch. Jean-François Champollion entzifferte damit 1822 die Schrift." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Who became the first emperor of a unified China?",
+    "options": ["Kublai Khan", "Confucius", "Sun Tzu", "Qin Shi Huang"],
+    "correct_answer": 3,
+    "explanation": "He unified the warring states in 221 BC and standardised writing, coins and weights. Thousands of terracotta soldiers guard his tomb.",
+    "bron": "Unification under Qin, 221 BC; Terracotta Army (Lintong, discovered 1974).",
+    "vertalingen": {
+      "nl": { "question": "Wie werd de eerste keizer van een verenigd China?", "options": ["Koeblai Khan", "Confucius", "Sun Tzu", "Qin Shi Huang"], "explanation": "Hij verenigde de strijdende staten in 221 v.Chr. en maakte schrift, munten en gewichten overal gelijk. Duizenden terracotta soldaten bewaken zijn graf." },
+      "fr": { "question": "Qui devint le premier empereur d'une Chine unifiée ?", "options": ["Kubilai Khan", "Confucius", "Sun Tzu", "Qin Shi Huang"], "explanation": "Il unifia les royaumes combattants en 221 av. J.-C. et uniformisa l'écriture, la monnaie et les poids. Des milliers de soldats en terre cuite gardent son tombeau." },
+      "de": { "question": "Wer wurde der erste Kaiser eines geeinten China?", "options": ["Kublai Khan", "Konfuzius", "Sunzi", "Qin Shi Huang"], "explanation": "Er einte 221 v. Chr. die Streitenden Reiche und vereinheitlichte Schrift, Münzen und Gewichte. Tausende Terrakotta-Soldaten bewachen sein Grab." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which people developed cuneiform, one of the earliest writing systems?",
+    "options": ["The Egyptians", "The Phoenicians", "The Sumerians", "The Minoans"],
+    "correct_answer": 2,
+    "explanation": "In Mesopotamia, before 3000 BC, scribes pressed wedge shapes into wet clay. It started as a way of keeping accounts.",
+    "bron": "Sumerian cuneiform, Uruk period (c. 3400–3100 BC), administrative origins.",
+    "vertalingen": {
+      "nl": { "question": "Welk volk ontwikkelde het spijkerschrift, een van de oudste schriften?", "options": ["De Egyptenaren", "De Feniciërs", "De Sumeriërs", "De Minoërs"], "explanation": "In Mesopotamië drukten schrijvers al vóór 3000 v.Chr. wigvormige tekens in natte klei. Het begon als een manier om boekhouding bij te houden." },
+      "fr": { "question": "Quel peuple a mis au point le cunéiforme, l'une des plus anciennes écritures ?", "options": ["Les Égyptiens", "Les Phéniciens", "Les Sumériens", "Les Minoens"], "explanation": "En Mésopotamie, avant 3000 av. J.-C., les scribes imprimaient des signes en forme de coins dans l'argile humide. Tout commença par la comptabilité." },
+      "de": { "question": "Welches Volk entwickelte die Keilschrift, eine der ältesten Schriften?", "options": ["Die Ägypter", "Die Phönizier", "Die Sumerer", "Die Minoer"], "explanation": "In Mesopotamien drückten Schreiber schon vor 3000 v. Chr. keilförmige Zeichen in feuchten Ton. Es begann als Buchführung." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "In which year did the Western Roman Empire traditionally come to an end?",
+    "options": ["31 BC", "AD 330", "AD 1453", "AD 476"],
+    "correct_answer": 3,
+    "explanation": "The Germanic commander Odoacer deposed the boy emperor Romulus Augustulus. The Eastern Roman Empire carried on until 1453.",
+    "bron": "Deposition of Romulus Augustulus by Odoacer, AD 476; fall of Constantinople 1453.",
+    "vertalingen": {
+      "nl": { "question": "In welk jaar kwam er volgens de traditie een einde aan het West-Romeinse Rijk?", "options": ["31 v.Chr.", "330 n.Chr.", "1453 n.Chr.", "476 n.Chr."], "explanation": "De Germaanse legeraanvoerder Odoaker zette de jonge keizer Romulus Augustulus af. Het Oost-Romeinse Rijk bestond nog tot 1453." },
+      "fr": { "question": "En quelle année l'Empire romain d'Occident prit-il fin selon la tradition ?", "options": ["31 av. J.-C.", "330 apr. J.-C.", "1453 apr. J.-C.", "476 apr. J.-C."], "explanation": "Le chef germanique Odoacre déposa le jeune empereur Romulus Augustule. L'Empire romain d'Orient dura jusqu'en 1453." },
+      "de": { "question": "In welchem Jahr endete der Überlieferung nach das Weströmische Reich?", "options": ["31 v. Chr.", "330 n. Chr.", "1453 n. Chr.", "476 n. Chr."], "explanation": "Der germanische Heerführer Odoaker setzte den jungen Kaiser Romulus Augustulus ab. Das Oströmische Reich bestand bis 1453 weiter." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "What was the Parthenon in Athens?",
+    "options": ["A royal palace", "A theatre", "A library", "A temple to Athena"],
+    "correct_answer": 3,
+    "explanation": "Built on the Acropolis between 447 and 432 BC, in thanks to the city's patron goddess after the wars against Persia.",
+    "bron": "Parthenon construction 447–432 BC under Pericles.",
+    "vertalingen": {
+      "nl": { "question": "Wat was het Parthenon in Athene?", "options": ["Een koninklijk paleis", "Een theater", "Een bibliotheek", "Een tempel voor Athena"], "explanation": "Gebouwd op de Akropolis tussen 447 en 432 v.Chr., als dank aan de beschermgodin van de stad na de oorlogen tegen Perzië." },
+      "fr": { "question": "Qu'était le Parthénon à Athènes ?", "options": ["Un palais royal", "Un théâtre", "Une bibliothèque", "Un temple dédié à Athéna"], "explanation": "Construit sur l'Acropole entre 447 et 432 av. J.-C., en remerciement à la déesse protectrice de la cité après les guerres contre la Perse." },
+      "de": { "question": "Was war der Parthenon in Athen?", "options": ["Ein Königspalast", "Ein Theater", "Eine Bibliothek", "Ein Tempel der Athena"], "explanation": "Zwischen 447 und 432 v. Chr. auf der Akropolis erbaut, als Dank an die Schutzgöttin der Stadt nach den Kriegen gegen Persien." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which alphabet was the ancestor of the Greek alphabet?",
+    "options": ["The Phoenician alphabet", "The Latin alphabet", "The Cyrillic alphabet", "The runic alphabet"],
+    "correct_answer": 0,
+    "explanation": "The Greeks borrowed the letters of these seafaring traders and added vowels. Latin and Cyrillic both descend from the Greek letters in turn.",
+    "bron": "Greek adoption of the Phoenician script, c. 8th century BC.",
+    "vertalingen": {
+      "nl": { "question": "Welk alfabet was de voorouder van het Griekse alfabet?", "options": ["Het Fenicische alfabet", "Het Latijnse alfabet", "Het cyrillische alfabet", "Het runenalfabet"], "explanation": "De Grieken namen de letters over van deze zeevarende handelaars en voegden klinkers toe. Het Latijnse en het cyrillische schrift stammen op hun beurt van het Griekse af." },
+      "fr": { "question": "Quel alphabet est l'ancêtre de l'alphabet grec ?", "options": ["L'alphabet phénicien", "L'alphabet latin", "L'alphabet cyrillique", "L'alphabet runique"], "explanation": "Les Grecs empruntèrent les lettres de ces marchands navigateurs et y ajoutèrent des voyelles. Le latin et le cyrillique descendent à leur tour de l'alphabet grec." },
+      "de": { "question": "Welches Alphabet war der Vorfahr des griechischen Alphabets?", "options": ["Das phönizische Alphabet", "Das lateinische Alphabet", "Das kyrillische Alphabet", "Das Runenalphabet"], "explanation": "Die Griechen übernahmen die Buchstaben dieser seefahrenden Händler und fügten Vokale hinzu. Lateinisch und Kyrillisch stammen ihrerseits vom griechischen Alphabet ab." }
+    }
+  },
+  {
+    "moeilijkheid": 2,
+    "question": "Which Greek writer is often called the \"Father of History\"?",
+    "options": ["Thucydides", "Homer", "Herodotus", "Plutarch"],
+    "correct_answer": 2,
+    "explanation": "His Histories, written in the 5th century BC, set out to explain the wars between the Greeks and Persia. Cicero gave him the title.",
+    "bron": "Herodotus, Histories; Cicero, De Legibus 1.5 ('pater historiae').",
+    "vertalingen": {
+      "nl": { "question": "Welke Griekse schrijver wordt vaak de \"vader van de geschiedschrijving\" genoemd?", "options": ["Thucydides", "Homerus", "Herodotus", "Plutarchus"], "explanation": "Zijn Historiën uit de 5e eeuw v.Chr. wilden de oorlogen tussen de Grieken en Perzië verklaren. Cicero gaf hem die titel." },
+      "fr": { "question": "Quel auteur grec est souvent appelé le « père de l'Histoire » ?", "options": ["Thucydide", "Homère", "Hérodote", "Plutarque"], "explanation": "Ses Histoires, écrites au Ve siècle av. J.-C., cherchaient à expliquer les guerres entre les Grecs et la Perse. C'est Cicéron qui lui donna ce titre." },
+      "de": { "question": "Welcher griechische Autor wird oft „Vater der Geschichtsschreibung“ genannt?", "options": ["Thukydides", "Homer", "Herodot", "Plutarch"], "explanation": "Seine Historien aus dem 5. Jahrhundert v. Chr. wollten die Kriege zwischen den Griechen und Persien erklären. Cicero gab ihm diesen Titel." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "At which sea battle in 480 BC did the Greek fleet defeat the Persians?",
+    "options": ["Marathon", "Salamis", "Thermopylae", "Actium"],
+    "correct_answer": 1,
+    "explanation": "Themistocles lured the larger Persian fleet into the narrow strait, where its numbers counted against it. Marathon and Thermopylae were land battles; Actium came centuries later.",
+    "bron": "Battle of Salamis, 480 BC (Herodotus, Book 8).",
+    "vertalingen": {
+      "nl": { "question": "Bij welke zeeslag in 480 v.Chr. versloeg de Griekse vloot de Perzen?", "options": ["Marathon", "Salamis", "Thermopylae", "Actium"], "explanation": "Themistocles lokte de grotere Perzische vloot de nauwe zeestraat in, waar haar overmacht juist tegen haar werkte. Marathon en Thermopylae waren landslagen; Actium kwam eeuwen later." },
+      "fr": { "question": "Lors de quelle bataille navale, en 480 av. J.-C., la flotte grecque vainquit-elle les Perses ?", "options": ["Marathon", "Salamine", "Les Thermopyles", "Actium"], "explanation": "Thémistocle attira la flotte perse, plus nombreuse, dans l'étroit détroit, où son nombre se retourna contre elle. Marathon et les Thermopyles furent des batailles terrestres ; Actium eut lieu des siècles plus tard." },
+      "de": { "question": "In welcher Seeschlacht besiegte die griechische Flotte 480 v. Chr. die Perser?", "options": ["Marathon", "Salamis", "Thermopylen", "Actium"], "explanation": "Themistokles lockte die größere persische Flotte in die enge Meerenge, wo ihre Übermacht gegen sie arbeitete. Marathon und die Thermopylen waren Landschlachten; Actium kam Jahrhunderte später." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which pharaoh tried to replace Egypt's old gods with worship of the sun disc, the Aten?",
+    "options": ["Ramesses II", "Tutankhamun", "Khufu", "Akhenaten"],
+    "correct_answer": 3,
+    "explanation": "He built a new capital at Amarna in the 14th century BC. After his death the old gods returned, and his successors tried to erase his name.",
+    "bron": "Amarna period, reign of Akhenaten (c. 1353–1336 BC).",
+    "vertalingen": {
+      "nl": { "question": "Welke farao probeerde de oude goden van Egypte te vervangen door de verering van de zonneschijf, de Aten?", "options": ["Ramses II", "Toetanchamon", "Cheops", "Achnaton"], "explanation": "Hij bouwde in de 14e eeuw v.Chr. een nieuwe hoofdstad in Amarna. Na zijn dood keerden de oude goden terug, en zijn opvolgers probeerden zijn naam uit te wissen." },
+      "fr": { "question": "Quel pharaon tenta de remplacer les anciens dieux de l'Égypte par le culte du disque solaire, l'Aton ?", "options": ["Ramsès II", "Toutânkhamon", "Khéops", "Akhenaton"], "explanation": "Il bâtit une nouvelle capitale à Amarna au XIVe siècle av. J.-C. Après sa mort, les anciens dieux revinrent, et ses successeurs tentèrent d'effacer son nom." },
+      "de": { "question": "Welcher Pharao versuchte, Ägyptens alte Götter durch die Verehrung der Sonnenscheibe Aton zu ersetzen?", "options": ["Ramses II.", "Tutanchamun", "Cheops", "Echnaton"], "explanation": "Er baute im 14. Jahrhundert v. Chr. eine neue Hauptstadt in Amarna. Nach seinem Tod kehrten die alten Götter zurück, und seine Nachfolger versuchten, seinen Namen zu tilgen." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Which emperor made Constantinople the new capital of the Roman Empire in AD 330?",
+    "options": ["Diocletian", "Constantine", "Theodosius", "Justinian"],
+    "correct_answer": 1,
+    "explanation": "He rebuilt the old Greek town of Byzantium and named it after himself. It remained an imperial capital for more than a thousand years.",
+    "bron": "Dedication of Constantinople, 11 May 330.",
+    "vertalingen": {
+      "nl": { "question": "Welke keizer maakte Constantinopel in 330 n.Chr. de nieuwe hoofdstad van het Romeinse Rijk?", "options": ["Diocletianus", "Constantijn", "Theodosius", "Justinianus"], "explanation": "Hij bouwde de oude Griekse stad Byzantium opnieuw op en noemde haar naar zichzelf. Ze bleef ruim duizend jaar een keizerlijke hoofdstad." },
+      "fr": { "question": "Quel empereur fit de Constantinople la nouvelle capitale de l'Empire romain en 330 ?", "options": ["Dioclétien", "Constantin", "Théodose", "Justinien"], "explanation": "Il rebâtit l'ancienne ville grecque de Byzance et lui donna son nom. Elle resta une capitale impériale pendant plus de mille ans." },
+      "de": { "question": "Welcher Kaiser machte Konstantinopel im Jahr 330 zur neuen Hauptstadt des Römischen Reiches?", "options": ["Diokletian", "Konstantin", "Theodosius", "Justinian"], "explanation": "Er baute die alte griechische Stadt Byzanz neu auf und benannte sie nach sich. Sie blieb über tausend Jahre eine kaiserliche Hauptstadt." }
+    }
+  },
+  {
+    "moeilijkheid": 3,
+    "question": "Whose law code, carved on a stone pillar around 1750 BC, is one of the oldest known?",
+    "options": ["Hammurabi", "Solon", "Draco", "Cyrus the Great"],
+    "correct_answer": 0,
+    "explanation": "The king of Babylon set out some 280 laws, many on the principle of \"an eye for an eye\". The pillar now stands in the Louvre.",
+    "bron": "Code of Hammurabi stele (c. 1754 BC), Louvre Sb 8.",
+    "vertalingen": {
+      "nl": { "question": "Wiens wetboek, rond 1750 v.Chr. in een stenen zuil gehouwen, is een van de oudst bekende?", "options": ["Hammurabi", "Solon", "Draco", "Cyrus de Grote"], "explanation": "De koning van Babylon legde zo'n 280 wetten vast, veel volgens het principe \"oog om oog\". De zuil staat nu in het Louvre." },
+      "fr": { "question": "Quel code de lois, gravé sur une stèle vers 1750 av. J.-C., est l'un des plus anciens connus ?", "options": ["Celui d'Hammurabi", "Celui de Solon", "Celui de Dracon", "Celui de Cyrus le Grand"], "explanation": "Le roi de Babylone y fixa quelque 280 lois, beaucoup selon le principe « œil pour œil ». La stèle se trouve aujourd'hui au Louvre." },
+      "de": { "question": "Wessen Gesetzessammlung, um 1750 v. Chr. in eine Steinstele gemeißelt, gehört zu den ältesten bekannten?", "options": ["Hammurabis", "Solons", "Drakons", "Kyros' des Großen"], "explanation": "Der König von Babylon legte rund 280 Gesetze fest, viele nach dem Grundsatz „Auge um Auge“. Die Stele steht heute im Louvre." }
+    }
+  }
+]

@@ -28,9 +28,9 @@ import { useSubscriptionStore } from '@/store/subscription-store';
  * ergens vandaan komt, komt hij van die laatste twee — en zonder deze parameter zie je dat niet.
  * Een vijfde ingang moet daarom een keuze maken in plaats van in een `undefined` te vallen.
  * Die is er sinds 1.2.1: `offline`, een gratis lezer zonder internet (`offline-modal.tsx`) — ook
- * een muur.
+ * een muur. Sinds 1.5 ook `trivia`: de levens in Explore zijn op — ook een muur.
  */
-export type PaywallBron = 'banner' | 'settings' | 'limit' | 'ad' | 'offline';
+export type PaywallBron = 'banner' | 'settings' | 'limit' | 'ad' | 'offline' | 'trivia';
 
 type ProPaywallProps = {
   visible: boolean;
