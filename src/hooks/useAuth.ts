@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { supabase } from '@/lib/supabase';
 import { useAuthStore, type Profiel } from '@/store/auth-store';
 import { useCharacterUnlockStore } from '@/store/character-unlock-store';
+import { bereidToestelVoorGebruiker } from '@/store/lokale-gegevens';
 import { useStoryProgressStore } from '@/store/story-progress-store';
 import { useVoortgangStore } from '@/store/voortgang-store';
 
@@ -58,6 +59,7 @@ export async function login(email: string, password: string): Promise<AuthResult
   }
 
   const profiel = await haalProfiel(data.user.id);
+  await bereidToestelVoorGebruiker(data.user.id);
   store.setUser(data.user, profiel);
   return { ok: true, user: data.user, bevestigingNodig: false };
 }
@@ -102,6 +104,7 @@ export async function signup(
 
   await maakGebruikersrijen(data.user.id, genormaliseerdeEmail, username);
   const profiel = await haalProfiel(data.user.id);
+  await bereidToestelVoorGebruiker(data.user.id);
   store.setUser(data.user, profiel);
   return { ok: true, user: data.user, bevestigingNodig: false };
 }
@@ -187,6 +190,9 @@ async function herstelSessie(session: Session | null): Promise<void> {
     profiel = await haalProfiel(session.user.id);
   }
 
+  // Vóór `setUser`: zie `bereidToestelVoorGebruiker` — een ander account mag de voortgang van de
+  // vorige lezer op dit toestel niet erven.
+  await bereidToestelVoorGebruiker(session.user.id);
   store.setUser(session.user, profiel);
 }
 

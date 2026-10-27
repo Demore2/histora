@@ -353,6 +353,15 @@ Only the preference stores are still device-local — see "Known gaps".
 - `voortgang` now has a **unique index on `user_id`**, so writes are one `upsert(…, { onConflict:
   'user_id' })`. Without it Postgres cannot do `on conflict` at all and two racing syncs leave two
   rows.
+- **A different account on the same device starts clean (1.4.4, `bereidToestelVoorGebruiker` in
+  `store/lokale-gegevens.ts`).** Logout leaves local progress on the device, and the merge below would
+  then hand the previous reader's streak, chapters and characters to the next account that signs in
+  here — and upload them. So before every `setUser` in `useAuth.ts`, the last signed-in user id
+  (AsyncStorage `laatste-gebruiker-id`) is compared; a different id runs
+  `wisLokaleGebruikersgegevens({ behoudAankondigingen: true })` first. Same account, or nobody before:
+  nothing is wiped, so reading before creating an account still carries over. `behoudAankondigingen`
+  keeps `prestatie-store`, otherwise the first measurement after the switch announces the new
+  reader's existing milestones as new.
 - **Login merges, it does not overwrite.** `voegServerVoortgangSamen` unions the three sets and
   keeps the streak with the most recent `laatsteActiviteitDatum`. The sets only ever grow, so a
   union can't lose anything — and it is what carries progress made *before* signing in into the

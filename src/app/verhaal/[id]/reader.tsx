@@ -483,6 +483,7 @@ export default function ReaderScreen() {
         <CharacterUnlockModal
           personageNaam={verhaal?.personage.naam ?? 'Character'}
           personageImage={verhaal?.afbeelding}
+          kleur={tijdperk?.kleur}
           onClose={handleCloseUnlockModal}
         />
       </Modal>

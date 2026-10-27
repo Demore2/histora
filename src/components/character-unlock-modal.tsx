@@ -29,6 +29,11 @@ interface CharacterUnlockModalProps {
   personageNaam: string;
   /** `Verhaal.afbeelding` — een gebundeld asset, geen URL meer (LAUNCH-PLAN.md B1). */
   personageImage?: ImageSourcePropType;
+  /**
+   * De kleur van het tijdperk van dit verhaal (1.4.4). Ringen, naam en knop volgen hem, net als de
+   * knoppen in de reader en de routekaart; zonder deze prop valt het venster terug op `theme.accent`.
+   */
+  kleur?: string;
   onClose: () => void;
 }
 
@@ -60,8 +65,9 @@ function PulsRing({ kleur, vertraging }: { kleur: string; vertraging: number }) 
   return <Animated.View pointerEvents="none" style={[styles.ring, { borderColor: kleur }, stijl]} />;
 }
 
-export function CharacterUnlockModal({ personageNaam, personageImage, onClose }: CharacterUnlockModalProps) {
+export function CharacterUnlockModal({ personageNaam, personageImage, kleur, onClose }: CharacterUnlockModalProps) {
   const theme = useTheme();
+  const accent = kleur ?? theme.accent;
   const { t } = useVertaling();
   const initial = personageNaam[0]?.toUpperCase() ?? '?';
 
@@ -90,11 +96,11 @@ export function CharacterUnlockModal({ personageNaam, personageImage, onClose }:
         style={[styles.modal, { backgroundColor: theme.background }]}
         entering={ZoomIn.springify().damping(13).mass(0.9)}>
         <View style={styles.portraitWrapper}>
-          <PulsRing kleur={theme.accent} vertraging={0} />
-          <PulsRing kleur={theme.accent} vertraging={PULS_DUUR / 2} />
+          <PulsRing kleur={accent} vertraging={0} />
+          <PulsRing kleur={accent} vertraging={PULS_DUUR / 2} />
           <Animated.View
             pointerEvents="none"
-            style={[styles.gloedRing, { borderColor: theme.accent }, gloedStijl]}
+            style={[styles.gloedRing, { borderColor: accent }, gloedStijl]}
           />
 
           <Animated.View style={portretStijl}>
@@ -106,7 +112,7 @@ export function CharacterUnlockModal({ personageNaam, personageImage, onClose }:
                 transition={200}
               />
             ) : (
-              <View style={[styles.portraitCircle, { backgroundColor: theme.accent }]}>
+              <View style={[styles.portraitCircle, { backgroundColor: accent }]}>
                 <ThemedText type="display" style={{ color: theme.background, fontSize: 56 }}>
                   {initial}
                 </ThemedText>
@@ -122,7 +128,7 @@ export function CharacterUnlockModal({ personageNaam, personageImage, onClose }:
             {t((s) => s.personage.ontgrendeldTitel)}
           </ThemedText>
 
-          <ThemedText type="subtitle" style={[styles.characterName, { color: theme.accent }]}>
+          <ThemedText type="subtitle" style={[styles.characterName, { color: accent }]}>
             {personageNaam}
           </ThemedText>
 
@@ -136,8 +142,8 @@ export function CharacterUnlockModal({ personageNaam, personageImage, onClose }:
         <AnimatedPressable
           onPress={onClose}
           haptisch={false}
-          style={[styles.closeButton, { backgroundColor: theme.accent }]}>
-          <ThemedText type="smallBold" style={{ color: theme.background }}>
+          style={[styles.closeButton, { backgroundColor: accent }]}>
+          <ThemedText type="smallBold" style={{ color: '#FFFFFF' }}>
             {t((s) => s.personage.naarHome)}
           </ThemedText>
         </AnimatedPressable>

@@ -1,3 +1,5 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 import { useAbonnementStore } from '@/store/abonnement-store';
 import { useAchievementStore } from '@/store/achievement-store';
 import { useCharacterUnlockStore } from '@/store/character-unlock-store';
@@ -8,15 +10,75 @@ import { useProfileStore } from '@/store/profile-store';
 import { useRecommendationStore } from '@/store/recommendation-store';
 import { useReferralStore } from '@/store/referral-store';
 import { useStoryProgressStore } from '@/store/story-progress-store';
+import { wachtOpHydratie } from '@/store/sync-hulp';
 import { wisAbonnementCache } from '@/store/subscription-store';
 import { useTriviaStore } from '@/store/trivia-store';
 import { useVoortgangStore } from '@/store/voortgang-store';
 import { useWinkelStore } from '@/store/winkel-store';
 
+/** Wie er op dit toestel het laatst ingelogd was (1.4.4). Overleeft uitloggen, met opzet. */
+const LAATSTE_GEBRUIKER_SLEUTEL = 'laatste-gebruiker-id';
+
+/** Eén lopende controle tegelijk: `login()` en `onAuthStateChange` melden dezelfde sessie bijna tegelijk. */
+let lopend: { userId: string; klaar: Promise<void> } | null = null;
+
+/**
+ * Roep aan vóór elke `setUser`, dus voordat een hook of store de nieuwe gebruiker ziet (1.4.4).
+ *
+ * De voortgangsstores **verenigen** lokaal met server bij het inloggen; dat is de bedoeling voor
+ * wat je las vóór je een account had. Maar uitloggen laat de voortgang op het toestel staan, en
+ * dan kreeg een **ander** account dat hier daarna inlogt de streak, hoofdstukken en personages
+ * van de vorige lezer — en zette die op de server. Dus: was er hiervoor iemand anders ingelogd,
+ * dan eerst `wisLokaleGebruikersgegevens()`. Hetzelfde account of nog nooit iemand: niets wissen.
+ *
+ * Wacht eerst op de hydratie van alles wat gewist wordt: wissen vóór AsyncStorage is ingelezen
+ * wordt meteen weer overschreven door de opgeslagen stand. Een installatie van vóór 1.4.4 kent
+ * de sleutel nog niet; de eerste login daarna verenigt dus nog één keer zoals vroeger.
+ */
+export function bereidToestelVoorGebruiker(userId: string): Promise<void> {
+  if (lopend?.userId === userId) return lopend.klaar;
+  const klaar = (async () => {
+    let vorige: string | null = null;
+    try {
+      vorige = await AsyncStorage.getItem(LAATSTE_GEBRUIKER_SLEUTEL);
+    } catch {
+      // Niet te lezen: dan weten we het niet, en verenigen is het oude, veilige gedrag.
+    }
+    if (vorige && vorige !== userId) {
+      await Promise.all(
+        [
+          useVoortgangStore,
+          useStoryProgressStore,
+          useCharacterUnlockStore,
+          useAchievementStore,
+          useRecommendationStore,
+          useReferralStore,
+          useNotificatieStore,
+          usePrestatieStore,
+          useWinkelStore,
+          useTriviaStore,
+          useProfileStore,
+          useEmailVoorkeurStore,
+          useAbonnementStore,
+        ].map((store) => wachtOpHydratie(store))
+      );
+      wisLokaleGebruikersgegevens({ behoudAankondigingen: true });
+    }
+    try {
+      await AsyncStorage.setItem(LAATSTE_GEBRUIKER_SLEUTEL, userId);
+    } catch {
+      // Volgende keer opnieuw proberen.
+    }
+  })();
+  lopend = { userId, klaar };
+  return klaar;
+}
+
 /**
  * Wist alles wat dít toestel over de ingelogde lezer bewaart.
  *
- * **Alleen voor accountverwijdering, niet voor uitloggen.** Uitloggen belooft juist het
+ * **Voor accountverwijdering en voor een accountwissel op dit toestel
+ * (`bereidToestelVoorGebruiker`), niet voor uitloggen.** Uitloggen belooft juist het
  * tegenovergestelde ("your reading progress stays on this device"), en de serverrij is dan de
  * kopie voor de volgende keer. Hier is er geen serverrij meer om naar terug te keren.
  *
@@ -32,7 +94,17 @@ import { useWinkelStore } from '@/store/winkel-store';
  * persoon — en de analytics-schakelaar terugzetten op zijn standaard zou een uitgezette meting
  * stilletjes weer aanzetten.
  */
-export function wisLokaleGebruikersgegevens(): void {
+export function wisLokaleGebruikersgegevens({
+  behoudAankondigingen = false,
+}: {
+  /**
+   * Bij een accountwissel (niet bij verwijderen): laat `prestatie-store` staan. Gewist meet de
+   * eerste meting "nul mijlpalen" vóórdat de voortgang van de nieuwe lezer van de server binnen
+   * is, en kondigt die daarna als nieuw aan — een felicitatievenster voor een oude streak. Een
+   * gemiste felicitatie voor iets dat de vorige lezer hier al vierde is het kleinere kwaad.
+   */
+  behoudAankondigingen?: boolean;
+} = {}): void {
   // Eerst de geplande syncs afblazen. Zonder dit vertrekt twee seconden na een laatste
   // afgevinkt hoofdstuk alsnog een upsert — naar een account dat niet meer bestaat.
   useVoortgangStore.getState().resetSyncStatus();
@@ -65,7 +137,7 @@ export function wisLokaleGebruikersgegevens(): void {
   // moet is het lijstje "hier heb je de melding al voor gehad": blijft dat staan, dan haalt de
   // volgende lezer op dit toestel zijn eerste tien hoofdstukken zonder ooit een mijlpaal te zien.
   // `geinitialiseerd` gaat mee terug op `false`, zodat die lezer een schone eerste meting krijgt.
-  usePrestatieStore.getState().reset();
+  if (!behoudAankondigingen) usePrestatieStore.getState().reset();
   // En de serverkant ervan: de ontgrendeldata en deelstatus horen bij de verwijderde lezer.
   // Blijven die staan, dan neemt de samenvoeging bij de volgende login ze mee omhoog naar het
   // nieuwe account — een kopie van precies de gegevens die net "voorgoed verwijderd" heetten.
