@@ -1511,8 +1511,9 @@ Pro sees none of the three.
   one is preloaded — `beloondKlaar` in `advertentie-store`). **Still no banner on Explore**: fast-tap
   game buttons next to a banner is the accidental-click traffic AdMob suspends accounts for.
   The life is granted **by the server** (`trivia_leven_bij_advertentie`,
-  `supabase/trivia-advertentie-migratie.sql`), never by the app, capped at 3 per UTC day; without
-  AdMob server-side verification the cap is what bounds a forged call. `ADMOB_EENHEDEN.beloond` is
+  `supabase/trivia-advertentie-migratie.sql` + `-2.sql`), never by the app. **Since `-2.sql`: no daily
+  cap, but only with zero lives** (owner, 2026-10-27: one life per ad, as often as they like — every view
+  is revenue). The server refuses with `levens_niet_op` otherwise; the per-day table is now statistics only. `ADMOB_EENHEDEN.beloond` is
   `ca-app-pub-5960565412463172/3973568784` (rewarded-trivia-life, created 2026-10-27).
 
 ### Gratis vs Pro (`src/constants/monetisatie.ts`, `abonnement-store.ts`)
