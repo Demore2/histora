@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What did Kublai Khan ask the Polo brothers to bring back from Europe?",
+      "options": [
+        "A hundred learned men and oil from the lamp at Christ's tomb",
+        "Venetian glass and silk",
+        "A European princess as his bride",
+        "Maps of the Mediterranean"
+      ],
+      "explanation": "Kublai was curious about Christianity. The Pope sent only two friars, who soon turned back, but the Polos did bring holy oil from Jerusalem.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat vroeg Koeblai Khan de gebroeders Polo uit Europa mee te brengen?",
+          "options": [
+            "Honderd geleerden en olie uit de lamp bij het graf van Christus",
+            "Venetiaans glas en zijde",
+            "Een Europese prinses als bruid",
+            "Kaarten van de Middellandse Zee"
+          ],
+          "explanation": "Koeblai was nieuwsgierig naar het christendom. De paus stuurde maar twee monniken, die al snel omkeerden, maar de Polo's brachten wel heilige olie uit Jeruzalem mee."
+        },
+        "fr": {
+          "question": "Qu’est-ce que Kubilaï Khan a demandé aux frères Polo de rapporter d’Europe ?",
+          "options": [
+            "Cent savants et de l’huile de la lampe du tombeau du Christ",
+            "Du verre de Venise et de la soie",
+            "Une princesse européenne à épouser",
+            "Des cartes de la Méditerranée"
+          ],
+          "explanation": "Kubilaï s’intéressait au christianisme. Le pape n’a envoyé que deux frères, qui ont vite rebroussé chemin, mais les Polo ont bien apporté l’huile sainte de Jérusalem."
+        },
+        "de": {
+          "question": "Was sollten die Brüder Polo Kublai Khan aus Europa mitbringen?",
+          "options": [
+            "Hundert Gelehrte und Öl aus der Lampe am Grab Christi",
+            "Venezianisches Glas und Seide",
+            "Eine europäische Prinzessin als Braut",
+            "Karten des Mittelmeers"
+          ],
+          "explanation": "Kublai interessierte sich für das Christentum. Der Papst schickte nur zwei Mönche, die bald umkehrten, doch die Polos brachten heiliges Öl aus Jerusalem mit."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What did travellers say they heard at night in the desert of Lop?",
+      "options": [
+        "Wolves following the caravan",
+        "Voices calling their names and the sound of drums",
+        "Bells from a hidden monastery",
+        "The roar of a distant river"
+      ],
+      "explanation": "Anyone who wandered off to follow the voices was said to be lost forever. Modern travellers have also reported strange sounds, probably from shifting sand.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat hoorden reizigers volgens eigen zeggen 's nachts in de woestijn van Lop?",
+          "options": [
+            "Wolven die de karavaan volgden",
+            "Stemmen die hun naam riepen en het geluid van trommels",
+            "Klokken van een verborgen klooster",
+            "Het gebulder van een verre rivier"
+          ],
+          "explanation": "Wie wegdwaalde om de stemmen te volgen, zou voorgoed verdwalen. Ook moderne reizigers meldden vreemde geluiden, waarschijnlijk van verschuivend zand."
+        },
+        "fr": {
+          "question": "Qu’entendaient la nuit, selon eux, les voyageurs dans le désert de Lop ?",
+          "options": [
+            "Des loups qui suivaient la caravane",
+            "Des voix qui les appelaient par leur nom et des bruits de tambours",
+            "Les cloches d’un monastère caché",
+            "Le grondement d’une rivière lointaine"
+          ],
+          "explanation": "Celui qui s’écartait pour suivre les voix se perdait à jamais, disait-on. Des voyageurs modernes ont aussi signalé des bruits étranges, sans doute dus au sable qui bouge."
+        },
+        "de": {
+          "question": "Was hörten Reisende angeblich nachts in der Wüste Lop?",
+          "options": [
+            "Wölfe, die der Karawane folgten",
+            "Stimmen, die ihre Namen riefen, und Trommelklang",
+            "Glocken eines verborgenen Klosters",
+            "Das Rauschen eines fernen Flusses"
+          ],
+          "explanation": "Wer sich entfernte, um den Stimmen zu folgen, galt als für immer verloren. Auch heutige Reisende berichten von seltsamen Geräuschen, wohl durch wanderndes Sand."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Under what name did the poet Coleridge later make Kublai's summer palace at Shangdu famous?",
+      "options": [
+        "Cathay",
+        "Kinsay",
+        "Xanadu",
+        "Samarkand"
+      ],
+      "explanation": "Marco described a marble palace with gilded halls in a great park full of deer. Five hundred years later it became Coleridge's 'Xanadu'.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Onder welke naam maakte de dichter Coleridge het zomerpaleis van Koeblai in Shangdu later beroemd?",
+          "options": [
+            "Cathay",
+            "Kinsay",
+            "Xanadu",
+            "Samarkand"
+          ],
+          "explanation": "Marco beschreef een marmeren paleis met vergulde zalen in een groot park vol herten. Vijfhonderd jaar later werd het Coleridges 'Xanadu'."
+        },
+        "fr": {
+          "question": "Sous quel nom le poète Coleridge a-t-il plus tard rendu célèbre le palais d’été de Kubilaï à Shangdu ?",
+          "options": [
+            "Cathay",
+            "Kinsay",
+            "Xanadu",
+            "Samarcande"
+          ],
+          "explanation": "Marco décrivait un palais de marbre aux salles dorées dans un grand parc plein de cerfs. Cinq siècles plus tard, il est devenu le « Xanadu » de Coleridge."
+        },
+        "de": {
+          "question": "Unter welchem Namen machte der Dichter Coleridge Kublais Sommerpalast in Shangdu später berühmt?",
+          "options": [
+            "Cathay",
+            "Kinsay",
+            "Xanadu",
+            "Samarkand"
+          ],
+          "explanation": "Marco beschrieb einen Marmorpalast mit vergoldeten Hallen in einem großen Park voller Hirsche. Fünfhundert Jahre später wurde daraus Coleridges „Xanadu“."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Which Chinese invention seemed absurd to Europeans when Marco Polo described it?",
+      "options": [
+        "Gunpowder",
+        "The compass",
+        "Silk weaving",
+        "Paper money"
+      ],
+      "explanation": "People in China paid with paper printed with the khan's seal. In Europe money meant gold or silver coins.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke Chinese uitvinding vonden Europeanen absurd toen Marco Polo haar beschreef?",
+          "options": [
+            "Buskruit",
+            "Het kompas",
+            "Zijdeweven",
+            "Papiergeld"
+          ],
+          "explanation": "In China betaalde men met papier waarop het zegel van de khan stond. In Europa betekende geld munten van goud of zilver."
+        },
+        "fr": {
+          "question": "Quelle invention chinoise semblait absurde aux Européens quand Marco Polo l’a décrite ?",
+          "options": [
+            "La poudre à canon",
+            "La boussole",
+            "Le tissage de la soie",
+            "La monnaie de papier"
+          ],
+          "explanation": "En Chine, on payait avec du papier portant le sceau du khan. En Europe, la monnaie, c’étaient des pièces d’or ou d’argent."
+        },
+        "de": {
+          "question": "Welche chinesische Erfindung hielten Europäer für absurd, als Marco Polo sie beschrieb?",
+          "options": [
+            "Schießpulver",
+            "Den Kompass",
+            "Die Seidenweberei",
+            "Papiergeld"
+          ],
+          "explanation": "In China bezahlte man mit Papier, das das Siegel des Khans trug. In Europa bedeutete Geld Münzen aus Gold oder Silber."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Why were the Polos finally allowed to leave Kublai Khan's court in 1292?",
+      "options": [
+        "They were escorting a Mongol princess to Persia",
+        "Kublai Khan had died",
+        "They had been banished for spying",
+        "The Pope demanded their return"
+      ],
+      "explanation": "Princess Kököchin was to marry the ruler of Persia. Of the hundreds who sailed, Marco says only eighteen survived the two-year voyage.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom mochten de Polo's in 1292 eindelijk het hof van Koeblai Khan verlaten?",
+          "options": [
+            "Ze begeleidden een Mongoolse prinses naar Perzië",
+            "Koeblai Khan was overleden",
+            "Ze waren verbannen wegens spionage",
+            "De paus eiste hun terugkeer"
+          ],
+          "explanation": "Prinses Kököchin zou met de heerser van Perzië trouwen. Van de honderden opvarenden overleefden volgens Marco maar achttien de reis van twee jaar."
+        },
+        "fr": {
+          "question": "Pourquoi les Polo ont-ils enfin pu quitter la cour de Kubilaï Khan en 1292 ?",
+          "options": [
+            "Ils escortaient une princesse mongole en Perse",
+            "Kubilaï Khan était mort",
+            "Ils avaient été bannis pour espionnage",
+            "Le pape exigeait leur retour"
+          ],
+          "explanation": "La princesse Kököchin devait épouser le souverain de Perse. Sur les centaines de passagers, seuls dix-huit auraient survécu au voyage de deux ans, selon Marco."
+        },
+        "de": {
+          "question": "Warum durften die Polos 1292 endlich den Hof Kublai Khans verlassen?",
+          "options": [
+            "Sie begleiteten eine mongolische Prinzessin nach Persien",
+            "Kublai Khan war gestorben",
+            "Sie waren wegen Spionage verbannt worden",
+            "Der Papst verlangte ihre Rückkehr"
+          ],
+          "explanation": "Prinzessin Kököchin sollte den Herrscher Persiens heiraten. Von den Hunderten an Bord überlebten laut Marco nur achtzehn die zweijährige Reise."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "According to the famous story, how did the Polos convince their relatives in Venice who they were?",
+      "options": [
+        "They spoke fluent Mongolian",
+        "They showed a letter from the khan",
+        "They slit open their coats and jewels poured out",
+        "Their old dog recognised them"
+      ],
+      "explanation": "They had carried their fortune sewn into their clothes all the way from China. The story was written down more than two centuries later.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe overtuigden de Polo's volgens het bekende verhaal hun familie in Venetië van wie ze waren?",
+          "options": [
+            "Ze spraken vloeiend Mongools",
+            "Ze lieten een brief van de khan zien",
+            "Ze sneden hun jassen open en er stroomden juwelen uit",
+            "Hun oude hond herkende hen"
+          ],
+          "explanation": "Ze hadden hun fortuin helemaal vanuit China in hun kleren genaaid meegedragen. Het verhaal werd pas ruim twee eeuwen later opgeschreven."
+        },
+        "fr": {
+          "question": "Selon la célèbre histoire, comment les Polo ont-ils convaincu leurs proches à Venise de leur identité ?",
+          "options": [
+            "Ils parlaient couramment le mongol",
+            "Ils ont montré une lettre du khan",
+            "Ils ont décousu leurs manteaux et des joyaux en sont tombés",
+            "Leur vieux chien les a reconnus"
+          ],
+          "explanation": "Ils avaient rapporté leur fortune cousue dans leurs vêtements depuis la Chine. L’histoire n’a été écrite que plus de deux siècles plus tard."
+        },
+        "de": {
+          "question": "Wie überzeugten die Polos laut der bekannten Geschichte ihre Verwandten in Venedig, wer sie waren?",
+          "options": [
+            "Sie sprachen fließend Mongolisch",
+            "Sie zeigten einen Brief des Khans",
+            "Sie schlitzten ihre Mäntel auf und Juwelen fielen heraus",
+            "Ihr alter Hund erkannte sie"
+          ],
+          "explanation": "Sie hatten ihr Vermögen von China an in ihre Kleider eingenäht getragen. Die Geschichte wurde erst über zweihundert Jahre später aufgeschrieben."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Where did Marco Polo tell his story to the writer Rustichello of Pisa?",
+      "options": [
+        "In the Doge's palace",
+        "In a monastery in Rome",
+        "On board a ship to Acre",
+        "In a prison in Genoa"
+      ],
+      "explanation": "Captured in the war between Venice and Genoa, Marco met Rustichello, a writer of romances about King Arthur, in prison.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar vertelde Marco Polo zijn verhaal aan de schrijver Rustichello van Pisa?",
+          "options": [
+            "In het paleis van de doge",
+            "In een klooster in Rome",
+            "Aan boord van een schip naar Akko",
+            "In een gevangenis in Genua"
+          ],
+          "explanation": "Marco werd gevangengenomen in de oorlog tussen Venetië en Genua en ontmoette in de cel Rustichello, een schrijver van verhalen over koning Arthur."
+        },
+        "fr": {
+          "question": "Où Marco Polo a-t-il raconté son histoire à l’écrivain Rustichello de Pise ?",
+          "options": [
+            "Au palais des Doges",
+            "Dans un monastère à Rome",
+            "À bord d’un navire pour Acre",
+            "Dans une prison de Gênes"
+          ],
+          "explanation": "Capturé pendant la guerre entre Venise et Gênes, Marco a rencontré en prison Rustichello, auteur de romans sur le roi Arthur."
+        },
+        "de": {
+          "question": "Wo erzählte Marco Polo dem Schriftsteller Rustichello da Pisa seine Geschichte?",
+          "options": [
+            "Im Dogenpalast",
+            "In einem Kloster in Rom",
+            "An Bord eines Schiffes nach Akkon",
+            "In einem Gefängnis in Genua"
+          ],
+          "explanation": "Im Krieg zwischen Venedig und Genua gefangen genommen, traf Marco im Gefängnis Rustichello, einen Autor von Romanen über König Artus."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Which famous explorer filled a copy of Marco Polo's book with notes before his own voyage?",
+      "options": [
+        "Vasco da Gama",
+        "Christopher Columbus",
+        "Ferdinand Magellan",
+        "Henry the Navigator"
+      ],
+      "explanation": "Columbus made notes about gold, spices and Japan. When he sailed west in 1492, he was looking for the lands Marco Polo had described.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke beroemde ontdekkingsreiziger schreef een exemplaar van Marco Polo's boek vol aantekeningen voor zijn eigen reis?",
+          "options": [
+            "Vasco da Gama",
+            "Christoffel Columbus",
+            "Ferdinand Magellaan",
+            "Hendrik de Zeevaarder"
+          ],
+          "explanation": "Columbus maakte notities over goud, specerijen en Japan. Toen hij in 1492 naar het westen zeilde, zocht hij de landen die Marco Polo had beschreven."
+        },
+        "fr": {
+          "question": "Quel célèbre explorateur a annoté un exemplaire du livre de Marco Polo avant son propre voyage ?",
+          "options": [
+            "Vasco de Gama",
+            "Christophe Colomb",
+            "Fernand de Magellan",
+            "Henri le Navigateur"
+          ],
+          "explanation": "Colomb a pris des notes sur l’or, les épices et le Japon. Quand il a navigué vers l’ouest en 1492, il cherchait les terres décrites par Marco Polo."
+        },
+        "de": {
+          "question": "Welcher berühmte Entdecker füllte vor seiner eigenen Reise ein Exemplar von Marco Polos Buch mit Notizen?",
+          "options": [
+            "Vasco da Gama",
+            "Christoph Kolumbus",
+            "Ferdinand Magellan",
+            "Heinrich der Seefahrer"
+          ],
+          "explanation": "Kolumbus notierte sich Dinge über Gold, Gewürze und Japan. Als er 1492 nach Westen segelte, suchte er die Länder, die Marco Polo beschrieben hatte."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

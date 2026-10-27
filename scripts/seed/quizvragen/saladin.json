@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "In which town was Saladin born, into a Kurdish family of soldiers?",
+      "options": [
+        "Damascus",
+        "Cairo",
+        "Tikrit",
+        "Aleppo"
+      ],
+      "explanation": "He was born in 1137 or 1138 in Tikrit on the Tigris. An old story says the family had to flee the very night he was born.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "In welke stad werd Saladin geboren, in een Koerdische soldatenfamilie?",
+          "options": [
+            "Damascus",
+            "Caïro",
+            "Tikrit",
+            "Aleppo"
+          ],
+          "explanation": "Hij werd in 1137 of 1138 geboren in Tikrit aan de Tigris. Volgens een oud verhaal moest de familie nog in de nacht van zijn geboorte vluchten."
+        },
+        "fr": {
+          "question": "Dans quelle ville Saladin est-il né, dans une famille kurde de soldats ?",
+          "options": [
+            "Damas",
+            "Le Caire",
+            "Tikrit",
+            "Alep"
+          ],
+          "explanation": "Il est né en 1137 ou 1138 à Tikrit, sur le Tigre. Selon une vieille histoire, la famille dut fuir la nuit même de sa naissance."
+        },
+        "de": {
+          "question": "In welcher Stadt wurde Saladin in eine kurdische Soldatenfamilie geboren?",
+          "options": [
+            "Damaskus",
+            "Kairo",
+            "Tikrit",
+            "Aleppo"
+          ],
+          "explanation": "Er wurde 1137 oder 1138 in Tikrit am Tigris geboren. Einer alten Geschichte nach musste die Familie noch in der Nacht seiner Geburt fliehen."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What did Saladin end in Egypt in 1171?",
+      "options": [
+        "The rule of the crusaders",
+        "The Shia Fatimid caliphate",
+        "The trade in slaves",
+        "The building of pyramids"
+      ],
+      "explanation": "He had Friday prayers said in the name of the Sunni caliph of Baghdad. Two hundred years of Fatimid rule ended quietly.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar maakte Saladin in 1171 in Egypte een einde aan?",
+          "options": [
+            "Aan de heerschappij van de kruisvaarders",
+            "Aan het sjiitische kalifaat van de Fatimiden",
+            "Aan de slavenhandel",
+            "Aan het bouwen van piramides"
+          ],
+          "explanation": "Hij liet het vrijdaggebed uitspreken in naam van de soennitische kalief van Bagdad. Zo eindigden tweehonderd jaar Fatimidisch bewind in stilte."
+        },
+        "fr": {
+          "question": "À quoi Saladin a-t-il mis fin en Égypte en 1171 ?",
+          "options": [
+            "À la domination des croisés",
+            "Au califat chiite des Fatimides",
+            "Au commerce des esclaves",
+            "À la construction de pyramides"
+          ],
+          "explanation": "Il a fait dire la prière du vendredi au nom du calife sunnite de Bagdad. Deux siècles de règne fatimide ont pris fin sans bruit."
+        },
+        "de": {
+          "question": "Was beendete Saladin 1171 in Ägypten?",
+          "options": [
+            "Die Herrschaft der Kreuzfahrer",
+            "Das schiitische Kalifat der Fatimiden",
+            "Den Sklavenhandel",
+            "Den Bau von Pyramiden"
+          ],
+          "explanation": "Er ließ das Freitagsgebet im Namen des sunnitischen Kalifen von Bagdad sprechen. Zweihundert Jahre Fatimidenherrschaft endeten ohne Aufsehen."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Who defeated Saladin at Montgisard in 1177?",
+      "options": [
+        "Richard the Lionheart",
+        "Reynald of Châtillon",
+        "Frederick Barbarossa",
+        "Baldwin IV, the young leper king of Jerusalem"
+      ],
+      "explanation": "The sixteen-year-old king caught Saladin's army by surprise. Saladin barely escaped on a fast camel.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie versloeg Saladin bij Montgisard in 1177?",
+          "options": [
+            "Richard Leeuwenhart",
+            "Reinoud van Châtillon",
+            "Frederik Barbarossa",
+            "Boudewijn IV, de jonge melaatse koning van Jeruzalem"
+          ],
+          "explanation": "De zestienjarige koning overviel Saladins leger. Saladin ontsnapte ternauwernood op een snelle kameel."
+        },
+        "fr": {
+          "question": "Qui a vaincu Saladin à Montgisard en 1177 ?",
+          "options": [
+            "Richard Cœur de Lion",
+            "Renaud de Châtillon",
+            "Frédéric Barberousse",
+            "Baudouin IV, le jeune roi lépreux de Jérusalem"
+          ],
+          "explanation": "Le roi de seize ans a surpris l’armée de Saladin. Saladin s’est échappé de justesse sur un chameau rapide."
+        },
+        "de": {
+          "question": "Wer besiegte Saladin 1177 bei Montgisard?",
+          "options": [
+            "Richard Löwenherz",
+            "Rainald von Châtillon",
+            "Friedrich Barbarossa",
+            "Balduin IV., der junge leprakranke König von Jerusalem"
+          ],
+          "explanation": "Der sechzehnjährige König überraschte Saladins Heer. Saladin entkam nur knapp auf einem schnellen Kamel."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "At Hattin, how did Saladin's men add to the suffering of the thirsty crusaders?",
+      "options": [
+        "They set fire to the dry grass so smoke blew into their faces",
+        "They poisoned the Sea of Galilee",
+        "They flooded the valley",
+        "They played drums all night"
+      ],
+      "explanation": "Cut off from water in the summer heat, the crusader army was destroyed on 4 July 1187 on the hill called the Horns of Hattin.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe maakten Saladins mannen het bij Hattin nog erger voor de dorstige kruisvaarders?",
+          "options": [
+            "Ze staken het droge gras in brand zodat de rook in hun gezicht woei",
+            "Ze vergiftigden het Meer van Galilea",
+            "Ze zetten het dal onder water",
+            "Ze speelden de hele nacht op trommels"
+          ],
+          "explanation": "Afgesneden van water in de zomerhitte werd het kruisvaardersleger op 4 juli 1187 vernietigd op de heuvel die de Hoorns van Hattin heet."
+        },
+        "fr": {
+          "question": "À Hattin, comment les hommes de Saladin ont-ils aggravé la souffrance des croisés assoiffés ?",
+          "options": [
+            "Ils ont mis le feu à l’herbe sèche pour que la fumée leur souffle au visage",
+            "Ils ont empoisonné le lac de Tibériade",
+            "Ils ont inondé la vallée",
+            "Ils ont joué du tambour toute la nuit"
+          ],
+          "explanation": "Privée d’eau sous la chaleur de l’été, l’armée des croisés a été anéantie le 4 juillet 1187 sur la colline des Cornes de Hattin."
+        },
+        "de": {
+          "question": "Wie verschlimmerten Saladins Männer bei Hattin das Leiden der durstigen Kreuzfahrer?",
+          "options": [
+            "Sie zündeten das trockene Gras an, sodass ihnen der Rauch ins Gesicht wehte",
+            "Sie vergifteten den See Genezareth",
+            "Sie überfluteten das Tal",
+            "Sie trommelten die ganze Nacht"
+          ],
+          "explanation": "Vom Wasser abgeschnitten, wurde das Kreuzfahrerheer in der Sommerhitze am 4. Juli 1187 auf dem Hügel der Hörner von Hattin vernichtet."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "How was Saladin's capture of Jerusalem in 1187 different from the crusaders' capture of 1099?",
+      "options": [
+        "He destroyed the Church of the Holy Sepulchre",
+        "He made it the capital of Egypt",
+        "The city surrendered and there was no massacre",
+        "He never entered the city himself"
+      ],
+      "explanation": "Inhabitants could leave if they paid a ransom, and thousands who could not pay were freed. In 1099 the crusaders had slaughtered the city's people.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe verschilde Saladins inname van Jeruzalem in 1187 van die door de kruisvaarders in 1099?",
+          "options": [
+            "Hij verwoestte de Heilig Grafkerk",
+            "Hij maakte er de hoofdstad van Egypte van",
+            "De stad gaf zich over en er kwam geen bloedbad",
+            "Hij betrad de stad zelf nooit"
+          ],
+          "explanation": "Inwoners mochten vertrekken tegen losgeld, en duizenden die niet konden betalen werden vrijgelaten. In 1099 hadden de kruisvaarders de bevolking afgeslacht."
+        },
+        "fr": {
+          "question": "En quoi la prise de Jérusalem par Saladin en 1187 différait-elle de celle des croisés en 1099 ?",
+          "options": [
+            "Il a détruit l’église du Saint-Sépulcre",
+            "Il en a fait la capitale de l’Égypte",
+            "La ville s’est rendue et il n’y a pas eu de massacre",
+            "Il n’est jamais entré lui-même dans la ville"
+          ],
+          "explanation": "Les habitants pouvaient partir contre rançon, et des milliers qui ne pouvaient pas payer ont été libérés. En 1099, les croisés avaient massacré la population."
+        },
+        "de": {
+          "question": "Worin unterschied sich Saladins Einnahme Jerusalems 1187 von der Eroberung durch die Kreuzfahrer 1099?",
+          "options": [
+            "Er zerstörte die Grabeskirche",
+            "Er machte es zur Hauptstadt Ägyptens",
+            "Die Stadt ergab sich und es gab kein Massaker",
+            "Er betrat die Stadt nie selbst"
+          ],
+          "explanation": "Die Einwohner durften gegen Lösegeld abziehen, und Tausende, die nicht zahlen konnten, kamen frei. 1099 hatten die Kreuzfahrer die Bevölkerung niedergemetzelt."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Why did Richard the Lionheart turn back each time he came near Jerusalem?",
+      "options": [
+        "Saladin paid him to leave",
+        "He knew he could never hold the city once his army sailed home",
+        "The Pope forbade an attack",
+        "His soldiers refused to fight"
+      ],
+      "explanation": "Richard won at Arsuf and twice marched within reach of Jerusalem, but taking the city was useless if no army stayed to defend it.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom keerde Richard Leeuwenhart steeds om als hij in de buurt van Jeruzalem kwam?",
+          "options": [
+            "Saladin betaalde hem om te vertrekken",
+            "Hij wist dat hij de stad nooit kon houden zodra zijn leger naar huis voer",
+            "De paus verbood een aanval",
+            "Zijn soldaten weigerden te vechten"
+          ],
+          "explanation": "Richard won bij Arsuf en kwam twee keer tot vlak bij Jeruzalem, maar de stad innemen had geen zin als er geen leger bleef om haar te verdedigen."
+        },
+        "fr": {
+          "question": "Pourquoi Richard Cœur de Lion faisait-il demi-tour chaque fois qu’il approchait de Jérusalem ?",
+          "options": [
+            "Saladin le payait pour partir",
+            "Il savait qu’il ne pourrait pas tenir la ville une fois son armée rentrée",
+            "Le pape interdisait l’attaque",
+            "Ses soldats refusaient de se battre"
+          ],
+          "explanation": "Richard a vaincu à Arsouf et s’est approché deux fois de Jérusalem, mais prendre la ville ne servait à rien si aucune armée ne restait pour la défendre."
+        },
+        "de": {
+          "question": "Warum kehrte Richard Löwenherz jedes Mal um, wenn er in die Nähe Jerusalems kam?",
+          "options": [
+            "Saladin bezahlte ihn für den Abzug",
+            "Er wusste, dass er die Stadt nie halten könnte, sobald sein Heer heimsegelte",
+            "Der Papst verbot den Angriff",
+            "Seine Soldaten weigerten sich zu kämpfen"
+          ],
+          "explanation": "Richard siegte bei Arsuf und kam zweimal bis in Reichweite Jerusalems, doch die Stadt einzunehmen war sinnlos, wenn kein Heer blieb, um sie zu verteidigen."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "What did the Treaty of Jaffa in 1192 allow?",
+      "options": [
+        "The crusaders to take back Jerusalem",
+        "Saladin to conquer the coast",
+        "Richard to become king of Egypt",
+        "Unarmed Christian pilgrims to visit Jerusalem"
+      ],
+      "explanation": "Jerusalem stayed in Muslim hands under a three-year truce, but Christian pilgrims could visit the holy places.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat werd mogelijk door het Verdrag van Jaffa in 1192?",
+          "options": [
+            "Dat de kruisvaarders Jeruzalem terugnamen",
+            "Dat Saladin de kust veroverde",
+            "Dat Richard koning van Egypte werd",
+            "Dat ongewapende christelijke pelgrims Jeruzalem konden bezoeken"
+          ],
+          "explanation": "Jeruzalem bleef onder een bestand van drie jaar in moslimhanden, maar christelijke pelgrims mochten de heilige plaatsen bezoeken."
+        },
+        "fr": {
+          "question": "Que permettait le traité de Jaffa en 1192 ?",
+          "options": [
+            "Aux croisés de reprendre Jérusalem",
+            "À Saladin de conquérir la côte",
+            "À Richard de devenir roi d’Égypte",
+            "Aux pèlerins chrétiens non armés de visiter Jérusalem"
+          ],
+          "explanation": "Jérusalem restait aux mains des musulmans pour une trêve de trois ans, mais les pèlerins chrétiens pouvaient visiter les lieux saints."
+        },
+        "de": {
+          "question": "Was erlaubte der Vertrag von Jaffa 1192?",
+          "options": [
+            "Den Kreuzfahrern, Jerusalem zurückzuerobern",
+            "Saladin, die Küste zu erobern",
+            "Richard, König von Ägypten zu werden",
+            "Unbewaffneten christlichen Pilgern, Jerusalem zu besuchen"
+          ],
+          "explanation": "Jerusalem blieb während eines dreijährigen Waffenstillstands in muslimischer Hand, doch christliche Pilger durften die heiligen Stätten besuchen."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What was found in Saladin's treasury after his death?",
+      "options": [
+        "So little money that his funeral had to be paid with borrowed money",
+        "Enough gold to build a new palace",
+        "The True Cross",
+        "Letters from Richard the Lionheart"
+      ],
+      "explanation": "He had given away huge sums to soldiers, scholars and the poor. It is said only one gold coin and 47 silver ones were left.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat werd er na Saladins dood in zijn schatkist gevonden?",
+          "options": [
+            "Zo weinig geld dat zijn begrafenis met geleend geld betaald moest worden",
+            "Genoeg goud om een nieuw paleis te bouwen",
+            "Het Ware Kruis",
+            "Brieven van Richard Leeuwenhart"
+          ],
+          "explanation": "Hij had enorme bedragen weggegeven aan soldaten, geleerden en armen. Er zou maar één gouden en 47 zilveren munten over zijn geweest."
+        },
+        "fr": {
+          "question": "Qu’a-t-on trouvé dans le trésor de Saladin après sa mort ?",
+          "options": [
+            "Si peu d’argent qu’il fallut emprunter pour payer ses funérailles",
+            "Assez d’or pour bâtir un nouveau palais",
+            "La Vraie Croix",
+            "Des lettres de Richard Cœur de Lion"
+          ],
+          "explanation": "Il avait donné des sommes énormes aux soldats, aux savants et aux pauvres. On dit qu’il ne restait qu’une pièce d’or et 47 pièces d’argent."
+        },
+        "de": {
+          "question": "Was fand man nach Saladins Tod in seiner Schatzkammer?",
+          "options": [
+            "So wenig Geld, dass sein Begräbnis mit geliehenem Geld bezahlt werden musste",
+            "Genug Gold für einen neuen Palast",
+            "Das Wahre Kreuz",
+            "Briefe von Richard Löwenherz"
+          ],
+          "explanation": "Er hatte riesige Summen an Soldaten, Gelehrte und Arme verschenkt. Angeblich waren nur eine Gold- und 47 Silbermünzen übrig."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

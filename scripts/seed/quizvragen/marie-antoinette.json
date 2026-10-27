@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Why was Maria Antonia of Austria married to the heir of the French throne?",
+      "options": [
+        "To seal the new alliance between Austria and France",
+        "Because they had fallen in love",
+        "To end a war over Italy",
+        "Because France needed Austrian money"
+      ],
+      "explanation": "Her mother, Empress Maria Theresa, used her daughters' marriages to make alliances. A tutor was sent to Vienna to turn her into a French princess.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom werd Maria Antonia van Oostenrijk uitgehuwelijkt aan de Franse troonopvolger?",
+          "options": [
+            "Om het nieuwe bondgenootschap tussen Oostenrijk en Frankrijk te bezegelen",
+            "Omdat ze verliefd waren geworden",
+            "Om een oorlog over Italië te beëindigen",
+            "Omdat Frankrijk Oostenrijks geld nodig had"
+          ],
+          "explanation": "Haar moeder, keizerin Maria Theresia, gebruikte de huwelijken van haar dochters om bondgenootschappen te sluiten. Er werd een leraar naar Wenen gestuurd om een Franse prinses van haar te maken."
+        },
+        "fr": {
+          "question": "Pourquoi Marie-Antoinette d’Autriche a-t-elle été mariée à l’héritier du trône de France ?",
+          "options": [
+            "Pour sceller la nouvelle alliance entre l’Autriche et la France",
+            "Parce qu’ils étaient tombés amoureux",
+            "Pour mettre fin à une guerre en Italie",
+            "Parce que la France avait besoin de l’argent autrichien"
+          ],
+          "explanation": "Sa mère, l’impératrice Marie-Thérèse, se servait des mariages de ses filles pour nouer des alliances. Un précepteur a été envoyé à Vienne pour en faire une princesse française."
+        },
+        "de": {
+          "question": "Warum wurde Maria Antonia von Österreich mit dem französischen Thronfolger verheiratet?",
+          "options": [
+            "Um das neue Bündnis zwischen Österreich und Frankreich zu besiegeln",
+            "Weil sie sich verliebt hatten",
+            "Um einen Krieg um Italien zu beenden",
+            "Weil Frankreich österreichisches Geld brauchte"
+          ],
+          "explanation": "Ihre Mutter, Kaiserin Maria Theresia, nutzte die Ehen ihrer Töchter für Bündnisse. Ein Lehrer wurde nach Wien geschickt, um eine französische Prinzessin aus ihr zu machen."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What happened at the French border when the fourteen-year-old Antonia arrived in 1770?",
+      "options": [
+        "She was crowned queen",
+        "She was dressed in French clothes and left everything Austrian behind",
+        "She met the king of France",
+        "She was refused entry"
+      ],
+      "explanation": "According to her lady-in-waiting, even her little dog had to stay behind. A month later she married the dauphin Louis at Versailles.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er aan de Franse grens toen de veertienjarige Antonia er in 1770 aankwam?",
+          "options": [
+            "Ze werd tot koningin gekroond",
+            "Ze kreeg Franse kleren aan en liet alles wat Oostenrijks was achter",
+            "Ze ontmoette de koning van Frankrijk",
+            "Ze werd niet toegelaten"
+          ],
+          "explanation": "Volgens haar hofdame moest zelfs haar hondje achterblijven. Een maand later trouwde ze in Versailles met de dauphin Lodewijk."
+        },
+        "fr": {
+          "question": "Que s’est-il passé à la frontière française à l’arrivée d’Antoinette, quatorze ans, en 1770 ?",
+          "options": [
+            "Elle a été couronnée reine",
+            "On l’a habillée à la française et elle a laissé derrière elle tout ce qui était autrichien",
+            "Elle a rencontré le roi de France",
+            "On lui a refusé l’entrée"
+          ],
+          "explanation": "Selon sa femme de chambre, même son petit chien a dû rester. Un mois plus tard, elle épousait le dauphin Louis à Versailles."
+        },
+        "de": {
+          "question": "Was geschah an der französischen Grenze, als die vierzehnjährige Antonia 1770 dort ankam?",
+          "options": [
+            "Sie wurde zur Königin gekrönt",
+            "Sie wurde französisch eingekleidet und ließ alles Österreichische zurück",
+            "Sie traf den König von Frankreich",
+            "Ihr wurde die Einreise verweigert"
+          ],
+          "explanation": "Laut ihrer Kammerfrau musste sogar ihr Hündchen zurückbleiben. Einen Monat später heiratete sie in Versailles den Dauphin Ludwig."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What was the Petit Trianon?",
+      "options": [
+        "The queen's prison",
+        "A theatre in Paris",
+        "A small château in the park of Versailles where the queen escaped court life",
+        "A ship given to the queen"
+      ],
+      "explanation": "There she lived more simply with a small circle of friends, and later had a model village, the Hameau, built nearby. To many French people it looked like wasteful luxury.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was het Petit Trianon?",
+          "options": [
+            "De gevangenis van de koningin",
+            "Een theater in Parijs",
+            "Een klein kasteel in het park van Versailles waar de koningin aan het hofleven ontsnapte",
+            "Een schip dat de koningin kreeg"
+          ],
+          "explanation": "Daar leefde ze eenvoudiger met een kleine vriendenkring, en later liet ze er vlakbij een modeldorp bouwen, de Hameau. Voor veel Fransen leek het verspilde luxe."
+        },
+        "fr": {
+          "question": "Qu’était le Petit Trianon ?",
+          "options": [
+            "La prison de la reine",
+            "Un théâtre à Paris",
+            "Un petit château dans le parc de Versailles où la reine fuyait la vie de cour",
+            "Un navire offert à la reine"
+          ],
+          "explanation": "Elle y vivait plus simplement avec un petit cercle d’amis, et y a fait bâtir non loin un village modèle, le Hameau. Pour beaucoup de Français, c’était un luxe gaspilleur."
+        },
+        "de": {
+          "question": "Was war das Petit Trianon?",
+          "options": [
+            "Das Gefängnis der Königin",
+            "Ein Theater in Paris",
+            "Ein kleines Schloss im Park von Versailles, in das die Königin vor dem Hofleben floh",
+            "Ein Schiff, das die Königin geschenkt bekam"
+          ],
+          "explanation": "Dort lebte sie einfacher mit einem kleinen Freundeskreis und ließ später ganz in der Nähe ein Musterdorf bauen, den Hameau. Vielen Franzosen erschien es als verschwenderischer Luxus."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What was the queen's role in the Affair of the Diamond Necklace of 1785?",
+      "options": [
+        "She bought the necklace secretly",
+        "She stole the necklace",
+        "She sold it to pay France's debts",
+        "She was entirely innocent, but many believed she was involved"
+      ],
+      "explanation": "A con woman tricked a cardinal into believing the queen wanted the necklace. The scandal ruined Marie Antoinette's reputation anyway.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was de rol van de koningin in de Halssnoeraffaire van 1785?",
+          "options": [
+            "Ze kocht het halssnoer in het geheim",
+            "Ze stal het halssnoer",
+            "Ze verkocht het om de schulden van Frankrijk te betalen",
+            "Ze was volkomen onschuldig, maar velen geloofden dat ze erbij betrokken was"
+          ],
+          "explanation": "Een oplichtster maakte een kardinaal wijs dat de koningin het halssnoer wilde. Het schandaal ruïneerde de naam van Marie Antoinette toch."
+        },
+        "fr": {
+          "question": "Quel rôle la reine a-t-elle joué dans l’affaire du collier de 1785 ?",
+          "options": [
+            "Elle a acheté le collier en secret",
+            "Elle a volé le collier",
+            "Elle l’a vendu pour payer les dettes de la France",
+            "Elle était tout à fait innocente, mais beaucoup l’ont crue impliquée"
+          ],
+          "explanation": "Une aventurière a fait croire à un cardinal que la reine voulait le collier. Le scandale a quand même ruiné la réputation de Marie-Antoinette."
+        },
+        "de": {
+          "question": "Welche Rolle spielte die Königin in der Halsbandaffäre von 1785?",
+          "options": [
+            "Sie kaufte das Halsband heimlich",
+            "Sie stahl das Halsband",
+            "Sie verkaufte es, um Frankreichs Schulden zu bezahlen",
+            "Sie war völlig unschuldig, doch viele hielten sie für beteiligt"
+          ],
+          "explanation": "Eine Betrügerin machte einem Kardinal weis, die Königin wolle das Halsband. Der Skandal ruinierte Marie Antoinettes Ruf trotzdem."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Did Marie Antoinette really say 'let them eat cake'?",
+      "options": [
+        "Almost certainly not; Rousseau wrote a similar line when she was a child",
+        "Yes, at the women's march on Versailles",
+        "Yes, in a letter to her mother",
+        "Yes, at her trial"
+      ],
+      "explanation": "Rousseau attributed the words to 'a great princess' in a book written when Marie Antoinette was still a girl in Vienna.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Heeft Marie Antoinette echt gezegd 'laat ze dan cake eten'?",
+          "options": [
+            "Vrijwel zeker niet; Rousseau schreef een vergelijkbare zin toen zij nog een kind was",
+            "Ja, tijdens de mars van de vrouwen naar Versailles",
+            "Ja, in een brief aan haar moeder",
+            "Ja, tijdens haar proces"
+          ],
+          "explanation": "Rousseau legde de woorden in de mond van 'een grote prinses' in een boek dat hij schreef toen Marie Antoinette nog een meisje in Wenen was."
+        },
+        "fr": {
+          "question": "Marie-Antoinette a-t-elle vraiment dit « qu’ils mangent de la brioche » ?",
+          "options": [
+            "Presque certainement pas ; Rousseau a écrit une phrase semblable quand elle était enfant",
+            "Oui, lors de la marche des femmes sur Versailles",
+            "Oui, dans une lettre à sa mère",
+            "Oui, lors de son procès"
+          ],
+          "explanation": "Rousseau attribuait ces mots à « une grande princesse » dans un livre écrit quand Marie-Antoinette était encore une fillette à Vienne."
+        },
+        "de": {
+          "question": "Hat Marie Antoinette wirklich gesagt: „Dann sollen sie doch Kuchen essen“?",
+          "options": [
+            "Fast sicher nicht; Rousseau schrieb einen ähnlichen Satz, als sie noch ein Kind war",
+            "Ja, beim Marsch der Frauen nach Versailles",
+            "Ja, in einem Brief an ihre Mutter",
+            "Ja, bei ihrem Prozess"
+          ],
+          "explanation": "Rousseau legte die Worte in einem Buch „einer großen Prinzessin“ in den Mund, als Marie Antoinette noch ein Mädchen in Wien war."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Where was the royal family stopped during their attempt to flee France in June 1791?",
+      "options": [
+        "Calais",
+        "Varennes",
+        "Strasbourg",
+        "Lyon"
+      ],
+      "explanation": "A postmaster named Drouet recognised the king and raised the alarm. The flight convinced many that the king could not be trusted.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar werd de koninklijke familie tegengehouden tijdens haar vluchtpoging uit Frankrijk in juni 1791?",
+          "options": [
+            "Calais",
+            "Varennes",
+            "Straatsburg",
+            "Lyon"
+          ],
+          "explanation": "Een postmeester, Drouet, herkende de koning en sloeg alarm. De vlucht overtuigde velen ervan dat de koning niet te vertrouwen was."
+        },
+        "fr": {
+          "question": "Où la famille royale a-t-elle été arrêtée lors de sa tentative de fuite en juin 1791 ?",
+          "options": [
+            "Calais",
+            "Varennes",
+            "Strasbourg",
+            "Lyon"
+          ],
+          "explanation": "Un maître de poste, Drouet, a reconnu le roi et donné l’alerte. Cette fuite a convaincu beaucoup de gens qu’on ne pouvait pas faire confiance au roi."
+        },
+        "de": {
+          "question": "Wo wurde die königliche Familie bei ihrem Fluchtversuch im Juni 1791 aufgehalten?",
+          "options": [
+            "Calais",
+            "Varennes",
+            "Straßburg",
+            "Lyon"
+          ],
+          "explanation": "Ein Postmeister namens Drouet erkannte den König und schlug Alarm. Die Flucht überzeugte viele davon, dass man dem König nicht trauen konnte."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "What was Marie Antoinette called after Louis XVI was executed in January 1793?",
+      "options": [
+        "Citizen Bourbon",
+        "The Austrian Queen",
+        "The Widow Capet",
+        "Madame Royale"
+      ],
+      "explanation": "The king had become simply Citizen Louis Capet. In July 1793 her son was taken from her, and in August she was moved to the Conciergerie.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe werd Marie Antoinette genoemd nadat Lodewijk XVI in januari 1793 was terechtgesteld?",
+          "options": [
+            "Burgeres Bourbon",
+            "De Oostenrijkse Koningin",
+            "De Weduwe Capet",
+            "Madame Royale"
+          ],
+          "explanation": "De koning was gewoon burger Louis Capet geworden. In juli 1793 werd haar zoon bij haar weggehaald, en in augustus werd ze naar de Conciergerie overgebracht."
+        },
+        "fr": {
+          "question": "Comment a-t-on appelé Marie-Antoinette après l’exécution de Louis XVI en janvier 1793 ?",
+          "options": [
+            "La citoyenne Bourbon",
+            "La reine autrichienne",
+            "La veuve Capet",
+            "Madame Royale"
+          ],
+          "explanation": "Le roi était devenu simplement le citoyen Louis Capet. En juillet 1793, on lui a enlevé son fils, et en août elle a été transférée à la Conciergerie."
+        },
+        "de": {
+          "question": "Wie wurde Marie Antoinette genannt, nachdem Ludwig XVI. im Januar 1793 hingerichtet worden war?",
+          "options": [
+            "Bürgerin Bourbon",
+            "Die österreichische Königin",
+            "Die Witwe Capet",
+            "Madame Royale"
+          ],
+          "explanation": "Der König war schlicht Bürger Louis Capet geworden. Im Juli 1793 nahm man ihr den Sohn weg, im August wurde sie in die Conciergerie gebracht."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What were Marie Antoinette's last words, spoken to the executioner?",
+      "options": [
+        "Long live the king!",
+        "I forgive my enemies",
+        "Take care of my children",
+        "Pardon me, sir, I did not do it on purpose"
+      ],
+      "explanation": "She had accidentally stepped on his foot. She was executed on 16 October 1793, aged thirty-seven.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat waren de laatste woorden van Marie Antoinette, gericht tot de beul?",
+          "options": [
+            "Leve de koning!",
+            "Ik vergeef mijn vijanden",
+            "Zorg voor mijn kinderen",
+            "Pardon, meneer, ik deed het niet met opzet"
+          ],
+          "explanation": "Ze was per ongeluk op zijn voet gestapt. Ze werd op 16 oktober 1793 terechtgesteld, zevenendertig jaar oud."
+        },
+        "fr": {
+          "question": "Quelles furent les dernières paroles de Marie-Antoinette, adressées au bourreau ?",
+          "options": [
+            "Vive le roi !",
+            "Je pardonne à mes ennemis",
+            "Prenez soin de mes enfants",
+            "Pardonnez-moi, monsieur, je ne l’ai pas fait exprès"
+          ],
+          "explanation": "Elle lui avait marché sur le pied par accident. Elle a été exécutée le 16 octobre 1793, à trente-sept ans."
+        },
+        "de": {
+          "question": "Was waren Marie Antoinettes letzte Worte, gerichtet an den Henker?",
+          "options": [
+            "Es lebe der König!",
+            "Ich vergebe meinen Feinden",
+            "Sorgt für meine Kinder",
+            "Verzeihen Sie, mein Herr, ich habe es nicht mit Absicht getan"
+          ],
+          "explanation": "Sie war ihm versehentlich auf den Fuß getreten. Sie wurde am 16. Oktober 1793 hingerichtet, siebenunddreißig Jahre alt."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

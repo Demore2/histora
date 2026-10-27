@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What happened to Temüjin's family after his father was poisoned?",
+      "options": [
+        "They were made rulers of the clan",
+        "Their clan abandoned them on the steppe",
+        "They fled to China",
+        "They were taken in by the Tatars"
+      ],
+      "explanation": "Without their leader the clan left Hö'elün and her children behind with nothing. She kept them alive on roots, berries and fish.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er met de familie van Temüjin nadat zijn vader was vergiftigd?",
+          "options": [
+            "Ze werden de leiders van de clan",
+            "Hun clan liet hen achter op de steppe",
+            "Ze vluchtten naar China",
+            "Ze werden opgenomen door de Tataren"
+          ],
+          "explanation": "Zonder leider liet de clan Hö'elün en haar kinderen met niets achter. Zij hield hen in leven met wortels, bessen en vis."
+        },
+        "fr": {
+          "question": "Qu’est-il arrivé à la famille de Temüjin après l’empoisonnement de son père ?",
+          "options": [
+            "Elle a pris la tête du clan",
+            "Son clan l’a abandonnée dans la steppe",
+            "Elle s’est enfuie en Chine",
+            "Elle a été accueillie par les Tatars"
+          ],
+          "explanation": "Privé de son chef, le clan a abandonné Hö'elün et ses enfants sans rien. Elle les a nourris de racines, de baies et de poissons."
+        },
+        "de": {
+          "question": "Was geschah mit Temüjins Familie, nachdem sein Vater vergiftet worden war?",
+          "options": [
+            "Sie wurde zur Führerin des Clans",
+            "Ihr Clan ließ sie in der Steppe zurück",
+            "Sie floh nach China",
+            "Sie wurde von den Tataren aufgenommen"
+          ],
+          "explanation": "Ohne Anführer ließ der Clan Hö'elün und ihre Kinder mittellos zurück. Sie ernährte sie mit Wurzeln, Beeren und Fisch."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "How did Temüjin escape after the Tayichiud locked a wooden collar around his neck?",
+      "options": [
+        "He bribed his guards with horses",
+        "His brothers attacked the camp",
+        "He was hidden under a cart full of wool",
+        "He dug a tunnel out of the tent"
+      ],
+      "explanation": "After hiding in the river, he was found by the herdsman Sorkan-shira, who broke the collar and hid him under wool until the searchers gave up.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe ontsnapte Temüjin nadat de Tayichiud een houten halsblok om zijn nek hadden gezet?",
+          "options": [
+            "Hij kocht zijn bewakers om met paarden",
+            "Zijn broers vielen het kamp aan",
+            "Hij werd verstopt onder een kar vol wol",
+            "Hij groef een tunnel uit de tent"
+          ],
+          "explanation": "Nadat hij zich in de rivier had verstopt, vond de herder Sorkan-shira hem. Die brak het halsblok en verborg hem onder de wol tot de zoekers het opgaven."
+        },
+        "fr": {
+          "question": "Comment Temüjin s’est-il échappé après que les Tayichiud lui ont mis une cangue en bois autour du cou ?",
+          "options": [
+            "Il a soudoyé ses gardes avec des chevaux",
+            "Ses frères ont attaqué le camp",
+            "On l’a caché sous une charrette de laine",
+            "Il a creusé un tunnel sous la tente"
+          ],
+          "explanation": "Après s’être caché dans la rivière, il a été trouvé par le berger Sorkan-shira, qui a brisé la cangue et l’a caché sous la laine jusqu’à ce que les poursuivants renoncent."
+        },
+        "de": {
+          "question": "Wie entkam Temüjin, nachdem die Tayichiud ihm ein hölzernes Halsjoch angelegt hatten?",
+          "options": [
+            "Er bestach seine Wächter mit Pferden",
+            "Seine Brüder griffen das Lager an",
+            "Er wurde unter einem Wagen voller Wolle versteckt",
+            "Er grub einen Tunnel aus dem Zelt"
+          ],
+          "explanation": "Nachdem er sich im Fluss versteckt hatte, fand ihn der Hirte Sorkan-shira. Er zerbrach das Joch und versteckte ihn unter der Wolle, bis die Suchenden aufgaben."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Why did Temüjin deliberately mix men from different clans in the same army units?",
+      "options": [
+        "So their loyalty went to their commander, not their tribe",
+        "Because the clans spoke the same language",
+        "To make the units larger",
+        "Because the Chinese did it that way"
+      ],
+      "explanation": "Units of ten, a hundred, a thousand and ten thousand broke up the old clan loyalties that had kept the steppe divided.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom zette Temüjin met opzet mannen uit verschillende clans in dezelfde legereenheden?",
+          "options": [
+            "Zodat hun trouw bij hun bevelhebber lag, niet bij hun stam",
+            "Omdat de clans dezelfde taal spraken",
+            "Om de eenheden groter te maken",
+            "Omdat de Chinezen het zo deden"
+          ],
+          "explanation": "Eenheden van tien, honderd, duizend en tienduizend doorbraken de oude clantrouw die de steppe verdeeld had gehouden."
+        },
+        "fr": {
+          "question": "Pourquoi Temüjin mélangeait-il volontairement des hommes de clans différents dans les mêmes unités ?",
+          "options": [
+            "Pour que leur loyauté aille à leur chef, pas à leur tribu",
+            "Parce que les clans parlaient la même langue",
+            "Pour agrandir les unités",
+            "Parce que les Chinois faisaient ainsi"
+          ],
+          "explanation": "Les unités de dix, cent, mille et dix mille brisaient les vieilles loyautés claniques qui divisaient la steppe."
+        },
+        "de": {
+          "question": "Warum mischte Temüjin absichtlich Männer aus verschiedenen Clans in denselben Einheiten?",
+          "options": [
+            "Damit ihre Treue ihrem Befehlshaber galt, nicht ihrem Stamm",
+            "Weil die Clans dieselbe Sprache sprachen",
+            "Um die Einheiten zu vergrößern",
+            "Weil die Chinesen es so machten"
+          ],
+          "explanation": "Einheiten von zehn, hundert, tausend und zehntausend brachen die alten Clanbindungen auf, die die Steppe gespalten hatten."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "In which year was Temüjin proclaimed Genghis Khan at a great assembly?",
+      "options": [
+        "1162",
+        "1187",
+        "1227",
+        "1206"
+      ],
+      "explanation": "At the kurultai near the source of the Onon River, the chiefs of the steppe peoples made him their supreme ruler.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "In welk jaar werd Temüjin op een grote vergadering uitgeroepen tot Dzjengis Khan?",
+          "options": [
+            "1162",
+            "1187",
+            "1227",
+            "1206"
+          ],
+          "explanation": "Op de kurultai bij de bron van de Onon maakten de leiders van de steppevolken hem tot hun oppermachtige heerser."
+        },
+        "fr": {
+          "question": "En quelle année Temüjin a-t-il été proclamé Gengis Khan lors d’une grande assemblée ?",
+          "options": [
+            "1162",
+            "1187",
+            "1227",
+            "1206"
+          ],
+          "explanation": "Lors du kurultai près de la source de l’Onon, les chefs des peuples de la steppe en ont fait leur souverain suprême."
+        },
+        "de": {
+          "question": "In welchem Jahr wurde Temüjin auf einer großen Versammlung zum Dschingis Khan ausgerufen?",
+          "options": [
+            "1162",
+            "1187",
+            "1227",
+            "1206"
+          ],
+          "explanation": "Beim Kurultai nahe der Quelle des Onon machten ihn die Anführer der Steppenvölker zu ihrem obersten Herrscher."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "How did the Mongols, an army of horsemen, learn to capture walled cities in China?",
+      "options": [
+        "Their horses learned to climb walls",
+        "They recruited Chinese engineers to build siege machines",
+        "They bought the cities with silver",
+        "They waited for the walls to collapse"
+      ],
+      "explanation": "Genghis Khan recruited the people who knew how. In 1215 the Mongols took the Jin capital Zhongdu, near modern Beijing.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe leerden de Mongolen, een leger van ruiters, ommuurde steden in China in te nemen?",
+          "options": [
+            "Hun paarden leerden over muren te klimmen",
+            "Ze lieten Chinese ingenieurs belegeringswerktuigen bouwen",
+            "Ze kochten de steden met zilver",
+            "Ze wachtten tot de muren instortten"
+          ],
+          "explanation": "Dzjengis Khan haalde de mensen binnen die het konden. In 1215 namen de Mongolen Zhongdu in, de hoofdstad van de Jin bij het huidige Peking."
+        },
+        "fr": {
+          "question": "Comment les Mongols, une armée de cavaliers, ont-ils appris à prendre les villes fortifiées de Chine ?",
+          "options": [
+            "Leurs chevaux ont appris à escalader les murs",
+            "Ils ont recruté des ingénieurs chinois pour construire des engins de siège",
+            "Ils ont acheté les villes avec de l’argent",
+            "Ils attendaient que les murs s’effondrent"
+          ],
+          "explanation": "Gengis Khan a recruté ceux qui savaient faire. En 1215, les Mongols ont pris Zhongdu, la capitale des Jin, près de l’actuelle Pékin."
+        },
+        "de": {
+          "question": "Wie lernten die Mongolen, ein Reiterheer, ummauerte Städte in China einzunehmen?",
+          "options": [
+            "Ihre Pferde lernten, Mauern zu erklimmen",
+            "Sie warben chinesische Ingenieure für Belagerungsmaschinen an",
+            "Sie kauften die Städte mit Silber",
+            "Sie warteten, bis die Mauern einstürzten"
+          ],
+          "explanation": "Dschingis Khan holte sich die Leute, die es konnten. 1215 nahmen die Mongolen Zhongdu ein, die Hauptstadt der Jin nahe dem heutigen Peking."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What started the Mongol war against the empire of Khwarazm?",
+      "options": [
+        "The shah invaded Mongolia",
+        "A dispute over a royal marriage",
+        "Mongol merchants were killed at Otrar",
+        "A quarrel over horses"
+      ],
+      "explanation": "In 1218 the governor of Otrar killed about 450 merchants of a Mongol caravan. When the shah also insulted Genghis Khan's envoys, the Mongols invaded.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waardoor begon de Mongoolse oorlog tegen het rijk van Khwarazm?",
+          "options": [
+            "De sjah viel Mongolië binnen",
+            "Een ruzie over een koninklijk huwelijk",
+            "Mongoolse handelaren werden gedood in Otrar",
+            "Een twist over paarden"
+          ],
+          "explanation": "In 1218 liet de gouverneur van Otrar zo'n 450 handelaren van een Mongoolse karavaan doden. Toen de sjah ook nog Dzjengis Khans gezanten beledigde, vielen de Mongolen binnen."
+        },
+        "fr": {
+          "question": "Qu’est-ce qui a déclenché la guerre des Mongols contre l’empire du Khwarezm ?",
+          "options": [
+            "Le shah a envahi la Mongolie",
+            "Une querelle à propos d’un mariage royal",
+            "Des marchands mongols ont été tués à Otrar",
+            "Une dispute au sujet de chevaux"
+          ],
+          "explanation": "En 1218, le gouverneur d’Otrar a fait tuer environ 450 marchands d’une caravane mongole. Quand le shah a aussi humilié les envoyés de Gengis Khan, les Mongols ont envahi le pays."
+        },
+        "de": {
+          "question": "Was löste den Krieg der Mongolen gegen das Reich Choresmien aus?",
+          "options": [
+            "Der Schah fiel in die Mongolei ein",
+            "Ein Streit um eine königliche Hochzeit",
+            "Mongolische Händler wurden in Otrar getötet",
+            "Ein Streit um Pferde"
+          ],
+          "explanation": "1218 ließ der Statthalter von Otrar etwa 450 Händler einer mongolischen Karawane töten. Als der Schah dann noch Dschingis Khans Gesandte demütigte, marschierten die Mongolen ein."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "What was the yam, set up by Genghis Khan?",
+      "options": [
+        "A network of relay stations with fresh horses",
+        "A law code for the steppe",
+        "His personal bodyguard",
+        "A tax on merchants"
+      ],
+      "explanation": "Every day's ride or so there was a station with fresh horses and supplies, so the khan's messengers could cross the empire at great speed.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was de yam, die Dzjengis Khan opzette?",
+          "options": [
+            "Een netwerk van poststations met verse paarden",
+            "Een wetboek voor de steppe",
+            "Zijn persoonlijke lijfwacht",
+            "Een belasting op handelaren"
+          ],
+          "explanation": "Ongeveer elke dagrit lag er een station met verse paarden en voorraden, zodat de boden van de khan razendsnel door het rijk konden reizen."
+        },
+        "fr": {
+          "question": "Qu’était le yam, mis en place par Gengis Khan ?",
+          "options": [
+            "Un réseau de relais avec des chevaux frais",
+            "Un code de lois pour la steppe",
+            "Sa garde personnelle",
+            "Un impôt sur les marchands"
+          ],
+          "explanation": "Environ tous les jours de chevauchée se trouvait un relais avec des chevaux frais et des provisions, pour que les messagers du khan traversent l’empire à grande vitesse."
+        },
+        "de": {
+          "question": "Was war der Yam, den Dschingis Khan einrichtete?",
+          "options": [
+            "Ein Netz von Relaisstationen mit frischen Pferden",
+            "Ein Gesetzbuch für die Steppe",
+            "Seine persönliche Leibwache",
+            "Eine Steuer für Händler"
+          ],
+          "explanation": "Etwa nach jedem Tagesritt gab es eine Station mit frischen Pferden und Vorräten, sodass die Boten des Khans das Reich in hohem Tempo durchquerten."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Why has Genghis Khan's grave never been found?",
+      "options": [
+        "It was destroyed by an earthquake",
+        "It lies under a lake in China",
+        "It was looted by the Persians",
+        "He was buried in a secret place that was hidden on purpose"
+      ],
+      "explanation": "He was probably buried near the sacred mountain Burkhan Khaldun. Legends say witnesses were killed and horses were driven over the grave to hide it.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom is het graf van Dzjengis Khan nooit gevonden?",
+          "options": [
+            "Het werd verwoest door een aardbeving",
+            "Het ligt onder een meer in China",
+            "Het werd geplunderd door de Perzen",
+            "Hij werd op een geheime plek begraven die met opzet verborgen werd"
+          ],
+          "explanation": "Hij werd waarschijnlijk begraven bij de heilige berg Burkhan Khaldun. Volgens legenden werden getuigen gedood en werden er paarden over het graf gedreven om het te verbergen."
+        },
+        "fr": {
+          "question": "Pourquoi la tombe de Gengis Khan n’a-t-elle jamais été retrouvée ?",
+          "options": [
+            "Un tremblement de terre l’a détruite",
+            "Elle se trouve sous un lac en Chine",
+            "Les Perses l’ont pillée",
+            "Il a été enterré dans un lieu secret volontairement caché"
+          ],
+          "explanation": "Il a probablement été inhumé près de la montagne sacrée Burkhan Khaldun. Selon la légende, on tua les témoins et on fit passer des chevaux sur la tombe pour la dissimuler."
+        },
+        "de": {
+          "question": "Warum wurde Dschingis Khans Grab nie gefunden?",
+          "options": [
+            "Ein Erdbeben zerstörte es",
+            "Es liegt unter einem See in China",
+            "Die Perser plünderten es",
+            "Er wurde an einem geheimen Ort begraben, der absichtlich verborgen wurde"
+          ],
+          "explanation": "Er wurde vermutlich nahe dem heiligen Berg Burkhan Chaldun begraben. Der Legende nach tötete man die Zeugen und trieb Pferde über das Grab, um es zu verbergen."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

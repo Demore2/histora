@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "How did the young Columbus reach Portugal in 1476?",
+      "options": [
+        "As an ambassador from Genoa",
+        "He swam ashore after his ship was sunk",
+        "He was captured by pirates",
+        "He walked across Spain"
+      ],
+      "explanation": "His ship was attacked off the Portuguese coast. According to his son, he grabbed an oar and swam about ten kilometres to shore.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe kwam de jonge Columbus in 1476 in Portugal terecht?",
+          "options": [
+            "Als gezant van Genua",
+            "Hij zwom aan land nadat zijn schip tot zinken was gebracht",
+            "Hij werd door piraten gevangengenomen",
+            "Hij liep dwars door Spanje"
+          ],
+          "explanation": "Zijn schip werd voor de Portugese kust aangevallen. Volgens zijn zoon greep hij een roeispaan en zwom hij zo'n tien kilometer naar de kust."
+        },
+        "fr": {
+          "question": "Comment le jeune Colomb est-il arrivé au Portugal en 1476 ?",
+          "options": [
+            "Comme ambassadeur de Gênes",
+            "Il a nagé jusqu’à la côte après le naufrage de son navire",
+            "Il a été capturé par des pirates",
+            "Il a traversé l’Espagne à pied"
+          ],
+          "explanation": "Son navire a été attaqué au large du Portugal. Selon son fils, il s’est agrippé à une rame et a nagé une dizaine de kilomètres jusqu’au rivage."
+        },
+        "de": {
+          "question": "Wie gelangte der junge Kolumbus 1476 nach Portugal?",
+          "options": [
+            "Als Gesandter Genuas",
+            "Er schwamm an Land, nachdem sein Schiff versenkt worden war",
+            "Er wurde von Piraten gefangen",
+            "Er wanderte durch Spanien"
+          ],
+          "explanation": "Sein Schiff wurde vor der portugiesischen Küste angegriffen. Laut seinem Sohn klammerte er sich an ein Ruder und schwamm etwa zehn Kilometer an Land."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What did the experts who rejected Columbus's plan get right?",
+      "options": [
+        "That the earth was flat",
+        "That America lay to the west",
+        "That Asia was much further away than Columbus thought",
+        "That the ocean was full of monsters"
+      ],
+      "explanation": "Columbus thought Japan lay about 4,000 km from the Canary Islands; the real distance is closer to 19,000. Educated people knew the earth was round.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarin hadden de deskundigen die Columbus' plan afwezen gelijk?",
+          "options": [
+            "Dat de aarde plat was",
+            "Dat Amerika in het westen lag",
+            "Dat Azië veel verder weg lag dan Columbus dacht",
+            "Dat de oceaan vol monsters zat"
+          ],
+          "explanation": "Columbus dacht dat Japan zo'n 4000 km van de Canarische Eilanden lag; in werkelijkheid is het eerder 19.000. Ontwikkelde mensen wisten dat de aarde rond was."
+        },
+        "fr": {
+          "question": "Sur quoi les experts qui ont rejeté le projet de Colomb avaient-ils raison ?",
+          "options": [
+            "La Terre était plate",
+            "L’Amérique se trouvait à l’ouest",
+            "L’Asie était bien plus loin que Colomb ne le pensait",
+            "L’océan était plein de monstres"
+          ],
+          "explanation": "Colomb situait le Japon à environ 4 000 km des Canaries ; la distance réelle approche 19 000 km. Les gens instruits savaient que la Terre était ronde."
+        },
+        "de": {
+          "question": "Womit hatten die Fachleute recht, die Kolumbus’ Plan ablehnten?",
+          "options": [
+            "Dass die Erde flach sei",
+            "Dass Amerika im Westen liege",
+            "Dass Asien viel weiter entfernt war, als Kolumbus dachte",
+            "Dass der Ozean voller Ungeheuer sei"
+          ],
+          "explanation": "Kolumbus schätzte die Entfernung von den Kanaren nach Japan auf etwa 4.000 km; tatsächlich sind es eher 19.000. Gebildete Menschen wussten, dass die Erde rund ist."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "According to a summary of his logbook, what did Columbus tell his crew each day during the first crossing?",
+      "options": [
+        "A shorter distance than he believed they had sailed",
+        "That they would reach land tomorrow",
+        "That pirates were following them",
+        "That they were sailing back to Spain"
+      ],
+      "explanation": "He did not want them frightened by how far from home they were. Ironically, the 'false' figures were closer to the truth.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat vertelde Columbus volgens een samenvatting van zijn logboek elke dag aan zijn bemanning tijdens de eerste overtocht?",
+          "options": [
+            "Een kortere afstand dan hij dacht dat ze gevaren hadden",
+            "Dat ze morgen land zouden zien",
+            "Dat ze door piraten werden gevolgd",
+            "Dat ze terugvoeren naar Spanje"
+          ],
+          "explanation": "Hij wilde niet dat ze bang werden van hoe ver ze van huis waren. Ironisch genoeg lagen de 'valse' cijfers dichter bij de waarheid."
+        },
+        "fr": {
+          "question": "Selon un résumé de son journal de bord, que disait Colomb chaque jour à son équipage lors de la première traversée ?",
+          "options": [
+            "Une distance plus courte que celle qu’il pensait avoir parcourue",
+            "Qu’ils toucheraient terre le lendemain",
+            "Que des pirates les suivaient",
+            "Qu’ils retournaient en Espagne"
+          ],
+          "explanation": "Il ne voulait pas qu’ils s’effraient de leur éloignement. Ironie du sort, les chiffres « faux » étaient plus proches de la vérité."
+        },
+        "de": {
+          "question": "Was erzählte Kolumbus laut einer Zusammenfassung seines Logbuchs seiner Mannschaft auf der ersten Überfahrt jeden Tag?",
+          "options": [
+            "Eine kürzere Strecke, als sie seiner Meinung nach gesegelt waren",
+            "Dass sie morgen Land sehen würden",
+            "Dass Piraten ihnen folgten",
+            "Dass sie nach Spanien zurücksegelten"
+          ],
+          "explanation": "Er wollte nicht, dass sie Angst bekamen, wie weit sie von zu Hause waren. Ironischerweise lagen die „falschen“ Zahlen näher an der Wahrheit."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What did Columbus call the people he met in the Caribbean, and why?",
+      "options": [
+        "Caribs, after the sea",
+        "Taíno, after their language",
+        "Americans, after Vespucci",
+        "Indians, because he thought he had reached Asia"
+      ],
+      "explanation": "He was sure he had reached islands off the coast of Asia, the 'Indies'. The name stuck for centuries.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe noemde Columbus de mensen die hij in het Caribisch gebied ontmoette, en waarom?",
+          "options": [
+            "Cariben, naar de zee",
+            "Taíno, naar hun taal",
+            "Amerikanen, naar Vespucci",
+            "Indianen, omdat hij dacht dat hij Azië had bereikt"
+          ],
+          "explanation": "Hij was ervan overtuigd dat hij eilanden voor de kust van Azië, 'Indië', had bereikt. De naam bleef eeuwenlang hangen."
+        },
+        "fr": {
+          "question": "Comment Colomb a-t-il appelé les habitants qu’il a rencontrés dans les Caraïbes, et pourquoi ?",
+          "options": [
+            "Caraïbes, d’après la mer",
+            "Taïnos, d’après leur langue",
+            "Américains, d’après Vespucci",
+            "Indiens, parce qu’il croyait avoir atteint l’Asie"
+          ],
+          "explanation": "Il était sûr d’avoir atteint des îles au large de l’Asie, les « Indes ». Le nom est resté pendant des siècles."
+        },
+        "de": {
+          "question": "Wie nannte Kolumbus die Menschen, die er in der Karibik traf, und warum?",
+          "options": [
+            "Kariben, nach dem Meer",
+            "Taíno, nach ihrer Sprache",
+            "Amerikaner, nach Vespucci",
+            "Indianer, weil er glaubte, Asien erreicht zu haben"
+          ],
+          "explanation": "Er war überzeugt, Inseln vor der Küste Asiens, die „Indien“, erreicht zu haben. Der Name hielt sich jahrhundertelang."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What happened to the Santa María on Christmas Eve 1492?",
+      "options": [
+        "It ran aground on a reef off Hispaniola",
+        "It was captured by the Portuguese",
+        "It sailed home alone",
+        "It caught fire in a storm"
+      ],
+      "explanation": "Columbus used its wood to build a fort, La Navidad, and left 39 men there to look for gold.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er op kerstavond 1492 met de Santa María?",
+          "options": [
+            "Ze liep op een rif voor Hispaniola",
+            "Ze werd door de Portugezen buitgemaakt",
+            "Ze voer alleen terug naar huis",
+            "Ze vloog in brand tijdens een storm"
+          ],
+          "explanation": "Columbus gebruikte het hout om een fort te bouwen, La Navidad, en liet er 39 mannen achter om naar goud te zoeken."
+        },
+        "fr": {
+          "question": "Qu’est-il arrivé à la Santa María la veille de Noël 1492 ?",
+          "options": [
+            "Elle s’est échouée sur un récif au large d’Hispaniola",
+            "Elle a été capturée par les Portugais",
+            "Elle est rentrée seule",
+            "Elle a pris feu dans une tempête"
+          ],
+          "explanation": "Colomb a utilisé son bois pour bâtir un fort, La Navidad, et y a laissé 39 hommes chercher de l’or."
+        },
+        "de": {
+          "question": "Was geschah an Heiligabend 1492 mit der Santa María?",
+          "options": [
+            "Sie lief vor Hispaniola auf ein Riff",
+            "Sie wurde von den Portugiesen gekapert",
+            "Sie segelte allein nach Hause",
+            "Sie fing in einem Sturm Feuer"
+          ],
+          "explanation": "Kolumbus baute aus ihrem Holz eine Festung, La Navidad, und ließ dort 39 Männer zurück, die nach Gold suchen sollten."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What was the main cause of the collapse of the Taíno population after Columbus arrived?",
+      "options": [
+        "A great hurricane",
+        "Emigration to Europe",
+        "European diseases, together with forced labour and violence",
+        "A war with the Aztecs"
+      ],
+      "explanation": "Smallpox and other diseases, against which the islanders had no immunity, combined with harsh labour and hunger. Within decades they had almost disappeared from Hispaniola.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was de belangrijkste oorzaak van de ineenstorting van de Taíno-bevolking na de komst van Columbus?",
+          "options": [
+            "Een zware orkaan",
+            "Emigratie naar Europa",
+            "Europese ziekten, samen met dwangarbeid en geweld",
+            "Een oorlog met de Azteken"
+          ],
+          "explanation": "Pokken en andere ziekten waartegen de eilanders geen afweer hadden, samen met zware arbeid en honger. Binnen enkele tientallen jaren waren ze vrijwel van Hispaniola verdwenen."
+        },
+        "fr": {
+          "question": "Quelle a été la principale cause de l’effondrement de la population taïno après l’arrivée de Colomb ?",
+          "options": [
+            "Un grand ouragan",
+            "L’émigration vers l’Europe",
+            "Les maladies européennes, avec le travail forcé et la violence",
+            "Une guerre contre les Aztèques"
+          ],
+          "explanation": "La variole et d’autres maladies, contre lesquelles les insulaires n’avaient aucune immunité, s’ajoutaient au travail forcé et à la faim. En quelques décennies, ils avaient presque disparu d’Hispaniola."
+        },
+        "de": {
+          "question": "Was war die Hauptursache für den Zusammenbruch der Taíno-Bevölkerung nach Kolumbus’ Ankunft?",
+          "options": [
+            "Ein schwerer Hurrikan",
+            "Auswanderung nach Europa",
+            "Europäische Krankheiten, zusammen mit Zwangsarbeit und Gewalt",
+            "Ein Krieg mit den Azteken"
+          ],
+          "explanation": "Pocken und andere Krankheiten, gegen die die Inselbewohner keine Abwehr hatten, kamen zu Zwangsarbeit und Hunger hinzu. Binnen Jahrzehnten waren sie auf Hispaniola fast verschwunden."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "How did Columbus get the islanders on Jamaica to bring food again in 1504?",
+      "options": [
+        "He paid them in gold",
+        "He threatened them with cannons",
+        "He married a chief's daughter",
+        "He predicted a lunar eclipse as a sign of God's anger"
+      ],
+      "explanation": "He knew from an almanac that an eclipse was coming on 29 February 1504. When the moon turned dark and red, the frightened islanders brought food.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe kreeg Columbus de eilanders op Jamaica in 1504 zover dat ze weer voedsel brachten?",
+          "options": [
+            "Hij betaalde ze in goud",
+            "Hij dreigde met kanonnen",
+            "Hij trouwde met de dochter van een opperhoofd",
+            "Hij voorspelde een maansverduistering als teken van Gods toorn"
+          ],
+          "explanation": "Hij wist uit een almanak dat er op 29 februari 1504 een verduistering kwam. Toen de maan donker en rood werd, brachten de geschrokken eilanders weer eten."
+        },
+        "fr": {
+          "question": "Comment Colomb a-t-il obtenu en 1504 que les habitants de la Jamaïque recommencent à leur apporter de la nourriture ?",
+          "options": [
+            "Il les a payés en or",
+            "Il les a menacés avec des canons",
+            "Il a épousé la fille d’un chef",
+            "Il a annoncé une éclipse de lune comme signe de la colère de Dieu"
+          ],
+          "explanation": "Il savait grâce à un almanach qu’une éclipse aurait lieu le 29 février 1504. Quand la lune est devenue sombre et rouge, les habitants effrayés ont rapporté des vivres."
+        },
+        "de": {
+          "question": "Wie brachte Kolumbus die Bewohner Jamaikas 1504 dazu, wieder Essen zu bringen?",
+          "options": [
+            "Er bezahlte sie mit Gold",
+            "Er drohte mit Kanonen",
+            "Er heiratete die Tochter eines Häuptlings",
+            "Er sagte eine Mondfinsternis als Zeichen von Gottes Zorn voraus"
+          ],
+          "explanation": "Aus einem Almanach wusste er, dass am 29. Februar 1504 eine Finsternis kommen würde. Als der Mond dunkel und rot wurde, brachten die erschrockenen Bewohner wieder Essen."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What did Columbus, it seems, believe until his death in 1506?",
+      "options": [
+        "That he had discovered a new continent",
+        "That the lands he had reached were part of Asia",
+        "That the earth was flat",
+        "That Vespucci had stolen his discovery"
+      ],
+      "explanation": "Others realised the truth sooner. In 1507 the mapmaker Waldseemüller named the new continent America, after Amerigo Vespucci.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat geloofde Columbus kennelijk tot aan zijn dood in 1506?",
+          "options": [
+            "Dat hij een nieuw continent had ontdekt",
+            "Dat de landen die hij had bereikt bij Azië hoorden",
+            "Dat de aarde plat was",
+            "Dat Vespucci zijn ontdekking had gestolen"
+          ],
+          "explanation": "Anderen zagen de waarheid eerder. In 1507 noemde de kaartenmaker Waldseemüller het nieuwe continent Amerika, naar Amerigo Vespucci."
+        },
+        "fr": {
+          "question": "Que croyait apparemment Colomb jusqu’à sa mort en 1506 ?",
+          "options": [
+            "Qu’il avait découvert un nouveau continent",
+            "Que les terres qu’il avait atteintes faisaient partie de l’Asie",
+            "Que la Terre était plate",
+            "Que Vespucci lui avait volé sa découverte"
+          ],
+          "explanation": "D’autres ont compris la vérité plus tôt. En 1507, le cartographe Waldseemüller a nommé le nouveau continent Amérique, d’après Amerigo Vespucci."
+        },
+        "de": {
+          "question": "Was glaubte Kolumbus offenbar bis zu seinem Tod 1506?",
+          "options": [
+            "Dass er einen neuen Kontinent entdeckt hatte",
+            "Dass die Länder, die er erreicht hatte, zu Asien gehörten",
+            "Dass die Erde flach sei",
+            "Dass Vespucci ihm seine Entdeckung gestohlen habe"
+          ],
+          "explanation": "Andere erkannten die Wahrheit früher. 1507 benannte der Kartograf Waldseemüller den neuen Kontinent nach Amerigo Vespucci: Amerika."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

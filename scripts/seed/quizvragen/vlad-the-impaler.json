@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Where does the name 'Dracula' come from?",
+      "options": [
+        "From a Romanian word for vampire",
+        "From his father's membership of the Order of the Dragon",
+        "From the name of his castle",
+        "From a Turkish nickname"
+      ],
+      "explanation": "His father joined the Order of the Dragon in 1431 and became Vlad Dracul. Dracula means son of Dracul.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar komt de naam 'Dracula' vandaan?",
+          "options": [
+            "Van een Roemeens woord voor vampier",
+            "Van het lidmaatschap van zijn vader van de Orde van de Draak",
+            "Van de naam van zijn kasteel",
+            "Van een Turkse bijnaam"
+          ],
+          "explanation": "Zijn vader werd in 1431 lid van de Orde van de Draak en heette voortaan Vlad Dracul. Dracula betekent zoon van Dracul."
+        },
+        "fr": {
+          "question": "D’où vient le nom « Dracula » ?",
+          "options": [
+            "D’un mot roumain signifiant vampire",
+            "De l’appartenance de son père à l’ordre du Dragon",
+            "Du nom de son château",
+            "D’un surnom turc"
+          ],
+          "explanation": "Son père est entré dans l’ordre du Dragon en 1431 et est devenu Vlad Dracul. Dracula signifie fils de Dracul."
+        },
+        "de": {
+          "question": "Woher kommt der Name „Dracula“?",
+          "options": [
+            "Von einem rumänischen Wort für Vampir",
+            "Von der Mitgliedschaft seines Vaters im Drachenorden",
+            "Vom Namen seiner Burg",
+            "Von einem türkischen Spitznamen"
+          ],
+          "explanation": "Sein Vater trat 1431 dem Drachenorden bei und hieß fortan Vlad Dracul. Dracula bedeutet Sohn des Dracul."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Why did Vlad and his younger brother Radu spend years at the Ottoman court as boys?",
+      "options": [
+        "They were studying to become imams",
+        "Their mother was Turkish",
+        "They were hostages to guarantee their father's loyalty",
+        "They had run away from home"
+      ],
+      "explanation": "If their father broke his word to the sultan, the boys could be blinded or killed. Radu adapted; Vlad rebelled.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom brachten Vlad en zijn jongere broer Radu als jongens jaren door aan het Ottomaanse hof?",
+          "options": [
+            "Ze studeerden voor imam",
+            "Hun moeder was Turks",
+            "Ze waren gijzelaars om de trouw van hun vader te garanderen",
+            "Ze waren van huis weggelopen"
+          ],
+          "explanation": "Als hun vader zijn woord tegenover de sultan brak, konden de jongens worden verblind of gedood. Radu paste zich aan; Vlad verzette zich."
+        },
+        "fr": {
+          "question": "Pourquoi Vlad et son jeune frère Radu ont-ils passé des années à la cour ottomane dans leur enfance ?",
+          "options": [
+            "Ils étudiaient pour devenir imams",
+            "Leur mère était turque",
+            "Ils étaient otages pour garantir la loyauté de leur père",
+            "Ils avaient fugué"
+          ],
+          "explanation": "Si leur père manquait à sa parole envers le sultan, les garçons pouvaient être aveuglés ou tués. Radu s’est adapté ; Vlad s’est rebellé."
+        },
+        "de": {
+          "question": "Warum verbrachten Vlad und sein jüngerer Bruder Radu als Jungen Jahre am osmanischen Hof?",
+          "options": [
+            "Sie studierten, um Imame zu werden",
+            "Ihre Mutter war Türkin",
+            "Sie waren Geiseln, um die Treue ihres Vaters zu sichern",
+            "Sie waren von zu Hause weggelaufen"
+          ],
+          "explanation": "Hätte ihr Vater sein Wort gegenüber dem Sultan gebrochen, hätten die Jungen geblendet oder getötet werden können. Radu passte sich an, Vlad rebellierte."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Which group did Vlad trust least and set out to break when he took power in 1456?",
+      "options": [
+        "The boyars, Wallachia's powerful nobles",
+        "The merchants of Venice",
+        "The monks of Snagov",
+        "The Hungarian army"
+      ],
+      "explanation": "The boyars had murdered his father and brother and made and unmade princes as they pleased.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke groep vertrouwde Vlad het minst en wilde hij breken toen hij in 1456 aan de macht kwam?",
+          "options": [
+            "De bojaren, de machtige edelen van Walachije",
+            "De kooplieden van Venetië",
+            "De monniken van Snagov",
+            "Het Hongaarse leger"
+          ],
+          "explanation": "De bojaren hadden zijn vader en broer vermoord en zetten vorsten naar believen af en aan."
+        },
+        "fr": {
+          "question": "Quel groupe Vlad craignait-il le plus et voulait-il briser lors de sa prise de pouvoir en 1456 ?",
+          "options": [
+            "Les boyards, les puissants nobles de Valachie",
+            "Les marchands de Venise",
+            "Les moines de Snagov",
+            "L’armée hongroise"
+          ],
+          "explanation": "Les boyards avaient assassiné son père et son frère et faisaient et défaisaient les princes à leur guise."
+        },
+        "de": {
+          "question": "Welcher Gruppe misstraute Vlad am meisten, und welche wollte er brechen, als er 1456 an die Macht kam?",
+          "options": [
+            "Den Bojaren, den mächtigen Adligen der Walachei",
+            "Den Kaufleuten Venedigs",
+            "Den Mönchen von Snagov",
+            "Dem ungarischen Heer"
+          ],
+          "explanation": "Die Bojaren hatten seinen Vater und seinen Bruder ermordet und setzten Fürsten nach Belieben ein und ab."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "According to a Romanian tale, what stood untouched beside a town fountain for years during Vlad's rule?",
+      "options": [
+        "A bag of silver",
+        "A sword",
+        "A crown",
+        "A golden cup"
+      ],
+      "explanation": "No one dared to steal it, because everyone knew what Vlad did to thieves. The story shows how some remembered him: as a stern bringer of order.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat stond er volgens een Roemeens verhaal onder Vlads bewind jarenlang onaangeroerd naast een fontein in de stad?",
+          "options": [
+            "Een zak zilver",
+            "Een zwaard",
+            "Een kroon",
+            "Een gouden beker"
+          ],
+          "explanation": "Niemand durfde hem te stelen, want iedereen wist wat Vlad met dieven deed. Het verhaal toont hoe sommigen hem herinnerden: als strenge brenger van orde."
+        },
+        "fr": {
+          "question": "Selon un conte roumain, qu’est-ce qui est resté intact pendant des années près d’une fontaine sous le règne de Vlad ?",
+          "options": [
+            "Un sac d’argent",
+            "Une épée",
+            "Une couronne",
+            "Une coupe en or"
+          ],
+          "explanation": "Personne n’osait la voler, car chacun savait ce que Vlad faisait aux voleurs. Le conte montre comment certains se souvenaient de lui : comme d’un garant sévère de l’ordre."
+        },
+        "de": {
+          "question": "Was stand laut einer rumänischen Erzählung unter Vlads Herrschaft jahrelang unberührt neben einem Stadtbrunnen?",
+          "options": [
+            "Ein Beutel Silber",
+            "Ein Schwert",
+            "Eine Krone",
+            "Ein goldener Becher"
+          ],
+          "explanation": "Niemand wagte, ihn zu stehlen, denn jeder wusste, was Vlad mit Dieben tat. Die Geschichte zeigt, wie manche ihn in Erinnerung behielten: als strengen Ordnungsstifter."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What did Vlad try to do in his night attack of 17 June 1462?",
+      "options": [
+        "Free his brother Radu",
+        "Kill the sultan in his tent",
+        "Steal the Ottoman treasury",
+        "Burn the Ottoman fleet"
+      ],
+      "explanation": "Many were killed in the chaos of the Ottoman camp, but Sultan Mehmed II survived.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat probeerde Vlad bij zijn nachtelijke aanval van 17 juni 1462?",
+          "options": [
+            "Zijn broer Radu bevrijden",
+            "De sultan in zijn tent doden",
+            "De Ottomaanse schatkist stelen",
+            "De Ottomaanse vloot in brand steken"
+          ],
+          "explanation": "In de chaos in het Ottomaanse kamp vielen veel doden, maar sultan Mehmed II overleefde het."
+        },
+        "fr": {
+          "question": "Qu’a tenté Vlad lors de son attaque nocturne du 17 juin 1462 ?",
+          "options": [
+            "Libérer son frère Radu",
+            "Tuer le sultan dans sa tente",
+            "Voler le trésor ottoman",
+            "Incendier la flotte ottomane"
+          ],
+          "explanation": "Beaucoup ont péri dans le chaos du camp ottoman, mais le sultan Mehmed II a survécu."
+        },
+        "de": {
+          "question": "Was versuchte Vlad bei seinem Nachtangriff am 17. Juni 1462?",
+          "options": [
+            "Seinen Bruder Radu zu befreien",
+            "Den Sultan in seinem Zelt zu töten",
+            "Den osmanischen Staatsschatz zu stehlen",
+            "Die osmanische Flotte zu verbrennen"
+          ],
+          "explanation": "Im Chaos des osmanischen Lagers starben viele, doch Sultan Mehmed II. überlebte."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Which castle, sold to tourists today as 'Dracula's Castle', has no evidence that Vlad ever lived there?",
+      "options": [
+        "Bran Castle",
+        "Poenari",
+        "Hunyad Castle",
+        "Târgoviște"
+      ],
+      "explanation": "Vlad may have passed through the area, but Bran has no proven link to him. His real fortress, Poenari, is a ruin high above the Argeș River.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk kasteel, dat nu aan toeristen wordt verkocht als 'Dracula's kasteel', heeft geen bewijs dat Vlad er ooit woonde?",
+          "options": [
+            "Kasteel Bran",
+            "Poenari",
+            "Kasteel Hunyad",
+            "Târgoviște"
+          ],
+          "explanation": "Vlad kwam misschien door de streek, maar Bran heeft geen bewezen band met hem. Zijn echte vesting, Poenari, is een ruïne hoog boven de rivier de Argeș."
+        },
+        "fr": {
+          "question": "Quel château, vendu aux touristes comme le « château de Dracula », n’a aucune preuve que Vlad y ait vécu ?",
+          "options": [
+            "Le château de Bran",
+            "Poenari",
+            "Le château de Hunedoara",
+            "Târgoviște"
+          ],
+          "explanation": "Vlad est peut-être passé dans la région, mais aucun lien avec Bran n’est prouvé. Sa vraie forteresse, Poenari, est une ruine perchée au-dessus de l’Argeș."
+        },
+        "de": {
+          "question": "Welche Burg, die heute Touristen als „Draculas Schloss“ verkauft wird, hat keinen Beleg dafür, dass Vlad dort je lebte?",
+          "options": [
+            "Schloss Bran",
+            "Poenari",
+            "Burg Hunyad",
+            "Târgoviște"
+          ],
+          "explanation": "Vlad kam vielleicht durch die Gegend, doch eine Verbindung zu Bran ist nicht belegt. Seine echte Festung Poenari ist eine Ruine hoch über dem Fluss Argeș."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "How did Vlad become famous across Germany while he was a prisoner in Hungary?",
+      "options": [
+        "Through songs sung by soldiers",
+        "Through his own letters to the emperor",
+        "Through printed pamphlets about his cruelty",
+        "Through paintings in churches"
+      ],
+      "explanation": "Printing had just been invented, and gruesome tales about 'Dracula voivode' sold very well. They were among the first printed bestsellers about a real person.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe werd Vlad beroemd in heel Duitsland terwijl hij gevangenzat in Hongarije?",
+          "options": [
+            "Via liedjes die soldaten zongen",
+            "Via zijn eigen brieven aan de keizer",
+            "Via gedrukte pamfletten over zijn wreedheid",
+            "Via schilderingen in kerken"
+          ],
+          "explanation": "De boekdrukkunst was net uitgevonden, en gruwelverhalen over 'Dracula voivode' verkochten heel goed. Ze behoren tot de eerste gedrukte bestsellers over een echt persoon."
+        },
+        "fr": {
+          "question": "Comment Vlad est-il devenu célèbre dans toute l’Allemagne pendant sa captivité en Hongrie ?",
+          "options": [
+            "Grâce aux chansons des soldats",
+            "Grâce à ses propres lettres à l’empereur",
+            "Grâce à des pamphlets imprimés sur sa cruauté",
+            "Grâce aux peintures des églises"
+          ],
+          "explanation": "L’imprimerie venait d’être inventée, et les récits horribles sur « Dracula voïvode » se vendaient très bien. Ce sont parmi les premiers best-sellers imprimés sur une personne réelle."
+        },
+        "de": {
+          "question": "Wie wurde Vlad in ganz Deutschland berühmt, während er in Ungarn gefangen saß?",
+          "options": [
+            "Durch Lieder, die Soldaten sangen",
+            "Durch seine eigenen Briefe an den Kaiser",
+            "Durch gedruckte Flugschriften über seine Grausamkeit",
+            "Durch Gemälde in Kirchen"
+          ],
+          "explanation": "Der Buchdruck war gerade erfunden, und Schauergeschichten über „Dracula Woiwode“ verkauften sich glänzend. Sie gehören zu den ersten gedruckten Bestsellern über einen realen Menschen."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "How did Bram Stoker find the name for his vampire novel of 1897?",
+      "options": [
+        "He visited Vlad's tomb in Romania",
+        "A Romanian friend told him about Vlad",
+        "He dreamed it",
+        "He read it in a library book about Wallachia"
+      ],
+      "explanation": "The book noted that Dracula meant 'devil'. Stoker knew very little about the real Vlad, who was never accused of drinking blood.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe kwam Bram Stoker aan de naam voor zijn vampierroman uit 1897?",
+          "options": [
+            "Hij bezocht Vlads graf in Roemenië",
+            "Een Roemeense vriend vertelde hem over Vlad",
+            "Hij droomde hem",
+            "Hij las hem in een bibliotheekboek over Walachije"
+          ],
+          "explanation": "In dat boek stond dat Dracula 'duivel' betekende. Stoker wist heel weinig over de echte Vlad, die nooit werd beschuldigd van bloeddrinken."
+        },
+        "fr": {
+          "question": "Comment Bram Stoker a-t-il trouvé le nom de son roman de vampire de 1897 ?",
+          "options": [
+            "Il a visité la tombe de Vlad en Roumanie",
+            "Un ami roumain lui a parlé de Vlad",
+            "Il l’a rêvé",
+            "Il l’a lu dans un livre de bibliothèque sur la Valachie"
+          ],
+          "explanation": "Le livre précisait que Dracula signifiait « diable ». Stoker savait très peu de choses sur le vrai Vlad, qui n’a jamais été accusé de boire du sang."
+        },
+        "de": {
+          "question": "Wie fand Bram Stoker den Namen für seinen Vampirroman von 1897?",
+          "options": [
+            "Er besuchte Vlads Grab in Rumänien",
+            "Ein rumänischer Freund erzählte ihm von Vlad",
+            "Er träumte ihn",
+            "Er las ihn in einem Bibliotheksbuch über die Walachei"
+          ],
+          "explanation": "Das Buch vermerkte, dass Dracula „Teufel“ bedeute. Stoker wusste sehr wenig über den echten Vlad, dem nie vorgeworfen wurde, Blut zu trinken."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

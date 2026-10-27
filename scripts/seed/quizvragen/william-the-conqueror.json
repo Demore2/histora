@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What name did William's enemies use to mock him during his lifetime?",
+      "options": [
+        "William the Bastard",
+        "William the Tanner",
+        "William the Small",
+        "William the Viking"
+      ],
+      "explanation": "His parents were not married, and his mother Herleva was said to be the daughter of a tanner. 'The Conqueror' came only later.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Met welke naam bespotten Willems vijanden hem tijdens zijn leven?",
+          "options": [
+            "Willem de Bastaard",
+            "Willem de Leerlooier",
+            "Willem de Kleine",
+            "Willem de Viking"
+          ],
+          "explanation": "Zijn ouders waren niet getrouwd, en zijn moeder Herleva zou de dochter van een leerlooier zijn geweest. 'De Veroveraar' kwam pas later."
+        },
+        "fr": {
+          "question": "Quel surnom les ennemis de Guillaume employaient-ils de son vivant pour se moquer de lui ?",
+          "options": [
+            "Guillaume le Bâtard",
+            "Guillaume le Tanneur",
+            "Guillaume le Petit",
+            "Guillaume le Viking"
+          ],
+          "explanation": "Ses parents n’étaient pas mariés et sa mère Herleva passait pour la fille d’un tanneur. « Le Conquérant » n’est venu que plus tard."
+        },
+        "de": {
+          "question": "Mit welchem Namen verspotteten Wilhelms Feinde ihn zu Lebzeiten?",
+          "options": [
+            "Wilhelm der Bastard",
+            "Wilhelm der Gerber",
+            "Wilhelm der Kleine",
+            "Wilhelm der Wikinger"
+          ],
+          "explanation": "Seine Eltern waren nicht verheiratet, und seine Mutter Herleva galt als Tochter eines Gerbers. „Der Eroberer“ kam erst später."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "How did the defenders of Alençon insult William during his siege of the town?",
+      "options": [
+        "They mocked his short height",
+        "They called him a Viking",
+        "They hung animal hides over the walls, mocking his mother's family of tanners",
+        "They sang songs about his father"
+      ],
+      "explanation": "When the town fell, William had the hands and feet of the men who had insulted him cut off. The other defenders surrendered quickly after that.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe beledigden de verdedigers van Alençon Willem tijdens het beleg van de stad?",
+          "options": [
+            "Ze spotten met zijn kleine lengte",
+            "Ze noemden hem een Viking",
+            "Ze hingen dierenhuiden over de muren om de leerlooiersfamilie van zijn moeder te bespotten",
+            "Ze zongen liedjes over zijn vader"
+          ],
+          "explanation": "Toen de stad viel, liet Willem de mannen die hem hadden beledigd handen en voeten afhakken. Daarna gaven de andere verdedigers zich snel over."
+        },
+        "fr": {
+          "question": "Comment les défenseurs d’Alençon ont-ils insulté Guillaume pendant le siège de la ville ?",
+          "options": [
+            "Ils se moquaient de sa petite taille",
+            "Ils le traitaient de Viking",
+            "Ils ont suspendu des peaux de bêtes aux murs pour railler la famille de tanneurs de sa mère",
+            "Ils chantaient des chansons sur son père"
+          ],
+          "explanation": "Quand la ville est tombée, Guillaume a fait couper les mains et les pieds de ceux qui l’avaient insulté. Les autres défenseurs se sont vite rendus."
+        },
+        "de": {
+          "question": "Wie beleidigten die Verteidiger von Alençon Wilhelm während der Belagerung der Stadt?",
+          "options": [
+            "Sie spotteten über seine geringe Größe",
+            "Sie nannten ihn einen Wikinger",
+            "Sie hängten Tierhäute über die Mauern, um die Gerberfamilie seiner Mutter zu verhöhnen",
+            "Sie sangen Lieder über seinen Vater"
+          ],
+          "explanation": "Als die Stadt fiel, ließ Wilhelm den Männern, die ihn beleidigt hatten, Hände und Füße abschlagen. Die übrigen Verteidiger ergaben sich danach schnell."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "According to Norman sources, what did Harold Godwinson do during his visit to Normandy around 1064?",
+      "options": [
+        "He married William's daughter",
+        "He swore an oath on holy relics to support William's claim",
+        "He challenged William to a duel",
+        "He was crowned duke of Normandy"
+      ],
+      "explanation": "An oath on relics was the most solemn promise a medieval Christian could make. When Harold took the crown in 1066, William called it perjury.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed Harold Godwinson volgens Normandische bronnen tijdens zijn bezoek aan Normandië rond 1064?",
+          "options": [
+            "Hij trouwde met Willems dochter",
+            "Hij zwoer op heilige relikwieën Willems aanspraak te steunen",
+            "Hij daagde Willem uit voor een duel",
+            "Hij werd tot hertog van Normandië gekroond"
+          ],
+          "explanation": "Een eed op relikwieën was de plechtigste belofte die een middeleeuwse christen kon doen. Toen Harold in 1066 de kroon nam, noemde Willem dat meineed."
+        },
+        "fr": {
+          "question": "Selon les sources normandes, qu’a fait Harold Godwinson lors de sa visite en Normandie vers 1064 ?",
+          "options": [
+            "Il a épousé la fille de Guillaume",
+            "Il a juré sur de saintes reliques de soutenir la prétention de Guillaume",
+            "Il a défié Guillaume en duel",
+            "Il a été couronné duc de Normandie"
+          ],
+          "explanation": "Un serment sur des reliques était la promesse la plus solennelle pour un chrétien du Moyen Âge. Quand Harold a pris la couronne en 1066, Guillaume a parlé de parjure."
+        },
+        "de": {
+          "question": "Was tat Harold Godwinson laut normannischen Quellen bei seinem Besuch in der Normandie um 1064?",
+          "options": [
+            "Er heiratete Wilhelms Tochter",
+            "Er schwor auf heilige Reliquien, Wilhelms Anspruch zu unterstützen",
+            "Er forderte Wilhelm zum Duell",
+            "Er wurde zum Herzog der Normandie gekrönt"
+          ],
+          "explanation": "Ein Eid auf Reliquien war das feierlichste Versprechen eines mittelalterlichen Christen. Als Harold 1066 die Krone nahm, nannte Wilhelm das Meineid."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Which king invaded the north of England in September 1066, just before William landed in the south?",
+      "options": [
+        "Malcolm of Scotland",
+        "Philip of France",
+        "Canute of Denmark",
+        "Harald Hardrada of Norway"
+      ],
+      "explanation": "King Harold destroyed the Norwegian army at Stamford Bridge on 25 September. Three days later William landed at Pevensey.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke koning viel in september 1066 het noorden van Engeland binnen, vlak voordat Willem in het zuiden landde?",
+          "options": [
+            "Malcolm van Schotland",
+            "Filips van Frankrijk",
+            "Knoet van Denemarken",
+            "Harald Hardrada van Noorwegen"
+          ],
+          "explanation": "Koning Harold versloeg het Noorse leger op 25 september bij Stamford Bridge. Drie dagen later landde Willem bij Pevensey."
+        },
+        "fr": {
+          "question": "Quel roi a envahi le nord de l’Angleterre en septembre 1066, juste avant le débarquement de Guillaume dans le sud ?",
+          "options": [
+            "Malcolm d’Écosse",
+            "Philippe de France",
+            "Knut de Danemark",
+            "Harald Hardrada de Norvège"
+          ],
+          "explanation": "Le roi Harold a écrasé l’armée norvégienne à Stamford Bridge le 25 septembre. Trois jours plus tard, Guillaume débarquait à Pevensey."
+        },
+        "de": {
+          "question": "Welcher König fiel im September 1066 in Nordengland ein, kurz bevor Wilhelm im Süden landete?",
+          "options": [
+            "Malcolm von Schottland",
+            "Philipp von Frankreich",
+            "Knut von Dänemark",
+            "Harald Hardrada von Norwegen"
+          ],
+          "explanation": "König Harold vernichtete das norwegische Heer am 25. September bei Stamford Bridge. Drei Tage später landete Wilhelm bei Pevensey."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What did William do at Hastings when a rumour spread that he had been killed?",
+      "options": [
+        "He ordered a retreat",
+        "He pushed back his helmet so his men could see his face",
+        "He sent a messenger to Harold",
+        "He blew a horn three times"
+      ],
+      "explanation": "He rode among his panicking soldiers, showing his face and shouting that he was alive. The Bayeux Tapestry shows the moment.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed Willem bij Hastings toen het gerucht ging dat hij gesneuveld was?",
+          "options": [
+            "Hij gaf bevel tot de terugtocht",
+            "Hij schoof zijn helm naar achteren zodat zijn mannen zijn gezicht zagen",
+            "Hij stuurde een bode naar Harold",
+            "Hij blies drie keer op een hoorn"
+          ],
+          "explanation": "Hij reed tussen zijn in paniek geraakte soldaten door, liet zijn gezicht zien en riep dat hij leefde. Het tapijt van Bayeux toont dat moment."
+        },
+        "fr": {
+          "question": "Qu’a fait Guillaume à Hastings quand la rumeur de sa mort s’est répandue ?",
+          "options": [
+            "Il a ordonné la retraite",
+            "Il a relevé son casque pour que ses hommes voient son visage",
+            "Il a envoyé un messager à Harold",
+            "Il a sonné trois fois du cor"
+          ],
+          "explanation": "Il a parcouru les rangs de ses soldats paniqués en montrant son visage et en criant qu’il était vivant. La tapisserie de Bayeux montre ce moment."
+        },
+        "de": {
+          "question": "Was tat Wilhelm bei Hastings, als das Gerücht aufkam, er sei gefallen?",
+          "options": [
+            "Er befahl den Rückzug",
+            "Er schob seinen Helm zurück, damit seine Männer sein Gesicht sahen",
+            "Er schickte einen Boten zu Harold",
+            "Er blies dreimal ins Horn"
+          ],
+          "explanation": "Er ritt zwischen seinen panischen Soldaten umher, zeigte sein Gesicht und rief, dass er lebe. Der Teppich von Bayeux zeigt diesen Moment."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What went wrong at William's coronation on Christmas Day 1066?",
+      "options": [
+        "The crown did not fit",
+        "The archbishop refused to crown him",
+        "Norman guards set fire to houses, thinking the cheers were an attack",
+        "A storm tore off the abbey roof"
+      ],
+      "explanation": "The congregation shouted their approval in English and French. The guards outside mistook it for an attack, and people fled the church as the houses burned.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat ging er mis bij Willems kroning op eerste kerstdag 1066?",
+          "options": [
+            "De kroon paste niet",
+            "De aartsbisschop weigerde hem te kronen",
+            "Normandische wachters staken huizen in brand omdat ze het gejuich voor een aanval hielden",
+            "Een storm rukte het dak van de abdij"
+          ],
+          "explanation": "De aanwezigen riepen hun instemming in het Engels en het Frans. De wachters buiten zagen dat aan voor een aanval, en mensen vluchtten de kerk uit terwijl de huizen brandden."
+        },
+        "fr": {
+          "question": "Qu’est-ce qui a mal tourné lors du couronnement de Guillaume, le jour de Noël 1066 ?",
+          "options": [
+            "La couronne n’était pas à sa taille",
+            "L’archevêque a refusé de le couronner",
+            "Des gardes normands ont incendié des maisons, croyant que les acclamations étaient une attaque",
+            "Une tempête a arraché le toit de l’abbaye"
+          ],
+          "explanation": "L’assemblée a crié son approbation en anglais et en français. Les gardes, dehors, ont cru à une attaque, et les gens ont fui l’église pendant que les maisons brûlaient."
+        },
+        "de": {
+          "question": "Was ging bei Wilhelms Krönung am ersten Weihnachtstag 1066 schief?",
+          "options": [
+            "Die Krone passte nicht",
+            "Der Erzbischof weigerte sich, ihn zu krönen",
+            "Normannische Wachen zündeten Häuser an, weil sie den Jubel für einen Angriff hielten",
+            "Ein Sturm riss das Dach der Abtei ab"
+          ],
+          "explanation": "Die Anwesenden riefen ihre Zustimmung auf Englisch und Französisch. Die Wachen draußen hielten das für einen Angriff, und die Leute flohen aus der Kirche, während die Häuser brannten."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Why does English have French-based words like beef and pork, but English words like cow and pig?",
+      "options": [
+        "The animals came from France",
+        "English farmers learned French at school",
+        "French cooks were brought to England by the Romans",
+        "The Normans ate the meat, while English peasants looked after the animals"
+      ],
+      "explanation": "After the conquest, the Norman lords at the table spoke French, while the people working in the fields kept speaking English.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom heeft het Engels woorden met een Franse oorsprong zoals beef en pork, maar Engelse woorden zoals cow en pig?",
+          "options": [
+            "De dieren kwamen uit Frankrijk",
+            "Engelse boeren leerden Frans op school",
+            "De Romeinen brachten Franse koks naar Engeland",
+            "De Normandiërs aten het vlees, terwijl Engelse boeren voor de dieren zorgden"
+          ],
+          "explanation": "Na de verovering spraken de Normandische heren aan tafel Frans, terwijl de mensen die op het land werkten Engels bleven spreken."
+        },
+        "fr": {
+          "question": "Pourquoi l’anglais a-t-il des mots d’origine française comme beef et pork, mais des mots anglais comme cow et pig ?",
+          "options": [
+            "Les animaux venaient de France",
+            "Les paysans anglais apprenaient le français à l’école",
+            "Les Romains avaient amené des cuisiniers français en Angleterre",
+            "Les Normands mangeaient la viande, tandis que les paysans anglais s’occupaient des bêtes"
+          ],
+          "explanation": "Après la conquête, les seigneurs normands parlaient français à table, tandis que ceux qui travaillaient aux champs continuaient de parler anglais."
+        },
+        "de": {
+          "question": "Warum hat das Englische Wörter französischer Herkunft wie beef und pork, aber englische Wörter wie cow und pig?",
+          "options": [
+            "Die Tiere kamen aus Frankreich",
+            "Englische Bauern lernten in der Schule Französisch",
+            "Die Römer brachten französische Köche nach England",
+            "Die Normannen aßen das Fleisch, während englische Bauern die Tiere versorgten"
+          ],
+          "explanation": "Nach der Eroberung sprachen die normannischen Herren bei Tisch Französisch, während die Menschen auf den Feldern weiter Englisch sprachen."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Why did the English call William's great survey the Domesday Book?",
+      "options": [
+        "Because, like the Day of Judgement, there was no appeal against what it said",
+        "Because it was finished on a Sunday",
+        "Because it listed everyone who died at Hastings",
+        "Because a monk named Domes wrote it"
+      ],
+      "explanation": "The survey recorded land, people, ploughs, mills and pigs across England. It still survives in the National Archives in London.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom noemden de Engelsen Willems grote inventarisatie het Domesday Book?",
+          "options": [
+            "Omdat er, net als tegen het Laatste Oordeel, geen beroep mogelijk was tegen wat erin stond",
+            "Omdat het op een zondag af was",
+            "Omdat het iedereen opsomde die bij Hastings sneuvelde",
+            "Omdat een monnik die Domes heette het schreef"
+          ],
+          "explanation": "De inventarisatie legde land, mensen, ploegen, molens en varkens in heel Engeland vast. Het boek bestaat nog en ligt in het Nationaal Archief in Londen."
+        },
+        "fr": {
+          "question": "Pourquoi les Anglais ont-ils appelé le grand recensement de Guillaume le Domesday Book ?",
+          "options": [
+            "Parce que, comme au Jugement dernier, on ne pouvait pas contester ce qu’il disait",
+            "Parce qu’il a été achevé un dimanche",
+            "Parce qu’il recensait tous les morts d’Hastings",
+            "Parce qu’un moine nommé Domes l’a écrit"
+          ],
+          "explanation": "Le recensement notait terres, habitants, charrues, moulins et cochons dans toute l’Angleterre. Il est toujours conservé aux Archives nationales à Londres."
+        },
+        "de": {
+          "question": "Warum nannten die Engländer Wilhelms große Erhebung das Domesday Book?",
+          "options": [
+            "Weil man, wie beim Jüngsten Gericht, gegen seinen Inhalt keine Berufung einlegen konnte",
+            "Weil es an einem Sonntag fertig wurde",
+            "Weil es alle Gefallenen von Hastings aufzählte",
+            "Weil ein Mönch namens Domes es schrieb"
+          ],
+          "explanation": "Die Erhebung erfasste Land, Menschen, Pflüge, Mühlen und Schweine in ganz England. Das Buch ist bis heute im Nationalarchiv in London erhalten."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

@@ -32,11 +32,26 @@ const IMAGES = {
   'joan-of-arc': require('../../assets/images/characters/joan-of-arc.webp'),
   'charlemagne': require('../../assets/images/characters/charlemagne.webp'),
   'richard-the-lionheart': require('../../assets/images/characters/richard-the-lionheart.webp'),
+  'genghis-khan': require('../../assets/images/characters/genghis-khan.webp'),
+  'william-the-conqueror': require('../../assets/images/characters/william-the-conqueror.webp'),
+  'saladin': require('../../assets/images/characters/saladin.webp'),
+  'marco-polo': require('../../assets/images/characters/marco-polo.webp'),
+  'mansa-musa': require('../../assets/images/characters/mansa-musa.webp'),
+  'vlad-the-impaler': require('../../assets/images/characters/vlad-the-impaler.webp'),
+  'johannes-gutenberg': require('../../assets/images/characters/johannes-gutenberg.webp'),
 
   // Vroegmoderne Tijd
   'leonardo-da-vinci': require('../../assets/images/characters/leonardo-da-vinci.webp'),
   'galileo-galilei': require('../../assets/images/characters/galileo-galilei.webp'),
   'catherine-the-great': require('../../assets/images/characters/catherine-the-great.webp'),
+  'henry-viii': require('../../assets/images/characters/henry-viii.webp'),
+  'christopher-columbus': require('../../assets/images/characters/christopher-columbus.webp'),
+  'martin-luther': require('../../assets/images/characters/martin-luther.webp'),
+  'hernan-cortes': require('../../assets/images/characters/hernan-cortes.webp'),
+  'suleiman-the-magnificent': require('../../assets/images/characters/suleiman-the-magnificent.webp'),
+  'elizabeth-i': require('../../assets/images/characters/elizabeth-i.webp'),
+  'louis-xiv': require('../../assets/images/characters/louis-xiv.webp'),
+  'marie-antoinette': require('../../assets/images/characters/marie-antoinette.webp'),
 
   // Industriele Revolutie
   'james-watt': require('../../assets/images/characters/james-watt.webp'),

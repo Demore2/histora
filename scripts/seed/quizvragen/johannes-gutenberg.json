@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Before printing, how long could it take a scribe to copy a large book like the Bible?",
+      "options": [
+        "About a week",
+        "About a month",
+        "A year or more",
+        "Ten years"
+      ],
+      "explanation": "Every copy had to be written by hand, letter by letter. That is why books were rare and expensive.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe lang kon een kopiist vóór de boekdrukkunst bezig zijn met het overschrijven van een groot boek zoals de Bijbel?",
+          "options": [
+            "Ongeveer een week",
+            "Ongeveer een maand",
+            "Een jaar of langer",
+            "Tien jaar"
+          ],
+          "explanation": "Elk exemplaar moest letter voor letter met de hand worden geschreven. Daarom waren boeken zeldzaam en duur."
+        },
+        "fr": {
+          "question": "Avant l’imprimerie, combien de temps un copiste pouvait-il mettre pour recopier un gros livre comme la Bible ?",
+          "options": [
+            "Environ une semaine",
+            "Environ un mois",
+            "Un an ou plus",
+            "Dix ans"
+          ],
+          "explanation": "Chaque exemplaire devait être écrit à la main, lettre par lettre. C’est pourquoi les livres étaient rares et chers."
+        },
+        "de": {
+          "question": "Wie lange konnte ein Schreiber vor dem Buchdruck brauchen, um ein großes Buch wie die Bibel abzuschreiben?",
+          "options": [
+            "Etwa eine Woche",
+            "Etwa einen Monat",
+            "Ein Jahr oder länger",
+            "Zehn Jahre"
+          ],
+          "explanation": "Jedes Exemplar musste Buchstabe für Buchstabe von Hand geschrieben werden. Darum waren Bücher selten und teuer."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What did Gutenberg and his partners in Strasbourg plan to mass-produce for pilgrims?",
+      "options": [
+        "Small metal mirrors to catch the power of holy relics",
+        "Prayer books",
+        "Candles",
+        "Wooden crosses"
+      ],
+      "explanation": "Pilgrims to Aachen believed a mirror held up towards the relics captured some of their power. The business shows Gutenberg thinking about making identical objects quickly.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat wilden Gutenberg en zijn compagnons in Straatsburg in massa maken voor pelgrims?",
+          "options": [
+            "Kleine metalen spiegeltjes om de kracht van heilige relikwieën op te vangen",
+            "Gebedenboeken",
+            "Kaarsen",
+            "Houten kruisjes"
+          ],
+          "explanation": "Pelgrims naar Aken geloofden dat een spiegel die je naar de relikwieën hield iets van hun kracht opving. Het laat zien dat Gutenberg al nadacht over het snel maken van identieke voorwerpen."
+        },
+        "fr": {
+          "question": "Que Gutenberg et ses associés de Strasbourg voulaient-ils produire en série pour les pèlerins ?",
+          "options": [
+            "De petits miroirs de métal pour capter la force des saintes reliques",
+            "Des livres de prières",
+            "Des cierges",
+            "Des croix en bois"
+          ],
+          "explanation": "Les pèlerins d’Aix-la-Chapelle croyaient qu’un miroir tendu vers les reliques en captait la force. L’affaire montre Gutenberg réfléchissant déjà à fabriquer vite des objets identiques."
+        },
+        "de": {
+          "question": "Was wollten Gutenberg und seine Partner in Straßburg für Pilger in Masse herstellen?",
+          "options": [
+            "Kleine Metallspiegel, die die Kraft heiliger Reliquien einfangen sollten",
+            "Gebetbücher",
+            "Kerzen",
+            "Holzkreuze"
+          ],
+          "explanation": "Aachen-Pilger glaubten, ein zu den Reliquien gehaltener Spiegel fange etwas von deren Kraft ein. Schon hier dachte Gutenberg daran, gleiche Dinge schnell herzustellen."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What was the key invention that made Gutenberg's movable type possible?",
+      "options": [
+        "A machine that wrote with a pen",
+        "Paper made from cotton",
+        "A hand mould to cast thousands of identical metal letters quickly",
+        "Letters carved from stone"
+      ],
+      "explanation": "The adjustable mould could cast an i and an m at exactly the same height, so they printed evenly. Combined with oily ink and a screw press, it formed a whole system.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was de belangrijkste uitvinding die Gutenbergs losse letters mogelijk maakte?",
+          "options": [
+            "Een machine die met een pen schreef",
+            "Papier gemaakt van katoen",
+            "Een gietinstrument om snel duizenden identieke metalen letters te maken",
+            "Letters uitgehakt in steen"
+          ],
+          "explanation": "Het verstelbare gietinstrument kon een i en een m precies even hoog gieten, zodat ze gelijkmatig drukten. Samen met vettige inkt en een schroefpers vormde het een heel systeem."
+        },
+        "fr": {
+          "question": "Quelle invention clé a rendu possibles les caractères mobiles de Gutenberg ?",
+          "options": [
+            "Une machine qui écrivait à la plume",
+            "Du papier fait de coton",
+            "Un moule à main pour fondre vite des milliers de lettres de métal identiques",
+            "Des lettres taillées dans la pierre"
+          ],
+          "explanation": "Le moule réglable fondait un i et un m exactement à la même hauteur, pour une impression régulière. Avec une encre grasse et une presse à vis, cela formait tout un système."
+        },
+        "de": {
+          "question": "Was war die entscheidende Erfindung, die Gutenbergs bewegliche Lettern möglich machte?",
+          "options": [
+            "Eine Maschine, die mit einer Feder schrieb",
+            "Papier aus Baumwolle",
+            "Ein Handgießinstrument, um schnell Tausende gleicher Metallbuchstaben zu gießen",
+            "In Stein gehauene Buchstaben"
+          ],
+          "explanation": "Das verstellbare Gießinstrument goss ein i und ein m genau gleich hoch, sodass sie gleichmäßig druckten. Mit öliger Tinte und einer Schraubenpresse ergab das ein ganzes System."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Which kind of document did Gutenberg's press print for the Church in 1454?",
+      "options": [
+        "Letters of indulgence",
+        "Papal bulls",
+        "Maps of pilgrim routes",
+        "Lists of saints"
+      ],
+      "explanation": "Forms on which a clerk only had to fill in a name and a date: thousands of identical copies, exactly what printing was perfect for.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat voor documenten drukte Gutenbergs pers in 1454 voor de Kerk?",
+          "options": [
+            "Aflaatbrieven",
+            "Pauselijke bullen",
+            "Kaarten van pelgrimsroutes",
+            "Lijsten van heiligen"
+          ],
+          "explanation": "Formulieren waarop een klerk alleen nog een naam en een datum hoefde in te vullen: duizenden identieke exemplaren, precies waar drukken ideaal voor was."
+        },
+        "fr": {
+          "question": "Quel type de document la presse de Gutenberg a-t-elle imprimé pour l’Église en 1454 ?",
+          "options": [
+            "Des lettres d’indulgence",
+            "Des bulles papales",
+            "Des cartes de routes de pèlerinage",
+            "Des listes de saints"
+          ],
+          "explanation": "Des formulaires où un clerc n’avait qu’à inscrire un nom et une date : des milliers d’exemplaires identiques, exactement ce pour quoi l’imprimerie était idéale."
+        },
+        "de": {
+          "question": "Welche Art von Dokumenten druckte Gutenbergs Presse 1454 für die Kirche?",
+          "options": [
+            "Ablassbriefe",
+            "Päpstliche Bullen",
+            "Karten von Pilgerwegen",
+            "Heiligenlisten"
+          ],
+          "explanation": "Formulare, in die ein Schreiber nur noch Namen und Datum eintragen musste: Tausende gleiche Exemplare, genau wofür der Druck ideal war."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Why is the Gutenberg Bible also called the 42-line Bible?",
+      "options": [
+        "It took 42 months to print",
+        "Only 42 copies were made",
+        "It has 42 books",
+        "It has 42 lines of text in each column"
+      ],
+      "explanation": "It has about 1,280 pages in two volumes. Around 180 copies were printed, and the coloured initials were painted in by hand afterwards.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom heet de Gutenbergbijbel ook wel de 42-regelige Bijbel?",
+          "options": [
+            "Het drukken duurde 42 maanden",
+            "Er werden maar 42 exemplaren gemaakt",
+            "Hij bevat 42 boeken",
+            "Elke kolom heeft 42 regels tekst"
+          ],
+          "explanation": "Hij telt ongeveer 1280 bladzijden in twee delen. Er werden zo'n 180 exemplaren gedrukt, en de gekleurde beginletters werden er daarna met de hand in geschilderd."
+        },
+        "fr": {
+          "question": "Pourquoi la Bible de Gutenberg est-elle aussi appelée la Bible à 42 lignes ?",
+          "options": [
+            "Son impression a duré 42 mois",
+            "Seuls 42 exemplaires ont été faits",
+            "Elle contient 42 livres",
+            "Chaque colonne compte 42 lignes de texte"
+          ],
+          "explanation": "Elle compte environ 1 280 pages en deux volumes. Environ 180 exemplaires ont été imprimés, et les lettrines colorées ont été peintes à la main ensuite."
+        },
+        "de": {
+          "question": "Warum heißt die Gutenberg-Bibel auch 42-zeilige Bibel?",
+          "options": [
+            "Der Druck dauerte 42 Monate",
+            "Es wurden nur 42 Exemplare hergestellt",
+            "Sie enthält 42 Bücher",
+            "Jede Spalte hat 42 Textzeilen"
+          ],
+          "explanation": "Sie hat etwa 1.280 Seiten in zwei Bänden. Rund 180 Exemplare wurden gedruckt, und die farbigen Initialen wurden danach von Hand eingemalt."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "How did Gutenberg lose his workshop in 1455?",
+      "options": [
+        "It burned down",
+        "His investor Johann Fust sued him and won",
+        "The archbishop closed it",
+        "He sold it to buy a vineyard"
+      ],
+      "explanation": "Fust took over much of the equipment and ran the business with Peter Schöffer, Gutenberg's former assistant.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe raakte Gutenberg in 1455 zijn werkplaats kwijt?",
+          "options": [
+            "Die brandde af",
+            "Zijn geldschieter Johann Fust daagde hem voor de rechter en won",
+            "De aartsbisschop sloot haar",
+            "Hij verkocht haar om een wijngaard te kopen"
+          ],
+          "explanation": "Fust nam een groot deel van de uitrusting over en zette het bedrijf voort met Peter Schöffer, Gutenbergs vroegere assistent."
+        },
+        "fr": {
+          "question": "Comment Gutenberg a-t-il perdu son atelier en 1455 ?",
+          "options": [
+            "Il a brûlé",
+            "Son bailleur de fonds Johann Fust lui a fait un procès et l’a gagné",
+            "L’archevêque l’a fermé",
+            "Il l’a vendu pour acheter un vignoble"
+          ],
+          "explanation": "Fust a repris une grande partie du matériel et a dirigé l’affaire avec Peter Schöffer, l’ancien assistant de Gutenberg."
+        },
+        "de": {
+          "question": "Wie verlor Gutenberg 1455 seine Werkstatt?",
+          "options": [
+            "Sie brannte ab",
+            "Sein Geldgeber Johann Fust verklagte ihn und gewann",
+            "Der Erzbischof schloss sie",
+            "Er verkaufte sie, um einen Weinberg zu kaufen"
+          ],
+          "explanation": "Fust übernahm einen Großteil der Ausrüstung und führte das Geschäft mit Peter Schöffer weiter, Gutenbergs früherem Gehilfen."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "What event in 1462 helped spread printing across Europe?",
+      "options": [
+        "The Pope ordered every city to buy a press",
+        "Gutenberg went on a lecture tour",
+        "A fire destroyed all the handwritten books in Mainz",
+        "Mainz was sacked, and its printers fled to other cities"
+      ],
+      "explanation": "During a war between two archbishops, printers trained in Mainz scattered and set up presses elsewhere. By 1500 presses worked in more than 250 towns.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke gebeurtenis in 1462 hielp de boekdrukkunst door Europa te verspreiden?",
+          "options": [
+            "De paus beval elke stad een pers te kopen",
+            "Gutenberg ging op lezingentournee",
+            "Een brand verwoestte alle handgeschreven boeken in Mainz",
+            "Mainz werd geplunderd en de drukkers vluchtten naar andere steden"
+          ],
+          "explanation": "Tijdens een oorlog tussen twee aartsbisschoppen trokken drukkers die in Mainz waren opgeleid weg en begonnen elders een pers. Rond 1500 werkten er persen in meer dan 250 steden."
+        },
+        "fr": {
+          "question": "Quel événement de 1462 a aidé à répandre l’imprimerie en Europe ?",
+          "options": [
+            "Le pape a ordonné à chaque ville d’acheter une presse",
+            "Gutenberg a fait une tournée de conférences",
+            "Un incendie a détruit tous les livres manuscrits de Mayence",
+            "Mayence a été mise à sac et ses imprimeurs ont fui vers d’autres villes"
+          ],
+          "explanation": "Pendant une guerre entre deux archevêques, les imprimeurs formés à Mayence se sont dispersés et ont installé des presses ailleurs. Vers 1500, des presses fonctionnaient dans plus de 250 villes."
+        },
+        "de": {
+          "question": "Welches Ereignis im Jahr 1462 half, den Buchdruck in Europa zu verbreiten?",
+          "options": [
+            "Der Papst befahl jeder Stadt, eine Presse zu kaufen",
+            "Gutenberg ging auf Vortragsreise",
+            "Ein Brand zerstörte alle Handschriften in Mainz",
+            "Mainz wurde geplündert, und seine Drucker flohen in andere Städte"
+          ],
+          "explanation": "In einem Krieg zwischen zwei Erzbischöfen zerstreuten sich die in Mainz ausgebildeten Drucker und gründeten anderswo Pressen. Um 1500 arbeiteten Pressen in über 250 Städten."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What did the archbishop of Mainz give Gutenberg every year from 1465?",
+      "options": [
+        "A house and a horse",
+        "A new suit of court clothing, grain and wine",
+        "A pension in gold coins",
+        "A copy of every book printed in Mainz"
+      ],
+      "explanation": "It came with a place at the archbishop's court. Gutenberg did not become rich from his invention, and his grave was later lost.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gaf de aartsbisschop van Mainz Gutenberg vanaf 1465 elk jaar?",
+          "options": [
+            "Een huis en een paard",
+            "Een nieuw hofkostuum, graan en wijn",
+            "Een pensioen in gouden munten",
+            "Een exemplaar van elk boek dat in Mainz werd gedrukt"
+          ],
+          "explanation": "Het hoorde bij een plaats aan het hof van de aartsbisschop. Gutenberg werd niet rijk van zijn uitvinding, en zijn graf ging later verloren."
+        },
+        "fr": {
+          "question": "Que l’archevêque de Mayence donnait-il chaque année à Gutenberg à partir de 1465 ?",
+          "options": [
+            "Une maison et un cheval",
+            "Un nouvel habit de cour, du grain et du vin",
+            "Une pension en pièces d’or",
+            "Un exemplaire de chaque livre imprimé à Mayence"
+          ],
+          "explanation": "Cela allait avec une place à la cour de l’archevêque. Gutenberg ne s’est pas enrichi grâce à son invention, et sa tombe a plus tard été perdue."
+        },
+        "de": {
+          "question": "Was gab der Erzbischof von Mainz Gutenberg ab 1465 jedes Jahr?",
+          "options": [
+            "Ein Haus und ein Pferd",
+            "Ein neues Hofgewand, Getreide und Wein",
+            "Eine Rente in Goldmünzen",
+            "Ein Exemplar jedes in Mainz gedruckten Buches"
+          ],
+          "explanation": "Dazu gehörte ein Platz am Hof des Erzbischofs. Gutenberg wurde durch seine Erfindung nicht reich, und sein Grab ging später verloren."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

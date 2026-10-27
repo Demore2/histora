@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What did merchants carry north across the Sahara from West Africa, and bring back in return?",
+      "options": [
+        "Gold north, salt back",
+        "Ivory north, silk back",
+        "Salt north, gold back",
+        "Horses north, iron back"
+      ],
+      "explanation": "West Africa was the main source of gold for Europe, North Africa and the Middle East. Salt was so scarce in the south that it could be worth its weight in gold.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat brachten handelaren vanuit West-Afrika naar het noorden over de Sahara, en wat namen ze terug mee?",
+          "options": [
+            "Goud naar het noorden, zout terug",
+            "Ivoor naar het noorden, zijde terug",
+            "Zout naar het noorden, goud terug",
+            "Paarden naar het noorden, ijzer terug"
+          ],
+          "explanation": "West-Afrika was de belangrijkste bron van goud voor Europa, Noord-Afrika en het Midden-Oosten. Zout was in het zuiden zo schaars dat het zijn gewicht in goud waard kon zijn."
+        },
+        "fr": {
+          "question": "Que transportaient les marchands vers le nord à travers le Sahara depuis l’Afrique de l’Ouest, et que rapportaient-ils ?",
+          "options": [
+            "De l’or vers le nord, du sel au retour",
+            "De l’ivoire vers le nord, de la soie au retour",
+            "Du sel vers le nord, de l’or au retour",
+            "Des chevaux vers le nord, du fer au retour"
+          ],
+          "explanation": "L’Afrique de l’Ouest était la principale source d’or de l’Europe, de l’Afrique du Nord et du Moyen-Orient. Le sel était si rare au sud qu’il pouvait valoir son poids en or."
+        },
+        "de": {
+          "question": "Was brachten Händler aus Westafrika durch die Sahara nach Norden, und was nahmen sie zurück?",
+          "options": [
+            "Gold nach Norden, Salz zurück",
+            "Elfenbein nach Norden, Seide zurück",
+            "Salz nach Norden, Gold zurück",
+            "Pferde nach Norden, Eisen zurück"
+          ],
+          "explanation": "Westafrika war die wichtigste Goldquelle für Europa, Nordafrika und den Nahen Osten. Salz war im Süden so knapp, dass es sein Gewicht in Gold wert sein konnte."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "How, according to Mansa Musa himself, did he become king?",
+      "options": [
+        "He defeated his brother in battle",
+        "The previous king sailed into the Atlantic and never came back",
+        "He was elected by the griots",
+        "He married the old king's daughter"
+      ],
+      "explanation": "Musa told officials in Cairo that the king before him had sailed away with two thousand ships to find the other side of the ocean, leaving Musa as his deputy.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe werd Mansa Musa volgens zijn eigen verhaal koning?",
+          "options": [
+            "Hij versloeg zijn broer in een veldslag",
+            "De vorige koning zeilde de Atlantische Oceaan op en kwam nooit terug",
+            "Hij werd gekozen door de griots",
+            "Hij trouwde met de dochter van de oude koning"
+          ],
+          "explanation": "Musa vertelde in Caïro dat de koning vóór hem met tweeduizend schepen was vertrokken om de overkant van de oceaan te vinden, en Musa als zijn plaatsvervanger had achtergelaten."
+        },
+        "fr": {
+          "question": "Selon Mansa Musa lui-même, comment est-il devenu roi ?",
+          "options": [
+            "Il a vaincu son frère au combat",
+            "Le roi précédent est parti sur l’Atlantique et n’est jamais revenu",
+            "Il a été élu par les griots",
+            "Il a épousé la fille du vieux roi"
+          ],
+          "explanation": "Musa a raconté au Caire que le roi avant lui était parti avec deux mille navires chercher l’autre rive de l’océan, en le laissant comme suppléant."
+        },
+        "de": {
+          "question": "Wie wurde Mansa Musa nach eigener Aussage König?",
+          "options": [
+            "Er besiegte seinen Bruder in einer Schlacht",
+            "Der vorige König segelte auf den Atlantik und kam nie zurück",
+            "Er wurde von den Griots gewählt",
+            "Er heiratete die Tochter des alten Königs"
+          ],
+          "explanation": "Musa erzählte in Kairo, sein Vorgänger sei mit zweitausend Schiffen aufgebrochen, um das andere Ufer des Ozeans zu finden, und habe Musa als Stellvertreter zurückgelassen."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Why did Mansa Musa set out on his long journey in 1324?",
+      "options": [
+        "To conquer Egypt",
+        "To trade salt in Morocco",
+        "To make the pilgrimage to Mecca",
+        "To find the king who sailed away"
+      ],
+      "explanation": "Every Muslim who can afford it should make the hajj once in their life. Musa's caravan, loaded with gold, travelled nearly 6,500 kilometres.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom begon Mansa Musa in 1324 aan zijn lange reis?",
+          "options": [
+            "Om Egypte te veroveren",
+            "Om zout te verhandelen in Marokko",
+            "Om de pelgrimstocht naar Mekka te maken",
+            "Om de koning te zoeken die was weggevaren"
+          ],
+          "explanation": "Elke moslim die het zich kan veroorloven, hoort één keer in zijn leven de hadj te maken. Musa's karavaan vol goud legde bijna 6500 kilometer af."
+        },
+        "fr": {
+          "question": "Pourquoi Mansa Musa a-t-il entrepris son long voyage en 1324 ?",
+          "options": [
+            "Pour conquérir l’Égypte",
+            "Pour vendre du sel au Maroc",
+            "Pour faire le pèlerinage à La Mecque",
+            "Pour retrouver le roi parti en mer"
+          ],
+          "explanation": "Tout musulman qui en a les moyens doit faire le hajj une fois dans sa vie. La caravane de Musa, chargée d’or, a parcouru près de 6 500 kilomètres."
+        },
+        "de": {
+          "question": "Warum brach Mansa Musa 1324 zu seiner langen Reise auf?",
+          "options": [
+            "Um Ägypten zu erobern",
+            "Um in Marokko Salz zu verkaufen",
+            "Um die Pilgerfahrt nach Mekka zu machen",
+            "Um den davongesegelten König zu suchen"
+          ],
+          "explanation": "Jeder Muslim, der es sich leisten kann, soll einmal im Leben den Hadsch machen. Musas mit Gold beladene Karawane legte fast 6.500 Kilometer zurück."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What happened to the price of gold in Cairo after Mansa Musa's visit?",
+      "options": [
+        "It rose sharply",
+        "It stayed the same",
+        "Gold was banned",
+        "It dropped and had still not recovered twelve years later"
+      ],
+      "explanation": "Musa and his followers gave away and spent so much gold that it became plentiful, and its value fell. Al-Umari noticed it years later.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er met de goudprijs in Caïro na het bezoek van Mansa Musa?",
+          "options": [
+            "Die steeg sterk",
+            "Die bleef gelijk",
+            "Goud werd verboden",
+            "Die daalde en was twaalf jaar later nog niet hersteld"
+          ],
+          "explanation": "Musa en zijn gevolg gaven zoveel goud weg en uit dat het overvloedig werd en in waarde daalde. Al-Umari merkte het jaren later nog."
+        },
+        "fr": {
+          "question": "Qu’est-il arrivé au prix de l’or au Caire après la visite de Mansa Musa ?",
+          "options": [
+            "Il a fortement augmenté",
+            "Il est resté stable",
+            "L’or a été interdit",
+            "Il a chuté et ne s’était toujours pas redressé douze ans plus tard"
+          ],
+          "explanation": "Musa et sa suite ont donné et dépensé tant d’or qu’il est devenu abondant et a perdu de sa valeur. Al-Umari l’a encore constaté des années après."
+        },
+        "de": {
+          "question": "Was geschah nach Mansa Musas Besuch mit dem Goldpreis in Kairo?",
+          "options": [
+            "Er stieg stark",
+            "Er blieb gleich",
+            "Gold wurde verboten",
+            "Er fiel und hatte sich zwölf Jahre später noch nicht erholt"
+          ],
+          "explanation": "Musa und sein Gefolge verschenkten und verbrauchten so viel Gold, dass es reichlich vorhanden war und an Wert verlor. Al-Umari bemerkte es noch Jahre später."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What surprising problem did Mansa Musa have on his way home from Mecca?",
+      "options": [
+        "He had run out of money and had to borrow",
+        "His camels died in a sandstorm",
+        "He was taken prisoner in Cairo",
+        "He forgot the way back"
+      ],
+      "explanation": "He had given away so much that he borrowed from Cairo's merchants at high interest. He brought back scholars and craftsmen instead of treasure.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk verrassend probleem had Mansa Musa op de terugweg uit Mekka?",
+          "options": [
+            "Zijn geld was op en hij moest lenen",
+            "Zijn kamelen stierven in een zandstorm",
+            "Hij werd in Caïro gevangengenomen",
+            "Hij was de weg terug vergeten"
+          ],
+          "explanation": "Hij had zoveel weggegeven dat hij tegen hoge rente moest lenen bij kooplieden in Caïro. Hij nam geen schatten mee terug, maar geleerden en ambachtslieden."
+        },
+        "fr": {
+          "question": "Quel problème surprenant Mansa Musa a-t-il eu sur le chemin du retour de La Mecque ?",
+          "options": [
+            "Il n’avait plus d’argent et a dû emprunter",
+            "Ses chameaux sont morts dans une tempête de sable",
+            "Il a été fait prisonnier au Caire",
+            "Il avait oublié le chemin du retour"
+          ],
+          "explanation": "Il avait tant donné qu’il a dû emprunter aux marchands du Caire à des taux élevés. Il a ramené non des trésors, mais des savants et des artisans."
+        },
+        "de": {
+          "question": "Welches überraschende Problem hatte Mansa Musa auf dem Heimweg aus Mekka?",
+          "options": [
+            "Ihm war das Geld ausgegangen und er musste sich etwas leihen",
+            "Seine Kamele starben in einem Sandsturm",
+            "Er wurde in Kairo gefangen genommen",
+            "Er hatte den Rückweg vergessen"
+          ],
+          "explanation": "Er hatte so viel verschenkt, dass er sich bei Kairoer Kaufleuten zu hohen Zinsen Geld lieh. Statt Schätzen brachte er Gelehrte und Handwerker mit."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Why do the walls of the Djinguereber Mosque in Timbuktu have wooden beams sticking out of them?",
+      "options": [
+        "To hang lanterns for festivals",
+        "They serve as scaffolding to re-plaster the mud walls every year",
+        "To keep birds away",
+        "They were left over by mistake"
+      ],
+      "explanation": "The beams strengthen the building and let the community climb up after each rainy season to repair the mud plaster.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom steken er houten balken uit de muren van de Djinguereber-moskee in Timboektoe?",
+          "options": [
+            "Om lantaarns aan op te hangen bij feesten",
+            "Ze dienen als steiger om de lemen muren elk jaar opnieuw te pleisteren",
+            "Om vogels weg te houden",
+            "Ze zijn per ongeluk blijven zitten"
+          ],
+          "explanation": "De balken versterken het gebouw en laten de gemeenschap na elk regenseizoen naar boven klimmen om de leemlaag te herstellen."
+        },
+        "fr": {
+          "question": "Pourquoi des poutres de bois dépassent-elles des murs de la mosquée Djingareyber à Tombouctou ?",
+          "options": [
+            "Pour accrocher des lanternes lors des fêtes",
+            "Elles servent d’échafaudage pour recrépir les murs de terre chaque année",
+            "Pour éloigner les oiseaux",
+            "Elles ont été laissées par erreur"
+          ],
+          "explanation": "Les poutres renforcent l’édifice et permettent à la communauté de grimper après chaque saison des pluies pour refaire l’enduit de terre."
+        },
+        "de": {
+          "question": "Warum ragen Holzbalken aus den Mauern der Djinguereber-Moschee in Timbuktu?",
+          "options": [
+            "Um bei Festen Laternen aufzuhängen",
+            "Sie dienen als Gerüst, um die Lehmwände jedes Jahr neu zu verputzen",
+            "Um Vögel fernzuhalten",
+            "Sie wurden aus Versehen dort gelassen"
+          ],
+          "explanation": "Die Balken stärken das Gebäude und erlauben es der Gemeinschaft, nach jeder Regenzeit hinaufzuklettern und den Lehmputz zu erneuern."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "How is Mansa Musa shown on the Catalan Atlas of 1375?",
+      "options": [
+        "Riding a camel through the desert",
+        "Praying in Mecca",
+        "Wearing a golden crown and holding a large golden nugget",
+        "Sailing across the Atlantic"
+      ],
+      "explanation": "The caption calls him the richest and noblest lord of the land, because of the abundance of gold in his country.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe staat Mansa Musa afgebeeld op de Catalaanse Atlas van 1375?",
+          "options": [
+            "Rijdend op een kameel door de woestijn",
+            "Biddend in Mekka",
+            "Met een gouden kroon en een grote goudklomp in zijn hand",
+            "Zeilend over de Atlantische Oceaan"
+          ],
+          "explanation": "Het bijschrift noemt hem de rijkste en edelste heer van het land, vanwege de overvloed aan goud in zijn rijk."
+        },
+        "fr": {
+          "question": "Comment Mansa Musa est-il représenté sur l’Atlas catalan de 1375 ?",
+          "options": [
+            "À dos de chameau dans le désert",
+            "En prière à La Mecque",
+            "Portant une couronne d’or et tenant une grosse pépite d’or",
+            "Naviguant sur l’Atlantique"
+          ],
+          "explanation": "La légende le dit le seigneur le plus riche et le plus noble du pays, grâce à l’abondance d’or de son royaume."
+        },
+        "de": {
+          "question": "Wie ist Mansa Musa im Katalanischen Atlas von 1375 dargestellt?",
+          "options": [
+            "Auf einem Kamel in der Wüste",
+            "Betend in Mekka",
+            "Mit goldener Krone und einem großen Goldklumpen in der Hand",
+            "Segelnd über den Atlantik"
+          ],
+          "explanation": "Die Beschriftung nennt ihn den reichsten und edelsten Herrn des Landes, wegen des vielen Goldes in seinem Reich."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What did the traveller Ibn Battuta praise most about Mali when he visited in 1352?",
+      "options": [
+        "The size of the king's palace",
+        "The cold climate",
+        "The quality of the horses",
+        "The complete safety of its roads"
+      ],
+      "explanation": "He wrote that neither traveller nor inhabitant had anything to fear from robbers, even if he was not always impressed by the king's gifts.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat prees de reiziger Ibn Battuta het meest aan Mali toen hij er in 1352 kwam?",
+          "options": [
+            "De grootte van het paleis van de koning",
+            "Het koele klimaat",
+            "De kwaliteit van de paarden",
+            "De volledige veiligheid van de wegen"
+          ],
+          "explanation": "Hij schreef dat reizigers noch inwoners iets van rovers te vrezen hadden, ook al was hij niet altijd onder de indruk van de geschenken van de koning."
+        },
+        "fr": {
+          "question": "Qu’est-ce que le voyageur Ibn Battuta a le plus loué au Mali lors de sa visite en 1352 ?",
+          "options": [
+            "La taille du palais royal",
+            "Le climat frais",
+            "La qualité des chevaux",
+            "La sécurité totale des routes"
+          ],
+          "explanation": "Il a écrit que ni le voyageur ni l’habitant n’avaient rien à craindre des brigands, même si les cadeaux du roi ne l’impressionnaient pas toujours."
+        },
+        "de": {
+          "question": "Was lobte der Reisende Ibn Battuta an Mali bei seinem Besuch 1352 am meisten?",
+          "options": [
+            "Die Größe des Königspalastes",
+            "Das kühle Klima",
+            "Die Qualität der Pferde",
+            "Die vollkommene Sicherheit der Straßen"
+          ],
+          "explanation": "Er schrieb, weder Reisende noch Einwohner hätten etwas von Räubern zu befürchten, auch wenn ihn die Geschenke des Königs nicht immer beeindruckten."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

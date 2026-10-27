@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "How did Cortés leave Cuba for Mexico in 1519?",
+      "options": [
+        "As the governor's trusted commander",
+        "Hurriedly, before the governor's order to stop him arrived",
+        "As a prisoner",
+        "On a Portuguese ship"
+      ],
+      "explanation": "Governor Velázquez first chose Cortés, then changed his mind, fearing he was too ambitious. Cortés sailed with about 500 soldiers anyway.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe vertrok Cortés in 1519 uit Cuba naar Mexico?",
+          "options": [
+            "Als vertrouwde bevelhebber van de gouverneur",
+            "Haastig, voordat het bevel om hem tegen te houden aankwam",
+            "Als gevangene",
+            "Op een Portugees schip"
+          ],
+          "explanation": "Gouverneur Velázquez koos eerst Cortés, maar bedacht zich omdat hij hem te eerzuchtig vond. Cortés vertrok toch, met zo'n 500 soldaten."
+        },
+        "fr": {
+          "question": "Comment Cortés a-t-il quitté Cuba pour le Mexique en 1519 ?",
+          "options": [
+            "Comme chef de confiance du gouverneur",
+            "À la hâte, avant que l’ordre de l’arrêter n’arrive",
+            "Comme prisonnier",
+            "Sur un navire portugais"
+          ],
+          "explanation": "Le gouverneur Velázquez a d’abord choisi Cortés, puis a changé d’avis, le jugeant trop ambitieux. Cortés est parti quand même avec environ 500 soldats."
+        },
+        "de": {
+          "question": "Wie verließ Cortés 1519 Kuba in Richtung Mexiko?",
+          "options": [
+            "Als Vertrauensmann des Gouverneurs",
+            "Eilig, bevor der Befehl eintraf, ihn aufzuhalten",
+            "Als Gefangener",
+            "Auf einem portugiesischen Schiff"
+          ],
+          "explanation": "Gouverneur Velázquez wählte zuerst Cortés, überlegte es sich dann aber anders, weil er ihn für zu ehrgeizig hielt. Cortés segelte trotzdem mit etwa 500 Soldaten los."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Why was Malintzin so important to Cortés?",
+      "options": [
+        "She was the daughter of Moctezuma",
+        "She commanded the Tlaxcalan army",
+        "She knew the way to Tenochtitlan",
+        "She spoke both Nahuatl and Maya, and later Spanish"
+      ],
+      "explanation": "With Aguilar she formed a translation chain, and she advised Cortés on local politics. Indigenous artists often drew her at the centre of meetings.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom was Malintzin zo belangrijk voor Cortés?",
+          "options": [
+            "Ze was de dochter van Moctezuma",
+            "Ze voerde het bevel over het leger van Tlaxcala",
+            "Ze kende de weg naar Tenochtitlan",
+            "Ze sprak zowel Nahuatl als Maya, en later Spaans"
+          ],
+          "explanation": "Samen met Aguilar vormde ze een vertaalketen, en ze adviseerde Cortés over de lokale politiek. Inheemse kunstenaars tekenden haar vaak in het middelpunt van ontmoetingen."
+        },
+        "fr": {
+          "question": "Pourquoi Malintzin était-elle si importante pour Cortés ?",
+          "options": [
+            "Elle était la fille de Moctezuma",
+            "Elle commandait l’armée de Tlaxcala",
+            "Elle connaissait le chemin de Tenochtitlan",
+            "Elle parlait le nahuatl et le maya, puis l’espagnol"
+          ],
+          "explanation": "Avec Aguilar, elle formait une chaîne de traduction, et elle conseillait Cortés sur la politique locale. Les artistes autochtones la dessinaient souvent au centre des rencontres."
+        },
+        "de": {
+          "question": "Warum war Malintzin für Cortés so wichtig?",
+          "options": [
+            "Sie war die Tochter Moctezumas",
+            "Sie befehligte das Heer von Tlaxcala",
+            "Sie kannte den Weg nach Tenochtitlan",
+            "Sie sprach Nahuatl und Maya, später auch Spanisch"
+          ],
+          "explanation": "Mit Aguilar bildete sie eine Übersetzungskette und beriet Cortés in der Politik des Landes. Indigene Künstler zeichneten sie oft im Mittelpunkt von Begegnungen."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Who were the Tlaxcalans, whose help made the conquest possible?",
+      "options": [
+        "Spanish soldiers from Cuba",
+        "Longtime enemies of the Aztecs who became Cortés's allies",
+        "The emperor's personal guard",
+        "Traders from the Maya coast"
+      ],
+      "explanation": "After fighting the Spaniards, they decided the strangers would make better allies. Thousands of Tlaxcalan warriors joined the march.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie waren de Tlaxcalteken, zonder wier hulp de verovering onmogelijk was geweest?",
+          "options": [
+            "Spaanse soldaten uit Cuba",
+            "Oude vijanden van de Azteken die bondgenoten van Cortés werden",
+            "De persoonlijke lijfwacht van de keizer",
+            "Handelaren van de Mayakust"
+          ],
+          "explanation": "Na eerst tegen de Spanjaarden te hebben gevochten, besloten ze dat de vreemdelingen betere bondgenoten zouden zijn. Duizenden Tlaxcalteekse krijgers trokken mee."
+        },
+        "fr": {
+          "question": "Qui étaient les Tlaxcaltèques, sans l’aide desquels la conquête aurait été impossible ?",
+          "options": [
+            "Des soldats espagnols venus de Cuba",
+            "De vieux ennemis des Aztèques devenus alliés de Cortés",
+            "La garde personnelle de l’empereur",
+            "Des marchands de la côte maya"
+          ],
+          "explanation": "Après avoir combattu les Espagnols, ils ont jugé que ces étrangers feraient de meilleurs alliés. Des milliers de guerriers tlaxcaltèques se sont joints à la marche."
+        },
+        "de": {
+          "question": "Wer waren die Tlaxcalteken, ohne deren Hilfe die Eroberung unmöglich gewesen wäre?",
+          "options": [
+            "Spanische Soldaten aus Kuba",
+            "Alte Feinde der Azteken, die Verbündete von Cortés wurden",
+            "Die Leibwache des Kaisers",
+            "Händler von der Mayaküste"
+          ],
+          "explanation": "Nachdem sie gegen die Spanier gekämpft hatten, beschlossen sie, dass die Fremden bessere Verbündete wären. Tausende tlaxcaltekische Krieger zogen mit."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What did some of Cortés's soldiers ask when they first saw Tenochtitlan?",
+      "options": [
+        "Whether it was a dream",
+        "Whether it was made of gold",
+        "Whether it was Rome",
+        "Whether it was empty"
+      ],
+      "explanation": "Bernal Díaz wrote that the city built on the water was like the enchantments in a book of chivalry. With perhaps 200,000 people, it was bigger than any city in Spain.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat vroegen sommige soldaten van Cortés toen ze Tenochtitlan voor het eerst zagen?",
+          "options": [
+            "Of het een droom was",
+            "Of het van goud was",
+            "Of het Rome was",
+            "Of het verlaten was"
+          ],
+          "explanation": "Bernal Díaz schreef dat de op het water gebouwde stad leek op de betoveringen uit een ridderroman. Met misschien 200.000 inwoners was ze groter dan elke stad in Spanje."
+        },
+        "fr": {
+          "question": "Qu’ont demandé certains soldats de Cortés en découvrant Tenochtitlan ?",
+          "options": [
+            "Si c’était un rêve",
+            "Si elle était en or",
+            "Si c’était Rome",
+            "Si elle était vide"
+          ],
+          "explanation": "Bernal Díaz a écrit que la ville bâtie sur l’eau ressemblait aux enchantements d’un roman de chevalerie. Avec peut-être 200 000 habitants, elle dépassait toute ville d’Espagne."
+        },
+        "de": {
+          "question": "Was fragten einige Soldaten von Cortés, als sie Tenochtitlan zum ersten Mal sahen?",
+          "options": [
+            "Ob es ein Traum sei",
+            "Ob es aus Gold sei",
+            "Ob es Rom sei",
+            "Ob es verlassen sei"
+          ],
+          "explanation": "Bernal Díaz schrieb, die auf dem Wasser erbaute Stadt gleiche den Zaubereien eines Ritterromans. Mit vielleicht 200.000 Einwohnern war sie größer als jede Stadt Spaniens."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What was La Noche Triste, the Sad Night, of 30 June 1520?",
+      "options": [
+        "The night Moctezuma died in his palace",
+        "The night the Spaniards burned their ships",
+        "The Spaniards' disastrous escape across a causeway out of Tenochtitlan",
+        "The night smallpox reached the city"
+      ],
+      "explanation": "Attacked from canoes on both sides, hundreds of Spaniards and many more allies died. Some drowned because they would not let go of their gold.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was La Noche Triste, de Droevige Nacht, van 30 juni 1520?",
+          "options": [
+            "De nacht waarin Moctezuma in zijn paleis stierf",
+            "De nacht waarin de Spanjaarden hun schepen verbrandden",
+            "De rampzalige vlucht van de Spanjaarden over een dijk uit Tenochtitlan",
+            "De nacht waarin de pokken de stad bereikten"
+          ],
+          "explanation": "Aangevallen vanuit kano's aan beide kanten kwamen honderden Spanjaarden en nog veel meer bondgenoten om. Sommigen verdronken omdat ze hun goud niet wilden loslaten."
+        },
+        "fr": {
+          "question": "Qu’était La Noche Triste, la Triste Nuit, du 30 juin 1520 ?",
+          "options": [
+            "La nuit où Moctezuma est mort dans son palais",
+            "La nuit où les Espagnols ont brûlé leurs navires",
+            "La fuite désastreuse des Espagnols hors de Tenochtitlan par une chaussée",
+            "La nuit où la variole a atteint la ville"
+          ],
+          "explanation": "Attaqués depuis des pirogues des deux côtés, des centaines d’Espagnols et bien plus d’alliés ont péri. Certains se sont noyés parce qu’ils ne voulaient pas lâcher leur or."
+        },
+        "de": {
+          "question": "Was war La Noche Triste, die Traurige Nacht, vom 30. Juni 1520?",
+          "options": [
+            "Die Nacht, in der Moctezuma in seinem Palast starb",
+            "Die Nacht, in der die Spanier ihre Schiffe verbrannten",
+            "Die verheerende Flucht der Spanier über einen Damm aus Tenochtitlan",
+            "Die Nacht, in der die Pocken die Stadt erreichten"
+          ],
+          "explanation": "Von Kanus auf beiden Seiten angegriffen, starben Hunderte Spanier und noch viel mehr Verbündete. Manche ertranken, weil sie ihr Gold nicht loslassen wollten."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Which disease swept through Tenochtitlan in 1520 and killed the emperor Cuitláhuac?",
+      "options": [
+        "Plague",
+        "Malaria",
+        "Cholera",
+        "Smallpox"
+      ],
+      "explanation": "The peoples of the Americas had never met it and had no immunity. It killed huge numbers, far more than Spanish weapons did.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke ziekte raasde in 1520 door Tenochtitlan en doodde keizer Cuitláhuac?",
+          "options": [
+            "De pest",
+            "Malaria",
+            "Cholera",
+            "Pokken"
+          ],
+          "explanation": "De volken van Amerika hadden de ziekte nooit gekend en hadden er geen afweer tegen. Ze eiste enorm veel meer levens dan de Spaanse wapens."
+        },
+        "fr": {
+          "question": "Quelle maladie a ravagé Tenochtitlan en 1520 et tué l’empereur Cuitláhuac ?",
+          "options": [
+            "La peste",
+            "Le paludisme",
+            "Le choléra",
+            "La variole"
+          ],
+          "explanation": "Les peuples des Amériques ne l’avaient jamais connue et n’y étaient pas immunisés. Elle a fait bien plus de victimes que les armes espagnoles."
+        },
+        "de": {
+          "question": "Welche Krankheit wütete 1520 in Tenochtitlan und tötete Kaiser Cuitláhuac?",
+          "options": [
+            "Die Pest",
+            "Malaria",
+            "Cholera",
+            "Die Pocken"
+          ],
+          "explanation": "Die Völker Amerikas kannten sie nicht und hatten keine Abwehr. Sie forderte weit mehr Opfer als die spanischen Waffen."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "How did Cortés control the lake during the siege of Tenochtitlan in 1521?",
+      "options": [
+        "With thirteen small sailing ships carried over the mountains in pieces",
+        "By draining the lake",
+        "With rafts made by the Totonacs",
+        "By poisoning the water"
+      ],
+      "explanation": "The brigantines were built in Tlaxcala, carried overland and assembled on the lake. They cut off food and fresh water to the city.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe beheerste Cortés het meer tijdens het beleg van Tenochtitlan in 1521?",
+          "options": [
+            "Met dertien kleine zeilschepen die in stukken over de bergen waren gedragen",
+            "Door het meer droog te leggen",
+            "Met vlotten van de Totonaken",
+            "Door het water te vergiftigen"
+          ],
+          "explanation": "De brigantijnen werden in Tlaxcala gebouwd, over land gedragen en op het meer in elkaar gezet. Ze sneden de stad af van voedsel en zoet water."
+        },
+        "fr": {
+          "question": "Comment Cortés a-t-il contrôlé le lac pendant le siège de Tenochtitlan en 1521 ?",
+          "options": [
+            "Avec treize petits voiliers transportés en pièces par-dessus les montagnes",
+            "En asséchant le lac",
+            "Avec des radeaux faits par les Totonaques",
+            "En empoisonnant l’eau"
+          ],
+          "explanation": "Les brigantins ont été construits à Tlaxcala, transportés par voie de terre et assemblés sur le lac. Ils ont coupé la ville de la nourriture et de l’eau douce."
+        },
+        "de": {
+          "question": "Wie beherrschte Cortés während der Belagerung von Tenochtitlan 1521 den See?",
+          "options": [
+            "Mit dreizehn kleinen Segelschiffen, die in Teilen über die Berge getragen wurden",
+            "Indem er den See trockenlegte",
+            "Mit Flößen der Totonaken",
+            "Indem er das Wasser vergiftete"
+          ],
+          "explanation": "Die Brigantinen wurden in Tlaxcala gebaut, über Land getragen und auf dem See zusammengesetzt. Sie schnitten die Stadt von Nahrung und Süßwasser ab."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What appears on the Mexican flag, linking modern Mexico to Tenochtitlan?",
+      "options": [
+        "A golden sun",
+        "A Spanish ship",
+        "An eagle on a cactus",
+        "A feathered serpent"
+      ],
+      "explanation": "According to legend, an eagle on a cactus showed the Aztecs where to build their city. Modern Mexico sees itself as the child of both Indigenous and Spanish worlds.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat staat er op de Mexicaanse vlag, als verbinding tussen het huidige Mexico en Tenochtitlan?",
+          "options": [
+            "Een gouden zon",
+            "Een Spaans schip",
+            "Een adelaar op een cactus",
+            "Een gevederde slang"
+          ],
+          "explanation": "Volgens de legende wees een adelaar op een cactus de Azteken waar ze hun stad moesten bouwen. Het huidige Mexico ziet zich als kind van zowel de inheemse als de Spaanse wereld."
+        },
+        "fr": {
+          "question": "Que voit-on sur le drapeau mexicain, qui relie le Mexique actuel à Tenochtitlan ?",
+          "options": [
+            "Un soleil d’or",
+            "Un navire espagnol",
+            "Un aigle sur un cactus",
+            "Un serpent à plumes"
+          ],
+          "explanation": "Selon la légende, un aigle posé sur un cactus a indiqué aux Aztèques où bâtir leur ville. Le Mexique moderne se voit comme l’enfant des mondes autochtone et espagnol."
+        },
+        "de": {
+          "question": "Was zeigt die mexikanische Flagge, die das heutige Mexiko mit Tenochtitlan verbindet?",
+          "options": [
+            "Eine goldene Sonne",
+            "Ein spanisches Schiff",
+            "Einen Adler auf einem Kaktus",
+            "Eine gefiederte Schlange"
+          ],
+          "explanation": "Der Legende nach zeigte ein Adler auf einem Kaktus den Azteken, wo sie ihre Stadt bauen sollten. Das heutige Mexiko sieht sich als Kind der indigenen und der spanischen Welt."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

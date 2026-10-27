@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Why was Louis XIV named Louis-Dieudonné, 'the God-given'?",
+      "options": [
+        "He was born on Christmas Day",
+        "His parents had waited twenty-three years for a living child",
+        "A bishop predicted his birth",
+        "He survived a fire as a baby"
+      ],
+      "explanation": "His birth in 1638 seemed like a miracle. At four he was king, with Cardinal Mazarin holding the real power.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom kreeg Lodewijk XIV de naam Louis-Dieudonné, 'door God gegeven'?",
+          "options": [
+            "Hij werd op eerste kerstdag geboren",
+            "Zijn ouders hadden drieëntwintig jaar op een levend kind gewacht",
+            "Een bisschop had zijn geboorte voorspeld",
+            "Hij overleefde als baby een brand"
+          ],
+          "explanation": "Zijn geboorte in 1638 leek een wonder. Op zijn vierde was hij koning, terwijl kardinaal Mazarin de echte macht had."
+        },
+        "fr": {
+          "question": "Pourquoi Louis XIV a-t-il été nommé Louis-Dieudonné ?",
+          "options": [
+            "Il est né le jour de Noël",
+            "Ses parents attendaient un enfant vivant depuis vingt-trois ans",
+            "Un évêque avait prédit sa naissance",
+            "Il a survécu bébé à un incendie"
+          ],
+          "explanation": "Sa naissance en 1638 a semblé un miracle. À quatre ans il était roi, tandis que le cardinal Mazarin détenait le vrai pouvoir."
+        },
+        "de": {
+          "question": "Warum erhielt Ludwig XIV. den Namen Louis-Dieudonné, „der Gottgegebene“?",
+          "options": [
+            "Er wurde am ersten Weihnachtstag geboren",
+            "Seine Eltern hatten dreiundzwanzig Jahre auf ein lebendes Kind gewartet",
+            "Ein Bischof hatte seine Geburt vorhergesagt",
+            "Er überlebte als Baby einen Brand"
+          ],
+          "explanation": "Seine Geburt 1638 erschien wie ein Wunder. Mit vier Jahren war er König, die eigentliche Macht hatte Kardinal Mazarin."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "How did Louis become linked with the sun as his personal symbol?",
+      "options": [
+        "He was born at sunrise",
+        "He built an observatory",
+        "He danced as the rising sun in a court ballet",
+        "He conquered a land in the east"
+      ],
+      "explanation": "In the Ballet of the Night of 1653 he appeared at dawn as the sun driving away the darkness. The sun appears everywhere on his buildings.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe raakte Lodewijk verbonden met de zon als zijn persoonlijke symbool?",
+          "options": [
+            "Hij werd bij zonsopgang geboren",
+            "Hij bouwde een sterrenwacht",
+            "Hij danste als opkomende zon in een hofballet",
+            "Hij veroverde een land in het oosten"
+          ],
+          "explanation": "In het Ballet van de Nacht van 1653 verscheen hij bij dageraad als de zon die de duisternis verdrijft. De zon staat overal op zijn gebouwen."
+        },
+        "fr": {
+          "question": "Comment Louis a-t-il fait du soleil son emblème personnel ?",
+          "options": [
+            "Il est né au lever du soleil",
+            "Il a construit un observatoire",
+            "Il a dansé le rôle du soleil levant dans un ballet de cour",
+            "Il a conquis une terre à l’est"
+          ],
+          "explanation": "Dans le Ballet de la Nuit de 1653, il est apparu à l’aube en soleil chassant les ténèbres. Le soleil est partout sur ses bâtiments."
+        },
+        "de": {
+          "question": "Wie wurde die Sonne zu Ludwigs persönlichem Symbol?",
+          "options": [
+            "Er wurde bei Sonnenaufgang geboren",
+            "Er baute eine Sternwarte",
+            "Er tanzte in einem Hofballett die aufgehende Sonne",
+            "Er eroberte ein Land im Osten"
+          ],
+          "explanation": "Im Ballett der Nacht von 1653 erschien er im Morgengrauen als Sonne, die die Dunkelheit vertreibt. Die Sonne findet sich überall an seinen Bauten."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Why was finance minister Fouquet arrested in 1661?",
+      "options": [
+        "He had lost a war",
+        "He had insulted the queen",
+        "He tried to flee to England",
+        "After a spectacular party at his château, Louis saw a minister living more splendidly than his king"
+      ],
+      "explanation": "Fouquet was arrested by the musketeer d'Artagnan and spent the rest of his life in prison. Louis took over his architect, painter and garden designer.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom werd minister van Financiën Fouquet in 1661 gearresteerd?",
+          "options": [
+            "Hij had een oorlog verloren",
+            "Hij had de koningin beledigd",
+            "Hij probeerde naar Engeland te vluchten",
+            "Na een spectaculair feest op zijn kasteel zag Lodewijk een minister die luxer leefde dan zijn koning"
+          ],
+          "explanation": "Fouquet werd gearresteerd door de musketier d'Artagnan en zat de rest van zijn leven gevangen. Lodewijk nam zijn architect, schilder en tuinontwerper over."
+        },
+        "fr": {
+          "question": "Pourquoi le surintendant des finances Fouquet a-t-il été arrêté en 1661 ?",
+          "options": [
+            "Il avait perdu une guerre",
+            "Il avait insulté la reine",
+            "Il avait tenté de fuir en Angleterre",
+            "Après une fête somptueuse dans son château, Louis a vu un ministre vivre plus richement que son roi"
+          ],
+          "explanation": "Fouquet a été arrêté par le mousquetaire d’Artagnan et a fini ses jours en prison. Louis a repris son architecte, son peintre et son jardinier."
+        },
+        "de": {
+          "question": "Warum wurde Finanzminister Fouquet 1661 verhaftet?",
+          "options": [
+            "Er hatte einen Krieg verloren",
+            "Er hatte die Königin beleidigt",
+            "Er versuchte, nach England zu fliehen",
+            "Nach einem prächtigen Fest auf seinem Schloss sah Ludwig einen Minister, der prunkvoller lebte als sein König"
+          ],
+          "explanation": "Fouquet wurde vom Musketier d’Artagnan verhaftet und blieb bis zu seinem Tod in Haft. Ludwig übernahm seinen Architekten, Maler und Gartengestalter."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What is the most famous room at Versailles, completed in 1684?",
+      "options": [
+        "The Hall of Mirrors",
+        "The Throne of Gold",
+        "The Royal Chapel",
+        "The Opera"
+      ],
+      "explanation": "A gallery 73 metres long with 357 mirrors facing seventeen great windows. The French made the mirrors themselves to show they no longer needed Venetian glass.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat is de beroemdste zaal van Versailles, voltooid in 1684?",
+          "options": [
+            "De Spiegelzaal",
+            "De Gouden Troon",
+            "De Koninklijke Kapel",
+            "De Opera"
+          ],
+          "explanation": "Een galerij van 73 meter lang met 357 spiegels tegenover zeventien grote ramen. De Fransen maakten de spiegels zelf, om te laten zien dat ze geen Venetiaans glas meer nodig hadden."
+        },
+        "fr": {
+          "question": "Quelle est la salle la plus célèbre de Versailles, achevée en 1684 ?",
+          "options": [
+            "La galerie des Glaces",
+            "Le Trône d’or",
+            "La Chapelle royale",
+            "L’Opéra"
+          ],
+          "explanation": "Une galerie de 73 mètres avec 357 miroirs face à dix-sept grandes fenêtres. Les Français ont fabriqué eux-mêmes les miroirs pour montrer qu’ils n’avaient plus besoin du verre de Venise."
+        },
+        "de": {
+          "question": "Welcher ist der berühmteste Saal von Versailles, fertiggestellt 1684?",
+          "options": [
+            "Der Spiegelsaal",
+            "Der Goldene Thron",
+            "Die Königliche Kapelle",
+            "Die Oper"
+          ],
+          "explanation": "Eine 73 Meter lange Galerie mit 357 Spiegeln gegenüber siebzehn großen Fenstern. Die Franzosen stellten die Spiegel selbst her, um zu zeigen, dass sie kein venezianisches Glas mehr brauchten."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Why did Louis want the great nobles to live at Versailles?",
+      "options": [
+        "To protect them from plague in Paris",
+        "To keep them close and under control after the Fronde",
+        "Because they had no houses of their own",
+        "To pay for the palace"
+      ],
+      "explanation": "Competing for his favour at court, they could not plot against him on their estates. A noble who stayed away risked being forgotten.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom wilde Lodewijk dat de grote edelen in Versailles woonden?",
+          "options": [
+            "Om ze te beschermen tegen de pest in Parijs",
+            "Om ze na de Fronde dicht bij zich en onder controle te houden",
+            "Omdat ze zelf geen huizen hadden",
+            "Om het paleis te laten betalen"
+          ],
+          "explanation": "Terwijl ze aan het hof om zijn gunst wedijverden, konden ze op hun landgoederen niet tegen hem samenzweren. Een edelman die wegbleef, liep het risico vergeten te worden."
+        },
+        "fr": {
+          "question": "Pourquoi Louis voulait-il que les grands nobles vivent à Versailles ?",
+          "options": [
+            "Pour les protéger de la peste à Paris",
+            "Pour les garder près de lui et sous contrôle après la Fronde",
+            "Parce qu’ils n’avaient pas de maison",
+            "Pour qu’ils paient le palais"
+          ],
+          "explanation": "Occupés à rivaliser pour sa faveur à la cour, ils ne pouvaient pas comploter sur leurs terres. Un noble qui restait à l’écart risquait d’être oublié."
+        },
+        "de": {
+          "question": "Warum wollte Ludwig, dass der Hochadel in Versailles lebte?",
+          "options": [
+            "Um ihn vor der Pest in Paris zu schützen",
+            "Um ihn nach der Fronde in der Nähe und unter Kontrolle zu haben",
+            "Weil die Adligen keine eigenen Häuser hatten",
+            "Damit sie den Palast bezahlten"
+          ],
+          "explanation": "Während sie bei Hof um seine Gunst wetteiferten, konnten sie auf ihren Gütern nichts gegen ihn planen. Wer fernblieb, riskierte, vergessen zu werden."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What happened after Louis revoked the Edict of Nantes in 1685?",
+      "options": [
+        "Around 200,000 French Protestants fled abroad",
+        "Catholics fled France",
+        "The Pope excommunicated Louis",
+        "France became Protestant"
+      ],
+      "explanation": "The edict had given the Huguenots the right to practise their religion. Many skilled craftsmen settled in the Netherlands, England and Prussia.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er nadat Lodewijk in 1685 het Edict van Nantes had ingetrokken?",
+          "options": [
+            "Zo'n 200.000 Franse protestanten vluchtten naar het buitenland",
+            "Katholieken vluchtten uit Frankrijk",
+            "De paus deed Lodewijk in de ban",
+            "Frankrijk werd protestants"
+          ],
+          "explanation": "Het edict had de hugenoten het recht gegeven hun geloof te belijden. Veel vakmensen vestigden zich in Nederland, Engeland en Pruisen."
+        },
+        "fr": {
+          "question": "Que s’est-il passé après la révocation de l’édit de Nantes par Louis en 1685 ?",
+          "options": [
+            "Environ 200 000 protestants français ont fui à l’étranger",
+            "Les catholiques ont fui la France",
+            "Le pape a excommunié Louis",
+            "La France est devenue protestante"
+          ],
+          "explanation": "L’édit avait donné aux huguenots le droit de pratiquer leur religion. Beaucoup d’artisans qualifiés se sont installés aux Pays-Bas, en Angleterre et en Prusse."
+        },
+        "de": {
+          "question": "Was geschah, nachdem Ludwig 1685 das Edikt von Nantes aufgehoben hatte?",
+          "options": [
+            "Rund 200.000 französische Protestanten flohen ins Ausland",
+            "Katholiken flohen aus Frankreich",
+            "Der Papst exkommunizierte Ludwig",
+            "Frankreich wurde protestantisch"
+          ],
+          "explanation": "Das Edikt hatte den Hugenotten erlaubt, ihren Glauben auszuüben. Viele Fachleute ließen sich in den Niederlanden, England und Preußen nieder."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Who inherited the throne of Spain in 1700, starting the War of the Spanish Succession?",
+      "options": [
+        "Louis XIV himself",
+        "The Dutch prince William",
+        "The Austrian archduke Charles",
+        "Louis XIV's grandson, Philip of Anjou"
+      ],
+      "explanation": "Europe feared a union of France and Spain. At the Peace of Utrecht in 1713 Philip kept Spain, but the two crowns could never be united.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie erfde in 1700 de troon van Spanje, waarmee de Spaanse Successieoorlog begon?",
+          "options": [
+            "Lodewijk XIV zelf",
+            "De Nederlandse prins Willem",
+            "De Oostenrijkse aartshertog Karel",
+            "De kleinzoon van Lodewijk XIV, Filips van Anjou"
+          ],
+          "explanation": "Europa vreesde een unie van Frankrijk en Spanje. Bij de Vrede van Utrecht in 1713 hield Filips Spanje, maar de twee kronen mochten nooit worden verenigd."
+        },
+        "fr": {
+          "question": "Qui a hérité du trône d’Espagne en 1700, déclenchant la guerre de Succession d’Espagne ?",
+          "options": [
+            "Louis XIV lui-même",
+            "Le prince hollandais Guillaume",
+            "L’archiduc autrichien Charles",
+            "Le petit-fils de Louis XIV, Philippe d’Anjou"
+          ],
+          "explanation": "L’Europe craignait une union de la France et de l’Espagne. À la paix d’Utrecht en 1713, Philippe a gardé l’Espagne, mais les deux couronnes ne pourraient jamais être unies."
+        },
+        "de": {
+          "question": "Wer erbte 1700 den spanischen Thron und löste damit den Spanischen Erbfolgekrieg aus?",
+          "options": [
+            "Ludwig XIV. selbst",
+            "Der niederländische Prinz Wilhelm",
+            "Der österreichische Erzherzog Karl",
+            "Ludwigs XIV. Enkel Philipp von Anjou"
+          ],
+          "explanation": "Europa fürchtete eine Vereinigung Frankreichs und Spaniens. Im Frieden von Utrecht 1713 behielt Philipp Spanien, doch beide Kronen durften nie vereint werden."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What did the dying Louis XIV advise his five-year-old great-grandson?",
+      "options": [
+        "To build a bigger palace",
+        "To trust only the Church",
+        "Not to love war too much, as he had done",
+        "To move the court back to Paris"
+      ],
+      "explanation": "He had reigned for 72 years and 110 days, longer than any other monarch of a major European country, and left France deep in debt.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat raadde de stervende Lodewijk XIV zijn vijfjarige achterkleinzoon aan?",
+          "options": [
+            "Een groter paleis te bouwen",
+            "Alleen de Kerk te vertrouwen",
+            "Niet zoveel van oorlog te houden als hij had gedaan",
+            "Het hof terug naar Parijs te verhuizen"
+          ],
+          "explanation": "Hij had 72 jaar en 110 dagen geregeerd, langer dan welke vorst van een groot Europees land ook, en liet Frankrijk diep in de schulden achter."
+        },
+        "fr": {
+          "question": "Quel conseil Louis XIV mourant a-t-il donné à son arrière-petit-fils de cinq ans ?",
+          "options": [
+            "Construire un palais plus grand",
+            "Ne se fier qu’à l’Église",
+            "Ne pas trop aimer la guerre, comme il l’avait fait",
+            "Ramener la cour à Paris"
+          ],
+          "explanation": "Il avait régné 72 ans et 110 jours, plus longtemps que tout monarque d’un grand pays européen, et laissait la France lourdement endettée."
+        },
+        "de": {
+          "question": "Welchen Rat gab der sterbende Ludwig XIV. seinem fünfjährigen Urenkel?",
+          "options": [
+            "Einen größeren Palast zu bauen",
+            "Nur der Kirche zu vertrauen",
+            "Den Krieg nicht so sehr zu lieben, wie er es getan hatte",
+            "Den Hof nach Paris zurückzuverlegen"
+          ],
+          "explanation": "Er hatte 72 Jahre und 110 Tage regiert, länger als jeder andere Monarch eines großen europäischen Landes, und hinterließ Frankreich hoch verschuldet."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

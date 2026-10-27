@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What made Luther suddenly decide to become a monk in 1505?",
+      "options": [
+        "His father ordered him to",
+        "He failed his law exams",
+        "A lightning bolt struck close to him in a thunderstorm",
+        "He had a vision in church"
+      ],
+      "explanation": "In terror he cried out to Saint Anne and vowed to become a monk. Two weeks later, to his father's fury, he entered the monastery.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waardoor besloot Luther in 1505 ineens monnik te worden?",
+          "options": [
+            "Zijn vader beval het",
+            "Hij zakte voor zijn rechtenexamens",
+            "Tijdens een onweer sloeg de bliksem vlak bij hem in",
+            "Hij had een visioen in de kerk"
+          ],
+          "explanation": "In doodsangst riep hij de heilige Anna aan en beloofde monnik te worden. Twee weken later trad hij, tot woede van zijn vader, in het klooster in."
+        },
+        "fr": {
+          "question": "Qu’est-ce qui a poussé Luther à décider soudain de devenir moine en 1505 ?",
+          "options": [
+            "Son père le lui a ordonné",
+            "Il a échoué à ses examens de droit",
+            "La foudre est tombée tout près de lui pendant un orage",
+            "Il a eu une vision à l’église"
+          ],
+          "explanation": "Terrifié, il a invoqué sainte Anne et fait vœu de devenir moine. Deux semaines plus tard, à la fureur de son père, il entrait au monastère."
+        },
+        "de": {
+          "question": "Was brachte Luther 1505 dazu, plötzlich Mönch werden zu wollen?",
+          "options": [
+            "Sein Vater befahl es",
+            "Er fiel durch die Rechtsprüfungen",
+            "Bei einem Gewitter schlug ganz in seiner Nähe ein Blitz ein",
+            "Er hatte eine Vision in der Kirche"
+          ],
+          "explanation": "Voller Angst rief er die heilige Anna an und gelobte, Mönch zu werden. Zwei Wochen später trat er zum Zorn seines Vaters ins Kloster ein."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What new understanding did Luther gain from reading Paul's letter to the Romans?",
+      "options": [
+        "That people are saved only by faith, as a free gift from God",
+        "That monks should marry",
+        "That the Bible should be in Latin only",
+        "That pilgrimages free souls from purgatory"
+      ],
+      "explanation": "Not by their own good deeds, but by faith. He later said it felt as if the gates of paradise had opened.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk nieuw inzicht kreeg Luther toen hij de brief van Paulus aan de Romeinen las?",
+          "options": [
+            "Dat mensen alleen door geloof worden gered, als gratis geschenk van God",
+            "Dat monniken moesten trouwen",
+            "Dat de Bijbel alleen in het Latijn mocht bestaan",
+            "Dat bedevaarten zielen uit het vagevuur bevrijden"
+          ],
+          "explanation": "Niet door hun eigen goede daden, maar door geloof. Later zei hij dat het voelde alsof de poorten van het paradijs opengingen."
+        },
+        "fr": {
+          "question": "Quelle nouvelle compréhension Luther a-t-il tirée de l’épître de Paul aux Romains ?",
+          "options": [
+            "Qu’on est sauvé par la foi seule, comme un don gratuit de Dieu",
+            "Que les moines devaient se marier",
+            "Que la Bible ne devait exister qu’en latin",
+            "Que les pèlerinages libèrent les âmes du purgatoire"
+          ],
+          "explanation": "Non par ses propres bonnes œuvres, mais par la foi. Il a dit plus tard avoir eu l’impression que les portes du paradis s’ouvraient."
+        },
+        "de": {
+          "question": "Welche neue Einsicht gewann Luther beim Lesen des Römerbriefs von Paulus?",
+          "options": [
+            "Dass Menschen allein durch den Glauben gerettet werden, als Geschenk Gottes",
+            "Dass Mönche heiraten sollten",
+            "Dass die Bibel nur auf Latein existieren dürfe",
+            "Dass Wallfahrten Seelen aus dem Fegefeuer befreien"
+          ],
+          "explanation": "Nicht durch eigene gute Taten, sondern durch den Glauben. Später sagte er, es sei gewesen, als öffneten sich die Tore des Paradieses."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What was Johann Tetzel selling near Wittenberg in 1517?",
+      "options": [
+        "Bibles",
+        "Holy relics",
+        "Places in the monastery",
+        "Indulgences"
+      ],
+      "explanation": "People paid for a reduction of punishment in purgatory. Part of the money went to rebuilding St Peter's in Rome. This drove Luther to write his 95 Theses.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat verkocht Johann Tetzel in 1517 in de buurt van Wittenberg?",
+          "options": [
+            "Bijbels",
+            "Heilige relikwieën",
+            "Plaatsen in het klooster",
+            "Aflaten"
+          ],
+          "explanation": "Mensen betaalden voor minder straf in het vagevuur. Een deel van het geld ging naar de herbouw van de Sint-Pieter in Rome. Dit bracht Luther ertoe zijn 95 stellingen te schrijven."
+        },
+        "fr": {
+          "question": "Que vendait Johann Tetzel près de Wittenberg en 1517 ?",
+          "options": [
+            "Des Bibles",
+            "Des reliques saintes",
+            "Des places au monastère",
+            "Des indulgences"
+          ],
+          "explanation": "On payait pour réduire sa peine au purgatoire. Une partie de l’argent servait à reconstruire Saint-Pierre de Rome. C’est ce qui a poussé Luther à écrire ses 95 thèses."
+        },
+        "de": {
+          "question": "Was verkaufte Johann Tetzel 1517 in der Nähe von Wittenberg?",
+          "options": [
+            "Bibeln",
+            "Heilige Reliquien",
+            "Plätze im Kloster",
+            "Ablässe"
+          ],
+          "explanation": "Man zahlte für eine geringere Strafe im Fegefeuer. Ein Teil des Geldes floss in den Neubau des Petersdoms in Rom. Das brachte Luther dazu, seine 95 Thesen zu schreiben."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What turned Luther's academic theses into a European sensation within weeks?",
+      "options": [
+        "The Pope read them aloud",
+        "They were printed and spread on the new printing presses",
+        "Monks copied them by hand",
+        "The emperor sent them to every city"
+      ],
+      "explanation": "Luther wrote short, punchy pamphlets in German, often illustrated by Lucas Cranach. For years his writings made up a large share of everything printed in German.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat maakte van Luthers academische stellingen binnen enkele weken een Europese sensatie?",
+          "options": [
+            "De paus las ze hardop voor",
+            "Ze werden gedrukt en verspreid met de nieuwe drukpersen",
+            "Monniken schreven ze met de hand over",
+            "De keizer stuurde ze naar elke stad"
+          ],
+          "explanation": "Luther schreef korte, felle pamfletten in het Duits, vaak geïllustreerd door Lucas Cranach. Jarenlang was een groot deel van alles wat in het Duits werd gedrukt van zijn hand."
+        },
+        "fr": {
+          "question": "Qu’est-ce qui a fait des thèses universitaires de Luther une sensation européenne en quelques semaines ?",
+          "options": [
+            "Le pape les a lues à voix haute",
+            "Elles ont été imprimées et diffusées par les nouvelles presses",
+            "Des moines les ont recopiées à la main",
+            "L’empereur les a envoyées dans chaque ville"
+          ],
+          "explanation": "Luther écrivait de courts pamphlets percutants en allemand, souvent illustrés par Lucas Cranach. Pendant des années, ses écrits ont représenté une grande part de tout ce qui s’imprimait en allemand."
+        },
+        "de": {
+          "question": "Was machte Luthers akademische Thesen innerhalb weniger Wochen zur europäischen Sensation?",
+          "options": [
+            "Der Papst las sie laut vor",
+            "Sie wurden auf den neuen Druckerpressen gedruckt und verbreitet",
+            "Mönche schrieben sie von Hand ab",
+            "Der Kaiser schickte sie in jede Stadt"
+          ],
+          "explanation": "Luther schrieb kurze, zugespitzte Flugschriften auf Deutsch, oft mit Bildern von Lucas Cranach. Jahrelang machten seine Schriften einen großen Teil aller deutschen Drucke aus."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What did Luther do before the emperor Charles V at the Diet of Worms in 1521?",
+      "options": [
+        "He asked for forgiveness",
+        "He refused to take back what he had written",
+        "He challenged the emperor to a debate",
+        "He fled the city in disguise"
+      ],
+      "explanation": "Unless convinced by Scripture and plain reason, he would not recant. The emperor declared him an outlaw.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed Luther in 1521 op de Rijksdag van Worms tegenover keizer Karel V?",
+          "options": [
+            "Hij vroeg om vergeving",
+            "Hij weigerde te herroepen wat hij had geschreven",
+            "Hij daagde de keizer uit voor een debat",
+            "Hij vluchtte vermomd de stad uit"
+          ],
+          "explanation": "Tenzij hij met de Schrift en heldere redenen werd overtuigd, zou hij niets herroepen. De keizer verklaarde hem vogelvrij."
+        },
+        "fr": {
+          "question": "Qu’a fait Luther devant l’empereur Charles Quint à la diète de Worms en 1521 ?",
+          "options": [
+            "Il a demandé pardon",
+            "Il a refusé de rétracter ce qu’il avait écrit",
+            "Il a défié l’empereur en débat",
+            "Il a fui la ville déguisé"
+          ],
+          "explanation": "À moins d’être convaincu par l’Écriture et la raison, il ne se rétracterait pas. L’empereur l’a mis au ban de l’Empire."
+        },
+        "de": {
+          "question": "Was tat Luther 1521 auf dem Reichstag zu Worms vor Kaiser Karl V.?",
+          "options": [
+            "Er bat um Vergebung",
+            "Er weigerte sich, seine Schriften zu widerrufen",
+            "Er forderte den Kaiser zu einer Debatte heraus",
+            "Er floh verkleidet aus der Stadt"
+          ],
+          "explanation": "Wenn man ihn nicht durch die Schrift und klare Gründe überzeuge, werde er nichts widerrufen. Der Kaiser verhängte die Reichsacht über ihn."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What did Luther do while hiding at the Wartburg castle as 'Knight George'?",
+      "options": [
+        "He wrote his 95 Theses",
+        "He organised the Peasants' War",
+        "He married Katharina von Bora",
+        "He translated the New Testament into German"
+      ],
+      "explanation": "He did it in about eleven weeks, aiming for the language of ordinary people. It helped shape the modern German language.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed Luther terwijl hij als 'Junker Jörg' ondergedoken zat op de Wartburg?",
+          "options": [
+            "Hij schreef zijn 95 stellingen",
+            "Hij organiseerde de Boerenoorlog",
+            "Hij trouwde met Katharina von Bora",
+            "Hij vertaalde het Nieuwe Testament in het Duits"
+          ],
+          "explanation": "Hij deed het in ongeveer elf weken, in de taal van gewone mensen. Het hielp het moderne Duits vormen."
+        },
+        "fr": {
+          "question": "Qu’a fait Luther pendant qu’il se cachait au château de la Wartbourg sous le nom de « chevalier Georges » ?",
+          "options": [
+            "Il a écrit ses 95 thèses",
+            "Il a organisé la guerre des Paysans",
+            "Il a épousé Catherine de Bora",
+            "Il a traduit le Nouveau Testament en allemand"
+          ],
+          "explanation": "Il l’a fait en onze semaines environ, dans la langue des gens ordinaires. Cela a contribué à façonner l’allemand moderne."
+        },
+        "de": {
+          "question": "Was tat Luther, während er sich als „Junker Jörg“ auf der Wartburg versteckte?",
+          "options": [
+            "Er schrieb seine 95 Thesen",
+            "Er organisierte den Bauernkrieg",
+            "Er heiratete Katharina von Bora",
+            "Er übersetzte das Neue Testament ins Deutsche"
+          ],
+          "explanation": "Er schaffte es in etwa elf Wochen, in der Sprache des einfachen Volkes. Das prägte die moderne deutsche Sprache mit."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "How did Katharina von Bora, Luther's future wife, escape from her convent in 1523?",
+      "options": [
+        "She climbed over the wall at night",
+        "She was hidden in a merchant's wagon, reportedly among herring barrels",
+        "She disguised herself as a monk",
+        "Her family paid for her release"
+      ],
+      "explanation": "Twelve nuns escaped together. Katharina refused every match Luther suggested and said she would marry only him.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe ontsnapte Katharina von Bora, Luthers latere vrouw, in 1523 uit haar klooster?",
+          "options": [
+            "Ze klom 's nachts over de muur",
+            "Ze werd verstopt in de wagen van een koopman, naar verluidt tussen haringvaten",
+            "Ze vermomde zich als monnik",
+            "Haar familie kocht haar vrij"
+          ],
+          "explanation": "Twaalf nonnen ontsnapten samen. Katharina wees elke partner af die Luther voorstelde en zei dat ze alleen met hem wilde trouwen."
+        },
+        "fr": {
+          "question": "Comment Catherine de Bora, future épouse de Luther, s’est-elle échappée de son couvent en 1523 ?",
+          "options": [
+            "Elle a escaladé le mur de nuit",
+            "Elle a été cachée dans la charrette d’un marchand, parmi des tonneaux de harengs, dit-on",
+            "Elle s’est déguisée en moine",
+            "Sa famille a payé sa libération"
+          ],
+          "explanation": "Douze religieuses se sont enfuies ensemble. Catherine a refusé tous les partis proposés par Luther et a dit qu’elle n’épouserait que lui."
+        },
+        "de": {
+          "question": "Wie floh Katharina von Bora, Luthers spätere Frau, 1523 aus ihrem Kloster?",
+          "options": [
+            "Sie kletterte nachts über die Mauer",
+            "Sie wurde im Wagen eines Händlers versteckt, angeblich zwischen Heringsfässern",
+            "Sie verkleidete sich als Mönch",
+            "Ihre Familie kaufte sie frei"
+          ],
+          "explanation": "Zwölf Nonnen flohen gemeinsam. Katharina lehnte jeden Kandidaten ab, den Luther vorschlug, und sagte, sie heirate nur ihn."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What were the last words of the note found on Luther after his death?",
+      "options": [
+        "Here I stand",
+        "A mighty fortress is our God",
+        "We are beggars. This is true.",
+        "Faith alone saves"
+      ],
+      "explanation": "He died in 1546 in Eisleben, the town where he was born, after travelling there to settle a quarrel.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat waren de laatste woorden van het briefje dat na Luthers dood bij hem werd gevonden?",
+          "options": [
+            "Hier sta ik",
+            "Een vaste burcht is onze God",
+            "Wij zijn bedelaars. Dat is waar.",
+            "Alleen het geloof redt"
+          ],
+          "explanation": "Hij stierf in 1546 in Eisleben, de stad waar hij geboren was, nadat hij erheen was gereisd om een ruzie te beslechten."
+        },
+        "fr": {
+          "question": "Quels étaient les derniers mots de la note trouvée sur Luther après sa mort ?",
+          "options": [
+            "Me voici",
+            "C’est un rempart que notre Dieu",
+            "Nous sommes des mendiants. C’est vrai.",
+            "La foi seule sauve"
+          ],
+          "explanation": "Il est mort en 1546 à Eisleben, sa ville natale, où il était venu régler une querelle."
+        },
+        "de": {
+          "question": "Wie lauteten die letzten Worte des Zettels, den man nach Luthers Tod bei ihm fand?",
+          "options": [
+            "Hier stehe ich",
+            "Ein feste Burg ist unser Gott",
+            "Wir sind Bettler. Das ist wahr.",
+            "Allein der Glaube rettet"
+          ],
+          "explanation": "Er starb 1546 in Eisleben, seiner Geburtsstadt, wohin er gereist war, um einen Streit zu schlichten."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

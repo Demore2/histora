@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "How old was Elizabeth when her mother, Anne Boleyn, was executed?",
+      "options": [
+        "Two years and eight months",
+        "Seven",
+        "Twelve",
+        "Twenty-five"
+      ],
+      "explanation": "Elizabeth was then declared illegitimate and lost her title of princess. Her governess wrote that she had grown out of all her clothes.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe oud was Elizabeth toen haar moeder, Anne Boleyn, werd terechtgesteld?",
+          "options": [
+            "Twee jaar en acht maanden",
+            "Zeven",
+            "Twaalf",
+            "Vijfentwintig"
+          ],
+          "explanation": "Elizabeth werd daarna onwettig verklaard en verloor haar titel van prinses. Haar gouvernante schreef dat al haar kleren te klein waren geworden."
+        },
+        "fr": {
+          "question": "Quel âge avait Élisabeth quand sa mère, Anne Boleyn, a été exécutée ?",
+          "options": [
+            "Deux ans et huit mois",
+            "Sept ans",
+            "Douze ans",
+            "Vingt-cinq ans"
+          ],
+          "explanation": "Élisabeth a ensuite été déclarée illégitime et a perdu son titre de princesse. Sa gouvernante écrivait qu’elle ne rentrait plus dans aucun de ses vêtements."
+        },
+        "de": {
+          "question": "Wie alt war Elisabeth, als ihre Mutter Anne Boleyn hingerichtet wurde?",
+          "options": [
+            "Zwei Jahre und acht Monate",
+            "Sieben",
+            "Zwölf",
+            "Fünfundzwanzig"
+          ],
+          "explanation": "Elisabeth wurde danach für unehelich erklärt und verlor ihren Titel als Prinzessin. Ihre Gouvernante schrieb, ihr passe keines ihrer Kleider mehr."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Why was Elizabeth imprisoned in the Tower of London in 1554?",
+      "options": [
+        "She refused to become Catholic",
+        "She had insulted the Spanish ambassador",
+        "She was suspected of involvement in Wyatt's rebellion",
+        "She tried to flee to France"
+      ],
+      "explanation": "No proof was found, and after two months she was moved to house arrest at Woodstock. She learned never to give her enemies a weapon.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom werd Elizabeth in 1554 opgesloten in de Tower van Londen?",
+          "options": [
+            "Ze weigerde katholiek te worden",
+            "Ze had de Spaanse gezant beledigd",
+            "Ze werd verdacht van betrokkenheid bij de opstand van Wyatt",
+            "Ze probeerde naar Frankrijk te vluchten"
+          ],
+          "explanation": "Er werd geen bewijs gevonden, en na twee maanden kreeg ze huisarrest in Woodstock. Ze leerde haar vijanden nooit een wapen in handen te geven."
+        },
+        "fr": {
+          "question": "Pourquoi Élisabeth a-t-elle été emprisonnée à la Tour de Londres en 1554 ?",
+          "options": [
+            "Elle refusait de devenir catholique",
+            "Elle avait insulté l’ambassadeur d’Espagne",
+            "On la soupçonnait d’être mêlée à la révolte de Wyatt",
+            "Elle avait tenté de fuir en France"
+          ],
+          "explanation": "Aucune preuve n’a été trouvée, et au bout de deux mois elle a été placée en résidence surveillée à Woodstock. Elle a appris à ne jamais donner d’arme à ses ennemis."
+        },
+        "de": {
+          "question": "Warum wurde Elisabeth 1554 im Tower von London eingesperrt?",
+          "options": [
+            "Sie weigerte sich, katholisch zu werden",
+            "Sie hatte den spanischen Gesandten beleidigt",
+            "Sie wurde der Beteiligung an Wyatts Aufstand verdächtigt",
+            "Sie versuchte, nach Frankreich zu fliehen"
+          ],
+          "explanation": "Es fand sich kein Beweis, und nach zwei Monaten kam sie in Woodstock unter Hausarrest. Sie lernte, ihren Feinden nie eine Waffe in die Hand zu geben."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Which adviser served Elizabeth loyally for forty years from the start of her reign?",
+      "options": [
+        "Thomas Cromwell",
+        "Robert Dudley",
+        "Francis Drake",
+        "William Cecil"
+      ],
+      "explanation": "Elizabeth chose her advisers carefully when she became queen at twenty-five, and Cecil became the most important of them.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke adviseur diende Elizabeth vanaf het begin van haar regering veertig jaar lang trouw?",
+          "options": [
+            "Thomas Cromwell",
+            "Robert Dudley",
+            "Francis Drake",
+            "William Cecil"
+          ],
+          "explanation": "Elizabeth koos haar adviseurs zorgvuldig toen ze op haar vijfentwintigste koningin werd, en Cecil werd de belangrijkste van hen."
+        },
+        "fr": {
+          "question": "Quel conseiller a servi fidèlement Élisabeth pendant quarante ans dès le début de son règne ?",
+          "options": [
+            "Thomas Cromwell",
+            "Robert Dudley",
+            "Francis Drake",
+            "William Cecil"
+          ],
+          "explanation": "Élisabeth a choisi ses conseillers avec soin en devenant reine à vingt-cinq ans, et Cecil est devenu le plus important d’entre eux."
+        },
+        "de": {
+          "question": "Welcher Berater diente Elisabeth vom Beginn ihrer Herrschaft an vierzig Jahre lang treu?",
+          "options": [
+            "Thomas Cromwell",
+            "Robert Dudley",
+            "Francis Drake",
+            "William Cecil"
+          ],
+          "explanation": "Elisabeth wählte ihre Berater sorgfältig, als sie mit fünfundzwanzig Königin wurde, und Cecil wurde der wichtigste von ihnen."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Why could Elizabeth not marry Robert Dudley, the man she seemed to love?",
+      "options": [
+        "He was Catholic",
+        "He was already married, and his wife's sudden death caused a scandal",
+        "Parliament forbade it",
+        "He was in prison"
+      ],
+      "explanation": "In 1560 his wife Amy Robsart was found dead at the bottom of a staircase. It was probably an accident, but the scandal made the marriage impossible.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom kon Elizabeth niet trouwen met Robert Dudley, de man van wie ze leek te houden?",
+          "options": [
+            "Hij was katholiek",
+            "Hij was al getrouwd, en de plotselinge dood van zijn vrouw veroorzaakte een schandaal",
+            "Het parlement verbood het",
+            "Hij zat in de gevangenis"
+          ],
+          "explanation": "In 1560 werd zijn vrouw Amy Robsart dood onder aan een trap gevonden. Waarschijnlijk was het een ongeluk, maar het schandaal maakte het huwelijk onmogelijk."
+        },
+        "fr": {
+          "question": "Pourquoi Élisabeth ne pouvait-elle pas épouser Robert Dudley, l’homme qu’elle semblait aimer ?",
+          "options": [
+            "Il était catholique",
+            "Il était déjà marié, et la mort soudaine de sa femme a fait scandale",
+            "Le Parlement l’interdisait",
+            "Il était en prison"
+          ],
+          "explanation": "En 1560, sa femme Amy Robsart a été retrouvée morte au pied d’un escalier. C’était sans doute un accident, mais le scandale a rendu le mariage impossible."
+        },
+        "de": {
+          "question": "Warum konnte Elisabeth Robert Dudley, den Mann, den sie zu lieben schien, nicht heiraten?",
+          "options": [
+            "Er war katholisch",
+            "Er war bereits verheiratet, und der plötzliche Tod seiner Frau löste einen Skandal aus",
+            "Das Parlament verbot es",
+            "Er saß im Gefängnis"
+          ],
+          "explanation": "1560 wurde seine Frau Amy Robsart tot am Fuß einer Treppe gefunden. Vermutlich war es ein Unfall, doch der Skandal machte die Ehe unmöglich."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Why was Mary, Queen of Scots, executed in 1587?",
+      "options": [
+        "She had invaded England",
+        "She refused to give up the Scottish crown",
+        "She had approved a plot to assassinate Elizabeth",
+        "She married the king of Spain"
+      ],
+      "explanation": "Elizabeth's spymaster Walsingham intercepted secret letters hidden in beer barrels. Elizabeth hesitated for months before signing the death warrant.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom werd Maria Stuart, koningin van Schotland, in 1587 terechtgesteld?",
+          "options": [
+            "Ze was Engeland binnengevallen",
+            "Ze weigerde de Schotse kroon op te geven",
+            "Ze had ingestemd met een complot om Elizabeth te vermoorden",
+            "Ze trouwde met de koning van Spanje"
+          ],
+          "explanation": "Elizabeths spionnenmeester Walsingham onderschepte geheime brieven die in biervaten verstopt zaten. Elizabeth aarzelde maandenlang voordat ze het doodvonnis tekende."
+        },
+        "fr": {
+          "question": "Pourquoi Marie Stuart, reine d’Écosse, a-t-elle été exécutée en 1587 ?",
+          "options": [
+            "Elle avait envahi l’Angleterre",
+            "Elle refusait de renoncer à la couronne d’Écosse",
+            "Elle avait approuvé un complot pour assassiner Élisabeth",
+            "Elle avait épousé le roi d’Espagne"
+          ],
+          "explanation": "Walsingham, le maître espion d’Élisabeth, a intercepté des lettres secrètes cachées dans des tonneaux de bière. Élisabeth a hésité des mois avant de signer l’arrêt de mort."
+        },
+        "de": {
+          "question": "Warum wurde Maria Stuart, Königin von Schottland, 1587 hingerichtet?",
+          "options": [
+            "Sie war in England einmarschiert",
+            "Sie weigerte sich, die schottische Krone abzugeben",
+            "Sie hatte einem Mordkomplott gegen Elisabeth zugestimmt",
+            "Sie heiratete den König von Spanien"
+          ],
+          "explanation": "Elisabeths Spionagechef Walsingham fing geheime Briefe ab, die in Bierfässern versteckt waren. Elisabeth zögerte monatelang, bevor sie das Todesurteil unterschrieb."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What did the English send towards the Spanish Armada anchored off Calais in August 1588?",
+      "options": [
+        "Burning fireships",
+        "A peace delegation",
+        "Divers to sink its ships",
+        "A fleet of Dutch galleys"
+      ],
+      "explanation": "In panic the Spanish cut their anchor cables and scattered. Storms around Scotland and Ireland wrecked dozens more ships.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat stuurden de Engelsen in augustus 1588 op de Spaanse Armada af, die voor Calais voor anker lag?",
+          "options": [
+            "Brandende branders",
+            "Een vredesdelegatie",
+            "Duikers om de schepen te laten zinken",
+            "Een vloot Nederlandse galeien"
+          ],
+          "explanation": "In paniek kapten de Spanjaarden hun ankertouwen en verspreidden zich. Stormen rond Schotland en Ierland deden daarna nog tientallen schepen vergaan."
+        },
+        "fr": {
+          "question": "Qu’ont envoyé les Anglais vers l’Invincible Armada ancrée au large de Calais en août 1588 ?",
+          "options": [
+            "Des brûlots en flammes",
+            "Une délégation de paix",
+            "Des plongeurs pour couler ses navires",
+            "Une flotte de galères hollandaises"
+          ],
+          "explanation": "Prises de panique, les Espagnols ont coupé leurs câbles d’ancre et se sont dispersés. Les tempêtes autour de l’Écosse et de l’Irlande ont ensuite brisé des dizaines de navires."
+        },
+        "de": {
+          "question": "Was schickten die Engländer im August 1588 gegen die vor Calais ankernde Spanische Armada?",
+          "options": [
+            "Brennende Brander",
+            "Eine Friedensgesandtschaft",
+            "Taucher, um die Schiffe zu versenken",
+            "Eine Flotte niederländischer Galeeren"
+          ],
+          "explanation": "In Panik kappten die Spanier ihre Ankertaue und zerstreuten sich. Stürme vor Schottland und Irland ließen danach Dutzende weitere Schiffe zerschellen."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Which theatre opened in London in 1599, during Elizabeth's reign?",
+      "options": [
+        "The Old Vic",
+        "The Royal Opera House",
+        "The Rose",
+        "The Globe"
+      ],
+      "explanation": "Shakespeare's company opened it. Public theatres were built in London for the first time in Elizabeth's reign.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk theater ging in 1599, tijdens de regering van Elizabeth, in Londen open?",
+          "options": [
+            "The Old Vic",
+            "The Royal Opera House",
+            "The Rose",
+            "The Globe"
+          ],
+          "explanation": "Shakespeares gezelschap opende het. Onder Elizabeth werden voor het eerst openbare theaters in Londen gebouwd."
+        },
+        "fr": {
+          "question": "Quel théâtre a ouvert à Londres en 1599, sous le règne d’Élisabeth ?",
+          "options": [
+            "The Old Vic",
+            "The Royal Opera House",
+            "The Rose",
+            "The Globe"
+          ],
+          "explanation": "C’est la troupe de Shakespeare qui l’a ouvert. Les premiers théâtres publics de Londres ont été construits sous Élisabeth."
+        },
+        "de": {
+          "question": "Welches Theater wurde 1599, während Elisabeths Herrschaft, in London eröffnet?",
+          "options": [
+            "The Old Vic",
+            "The Royal Opera House",
+            "The Rose",
+            "The Globe"
+          ],
+          "explanation": "Shakespeares Truppe eröffnete es. Unter Elisabeth entstanden in London erstmals öffentliche Theater."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Who became king when Elizabeth died in 1603, uniting the crowns of England and Scotland?",
+      "options": [
+        "Robert Dudley",
+        "James VI of Scotland, son of Mary, Queen of Scots",
+        "Philip II of Spain",
+        "Edward VI"
+      ],
+      "explanation": "With Elizabeth the Tudor dynasty ended. The crown passed to the son of the queen she had executed.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie werd koning toen Elizabeth in 1603 stierf, waardoor de kronen van Engeland en Schotland verenigd werden?",
+          "options": [
+            "Robert Dudley",
+            "Jacobus VI van Schotland, zoon van Maria Stuart",
+            "Filips II van Spanje",
+            "Edward VI"
+          ],
+          "explanation": "Met Elizabeth eindigde het huis Tudor. De kroon ging naar de zoon van de koningin die zij had laten terechtstellen."
+        },
+        "fr": {
+          "question": "Qui est devenu roi à la mort d’Élisabeth en 1603, unissant les couronnes d’Angleterre et d’Écosse ?",
+          "options": [
+            "Robert Dudley",
+            "Jacques VI d’Écosse, fils de Marie Stuart",
+            "Philippe II d’Espagne",
+            "Édouard VI"
+          ],
+          "explanation": "Avec Élisabeth s’éteignait la dynastie Tudor. La couronne est passée au fils de la reine qu’elle avait fait exécuter."
+        },
+        "de": {
+          "question": "Wer wurde nach Elisabeths Tod 1603 König und vereinte die Kronen Englands und Schottlands?",
+          "options": [
+            "Robert Dudley",
+            "Jakob VI. von Schottland, Sohn Maria Stuarts",
+            "Philipp II. von Spanien",
+            "Eduard VI."
+          ],
+          "explanation": "Mit Elisabeth endete die Tudor-Dynastie. Die Krone ging an den Sohn der Königin, die sie hatte hinrichten lassen."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

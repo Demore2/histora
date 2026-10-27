@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Why did Suleiman not have to fight his brothers for the throne, as many Ottoman princes did?",
+      "options": [
+        "His father chose him in writing",
+        "He was his father's only surviving son",
+        "His brothers became monks",
+        "The janissaries elected him"
+      ],
+      "explanation": "Ottoman sons often fought for the throne, and the winner commonly had his brothers killed. Suleiman was the only son of Selim the Grim who survived.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom hoefde Suleiman niet met zijn broers om de troon te vechten, zoals veel Ottomaanse prinsen?",
+          "options": [
+            "Zijn vader koos hem op schrift",
+            "Hij was de enige overlevende zoon van zijn vader",
+            "Zijn broers werden monnik",
+            "De janitsaren kozen hem"
+          ],
+          "explanation": "Ottomaanse zonen vochten vaak om de troon, en de winnaar liet zijn broers meestal doden. Suleiman was de enige zoon van Selim de Grimmige die nog leefde."
+        },
+        "fr": {
+          "question": "Pourquoi Soliman n’a-t-il pas eu à combattre ses frères pour le trône, comme beaucoup de princes ottomans ?",
+          "options": [
+            "Son père l’avait désigné par écrit",
+            "Il était le seul fils survivant de son père",
+            "Ses frères sont devenus moines",
+            "Les janissaires l’ont élu"
+          ],
+          "explanation": "Les fils ottomans se battaient souvent pour le trône, et le vainqueur faisait d’ordinaire tuer ses frères. Soliman était le seul fils survivant de Sélim le Terrible."
+        },
+        "de": {
+          "question": "Warum musste Süleyman nicht wie viele osmanische Prinzen mit seinen Brüdern um den Thron kämpfen?",
+          "options": [
+            "Sein Vater bestimmte ihn schriftlich",
+            "Er war der einzige überlebende Sohn seines Vaters",
+            "Seine Brüder wurden Mönche",
+            "Die Janitscharen wählten ihn"
+          ],
+          "explanation": "Osmanische Söhne kämpften oft um den Thron, und der Sieger ließ seine Brüder meist töten. Süleyman war der einzige überlebende Sohn Selims des Gestrengen."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What terms did Suleiman give the Knights of St John when Rhodes surrendered in 1522?",
+      "options": [
+        "They were all executed",
+        "They had to convert to Islam",
+        "They could leave with their weapons and possessions",
+        "They had to serve in his navy"
+      ],
+      "explanation": "The inhabitants who stayed were promised freedom of religion. The knights later settled on Malta.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke voorwaarden gaf Suleiman de Ridders van Sint-Jan toen Rhodos zich in 1522 overgaf?",
+          "options": [
+            "Ze werden allemaal terechtgesteld",
+            "Ze moesten zich tot de islam bekeren",
+            "Ze mochten vertrekken met hun wapens en bezittingen",
+            "Ze moesten dienen in zijn vloot"
+          ],
+          "explanation": "De inwoners die bleven, kregen godsdienstvrijheid beloofd. De ridders vestigden zich later op Malta."
+        },
+        "fr": {
+          "question": "Quelles conditions Soliman a-t-il accordées aux chevaliers de Saint-Jean lors de la reddition de Rhodes en 1522 ?",
+          "options": [
+            "Ils ont tous été exécutés",
+            "Ils devaient se convertir à l’islam",
+            "Ils pouvaient partir avec leurs armes et leurs biens",
+            "Ils devaient servir dans sa flotte"
+          ],
+          "explanation": "Les habitants qui restaient se sont vu promettre la liberté de culte. Les chevaliers se sont ensuite installés à Malte."
+        },
+        "de": {
+          "question": "Welche Bedingungen gewährte Süleyman den Johannitern, als Rhodos sich 1522 ergab?",
+          "options": [
+            "Sie wurden alle hingerichtet",
+            "Sie mussten zum Islam übertreten",
+            "Sie durften mit Waffen und Besitz abziehen",
+            "Sie mussten in seiner Flotte dienen"
+          ],
+          "explanation": "Den bleibenden Einwohnern wurde Religionsfreiheit zugesagt. Die Ritter ließen sich später auf Malta nieder."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What happened to King Louis II of Hungary at the Battle of Mohács in 1526?",
+      "options": [
+        "He drowned while fleeing the battlefield",
+        "He was taken prisoner to Istanbul",
+        "He became Suleiman's ally",
+        "He won the battle"
+      ],
+      "explanation": "His horse fell in a flooded stream. Within about two hours the Hungarian army had been destroyed.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er met koning Lodewijk II van Hongarije tijdens de Slag bij Mohács in 1526?",
+          "options": [
+            "Hij verdronk tijdens zijn vlucht van het slagveld",
+            "Hij werd gevangen naar Istanbul gebracht",
+            "Hij werd een bondgenoot van Suleiman",
+            "Hij won de slag"
+          ],
+          "explanation": "Zijn paard viel in een gezwollen beek. Binnen ongeveer twee uur was het Hongaarse leger vernietigd."
+        },
+        "fr": {
+          "question": "Qu’est-il arrivé au roi Louis II de Hongrie à la bataille de Mohács en 1526 ?",
+          "options": [
+            "Il s’est noyé en fuyant le champ de bataille",
+            "Il a été emmené prisonnier à Istanbul",
+            "Il est devenu l’allié de Soliman",
+            "Il a gagné la bataille"
+          ],
+          "explanation": "Son cheval est tombé dans un ruisseau en crue. En deux heures environ, l’armée hongroise était anéantie."
+        },
+        "de": {
+          "question": "Was geschah mit König Ludwig II. von Ungarn in der Schlacht bei Mohács 1526?",
+          "options": [
+            "Er ertrank auf der Flucht vom Schlachtfeld",
+            "Er wurde als Gefangener nach Istanbul gebracht",
+            "Er wurde Süleymans Verbündeter",
+            "Er gewann die Schlacht"
+          ],
+          "explanation": "Sein Pferd stürzte in einen Hochwasser führenden Bach. Binnen etwa zwei Stunden war das ungarische Heer vernichtet."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Why did Suleiman's siege of Vienna in 1529 fail?",
+      "options": [
+        "The Pope sent a huge army",
+        "Plague broke out in his camp",
+        "His janissaries mutinied",
+        "Rain forced him to leave his heavy cannons behind, and winter was coming"
+      ],
+      "explanation": "The roads turned to mud, the city had been reinforced, and after about three weeks he lifted the siege.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom mislukte het beleg van Wenen door Suleiman in 1529?",
+          "options": [
+            "De paus stuurde een enorm leger",
+            "Er brak pest uit in zijn kamp",
+            "Zijn janitsaren sloegen aan het muiten",
+            "Door de regen moest hij zijn zware kanonnen achterlaten, en de winter naderde"
+          ],
+          "explanation": "De wegen veranderden in modder, de stad was versterkt, en na zo'n drie weken brak hij het beleg op."
+        },
+        "fr": {
+          "question": "Pourquoi le siège de Vienne par Soliman en 1529 a-t-il échoué ?",
+          "options": [
+            "Le pape a envoyé une immense armée",
+            "La peste a éclaté dans son camp",
+            "Ses janissaires se sont mutinés",
+            "La pluie l’a forcé à laisser ses gros canons, et l’hiver approchait"
+          ],
+          "explanation": "Les routes étaient devenues de la boue, la ville avait été renforcée, et après environ trois semaines il a levé le siège."
+        },
+        "de": {
+          "question": "Warum scheiterte Süleymans Belagerung Wiens 1529?",
+          "options": [
+            "Der Papst schickte ein riesiges Heer",
+            "In seinem Lager brach die Pest aus",
+            "Seine Janitscharen meuterten",
+            "Wegen des Regens musste er seine schweren Kanonen zurücklassen, und der Winter nahte"
+          ],
+          "explanation": "Die Straßen versanken im Schlamm, die Stadt war verstärkt worden, und nach etwa drei Wochen brach er die Belagerung ab."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What was so unusual about Suleiman's relationship with Hürrem?",
+      "options": [
+        "She was his cousin",
+        "She ruled as sultan after him",
+        "He freed her from slavery and married her",
+        "She came from France"
+      ],
+      "explanation": "Ottoman sultans did not normally marry. Hürrem, captured as a girl and sold as a slave, became one of the most powerful women in Ottoman history.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was er zo bijzonder aan Suleimans relatie met Hürrem?",
+          "options": [
+            "Ze was zijn nicht",
+            "Ze regeerde na hem als sultan",
+            "Hij liet haar vrij uit de slavernij en trouwde met haar",
+            "Ze kwam uit Frankrijk"
+          ],
+          "explanation": "Ottomaanse sultans trouwden normaal gesproken niet. Hürrem, als meisje gevangengenomen en als slavin verkocht, werd een van de machtigste vrouwen uit de Ottomaanse geschiedenis."
+        },
+        "fr": {
+          "question": "Qu’avait d’inhabituel la relation de Soliman avec Hürrem ?",
+          "options": [
+            "Elle était sa cousine",
+            "Elle a régné comme sultane après lui",
+            "Il l’a affranchie de l’esclavage et l’a épousée",
+            "Elle venait de France"
+          ],
+          "explanation": "Les sultans ottomans ne se mariaient normalement pas. Hürrem, capturée enfant et vendue comme esclave, est devenue l’une des femmes les plus puissantes de l’histoire ottomane."
+        },
+        "de": {
+          "question": "Was war an Süleymans Beziehung zu Hürrem so ungewöhnlich?",
+          "options": [
+            "Sie war seine Cousine",
+            "Sie regierte nach ihm als Sultanin",
+            "Er befreite sie aus der Sklaverei und heiratete sie",
+            "Sie stammte aus Frankreich"
+          ],
+          "explanation": "Osmanische Sultane heirateten normalerweise nicht. Hürrem, als Mädchen gefangen und als Sklavin verkauft, wurde eine der mächtigsten Frauen der osmanischen Geschichte."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What did Suleiman's own people call him?",
+      "options": [
+        "Kanuni, the Lawgiver",
+        "The Magnificent",
+        "The Conqueror",
+        "The Grim"
+      ],
+      "explanation": "He and his scholars collected and organised the laws of the empire. 'The Magnificent' was the name Europeans gave him.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe noemde Suleimans eigen volk hem?",
+          "options": [
+            "Kanuni, de Wetgever",
+            "De Prachtlievende",
+            "De Veroveraar",
+            "De Grimmige"
+          ],
+          "explanation": "Hij en zijn geleerden verzamelden en ordenden de wetten van het rijk. 'De Prachtlievende' was de naam die de Europeanen hem gaven."
+        },
+        "fr": {
+          "question": "Comment son propre peuple appelait-il Soliman ?",
+          "options": [
+            "Kanuni, le Législateur",
+            "Le Magnifique",
+            "Le Conquérant",
+            "Le Terrible"
+          ],
+          "explanation": "Avec ses savants, il a rassemblé et organisé les lois de l’empire. « Le Magnifique » était le nom que lui donnaient les Européens."
+        },
+        "de": {
+          "question": "Wie nannte Süleymans eigenes Volk ihn?",
+          "options": [
+            "Kanuni, den Gesetzgeber",
+            "Den Prächtigen",
+            "Den Eroberer",
+            "Den Gestrengen"
+          ],
+          "explanation": "Mit seinen Gelehrten sammelte und ordnete er die Gesetze des Reiches. „Der Prächtige“ war der Name, den ihm die Europäer gaben."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "What happened to Suleiman's eldest son, Prince Mustafa, in 1553?",
+      "options": [
+        "He became sultan",
+        "He was executed in his father's tent",
+        "He fled to Persia",
+        "He died in battle at Vienna"
+      ],
+      "explanation": "Rumours spread that he planned to seize the throne. Whether he really plotted, or was turned against by Hürrem and the grand vizier, is still debated.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er in 1553 met Suleimans oudste zoon, prins Mustafa?",
+          "options": [
+            "Hij werd sultan",
+            "Hij werd in de tent van zijn vader terechtgesteld",
+            "Hij vluchtte naar Perzië",
+            "Hij sneuvelde bij Wenen"
+          ],
+          "explanation": "Er gingen geruchten dat hij de troon wilde grijpen. Of hij echt samenzwoer, of dat Hürrem en de grootvizier de sultan tegen hem opzetten, is nog altijd onduidelijk."
+        },
+        "fr": {
+          "question": "Qu’est-il arrivé au fils aîné de Soliman, le prince Mustafa, en 1553 ?",
+          "options": [
+            "Il est devenu sultan",
+            "Il a été exécuté dans la tente de son père",
+            "Il s’est enfui en Perse",
+            "Il est mort au combat devant Vienne"
+          ],
+          "explanation": "Le bruit courait qu’il voulait s’emparer du trône. A-t-il vraiment comploté, ou Hürrem et le grand vizir ont-ils monté le sultan contre lui ? On en débat encore."
+        },
+        "de": {
+          "question": "Was geschah 1553 mit Süleymans ältestem Sohn, Prinz Mustafa?",
+          "options": [
+            "Er wurde Sultan",
+            "Er wurde im Zelt seines Vaters hingerichtet",
+            "Er floh nach Persien",
+            "Er fiel vor Wien"
+          ],
+          "explanation": "Es gab Gerüchte, er wolle den Thron an sich reißen. Ob er wirklich eine Verschwörung plante oder ob Hürrem und der Großwesir den Sultan gegen ihn aufbrachten, ist bis heute umstritten."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Why was Suleiman's death at Szigetvár in 1566 kept secret for weeks?",
+      "options": [
+        "So the enemy would not attack",
+        "Because his body was lost",
+        "Because no one dared to tell Hürrem",
+        "So the army would not panic before the new sultan was safely on the throne"
+      ],
+      "explanation": "The grand vizier issued orders in the sultan's name, and a lookalike servant was said to sit in his carriage.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom werd de dood van Suleiman bij Szigetvár in 1566 wekenlang geheimgehouden?",
+          "options": [
+            "Zodat de vijand niet zou aanvallen",
+            "Omdat zijn lichaam zoek was",
+            "Omdat niemand het Hürrem durfde te vertellen",
+            "Zodat het leger niet in paniek zou raken voordat de nieuwe sultan veilig op de troon zat"
+          ],
+          "explanation": "De grootvizier gaf bevelen uit in naam van de sultan, en een bediende die op hem leek zou in zijn rijtuig hebben gezeten."
+        },
+        "fr": {
+          "question": "Pourquoi la mort de Soliman à Szigetvár en 1566 a-t-elle été tenue secrète pendant des semaines ?",
+          "options": [
+            "Pour que l’ennemi n’attaque pas",
+            "Parce que son corps avait disparu",
+            "Parce que personne n’osait le dire à Hürrem",
+            "Pour éviter la panique de l’armée avant que le nouveau sultan soit installé sur le trône"
+          ],
+          "explanation": "Le grand vizir donnait des ordres au nom du sultan, et un serviteur qui lui ressemblait aurait pris place dans sa voiture."
+        },
+        "de": {
+          "question": "Warum wurde Süleymans Tod bei Szigetvár 1566 wochenlang geheim gehalten?",
+          "options": [
+            "Damit der Feind nicht angriff",
+            "Weil sein Leichnam verschwunden war",
+            "Weil niemand es Hürrem zu sagen wagte",
+            "Damit das Heer nicht in Panik geriet, bevor der neue Sultan sicher auf dem Thron saß"
+          ],
+          "explanation": "Der Großwesir erließ Befehle im Namen des Sultans, und ein ihm ähnlich sehender Diener soll in seiner Kutsche gesessen haben."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}
