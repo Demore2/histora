@@ -29,6 +29,7 @@ npm run eas -- <cmd>           # eas-cli via npx (it is NOT a dependency — see
 npm run build:android:preview  # EAS APK build for your own device (needs `npm run eas -- login` first)
 npm run build:android:prod     # EAS AAB build for Play
 npm run submit:android         # eas submit → internal testing track
+npm run update:production -- "msg" # EAS Update: JS + assets live without Play (see "EAS Update")
 ```
 
 There is no test suite in this repo — don't invent test commands. `npx tsc --noEmit` is the
@@ -1267,6 +1268,25 @@ lokaal: `npx http-server docs -p 5510`.
   `push-sweep` gebruikt. Weet wat die kolom vandaag waard is: niets in de app schrijft hem na het
   aanmaken van de rij, dus hij draagt de waarde van dat moment. Dat is het bekende gat onder
   "Known gaps", geen reden om hier een tweede bron te verzinnen.
+
+### EAS Update (`expo-updates`, since 1.4.4)
+
+**New stories and JS-only fixes go live without a Play build**: `npm run update:production -- "Napoleon"`
+publishes the JS bundle plus changed assets to the `production` channel. Phones download it on the next
+launch (`checkAutomatically: ON_LOAD`, `fallbackToCacheTimeout: 0`, so never a blocking wait) and run
+it from the launch after that.
+
+- **`runtimeVersion` is `appVersion`.** An update only reaches builds with exactly the same
+  `expo.version`. So: a native change (new package, icon, permission, plugin) = bump the version **and**
+  build; content and JS = keep the version and `update:production`. Never publish an update after
+  bumping the version without building, or it reaches nobody.
+- **Builds with an older version (≤ 1.4.3, no `expo-updates`) never get updates.** They update through
+  Play as before.
+- `eas.json` sets `channel` per build profile (`production`, `preview`); `--environment production`
+  makes the update use the EAS env vars, same as the build, not `.env.local`.
+- Supabase-side story parts (quiz questions, `story_catalog`) are already live without either.
+- Expo free plan: 1,000 update MAU/month (users above that simply keep the Play version), and
+  **15 Android builds/month** — the reason to prefer updates.
 
 ### Release & store assets (`eas.json`, `store/`, LAUNCH-PLAN.md A3/A6)
 

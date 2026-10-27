@@ -2,9 +2,14 @@
   "expo": {
     "name": "Histora",
     "slug": "chronicles-app",
-    "version": "1.4.3",
+    "version": "1.4.4",
     "runtimeVersion": {
       "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/02bae099-48ac-4e85-8548-e6da63465e35",
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 0
     },
     "orientation": "portrait",
     "icon": "./assets/images/app-icon.png",
