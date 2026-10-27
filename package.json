@@ -85,7 +85,7 @@
     "eas": "npx --yes eas-cli@^21.4.0",
     "build:android:preview": "npm run eas -- build --profile preview --platform android",
     "build:android:prod": "npm run eas -- build --profile production --platform android",
-    "update:production": "npm run eas -- update --channel production --environment production --message",
+    "update:production": "npm run eas -- update --channel production --environment production --platform android --message",
     "submit:android": "npm run eas -- submit --profile internal --platform android",
     "submit:android:prod": "npm run eas -- submit --profile production --platform android",
     "generate:map-data": "node scripts/generate-map-data.mjs",
