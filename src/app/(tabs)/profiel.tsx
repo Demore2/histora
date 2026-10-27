@@ -1,6 +1,7 @@
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { AdBanner } from '@/components/ad-banner';
 import { KopActies } from '@/components/kop-acties';
 import { ProAccessBanner } from '@/components/pro-access-banner';
 import { ProfileCharacterCollection } from '@/components/profile-character-collection';
@@ -49,6 +50,11 @@ export default function ProfielScreen() {
           <ProfileHeader />
           <ProfileStats />
           <ProfileCharacterCollection />
+          {/* Banner onder de collectie (1.4.3, wens van de eigenaar). Rendert niets voor Pro of
+              zolang er geen advertentie geladen is. */}
+          <View style={styles.advertentie}>
+            <AdBanner />
+          </View>
           {/* Hier stond `<PrestatieRaster />`. De mijlpalen staan nu alleen nog op Voortgang
               (`achievements-grid.tsx`), en met opzet op één plek: twee rasters van dezelfde
               veertien badges, elk met hun eigen teller, laten je bij een verschil zoeken welke
@@ -72,6 +78,9 @@ const styles = StyleSheet.create({
   },
   safeArea: {
     flex: 1,
+  },
+  advertentie: {
+    paddingHorizontal: Spacing.four,
   },
   scrollContent: {
     paddingTop: Spacing.three,

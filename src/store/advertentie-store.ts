@@ -12,11 +12,14 @@ type AdvertentieState = {
   klaar: boolean;
   /** UMP zegt dat de lezer zijn advertentiekeuze moet kunnen herzien (EU). Toont een regel in Instellingen. */
   privacyKeuzesNodig: boolean;
-  zet: (deel: Partial<Pick<AdvertentieState, 'klaar' | 'privacyKeuzesNodig'>>) => void;
+  /** Er staat een beloonde advertentie klaar ("+1 leven" op Explore). */
+  beloondKlaar: boolean;
+  zet: (deel: Partial<Pick<AdvertentieState, 'klaar' | 'privacyKeuzesNodig' | 'beloondKlaar'>>) => void;
 };
 
 export const useAdvertentieStore = create<AdvertentieState>((set) => ({
   klaar: false,
   privacyKeuzesNodig: false,
+  beloondKlaar: false,
   zet: (deel) => set(deel),
 }));

@@ -23,6 +23,7 @@ import { useAdvertentieStore } from '@/store/advertentie-store';
 
 type AdSdk = typeof import('react-native-google-mobile-ads');
 type Interstitial = ReturnType<AdSdk['InterstitialAd']['createForAdRequest']>;
+type Beloond = ReturnType<AdSdk['RewardedAd']['createForAdRequest']>;
 
 /** `undefined` = nog niet geprobeerd, `null` = niet beschikbaar op dit platform of deze build. */
 let sdk: AdSdk | null | undefined;
@@ -30,6 +31,7 @@ let waarschuwingGetoond = false;
 let start: Promise<boolean> | null = null;
 let interstitial: Interstitial | null = null;
 let interstitialGeladen = false;
+let beloond: Beloond | null = null;
 
 export function laadAdSdk(): AdSdk | null {
   // Alleen Android: er is geen iOS-app, en dus ook geen iOS-app-ID in AdMob.
@@ -57,10 +59,12 @@ export function laadAdSdk(): AdSdk | null {
  * In `__DEV__` altijd de test-eenheid van Google, ook als de echte al is ingevuld: een eigen
  * advertentie aantikken tijdens het testen is voor AdMob ongeldig verkeer.
  */
-export function eenheidVoor(plek: 'banner' | 'interstitial'): string | null {
+export function eenheidVoor(plek: 'banner' | 'interstitial' | 'beloond'): string | null {
   const ad = laadAdSdk();
   if (!ad) return null;
-  if (__DEV__) return plek === 'banner' ? ad.TestIds.ADAPTIVE_BANNER : ad.TestIds.INTERSTITIAL;
+  if (__DEV__) {
+    return plek === 'banner' ? ad.TestIds.ADAPTIVE_BANNER : plek === 'interstitial' ? ad.TestIds.INTERSTITIAL : ad.TestIds.REWARDED;
+  }
   return ADMOB_EENHEDEN[plek];
 }
 
@@ -102,6 +106,7 @@ export function startAdvertenties(): Promise<boolean> {
 
       useAdvertentieStore.getState().zet({ klaar: true });
       laadInterstitial();
+      laadBeloond();
       return true;
     } catch (fout) {
       console.warn('[advertenties] starten mislukt:', fout);
@@ -167,6 +172,71 @@ export function toonInterstitial(): Promise<boolean> {
     const sluit = huidig.addAdEventListener(ad.AdEventType.CLOSED, () => rond(true));
     const fout = huidig.addAdEventListener(ad.AdEventType.ERROR, () => rond(false));
     huidig.show().catch(() => rond(false));
+  });
+}
+
+/**
+ * De beloonde advertentie voor "+1 leven" op Explore (1.4.3), vooraf geladen zodat de knop meteen
+ * werkt. `beloondKlaar` in de store zegt of er een staat: de knop verschijnt alleen dan, want een
+ * knop die "even laden…" zegt en dan niets doet is erger dan geen knop.
+ */
+function laadBeloond(): void {
+  const ad = laadAdSdk();
+  const eenheid = eenheidVoor('beloond');
+  if (!ad || !eenheid || !useAdvertentieStore.getState().klaar) return;
+  if (beloond) return;
+
+  try {
+    const nieuw = ad.RewardedAd.createForAdRequest(eenheid);
+    nieuw.addAdEventListener(ad.RewardedAdEventType.LOADED, () => {
+      useAdvertentieStore.getState().zet({ beloondKlaar: true });
+    });
+    nieuw.addAdEventListener(ad.AdEventType.ERROR, () => {
+      beloond = null;
+      useAdvertentieStore.getState().zet({ beloondKlaar: false });
+    });
+    beloond = nieuw;
+    nieuw.load();
+  } catch (fout) {
+    beloond = null;
+    console.warn('[advertenties] beloonde advertentie laden mislukt:', fout);
+  }
+}
+
+/**
+ * Toont de beloonde advertentie en wacht tot hij dicht is. `true` alleen als AdMob
+ * `EARNED_REWARD` meldde — wie hem halverwege wegklikt krijgt niets. Het leven zelf kent de
+ * server toe (`trivia_leven_bij_advertentie`), deze functie zegt alleen óf het verdiend is.
+ * Laadt daarna meteen de volgende.
+ */
+export function toonBeloond(): Promise<boolean> {
+  const ad = laadAdSdk();
+  const huidig = beloond;
+  if (!ad || !huidig || !useAdvertentieStore.getState().beloondKlaar) {
+    laadBeloond();
+    return Promise.resolve(false);
+  }
+
+  return new Promise((resolve) => {
+    let verdiend = false;
+    let klaar = false;
+    const rond = () => {
+      if (klaar) return;
+      klaar = true;
+      beloning();
+      sluit();
+      fout();
+      beloond = null;
+      useAdvertentieStore.getState().zet({ beloondKlaar: false });
+      laadBeloond();
+      resolve(verdiend);
+    };
+    const beloning = huidig.addAdEventListener(ad.RewardedAdEventType.EARNED_REWARD, () => {
+      verdiend = true;
+    });
+    const sluit = huidig.addAdEventListener(ad.AdEventType.CLOSED, rond);
+    const fout = huidig.addAdEventListener(ad.AdEventType.ERROR, rond);
+    huidig.show().catch(rond);
   });
 }
 

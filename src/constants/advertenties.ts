@@ -20,9 +20,12 @@
  * `build.gradle` op "Cannot get property 'googleMobileAdsJson'". Expo meldt bij elk commando dat het
  * die extra sleutel negeert. Dat klopt, want hij is alleen voor Gradle bedoeld.
  */
-export const ADMOB_EENHEDEN: { banner: string | null; interstitial: string | null } = {
+export const ADMOB_EENHEDEN: { banner: string | null; interstitial: string | null; beloond: string | null } = {
   banner: 'ca-app-pub-5960565412463172/4405971174', // banner-main
   interstitial: 'ca-app-pub-5960565412463172/3587713526', // interstitial-story-end
+  // "Watch an ad for +1 life" op Explore (1.4.3). Op `null` zetten haalt de knop uit een
+  // productiebuild; in `__DEV__` draait hij altijd op Google's test-eenheid.
+  beloond: 'ca-app-pub-5960565412463172/3973568784', // rewarded-trivia-life
 };
 
 /**
@@ -31,3 +34,12 @@ export const ADMOB_EENHEDEN: { banner: string | null; interstitial: string | nul
  * onderbreking zijn. Keuze van de eigenaar, 2026-10-22.
  */
 export const ADS_ENABLED = true;
+
+/**
+ * Waar de banner (`AdBanner`) staat, sinds 1.4.3: Home, de routekaart van een tijdperk, Profiel
+ * (onder de personagecollectie) en de Winkel (onderaan). **Niet in de reader** (zie hierboven) en
+ * **niet op Explore**: daar zitten snelle spelknoppen, en een banner naast knoppen waar je snel op
+ * tikt levert per ongeluk geklikte advertenties op — dat is precies het ongeldige verkeer waar
+ * AdMob accounts voor schorst. Explore heeft in plaats daarvan de beloonde advertentie (+1 leven),
+ * en die kiest de lezer zelf.
+ */

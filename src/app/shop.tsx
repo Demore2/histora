@@ -5,6 +5,7 @@ import { useCallback, useState } from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { AdBanner } from '@/components/ad-banner';
 import { AnimatedPressable } from '@/components/animated-pressable';
 import { KopActies } from '@/components/kop-acties';
 import { ThemedText } from '@/components/themed-text';
@@ -169,6 +170,10 @@ export default function ShopScreen() {
           <ThemedText type="caption" themeColor="textSecondary" style={styles.voet}>
             {t((s) => s.winkel.pakkettenBinnenkort)}
           </ThemedText>
+
+          {/* Onderaan, onder alles wat je kunt kopen (1.4.3): een banner tussen de producten zou
+              op een knop lijken. Rendert niets voor Pro of zonder geladen advertentie. */}
+          <AdBanner />
         </ScrollView>
       </SafeAreaView>
     </ThemedView>

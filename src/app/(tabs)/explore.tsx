@@ -16,14 +16,17 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { TriviaVraag } from '@/components/trivia-vraag';
 import { TriviaWiel, type WielVak } from '@/components/trivia-wiel';
+import { meld } from '@/constants/dialoog';
 import { ERA_KOP } from '@/constants/era-koppen';
 import { Motion } from '@/constants/motion';
 import { MAX_LEESBREEDTE, Radii, Spacing, withAlpha } from '@/constants/theme';
 import { getActieveTijdperken } from '@/constants/tijdperken';
 import { useTheme } from '@/hooks/use-theme';
 import { useVertaling } from '@/hooks/use-vertaling';
+import { toonBeloond } from '@/lib/advertenties';
 import {
   haalTriviaStand,
+  levenVoorAdvertentie,
   trekVraag,
   TriviaFout,
   type TijdperkId,
@@ -38,6 +41,7 @@ import {
   useTriviaStore,
   type Modus,
 } from '@/store/trivia-store';
+import { useAdvertentieStore } from '@/store/advertentie-store';
 
 const GOUD = '#F2C230';
 
@@ -71,6 +75,11 @@ export default function ExploreScreen() {
   const { t, v } = useVertaling();
   const { width } = useWindowDimensions();
   const proAanbod = useProAanbodZichtbaar();
+  // "+1 leven voor een advertentie" (1.4.3): alleen als er echt een advertentie klaarstaat, en niet
+  // meer nadat de server deze sessie het dagplafond meldde.
+  const beloondKlaar = useAdvertentieStore((s) => s.beloondKlaar);
+  const [advertentieBezig, setAdvertentieBezig] = useState(false);
+  const [advertentiesOp, setAdvertentiesOp] = useState(false);
   const tijdperken = getActieveTijdperken();
 
   const modus = useTriviaStore((s) => s.modus);
@@ -135,6 +144,30 @@ export default function ExploreScreen() {
   const robotAanZet = isDuel && duel.beurt === 'robot' && duel.winnaar === null;
   const zonderLevens = stand !== null && !stand.pro && stand.levens <= 0;
   const wielMaat = Math.min(width - Spacing.four * 2, 320);
+
+  /**
+   * Advertentie bekijken → pas na `EARNED_REWARD` de server om het leven vragen. De server kent het
+   * toe en bewaakt het plafond; wegklikken levert niets op en zegt ook niets.
+   */
+  async function levenViaAdvertentie() {
+    setAdvertentieBezig(true);
+    try {
+      const verdiend = await toonBeloond();
+      if (!verdiend) return;
+      setStand(await levenVoorAdvertentie());
+    } catch (fout) {
+      if (fout instanceof TriviaFout && fout.soort === 'advertentie_limiet') {
+        setAdvertentiesOp(true);
+        meld(t((s) => s.explore.advertentieLimietTitel), t((s) => s.explore.advertentieLimietTekst), t((s) => s.instellingen.ok));
+      } else {
+        // `levens_vol` (er kwam intussen vanzelf een terug) of netwerk: de stand opnieuw ophalen
+        // laat zien wat er werkelijk is.
+        haalTriviaStand().then(setStand).catch(() => {});
+      }
+    } finally {
+      setAdvertentieBezig(false);
+    }
+  }
 
   const naamVan = (id: TijdperkId) => {
     const tp = tijdperken.find((x) => x.id === id);
@@ -292,6 +325,15 @@ export default function ExploreScreen() {
                 <ThemedText style={styles.midden}>
                   {t((s) => s.explore.geenLevensTekst)(tijdTot(stand?.volgendeOm ?? null, nu, t((s) => s.explore.duur)))}
                 </ThemedText>
+                {beloondKlaar && !advertentiesOp && (
+                  <Knop
+                    tekst={advertentieBezig ? t((s) => s.explore.advertentieBezig) : t((s) => s.explore.advertentieKnop)}
+                    kleur={theme.gevaar}
+                    onPress={() => {
+                      if (!advertentieBezig) void levenViaAdvertentie();
+                    }}
+                  />
+                )}
                 {proAanbod && <Knop tekst={t((s) => s.explore.proKnop)} kleur={theme.accent} onPress={() => setToonPaywall(true)} />}
               </View>
             ) : kroonKlaar ? (

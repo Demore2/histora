@@ -77,7 +77,9 @@ function leesVertalingen(waarde: unknown): TriviaVraag['vertalingen'] {
 
 /** Fouten die de server bewust gooit, zodat het scherm er iets zinnigs mee kan. */
 export class TriviaFout extends Error {
-  constructor(public readonly soort: 'geen_levens' | 'geen_vragen' | 'onbekend') {
+  constructor(
+    public readonly soort: 'geen_levens' | 'geen_vragen' | 'levens_vol' | 'advertentie_limiet' | 'onbekend'
+  ) {
     super(soort);
   }
 }
@@ -86,11 +88,24 @@ function vertaalFout(error: { message?: string }): TriviaFout {
   const bericht = error.message ?? '';
   if (bericht.includes('geen_levens')) return new TriviaFout('geen_levens');
   if (bericht.includes('geen_vragen')) return new TriviaFout('geen_vragen');
+  if (bericht.includes('levens_vol')) return new TriviaFout('levens_vol');
+  if (bericht.includes('advertentie_limiet')) return new TriviaFout('advertentie_limiet');
   return new TriviaFout('onbekend');
 }
 
 export async function haalTriviaStand(): Promise<TriviaStand> {
   const { data, error } = await supabase.rpc('trivia_stand');
+  if (error) throw vertaalFout(error);
+  return leesStand(data);
+}
+
+/**
+ * Eén leven erbij na een bekeken beloonde advertentie (1.4.3). De server kent het toe en bewaakt
+ * het dagplafond (`supabase/trivia-advertentie-migratie.sql`); de app roept dit alleen aan nadat
+ * AdMob de beloning meldde.
+ */
+export async function levenVoorAdvertentie(): Promise<TriviaStand> {
+  const { data, error } = await supabase.rpc('trivia_leven_bij_advertentie');
   if (error) throw vertaalFout(error);
   return leesStand(data);
 }
