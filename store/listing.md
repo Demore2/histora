@@ -98,7 +98,7 @@ The interface and the questions are available in English, Dutch, French and Germ
 
 FREE AND PRO
 
-Histora is free to download and read online: two new stories a day, and every story you have started stays open. Histora Pro removes the daily limit and all ads, gives you unlimited lives in Explore and lets you read offline. It is a monthly or yearly subscription through Google Play, and you can cancel any time in the Play Store.
+Histora is free to download and read online: two new stories a day, and every story you have started stays open. Histora Pro removes the daily limit and all ads, gives you unlimited lives in Explore and lets you read offline. It is a monthly or yearly subscription through Google Play, with a 7-day free trial for new subscribers, and you can cancel any time in the Play Store.
 ```
 
 ---
