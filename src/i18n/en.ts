@@ -48,7 +48,7 @@ const en = {
   /** De reiskaart bovenaan Home (`reis-kaart.tsx`): de tijdlijn van Rome tot vandaag. */
   reis: {
     beginKop: 'Your journey starts here',
-    beginTitel: 'From the founding of Rome to the world today',
+    beginTitel: 'From the pharaohs to the world today',
     beginTekst: (titel: string) => `First stop: ${titel}`,
     beginKnop: 'Begin the journey',
     verderKop: 'Continue your journey',
@@ -58,7 +58,7 @@ const en = {
     volgendeKnop: 'Start reading',
     positie: (positie: number, totaal: number) => `Stop ${positie} of ${totaal}`,
     klaarKop: 'Journey complete',
-    klaarTitel: 'You travelled all the way from Rome to today',
+    klaarTitel: 'You travelled all the way from the pharaohs to today',
     klaarTekst: 'New stories are on their way. Until then, test what you remember.',
     klaarKnop: 'Play Explore',
     tijdperkGelezen: (uit: number, totaal: number) => `${uit}/${totaal} read`,
@@ -364,7 +364,7 @@ const en = {
     voortgangWissenBevestig: 'Reset progress',
     voortgangWissenBezig: 'Resetting…',
     voortgangGewistTitel: 'Progress reset',
-    voortgangGewistTekst: 'Your journey starts again in Rome.',
+    voortgangGewistTekst: 'Your journey starts again at the very beginning.',
     voortgangWissenMisluktTitel: 'Could not reset',
     voortgangWissenMisluktTekst: 'Nothing was changed. Check your connection and try again.',
     accountVerwijderen: 'Delete account',

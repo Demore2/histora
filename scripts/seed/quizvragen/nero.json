@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Who was Nero's mother, who was determined that her son would become emperor?",
+      "options": [
+        "Agrippina the Younger",
+        "Livia",
+        "Octavia",
+        "Poppaea"
+      ],
+      "explanation": "A great-granddaughter of Augustus, she married the emperor Claudius and made sure Nero, not Claudius's own son, would succeed him.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie was de moeder van Nero, die vastbesloten was dat haar zoon keizer zou worden?",
+          "options": [
+            "Agrippina de Jongere",
+            "Livia",
+            "Octavia",
+            "Poppaea"
+          ],
+          "explanation": "Als achterkleindochter van Augustus trouwde ze met keizer Claudius en zorgde ze ervoor dat Nero hem zou opvolgen, en niet Claudius' eigen zoon."
+        },
+        "fr": {
+          "question": "Qui était la mère de Néron, bien décidée à faire de son fils un empereur ?",
+          "options": [
+            "Agrippine la Jeune",
+            "Livie",
+            "Octavie",
+            "Poppée"
+          ],
+          "explanation": "Arrière-petite-fille d’Auguste, elle a épousé l’empereur Claude et fait en sorte que Néron, et non le propre fils de Claude, lui succède."
+        },
+        "de": {
+          "question": "Wer war Neros Mutter, die fest entschlossen war, ihren Sohn zum Kaiser zu machen?",
+          "options": [
+            "Agrippina die Jüngere",
+            "Livia",
+            "Octavia",
+            "Poppaea"
+          ],
+          "explanation": "Als Urenkelin des Augustus heiratete sie Kaiser Claudius und sorgte dafür, dass Nero, nicht Claudius' eigener Sohn, sein Nachfolger wurde."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "How old was Nero when he became emperor in AD 54?",
+      "options": [
+        "Twelve",
+        "Sixteen",
+        "Twenty-two",
+        "Thirty"
+      ],
+      "explanation": "The Praetorian Guard proclaimed him emperor after Claudius died, probably poisoned, according to the ancient historians.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe oud was Nero toen hij in 54 n.Chr. keizer werd?",
+          "options": [
+            "Twaalf",
+            "Zestien",
+            "Tweeëntwintig",
+            "Dertig"
+          ],
+          "explanation": "De pretoriaanse garde riep hem tot keizer uit na de dood van Claudius, die volgens de oude geschiedschrijvers waarschijnlijk vergiftigd was."
+        },
+        "fr": {
+          "question": "Quel âge avait Néron quand il est devenu empereur en 54 apr. J.-C. ?",
+          "options": [
+            "Douze ans",
+            "Seize ans",
+            "Vingt-deux ans",
+            "Trente ans"
+          ],
+          "explanation": "La garde prétorienne l’a proclamé empereur après la mort de Claude, probablement empoisonné selon les historiens anciens."
+        },
+        "de": {
+          "question": "Wie alt war Nero, als er 54 n. Chr. Kaiser wurde?",
+          "options": [
+            "Zwölf",
+            "Sechzehn",
+            "Zweiundzwanzig",
+            "Dreißig"
+          ],
+          "explanation": "Die Prätorianergarde rief ihn nach dem Tod des Claudius zum Kaiser aus, der laut den antiken Historikern wohl vergiftet worden war."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Which famous philosopher was Nero's tutor and wrote his early speeches?",
+      "options": [
+        "Socrates",
+        "Plato",
+        "Seneca",
+        "Cicero"
+      ],
+      "explanation": "Seneca and the guard commander Burrus ran the empire well in Nero's first years. In AD 65 Nero ordered Seneca to kill himself.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke beroemde filosoof was de leraar van Nero en schreef zijn eerste toespraken?",
+          "options": [
+            "Socrates",
+            "Plato",
+            "Seneca",
+            "Cicero"
+          ],
+          "explanation": "Seneca en de gardecommandant Burrus bestuurden het rijk in Nero's eerste jaren goed. In 65 n.Chr. beval Nero Seneca zich van het leven te beroven."
+        },
+        "fr": {
+          "question": "Quel célèbre philosophe était le précepteur de Néron et a écrit ses premiers discours ?",
+          "options": [
+            "Socrate",
+            "Platon",
+            "Sénèque",
+            "Cicéron"
+          ],
+          "explanation": "Sénèque et le chef de la garde Burrus ont bien gouverné l’empire durant les premières années de Néron. En 65, Néron a ordonné à Sénèque de se donner la mort."
+        },
+        "de": {
+          "question": "Welcher berühmte Philosoph war Neros Lehrer und schrieb seine ersten Reden?",
+          "options": [
+            "Sokrates",
+            "Platon",
+            "Seneca",
+            "Cicero"
+          ],
+          "explanation": "Seneca und der Gardekommandant Burrus führten das Reich in Neros ersten Jahren gut. 65 n. Chr. befahl Nero Seneca, sich das Leben zu nehmen."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "How did Nero first try to kill his mother, Agrippina?",
+      "options": [
+        "With poisoned mushrooms",
+        "With a hidden dagger",
+        "By setting her house on fire",
+        "With a boat designed to collapse at sea"
+      ],
+      "explanation": "The plan failed: Agrippina swam to safety. Nero then sent soldiers to her villa, and she was killed.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe probeerde Nero zijn moeder Agrippina eerst te doden?",
+          "options": [
+            "Met vergiftigde paddenstoelen",
+            "Met een verborgen dolk",
+            "Door haar huis in brand te steken",
+            "Met een boot die op zee in elkaar moest storten"
+          ],
+          "explanation": "Het plan mislukte: Agrippina zwom in veiligheid. Daarna stuurde Nero soldaten naar haar villa, en werd ze gedood."
+        },
+        "fr": {
+          "question": "Comment Néron a-t-il d’abord tenté de tuer sa mère, Agrippine ?",
+          "options": [
+            "Avec des champignons empoisonnés",
+            "Avec un poignard caché",
+            "En incendiant sa maison",
+            "Avec un bateau conçu pour s’effondrer en mer"
+          ],
+          "explanation": "Le plan a échoué : Agrippine a nagé jusqu’à la côte. Néron a alors envoyé des soldats à sa villa, et elle a été tuée."
+        },
+        "de": {
+          "question": "Wie versuchte Nero zuerst, seine Mutter Agrippina zu töten?",
+          "options": [
+            "Mit giftigen Pilzen",
+            "Mit einem versteckten Dolch",
+            "Indem er ihr Haus in Brand steckte",
+            "Mit einem Boot, das auf See zusammenbrechen sollte"
+          ],
+          "explanation": "Der Plan scheiterte: Agrippina schwamm in Sicherheit. Daraufhin schickte Nero Soldaten zu ihrer Villa, und sie wurde getötet."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Why did Roman aristocrats find it scandalous that Nero sang and acted in public?",
+      "options": [
+        "Performers were among the lowest people in Roman society",
+        "Singing in public was illegal",
+        "He sang only in Greek",
+        "Emperors were not allowed to leave the palace"
+      ],
+      "explanation": "Actors and charioteers had very low status in Rome. An emperor performing on stage seemed shameful to the upper classes.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom vonden Romeinse aristocraten het schandalig dat Nero in het openbaar zong en acteerde?",
+          "options": [
+            "Artiesten behoorden tot de laagste mensen in de Romeinse samenleving",
+            "In het openbaar zingen was verboden",
+            "Hij zong alleen in het Grieks",
+            "Keizers mochten het paleis niet verlaten"
+          ],
+          "explanation": "Acteurs en wagenmenners hadden in Rome een heel lage status. Een keizer die optrad leek de hogere klassen een schande."
+        },
+        "fr": {
+          "question": "Pourquoi les aristocrates romains trouvaient-ils scandaleux que Néron chante et joue en public ?",
+          "options": [
+            "Les artistes comptaient parmi les plus méprisés de la société romaine",
+            "Chanter en public était interdit",
+            "Il ne chantait qu’en grec",
+            "Les empereurs n’avaient pas le droit de quitter le palais"
+          ],
+          "explanation": "Les acteurs et les cochers avaient un statut très bas à Rome. Un empereur sur scène paraissait honteux aux classes supérieures."
+        },
+        "de": {
+          "question": "Warum fanden römische Aristokraten es skandalös, dass Nero öffentlich sang und schauspielerte?",
+          "options": [
+            "Darsteller gehörten zu den Niedrigsten der römischen Gesellschaft",
+            "Öffentliches Singen war verboten",
+            "Er sang nur auf Griechisch",
+            "Kaiser durften den Palast nicht verlassen"
+          ],
+          "explanation": "Schauspieler und Wagenlenker hatten in Rom ein sehr geringes Ansehen. Ein auftretender Kaiser galt der Oberschicht als Schande."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Why can the saying 'Nero fiddled while Rome burned' not be literally true?",
+      "options": [
+        "He was in Greece at the time",
+        "The violin had not yet been invented",
+        "He could not play any instrument",
+        "The fire happened after his death"
+      ],
+      "explanation": "There was a rumour that he sang about the fall of Troy while the city burned, but even Tacitus reports it only as a rumour. Nero was at Antium when the fire began.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom kan het gezegde 'Nero speelde viool terwijl Rome brandde' niet letterlijk waar zijn?",
+          "options": [
+            "Hij was op dat moment in Griekenland",
+            "De viool was nog niet uitgevonden",
+            "Hij kon geen enkel instrument bespelen",
+            "De brand was na zijn dood"
+          ],
+          "explanation": "Er ging een gerucht dat hij over de val van Troje zong terwijl de stad brandde, maar zelfs Tacitus noemt het slechts een gerucht. Nero was in Antium toen de brand begon."
+        },
+        "fr": {
+          "question": "Pourquoi l’expression « Néron jouait du violon pendant que Rome brûlait » ne peut-elle pas être vraie au sens littéral ?",
+          "options": [
+            "Il était en Grèce à ce moment-là",
+            "Le violon n’avait pas encore été inventé",
+            "Il ne savait jouer d’aucun instrument",
+            "L’incendie a eu lieu après sa mort"
+          ],
+          "explanation": "La rumeur disait qu’il chantait la chute de Troie pendant que la ville brûlait, mais même Tacite ne la rapporte que comme une rumeur. Néron était à Antium quand l’incendie a commencé."
+        },
+        "de": {
+          "question": "Warum kann die Redewendung „Nero spielte Geige, während Rom brannte“ nicht wörtlich stimmen?",
+          "options": [
+            "Er war damals in Griechenland",
+            "Die Geige war noch nicht erfunden",
+            "Er konnte kein Instrument spielen",
+            "Der Brand ereignete sich nach seinem Tod"
+          ],
+          "explanation": "Es gab das Gerücht, er habe über den Fall Trojas gesungen, während die Stadt brannte, doch selbst Tacitus nennt es nur ein Gerücht. Nero war in Antium, als das Feuer ausbrach."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Whom did Nero blame for the Great Fire of Rome in AD 64?",
+      "options": [
+        "The Senate",
+        "Foreign spies",
+        "The Christians",
+        "His mother"
+      ],
+      "explanation": "According to Tacitus, many Christians were arrested and put to death in horrific ways. Christian tradition says Peter and Paul died in Rome under Nero.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie kreeg van Nero de schuld van de Grote Brand van Rome in 64 n.Chr.?",
+          "options": [
+            "De senaat",
+            "Buitenlandse spionnen",
+            "De christenen",
+            "Zijn moeder"
+          ],
+          "explanation": "Volgens Tacitus werden veel christenen opgepakt en op gruwelijke wijze gedood. Volgens de christelijke traditie stierven Petrus en Paulus onder Nero in Rome."
+        },
+        "fr": {
+          "question": "Qui Néron a-t-il accusé du grand incendie de Rome en 64 apr. J.-C. ?",
+          "options": [
+            "Le Sénat",
+            "Des espions étrangers",
+            "Les chrétiens",
+            "Sa mère"
+          ],
+          "explanation": "Selon Tacite, de nombreux chrétiens ont été arrêtés et mis à mort de manière atroce. La tradition chrétienne veut que Pierre et Paul soient morts à Rome sous Néron."
+        },
+        "de": {
+          "question": "Wem gab Nero die Schuld am Großen Brand Roms im Jahr 64 n. Chr.?",
+          "options": [
+            "Dem Senat",
+            "Ausländischen Spionen",
+            "Den Christen",
+            "Seiner Mutter"
+          ],
+          "explanation": "Laut Tacitus wurden viele Christen verhaftet und auf grausame Weise getötet. Nach christlicher Überlieferung starben Petrus und Paulus unter Nero in Rom."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What were Nero's last words, according to the historian Suetonius?",
+      "options": [
+        "\"Rome is mine!\"",
+        "\"I came, I saw, I conquered.\"",
+        "\"You too, Brutus?\"",
+        "\"What an artist dies in me!\""
+      ],
+      "explanation": "Abandoned by his guards and declared a public enemy, Nero took his own life in June AD 68, aged thirty.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat waren volgens de geschiedschrijver Suetonius de laatste woorden van Nero?",
+          "options": [
+            "\"Rome is van mij!\"",
+            "\"Ik kwam, ik zag, ik overwon.\"",
+            "\"Jij ook, Brutus?\"",
+            "\"Wat een kunstenaar gaat er met mij verloren!\""
+          ],
+          "explanation": "In de steek gelaten door zijn garde en tot staatsvijand verklaard, beroofde Nero zich in juni 68 n.Chr. van het leven, dertig jaar oud."
+        },
+        "fr": {
+          "question": "Quelles furent les dernières paroles de Néron, selon l’historien Suétone ?",
+          "options": [
+            "« Rome est à moi ! »",
+            "« Je suis venu, j’ai vu, j’ai vaincu. »",
+            "« Toi aussi, Brutus ? »",
+            "« Quel artiste périt avec moi ! »"
+          ],
+          "explanation": "Abandonné par sa garde et déclaré ennemi public, Néron s’est donné la mort en juin 68, à trente ans."
+        },
+        "de": {
+          "question": "Was waren laut dem Historiker Sueton Neros letzte Worte?",
+          "options": [
+            "„Rom gehört mir!“",
+            "„Ich kam, sah und siegte.“",
+            "„Auch du, Brutus?“",
+            "„Welch ein Künstler stirbt mit mir!“"
+          ],
+          "explanation": "Von seiner Garde verlassen und zum Staatsfeind erklärt, nahm sich Nero im Juni 68 n. Chr. im Alter von dreißig Jahren das Leben."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

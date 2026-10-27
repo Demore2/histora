@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What did the young Hannibal swear to his father at the altar?",
+      "options": [
+        "That he would never be a friend of Rome",
+        "That he would become king of Carthage",
+        "That he would conquer Spain",
+        "That he would never marry"
+      ],
+      "explanation": "Hannibal told the story himself many years later. He was nine years old when his father made him place his hand on the altar.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat zwoer de jonge Hannibal zijn vader bij het altaar?",
+          "options": [
+            "Dat hij nooit een vriend van Rome zou zijn",
+            "Dat hij koning van Carthago zou worden",
+            "Dat hij Spanje zou veroveren",
+            "Dat hij nooit zou trouwen"
+          ],
+          "explanation": "Hannibal vertelde het verhaal jaren later zelf. Hij was negen toen zijn vader hem zijn hand op het altaar liet leggen."
+        },
+        "fr": {
+          "question": "Qu’a juré le jeune Hannibal à son père devant l’autel ?",
+          "options": [
+            "De ne jamais être l’ami de Rome",
+            "De devenir roi de Carthage",
+            "De conquérir l’Espagne",
+            "De ne jamais se marier"
+          ],
+          "explanation": "Hannibal a lui-même raconté cette histoire bien des années plus tard. Il avait neuf ans quand son père lui a fait poser la main sur l’autel."
+        },
+        "de": {
+          "question": "Was schwor der junge Hannibal seinem Vater am Altar?",
+          "options": [
+            "Niemals ein Freund Roms zu sein",
+            "König von Karthago zu werden",
+            "Spanien zu erobern",
+            "Niemals zu heiraten"
+          ],
+          "explanation": "Hannibal erzählte die Geschichte viele Jahre später selbst. Er war neun, als sein Vater ihn die Hand auf den Altar legen ließ."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "The siege of which Spanish city started the Second Punic War?",
+      "options": [
+        "Carthago Nova",
+        "Saguntum",
+        "Gades",
+        "Toletum"
+      ],
+      "explanation": "Saguntum was allied with Rome. When Hannibal took it after an eight-month siege and Carthage refused to hand him over, Rome declared war.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Het beleg van welke Spaanse stad was het begin van de Tweede Punische Oorlog?",
+          "options": [
+            "Carthago Nova",
+            "Saguntum",
+            "Gades",
+            "Toletum"
+          ],
+          "explanation": "Saguntum was een bondgenoot van Rome. Toen Hannibal de stad na acht maanden beleg innam en Carthago weigerde hem uit te leveren, verklaarde Rome de oorlog."
+        },
+        "fr": {
+          "question": "Le siège de quelle ville espagnole a déclenché la deuxième guerre punique ?",
+          "options": [
+            "Carthago Nova",
+            "Sagonte",
+            "Gadès",
+            "Tolède"
+          ],
+          "explanation": "Sagonte était alliée de Rome. Quand Hannibal l’a prise après huit mois de siège et que Carthage a refusé de le livrer, Rome a déclaré la guerre."
+        },
+        "de": {
+          "question": "Die Belagerung welcher spanischen Stadt löste den Zweiten Punischen Krieg aus?",
+          "options": [
+            "Carthago Nova",
+            "Sagunt",
+            "Gades",
+            "Toletum"
+          ],
+          "explanation": "Sagunt war mit Rom verbündet. Als Hannibal die Stadt nach achtmonatiger Belagerung einnahm und Karthago sich weigerte, ihn auszuliefern, erklärte Rom den Krieg."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "How did Hannibal get his elephants across the river Rhône?",
+      "options": [
+        "They were carried in ships",
+        "They crossed a stone bridge",
+        "On huge rafts covered with earth",
+        "They waded across at low tide"
+      ],
+      "explanation": "The earth made the elephants think they were still on solid ground. Some panicked and fell in, but they swam across.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe kreeg Hannibal zijn olifanten over de Rhône?",
+          "options": [
+            "Ze werden in schepen vervoerd",
+            "Ze liepen over een stenen brug",
+            "Op enorme vlotten bedekt met aarde",
+            "Ze waadden erdoor bij laag water"
+          ],
+          "explanation": "Door de aarde dachten de olifanten dat ze nog op vaste grond stonden. Sommige raakten in paniek en vielen erin, maar ze zwommen naar de overkant."
+        },
+        "fr": {
+          "question": "Comment Hannibal a-t-il fait traverser le Rhône à ses éléphants ?",
+          "options": [
+            "Sur des navires",
+            "Par un pont de pierre",
+            "Sur d’immenses radeaux couverts de terre",
+            "À gué, à marée basse"
+          ],
+          "explanation": "La terre faisait croire aux éléphants qu’ils étaient encore sur la terre ferme. Certains ont paniqué et sont tombés à l’eau, mais ils ont traversé à la nage."
+        },
+        "de": {
+          "question": "Wie brachte Hannibal seine Elefanten über die Rhone?",
+          "options": [
+            "Auf Schiffen",
+            "Über eine Steinbrücke",
+            "Auf riesigen, mit Erde bedeckten Flößen",
+            "Sie wateten bei Niedrigwasser hindurch"
+          ],
+          "explanation": "Durch die Erde glaubten die Elefanten, noch auf festem Boden zu stehen. Einige gerieten in Panik und fielen hinein, schwammen aber hinüber."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What happened to the Roman army at Lake Trasimene in 217 BC?",
+      "options": [
+        "It won a great victory",
+        "It escaped over the mountains",
+        "It besieged Hannibal's camp",
+        "It was ambushed in thick fog"
+      ],
+      "explanation": "Marching along the lakeshore in fog, the Romans were attacked from the hills. Around fifteen thousand were killed, including the consul Flaminius.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er in 217 v.Chr. met het Romeinse leger bij het Trasimeense Meer?",
+          "options": [
+            "Het behaalde een grote overwinning",
+            "Het ontsnapte over de bergen",
+            "Het belegerde het kamp van Hannibal",
+            "Het liep in dichte mist in een hinderlaag"
+          ],
+          "explanation": "Terwijl de Romeinen in de mist langs de oever marcheerden, werden ze vanaf de heuvels aangevallen. Zo'n vijftienduizend sneuvelden, onder wie consul Flaminius."
+        },
+        "fr": {
+          "question": "Qu’est-il arrivé à l’armée romaine au lac Trasimène en 217 av. J.-C. ?",
+          "options": [
+            "Elle a remporté une grande victoire",
+            "Elle s’est échappée par les montagnes",
+            "Elle a assiégé le camp d’Hannibal",
+            "Elle est tombée dans une embuscade dans un épais brouillard"
+          ],
+          "explanation": "En marchant dans le brouillard le long du lac, les Romains ont été attaqués depuis les collines. Environ quinze mille ont été tués, dont le consul Flaminius."
+        },
+        "de": {
+          "question": "Was geschah 217 v. Chr. mit dem römischen Heer am Trasimenischen See?",
+          "options": [
+            "Es errang einen großen Sieg",
+            "Es entkam über die Berge",
+            "Es belagerte Hannibals Lager",
+            "Es geriet im dichten Nebel in einen Hinterhalt"
+          ],
+          "explanation": "Als die Römer im Nebel am Seeufer entlangmarschierten, wurden sie von den Hügeln aus angegriffen. Etwa fünfzehntausend fielen, darunter der Konsul Flaminius."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What makes the battle of Cannae so famous in military history?",
+      "options": [
+        "Hannibal surrounded a much larger army on both sides at once",
+        "It was the first battle with cannons",
+        "It was fought entirely at sea",
+        "No one was killed"
+      ],
+      "explanation": "His centre slowly gave way while his best troops closed in from both sides and his cavalry attacked from behind. Military academies still study it.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom is de slag bij Cannae zo beroemd in de militaire geschiedenis?",
+          "options": [
+            "Hannibal omsingelde een veel groter leger aan beide kanten tegelijk",
+            "Het was de eerste slag met kanonnen",
+            "Hij werd helemaal op zee uitgevochten",
+            "Er viel geen enkele dode"
+          ],
+          "explanation": "Zijn midden week langzaam terug terwijl zijn beste troepen van beide kanten insloten en zijn ruiterij van achteren aanviel. Militaire academies bestuderen hem nog steeds."
+        },
+        "fr": {
+          "question": "Pourquoi la bataille de Cannes est-elle si célèbre dans l’histoire militaire ?",
+          "options": [
+            "Hannibal a encerclé une armée bien plus grande des deux côtés à la fois",
+            "C’était la première bataille avec des canons",
+            "Elle s’est entièrement déroulée en mer",
+            "Personne n’a été tué"
+          ],
+          "explanation": "Son centre a reculé lentement pendant que ses meilleures troupes refermaient la nasse des deux côtés et que sa cavalerie attaquait par l’arrière. Les écoles militaires l’étudient encore."
+        },
+        "de": {
+          "question": "Warum ist die Schlacht von Cannae in der Militärgeschichte so berühmt?",
+          "options": [
+            "Hannibal umzingelte ein viel größeres Heer gleichzeitig von beiden Seiten",
+            "Es war die erste Schlacht mit Kanonen",
+            "Sie wurde ganz auf See ausgetragen",
+            "Niemand wurde getötet"
+          ],
+          "explanation": "Seine Mitte wich langsam zurück, während seine besten Truppen von beiden Seiten einschwenkten und seine Reiterei von hinten angriff. Militärakademien studieren sie bis heute."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Why did Hannibal not march on the city of Rome after his great victory at Cannae?",
+      "options": [
+        "He was badly wounded",
+        "He had no way to besiege a walled city so far from home",
+        "Rome surrendered at once",
+        "His soldiers wanted to go home"
+      ],
+      "explanation": "Rome had strong walls, and Hannibal had no siege engines or supplies for a long siege. He hoped Rome's allies would desert it instead.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom trok Hannibal na zijn grote overwinning bij Cannae niet op naar de stad Rome?",
+          "options": [
+            "Hij was zwaar gewond",
+            "Hij kon een ommuurde stad zo ver van huis niet belegeren",
+            "Rome gaf zich meteen over",
+            "Zijn soldaten wilden naar huis"
+          ],
+          "explanation": "Rome had sterke muren, en Hannibal had geen belegeringswerktuigen of voorraden voor een lang beleg. Hij hoopte dat Romes bondgenoten de stad in de steek zouden laten."
+        },
+        "fr": {
+          "question": "Pourquoi Hannibal n’a-t-il pas marché sur Rome après sa grande victoire de Cannes ?",
+          "options": [
+            "Il était gravement blessé",
+            "Il ne pouvait pas assiéger une ville fortifiée si loin de chez lui",
+            "Rome s’est rendue aussitôt",
+            "Ses soldats voulaient rentrer"
+          ],
+          "explanation": "Rome avait de solides murailles, et Hannibal n’avait ni machines de siège ni vivres pour un long siège. Il espérait plutôt que les alliés de Rome l’abandonneraient."
+        },
+        "de": {
+          "question": "Warum zog Hannibal nach seinem großen Sieg bei Cannae nicht gegen die Stadt Rom?",
+          "options": [
+            "Er war schwer verwundet",
+            "Er konnte eine ummauerte Stadt so weit von zu Hause nicht belagern",
+            "Rom ergab sich sofort",
+            "Seine Soldaten wollten nach Hause"
+          ],
+          "explanation": "Rom hatte starke Mauern, und Hannibal fehlten Belagerungsmaschinen und Vorräte für eine lange Belagerung. Er hoffte stattdessen, dass Roms Verbündete abfallen würden."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Which Roman general defeated Hannibal at Zama in 202 BC?",
+      "options": [
+        "Fabius Maximus",
+        "Julius Caesar",
+        "Scipio",
+        "Flaminius"
+      ],
+      "explanation": "Scipio had learned from Hannibal's own tactics. After the victory he received the honorary name Africanus.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke Romeinse generaal versloeg Hannibal in 202 v.Chr. bij Zama?",
+          "options": [
+            "Fabius Maximus",
+            "Julius Caesar",
+            "Scipio",
+            "Flaminius"
+          ],
+          "explanation": "Scipio had geleerd van Hannibals eigen tactieken. Na de overwinning kreeg hij de erenaam Africanus."
+        },
+        "fr": {
+          "question": "Quel général romain a vaincu Hannibal à Zama en 202 av. J.-C. ?",
+          "options": [
+            "Fabius Maximus",
+            "Jules César",
+            "Scipion",
+            "Flaminius"
+          ],
+          "explanation": "Scipion avait appris des propres tactiques d’Hannibal. Après la victoire, il a reçu le surnom honorifique d’Africain."
+        },
+        "de": {
+          "question": "Welcher römische Feldherr besiegte Hannibal 202 v. Chr. bei Zama?",
+          "options": [
+            "Fabius Maximus",
+            "Julius Caesar",
+            "Scipio",
+            "Flaminius"
+          ],
+          "explanation": "Scipio hatte von Hannibals eigenen Taktiken gelernt. Nach dem Sieg erhielt er den Ehrennamen Africanus."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Where did Hannibal die, around 183 BC?",
+      "options": [
+        "In Carthage",
+        "As a prisoner in Rome",
+        "In Spain",
+        "In exile in Bithynia, in modern Turkey"
+      ],
+      "explanation": "When Roman soldiers surrounded his house, he took poison rather than be taken to Rome in chains.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar stierf Hannibal, rond 183 v.Chr.?",
+          "options": [
+            "In Carthago",
+            "Als gevangene in Rome",
+            "In Spanje",
+            "In ballingschap in Bithynië, in het huidige Turkije"
+          ],
+          "explanation": "Toen Romeinse soldaten zijn huis omsingelden, nam hij gif in, liever dan geketend naar Rome te worden gebracht."
+        },
+        "fr": {
+          "question": "Où Hannibal est-il mort, vers 183 av. J.-C. ?",
+          "options": [
+            "À Carthage",
+            "Prisonnier à Rome",
+            "En Espagne",
+            "En exil en Bithynie, dans l’actuelle Turquie"
+          ],
+          "explanation": "Quand des soldats romains ont encerclé sa maison, il a pris du poison plutôt que d’être emmené enchaîné à Rome."
+        },
+        "de": {
+          "question": "Wo starb Hannibal um 183 v. Chr.?",
+          "options": [
+            "In Karthago",
+            "Als Gefangener in Rom",
+            "In Spanien",
+            "Im Exil in Bithynien, in der heutigen Türkei"
+          ],
+          "explanation": "Als römische Soldaten sein Haus umstellten, nahm er Gift, statt in Ketten nach Rom gebracht zu werden."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

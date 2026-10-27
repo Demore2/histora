@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Cleopatra's family, the Ptolemies, were descended from which people?",
+      "options": [
+        "Macedonian Greeks",
+        "Ancient Egyptians",
+        "Romans",
+        "Persians"
+      ],
+      "explanation": "The family descended from Ptolemy, one of Alexander the Great's generals, who took Egypt after Alexander's death.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Van welk volk stamde de familie van Cleopatra, de Ptolemaeën, af?",
+          "options": [
+            "Macedonische Grieken",
+            "Oude Egyptenaren",
+            "Romeinen",
+            "Perzen"
+          ],
+          "explanation": "De familie stamde af van Ptolemaeus, een van de generaals van Alexander de Grote, die na Alexanders dood Egypte in handen nam."
+        },
+        "fr": {
+          "question": "De quel peuple descendait la famille de Cléopâtre, les Ptolémées ?",
+          "options": [
+            "Des Grecs macédoniens",
+            "Des anciens Égyptiens",
+            "Des Romains",
+            "Des Perses"
+          ],
+          "explanation": "La famille descendait de Ptolémée, l’un des généraux d’Alexandre le Grand, qui s’empara de l’Égypte après la mort d’Alexandre."
+        },
+        "de": {
+          "question": "Von welchem Volk stammte Kleopatras Familie, die Ptolemäer, ab?",
+          "options": [
+            "Von makedonischen Griechen",
+            "Von alten Ägyptern",
+            "Von Römern",
+            "Von Persern"
+          ],
+          "explanation": "Die Familie stammte von Ptolemaios ab, einem der Generäle Alexanders des Großen, der nach Alexanders Tod Ägypten übernahm."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Which language did Cleopatra learn that her family had never bothered to learn?",
+      "options": [
+        "Latin",
+        "Egyptian",
+        "Persian",
+        "Hebrew"
+      ],
+      "explanation": "After nearly three hundred years of ruling Egypt, she was the first of the Ptolemies to speak the language of the people she governed.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke taal leerde Cleopatra die haar familie nooit de moeite waard had gevonden?",
+          "options": [
+            "Latijn",
+            "Egyptisch",
+            "Perzisch",
+            "Hebreeuws"
+          ],
+          "explanation": "Na bijna driehonderd jaar heerschappij over Egypte was zij de eerste Ptolemaeër die de taal sprak van het volk dat ze regeerde."
+        },
+        "fr": {
+          "question": "Quelle langue Cléopâtre a-t-elle apprise, alors que sa famille ne s’en était jamais donné la peine ?",
+          "options": [
+            "Le latin",
+            "L’égyptien",
+            "Le perse",
+            "L’hébreu"
+          ],
+          "explanation": "Après près de trois cents ans de règne sur l’Égypte, elle fut la première des Ptolémées à parler la langue du peuple qu’elle gouvernait."
+        },
+        "de": {
+          "question": "Welche Sprache lernte Kleopatra, die ihre Familie nie für nötig gehalten hatte?",
+          "options": [
+            "Latein",
+            "Ägyptisch",
+            "Persisch",
+            "Hebräisch"
+          ],
+          "explanation": "Nach fast dreihundert Jahren Herrschaft über Ägypten war sie die erste Ptolemäerin, die die Sprache des Volkes sprach, das sie regierte."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "According to Plutarch, how did Cleopatra get into the palace to meet Julius Caesar?",
+      "options": [
+        "Disguised as a soldier",
+        "Through a secret tunnel",
+        "Hidden in a bedding sack carried by a friend",
+        "By climbing the palace wall"
+      ],
+      "explanation": "Her brother's men would have killed her if she had come openly. The popular story of a rolled-up carpet comes from later retellings.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe kwam Cleopatra volgens Plutarchus het paleis binnen om Julius Caesar te ontmoeten?",
+          "options": [
+            "Vermomd als soldaat",
+            "Via een geheime tunnel",
+            "Verstopt in een beddenzak, gedragen door een vriend",
+            "Door over de paleismuur te klimmen"
+          ],
+          "explanation": "De mannen van haar broer zouden haar hebben gedood als ze openlijk was gekomen. Het bekende verhaal van een opgerold tapijt komt uit latere navertellingen."
+        },
+        "fr": {
+          "question": "Selon Plutarque, comment Cléopâtre est-elle entrée dans le palais pour rencontrer Jules César ?",
+          "options": [
+            "Déguisée en soldat",
+            "Par un tunnel secret",
+            "Cachée dans un sac de literie porté par un ami",
+            "En escaladant le mur du palais"
+          ],
+          "explanation": "Les hommes de son frère l’auraient tuée si elle était venue ouvertement. L’histoire populaire du tapis roulé vient de récits plus tardifs."
+        },
+        "de": {
+          "question": "Wie gelangte Kleopatra laut Plutarch in den Palast, um Julius Caesar zu treffen?",
+          "options": [
+            "Als Soldat verkleidet",
+            "Durch einen geheimen Tunnel",
+            "Versteckt in einem Bettsack, den ein Freund trug",
+            "Indem sie über die Palastmauer kletterte"
+          ],
+          "explanation": "Die Männer ihres Bruders hätten sie getötet, wäre sie offen gekommen. Die bekannte Geschichte vom eingerollten Teppich stammt aus späteren Nacherzählungen."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What nickname did the people of Alexandria give to Cleopatra's son Ptolemy Caesar?",
+      "options": [
+        "Augustus",
+        "Alexander",
+        "Ptolemy the Great",
+        "Caesarion"
+      ],
+      "explanation": "Caesarion means 'little Caesar'. Cleopatra said Julius Caesar was his father; after her death Octavian had him killed.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke bijnaam gaven de inwoners van Alexandrië aan Cleopatra's zoon Ptolemaeus Caesar?",
+          "options": [
+            "Augustus",
+            "Alexander",
+            "Ptolemaeus de Grote",
+            "Caesarion"
+          ],
+          "explanation": "Caesarion betekent 'kleine Caesar'. Cleopatra zei dat Julius Caesar zijn vader was; na haar dood liet Octavianus hem doden."
+        },
+        "fr": {
+          "question": "Quel surnom les habitants d’Alexandrie ont-ils donné au fils de Cléopâtre, Ptolémée César ?",
+          "options": [
+            "Auguste",
+            "Alexandre",
+            "Ptolémée le Grand",
+            "Césarion"
+          ],
+          "explanation": "Césarion signifie « petit César ». Cléopâtre affirmait que Jules César était son père ; après sa mort, Octave l’a fait tuer."
+        },
+        "de": {
+          "question": "Welchen Spitznamen gaben die Alexandriner Kleopatras Sohn Ptolemaios Caesar?",
+          "options": [
+            "Augustus",
+            "Alexander",
+            "Ptolemaios der Große",
+            "Kaisarion"
+          ],
+          "explanation": "Kaisarion bedeutet „kleiner Caesar“. Kleopatra sagte, Julius Caesar sei sein Vater; nach ihrem Tod ließ Octavian ihn töten."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "How did Cleopatra arrive at Tarsus to meet Mark Antony?",
+      "options": [
+        "On a golden barge, dressed as Aphrodite",
+        "On horseback with an army",
+        "In disguise, at night",
+        "On foot, as a humble pilgrim"
+      ],
+      "explanation": "Purple sails, silver oars, music and perfume: the crowd said Aphrodite had come to feast with Dionysus. Antony was won over.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe arriveerde Cleopatra in Tarsus om Marcus Antonius te ontmoeten?",
+          "options": [
+            "Op een gouden schip, gekleed als Aphrodite",
+            "Te paard met een leger",
+            "Vermomd, 's nachts",
+            "Te voet, als nederige pelgrim"
+          ],
+          "explanation": "Paarse zeilen, zilveren roeiriemen, muziek en parfum: de menigte zei dat Aphrodite kwam feesten met Dionysus. Antonius was om."
+        },
+        "fr": {
+          "question": "Comment Cléopâtre est-elle arrivée à Tarse pour rencontrer Marc Antoine ?",
+          "options": [
+            "Sur une barque dorée, habillée en Aphrodite",
+            "À cheval, avec une armée",
+            "Déguisée, de nuit",
+            "À pied, en humble pèlerine"
+          ],
+          "explanation": "Voiles pourpres, rames d’argent, musique et parfums : la foule disait qu’Aphrodite venait festoyer avec Dionysos. Antoine fut conquis."
+        },
+        "de": {
+          "question": "Wie kam Kleopatra nach Tarsos, um Marcus Antonius zu treffen?",
+          "options": [
+            "Auf einer goldenen Barke, als Aphrodite gekleidet",
+            "Zu Pferd mit einem Heer",
+            "Verkleidet, bei Nacht",
+            "Zu Fuß, als bescheidene Pilgerin"
+          ],
+          "explanation": "Purpursegel, silberne Ruder, Musik und Duft: Die Menge sagte, Aphrodite komme, um mit Dionysos zu feiern. Antonius war gewonnen."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What title did Mark Antony give Cleopatra at the Donations of Alexandria in 34 BC?",
+      "options": [
+        "Empress of Rome",
+        "Queen of Kings",
+        "Goddess of the Nile",
+        "Mother of Egypt"
+      ],
+      "explanation": "Antony also handed out kingdoms to her children. In Rome, Octavian used it as proof that Antony was giving Rome's empire to a foreign queen.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke titel gaf Marcus Antonius aan Cleopatra bij de Schenkingen van Alexandrië in 34 v.Chr.?",
+          "options": [
+            "Keizerin van Rome",
+            "Koningin der koningen",
+            "Godin van de Nijl",
+            "Moeder van Egypte"
+          ],
+          "explanation": "Antonius verdeelde ook koninkrijken onder haar kinderen. In Rome gebruikte Octavianus dat als bewijs dat Antonius Romes rijk weggaf aan een buitenlandse koningin."
+        },
+        "fr": {
+          "question": "Quel titre Marc Antoine a-t-il donné à Cléopâtre lors des Donations d’Alexandrie en 34 av. J.-C. ?",
+          "options": [
+            "Impératrice de Rome",
+            "Reine des rois",
+            "Déesse du Nil",
+            "Mère de l’Égypte"
+          ],
+          "explanation": "Antoine a aussi distribué des royaumes à ses enfants. À Rome, Octave s’en est servi comme preuve qu’Antoine offrait l’empire romain à une reine étrangère."
+        },
+        "de": {
+          "question": "Welchen Titel gab Marcus Antonius Kleopatra bei den Schenkungen von Alexandria 34 v. Chr.?",
+          "options": [
+            "Kaiserin von Rom",
+            "Königin der Könige",
+            "Göttin des Nils",
+            "Mutter Ägyptens"
+          ],
+          "explanation": "Antonius verteilte außerdem Königreiche an ihre Kinder. In Rom nutzte Octavian das als Beweis, dass Antonius Roms Reich an eine fremde Königin verschenkte."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "According to the traditional story, how did Cleopatra die?",
+      "options": [
+        "She drank poisoned wine",
+        "She fell on a sword",
+        "She let a venomous snake bite her",
+        "She drowned in the Nile"
+      ],
+      "explanation": "The asp was said to have been smuggled in a basket of figs. Even ancient writers admitted that no one knew for certain.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe stierf Cleopatra volgens het traditionele verhaal?",
+          "options": [
+            "Ze dronk vergiftigde wijn",
+            "Ze wierp zich op een zwaard",
+            "Ze liet zich bijten door een giftige slang",
+            "Ze verdronk in de Nijl"
+          ],
+          "explanation": "De slang zou in een mand met vijgen naar binnen zijn gesmokkeld. Zelfs oude schrijvers gaven toe dat niemand het zeker wist."
+        },
+        "fr": {
+          "question": "Selon le récit traditionnel, comment Cléopâtre est-elle morte ?",
+          "options": [
+            "Elle a bu du vin empoisonné",
+            "Elle s’est jetée sur une épée",
+            "Elle s’est fait mordre par un serpent venimeux",
+            "Elle s’est noyée dans le Nil"
+          ],
+          "explanation": "L’aspic aurait été introduit dans un panier de figues. Même les auteurs anciens reconnaissaient que personne ne le savait avec certitude."
+        },
+        "de": {
+          "question": "Wie starb Kleopatra laut der traditionellen Geschichte?",
+          "options": [
+            "Sie trank vergifteten Wein",
+            "Sie stürzte sich in ein Schwert",
+            "Sie ließ sich von einer Giftschlange beißen",
+            "Sie ertrank im Nil"
+          ],
+          "explanation": "Die Schlange soll in einem Korb mit Feigen eingeschmuggelt worden sein. Selbst antike Autoren gaben zu, dass niemand es sicher wusste."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What happened to Egypt after Cleopatra's death in 30 BC?",
+      "options": [
+        "Caesarion ruled it as king",
+        "It became fully independent",
+        "It was conquered by Persia",
+        "It became a province of the Roman Empire"
+      ],
+      "explanation": "Octavian took Egypt as his personal province. Three thousand years of rule by pharaohs came to an end.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er met Egypte na de dood van Cleopatra in 30 v.Chr.?",
+          "options": [
+            "Caesarion regeerde als koning",
+            "Het werd volledig onafhankelijk",
+            "Het werd door Perzië veroverd",
+            "Het werd een provincie van het Romeinse Rijk"
+          ],
+          "explanation": "Octavianus nam Egypte als zijn persoonlijke provincie. Drieduizend jaar heerschappij van farao's kwam ten einde."
+        },
+        "fr": {
+          "question": "Qu’est-il advenu de l’Égypte après la mort de Cléopâtre en 30 av. J.-C. ?",
+          "options": [
+            "Césarion l’a gouvernée comme roi",
+            "Elle est devenue totalement indépendante",
+            "Elle a été conquise par la Perse",
+            "Elle est devenue une province de l’Empire romain"
+          ],
+          "explanation": "Octave a fait de l’Égypte sa province personnelle. Trois mille ans de règne des pharaons prenaient fin."
+        },
+        "de": {
+          "question": "Was geschah nach Kleopatras Tod 30 v. Chr. mit Ägypten?",
+          "options": [
+            "Kaisarion regierte als König",
+            "Es wurde völlig unabhängig",
+            "Es wurde von Persien erobert",
+            "Es wurde eine Provinz des Römischen Reiches"
+          ],
+          "explanation": "Octavian nahm Ägypten als seine persönliche Provinz. Dreitausend Jahre Herrschaft der Pharaonen gingen zu Ende."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

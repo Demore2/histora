@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What did Socrates' mother do for a living?",
+      "options": [
+        "She was a midwife",
+        "She was a priestess",
+        "She was a weaver",
+        "She was a baker"
+      ],
+      "explanation": "Socrates joked that he had taken up her trade: he helped other people give birth, not to babies but to ideas.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed de moeder van Socrates voor de kost?",
+          "options": [
+            "Ze was vroedvrouw",
+            "Ze was priesteres",
+            "Ze was weefster",
+            "Ze was bakker"
+          ],
+          "explanation": "Socrates grapte dat hij haar vak had overgenomen: hij hielp anderen bevallen, niet van baby's maar van ideeën."
+        },
+        "fr": {
+          "question": "Quel était le métier de la mère de Socrate ?",
+          "options": [
+            "Sage-femme",
+            "Prêtresse",
+            "Tisserande",
+            "Boulangère"
+          ],
+          "explanation": "Socrate plaisantait en disant qu’il exerçait le même métier : il aidait les autres à accoucher, non d’enfants, mais d’idées."
+        },
+        "de": {
+          "question": "Welchen Beruf hatte die Mutter des Sokrates?",
+          "options": [
+            "Sie war Hebamme",
+            "Sie war Priesterin",
+            "Sie war Weberin",
+            "Sie war Bäckerin"
+          ],
+          "explanation": "Sokrates scherzte, er habe ihr Handwerk übernommen: Er helfe anderen bei der Geburt, nicht von Kindern, sondern von Ideen."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "How did Socrates behave when the Athenian army fled at the battle of Delium?",
+      "options": [
+        "He ran away first",
+        "He walked away calmly and steadily",
+        "He surrendered to the enemy",
+        "He hid in a farmhouse"
+      ],
+      "explanation": "According to Plato, he looked around so coolly that the enemy decided to leave him alone and chase the panicking soldiers instead.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe gedroeg Socrates zich toen het Atheense leger bij Delium op de vlucht sloeg?",
+          "options": [
+            "Hij rende als eerste weg",
+            "Hij liep rustig en kalm weg",
+            "Hij gaf zich over aan de vijand",
+            "Hij verstopte zich in een boerderij"
+          ],
+          "explanation": "Volgens Plato keek hij zo koel om zich heen dat de vijand hem met rust liet en in plaats daarvan de paniekerige soldaten achterna zat."
+        },
+        "fr": {
+          "question": "Comment Socrate s’est-il comporté quand l’armée athénienne a fui à la bataille de Délion ?",
+          "options": [
+            "Il s’est enfui le premier",
+            "Il s’est retiré calmement, d’un pas assuré",
+            "Il s’est rendu à l’ennemi",
+            "Il s’est caché dans une ferme"
+          ],
+          "explanation": "Selon Platon, il regardait autour de lui avec un tel sang-froid que l’ennemi l’a laissé tranquille pour poursuivre les soldats paniqués."
+        },
+        "de": {
+          "question": "Wie verhielt sich Sokrates, als das athenische Heer bei Delion floh?",
+          "options": [
+            "Er rannte als Erster davon",
+            "Er ging ruhig und gelassen davon",
+            "Er ergab sich dem Feind",
+            "Er versteckte sich in einem Bauernhof"
+          ],
+          "explanation": "Laut Platon blickte er so kühl um sich, dass der Feind ihn in Ruhe ließ und stattdessen die panischen Soldaten verfolgte."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What did the oracle at Delphi answer when asked about Socrates?",
+      "options": [
+        "That he would die young",
+        "That he would one day rule Athens",
+        "That no one was wiser than him",
+        "That he should leave Athens"
+      ],
+      "explanation": "Socrates was puzzled, because he believed he knew nothing. He decided his only wisdom was that he did not pretend to know what he did not.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat antwoordde het orakel van Delphi toen er naar Socrates werd gevraagd?",
+          "options": [
+            "Dat hij jong zou sterven",
+            "Dat hij ooit over Athene zou heersen",
+            "Dat niemand wijzer was dan hij",
+            "Dat hij Athene moest verlaten"
+          ],
+          "explanation": "Socrates begreep het niet, want hij dacht dat hij niets wist. Hij concludeerde dat zijn enige wijsheid was dat hij niet deed alsof hij wist wat hij niet wist."
+        },
+        "fr": {
+          "question": "Qu’a répondu l’oracle de Delphes quand on l’a interrogé sur Socrate ?",
+          "options": [
+            "Qu’il mourrait jeune",
+            "Qu’il gouvernerait un jour Athènes",
+            "Que personne n’était plus sage que lui",
+            "Qu’il devait quitter Athènes"
+          ],
+          "explanation": "Socrate était perplexe, car il pensait ne rien savoir. Il en a conclu que sa seule sagesse était de ne pas prétendre savoir ce qu’il ignorait."
+        },
+        "de": {
+          "question": "Was antwortete das Orakel von Delphi auf die Frage nach Sokrates?",
+          "options": [
+            "Dass er jung sterben werde",
+            "Dass er eines Tages Athen regieren werde",
+            "Dass niemand weiser sei als er",
+            "Dass er Athen verlassen solle"
+          ],
+          "explanation": "Sokrates war verwirrt, denn er glaubte, nichts zu wissen. Er schloss, seine einzige Weisheit sei, nicht so zu tun, als wisse er, was er nicht wisse."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What did Socrates compare himself to?",
+      "options": [
+        "A lion guarding the city",
+        "A wise old owl",
+        "A busy bee",
+        "A gadfly stinging a lazy horse"
+      ],
+      "explanation": "He said the god had attached him to Athens like a gadfly to a big, lazy horse, to keep the city awake with his questions.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarmee vergeleek Socrates zichzelf?",
+          "options": [
+            "Een leeuw die de stad bewaakt",
+            "Een wijze oude uil",
+            "Een ijverige bij",
+            "Een paardenvlieg die een lui paard steekt"
+          ],
+          "explanation": "Hij zei dat de god hem aan Athene had vastgemaakt als een paardenvlieg aan een groot, lui paard, om de stad met zijn vragen wakker te houden."
+        },
+        "fr": {
+          "question": "À quoi Socrate se comparait-il ?",
+          "options": [
+            "À un lion gardant la cité",
+            "À une vieille chouette sage",
+            "À une abeille travailleuse",
+            "À un taon piquant un cheval paresseux"
+          ],
+          "explanation": "Il disait que le dieu l’avait attaché à Athènes comme un taon à un grand cheval paresseux, pour tenir la cité éveillée par ses questions."
+        },
+        "de": {
+          "question": "Womit verglich sich Sokrates selbst?",
+          "options": [
+            "Mit einem Löwen, der die Stadt bewacht",
+            "Mit einer weisen alten Eule",
+            "Mit einer fleißigen Biene",
+            "Mit einer Bremse, die ein träges Pferd sticht"
+          ],
+          "explanation": "Er sagte, der Gott habe ihn Athen angeheftet wie eine Bremse einem großen, trägen Pferd, um die Stadt mit seinen Fragen wach zu halten."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What did Socrates do when the Thirty Tyrants ordered him to arrest an innocent man?",
+      "options": [
+        "He simply went home",
+        "He obeyed the order",
+        "He fled from Athens",
+        "He secretly warned the man"
+      ],
+      "explanation": "The other four men sent with him carried out the arrest. Socrates refused and risked his life; only the fall of the Thirty saved him.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed Socrates toen de Dertig Tirannen hem bevalen een onschuldige man te arresteren?",
+          "options": [
+            "Hij ging gewoon naar huis",
+            "Hij voerde het bevel uit",
+            "Hij vluchtte uit Athene",
+            "Hij waarschuwde de man in het geheim"
+          ],
+          "explanation": "De vier andere mannen die met hem waren gestuurd, voerden de arrestatie uit. Socrates weigerde en riskeerde zijn leven; alleen de val van de Dertig redde hem."
+        },
+        "fr": {
+          "question": "Qu’a fait Socrate quand les Trente Tyrans lui ont ordonné d’arrêter un innocent ?",
+          "options": [
+            "Il est tout simplement rentré chez lui",
+            "Il a obéi à l’ordre",
+            "Il a fui Athènes",
+            "Il a prévenu l’homme en secret"
+          ],
+          "explanation": "Les quatre autres hommes envoyés avec lui ont procédé à l’arrestation. Socrate a refusé au péril de sa vie ; seule la chute des Trente l’a sauvé."
+        },
+        "de": {
+          "question": "Was tat Sokrates, als die Dreißig Tyrannen ihm befahlen, einen Unschuldigen zu verhaften?",
+          "options": [
+            "Er ging einfach nach Hause",
+            "Er gehorchte dem Befehl",
+            "Er floh aus Athen",
+            "Er warnte den Mann heimlich"
+          ],
+          "explanation": "Die vier anderen Männer, die mit ihm geschickt wurden, nahmen die Verhaftung vor. Sokrates weigerte sich und riskierte sein Leben; nur der Sturz der Dreißig rettete ihn."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What 'punishment' did Socrates first suggest for himself at his trial?",
+      "options": [
+        "Exile from Athens",
+        "Free meals for life at the city's expense",
+        "A year in prison",
+        "Death"
+      ],
+      "explanation": "It was an honour normally given to Olympic champions. The jury was not amused and voted for death by an even bigger majority.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke 'straf' stelde Socrates tijdens zijn proces eerst voor zichzelf voor?",
+          "options": [
+            "Verbanning uit Athene",
+            "Levenslang gratis maaltijden op kosten van de stad",
+            "Een jaar gevangenis",
+            "De dood"
+          ],
+          "explanation": "Dat was een eer die normaal voor Olympische kampioenen was. De jury vond het niet grappig en stemde met een nog grotere meerderheid voor de dood."
+        },
+        "fr": {
+          "question": "Quelle « peine » Socrate a-t-il d’abord proposée pour lui-même lors de son procès ?",
+          "options": [
+            "L’exil hors d’Athènes",
+            "Des repas gratuits à vie aux frais de la cité",
+            "Un an de prison",
+            "La mort"
+          ],
+          "explanation": "C’était un honneur normalement réservé aux champions olympiques. Le jury ne l’a pas apprécié et a voté la mort à une majorité encore plus large."
+        },
+        "de": {
+          "question": "Welche „Strafe“ schlug Sokrates bei seinem Prozess zuerst für sich selbst vor?",
+          "options": [
+            "Verbannung aus Athen",
+            "Lebenslange kostenlose Mahlzeiten auf Kosten der Stadt",
+            "Ein Jahr Gefängnis",
+            "Den Tod"
+          ],
+          "explanation": "Diese Ehre erhielten sonst Olympiasieger. Die Geschworenen fanden das nicht lustig und stimmten mit noch größerer Mehrheit für den Tod."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Why did Socrates refuse to escape from prison when his friend Crito offered him a way out?",
+      "options": [
+        "The guards could not be bribed",
+        "He was too ill to travel",
+        "Running away would break his agreement with the laws of Athens",
+        "He had nowhere to go"
+      ],
+      "explanation": "He argued that he had lived all his life under the laws of Athens. Escaping would be committing an injustice, which he thought was worse than suffering one.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom weigerde Socrates uit de gevangenis te ontsnappen toen zijn vriend Crito hem een uitweg bood?",
+          "options": [
+            "De bewakers waren niet om te kopen",
+            "Hij was te ziek om te reizen",
+            "Vluchten zou zijn afspraak met de wetten van Athene breken",
+            "Hij kon nergens heen"
+          ],
+          "explanation": "Hij betoogde dat hij zijn hele leven onder de wetten van Athene had geleefd. Ontsnappen zou zelf onrecht plegen zijn, en dat vond hij erger dan onrecht ondergaan."
+        },
+        "fr": {
+          "question": "Pourquoi Socrate a-t-il refusé de s’évader quand son ami Criton lui offrait une issue ?",
+          "options": [
+            "Les gardes ne pouvaient pas être soudoyés",
+            "Il était trop malade pour voyager",
+            "S’enfuir romprait son accord avec les lois d’Athènes",
+            "Il n’avait nulle part où aller"
+          ],
+          "explanation": "Il soutenait qu’il avait vécu toute sa vie sous les lois d’Athènes. S’évader serait commettre une injustice, ce qu’il jugeait pire que de la subir."
+        },
+        "de": {
+          "question": "Warum weigerte sich Sokrates zu fliehen, als sein Freund Kriton ihm einen Ausweg bot?",
+          "options": [
+            "Die Wächter waren nicht zu bestechen",
+            "Er war zu krank zum Reisen",
+            "Eine Flucht würde seine Vereinbarung mit den Gesetzen Athens brechen",
+            "Er wusste nicht, wohin"
+          ],
+          "explanation": "Er argumentierte, er habe sein ganzes Leben unter den Gesetzen Athens gelebt. Zu fliehen hieße, selbst Unrecht zu tun, und das hielt er für schlimmer, als Unrecht zu erleiden."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Which of Socrates' students wrote down many of his conversations?",
+      "options": [
+        "Aristotle",
+        "Pythagoras",
+        "Homer",
+        "Plato"
+      ],
+      "explanation": "Socrates wrote nothing himself. Plato's dialogues are our main source, and Plato went on to teach Aristotle.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke leerling van Socrates schreef veel van zijn gesprekken op?",
+          "options": [
+            "Aristoteles",
+            "Pythagoras",
+            "Homerus",
+            "Plato"
+          ],
+          "explanation": "Socrates schreef zelf niets. De dialogen van Plato zijn onze belangrijkste bron, en Plato werd later de leraar van Aristoteles."
+        },
+        "fr": {
+          "question": "Lequel des élèves de Socrate a mis par écrit nombre de ses conversations ?",
+          "options": [
+            "Aristote",
+            "Pythagore",
+            "Homère",
+            "Platon"
+          ],
+          "explanation": "Socrate n’a rien écrit lui-même. Les dialogues de Platon sont notre principale source, et Platon a ensuite été le maître d’Aristote."
+        },
+        "de": {
+          "question": "Welcher Schüler des Sokrates schrieb viele seiner Gespräche auf?",
+          "options": [
+            "Aristoteles",
+            "Pythagoras",
+            "Homer",
+            "Platon"
+          ],
+          "explanation": "Sokrates schrieb selbst nichts. Platons Dialoge sind unsere wichtigste Quelle, und Platon wurde später der Lehrer des Aristoteles."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

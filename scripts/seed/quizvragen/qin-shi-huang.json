@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Why was Ying Zheng, the future emperor, born in the state of Zhao?",
+      "options": [
+        "His father lived there as a hostage",
+        "His family had been exiled there",
+        "His mother was the queen of Zhao",
+        "Qin had just conquered it"
+      ],
+      "explanation": "Royal sons were often sent to rival states as hostages to guarantee peace treaties. It was a dangerous life.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom werd Ying Zheng, de latere keizer, geboren in de staat Zhao?",
+          "options": [
+            "Zijn vader woonde er als gijzelaar",
+            "Zijn familie was erheen verbannen",
+            "Zijn moeder was de koningin van Zhao",
+            "Qin had het net veroverd"
+          ],
+          "explanation": "Koningszonen werden vaak als gijzelaar naar rivaliserende staten gestuurd om vredesverdragen te garanderen. Het was een gevaarlijk leven."
+        },
+        "fr": {
+          "question": "Pourquoi Ying Zheng, le futur empereur, est-il né dans l’État de Zhao ?",
+          "options": [
+            "Son père y vivait comme otage",
+            "Sa famille y avait été exilée",
+            "Sa mère était la reine de Zhao",
+            "Qin venait de le conquérir"
+          ],
+          "explanation": "Les fils de rois étaient souvent envoyés comme otages dans les États rivaux pour garantir les traités de paix. C’était une vie dangereuse."
+        },
+        "de": {
+          "question": "Warum wurde Ying Zheng, der spätere Kaiser, im Staat Zhao geboren?",
+          "options": [
+            "Sein Vater lebte dort als Geisel",
+            "Seine Familie war dorthin verbannt",
+            "Seine Mutter war die Königin von Zhao",
+            "Qin hatte es gerade erobert"
+          ],
+          "explanation": "Königssöhne wurden oft als Geiseln in rivalisierende Staaten geschickt, um Friedensverträge abzusichern. Es war ein gefährliches Leben."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "How old was Zheng when he became king of Qin in 246 BC?",
+      "options": [
+        "Seven",
+        "Thirteen",
+        "Twenty",
+        "Thirty"
+      ],
+      "explanation": "His father died after only three years on the throne. For the first years the minister Lü Buwei ruled on the boy's behalf.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe oud was Zheng toen hij in 246 v.Chr. koning van Qin werd?",
+          "options": [
+            "Zeven",
+            "Dertien",
+            "Twintig",
+            "Dertig"
+          ],
+          "explanation": "Zijn vader stierf na slechts drie jaar op de troon. De eerste jaren regeerde minister Lü Buwei namens de jongen."
+        },
+        "fr": {
+          "question": "Quel âge avait Zheng quand il est devenu roi de Qin en 246 av. J.-C. ?",
+          "options": [
+            "Sept ans",
+            "Treize ans",
+            "Vingt ans",
+            "Trente ans"
+          ],
+          "explanation": "Son père est mort après seulement trois ans de règne. Les premières années, le ministre Lü Buwei a gouverné au nom de l’enfant."
+        },
+        "de": {
+          "question": "Wie alt war Zheng, als er 246 v. Chr. König von Qin wurde?",
+          "options": [
+            "Sieben",
+            "Dreizehn",
+            "Zwanzig",
+            "Dreißig"
+          ],
+          "explanation": "Sein Vater starb nach nur drei Jahren auf dem Thron. In den ersten Jahren regierte der Minister Lü Buwei für den Jungen."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Where did the assassin Jing Ke hide his dagger when he came to kill the king?",
+      "options": [
+        "In his boot",
+        "In a box of gifts",
+        "Inside a rolled-up map",
+        "In his hair"
+      ],
+      "explanation": "As he slowly unrolled a map of valuable land before the king, the poisoned dagger appeared at the end of the scroll.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar verborg de huurmoordenaar Jing Ke zijn dolk toen hij de koning kwam doden?",
+          "options": [
+            "In zijn laars",
+            "In een kist met geschenken",
+            "In een opgerolde kaart",
+            "In zijn haar"
+          ],
+          "explanation": "Terwijl hij langzaam een kaart van waardevol land voor de koning uitrolde, verscheen aan het eind van de rol de vergiftigde dolk."
+        },
+        "fr": {
+          "question": "Où l’assassin Jing Ke avait-il caché son poignard pour tuer le roi ?",
+          "options": [
+            "Dans sa botte",
+            "Dans un coffre de cadeaux",
+            "Dans une carte roulée",
+            "Dans ses cheveux"
+          ],
+          "explanation": "Alors qu’il déroulait lentement devant le roi la carte d’un territoire précieux, le poignard empoisonné est apparu au bout du rouleau."
+        },
+        "de": {
+          "question": "Wo versteckte der Attentäter Jing Ke seinen Dolch, als er den König töten wollte?",
+          "options": [
+            "In seinem Stiefel",
+            "In einer Geschenkkiste",
+            "In einer zusammengerollten Landkarte",
+            "In seinen Haaren"
+          ],
+          "explanation": "Als er dem König langsam eine Karte wertvollen Landes entrollte, kam am Ende der Rolle der vergiftete Dolch zum Vorschein."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Which was the last state to be conquered by Qin, in 221 BC?",
+      "options": [
+        "Han",
+        "Zhao",
+        "Chu",
+        "Qi"
+      ],
+      "explanation": "Qi surrendered in 221 BC. For the first time all of China was ruled by one man, who took the new title of First Emperor.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke staat werd in 221 v.Chr. als laatste door Qin veroverd?",
+          "options": [
+            "Han",
+            "Zhao",
+            "Chu",
+            "Qi"
+          ],
+          "explanation": "Qi gaf zich in 221 v.Chr. over. Voor het eerst werd heel China door één man geregeerd, die de nieuwe titel Eerste Keizer aannam."
+        },
+        "fr": {
+          "question": "Quel fut le dernier État conquis par Qin, en 221 av. J.-C. ?",
+          "options": [
+            "Han",
+            "Zhao",
+            "Chu",
+            "Qi"
+          ],
+          "explanation": "Qi s’est rendu en 221 av. J.-C. Pour la première fois, toute la Chine était gouvernée par un seul homme, qui prit le nouveau titre de Premier Empereur."
+        },
+        "de": {
+          "question": "Welcher Staat wurde 221 v. Chr. als letzter von Qin erobert?",
+          "options": [
+            "Han",
+            "Zhao",
+            "Chu",
+            "Qi"
+          ],
+          "explanation": "Qi ergab sich 221 v. Chr. Zum ersten Mal wurde ganz China von einem einzigen Mann regiert, der den neuen Titel Erster Kaiser annahm."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What kind of coin did the First Emperor make the standard across China?",
+      "options": [
+        "A round bronze coin with a square hole",
+        "A square gold coin",
+        "A silver coin with his portrait",
+        "A paper banknote"
+      ],
+      "explanation": "The round coin with a square hole in the middle was used in China, in one form or another, for the next two thousand years.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk soort munt maakte de Eerste Keizer de standaard in heel China?",
+          "options": [
+            "Een ronde bronzen munt met een vierkant gat",
+            "Een vierkante gouden munt",
+            "Een zilveren munt met zijn portret",
+            "Een papieren bankbiljet"
+          ],
+          "explanation": "De ronde munt met een vierkant gat in het midden werd in China, in een of andere vorm, nog tweeduizend jaar gebruikt."
+        },
+        "fr": {
+          "question": "Quel type de pièce le Premier Empereur a-t-il imposé dans toute la Chine ?",
+          "options": [
+            "Une pièce ronde en bronze percée d’un trou carré",
+            "Une pièce carrée en or",
+            "Une pièce d’argent à son effigie",
+            "Un billet de banque en papier"
+          ],
+          "explanation": "La pièce ronde percée d’un trou carré a été utilisée en Chine, sous une forme ou une autre, pendant les deux mille ans suivants."
+        },
+        "de": {
+          "question": "Welche Münze machte der Erste Kaiser in ganz China zum Standard?",
+          "options": [
+            "Eine runde Bronzemünze mit quadratischem Loch",
+            "Eine quadratische Goldmünze",
+            "Eine Silbermünze mit seinem Porträt",
+            "Einen Geldschein aus Papier"
+          ],
+          "explanation": "Die runde Münze mit einem quadratischen Loch in der Mitte wurde in China in der einen oder anderen Form noch zweitausend Jahre lang verwendet."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "When was most of the stone and brick Great Wall that tourists visit today built?",
+      "options": [
+        "Under the First Emperor",
+        "Much later, mainly under the Ming dynasty",
+        "Under the Han dynasty right after him",
+        "In the twentieth century"
+      ],
+      "explanation": "The First Emperor joined older walls into a long barrier, mostly of packed earth. The famous stone wall dates mainly from the Ming dynasty, over 1,500 years later.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wanneer werd het grootste deel van de stenen Chinese Muur die toeristen nu bezoeken gebouwd?",
+          "options": [
+            "Onder de Eerste Keizer",
+            "Veel later, vooral onder de Ming-dynastie",
+            "Onder de Han-dynastie direct na hem",
+            "In de twintigste eeuw"
+          ],
+          "explanation": "De Eerste Keizer verbond oudere muren tot één lange barrière, vooral van aangestampte aarde. De beroemde stenen muur stamt vooral uit de Ming-dynastie, ruim 1500 jaar later."
+        },
+        "fr": {
+          "question": "Quand la majeure partie de la Grande Muraille en pierre que visitent les touristes a-t-elle été construite ?",
+          "options": [
+            "Sous le Premier Empereur",
+            "Bien plus tard, surtout sous la dynastie Ming",
+            "Sous la dynastie Han, juste après lui",
+            "Au vingtième siècle"
+          ],
+          "explanation": "Le Premier Empereur a relié d’anciens murs en une longue barrière, surtout en terre damée. La célèbre muraille de pierre date principalement de la dynastie Ming, plus de 1 500 ans plus tard."
+        },
+        "de": {
+          "question": "Wann wurde der größte Teil der steinernen Großen Mauer gebaut, die Touristen heute besuchen?",
+          "options": [
+            "Unter dem Ersten Kaiser",
+            "Viel später, vor allem unter der Ming-Dynastie",
+            "Unter der Han-Dynastie direkt nach ihm",
+            "Im zwanzigsten Jahrhundert"
+          ],
+          "explanation": "Der Erste Kaiser verband ältere Mauern zu einer langen Barriere, meist aus gestampfter Erde. Die berühmte Steinmauer stammt vor allem aus der Ming-Dynastie, über 1500 Jahre später."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "What did the First Emperor send Xu Fu across the eastern sea to find?",
+      "options": [
+        "Silk and spices",
+        "Horses for his army",
+        "The elixir of immortality",
+        "A site for a new capital"
+      ],
+      "explanation": "Obsessed with escaping death, the emperor sent Xu Fu to look for the islands of the immortals. He never came back.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat moest Xu Fu van de Eerste Keizer over de oostelijke zee gaan zoeken?",
+          "options": [
+            "Zijde en specerijen",
+            "Paarden voor zijn leger",
+            "Het levenselixer",
+            "Een plek voor een nieuwe hoofdstad"
+          ],
+          "explanation": "De keizer was bezeten van het ontsnappen aan de dood en stuurde Xu Fu naar de eilanden van de onsterfelijken. Hij kwam nooit terug."
+        },
+        "fr": {
+          "question": "Qu’est-ce que le Premier Empereur a envoyé Xu Fu chercher de l’autre côté de la mer de l’Est ?",
+          "options": [
+            "De la soie et des épices",
+            "Des chevaux pour son armée",
+            "L’élixir d’immortalité",
+            "Un site pour une nouvelle capitale"
+          ],
+          "explanation": "Obsédé par l’idée d’échapper à la mort, l’empereur a envoyé Xu Fu chercher les îles des immortels. Il n’est jamais revenu."
+        },
+        "de": {
+          "question": "Was sollte Xu Fu im Auftrag des Ersten Kaisers jenseits des östlichen Meeres finden?",
+          "options": [
+            "Seide und Gewürze",
+            "Pferde für sein Heer",
+            "Das Elixier der Unsterblichkeit",
+            "Einen Ort für eine neue Hauptstadt"
+          ],
+          "explanation": "Besessen davon, dem Tod zu entkommen, schickte der Kaiser Xu Fu zu den Inseln der Unsterblichen. Er kam nie zurück."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "How was the Terracotta Army discovered in 1974?",
+      "options": [
+        "By tomb robbers",
+        "After an earthquake",
+        "By road builders",
+        "By farmers digging a well"
+      ],
+      "explanation": "The farmers struck pieces of clay figures. Archaeologists then uncovered pits holding an estimated eight thousand soldiers, each with a different face.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe werd het Terracottaleger in 1974 ontdekt?",
+          "options": [
+            "Door grafrovers",
+            "Na een aardbeving",
+            "Door wegenbouwers",
+            "Door boeren die een put groeven"
+          ],
+          "explanation": "De boeren stuitten op stukken van kleifiguren. Archeologen legden daarna kuilen bloot met naar schatting achtduizend soldaten, elk met een ander gezicht."
+        },
+        "fr": {
+          "question": "Comment l’Armée de terre cuite a-t-elle été découverte en 1974 ?",
+          "options": [
+            "Par des pilleurs de tombes",
+            "Après un tremblement de terre",
+            "Par des constructeurs de routes",
+            "Par des paysans qui creusaient un puits"
+          ],
+          "explanation": "Les paysans sont tombés sur des fragments de statues en argile. Les archéologues ont ensuite mis au jour des fosses abritant environ huit mille soldats, chacun avec un visage différent."
+        },
+        "de": {
+          "question": "Wie wurde die Terrakotta-Armee 1974 entdeckt?",
+          "options": [
+            "Von Grabräubern",
+            "Nach einem Erdbeben",
+            "Von Straßenbauern",
+            "Von Bauern, die einen Brunnen gruben"
+          ],
+          "explanation": "Die Bauern stießen auf Teile von Tonfiguren. Archäologen legten danach Gruben mit schätzungsweise achttausend Soldaten frei, jeder mit einem anderen Gesicht."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

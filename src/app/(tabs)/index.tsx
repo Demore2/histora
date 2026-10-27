@@ -45,9 +45,11 @@ export default function OntdekScreen() {
   const oppakken = bepaalOppakken(voortgang, completedStories, reisVerhaalId);
   const vandaag = useVandaag();
   // Alleen wat deze week is toegevoegd en nog niet uit is: meestal niets, soms één kaart.
-  const nieuweVerhalen = getNieuweVerhalen(vandaag).filter(
-    (verhaal) => verhaal.id !== reisVerhaalId && !completedStories.has(verhaal.id)
-  );
+  // Hooguit twee kaarten: komen er meerdere verhalen tegelijk bij, dan wordt Home anders een lijst.
+  // De rest is te vinden via het labeltje "New" op de tijdperktegel en de routekaart.
+  const nieuweVerhalen = getNieuweVerhalen(vandaag)
+    .filter((verhaal) => verhaal.id !== reisVerhaalId && !completedStories.has(verhaal.id))
+    .slice(0, 2);
 
   if (allVerhalen.length === 0) {
     return (

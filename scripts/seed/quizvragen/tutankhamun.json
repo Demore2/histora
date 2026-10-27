@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Which god did Akhenaten, Tutankhamun's father, worship above all others?",
+      "options": [
+        "Osiris",
+        "The Aten, the sun disc",
+        "Anubis",
+        "Horus"
+      ],
+      "explanation": "Akhenaten closed the temples of the old gods and devoted Egypt to the Aten. He even named his son Tutankhaten, 'living image of the Aten'.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke god vereerde Akhenaton, de vader van Toetanchamon, boven alle andere?",
+          "options": [
+            "Osiris",
+            "De Aton, de zonneschijf",
+            "Anubis",
+            "Horus"
+          ],
+          "explanation": "Akhenaton sloot de tempels van de oude goden en wijdde Egypte aan de Aton. Hij noemde zijn zoon zelfs Toetanchaton, 'levend beeld van de Aton'."
+        },
+        "fr": {
+          "question": "Quel dieu Akhenaton, le père de Toutânkhamon, vénérait-il plus que tous les autres ?",
+          "options": [
+            "Osiris",
+            "Aton, le disque solaire",
+            "Anubis",
+            "Horus"
+          ],
+          "explanation": "Akhenaton a fermé les temples des anciens dieux et consacré l’Égypte à Aton. Il a même appelé son fils Toutânkhaton, « image vivante d’Aton »."
+        },
+        "de": {
+          "question": "Welchen Gott verehrte Echnaton, der Vater Tutanchamuns, über alle anderen?",
+          "options": [
+            "Osiris",
+            "Aton, die Sonnenscheibe",
+            "Anubis",
+            "Horus"
+          ],
+          "explanation": "Echnaton schloss die Tempel der alten Götter und weihte Ägypten dem Aton. Er nannte seinen Sohn sogar Tutanchaton, „lebendes Abbild des Aton“."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "About how old was Tutankhamun when he became pharaoh?",
+      "options": [
+        "About eight or nine",
+        "About four",
+        "About fifteen",
+        "About twenty"
+      ],
+      "explanation": "He was a child when he took the throne, so real power lay with the courtier Ay and the general Horemheb.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe oud was Toetanchamon ongeveer toen hij farao werd?",
+          "options": [
+            "Ongeveer acht of negen",
+            "Ongeveer vier",
+            "Ongeveer vijftien",
+            "Ongeveer twintig"
+          ],
+          "explanation": "Hij was nog een kind toen hij de troon besteeg, dus de echte macht lag bij de hoveling Ay en de generaal Horemheb."
+        },
+        "fr": {
+          "question": "Quel âge avait environ Toutânkhamon quand il est devenu pharaon ?",
+          "options": [
+            "Environ huit ou neuf ans",
+            "Environ quatre ans",
+            "Environ quinze ans",
+            "Environ vingt ans"
+          ],
+          "explanation": "C’était un enfant quand il est monté sur le trône ; le vrai pouvoir appartenait au courtisan Aÿ et au général Horemheb."
+        },
+        "de": {
+          "question": "Wie alt war Tutanchamun ungefähr, als er Pharao wurde?",
+          "options": [
+            "Etwa acht oder neun",
+            "Etwa vier",
+            "Etwa fünfzehn",
+            "Etwa zwanzig"
+          ],
+          "explanation": "Er war noch ein Kind, als er den Thron bestieg; die eigentliche Macht lag beim Höfling Eje und beim General Haremhab."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Why did the young king change his name from Tutankhaten to Tutankhamun?",
+      "options": [
+        "To honour his wife",
+        "To show that the old gods were back",
+        "Because of a prophecy",
+        "To hide from his enemies"
+      ],
+      "explanation": "The new name honoured Amun, the old king of the gods. It marked Egypt's return to its traditional religion after Akhenaten.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom veranderde de jonge koning zijn naam van Toetanchaton in Toetanchamon?",
+          "options": [
+            "Om zijn vrouw te eren",
+            "Om te laten zien dat de oude goden terug waren",
+            "Vanwege een voorspelling",
+            "Om zich voor zijn vijanden te verbergen"
+          ],
+          "explanation": "De nieuwe naam eerde Amon, de oude koning van de goden. Zo keerde Egypte na Akhenaton terug naar zijn traditionele godsdienst."
+        },
+        "fr": {
+          "question": "Pourquoi le jeune roi a-t-il changé son nom de Toutânkhaton en Toutânkhamon ?",
+          "options": [
+            "Pour honorer son épouse",
+            "Pour montrer le retour des anciens dieux",
+            "À cause d’une prophétie",
+            "Pour se cacher de ses ennemis"
+          ],
+          "explanation": "Le nouveau nom honorait Amon, l’ancien roi des dieux. Il marquait le retour de l’Égypte à sa religion traditionnelle après Akhenaton."
+        },
+        "de": {
+          "question": "Warum änderte der junge König seinen Namen von Tutanchaton in Tutanchamun?",
+          "options": [
+            "Um seine Frau zu ehren",
+            "Um zu zeigen, dass die alten Götter zurück waren",
+            "Wegen einer Prophezeiung",
+            "Um sich vor seinen Feinden zu verstecken"
+          ],
+          "explanation": "Der neue Name ehrte Amun, den alten König der Götter. Er markierte Ägyptens Rückkehr zur traditionellen Religion nach Echnaton."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "About how many walking sticks were found in Tutankhamun's tomb?",
+      "options": [
+        "About ten",
+        "About forty",
+        "About 130",
+        "About 500"
+      ],
+      "explanation": "Scans show he had a deformed foot and a bone disease. Some of the sticks are visibly worn, so he really used them.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoeveel wandelstokken werden er ongeveer in het graf van Toetanchamon gevonden?",
+          "options": [
+            "Ongeveer tien",
+            "Ongeveer veertig",
+            "Ongeveer 130",
+            "Ongeveer 500"
+          ],
+          "explanation": "Scans laten zien dat hij een misvormde voet en een botziekte had. Sommige stokken zijn duidelijk versleten, dus hij gebruikte ze echt."
+        },
+        "fr": {
+          "question": "Combien de cannes environ a-t-on trouvées dans la tombe de Toutânkhamon ?",
+          "options": [
+            "Environ dix",
+            "Environ quarante",
+            "Environ 130",
+            "Environ 500"
+          ],
+          "explanation": "Les examens montrent qu’il avait un pied déformé et une maladie des os. Certaines cannes sont visiblement usées : il s’en servait vraiment."
+        },
+        "de": {
+          "question": "Wie viele Gehstöcke wurden ungefähr im Grab Tutanchamuns gefunden?",
+          "options": [
+            "Etwa zehn",
+            "Etwa vierzig",
+            "Etwa 130",
+            "Etwa 500"
+          ],
+          "explanation": "Untersuchungen zeigen, dass er einen verformten Fuß und eine Knochenkrankheit hatte. Einige Stöcke sind sichtbar abgenutzt, er hat sie also wirklich benutzt."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Who became pharaoh after Tutankhamun and is painted on his tomb wall performing the burial ritual?",
+      "options": [
+        "Horemheb",
+        "Akhenaten",
+        "Ramesses II",
+        "Ay"
+      ],
+      "explanation": "Performing the 'opening of the mouth' ceremony was the heir's task. By being painted doing it, the old courtier Ay claimed the throne.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie werd na Toetanchamon farao en staat op de grafmuur afgebeeld terwijl hij het begrafenisritueel uitvoert?",
+          "options": [
+            "Horemheb",
+            "Akhenaton",
+            "Ramses II",
+            "Ay"
+          ],
+          "explanation": "Het uitvoeren van de 'opening van de mond' was de taak van de opvolger. Door zich zo te laten afbeelden, eiste de oude hoveling Ay de troon op."
+        },
+        "fr": {
+          "question": "Qui est devenu pharaon après Toutânkhamon et figure sur le mur de sa tombe en train d’accomplir le rite funéraire ?",
+          "options": [
+            "Horemheb",
+            "Akhenaton",
+            "Ramsès II",
+            "Aÿ"
+          ],
+          "explanation": "Accomplir la cérémonie de « l’ouverture de la bouche » revenait à l’héritier. En se faisant représenter ainsi, le vieux courtisan Aÿ revendiquait le trône."
+        },
+        "de": {
+          "question": "Wer wurde nach Tutanchamun Pharao und ist an der Grabwand beim Bestattungsritual abgebildet?",
+          "options": [
+            "Haremhab",
+            "Echnaton",
+            "Ramses II.",
+            "Eje"
+          ],
+          "explanation": "Die „Mundöffnung“ durchzuführen war Aufgabe des Erben. Indem er sich dabei darstellen ließ, beanspruchte der alte Höfling Eje den Thron."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Why was Tutankhamun's tomb not emptied by robbers like most others in the Valley of the Kings?",
+      "options": [
+        "Its entrance was buried under rubble and workmen's huts",
+        "It was guarded by soldiers for centuries",
+        "It was hidden underwater",
+        "Robbers feared a curse"
+      ],
+      "explanation": "About two centuries after his burial, workmen building a later royal tomb dumped rubble over the entrance. The tomb disappeared until 1922.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom werd het graf van Toetanchamon niet leeggeroofd, zoals de meeste andere in de Vallei der Koningen?",
+          "options": [
+            "De ingang lag bedolven onder puin en werkmanshutten",
+            "Het werd eeuwenlang door soldaten bewaakt",
+            "Het lag onder water verborgen",
+            "Rovers waren bang voor een vloek"
+          ],
+          "explanation": "Zo'n twee eeuwen na zijn begrafenis stortten arbeiders die een later koningsgraf bouwden hun puin over de ingang. Het graf verdween tot 1922."
+        },
+        "fr": {
+          "question": "Pourquoi la tombe de Toutânkhamon n’a-t-elle pas été vidée par les pillards, comme la plupart des autres de la Vallée des Rois ?",
+          "options": [
+            "Son entrée était enfouie sous des gravats et des huttes d’ouvriers",
+            "Des soldats l’ont gardée pendant des siècles",
+            "Elle était cachée sous l’eau",
+            "Les pillards craignaient une malédiction"
+          ],
+          "explanation": "Environ deux siècles après l’inhumation, des ouvriers qui creusaient une tombe royale plus récente ont déversé leurs gravats sur l’entrée. La tombe a disparu jusqu’en 1922."
+        },
+        "de": {
+          "question": "Warum wurde Tutanchamuns Grab nicht wie die meisten anderen im Tal der Könige von Räubern geleert?",
+          "options": [
+            "Sein Eingang lag unter Schutt und Arbeiterhütten begraben",
+            "Es wurde jahrhundertelang von Soldaten bewacht",
+            "Es lag unter Wasser verborgen",
+            "Räuber fürchteten einen Fluch"
+          ],
+          "explanation": "Etwa zwei Jahrhunderte nach der Bestattung kippten Arbeiter, die ein späteres Königsgrab bauten, ihren Schutt über den Eingang. Das Grab verschwand bis 1922."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "In which year did Howard Carter's workmen find the first step leading down to the tomb?",
+      "options": [
+        "1899",
+        "1912",
+        "1922",
+        "1939"
+      ],
+      "explanation": "On 4 November 1922 a step cut into the rock was uncovered. On 26 November Carter looked through a hole into the antechamber and saw 'wonderful things'.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "In welk jaar vonden de arbeiders van Howard Carter de eerste trede naar het graf?",
+          "options": [
+            "1899",
+            "1912",
+            "1922",
+            "1939"
+          ],
+          "explanation": "Op 4 november 1922 werd een in de rots uitgehakte trede blootgelegd. Op 26 november keek Carter door een gat de voorkamer in en zag 'wonderlijke dingen'."
+        },
+        "fr": {
+          "question": "En quelle année les ouvriers d’Howard Carter ont-ils trouvé la première marche menant à la tombe ?",
+          "options": [
+            "1899",
+            "1912",
+            "1922",
+            "1939"
+          ],
+          "explanation": "Le 4 novembre 1922, une marche taillée dans la roche a été dégagée. Le 26 novembre, Carter a regardé dans l’antichambre par un trou et a vu « des choses merveilleuses »."
+        },
+        "de": {
+          "question": "In welchem Jahr fanden Howard Carters Arbeiter die erste Stufe hinab zum Grab?",
+          "options": [
+            "1899",
+            "1912",
+            "1922",
+            "1939"
+          ],
+          "explanation": "Am 4. November 1922 wurde eine in den Fels gehauene Stufe freigelegt. Am 26. November blickte Carter durch ein Loch in die Vorkammer und sah „wunderbare Dinge“."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What happened to Lord Carnarvon, who paid for the search for the tomb?",
+      "options": [
+        "He bought the treasures for himself",
+        "He was banned from Egypt",
+        "He found a second royal tomb",
+        "He died after an infected mosquito bite"
+      ],
+      "explanation": "His death in April 1923 started the legend of a pharaoh's curse. In fact no curse was written in the tomb, and Carter lived until 1939.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er met Lord Carnarvon, die de zoektocht naar het graf betaalde?",
+          "options": [
+            "Hij kocht de schatten voor zichzelf",
+            "Hij werd uit Egypte verbannen",
+            "Hij vond een tweede koningsgraf",
+            "Hij stierf na een ontstoken muggenbeet"
+          ],
+          "explanation": "Zijn dood in april 1923 was het begin van de legende van de vloek van de farao. Er stond in het graf echter geen vloek, en Carter leefde nog tot 1939."
+        },
+        "fr": {
+          "question": "Qu’est-il arrivé à Lord Carnarvon, qui finançait la recherche de la tombe ?",
+          "options": [
+            "Il a acheté les trésors pour lui-même",
+            "Il a été banni d’Égypte",
+            "Il a trouvé une deuxième tombe royale",
+            "Il est mort après une piqûre de moustique infectée"
+          ],
+          "explanation": "Sa mort en avril 1923 a lancé la légende de la malédiction du pharaon. En réalité, aucune malédiction n’était inscrite dans la tombe, et Carter a vécu jusqu’en 1939."
+        },
+        "de": {
+          "question": "Was geschah mit Lord Carnarvon, der die Suche nach dem Grab bezahlte?",
+          "options": [
+            "Er kaufte die Schätze für sich selbst",
+            "Er wurde aus Ägypten verbannt",
+            "Er fand ein zweites Königsgrab",
+            "Er starb nach einem entzündeten Mückenstich"
+          ],
+          "explanation": "Sein Tod im April 1923 begründete die Legende vom Fluch des Pharaos. Tatsächlich stand kein Fluch im Grab, und Carter lebte noch bis 1939."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

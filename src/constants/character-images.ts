@@ -21,6 +21,12 @@ const IMAGES = {
   'pompeii-disaster': require('../../assets/images/characters/pompeii-disaster.webp'),
   'ashoka-maurya': require('../../assets/images/characters/ashoka-maurya.webp'),
   'alexander-the-great': require('../../assets/images/characters/alexander-the-great.webp'),
+  'tutankhamun': require('../../assets/images/characters/tutankhamun.webp'),
+  'socrates': require('../../assets/images/characters/socrates.webp'),
+  'qin-shi-huang': require('../../assets/images/characters/qin-shi-huang.webp'),
+  'hannibal': require('../../assets/images/characters/hannibal.webp'),
+  'cleopatra': require('../../assets/images/characters/cleopatra.webp'),
+  'nero': require('../../assets/images/characters/nero.webp'),
 
   // Middeleeuwen
   'joan-of-arc': require('../../assets/images/characters/joan-of-arc.webp'),
