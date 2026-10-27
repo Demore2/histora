@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What was Harriet Tubman's name at birth?",
+      "options": [
+        "Harriet Green",
+        "Araminta Ross",
+        "Sojourner Truth",
+        "Mary Bowley"
+      ],
+      "explanation": "She took the name Harriet, after her mother, around the time she married John Tubman in about 1844.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe heette Harriet Tubman bij haar geboorte?",
+          "options": [
+            "Harriet Green",
+            "Araminta Ross",
+            "Sojourner Truth",
+            "Mary Bowley"
+          ],
+          "explanation": "Ze nam de naam Harriet aan, naar haar moeder, rond de tijd dat ze omstreeks 1844 met John Tubman trouwde."
+        },
+        "fr": {
+          "question": "Quel était le nom de naissance de Harriet Tubman ?",
+          "options": [
+            "Harriet Green",
+            "Araminta Ross",
+            "Sojourner Truth",
+            "Mary Bowley"
+          ],
+          "explanation": "Elle a pris le prénom Harriet, celui de sa mère, vers l’époque de son mariage avec John Tubman, autour de 1844."
+        },
+        "de": {
+          "question": "Wie hieß Harriet Tubman bei ihrer Geburt?",
+          "options": [
+            "Harriet Green",
+            "Araminta Ross",
+            "Sojourner Truth",
+            "Mary Bowley"
+          ],
+          "explanation": "Den Namen Harriet, nach ihrer Mutter, nahm sie um die Zeit ihrer Heirat mit John Tubman um 1844 an."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What caused the headaches and sudden sleeping spells Tubman suffered all her life?",
+      "options": [
+        "A heavy weight thrown by an overseer struck her head",
+        "A fall from a horse",
+        "A fever she caught in the marshes",
+        "A gunshot during the Civil War"
+      ],
+      "explanation": "The overseer was aiming at another enslaved man. She also had vivid dreams and visions, which she believed came from God.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waardoor kreeg Tubman de hoofdpijn en plotselinge slaapaanvallen waar ze haar hele leven last van had?",
+          "options": [
+            "Een zwaar gewicht dat een opzichter gooide, raakte haar hoofd",
+            "Een val van een paard",
+            "Een koorts die ze in de moerassen opliep",
+            "Een kogel tijdens de Burgeroorlog"
+          ],
+          "explanation": "De opzichter mikte op een andere tot slaaf gemaakte man. Ze had ook levendige dromen en visioenen, die volgens haar van God kwamen."
+        },
+        "fr": {
+          "question": "Qu’est-ce qui a causé les maux de tête et les brusques accès de sommeil dont Tubman a souffert toute sa vie ?",
+          "options": [
+            "Un poids lourd lancé par un contremaître l’a frappée à la tête",
+            "Une chute de cheval",
+            "Une fièvre attrapée dans les marais",
+            "Une balle pendant la guerre de Sécession"
+          ],
+          "explanation": "Le contremaître visait un autre homme réduit en esclavage. Elle avait aussi des rêves et des visions intenses, qu’elle croyait venir de Dieu."
+        },
+        "de": {
+          "question": "Wodurch bekam Tubman die Kopfschmerzen und plötzlichen Schlafanfälle, unter denen sie ihr Leben lang litt?",
+          "options": [
+            "Ein schweres Gewicht, das ein Aufseher warf, traf sie am Kopf",
+            "Ein Sturz vom Pferd",
+            "Ein Fieber aus den Sümpfen",
+            "Eine Schussverletzung im Bürgerkrieg"
+          ],
+          "explanation": "Der Aufseher zielte auf einen anderen Versklavten. Sie hatte auch lebhafte Träume und Visionen, die ihrer Überzeugung nach von Gott kamen."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What did Tubman use to find her way north when she escaped in 1849?",
+      "options": [
+        "A stolen compass",
+        "A map drawn by a Quaker",
+        "The North Star",
+        "The railway line"
+      ],
+      "explanation": "She walked about 140 kilometres to Pennsylvania, mostly at night, helped by people in the secret network called the Underground Railroad.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarmee vond Tubman de weg naar het noorden toen ze in 1849 ontsnapte?",
+          "options": [
+            "Een gestolen kompas",
+            "Een kaart getekend door een quaker",
+            "De Poolster",
+            "De spoorlijn"
+          ],
+          "explanation": "Ze liep zo'n 140 kilometer naar Pennsylvania, vooral 's nachts, geholpen door mensen uit het geheime netwerk dat de Underground Railroad heette."
+        },
+        "fr": {
+          "question": "Qu’a utilisé Tubman pour trouver le chemin du nord lors de son évasion en 1849 ?",
+          "options": [
+            "Une boussole volée",
+            "Une carte dessinée par un quaker",
+            "L’étoile Polaire",
+            "La voie ferrée"
+          ],
+          "explanation": "Elle a parcouru environ 140 kilomètres jusqu’en Pennsylvanie, surtout de nuit, aidée par le réseau secret appelé Underground Railroad."
+        },
+        "de": {
+          "question": "Womit fand Tubman bei ihrer Flucht 1849 den Weg nach Norden?",
+          "options": [
+            "Mit einem gestohlenen Kompass",
+            "Mit einer Karte eines Quäkers",
+            "Mit dem Polarstern",
+            "Entlang der Eisenbahnlinie"
+          ],
+          "explanation": "Sie lief etwa 140 Kilometer bis Pennsylvania, meist nachts, unterstützt vom geheimen Netzwerk, das Underground Railroad hieß."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Why did Tubman lead her 'passengers' all the way to Canada after 1850?",
+      "options": [
+        "Canada paid a reward for every refugee",
+        "Her family already lived there",
+        "The trains to Canada were free",
+        "A new law made escaped people unsafe even in the Northern states"
+      ],
+      "explanation": "The Fugitive Slave Act forced people in free states to help return those who had escaped. In Canada slavery had been abolished.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom bracht Tubman haar 'passagiers' na 1850 helemaal naar Canada?",
+          "options": [
+            "Canada betaalde een beloning per vluchteling",
+            "Haar familie woonde daar al",
+            "De treinen naar Canada waren gratis",
+            "Door een nieuwe wet waren gevluchte mensen zelfs in de noordelijke staten niet veilig"
+          ],
+          "explanation": "De Fugitive Slave Act verplichtte mensen in vrije staten om mee te helpen gevluchte slaven terug te sturen. In Canada was de slavernij afgeschaft."
+        },
+        "fr": {
+          "question": "Pourquoi Tubman menait-elle ses « passagers » jusqu’au Canada après 1850 ?",
+          "options": [
+            "Le Canada payait une prime par réfugié",
+            "Sa famille y vivait déjà",
+            "Les trains pour le Canada étaient gratuits",
+            "Une nouvelle loi rendait les fugitifs vulnérables même dans les États du Nord"
+          ],
+          "explanation": "La loi sur les esclaves fugitifs obligeait les habitants des États libres à aider à renvoyer les évadés. Au Canada, l’esclavage était aboli."
+        },
+        "de": {
+          "question": "Warum brachte Tubman ihre „Passagiere“ nach 1850 bis nach Kanada?",
+          "options": [
+            "Kanada zahlte eine Prämie pro Flüchtling",
+            "Ihre Familie lebte schon dort",
+            "Die Züge nach Kanada waren kostenlos",
+            "Ein neues Gesetz machte Geflohene selbst in den Nordstaaten unsicher"
+          ],
+          "explanation": "Der Fugitive Slave Act zwang auch Menschen in freien Staaten, bei der Rückführung Geflohener zu helfen. In Kanada war die Sklaverei abgeschafft."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Why did Tubman often start an escape on a Saturday night?",
+      "options": [
+        "Runaway notices could not appear in the newspapers until Monday",
+        "Slaveholders went to church on Saturday",
+        "The moon was always dark on Saturdays",
+        "Boats only sailed on Sundays"
+      ],
+      "explanation": "It gave her group a head start. She also travelled in winter, when the nights were long, and used songs to signal danger or safety.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom begon Tubman een vlucht vaak op zaterdagavond?",
+          "options": [
+            "Opsporingsberichten konden pas maandag in de kranten verschijnen",
+            "Slavenhouders gingen op zaterdag naar de kerk",
+            "Op zaterdag was het altijd nieuwe maan",
+            "Boten voeren alleen op zondag"
+          ],
+          "explanation": "Zo had haar groep een voorsprong. Ze reisde ook in de winter, als de nachten lang waren, en gebruikte liederen als signaal voor gevaar of veiligheid."
+        },
+        "fr": {
+          "question": "Pourquoi Tubman commençait-elle souvent une évasion le samedi soir ?",
+          "options": [
+            "Les avis de fuite ne pouvaient pas paraître dans les journaux avant le lundi",
+            "Les propriétaires allaient à l’église le samedi",
+            "Il n’y avait jamais de lune le samedi",
+            "Les bateaux ne partaient que le dimanche"
+          ],
+          "explanation": "Cela donnait de l’avance à son groupe. Elle voyageait aussi l’hiver, quand les nuits étaient longues, et utilisait des chants pour signaler le danger ou la sécurité."
+        },
+        "de": {
+          "question": "Warum begann Tubman eine Flucht oft am Samstagabend?",
+          "options": [
+            "Suchanzeigen konnten erst am Montag in den Zeitungen erscheinen",
+            "Sklavenhalter gingen samstags in die Kirche",
+            "Samstags war immer Neumond",
+            "Boote fuhren nur sonntags"
+          ],
+          "explanation": "So hatte ihre Gruppe einen Vorsprung. Sie reiste auch im Winter, wenn die Nächte lang waren, und nutzte Lieder als Signal für Gefahr oder Sicherheit."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What did the radical abolitionist John Brown call Tubman?",
+      "options": [
+        "Queen Harriet",
+        "The Conductor",
+        "Mother Moses",
+        "General Tubman"
+      ],
+      "explanation": "He was so impressed that he gave her a military title. She helped him find recruits, but was ill when he raided Harpers Ferry in 1859.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe noemde de radicale abolitionist John Brown Tubman?",
+          "options": [
+            "Koningin Harriet",
+            "De Conducteur",
+            "Moeder Mozes",
+            "Generaal Tubman"
+          ],
+          "explanation": "Hij was zo onder de indruk dat hij haar een militaire titel gaf. Ze hielp hem rekruten te vinden, maar was ziek toen hij in 1859 Harpers Ferry aanviel."
+        },
+        "fr": {
+          "question": "Comment l’abolitionniste radical John Brown appelait-il Tubman ?",
+          "options": [
+            "La reine Harriet",
+            "La Conductrice",
+            "Mère Moïse",
+            "Le général Tubman"
+          ],
+          "explanation": "Il était si impressionné qu’il lui a donné un titre militaire. Elle l’a aidé à recruter, mais elle était malade lors de son raid sur Harpers Ferry en 1859."
+        },
+        "de": {
+          "question": "Wie nannte der radikale Abolitionist John Brown Tubman?",
+          "options": [
+            "Königin Harriet",
+            "Die Schaffnerin",
+            "Mutter Moses",
+            "General Tubman"
+          ],
+          "explanation": "Er war so beeindruckt, dass er ihr einen militärischen Titel gab. Sie half ihm, Leute anzuwerben, war aber krank, als er 1859 Harpers Ferry überfiel."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "How many people were freed in the Combahee River Raid that Tubman helped lead in June 1863?",
+      "options": [
+        "About 70",
+        "More than 700",
+        "About 7,000",
+        "Exactly 13"
+      ],
+      "explanation": "Union gunboats steamed up the river past the mines, blew their whistles, and enslaved people came running from the rice fields.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoeveel mensen werden bevrijd bij de raid op de Combahee-rivier die Tubman in juni 1863 mee leidde?",
+          "options": [
+            "Ongeveer 70",
+            "Meer dan 700",
+            "Ongeveer 7.000",
+            "Precies 13"
+          ],
+          "explanation": "Kanonneerboten van de Unie voeren langs de mijnen de rivier op en lieten hun stoomfluiten horen, waarna tot slaaf gemaakten uit de rijstvelden kwamen aanrennen."
+        },
+        "fr": {
+          "question": "Combien de personnes ont été libérées lors du raid sur la rivière Combahee que Tubman a contribué à mener en juin 1863 ?",
+          "options": [
+            "Environ 70",
+            "Plus de 700",
+            "Environ 7 000",
+            "Exactement 13"
+          ],
+          "explanation": "Les canonnières de l’Union ont remonté la rivière en évitant les mines et fait retentir leurs sifflets : les esclaves sont accourus des rizières."
+        },
+        "de": {
+          "question": "Wie viele Menschen wurden beim Combahee-River-Überfall befreit, den Tubman im Juni 1863 mit anführte?",
+          "options": [
+            "Etwa 70",
+            "Mehr als 700",
+            "Etwa 7.000",
+            "Genau 13"
+          ],
+          "explanation": "Kanonenboote der Union fuhren an den Minen vorbei flussaufwärts und ließen ihre Pfeifen ertönen, worauf die Versklavten aus den Reisfeldern herbeiliefen."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What did Tubman open on land next to her house in Auburn in 1908?",
+      "options": [
+        "A school for nurses",
+        "A church",
+        "A home for elderly Black people",
+        "A museum of the Underground Railroad"
+      ],
+      "explanation": "She had always taken in the sick, the old and children with nowhere to go. In her last years she moved into the home herself.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat opende Tubman in 1908 op het land naast haar huis in Auburn?",
+          "options": [
+            "Een opleiding voor verpleegsters",
+            "Een kerk",
+            "Een tehuis voor oudere zwarte mensen",
+            "Een museum over de Underground Railroad"
+          ],
+          "explanation": "Ze had altijd zieken, ouderen en kinderen zonder thuis opgevangen. In haar laatste jaren trok ze er zelf in."
+        },
+        "fr": {
+          "question": "Qu’a ouvert Tubman en 1908 sur le terrain voisin de sa maison d’Auburn ?",
+          "options": [
+            "Une école d’infirmières",
+            "Une église",
+            "Une maison de retraite pour personnes noires âgées",
+            "Un musée de l’Underground Railroad"
+          ],
+          "explanation": "Elle avait toujours accueilli malades, personnes âgées et enfants sans foyer. Dans ses dernières années, elle s’y est elle-même installée."
+        },
+        "de": {
+          "question": "Was eröffnete Tubman 1908 auf dem Grundstück neben ihrem Haus in Auburn?",
+          "options": [
+            "Eine Pflegeschule",
+            "Eine Kirche",
+            "Ein Heim für ältere Schwarze",
+            "Ein Museum über die Underground Railroad"
+          ],
+          "explanation": "Sie hatte immer Kranke, Alte und heimatlose Kinder aufgenommen. In ihren letzten Jahren zog sie selbst dort ein."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

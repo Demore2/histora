@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What nickname did Bismarck earn as a wild young man?",
+      "options": [
+        "The Iron Student",
+        "The Prussian Wolf",
+        "The mad Junker",
+        "The Red Count"
+      ],
+      "explanation": "At university he was famous for drinking, debts, a huge dog and around twenty-five duels, which left him with just one scar.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke bijnaam kreeg Bismarck als wilde jongeman?",
+          "options": [
+            "De IJzeren Student",
+            "De Pruisische Wolf",
+            "De dolle jonker",
+            "De Rode Graaf"
+          ],
+          "explanation": "Op de universiteit stond hij bekend om drank, schulden, een enorme hond en zo'n vijfentwintig duels, waaraan hij maar één litteken overhield."
+        },
+        "fr": {
+          "question": "Quel surnom Bismarck s’est-il attiré lorsqu’il était un jeune homme turbulent ?",
+          "options": [
+            "L’étudiant de fer",
+            "Le loup prussien",
+            "Le junker fou",
+            "Le comte rouge"
+          ],
+          "explanation": "À l’université, il était célèbre pour l’alcool, les dettes, un énorme chien et quelque vingt-cinq duels, dont il n’a gardé qu’une cicatrice."
+        },
+        "de": {
+          "question": "Welchen Spitznamen bekam Bismarck als wilder junger Mann?",
+          "options": [
+            "Der eiserne Student",
+            "Der preußische Wolf",
+            "Der tolle Junker",
+            "Der rote Graf"
+          ],
+          "explanation": "An der Universität war er berüchtigt für Trinken, Schulden, einen riesigen Hund und rund fünfundzwanzig Duelle, die ihm nur eine Narbe einbrachten."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Roughly how many separate German states were there when Bismarck began his career?",
+      "options": [
+        "About 39",
+        "Exactly 2",
+        "About 7",
+        "More than 300"
+      ],
+      "explanation": "From big kingdoms like Prussia and Bavaria to tiny principalities, they were only loosely joined in a German Confederation led by Austria.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoeveel afzonderlijke Duitse staten waren er ongeveer toen Bismarck aan zijn loopbaan begon?",
+          "options": [
+            "Ongeveer 39",
+            "Precies 2",
+            "Ongeveer 7",
+            "Meer dan 300"
+          ],
+          "explanation": "Van grote koninkrijken als Pruisen en Beieren tot piepkleine vorstendommen: ze waren alleen losjes verbonden in een Duitse Bond onder leiding van Oostenrijk."
+        },
+        "fr": {
+          "question": "Combien d’États allemands distincts y avait-il environ quand Bismarck a commencé sa carrière ?",
+          "options": [
+            "Environ 39",
+            "Exactement 2",
+            "Environ 7",
+            "Plus de 300"
+          ],
+          "explanation": "Des grands royaumes comme la Prusse et la Bavière aux minuscules principautés, ils n’étaient que vaguement réunis dans une Confédération germanique dominée par l’Autriche."
+        },
+        "de": {
+          "question": "Wie viele einzelne deutsche Staaten gab es ungefähr, als Bismarck seine Laufbahn begann?",
+          "options": [
+            "Etwa 39",
+            "Genau 2",
+            "Etwa 7",
+            "Über 300"
+          ],
+          "explanation": "Von großen Königreichen wie Preußen und Bayern bis zu winzigen Fürstentümern waren sie nur lose im Deutschen Bund unter Österreichs Führung verbunden."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "In 1862 Bismarck said the great questions of the day would not be decided by speeches, but by what?",
+      "options": [
+        "Gold and grain",
+        "Iron and blood",
+        "Kings and crowns",
+        "Votes and laws"
+      ],
+      "explanation": "The phrase caused an uproar. When parliament still refused the money for the army, he governed for four years without an approved budget.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waardoor zouden de grote vragen van de tijd volgens Bismarck in 1862 beslist worden, en niet door toespraken?",
+          "options": [
+            "Goud en graan",
+            "IJzer en bloed",
+            "Koningen en kronen",
+            "Stemmen en wetten"
+          ],
+          "explanation": "De uitspraak veroorzaakte opschudding. Toen het parlement het geld voor het leger bleef weigeren, regeerde hij vier jaar zonder goedgekeurde begroting."
+        },
+        "fr": {
+          "question": "En 1862, Bismarck a déclaré que les grandes questions du moment ne seraient pas tranchées par des discours, mais par quoi ?",
+          "options": [
+            "L’or et le blé",
+            "Le fer et le sang",
+            "Les rois et les couronnes",
+            "Les votes et les lois"
+          ],
+          "explanation": "La formule a fait scandale. Le parlement refusant toujours l’argent pour l’armée, il a gouverné quatre ans sans budget approuvé."
+        },
+        "de": {
+          "question": "Wodurch würden die großen Fragen der Zeit laut Bismarck 1862 entschieden, nicht durch Reden?",
+          "options": [
+            "Gold und Getreide",
+            "Eisen und Blut",
+            "Könige und Kronen",
+            "Stimmen und Gesetze"
+          ],
+          "explanation": "Der Satz sorgte für Aufruhr. Als das Parlament das Geld für die Armee weiter verweigerte, regierte er vier Jahre ohne genehmigten Haushalt."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "At which battle did Prussia crush Austria on 3 July 1866?",
+      "options": [
+        "Sedan",
+        "Leipzig",
+        "Waterloo",
+        "Königgrätz"
+      ],
+      "explanation": "Prussian soldiers had fast-loading breech-loading rifles and were brought to the front by railway. Bismarck then insisted on a mild peace.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "In welke slag versloeg Pruisen Oostenrijk op 3 juli 1866?",
+          "options": [
+            "Sedan",
+            "Leipzig",
+            "Waterloo",
+            "Königgrätz"
+          ],
+          "explanation": "Pruisische soldaten hadden snel herlaadbare achterladers en werden per trein naar het front gebracht. Daarna dwong Bismarck een milde vrede af."
+        },
+        "fr": {
+          "question": "Lors de quelle bataille la Prusse a-t-elle écrasé l’Autriche le 3 juillet 1866 ?",
+          "options": [
+            "Sedan",
+            "Leipzig",
+            "Waterloo",
+            "Königgrätz (Sadowa)"
+          ],
+          "explanation": "Les soldats prussiens avaient des fusils à chargement par la culasse, rapides à recharger, et étaient acheminés au front par le train. Bismarck a ensuite imposé une paix modérée."
+        },
+        "de": {
+          "question": "In welcher Schlacht besiegte Preußen Österreich am 3. Juli 1866?",
+          "options": [
+            "Sedan",
+            "Leipzig",
+            "Waterloo",
+            "Königgrätz"
+          ],
+          "explanation": "Preußische Soldaten hatten schnell ladende Hinterlader und wurden per Eisenbahn an die Front gebracht. Danach setzte Bismarck einen milden Frieden durch."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What did Bismarck do with the Ems telegram in July 1870?",
+      "options": [
+        "He shortened it so that both sides seemed to have insulted each other",
+        "He burned it before anyone could read it",
+        "He sent it to Queen Victoria",
+        "He translated it into French as a peace offer"
+      ],
+      "explanation": "Released to the press, the edited version caused fury in Paris. France declared war, and the southern German states joined Prussia.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed Bismarck in juli 1870 met het telegram van Ems?",
+          "options": [
+            "Hij kortte het in, zodat het leek alsof beide kanten elkaar hadden beledigd",
+            "Hij verbrandde het voordat iemand het kon lezen",
+            "Hij stuurde het naar koningin Victoria",
+            "Hij vertaalde het als vredesaanbod in het Frans"
+          ],
+          "explanation": "De ingekorte versie ging naar de pers en zorgde voor woede in Parijs. Frankrijk verklaarde de oorlog, en de zuidelijke Duitse staten sloten zich bij Pruisen aan."
+        },
+        "fr": {
+          "question": "Qu’a fait Bismarck de la dépêche d’Ems en juillet 1870 ?",
+          "options": [
+            "Il l’a raccourcie pour que chaque camp semble avoir insulté l’autre",
+            "Il l’a brûlée avant que quiconque la lise",
+            "Il l’a envoyée à la reine Victoria",
+            "Il l’a traduite en français comme offre de paix"
+          ],
+          "explanation": "Publiée dans la presse, la version modifiée a provoqué la fureur à Paris. La France a déclaré la guerre, et les États du sud de l’Allemagne ont rejoint la Prusse."
+        },
+        "de": {
+          "question": "Was machte Bismarck im Juli 1870 mit der Emser Depesche?",
+          "options": [
+            "Er kürzte sie so, dass beide Seiten einander beleidigt zu haben schienen",
+            "Er verbrannte sie, bevor jemand sie lesen konnte",
+            "Er schickte sie an Königin Victoria",
+            "Er übersetzte sie als Friedensangebot ins Französische"
+          ],
+          "explanation": "Die gekürzte Fassung ging an die Presse und löste in Paris Empörung aus. Frankreich erklärte den Krieg, und die süddeutschen Staaten schlossen sich Preußen an."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What did Bismarck introduce for German workers in the 1880s, a world first?",
+      "options": [
+        "An eight-hour working day",
+        "A minimum wage",
+        "State insurance for sickness, accidents and old age",
+        "Free university education"
+      ],
+      "explanation": "Health insurance came in 1883, accident insurance in 1884 and pensions in 1889. It was the beginning of the modern welfare state.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat voerde Bismarck in de jaren 1880 als eerste ter wereld in voor Duitse arbeiders?",
+          "options": [
+            "Een achturige werkdag",
+            "Een minimumloon",
+            "Staatsverzekeringen tegen ziekte, ongevallen en ouderdom",
+            "Gratis universitair onderwijs"
+          ],
+          "explanation": "De ziekteverzekering kwam in 1883, de ongevallenverzekering in 1884 en het pensioen in 1889. Het was het begin van de moderne verzorgingsstaat."
+        },
+        "fr": {
+          "question": "Qu’a instauré Bismarck pour les ouvriers allemands dans les années 1880, une première mondiale ?",
+          "options": [
+            "La journée de huit heures",
+            "Un salaire minimum",
+            "Des assurances d’État contre la maladie, les accidents et la vieillesse",
+            "Des études universitaires gratuites"
+          ],
+          "explanation": "L’assurance maladie est arrivée en 1883, l’assurance accidents en 1884 et les retraites en 1889. C’était le début de l’État-providence moderne."
+        },
+        "de": {
+          "question": "Was führte Bismarck in den 1880er-Jahren als Weltneuheit für deutsche Arbeiter ein?",
+          "options": [
+            "Den Achtstundentag",
+            "Einen Mindestlohn",
+            "Staatliche Versicherungen gegen Krankheit, Unfall und Alter",
+            "Kostenloses Studium"
+          ],
+          "explanation": "Die Krankenversicherung kam 1883, die Unfallversicherung 1884 und die Rente 1889. Es war der Beginn des modernen Sozialstaats."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "How did Bismarck present himself when the great powers met in Berlin in 1878?",
+      "options": [
+        "As the master of Europe",
+        "As an honest broker who wanted nothing for Germany",
+        "As the defender of the Pope",
+        "As the friend of France"
+      ],
+      "explanation": "After three wars, he wanted peace. He feared above all that France would find allies and attack Germany from two sides.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe presenteerde Bismarck zich toen de grote mogendheden in 1878 in Berlijn bijeenkwamen?",
+          "options": [
+            "Als de meester van Europa",
+            "Als eerlijke makelaar die niets voor Duitsland wilde",
+            "Als verdediger van de paus",
+            "Als vriend van Frankrijk"
+          ],
+          "explanation": "Na drie oorlogen wilde hij vrede. Hij vreesde vooral dat Frankrijk bondgenoten zou vinden en Duitsland van twee kanten zou aanvallen."
+        },
+        "fr": {
+          "question": "Comment Bismarck s’est-il présenté lorsque les grandes puissances se sont réunies à Berlin en 1878 ?",
+          "options": [
+            "Comme le maître de l’Europe",
+            "Comme un « honnête courtier » qui ne voulait rien pour l’Allemagne",
+            "Comme le défenseur du pape",
+            "Comme l’ami de la France"
+          ],
+          "explanation": "Après trois guerres, il voulait la paix. Il craignait par-dessus tout que la France trouve des alliés et attaque l’Allemagne sur deux fronts."
+        },
+        "de": {
+          "question": "Wie stellte sich Bismarck dar, als die Großmächte 1878 in Berlin zusammenkamen?",
+          "options": [
+            "Als Herr Europas",
+            "Als ehrlicher Makler, der nichts für Deutschland wollte",
+            "Als Verteidiger des Papstes",
+            "Als Freund Frankreichs"
+          ],
+          "explanation": "Nach drei Kriegen wollte er Frieden. Vor allem fürchtete er, Frankreich könnte Verbündete finden und Deutschland von zwei Seiten angreifen."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What was the famous British cartoon about Bismarck's dismissal in 1890 called?",
+      "options": [
+        "The Iron Man Falls",
+        "Exit the Chancellor",
+        "The Old Lion",
+        "Dropping the Pilot"
+      ],
+      "explanation": "It showed the old pilot leaving the ship while the young emperor Wilhelm II watched from above. Germany then let his treaty with Russia lapse.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe heette de beroemde Britse spotprent over Bismarcks ontslag in 1890?",
+          "options": [
+            "The Iron Man Falls",
+            "Exit the Chancellor",
+            "The Old Lion",
+            "Dropping the Pilot (De loods gaat van boord)"
+          ],
+          "explanation": "Je zag de oude loods het schip verlaten terwijl de jonge keizer Wilhelm II van bovenaf toekeek. Daarna liet Duitsland zijn verdrag met Rusland verlopen."
+        },
+        "fr": {
+          "question": "Comment s’appelait la célèbre caricature britannique sur le renvoi de Bismarck en 1890 ?",
+          "options": [
+            "The Iron Man Falls",
+            "Exit the Chancellor",
+            "The Old Lion",
+            "Dropping the Pilot (Le pilote débarque)"
+          ],
+          "explanation": "On y voyait le vieux pilote quitter le navire sous le regard du jeune empereur Guillaume II. L’Allemagne a ensuite laissé expirer son traité avec la Russie."
+        },
+        "de": {
+          "question": "Wie hieß die berühmte britische Karikatur über Bismarcks Entlassung 1890?",
+          "options": [
+            "The Iron Man Falls",
+            "Exit the Chancellor",
+            "The Old Lion",
+            "Dropping the Pilot (Der Lotse geht von Bord)"
+          ],
+          "explanation": "Sie zeigte den alten Lotsen, der das Schiff verlässt, während der junge Kaiser Wilhelm II. von oben zusieht. Danach ließ Deutschland seinen Vertrag mit Russland auslaufen."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

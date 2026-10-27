@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "On which island was Napoleon born in 1769?",
+      "options": [
+        "Sardinia",
+        "Corsica",
+        "Sicily",
+        "Elba"
+      ],
+      "explanation": "Corsica had been sold to France by Genoa only a year earlier, and Napoleon grew up speaking Italian at home.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Op welk eiland werd Napoleon in 1769 geboren?",
+          "options": [
+            "Sardinië",
+            "Corsica",
+            "Sicilië",
+            "Elba"
+          ],
+          "explanation": "Genua had Corsica pas een jaar eerder aan Frankrijk verkocht, en thuis sprak Napoleon Italiaans."
+        },
+        "fr": {
+          "question": "Sur quelle île Napoléon est-il né en 1769 ?",
+          "options": [
+            "La Sardaigne",
+            "La Corse",
+            "La Sicile",
+            "L’île d’Elbe"
+          ],
+          "explanation": "Gênes avait cédé la Corse à la France un an plus tôt seulement, et Napoléon parlait italien à la maison."
+        },
+        "de": {
+          "question": "Auf welcher Insel wurde Napoleon 1769 geboren?",
+          "options": [
+            "Sardinien",
+            "Korsika",
+            "Sizilien",
+            "Elba"
+          ],
+          "explanation": "Genua hatte Korsika erst ein Jahr zuvor an Frankreich abgetreten, und zu Hause sprach Napoleon Italienisch."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "In 1793 the young artillery captain made his name by driving a British fleet out of which French port?",
+      "options": [
+        "Marseille",
+        "Brest",
+        "Toulon",
+        "Nice"
+      ],
+      "explanation": "He saw that guns on a hill above the harbour would make it impossible for the British ships to stay. He was made a general at twenty-four.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Uit welke Franse haven verdreef de jonge artilleriekapitein in 1793 een Britse vloot?",
+          "options": [
+            "Marseille",
+            "Brest",
+            "Toulon",
+            "Nice"
+          ],
+          "explanation": "Hij zag dat kanonnen op een heuvel boven de haven de Britse schepen zouden wegjagen. Op zijn vierentwintigste werd hij generaal."
+        },
+        "fr": {
+          "question": "De quel port français le jeune capitaine d’artillerie a-t-il chassé une flotte britannique en 1793 ?",
+          "options": [
+            "Marseille",
+            "Brest",
+            "Toulon",
+            "Nice"
+          ],
+          "explanation": "Il a compris que des canons sur une colline dominant le port rendraient la position des navires britanniques intenable. Il est devenu général à vingt-quatre ans."
+        },
+        "de": {
+          "question": "Aus welchem französischen Hafen vertrieb der junge Artilleriehauptmann 1793 eine britische Flotte?",
+          "options": [
+            "Marseille",
+            "Brest",
+            "Toulon",
+            "Nizza"
+          ],
+          "explanation": "Er erkannte, dass Kanonen auf einem Hügel über dem Hafen die britischen Schiffe vertreiben würden. Mit vierundzwanzig wurde er General."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What did French soldiers find in Egypt in 1799 that later made it possible to read hieroglyphs?",
+      "options": [
+        "The Rosetta Stone",
+        "The tomb of Tutankhamun",
+        "The Great Sphinx",
+        "The Library of Alexandria"
+      ],
+      "explanation": "The stone carried the same decree in three scripts. The British took it as a prize of war, and it is now in the British Museum.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat vonden Franse soldaten in 1799 in Egypte waarmee later hiërogliefen konden worden gelezen?",
+          "options": [
+            "De Steen van Rosetta",
+            "Het graf van Toetanchamon",
+            "De Grote Sfinx",
+            "De bibliotheek van Alexandrië"
+          ],
+          "explanation": "Op de steen stond hetzelfde besluit in drie schriften. De Britten namen hem als oorlogsbuit mee; hij staat nu in het British Museum."
+        },
+        "fr": {
+          "question": "Qu’ont trouvé des soldats français en Égypte en 1799, qui a permis plus tard de lire les hiéroglyphes ?",
+          "options": [
+            "La pierre de Rosette",
+            "Le tombeau de Toutânkhamon",
+            "Le Grand Sphinx",
+            "La bibliothèque d’Alexandrie"
+          ],
+          "explanation": "La pierre portait le même décret en trois écritures. Les Britanniques l’ont prise comme butin de guerre ; elle est aujourd’hui au British Museum."
+        },
+        "de": {
+          "question": "Was fanden französische Soldaten 1799 in Ägypten, mit dessen Hilfe man später Hieroglyphen lesen konnte?",
+          "options": [
+            "Den Stein von Rosette",
+            "Das Grab des Tutanchamun",
+            "Die Große Sphinx",
+            "Die Bibliothek von Alexandria"
+          ],
+          "explanation": "Auf dem Stein stand derselbe Erlass in drei Schriften. Die Briten nahmen ihn als Kriegsbeute mit; heute steht er im British Museum."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Napoleon's Civil Code of 1804, which made all men equal before the law, became known as what?",
+      "options": [
+        "The Grand Charter",
+        "The Declaration of Rights",
+        "The Continental System",
+        "The Code Napoléon"
+      ],
+      "explanation": "Versions of it spread with his armies and still shape the law in France, Belgium, Italy, Spain, Latin America and Louisiana.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Onder welke naam werd Napoleons burgerlijk wetboek van 1804, dat alle mannen gelijk maakte voor de wet, bekend?",
+          "options": [
+            "Het Grote Handvest",
+            "De Verklaring van de Rechten",
+            "Het Continentaal Stelsel",
+            "De Code Napoléon"
+          ],
+          "explanation": "Het verspreidde zich met zijn legers en bepaalt nog altijd het recht in onder meer Frankrijk, België, Italië, Spanje, Latijns-Amerika en Louisiana."
+        },
+        "fr": {
+          "question": "Sous quel nom le Code civil de 1804, qui rendait tous les hommes égaux devant la loi, est-il devenu célèbre ?",
+          "options": [
+            "La Grande Charte",
+            "La Déclaration des droits",
+            "Le Blocus continental",
+            "Le Code Napoléon"
+          ],
+          "explanation": "Il s’est répandu avec ses armées et inspire encore le droit en France, en Belgique, en Italie, en Espagne, en Amérique latine et en Louisiane."
+        },
+        "de": {
+          "question": "Unter welchem Namen wurde Napoleons Zivilgesetzbuch von 1804, das alle Männer vor dem Gesetz gleichstellte, bekannt?",
+          "options": [
+            "Die Große Charta",
+            "Die Erklärung der Rechte",
+            "Die Kontinentalsperre",
+            "Der Code Napoléon"
+          ],
+          "explanation": "Er verbreitete sich mit seinen Armeen und prägt bis heute das Recht in Frankreich, Belgien, Italien, Spanien, Lateinamerika und Louisiana."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Which victory of 2 December 1805 is also called the Battle of the Three Emperors?",
+      "options": [
+        "Jena",
+        "Wagram",
+        "Austerlitz",
+        "Marengo"
+      ],
+      "explanation": "Napoleon lured the Russian and Austrian armies into attacking his weak right wing, then broke through their centre.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke overwinning van 2 december 1805 wordt ook de Slag van de Drie Keizers genoemd?",
+          "options": [
+            "Jena",
+            "Wagram",
+            "Austerlitz",
+            "Marengo"
+          ],
+          "explanation": "Napoleon lokte de Russische en Oostenrijkse legers naar zijn zwakke rechtervleugel en brak daarna door hun midden."
+        },
+        "fr": {
+          "question": "Quelle victoire du 2 décembre 1805 est aussi appelée la bataille des Trois Empereurs ?",
+          "options": [
+            "Iéna",
+            "Wagram",
+            "Austerlitz",
+            "Marengo"
+          ],
+          "explanation": "Napoléon a poussé les armées russe et autrichienne à attaquer son aile droite affaiblie, puis a percé leur centre."
+        },
+        "de": {
+          "question": "Welcher Sieg vom 2. Dezember 1805 wird auch Dreikaiserschlacht genannt?",
+          "options": [
+            "Jena",
+            "Wagram",
+            "Austerlitz",
+            "Marengo"
+          ],
+          "explanation": "Napoleon lockte die russische und die österreichische Armee gegen seinen geschwächten rechten Flügel und durchbrach dann ihr Zentrum."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What did Napoleon find when he entered Moscow in September 1812?",
+      "options": [
+        "The tsar waiting to sign a peace treaty",
+        "An almost empty city that was soon on fire",
+        "A city full of British troops",
+        "A huge welcome from the people"
+      ],
+      "explanation": "The fires were very probably set by the Russians themselves. The tsar never replied to Napoleon's offers, and the disastrous retreat began in October.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat trof Napoleon aan toen hij in september 1812 Moskou binnentrok?",
+          "options": [
+            "De tsaar, klaar om vrede te tekenen",
+            "Een bijna lege stad die al snel in brand stond",
+            "Een stad vol Britse troepen",
+            "Een groots onthaal door de bevolking"
+          ],
+          "explanation": "De branden werden zeer waarschijnlijk door de Russen zelf gesticht. De tsaar antwoordde nooit, en in oktober begon de rampzalige terugtocht."
+        },
+        "fr": {
+          "question": "Qu’a trouvé Napoléon en entrant dans Moscou en septembre 1812 ?",
+          "options": [
+            "Le tsar prêt à signer la paix",
+            "Une ville presque vide, bientôt en flammes",
+            "Une ville remplie de troupes britanniques",
+            "Un accueil triomphal de la population"
+          ],
+          "explanation": "Les incendies ont très probablement été allumés par les Russes eux-mêmes. Le tsar n’a jamais répondu, et la retraite désastreuse a commencé en octobre."
+        },
+        "de": {
+          "question": "Was fand Napoleon vor, als er im September 1812 in Moskau einzog?",
+          "options": [
+            "Den Zaren, bereit zum Friedensschluss",
+            "Eine fast leere Stadt, die bald in Flammen stand",
+            "Eine Stadt voller britischer Truppen",
+            "Einen begeisterten Empfang der Bevölkerung"
+          ],
+          "explanation": "Die Brände wurden sehr wahrscheinlich von den Russen selbst gelegt. Der Zar antwortete nie, und im Oktober begann der verheerende Rückzug."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "In March 1815 Napoleon walked alone towards soldiers sent to stop him. What did they do?",
+      "options": [
+        "They lowered their muskets and joined him",
+        "They arrested him and sent him back to Elba",
+        "They opened fire and wounded him",
+        "They fled into the mountains"
+      ],
+      "explanation": "Regiment after regiment went over to him. The king fled, and Napoleon was back in Paris on 20 March: the start of the Hundred Days.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "In maart 1815 liep Napoleon alleen op de soldaten af die hem moesten tegenhouden. Wat deden zij?",
+          "options": [
+            "Ze lieten hun geweren zakken en sloten zich bij hem aan",
+            "Ze arresteerden hem en stuurden hem terug naar Elba",
+            "Ze openden het vuur en verwondden hem",
+            "Ze vluchtten de bergen in"
+          ],
+          "explanation": "Regiment na regiment liep naar hem over. De koning vluchtte en op 20 maart was Napoleon terug in Parijs: het begin van de Honderd Dagen."
+        },
+        "fr": {
+          "question": "En mars 1815, Napoléon a marché seul vers les soldats envoyés pour l’arrêter. Qu’ont-ils fait ?",
+          "options": [
+            "Ils ont baissé leurs fusils et l’ont rejoint",
+            "Ils l’ont arrêté et renvoyé à l’île d’Elbe",
+            "Ils ont ouvert le feu et l’ont blessé",
+            "Ils ont fui dans les montagnes"
+          ],
+          "explanation": "Les régiments se sont ralliés l’un après l’autre. Le roi a fui et, le 20 mars, Napoléon était de retour à Paris : le début des Cent-Jours."
+        },
+        "de": {
+          "question": "Im März 1815 ging Napoleon allein auf die Soldaten zu, die ihn aufhalten sollten. Was taten sie?",
+          "options": [
+            "Sie senkten ihre Gewehre und liefen zu ihm über",
+            "Sie verhafteten ihn und schickten ihn nach Elba zurück",
+            "Sie eröffneten das Feuer und verwundeten ihn",
+            "Sie flohen in die Berge"
+          ],
+          "explanation": "Ein Regiment nach dem anderen schloss sich ihm an. Der König floh, und am 20. März war Napoleon wieder in Paris: der Beginn der Herrschaft der Hundert Tage."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Where does Napoleon's tomb stand today?",
+      "options": [
+        "On St Helena",
+        "In Notre-Dame",
+        "In the palace of Versailles",
+        "Under the dome of Les Invalides in Paris"
+      ],
+      "explanation": "He died on St Helena in 1821. In 1840 his body was brought back to France, and hundreds of thousands lined the snowy streets of Paris.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar staat het graf van Napoleon vandaag?",
+          "options": [
+            "Op Sint-Helena",
+            "In de Notre-Dame",
+            "In het paleis van Versailles",
+            "Onder de koepel van Les Invalides in Parijs"
+          ],
+          "explanation": "Hij stierf in 1821 op Sint-Helena. In 1840 werd zijn lichaam naar Frankrijk teruggebracht, en honderdduizenden stonden langs de besneeuwde straten van Parijs."
+        },
+        "fr": {
+          "question": "Où se trouve aujourd’hui le tombeau de Napoléon ?",
+          "options": [
+            "À Sainte-Hélène",
+            "À Notre-Dame",
+            "Au château de Versailles",
+            "Sous le dôme des Invalides, à Paris"
+          ],
+          "explanation": "Il est mort à Sainte-Hélène en 1821. En 1840, son corps a été rapatrié, et des centaines de milliers de personnes se pressaient dans les rues enneigées de Paris."
+        },
+        "de": {
+          "question": "Wo steht Napoleons Grab heute?",
+          "options": [
+            "Auf St. Helena",
+            "In Notre-Dame",
+            "Im Schloss Versailles",
+            "Unter der Kuppel des Invalidendoms in Paris"
+          ],
+          "explanation": "Er starb 1821 auf St. Helena. 1840 wurde sein Leichnam nach Frankreich zurückgebracht, und Hunderttausende säumten die verschneiten Straßen von Paris."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

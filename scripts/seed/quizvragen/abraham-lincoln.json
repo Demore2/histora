@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "How much formal schooling did Abraham Lincoln have in total?",
+      "options": [
+        "About ten years",
+        "Less than a year",
+        "None at all",
+        "Four years at college"
+      ],
+      "explanation": "Everything else he taught himself, walking miles to borrow books and practising writing with charcoal on boards.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoeveel schoolopleiding had Abraham Lincoln in totaal?",
+          "options": [
+            "Ongeveer tien jaar",
+            "Minder dan een jaar",
+            "Helemaal geen",
+            "Vier jaar universiteit"
+          ],
+          "explanation": "Al het andere leerde hij zichzelf: hij liep kilometers om boeken te lenen en oefende schrijven met houtskool op planken."
+        },
+        "fr": {
+          "question": "Combien d’années d’école Abraham Lincoln a-t-il suivies en tout ?",
+          "options": [
+            "Environ dix ans",
+            "Moins d’un an",
+            "Aucune",
+            "Quatre ans d’université"
+          ],
+          "explanation": "Tout le reste, il l’a appris seul, marchant des kilomètres pour emprunter des livres et s’exerçant à écrire au charbon sur des planches."
+        },
+        "de": {
+          "question": "Wie viel Schulbildung hatte Abraham Lincoln insgesamt?",
+          "options": [
+            "Etwa zehn Jahre",
+            "Weniger als ein Jahr",
+            "Gar keine",
+            "Vier Jahre Studium"
+          ],
+          "explanation": "Alles andere brachte er sich selbst bei: Er lief kilometerweit, um Bücher zu leihen, und übte das Schreiben mit Holzkohle auf Brettern."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What makes Lincoln unique among American presidents?",
+      "options": [
+        "He is the only one who held a patent",
+        "He was born outside the United States",
+        "He never lived in the White House",
+        "He served three terms"
+      ],
+      "explanation": "In 1849 he patented a device to lift riverboats over sandbars with inflatable chambers. It was never built.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat maakt Lincoln uniek onder de Amerikaanse presidenten?",
+          "options": [
+            "Hij is de enige die een octrooi had",
+            "Hij werd buiten de Verenigde Staten geboren",
+            "Hij woonde nooit in het Witte Huis",
+            "Hij diende drie termijnen"
+          ],
+          "explanation": "In 1849 kreeg hij octrooi op een apparaat dat rivierboten met opblaasbare kamers over zandbanken moest tillen. Het werd nooit gebouwd."
+        },
+        "fr": {
+          "question": "Qu’est-ce qui rend Lincoln unique parmi les présidents américains ?",
+          "options": [
+            "Il est le seul à avoir déposé un brevet",
+            "Il est né hors des États-Unis",
+            "Il n’a jamais habité la Maison-Blanche",
+            "Il a fait trois mandats"
+          ],
+          "explanation": "En 1849, il a breveté un dispositif destiné à soulever les bateaux au-dessus des bancs de sable grâce à des chambres gonflables. Il n’a jamais été construit."
+        },
+        "de": {
+          "question": "Was macht Lincoln unter den amerikanischen Präsidenten einzigartig?",
+          "options": [
+            "Er ist der Einzige, der ein Patent besaß",
+            "Er wurde außerhalb der USA geboren",
+            "Er wohnte nie im Weißen Haus",
+            "Er regierte drei Amtszeiten"
+          ],
+          "explanation": "1849 ließ er eine Vorrichtung patentieren, die Flussboote mit aufblasbaren Kammern über Sandbänke heben sollte. Sie wurde nie gebaut."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Which famous image did Lincoln use in 1858 for a country split between slave and free states?",
+      "options": [
+        "A ship without a captain",
+        "A tree with rotten roots",
+        "A house divided against itself",
+        "A bridge about to collapse"
+      ],
+      "explanation": "'A house divided against itself cannot stand,' he said, adding that the government could not endure permanently half slave and half free.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk beroemd beeld gebruikte Lincoln in 1858 voor een land dat verdeeld was tussen slavenstaten en vrije staten?",
+          "options": [
+            "Een schip zonder kapitein",
+            "Een boom met rotte wortels",
+            "Een huis dat tegen zichzelf verdeeld is",
+            "Een brug die op instorten staat"
+          ],
+          "explanation": "'Een huis dat tegen zichzelf verdeeld is, kan niet blijven staan', zei hij: de regering kon niet blijvend half slaaf en half vrij zijn."
+        },
+        "fr": {
+          "question": "Quelle image célèbre Lincoln a-t-il employée en 1858 pour un pays partagé entre États esclavagistes et États libres ?",
+          "options": [
+            "Un navire sans capitaine",
+            "Un arbre aux racines pourries",
+            "Une maison divisée contre elle-même",
+            "Un pont sur le point de s’effondrer"
+          ],
+          "explanation": "« Une maison divisée contre elle-même ne peut tenir », a-t-il dit : le gouvernement ne pouvait durer moitié esclave, moitié libre."
+        },
+        "de": {
+          "question": "Welches berühmte Bild verwendete Lincoln 1858 für ein Land, das zwischen Sklavenstaaten und freien Staaten gespalten war?",
+          "options": [
+            "Ein Schiff ohne Kapitän",
+            "Ein Baum mit faulen Wurzeln",
+            "Ein Haus, das in sich gespalten ist",
+            "Eine Brücke kurz vor dem Einsturz"
+          ],
+          "explanation": "„Ein in sich gespaltenes Haus kann nicht bestehen“, sagte er: Die Regierung könne nicht dauerhaft halb Sklaverei, halb Freiheit sein."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Where were the first shots of the American Civil War fired in April 1861?",
+      "options": [
+        "Gettysburg",
+        "Antietam",
+        "Bull Run",
+        "Fort Sumter"
+      ],
+      "explanation": "Confederate cannons opened fire on the federal fort in the harbour of Charleston, South Carolina, on 12 April 1861.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar vielen in april 1861 de eerste schoten van de Amerikaanse Burgeroorlog?",
+          "options": [
+            "Gettysburg",
+            "Antietam",
+            "Bull Run",
+            "Fort Sumter"
+          ],
+          "explanation": "Op 12 april 1861 openden kanonnen van de Confederatie het vuur op het federale fort in de haven van Charleston, South Carolina."
+        },
+        "fr": {
+          "question": "Où ont été tirés en avril 1861 les premiers coups de feu de la guerre de Sécession ?",
+          "options": [
+            "Gettysburg",
+            "Antietam",
+            "Bull Run",
+            "Fort Sumter"
+          ],
+          "explanation": "Le 12 avril 1861, les canons confédérés ont ouvert le feu sur ce fort fédéral du port de Charleston, en Caroline du Sud."
+        },
+        "de": {
+          "question": "Wo fielen im April 1861 die ersten Schüsse des Amerikanischen Bürgerkriegs?",
+          "options": [
+            "Gettysburg",
+            "Antietam",
+            "Bull Run",
+            "Fort Sumter"
+          ],
+          "explanation": "Am 12. April 1861 eröffneten Kanonen der Konföderierten das Feuer auf das Bundesfort im Hafen von Charleston, South Carolina."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What did the Emancipation Proclamation of 1 January 1863 declare?",
+      "options": [
+        "That the war was over",
+        "That enslaved people in the rebelling states were free",
+        "That women could vote",
+        "That the South could leave the Union"
+      ],
+      "explanation": "It only took effect where Union armies arrived, so every advance now freed people. It also opened the army to Black soldiers, about 180,000 of whom served.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat werd er in de Emancipatieproclamatie van 1 januari 1863 verklaard?",
+          "options": [
+            "Dat de oorlog voorbij was",
+            "Dat de tot slaaf gemaakten in de opstandige staten vrij waren",
+            "Dat vrouwen mochten stemmen",
+            "Dat het Zuiden de Unie mocht verlaten"
+          ],
+          "explanation": "Ze gold pas waar legers van de Unie aankwamen, dus elke opmars bevrijdde mensen. Ook mochten zwarte mannen voortaan dienen; zo'n 180.000 deden dat."
+        },
+        "fr": {
+          "question": "Que déclarait la proclamation d’émancipation du 1er janvier 1863 ?",
+          "options": [
+            "Que la guerre était finie",
+            "Que les esclaves des États rebelles étaient libres",
+            "Que les femmes pouvaient voter",
+            "Que le Sud pouvait quitter l’Union"
+          ],
+          "explanation": "Elle ne s’appliquait que là où arrivaient les armées de l’Union : chaque avancée libérait donc des gens. Elle ouvrait aussi l’armée aux soldats noirs ; environ 180 000 ont servi."
+        },
+        "de": {
+          "question": "Was erklärte die Emanzipationsproklamation vom 1. Januar 1863?",
+          "options": [
+            "Dass der Krieg vorbei sei",
+            "Dass die Versklavten in den abtrünnigen Staaten frei seien",
+            "Dass Frauen wählen dürften",
+            "Dass der Süden die Union verlassen dürfe"
+          ],
+          "explanation": "Sie galt nur dort, wo Unionstruppen hinkamen, also befreite jeder Vormarsch Menschen. Außerdem durften nun schwarze Soldaten dienen; etwa 180.000 taten es."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Roughly how long did Lincoln speak when he gave the Gettysburg Address?",
+      "options": [
+        "About two minutes",
+        "About twenty minutes",
+        "About an hour",
+        "About two hours"
+      ],
+      "explanation": "The main speaker that day talked for two hours. Lincoln's speech had only 272 words, yet it became one of the most famous in history.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe lang sprak Lincoln ongeveer toen hij de Gettysburg Address hield?",
+          "options": [
+            "Ongeveer twee minuten",
+            "Ongeveer twintig minuten",
+            "Ongeveer een uur",
+            "Ongeveer twee uur"
+          ],
+          "explanation": "De hoofdspreker sprak die dag twee uur. Lincolns toespraak telde maar 272 woorden en werd toch een van de beroemdste uit de geschiedenis."
+        },
+        "fr": {
+          "question": "Combien de temps environ Lincoln a-t-il parlé lors du discours de Gettysburg ?",
+          "options": [
+            "Environ deux minutes",
+            "Environ vingt minutes",
+            "Environ une heure",
+            "Environ deux heures"
+          ],
+          "explanation": "L’orateur principal avait parlé deux heures. Le discours de Lincoln ne comptait que 272 mots, et il est pourtant devenu l’un des plus célèbres de l’histoire."
+        },
+        "de": {
+          "question": "Wie lange sprach Lincoln ungefähr bei der Gettysburg Address?",
+          "options": [
+            "Etwa zwei Minuten",
+            "Etwa zwanzig Minuten",
+            "Etwa eine Stunde",
+            "Etwa zwei Stunden"
+          ],
+          "explanation": "Der Hauptredner sprach an diesem Tag zwei Stunden. Lincolns Rede hatte nur 272 Wörter und wurde doch eine der berühmtesten der Geschichte."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "What did the Thirteenth Amendment to the US Constitution do?",
+      "options": [
+        "It gave every state its own army",
+        "It made Lincoln president for life",
+        "It abolished slavery throughout the United States",
+        "It moved the capital to Washington"
+      ],
+      "explanation": "Lincoln wanted slavery ended permanently, not just as a wartime measure. Congress passed it in January 1865; it was ratified in December, after his death.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat regelde het Dertiende Amendement op de Amerikaanse grondwet?",
+          "options": [
+            "Elke staat kreeg een eigen leger",
+            "Lincoln werd president voor het leven",
+            "De slavernij werd in de hele Verenigde Staten afgeschaft",
+            "De hoofdstad werd naar Washington verplaatst"
+          ],
+          "explanation": "Lincoln wilde de slavernij voorgoed beëindigen, niet alleen als oorlogsmaatregel. Het Congres nam het in januari 1865 aan; het werd in december, na zijn dood, geratificeerd."
+        },
+        "fr": {
+          "question": "Que faisait le treizième amendement de la Constitution américaine ?",
+          "options": [
+            "Il donnait une armée à chaque État",
+            "Il faisait de Lincoln un président à vie",
+            "Il abolissait l’esclavage dans tous les États-Unis",
+            "Il déplaçait la capitale à Washington"
+          ],
+          "explanation": "Lincoln voulait abolir l’esclavage pour de bon, pas seulement comme mesure de guerre. Le Congrès l’a adopté en janvier 1865 ; il a été ratifié en décembre, après sa mort."
+        },
+        "de": {
+          "question": "Was bewirkte der Dreizehnte Zusatzartikel zur US-Verfassung?",
+          "options": [
+            "Jeder Bundesstaat bekam eine eigene Armee",
+            "Lincoln wurde Präsident auf Lebenszeit",
+            "Die Sklaverei wurde in den gesamten USA abgeschafft",
+            "Die Hauptstadt wurde nach Washington verlegt"
+          ],
+          "explanation": "Lincoln wollte die Sklaverei endgültig beenden, nicht nur als Kriegsmaßnahme. Der Kongress verabschiedete ihn im Januar 1865; ratifiziert wurde er im Dezember, nach seinem Tod."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Who shot Abraham Lincoln at Ford's Theatre on 14 April 1865?",
+      "options": [
+        "Robert E. Lee",
+        "Edwin Stanton",
+        "Stephen Douglas",
+        "John Wilkes Booth"
+      ],
+      "explanation": "Booth was a well-known actor and Confederate sympathiser. He leapt onto the stage, broke his leg and escaped, but was tracked down twelve days later.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie schoot Abraham Lincoln op 14 april 1865 neer in Ford's Theatre?",
+          "options": [
+            "Robert E. Lee",
+            "Edwin Stanton",
+            "Stephen Douglas",
+            "John Wilkes Booth"
+          ],
+          "explanation": "Booth was een bekende acteur en aanhanger van de Confederatie. Hij sprong op het toneel, brak zijn been en ontsnapte, maar werd twaalf dagen later opgespoord."
+        },
+        "fr": {
+          "question": "Qui a tiré sur Abraham Lincoln au théâtre Ford le 14 avril 1865 ?",
+          "options": [
+            "Robert E. Lee",
+            "Edwin Stanton",
+            "Stephen Douglas",
+            "John Wilkes Booth"
+          ],
+          "explanation": "Booth était un acteur connu, sympathisant des confédérés. Il a sauté sur la scène, s’est cassé la jambe et a fui, mais il a été retrouvé douze jours plus tard."
+        },
+        "de": {
+          "question": "Wer erschoss Abraham Lincoln am 14. April 1865 im Ford’s Theatre?",
+          "options": [
+            "Robert E. Lee",
+            "Edwin Stanton",
+            "Stephen Douglas",
+            "John Wilkes Booth"
+          ],
+          "explanation": "Booth war ein bekannter Schauspieler und Anhänger der Konföderation. Er sprang auf die Bühne, brach sich das Bein und floh, wurde aber zwölf Tage später aufgespürt."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

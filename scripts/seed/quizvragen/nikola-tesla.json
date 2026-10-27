@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Where was Nikola Tesla born in 1856?",
+      "options": [
+        "Belgrade",
+        "Vienna",
+        "Smiljan, in present-day Croatia",
+        "Budapest"
+      ],
+      "explanation": "His parents were Serbs, and his father was an Orthodox priest. Family legend says he was born at midnight during a lightning storm.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar werd Nikola Tesla in 1856 geboren?",
+          "options": [
+            "Belgrado",
+            "Wenen",
+            "Smiljan, in het huidige Kroatië",
+            "Boedapest"
+          ],
+          "explanation": "Zijn ouders waren Serviërs en zijn vader was een orthodoxe priester. Volgens de familie werd hij om middernacht geboren, tijdens een onweer."
+        },
+        "fr": {
+          "question": "Où Nikola Tesla est-il né en 1856 ?",
+          "options": [
+            "Belgrade",
+            "Vienne",
+            "Smiljan, dans l’actuelle Croatie",
+            "Budapest"
+          ],
+          "explanation": "Ses parents étaient serbes et son père était prêtre orthodoxe. Selon la légende familiale, il est né à minuit pendant un orage."
+        },
+        "de": {
+          "question": "Wo wurde Nikola Tesla 1856 geboren?",
+          "options": [
+            "Belgrad",
+            "Wien",
+            "Smiljan im heutigen Kroatien",
+            "Budapest"
+          ],
+          "explanation": "Seine Eltern waren Serben, sein Vater orthodoxer Priester. Der Familienlegende nach wurde er um Mitternacht während eines Gewitters geboren."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Where did the idea of the rotating magnetic field come to Tesla in 1882?",
+      "options": [
+        "In a park in Budapest, while reciting Goethe at sunset",
+        "In Edison's laboratory in New Jersey",
+        "In a dream on a ship to America",
+        "During an exam in Graz"
+      ],
+      "explanation": "He grabbed a stick and drew the diagram in the sand: a motor driven by alternating currents, with no brushes at all.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar kreeg Tesla in 1882 het idee van het draaiende magnetische veld?",
+          "options": [
+            "In een park in Boedapest, terwijl hij bij zonsondergang Goethe opzei",
+            "In het laboratorium van Edison in New Jersey",
+            "In een droom op een schip naar Amerika",
+            "Tijdens een examen in Graz"
+          ],
+          "explanation": "Hij pakte een stok en tekende het schema in het zand: een motor aangedreven door wisselstroom, helemaal zonder borstels."
+        },
+        "fr": {
+          "question": "Où l’idée du champ magnétique tournant est-elle venue à Tesla en 1882 ?",
+          "options": [
+            "Dans un parc de Budapest, en récitant Goethe au coucher du soleil",
+            "Dans le laboratoire d’Edison, dans le New Jersey",
+            "En rêve, sur un bateau pour l’Amérique",
+            "Pendant un examen à Graz"
+          ],
+          "explanation": "Il a saisi un bâton et tracé le schéma dans le sable : un moteur alimenté par des courants alternatifs, sans aucun balai."
+        },
+        "de": {
+          "question": "Wo kam Tesla 1882 die Idee des magnetischen Drehfelds?",
+          "options": [
+            "In einem Park in Budapest, als er bei Sonnenuntergang Goethe rezitierte",
+            "In Edisons Labor in New Jersey",
+            "Im Traum auf einem Schiff nach Amerika",
+            "Während einer Prüfung in Graz"
+          ],
+          "explanation": "Er griff nach einem Stock und zeichnete das Schema in den Sand: ein Motor, angetrieben von Wechselströmen, ganz ohne Bürsten."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What was Tesla doing in the winter of 1886 to 1887, after investors forced him out of his first company?",
+      "options": [
+        "Teaching physics in Paris",
+        "Digging ditches in New York",
+        "Working for Westinghouse",
+        "Living with his family in Croatia"
+      ],
+      "explanation": "The future inventor of the modern electrical system earned two dollars a day as a labourer before new investors backed him in 1887.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed Tesla in de winter van 1886 op 1887, nadat investeerders hem uit zijn eerste bedrijf hadden gezet?",
+          "options": [
+            "Natuurkunde geven in Parijs",
+            "Greppels graven in New York",
+            "Werken voor Westinghouse",
+            "Bij zijn familie in Kroatië wonen"
+          ],
+          "explanation": "De latere uitvinder van ons moderne stroomnet verdiende twee dollar per dag als arbeider, totdat nieuwe investeerders hem in 1887 steunden."
+        },
+        "fr": {
+          "question": "Que faisait Tesla durant l’hiver 1886-1887, après que des investisseurs l’ont évincé de sa première entreprise ?",
+          "options": [
+            "Il enseignait la physique à Paris",
+            "Il creusait des fossés à New York",
+            "Il travaillait pour Westinghouse",
+            "Il vivait chez sa famille en Croatie"
+          ],
+          "explanation": "Le futur inventeur du réseau électrique moderne gagnait deux dollars par jour comme ouvrier, avant que de nouveaux investisseurs le soutiennent en 1887."
+        },
+        "de": {
+          "question": "Was tat Tesla im Winter 1886/87, nachdem Investoren ihn aus seiner ersten Firma gedrängt hatten?",
+          "options": [
+            "Er unterrichtete Physik in Paris",
+            "Er hob in New York Gräben aus",
+            "Er arbeitete für Westinghouse",
+            "Er lebte bei seiner Familie in Kroatien"
+          ],
+          "explanation": "Der spätere Erfinder des modernen Stromnetzes verdiente als Arbeiter zwei Dollar am Tag, bis ihn 1887 neue Investoren unterstützten."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Which industrialist bought Tesla's alternating-current patents in 1888?",
+      "options": [
+        "J. P. Morgan",
+        "Thomas Edison",
+        "Andrew Carnegie",
+        "George Westinghouse"
+      ],
+      "explanation": "Westinghouse put Tesla's AC system into practice and fought the 'war of the currents' against Edison's direct current.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke industrieel kocht in 1888 Tesla's octrooien op wisselstroom?",
+          "options": [
+            "J. P. Morgan",
+            "Thomas Edison",
+            "Andrew Carnegie",
+            "George Westinghouse"
+          ],
+          "explanation": "Westinghouse bracht Tesla's wisselstroomsysteem in de praktijk en voerde de 'stroomoorlog' tegen Edisons gelijkstroom."
+        },
+        "fr": {
+          "question": "Quel industriel a racheté en 1888 les brevets de Tesla sur le courant alternatif ?",
+          "options": [
+            "J. P. Morgan",
+            "Thomas Edison",
+            "Andrew Carnegie",
+            "George Westinghouse"
+          ],
+          "explanation": "Westinghouse a mis en pratique le système alternatif de Tesla et a mené la « guerre des courants » contre le courant continu d’Edison."
+        },
+        "de": {
+          "question": "Welcher Industrielle kaufte 1888 Teslas Wechselstrompatente?",
+          "options": [
+            "J. P. Morgan",
+            "Thomas Edison",
+            "Andrew Carnegie",
+            "George Westinghouse"
+          ],
+          "explanation": "Westinghouse setzte Teslas Wechselstromsystem in die Praxis um und führte den „Stromkrieg“ gegen Edisons Gleichstrom."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Which famous natural wonder powered the plant that sent Tesla's alternating current to the city of Buffalo in 1896?",
+      "options": [
+        "Niagara Falls",
+        "The Grand Canyon",
+        "Yellowstone's geysers",
+        "The Mississippi delta"
+      ],
+      "explanation": "The power travelled about 40 kilometres. Alternating current had won, and it still runs almost every wall socket in the world.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk beroemd natuurwonder dreef de centrale aan die in 1896 Tesla's wisselstroom naar de stad Buffalo stuurde?",
+          "options": [
+            "De Niagarawatervallen",
+            "De Grand Canyon",
+            "De geisers van Yellowstone",
+            "De Mississippidelta"
+          ],
+          "explanation": "De stroom ging zo'n 40 kilometer ver. De wisselstroom had gewonnen, en voedt nog altijd bijna elk stopcontact ter wereld."
+        },
+        "fr": {
+          "question": "Quelle célèbre merveille naturelle alimentait la centrale qui a envoyé en 1896 le courant alternatif de Tesla jusqu’à la ville de Buffalo ?",
+          "options": [
+            "Les chutes du Niagara",
+            "Le Grand Canyon",
+            "Les geysers de Yellowstone",
+            "Le delta du Mississippi"
+          ],
+          "explanation": "Le courant a parcouru environ 40 kilomètres. L’alternatif avait gagné, et il alimente encore presque toutes les prises du monde."
+        },
+        "de": {
+          "question": "Welches berühmte Naturwunder trieb das Kraftwerk an, das 1896 Teslas Wechselstrom in die Stadt Buffalo schickte?",
+          "options": [
+            "Die Niagarafälle",
+            "Der Grand Canyon",
+            "Die Geysire von Yellowstone",
+            "Das Mississippi-Delta"
+          ],
+          "explanation": "Der Strom legte etwa 40 Kilometer zurück. Der Wechselstrom hatte gesiegt und versorgt bis heute fast jede Steckdose der Welt."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What did Tesla show the public at Madison Square Garden in 1898?",
+      "options": [
+        "The first electric car",
+        "A boat he steered by radio signals",
+        "A telephone without wires",
+        "A machine that made rain"
+      ],
+      "explanation": "Some spectators were convinced a trained monkey was hidden inside. It was one of the first remote-controlled machines ever demonstrated.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat liet Tesla in 1898 aan het publiek zien in Madison Square Garden?",
+          "options": [
+            "De eerste elektrische auto",
+            "Een boot die hij met radiosignalen bestuurde",
+            "Een telefoon zonder draden",
+            "Een machine die regen maakte"
+          ],
+          "explanation": "Sommige toeschouwers dachten dat er een afgerichte aap in zat. Het was een van de eerste op afstand bestuurde machines ooit."
+        },
+        "fr": {
+          "question": "Qu’a montré Tesla au public au Madison Square Garden en 1898 ?",
+          "options": [
+            "La première voiture électrique",
+            "Un bateau qu’il dirigeait par signaux radio",
+            "Un téléphone sans fil",
+            "Une machine à faire pleuvoir"
+          ],
+          "explanation": "Certains spectateurs étaient persuadés qu’un singe dressé était caché à l’intérieur. C’était l’une des premières machines télécommandées jamais présentées."
+        },
+        "de": {
+          "question": "Was zeigte Tesla 1898 dem Publikum im Madison Square Garden?",
+          "options": [
+            "Das erste Elektroauto",
+            "Ein Boot, das er per Funksignal steuerte",
+            "Ein Telefon ohne Kabel",
+            "Eine Maschine, die Regen machte"
+          ],
+          "explanation": "Manche Zuschauer glaubten, im Boot sei ein dressierter Affe versteckt. Es war eine der ersten ferngesteuerten Maschinen überhaupt."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Which banker paid for Tesla's Wardenclyffe Tower, then refused to give more money?",
+      "options": [
+        "George Westinghouse",
+        "John D. Rockefeller",
+        "Cornelius Vanderbilt",
+        "J. P. Morgan"
+      ],
+      "explanation": "Tesla dreamed of sending messages and even power through the air worldwide. The unfinished tower was demolished in 1917 to pay his debts.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke bankier betaalde Tesla's Wardenclyffe-toren en weigerde daarna meer geld te geven?",
+          "options": [
+            "George Westinghouse",
+            "John D. Rockefeller",
+            "Cornelius Vanderbilt",
+            "J. P. Morgan"
+          ],
+          "explanation": "Tesla droomde ervan berichten en zelfs stroom draadloos over de hele wereld te sturen. De onafgemaakte toren werd in 1917 gesloopt om zijn schulden te betalen."
+        },
+        "fr": {
+          "question": "Quel banquier a financé la tour de Wardenclyffe de Tesla, avant de refuser de donner plus d’argent ?",
+          "options": [
+            "George Westinghouse",
+            "John D. Rockefeller",
+            "Cornelius Vanderbilt",
+            "J. P. Morgan"
+          ],
+          "explanation": "Tesla rêvait d’envoyer des messages et même de l’énergie sans fil dans le monde entier. La tour inachevée a été démolie en 1917 pour payer ses dettes."
+        },
+        "de": {
+          "question": "Welcher Bankier bezahlte Teslas Wardenclyffe-Turm und verweigerte dann weiteres Geld?",
+          "options": [
+            "George Westinghouse",
+            "John D. Rockefeller",
+            "Cornelius Vanderbilt",
+            "J. P. Morgan"
+          ],
+          "explanation": "Tesla träumte davon, Nachrichten und sogar Strom drahtlos um die Welt zu schicken. Der unvollendete Turm wurde 1917 abgerissen, um seine Schulden zu bezahlen."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What in science is named after Nikola Tesla?",
+      "options": [
+        "A chemical element",
+        "A comet",
+        "The unit of magnetic flux density",
+        "A law of motion"
+      ],
+      "explanation": "The tesla became an international unit in 1960. Belgrade's airport and an electric car company also carry his name.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat in de wetenschap is naar Nikola Tesla vernoemd?",
+          "options": [
+            "Een scheikundig element",
+            "Een komeet",
+            "De eenheid van magnetische fluxdichtheid",
+            "Een bewegingswet"
+          ],
+          "explanation": "De tesla werd in 1960 een internationale eenheid. Ook het vliegveld van Belgrado en een autofabrikant dragen zijn naam."
+        },
+        "fr": {
+          "question": "Qu’est-ce qui, en science, porte le nom de Nikola Tesla ?",
+          "options": [
+            "Un élément chimique",
+            "Une comète",
+            "L’unité de densité de flux magnétique",
+            "Une loi du mouvement"
+          ],
+          "explanation": "Le tesla est devenu une unité internationale en 1960. L’aéroport de Belgrade et un constructeur automobile portent aussi son nom."
+        },
+        "de": {
+          "question": "Was in der Wissenschaft ist nach Nikola Tesla benannt?",
+          "options": [
+            "Ein chemisches Element",
+            "Ein Komet",
+            "Die Einheit der magnetischen Flussdichte",
+            "Ein Bewegungsgesetz"
+          ],
+          "explanation": "Das Tesla wurde 1960 zur internationalen Einheit. Auch der Flughafen von Belgrad und ein Autohersteller tragen seinen Namen."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

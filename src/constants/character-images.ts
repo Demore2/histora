@@ -64,6 +64,13 @@ const IMAGES = {
   'james-watt': require('../../assets/images/characters/james-watt.webp'),
   'florence-nightingale': require('../../assets/images/characters/florence-nightingale.webp'),
   'thomas-edison': require('../../assets/images/characters/thomas-edison.webp'),
+  'napoleon-bonaparte': require('../../assets/images/characters/napoleon-bonaparte.webp'),
+  'abraham-lincoln': require('../../assets/images/characters/abraham-lincoln.webp'),
+  'queen-victoria': require('../../assets/images/characters/queen-victoria.webp'),
+  'charles-darwin': require('../../assets/images/characters/charles-darwin.webp'),
+  'nikola-tesla': require('../../assets/images/characters/nikola-tesla.webp'),
+  'harriet-tubman': require('../../assets/images/characters/harriet-tubman.webp'),
+  'otto-von-bismarck': require('../../assets/images/characters/otto-von-bismarck.webp'),
 
   // Twintigste Eeuw
   'marie-curie': require('../../assets/images/characters/marie-curie.webp'),

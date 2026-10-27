@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Why did the young Darwin give up studying medicine in Edinburgh?",
+      "options": [
+        "He failed his exams",
+        "He could not bear watching operations performed without anaesthetic",
+        "His father lost all his money",
+        "He was expelled for fighting"
+      ],
+      "explanation": "After watching two operations, one of them on a child, he never went back. His father then sent him to Cambridge to become a clergyman.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom stopte de jonge Darwin met zijn studie geneeskunde in Edinburgh?",
+          "options": [
+            "Hij zakte voor zijn examens",
+            "Hij kon niet aanzien hoe er zonder verdoving werd geopereerd",
+            "Zijn vader verloor al zijn geld",
+            "Hij werd weggestuurd na een vechtpartij"
+          ],
+          "explanation": "Na twee operaties, waarvan één bij een kind, ging hij nooit meer kijken. Zijn vader stuurde hem daarna naar Cambridge om dominee te worden."
+        },
+        "fr": {
+          "question": "Pourquoi le jeune Darwin a-t-il abandonné ses études de médecine à Édimbourg ?",
+          "options": [
+            "Il a échoué à ses examens",
+            "Il ne supportait pas de voir opérer sans anesthésie",
+            "Son père avait perdu toute sa fortune",
+            "Il a été renvoyé après une bagarre"
+          ],
+          "explanation": "Après deux opérations, dont l’une sur un enfant, il n’y est jamais retourné. Son père l’a alors envoyé à Cambridge pour devenir pasteur."
+        },
+        "de": {
+          "question": "Warum gab der junge Darwin sein Medizinstudium in Edinburgh auf?",
+          "options": [
+            "Er fiel durch die Prüfungen",
+            "Er ertrug es nicht, Operationen ohne Betäubung zuzusehen",
+            "Sein Vater verlor sein ganzes Geld",
+            "Er flog nach einer Schlägerei von der Universität"
+          ],
+          "explanation": "Nach zwei Operationen, eine davon an einem Kind, ging er nie wieder hin. Sein Vater schickte ihn daraufhin nach Cambridge, um Pfarrer zu werden."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Why did Captain FitzRoy almost refuse to take Darwin on HMS Beagle?",
+      "options": [
+        "Darwin could not swim",
+        "Darwin was too young",
+        "He doubted that a man with a nose like Darwin's had enough energy",
+        "Darwin refused to pay for his place"
+      ],
+      "explanation": "FitzRoy believed you could read character from a face. Darwin went anyway, and the planned two-year voyage lasted almost five.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom wilde kapitein FitzRoy Darwin bijna niet meenemen op de HMS Beagle?",
+          "options": [
+            "Darwin kon niet zwemmen",
+            "Darwin was te jong",
+            "Hij betwijfelde of iemand met een neus als die van Darwin genoeg energie had",
+            "Darwin weigerde voor zijn plek te betalen"
+          ],
+          "explanation": "FitzRoy geloofde dat je iemands karakter aan zijn gezicht kon aflezen. Darwin ging toch mee, en de geplande reis van twee jaar duurde bijna vijf."
+        },
+        "fr": {
+          "question": "Pourquoi le capitaine FitzRoy a-t-il failli refuser Darwin à bord du HMS Beagle ?",
+          "options": [
+            "Darwin ne savait pas nager",
+            "Darwin était trop jeune",
+            "Il doutait qu’un homme avec un nez comme celui de Darwin ait assez d’énergie",
+            "Darwin refusait de payer sa place"
+          ],
+          "explanation": "FitzRoy croyait qu’on pouvait lire le caractère sur un visage. Darwin est quand même parti, et le voyage prévu pour deux ans en a duré près de cinq."
+        },
+        "de": {
+          "question": "Warum hätte Kapitän FitzRoy Darwin beinahe nicht auf die HMS Beagle mitgenommen?",
+          "options": [
+            "Darwin konnte nicht schwimmen",
+            "Darwin war zu jung",
+            "Er bezweifelte, dass ein Mann mit Darwins Nase genug Tatkraft hatte",
+            "Darwin weigerte sich, für seinen Platz zu zahlen"
+          ],
+          "explanation": "FitzRoy glaubte, man könne den Charakter am Gesicht ablesen. Darwin fuhr trotzdem mit, und die auf zwei Jahre geplante Reise dauerte fast fünf."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What did Darwin notice after a powerful earthquake in Chile in 1835?",
+      "options": [
+        "The coast had been lifted up out of the sea",
+        "A new volcano had appeared",
+        "The rivers ran backwards",
+        "All the birds had flown away"
+      ],
+      "explanation": "Together with seashells he found high in the Andes, it convinced him that the earth changes slowly over immense spans of time.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat zag Darwin na een zware aardbeving in Chili in 1835?",
+          "options": [
+            "De kust was uit de zee omhooggekomen",
+            "Er was een nieuwe vulkaan ontstaan",
+            "De rivieren stroomden achteruit",
+            "Alle vogels waren weggevlogen"
+          ],
+          "explanation": "Samen met de schelpen die hij hoog in de Andes vond, overtuigde dat hem ervan dat de aarde heel langzaam verandert, over enorme tijdsspannes."
+        },
+        "fr": {
+          "question": "Qu’a remarqué Darwin après un violent séisme au Chili en 1835 ?",
+          "options": [
+            "La côte s’était soulevée hors de la mer",
+            "Un nouveau volcan était apparu",
+            "Les rivières coulaient à l’envers",
+            "Tous les oiseaux s’étaient envolés"
+          ],
+          "explanation": "Avec les coquillages trouvés très haut dans les Andes, cela l’a convaincu que la Terre change lentement, sur des durées immenses."
+        },
+        "de": {
+          "question": "Was bemerkte Darwin nach einem schweren Erdbeben in Chile 1835?",
+          "options": [
+            "Die Küste war aus dem Meer emporgehoben worden",
+            "Ein neuer Vulkan war entstanden",
+            "Die Flüsse flossen rückwärts",
+            "Alle Vögel waren fortgeflogen"
+          ],
+          "explanation": "Zusammen mit Muscheln, die er hoch in den Anden fand, überzeugte ihn das, dass sich die Erde langsam über ungeheure Zeiträume verändert."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What did the bird expert John Gould tell Darwin about the small brown birds from the Galápagos?",
+      "options": [
+        "They were all one kind of sparrow",
+        "They had been brought by sailors",
+        "They could not fly",
+        "They were twelve separate species of finch"
+      ],
+      "explanation": "Each species had a differently shaped beak. Why so many different species on a few islands so close together? The question led Darwin to his theory.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat vertelde vogelkenner John Gould aan Darwin over de kleine bruine vogels van de Galápagoseilanden?",
+          "options": [
+            "Het waren allemaal mussen van één soort",
+            "Ze waren door zeelieden meegebracht",
+            "Ze konden niet vliegen",
+            "Het waren twaalf verschillende soorten vinken"
+          ],
+          "explanation": "Elke soort had een anders gevormde snavel. Waarom zoveel soorten op een paar eilanden zo dicht bij elkaar? Die vraag bracht Darwin bij zijn theorie."
+        },
+        "fr": {
+          "question": "Qu’a appris l’ornithologue John Gould à Darwin sur les petits oiseaux bruns des Galápagos ?",
+          "options": [
+            "C’étaient tous des moineaux d’une même espèce",
+            "Ils avaient été amenés par des marins",
+            "Ils ne savaient pas voler",
+            "C’étaient douze espèces distinctes de pinsons"
+          ],
+          "explanation": "Chaque espèce avait un bec de forme différente. Pourquoi tant d’espèces sur quelques îles si proches ? Cette question a mené Darwin à sa théorie."
+        },
+        "de": {
+          "question": "Was erklärte der Vogelkundler John Gould Darwin über die kleinen braunen Vögel von den Galápagosinseln?",
+          "options": [
+            "Es waren alles Spatzen einer Art",
+            "Seeleute hatten sie mitgebracht",
+            "Sie konnten nicht fliegen",
+            "Es waren zwölf verschiedene Finkenarten"
+          ],
+          "explanation": "Jede Art hatte einen anders geformten Schnabel. Warum so viele Arten auf wenigen, nah beieinanderliegenden Inseln? Diese Frage führte Darwin zu seiner Theorie."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Which two words did Darwin write in 1837 above a small sketch of a branching tree?",
+      "options": [
+        "I think",
+        "Eureka",
+        "God's plan",
+        "All change"
+      ],
+      "explanation": "The tree showed his new idea: species are not fixed, and all living things are branches of one great tree of life.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke twee woorden schreef Darwin in 1837 boven een klein schetsje van een vertakte boom?",
+          "options": [
+            "I think (Ik denk)",
+            "Eureka",
+            "Gods plan",
+            "Alles verandert"
+          ],
+          "explanation": "De boom liet zijn nieuwe idee zien: soorten liggen niet vast, en alle levende wezens zijn takken van één grote levensboom."
+        },
+        "fr": {
+          "question": "Quels deux mots Darwin a-t-il écrits en 1837 au-dessus d’un petit croquis d’arbre ramifié ?",
+          "options": [
+            "I think (Je pense)",
+            "Eurêka",
+            "Plan divin",
+            "Tout change"
+          ],
+          "explanation": "L’arbre montrait sa nouvelle idée : les espèces ne sont pas fixes, et tous les êtres vivants sont les branches d’un grand arbre de la vie."
+        },
+        "de": {
+          "question": "Welche zwei Wörter schrieb Darwin 1837 über eine kleine Skizze eines verzweigten Baumes?",
+          "options": [
+            "I think (Ich denke)",
+            "Heureka",
+            "Gottes Plan",
+            "Alles wandelt sich"
+          ],
+          "explanation": "Der Baum zeigte seine neue Idee: Arten sind nicht unveränderlich, und alle Lebewesen sind Zweige eines großen Lebensbaums."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Who sent Darwin a letter in 1858 describing almost exactly the same theory?",
+      "options": [
+        "Charles Lyell",
+        "Alfred Russel Wallace",
+        "Thomas Henry Huxley",
+        "Robert FitzRoy"
+      ],
+      "explanation": "Wallace was collecting specimens in the Malay Archipelago. Their papers were read together in London, and Darwin then finished his book in thirteen months.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie stuurde Darwin in 1858 een brief met vrijwel precies dezelfde theorie?",
+          "options": [
+            "Charles Lyell",
+            "Alfred Russel Wallace",
+            "Thomas Henry Huxley",
+            "Robert FitzRoy"
+          ],
+          "explanation": "Wallace verzamelde dieren en planten in de Maleise Archipel. Hun stukken werden samen voorgelezen in Londen, waarna Darwin zijn boek in dertien maanden afschreef."
+        },
+        "fr": {
+          "question": "Qui a envoyé à Darwin, en 1858, une lettre exposant presque exactement la même théorie ?",
+          "options": [
+            "Charles Lyell",
+            "Alfred Russel Wallace",
+            "Thomas Henry Huxley",
+            "Robert FitzRoy"
+          ],
+          "explanation": "Wallace collectait des spécimens dans l’archipel malais. Leurs textes ont été lus ensemble à Londres, puis Darwin a achevé son livre en treize mois."
+        },
+        "de": {
+          "question": "Wer schickte Darwin 1858 einen Brief mit fast genau derselben Theorie?",
+          "options": [
+            "Charles Lyell",
+            "Alfred Russel Wallace",
+            "Thomas Henry Huxley",
+            "Robert FitzRoy"
+          ],
+          "explanation": "Wallace sammelte Tiere und Pflanzen im Malaiischen Archipel. Ihre Texte wurden gemeinsam in London verlesen, und Darwin schrieb sein Buch danach in dreizehn Monaten fertig."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Which scientist defended Darwin so fiercely that he became known as 'Darwin's bulldog'?",
+      "options": [
+        "Joseph Hooker",
+        "John Stevens Henslow",
+        "Samuel Wilberforce",
+        "Thomas Henry Huxley"
+      ],
+      "explanation": "At the famous Oxford debate of 1860, Huxley is said to have replied that he would rather have an ape for a grandfather than a man who mocked serious science.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke wetenschapper verdedigde Darwin zo fel dat hij 'Darwins buldog' werd genoemd?",
+          "options": [
+            "Joseph Hooker",
+            "John Stevens Henslow",
+            "Samuel Wilberforce",
+            "Thomas Henry Huxley"
+          ],
+          "explanation": "Bij het beroemde debat in Oxford in 1860 zou Huxley hebben geantwoord dat hij liever een aap als grootvader had dan iemand die serieuze wetenschap belachelijk maakte."
+        },
+        "fr": {
+          "question": "Quel scientifique a défendu Darwin avec tant d’ardeur qu’on l’a surnommé « le bouledogue de Darwin » ?",
+          "options": [
+            "Joseph Hooker",
+            "John Stevens Henslow",
+            "Samuel Wilberforce",
+            "Thomas Henry Huxley"
+          ],
+          "explanation": "Lors du célèbre débat d’Oxford en 1860, Huxley aurait répondu qu’il préférait avoir un singe pour grand-père qu’un homme qui ridiculise une discussion scientifique sérieuse."
+        },
+        "de": {
+          "question": "Welcher Wissenschaftler verteidigte Darwin so leidenschaftlich, dass man ihn „Darwins Bulldogge“ nannte?",
+          "options": [
+            "Joseph Hooker",
+            "John Stevens Henslow",
+            "Samuel Wilberforce",
+            "Thomas Henry Huxley"
+          ],
+          "explanation": "Bei der berühmten Debatte in Oxford 1860 soll Huxley geantwortet haben, er hätte lieber einen Affen zum Großvater als einen Mann, der ernsthafte Wissenschaft verspottet."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What was the subject of Darwin's last book, published in 1881?",
+      "options": [
+        "Orchids",
+        "Barnacles",
+        "Earthworms",
+        "Pigeons"
+      ],
+      "explanation": "He had studied for decades how worms slowly bury stones and ruins. He even played music to them to test their hearing. The book sold faster than the Origin.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarover ging Darwins laatste boek, uit 1881?",
+          "options": [
+            "Orchideeën",
+            "Zeepokken",
+            "Regenwormen",
+            "Duiven"
+          ],
+          "explanation": "Hij had tientallen jaren bestudeerd hoe wormen langzaam stenen en ruïnes begraven. Hij speelde zelfs muziek voor ze om hun gehoor te testen. Het boek verkocht sneller dan de Origin."
+        },
+        "fr": {
+          "question": "Quel était le sujet du dernier livre de Darwin, publié en 1881 ?",
+          "options": [
+            "Les orchidées",
+            "Les balanes",
+            "Les vers de terre",
+            "Les pigeons"
+          ],
+          "explanation": "Il avait étudié pendant des décennies comment les vers enfouissent lentement pierres et ruines. Il leur a même joué de la musique pour tester leur ouïe. Le livre s’est vendu plus vite que L’Origine."
+        },
+        "de": {
+          "question": "Wovon handelte Darwins letztes Buch von 1881?",
+          "options": [
+            "Orchideen",
+            "Seepocken",
+            "Regenwürmer",
+            "Tauben"
+          ],
+          "explanation": "Er hatte jahrzehntelang untersucht, wie Würmer langsam Steine und Ruinen begraben. Er spielte ihnen sogar Musik vor, um ihr Gehör zu testen. Das Buch verkaufte sich schneller als die „Entstehung der Arten“."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

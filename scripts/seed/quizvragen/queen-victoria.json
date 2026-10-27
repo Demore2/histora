@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What was the strict set of rules called under which the young Victoria was raised?",
+      "options": [
+        "The Windsor Code",
+        "The Kensington System",
+        "The Royal Regime",
+        "The Coburg Method"
+      ],
+      "explanation": "She was never allowed to be alone, slept in her mother's room and could not walk down a staircase without someone holding her hand.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe heette het strenge stelsel van regels waaronder de jonge Victoria werd opgevoed?",
+          "options": [
+            "De Windsor-code",
+            "Het Kensington-systeem",
+            "Het Koninklijk Regime",
+            "De Coburg-methode"
+          ],
+          "explanation": "Ze mocht nooit alleen zijn, sliep op de kamer van haar moeder en mocht geen trap af zonder dat iemand haar hand vasthield."
+        },
+        "fr": {
+          "question": "Comment s’appelait l’ensemble de règles strictes selon lequel la jeune Victoria a été élevée ?",
+          "options": [
+            "Le code de Windsor",
+            "Le système de Kensington",
+            "Le régime royal",
+            "La méthode de Cobourg"
+          ],
+          "explanation": "Elle n’avait jamais le droit d’être seule, dormait dans la chambre de sa mère et ne pouvait pas descendre un escalier sans qu’on lui tienne la main."
+        },
+        "de": {
+          "question": "Wie hieß das strenge Regelwerk, nach dem die junge Victoria erzogen wurde?",
+          "options": [
+            "Der Windsor-Kodex",
+            "Das Kensington-System",
+            "Das Königliche Regime",
+            "Die Coburger Methode"
+          ],
+          "explanation": "Sie durfte nie allein sein, schlief im Zimmer ihrer Mutter und durfte keine Treppe hinuntergehen, ohne dass jemand ihre Hand hielt."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "How did Victoria learn that she had become queen in June 1837?",
+      "options": [
+        "She was woken at six in the morning and told in her dressing gown",
+        "She read it in the newspaper",
+        "Her uncle told her on his deathbed",
+        "A messenger found her at a ball"
+      ],
+      "explanation": "The Archbishop of Canterbury and the Lord Chamberlain knelt before the eighteen-year-old. King William IV had died in the night.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe hoorde Victoria in juni 1837 dat ze koningin was geworden?",
+          "options": [
+            "Ze werd om zes uur 's ochtends gewekt en kreeg het in haar ochtendjas te horen",
+            "Ze las het in de krant",
+            "Haar oom vertelde het op zijn sterfbed",
+            "Een bode vond haar op een bal"
+          ],
+          "explanation": "De aartsbisschop van Canterbury en de Lord Chamberlain knielden voor de achttienjarige. Koning Willem IV was die nacht gestorven."
+        },
+        "fr": {
+          "question": "Comment Victoria a-t-elle appris en juin 1837 qu’elle était devenue reine ?",
+          "options": [
+            "On l’a réveillée à six heures du matin et elle l’a appris en robe de chambre",
+            "Elle l’a lu dans le journal",
+            "Son oncle le lui a dit sur son lit de mort",
+            "Un messager l’a trouvée à un bal"
+          ],
+          "explanation": "L’archevêque de Canterbury et le lord-chambellan se sont agenouillés devant la jeune femme de dix-huit ans. Le roi Guillaume IV était mort dans la nuit."
+        },
+        "de": {
+          "question": "Wie erfuhr Victoria im Juni 1837, dass sie Königin geworden war?",
+          "options": [
+            "Sie wurde um sechs Uhr morgens geweckt und erfuhr es im Morgenmantel",
+            "Sie las es in der Zeitung",
+            "Ihr Onkel sagte es ihr auf dem Sterbebett",
+            "Ein Bote fand sie auf einem Ball"
+          ],
+          "explanation": "Der Erzbischof von Canterbury und der Lord Chamberlain knieten vor der Achtzehnjährigen nieder. König Wilhelm IV. war in der Nacht gestorben."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Why was it Victoria who proposed marriage to Prince Albert, not the other way round?",
+      "options": [
+        "Albert was too shy",
+        "Her mother insisted",
+        "It was a German custom",
+        "As queen she outranked him, so he could not propose to her"
+      ],
+      "explanation": "She proposed five days after he arrived for a visit in October 1839. They married in February 1840, and her white dress started a fashion.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom deed Victoria het huwelijksaanzoek aan prins Albert, en niet andersom?",
+          "options": [
+            "Albert was te verlegen",
+            "Haar moeder stond erop",
+            "Het was een Duitse gewoonte",
+            "Als koningin stond ze boven hem, dus hij kon haar niet ten huwelijk vragen"
+          ],
+          "explanation": "Ze vroeg het vijf dagen nadat hij in oktober 1839 op bezoek kwam. In februari 1840 trouwden ze, en haar witte jurk zette een mode in gang."
+        },
+        "fr": {
+          "question": "Pourquoi est-ce Victoria qui a demandé le prince Albert en mariage, et non l’inverse ?",
+          "options": [
+            "Albert était trop timide",
+            "Sa mère l’exigeait",
+            "C’était une coutume allemande",
+            "En tant que reine, elle lui était supérieure : il ne pouvait pas la demander en mariage"
+          ],
+          "explanation": "Elle l’a demandé cinq jours après son arrivée, en octobre 1839. Ils se sont mariés en février 1840, et sa robe blanche a lancé une mode."
+        },
+        "de": {
+          "question": "Warum machte Victoria Prinz Albert den Heiratsantrag und nicht umgekehrt?",
+          "options": [
+            "Albert war zu schüchtern",
+            "Ihre Mutter bestand darauf",
+            "Es war ein deutscher Brauch",
+            "Als Königin stand sie über ihm, also durfte er ihr keinen Antrag machen"
+          ],
+          "explanation": "Sie fragte fünf Tage nach seiner Ankunft im Oktober 1839. Im Februar 1840 heirateten sie, und ihr weißes Kleid begründete eine Mode."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What was the Crystal Palace?",
+      "options": [
+        "Victoria's summer palace on the Isle of Wight",
+        "A glass ballroom in Buckingham Palace",
+        "A huge iron-and-glass hall built for the Great Exhibition of 1851",
+        "A jewellery collection given to Victoria by India"
+      ],
+      "explanation": "It was Prince Albert's project. Full-grown elm trees stood inside, and the profits paid for the great museums of South Kensington.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was het Crystal Palace?",
+          "options": [
+            "Victoria's zomerpaleis op het Isle of Wight",
+            "Een glazen balzaal in Buckingham Palace",
+            "Een enorme hal van ijzer en glas, gebouwd voor de Wereldtentoonstelling van 1851",
+            "Een juwelencollectie die India aan Victoria schonk"
+          ],
+          "explanation": "Het was het project van prins Albert. Er stonden volwassen iepen in, en met de winst werden de grote musea van South Kensington betaald."
+        },
+        "fr": {
+          "question": "Qu’était le Crystal Palace ?",
+          "options": [
+            "Le palais d’été de Victoria sur l’île de Wight",
+            "Une salle de bal en verre à Buckingham",
+            "Un immense hall de fer et de verre construit pour la Grande Exposition de 1851",
+            "Une collection de bijoux offerte à Victoria par l’Inde"
+          ],
+          "explanation": "C’était le projet du prince Albert. Des ormes adultes poussaient à l’intérieur, et les bénéfices ont financé les grands musées de South Kensington."
+        },
+        "de": {
+          "question": "Was war der Crystal Palace?",
+          "options": [
+            "Victorias Sommerpalast auf der Isle of Wight",
+            "Ein gläserner Ballsaal im Buckingham Palace",
+            "Eine riesige Halle aus Eisen und Glas für die Weltausstellung von 1851",
+            "Eine Schmucksammlung, die Indien Victoria schenkte"
+          ],
+          "explanation": "Es war Prinz Alberts Projekt. Im Inneren standen ausgewachsene Ulmen, und mit dem Gewinn wurden die großen Museen in South Kensington bezahlt."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "How long did Victoria wear black after Prince Albert died in 1861?",
+      "options": [
+        "One year",
+        "Ten years",
+        "For the rest of her life, about forty years",
+        "She never wore black"
+      ],
+      "explanation": "His rooms were kept as he left them, and servants laid out fresh clothes for him every day. She withdrew so far from public life that people called her the Widow of Windsor.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe lang droeg Victoria zwart nadat prins Albert in 1861 was gestorven?",
+          "options": [
+            "Eén jaar",
+            "Tien jaar",
+            "De rest van haar leven, zo'n veertig jaar",
+            "Ze droeg nooit zwart"
+          ],
+          "explanation": "Zijn kamers bleven zoals hij ze had achtergelaten, en bedienden legden elke dag schone kleren voor hem klaar. Ze trok zich zo ver terug dat men haar de Weduwe van Windsor noemde."
+        },
+        "fr": {
+          "question": "Combien de temps Victoria a-t-elle porté le noir après la mort du prince Albert en 1861 ?",
+          "options": [
+            "Un an",
+            "Dix ans",
+            "Toute sa vie, environ quarante ans",
+            "Elle n’a jamais porté le noir"
+          ],
+          "explanation": "Ses appartements sont restés tels qu’il les avait laissés, et des domestiques y préparaient chaque jour des vêtements propres. Elle s’est tant retirée qu’on l’a surnommée la Veuve de Windsor."
+        },
+        "de": {
+          "question": "Wie lange trug Victoria Schwarz, nachdem Prinz Albert 1861 gestorben war?",
+          "options": [
+            "Ein Jahr",
+            "Zehn Jahre",
+            "Für den Rest ihres Lebens, etwa vierzig Jahre",
+            "Sie trug nie Schwarz"
+          ],
+          "explanation": "Seine Räume blieben, wie er sie verlassen hatte, und Diener legten ihm jeden Tag frische Kleidung bereit. Sie zog sich so sehr zurück, dass man sie die Witwe von Windsor nannte."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Which new title did Victoria receive in 1876?",
+      "options": [
+        "Empress of India",
+        "Queen of Canada",
+        "Protector of Africa",
+        "Empress of the Seas"
+      ],
+      "explanation": "It was the idea of her prime minister, Benjamin Disraeli. She never visited India, but she took lessons in Hindustani for years from her Indian secretary, Abdul Karim.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke nieuwe titel kreeg Victoria in 1876?",
+          "options": [
+            "Keizerin van India",
+            "Koningin van Canada",
+            "Beschermvrouwe van Afrika",
+            "Keizerin der Zeeën"
+          ],
+          "explanation": "Het was het idee van premier Benjamin Disraeli. Ze bezocht India nooit, maar kreeg jarenlang les in het Hindoestani van haar Indiase secretaris Abdul Karim."
+        },
+        "fr": {
+          "question": "Quel nouveau titre Victoria a-t-elle reçu en 1876 ?",
+          "options": [
+            "Impératrice des Indes",
+            "Reine du Canada",
+            "Protectrice de l’Afrique",
+            "Impératrice des mers"
+          ],
+          "explanation": "C’était l’idée de son Premier ministre, Benjamin Disraeli. Elle n’est jamais allée en Inde, mais a pris pendant des années des leçons d’hindoustani avec son secrétaire indien, Abdul Karim."
+        },
+        "de": {
+          "question": "Welchen neuen Titel erhielt Victoria 1876?",
+          "options": [
+            "Kaiserin von Indien",
+            "Königin von Kanada",
+            "Schutzherrin Afrikas",
+            "Kaiserin der Meere"
+          ],
+          "explanation": "Es war die Idee ihres Premierministers Benjamin Disraeli. Sie besuchte Indien nie, nahm aber jahrelang Hindustani-Unterricht bei ihrem indischen Sekretär Abdul Karim."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Why was the thanksgiving service for the 1897 Diamond Jubilee held outside St Paul's Cathedral?",
+      "options": [
+        "The cathedral was being repaired",
+        "The queen, now lame, could not climb the steps",
+        "Too many guests had been invited",
+        "It rained so hard the doors were closed"
+      ],
+      "explanation": "Victoria stayed seated in her open carriage. By telegraph she then sent a message of thanks to the whole empire.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom werd de dankdienst voor het diamanten jubileum van 1897 buiten de St Paul's Cathedral gehouden?",
+          "options": [
+            "De kathedraal werd gerestaureerd",
+            "De inmiddels slecht ter been zijnde koningin kon de trappen niet op",
+            "Er waren te veel gasten uitgenodigd",
+            "Het regende zo hard dat de deuren dicht moesten"
+          ],
+          "explanation": "Victoria bleef in haar open koets zitten. Daarna stuurde ze per telegraaf een dankbericht naar het hele rijk."
+        },
+        "fr": {
+          "question": "Pourquoi l’office d’action de grâce du jubilé de diamant de 1897 a-t-il eu lieu devant la cathédrale Saint-Paul ?",
+          "options": [
+            "La cathédrale était en travaux",
+            "La reine, qui boitait, ne pouvait plus monter les marches",
+            "Trop d’invités avaient été conviés",
+            "Il pleuvait tant qu’on avait fermé les portes"
+          ],
+          "explanation": "Victoria est restée assise dans sa calèche découverte. Elle a ensuite envoyé par télégraphe un message de remerciement à tout l’empire."
+        },
+        "de": {
+          "question": "Warum fand der Dankgottesdienst zum Diamantenen Thronjubiläum 1897 vor der St Paul’s Cathedral statt?",
+          "options": [
+            "Die Kathedrale wurde renoviert",
+            "Die gehbehinderte Königin konnte die Stufen nicht mehr hinaufsteigen",
+            "Es waren zu viele Gäste eingeladen",
+            "Es regnete so stark, dass die Türen geschlossen wurden"
+          ],
+          "explanation": "Victoria blieb in ihrer offenen Kutsche sitzen. Danach schickte sie per Telegraf eine Dankesbotschaft an das ganze Empire."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Who eventually broke Victoria's record as Britain's longest-reigning monarch?",
+      "options": [
+        "George V",
+        "Edward VII",
+        "Charles III",
+        "Elizabeth II"
+      ],
+      "explanation": "Victoria reigned for 63 years and seven months. Her great-great-granddaughter Elizabeth II passed that mark in 2015.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie brak uiteindelijk Victoria's record als langst regerende Britse vorst?",
+          "options": [
+            "George V",
+            "Edward VII",
+            "Charles III",
+            "Elizabeth II"
+          ],
+          "explanation": "Victoria regeerde 63 jaar en zeven maanden. Haar achter-achterkleindochter Elizabeth II passeerde die grens in 2015."
+        },
+        "fr": {
+          "question": "Qui a fini par battre le record de Victoria comme monarque britannique au plus long règne ?",
+          "options": [
+            "George V",
+            "Édouard VII",
+            "Charles III",
+            "Élisabeth II"
+          ],
+          "explanation": "Victoria a régné 63 ans et sept mois. Son arrière-arrière-petite-fille Élisabeth II a dépassé cette durée en 2015."
+        },
+        "de": {
+          "question": "Wer brach schließlich Victorias Rekord als am längsten regierende britische Monarchin?",
+          "options": [
+            "Georg V.",
+            "Eduard VII.",
+            "Charles III.",
+            "Elisabeth II."
+          ],
+          "explanation": "Victoria regierte 63 Jahre und sieben Monate. Ihre Ururenkelin Elisabeth II. übertraf diese Marke 2015."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}
