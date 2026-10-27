@@ -15,6 +15,8 @@ const fr: DeepPartial<Vertalingen> = {
     verhaallijnen: 'Récits',
     ontdekMeer: 'Découvrir plus',
     nieuwToegevoegd: 'Nouveaux sujets brûlants',
+    nieuwVerhaal: 'Nouvelle histoire',
+    nieuwLabel: 'Nouveau',
     toonAlles: 'Tout afficher',
   },
   reis: {
@@ -219,6 +221,16 @@ const fr: DeepPartial<Vertalingen> = {
 
     versie: 'Version',
 
+    voortgangWissen: 'Réinitialiser la progression',
+    voortgangWissenTitel: 'Tout recommencer ?',
+    voortgangWissenTekst:
+      'Cela efface tous les chapitres et histoires que vous avez lus et reverrouille vos personnages. Votre compte, votre série, vos Ducats, vos gels de série et Pro sont conservés. Cette action est irréversible.',
+    voortgangWissenBevestig: 'Réinitialiser',
+    voortgangWissenBezig: 'Réinitialisation…',
+    voortgangGewistTitel: 'Progression réinitialisée',
+    voortgangGewistTekst: 'Votre voyage recommence à Rome.',
+    voortgangWissenMisluktTitel: 'Échec de la réinitialisation',
+    voortgangWissenMisluktTekst: 'Rien n’a été modifié. Vérifiez votre connexion et réessayez.',
     accountVerwijderen: 'Supprimer le compte',
     accountVerwijderenTitel: 'Supprimer le compte ?',
     accountVerwijderenTekst:
@@ -498,6 +510,10 @@ const fr: DeepPartial<Vertalingen> = {
     teller: (huidig: number, totaal: number) => `Chapitre ${huidig} sur ${totaal}`,
     voortgang: (voltooid: number, totaal: number) => `${voltooid} / ${totaal} chapitres`,
     volgordeUitleg: 'Terminez les chapitres dans l’ordre pour débloquer le suivant.',
+    halteOnder: (nummer: number, minuten: number) => `Chapitre ${nummer} · ${minuten} min`,
+    routeBegin: 'Commencer par le chapitre 1',
+    routeVerder: (nummer: number) => `Reprendre au chapitre ${nummer}`,
+    routeKlaar: 'Vous avez terminé cette histoire',
     terugNaarOverzicht: 'Retour aux chapitres',
     markeerVoltooid: 'Marquer comme terminé',
     volgende: 'Chapitre suivant',

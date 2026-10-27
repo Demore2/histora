@@ -438,6 +438,13 @@ uitloggen zijn verhuisd, niet nagebouwd — verwacht ze niet meer op Profiel zel
   blíjft de getypte tekst staan. Bewust géén offline wachtrij zoals bij de voortgangssync — dit is
   een losse mededeling en geen groeiende toestand. "Contact support" in Instellingen blijft wél een
   mailto: dat is een gesprek, dit is een melding.
+- **"Reset reading progress"** (Account-sectie, 1.4.3, `store/voortgang-wissen.ts`) wist de gelezen
+  hoofdstukken, geopende/uitgelezen verhalen en ontgrendelde personages; streak, Dukaten, bevriezers,
+  Pro, kroontjes en mijlpaaldata blijven. **Eerst de server (drie `update`s, geen `delete` — er is
+  geen delete-policy), pas daarna het toestel, en bij een fout niets**: de voortgang verenigt bij elke
+  koude start lokaal met server, dus alleen lokaal wissen komt bij de volgende start terug. Bekend
+  gat: een tweede toestel met oude lokale voortgang zet die terug; daarom belooft de tekst niet
+  "op al je apparaten". Herlezen levert geen tweede keer Dukaten op (het kasboek kent de sleutels).
 - `settings-section.tsx` levert `SettingsSectie` + `SettingsItem`. De sectie zet zelf de
   scheidingslijnen tussen zijn kinderen (`Children.toArray`), dus een voorwaardelijk verborgen
   regel laat geen lijn achter. Een `SettingsItem` zonder `onPress` is informatie en krijgt geen
@@ -968,18 +975,28 @@ redactionele hero ("Featured", `getUitgelichtVerhaal`), `RecommendedStoryCard` e
   naar het hoofdstukkenoverzicht (`/verhaal/[id]`), niet de reader in: daar staan de poorten.
 - **"Continue reading" verschijnt alleen nog als er nóg een half open verhaal is** naast dat van de
   kaart, en heeft geen lege staat meer.
-- **Volgorde op Home:** reiskaart → New hot topics → advertentie → Continue reading → één
-  **`TijdperkTegel`** per tijdperk, onder elkaar (scène + waas in de tijdperkkleur + Phoxy-kop uit
-  `ERA_KOP` + "x/y read"). De carrousels per tijdperk (`TijdperkRij`) zijn weg.
-- **New hot topics sorteert op `Verhaal.toegevoegdOp`** (`'YYYY-MM-DD'`, verplicht): het nieuwste
-  staat helemaal links. Voorheen pakte `getNieuwToegevoegd()` de laatste zes uit de bundel — dat
-  waren altijd de Hedendaags-verhalen. **Zet bij een nieuw verhaal de datum van vandaag**;
-  `validate:content` weigert een datum in de toekomst.
+- **Volgorde op Home:** reiskaart → nieuw-kaart(en) → advertentie → Continue reading → één
+  **`TijdperkTegel`** per tijdperk, onder elkaar (scène + waas in de tijdperkkleur + "x/y read"
+  geen pijltje: de hele tegel is aan te tikken). Sinds 1.4.3 zónder Phoxy-kop (wens van de eigenaar: scène plus vos maakte Home te druk). De carrousels per tijdperk (`TijdperkRij`) zijn weg.
+- **"New hot topics" is weg (1.4.3).** Die rij toonde wekenlang dezelfde zes verhalen. In de plaats:
+  **`NieuwVerhaalKaart`** ("New story: …") voor elk verhaal dat in de laatste **`NIEUW_DAGEN` (7)** dagen
+  is toegevoegd (`isNieuw`/`getNieuweVerhalen` in `queries.ts`, op `Verhaal.toegevoegdOp`), plus een
+  labeltje "New" op de `TijdperkTegel` en op de halte in de routekaart. Alles verdwijnt na een week vanzelf;
+  er is niets op te ruimen. De kaart blijft weg voor een uitgelezen verhaal en als de reiskaart al hetzelfde
+  verhaal noemt. `vandaag` komt uit **`useVandaag()`** (lokale datumsleutel, opnieuw gemeten bij elke
+  terugkeer naar de voorgrond), niet uit een `new Date()` tijdens het renderen. **Zet bij een nieuw verhaal
+  `toegevoegdOp` op de dag dat het live gaat**, niet de dag dat je het schrijft — anders is de week al
+  half om voordat iemand het ziet. `validate:content` weigert een datum in de toekomst.
+  `getNieuwToegevoegd()` bestaat nog als sortering eronder.
 - **`tijdperk/[id]` is een routekaart** (`bepaalRoute()`): de haltes zigzaggen van boven naar
   beneden, verbonden door een SVG-pad (`react-native-svg`), doorgetrokken na een uitgelezen
   verhaal en gestippeld daarna. De volgende halte pulseert en daar staat Phoxy (`ROUTE_VOS`, op weg met kaart en
   tas, uit `scripts/prepare-route-fox.mjs`). **Elke halte is vrij aan te klikken** — de route is een volgorde, geen
   slot. Bovenaan "Start at the beginning" / "Continue the route".
+- **Het pad is `components/route-pad.tsx` (`RoutePad`)**, gedeeld met `verhaal/[id]/chapters` (1.4.3):
+  ook de hoofdstukken van een verhaal zijn een routekaart in plaats van een raster van tegels. Daar is
+  een halte **wél** een slot — een `RouteHalte` zonder `onPress` is gedimd en niet aan te tikken — en
+  een vergrendeld hoofdstuk toont een slot in plaats van zijn scène. Wijzig het pad op één plek.
 
 ### Images (portretten + scènes — gebundeld, LAUNCH-PLAN.md B1/B2)
 
@@ -1841,6 +1858,7 @@ delete it, and don't wire it back up without reading why it was dropped.
 | `components/interactieve-sectie.tsx` | 2026-10-22 — vragen verhuisd naar het verplichte paneel `hoofdstuk-vragen.tsx` |
 | `components/story-poll.tsx`, `components/story-choice.tsx`, `components/interactie-stem.tsx` | 1.4 — het vragenpaneel toont alleen nog quizvragen (peilingen/keuzepunten blijven in de database voor oudere app-versies) |
 | `components/placeholder-screen.tsx` | Voortgang/Profiel are fully built |
+| `components/hoofdstuk-tegel.tsx` | 1.4.3 — het hoofdstukkenoverzicht is een routekaart (`RoutePad`) |
 | `components/recommended-story-card.tsx` | 1.4.2 — Home toont de reiskaart (`reis-kaart.tsx`); zie de waarschuwing bij "Aanbevelingen" |
 | `components/profile-card-collection.tsx` | superseded by `profile-character-collection.tsx` (kaarten i.p.v. cirkelraster) |
 | `components/progress-stats-header.tsx` | 1.3 — Voortgang toont `streak-kaart.tsx` (de vos); de tellers staan op Profiel |

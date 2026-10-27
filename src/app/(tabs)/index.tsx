@@ -8,6 +8,7 @@ import { CollectieKaart } from '@/components/collectie-kaart';
 import { HorizontaleRij } from '@/components/horizontale-rij';
 import { KopActies } from '@/components/kop-acties';
 import { LegeStaat } from '@/components/lege-staat';
+import { NieuwVerhaalKaart } from '@/components/nieuw-verhaal-kaart';
 import { ReisKaart } from '@/components/reis-kaart';
 import { SectieKop } from '@/components/sectie-kop';
 import { ThemedText } from '@/components/themed-text';
@@ -18,10 +19,11 @@ import { CardDimensions, Radii, Spacing, VLAM_KLEUR } from '@/constants/theme';
 import { getActieveTijdperken } from '@/constants/tijdperken';
 import type { Verhaal } from '@/constants/types';
 import { collecties } from '@/content/collecties';
-import { bepaalReis, getNieuwToegevoegd } from '@/content/queries';
+import { bepaalReis, getNieuweVerhalen } from '@/content/queries';
 import { getVerhaal, verhalen as allVerhalen } from '@/content/verhalen';
 import { useStreak } from '@/hooks/use-streak';
 import { useTheme } from '@/hooks/use-theme';
+import { useVandaag } from '@/hooks/use-vandaag';
 import { useVertaling } from '@/hooks/use-vertaling';
 import { useStoryProgressStore } from '@/store/story-progress-store';
 import { useVoortgangStore } from '@/store/voortgang-store';
@@ -52,7 +54,11 @@ export default function OntdekScreen() {
         !gelezenIds.has(verhaal.id) &&
         !completedStories.has(verhaal.id)
     );
-  const nieuwToegevoegd = getNieuwToegevoegd();
+  const vandaag = useVandaag();
+  // Alleen wat deze week is toegevoegd en nog niet uit is: meestal niets, soms één kaart.
+  const nieuweVerhalen = getNieuweVerhalen(vandaag).filter(
+    (verhaal) => verhaal.id !== reisVerhaalId && !completedStories.has(verhaal.id)
+  );
 
   if (allVerhalen.length === 0) {
     return (
@@ -111,25 +117,13 @@ export default function OntdekScreen() {
           */}
           <ReisKaart />
 
-          <View style={styles.sectie}>
-            <SectieKop titel={t((s) => s.ontdek.nieuwToegevoegd)} />
-            <HorizontaleRij
-              data={nieuwToegevoegd}
-              keyExtractor={(verhaal) => verhaal.id}
-              itemBreedte={CardDimensions.portraitWidth}
-              contentContainerStyle={styles.rij}
-              renderItem={({ item }) => (
-                <VerhaalKaart
-                  verhaal={item}
-                  gelezen={gelezenIds.has(item.id)}
-                  onPress={() => openVerhaal(item.id)}
-                />
-              )}
-            />
-          </View>
+          {/* "New hot topics" is weg (1.4.3): een kaart per verhaal dat deze week is toegevoegd. */}
+          {nieuweVerhalen.map((verhaal) => (
+            <NieuwVerhaalKaart key={verhaal.id} verhaal={verhaal} />
+          ))}
 
-          {/* De banner (v1.2) staat sinds 1.4.2 tussen "New hot topics" en "Continue reading"
-              (wens van de eigenaar). Rendert niets voor Pro of zolang er geen echte advertentie
+          {/* De banner (v1.2) staat onder de reiskaart en een eventuele nieuw-kaart, boven
+              "Continue reading". Rendert niets voor Pro of zolang er geen echte advertentie
               geladen is, dan sluit de `gap` gewoon aan. */}
           <AdBanner />
 

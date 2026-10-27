@@ -63,7 +63,7 @@ export const joanOfArc: Verhaal = {
         },
         {
           type: 'tekst',
-          inhoud: { en: 'Jeanne\'s conviction grew so strong that she could no longer ignore her calling. She cut her hair short, dressed in men\'s clothing, and told her parents that she needed to travel to the nearest French stronghold at Vaucouleurs. She claimed she had a cousin there who could help her, though this was apparently not true. Her determination was so fierce that her father eventually agreed to let her go. In May 1429, at just seventeen years old, Jeanne left her village forever. She had no army, no official position, no experience in warfare, and no guarantee that anyone would listen to her. Yet she set out on her journey with absolute faith that God would guide her steps.' }
+          inhoud: { en: 'Jeanne\'s conviction grew so strong that she could no longer ignore her calling. She cut her hair short, dressed in men\'s clothing, and told her parents that she needed to travel to the nearest French stronghold at Vaucouleurs. She claimed she had a cousin there who could help her, though this was apparently not true. Her determination was so fierce that her father eventually agreed to let her go. Early in 1429, at about seventeen years old, Jeanne left her village for the last time. She had no army, no official position, no experience in warfare, and no guarantee that anyone would listen to her. Yet she set out on her journey with absolute faith that God would guide her steps.' }
         }
       ]
     },
@@ -338,7 +338,7 @@ export const charlemagne: Verhaal = {
         },
         {
           type: 'tekst',
-          inhoud: { en: 'Charles was known for his physical strength and his vigorous lifestyle. He enjoyed swimming in hot springs, riding horses, and hunting. He learned to write and kept tablets under his pillow so he could practice writing at night, though his adult writing always remained clumsy. He was fond of eating and drinking and could entertain for hours, but he drank wine in moderation and often encouraged the same discipline in others. He took his duties as emperor seriously and believed that the gods—or God in his case—had blessed his rule. He lived for nearly eighty years, an exceptional age for the medieval period, ruling for nearly half a century. His death in 814 marked the end of an era and raised questions about whether his empire could survive without him.' }
+          inhoud: { en: 'Charles was known for his physical strength and his vigorous lifestyle. He enjoyed swimming in hot springs, riding horses, and hunting. He learned to write and kept tablets under his pillow so he could practice writing at night, though his adult writing always remained clumsy. He was fond of eating and drinking and could entertain for hours, but he drank wine in moderation and often encouraged the same discipline in others. He took his duties as emperor seriously and believed that God had blessed his rule. He lived to about seventy, an exceptional age for the medieval period, ruling for nearly half a century. His death in 814 marked the end of an era and raised questions about whether his empire could survive without him.' }
         }
       ]
     },
@@ -482,7 +482,7 @@ export const richardTheLionheart: Verhaal = {
         },
         {
           type: 'tekst',
-          inhoud: { en: 'In 1191, Richard embarked on the Third Crusade with thousands of knights, soldiers, and support personnel. The journey itself was dangerous and arduous. Richard\'s army traveled by sea and land, facing numerous obstacles and challenges. At one point, a storm wrecked Richard\'s fleet off the coast of Cyprus. Richard used the crisis as an opportunity to conquer the island, which he sold to finance his crusade. Nothing stopped the English king from pursuing his goal. When he arrived in the Holy Land, he found the crusade in disarray. The previous Crusade had been a disaster, with the Christian army destroyed and Jerusalem still in Muslim hands. The crusaders were demoralized and uncertain about their chances of success.' }
+          inhoud: { en: 'In 1190, Richard set out on the Third Crusade with thousands of knights, soldiers, and support personnel. The journey itself was dangerous and arduous. Richard\'s army traveled by sea and land, facing numerous obstacles and challenges. At one point, a storm wrecked Richard\'s fleet off the coast of Cyprus. Richard used the crisis as an opportunity to conquer the island, which he sold to finance his crusade. Nothing stopped the English king from pursuing his goal. When he arrived in the Holy Land, he found the crusade in disarray. The previous Crusade had been a disaster, with the Christian army destroyed and Jerusalem still in Muslim hands. The crusaders were demoralized and uncertain about their chances of success.' }
         },
         {
           type: 'tekst',

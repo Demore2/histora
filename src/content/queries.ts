@@ -35,6 +35,35 @@ export function getNieuwToegevoegd(aantal = 6): Verhaal[] {
     .slice(0, aantal);
 }
 
+/**
+ * Hoe lang een verhaal "nieuw" heet (1.4.3): de dag van toevoegen plus zes, dus precies een week.
+ * Daarna verdwijnen de kaart op Home en het labeltje op de routekaart vanzelf — er is niets om op
+ * te ruimen, want het volgt alleen uit `toegevoegdOp` en de datum van vandaag.
+ */
+export const NIEUW_DAGEN = 7;
+
+/** Lokale datumsleutel `n` dagen vóór `vandaag` (beide 'YYYY-MM-DD'), via de kalender en niet via "× 24 uur". */
+function dagenTerug(vandaag: string, n: number): string {
+  const [jaar, maand, dag] = vandaag.split('-').map(Number);
+  const datum = new Date(jaar, maand - 1, dag - n);
+  const tweeCijfers = (getal: number) => String(getal).padStart(2, '0');
+  return `${datum.getFullYear()}-${tweeCijfers(datum.getMonth() + 1)}-${tweeCijfers(datum.getDate())}`;
+}
+
+/**
+ * `vandaag` is een lokale datumsleutel (`vandaagSleutel()`, via `useVandaag()` in een scherm) en
+ * komt als parameter binnen, zodat dit zuiver blijft en een component niet tijdens het renderen
+ * de klok afleest.
+ */
+export function isNieuw(verhaal: Verhaal, vandaag: string): boolean {
+  return verhaal.toegevoegdOp >= dagenTerug(vandaag, NIEUW_DAGEN - 1) && verhaal.toegevoegdOp <= vandaag;
+}
+
+/** De verhalen die nu nieuw zijn, het nieuwste eerst. Meestal leeg of één. */
+export function getNieuweVerhalen(vandaag: string): Verhaal[] {
+  return getNieuwToegevoegd(verhalen.length).filter((verhaal) => isNieuw(verhaal, vandaag));
+}
+
 export function getVolgendVerhaal(huidigId: string): Verhaal | undefined {
   const index = verhalen.findIndex((verhaal) => verhaal.id === huidigId);
   if (index === -1) return undefined;

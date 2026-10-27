@@ -10,16 +10,16 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { AnimatedPressable } from '@/components/animated-pressable';
-import { HoofdstukTegel } from '@/components/hoofdstuk-tegel';
 import { LegeStaat } from '@/components/lege-staat';
 import { OfflineModal } from '@/components/offline-modal';
+import { RoutePad, type RouteHalte } from '@/components/route-pad';
 import { StoryLimitModal } from '@/components/story-limit-modal';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { ANALYTICS_EVENTS } from '@/constants/analytics';
 import { DAGELIJKSE_VERHAAL_LIMIET } from '@/constants/monetisatie';
 import { Motion } from '@/constants/motion';
-import { MAX_LEESBREEDTE, Radii, Spacing } from '@/constants/theme';
+import { MAX_LEESBREEDTE, Radii, Spacing, withAlpha } from '@/constants/theme';
 import { getTijdperk } from '@/constants/tijdperken';
 import { berekenLeestijdMinuten } from '@/content/leestijd';
 import { getVerhaal } from '@/content/verhalen';
@@ -34,6 +34,14 @@ import { wachtOpSessie } from '@/store/auth-store';
 import { useStoryProgressStore } from '@/store/story-progress-store';
 import { wachtOpHydratie } from '@/store/sync-hulp';
 
+const ROMEINSE_CIJFERS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
+
+/**
+ * Het hoofdstukkenoverzicht van één verhaal: sinds 1.4.3 een routekaart (`RoutePad`, dezelfde als
+ * op `tijdperk/[id]`) in plaats van een raster van tegels. Anders dan daar zijn de haltes hier wél
+ * een slot: een hoofdstuk gaat pas open als het vorige af is, en een halte op slot verklapt zijn
+ * scène nog niet. `HoofdstukTegel` is daarmee orphaned.
+ */
 export default function ChaptersScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
@@ -171,11 +179,51 @@ export default function ChaptersScreen() {
   }
 
   const tijdperk = getTijdperk(verhaal.tijdperkId);
+  const routeKleur = tijdperk?.kleur ?? theme.accent;
 
   // Het eerste hoofdstuk dat open staat maar nog niet af is — daar was de lezer gebleven.
   const volgendHoofdstukId = verhaal.chapters.find(
     (chapter) => progress.isChapterUnlocked(chapter.id) && !progress.isChapterCompleted(chapter.id)
   )?.id;
+
+  const volgendeIndex = verhaal.chapters.findIndex((chapter) => chapter.id === volgendHoofdstukId);
+
+  const haltes: RouteHalte[] = verhaal.chapters.map((chapter) => {
+    const open = progress.isChapterUnlocked(chapter.id);
+    const metBeeld = open && chapter.afbeelding !== undefined;
+    const cijfer = ROMEINSE_CIJFERS[chapter.id - 1] ?? String(chapter.id);
+    return {
+      sleutel: String(chapter.id),
+      af: progress.isChapterCompleted(chapter.id),
+      actief: false,
+      achtergrond: open ? theme.backgroundElement : theme.inactive,
+      afbeelding: metBeeld ? chapter.afbeelding : undefined,
+      overlay: open ? (
+        <>
+          {/* Sluier over de scène: zonder deze laag valt het cijfer weg zodra de scène toevallig
+              licht is (Pompeii's aswolken zijn bijna wit). */}
+          {metBeeld ? (
+            <View style={[StyleSheet.absoluteFill, { backgroundColor: withAlpha('#000000', 0.4) }]} />
+          ) : null}
+          <ThemedText type="title" style={{ color: metBeeld ? '#FFFFFF' : theme.text }}>
+            {cijfer}
+          </ThemedText>
+        </>
+      ) : (
+        <Ionicons name="lock-closed" size={22} color={theme.textSecondary} />
+      ),
+      titel: v(chapter.titel),
+      onder: t((s) => s.hoofdstuk.halteOnder)(chapter.id, berekenLeestijdMinuten(chapter.blokken, v)),
+      onPress: open ? () => handleChapterPress(chapter.id) : undefined,
+    };
+  });
+
+  const knopTekst =
+    volgendHoofdstukId === undefined
+      ? t((s) => s.hoofdstuk.routeKlaar)
+      : progress.completedChapters.length === 0
+        ? t((s) => s.hoofdstuk.routeBegin)
+        : t((s) => s.hoofdstuk.routeVerder)(volgendHoofdstukId);
 
   function handleChapterPress(chapterId: number) {
     // Vangnet: de melding ligt over het scherm, dus hier komt normaal geen tik doorheen.
@@ -235,7 +283,7 @@ export default function ChaptersScreen() {
             <Animated.View
               style={[
                 styles.progressFill,
-                { backgroundColor: tijdperk?.kleur ?? theme.accent },
+                { backgroundColor: routeKleur },
                 voortgangStijl,
               ]}
             />
@@ -245,23 +293,28 @@ export default function ChaptersScreen() {
           </ThemedText>
         </View>
 
-        <View style={styles.chaptersGrid}>
-          {verhaal.chapters.map((chapter, index) => (
-            <HoofdstukTegel
-              key={chapter.id}
-              nummer={chapter.id}
-              titel={v(chapter.titel)}
-              afbeelding={chapter.afbeelding}
-              leestijdMinuten={berekenLeestijdMinuten(chapter.blokken, v)}
-              isUnlocked={progress.isChapterUnlocked(chapter.id)}
-              isCompleted={progress.isChapterCompleted(chapter.id)}
-              isVolgende={chapter.id === volgendHoofdstukId}
-              tijdperkKleur={tijdperk?.kleur ?? theme.accent}
-              index={index}
-              onPress={() => handleChapterPress(chapter.id)}
-            />
-          ))}
-        </View>
+        {volgendHoofdstukId === undefined ? (
+          <View style={[styles.cta, { backgroundColor: theme.backgroundElement }]}>
+            <Ionicons name="trophy" size={18} color={routeKleur} />
+            <ThemedText type="smallBold">{knopTekst}</ThemedText>
+          </View>
+        ) : (
+          <AnimatedPressable
+            onPress={() => handleChapterPress(volgendHoofdstukId)}
+            style={[styles.cta, { backgroundColor: routeKleur }]}>
+            <ThemedText type="smallBold" style={{ color: '#FFFFFF' }}>
+              {knopTekst}
+            </ThemedText>
+            <Ionicons name="arrow-forward" size={18} color="#FFFFFF" />
+          </AnimatedPressable>
+        )}
+
+        <RoutePad
+          haltes={haltes}
+          volgende={volgendeIndex === -1 ? null : volgendeIndex}
+          kleur={routeKleur}
+          volgendeLabel={t((s) => s.reis.halteVolgende)}
+        />
 
         <View style={styles.infoBox}>
           <Ionicons name="information-circle-outline" size={20} color={theme.accent} />
@@ -303,8 +356,8 @@ const styles = StyleSheet.create({
     padding: Spacing.four,
     gap: Spacing.three,
     paddingBottom: Spacing.six,
-    // Zie MAX_LEESBREEDTE: houdt het tegelraster op een breed scherm bij elkaar in plaats van twee
-    // tegels van zeshonderd punten breed uit elkaar te trekken.
+    // Zie MAX_LEESBREEDTE: houdt de route op een breed scherm bij elkaar in plaats van de haltes
+    // zeshonderd punten uit elkaar te trekken.
     width: '100%',
     maxWidth: MAX_LEESBREEDTE,
     alignSelf: 'center',
@@ -323,14 +376,16 @@ const styles = StyleSheet.create({
     height: '100%',
     borderRadius: 4,
   },
-  chaptersGrid: {
+  cta: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
+    alignSelf: 'center',
+    alignItems: 'center',
     gap: Spacing.two,
+    paddingHorizontal: Spacing.five,
+    paddingVertical: Spacing.three,
+    borderRadius: Radii.button,
     marginTop: Spacing.three,
   },
-  // De tegelstijlen (chapterTile/tileImage/tileContent/lockIcon/checkIcon) staan nu in
-  // `components/hoofdstuk-tegel.tsx`, samen met de tegel zelf.
   infoBox: {
     flexDirection: 'row',
     gap: Spacing.two,

@@ -37,6 +37,7 @@ import { useVerhalenVandaag } from '@/store/abonnement-store';
 import { useAuthStore } from '@/store/auth-store';
 import { useSubscriptionStore } from '@/store/subscription-store';
 import { useThemaStore, type ThemaVoorkeur } from '@/store/thema-store';
+import { wisLeesvoortgang } from '@/store/voortgang-wissen';
 
 /** Het abonnementenoverzicht van Google Play, gefilterd op deze app. */
 const PLAY_ABONNEMENTEN_URL =
@@ -93,6 +94,7 @@ export default function InstellingenScreen() {
   const limietZichtbaar = VERHAAL_LIMIET_ENABLED && aanbodZichtbaar;
   const verhalenVandaag = useVerhalenVandaag();
   const [uitlogBezig, setUitlogBezig] = useState(false);
+  const [wisBezig, setWisBezig] = useState(false);
   const { verwijderAccount, isBezig: verwijderBezig } = useDeleteAccount();
   const [paywallOpen, setPaywallOpen] = useState(false);
 
@@ -153,6 +155,42 @@ export default function InstellingenScreen() {
         // Bewust geen `router.replace` hier: de auth-poort in de root layout ziet `user === null`
         // en stuurt naar /login. Eén plek die dat besluit neemt, anders vechten twee navigaties.
         void logout();
+      },
+    });
+  }
+
+  /**
+   * Opnieuw beginnen (1.4.3): de leesvoortgang weg, het account en wat je verdiend hebt blijft.
+   * Zelfde vorm als het verwijderen hieronder — één bevestiging die zegt wat er weggaat én wat
+   * blijft, en bij een fout de belofte dat er niets veranderd is (`wisLeesvoortgang` raakt het
+   * toestel pas aan als de server gelukt is).
+   */
+  function bevestigVoortgangWissen() {
+    bevestig({
+      titel: t((s) => s.instellingen.voortgangWissenTitel),
+      tekst: t((s) => s.instellingen.voortgangWissenTekst),
+      bevestigTekst: t((s) => s.instellingen.voortgangWissenBevestig),
+      annuleerTekst: t((s) => s.auth.annuleren),
+      destructief: true,
+      onBevestig: () => {
+        void (async () => {
+          setWisBezig(true);
+          const resultaat = await wisLeesvoortgang();
+          setWisBezig(false);
+          if (resultaat === 'gewist') {
+            meld(
+              t((s) => s.instellingen.voortgangGewistTitel),
+              t((s) => s.instellingen.voortgangGewistTekst),
+              t((s) => s.instellingen.ok),
+            );
+            return;
+          }
+          meld(
+            t((s) => s.instellingen.voortgangWissenMisluktTitel),
+            t((s) => s.instellingen.voortgangWissenMisluktTekst),
+            t((s) => s.instellingen.ok),
+          );
+        })();
       },
     });
   }
@@ -491,6 +529,12 @@ export default function InstellingenScreen() {
             icoon="log-out-outline"
             label={t((s) => s.auth.uitloggen)}
             onPress={uitlogBezig ? undefined : bevestigUitloggen}
+          />
+          <SettingsItem
+            icoon="refresh-outline"
+            label={t((s) => s.instellingen.voortgangWissen)}
+            waarde={wisBezig ? t((s) => s.instellingen.voortgangWissenBezig) : undefined}
+            onPress={wisBezig ? undefined : bevestigVoortgangWissen}
           />
           <SettingsItem
             icoon="trash-outline"

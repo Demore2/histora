@@ -15,6 +15,8 @@ const nl: DeepPartial<Vertalingen> = {
     verhaallijnen: 'Verhaallijnen',
     ontdekMeer: 'Ontdek meer',
     nieuwToegevoegd: 'Nieuwe hot topics',
+    nieuwVerhaal: 'Nieuw verhaal',
+    nieuwLabel: 'Nieuw',
     toonAlles: 'Toon alles',
   },
   reis: {
@@ -218,6 +220,16 @@ const nl: DeepPartial<Vertalingen> = {
 
     versie: 'Versie',
 
+    voortgangWissen: 'Leesvoortgang wissen',
+    voortgangWissenTitel: 'Opnieuw beginnen?',
+    voortgangWissenTekst:
+      'Dit wist elk hoofdstuk en verhaal dat je gelezen hebt en zet je personages weer op slot. Je account, streak, Dukaten, streakbevriezers en Pro blijven. Dit kan niet ongedaan worden gemaakt.',
+    voortgangWissenBevestig: 'Voortgang wissen',
+    voortgangWissenBezig: 'Bezig met wissen…',
+    voortgangGewistTitel: 'Voortgang gewist',
+    voortgangGewistTekst: 'Je reis begint weer in Rome.',
+    voortgangWissenMisluktTitel: 'Wissen mislukt',
+    voortgangWissenMisluktTekst: 'Er is niets veranderd. Controleer je verbinding en probeer het opnieuw.',
     accountVerwijderen: 'Account verwijderen',
     accountVerwijderenTitel: 'Account verwijderen?',
     accountVerwijderenTekst:
@@ -523,6 +535,10 @@ const nl: DeepPartial<Vertalingen> = {
     teller: (huidig: number, totaal: number) => `Hoofdstuk ${huidig} van ${totaal}`,
     voortgang: (voltooid: number, totaal: number) => `${voltooid} / ${totaal} hoofdstukken`,
     volgordeUitleg: 'Rond hoofdstukken op volgorde af om het volgende te ontgrendelen.',
+    halteOnder: (nummer: number, minuten: number) => `Hoofdstuk ${nummer} · ${minuten} min`,
+    routeBegin: 'Begin bij hoofdstuk 1',
+    routeVerder: (nummer: number) => `Verder met hoofdstuk ${nummer}`,
+    routeKlaar: 'Je hebt dit verhaal uitgelezen',
     terugNaarOverzicht: 'Terug naar hoofdstukken',
     markeerVoltooid: 'Markeer als voltooid',
     volgende: 'Volgend hoofdstuk',

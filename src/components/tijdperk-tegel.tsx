@@ -4,12 +4,11 @@ import { StyleSheet, View } from 'react-native';
 
 import { AnimatedPressable } from '@/components/animated-pressable';
 import { ThemedText } from '@/components/themed-text';
-import { ERA_KOP } from '@/constants/era-koppen';
 import { Radii, Spacing, withAlpha } from '@/constants/theme';
 import type { Tijdperk } from '@/constants/types';
-import { bepaalRoute } from '@/content/queries';
+import { bepaalRoute, isNieuw } from '@/content/queries';
+import { useVandaag } from '@/hooks/use-vandaag';
 import { useVertaling } from '@/hooks/use-vertaling';
-import type { TijdperkId } from '@/lib/trivia';
 import { useStoryProgressStore } from '@/store/story-progress-store';
 import { useVoortgangStore } from '@/store/voortgang-store';
 
@@ -18,8 +17,10 @@ import { useVoortgangStore } from '@/store/voortgang-store';
  * tijdperk (`TijdperkRij`). Tikken opent de routekaart van dat tijdperk (`tijdperk/[id]`).
  *
  * Achtergrond: de openingsscène van het eerste verhaal op de tijdlijn van dat tijdperk, onder een
- * waas in de tijdperkkleur. Rechts Phoxy met het hoofddeksel van het tijdperk, dezelfde koppen als
- * op het wiel van Explore — zo horen Home en Explore bij elkaar.
+ * waas in de tijdperkkleur. Hier stond rechts Phoxy met het hoofddeksel van het tijdperk; die is
+ * eruit (wens van de eigenaar, 1.4.3): met een scène én een vos op elke tegel werd Home te druk.
+ * Phoxy staat nog wel bovenaan de routekaart zelf en op het wiel van Explore. Ook geen pijltje:
+ * de hele tegel is aan te tikken. Wel een labeltje "New" in de week na een nieuw verhaal.
  */
 export function TijdperkTegel({ tijdperk }: { tijdperk: Tijdperk }) {
   const router = useRouter();
@@ -29,7 +30,8 @@ export function TijdperkTegel({ tijdperk }: { tijdperk: Tijdperk }) {
 
   const { haltes, uit } = bepaalRoute(tijdperk.id, voortgang, uitgelezen);
   const beeld = haltes[0]?.verhaal.chapters[0]?.afbeelding;
-  const kop = ERA_KOP[tijdperk.id as TijdperkId];
+  const vandaag = useVandaag();
+  const heeftNieuw = haltes.some((halte) => isNieuw(halte.verhaal, vandaag));
 
   return (
     <AnimatedPressable
@@ -55,12 +57,27 @@ export function TijdperkTegel({ tijdperk }: { tijdperk: Tijdperk }) {
         </View>
       </View>
 
-      {kop ? <Image source={kop} style={styles.kop} contentFit="contain" /> : null}
+      {heeftNieuw ? (
+        <View style={styles.label}>
+          <ThemedText type="caption" style={{ color: tijdperk.kleur }}>
+            {t((s) => s.ontdek.nieuwLabel)}
+          </ThemedText>
+        </View>
+      ) : null}
     </AnimatedPressable>
   );
 }
 
 const styles = StyleSheet.create({
+  label: {
+    position: 'absolute',
+    top: Spacing.three,
+    right: Spacing.three,
+    paddingHorizontal: Spacing.two,
+    paddingVertical: 2,
+    borderRadius: Radii.button,
+    backgroundColor: '#FFFFFF',
+  },
   tegel: {
     marginHorizontal: Spacing.four,
     minHeight: 132,
@@ -98,10 +115,5 @@ const styles = StyleSheet.create({
     height: '100%',
     borderRadius: 3,
     backgroundColor: '#FFFFFF',
-  },
-  kop: {
-    width: 104,
-    height: 104,
-    marginRight: Spacing.three,
   },
 });

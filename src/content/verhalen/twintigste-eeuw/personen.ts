@@ -180,7 +180,7 @@ export const marieCurie: Verhaal = {
         },
         {
           type: 'tekst',
-          inhoud: { en: 'On July 4, 1934, Marie Curie died. She was buried in a simple grave in the Panthéon in Paris—a rare honor for a woman. Her life had been dedicated to understanding the mysteries of matter, and in doing so, she had opened doors that would lead to countless medical and technological advances. The periodic table of elements now carries her legacy: Curium, element 96, was named in honor of Marie and Pierre for their contributions to the discovery of radioactivity. She had lived by her principles: to question, to investigate, and to share knowledge with the world.' }
+          inhoud: { en: 'On July 4, 1934, Marie Curie died. She was buried beside Pierre in the small town of Sceaux. Sixty-one years later, in 1995, both were moved to the Panthéon in Paris, and she became the first woman laid to rest there for her own achievements. Her life had been dedicated to understanding the mysteries of matter, and in doing so, she had opened doors that would lead to countless medical and technological advances. The periodic table of elements now carries her legacy: Curium, element 96, was named in honor of Marie and Pierre for their contributions to the discovery of radioactivity. She had lived by her principles: to question, to investigate, and to share knowledge with the world.' }
         }
       ]
     },

@@ -15,6 +15,8 @@ const de: DeepPartial<Vertalingen> = {
     verhaallijnen: 'Erzählstränge',
     ontdekMeer: 'Mehr entdecken',
     nieuwToegevoegd: 'Neue heiße Themen',
+    nieuwVerhaal: 'Neue Geschichte',
+    nieuwLabel: 'Neu',
     toonAlles: 'Alle anzeigen',
   },
   reis: {
@@ -219,6 +221,16 @@ const de: DeepPartial<Vertalingen> = {
 
     versie: 'Version',
 
+    voortgangWissen: 'Lesefortschritt zurücksetzen',
+    voortgangWissenTitel: 'Neu anfangen?',
+    voortgangWissenTekst:
+      'Damit werden alle gelesenen Kapitel und Geschichten gelöscht und deine Figuren wieder gesperrt. Dein Konto, deine Serie, Dukaten, Serienschutz und Pro bleiben erhalten. Das kann nicht rückgängig gemacht werden.',
+    voortgangWissenBevestig: 'Zurücksetzen',
+    voortgangWissenBezig: 'Wird zurückgesetzt…',
+    voortgangGewistTitel: 'Fortschritt zurückgesetzt',
+    voortgangGewistTekst: 'Deine Reise beginnt wieder in Rom.',
+    voortgangWissenMisluktTitel: 'Zurücksetzen fehlgeschlagen',
+    voortgangWissenMisluktTekst: 'Es wurde nichts geändert. Prüfe deine Verbindung und versuche es erneut.',
     accountVerwijderen: 'Konto löschen',
     accountVerwijderenTitel: 'Konto löschen?',
     accountVerwijderenTekst:
@@ -499,6 +511,10 @@ const de: DeepPartial<Vertalingen> = {
     teller: (huidig: number, totaal: number) => `Kapitel ${huidig} von ${totaal}`,
     voortgang: (voltooid: number, totaal: number) => `${voltooid} / ${totaal} Kapitel`,
     volgordeUitleg: 'Schließe die Kapitel der Reihe nach ab, um das nächste freizuschalten.',
+    halteOnder: (nummer: number, minuten: number) => `Kapitel ${nummer} · ${minuten} Min.`,
+    routeBegin: 'Mit Kapitel 1 beginnen',
+    routeVerder: (nummer: number) => `Weiter mit Kapitel ${nummer}`,
+    routeKlaar: 'Du hast diese Geschichte beendet',
     terugNaarOverzicht: 'Zurück zu den Kapiteln',
     markeerVoltooid: 'Als abgeschlossen markieren',
     volgende: 'Nächstes Kapitel',

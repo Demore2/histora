@@ -144,7 +144,7 @@ export const leonardo: Verhaal = {
         },
         {
           type: 'tekst',
-          inhoud: { en: 'He worked for the Duke of Rome, conducted military engineering projects, and continued his endless investigations into nature. He designed cities with advanced sanitation systems. He studied geology and fossils, trying to understand the history of the earth. He examined the flow of water and the structure of spirals in nature. At sixty, most people might retire, but Leonardo\'s curiosity showed no signs of slowing down.' }
+          inhoud: { en: 'He served Cesare Borgia as a military engineer, later lived in Rome under the protection of Giuliano de\' Medici, and continued his endless investigations into nature. He designed cities with advanced sanitation systems. He studied geology and fossils, trying to understand the history of the earth. He examined the flow of water and the structure of spirals in nature. At sixty, most people might retire, but Leonardo\'s curiosity showed no signs of slowing down.' }
         }
       ]
     },

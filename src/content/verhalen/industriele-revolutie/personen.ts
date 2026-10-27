@@ -262,7 +262,7 @@ export const florence: Verhaal = {
       },
         {
           type: 'tekst',
-          inhoud: { en: 'Florence\'s opportunity to make her greatest impact came in 1853 when the Crimean War broke out. Britain, France, and the Ottoman Empire were fighting against Russia. British soldiers were dying not primarily from combat wounds but from disease—typhus, dysentery, typhoid, and cholera were killing more soldiers than enemy bullets. Conditions in the military hospitals were terrible: overcrowded, dirty, poorly ventilated, and inadequately supplied. When reports of these conditions reached Britain, public outrage grew. Florence read the reports and knew this was where she needed to be. She offered her services, and with official permission, she traveled to the Crimea with a small group of nurses she had trained.' }
+          inhoud: { en: 'Florence\'s opportunity to make her greatest impact came with the Crimean War. Fighting broke out in 1853, and in 1854 Britain and France joined the Ottoman Empire against Russia. British soldiers were dying not primarily from combat wounds but from disease—typhus, dysentery, typhoid, and cholera were killing more soldiers than enemy bullets. Conditions in the military hospitals were terrible: overcrowded, dirty, poorly ventilated, and inadequately supplied. When reports of these conditions reached Britain, public outrage grew. Florence read the reports and knew this was where she needed to be. She offered her services, and with official permission, she traveled to the Crimea with a small group of nurses she had trained.' }
         }
       ]
     },
@@ -279,7 +279,7 @@ export const florence: Verhaal = {
         },
         {
           type: 'tekst',
-          inhoud: { en: 'When Florence Nightingale and her nurses arrived at the Barrack Hospital in Scutari in November 1853, they found appalling conditions. The hospital was filthy, lice-infested, and overrun with rats. Patients lay on straw mattresses that were never changed. The mortality rate was shockingly high—in some months, more than one in four of the patients admitted died. Florence and her nurses immediately set about trying to improve conditions. They scrubbed floors, washed bedding, improved ventilation, and organized supply systems. They provided basic care and comfort to the wounded and dying soldiers.' },
+          inhoud: { en: 'When Florence Nightingale and her nurses arrived at the Barrack Hospital in Scutari in November 1854, they found appalling conditions. The hospital was filthy, lice-infested, and overrun with rats. Patients lay on straw mattresses that were never changed. The mortality rate was shockingly high—in some months, more than one in four of the patients admitted died. Florence and her nurses immediately set about trying to improve conditions. They scrubbed floors, washed bedding, improved ventilation, and organized supply systems. They provided basic care and comfort to the wounded and dying soldiers.' },
       },
         {
           type: 'tekst',

@@ -39,6 +39,10 @@ const en = {
     verhaallijnen: 'Storylines',
     ontdekMeer: 'Discover more',
     nieuwToegevoegd: 'New hot topics',
+    /** Kop van de kaart op Home voor een verhaal dat deze week is toegevoegd (1.4.3). */
+    nieuwVerhaal: 'New story',
+    /** Het labeltje op een tijdperktegel en een halte op de routekaart. */
+    nieuwLabel: 'New',
     toonAlles: 'Show all',
   },
   /** De reiskaart bovenaan Home (`reis-kaart.tsx`): de tijdlijn van Rome tot vandaag. */
@@ -348,6 +352,20 @@ const en = {
 
     versie: 'Version',
 
+    /**
+     * Opnieuw beginnen (1.4.3, `voortgang-wissen.ts`). De tekst noemt ook wat blijft: wie op
+     * "reset" drukt vraagt zich vooral af of zijn Dukaten en streak meegaan.
+     */
+    voortgangWissen: 'Reset reading progress',
+    voortgangWissenTitel: 'Start over?',
+    voortgangWissenTekst:
+      'This clears every chapter and story you have read and locks your characters again. Your account, streak, Dukaten, streak freezes and Pro stay. This cannot be undone.',
+    voortgangWissenBevestig: 'Reset progress',
+    voortgangWissenBezig: 'Resetting…',
+    voortgangGewistTitel: 'Progress reset',
+    voortgangGewistTekst: 'Your journey starts again in Rome.',
+    voortgangWissenMisluktTitel: 'Could not reset',
+    voortgangWissenMisluktTekst: 'Nothing was changed. Check your connection and try again.',
     accountVerwijderen: 'Delete account',
     accountVerwijderenTitel: 'Delete account?',
     /**
@@ -806,6 +824,11 @@ const en = {
     teller: (huidig: number, totaal: number) => `Chapter ${huidig} of ${totaal}`,
     voortgang: (voltooid: number, totaal: number) => `${voltooid} / ${totaal} chapters`,
     volgordeUitleg: 'Complete chapters in order to unlock the next one.',
+    /** Onder een halte op de routekaart van een verhaal: "Chapter 3 · 6 min". */
+    halteOnder: (nummer: number, minuten: number) => `Chapter ${nummer} · ${minuten} min`,
+    routeBegin: 'Start with chapter 1',
+    routeVerder: (nummer: number) => `Continue with chapter ${nummer}`,
+    routeKlaar: 'You finished this story',
     terugNaarOverzicht: 'Back to Chapters',
     markeerVoltooid: 'Mark Complete',
     volgende: 'Next Chapter',
