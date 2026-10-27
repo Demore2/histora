@@ -2,10 +2,10 @@
 /**
  * Render the Play Store phone screenshots (1.3) from store/screenshots.html:
  *
- *   store/assets/screenshots-1.3/phone-<n>.png   1080x1920 (9:16), 24-bit, no alpha
+ *   store/assets/screenshots-1.4/phone-<n>.png   1080x1920 (9:16), 24-bit, no alpha
  *
  * Same approach as generate-store-assets.mjs: the HTML is the source, headless Chrome renders
- * it once per slide (`?n=1` … `?n=4`), and the browser's RGBA output is flattened because Play
+ * it once per slide (`?n=1` … `?n=6`), and the browser's RGBA output is flattened because Play
  * is fussy about alpha in listing images. The app screens inside the slides are real emulator
  * captures in store/screenshots-bron/ — recapture those, then re-run this.
  *
@@ -25,10 +25,10 @@ import { PNG } from 'pngjs';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.join(__dirname, '..');
 const bron = path.join(projectRoot, 'store/screenshots.html');
-const outDir = path.join(projectRoot, 'store/assets/screenshots-1.3');
+const outDir = path.join(projectRoot, 'store/assets/screenshots-1.4');
 const BREED = 1080;
 const HOOG = 1920;
-const AANTAL = 4;
+const AANTAL = 6;
 
 const BROWSERS = [
   'C:/Program Files/Google/Chrome/Application/chrome.exe',
@@ -59,9 +59,8 @@ execFileSync(
   { stdio: 'inherit' }
 );
 const SCENES = [
-  ['scene-1-home.png', 'home.png'],
-  ['scene-2-streak.png', 'progress.png'],
-  ['scene-3-shop.png', 'shop.png'],
+  ['scene-1-home.png', 'home-1.4.png'],
+  ['scene-2-streak.png', 'voortgang-1.4.png'],
 ];
 fs.mkdirSync(path.join(projectRoot, 'store/scenes/klaar'), { recursive: true });
 for (const [scene, scherm] of SCENES) {
