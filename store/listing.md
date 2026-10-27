@@ -12,10 +12,10 @@ De tekens tussen haakjes zijn getelde lengtes tegen de limiet van Play. Herteld 
 ## App name (max 30)
 
 ```
-Histora: History Stories
+Histora: Learn History
 ```
 
-(24/30.) De **launcher**-naam blijft `Histora` — die staat in `app.json` en hoeft niet gelijk te
+(22/30.) De **launcher**-naam blijft `Histora` — die staat in `app.json` en hoeft niet gelijk te
 zijn aan de storenaam. Wil je puur merk, gebruik dan `Histora` (7/30); de suffix is er alleen
 omdat "Histora" op zichzelf niets over de inhoud zegt in een zoekresultaat.
 
@@ -42,51 +42,64 @@ eruit. Dat staat ook onder het kopje "Ads" verderop.)
 
 ## Full description (max 4000)
 
-> De regel "Every chapter opens with an illustrated scene" is gecontroleerd tegen de content, niet
-> aangenomen: 160 `{ type: 'afbeelding' }`-blokken en 160 × `Chapter.afbeelding` over 20 verhalen ×
-> 8 hoofdstukken (Fase 6.5). Verandert dat, pas dan deze zin aan — een listing die meer belooft dan
-> de app doet is precies waar reviews en Play-meldingen over gaan.
+> **Herschreven voor 1.4 (2026-10-27, wens van de eigenaar): alleen de tijdperken, geen namen van
+> personen en geen aantallen** — er komen verhalen bij, en een lijst met namen veroudert bij elk
+> nieuw verhaal. De oude versie noemde ook nog peilingen en keuzepunten na een hoofdstuk; die
+> staan sinds 1.4 niet meer in het vragenpaneel. De mascotte heet hier "a fox", nooit "Phoxy"
+> (interne naam). Controleer bij elke wijziging of de tekst nog klopt met de app: een listing die
+> meer belooft dan de app doet is precies waar reviews en Play-meldingen over gaan.
 
 ```
 Histora turns history into something you actually finish.
 
-Every figure and every event is one story, split into short chapters. Read one on the bus, one before bed. A chapter takes a few minutes; a whole story takes about ten.
+Every famous person and every turning point is one true story, told in short chapters. Read one on the bus, one before bed. A chapter takes a few minutes.
 
-WHAT'S INSIDE
+ONE JOURNEY THROUGH TIME
 
-Stories from every era, from the founding of Rome to the present day. Among them:
+Follow history in order, from the founding of Rome to the world today. Your journey card always shows where you are and what comes next. Every era has its own route to explore:
 
-Antiquity — Julius Caesar, Spartacus, Ashoka the Great, the rise of Rome, the eruption of Vesuvius
-Middle Ages — Joan of Arc, Charlemagne, Richard the Lionheart
-Early Modern Period — Leonardo da Vinci, Galileo Galilei, Catherine the Great
-Industrial Revolution — James Watt, Florence Nightingale, Thomas Edison
-20th Century — Marie Curie, Winston Churchill, Martin Luther King Jr.
-Contemporary Era — Nelson Mandela, Steve Jobs, Malala Yousafzai
+Antiquity
+Middle Ages
+Early Modern Period
+Industrial Revolution
+20th Century
+Contemporary Era
+
+New stories are added regularly, and they show up with a "New" label so you never miss one.
 
 HOW IT READS
 
-Chapters unlock one at a time, so you never have to remember where you left off. Every chapter opens with an illustrated scene, and the people speak in their own words where the sources let them. After a chapter you answer a short question about what you just read — a quiz, a poll that shows how other readers answered, or a choice the people in the story faced.
+Every story is a path of chapters. Each chapter opens with an illustrated scene, and the next one unlocks when you finish, so you never have to remember where you left off. A fox in glasses walks the route with you.
+
+LEARN AS YOU READ
+
+After every chapter, the fox asks you one quick question about what you just read. Right or wrong, you see the answer and a short explanation, so the story sticks.
+
+SPIN THE WHEEL
+
+In Explore, spin the wheel, land on an era and answer a history question. Three right in a row earns a crown question. Win a crown for every era, or challenge the robot to a duel.
 
 COLLECT THE PEOPLE
 
-Finish a story and its figure joins your collection. A card for every story, filled in one at a time — a quiet reason to come back for the next one.
+Finish a story and its figure joins your character collection. A card for every story, filled in one at a time.
+
+KEEP YOUR STREAK
+
+Read a chapter a day to build your streak, and add the streak widget to your home screen. Earn Ducats by reading and spend them on streak freezes for busy days.
 
 BUILT TO STAY OUT OF THE WAY
 
-No ads inside a chapter: the free version shows a banner on the home screen and one short ad after you finish a story. Pro removes them.
+No ads inside a chapter. The free version shows banners outside the reader and one short ad after you finish a story. Pro removes them.
 Nothing sold to anyone.
-A free account, so your chapters, characters and streak follow you to a new phone.
-With Pro, every story and every image is inside the app, so reading keeps working without a connection.
+A free account, so your progress, characters and streak follow you to a new phone.
 One reminder a day, at a time you pick, and you can switch it off.
 
-The interface is available in English, Dutch, French and German. The stories themselves are in English. Light and dark themes, and a reading streak if you want one.
+The interface and the questions are available in English, Dutch, French and German. The stories themselves are in English. Light and dark themes.
 
 FREE AND PRO
 
-Histora is free to download and read online: two new stories a day, and every story you have started stays open. Histora Pro removes the daily limit and all ads, and lets you read offline. It is a monthly or yearly subscription through Google Play, with a 7-day free trial for new subscribers, and you can cancel any time in the Play Store.
+Histora is free to download and read online: two new stories a day, and every story you have started stays open. Histora Pro removes the daily limit and all ads, gives you unlimited lives in Explore and lets you read offline. It is a monthly or yearly subscription through Google Play, and you can cancel any time in the Play Store.
 ```
-
-(2.288/4000.)
 
 ---
 
