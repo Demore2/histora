@@ -17,6 +17,7 @@ import { ThemedView } from '@/components/themed-view';
 import {
   APP_IS_GEPUBLICEERD,
   APP_VERSIE,
+  UPDATE_CODE,
   PLAY_STORE_URL,
   SUPPORT_EMAIL,
   supportEmailIsIngesteld,
@@ -520,7 +521,7 @@ export default function InstellingenScreen() {
           <SettingsItem
             icoon="information-circle-outline"
             label={t((s) => s.instellingen.versie)}
-            waarde={APP_VERSIE}
+            waarde={UPDATE_CODE ? `${APP_VERSIE} · ${UPDATE_CODE}` : APP_VERSIE}
           />
         </SettingsSectie>
 

@@ -19,6 +19,29 @@ import Constants from 'expo-constants';
  */
 export const APP_VERSIE = Constants.expoConfig?.version ?? '1.0.0';
 
+/**
+ * Welke EAS Update er draait (1.4.4), als korte code achter het versienummer in Instellingen:
+ * "1.4.4 · 39d18797". `null` als de app de code uit de build zelf draait (geen update, of in
+ * `__DEV__`). Zo is op een telefoon te zien of een update binnen is — een update verandert het
+ * versienummer niet, want `runtimeVersion` hangt eraan.
+ *
+ * **Lui ge`require`d en nooit gooien**, zelfde vorm als `lib/push.ts`: `expo-updates` is native, en
+ * een dev-client of build van vóór 1.4.4 heeft de module niet — een statische import laat de app
+ * daar op het eerste frame klappen ("Cannot find native module 'ExpoUpdates'").
+ */
+function leesUpdateCode(): string | null {
+  if (__DEV__) return null;
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const updates = require('expo-updates') as typeof import('expo-updates');
+    return updates.updateId && !updates.isEmbeddedLaunch ? updates.updateId.slice(0, 8) : null;
+  } catch {
+    return null;
+  }
+}
+
+export const UPDATE_CODE: string | null = leesUpdateCode();
+
 /** Het Android-package, zoals in `app.json`. Basis voor de Play-links hieronder. */
 export const ANDROID_PAKKET = 'com.chronicles.historyapp';
 

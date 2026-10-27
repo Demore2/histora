@@ -39,6 +39,7 @@ const nl: DeepPartial<Vertalingen> = {
     routeVerder: 'Ga verder op de route',
     routeKlaar: 'Je hebt dit tijdperk uitgelezen',
     halteVolgende: 'Volgende halte',
+    oppakkenKop: 'Ga verder waar je was',
     halteBezig: (hoofdstuk: number, totaal: number) => `Hoofdstuk ${hoofdstuk} van ${totaal}`,
   },
   splash: {

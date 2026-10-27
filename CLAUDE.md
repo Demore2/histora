@@ -976,16 +976,19 @@ redactionele hero ("Featured", `getUitgelichtVerhaal`), `RecommendedStoryCard` e
 - **`beginJaar` is verplicht** (geboortejaar of begin van de gebeurtenis, negatief = v.Chr.) — een
   nieuw verhaal zonder valt dus niet stilletjes buiten de volgorde maar is een compileerfout, en
   `validate:content` keurt een `beginJaar` na `jaar` af. `jaar` blijft het eindpunt.
-- **`bepaalReis(progress, completedStories)`** is zuiver en geeft vier standen: `begin` (nog niets
-  gelezen → het eerste verhaal), `verder` (een verhaal half open → het vroegste daarvan op de
-  tijdlijn, met "Chapter n of 8"), `volgende` (het eerste niet-uitgelezen verhaal) en `klaar`
-  (alles uit → knop naar Explore). Half open gaat vóór volgende: anders verdwijnt een half gelezen
-  boek van de pagina.
+- **`bepaalReis(progress, completedStories)`** is zuiver en sinds 1.4.4 **strikt chronologisch**: de
+  kaart toont altijd het eerste niet-uitgelezen verhaal op de tijdlijn — `begin`, `volgende`, of
+  `verder` ("Chapter n of 8") als juist dát verhaal half gelezen is — en `klaar` als alles uit is.
+  Tot 1.4.3 ging elk half open verhaal vóór; dat haalde de reis uit volgorde (wens van de eigenaar).
+  `bepaalRoute` volgt dezelfde regel voor de volgende halte.
+- **"Pick up where you left off" (`OppakKaart`, `bepaalOppakken`)** staat direct onder de reiskaart:
+  het half gelezen verhaal dat níét op de reiskaart staat, het laatst gelezen eerst. Dat moment is
+  `StoryProgress.laatstGelezenOp` (gezet in `completeChapter`), **alleen lokaal** — `updated_at` op
+  de server is onbruikbaar, want elke push schrijft alle verhalen met dezelfde tijd. Zonder moment
+  (oude voortgang, ander toestel) beslist de tijdlijn. De rij "Continue reading" is daarmee weg.
 - **De kaart wacht op de hydratie** van `story-progress-store` en `voortgang-store`, en tikken gaat
   naar het hoofdstukkenoverzicht (`/verhaal/[id]`), niet de reader in: daar staan de poorten.
-- **"Continue reading" verschijnt alleen nog als er nóg een half open verhaal is** naast dat van de
-  kaart, en heeft geen lege staat meer.
-- **Volgorde op Home:** reiskaart → nieuw-kaart(en) → advertentie → Continue reading → één
+- **Volgorde op Home:** reiskaart → oppak-tegel → nieuw-kaart(en) → advertentie → één
   **`TijdperkTegel`** per tijdperk, onder elkaar (scène + waas in de tijdperkkleur + "x/y read"
   geen pijltje: de hele tegel is aan te tikken). Sinds 1.4.3 zónder Phoxy-kop (wens van de eigenaar: scène plus vos maakte Home te druk). De carrousels per tijdperk (`TijdperkRij`) zijn weg.
 - **"New hot topics" is weg (1.4.3).** Die rij toonde wekenlang dezelfde zes verhalen. In de plaats:

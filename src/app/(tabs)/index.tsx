@@ -9,18 +9,17 @@ import { HorizontaleRij } from '@/components/horizontale-rij';
 import { KopActies } from '@/components/kop-acties';
 import { LegeStaat } from '@/components/lege-staat';
 import { NieuwVerhaalKaart } from '@/components/nieuw-verhaal-kaart';
+import { OppakKaart } from '@/components/oppak-kaart';
 import { ReisKaart } from '@/components/reis-kaart';
 import { SectieKop } from '@/components/sectie-kop';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { TijdperkTegel } from '@/components/tijdperk-tegel';
-import { VerhaalKaart } from '@/components/verhaal-kaart';
 import { CardDimensions, Radii, Spacing, VLAM_KLEUR } from '@/constants/theme';
 import { getActieveTijdperken } from '@/constants/tijdperken';
-import type { Verhaal } from '@/constants/types';
 import { collecties } from '@/content/collecties';
-import { bepaalReis, getNieuweVerhalen } from '@/content/queries';
-import { getVerhaal, verhalen as allVerhalen } from '@/content/verhalen';
+import { bepaalOppakken, bepaalReis, getNieuweVerhalen } from '@/content/queries';
+import { verhalen as allVerhalen } from '@/content/verhalen';
 import { useStreak } from '@/hooks/use-streak';
 import { useTheme } from '@/hooks/use-theme';
 import { useVandaag } from '@/hooks/use-vandaag';
@@ -35,25 +34,15 @@ export default function OntdekScreen() {
   const theme = useTheme();
   const router = useRouter();
   const { t } = useVertaling();
-  const gelezenIds = useVoortgangStore((state) => state.gelezenIds);
-  const bekekenIds = useVoortgangStore((state) => state.bekekenIds);
   const completedStories = useVoortgangStore((state) => state.completedStories);
   const streakDagen = useStreak();
 
   const voortgang = useStoryProgressStore((state) => state.progress);
-  // Het verhaal op de reiskaart staat niet nóg eens in "Continue reading" (1.4.2): die rij is er
-  // alleen nog voor wie meerdere verhalen tegelijk open heeft, en verdwijnt als dat er geen zijn.
+  // De reiskaart is chronologisch; een verhaal dat je daarbuiten bent begonnen krijgt eronder een
+  // eigen tegel (1.4.4). Die vervangt de rij "Continue reading".
   const reis = bepaalReis(voortgang, completedStories);
   const reisVerhaalId = reis.soort === 'klaar' ? null : reis.verhaal.id;
-  const verderLezen = [...bekekenIds]
-    .map((id) => getVerhaal(id))
-    .filter(
-      (verhaal): verhaal is Verhaal =>
-        verhaal !== undefined &&
-        verhaal.id !== reisVerhaalId &&
-        !gelezenIds.has(verhaal.id) &&
-        !completedStories.has(verhaal.id)
-    );
+  const oppakken = bepaalOppakken(voortgang, completedStories, reisVerhaalId);
   const vandaag = useVandaag();
   // Alleen wat deze week is toegevoegd en nog niet uit is: meestal niets, soms één kaart.
   const nieuweVerhalen = getNieuweVerhalen(vandaag).filter(
@@ -88,9 +77,6 @@ export default function OntdekScreen() {
     );
   }
 
-  function openVerhaal(verhaalId: string) {
-    router.push({ pathname: '/verhaal/[id]', params: { id: verhaalId } });
-  }
 
   return (
     <ThemedView style={styles.container}>
@@ -117,35 +103,17 @@ export default function OntdekScreen() {
           */}
           <ReisKaart />
 
+          {oppakken ? <OppakKaart verhaal={oppakken.verhaal} afgerond={oppakken.afgerond} /> : null}
+
           {/* "New hot topics" is weg (1.4.3): een kaart per verhaal dat deze week is toegevoegd. */}
           {nieuweVerhalen.map((verhaal) => (
             <NieuwVerhaalKaart key={verhaal.id} verhaal={verhaal} />
           ))}
 
-          {/* De banner (v1.2) staat onder de reiskaart en een eventuele nieuw-kaart, boven
-              "Continue reading". Rendert niets voor Pro of zolang er geen echte advertentie
+          {/* De banner (v1.2) staat onder de reiskaart, de oppak-tegel en een eventuele nieuw-kaart.
+              Rendert niets voor Pro of zolang er geen echte advertentie
               geladen is, dan sluit de `gap` gewoon aan. */}
           <AdBanner />
-
-          {verderLezen.length > 0 && (
-            <View style={styles.sectie}>
-              <SectieKop titel={t((s) => s.ontdek.verderLezen)} />
-              <HorizontaleRij
-                data={verderLezen}
-                keyExtractor={(verhaal) => verhaal.id}
-                itemBreedte={CardDimensions.portraitWidth}
-                contentContainerStyle={styles.rij}
-                renderItem={({ item }) => (
-                  <VerhaalKaart
-                    verhaal={item}
-                    gelezen={gelezenIds.has(item.id)}
-                    onPress={() => openVerhaal(item.id)}
-                  />
-                )}
-              />
-            </View>
-          )}
-
 
           {SHOW_STORYLINES && (
             <View style={styles.sectie}>

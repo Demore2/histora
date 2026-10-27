@@ -66,6 +66,7 @@ const en = {
     routeVerder: 'Continue the route',
     routeKlaar: 'You finished this era',
     halteVolgende: 'Next stop',
+    oppakkenKop: 'Pick up where you left off',
     halteBezig: (hoofdstuk: number, totaal: number) => `Chapter ${hoofdstuk} of ${totaal}`,
   },
   /**

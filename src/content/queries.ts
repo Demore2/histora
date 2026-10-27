@@ -106,10 +106,11 @@ export function getTijdlijn(): Verhaal[] {
  * Waar de lezer staat op de reis, voor de reiskaart bovenaan Home.
  *
  * - `begin`: nog nergens aan begonnen → het eerste verhaal van de tijdlijn.
- * - `verder`: een verhaal staat half open → dát verhaal (bij meerdere: het vroegste op de tijdlijn).
- *   Gaat vóór het volgende ongelezen verhaal, anders staat een half gelezen boek nergens meer.
- * - `volgende`: niets half open → het eerste nog niet uitgelezen verhaal op de tijdlijn.
- * - `klaar`: alles uitgelezen.
+ * - `verder`: het eerste niet-uitgelezen verhaal op de tijdlijn is half gelezen.
+ * - `volgende`: het eerste niet-uitgelezen verhaal op de tijdlijn is nog niet begonnen.
+ * - `klaar`: alles uit.
+ *
+ * Sinds 1.4.4 strikt chronologisch; een half verhaal verderop staat in `bepaalOppakken`.
  *
  * Uitgelezen = elk hoofdstuk af, óf het personage ontgrendeld (`uitgelezenIds`) — wie de knop nog
  * niet indrukte heeft het verhaal wél uit. Zuiver: de voortgang komt als parameter binnen.
@@ -119,6 +120,13 @@ export type ReisStand =
   | { soort: 'verder'; verhaal: Verhaal; positie: number; totaal: number; afgerond: number }
   | { soort: 'klaar'; totaal: number };
 
+/**
+ * De reiskaart (1.4.4, wens van de eigenaar): **altijd het eerste verhaal op de tijdlijn dat nog
+ * niet uit is** — de reis is chronologisch. Is dat verhaal half gelezen, dan `verder` met
+ * "Chapter n of 8"; anders `begin` of `volgende`. Een verhaal dat je buiten de volgorde om bent
+ * begonnen staat hier niet meer (tot 1.4.3 ging elk half open verhaal vóór); dat is
+ * `bepaalOppakken` en een eigen tegel eronder.
+ */
 export function bepaalReis(
   progress: Record<string, { completedChapters: number[] }>,
   uitgelezenIds: Set<string>
@@ -128,15 +136,39 @@ export function bepaalReis(
   const afgerond = (verhaal: Verhaal) => progress[verhaal.id]?.completedChapters.length ?? 0;
   const isUit = (verhaal: Verhaal) => uitgelezenIds.has(verhaal.id) || afgerond(verhaal) >= verhaal.chapters.length;
 
-  const halfOpen = tijdlijn.findIndex((verhaal) => !isUit(verhaal) && afgerond(verhaal) > 0);
-  if (halfOpen !== -1) {
-    const verhaal = tijdlijn[halfOpen];
-    return { soort: 'verder', verhaal, positie: halfOpen + 1, totaal, afgerond: afgerond(verhaal) };
-  }
   const volgende = tijdlijn.findIndex((verhaal) => !isUit(verhaal));
   if (volgende === -1) return { soort: 'klaar', totaal };
-  const ooitIetsGelezen = tijdlijn.some((verhaal) => afgerond(verhaal) > 0 || uitgelezenIds.has(verhaal.id));
-  return { soort: ooitIetsGelezen ? 'volgende' : 'begin', verhaal: tijdlijn[volgende], positie: volgende + 1, totaal };
+  const verhaal = tijdlijn[volgende];
+  if (afgerond(verhaal) > 0) {
+    return { soort: 'verder', verhaal, positie: volgende + 1, totaal, afgerond: afgerond(verhaal) };
+  }
+  const ooitIetsGelezen = tijdlijn.some((v) => afgerond(v) > 0 || uitgelezenIds.has(v.id));
+  return { soort: ooitIetsGelezen ? 'volgende' : 'begin', verhaal, positie: volgende + 1, totaal };
+}
+
+/**
+ * "Pick up where you left off" (1.4.4): het half gelezen verhaal dat niet al op de reiskaart
+ * staat, het laatst gelezen eerst (`laatstGelezenOp`, anders tijdlijnvolgorde). `null` als er
+ * niets buiten de volgorde open staat.
+ */
+export function bepaalOppakken(
+  progress: Record<string, { completedChapters: number[]; laatstGelezenOp?: number }>,
+  uitgelezenIds: Set<string>,
+  reisVerhaalId: string | null
+): { verhaal: Verhaal; afgerond: number } | null {
+  const tijdlijn = getTijdlijn();
+  const kandidaten = tijdlijn
+    .map((verhaal, plek) => ({ verhaal, plek, stand: progress[verhaal.id] }))
+    .filter(
+      ({ verhaal, stand }) =>
+        verhaal.id !== reisVerhaalId &&
+        !uitgelezenIds.has(verhaal.id) &&
+        (stand?.completedChapters.length ?? 0) > 0 &&
+        (stand?.completedChapters.length ?? 0) < verhaal.chapters.length
+    )
+    .sort((a, b) => (b.stand?.laatstGelezenOp ?? 0) - (a.stand?.laatstGelezenOp ?? 0) || a.plek - b.plek);
+  const eerste = kandidaten[0];
+  return eerste ? { verhaal: eerste.verhaal, afgerond: eerste.stand?.completedChapters.length ?? 0 } : null;
 }
 
 /** Eén halte op de routekaart van een tijdperk. */
@@ -148,9 +180,9 @@ export type Halte = {
 
 /**
  * De route door één tijdperk (1.4.2): de verhalen in tijdlijnvolgorde, elk met zijn stand, plus
- * welke halte "de volgende" is — een half gelezen verhaal eerst, anders het eerste ongelezen,
- * `null` als alles uit is. Zelfde regels als `bepaalReis`, zodat de tegel op Home, de routekaart
- * en de reiskaart het nooit oneens zijn. Elke halte is vrij aan te klikken; de route is een
+ * welke halte "de volgende" is: het eerste dat nog niet uit is (sinds 1.4.4, was: een half gelezen
+ * verhaal eerst), `null` als alles uit is. Zelfde regel als `bepaalReis`, zodat de routekaart en
+ * de reiskaart het nooit oneens zijn. Elke halte is vrij aan te klikken; de route is een
  * volgorde, geen slot.
  */
 export function bepaalRoute(
@@ -165,11 +197,10 @@ export function bepaalRoute(
       const uit = uitgelezenIds.has(verhaal.id) || afgerond >= verhaal.chapters.length;
       return { verhaal, afgerond, stand: uit ? 'uit' : afgerond > 0 ? 'bezig' : 'open' };
     });
-  const bezig = haltes.findIndex((halte) => halte.stand === 'bezig');
-  const open = haltes.findIndex((halte) => halte.stand === 'open');
+  const volgende = haltes.findIndex((halte) => halte.stand !== 'uit');
   return {
     haltes,
-    volgende: bezig !== -1 ? bezig : open !== -1 ? open : null,
+    volgende: volgende !== -1 ? volgende : null,
     uit: haltes.filter((halte) => halte.stand === 'uit').length,
   };
 }

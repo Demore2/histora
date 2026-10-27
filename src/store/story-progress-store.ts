@@ -8,6 +8,12 @@ import { foutTekst, maakSyncPlanner, wachtOpHydratie } from '@/store/sync-hulp';
 
 export type StoryProgress = {
   completedChapters: number[];
+  /**
+   * Wanneer hier op dít toestel het laatst een hoofdstuk is afgerond (epoch-ms, 1.4.4). Alleen voor
+   * "Pick up where you left off" op Home; gaat niet naar de server. Ontbreekt bij voortgang van vóór
+   * 1.4.4 of van een ander toestel, en dan beslist de tijdlijnvolgorde.
+   */
+  laatstGelezenOp?: number;
 };
 
 export type StoryProgressState = {
@@ -79,6 +85,7 @@ export const useStoryProgressStore = create<StoryProgressState>()(
               ...state.progress,
               [verhaalId]: {
                 completedChapters: Array.from(completed).sort((a, b) => a - b),
+                laatstGelezenOp: Date.now(),
               },
             },
             heeftOnverzondenWijzigingen: true,
@@ -162,7 +169,13 @@ export const useStoryProgressStore = create<StoryProgressState>()(
             const samen = Array.from(new Set([...lokaal, ...vanServer])).sort((a, b) => a - b);
 
             if (samen.length > vanServer.length) lokaalWeetMeer = true;
-            progress[rij.verhaal_id] = { completedChapters: samen };
+            // Het moment blijft lokaal. `updated_at` van de server is géén leesmoment: elke push
+            // schrijft alle verhalen tegelijk met dezelfde tijd, dus dat zou alles even recent maken.
+            const lokaalMoment = state.progress[rij.verhaal_id]?.laatstGelezenOp;
+            progress[rij.verhaal_id] = {
+              completedChapters: samen,
+              ...(lokaalMoment !== undefined ? { laatstGelezenOp: lokaalMoment } : {}),
+            };
           }
 
           // Verhalen die alleen lokaal bestaan komen niet in de lus hierboven voor, maar moeten
