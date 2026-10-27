@@ -69,6 +69,14 @@ const IMAGES = {
   'ashoka-maurya-6': require('../../assets/images/scenes/ashoka-maurya-6.webp'),
   'ashoka-maurya-7': require('../../assets/images/scenes/ashoka-maurya-7.webp'),
   'ashoka-maurya-8': require('../../assets/images/scenes/ashoka-maurya-8.webp'),
+  'alexander-the-great-1': require('../../assets/images/scenes/alexander-the-great-1.webp'),
+  'alexander-the-great-2': require('../../assets/images/scenes/alexander-the-great-2.webp'),
+  'alexander-the-great-3': require('../../assets/images/scenes/alexander-the-great-3.webp'),
+  'alexander-the-great-4': require('../../assets/images/scenes/alexander-the-great-4.webp'),
+  'alexander-the-great-5': require('../../assets/images/scenes/alexander-the-great-5.webp'),
+  'alexander-the-great-6': require('../../assets/images/scenes/alexander-the-great-6.webp'),
+  'alexander-the-great-7': require('../../assets/images/scenes/alexander-the-great-7.webp'),
+  'alexander-the-great-8': require('../../assets/images/scenes/alexander-the-great-8.webp'),
 
   // Middeleeuwen — Joan of Arc
   'joan-of-arc-1': require('../../assets/images/scenes/joan-of-arc-1.webp'),

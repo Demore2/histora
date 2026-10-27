@@ -749,4 +749,429 @@ export const ashoka: Verhaal = {
   ],
 };
 
-export const oudheidPersonen: Verhaal[] = [juliusCaesar, spartacus, ashoka];
+export const alexander: Verhaal = {
+  id: 'alexander-the-great',
+  beginJaar: -356,
+  toegevoegdOp: '2026-10-27',
+  titel: { en: 'Alexander the Great' },
+  ondertitel: { en: 'The king who marched to the edge of the known world' },
+  teaser: { en: 'King at twenty, master of an empire from Greece to India by thirty. What drove a Macedonian prince to march further than anyone before him?' },
+  jaar: -323,
+  periodeLabel: '356 BC - 323 BC',
+  soort: 'persoon',
+  afbeelding: CHARACTER_IMAGES['alexander-the-great'],
+  portretKleur: '#9C6B30',
+  uitgelicht: false,
+  volgorde: 6,
+  tijdperkId: 'oudheid',
+  themas: ['macht', 'oorlog', 'rijk', 'griekenland', 'militair'],
+  leestijdMinuten: 12,
+  personage: { naam: 'Alexander the Great' },
+  chapters: [
+    {
+      id: 1,
+      titel: { en: 'A Prince of Macedon' },
+      afbeelding: SCENE_IMAGES['alexander-the-great-1'],
+      blokken: [
+        {
+          type: 'afbeelding',
+          bron: SCENE_IMAGES['alexander-the-great-1'],
+          alt: { en: 'A boy calmly holding the bridle of a huge black stallion in a palace courtyard, turning its head towards the sun.' },
+          bijschrift: { en: 'Pella, around 344 BC: the horse no one else could ride.' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'In the summer of 356 BC, in the royal city of Pella in northern Greece, a son was born to King Philip II of Macedon and his queen Olympias. They named him Alexander. Macedon was a rough, horse-breeding kingdom on the edge of the Greek world, and many Athenians sneered at its people as half-barbarians. But Philip was turning it into the strongest military power the Greeks had ever seen, with a professional army and a new infantry formation, the phalanx, bristling with pikes nearly six metres long.',
+          },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Alexander grew up between two fierce personalities. His father was a brilliant soldier and a cunning diplomat, often away at war. His mother was proud and intensely religious, and she told her son that his true father was not Philip at all but Zeus, king of the gods. Whether Alexander believed it as a child is unknown, but the idea that he was meant for something more than a mortal life never left him.',
+          },
+        },
+        {
+          type: 'kop',
+          tekst: { en: 'The Horse No One Could Ride' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Plutarch tells a story from Alexander\'s boyhood. A trader brought a magnificent black stallion to Philip\'s court, but the animal reared and kicked at every rider. The king ordered it taken away. Alexander protested, bet the price of the horse that he could tame it, and noticed what the grown men had missed: the horse was frightened of its own shadow. He turned it to face the sun, calmed it, and rode off. Philip is said to have told him to find a kingdom worthy of himself, because Macedon was too small. The horse was Bucephalus, and it carried Alexander for most of his life.',
+          },
+        },
+        {
+          type: 'sleutelmoment',
+          jaar: -343,
+          tekst: { en: 'Philip hires the philosopher Aristotle to teach the thirteen-year-old Alexander at Mieza, away from the noise of the court.' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'For about three years Aristotle taught Alexander and a group of noble boys, among them his closest friend Hephaestion. They studied philosophy, medicine, politics and above all Homer. Alexander came to see himself in Achilles, the hero of the Iliad, who chose a short and glorious life over a long and quiet one. He is said to have kept a copy of the poem, annotated by Aristotle, with him on campaign for the rest of his life.',
+          },
+        },
+        {
+          type: 'weetje',
+          tekst: { en: 'Aristotle and Alexander are one of history\'s most famous teacher-and-pupil pairs, yet they later drifted apart. The philosopher thought non-Greeks were natural subjects; his pupil would end up marrying into the Persian nobility.' },
+        },
+      ],
+    },
+    {
+      id: 2,
+      titel: { en: 'The Sword and the Throne' },
+      afbeelding: SCENE_IMAGES['alexander-the-great-2'],
+      blokken: [
+        {
+          type: 'afbeelding',
+          bron: SCENE_IMAGES['alexander-the-great-2'],
+          alt: { en: 'Young cavalry commander leading a charge of horsemen through a line of hoplites on a dusty plain.' },
+          bijschrift: { en: 'Chaeronea, 338 BC: the battle that made Macedon master of Greece.' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'At sixteen, while Philip was away fighting, Alexander was left in charge of Macedon. When a tribe on the northern frontier rebelled, he marched out, crushed the revolt and founded a settlement named after himself. Two years later he fought beside his father in the battle that decided the fate of Greece.',
+          },
+        },
+        {
+          type: 'sleutelmoment',
+          jaar: -338,
+          tekst: { en: 'At Chaeronea, Philip defeats the combined armies of Athens and Thebes. Alexander, aged eighteen, commands the cavalry on the left wing.' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'At Chaeronea Alexander led the heavy cavalry against the Sacred Band of Thebes, an elite unit that had not been beaten in decades. The Band was destroyed. After the battle Philip became the leader of an alliance of Greek cities and announced his next goal: a war against the Persian Empire, the enormous state that stretched from the Aegean to the borders of India and had invaded Greece more than a century before.',
+          },
+        },
+        {
+          type: 'kop',
+          tekst: { en: 'A Knife at a Wedding' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Philip never fought that war. In 336 BC, at the wedding of his daughter in the old capital Aegae, he walked into the theatre and was stabbed to death by Pausanias, one of his own bodyguards. The killer was caught and killed on the spot, so his motive was never fully explained. Rumours soon pointed at Olympias, and even at Alexander, but nothing was ever proved.',
+          },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Alexander was twenty years old. The army proclaimed him king, and he moved fast. Rivals for the throne were killed. The Greek cities, which had cheered the news of Philip\'s death, were stunned when the new king appeared at the head of his army before they had time to organise. When Thebes revolted the following year on a false rumour that Alexander had died, he took the city by storm and razed it to the ground, sparing only the temples and the house of the poet Pindar. The message to the rest of Greece was unmistakable.',
+          },
+        },
+        {
+          type: 'weetje',
+          tekst: { en: 'Philip\'s tomb was probably found in 1977 at Vergina in northern Greece, the site of ancient Aegae. Inside lay a golden chest with cremated bones and a gold wreath of oak leaves and acorns.' },
+        },
+      ],
+    },
+    {
+      id: 3,
+      titel: { en: 'Across the Hellespont' },
+      afbeelding: SCENE_IMAGES['alexander-the-great-3'],
+      blokken: [
+        {
+          type: 'afbeelding',
+          bron: SCENE_IMAGES['alexander-the-great-3'],
+          alt: { en: 'A young king hurling a spear from the bow of a warship towards the shore of Asia.' },
+          bijschrift: { en: 'The Hellespont, 334 BC: Alexander claims Asia before he sets foot on it.' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'In the spring of 334 BC Alexander led about 37,000 soldiers across the Hellespont, the narrow strait that separates Europe from Asia. According to one ancient account, he flung a spear from his ship into the beach before he landed, as a sign that he would win Asia by the spear. He then went to Troy, laid a wreath on the tomb of Achilles, and took from the temple of Athena a shield said to date from the Trojan War.',
+          },
+        },
+        {
+          type: 'sleutelmoment',
+          jaar: -334,
+          tekst: { en: 'At the river Granicus, Alexander defeats the Persian governors of Asia Minor in his first battle against the Persian Empire.' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'The first battle came almost at once, at the river Granicus. Alexander led his cavalry straight across the water and up the steep far bank, conspicuous in a helmet with white plumes. In the fighting a Persian noble\'s axe split his helmet, and a second attacker was about to strike when Cleitus, one of Alexander\'s officers, cut off the man\'s arm. The Persians broke. Over the next months the Greek cities of the coast opened their gates one by one.',
+          },
+        },
+        {
+          type: 'kop',
+          tekst: { en: 'The Knot of Gordium' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'In the winter of 334 BC the army reached Gordium in central Anatolia. In the town stood an ancient ox-cart, its yoke tied to the pole with a knot so complicated that no one could see where it began. A prophecy said that whoever untied it would rule Asia. Alexander studied the knot. In the most famous version he drew his sword and cut straight through it; another early writer says he simply pulled out the peg that held the knot together. Either way, he claimed the prophecy for himself.',
+          },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'The story may be partly legend, but it captures how Alexander worked. When a problem would not yield to patience, he looked for a bolder solution than anyone else would dare. To this day, a hard problem solved by one decisive stroke is called cutting the Gordian knot.',
+          },
+        },
+      ],
+    },
+    {
+      id: 4,
+      titel: { en: 'Issus and the Siege of Tyre' },
+      afbeelding: SCENE_IMAGES['alexander-the-great-4'],
+      blokken: [
+        {
+          type: 'afbeelding',
+          bron: SCENE_IMAGES['alexander-the-great-4'],
+          alt: { en: 'A Persian king in a royal chariot fleeing across a battlefield as Macedonian horsemen charge towards him.' },
+          bijschrift: { en: 'Issus, 333 BC: the Great King turns his chariot and flees.' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'The Persian king, Darius III, now came west himself with a huge army. In November 333 BC the two armies met near Issus, on a narrow coastal plain where the sea on one side and the mountains on the other meant that Persian numbers counted for little. Alexander charged with his cavalry straight at the centre, where Darius stood in his chariot. The Great King turned and fled, leaving behind his army, his treasure and his family.',
+          },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Darius\'s mother, wife and children were captured in the royal camp. Alexander treated them with great courtesy and let them keep their royal titles and servants. Ancient writers admired this restraint, and it was also good politics: Alexander was beginning to present himself not as a raider but as the rightful successor to the Persian throne.',
+          },
+        },
+        {
+          type: 'sleutelmoment',
+          jaar: -332,
+          tekst: { en: 'After a seven-month siege, Alexander captures the island city of Tyre, the greatest naval base on the eastern Mediterranean.' },
+        },
+        {
+          type: 'kop',
+          tekst: { en: 'A Road Built Across the Sea' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Instead of chasing Darius east, Alexander turned south along the coast to take away Persia\'s fleet by capturing its ports. Most surrendered, but Tyre, a rich Phoenician city on an island about 800 metres offshore, refused. Alexander\'s answer was to build a causeway of stones and timber across the sea to reach it. The Tyrians attacked the work with fire ships and divers, and the siege dragged on for seven months before Alexander\'s engineers and a newly assembled fleet broke through the walls.',
+          },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'The punishment was terrible. Thousands of defenders were killed, and many of the survivors were sold into slavery. The causeway was never removed. Sand gathered against it over the centuries, and today the old island of Tyre is joined permanently to the mainland.',
+          },
+        },
+        {
+          type: 'weetje',
+          tekst: { en: 'Alexander\'s causeway changed the map for good. The sandy isthmus that grew around it is why modern Tyre, in Lebanon, sits on a peninsula instead of an island.' },
+        },
+      ],
+    },
+    {
+      id: 5,
+      titel: { en: 'Pharaoh and Son of Ammon' },
+      afbeelding: SCENE_IMAGES['alexander-the-great-5'],
+      blokken: [
+        {
+          type: 'afbeelding',
+          bron: SCENE_IMAGES['alexander-the-great-5'],
+          alt: { en: 'A small caravan of horsemen crossing golden dunes towards a palm-fringed oasis temple.' },
+          bijschrift: { en: 'The Siwa oasis, 331 BC: a long ride through the desert to consult a famous oracle.' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Late in 332 BC Alexander entered Egypt. The country had been under Persian rule and had rebelled against it more than once, and the Persian governor surrendered without a fight. The Egyptians welcomed Alexander as a liberator, and he was recognised as pharaoh, the living son of the gods in Egyptian belief.',
+          },
+        },
+        {
+          type: 'sleutelmoment',
+          jaar: -331,
+          tekst: { en: 'Alexander founds Alexandria on the Mediterranean coast of Egypt. It will become the greatest city of the Greek world.' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'On a strip of land between the sea and a lake, Alexander marked out the plan of a new city. According to Plutarch, there was no chalk to draw the lines, so the builders used barley meal, and birds came down to eat it, which the seers read as a sign that the city would one day feed many people. They were right. Alexandria grew into the largest city of the Mediterranean, home of a famous lighthouse and the greatest library of the ancient world.',
+          },
+        },
+        {
+          type: 'kop',
+          tekst: { en: 'The Oracle in the Desert' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Alexander then did something his officers found puzzling. He rode hundreds of kilometres west through the desert to the oasis of Siwa, where an oracle of the god Ammon was famous across the Greek world. The journey was dangerous; ancient writers say the party lost its way and was guided by birds, or by snakes. What the oracle told Alexander in private he never revealed, but afterwards he let it be known that the god had greeted him as his son.',
+          },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'For Greeks, Ammon was the same god as Zeus. The visit fed the story Olympias had told him as a boy. After his death, coins struck by his successors showed him with the curling ram\'s horns of Ammon. Whether he truly believed he was the son of a god, or used the idea because it was useful, is still debated.',
+          },
+        },
+        {
+          type: 'weetje',
+          tekst: { en: 'Alexander never saw Alexandria grow. He left Egypt a few months after founding it and did not return alive. His body, though, would be brought back and buried there.' },
+        },
+      ],
+    },
+    {
+      id: 6,
+      titel: { en: 'Gaugamela and Persepolis' },
+      afbeelding: SCENE_IMAGES['alexander-the-great-6'],
+      blokken: [
+        {
+          type: 'afbeelding',
+          bron: SCENE_IMAGES['alexander-the-great-6'],
+          alt: { en: 'Vast armies clashing on a flat plain, with scythed chariots charging and a dust cloud rising.' },
+          bijschrift: { en: 'Gaugamela, 331 BC: the battle that ended the Persian Empire.' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Darius raised a new army, larger than the last, and chose his ground carefully: a wide, flat plain at Gaugamela, in what is now northern Iraq, where he had the ground levelled so his chariots, armed with blades on their wheels, could charge freely. Alexander\'s army was heavily outnumbered.',
+          },
+        },
+        {
+          type: 'sleutelmoment',
+          jaar: -331,
+          tekst: { en: 'On 1 October, Alexander defeats Darius III at Gaugamela. The Persian Empire, the largest the world had seen, collapses.' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Alexander drifted his line to the right, pulling the Persian army after him until a gap opened in its centre. Then he drove his cavalry into that gap, straight towards Darius. For the second time the Great King fled. The chariots had done little damage; the Macedonians had simply opened lanes and let the horses run through. After Gaugamela, the great cities of the empire surrendered one after another: Babylon, Susa, and finally the royal capital of Persepolis.',
+          },
+        },
+        {
+          type: 'kop',
+          tekst: { en: 'Fire in the Palace' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'In Persepolis Alexander\'s soldiers found treasure on a scale that is hard to imagine; ancient writers say it took thousands of pack animals to carry it away. Then, in the spring of 330 BC, the great palace was set on fire. Some sources say it was deliberate revenge for the Persians burning Athens a century and a half earlier; others claim it began at a drunken feast. Its blackened ruins still stand in Iran today.',
+          },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Darius did not live to see the end. As Alexander chased him east, the king\'s own nobles turned against him. In the summer of 330 BC Bessus, one of his governors and a kinsman, had him stabbed and left dying in a wagon. Alexander gave Darius a royal burial and hunted Bessus down. He now called himself King of Asia.',
+          },
+        },
+        {
+          type: 'weetje',
+          tekst: { en: 'The Persian Empire Alexander conquered stretched across parts of three continents. Its royal road ran about 2,700 kilometres, from Sardis near the Aegean to Susa in Iran.' },
+        },
+      ],
+    },
+    {
+      id: 7,
+      titel: { en: 'To the Edge of the World' },
+      afbeelding: SCENE_IMAGES['alexander-the-great-7'],
+      blokken: [
+        {
+          type: 'afbeelding',
+          bron: SCENE_IMAGES['alexander-the-great-7'],
+          alt: { en: 'War elephants and soldiers clashing on the muddy bank of a wide river under a monsoon sky.' },
+          bijschrift: { en: 'The Hydaspes, 326 BC: Alexander\'s last great battle, against King Porus and his elephants.' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'The years that followed were the hardest of the campaign. In Bactria and Sogdiana, the mountainous lands of modern Afghanistan and Uzbekistan, there were no great battles to win, only a long and brutal guerrilla war. And the strain began to show inside his own camp.',
+          },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Alexander was adopting Persian dress and court customs, and many Macedonians hated it. At a banquet in Maracanda, the city now called Samarkand, the officer Cleitus, the same man who had saved his life at the Granicus, mocked him in front of everyone. Both men were drunk. Alexander seized a spear and killed him. Afterwards he shut himself away in grief for days.',
+          },
+        },
+        {
+          type: 'sleutelmoment',
+          jaar: -326,
+          tekst: { en: 'At the river Hydaspes in the Punjab, Alexander defeats King Porus and his war elephants in his last great battle.' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'In 327 BC Alexander married Roxana, the daughter of a Sogdian nobleman, partly to win over the region. The next year the army crossed into India. At the Hydaspes, swollen by monsoon rain, King Porus waited on the far bank with an army and war elephants. Alexander slipped across upstream at night in a thunderstorm and won a hard battle. When the wounded Porus was brought before him and asked how he wished to be treated, he answered: like a king. Alexander gave him back his kingdom, and more land besides. Soon after the battle Bucephalus died, and Alexander founded a city in his honour, named Bucephala.',
+          },
+        },
+        {
+          type: 'citaat',
+          tekst: { en: 'Treat me, Alexander, as a king.' },
+          bron: { en: 'King Porus, as recorded by Arrian' },
+        },
+        {
+          type: 'kop',
+          tekst: { en: 'The Army Says No' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Alexander wanted to push on to the Ganges and, he believed, the great ocean at the edge of the world. But at the river Hyphasis his soldiers refused. They had marched for eight years and thousands of kilometres. For three days Alexander sulked in his tent; then, when the omens for a crossing turned out unfavourable, he agreed to turn back. It was the only defeat of his life, and it came from his own men.',
+          },
+        },
+      ],
+    },
+    {
+      id: 8,
+      titel: { en: 'The Last Years of a Legend' },
+      afbeelding: SCENE_IMAGES['alexander-the-great-8'],
+      blokken: [
+        {
+          type: 'afbeelding',
+          bron: SCENE_IMAGES['alexander-the-great-8'],
+          alt: { en: 'A grand royal tent in Babylon at night, officers gathered in silence around a bed.' },
+          bijschrift: { en: 'Babylon, June 323 BC: the king is dying at thirty-two.' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'The return was a disaster. Part of the army marched back through the Gedrosian desert in what is now southern Pakistan, and thousands died of heat, thirst and flash floods. Ancient writers called it worse than all the battles in Asia put together. Some suggested Alexander chose the route to rival legendary kings who had crossed it before him.',
+          },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Back in Persia, Alexander tried to bind his two peoples together. At Susa in 324 BC he held a mass wedding: he married a daughter of Darius, and around eighty of his officers took Persian brides on the same day. Thousands of soldiers who had already married local women had their marriages recognised. Many Macedonians resented it, and the army mutinied again before being won back.',
+          },
+        },
+        {
+          type: 'kop',
+          tekst: { en: 'Loss and an Empty Throne' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Late in 324 BC Hephaestion, Alexander\'s closest friend since childhood, died of a fever. Alexander was devastated and ordered a funeral of extraordinary size. The following spring he was in Babylon, planning new campaigns, when he fell ill after a banquet. The fever grew worse day by day. Soldiers filed past his bed in silence, and he could only lift his head and move his eyes to greet them.',
+          },
+        },
+        {
+          type: 'sleutelmoment',
+          jaar: -323,
+          tekst: { en: 'Alexander dies in Babylon in June, aged thirty-two. The cause, whether fever or poison, has never been settled.' },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Asked who should inherit his empire, he is said to have answered: to the strongest. No single successor proved strong enough. His generals fought over the empire for decades and divided it into kingdoms, among them the Ptolemies in Egypt and the Seleucids in Asia. Roxana\'s son, born after his death, was murdered as a boy.',
+          },
+        },
+        {
+          type: 'tekst',
+          inhoud: {
+            en: 'Yet Alexander\'s world outlived him. Greek became a common language from Egypt to Afghanistan, and Greek cities, art and ideas mixed with Persian, Egyptian and Indian ones for centuries. Historians call it the Hellenistic age. In thirteen years he had never lost a major battle, and for generations of rulers, from Julius Caesar onwards, he would be the measure against which they judged themselves.',
+          },
+        },
+        {
+          type: 'weetje',
+          tekst: { en: 'Alexander\'s body was taken to Egypt and displayed in a magnificent tomb in Alexandria. Julius Caesar and Augustus both visited it. Its location has been lost, and archaeologists are still looking for it.' },
+        },
+      ],
+    },
+  ],
+};
+
+export const oudheidPersonen: Verhaal[] = [juliusCaesar, spartacus, ashoka, alexander];

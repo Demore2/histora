@@ -1,0 +1,197 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "How did the young Alexander calm the wild horse Bucephalus?",
+      "options": ["He fed it honey cakes", "He turned it to face the sun", "He covered its eyes with a cloth", "He rode it in the dark"],
+      "explanation": "Alexander noticed the horse was frightened of its own shadow. Facing the sun, it could no longer see it, and he was able to calm it and ride off.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe kreeg de jonge Alexander het wilde paard Bucephalus rustig?",
+          "options": ["Hij gaf het honingkoeken", "Hij draaide het naar de zon", "Hij bond een doek voor zijn ogen", "Hij reed er in het donker op"],
+          "explanation": "Alexander zag dat het paard bang was voor zijn eigen schaduw. Met de zon recht voor zich zag het die niet meer, en zo kon hij het kalmeren en wegrijden."
+        },
+        "fr": {
+          "question": "Comment le jeune Alexandre a-t-il calmé le cheval sauvage Bucéphale ?",
+          "options": ["Il lui a donné des gâteaux au miel", "Il l’a tourné face au soleil", "Il lui a couvert les yeux d’un tissu", "Il l’a monté dans l’obscurité"],
+          "explanation": "Alexandre avait remarqué que le cheval avait peur de sa propre ombre. Face au soleil, il ne la voyait plus, et Alexandre a pu le calmer et partir au galop."
+        },
+        "de": {
+          "question": "Wie beruhigte der junge Alexander das wilde Pferd Bukephalos?",
+          "options": ["Er fütterte es mit Honigkuchen", "Er drehte es in Richtung Sonne", "Er verband ihm die Augen", "Er ritt es im Dunkeln"],
+          "explanation": "Alexander bemerkte, dass das Pferd Angst vor seinem eigenen Schatten hatte. Mit der Sonne vor sich sah es ihn nicht mehr, und so konnte er es beruhigen und davonreiten."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "How old was Alexander when he became king of Macedon in 336 BC?",
+      "options": ["Sixteen", "Eighteen", "Twenty", "Twenty-five"],
+      "explanation": "After his father Philip II was murdered at a wedding in Aegae, the army proclaimed the twenty-year-old Alexander king.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe oud was Alexander toen hij in 336 v.Chr. koning van Macedonië werd?",
+          "options": ["Zestien", "Achttien", "Twintig", "Vijfentwintig"],
+          "explanation": "Nadat zijn vader Philippus II op een bruiloft in Aegae was vermoord, riep het leger de twintigjarige Alexander uit tot koning."
+        },
+        "fr": {
+          "question": "Quel âge avait Alexandre quand il est devenu roi de Macédoine en 336 av. J.-C. ?",
+          "options": ["Seize ans", "Dix-huit ans", "Vingt ans", "Vingt-cinq ans"],
+          "explanation": "Après l’assassinat de son père Philippe II lors d’un mariage à Aigai, l’armée a proclamé roi Alexandre, alors âgé de vingt ans."
+        },
+        "de": {
+          "question": "Wie alt war Alexander, als er 336 v. Chr. König von Makedonien wurde?",
+          "options": ["Sechzehn", "Achtzehn", "Zwanzig", "Fünfundzwanzig"],
+          "explanation": "Nachdem sein Vater Philipp II. bei einer Hochzeit in Aigai ermordet worden war, rief das Heer den zwanzigjährigen Alexander zum König aus."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "In the most famous version of the story, what did Alexander do with the Gordian knot?",
+      "options": ["He cut through it with his sword", "He untied it patiently over a night", "He set fire to it", "He left it for a priest to untie"],
+      "explanation": "A prophecy said whoever undid the knot would rule Asia. In the best-known version Alexander simply sliced through it; one early writer says he pulled out the peg holding it together.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed Alexander in de bekendste versie van het verhaal met de Gordiaanse knoop?",
+          "options": ["Hij hakte hem door met zijn zwaard", "Hij maakte hem in één nacht geduldig los", "Hij stak hem in brand", "Hij liet hem door een priester losmaken"],
+          "explanation": "Een voorspelling zei dat wie de knoop losmaakte over Azië zou heersen. In de bekendste versie hakte Alexander hem gewoon door; één vroege schrijver zegt dat hij de pen eruit trok die de knoop bijeenhield."
+        },
+        "fr": {
+          "question": "Dans la version la plus célèbre de l’histoire, qu’a fait Alexandre du nœud gordien ?",
+          "options": ["Il l’a tranché avec son épée", "Il l’a patiemment défait en une nuit", "Il y a mis le feu", "Il a laissé un prêtre le défaire"],
+          "explanation": "Une prophétie disait que celui qui déferait le nœud régnerait sur l’Asie. Dans la version la plus connue, Alexandre l’a simplement tranché ; un auteur ancien raconte qu’il a retiré la cheville qui le maintenait."
+        },
+        "de": {
+          "question": "Was tat Alexander in der bekanntesten Version der Geschichte mit dem Gordischen Knoten?",
+          "options": ["Er durchschlug ihn mit seinem Schwert", "Er löste ihn in einer Nacht geduldig auf", "Er zündete ihn an", "Er ließ ihn von einem Priester lösen"],
+          "explanation": "Eine Prophezeiung besagte, wer den Knoten löse, werde über Asien herrschen. In der bekanntesten Version durchschlug Alexander ihn einfach; ein früher Autor schreibt, er habe den Pflock herausgezogen, der ihn zusammenhielt."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "How did Alexander's army reach the island city of Tyre?",
+      "options": ["Through a tunnel under the sea", "On rafts tied together", "By draining the water around it", "By building a causeway across the sea"],
+      "explanation": "Over a seven-month siege the Macedonians built a causeway of stone and timber out to the island. Sand later piled up against it, and Tyre has been joined to the mainland ever since.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe bereikte het leger van Alexander de eilandstad Tyrus?",
+          "options": ["Via een tunnel onder de zee", "Op aan elkaar gebonden vlotten", "Door het water eromheen weg te pompen", "Door een dam door de zee te bouwen"],
+          "explanation": "Tijdens een beleg van zeven maanden bouwden de Macedoniërs een dam van stenen en hout naar het eiland. Later spoelde er zand tegenaan, en sindsdien is Tyrus met het vasteland verbonden."
+        },
+        "fr": {
+          "question": "Comment l’armée d’Alexandre a-t-elle atteint la cité insulaire de Tyr ?",
+          "options": ["Par un tunnel sous la mer", "Sur des radeaux attachés ensemble", "En asséchant l’eau autour", "En construisant une digue à travers la mer"],
+          "explanation": "Pendant un siège de sept mois, les Macédoniens ont construit une digue de pierres et de bois jusqu’à l’île. Le sable s’y est ensuite accumulé, et Tyr est depuis reliée au continent."
+        },
+        "de": {
+          "question": "Wie erreichte Alexanders Heer die Inselstadt Tyros?",
+          "options": ["Durch einen Tunnel unter dem Meer", "Auf zusammengebundenen Flößen", "Indem es das Wasser ringsum ableitete", "Indem es einen Damm durchs Meer baute"],
+          "explanation": "Während einer siebenmonatigen Belagerung bauten die Makedonen einen Damm aus Steinen und Holz bis zur Insel. Später lagerte sich Sand daran an, und seitdem ist Tyros mit dem Festland verbunden."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Which city did Alexander found on the coast of Egypt in 331 BC?",
+      "options": ["Alexandria", "Memphis", "Thebes", "Giza"],
+      "explanation": "Alexandria grew into the largest city of the Mediterranean, famous for its lighthouse and its great library. Alexander himself never saw it built.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke stad stichtte Alexander in 331 v.Chr. aan de kust van Egypte?",
+          "options": ["Alexandrië", "Memphis", "Thebe", "Gizeh"],
+          "explanation": "Alexandrië groeide uit tot de grootste stad van de Middellandse Zee, beroemd om zijn vuurtoren en zijn grote bibliotheek. Alexander zelf heeft de stad nooit gebouwd zien worden."
+        },
+        "fr": {
+          "question": "Quelle ville Alexandre a-t-il fondée sur la côte égyptienne en 331 av. J.-C. ?",
+          "options": ["Alexandrie", "Memphis", "Thèbes", "Gizeh"],
+          "explanation": "Alexandrie est devenue la plus grande ville de la Méditerranée, célèbre pour son phare et sa grande bibliothèque. Alexandre lui-même ne l’a jamais vue construite."
+        },
+        "de": {
+          "question": "Welche Stadt gründete Alexander 331 v. Chr. an der Küste Ägyptens?",
+          "options": ["Alexandria", "Memphis", "Theben", "Gizeh"],
+          "explanation": "Alexandria wurde zur größten Stadt des Mittelmeers, berühmt für ihren Leuchtturm und ihre große Bibliothek. Alexander selbst hat die Stadt nie fertig gesehen."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Which Persian king did Alexander defeat at Gaugamela in 331 BC?",
+      "options": ["Xerxes", "Cyrus the Great", "Artaxerxes", "Darius III"],
+      "explanation": "Darius III fled the battlefield for the second time. Within a year he was murdered by his own nobles, and the Persian Empire had fallen.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke Perzische koning versloeg Alexander in 331 v.Chr. bij Gaugamela?",
+          "options": ["Xerxes", "Cyrus de Grote", "Artaxerxes", "Darius III"],
+          "explanation": "Darius III vluchtte voor de tweede keer van het slagveld. Binnen een jaar werd hij door zijn eigen edelen vermoord, en was het Perzische Rijk gevallen."
+        },
+        "fr": {
+          "question": "Quel roi perse Alexandre a-t-il vaincu à Gaugamèles en 331 av. J.-C. ?",
+          "options": ["Xerxès", "Cyrus le Grand", "Artaxerxès", "Darius III"],
+          "explanation": "Darius III a fui le champ de bataille pour la deuxième fois. En moins d’un an, il a été assassiné par ses propres nobles, et l’Empire perse était tombé."
+        },
+        "de": {
+          "question": "Welchen Perserkönig besiegte Alexander 331 v. Chr. bei Gaugamela?",
+          "options": ["Xerxes", "Kyros der Große", "Artaxerxes", "Dareios III."],
+          "explanation": "Dareios III. floh zum zweiten Mal vom Schlachtfeld. Innerhalb eines Jahres wurde er von seinen eigenen Adligen ermordet, und das Perserreich war gefallen."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Why did Alexander turn back after reaching India?",
+      "options": ["King Porus defeated him", "His own soldiers refused to go on", "He fell seriously ill", "A revolt broke out in Greece"],
+      "explanation": "At the river Hyphasis his exhausted army, after eight years of marching, refused to go further. It was the only time Alexander had to give way, and it was to his own men.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom keerde Alexander om nadat hij India had bereikt?",
+          "options": ["Koning Porus versloeg hem", "Zijn eigen soldaten weigerden verder te gaan", "Hij werd ernstig ziek", "Er brak een opstand uit in Griekenland"],
+          "explanation": "Bij de rivier de Hyphasis weigerde zijn uitgeputte leger, na acht jaar marcheren, nog verder te gaan. Het was de enige keer dat Alexander moest wijken, en dan nog voor zijn eigen mannen."
+        },
+        "fr": {
+          "question": "Pourquoi Alexandre a-t-il fait demi-tour après avoir atteint l’Inde ?",
+          "options": ["Le roi Poros l’a vaincu", "Ses propres soldats ont refusé d’aller plus loin", "Il est tombé gravement malade", "Une révolte a éclaté en Grèce"],
+          "explanation": "Sur les rives de l’Hyphase, son armée épuisée par huit ans de marche a refusé d’aller plus loin. Ce fut la seule fois où Alexandre a dû céder, et ce fut devant ses propres hommes."
+        },
+        "de": {
+          "question": "Warum kehrte Alexander um, nachdem er Indien erreicht hatte?",
+          "options": ["König Poros besiegte ihn", "Seine eigenen Soldaten weigerten sich weiterzuziehen", "Er wurde schwer krank", "In Griechenland brach ein Aufstand aus"],
+          "explanation": "Am Fluss Hyphasis weigerte sich sein erschöpftes Heer nach acht Jahren Marsch, weiterzuziehen. Es war das einzige Mal, dass Alexander nachgeben musste, und zwar vor seinen eigenen Männern."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "How old was Alexander when he died in Babylon in 323 BC?",
+      "options": ["Twenty-five", "Twenty-nine", "Thirty-two", "Forty"],
+      "explanation": "He died after a fever of about ten days, aged thirty-two. Whether it was illness or poison has never been settled, and his generals soon divided his empire between them.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe oud was Alexander toen hij in 323 v.Chr. in Babylon stierf?",
+          "options": ["Vijfentwintig", "Negenentwintig", "Tweeëndertig", "Veertig"],
+          "explanation": "Hij stierf na zo'n tien dagen koorts, tweeëndertig jaar oud. Of het een ziekte was of vergif, is nooit vastgesteld, en zijn generaals verdeelden zijn rijk al snel onder elkaar."
+        },
+        "fr": {
+          "question": "Quel âge avait Alexandre lorsqu’il est mort à Babylone en 323 av. J.-C. ?",
+          "options": ["Vingt-cinq ans", "Vingt-neuf ans", "Trente-deux ans", "Quarante ans"],
+          "explanation": "Il est mort après une dizaine de jours de fièvre, à trente-deux ans. Maladie ou poison, on ne l’a jamais su, et ses généraux se sont vite partagé son empire."
+        },
+        "de": {
+          "question": "Wie alt war Alexander, als er 323 v. Chr. in Babylon starb?",
+          "options": ["Fünfundzwanzig", "Neunundzwanzig", "Zweiunddreißig", "Vierzig"],
+          "explanation": "Er starb nach etwa zehn Tagen Fieber im Alter von zweiunddreißig Jahren. Ob Krankheit oder Gift, wurde nie geklärt, und seine Generäle teilten sein Reich bald unter sich auf."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

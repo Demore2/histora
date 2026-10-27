@@ -20,6 +20,7 @@ const IMAGES = {
   'rome-rise': require('../../assets/images/characters/rome-rise.webp'),
   'pompeii-disaster': require('../../assets/images/characters/pompeii-disaster.webp'),
   'ashoka-maurya': require('../../assets/images/characters/ashoka-maurya.webp'),
+  'alexander-the-great': require('../../assets/images/characters/alexander-the-great.webp'),
 
   // Middeleeuwen
   'joan-of-arc': require('../../assets/images/characters/joan-of-arc.webp'),
