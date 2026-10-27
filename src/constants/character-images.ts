@@ -52,6 +52,13 @@ const IMAGES = {
   'elizabeth-i': require('../../assets/images/characters/elizabeth-i.webp'),
   'louis-xiv': require('../../assets/images/characters/louis-xiv.webp'),
   'marie-antoinette': require('../../assets/images/characters/marie-antoinette.webp'),
+  'mahatma-gandhi': require('../../assets/images/characters/mahatma-gandhi.webp'),
+  'joseph-stalin': require('../../assets/images/characters/joseph-stalin.webp'),
+  'albert-einstein': require('../../assets/images/characters/albert-einstein.webp'),
+  'adolf-hitler': require('../../assets/images/characters/adolf-hitler.webp'),
+  'mao-zedong': require('../../assets/images/characters/mao-zedong.webp'),
+  'john-f-kennedy': require('../../assets/images/characters/john-f-kennedy.webp'),
+  'neil-armstrong': require('../../assets/images/characters/neil-armstrong.webp'),
 
   // Industriele Revolutie
   'james-watt': require('../../assets/images/characters/james-watt.webp'),

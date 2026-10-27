@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Which three things did Gandhi promise his mother to avoid in London?",
+      "options": [
+        "Gambling, dancing and theatre",
+        "Meat, alcohol and women",
+        "Tobacco, tea and sugar",
+        "Debts, quarrels and lies"
+      ],
+      "explanation": "Before he sailed in 1888 he vowed no meat, no alcohol and no women. He kept his promise and joined the London Vegetarian Society.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke drie dingen beloofde Gandhi zijn moeder te mijden in Londen?",
+          "options": [
+            "Gokken, dansen en theater",
+            "Vlees, alcohol en vrouwen",
+            "Tabak, thee en suiker",
+            "Schulden, ruzies en leugens"
+          ],
+          "explanation": "Voor hij in 1888 vertrok, beloofde hij: geen vlees, geen alcohol en geen vrouwen. Hij hield zich eraan en werd lid van de London Vegetarian Society."
+        },
+        "fr": {
+          "question": "Quelles trois choses Gandhi a-t-il promis à sa mère d’éviter à Londres ?",
+          "options": [
+            "Le jeu, la danse et le théâtre",
+            "La viande, l’alcool et les femmes",
+            "Le tabac, le thé et le sucre",
+            "Les dettes, les disputes et les mensonges"
+          ],
+          "explanation": "Avant de partir en 1888, il a juré : pas de viande, pas d’alcool, pas de femmes. Il a tenu parole et rejoint la London Vegetarian Society."
+        },
+        "de": {
+          "question": "Welche drei Dinge versprach Gandhi seiner Mutter, in London zu meiden?",
+          "options": [
+            "Glücksspiel, Tanz und Theater",
+            "Fleisch, Alkohol und Frauen",
+            "Tabak, Tee und Zucker",
+            "Schulden, Streit und Lügen"
+          ],
+          "explanation": "Vor seiner Abreise 1888 schwor er: kein Fleisch, kein Alkohol, keine Frauen. Er hielt sich daran und trat der London Vegetarian Society bei."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What happened to Gandhi at Pietermaritzburg station in 1893?",
+      "options": [
+        "He gave his first public speech",
+        "He was arrested for leading a strike",
+        "He was thrown off a train because of his skin colour",
+        "He met General Smuts"
+      ],
+      "explanation": "He refused to leave his first-class compartment for third class, so he was pushed off the train. He spent the night in a cold waiting room and decided to stay and fight.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat overkwam Gandhi in 1893 op het station van Pietermaritzburg?",
+          "options": [
+            "Hij hield zijn eerste openbare toespraak",
+            "Hij werd gearresteerd voor het leiden van een staking",
+            "Hij werd uit de trein gezet vanwege zijn huidskleur",
+            "Hij ontmoette generaal Smuts"
+          ],
+          "explanation": "Hij weigerde zijn eersteklascoupé te ruilen voor de derde klas en werd uit de trein geduwd. Hij bracht de nacht door in een koude wachtkamer en besloot te blijven en te vechten."
+        },
+        "fr": {
+          "question": "Que s’est-il passé pour Gandhi à la gare de Pietermaritzburg en 1893 ?",
+          "options": [
+            "Il a prononcé son premier discours public",
+            "Il a été arrêté pour avoir mené une grève",
+            "On l’a jeté hors du train à cause de sa couleur de peau",
+            "Il a rencontré le général Smuts"
+          ],
+          "explanation": "Il a refusé de quitter son compartiment de première classe pour la troisième, et on l’a poussé hors du train. Après une nuit glaciale dans la salle d’attente, il a décidé de rester et de se battre."
+        },
+        "de": {
+          "question": "Was geschah Gandhi 1893 am Bahnhof von Pietermaritzburg?",
+          "options": [
+            "Er hielt seine erste öffentliche Rede",
+            "Er wurde als Streikführer verhaftet",
+            "Er wurde wegen seiner Hautfarbe aus dem Zug geworfen",
+            "Er traf General Smuts"
+          ],
+          "explanation": "Er weigerte sich, sein Erste-Klasse-Abteil für die dritte Klasse zu verlassen, und wurde aus dem Zug gestoßen. Nach einer kalten Nacht im Wartesaal beschloss er zu bleiben und zu kämpfen."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What does Gandhi's word 'satyagraha' roughly mean?",
+      "options": [
+        "Holding on to truth, or truth-force",
+        "Passive waiting",
+        "Holy war",
+        "Freedom of the press"
+      ],
+      "explanation": "He disliked 'passive resistance' because it sounded weak. A satyagrahi broke unjust laws openly, accepted punishment and never used violence.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat betekent Gandhi's woord 'satyagraha' ongeveer?",
+          "options": [
+            "Vasthouden aan de waarheid, of waarheidskracht",
+            "Lijdzaam afwachten",
+            "Heilige oorlog",
+            "Persvrijheid"
+          ],
+          "explanation": "'Passief verzet' vond hij te zwak klinken. Een satyagrahi overtrad onrechtvaardige wetten openlijk, aanvaardde de straf en gebruikte nooit geweld."
+        },
+        "fr": {
+          "question": "Que signifie à peu près le mot « satyagraha » de Gandhi ?",
+          "options": [
+            "S’attacher à la vérité, ou force de la vérité",
+            "Attendre passivement",
+            "Guerre sainte",
+            "Liberté de la presse"
+          ],
+          "explanation": "Il trouvait que « résistance passive » sonnait faible. Un satyagrahi enfreignait ouvertement les lois injustes, acceptait la punition et n’usait jamais de violence."
+        },
+        "de": {
+          "question": "Was bedeutet Gandhis Wort „Satyagraha“ ungefähr?",
+          "options": [
+            "Festhalten an der Wahrheit oder Wahrheitskraft",
+            "Passives Abwarten",
+            "Heiliger Krieg",
+            "Pressefreiheit"
+          ],
+          "explanation": "„Passiver Widerstand“ klang ihm zu schwach. Ein Satyagrahi brach ungerechte Gesetze offen, nahm die Strafe hin und wandte nie Gewalt an."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Why did Gandhi suddenly call off his non-cooperation campaign in 1922?",
+      "options": [
+        "The British gave India independence",
+        "He fell seriously ill",
+        "His followers ran out of money",
+        "A crowd killed more than twenty policemen at Chauri Chaura"
+      ],
+      "explanation": "An angry crowd set fire to a police station. Gandhi was horrified that his movement had turned violent and stopped it, to the fury of many allies.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom blies Gandhi in 1922 plotseling zijn campagne van niet-samenwerking af?",
+          "options": [
+            "De Britten gaven India onafhankelijkheid",
+            "Hij werd ernstig ziek",
+            "Zijn volgelingen hadden geen geld meer",
+            "Een menigte doodde in Chauri Chaura meer dan twintig agenten"
+          ],
+          "explanation": "Een woedende menigte stak een politiebureau in brand. Gandhi was ontzet dat zijn beweging gewelddadig was geworden en stopte ermee, tot woede van veel bondgenoten."
+        },
+        "fr": {
+          "question": "Pourquoi Gandhi a-t-il brusquement arrêté sa campagne de non-coopération en 1922 ?",
+          "options": [
+            "Les Britanniques avaient accordé l’indépendance",
+            "Il était gravement malade",
+            "Ses partisans n’avaient plus d’argent",
+            "Une foule avait tué plus de vingt policiers à Chauri Chaura"
+          ],
+          "explanation": "Une foule en colère a incendié un poste de police. Horrifié que son mouvement soit devenu violent, Gandhi l’a stoppé, à la fureur de nombreux alliés."
+        },
+        "de": {
+          "question": "Warum brach Gandhi 1922 seine Kampagne der Nichtzusammenarbeit plötzlich ab?",
+          "options": [
+            "Die Briten gaben Indien die Unabhängigkeit",
+            "Er war schwer erkrankt",
+            "Seinen Anhängern ging das Geld aus",
+            "Eine Menge tötete in Chauri Chaura über zwanzig Polizisten"
+          ],
+          "explanation": "Eine wütende Menge zündete eine Polizeiwache an. Gandhi war entsetzt, dass seine Bewegung gewalttätig geworden war, und beendete sie – zum Zorn vieler Verbündeter."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Which British law did Gandhi break at the end of his famous march to Dandi in 1930?",
+      "options": [
+        "The law on public meetings",
+        "The salt law",
+        "The press law",
+        "The cotton tax"
+      ],
+      "explanation": "Only the government could make or sell salt. Gandhi picked up salty mud on the beach, and across India people began making their own salt.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke Britse wet overtrad Gandhi aan het eind van zijn beroemde mars naar Dandi in 1930?",
+          "options": [
+            "De wet op openbare bijeenkomsten",
+            "De zoutwet",
+            "De perswet",
+            "De katoenbelasting"
+          ],
+          "explanation": "Alleen de overheid mocht zout maken of verkopen. Gandhi raapte zout slik op van het strand, en overal in India gingen mensen zelf zout maken."
+        },
+        "fr": {
+          "question": "Quelle loi britannique Gandhi a-t-il enfreinte au terme de sa célèbre marche vers Dandi en 1930 ?",
+          "options": [
+            "La loi sur les réunions publiques",
+            "La loi sur le sel",
+            "La loi sur la presse",
+            "La taxe sur le coton"
+          ],
+          "explanation": "Seul l’État pouvait produire ou vendre du sel. Gandhi a ramassé de la boue salée sur la plage, et partout en Inde, les gens se sont mis à faire leur propre sel."
+        },
+        "de": {
+          "question": "Welches britische Gesetz brach Gandhi am Ende seines berühmten Marsches nach Dandi 1930?",
+          "options": [
+            "Das Versammlungsgesetz",
+            "Das Salzgesetz",
+            "Das Pressegesetz",
+            "Die Baumwollsteuer"
+          ],
+          "explanation": "Nur der Staat durfte Salz herstellen oder verkaufen. Gandhi hob salzigen Schlamm am Strand auf, und überall in Indien begannen Menschen, eigenes Salz zu gewinnen."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "How did Gandhi dress for his visit to London and tea with King George V in 1931?",
+      "options": [
+        "In a borrowed military uniform",
+        "In a top hat and tails",
+        "In a loincloth, a shawl and sandals",
+        "In a royal Indian costume"
+      ],
+      "explanation": "He wore what he wore at home. Asked if he had been dressed warmly enough, he joked that the King had enough on for both of them.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe was Gandhi gekleed bij zijn bezoek aan Londen en de thee bij koning George V in 1931?",
+          "options": [
+            "In een geleend militair uniform",
+            "In rokkostuum met hoge hoed",
+            "In een lendendoek, een omslagdoek en sandalen",
+            "In een koninklijk Indiaas kostuum"
+          ],
+          "explanation": "Hij droeg wat hij thuis droeg. Op de vraag of hij wel warm genoeg gekleed was, grapte hij dat de koning genoeg aanhad voor hen allebei."
+        },
+        "fr": {
+          "question": "Comment Gandhi était-il habillé lors de sa visite à Londres et du thé avec le roi George V en 1931 ?",
+          "options": [
+            "D’un uniforme militaire emprunté",
+            "En queue-de-pie et haut-de-forme",
+            "D’un pagne, d’un châle et de sandales",
+            "D’un costume royal indien"
+          ],
+          "explanation": "Il portait ses vêtements habituels. À qui lui demandait s’il était assez couvert, il a répondu que le roi en portait assez pour eux deux."
+        },
+        "de": {
+          "question": "Wie war Gandhi bei seinem London-Besuch und dem Tee mit König Georg V. 1931 gekleidet?",
+          "options": [
+            "In einer geliehenen Uniform",
+            "Im Frack mit Zylinder",
+            "In Lendentuch, Umhang und Sandalen",
+            "In einem königlichen indischen Gewand"
+          ],
+          "explanation": "Er trug, was er auch zu Hause trug. Auf die Frage, ob er warm genug angezogen gewesen sei, scherzte er, der König habe genug für sie beide angehabt."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "What did Gandhi tell his followers when he launched the Quit India movement in 1942?",
+      "options": [
+        "Do or die",
+        "Wait for better times",
+        "Join the British army",
+        "Leave the cities"
+      ],
+      "explanation": "With the British still refusing to leave, he called for a final struggle. He and almost every Congress leader were arrested the very next morning.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat zei Gandhi tegen zijn volgelingen toen hij in 1942 de Quit India-beweging begon?",
+          "options": [
+            "Doe het of sterf",
+            "Wacht op betere tijden",
+            "Ga bij het Britse leger",
+            "Verlaat de steden"
+          ],
+          "explanation": "Omdat de Britten nog steeds niet wilden vertrekken, riep hij op tot een laatste strijd. De volgende ochtend werden hij en bijna alle Congresleiders al gearresteerd."
+        },
+        "fr": {
+          "question": "Qu’a dit Gandhi à ses partisans en lançant le mouvement Quit India en 1942 ?",
+          "options": [
+            "Agir ou mourir",
+            "Attendez des jours meilleurs",
+            "Engagez-vous dans l’armée britannique",
+            "Quittez les villes"
+          ],
+          "explanation": "Comme les Britanniques refusaient toujours de partir, il a appelé à une lutte finale. Dès le lendemain matin, lui et presque tous les dirigeants du Congrès ont été arrêtés."
+        },
+        "de": {
+          "question": "Was sagte Gandhi seinen Anhängern, als er 1942 die Quit-India-Bewegung startete?",
+          "options": [
+            "Handeln oder sterben",
+            "Wartet auf bessere Zeiten",
+            "Tretet der britischen Armee bei",
+            "Verlasst die Städte"
+          ],
+          "explanation": "Da die Briten noch immer nicht gehen wollten, rief er zum letzten Kampf auf. Schon am nächsten Morgen wurden er und fast alle Kongressführer verhaftet."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Where was Gandhi on 15 August 1947, the day India became independent?",
+      "options": [
+        "At the celebrations in Delhi",
+        "In prison",
+        "In London",
+        "In Calcutta, fasting and praying to stop the violence"
+      ],
+      "explanation": "He did not celebrate. Partition had unleashed killing between Hindus and Muslims, and he spent the day trying to stop it.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar was Gandhi op 15 augustus 1947, de dag dat India onafhankelijk werd?",
+          "options": [
+            "Bij de feestelijkheden in Delhi",
+            "In de gevangenis",
+            "In Londen",
+            "In Calcutta, vastend en biddend om het geweld te stoppen"
+          ],
+          "explanation": "Hij vierde niet mee. De deling had moordpartijen tussen hindoes en moslims ontketend, en hij probeerde die dag het geweld te stoppen."
+        },
+        "fr": {
+          "question": "Où était Gandhi le 15 août 1947, jour de l’indépendance de l’Inde ?",
+          "options": [
+            "Aux célébrations à Delhi",
+            "En prison",
+            "À Londres",
+            "À Calcutta, jeûnant et priant pour arrêter les violences"
+          ],
+          "explanation": "Il n’a pas fêté l’événement. La partition avait déclenché des massacres entre hindous et musulmans, et il a passé la journée à tenter de les arrêter."
+        },
+        "de": {
+          "question": "Wo war Gandhi am 15. August 1947, dem Tag der Unabhängigkeit Indiens?",
+          "options": [
+            "Bei den Feiern in Delhi",
+            "Im Gefängnis",
+            "In London",
+            "In Kalkutta, fastend und betend gegen die Gewalt"
+          ],
+          "explanation": "Er feierte nicht. Die Teilung hatte Morde zwischen Hindus und Muslimen ausgelöst, und er versuchte an diesem Tag, sie zu beenden."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Who did the Kennedy family originally expect to become president one day?",
+      "options": [
+        "Robert Kennedy",
+        "Jack's father, Joseph",
+        "Jack's elder brother, Joe Jr.",
+        "Ted Kennedy"
+      ],
+      "explanation": "Joe Jr. was groomed for politics. When he was killed on a secret bombing mission in 1944, the family's hopes passed to Jack.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Van wie verwachtte de familie Kennedy oorspronkelijk dat hij ooit president zou worden?",
+          "options": [
+            "Robert Kennedy",
+            "Jacks vader, Joseph",
+            "Jacks oudere broer, Joe Jr.",
+            "Ted Kennedy"
+          ],
+          "explanation": "Joe Jr. werd klaargestoomd voor de politiek. Toen hij in 1944 omkwam tijdens een geheime bombardementsvlucht, ging de hoop van de familie over op Jack."
+        },
+        "fr": {
+          "question": "Qui la famille Kennedy voyait-elle au départ devenir président un jour ?",
+          "options": [
+            "Robert Kennedy",
+            "Joseph, le père de Jack",
+            "Joe Jr., le frère aîné de Jack",
+            "Ted Kennedy"
+          ],
+          "explanation": "Joe Jr. était préparé à la politique. Quand il a été tué lors d’une mission secrète de bombardement en 1944, les espoirs de la famille se sont reportés sur Jack."
+        },
+        "de": {
+          "question": "Von wem erwartete die Familie Kennedy ursprünglich, dass er einmal Präsident würde?",
+          "options": [
+            "Robert Kennedy",
+            "Jacks Vater Joseph",
+            "Jacks älterer Bruder Joe Jr.",
+            "Ted Kennedy"
+          ],
+          "explanation": "Joe Jr. wurde auf die Politik vorbereitet. Als er 1944 bei einem geheimen Bombeneinsatz starb, ruhten die Hoffnungen der Familie auf Jack."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "How did Kennedy send a call for help after PT-109 was sunk in 1943?",
+      "options": [
+        "By radio from the wreck",
+        "He carved a message on a coconut that two islanders paddled to a base",
+        "By lighting a huge fire on the beach",
+        "By swimming alone to an American ship"
+      ],
+      "explanation": "The Solomon Islander scouts Biuku Gasa and Eroni Kumana carried the coconut by canoe. Kennedy later kept it on his desk in the White House.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe stuurde Kennedy om hulp nadat PT-109 in 1943 was gezonken?",
+          "options": [
+            "Per radio vanaf het wrak",
+            "Hij kraste een bericht in een kokosnoot, die twee eilanders naar een basis peddelden",
+            "Door een groot vuur op het strand te stoken",
+            "Door alleen naar een Amerikaans schip te zwemmen"
+          ],
+          "explanation": "De verkenners Biuku Gasa en Eroni Kumana van de Salomonseilanden brachten de kokosnoot per kano weg. Kennedy bewaarde hem later op zijn bureau in het Witte Huis."
+        },
+        "fr": {
+          "question": "Comment Kennedy a-t-il appelé à l’aide après le naufrage du PT-109 en 1943 ?",
+          "options": [
+            "Par radio depuis l’épave",
+            "Il a gravé un message sur une noix de coco que deux insulaires ont portée en pirogue jusqu’à une base",
+            "En allumant un grand feu sur la plage",
+            "En nageant seul jusqu’à un navire américain"
+          ],
+          "explanation": "Les éclaireurs des îles Salomon Biuku Gasa et Eroni Kumana ont transporté la noix de coco en pirogue. Kennedy l’a ensuite gardée sur son bureau à la Maison-Blanche."
+        },
+        "de": {
+          "question": "Wie rief Kennedy um Hilfe, nachdem PT-109 1943 versenkt worden war?",
+          "options": [
+            "Per Funk vom Wrack aus",
+            "Er ritzte eine Nachricht in eine Kokosnuss, die zwei Inselbewohner per Kanu zu einem Stützpunkt brachten",
+            "Mit einem großen Feuer am Strand",
+            "Er schwamm allein zu einem amerikanischen Schiff"
+          ],
+          "explanation": "Die Kundschafter Biuku Gasa und Eroni Kumana von den Salomonen brachten die Kokosnuss im Kanu fort. Kennedy bewahrte sie später auf seinem Schreibtisch im Weißen Haus auf."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Why did some Americans doubt that Kennedy could be elected president?",
+      "options": [
+        "He had never served in the military",
+        "He was born outside the United States",
+        "He was a Catholic, and no Catholic had ever been elected",
+        "He had no university degree"
+      ],
+      "explanation": "Some feared a Catholic president would take orders from the Pope. Kennedy declared that he believed in the absolute separation of church and state.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom twijfelden sommige Amerikanen of Kennedy president kon worden?",
+          "options": [
+            "Hij had nooit in het leger gediend",
+            "Hij was buiten de Verenigde Staten geboren",
+            "Hij was katholiek, en er was nog nooit een katholiek gekozen",
+            "Hij had geen universitair diploma"
+          ],
+          "explanation": "Sommigen vreesden dat een katholieke president bevelen van de paus zou aannemen. Kennedy verklaarde dat hij geloofde in een absolute scheiding van kerk en staat."
+        },
+        "fr": {
+          "question": "Pourquoi certains Américains doutaient-ils que Kennedy puisse être élu président ?",
+          "options": [
+            "Il n’avait jamais servi dans l’armée",
+            "Il était né hors des États-Unis",
+            "Il était catholique, et aucun catholique n’avait jamais été élu",
+            "Il n’avait pas de diplôme universitaire"
+          ],
+          "explanation": "Certains craignaient qu’un président catholique obéisse au pape. Kennedy a déclaré croire à une séparation absolue de l’Église et de l’État."
+        },
+        "de": {
+          "question": "Warum zweifelten manche Amerikaner, dass Kennedy Präsident werden könnte?",
+          "options": [
+            "Er hatte nie beim Militär gedient",
+            "Er war außerhalb der USA geboren",
+            "Er war Katholik, und noch nie war ein Katholik gewählt worden",
+            "Er hatte keinen Universitätsabschluss"
+          ],
+          "explanation": "Manche fürchteten, ein katholischer Präsident würde Befehle vom Papst annehmen. Kennedy erklärte, er glaube an die absolute Trennung von Kirche und Staat."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What made the debate of 26 September 1960 against Richard Nixon historic?",
+      "options": [
+        "It was the first televised presidential debate",
+        "It lasted more than six hours",
+        "It was held in Moscow",
+        "Nixon walked out halfway through"
+      ],
+      "explanation": "About seventy million people watched. Many radio listeners thought Nixon did well; many TV viewers thought the calm, tanned Kennedy had won.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat maakte het debat van 26 september 1960 tegen Richard Nixon historisch?",
+          "options": [
+            "Het was het eerste presidentsdebat op televisie",
+            "Het duurde meer dan zes uur",
+            "Het werd in Moskou gehouden",
+            "Nixon liep halverwege weg"
+          ],
+          "explanation": "Zo'n zeventig miljoen mensen keken. Veel radioluisteraars vonden dat Nixon het goed deed; veel tv-kijkers vonden dat de kalme, gebruinde Kennedy had gewonnen."
+        },
+        "fr": {
+          "question": "Qu’est-ce qui a rendu historique le débat du 26 septembre 1960 contre Richard Nixon ?",
+          "options": [
+            "C’était le premier débat présidentiel télévisé",
+            "Il a duré plus de six heures",
+            "Il s’est tenu à Moscou",
+            "Nixon est parti au milieu"
+          ],
+          "explanation": "Environ soixante-dix millions de personnes l’ont regardé. Beaucoup d’auditeurs de radio ont trouvé Nixon bon ; beaucoup de téléspectateurs ont donné la victoire au calme et bronzé Kennedy."
+        },
+        "de": {
+          "question": "Was machte die Debatte vom 26. September 1960 gegen Richard Nixon historisch?",
+          "options": [
+            "Es war die erste im Fernsehen übertragene Präsidentschaftsdebatte",
+            "Sie dauerte über sechs Stunden",
+            "Sie fand in Moskau statt",
+            "Nixon verließ sie mittendrin"
+          ],
+          "explanation": "Rund siebzig Millionen Menschen sahen zu. Viele Radiohörer fanden Nixon gut; viele Fernsehzuschauer sahen den ruhigen, gebräunten Kennedy als Sieger."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What did Kennedy ask Congress to commit the nation to in May 1961?",
+      "options": [
+        "Building the Berlin Wall",
+        "Invading Cuba",
+        "Abolishing nuclear weapons",
+        "Landing a man on the Moon before the decade was out"
+      ],
+      "explanation": "The Soviets had just put Yuri Gagarin into orbit. Kennedy's goal became the Apollo programme.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waartoe vroeg Kennedy het Congres in mei 1961 het land te verplichten?",
+          "options": [
+            "Het bouwen van de Berlijnse Muur",
+            "Een inval in Cuba",
+            "Het afschaffen van kernwapens",
+            "Nog voor het eind van het decennium een mens op de maan zetten"
+          ],
+          "explanation": "De Sovjets hadden net Joeri Gagarin in een baan om de aarde gebracht. Kennedy's doel werd het Apolloprogramma."
+        },
+        "fr": {
+          "question": "À quoi Kennedy a-t-il demandé au Congrès d’engager le pays en mai 1961 ?",
+          "options": [
+            "Construire le mur de Berlin",
+            "Envahir Cuba",
+            "Abolir les armes nucléaires",
+            "Poser un homme sur la Lune avant la fin de la décennie"
+          ],
+          "explanation": "Les Soviétiques venaient de mettre Youri Gagarine en orbite. L’objectif de Kennedy est devenu le programme Apollo."
+        },
+        "de": {
+          "question": "Wozu sollte der Kongress das Land im Mai 1961 auf Kennedys Bitte verpflichten?",
+          "options": [
+            "Zum Bau der Berliner Mauer",
+            "Zu einer Invasion Kubas",
+            "Zur Abschaffung der Atomwaffen",
+            "Noch in diesem Jahrzehnt einen Menschen auf den Mond zu bringen"
+          ],
+          "explanation": "Die Sowjets hatten gerade Juri Gagarin in die Umlaufbahn gebracht. Kennedys Ziel wurde das Apollo-Programm."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "How did Kennedy respond when Soviet missiles were found in Cuba in October 1962?",
+      "options": [
+        "He bombed the missile sites at once",
+        "He set up a naval blockade he called a 'quarantine'",
+        "He flew to Moscow to meet Khrushchev",
+        "He invaded Cuba with the marines"
+      ],
+      "explanation": "His generals urged an attack. Kennedy chose the blockade, and a secret deal ended the crisis: the US also withdrew its missiles from Turkey.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe reageerde Kennedy toen in oktober 1962 Sovjetraketten op Cuba werden ontdekt?",
+          "options": [
+            "Hij bombardeerde de raketbases meteen",
+            "Hij stelde een zeeblokkade in die hij 'quarantaine' noemde",
+            "Hij vloog naar Moskou om Chroesjtsjov te spreken",
+            "Hij viel Cuba binnen met de mariniers"
+          ],
+          "explanation": "Zijn generaals drongen aan op een aanval. Kennedy koos de blokkade, en een geheime deal maakte een eind aan de crisis: de VS haalden ook hun raketten uit Turkije weg."
+        },
+        "fr": {
+          "question": "Comment Kennedy a-t-il réagi à la découverte de missiles soviétiques à Cuba en octobre 1962 ?",
+          "options": [
+            "Il a bombardé les sites immédiatement",
+            "Il a instauré un blocus naval qu’il a appelé « quarantaine »",
+            "Il s’est rendu à Moscou pour voir Khrouchtchev",
+            "Il a envahi Cuba avec les marines"
+          ],
+          "explanation": "Ses généraux réclamaient une attaque. Kennedy a choisi le blocus, et un accord secret a mis fin à la crise : les États-Unis ont aussi retiré leurs missiles de Turquie."
+        },
+        "de": {
+          "question": "Wie reagierte Kennedy, als im Oktober 1962 sowjetische Raketen auf Kuba entdeckt wurden?",
+          "options": [
+            "Er ließ die Stellungen sofort bombardieren",
+            "Er verhängte eine Seeblockade, die er „Quarantäne“ nannte",
+            "Er flog nach Moskau zu Chruschtschow",
+            "Er marschierte mit den Marines in Kuba ein"
+          ],
+          "explanation": "Seine Generäle drängten auf einen Angriff. Kennedy wählte die Blockade, und ein geheimer Deal beendete die Krise: Die USA zogen auch ihre Raketen aus der Türkei ab."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "What did Kennedy call civil rights in his television address of June 1963?",
+      "options": [
+        "A matter for the states to decide",
+        "A problem that would solve itself",
+        "A threat to national security",
+        "A moral issue"
+      ],
+      "explanation": "He announced a major civil rights bill. That same night the activist Medgar Evers was murdered in Mississippi.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe noemde Kennedy burgerrechten in zijn televisietoespraak van juni 1963?",
+          "options": [
+            "Een zaak voor de staten",
+            "Een probleem dat zichzelf zou oplossen",
+            "Een bedreiging voor de nationale veiligheid",
+            "Een morele kwestie"
+          ],
+          "explanation": "Hij kondigde een grote burgerrechtenwet aan. Diezelfde nacht werd activist Medgar Evers in Mississippi vermoord."
+        },
+        "fr": {
+          "question": "Comment Kennedy a-t-il qualifié les droits civiques dans son allocution télévisée de juin 1963 ?",
+          "options": [
+            "Une affaire à régler par les États",
+            "Un problème qui se réglerait tout seul",
+            "Une menace pour la sécurité nationale",
+            "Une question morale"
+          ],
+          "explanation": "Il a annoncé une grande loi sur les droits civiques. Le soir même, le militant Medgar Evers était assassiné dans le Mississippi."
+        },
+        "de": {
+          "question": "Wie bezeichnete Kennedy die Bürgerrechte in seiner Fernsehansprache vom Juni 1963?",
+          "options": [
+            "Als Sache der Bundesstaaten",
+            "Als Problem, das sich von selbst löst",
+            "Als Bedrohung der nationalen Sicherheit",
+            "Als moralische Frage"
+          ],
+          "explanation": "Er kündigte ein großes Bürgerrechtsgesetz an. In derselben Nacht wurde der Aktivist Medgar Evers in Mississippi ermordet."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What happened to Lee Harvey Oswald two days after Kennedy's assassination?",
+      "options": [
+        "He was shot dead by Jack Ruby in front of TV cameras",
+        "He confessed in court",
+        "He escaped to Mexico",
+        "He was sentenced to death"
+      ],
+      "explanation": "Because Oswald never stood trial, many people never accepted that he acted alone, as the Warren Commission concluded in 1964.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er twee dagen na de moord op Kennedy met Lee Harvey Oswald?",
+          "options": [
+            "Hij werd voor de tv-camera's doodgeschoten door Jack Ruby",
+            "Hij bekende in de rechtszaal",
+            "Hij ontsnapte naar Mexico",
+            "Hij werd ter dood veroordeeld"
+          ],
+          "explanation": "Omdat Oswald nooit terechtstond, hebben veel mensen nooit aanvaard dat hij alleen handelde, zoals de Warren-commissie in 1964 concludeerde."
+        },
+        "fr": {
+          "question": "Qu’est-il arrivé à Lee Harvey Oswald deux jours après l’assassinat de Kennedy ?",
+          "options": [
+            "Jack Ruby l’a abattu devant les caméras de télévision",
+            "Il a avoué au tribunal",
+            "Il s’est enfui au Mexique",
+            "Il a été condamné à mort"
+          ],
+          "explanation": "Comme Oswald n’a jamais été jugé, beaucoup n’ont jamais accepté qu’il ait agi seul, comme l’a conclu la commission Warren en 1964."
+        },
+        "de": {
+          "question": "Was geschah zwei Tage nach dem Attentat auf Kennedy mit Lee Harvey Oswald?",
+          "options": [
+            "Jack Ruby erschoss ihn vor laufenden Fernsehkameras",
+            "Er gestand vor Gericht",
+            "Er floh nach Mexiko",
+            "Er wurde zum Tode verurteilt"
+          ],
+          "explanation": "Weil Oswald nie vor Gericht stand, akzeptierten viele nie, dass er allein handelte, wie die Warren-Kommission 1964 feststellte."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

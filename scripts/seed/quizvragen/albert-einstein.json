@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What object fascinated the five-year-old Einstein when his father showed it to him?",
+      "options": [
+        "A telescope",
+        "A pocket watch",
+        "A magnet",
+        "A compass"
+      ],
+      "explanation": "However he turned it, the needle pointed the same way. He later wrote that something hidden had to lie behind things.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk voorwerp fascineerde de vijfjarige Einstein toen zijn vader het hem liet zien?",
+          "options": [
+            "Een telescoop",
+            "Een zakhorloge",
+            "Een magneet",
+            "Een kompas"
+          ],
+          "explanation": "Hoe hij het ook draaide, de naald wees steeds dezelfde kant op. Later schreef hij dat er iets verborgens achter de dingen moest zitten."
+        },
+        "fr": {
+          "question": "Quel objet a fasciné Einstein à cinq ans quand son père le lui a montré ?",
+          "options": [
+            "Un télescope",
+            "Une montre de poche",
+            "Un aimant",
+            "Une boussole"
+          ],
+          "explanation": "Quelle que soit la façon dont il la tournait, l’aiguille pointait dans la même direction. Il écrira plus tard qu’il devait y avoir quelque chose de caché derrière les choses."
+        },
+        "de": {
+          "question": "Welcher Gegenstand faszinierte den fünfjährigen Einstein, als sein Vater ihn ihm zeigte?",
+          "options": [
+            "Ein Fernrohr",
+            "Eine Taschenuhr",
+            "Ein Magnet",
+            "Ein Kompass"
+          ],
+          "explanation": "Wie er ihn auch drehte, die Nadel zeigte immer in dieselbe Richtung. Später schrieb er, dass etwas Verborgenes hinter den Dingen stecken müsse."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Where did Einstein work in 1905, the year he published his revolutionary papers?",
+      "options": [
+        "At the University of Berlin",
+        "At the Swiss Patent Office in Bern",
+        "At a secondary school in Zurich",
+        "At his father's electrical company"
+      ],
+      "explanation": "As a 'technical expert, third class', he checked inventions by day and did physics in his spare time.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar werkte Einstein in 1905, het jaar van zijn baanbrekende artikelen?",
+          "options": [
+            "Aan de universiteit van Berlijn",
+            "Op het Zwitserse octrooibureau in Bern",
+            "Op een middelbare school in Zürich",
+            "In het elektrotechnisch bedrijf van zijn vader"
+          ],
+          "explanation": "Als 'technisch expert, derde klasse' beoordeelde hij overdag uitvindingen en deed hij natuurkunde in zijn vrije tijd."
+        },
+        "fr": {
+          "question": "Où Einstein travaillait-il en 1905, l’année de ses articles révolutionnaires ?",
+          "options": [
+            "À l’université de Berlin",
+            "À l’Office suisse des brevets à Berne",
+            "Dans un lycée de Zurich",
+            "Dans l’entreprise électrique de son père"
+          ],
+          "explanation": "« Expert technique de troisième classe », il examinait des inventions le jour et faisait de la physique pendant son temps libre."
+        },
+        "de": {
+          "question": "Wo arbeitete Einstein 1905, im Jahr seiner bahnbrechenden Aufsätze?",
+          "options": [
+            "An der Universität Berlin",
+            "Am Eidgenössischen Patentamt in Bern",
+            "An einem Gymnasium in Zürich",
+            "In der Elektrofirma seines Vaters"
+          ],
+          "explanation": "Als „technischer Experte dritter Klasse“ prüfte er tagsüber Erfindungen und betrieb in seiner Freizeit Physik."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What does Einstein's famous formula E = mc² say?",
+      "options": [
+        "Mass and energy are two forms of the same thing",
+        "Light always travels in a straight line",
+        "Time is the same everywhere",
+        "Gravity is a force between electric charges"
+      ],
+      "explanation": "Because the speed of light is so huge, a tiny amount of mass contains an enormous amount of energy. That explains why the sun shines.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat zegt Einsteins beroemde formule E = mc²?",
+          "options": [
+            "Massa en energie zijn twee vormen van hetzelfde",
+            "Licht gaat altijd rechtdoor",
+            "Tijd is overal gelijk",
+            "Zwaartekracht is een kracht tussen elektrische ladingen"
+          ],
+          "explanation": "Omdat de lichtsnelheid zo enorm is, zit er in een heel kleine massa een gigantische hoeveelheid energie. Daarom schijnt de zon."
+        },
+        "fr": {
+          "question": "Que dit la célèbre formule d’Einstein E = mc² ?",
+          "options": [
+            "La masse et l’énergie sont deux formes d’une même chose",
+            "La lumière va toujours en ligne droite",
+            "Le temps est partout le même",
+            "La gravité est une force entre charges électriques"
+          ],
+          "explanation": "La vitesse de la lumière étant énorme, une infime masse contient une quantité gigantesque d’énergie. C’est pour cela que le Soleil brille."
+        },
+        "de": {
+          "question": "Was besagt Einsteins berühmte Formel E = mc²?",
+          "options": [
+            "Masse und Energie sind zwei Formen derselben Sache",
+            "Licht bewegt sich immer geradeaus",
+            "Die Zeit ist überall gleich",
+            "Schwerkraft ist eine Kraft zwischen elektrischen Ladungen"
+          ],
+          "explanation": "Weil die Lichtgeschwindigkeit so gewaltig ist, steckt in winziger Masse eine riesige Energiemenge. Deshalb leuchtet die Sonne."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What did astronomers photograph during the solar eclipse of 29 May 1919?",
+      "options": [
+        "A new planet beyond Neptune",
+        "A comet hitting the sun",
+        "Starlight bending as it passed the sun",
+        "The first black hole"
+      ],
+      "explanation": "Stars near the sun appeared shifted, exactly as general relativity predicted. Einstein became world-famous overnight.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat fotografeerden astronomen tijdens de zonsverduistering van 29 mei 1919?",
+          "options": [
+            "Een nieuwe planeet voorbij Neptunus",
+            "Een komeet die de zon raakte",
+            "Sterrenlicht dat afboog langs de zon",
+            "Het eerste zwarte gat"
+          ],
+          "explanation": "Sterren vlak bij de zon leken verschoven, precies zoals de algemene relativiteitstheorie voorspelde. Einstein werd van de ene op de andere dag wereldberoemd."
+        },
+        "fr": {
+          "question": "Qu’ont photographié les astronomes lors de l’éclipse solaire du 29 mai 1919 ?",
+          "options": [
+            "Une nouvelle planète au-delà de Neptune",
+            "Une comète percutant le Soleil",
+            "La lumière des étoiles déviée près du Soleil",
+            "Le premier trou noir"
+          ],
+          "explanation": "Les étoiles proches du Soleil semblaient déplacées, comme le prévoyait la relativité générale. Einstein est devenu célèbre du jour au lendemain."
+        },
+        "de": {
+          "question": "Was fotografierten Astronomen bei der Sonnenfinsternis vom 29. Mai 1919?",
+          "options": [
+            "Einen neuen Planeten jenseits des Neptun",
+            "Einen Kometen, der die Sonne traf",
+            "Sternenlicht, das an der Sonne abgelenkt wurde",
+            "Das erste Schwarze Loch"
+          ],
+          "explanation": "Sterne nahe der Sonne erschienen verschoben, genau wie die Allgemeine Relativitätstheorie vorhersagte. Einstein wurde über Nacht weltberühmt."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "For what work did Einstein actually receive the Nobel Prize in Physics?",
+      "options": [
+        "The theory of relativity",
+        "E = mc²",
+        "The atomic bomb",
+        "Explaining the photoelectric effect"
+      ],
+      "explanation": "Some committee members still found relativity too controversial. He was honoured for showing that light comes in small packets of energy.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarvoor kreeg Einstein eigenlijk de Nobelprijs voor Natuurkunde?",
+          "options": [
+            "De relativiteitstheorie",
+            "E = mc²",
+            "De atoombom",
+            "De verklaring van het foto-elektrisch effect"
+          ],
+          "explanation": "Sommige commissieleden vonden de relativiteitstheorie nog te omstreden. Hij werd geëerd omdat hij liet zien dat licht in kleine energiepakketjes komt."
+        },
+        "fr": {
+          "question": "Pour quels travaux Einstein a-t-il réellement reçu le prix Nobel de physique ?",
+          "options": [
+            "La théorie de la relativité",
+            "E = mc²",
+            "La bombe atomique",
+            "L’explication de l’effet photoélectrique"
+          ],
+          "explanation": "Certains membres du comité jugeaient encore la relativité trop controversée. Il a été récompensé pour avoir montré que la lumière arrive par petits paquets d’énergie."
+        },
+        "de": {
+          "question": "Wofür erhielt Einstein tatsächlich den Nobelpreis für Physik?",
+          "options": [
+            "Für die Relativitätstheorie",
+            "Für E = mc²",
+            "Für die Atombombe",
+            "Für die Erklärung des photoelektrischen Effekts"
+          ],
+          "explanation": "Einigen im Komitee war die Relativitätstheorie noch zu umstritten. Ausgezeichnet wurde er, weil er zeigte, dass Licht in kleinen Energiepaketen kommt."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Where did Einstein settle after he refused to return to Nazi Germany in 1933?",
+      "options": [
+        "Princeton, in the United States",
+        "London",
+        "Jerusalem",
+        "Zurich"
+      ],
+      "explanation": "He joined the new Institute for Advanced Study and never set foot in Germany again. He became an American citizen in 1940.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar vestigde Einstein zich nadat hij in 1933 weigerde terug te keren naar nazi-Duitsland?",
+          "options": [
+            "Princeton, in de Verenigde Staten",
+            "Londen",
+            "Jeruzalem",
+            "Zürich"
+          ],
+          "explanation": "Hij ging werken aan het nieuwe Institute for Advanced Study en zette nooit meer een voet in Duitsland. In 1940 werd hij Amerikaans staatsburger."
+        },
+        "fr": {
+          "question": "Où Einstein s’est-il installé après avoir refusé de revenir dans l’Allemagne nazie en 1933 ?",
+          "options": [
+            "À Princeton, aux États-Unis",
+            "À Londres",
+            "À Jérusalem",
+            "À Zurich"
+          ],
+          "explanation": "Il a rejoint le nouvel Institute for Advanced Study et n’a plus jamais remis les pieds en Allemagne. Il est devenu citoyen américain en 1940."
+        },
+        "de": {
+          "question": "Wo ließ sich Einstein nieder, nachdem er 1933 nicht ins nationalsozialistische Deutschland zurückkehrte?",
+          "options": [
+            "In Princeton, USA",
+            "In London",
+            "In Jerusalem",
+            "In Zürich"
+          ],
+          "explanation": "Er ging an das neue Institute for Advanced Study und betrat Deutschland nie wieder. 1940 wurde er US-Bürger."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "What did the 1939 letter signed by Einstein warn President Roosevelt about?",
+      "options": [
+        "A Japanese attack on Pearl Harbor",
+        "That powerful bombs of a new type might be built",
+        "A coming economic crash",
+        "Soviet spies in America"
+      ],
+      "explanation": "The physicist Leó Szilárd drafted it and asked Einstein to sign. Einstein later called it the one great mistake of his life, though with some justification.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarvoor waarschuwde de brief uit 1939 die Einstein ondertekende president Roosevelt?",
+          "options": [
+            "Een Japanse aanval op Pearl Harbor",
+            "Dat er krachtige bommen van een nieuw type gebouwd konden worden",
+            "Een komende economische crash",
+            "Sovjetspionnen in Amerika"
+          ],
+          "explanation": "De natuurkundige Leó Szilárd schreef hem en vroeg Einstein te tekenen. Einstein noemde het later de enige grote fout van zijn leven, al was er wel enige rechtvaardiging."
+        },
+        "fr": {
+          "question": "De quoi la lettre de 1939 signée par Einstein avertissait-elle le président Roosevelt ?",
+          "options": [
+            "D’une attaque japonaise sur Pearl Harbor",
+            "De la possibilité de bombes puissantes d’un nouveau type",
+            "D’un krach économique imminent",
+            "D’espions soviétiques en Amérique"
+          ],
+          "explanation": "Le physicien Leó Szilárd l’a rédigée et a demandé à Einstein de la signer. Einstein a plus tard parlé de la seule grande erreur de sa vie, tout en lui trouvant une certaine justification."
+        },
+        "de": {
+          "question": "Wovor warnte der von Einstein unterschriebene Brief von 1939 Präsident Roosevelt?",
+          "options": [
+            "Vor einem japanischen Angriff auf Pearl Harbor",
+            "Dass extrem starke Bomben neuen Typs gebaut werden könnten",
+            "Vor einem Wirtschaftscrash",
+            "Vor sowjetischen Spionen in Amerika"
+          ],
+          "explanation": "Der Physiker Leó Szilárd entwarf ihn und bat Einstein um seine Unterschrift. Einstein nannte es später den einen großen Fehler seines Lebens – wenn auch mit einer gewissen Rechtfertigung."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Which job was Einstein offered in 1952, and turned down?",
+      "options": [
+        "Rector of Harvard",
+        "Head of NASA",
+        "President of Israel",
+        "Minister of Science in Germany"
+      ],
+      "explanation": "He said he lacked the natural aptitude and experience to deal with people. He spent his last years campaigning against nuclear weapons.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke functie werd Einstein in 1952 aangeboden, en sloeg hij af?",
+          "options": [
+            "Rector van Harvard",
+            "Hoofd van NASA",
+            "President van Israël",
+            "Minister van Wetenschap in Duitsland"
+          ],
+          "explanation": "Hij zei dat hij het natuurlijke talent en de ervaring miste om met mensen om te gaan. Zijn laatste jaren voerde hij campagne tegen kernwapens."
+        },
+        "fr": {
+          "question": "Quel poste a-t-on proposé à Einstein en 1952, qu’il a refusé ?",
+          "options": [
+            "Recteur de Harvard",
+            "Directeur de la NASA",
+            "Président d’Israël",
+            "Ministre des Sciences en Allemagne"
+          ],
+          "explanation": "Il a dit manquer d’aptitude naturelle et d’expérience pour traiter avec les gens. Il a consacré ses dernières années à lutter contre les armes nucléaires."
+        },
+        "de": {
+          "question": "Welches Amt wurde Einstein 1952 angeboten, und er lehnte ab?",
+          "options": [
+            "Rektor von Harvard",
+            "Leiter der NASA",
+            "Präsident Israels",
+            "Wissenschaftsminister in Deutschland"
+          ],
+          "explanation": "Er sagte, ihm fehle die natürliche Begabung und Erfahrung im Umgang mit Menschen. Seine letzten Jahre kämpfte er gegen Atomwaffen."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

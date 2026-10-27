@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What did the young Mao love to read most?",
+      "options": [
+        "Western science books",
+        "Buddhist scriptures",
+        "Old Chinese novels about rebels and heroes",
+        "Russian poetry"
+      ],
+      "explanation": "He worked in the fields from the age of six, but loved stories of rebels and bandits who fought against unjust rulers.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat las de jonge Mao het liefst?",
+          "options": [
+            "Westerse wetenschapsboeken",
+            "Boeddhistische geschriften",
+            "Oude Chinese romans over rebellen en helden",
+            "Russische poëzie"
+          ],
+          "explanation": "Hij werkte vanaf zijn zesde op het land, maar hield van verhalen over rebellen en bandieten die tegen onrechtvaardige heersers vochten."
+        },
+        "fr": {
+          "question": "Que préférait lire le jeune Mao ?",
+          "options": [
+            "Des livres scientifiques occidentaux",
+            "Des écritures bouddhistes",
+            "De vieux romans chinois sur des rebelles et des héros",
+            "De la poésie russe"
+          ],
+          "explanation": "Il travaillait aux champs dès six ans, mais adorait les histoires de rebelles et de bandits luttant contre des souverains injustes."
+        },
+        "de": {
+          "question": "Was las der junge Mao am liebsten?",
+          "options": [
+            "Westliche Wissenschaftsbücher",
+            "Buddhistische Schriften",
+            "Alte chinesische Romane über Rebellen und Helden",
+            "Russische Gedichte"
+          ],
+          "explanation": "Er arbeitete ab sechs auf dem Feld, liebte aber Geschichten von Rebellen und Banditen, die gegen ungerechte Herrscher kämpften."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Unlike most Marxists, whom did Mao see as the army of the Chinese revolution?",
+      "options": [
+        "Factory workers in the cities",
+        "The peasants in the countryside",
+        "University students",
+        "Soldiers of the old imperial army"
+      ],
+      "explanation": "China was a country of hundreds of millions of poor peasants. Mao built his revolution on them, starting in the Jinggang Mountains.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie zag Mao, anders dan de meeste marxisten, als het leger van de Chinese revolutie?",
+          "options": [
+            "Fabrieksarbeiders in de steden",
+            "De boeren op het platteland",
+            "Studenten",
+            "Soldaten van het oude keizerlijke leger"
+          ],
+          "explanation": "China was een land van honderden miljoenen arme boeren. Mao bouwde zijn revolutie op hen, te beginnen in de Jinggang-bergen."
+        },
+        "fr": {
+          "question": "Contrairement à la plupart des marxistes, qui Mao voyait-il comme l’armée de la révolution chinoise ?",
+          "options": [
+            "Les ouvriers des villes",
+            "Les paysans des campagnes",
+            "Les étudiants",
+            "Les soldats de l’ancienne armée impériale"
+          ],
+          "explanation": "La Chine comptait des centaines de millions de paysans pauvres. Mao a bâti sa révolution sur eux, à partir des monts Jinggang."
+        },
+        "de": {
+          "question": "Wen sah Mao, anders als die meisten Marxisten, als Armee der chinesischen Revolution?",
+          "options": [
+            "Die Fabrikarbeiter in den Städten",
+            "Die Bauern auf dem Land",
+            "Die Studenten",
+            "Die Soldaten der alten kaiserlichen Armee"
+          ],
+          "explanation": "China war ein Land mit Hunderten Millionen armer Bauern. Mao baute seine Revolution auf ihnen auf, beginnend in den Jinggang-Bergen."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Of the roughly 86,000 communists who set out on the Long March from Jiangxi in 1934, about how many arrived?",
+      "options": [
+        "Almost all of them",
+        "About half",
+        "About 50,000",
+        "Fewer than 10,000"
+      ],
+      "explanation": "They crossed rivers, swamps and snowy mountains under constant attack for a year. The march became the founding legend of Communist China.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Van de zo'n 86.000 communisten die in 1934 vanuit Jiangxi aan de Lange Mars begonnen, hoeveel kwamen er ongeveer aan?",
+          "options": [
+            "Bijna allemaal",
+            "Ongeveer de helft",
+            "Zo'n 50.000",
+            "Minder dan 10.000"
+          ],
+          "explanation": "Een jaar lang trokken ze onder voortdurende aanvallen door rivieren, moerassen en besneeuwde bergen. De mars werd de stichtingsmythe van communistisch China."
+        },
+        "fr": {
+          "question": "Sur les quelque 86 000 communistes partis du Jiangxi pour la Longue Marche en 1934, combien sont arrivés environ ?",
+          "options": [
+            "Presque tous",
+            "Environ la moitié",
+            "Environ 50 000",
+            "Moins de 10 000"
+          ],
+          "explanation": "Pendant un an, ils ont franchi fleuves, marécages et montagnes enneigées sous les attaques. La marche est devenue la légende fondatrice de la Chine communiste."
+        },
+        "de": {
+          "question": "Von den rund 86.000 Kommunisten, die 1934 aus Jiangxi zum Langen Marsch aufbrachen – wie viele kamen etwa an?",
+          "options": [
+            "Fast alle",
+            "Etwa die Hälfte",
+            "Etwa 50.000",
+            "Weniger als 10.000"
+          ],
+          "explanation": "Ein Jahr lang überquerten sie unter ständigen Angriffen Flüsse, Sümpfe und verschneite Berge. Der Marsch wurde zur Gründungslegende des kommunistischen China."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Where did Mao proclaim the People's Republic of China on 1 October 1949?",
+      "options": [
+        "On Tiananmen Gate in Beijing",
+        "In a cave in Yan'an",
+        "On the Bund in Shanghai",
+        "In the harbour of Nanjing"
+      ],
+      "explanation": "The gate is the entrance to the old imperial palace. Chiang Kai-shek and the Nationalists fled to Taiwan.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar riep Mao op 1 oktober 1949 de Volksrepubliek China uit?",
+          "options": [
+            "Op de Tiananmenpoort in Peking",
+            "In een grot in Yan'an",
+            "Aan de Bund in Shanghai",
+            "In de haven van Nanjing"
+          ],
+          "explanation": "De poort is de toegang tot het oude keizerlijke paleis. Chiang Kai-shek en de nationalisten vluchtten naar Taiwan."
+        },
+        "fr": {
+          "question": "Où Mao a-t-il proclamé la République populaire de Chine le 1er octobre 1949 ?",
+          "options": [
+            "Sur la porte Tian'anmen à Pékin",
+            "Dans une grotte à Yan'an",
+            "Sur le Bund à Shanghai",
+            "Dans le port de Nankin"
+          ],
+          "explanation": "La porte est l’entrée de l’ancien palais impérial. Tchang Kaï-chek et les nationalistes se sont réfugiés à Taïwan."
+        },
+        "de": {
+          "question": "Wo rief Mao am 1. Oktober 1949 die Volksrepublik China aus?",
+          "options": [
+            "Auf dem Tor des Himmlischen Friedens in Peking",
+            "In einer Höhle in Yan'an",
+            "Am Bund in Shanghai",
+            "Im Hafen von Nanjing"
+          ],
+          "explanation": "Das Tor ist der Eingang zum alten Kaiserpalast. Chiang Kai-shek und die Nationalisten flohen nach Taiwan."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What happened to many intellectuals after they criticised the party during the Hundred Flowers campaign?",
+      "options": [
+        "They were given government jobs",
+        "They were labelled 'rightists' and punished",
+        "They were allowed to leave China",
+        "Their ideas became new laws"
+      ],
+      "explanation": "Mao was shocked by how fierce the criticism was. More than half a million people were labelled 'rightists' and many were sent to camps or the countryside.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er met veel intellectuelen nadat ze tijdens de Honderd Bloemen-campagne kritiek op de partij hadden geuit?",
+          "options": [
+            "Ze kregen een regeringsbaan",
+            "Ze werden als 'rechtse elementen' bestempeld en gestraft",
+            "Ze mochten China verlaten",
+            "Hun ideeën werden nieuwe wetten"
+          ],
+          "explanation": "Mao schrok van de felheid van de kritiek. Meer dan een half miljoen mensen werden 'rechts' genoemd, en velen werden naar kampen of het platteland gestuurd."
+        },
+        "fr": {
+          "question": "Qu’est-il arrivé à beaucoup d’intellectuels après qu’ils ont critiqué le parti lors de la campagne des Cent Fleurs ?",
+          "options": [
+            "Ils ont reçu des postes au gouvernement",
+            "Ils ont été qualifiés de « droitiers » et punis",
+            "Ils ont pu quitter la Chine",
+            "Leurs idées sont devenues des lois"
+          ],
+          "explanation": "Mao a été choqué par la virulence des critiques. Plus d’un demi-million de personnes ont été qualifiées de « droitiers », et beaucoup ont été envoyées en camp ou à la campagne."
+        },
+        "de": {
+          "question": "Was geschah mit vielen Intellektuellen, nachdem sie in der Hundert-Blumen-Kampagne die Partei kritisiert hatten?",
+          "options": [
+            "Sie bekamen Regierungsposten",
+            "Sie wurden als „Rechtsabweichler“ gebrandmarkt und bestraft",
+            "Sie durften China verlassen",
+            "Ihre Ideen wurden zu Gesetzen"
+          ],
+          "explanation": "Mao war von der Schärfe der Kritik schockiert. Über eine halbe Million Menschen wurden zu „Rechten“ erklärt, viele kamen in Lager oder aufs Land."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What did millions of Chinese villagers build during the Great Leap Forward?",
+      "options": [
+        "Small backyard furnaces to make steel",
+        "Giant dams across every river",
+        "Underground shelters",
+        "Railways to the Soviet Union"
+      ],
+      "explanation": "They melted down pots, pans and tools, and most of the steel was useless. Combined with false harvest figures, the policy led to a famine that killed tens of millions.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat bouwden miljoenen Chinese dorpelingen tijdens de Grote Sprong Voorwaarts?",
+          "options": [
+            "Kleine achtertuinovens om staal te maken",
+            "Reusachtige dammen in elke rivier",
+            "Ondergrondse schuilkelders",
+            "Spoorlijnen naar de Sovjet-Unie"
+          ],
+          "explanation": "Ze smolten potten, pannen en gereedschap om, en het meeste staal was onbruikbaar. Samen met valse oogstcijfers leidde het beleid tot een hongersnood die tientallen miljoenen levens kostte."
+        },
+        "fr": {
+          "question": "Qu’ont construit des millions de villageois chinois pendant le Grand Bond en avant ?",
+          "options": [
+            "De petits hauts fourneaux de jardin pour produire de l’acier",
+            "D’immenses barrages sur chaque fleuve",
+            "Des abris souterrains",
+            "Des voies ferrées vers l’URSS"
+          ],
+          "explanation": "Ils ont fondu casseroles, poêles et outils, et la plupart de cet acier était inutilisable. Avec les faux chiffres de récolte, cette politique a causé une famine qui a fait des dizaines de millions de morts."
+        },
+        "de": {
+          "question": "Was bauten Millionen chinesischer Dorfbewohner während des Großen Sprungs nach vorn?",
+          "options": [
+            "Kleine Hinterhof-Hochöfen zur Stahlerzeugung",
+            "Riesige Staudämme an jedem Fluss",
+            "Unterirdische Schutzräume",
+            "Eisenbahnen in die Sowjetunion"
+          ],
+          "explanation": "Sie schmolzen Töpfe, Pfannen und Werkzeug ein, und der meiste Stahl war unbrauchbar. Zusammen mit gefälschten Erntezahlen führte die Politik zu einer Hungersnot mit zig Millionen Toten."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Who were the Red Guards of the Cultural Revolution?",
+      "options": [
+        "Mao's personal bodyguard",
+        "Soviet soldiers stationed in China",
+        "Millions of young students who attacked 'class enemies'",
+        "Police officers in Beijing"
+      ],
+      "explanation": "Waving the 'Little Red Book' of Mao's quotations, they humiliated teachers, smashed temples and hunted down supposed enemies, even inside the party.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie waren de Rode Gardes van de Culturele Revolutie?",
+          "options": [
+            "Mao's persoonlijke lijfwacht",
+            "Sovjetsoldaten in China",
+            "Miljoenen jonge scholieren en studenten die 'klassenvijanden' aanvielen",
+            "Politieagenten in Peking"
+          ],
+          "explanation": "Zwaaiend met het 'Rode Boekje' met citaten van Mao vernederden ze leraren, vernielden ze tempels en joegen ze op vermeende vijanden, zelfs binnen de partij."
+        },
+        "fr": {
+          "question": "Qui étaient les Gardes rouges de la Révolution culturelle ?",
+          "options": [
+            "La garde personnelle de Mao",
+            "Des soldats soviétiques en Chine",
+            "Des millions de jeunes étudiants qui attaquaient les « ennemis de classe »",
+            "Des policiers de Pékin"
+          ],
+          "explanation": "Brandissant le « Petit Livre rouge » des citations de Mao, ils humiliaient les enseignants, saccageaient les temples et traquaient de prétendus ennemis, jusque dans le parti."
+        },
+        "de": {
+          "question": "Wer waren die Roten Garden der Kulturrevolution?",
+          "options": [
+            "Maos persönliche Leibwache",
+            "In China stationierte Sowjetsoldaten",
+            "Millionen junger Schüler und Studenten, die „Klassenfeinde“ angriffen",
+            "Polizisten in Peking"
+          ],
+          "explanation": "Mit der „Mao-Bibel“ in der Hand demütigten sie Lehrer, zerstörten Tempel und jagten angebliche Feinde, selbst in der Partei."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "How did Deng Xiaoping sum up Mao's record after his death?",
+      "options": [
+        "Entirely right",
+        "Seventy per cent right and thirty per cent wrong",
+        "Half right and half wrong",
+        "A complete failure"
+      ],
+      "explanation": "In 1981 the party said Mao was a great revolutionary who made 'gross mistakes' in his later years. Open discussion of the famine is still not allowed.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe vatte Deng Xiaoping na Mao's dood diens staat van dienst samen?",
+          "options": [
+            "Helemaal goed",
+            "Zeventig procent goed en dertig procent fout",
+            "Half goed, half fout",
+            "Een volledige mislukking"
+          ],
+          "explanation": "In 1981 verklaarde de partij dat Mao een groot revolutionair was die in zijn latere jaren 'grove fouten' had gemaakt. Een open discussie over de hongersnood is nog altijd niet toegestaan."
+        },
+        "fr": {
+          "question": "Comment Deng Xiaoping a-t-il résumé le bilan de Mao après sa mort ?",
+          "options": [
+            "Entièrement positif",
+            "Soixante-dix pour cent de bon et trente pour cent d’erreurs",
+            "Moitié bon, moitié mauvais",
+            "Un échec total"
+          ],
+          "explanation": "En 1981, le parti a déclaré que Mao était un grand révolutionnaire qui avait commis de « graves erreurs » à la fin de sa vie. Un débat ouvert sur la famine reste interdit."
+        },
+        "de": {
+          "question": "Wie fasste Deng Xiaoping Maos Bilanz nach dessen Tod zusammen?",
+          "options": [
+            "Völlig richtig",
+            "Zu siebzig Prozent richtig und zu dreißig Prozent falsch",
+            "Halb richtig, halb falsch",
+            "Ein völliges Versagen"
+          ],
+          "explanation": "1981 erklärte die Partei, Mao sei ein großer Revolutionär gewesen, der in späteren Jahren „schwere Fehler“ gemacht habe. Eine offene Debatte über die Hungersnot ist bis heute nicht erlaubt."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What was the young Stalin training to become at the seminary in Tiflis?",
+      "options": [
+        "A doctor",
+        "A priest",
+        "A teacher",
+        "An army officer"
+      ],
+      "explanation": "His mother wanted him to become a priest. Instead he read Marx in secret and left in 1899 to become a professional revolutionary.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarvoor werd de jonge Stalin opgeleid op het seminarie in Tiflis?",
+          "options": [
+            "Arts",
+            "Priester",
+            "Leraar",
+            "Legerofficier"
+          ],
+          "explanation": "Zijn moeder wilde dat hij priester werd. Hij las in het geheim Marx en vertrok in 1899 om beroepsrevolutionair te worden."
+        },
+        "fr": {
+          "question": "À quel métier le jeune Staline se préparait-il au séminaire de Tiflis ?",
+          "options": [
+            "Médecin",
+            "Prêtre",
+            "Instituteur",
+            "Officier"
+          ],
+          "explanation": "Sa mère voulait qu’il devienne prêtre. Il lisait Marx en cachette et partit en 1899 pour devenir révolutionnaire professionnel."
+        },
+        "de": {
+          "question": "Wozu wurde der junge Stalin im Priesterseminar von Tiflis ausgebildet?",
+          "options": [
+            "Zum Arzt",
+            "Zum Priester",
+            "Zum Lehrer",
+            "Zum Offizier"
+          ],
+          "explanation": "Seine Mutter wollte, dass er Priester wird. Stattdessen las er heimlich Marx und ging 1899, um Berufsrevolutionär zu werden."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What does the name 'Stalin' mean in Russian?",
+      "options": [
+        "Man of the people",
+        "Red star",
+        "Man of steel",
+        "The Georgian"
+      ],
+      "explanation": "He began to use it around 1912. Before that his underground name was Koba, after a Georgian folk hero.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat betekent de naam 'Stalin' in het Russisch?",
+          "options": [
+            "Man van het volk",
+            "Rode ster",
+            "Man van staal",
+            "De Georgiër"
+          ],
+          "explanation": "Hij gebruikte hem vanaf ongeveer 1912. Daarvoor was zijn schuilnaam Koba, naar een Georgische volksheld."
+        },
+        "fr": {
+          "question": "Que signifie le nom « Staline » en russe ?",
+          "options": [
+            "L’homme du peuple",
+            "Étoile rouge",
+            "L’homme d’acier",
+            "Le Géorgien"
+          ],
+          "explanation": "Il l’a adopté vers 1912. Auparavant, son nom de clandestin était Koba, d’après un héros populaire géorgien."
+        },
+        "de": {
+          "question": "Was bedeutet der Name „Stalin“ auf Russisch?",
+          "options": [
+            "Mann des Volkes",
+            "Roter Stern",
+            "Mann aus Stahl",
+            "Der Georgier"
+          ],
+          "explanation": "Er benutzte ihn ab etwa 1912. Davor lautete sein Deckname Koba, nach einem georgischen Volkshelden."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What did Lenin advise in a secret addition to his 'testament' in 1923?",
+      "options": [
+        "That Stalin be removed as General Secretary",
+        "That Stalin succeed him",
+        "That Trotsky be expelled",
+        "That the party be dissolved"
+      ],
+      "explanation": "Lenin wrote that Stalin was 'too rude' for the post. After Lenin's death the other leaders kept the document quiet, and underestimated Stalin.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat adviseerde Lenin in 1923 in een geheime toevoeging aan zijn 'testament'?",
+          "options": [
+            "Stalin als secretaris-generaal af te zetten",
+            "Stalin als zijn opvolger te kiezen",
+            "Trotski uit de partij te zetten",
+            "De partij op te heffen"
+          ],
+          "explanation": "Lenin schreef dat Stalin 'te grof' was voor de post. Na Lenins dood hielden de andere leiders het document stil en onderschatten ze Stalin."
+        },
+        "fr": {
+          "question": "Qu’a conseillé Lénine dans un ajout secret à son « testament » en 1923 ?",
+          "options": [
+            "De retirer à Staline le poste de secrétaire général",
+            "De faire de Staline son successeur",
+            "D’exclure Trotski",
+            "De dissoudre le parti"
+          ],
+          "explanation": "Lénine a écrit que Staline était « trop brutal » pour ce poste. Après sa mort, les autres dirigeants ont étouffé le document et sous-estimé Staline."
+        },
+        "de": {
+          "question": "Was riet Lenin 1923 in einem geheimen Nachtrag zu seinem „Testament“?",
+          "options": [
+            "Stalin als Generalsekretär abzusetzen",
+            "Stalin zu seinem Nachfolger zu machen",
+            "Trotzki auszuschließen",
+            "Die Partei aufzulösen"
+          ],
+          "explanation": "Lenin schrieb, Stalin sei „zu grob“ für das Amt. Nach Lenins Tod hielten die anderen Führer das Dokument zurück und unterschätzten Stalin."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "How did Stalin's great rival Leon Trotsky die in 1940?",
+      "options": [
+        "He was executed after a show trial",
+        "He died in a Siberian camp",
+        "He drowned while fleeing",
+        "A Soviet agent killed him with an ice axe in Mexico"
+      ],
+      "explanation": "Trotsky had been expelled from the Soviet Union in 1929 and kept attacking Stalin from abroad, until the assassin reached him.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe stierf Stalins grote rivaal Leon Trotski in 1940?",
+          "options": [
+            "Hij werd na een showproces geëxecuteerd",
+            "Hij stierf in een Siberisch kamp",
+            "Hij verdronk op de vlucht",
+            "Een Sovjetagent doodde hem met een ijsbijl in Mexico"
+          ],
+          "explanation": "Trotski was in 1929 uit de Sovjet-Unie gezet en bleef Stalin vanuit het buitenland aanvallen, tot de moordenaar hem vond."
+        },
+        "fr": {
+          "question": "Comment Léon Trotski, le grand rival de Staline, est-il mort en 1940 ?",
+          "options": [
+            "Exécuté après un procès-spectacle",
+            "Dans un camp en Sibérie",
+            "Noyé en fuyant",
+            "Tué par un agent soviétique avec un piolet au Mexique"
+          ],
+          "explanation": "Expulsé d’URSS en 1929, Trotski attaquait Staline depuis l’étranger, jusqu’à ce que l’assassin l’atteigne."
+        },
+        "de": {
+          "question": "Wie starb Stalins großer Rivale Leo Trotzki 1940?",
+          "options": [
+            "Er wurde nach einem Schauprozess hingerichtet",
+            "In einem sibirischen Lager",
+            "Er ertrank auf der Flucht",
+            "Ein sowjetischer Agent tötete ihn in Mexiko mit einem Eispickel"
+          ],
+          "explanation": "Trotzki war 1929 aus der Sowjetunion ausgewiesen worden und griff Stalin aus dem Ausland an, bis der Mörder ihn erreichte."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What is the famine of 1932-1933 in Ukraine called?",
+      "options": [
+        "The Holodomor",
+        "The Great Leap",
+        "The Gulag",
+        "The Kulak"
+      ],
+      "explanation": "Holodomor means 'death by hunger'. The state kept taking grain while millions starved, and the Soviet government denied the famine existed.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe heet de hongersnood van 1932-1933 in Oekraïne?",
+          "options": [
+            "De Holodomor",
+            "De Grote Sprong",
+            "De Goelag",
+            "De Koelak"
+          ],
+          "explanation": "Holodomor betekent 'dood door honger'. De staat bleef graan vorderen terwijl miljoenen verhongerden, en de Sovjetregering ontkende dat er een hongersnood was."
+        },
+        "fr": {
+          "question": "Comment appelle-t-on la famine de 1932-1933 en Ukraine ?",
+          "options": [
+            "L’Holodomor",
+            "Le Grand Bond",
+            "Le Goulag",
+            "Le Koulak"
+          ],
+          "explanation": "Holodomor signifie « extermination par la faim ». L’État continuait de prendre le grain pendant que des millions de gens mouraient, et le gouvernement soviétique niait la famine."
+        },
+        "de": {
+          "question": "Wie nennt man die Hungersnot von 1932–1933 in der Ukraine?",
+          "options": [
+            "Holodomor",
+            "Großer Sprung",
+            "Gulag",
+            "Kulak"
+          ],
+          "explanation": "Holodomor bedeutet „Tötung durch Hunger“. Der Staat nahm weiter Getreide, während Millionen verhungerten, und die Sowjetregierung leugnete die Hungersnot."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Why did many Soviet citizens keep a small packed suitcase by the door in 1937-1938?",
+      "options": [
+        "They planned to flee abroad",
+        "They were ready for a holiday by the sea",
+        "They expected to be arrested at night",
+        "The army called up everyone without warning"
+      ],
+      "explanation": "During the Great Terror, the secret police came at night. About 680,000 people were executed in those two years and many more were sent to the Gulag.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom hadden veel Sovjetburgers in 1937-1938 een klein gepakt koffertje bij de deur staan?",
+          "options": [
+            "Ze wilden naar het buitenland vluchten",
+            "Ze waren klaar voor een vakantie aan zee",
+            "Ze verwachtten 's nachts gearresteerd te worden",
+            "Het leger riep iedereen zonder waarschuwing op"
+          ],
+          "explanation": "Tijdens de Grote Terreur kwam de geheime politie 's nachts. In die twee jaar werden zo'n 680.000 mensen geëxecuteerd en nog veel meer naar de Goelag gestuurd."
+        },
+        "fr": {
+          "question": "Pourquoi beaucoup de Soviétiques gardaient-ils une petite valise prête près de la porte en 1937-1938 ?",
+          "options": [
+            "Ils comptaient fuir à l’étranger",
+            "Ils étaient prêts à partir en vacances",
+            "Ils s’attendaient à être arrêtés la nuit",
+            "L’armée mobilisait tout le monde sans prévenir"
+          ],
+          "explanation": "Pendant la Grande Terreur, la police secrète venait la nuit. Environ 680 000 personnes ont été exécutées en deux ans, et bien plus envoyées au Goulag."
+        },
+        "de": {
+          "question": "Warum hatten 1937–1938 viele Sowjetbürger einen gepackten Koffer an der Tür stehen?",
+          "options": [
+            "Sie wollten ins Ausland fliehen",
+            "Sie waren bereit für einen Urlaub am Meer",
+            "Sie rechneten mit einer nächtlichen Verhaftung",
+            "Die Armee berief alle ohne Vorwarnung ein"
+          ],
+          "explanation": "Während des Großen Terrors kam die Geheimpolizei nachts. In diesen zwei Jahren wurden etwa 680.000 Menschen hingerichtet und noch viel mehr in den Gulag geschickt."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Which battle on the Volga in the winter of 1942-1943 became the turning point of the war against Hitler?",
+      "options": [
+        "Kursk",
+        "Leningrad",
+        "Moscow",
+        "Stalingrad"
+      ],
+      "explanation": "A German army of about 300,000 men was surrounded and destroyed. In total, about 27 million Soviet citizens died in the war.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke slag aan de Wolga in de winter van 1942-1943 werd het keerpunt in de oorlog tegen Hitler?",
+          "options": [
+            "Koersk",
+            "Leningrad",
+            "Moskou",
+            "Stalingrad"
+          ],
+          "explanation": "Een Duits leger van zo'n 300.000 man werd omsingeld en vernietigd. In totaal stierven zo'n 27 miljoen Sovjetburgers in de oorlog."
+        },
+        "fr": {
+          "question": "Quelle bataille sur la Volga, à l’hiver 1942-1943, a marqué le tournant de la guerre contre Hitler ?",
+          "options": [
+            "Koursk",
+            "Léningrad",
+            "Moscou",
+            "Stalingrad"
+          ],
+          "explanation": "Une armée allemande d’environ 300 000 hommes y a été encerclée et détruite. Au total, quelque 27 millions de Soviétiques sont morts pendant la guerre."
+        },
+        "de": {
+          "question": "Welche Schlacht an der Wolga im Winter 1942/43 wurde zum Wendepunkt des Krieges gegen Hitler?",
+          "options": [
+            "Kursk",
+            "Leningrad",
+            "Moskau",
+            "Stalingrad"
+          ],
+          "explanation": "Eine deutsche Armee von rund 300.000 Mann wurde eingekesselt und vernichtet. Insgesamt starben etwa 27 Millionen Sowjetbürger im Krieg."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Why did nobody help Stalin for hours after his stroke in March 1953?",
+      "options": [
+        "His guards were too afraid to enter his room",
+        "The doctors were on strike",
+        "He had locked himself in a bunker",
+        "A snowstorm cut off his house"
+      ],
+      "explanation": "Even his own staff feared disturbing him. Three years after his death, Khrushchev denounced his crimes in a 'secret speech'.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom hielp niemand Stalin urenlang na zijn beroerte in maart 1953?",
+          "options": [
+            "Zijn bewakers durfden zijn kamer niet binnen te gaan",
+            "De artsen staakten",
+            "Hij had zich opgesloten in een bunker",
+            "Een sneeuwstorm sneed zijn huis af"
+          ],
+          "explanation": "Zelfs zijn eigen personeel was bang hem te storen. Drie jaar na zijn dood hekelde Chroesjtsjov zijn misdaden in een 'geheime toespraak'."
+        },
+        "fr": {
+          "question": "Pourquoi personne n’a-t-il secouru Staline pendant des heures après son attaque en mars 1953 ?",
+          "options": [
+            "Ses gardes avaient trop peur d’entrer dans sa chambre",
+            "Les médecins étaient en grève",
+            "Il s’était enfermé dans un bunker",
+            "Une tempête de neige isolait sa maison"
+          ],
+          "explanation": "Même son personnel craignait de le déranger. Trois ans après sa mort, Khrouchtchev a dénoncé ses crimes dans un « rapport secret »."
+        },
+        "de": {
+          "question": "Warum half Stalin nach seinem Schlaganfall im März 1953 stundenlang niemand?",
+          "options": [
+            "Seine Wachen trauten sich nicht in sein Zimmer",
+            "Die Ärzte streikten",
+            "Er hatte sich in einem Bunker eingeschlossen",
+            "Ein Schneesturm schnitt sein Haus ab"
+          ],
+          "explanation": "Selbst sein eigenes Personal fürchtete, ihn zu stören. Drei Jahre nach seinem Tod prangerte Chruschtschow seine Verbrechen in einer „Geheimrede“ an."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

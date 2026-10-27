@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What could Armstrong legally do before he had a driving licence?",
+      "options": [
+        "Fly a plane",
+        "Sail a boat across Lake Erie",
+        "Vote in elections",
+        "Drive a tractor on the road"
+      ],
+      "explanation": "He earned his student pilot's certificate on his sixteenth birthday, after paying for flying lessons with part-time jobs.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat mocht Armstrong al voordat hij een rijbewijs had?",
+          "options": [
+            "Een vliegtuig vliegen",
+            "Over het Eriemeer zeilen",
+            "Stemmen bij verkiezingen",
+            "Op de weg tractor rijden"
+          ],
+          "explanation": "Op zijn zestiende verjaardag haalde hij zijn leerlingvliegbrevet, na vlieglessen betaald met bijbaantjes."
+        },
+        "fr": {
+          "question": "Qu’Armstrong pouvait-il faire légalement avant d’avoir le permis de conduire ?",
+          "options": [
+            "Piloter un avion",
+            "Traverser le lac Érié à la voile",
+            "Voter",
+            "Conduire un tracteur sur la route"
+          ],
+          "explanation": "Il a obtenu son certificat d’élève pilote le jour de ses seize ans, après avoir payé ses leçons avec des petits boulots."
+        },
+        "de": {
+          "question": "Was durfte Armstrong schon, bevor er einen Führerschein hatte?",
+          "options": [
+            "Ein Flugzeug fliegen",
+            "Über den Eriesee segeln",
+            "Wählen",
+            "Mit dem Traktor auf der Straße fahren"
+          ],
+          "explanation": "An seinem 16. Geburtstag erhielt er seinen Flugschülerausweis, nachdem er die Flugstunden mit Nebenjobs bezahlt hatte."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What happened to Armstrong's jet during a bombing run in the Korean War in 1951?",
+      "options": [
+        "It ran out of fuel over the sea",
+        "It was hit by an enemy fighter",
+        "A cable sliced off part of a wing and he had to eject",
+        "Its engine caught fire on the carrier deck"
+      ],
+      "explanation": "He nursed the damaged plane back over friendly territory and ejected. He flew 78 combat missions in that war.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er in 1951 met Armstrongs straaljager tijdens een bombardementsvlucht in de Koreaanse Oorlog?",
+          "options": [
+            "De brandstof raakte op boven zee",
+            "Hij werd geraakt door een vijandelijke jager",
+            "Een kabel sneed een deel van een vleugel af en hij moest zich uitwerpen",
+            "De motor vloog in brand op het dek van het vliegdekschip"
+          ],
+          "explanation": "Hij wist het beschadigde toestel terug te vliegen boven bevriend gebied en schoot zich eruit. Hij vloog 78 gevechtsmissies in die oorlog."
+        },
+        "fr": {
+          "question": "Qu’est-il arrivé à l’avion d’Armstrong lors d’un bombardement pendant la guerre de Corée en 1951 ?",
+          "options": [
+            "Il est tombé en panne sèche au-dessus de la mer",
+            "Un chasseur ennemi l’a touché",
+            "Un câble a arraché une partie d’une aile et il a dû s’éjecter",
+            "Son moteur a pris feu sur le pont du porte-avions"
+          ],
+          "explanation": "Il a ramené l’avion endommagé au-dessus d’un territoire ami et s’est éjecté. Il a effectué 78 missions de combat pendant cette guerre."
+        },
+        "de": {
+          "question": "Was geschah 1951 im Koreakrieg bei einem Bombenangriff mit Armstrongs Jet?",
+          "options": [
+            "Ihm ging über dem Meer der Treibstoff aus",
+            "Ein feindlicher Jäger traf ihn",
+            "Ein Kabel trennte einen Teil der Tragfläche ab, und er musste aussteigen",
+            "Das Triebwerk fing auf dem Flugzeugträger Feuer"
+          ],
+          "explanation": "Er brachte die beschädigte Maschine über befreundetes Gebiet zurück und betätigte den Schleudersitz. Er flog 78 Kampfeinsätze in diesem Krieg."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What was special about the X-15, which Armstrong flew seven times?",
+      "options": [
+        "It could land on water",
+        "It was dropped from a bomber and then rocketed to the edge of space",
+        "It was the first jet with a pressurised cabin",
+        "It was flown by remote control"
+      ],
+      "explanation": "In 1962 Armstrong reached more than 63 kilometres. On one flight he 'bounced' off the upper atmosphere and overshot his base.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was er bijzonder aan de X-15, waarmee Armstrong zeven keer vloog?",
+          "options": [
+            "Hij kon op het water landen",
+            "Hij werd losgelaten onder een bommenwerper en raasde dan naar de rand van de ruimte",
+            "Het was het eerste straalvliegtuig met een drukcabine",
+            "Hij werd op afstand bestuurd"
+          ],
+          "explanation": "In 1962 bereikte Armstrong meer dan 63 kilometer. Op één vlucht 'stuiterde' hij op de bovenste dampkring en schoot hij zijn basis voorbij."
+        },
+        "fr": {
+          "question": "Qu’avait de particulier le X-15, piloté sept fois par Armstrong ?",
+          "options": [
+            "Il pouvait amerrir",
+            "Il était largué d’un bombardier puis propulsé jusqu’aux confins de l’espace",
+            "C’était le premier jet à cabine pressurisée",
+            "Il était télécommandé"
+          ],
+          "explanation": "En 1962, Armstrong a dépassé 63 kilomètres d’altitude. Lors d’un vol, il a « rebondi » sur la haute atmosphère et dépassé sa base."
+        },
+        "de": {
+          "question": "Was war das Besondere an der X-15, die Armstrong siebenmal flog?",
+          "options": [
+            "Sie konnte auf dem Wasser landen",
+            "Sie wurde von einem Bomber ausgeklinkt und schoss dann bis an den Rand des Weltraums",
+            "Sie war der erste Jet mit Druckkabine",
+            "Sie war ferngesteuert"
+          ],
+          "explanation": "1962 erreichte Armstrong über 63 Kilometer Höhe. Auf einem Flug „prallte“ er an der oberen Atmosphäre ab und schoss über seine Basis hinaus."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What went wrong during the Gemini 8 mission in 1966?",
+      "options": [
+        "The capsule's heat shield cracked",
+        "The crew ran out of oxygen",
+        "The Agena exploded",
+        "A stuck thruster made the spacecraft spin about once per second"
+      ],
+      "explanation": "Armstrong steadied the craft with the re-entry thrusters, and the crew made an emergency landing in the Pacific less than eleven hours after launch.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat ging er mis tijdens de Gemini 8-missie in 1966?",
+          "options": [
+            "Het hitteschild van de capsule scheurde",
+            "De bemanning raakte zonder zuurstof",
+            "De Agena ontplofte",
+            "Een vastzittende stuurmotor liet het ruimtevaartuig ongeveer één keer per seconde rondtollen"
+          ],
+          "explanation": "Armstrong bracht het vaartuig tot rust met de stuurmotoren voor de terugkeer, en de bemanning maakte minder dan elf uur na de lancering een noodlanding in de Grote Oceaan."
+        },
+        "fr": {
+          "question": "Qu’est-ce qui a mal tourné lors de la mission Gemini 8 en 1966 ?",
+          "options": [
+            "Le bouclier thermique s’est fissuré",
+            "L’équipage a manqué d’oxygène",
+            "L’Agena a explosé",
+            "Un propulseur bloqué a fait tourner le vaisseau sur lui-même environ une fois par seconde"
+          ],
+          "explanation": "Armstrong a stabilisé l’engin avec les propulseurs de rentrée, et l’équipage a amerri en urgence dans le Pacifique moins de onze heures après le lancement."
+        },
+        "de": {
+          "question": "Was ging bei der Mission Gemini 8 im Jahr 1966 schief?",
+          "options": [
+            "Der Hitzeschild bekam Risse",
+            "Der Besatzung ging der Sauerstoff aus",
+            "Die Agena explodierte",
+            "Eine klemmende Steuerdüse ließ das Raumschiff etwa einmal pro Sekunde rotieren"
+          ],
+          "explanation": "Armstrong stabilisierte das Raumschiff mit den Wiedereintrittsdüsen, und die Crew wasserte keine elf Stunden nach dem Start notfallmäßig im Pazifik."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What was the nickname of the strange machine astronauts used to practise Moon landings, which Armstrong had to eject from in 1968?",
+      "options": [
+        "The Flying Bedstead",
+        "The Tin Goose",
+        "The Iron Spider",
+        "The Moon Buggy"
+      ],
+      "explanation": "It went out of control about thirty metres above the ground. Armstrong ejected seconds before it crashed, then went back to his office that afternoon.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was de bijnaam van het vreemde toestel waarmee astronauten maanlandingen oefenden, en waaruit Armstrong zich in 1968 moest uitwerpen?",
+          "options": [
+            "Het Vliegende Ledikant",
+            "De Blikken Gans",
+            "De IJzeren Spin",
+            "Het Maanwagentje"
+          ],
+          "explanation": "Op zo'n dertig meter hoogte raakte het onbestuurbaar. Armstrong schoot zich seconden voor de crash eruit en ging die middag gewoon terug naar zijn kantoor."
+        },
+        "fr": {
+          "question": "Quel était le surnom de l’étrange engin d’entraînement à l’alunissage dont Armstrong a dû s’éjecter en 1968 ?",
+          "options": [
+            "Le Sommier volant",
+            "L’Oie en fer-blanc",
+            "L’Araignée de fer",
+            "La Jeep lunaire"
+          ],
+          "explanation": "Il est devenu incontrôlable à une trentaine de mètres du sol. Armstrong s’est éjecté quelques secondes avant l’écrasement, puis est retourné à son bureau l’après-midi même."
+        },
+        "de": {
+          "question": "Welchen Spitznamen hatte das seltsame Übungsgerät für Mondlandungen, aus dem sich Armstrong 1968 retten musste?",
+          "options": [
+            "Das fliegende Bettgestell",
+            "Die Blechgans",
+            "Die Eisenspinne",
+            "Der Mondbuggy"
+          ],
+          "explanation": "Etwa dreißig Meter über dem Boden geriet es außer Kontrolle. Armstrong katapultierte sich Sekunden vor dem Absturz hinaus und ging am Nachmittag zurück an seinen Schreibtisch."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Why did Armstrong take manual control just before landing on the Moon?",
+      "options": [
+        "The radio to Houston had failed",
+        "The computer was taking Eagle into a crater full of boulders",
+        "Aldrin had fainted",
+        "The engine was about to explode"
+      ],
+      "explanation": "He flew on, searching for a smooth spot, as the fuel ran low. Then: 'Houston, Tranquility Base here. The Eagle has landed.'",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom nam Armstrong vlak voor de maanlanding de besturing met de hand over?",
+          "options": [
+            "De radio naar Houston was uitgevallen",
+            "De computer stuurde Eagle naar een krater vol rotsblokken",
+            "Aldrin was flauwgevallen",
+            "De motor dreigde te ontploffen"
+          ],
+          "explanation": "Hij vloog verder op zoek naar een vlakke plek terwijl de brandstof opraakte. Daarna: 'Houston, Tranquility Base here. The Eagle has landed.'"
+        },
+        "fr": {
+          "question": "Pourquoi Armstrong a-t-il pris les commandes manuelles juste avant l’alunissage ?",
+          "options": [
+            "La radio avec Houston était coupée",
+            "L’ordinateur menait Eagle vers un cratère plein de rochers",
+            "Aldrin s’était évanoui",
+            "Le moteur allait exploser"
+          ],
+          "explanation": "Il a continué à voler à la recherche d’un endroit plat tandis que le carburant baissait. Puis : « Houston, ici la base de la Tranquillité. L’Aigle s’est posé. »"
+        },
+        "de": {
+          "question": "Warum übernahm Armstrong kurz vor der Mondlandung die Handsteuerung?",
+          "options": [
+            "Der Funk nach Houston war ausgefallen",
+            "Der Computer steuerte die Eagle in einen Krater voller Felsbrocken",
+            "Aldrin war ohnmächtig geworden",
+            "Das Triebwerk drohte zu explodieren"
+          ],
+          "explanation": "Er flog weiter und suchte eine ebene Stelle, während der Treibstoff zur Neige ging. Dann: „Houston, hier Tranquility Base. Der Adler ist gelandet.“"
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Why are there so few good photos of Armstrong on the Moon?",
+      "options": [
+        "The camera froze in the cold",
+        "NASA kept them secret",
+        "He carried the camera most of the time",
+        "The films were lost on the way home"
+      ],
+      "explanation": "The most famous picture of an astronaut on the Moon shows Aldrin, with Armstrong visible only as a small reflection in his visor.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom zijn er zo weinig goede foto's van Armstrong op de maan?",
+          "options": [
+            "De camera bevroor in de kou",
+            "NASA hield ze geheim",
+            "Hij had de camera zelf meestal vast",
+            "De films raakten kwijt op de terugweg"
+          ],
+          "explanation": "De beroemdste foto van een astronaut op de maan toont Aldrin, met Armstrong alleen als klein spiegelbeeld in zijn vizier."
+        },
+        "fr": {
+          "question": "Pourquoi y a-t-il si peu de bonnes photos d’Armstrong sur la Lune ?",
+          "options": [
+            "L’appareil a gelé",
+            "La NASA les a gardées secrètes",
+            "C’est lui qui tenait l’appareil la plupart du temps",
+            "Les films ont été perdus au retour"
+          ],
+          "explanation": "La photo la plus célèbre d’un astronaute sur la Lune montre Aldrin, Armstrong n’apparaissant que comme un petit reflet dans sa visière."
+        },
+        "de": {
+          "question": "Warum gibt es so wenige gute Fotos von Armstrong auf dem Mond?",
+          "options": [
+            "Die Kamera fror ein",
+            "Die NASA hielt sie geheim",
+            "Er trug die Kamera meistens selbst",
+            "Die Filme gingen auf dem Rückweg verloren"
+          ],
+          "explanation": "Das berühmteste Foto eines Astronauten auf dem Mond zeigt Aldrin – Armstrong ist nur als kleine Spiegelung in seinem Visier zu sehen."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What did Armstrong do after he left NASA in 1971?",
+      "options": [
+        "He became a senator for Ohio",
+        "He ran an airline",
+        "He trained astronauts in the Soviet Union",
+        "He became a professor of aerospace engineering"
+      ],
+      "explanation": "He taught at the University of Cincinnati and avoided the spotlight. When he died in 2012, his family asked people to wink at the Moon.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed Armstrong nadat hij in 1971 bij NASA was vertrokken?",
+          "options": [
+            "Hij werd senator voor Ohio",
+            "Hij leidde een luchtvaartmaatschappij",
+            "Hij trainde astronauten in de Sovjet-Unie",
+            "Hij werd hoogleraar luchtvaarttechniek"
+          ],
+          "explanation": "Hij doceerde aan de Universiteit van Cincinnati en meed de schijnwerpers. Toen hij in 2012 overleed, vroeg zijn familie mensen om naar de maan te knipogen."
+        },
+        "fr": {
+          "question": "Qu’a fait Armstrong après avoir quitté la NASA en 1971 ?",
+          "options": [
+            "Il est devenu sénateur de l’Ohio",
+            "Il a dirigé une compagnie aérienne",
+            "Il a formé des cosmonautes en URSS",
+            "Il est devenu professeur d’ingénierie aérospatiale"
+          ],
+          "explanation": "Il a enseigné à l’université de Cincinnati, loin des projecteurs. À sa mort en 2012, sa famille a invité chacun à faire un clin d’œil à la Lune."
+        },
+        "de": {
+          "question": "Was tat Armstrong, nachdem er 1971 die NASA verlassen hatte?",
+          "options": [
+            "Er wurde Senator für Ohio",
+            "Er leitete eine Fluggesellschaft",
+            "Er bildete Kosmonauten in der Sowjetunion aus",
+            "Er wurde Professor für Luft- und Raumfahrttechnik"
+          ],
+          "explanation": "Er lehrte an der Universität Cincinnati und mied das Rampenlicht. Als er 2012 starb, bat seine Familie, dem Mond zuzuzwinkern."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

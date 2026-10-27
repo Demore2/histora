@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What did Hitler hope to become when he moved to Vienna in 1907?",
+      "options": [
+        "An architect's apprentice",
+        "A painter at the Academy of Fine Arts",
+        "An officer in the Austrian army",
+        "A newspaper journalist"
+      ],
+      "explanation": "The Academy rejected him twice, in 1907 and 1908. Bitter and drifting, he absorbed the antisemitic politics of the city.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat hoopte Hitler te worden toen hij in 1907 naar Wenen ging?",
+          "options": [
+            "Leerling-architect",
+            "Schilder aan de Kunstacademie",
+            "Officier in het Oostenrijkse leger",
+            "Krantenjournalist"
+          ],
+          "explanation": "De academie wees hem twee keer af, in 1907 en 1908. Verbitterd en doelloos nam hij de antisemitische politiek van de stad in zich op."
+        },
+        "fr": {
+          "question": "Que voulait devenir Hitler en arrivant à Vienne en 1907 ?",
+          "options": [
+            "Apprenti architecte",
+            "Peintre à l’Académie des beaux-arts",
+            "Officier de l’armée autrichienne",
+            "Journaliste"
+          ],
+          "explanation": "L’Académie l’a refusé deux fois, en 1907 et 1908. Amer et sans but, il a absorbé l’antisémitisme politique de la ville."
+        },
+        "de": {
+          "question": "Was wollte Hitler werden, als er 1907 nach Wien ging?",
+          "options": [
+            "Architektenlehrling",
+            "Maler an der Akademie der bildenden Künste",
+            "Offizier im österreichischen Heer",
+            "Zeitungsjournalist"
+          ],
+          "explanation": "Die Akademie lehnte ihn zweimal ab, 1907 und 1908. Verbittert und ziellos nahm er die antisemitische Politik der Stadt in sich auf."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What was the false 'stab in the back' myth that spread in Germany after 1918?",
+      "options": [
+        "That the army had been betrayed by traitors at home",
+        "That the Kaiser had secretly surrendered to France",
+        "That Austria had started the war",
+        "That the British had poisoned the German army"
+      ],
+      "explanation": "Many Germans refused to accept that the army had been beaten on the battlefield. Hitler built his career on blaming socialists and Jews.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was de valse 'dolkstootlegende' die na 1918 in Duitsland rondging?",
+          "options": [
+            "Dat het leger door verraders in eigen land was verraden",
+            "Dat de keizer zich in het geheim aan Frankrijk had overgegeven",
+            "Dat Oostenrijk de oorlog was begonnen",
+            "Dat de Britten het Duitse leger hadden vergiftigd"
+          ],
+          "explanation": "Veel Duitsers wilden niet aanvaarden dat het leger op het slagveld was verslagen. Hitler bouwde zijn loopbaan op het beschuldigen van socialisten en Joden."
+        },
+        "fr": {
+          "question": "Quel était le faux mythe du « coup de poignard dans le dos » répandu en Allemagne après 1918 ?",
+          "options": [
+            "Que l’armée avait été trahie par des traîtres de l’intérieur",
+            "Que le Kaiser s’était rendu en secret à la France",
+            "Que l’Autriche avait déclenché la guerre",
+            "Que les Britanniques avaient empoisonné l’armée allemande"
+          ],
+          "explanation": "Beaucoup d’Allemands refusaient d’admettre la défaite militaire. Hitler a bâti sa carrière en accusant les socialistes et les Juifs."
+        },
+        "de": {
+          "question": "Was war die falsche „Dolchstoßlegende“, die sich nach 1918 in Deutschland verbreitete?",
+          "options": [
+            "Dass das Heer von Verrätern in der Heimat verraten worden sei",
+            "Dass der Kaiser heimlich vor Frankreich kapituliert habe",
+            "Dass Österreich den Krieg begonnen habe",
+            "Dass die Briten das deutsche Heer vergiftet hätten"
+          ],
+          "explanation": "Viele Deutsche wollten nicht wahrhaben, dass das Heer auf dem Schlachtfeld besiegt worden war. Hitler baute seine Karriere darauf auf, Sozialisten und Juden die Schuld zu geben."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Where did Hitler write 'Mein Kampf'?",
+      "options": [
+        "In a Vienna homeless shelter",
+        "In the trenches",
+        "In prison after the failed Beer Hall Putsch",
+        "In his mountain house in the Alps"
+      ],
+      "explanation": "After the failed coup of November 1923 he was given a light sentence and dictated the book in Landsberg prison. He was released after about nine months.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar schreef Hitler 'Mein Kampf'?",
+          "options": [
+            "In een daklozenopvang in Wenen",
+            "In de loopgraven",
+            "In de gevangenis na de mislukte Bierkellerputsch",
+            "In zijn berghuis in de Alpen"
+          ],
+          "explanation": "Na de mislukte staatsgreep van november 1923 kreeg hij een lichte straf en dicteerde hij het boek in de gevangenis van Landsberg. Na zo'n negen maanden kwam hij vrij."
+        },
+        "fr": {
+          "question": "Où Hitler a-t-il écrit « Mein Kampf » ?",
+          "options": [
+            "Dans un foyer pour sans-abri à Vienne",
+            "Dans les tranchées",
+            "En prison après l’échec du putsch de la Brasserie",
+            "Dans sa maison des Alpes"
+          ],
+          "explanation": "Après le coup d’État raté de novembre 1923, il a reçu une peine légère et a dicté le livre à la prison de Landsberg. Il a été libéré au bout d’environ neuf mois."
+        },
+        "de": {
+          "question": "Wo schrieb Hitler „Mein Kampf“?",
+          "options": [
+            "In einem Wiener Obdachlosenheim",
+            "In den Schützengräben",
+            "Im Gefängnis nach dem gescheiterten Bürgerbräu-Putsch",
+            "In seinem Berghaus in den Alpen"
+          ],
+          "explanation": "Nach dem gescheiterten Putsch vom November 1923 erhielt er eine milde Strafe und diktierte das Buch in der Festung Landsberg. Nach etwa neun Monaten kam er frei."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "How did Hitler become Chancellor of Germany in January 1933?",
+      "options": [
+        "He seized power in an armed coup",
+        "He won a majority of votes in a free election",
+        "The parliament elected him unanimously",
+        "President Hindenburg appointed him on the advice of conservative politicians"
+      ],
+      "explanation": "The Nazis never won a majority in a free election. Conservatives thought they could control him; within months he had destroyed democracy.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe werd Hitler in januari 1933 rijkskanselier?",
+          "options": [
+            "Hij greep de macht met een gewapende staatsgreep",
+            "Hij won een meerderheid in vrije verkiezingen",
+            "Het parlement koos hem unaniem",
+            "President Hindenburg benoemde hem op advies van conservatieve politici"
+          ],
+          "explanation": "De nazi's wonnen nooit een meerderheid in vrije verkiezingen. Conservatieven dachten hem te kunnen beheersen; binnen enkele maanden had hij de democratie vernietigd."
+        },
+        "fr": {
+          "question": "Comment Hitler est-il devenu chancelier en janvier 1933 ?",
+          "options": [
+            "Par un coup d’État armé",
+            "En obtenant la majorité lors d’élections libres",
+            "Élu à l’unanimité par le Parlement",
+            "Nommé par le président Hindenburg sur le conseil de politiciens conservateurs"
+          ],
+          "explanation": "Les nazis n’ont jamais eu la majorité lors d’élections libres. Les conservateurs pensaient le contrôler ; en quelques mois, il a détruit la démocratie."
+        },
+        "de": {
+          "question": "Wie wurde Hitler im Januar 1933 Reichskanzler?",
+          "options": [
+            "Durch einen bewaffneten Putsch",
+            "Durch eine Mehrheit in freien Wahlen",
+            "Einstimmig vom Reichstag gewählt",
+            "Reichspräsident Hindenburg ernannte ihn auf Rat konservativer Politiker"
+          ],
+          "explanation": "Die Nationalsozialisten erreichten in freien Wahlen nie eine Mehrheit. Konservative glaubten, ihn zähmen zu können; binnen Monaten zerstörte er die Demokratie."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What happened during Kristallnacht, on 9-10 November 1938?",
+      "options": [
+        "Germany invaded Poland",
+        "Nazi mobs burned synagogues and attacked Jews across Germany and Austria",
+        "The Reichstag building burned down",
+        "Hitler's rivals in the party were murdered"
+      ],
+      "explanation": "More than a thousand synagogues were burned and thousands of Jewish shops smashed. Around 30,000 Jewish men were sent to concentration camps.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er tijdens de Kristallnacht, op 9-10 november 1938?",
+          "options": [
+            "Duitsland viel Polen binnen",
+            "Nazibendes staken synagogen in brand en vielen Joden aan in Duitsland en Oostenrijk",
+            "Het Rijksdaggebouw brandde af",
+            "Hitlers rivalen in de partij werden vermoord"
+          ],
+          "explanation": "Meer dan duizend synagogen werden in brand gestoken en duizenden Joodse winkels vernield. Zo'n 30.000 Joodse mannen werden naar concentratiekampen gestuurd."
+        },
+        "fr": {
+          "question": "Que s’est-il passé lors de la Nuit de cristal, les 9 et 10 novembre 1938 ?",
+          "options": [
+            "L’Allemagne a envahi la Pologne",
+            "Des bandes nazies ont incendié des synagogues et attaqué des Juifs en Allemagne et en Autriche",
+            "Le Reichstag a brûlé",
+            "Les rivaux de Hitler au sein du parti ont été assassinés"
+          ],
+          "explanation": "Plus d’un millier de synagogues ont été incendiées et des milliers de commerces juifs saccagés. Environ 30 000 hommes juifs ont été envoyés en camp de concentration."
+        },
+        "de": {
+          "question": "Was geschah in der Pogromnacht vom 9. auf den 10. November 1938?",
+          "options": [
+            "Deutschland überfiel Polen",
+            "Nazi-Trupps brannten Synagogen nieder und griffen Juden in Deutschland und Österreich an",
+            "Das Reichstagsgebäude brannte",
+            "Hitlers Rivalen in der Partei wurden ermordet"
+          ],
+          "explanation": "Über tausend Synagogen wurden angezündet und Tausende jüdische Geschäfte zerstört. Rund 30.000 jüdische Männer wurden in Konzentrationslager verschleppt."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Which event on 1 September 1939 started the Second World War in Europe?",
+      "options": [
+        "The German invasion of Poland",
+        "The attack on Pearl Harbor",
+        "The fall of France",
+        "The annexation of Austria"
+      ],
+      "explanation": "Two days later Britain and France declared war on Germany.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke gebeurtenis op 1 september 1939 begon de Tweede Wereldoorlog in Europa?",
+          "options": [
+            "De Duitse inval in Polen",
+            "De aanval op Pearl Harbor",
+            "De val van Frankrijk",
+            "De annexatie van Oostenrijk"
+          ],
+          "explanation": "Twee dagen later verklaarden Groot-Brittannië en Frankrijk Duitsland de oorlog."
+        },
+        "fr": {
+          "question": "Quel événement du 1er septembre 1939 a déclenché la Seconde Guerre mondiale en Europe ?",
+          "options": [
+            "L’invasion allemande de la Pologne",
+            "L’attaque de Pearl Harbor",
+            "La chute de la France",
+            "L’annexion de l’Autriche"
+          ],
+          "explanation": "Deux jours plus tard, le Royaume-Uni et la France déclaraient la guerre à l’Allemagne."
+        },
+        "de": {
+          "question": "Welches Ereignis am 1. September 1939 löste den Zweiten Weltkrieg in Europa aus?",
+          "options": [
+            "Der deutsche Überfall auf Polen",
+            "Der Angriff auf Pearl Harbor",
+            "Der Fall Frankreichs",
+            "Der Anschluss Österreichs"
+          ],
+          "explanation": "Zwei Tage später erklärten Großbritannien und Frankreich Deutschland den Krieg."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "What happened at the Wannsee Conference near Berlin on 20 January 1942?",
+      "options": [
+        "Germany and Japan signed an alliance",
+        "Hitler announced the invasion of the Soviet Union",
+        "Officers planned a bomb attack on Hitler",
+        "Senior officials coordinated the murder of the Jews of Europe"
+      ],
+      "explanation": "The 'Final Solution' was organised there. About six million Jews were murdered in the Holocaust, around two-thirds of the Jews of Europe.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er op de Wannseeconferentie bij Berlijn op 20 januari 1942?",
+          "options": [
+            "Duitsland en Japan sloten een bondgenootschap",
+            "Hitler kondigde de inval in de Sovjet-Unie aan",
+            "Officieren beraamden een bomaanslag op Hitler",
+            "Hoge ambtenaren coördineerden de moord op de Joden van Europa"
+          ],
+          "explanation": "Daar werd de 'Endlösung' georganiseerd. Ongeveer zes miljoen Joden werden vermoord in de Holocaust, zo'n twee derde van de Joden van Europa."
+        },
+        "fr": {
+          "question": "Que s’est-il passé lors de la conférence de Wannsee, près de Berlin, le 20 janvier 1942 ?",
+          "options": [
+            "L’Allemagne et le Japon ont signé une alliance",
+            "Hitler a annoncé l’invasion de l’URSS",
+            "Des officiers ont préparé un attentat contre Hitler",
+            "De hauts responsables ont coordonné l’assassinat des Juifs d’Europe"
+          ],
+          "explanation": "La « solution finale » y a été organisée. Environ six millions de Juifs ont été assassinés lors de la Shoah, soit les deux tiers des Juifs d’Europe."
+        },
+        "de": {
+          "question": "Was geschah auf der Wannseekonferenz bei Berlin am 20. Januar 1942?",
+          "options": [
+            "Deutschland und Japan schlossen ein Bündnis",
+            "Hitler kündigte den Angriff auf die Sowjetunion an",
+            "Offiziere planten ein Bombenattentat auf Hitler",
+            "Hohe Beamte koordinierten den Mord an den Juden Europas"
+          ],
+          "explanation": "Dort wurde die „Endlösung“ organisiert. Etwa sechs Millionen Juden wurden im Holocaust ermordet, rund zwei Drittel der Juden Europas."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Why did Stauffenberg's bomb fail to kill Hitler on 20 July 1944?",
+      "options": [
+        "It never exploded",
+        "Hitler had left the room minutes earlier",
+        "A heavy table leg shielded Hitler from the blast",
+        "The bomb was discovered and defused"
+      ],
+      "explanation": "The briefcase bomb exploded under the table, but Hitler escaped with minor injuries. Stauffenberg and about two hundred others were executed.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom doodde Stauffenbergs bom Hitler op 20 juli 1944 niet?",
+          "options": [
+            "Hij ontplofte nooit",
+            "Hitler had de kamer minuten eerder verlaten",
+            "Een zware tafelpoot beschermde Hitler tegen de explosie",
+            "De bom werd ontdekt en onschadelijk gemaakt"
+          ],
+          "explanation": "De bom in de aktetas ontplofte onder de tafel, maar Hitler kwam er met lichte verwondingen vanaf. Stauffenberg en zo'n tweehonderd anderen werden geëxecuteerd."
+        },
+        "fr": {
+          "question": "Pourquoi la bombe de Stauffenberg n’a-t-elle pas tué Hitler le 20 juillet 1944 ?",
+          "options": [
+            "Elle n’a jamais explosé",
+            "Hitler avait quitté la salle quelques minutes plus tôt",
+            "Un lourd pied de table a protégé Hitler de l’explosion",
+            "La bombe a été découverte et désamorcée"
+          ],
+          "explanation": "La bombe cachée dans une serviette a explosé sous la table, mais Hitler n’a été que légèrement blessé. Stauffenberg et environ deux cents autres ont été exécutés."
+        },
+        "de": {
+          "question": "Warum tötete Stauffenbergs Bombe Hitler am 20. Juli 1944 nicht?",
+          "options": [
+            "Sie explodierte nie",
+            "Hitler hatte den Raum Minuten vorher verlassen",
+            "Ein schweres Tischbein schirmte Hitler vor der Explosion ab",
+            "Die Bombe wurde entdeckt und entschärft"
+          ],
+          "explanation": "Die Bombe in der Aktentasche explodierte unter dem Tisch, doch Hitler wurde nur leicht verletzt. Stauffenberg und rund zweihundert weitere wurden hingerichtet."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}
