@@ -50,8 +50,8 @@ export default function OntdekScreen() {
             </View>
             <LegeStaat
               icoonNaam="book-outline"
-              titel="Geen content"
-              beschrijving="Er zijn nog geen verhalen beschikbaar."
+              titel={t((s) => s.ontdek.geenVerhalenTitel)}
+              beschrijving={t((s) => s.ontdek.geenVerhalenTekst)}
             />
           </ScrollView>
         </SafeAreaView>

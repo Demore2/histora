@@ -18,11 +18,6 @@ const en = {
     name: 'Histora',
     description: 'Learn history through interactive stories',
   },
-  /**
-   * **De tabnamen zijn in elke taal Engels** (keuze van de eigenaar, 2026-10-26): nl/fr/de
-   * vertalen deze sectie bewust niet, zodat ze via `diepeMerge` op dit Engels terugvallen. Voeg
-   * hier dus geen vertaling aan toe in de andere talen.
-   */
   tabs: {
     ontdek: 'Home',
     explore: 'Explore',
@@ -44,6 +39,9 @@ const en = {
     /** Het labeltje op een tijdperktegel en een halte op de routekaart. */
     nieuwLabel: 'New',
     toonAlles: 'Show all',
+    /** Lege Home: alleen als er geen enkel verhaal in de bundel zit. */
+    geenVerhalenTitel: 'No stories yet',
+    geenVerhalenTekst: 'There are no stories available yet.',
   },
   /** De reiskaart bovenaan Home (`reis-kaart.tsx`): de tijdlijn van Rome tot vandaag. */
   reis: {
@@ -97,7 +95,6 @@ const en = {
     leegTekst: 'Nothing left to suggest — finish one you started, or read a favourite again.',
   },
   voortgang: {
-    /** Net als de tabnamen in elke taal Engels: nl/fr/de vertalen hem bewust niet. */
     titel: 'Progress',
     streak: (n: number) => (n === 1 ? `${n} day streak` : `${n} days streak`),
     streakBeschrijving: 'Finish a chapter every day to keep your streak going.',
@@ -134,7 +131,6 @@ const en = {
     eraPercentage: (procent: number): string => `${procent}%`,
   },
   profiel: {
-    /** Net als de tabnamen in elke taal Engels: nl/fr/de vertalen hem bewust niet. */
     titel: 'Profile',
     characterCollection: 'Character Collection',
     // Functies, geen strings: het getal staat als los `display`-cijfer boven het label, dus
@@ -673,6 +669,16 @@ const en = {
     streakTitel: 'Your streak ends tonight',
     streakTekst: (dagen: number): string =>
       `${dagen} day${dagen === 1 ? '' : 's'} in a row. One chapter keeps it alive.`,
+    /**
+     * De namen van de Android-meldingskanalen, zoals ze in de systeeminstellingen van de app
+     * staan. `zorgVoorKanalen()` zet ze opnieuw bij elke herplanning, dus ze volgen een taalwissel.
+     */
+    kanalen: {
+      dagelijks: 'Daily reading reminder',
+      streak: 'Streak reminders',
+      prestatie: 'Milestones',
+      terugkeer: 'Reading suggestions',
+    },
   },
   /**
    * Mijlpalen (`constants/prestaties.ts`). De naam is per mijlpaal geschreven, de uitleg wordt uit
@@ -1124,6 +1130,21 @@ const en = {
     uitlogTekst:
       'Your reading progress stays on this device. You will need to sign in again to reach your account.',
     annuleren: 'Cancel',
+    /**
+     * Foutmeldingen van Supabase Auth, vertaald op `error.code` (`authFoutTekst` in `useAuth.ts`).
+     * De rauwe `error.message` is altijd Engels en kwam zo in elke taal op het scherm.
+     */
+    fouten: {
+      ongeldigeInlog: 'Email or password is incorrect.',
+      emailNietBevestigd: 'Confirm your email address first, then sign in.',
+      teVaak: 'Too many attempts. Wait a moment and try again.',
+      zwakWachtwoord: 'Choose a stronger password.',
+      ongeldigeEmail: 'That email address doesn’t look right.',
+      netwerk: 'No connection. Check your internet and try again.',
+      inloggenMislukt: 'Signing in didn’t work. Please try again.',
+      registrerenMislukt: 'Creating your account didn’t work. Please try again.',
+      koppelenMislukt: 'Saving your account didn’t work. Please try again.',
+    },
   },
   // Statusregel onder het account op Profiel (R8.AUTH deel 3). Bewust geruststellend van toon:
   // een mislukte sync kost de gebruiker niets — het lezen staat lokaal en gaat vanzelf alsnog

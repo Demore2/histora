@@ -2,6 +2,8 @@ import * as Notifications from 'expo-notifications';
 import { Platform } from 'react-native';
 
 import { Colors } from '@/constants/theme';
+import { getVertalingen } from '@/i18n';
+import { useTaalStore } from '@/store/taal-store';
 
 // Dagelijkse leesherinnering (LAUNCH-PLAN.md B6). Zelfde afspraak als `haptics.ts`: dit bestand
 // spreekt in bedoelingen ("plan de herinnering", "zet 'm uit"), niet in expo-notifications-API,
@@ -92,10 +94,15 @@ export const HERINNERING_MINUUT = STANDAARD_HERINNERING_MINUUT;
 /** Het rooster van de kiezer: uren 0–23, minuten in stappen van vijf. */
 export const HERINNERING_MINUUT_STAP = 5;
 
+/** De kanaalnamen in de taal van de lezer; elke herplanning zet ze opnieuw, dus ze volgen een taalwissel. */
+function kanaalNamen() {
+  return getVertalingen(useTaalStore.getState().taal).notificatie.kanalen;
+}
+
 async function zorgVoorKanaal() {
   if (Platform.OS !== 'android') return;
   await Notifications.setNotificationChannelAsync(KANAAL_ID, {
-    name: 'Daily reading reminder',
+    name: kanaalNamen().dagelijks,
     importance: Notifications.AndroidImportance.DEFAULT,
     lightColor: Colors.light.accent,
     vibrationPattern: [0, 250],
@@ -114,19 +121,19 @@ export async function zorgVoorKanalen(): Promise<void> {
   try {
     await zorgVoorKanaal();
     await Notifications.setNotificationChannelAsync(KANAAL_STREAK, {
-      name: 'Streak reminders',
+      name: kanaalNamen().streak,
       importance: Notifications.AndroidImportance.DEFAULT,
       lightColor: Colors.light.accent,
       vibrationPattern: [0, 120, 80, 120],
     });
     await Notifications.setNotificationChannelAsync(KANAAL_PRESTATIE, {
-      name: 'Milestones',
+      name: kanaalNamen().prestatie,
       importance: Notifications.AndroidImportance.DEFAULT,
       lightColor: Colors.light.accent,
       vibrationPattern: [0, 80, 60, 160],
     });
     await Notifications.setNotificationChannelAsync(KANAAL_TERUGKEER, {
-      name: 'Reading suggestions',
+      name: kanaalNamen().terugkeer,
       // Bewust LOW: dit is de enige categorie die de lezer niet zelf heeft aangevraagd, dus hij
       // komt binnen zonder geluid. Wie hem toch te veel vindt zet het kanaal uit; wie hem waardeert
       // merkt het verschil niet.

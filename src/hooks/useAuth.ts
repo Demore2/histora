@@ -1,6 +1,7 @@
-import type { Session, User } from '@supabase/supabase-js';
+import type { AuthError, Session, User } from '@supabase/supabase-js';
 import { useEffect } from 'react';
 
+import { getVertalingen, type Vertalingen } from '@/i18n';
 import { googleLogin } from '@/lib/google-login';
 import { supabase } from '@/lib/supabase';
 import { useAuthStore, type Profiel } from '@/store/auth-store';
@@ -8,7 +9,35 @@ import { useCharacterUnlockStore } from '@/store/character-unlock-store';
 import { bereidToestelVoorGebruiker } from '@/store/lokale-gegevens';
 import { useOnboardingStore } from '@/store/onboarding-store';
 import { useStoryProgressStore } from '@/store/story-progress-store';
+import { useTaalStore } from '@/store/taal-store';
 import { useVoortgangStore } from '@/store/voortgang-store';
+
+type AuthFouten = Vertalingen['auth']['fouten'];
+
+/**
+ * Een Supabase-fout als zin in de taal van de lezer. `error.message` is altijd Engels en stond zo
+ * op het scherm; de `code` is stabiel, dus daarop wordt vertaald. Een onbekende code krijgt de
+ * algemene zin van de actie (`terugval`) in plaats van de Engelse servertekst.
+ */
+function authFoutTekst(error: AuthError | null, terugval: keyof AuthFouten): string {
+  const fouten = getVertalingen(useTaalStore.getState().taal).auth.fouten;
+  switch (error?.code) {
+    case 'invalid_credentials':
+      return fouten.ongeldigeInlog;
+    case 'email_not_confirmed':
+      return fouten.emailNietBevestigd;
+    case 'over_request_rate_limit':
+    case 'over_email_send_rate_limit':
+      return fouten.teVaak;
+    case 'weak_password':
+      return fouten.zwakWachtwoord;
+    case 'email_address_invalid':
+    case 'validation_failed':
+      return fouten.ongeldigeEmail;
+  }
+  if (error?.name === 'AuthRetryableFetchError') return fouten.netwerk;
+  return fouten[terugval];
+}
 
 /**
  * Auth-acties voor R8.AUTH deel 1.
@@ -55,7 +84,7 @@ export async function login(email: string, password: string): Promise<AuthResult
   });
 
   if (error || !data.user) {
-    const bericht = error?.message ?? 'Inloggen mislukt.';
+    const bericht = authFoutTekst(error, 'inloggenMislukt');
     store.setError(bericht);
     return { ok: false, error: bericht };
   }
@@ -85,7 +114,7 @@ export async function signup(
   });
 
   if (error || !data.user) {
-    const bericht = error?.message ?? 'Registreren mislukt.';
+    const bericht = authFoutTekst(error, 'registrerenMislukt');
     store.setError(bericht);
     return { ok: false, error: bericht };
   }
@@ -253,7 +282,7 @@ export async function koppelEmail(email: string, password: string, username: str
   const { data, error } = await supabase.auth.updateUser({ email: schoon, password, data: { username } });
   if (error || !data.user) {
     const bestaatAl = error?.code === 'email_exists' || error?.code === 'user_already_exists';
-    return { ok: false, error: error?.message ?? 'Koppelen mislukt.', bestaatAl };
+    return { ok: false, error: authFoutTekst(error, 'koppelenMislukt'), bestaatAl };
   }
   if (isGast(data.user)) {
     useAuthStore.getState().setUser(data.user, null);
