@@ -1176,6 +1176,17 @@ Two independent translation concerns, both from `useVertaling()`:
   picks its own word order: `t(s => s.verhaal.minLeestijd)(n)`.
 - **Content fields** (`VertaaldVeld`) resolve with `v(veld)`.
 
+**The whole UI follows the chosen language — no exceptions** (owner, 2026-10-28). Until then the tab
+names and the Home/Progress/Profile headings were English in every language on purpose; that rule is
+gone, so `tabs`, `voortgang.titel` and `profiel.titel` are translated like everything else. nl/fr/de
+should carry **every** key of `en.ts`: the `diepeMerge` fallback is a safety net, not a way to leave
+something English. Three things that used to bypass i18n now go through it: Supabase auth errors
+(`authFoutTekst` in `useAuth.ts` translates on `error.code`, never show `error.message`), the Android
+channel names (`notificatie.kanalen`, re-set on every reschedule so they follow a language switch),
+and the empty Home. **Deliberately still English**: the in-app legal texts
+(`constants/juridische-teksten.ts`, one reviewed version is the one that counts — see the comment
+there) and the story text itself (`VertaaldVeld` with only `en`).
+
 Language preference is `src/store/taal-store.ts` (Zustand + AsyncStorage), seeded once from
 `expo-localization` and then sticky.
 
@@ -1582,8 +1593,6 @@ eigenaar (2026-10-26): **kroontjes en score, geen Dukaten**, en **levens** voor 
   Een fout van de speler geeft de beurt aan de robot. Geen levens voor de robot, wél voor jou.
 - **`KroontjesBlok` op Progress** (boven "By Era") toont `kroonTotaal` per tijdperk — alle ooit
   gewonnen kroontjes, niet die van het lopende spel.
-- **De tabnamen en de koppen van Home/Progress/Profile zijn in elke taal Engels** (wens van de
-  eigenaar): nl/fr/de vertalen `tabs` en `voortgang.titel`/`profiel.titel` bewust niet.
 - Beelden: `scripts/prepare-era-heads.mjs` (koppen) en `prepare-teacher-fox.mjs` (leraar), allebei
   op `scripts/groen-scherm.mjs` (groen scherm → transparant).
 

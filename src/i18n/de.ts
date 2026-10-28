@@ -4,7 +4,14 @@ import type { Vertalingen } from './en';
 const de: DeepPartial<Vertalingen> = {
   app: {
     name: 'Histora',
-    description: 'Lernen Sie Geschichte durch interaktive Geschichten',
+    description: 'Lerne Geschichte durch interaktive Geschichten',
+  },
+  tabs: {
+    ontdek: 'Start',
+    explore: 'Entdecken',
+    voortgang: 'Fortschritt',
+    profiel: 'Profil',
+    winkel: 'Shop',
   },
   ontdek: {
     uitgelicht: 'Empfohlen',
@@ -18,6 +25,8 @@ const de: DeepPartial<Vertalingen> = {
     nieuwVerhaal: 'Neue Geschichte',
     nieuwLabel: 'Neu',
     toonAlles: 'Alle anzeigen',
+    geenVerhalenTitel: 'Noch keine Geschichten',
+    geenVerhalenTekst: 'Es sind noch keine Geschichten verfügbar.',
   },
   reis: {
     beginKop: 'Hier beginnt deine Reise',
@@ -59,11 +68,15 @@ const de: DeepPartial<Vertalingen> = {
     leegTekst: 'Nichts mehr vorzuschlagen — beende eine begonnene oder lies eine Lieblingsgeschichte erneut.',
   },
   voortgang: {
+    titel: 'Fortschritt',
     streak: (n: number) => `${n} Tag${n === 1 ? '' : 'e'} in Folge`,
     streakBeschrijving: 'Schließe jeden Tag ein Kapitel ab, um deine Serie fortzusetzen.',
     streakLeeg: 'Noch keine Serie',
     streakLeegBeschrijving: 'Schließe heute ein Kapitel ab, um zu starten.',
     verhalenGelezen: 'Gelesene Geschichten',
+    chaptersRead: 'Kapitel gelesen',
+    charactersUnlocked: 'Figuren freigeschaltet',
+    storiesCompleted: 'Geschichten beendet',
     perTijdperk: 'Nach Epoche',
     aantalVerhalen: (gelezen: number, totaal: number) => `${gelezen}/${totaal} Geschichten`,
     byEra: 'Nach Epoche',
@@ -72,7 +85,7 @@ const de: DeepPartial<Vertalingen> = {
     kroontjesTekst: (n: number): string => (n === 1 ? '1 Krone im Quiz gewonnen' : `${n} Kronen im Quiz gewonnen`),
     kroontjesLeeg: 'Gewinne Kronen im Quiz gegen Phoxy: Je zwei richtige Antworten bringen eine Kronenfrage.',
     storiesOfEra: (completed: number, total: number) => `${completed} von ${total} Geschichten`,
-    noMoreStories: 'Alle Geschichten entdeckt! Sieh sie dir alle über Mehr entdecken an.',
+    noMoreStories: 'Alle Geschichten entdeckt! Du findest sie alle unter „Mehr entdecken“.',
     statStreak: 'Serie',
     statStreakEenheid: (n: number): string => (n === 1 ? 'Tag' : 'Tage'),
     statHoofdstukken: 'Kapitel',
@@ -84,6 +97,7 @@ const de: DeepPartial<Vertalingen> = {
     eraPercentage: (procent: number): string => `${procent} %`,
   },
   profiel: {
+    titel: 'Profil',
     characterCollection: 'Figurensammlung',
     chaptersRead: (n: number) => (n === 1 ? 'Kapitel gelesen' : 'Kapitel gelesen'),
     charactersUnlocked: (n: number) => (n === 1 ? 'Figur freigeschaltet' : 'Figuren freigeschaltet'),
@@ -115,11 +129,11 @@ const de: DeepPartial<Vertalingen> = {
   },
   avatar: {
     titel: 'Dein Avatar',
-    ondertitel: 'Trage eine freigespielte Figur oder ein eigenes Bild.',
+    ondertitel: 'Trage eine freigeschaltete Figur oder ein eigenes Bild.',
     fotoKiezen: 'Foto auswählen',
     fotoUitleg: 'Bleibt auf diesem Gerät.',
     fotoMislukt: 'Dieses Bild konnte nicht geöffnet werden.',
-    personages: 'Freigespielte Figuren',
+    personages: 'Freigeschaltete Figuren',
     personagesLeeg: 'Schließe eine Geschichte ab, um hier ein Porträt tragen zu können.',
     verwijderen: 'Avatar entfernen',
     huidige: 'Aktueller Avatar',
@@ -161,6 +175,9 @@ const de: DeepPartial<Vertalingen> = {
     abonnementPro: 'Pro',
     abonnementUpgrade: 'Auf Pro upgraden',
     abonnementProVoordelen: 'Keine Unterbrechungen · Unbegrenzt lesen',
+    abonnementBeheren: 'Abo verwalten',
+    abonnementLooptAf: (datum: string): string => `Endet am ${datum} · keine Verlängerung`,
+    abonnementVerlengt: (datum: string): string => `Verlängert sich am ${datum}`,
     dagelijkseLimiet: 'Heute gelesen',
     verhalenVandaag: (gebruikt: number, limiet: number): string =>
       `${gebruikt}/${limiet} Geschichten heute`,
@@ -185,7 +202,7 @@ const de: DeepPartial<Vertalingen> = {
     emailUitleg:
       'Histora verschickt noch keine E-Mails. Jede E-Mail, die wir senden, trägt unten einen Abmeldelink, und der gilt endgültig.',
     emailNieuwsbrief: 'Monatsbrief',
-    emailNieuwsbriefUitleg: 'Eine E-Mail im Monat, über unsere eigene Lektüre.',
+    emailNieuwsbriefUitleg: 'Eine E-Mail im Monat, mit dem, was wir gerade lesen.',
     emailNieuweVerhalen: 'Neue Geschichten',
     emailNieuweVerhalenUitleg: 'Eine Nachricht, wenn eine Geschichte oder Epoche dazukommt.',
     emailTips: 'Lesetipps',
@@ -200,7 +217,7 @@ const de: DeepPartial<Vertalingen> = {
     advertentieKeuzes: 'Werbeeinstellungen',
     advertentieKeuzesUitleg: 'Ändere, wozu du bei Werbung zugestimmt hast.',
     analyticsVoet:
-      'Histora zählt Bildschirme, abgeschlossene Kapitel und Tipps auf Schaltflächen, dazu Gerätetyp und Land — nie, was du selbst schreibst. Es ist mit deinem Konto verknüpft und läuft über Google Firebase; um zu widersprechen oder es löschen zu lassen, schreib uns oder lösche unten dein Konto.',
+      'Histora zählt Bildschirme, abgeschlossene Kapitel und Klicks auf Schaltflächen, dazu Gerätetyp und Land — nie, was du selbst schreibst. Es ist mit deinem Konto verknüpft und läuft über Google Firebase; um zu widersprechen oder es löschen zu lassen, schreib uns oder lösche unten dein Konto.',
 
     sectiePush: 'Push-Benachrichtigungen',
     pushVoet:
@@ -219,7 +236,7 @@ const de: DeepPartial<Vertalingen> = {
 
     beoordeel: 'Histora bewerten',
     contact: 'Support kontaktieren',
-    contactOnderwerp: 'Histora Support',
+    contactOnderwerp: 'Histora-Support',
     voorwaarden: 'Nutzungsbedingungen',
     bekijkOnline: 'Diese Seite online ansehen',
 
@@ -251,7 +268,7 @@ const de: DeepPartial<Vertalingen> = {
 
     gegevensVerzoek: 'Meine Daten anfordern',
     gegevensVerzoekUitleg: 'Eine Kopie von allem, was zu deinem Konto gespeichert ist, per E-Mail.',
-    gegevensVerzoekOnderwerp: 'Histora Datenanfrage',
+    gegevensVerzoekOnderwerp: 'Histora-Datenanfrage',
     gegevensVerzoekBody:
       'Hallo,\n\nich hätte gern eine Kopie der Daten, die zu meinem Histora-Konto gespeichert sind.\n\nBitte sendet sie an die Adresse, von der ich schreibe.\n\nVielen Dank.',
   },
@@ -272,7 +289,7 @@ const de: DeepPartial<Vertalingen> = {
 
     // Bewusst nicht in Verwendung.
     voordeelVerhalen: 'Geschichten aus sechs Epochen',
-    voordeelPersonages: 'Jedes Charakterporträt in deiner Sammlung',
+    voordeelPersonages: 'Jedes Figurenporträt in deiner Sammlung',
     voordeelVroeg: 'Neue Geschichten zuerst, sobald sie erscheinen',
     voordeelOffline: 'Offline lesen, überall',
     voordeelGeenAds: 'Keine Werbung',
@@ -298,10 +315,35 @@ const de: DeepPartial<Vertalingen> = {
     trialFailedTekst: 'Es ist ein Fehler aufgetreten. Überprüfe deine Verbindung und versuche es erneut.',
 
     voorbehoud:
-      'Abonnements werden von Google Play verwaltet. Weitere Details finden Sie in unserer Datenschutzrichtlinie.',
+      'Abonnements werden von Google Play verwaltet. Weitere Details findest du in unserer Datenschutzerklärung.',
     nogNietTitel: 'Noch nicht verfügbar',
     nogNietTekst:
       'Abonnements kommen mit einer späteren Version von Histora. Es wurde nichts abgebucht.',
+
+    prijsPerMaand: (prijs: string) => `${prijs} / Monat`,
+    prijsPerJaar: (prijs: string) => `${prijs} / Jahr`,
+    bespaar: (procent: number) => `${procent} % sparen`,
+    perMaandJaarlijks: (prijs: string) => `${prijs} pro Monat, jährlich abgerechnet`,
+    proefDagen: (dagen: number) => `${dagen} Tage kostenlos testen`,
+    proefUitleg: (dagen: number, prijs: string) =>
+      `${dagen} Tage kostenlos, danach ${prijs}. Kündige jederzeit vor Ende der Testphase in Google Play, dann zahlst du nichts.`,
+    verlengUitleg:
+      'Dein Abo verlängert sich automatisch, bis du es in Google Play kündigst. Die Zahlung erfolgt über dein Google-Konto.',
+    plannenLaden: 'Tarife werden geladen…',
+    geenPlannen: 'Die Tarife konnten nicht geladen werden. Prüfe deine Verbindung und versuche es erneut.',
+    bezig: 'Einen Moment…',
+    herstel: 'Käufe wiederherstellen',
+    welkomTitel: 'Willkommen bei Histora Pro',
+    welkomTekst: 'Danke! Pro ist jetzt für dieses Konto aktiv.',
+    inBehandelingTitel: 'Zahlung ausstehend',
+    inBehandelingTekst:
+      'Google bearbeitet deine Zahlung noch. Pro wird aktiviert, sobald sie durch ist.',
+    misluktTitel: 'Kauf fehlgeschlagen',
+    misluktTekst: 'Es wurde nichts abgebucht. Versuche es gleich noch einmal.',
+    hersteldTitel: 'Käufe wiederhergestellt',
+    hersteldTekst: 'Dein Pro-Abo ist auf diesem Gerät wieder aktiv.',
+    nietsGevondenTitel: 'Nichts wiederherzustellen',
+    nietsGevondenTekst: 'Wir haben für dieses Google-Konto kein aktives Abo gefunden.',
   },
   limiet: {
     titel: 'Das war heute',
@@ -395,7 +437,7 @@ const de: DeepPartial<Vertalingen> = {
     geluktTekst:
       'Dein Feedback ist angekommen. Wir lesen alles, auch wenn wir nicht auf jede Nachricht antworten können.',
     misluktTitel: 'Senden fehlgeschlagen',
-    misluktTekst: 'Deine Nachricht ist noch da — prüfe deine Verbindung und versuch es erneut.',
+    misluktTekst: 'Deine Nachricht ist noch da — prüfe deine Verbindung und versuche es erneut.',
     geenSessie: 'Melde dich an, um Feedback zu senden.',
     ok: 'OK',
   },
@@ -405,13 +447,19 @@ const de: DeepPartial<Vertalingen> = {
     streakTitel: 'Deine Serie endet heute Abend',
     streakTekst: (dagen: number): string =>
       `${dagen} Tag${dagen === 1 ? '' : 'e'} in Folge. Ein Kapitel hält sie am Leben.`,
+    kanalen: {
+      dagelijks: 'Tägliche Leseerinnerung',
+      streak: 'Serien-Erinnerungen',
+      prestatie: 'Meilensteine',
+      terugkeer: 'Lesevorschläge',
+    },
   },
   prestatie: {
     sectie: 'Meilensteine',
     telling: (behaald: number, totaal: number): string => `${behaald} von ${totaal}`,
     meldingTitel: 'Meilenstein erreicht',
     nogNiet: 'Noch nicht',
-    leeg: 'Lies ein Kapitel zu Ende, dann ist der erste deiner.',
+    leeg: 'Lies ein Kapitel zu Ende, dann gehört der erste dir.',
     namen: {
       'hoofdstuk-1': 'Erste Seite',
       'hoofdstuk-10': 'Zehn Kapitel weit',
@@ -539,7 +587,7 @@ const de: DeepPartial<Vertalingen> = {
     routeVerder: (nummer: number) => `Weiter mit Kapitel ${nummer}`,
     routeKlaar: 'Du hast diese Geschichte beendet',
     terugNaarOverzicht: 'Zurück zu den Kapiteln',
-    markeerVoltooid: 'Als abgeschlossen markieren',
+    markeerVoltooid: 'Abschließen',
     volgende: 'Nächstes Kapitel',
     allesVoltooid: 'Alle Kapitel abgeschlossen',
     ontgrendelPersonage: (naam: string) => `${naam} freischalten`,
@@ -611,7 +659,7 @@ const de: DeepPartial<Vertalingen> = {
     advertentieBezig: 'Werbung wird geladen…',
     advertentieLimietTitel: 'Das war die letzte für heute',
     advertentieLimietTekst: 'Mit Werbung kannst du bis zu drei Leben pro Tag verdienen. Deine Leben kommen auch von selbst zurück.',
-    proKnop: 'Ohne Grenzen spielen mit Pro',
+    proKnop: 'Unbegrenzt spielen mit Pro',
     kroonKlaarTitel: 'Kronenfrage!',
     kroonKlaarTekst: 'Wähle eine Epoche. Antworte richtig, und ihre Krone gehört dir.',
     kroonvraagKop: (tijdperk: string): string => `Kronenfrage · ${tijdperk}`,
@@ -634,7 +682,7 @@ const de: DeepPartial<Vertalingen> = {
     verder: 'Weiter',
     overslaan: 'Überspringen',
     voortgang: (stap: number, totaal: number): string => `Schritt ${stap} von ${totaal}`,
-    phoxyHallo: 'Hallo! Ich bin Phoxy, dein Guide durch die Geschichte.',
+    phoxyHallo: 'Hallo! Ich bin Phoxy, dein Begleiter durch die Geschichte.',
     aangenaam: 'Freut mich!',
     doelVraag: 'Was führt dich zu Histora?',
     doelen: {
@@ -721,7 +769,7 @@ const de: DeepPartial<Vertalingen> = {
     plaatshouder: 'Hier stünde eine gesponserte Anzeige.',
     overslaanIn: (n: number): string => `Überspringen in ${n} s`,
     overslaan: 'Überspringen',
-    proKnop: 'Werbung entfernen mit Pro',
+    proKnop: 'Werbefrei mit Pro',
   },
   bewaren: {
     titel: 'Sichere deinen Fortschritt',
@@ -762,7 +810,7 @@ const de: DeepPartial<Vertalingen> = {
     sterkteSterk: 'Stark',
     voorwaarden: 'Ich stimme den Nutzungsbedingungen und der Datenschutzerklärung zu.',
     bevestigMail: (email: string): string =>
-      `Fast geschafft — öffne den Bestätigungslink an ${email} und melde dich dann an.`,
+      `Fast geschafft — öffne den Bestätigungslink, den wir an ${email} geschickt haben, und melde dich dann an.`,
     foutVeldenLeeg: 'E-Mail und Passwort sind erforderlich.',
     foutAlleVelden: 'Alle Felder sind erforderlich.',
     foutEmailOngeldig: 'Das sieht nicht nach einer E-Mail-Adresse aus.',
@@ -770,8 +818,8 @@ const de: DeepPartial<Vertalingen> = {
     foutVoorwaarden: 'Du musst zuerst den Nutzungsbedingungen zustimmen.',
     googleKnop: 'Weiter mit Google',
     of: 'oder',
-    googleMislukt: 'Die Anmeldung mit Google hat nicht geklappt. Versuch es noch einmal oder nutze deine E-Mail.',
-    googleGeenPlay: 'Die Anmeldung mit Google braucht die Google Play-Dienste auf diesem Gerät. Nutze deine E-Mail.',
+    googleMislukt: 'Die Anmeldung mit Google hat nicht geklappt. Versuche es erneut oder nutze deine E-Mail.',
+    googleGeenPlay: 'Die Anmeldung mit Google braucht die Google-Play-Dienste auf diesem Gerät. Nutze deine E-Mail.',
     emailBestaat: 'Mit dieser E-Mail gibt es schon ein Konto. Melde dich stattdessen an.',
     account: 'Konto',
     uitloggen: 'Abmelden',
@@ -779,6 +827,17 @@ const de: DeepPartial<Vertalingen> = {
     uitlogTekst:
       'Dein Lesefortschritt bleibt auf diesem Gerät. Zum Zugriff auf dein Konto musst du dich neu anmelden.',
     annuleren: 'Abbrechen',
+    fouten: {
+      ongeldigeInlog: 'E-Mail oder Passwort ist falsch.',
+      emailNietBevestigd: 'Bestätige zuerst deine E-Mail-Adresse und melde dich dann an.',
+      teVaak: 'Zu viele Versuche. Warte kurz und versuche es erneut.',
+      zwakWachtwoord: 'Wähle ein stärkeres Passwort.',
+      ongeldigeEmail: 'Diese E-Mail-Adresse sieht nicht richtig aus.',
+      netwerk: 'Keine Verbindung. Prüfe dein Internet und versuche es erneut.',
+      inloggenMislukt: 'Die Anmeldung hat nicht geklappt. Versuche es erneut.',
+      registrerenMislukt: 'Dein Konto konnte nicht erstellt werden. Versuche es erneut.',
+      koppelenMislukt: 'Dein Konto konnte nicht gesichert werden. Versuche es erneut.',
+    },
   },
   sync: {
     bezig: 'Wird synchronisiert…',
