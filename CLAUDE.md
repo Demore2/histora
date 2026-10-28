@@ -158,8 +158,10 @@ silhouette in, so it has to follow the icon; 1.3.1 shipped the fox with the old 
 splash `backgroundColor` stays `#F7F1E4`, because the splash PNG is transparent so the plate behind
 it matches the app's own background.
 
-**The app palette was not repainted.** `theme.ts` is still the beige/teal design system and
-`accent` is still `#3B6E7D` — the blue lives only in the mark, the icon and the feature graphic.
+**Since 2026-10-28 the app accent is Phoxy orange** (owner): `accent` is `#C9541C` light /
+`#EE7A3E` dark (was teal `#3B6E7D` / `#6FA8B8`) — one shade darker than the fur `#E4682B`, which only
+reaches 2.95:1 as text on the beige. Everything that reads `theme.accent` followed; `statHoofdstuk`
+is still the old teal.
 
 `scripts/generate-app-icon.mjs` (the Replicate prompt that produced a much older icon) is dead
 weight. Don't run it expecting the current mark.
@@ -375,8 +377,12 @@ Fase 1 van het introplan (fase 2 = anoniem account + Google-login, met een build
   `replace('/')` de race). Daarna opent `startVerhaalId`. Overgeslagen als Pro uit staat, Billing
   ontbreekt of de lezer al Pro heeft. Hergebruikt `ProWinkel` uit `pro-paywall.tsx` (bron `intro`).
 - **Negen stappen, zonder opwarmquiz** (eigenaar: de app draait om lezen). `content/opwarmvragen.ts`
-  bestaat nog maar wordt niet gebruikt. **Het eerste verhaal is altijd `rome-rise`** (`EERSTE_VERHAAL`);
-  doel, tijdperken en niveau worden alleen bewaard, voor het persoonlijke gevoel.
+  bestaat nog maar wordt niet gebruikt.
+- **De gekozen tijdperken bepalen het eerste verhaal** (`bepaalInstapVerhaal` in `queries.ts`, sinds
+  2026-10-28): het vroegste gekozen tijdperk, daarbinnen het `uitgelicht`-verhaal, anders het eerste op
+  de reis-tijdlijn (events tellen niet mee). Niets gekozen = het eerste verhaal op de reis, net als de
+  reiskaart (nu Tutankhamon). De reiskaart blijft leidend bovenaan Home. De stap
+  zegt waarom (`intro.eersteVerhaalWaarom`). Doel en niveau worden alleen bewaard.
 - **AdMob's UMP-toestemming wacht tot het Pro-scherm weg is**: `useAdvertenties` start pas als
   `afrondenOpen` onwaar is (anders twee vensters over elkaar). Geslacht/leeftijd worden bewust niet gevraagd (AVG: niet verzamelen wat je niet gebruikt).
 

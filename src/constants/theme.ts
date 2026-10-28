@@ -9,7 +9,9 @@ export const Colors = {
     background: '#F7F1E4',
     backgroundElement: '#EEE4D0',
     backgroundSelected: '#E3D6B8',
-    accent: '#3B6E7D',
+    // Phoxy-oranje als huisstijl (wens van de eigenaar, 2026-10-28; was teal #3B6E7D). Een tint
+    // donkerder dan de vacht #E4682B: die haalt als tekst op beige maar 2,95, deze 3,9 (4,4 op wit).
+    accent: '#C9541C',
     inactive: '#B7AE99',
     // Semantische kleuren (R8.AUTH deel 2): formulierfouten, wachtwoordsterkte, uitloggen.
     // Bewust gedempt — een schreeuwend #FF0000 hoort niet in dit beige palet.
@@ -32,7 +34,7 @@ export const Colors = {
     background: '#1C1A16',
     backgroundElement: '#26231D',
     backgroundSelected: '#332E24',
-    accent: '#6FA8B8',
+    accent: '#EE7A3E',
     inactive: '#54503F',
     gevaar: '#E08A80',
     waarschuwing: '#D9AE5F',

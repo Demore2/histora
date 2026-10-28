@@ -103,6 +103,51 @@ export function getTijdlijn(): Verhaal[] {
 }
 
 /**
+ * Een gebeurtenis (`soort: 'gebeurtenis'`) is sinds 2026-10-28 een los **event**: korter, geen
+ * personage, en geen halte op de routes van Explore of op de reiskaart. Events staan in een eigen
+ * sectie op Home (`EventsSectie`). Ze houden wél hun `tijdperkId`: de trivia leest het tijdperk van
+ * hun quizvragen uit `story_catalog`, en de kleur komt van het tijdperk.
+ */
+export function isEvent(verhaal: Verhaal): boolean {
+  return verhaal.soort === 'gebeurtenis';
+}
+
+/** De tijdlijn zonder events: wat de reiskaart en de routekaarten volgen. */
+export function getReisTijdlijn(): Verhaal[] {
+  return getTijdlijn().filter((verhaal) => !isEvent(verhaal));
+}
+
+/** Waarom de intro dit eerste verhaal voorstelt. */
+export type InstapReden =
+  | { soort: 'standaard' }
+  | { soort: 'tijdperk'; tijdperkId: string; aantalGekozen: number };
+
+/**
+ * Het eerste verhaal na de intro (wens van de eigenaar, 2026-10-28): de gekozen tijdperken tellen.
+ *
+ * - Niets gekozen ("Skip") → het eerste verhaal op de reis, dus hetzelfde als de reiskaart op Home
+ *   (eigenaar, 2026-10-28; was vast `rome-rise`, maar dat is nu een event).
+ * - Anders het **vroegste** gekozen tijdperk (`Tijdperk.nummer`): stabiel, en de lezer kan het
+ *   navertellen ("we beginnen bij het vroegste").
+ * - Binnen dat tijdperk het `uitgelicht`-verhaal, anders het eerste op de tijdlijn ervan — allebei
+ *   **zonder events** (`getReisTijdlijn`): een instapverhaal hoort op de reis te staan. Wie een
+ *   ander instapverhaal wil, zet `uitgelicht` in de content (nu staat er geen enkel op).
+ *
+ * Het niveau weegt bewust niet mee: één regel die de intro kan uitleggen.
+ */
+export function bepaalInstapVerhaal(tijdperkIds: readonly string[]): { verhaal: Verhaal; reden: InstapReden } {
+  const reis = getReisTijdlijn();
+  const standaard = { verhaal: reis[0] ?? getTijdlijn()[0], reden: { soort: 'standaard' } as const };
+  const nummer = (id: string) => getTijdperk(id)?.nummer ?? Number.MAX_SAFE_INTEGER;
+  const tijdperkId = [...tijdperkIds].sort((a, b) => nummer(a) - nummer(b))[0];
+  if (!tijdperkId) return standaard;
+  const uitTijdperk = reis.filter((v) => v.tijdperkId === tijdperkId);
+  const verhaal = uitTijdperk.find((v) => v.uitgelicht) ?? uitTijdperk[0];
+  if (!verhaal) return standaard;
+  return { verhaal, reden: { soort: 'tijdperk', tijdperkId, aantalGekozen: tijdperkIds.length } };
+}
+
+/**
  * Waar de lezer staat op de reis, voor de reiskaart bovenaan Home.
  *
  * - `begin`: nog nergens aan begonnen → het eerste verhaal van de tijdlijn.

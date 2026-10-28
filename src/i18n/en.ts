@@ -1007,6 +1007,10 @@ const en = {
           : `${goed} of ${totaal} right. A great start!`,
     eersteVerhaalKop: (naam: string | null): string =>
       naam ? `${naam}, your first story is ready` : 'Your first story is ready',
+    eersteVerhaalWaarom: (tijdperk: string, aantal: number): string =>
+      aantal > 1
+        ? `You picked ${aantal} eras. We start with the earliest: ${tijdperk}.`
+        : `Your pick: ${tijdperk}. This is where we start.`,
     eersteVerhaalTekst: 'Eight short chapters, each with its own scene and a question at the end.',
     meldingenTitel: 'Turn on reminders',
     meldingenOndertitel: 'A gentle nudge to read a chapter each day.',

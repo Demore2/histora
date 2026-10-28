@@ -24,7 +24,7 @@ import { ERA_KOP } from '@/constants/era-koppen';
 import { haptics } from '@/constants/haptics';
 import { MAX_LEESBREEDTE, Radii, Spacing, withAlpha } from '@/constants/theme';
 import { getActieveTijdperken, getTijdperk } from '@/constants/tijdperken';
-import { getTijdlijn } from '@/content/queries';
+import { bepaalInstapVerhaal, getTijdlijn } from '@/content/queries';
 import { biedHerinneringAan } from '@/hooks/use-dagelijkse-herinnering';
 import { useTheme } from '@/hooks/use-theme';
 import { useVertaling } from '@/hooks/use-vertaling';
@@ -61,9 +61,6 @@ const STAPPEN = [
 ] as const;
 type Stap = (typeof STAPPEN)[number];
 
-/** Het verhaal waarmee elke nieuwe lezer begint. */
-const EERSTE_VERHAAL = 'rome-rise';
-
 const DOELEN: { id: OnboardingDoel; icoon: keyof typeof Ionicons.glyphMap }[] = [
   { id: 'kennis', icoon: 'globe-outline' },
   { id: 'school', icoon: 'school-outline' },
@@ -87,7 +84,8 @@ const NIVEAUS: { id: OnboardingNiveau; icoon: keyof typeof Ionicons.glyphMap }[]
  *
  * - **naam** → vult het registratiescherm alvast in, en Phoxy begroet je ermee op Home;
  * - **avatar** → een Phoxy-kop per tijdperk (`profile-store`, soort `phoxy`);
- * - **tijdperken** en **niveau** → alleen bewaard, voor het persoonlijke gevoel (het eerste verhaal is altijd Rome);
+ * - **tijdperken** → het eerste verhaal (`bepaalInstapVerhaal`); niets gekozen is het begin van de reis;
+ * - **niveau** → alleen bewaard, voor het persoonlijke gevoel;
  * - **meldingen** → hier valt de toestemmingsvraag, met uitleg ervoor (`biedHerinneringAan`).
  *
  * Sinds 1.5.0 loopt de intro **als gast**: "Get started" maakt een anoniem account
@@ -121,10 +119,8 @@ export default function IntroScreen() {
   const volgende = () => setStap(STAPPEN[Math.min(index + 1, STAPPEN.length - 1)]);
   const vorige = () => setStap(STAPPEN[Math.max(index - 1, 0)]);
 
-  // Altijd Rome als eerste verhaal (wens van de eigenaar): het bekendste begin, los van de gekozen
-  // tijdperken. Die keuze is er voor het persoonlijke gevoel, net als het niveau.
-  const tijdlijn = getTijdlijn();
-  const startVerhaal = tijdlijn.find((verhaal) => verhaal.id === EERSTE_VERHAAL) ?? tijdlijn[0];
+  // De gekozen tijdperken bepalen het eerste verhaal (sinds 2026-10-28); niets gekozen is het begin van de reis.
+  const { verhaal: startVerhaal, reden: startReden } = bepaalInstapVerhaal(tijdperken);
   const schoneNaam = naam.trim() || null;
 
   // Een gekozen avatar uit de intro; anders standaard de Romeinse Phoxy, zodat er altijd iets staat.
@@ -282,10 +278,17 @@ export default function IntroScreen() {
       break;
     case 'eersteVerhaal': {
       const tp = getTijdperk(startVerhaal.tijdperkId);
+      const waarom =
+        startReden.soort === 'tijdperk' && tp ? t((s) => s.intro.eersteVerhaalWaarom)(v(tp.titel), startReden.aantalGekozen) : null;
       inhoud = (
         <View style={styles.vraag}>
           <View style={styles.kopTekst}>
             <ThemedText type="display">{t((s) => s.intro.eersteVerhaalKop)(schoneNaam)}</ThemedText>
+            {waarom ? (
+              <ThemedText type="body" themeColor="textSecondary">
+                {waarom}
+              </ThemedText>
+            ) : null}
           </View>
           <View style={[styles.verhaalKaart, { backgroundColor: tp?.kleur ?? theme.accent }]}>
             <Image source={startVerhaal.chapters[0]?.afbeelding ?? startVerhaal.afbeelding} style={StyleSheet.absoluteFill} contentFit="cover" />

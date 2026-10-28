@@ -671,6 +671,10 @@ const fr: DeepPartial<Vertalingen> = {
           : `${goed} sur ${totaal}. Joli début !`,
     eersteVerhaalKop: (naam: string | null): string =>
       naam ? `${naam}, votre première histoire est prête` : 'Votre première histoire est prête',
+    eersteVerhaalWaarom: (tijdperk: string, aantal: number): string =>
+      aantal > 1
+        ? `Vous avez choisi ${aantal} époques. On commence par la plus ancienne : ${tijdperk}.`
+        : `Votre choix : ${tijdperk}. C’est là qu’on commence.`,
     eersteVerhaalTekst: 'Huit courts chapitres, chacun avec sa scène et une question à la fin.',
     meldingenTitel: 'Activez les rappels',
     meldingenOndertitel: 'Un petit coup de pouce pour lire un chapitre chaque jour.',
