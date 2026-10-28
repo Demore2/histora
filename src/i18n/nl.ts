@@ -33,8 +33,9 @@ const nl: DeepPartial<Vertalingen> = {
     klaarKop: 'Reis voltooid',
     klaarTitel: 'Je bent helemaal van de farao’s tot vandaag gereisd',
     klaarTekst: 'Er komen nieuwe verhalen aan. Test tot die tijd wat je nog weet.',
-    klaarKnop: 'Speel Explore',
+    klaarKnop: 'Speel trivia',
     tijdperkGelezen: (uit: number, totaal: number) => `${uit}/${totaal} gelezen`,
+    tijdperkProcent: (procent: number) => `${procent}% gelezen`,
     routeBegin: 'Begin bij het begin',
     routeVerder: 'Ga verder op de route',
     routeKlaar: 'Je hebt dit tijdperk uitgelezen',
@@ -66,9 +67,9 @@ const nl: DeepPartial<Vertalingen> = {
     aantalVerhalen: (gelezen: number, totaal: number) => `${gelezen}/${totaal} verhalen`,
     byEra: 'Per tijdperk',
     kroontjes: 'Kroontjes',
-    kroontjesLabel: (n: number): string => `${n} kroontjes verdiend in Explore. Open Explore.`,
-    kroontjesTekst: (n: number): string => (n === 1 ? '1 kroontje verdiend in Explore' : `${n} kroontjes verdiend in Explore`),
-    kroontjesLeeg: 'Verdien kroontjes in Explore: elke drie goede antwoorden geven een kroonvraag.',
+    kroontjesLabel: (n: number): string => `${n} kroontjes verdiend in de trivia. Speel trivia.`,
+    kroontjesTekst: (n: number): string => (n === 1 ? '1 kroontje verdiend in de trivia' : `${n} kroontjes verdiend in de trivia`),
+    kroontjesLeeg: 'Verdien kroontjes in de trivia tegen Phoxy: elke twee goede antwoorden geven een kroonvraag.',
     storiesOfEra: (completed: number, total: number) => `${completed} van ${total} verhalen`,
     noMoreStories: 'Alle verhalen ontdekt! Bekijk ze allemaal via Ontdek meer.',
     statStreak: 'Streak',
@@ -365,6 +366,7 @@ const nl: DeepPartial<Vertalingen> = {
   },
   widget: {
     dagen: (n: number): string => (n === 1 ? '1 dag' : `${n} dagen`),
+    dagWoord: (n: number): string => (n === 1 ? 'dag' : 'dagen'),
     zinnen: {
       gevierd: 'Streak gered!',
       ochtend: 'Tijd voor een hoofdstuk?',
@@ -374,6 +376,24 @@ const nl: DeepPartial<Vertalingen> = {
       ijs: 'Bevroren — je streak is veilig',
       skelet: 'Je streak is weg…',
       slaap: 'Begin een nieuwe streak',
+    },
+    begroeting: {
+      gevierd: (naam: string | null): string =>
+        naam ? `Goed bezig, ${naam}! Je streak is veilig voor vandaag.` : 'Goed bezig! Je streak is veilig voor vandaag.',
+      ochtend: (naam: string | null): string =>
+        naam ? `Hee ${naam}, ben je klaar voor een geschiedenisles vandaag?` : 'Hee, ben je klaar voor een geschiedenisles vandaag?',
+      middag: (naam: string | null): string =>
+        naam ? `Hee ${naam}, heb je vijf minuten voor een hoofdstuk?` : 'Hee, heb je vijf minuten voor een hoofdstuk?',
+      avond: (naam: string | null): string =>
+        naam ? `${naam}, één hoofdstuk houdt je streak in leven!` : 'Eén hoofdstuk houdt je streak in leven!',
+      paniek: (naam: string | null): string =>
+        naam ? `Laatste kans, ${naam}! Lees een hoofdstuk voor middernacht.` : 'Laatste kans! Lees een hoofdstuk voor middernacht.',
+      ijs: (naam: string | null): string =>
+        naam ? `Pfoe, ${naam}! Een bevriezer heeft je streak gered.` : 'Pfoe! Een bevriezer heeft je streak gered.',
+      skelet: (naam: string | null): string =>
+        naam ? `Je streak is weg, ${naam}… Vandaag opnieuw beginnen?` : 'Je streak is weg… Vandaag opnieuw beginnen?',
+      slaap: (naam: string | null): string =>
+        naam ? `Hee ${naam}, zin om een nieuwe streak te beginnen?` : 'Hee, zin om een nieuwe streak te beginnen?',
     },
     toevoegen: 'Widget toevoegen',
     toevoegenUitleg: 'Je streak en de vos op je homescreen.',
@@ -578,22 +598,24 @@ const nl: DeepPartial<Vertalingen> = {
     phoxyFout: ['Bijna! Volgende keer heb je hem.', 'Goed geprobeerd. Nu weet je het!', 'Geschiedenis is lastig. Ga zo door!'],
   },
   explore: {
+    titel: 'Test je geschiedeniskennis!',
+    kaartTekst: 'Draai het wiel en neem het op tegen Phoxy.',
     modusSolo: 'Solo',
-    modusDuel: 'Tegen de robot',
+    modusDuel: 'Tegen Phoxy',
     jij: 'Jij',
-    robot: 'Robot',
+    robot: 'Phoxy',
     duelStand: (gewonnen: number, verloren: number): string => `Duels gewonnen ${gewonnen} · verloren ${verloren}`,
     duelUitleg: (n: number): string =>
-      `Speel om de beurt tegen de robot. Elke ${n} goede antwoorden geven een kroonvraag; bij een fout is de robot aan de beurt. Wie het eerst zes kroontjes heeft, wint.`,
-    naarRobot: 'Helaas. Nu is de robot aan de beurt!',
-    robotBeurtTitel: 'De robot is aan de beurt',
-    robotKijk: 'Kijk hoe de robot speelt',
+      `Speel om de beurt tegen Phoxy. Elke ${n} goede antwoorden geven een kroonvraag; bij een fout is Phoxy aan de beurt. Wie het eerst zes kroontjes heeft, wint.`,
+    naarRobot: 'Helaas. Nu is Phoxy aan de beurt!',
+    robotBeurtTitel: 'Phoxy is aan de beurt',
+    robotKijk: 'Kijk hoe Phoxy speelt',
     robotKroonvraag: (tijdperk: string): string => `Kroonvraag · ${tijdperk}`,
-    robotKroonGewonnen: (n: number): string => (n === 1 ? 'De robot won een kroontje.' : `De robot won ${n} kroontjes.`),
-    robotGeenKroon: 'Geen kroontje voor de robot deze beurt.',
+    robotKroonGewonnen: (n: number): string => (n === 1 ? 'Phoxy won een kroontje.' : `Phoxy won ${n} kroontjes.`),
+    robotGeenKroon: 'Geen kroontje voor Phoxy deze beurt.',
     jouwBeurt: 'Jouw beurt',
-    duelGewonnenTitel: 'Je hebt de robot verslagen!',
-    duelVerlorenTitel: 'De robot won deze keer',
+    duelGewonnenTitel: 'Je hebt Phoxy verslagen!',
+    duelVerlorenTitel: 'Phoxy won deze keer',
     nieuwDuel: 'Nieuw duel',
     draai: 'Draai',
     uitleg: (n: number): string =>

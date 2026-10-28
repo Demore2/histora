@@ -19,7 +19,40 @@ import { DUEL_KROON_REEKS, type Duel } from '@/store/trivia-store';
 const STAP_MS = 1100;
 
 /**
- * De beurt van de robot in een duel. **De uitkomst wordt bij de tik op "kijk mee" in één keer
+ * Het gezicht van de tegenstander (1.4.5): de zwaaiende Phoxy. Sinds de robot "VS Phoxy" is
+ * geworden heet de logica nog `robot` (store, `lib/robot.ts`), maar de lezer ziet overal de vos.
+ */
+export const PHOXY_TEGENSTANDER = require('@/assets/images/vos/zwaaiend.png');
+
+/** Waar de kop staat in `zwaaiend.png` (1024 px): een vierkant van 320 px vanaf (350, 340). */
+const KOP = { links: 350, boven: 340, zijde: 320, bron: 1024 };
+
+/**
+ * Alleen Phoxy's kop, in een rondje. Het plaatje heeft veel lege rand en de vos staat er ten voeten
+ * uit op, dus `contain` gaf een figuurtje van een paar pixels; hier wordt het vergroot en verschoven
+ * tot alleen het vierkant rond de kop in beeld is.
+ */
+export function PhoxyKop({ maat, achtergrond }: { maat: number; achtergrond: string }) {
+  const schaal = maat / KOP.zijde;
+  return (
+    <View style={{ width: maat, height: maat, borderRadius: maat / 2, overflow: 'hidden', backgroundColor: achtergrond }}>
+      <Image
+        source={PHOXY_TEGENSTANDER}
+        style={{
+          width: KOP.bron * schaal,
+          height: KOP.bron * schaal,
+          marginLeft: -KOP.links * schaal,
+          marginTop: -KOP.boven * schaal,
+        }}
+        contentFit="fill"
+        accessible={false}
+      />
+    </View>
+  );
+}
+
+/**
+ * De beurt van de tegenstander (Phoxy, tot 1.4.5 een robot) in een duel. **De uitkomst wordt bij de tik op "kijk mee" in één keer
  * uitgerekend** (`speelRobotBeurt`, zuiver) en daarna alleen stap voor stap getoond. Een
  * hertekening of een tabwissel onderweg verandert dus niets aan wat de robot deed, en de app hoeft
  * nergens een half gespeelde beurt te bewaren: pas `onKlaar` schrijft het resultaat weg.
@@ -55,9 +88,7 @@ export function RobotBeurt({ duel, onKlaar }: { duel: Duel; onKlaar: (beurt: Beu
   return (
     <View style={[styles.paneel, { backgroundColor: theme.backgroundElement }]}>
       <View style={styles.kop}>
-        <View style={[styles.robot, { backgroundColor: theme.text }]}>
-          <MaterialCommunityIcons name="robot-happy" size={26} color={theme.background} />
-        </View>
+        <PhoxyKop maat={48} achtergrond={theme.background} />
         <ThemedText type="subtitle">{t((s) => s.explore.robotBeurtTitel)}</ThemedText>
       </View>
 
@@ -115,7 +146,6 @@ export function RobotBeurt({ duel, onKlaar }: { duel: Duel; onKlaar: (beurt: Beu
 const styles = StyleSheet.create({
   paneel: { gap: Spacing.three, padding: Spacing.four, borderRadius: Radii.card },
   kop: { flexDirection: 'row', alignItems: 'center', gap: Spacing.three },
-  robot: { width: 44, height: 44, borderRadius: 22, alignItems: 'center', justifyContent: 'center' },
   stappen: { gap: Spacing.two },
   stap: { flexDirection: 'row', alignItems: 'center', gap: Spacing.three },
   stapKop: { width: 32, height: 32, borderRadius: 16 },

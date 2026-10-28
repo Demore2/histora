@@ -7,6 +7,7 @@ import {
   type ColorProp,
 } from 'react-native-android-widget';
 
+import { VLAM_BUITEN, VLAM_HART, VLAM_VIEWBOX } from '@/constants/vlam';
 import { FASE_KLEUR, type StreakFase, type StreakStand } from '@/widget/streak-fase';
 
 /**
@@ -37,12 +38,13 @@ const FASE_BEELD: Record<StreakFase, number> = {
 /**
  * Het vlammetje naast het getal. Een tekening en geen 🔥: een emoji wordt in de lettertypekleur van
  * de launcher getekend (op Samsung een ander vuurtje dan op Pixel) en leest als getypt. Wit met de
- * fasekleur als hart, zodat hij bij elke achtergrond hoort.
+ * fasekleur als hart, zodat hij bij elke achtergrond hoort. De paden staan in `constants/vlam.ts`,
+ * gedeeld met de streak-kaart in de app.
  */
 function vlam(hart: string) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-<path fill="#FFFFFF" d="M12 23c-4.4 0-8-3.1-8-7.8 0-3.2 2.1-6 4.4-8.3.4-.4 1.1-.1 1.1.5 0 1.3.8 2.6 1.9 3.1C11.1 7 12 3.9 14.2 1.6c.4-.4 1-.2 1.1.3.6 3 3.7 5.5 4.5 8.2.4 1.4.2 2.7.2 3.7 0 5.3-3.6 9.2-8 9.2z"/>
-<path fill="${hart}" d="M12 21c-2.2 0-4-1.6-4-3.9 0-1.9 1.4-3.2 2.6-4.5.3-.3.8-.1.8.3 0 .9.6 1.6 1.4 1.6.9 0 1.4-.8 1.3-1.7 0-.4.4-.6.7-.4C16 13.6 16 15.4 16 17c0 2.3-1.8 4-4 4z"/>
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${VLAM_VIEWBOX}">
+<path fill="#FFFFFF" d="${VLAM_BUITEN}"/>
+<path fill="${hart}" d="${VLAM_HART}"/>
 </svg>`;
 }
 

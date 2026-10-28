@@ -16,9 +16,9 @@ import { useTriviaStore } from '@/store/trivia-store';
 const GOUD = '#F2C230';
 
 /**
- * Op Progress, boven "By era": de kroontjes die je in Explore verdiende, per tijdperk en over alle
+ * Op Profiel (sinds 1.4.5, daarvoor op Progress): de kroontjes die je in de trivia verdiende, per tijdperk en over alle
  * spellen heen (`trivia-store.kroonTotaal`). Een tijdperk zonder kroontje staat er vaag bij, zodat
- * je ziet wat er nog te halen valt. Het hele blok is een ingang naar Explore.
+ * je ziet wat er nog te halen valt. Het hele blok is een ingang naar de trivia (`/trivia`).
  */
 export function KroontjesBlok() {
   const theme = useTheme();
@@ -34,7 +34,7 @@ export function KroontjesBlok() {
         {t((s) => s.voortgang.kroontjes)}
       </ThemedText>
       <AnimatedPressable
-        onPress={() => router.navigate('/explore')}
+        onPress={() => router.push('/trivia')}
         accessibilityRole="button"
         accessibilityLabel={t((s) => s.voortgang.kroontjesLabel)(totaal)}
         style={[styles.kaart, { backgroundColor: theme.backgroundElement }]}>

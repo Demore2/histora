@@ -13,7 +13,7 @@ import { useStoryProgressStore } from '@/store/story-progress-store';
 import { useVoortgangStore } from '@/store/voortgang-store';
 
 /**
- * Eén tijdperk op Home (1.4.2), over de volle breedte en onder elkaar — vervangt de carrousel per
+ * Eén tijdperk op Explore (sinds 1.4.5; 1.4.2-1.4.4 op Home), over de volle breedte en onder elkaar — vervangt de carrousel per
  * tijdperk (`TijdperkRij`). Tikken opent de routekaart van dat tijdperk (`tijdperk/[id]`).
  *
  * Achtergrond: de openingsscène van het eerste verhaal op de tijdlijn van dat tijdperk, onder een
@@ -52,7 +52,9 @@ export function TijdperkTegel({ tijdperk }: { tijdperk: Tijdperk }) {
             <View style={[styles.vulling, { width: `${haltes.length ? (uit / haltes.length) * 100 : 0}%` }]} />
           </View>
           <ThemedText type="caption" style={styles.wit}>
-            {t((s) => s.reis.tijdperkGelezen)(uit, haltes.length)}
+            {/* Een percentage in plaats van "4/12" (1.4.5, wens van de eigenaar): tijdperken van 12 en
+                van 3 verhalen zijn zo naast elkaar te vergelijken. */}
+            {t((s) => s.reis.tijdperkProcent)(haltes.length ? Math.round((uit / haltes.length) * 100) : 0)}
           </ThemedText>
         </View>
       </View>

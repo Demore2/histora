@@ -144,6 +144,9 @@ export default function RootLayout() {
           {/* De winkel (1.3). Een stack-scherm en geen tabblad: je komt er via het Dukaten-knopje
               rechtsboven (`KopActies`). `(tabs)/winkel.tsx` is een omleiding hierheen. */}
           <Stack.Screen name="shop" />
+          {/* De trivia tegen Phoxy (1.4.5). Was het tabblad Explore; nu alleen bereikbaar via de
+              kaart "Test your history skills!" op Home (en de kroontjes op Profiel). */}
+          <Stack.Screen name="trivia" />
           <Stack.Screen name="profiel/terms" />
           <Stack.Screen name="profiel/privacy" />
           {/* Grafsteen: het dev-dashboard is eruit gehaald. Niets linkt hierheen; de route blijft

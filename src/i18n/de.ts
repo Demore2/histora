@@ -33,8 +33,9 @@ const de: DeepPartial<Vertalingen> = {
     klaarKop: 'Reise abgeschlossen',
     klaarTitel: 'Du bist von den Pharaonen bis heute gereist',
     klaarTekst: 'Neue Geschichten sind unterwegs. Teste bis dahin, was du noch weißt.',
-    klaarKnop: 'Explore spielen',
+    klaarKnop: 'Quiz spielen',
     tijdperkGelezen: (uit: number, totaal: number) => `${uit}/${totaal} gelesen`,
+    tijdperkProcent: (procent: number) => `${procent} % gelesen`,
     routeBegin: 'Am Anfang beginnen',
     routeVerder: 'Route fortsetzen',
     routeKlaar: 'Du hast diese Epoche durchgelesen',
@@ -67,9 +68,9 @@ const de: DeepPartial<Vertalingen> = {
     aantalVerhalen: (gelezen: number, totaal: number) => `${gelezen}/${totaal} Geschichten`,
     byEra: 'Nach Epoche',
     kroontjes: 'Kronen',
-    kroontjesLabel: (n: number): string => `${n} Kronen in Explore gewonnen. Explore öffnen.`,
-    kroontjesTekst: (n: number): string => (n === 1 ? '1 Krone in Explore gewonnen' : `${n} Kronen in Explore gewonnen`),
-    kroontjesLeeg: 'Gewinne Kronen in Explore: Je drei richtige Antworten bringen eine Kronenfrage.',
+    kroontjesLabel: (n: number): string => `${n} Kronen im Quiz gewonnen. Quiz spielen.`,
+    kroontjesTekst: (n: number): string => (n === 1 ? '1 Krone im Quiz gewonnen' : `${n} Kronen im Quiz gewonnen`),
+    kroontjesLeeg: 'Gewinne Kronen im Quiz gegen Phoxy: Je zwei richtige Antworten bringen eine Kronenfrage.',
     storiesOfEra: (completed: number, total: number) => `${completed} von ${total} Geschichten`,
     noMoreStories: 'Alle Geschichten entdeckt! Sieh sie dir alle über Mehr entdecken an.',
     statStreak: 'Serie',
@@ -341,6 +342,7 @@ const de: DeepPartial<Vertalingen> = {
   },
   widget: {
     dagen: (n: number): string => (n === 1 ? '1 Tag' : `${n} Tage`),
+    dagWoord: (n: number): string => (n === 1 ? 'Tag' : 'Tage'),
     zinnen: {
       gevierd: 'Serie gerettet!',
       ochtend: 'Zeit für ein Kapitel?',
@@ -350,6 +352,24 @@ const de: DeepPartial<Vertalingen> = {
       ijs: 'Eingefroren — deine Serie ist sicher',
       skelet: 'Deine Serie ist weg…',
       slaap: 'Starte eine neue Serie',
+    },
+    begroeting: {
+      gevierd: (naam: string | null): string =>
+        naam ? `Gut gemacht, ${naam}! Deine Serie ist für heute sicher.` : 'Gut gemacht! Deine Serie ist für heute sicher.',
+      ochtend: (naam: string | null): string =>
+        naam ? `Hey ${naam}, bereit für eine Geschichtsstunde heute?` : 'Hey, bereit für eine Geschichtsstunde heute?',
+      middag: (naam: string | null): string =>
+        naam ? `Hey ${naam}, hast du fünf Minuten für ein Kapitel?` : 'Hey, hast du fünf Minuten für ein Kapitel?',
+      avond: (naam: string | null): string =>
+        naam ? `${naam}, ein Kapitel hält deine Serie am Leben!` : 'Ein Kapitel hält deine Serie am Leben!',
+      paniek: (naam: string | null): string =>
+        naam ? `Letzte Chance, ${naam}! Lies ein Kapitel vor Mitternacht.` : 'Letzte Chance! Lies ein Kapitel vor Mitternacht.',
+      ijs: (naam: string | null): string =>
+        naam ? `Puh, ${naam}! Ein Serienschutz hat deine Serie gerettet.` : 'Puh! Ein Serienschutz hat deine Serie gerettet.',
+      skelet: (naam: string | null): string =>
+        naam ? `Deine Serie ist weg, ${naam}… Heute neu anfangen?` : 'Deine Serie ist weg… Heute neu anfangen?',
+      slaap: (naam: string | null): string =>
+        naam ? `Hey ${naam}, Lust auf eine neue Serie?` : 'Hey, Lust auf eine neue Serie?',
     },
     toevoegen: 'Widget hinzufügen',
     toevoegenUitleg: 'Deine Serie und der Fuchs auf dem Startbildschirm.',
@@ -554,22 +574,24 @@ const de: DeepPartial<Vertalingen> = {
     phoxyFout: ['Knapp daneben! Nächstes Mal klappt’s.', 'Guter Versuch. Jetzt weißt du’s!', 'Geschichte ist knifflig. Bleib dran!'],
   },
   explore: {
+    titel: 'Teste dein Geschichtswissen!',
+    kaartTekst: 'Dreh das Rad und tritt gegen Phoxy an.',
     modusSolo: 'Solo',
-    modusDuel: 'Gegen den Roboter',
+    modusDuel: 'Gegen Phoxy',
     jij: 'Du',
-    robot: 'Roboter',
+    robot: 'Phoxy',
     duelStand: (gewonnen: number, verloren: number): string => `Duelle gewonnen ${gewonnen} · verloren ${verloren}`,
     duelUitleg: (n: number): string =>
-      `Spiel abwechselnd gegen den Roboter. Je ${n} richtige Antworten bringen eine Kronenfrage; bei einem Fehler ist der Roboter dran. Wer zuerst sechs Kronen hat, gewinnt.`,
-    naarRobot: 'Schade. Jetzt ist der Roboter dran!',
-    robotBeurtTitel: 'Der Roboter ist dran',
-    robotKijk: 'Dem Roboter zuschauen',
+      `Spiel abwechselnd gegen Phoxy. Je ${n} richtige Antworten bringen eine Kronenfrage; bei einem Fehler ist Phoxy dran. Wer zuerst sechs Kronen hat, gewinnt.`,
+    naarRobot: 'Schade. Jetzt ist Phoxy dran!',
+    robotBeurtTitel: 'Phoxy ist dran',
+    robotKijk: 'Phoxy zuschauen',
     robotKroonvraag: (tijdperk: string): string => `Kronenfrage · ${tijdperk}`,
-    robotKroonGewonnen: (n: number): string => (n === 1 ? 'Der Roboter hat eine Krone gewonnen.' : `Der Roboter hat ${n} Kronen gewonnen.`),
-    robotGeenKroon: 'Keine Krone für den Roboter in diesem Zug.',
+    robotKroonGewonnen: (n: number): string => (n === 1 ? 'Phoxy hat eine Krone gewonnen.' : `Phoxy hat ${n} Kronen gewonnen.`),
+    robotGeenKroon: 'Keine Krone für Phoxy in diesem Zug.',
     jouwBeurt: 'Du bist dran',
-    duelGewonnenTitel: 'Du hast den Roboter besiegt!',
-    duelVerlorenTitel: 'Diesmal hat der Roboter gewonnen',
+    duelGewonnenTitel: 'Du hast Phoxy besiegt!',
+    duelVerlorenTitel: 'Diesmal hat Phoxy gewonnen',
     nieuwDuel: 'Neues Duell',
     draai: 'Drehen',
     uitleg: (n: number): string =>

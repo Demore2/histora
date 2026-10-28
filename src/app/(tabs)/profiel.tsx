@@ -1,8 +1,10 @@
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { AchievementsGrid } from '@/components/achievements-grid';
 import { AdBanner } from '@/components/ad-banner';
 import { KopActies } from '@/components/kop-acties';
+import { KroontjesBlok } from '@/components/kroontjes-blok';
 import { ProAccessBanner } from '@/components/pro-access-banner';
 import { ProfileCharacterCollection } from '@/components/profile-character-collection';
 import { ProfileHeader } from '@/components/profile-header';
@@ -49,19 +51,20 @@ export default function ProfielScreen() {
         <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
           <ProfileHeader />
           <ProfileStats />
+          {/* De kroontjes uit de trivia direct onder de tellers (1.4.5, wens van de eigenaar). */}
+          <KroontjesBlok />
           <ProfileCharacterCollection />
           {/* Banner onder de collectie (1.4.3, wens van de eigenaar). Rendert niets voor Pro of
               zolang er geen advertentie geladen is. */}
           <View style={styles.advertentie}>
             <AdBanner />
           </View>
-          {/* Hier stond `<PrestatieRaster />`. De mijlpalen staan nu alleen nog op Voortgang
-              (`achievements-grid.tsx`), en met opzet op één plek: twee rasters van dezelfde
-              veertien badges, elk met hun eigen teller, laten je bij een verschil zoeken welke
-              van de twee liegt — en ze rekenen niet op dezelfde manier (het raster hier las
-              `prestatie-store`, het raster op Voortgang leidt de stand af uit de vier tellers en
-              loopt dus nooit achter op een verse ontgrendeling). Profiel gaat over wie je bent en
-              wie je hebt vrijgespeeld; Voortgang is de meetlat. */}
+          {/* De mijlpalen (1.4.5): verhuisd van Progress, dat geen tabblad meer is.
+              Het is `AchievementsGrid` (afgeleid uit de vier tellers, loopt nooit achter op een
+              verse ontgrendeling) en níét het oude `PrestatieRaster`, dat hier tot 1.2 stond en
+              `prestatie-store` las. Houd het bij één raster: twee rasters van dezelfde veertien
+              badges met elk hun eigen teller laten je bij een verschil zoeken welke liegt. */}
+          <AchievementsGrid />
         </ScrollView>
 
         {/* Staat buiten de ScrollView zodat hij blijft plakken. Rendert `null` zodra

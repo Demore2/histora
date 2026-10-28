@@ -60,8 +60,9 @@ const en = {
     klaarKop: 'Journey complete',
     klaarTitel: 'You travelled all the way from the pharaohs to today',
     klaarTekst: 'New stories are on their way. Until then, test what you remember.',
-    klaarKnop: 'Play Explore',
+    klaarKnop: 'Play trivia',
     tijdperkGelezen: (uit: number, totaal: number) => `${uit}/${totaal} read`,
+    tijdperkProcent: (procent: number) => `${procent}% read`,
     routeBegin: 'Start at the beginning',
     routeVerder: 'Continue the route',
     routeKlaar: 'You finished this era',
@@ -109,9 +110,9 @@ const en = {
     perTijdperk: 'By era',
     byEra: 'By Era',
     kroontjes: 'Crowns',
-    kroontjesLabel: (n: number): string => `${n} crowns won in Explore. Open Explore.`,
-    kroontjesTekst: (n: number): string => (n === 1 ? '1 crown won in Explore' : `${n} crowns won in Explore`),
-    kroontjesLeeg: 'Win crowns in Explore: every three right answers earn a crown question.',
+    kroontjesLabel: (n: number): string => `${n} crowns won in trivia. Play trivia.`,
+    kroontjesTekst: (n: number): string => (n === 1 ? '1 crown won in trivia' : `${n} crowns won in trivia`),
+    kroontjesLeeg: 'Win crowns in trivia against Phoxy: every two right answers earn a crown question.',
     aantalVerhalen: (gelezen: number, totaal: number) => `${gelezen}/${totaal} stories`,
     storiesOfEra: (completed: number, total: number) => `${completed} of ${total} stories`,
     noMoreStories: 'All stories explored! View all via Discover more.',
@@ -585,6 +586,8 @@ const en = {
   },
   widget: {
     dagen: (n: number): string => (n === 1 ? '1 day' : `${n} days`),
+    /** Alleen het woord, onder het getal op de streak-kaart (1.4.5). */
+    dagWoord: (n: number): string => (n === 1 ? 'day' : 'days'),
     zinnen: {
       gevierd: 'Streak saved!',
       ochtend: 'Time for a chapter?',
@@ -595,6 +598,28 @@ const en = {
       skelet: 'Your streak is gone…',
       slaap: 'Start a new streak',
     } satisfies Record<StreakFase, string>,
+    /**
+     * Het tekstwolkje naast Phoxy op Home (1.4.5): per fase een zin met de naam van de lezer.
+     * `naam` is `null` als er geen gebruikersnaam is; dan valt de aanspreking weg.
+     */
+    begroeting: {
+      gevierd: (naam: string | null): string =>
+        naam ? `Nice work, ${naam}! Your streak is safe for today.` : 'Nice work! Your streak is safe for today.',
+      ochtend: (naam: string | null): string =>
+        naam ? `Hey ${naam}, ready for a history lesson today?` : 'Hey, ready for a history lesson today?',
+      middag: (naam: string | null): string =>
+        naam ? `Hey ${naam}, got five minutes for a chapter?` : 'Hey, got five minutes for a chapter?',
+      avond: (naam: string | null): string =>
+        naam ? `${naam}, one chapter keeps your streak alive!` : 'One chapter keeps your streak alive!',
+      paniek: (naam: string | null): string =>
+        naam ? `Last chance, ${naam}! Read a chapter before midnight.` : 'Last chance! Read a chapter before midnight.',
+      ijs: (naam: string | null): string =>
+        naam ? `Phew, ${naam}! A freeze saved your streak.` : 'Phew! A freeze saved your streak.',
+      skelet: (naam: string | null): string =>
+        naam ? `Your streak is gone, ${naam}… Start again today?` : 'Your streak is gone… Start again today?',
+      slaap: (naam: string | null): string =>
+        naam ? `Hey ${naam}, ready to start a new streak?` : 'Hey, ready to start a new streak?',
+    } satisfies Record<StreakFase, (naam: string | null) => string>,
     /** Instellingen → Algemeen: de launcher vragen de widget toe te voegen. */
     toevoegen: 'Add the widget',
     toevoegenUitleg: 'Your streak and the fox on your home screen.',
@@ -883,22 +908,24 @@ const en = {
   },
   /** Explore: trivia met het draaiwiel (1.5). */
   explore: {
+    titel: 'Test your history skills!',
+    kaartTekst: 'Spin the wheel and take on Phoxy.',
     modusSolo: 'Solo',
-    modusDuel: 'vs Robot',
+    modusDuel: 'vs Phoxy',
     jij: 'You',
-    robot: 'Robot',
+    robot: 'Phoxy',
     duelStand: (gewonnen: number, verloren: number): string => `Duels won ${gewonnen} · lost ${verloren}`,
     duelUitleg: (n: number): string =>
-      `Take turns with the robot. Every ${n} right answers earn a crown question; a wrong answer passes the turn. First to six crowns wins.`,
-    naarRobot: "Not quite. Now it's the robot's turn!",
-    robotBeurtTitel: "The robot's turn",
-    robotKijk: 'Watch the robot play',
+      `Take turns with Phoxy. Every ${n} right answers earn a crown question; a wrong answer passes the turn. First to six crowns wins.`,
+    naarRobot: "Not quite. Now it's Phoxy's turn!",
+    robotBeurtTitel: "Phoxy's turn",
+    robotKijk: 'Watch Phoxy play',
     robotKroonvraag: (tijdperk: string): string => `Crown question · ${tijdperk}`,
-    robotKroonGewonnen: (n: number): string => (n === 1 ? 'The robot won a crown.' : `The robot won ${n} crowns.`),
-    robotGeenKroon: 'No crown for the robot this turn.',
+    robotKroonGewonnen: (n: number): string => (n === 1 ? 'Phoxy won a crown.' : `Phoxy won ${n} crowns.`),
+    robotGeenKroon: 'No crown for Phoxy this turn.',
     jouwBeurt: 'Your turn',
-    duelGewonnenTitel: 'You beat the robot!',
-    duelVerlorenTitel: 'The robot won this time',
+    duelGewonnenTitel: 'You beat Phoxy!',
+    duelVerlorenTitel: 'Phoxy won this time',
     nieuwDuel: 'New duel',
     draai: 'Spin',
     uitleg: (n: number): string =>

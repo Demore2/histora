@@ -13,6 +13,10 @@ export const DUEL_KROON_REEKS = 2;
 export const KROON_MOEILIJKHEID = 2;
 const AANTAL_TIJDPERKEN = 6;
 
+/**
+ * Sinds 1.4.5 alleen nog `'duel'` (tegen Phoxy, wens van de eigenaar). `'solo'` en de solo-velden
+ * hieronder blijven bestaan zodat een oude bewaarde stand nog te lezen is; de migratie zet de modus om.
+ */
 export type Modus = 'solo' | 'duel';
 
 export type Duel = {
@@ -77,7 +81,7 @@ function voegGezienToe(gezien: string[], id: string): string[] {
 export const useTriviaStore = create<TriviaState>()(
   persist(
     (set) => ({
-      modus: 'solo',
+      modus: 'duel',
       kroontjes: [],
       reeks: 0,
       score: 0,
@@ -158,6 +162,10 @@ export const useTriviaStore = create<TriviaState>()(
     {
       name: 'trivia-storage',
       storage: createJSONStorage(() => AsyncStorage),
+      // v1 (1.4.5): solo is weg, je speelt altijd tegen Phoxy. Een bewaarde `modus: 'solo'` zou
+      // `registreerAntwoord` anders de solo-tak laten nemen op een scherm dat alleen het duel toont.
+      version: 1,
+      migrate: (opgeslagen) => ({ ...(opgeslagen as TriviaState), modus: 'duel' }),
     }
   )
 );

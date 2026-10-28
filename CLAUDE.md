@@ -172,9 +172,18 @@ variant would come out black.
 ## Architecture
 
 Expo Router app (file-based routing under `src/app`, TypeScript, Zustand for state,
-AsyncStorage for persistence). Three bottom tabs (`src/app/(tabs)/`): index (label "Home"),
-Voortgang (Progress), Profiel (Profile). The `ontdek` and `kaart` routes are still registered in
-`(tabs)/_layout.tsx` with `href: null` so Expo Router doesn't surface them.
+AsyncStorage for persistence). **Three bottom tabs since 1.4.5** (`src/app/(tabs)/`): index
+("Home": `StreakKaart` on top — a bar in the phase colour with the widget's flame (paths shared via
+`constants/vlam.ts`), the number and the week, then Phoxy in the phase pose with a speech bubble —
+journey card, pick-up tile, the "Test your history skills!" card), explore ("Explore": **one**
+`NieuwVerhaalKaart` for the newest unread story of the week, then one `TijdperkTegel` per era
+showing a percentage) and profiel ("Profile": the crowns `KroontjesBlok` right under the counters,
+and the badges `AchievementsGrid`). **Progress is no
+longer a tab** — `(tabs)/voortgang.tsx` redirects to `/profiel`, `EraProgressBars` is orphaned.
+**The trivia is a stack screen, `src/app/trivia.tsx`**, reachable only from the Home card (and the
+crowns block); solo mode is gone, you always play **vs Phoxy** (the code still says `robot`/`duel`;
+`trivia-store` v1 migrates a stored `modus: 'solo'`). The `ontdek`, `kaart`, `winkel` and
+`voortgang` routes are still registered in `(tabs)/_layout.tsx` with `href: null`.
 
 Stack screens outside the tab group (`collectie/[id]`, `tijdperk/[id]`, `verhaal/[id]/*`,
 `profiel/settings`, `profiel/upload-avatar`) share a custom `AppHeader` (`src/app/_layout.tsx`) but
@@ -1469,7 +1478,7 @@ server komt** — de verhalen zelf zitten in de bundel en werken offline, deze n
   uitkomst, gekozen bij het antwoord en niet tijdens het renderen). De plaatjes komen uit
   `scripts/prepare-teacher-fox.mjs` (groen scherm → transparant, geschaald op sjaal-tot-benen).
 
-### Explore: trivia met het draaiwiel (`(tabs)/explore.tsx`, `lib/trivia.ts`, `trivia-store.ts`, 1.4.1)
+### Explore: trivia met het draaiwiel (sinds 1.4.5 `app/trivia.tsx`, was `(tabs)/explore.tsx`; `lib/trivia.ts`, `trivia-store.ts`, 1.4.1)
 
 Tweede tabblad. Draai het wiel (zes vakken, één per tijdperk, met Phoxy in het hoofddeksel van dat
 tijdperk), beantwoord een A/B/C/D-vraag uit dat tijdperk; drie goed op rij geeft een kroonvraag
@@ -1939,6 +1948,7 @@ delete it, and don't wire it back up without reading why it was dropped.
 | `components/hoofdstuk-tegel.tsx` | 1.4.3 — het hoofdstukkenoverzicht is een routekaart (`RoutePad`) |
 | `components/recommended-story-card.tsx` | 1.4.2 — Home toont de reiskaart (`reis-kaart.tsx`); zie de waarschuwing bij "Aanbevelingen" |
 | `components/profile-card-collection.tsx` | superseded by `profile-character-collection.tsx` (kaarten i.p.v. cirkelraster) |
+| `components/era-progress-bars.tsx` | 1.4.5 — Progress tab removed; the era tiles on Explore show the same |
 | `components/progress-stats-header.tsx` | 1.3 — Voortgang toont `streak-kaart.tsx` (de vos); de tellers staan op Profiel |
 | `verhaal/[id]/quiz.tsx`, `verhaal/[id]/chapter-quiz.tsx` | quizzes removed; now tombstone screens |
 | `profiel/analytics.tsx` | dev analytics dashboard removed; now a tombstone screen |

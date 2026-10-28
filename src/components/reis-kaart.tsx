@@ -77,7 +77,7 @@ export function ReisKaart() {
         <ThemedText type="subtitle">{t((s) => s.reis.klaarTitel)}</ThemedText>
         <ThemedText themeColor="textSecondary">{t((s) => s.reis.klaarTekst)}</ThemedText>
         <AnimatedPressable
-          onPress={() => router.push('/explore')}
+          onPress={() => router.push('/trivia')}
           style={[styles.knop, { backgroundColor: theme.accent }]}>
           <ThemedText type="smallBold" style={{ color: theme.background }}>
             {t((s) => s.reis.klaarKnop)}

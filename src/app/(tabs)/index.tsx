@@ -1,4 +1,3 @@
-import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -8,21 +7,17 @@ import { CollectieKaart } from '@/components/collectie-kaart';
 import { HorizontaleRij } from '@/components/horizontale-rij';
 import { KopActies } from '@/components/kop-acties';
 import { LegeStaat } from '@/components/lege-staat';
-import { NieuwVerhaalKaart } from '@/components/nieuw-verhaal-kaart';
 import { OppakKaart } from '@/components/oppak-kaart';
 import { ReisKaart } from '@/components/reis-kaart';
 import { SectieKop } from '@/components/sectie-kop';
+import { StreakKaart } from '@/components/streak-kaart';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { TijdperkTegel } from '@/components/tijdperk-tegel';
-import { CardDimensions, Radii, Spacing, VLAM_KLEUR } from '@/constants/theme';
-import { getActieveTijdperken } from '@/constants/tijdperken';
+import { TriviaKaart } from '@/components/trivia-kaart';
+import { CardDimensions, Spacing } from '@/constants/theme';
 import { collecties } from '@/content/collecties';
-import { bepaalOppakken, bepaalReis, getNieuweVerhalen } from '@/content/queries';
+import { bepaalOppakken, bepaalReis } from '@/content/queries';
 import { verhalen as allVerhalen } from '@/content/verhalen';
-import { useStreak } from '@/hooks/use-streak';
-import { useTheme } from '@/hooks/use-theme';
-import { useVandaag } from '@/hooks/use-vandaag';
 import { useVertaling } from '@/hooks/use-vertaling';
 import { useStoryProgressStore } from '@/store/story-progress-store';
 import { useVoortgangStore } from '@/store/voortgang-store';
@@ -31,11 +26,9 @@ const SHOW_STORYLINES = false;
 
 export default function OntdekScreen() {
   const insets = useSafeAreaInsets();
-  const theme = useTheme();
   const router = useRouter();
   const { t } = useVertaling();
   const completedStories = useVoortgangStore((state) => state.completedStories);
-  const streakDagen = useStreak();
 
   const voortgang = useStoryProgressStore((state) => state.progress);
   // De reiskaart is chronologisch; een verhaal dat je daarbuiten bent begonnen krijgt eronder een
@@ -43,13 +36,6 @@ export default function OntdekScreen() {
   const reis = bepaalReis(voortgang, completedStories);
   const reisVerhaalId = reis.soort === 'klaar' ? null : reis.verhaal.id;
   const oppakken = bepaalOppakken(voortgang, completedStories, reisVerhaalId);
-  const vandaag = useVandaag();
-  // Alleen wat deze week is toegevoegd en nog niet uit is: meestal niets, soms één kaart.
-  // Hooguit twee kaarten: komen er meerdere verhalen tegelijk bij, dan wordt Home anders een lijst.
-  // De rest is te vinden via het labeltje "New" op de tijdperktegel en de routekaart.
-  const nieuweVerhalen = getNieuweVerhalen(vandaag)
-    .filter((verhaal) => verhaal.id !== reisVerhaalId && !completedStories.has(verhaal.id))
-    .slice(0, 2);
 
   if (allVerhalen.length === 0) {
     return (
@@ -59,12 +45,6 @@ export default function OntdekScreen() {
             <View style={styles.headerRow}>
               <ThemedText type="display" numberOfLines={1} adjustsFontSizeToFit style={styles.kopTitel}>{t((s) => s.tabs.ontdek)}</ThemedText>
               <View style={styles.kopRechts}>
-                {streakDagen > 0 && (
-                  <View style={[styles.streak, { backgroundColor: theme.backgroundElement }]}>
-                    <Ionicons name="flame" size={18} color={VLAM_KLEUR} />
-                    <ThemedText type="smallBold">{streakDagen}</ThemedText>
-                  </View>
-                )}
                 <KopActies />
               </View>
             </View>
@@ -87,17 +67,14 @@ export default function OntdekScreen() {
           <View style={styles.headerRow}>
             <ThemedText type="display" numberOfLines={1} adjustsFontSizeToFit style={styles.kopTitel}>{t((s) => s.tabs.ontdek)}</ThemedText>
             <View style={styles.kopRechts}>
-              {/* Geen vlammetje met een 0 ernaast: zonder streak is er niets te tonen (B6). */}
-              {streakDagen > 0 && (
-                <View style={[styles.streak, { backgroundColor: theme.backgroundElement }]}>
-                  <Ionicons name="flame" size={18} color={VLAM_KLEUR} />
-                  <ThemedText type="smallBold">{streakDagen}</ThemedText>
-                </View>
-              )}
               {/* Saldo, feedback en instellingen: op elk hoofdscherm rechtsboven (1.3). */}
               <KopActies />
             </View>
           </View>
+
+          {/* De streak bovenaan (1.4.5, wens van de eigenaar): de vos, het getal en de week. Stond op
+              Progress, dat tabblad is opgeheven. Vervangt ook het vlammetje dat hier in de kop stond. */}
+          <StreakKaart />
 
           {/*
             De reiskaart (1.4.2) vervangt de redactionele hero en "Recommended for you": één kaart met
@@ -107,10 +84,10 @@ export default function OntdekScreen() {
 
           {oppakken ? <OppakKaart verhaal={oppakken.verhaal} afgerond={oppakken.afgerond} /> : null}
 
-          {/* "New hot topics" is weg (1.4.3): een kaart per verhaal dat deze week is toegevoegd. */}
-          {nieuweVerhalen.map((verhaal) => (
-            <NieuwVerhaalKaart key={verhaal.id} verhaal={verhaal} />
-          ))}
+          {/* De kaart "New story" staat sinds 1.4.5 op Explore, en nog maar één (wens van de eigenaar). */}
+
+          {/* De enige ingang naar de trivia tegen Phoxy (1.4.5). */}
+          <TriviaKaart />
 
           {/* De banner (v1.2) staat onder de reiskaart, de oppak-tegel en een eventuele nieuw-kaart.
               Rendert niets voor Pro of zolang er geen echte advertentie
@@ -135,10 +112,7 @@ export default function OntdekScreen() {
             </View>
           )}
 
-          {/* Eén tegel per tijdperk, onder elkaar (1.4.2): tikken opent de routekaart. */}
-          {getActieveTijdperken().map((tijdperk) => (
-            <TijdperkTegel key={tijdperk.id} tijdperk={tijdperk} />
-          ))}
+          {/* De tijdperktegels stonden hier tot 1.4.4; ze staan nu op Explore. */}
         </ScrollView>
       </SafeAreaView>
     </ThemedView>
@@ -170,14 +144,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: Spacing.two,
-  },
-  streak: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: Spacing.one,
-    paddingHorizontal: Spacing.three,
-    paddingVertical: Spacing.one,
-    borderRadius: Radii.button,
   },
   sectie: {
     gap: Spacing.three,

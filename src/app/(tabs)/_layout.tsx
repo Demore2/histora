@@ -56,20 +56,19 @@ export default function TabsLayout() {
       }}>
       <Tabs.Screen
         name="index"
-        options={{ title: t((s) => s.tabs.ontdek), tabBarIcon: tabIcon('compass', 'compass-outline') }}
+        options={{ title: t((s) => s.tabs.ontdek), tabBarIcon: tabIcon('home', 'home-outline') }}
       />
       <Tabs.Screen
         name="explore"
-        options={{ title: t((s) => s.tabs.explore), tabBarIcon: tabIcon('aperture', 'aperture-outline') }}
-      />
-      <Tabs.Screen
-        name="voortgang"
-        options={{ title: t((s) => s.tabs.voortgang), tabBarIcon: tabIcon('stats-chart', 'stats-chart-outline') }}
+        options={{ title: t((s) => s.tabs.explore), tabBarIcon: tabIcon('map', 'map-outline') }}
       />
       <Tabs.Screen
         name="profiel"
         options={{ title: t((s) => s.tabs.profiel), tabBarIcon: tabIcon('person', 'person-outline') }}
       />
+      {/* Progress is sinds 1.4.5 geen tabblad meer (wens van de eigenaar): de streak staat op Home,
+          de mijlpalen en kroontjes op Profiel. Het bestand is een omleiding naar Profiel. */}
+      <Tabs.Screen name="voortgang" options={{ href: null }} />
       {/* Oude route, vervangen door (tabs)/index.tsx. Kon niet worden verwijderd
           (Remove-Item is geblokkeerd in dit project) — href: null verbergt 'm uit de tab bar. */}
       <Tabs.Screen name="ontdek" options={{ href: null }} />
