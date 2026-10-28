@@ -30,7 +30,7 @@ import type { IoniconNaam } from '@/constants/types';
 import { useAbonnement } from '@/hooks/use-abonnement';
 import { useTheme } from '@/hooks/use-theme';
 import { useVertaling } from '@/hooks/use-vertaling';
-import { logout } from '@/hooks/useAuth';
+import { isGast, logout } from '@/hooks/useAuth';
 import { useDeleteAccount } from '@/hooks/useDeleteAccount';
 import { taalCodes, taalNamen } from '@/i18n/taal-namen';
 import { useVerhalenVandaag } from '@/store/abonnement-store';
@@ -85,6 +85,9 @@ export default function InstellingenScreen() {
 
   const user = useAuthStore((state) => state.user);
   const authProfiel = useAuthStore((state) => state.profiel);
+  // Een gastaccount (1.5.0) heeft geen e-mail en geen wachtwoord, en uitloggen zou het voorgoed
+  // onbereikbaar maken. Dus: een regel om het te bewaren, en geen e-mail-, wachtwoord- of uitlogregel.
+  const gast = isGast(user);
   const themaVoorkeur = useThemaStore((state) => state.themaVoorkeur);
   const setThemaVoorkeur = useThemaStore((state) => state.setThemaVoorkeur);
   const { isPremium } = useAbonnement();
@@ -244,22 +247,38 @@ export default function InstellingenScreen() {
       <Stack.Screen options={{ title: t((s) => s.instellingen.titel) }} />
       <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
         <SettingsSectie titel={t((s) => s.instellingen.sectieAccount)}>
-          <SettingsItem
-            icoon="mail-outline"
-            label={t((s) => s.instellingen.ingelogdAls)}
-            waarde={user?.email ?? ''}
-          />
+          {gast ? (
+            <SettingsItem
+              icoon="cloud-upload-outline"
+              label={t((s) => s.instellingen.gastAccount)}
+              uitleg={t((s) => s.instellingen.gastUitleg)}
+              onPress={() => router.push('/account-bewaren')}
+            />
+          ) : (
+            <SettingsItem
+              icoon="mail-outline"
+              label={t((s) => s.instellingen.ingelogdAls)}
+              waarde={user?.email ?? ''}
+            />
+          )}
           <SettingsItem
             icoon="person-outline"
             label={t((s) => s.instellingen.gebruikersnaam)}
-            waarde={authProfiel?.username ?? t((s) => s.instellingen.geenGebruikersnaam)}
+            // Een gast (1.5.0) heeft nog geen `profiles`-rij; zijn naam uit de intro staat in de metadata.
+            waarde={
+              authProfiel?.username ??
+              (typeof user?.user_metadata?.username === 'string' ? user.user_metadata.username : null) ??
+              t((s) => s.instellingen.geenGebruikersnaam)
+            }
           />
-          <SettingsItem
-            icoon="lock-closed-outline"
-            label={t((s) => s.instellingen.wachtwoordWijzigen)}
-            badge={binnenkortBadge}
-            onPress={() => nogNiet(t((s) => s.instellingen.wachtwoordWijzigen))}
-          />
+          {gast ? null : (
+            <SettingsItem
+              icoon="lock-closed-outline"
+              label={t((s) => s.instellingen.wachtwoordWijzigen)}
+              badge={binnenkortBadge}
+              onPress={() => nogNiet(t((s) => s.instellingen.wachtwoordWijzigen))}
+            />
+          )}
           {/* Uitnodigen staat bij "Account" en niet bij "Support": het gaat over jouw code en
               jouw beloningen, niet over hulp. Geen "Soon"-badge — de code bestaat echt en delen
               werkt; wat er nog niet is (een vriend die de code invoert) staat als zin op het
@@ -525,11 +544,13 @@ export default function InstellingenScreen() {
         </SettingsSectie>
 
         <SettingsSectie titel={t((s) => s.instellingen.sectieGevaar)}>
-          <SettingsItem
-            icoon="log-out-outline"
-            label={t((s) => s.auth.uitloggen)}
-            onPress={uitlogBezig ? undefined : bevestigUitloggen}
-          />
+          {gast ? null : (
+            <SettingsItem
+              icoon="log-out-outline"
+              label={t((s) => s.auth.uitloggen)}
+              onPress={uitlogBezig ? undefined : bevestigUitloggen}
+            />
+          )}
           <SettingsItem
             icoon="refresh-outline"
             label={t((s) => s.instellingen.voortgangWissen)}

@@ -380,6 +380,42 @@ Fase 1 van het introplan (fase 2 = anoniem account + Google-login, met een build
 - **AdMob's UMP-toestemming wacht tot het Pro-scherm weg is**: `useAdvertenties` start pas als
   `afrondenOpen` onwaar is (anders twee vensters over elkaar). Geslacht/leeftijd worden bewust niet gevraagd (AVG: niet verzamelen wat je niet gebruikt).
 
+### Gastaccounts en Google-login (1.5.0, `useAuth.ts`, `lib/google-login.ts`, `account-bewaren.tsx`)
+
+Fase 2 van het introplan. **Native** (Google Sign-In), dus versie 1.5.0 + EAS-build; een OTA bereikt 1.4.4 niet.
+
+- **"Get started" in de intro maakt een anoniem account** (`startAlsGast` → `signInAnonymously`), op de
+  achtergrond. Mislukt dat (offline, CAPTCHA), dan loopt de intro zonder sessie en eindigt hij zoals in 1.4.5.
+  `isGast(user)` = `user.is_anonymous`.
+- **De poort laat een gast op de auth-schermen staan** (de intro loopt als gast, en via "inloggen" kan hij
+  overstappen); alleen een *echt* account wordt van `login`/`signup`/`intro` weggestuurd. Een gast met
+  `gezien` onwaar buiten de intro gaat terug naar `/intro`.
+- **Bewaren = hetzelfde id.** Google: `linkIdentity({ provider: 'google', token })`; e-mail: één
+  `updateUser({ email, password, data: { username } })` (Supabase weigert een wachtwoord op een gast zonder
+  e-mail in dezelfde aanroep). Alles blijft staan, ook RevenueCat (`appUserID` = dit id). Bestaat het
+  Google-account al (`identity_already_exists`), dan wordt het gewoon inloggen met hetzelfde token.
+- **Een gast telt in `bereidToestelVoorGebruiker` als "nog niemand"** (AsyncStorage `laatste-gebruiker-gast`):
+  inloggen op een bestaand account vanuit een gast neemt de voortgang mee in plaats van te wissen. De
+  in-flight-cache sleutelt ook op `isGast`, anders blijft de gastvlag na het koppelen staan.
+- **`/account-bewaren` is bewust geen auth-route**: zo navigeert alleen het scherm zelf na het koppelen
+  (intro → `/intro-pro`, Instellingen → terug). `signup.tsx` koppelt ook als er een gast is.
+- **Instellingen voor een gast**: regel "Guest account" → `/account-bewaren`; geen e-mail-, wachtwoord- of
+  uitlogregel (uitloggen maakt een gast voorgoed onbereikbaar). AdMob-toestemming wacht tot de intro gezien is.
+- **Google**: `@react-native-google-signin/google-signin` **16.1.5**, de "Original" API (geen nonce in het
+  token, dus de nonce-controle in Supabase kan aan blijven), `webClientId` = `GOOGLE_WEB_CLIENT_ID` in
+  `app-info.ts`. **Geen config-plugin**: zonder opties eist die `google-services.json`. Na het token meteen
+  `GoogleSignin.signOut()`, zodat de volgende tik weer de accountkiezer toont. `DEVELOPER_ERROR` = de SHA-1
+  van deze build staat niet bij een Android-client (lokale debugbuilds!). Op web en in oude dev-clients
+  rendert `GoogleKnop` niets.
+- **Trechter**: `meetIntroStap()` (`lib/intro-meting.ts`) schrijft per getoonde stap een rij in
+  `public.intro_stappen` (per `installatieId` uit `onboarding-store`, insert-only, ook voor `anon`); de afloop
+  van de accountstap is stap 100–103. Het beheerbord toont hem via `beheer_intro_trechter()`.
+- **`supabase/gast-accounts-migratie.sql` moet gedraaid zijn vóór 1.5.0 live gaat**: zonder die migratie
+  post de Discord-trigger bij elke gast "nieuw account" en tellen gasten mee als lezer. Hij meldt nu bij het
+  *bewaren* (update `is_anonymous` true → false), en `beheer_statistieken`/`beheer_inzichten` slaan gasten
+  over (aparte teller `gasten`).
+- Nog niet: CAPTCHA (Turnstile) voor anonieme sign-ins; opruimen van verlaten gastaccounts.
+
 ### Voortgang sync (R8.AUTH deel 3, R8.SYNC-B)
 
 **Three stores mirror themselves into Supabase**, all following the same pattern:

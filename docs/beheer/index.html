@@ -715,6 +715,10 @@
         <div class="grafiek-kop"><h2>Totaal aantal gebruikers</h2></div>
         <div class="canvas-houder"><canvas id="grafiek-totaal" role="img" aria-label="Totaal aantal gebruikers in de tijd"></canvas></div>
       </section>
+      <section class="grafiek">
+        <div class="grafiek-kop"><h2>Intro-trechter (30 dagen)</h2></div>
+        <div id="intro-trechter"></div>
+      </section>
       <div class="grafieken">
         <section class="grafiek">
           <div class="grafiek-kop"><h2>Populairste verhalen</h2></div>
@@ -1818,6 +1822,43 @@
     staat.inzichten = inz.error ? null : inz.data;
     if (inz.error && !stil) console.warn('beheer_inzichten:', inz.error.message);
     tekenInzichten();
+    // De intro-trechter (1.5.0, `gast-accounts-migratie.sql`). Zelfde regel: ontbreekt hij, dan een zin.
+    const tr = await sb.rpc('beheer_intro_trechter', { p_dagen: 30 });
+    staat.introTrechter = tr.error ? null : tr.data;
+    tekenIntroTrechter();
+  }
+
+  const INTRO_STAP_NAAM = {
+    welkom: 'Welkom', hallo: 'Phoxy zegt hallo', doel: 'Doel', tijdperken: 'Tijdperken', niveau: 'Niveau',
+    profiel: 'Naam + avatar', eersteVerhaal: 'Eerste verhaal', meldingen: 'Meldingen', account: 'Account',
+    afloop_google: '→ bewaard met Google', afloop_email: '→ bewaard met e-mail',
+    afloop_later: '→ later (blijft gast)', afloop_inloggen: '→ ingelogd op bestaand account',
+  };
+
+  function tekenIntroTrechter() {
+    const t = staat.introTrechter;
+    const doel = $('#intro-trechter');
+    if (!t) {
+      doel.replaceChildren(el('p', { class: 'leeg-melding', tekst: 'Nog niet beschikbaar: draai supabase/gast-accounts-migratie.sql.' }));
+      return;
+    }
+    const stappen = t.stappen || [];
+    if (!stappen.length) {
+      doel.replaceChildren(el('p', { class: 'leeg-melding', tekst: 'Nog niemand heeft de intro (1.5.0) doorlopen.' }));
+      return;
+    }
+    const start = Math.max(1, ...stappen.filter((s) => s.nummer === 0).map((s) => s.installaties), stappen[0].installaties);
+    doel.replaceChildren(el('table', { class: 'lijst' },
+      el('thead', {}, el('tr', {},
+        el('th', { tekst: 'Stap' }), el('th', { class: 'getal', tekst: 'Installaties' }),
+        el('th', { class: 'getal', tekst: 'van welkom' }), el('th', { tekst: '' }))),
+      el('tbody', {}, stappen.map((s) => el('tr', {},
+        el('td', { tekst: INTRO_STAP_NAAM[s.stap] || s.stap }),
+        el('td', { class: 'getal', tekst: getalFmt.format(s.installaties) }),
+        el('td', { class: 'getal zacht', tekst: pctFmt.format(s.installaties / start) }),
+        el('td', { style: 'width:40%' },
+          el('div', { style: `height:10px;border-radius:5px;background:var(--serie-1);width:${Math.round((s.installaties / start) * 100)}%` })),
+      )))));
   }
 
   function kengetal(label, waarde, sub) {
@@ -1947,7 +1988,8 @@
       `Gemeten ${new Date(s.gemeten_op).toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`;
 
     $('#tegels').replaceChildren(
-      tegel('Gebruikers', getalFmt.format(totaal), 'accounts in totaal'),
+      tegel('Gebruikers', getalFmt.format(totaal),
+        t.gasten != null ? `accounts · plus ${getalFmt.format(t.gasten)} gast(en), ${t.gasten_30d} deze maand` : 'accounts in totaal'),
       tegel('Nieuw (30 dagen)', getalFmt.format(t.nieuw_30d), null, verschil(t.nieuw_30d, t.nieuw_30d_vorige, 'de 30 dagen ervoor')),
       tegel('Actief vandaag', getalFmt.format(t.actief_1d), 'laatste 24 uur'),
       tegel('Actief deze week', getalFmt.format(t.actief_7d), null, verschil(t.actief_7d, t.actief_7d_vorige, 'vorige week')),

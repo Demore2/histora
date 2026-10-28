@@ -24,7 +24,8 @@ export function useAdvertenties(): void {
 
   // Net uit de intro staat het Pro-aanbod (`/intro-pro`) nog open. Googles toestemmingsvenster komt
   // pas als dat weg is (wens van de eigenaar, 1.4.5): twee vensters over elkaar heen leest als een muur.
-  const introAanbodOpen = useOnboardingStore((s) => s.afrondenOpen);
+  // Sinds 1.5.0 loopt de intro zelf al met een (gast)sessie, dus ook daar nog niet: pas als hij gezien is.
+  const introAanbodOpen = useOnboardingStore((s) => s.afrondenOpen || !s.gezien);
 
   const abonnementBekend = userId !== null && abonnementVan === userId && !laden;
 

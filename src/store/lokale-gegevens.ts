@@ -18,9 +18,11 @@ import { useWinkelStore } from '@/store/winkel-store';
 
 /** Wie er op dit toestel het laatst ingelogd was (1.4.4). Overleeft uitloggen, met opzet. */
 const LAATSTE_GEBRUIKER_SLEUTEL = 'laatste-gebruiker-id';
+/** Of die laatste een gastaccount was (1.5.0): `'1'` of afwezig. */
+const LAATSTE_WAS_GAST_SLEUTEL = 'laatste-gebruiker-gast';
 
 /** Eén lopende controle tegelijk: `login()` en `onAuthStateChange` melden dezelfde sessie bijna tegelijk. */
-let lopend: { userId: string; klaar: Promise<void> } | null = null;
+let lopend: { userId: string; isGast: boolean; klaar: Promise<void> } | null = null;
 
 /**
  * Roep aan vóór elke `setUser`, dus voordat een hook of store de nieuwe gebruiker ziet (1.4.4).
@@ -34,17 +36,27 @@ let lopend: { userId: string; klaar: Promise<void> } | null = null;
  * Wacht eerst op de hydratie van alles wat gewist wordt: wissen vóór AsyncStorage is ingelezen
  * wordt meteen weer overschreven door de opgeslagen stand. Een installatie van vóór 1.4.4 kent
  * de sleutel nog niet; de eerste login daarna verenigt dus nog één keer zoals vroeger.
+ *
+ * **Een gastaccount (1.5.0, anoniem) telt als "nog niemand".** Wie als gast begint te lezen en dan
+ * inlogt op een bestaand account, neemt die voortgang mee — precies wat lezen-zonder-account
+ * vóór 1.5.0 deed. Koppelen (Google of e-mail aan de gast hangen) houdt hetzelfde id en raakt
+ * deze regel niet.
  */
-export function bereidToestelVoorGebruiker(userId: string): Promise<void> {
-  if (lopend?.userId === userId) return lopend.klaar;
+export function bereidToestelVoorGebruiker(userId: string, isGast = false): Promise<void> {
+  // Ook op `isGast`: na het koppelen is het id hetzelfde maar moet de gastvlag eraf, anders erft een
+  // volgend account op dit toestel de voortgang van dit (nu echte) account.
+  if (lopend?.userId === userId && lopend.isGast === isGast) return lopend.klaar;
   const klaar = (async () => {
     let vorige: string | null = null;
+    let vorigeWasGast = false;
     try {
-      vorige = await AsyncStorage.getItem(LAATSTE_GEBRUIKER_SLEUTEL);
+      const [[, id], [, gast]] = await AsyncStorage.multiGet([LAATSTE_GEBRUIKER_SLEUTEL, LAATSTE_WAS_GAST_SLEUTEL]);
+      vorige = id;
+      vorigeWasGast = gast === '1';
     } catch {
       // Niet te lezen: dan weten we het niet, en verenigen is het oude, veilige gedrag.
     }
-    if (vorige && vorige !== userId) {
+    if (vorige && vorige !== userId && !vorigeWasGast) {
       await Promise.all(
         [
           useVoortgangStore,
@@ -65,12 +77,15 @@ export function bereidToestelVoorGebruiker(userId: string): Promise<void> {
       wisLokaleGebruikersgegevens({ behoudAankondigingen: true });
     }
     try {
-      await AsyncStorage.setItem(LAATSTE_GEBRUIKER_SLEUTEL, userId);
+      await AsyncStorage.multiSet([
+        [LAATSTE_GEBRUIKER_SLEUTEL, userId],
+        [LAATSTE_WAS_GAST_SLEUTEL, isGast ? '1' : '0'],
+      ]);
     } catch {
       // Volgende keer opnieuw proberen.
     }
   })();
-  lopend = { userId, klaar };
+  lopend = { userId, isGast, klaar };
   return klaar;
 }
 

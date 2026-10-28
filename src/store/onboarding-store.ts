@@ -25,6 +25,12 @@ type OnboardingState = {
   naam: string;
   /** Het verhaal dat de intro als eerste voorstelde. */
   startVerhaalId: string | null;
+  /**
+   * Een willekeurig id per installatie (1.5.0), voor de trechter in `public.intro_stappen`. Niet
+   * het gebruiker-id: wie afhaakt vóórdat het gastaccount er is, telt zo ook mee.
+   */
+  installatieId: string | null;
+  geefInstallatieId: () => string;
 
   kiesDoel: (doel: OnboardingDoel) => void;
   wisselTijdperk: (id: TijdperkId) => void;
@@ -33,6 +39,8 @@ type OnboardingState = {
   rondIntroAf: (startVerhaalId: string) => void;
   slaIntroOver: () => void;
   sluitAfronding: () => void;
+  /** Draait `rondIntroAf` terug, als het account daarna toch niet tot stand kwam (Google afgebroken). */
+  heropenIntro: () => void;
 };
 
 /**
@@ -45,7 +53,7 @@ type OnboardingState = {
  */
 export const useOnboardingStore = create<OnboardingState>()(
   persist(
-    (set) => ({
+    (set, get) => ({
       gezien: false,
       afrondenOpen: false,
       doel: null,
@@ -53,6 +61,7 @@ export const useOnboardingStore = create<OnboardingState>()(
       niveau: null,
       naam: '',
       startVerhaalId: null,
+      installatieId: null,
 
       kiesDoel: (doel) => set({ doel }),
       wisselTijdperk: (id) =>
@@ -64,6 +73,14 @@ export const useOnboardingStore = create<OnboardingState>()(
       rondIntroAf: (startVerhaalId) => set({ gezien: true, afrondenOpen: true, startVerhaalId }),
       slaIntroOver: () => set({ gezien: true }),
       sluitAfronding: () => set({ afrondenOpen: false }),
+      heropenIntro: () => set({ gezien: false, afrondenOpen: false }),
+      geefInstallatieId: () => {
+        const bestaand = get().installatieId;
+        if (bestaand) return bestaand;
+        const id = maakUuid();
+        set({ installatieId: id });
+        return id;
+      },
     }),
     {
       name: 'onboarding-storage',
@@ -71,3 +88,11 @@ export const useOnboardingStore = create<OnboardingState>()(
     },
   ),
 );
+
+/** Een v4-uuid zonder native module; voor een meet-id is `Math.random` ruim voldoende. */
+function maakUuid(): string {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
+    const r = (Math.random() * 16) | 0;
+    return (c === 'x' ? r : (r & 0x3) | 0x8).toString(16);
+  });
+}

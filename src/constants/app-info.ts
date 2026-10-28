@@ -95,3 +95,14 @@ export const APP_DEEL_LINK = 'https://histora.app.link';
 
 /** `false` zolang `APP_DEEL_LINK` nog de placeholder van hierboven is. */
 export const appLinkIsIngesteld = !APP_DEEL_LINK.includes('histora.app.link');
+
+/**
+ * De **Web**-client-ID uit Google Cloud (project `histora-512118`), voor "Continue with Google"
+ * (1.5.0). Geen geheim: hij staat in elk ID-token dat Google uitgeeft. Het is bewust de Web-client
+ * en niet een van de twee Android-clients: Supabase controleert het `aud` van het token tegen de
+ * client-ID die in zijn Google-provider staat, en dat is deze. De Android-clients (SHA-1 van de
+ * upload- én de app-signing-sleutel) moeten wél bestaan — zonder geeft Google `DEVELOPER_ERROR` —
+ * maar worden nergens in de code genoemd. Het geheim staat alleen in Supabase.
+ */
+export const GOOGLE_WEB_CLIENT_ID =
+  '1059277823164-esp87ev2cg17rtda2h2u7etgb398csik.apps.googleusercontent.com';

@@ -7,6 +7,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
 import { AuthKnop } from '@/components/auth-knop';
 import { AuthVeld } from '@/components/auth-veld';
+import { GoogleKnop, OfScheiding } from '@/components/google-knop';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import {
@@ -20,8 +21,9 @@ import type { ThemeColor } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 import { useVertaling } from '@/hooks/use-vertaling';
 import { logRegistreren } from '@/hooks/useAnalytics';
-import { signup } from '@/hooks/useAuth';
+import { isGast, koppelEmail, signup } from '@/hooks/useAuth';
 import type { Vertalingen } from '@/i18n';
+import { useAuthStore } from '@/store/auth-store';
 import { useOnboardingStore } from '@/store/onboarding-store';
 
 /** De meter leent de semantische kleuren uit `theme.ts`; hier staat alleen de koppeling. */
@@ -73,11 +75,15 @@ export default function SignupScreen() {
     setFout(null);
     setMelding(null);
     setBezig(true);
-    const resultaat = await signup(email, wachtwoord, gebruikersnaam.trim());
+    // Een gast (1.5.0) die via "Sign up" hier komt: koppelen in plaats van een tweede account
+    // maken, anders blijft zijn voortgang achter op een gast die niemand meer kan openen.
+    const resultaat = isGast(useAuthStore.getState().user)
+      ? await koppelEmail(email, wachtwoord, gebruikersnaam.trim())
+      : await signup(email, wachtwoord, gebruikersnaam.trim());
     setBezig(false);
 
     if (!resultaat.ok) {
-      setFout(resultaat.error);
+      setFout('bestaatAl' in resultaat && resultaat.bestaatAl ? t((s) => s.auth.emailBestaat) : resultaat.error);
       return;
     }
     // Ook wanneer de bevestigingsmail nog moet worden geopend: het account bestáát op dit moment
@@ -139,6 +145,13 @@ export default function SignupScreen() {
                 </ThemedText>
               </View>
             )}
+
+            <GoogleKnop
+              onGelukt={() => router.replace(useOnboardingStore.getState().afrondenOpen ? '/intro-pro' : '/')}
+              onFout={setFout}
+              onBezig={setBezig}
+            />
+            <OfScheiding />
 
             <AuthVeld
               label={t((s) => s.auth.gebruikersnaam)}

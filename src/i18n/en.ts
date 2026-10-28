@@ -209,6 +209,8 @@ const en = {
     altijdAan: 'Always on',
 
     ingelogdAls: 'Signed in as',
+    gastAccount: 'Guest account',
+    gastUitleg: 'Save your progress so you don\'t lose it when you change phones.',
     gebruikersnaam: 'Username',
     geenGebruikersnaam: 'Not set',
     wachtwoordWijzigen: 'Change password',
@@ -1018,6 +1020,8 @@ const en = {
     later: 'Later',
     accountPhoxy: 'Last step: create your account so your progress is safe on every device.',
     accountKnop: 'Create my account',
+    accountPhoxyGast: 'Last step: save your progress so it\'s safe on every device. Or do it later — you can start reading right away.',
+    accountEmail: 'Use my email',
     proTitel: 'Unlock all of Histora',
     proOndertitel: 'Read without limits and support Histora.',
     gratis: 'Free',
@@ -1054,6 +1058,13 @@ const en = {
     proKnop: 'Remove ads with Pro',
   },
   /** Inloggen, registreren en uitloggen (R8.AUTH deel 2). */
+  // "Save your progress" (1.5.0, `app/account-bewaren.tsx`): een gastaccount omzetten in een echt account.
+  bewaren: {
+    titel: 'Save your progress',
+    ondertitel: 'Your stories, streak and Ducats stay exactly as they are — they just get an account to live in.',
+    knop: 'Save my progress',
+    inloggenUitleg: 'Signing in to an existing account brings what you read as a guest along.',
+  },
   auth: {
     loginTitel: 'Welcome back',
     loginOndertitel: 'Sign in to pick up where you left off.',
@@ -1095,6 +1106,12 @@ const en = {
     foutEmailOngeldig: "That doesn't look like an email address.",
     foutWachtwoordKort: 'Password must be at least 6 characters.',
     foutVoorwaarden: 'You need to agree to the Terms of Service first.',
+    // 1.5.0: inloggen met Google en een gastaccount bewaren.
+    googleKnop: 'Continue with Google',
+    of: 'or',
+    googleMislukt: 'Signing in with Google didn\'t work. Try again, or use your email.',
+    googleGeenPlay: 'Google sign-in needs Google Play services on this device. Use your email instead.',
+    emailBestaat: 'There is already an account with this email. Sign in instead.',
     account: 'Account',
     uitloggen: 'Sign out',
     uitlogTitel: 'Sign out?',

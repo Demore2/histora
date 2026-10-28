@@ -132,6 +132,9 @@ export default function RootLayout() {
           {/* De intro voor nieuwe lezers en het Pro-aanbod erna (1.4.5): volledig scherm, eigen kop. */}
           <Stack.Screen name="intro" options={{ headerShown: false }} />
           <Stack.Screen name="intro-pro" options={{ headerShown: false, gestureEnabled: false }} />
+          {/* Een gastaccount bewaren (1.5.0). Geen auth-route: de poort laat hem met rust, zodat
+              alleen het scherm zelf beslist waarheen na het koppelen. De kop zet het scherm zelf. */}
+          <Stack.Screen name="account-bewaren" />
           {/* Instellingen en de avatarkiezer horen bij de Profiel-tab, maar staan als
               stack-scherm *naast* de tabbladen — net als `verhaal/[id]`. Ze konden geen
               `(tabs)/profiel/settings.tsx` worden: dan zou `(tabs)/profiel.tsx` (dat niet
@@ -196,10 +199,20 @@ function AuthPoort() {
     if (isLoading || !navigatieKlaar || !onboardingKlaar) return;
 
     const opAuthScherm = AUTH_ROUTES.includes(segments[0] ?? '');
+    // Een gast (1.5.0, anoniem account) heeft wél een sessie maar mag op de auth-schermen blijven:
+    // de intro loopt als gast, en vanuit "inloggen" kan hij overstappen naar een bestaand account.
+    const gast = user?.is_anonymous === true;
     if (!user && !opAuthScherm) {
       router.replace(introGezien ? '/login' : '/intro');
-    } else if (user && opAuthScherm) {
+    } else if (user && !gast && opAuthScherm) {
       router.replace(afrondenOpen ? '/intro-pro' : '/');
+    } else if (gast && !introGezien && segments[0] !== 'intro') {
+      // App gesloten midden in de intro: daar verder, niet op een Home zonder naam of eerste verhaal.
+      router.replace('/intro');
+    } else if (user && afrondenOpen && !opAuthScherm && segments[0] !== 'intro-pro' && segments[0] !== 'account-bewaren') {
+      // De intro is af maar het Pro-aanbod kwam nooit in beeld (app gesloten tussen account en
+      // aanbod). Zonder dit blijft `afrondenOpen` voorgoed staan, en wachten de advertenties erop.
+      router.replace('/intro-pro');
     }
   }, [user, isLoading, navigatieKlaar, onboardingKlaar, introGezien, afrondenOpen, segments]);
 

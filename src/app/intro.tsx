@@ -17,6 +17,7 @@ import Animated, { Easing, FadeIn, useAnimatedStyle, useSharedValue, withRepeat,
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AnimatedPressable } from '@/components/animated-pressable';
+import { GoogleKnop } from '@/components/google-knop';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { ERA_KOP } from '@/constants/era-koppen';
@@ -27,7 +28,10 @@ import { getTijdlijn } from '@/content/queries';
 import { biedHerinneringAan } from '@/hooks/use-dagelijkse-herinnering';
 import { useTheme } from '@/hooks/use-theme';
 import { useVertaling } from '@/hooks/use-vertaling';
+import { isGast, startAlsGast, zetGastNaam } from '@/hooks/useAuth';
+import { INTRO_AFLOOP, meetIntroStap } from '@/lib/intro-meting';
 import type { TijdperkId } from '@/lib/trivia';
+import { useAuthStore } from '@/store/auth-store';
 import { useOnboardingStore, type OnboardingDoel, type OnboardingNiveau } from '@/store/onboarding-store';
 import { useProfileStore } from '@/store/profile-store';
 
@@ -86,13 +90,17 @@ const NIVEAUS: { id: OnboardingNiveau; icoon: keyof typeof Ionicons.glyphMap }[]
  * - **tijdperken** en **niveau** → alleen bewaard, voor het persoonlijke gevoel (het eerste verhaal is altijd Rome);
  * - **meldingen** → hier valt de toestemmingsvraag, met uitleg ervoor (`biedHerinneringAan`).
  *
- * Het account komt aan het eind (fase 2 maakt er een anoniem account met Google-login van), en ná
- * het registreren volgt eenmalig het Pro-aanbod (`intro-pro.tsx`).
+ * Sinds 1.5.0 loopt de intro **als gast**: "Get started" maakt een anoniem account
+ * (`startAlsGast`), zodat het eerste verhaal al synchroniseert. De laatste stap is dan "bewaar je
+ * voortgang" — Google, e-mail (`/account-bewaren`) of "Later" — en daarna eenmalig het Pro-aanbod
+ * (`intro-pro.tsx`). Lukt het gastaccount niet (offline), dan eindigt de stap zoals vóór 1.5.0 bij
+ * registreren of inloggen. Elke getoonde stap gaat naar `public.intro_stappen` (`meetIntroStap`).
  */
 export default function IntroScreen() {
   const theme = useTheme();
   const { t, v } = useVertaling();
   const [stap, setStap] = useState<Stap>('welkom');
+  const [googleFout, setGoogleFout] = useState<string | null>(null);
 
   const doel = useOnboardingStore((s) => s.doel);
   const tijdperken = useOnboardingStore((s) => s.tijdperken);
@@ -104,6 +112,8 @@ export default function IntroScreen() {
   const zetNaam = useOnboardingStore((s) => s.zetNaam);
   const rondIntroAf = useOnboardingStore((s) => s.rondIntroAf);
   const slaIntroOver = useOnboardingStore((s) => s.slaIntroOver);
+  const heropenIntro = useOnboardingStore((s) => s.heropenIntro);
+  const gast = useAuthStore((s) => isGast(s.user));
   const avatar = useProfileStore((s) => s.avatar);
   const kiesPhoxy = useProfileStore((s) => s.kiesPhoxy);
 
@@ -123,15 +133,25 @@ export default function IntroScreen() {
     if (stap === 'profiel' && !avatar) kiesPhoxy('oudheid');
   }, [stap, avatar, kiesPhoxy]);
 
-  function naarAccount(route: '/signup' | '/login') {
+  // De trechter: elke stap die in beeld komt, één rij (zie `lib/intro-meting.ts`).
+  useEffect(() => {
+    meetIntroStap(stap, index);
+  }, [stap, index]);
+
+  function naarAccount(route: '/signup' | '/login' | '/account-bewaren') {
     rondIntroAf(startVerhaal.id);
-    router.replace(route);
+    if (route === '/login') meetIntroStap(INTRO_AFLOOP.inloggen.stap, INTRO_AFLOOP.inloggen.nummer);
+    router.replace(route === '/account-bewaren' ? { pathname: route, params: { bron: 'intro' } } : route);
   }
 
   if (stap === 'welkom') {
     return (
       <Welkom
-        onStart={volgende}
+        onStart={() => {
+          // Op de achtergrond: de intro wacht er niet op, en mislukt het, dan loopt hij zonder sessie.
+          void startAlsGast();
+          volgende();
+        }}
         onAccount={() => {
           slaIntroOver();
           router.replace('/login');
@@ -143,6 +163,7 @@ export default function IntroScreen() {
   let inhoud: ReactNode = null;
   let knop: { tekst: string; onPress: () => void; uit?: boolean } | null = { tekst: t((s) => s.intro.verder), onPress: volgende };
   let tweede: { tekst: string; onPress: () => void } | null = null;
+  let google: ReactNode = null;
 
   switch (stap) {
     case 'hallo':
@@ -316,9 +337,35 @@ export default function IntroScreen() {
       tweede = { tekst: t((s) => s.intro.later), onPress: volgende };
       break;
     case 'account':
-      inhoud = <PhoxyZegt beeld={PHOXY.opWeg} tekst={t((s) => s.intro.accountPhoxy)} />;
-      knop = { tekst: t((s) => s.intro.accountKnop), onPress: () => naarAccount('/signup') };
-      tweede = { tekst: t((s) => s.intro.hebAccount), onPress: () => naarAccount('/login') };
+      // Als gast: bewaren (Google of e-mail) of later. Zonder sessie (gastaccount mislukt): zoals
+      // vóór 1.5.0 registreren of inloggen — Google werkt daar ook, als gewone login.
+      inhoud = <PhoxyZegt beeld={PHOXY.opWeg} tekst={t((s) => (gast ? s.intro.accountPhoxyGast : s.intro.accountPhoxy))} />;
+      google = (
+        <GoogleKnop
+          onStart={() => rondIntroAf(startVerhaal.id)}
+          onNietGelukt={heropenIntro}
+          onGelukt={() => {
+            meetIntroStap(INTRO_AFLOOP.google.stap, INTRO_AFLOOP.google.nummer);
+            router.replace('/intro-pro');
+          }}
+          onFout={setGoogleFout}
+        />
+      );
+      if (gast) {
+        knop = { tekst: t((s) => s.intro.accountEmail), onPress: () => naarAccount('/account-bewaren') };
+        tweede = {
+          tekst: t((s) => s.intro.later),
+          onPress: () => {
+            meetIntroStap(INTRO_AFLOOP.later.stap, INTRO_AFLOOP.later.nummer);
+            rondIntroAf(startVerhaal.id);
+            void zetGastNaam(naam);
+            router.replace('/intro-pro');
+          },
+        };
+      } else {
+        knop = { tekst: t((s) => s.intro.accountKnop), onPress: () => naarAccount('/signup') };
+        tweede = { tekst: t((s) => s.intro.hebAccount), onPress: () => naarAccount('/login') };
+      }
       break;
   }
 
@@ -344,6 +391,12 @@ export default function IntroScreen() {
           </ScrollView>
 
           <View style={styles.voet}>
+            {googleFout && stap === 'account' ? (
+              <ThemedText type="small" themeColor="gevaar" style={styles.midden}>
+                {googleFout}
+              </ThemedText>
+            ) : null}
+            {google}
             {knop ? (
               <AnimatedPressable
                 onPress={knop.onPress}
@@ -541,7 +594,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     paddingHorizontal: Spacing.four,
     paddingBottom: Spacing.three,
-    gap: Spacing.one,
+    gap: Spacing.two,
   },
   hoofdKnop: { alignItems: 'center', justifyContent: 'center', paddingVertical: Spacing.three + 2, borderRadius: Radii.button },
   tweedeKnop: { alignItems: 'center', paddingVertical: Spacing.three },

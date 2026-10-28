@@ -7,6 +7,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
 import { AuthKnop } from '@/components/auth-knop';
 import { AuthVeld } from '@/components/auth-veld';
+import { GoogleKnop, OfScheiding } from '@/components/google-knop';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { SUPPORT_EMAIL, supportEmailIsIngesteld } from '@/constants/app-info';
@@ -116,6 +117,13 @@ export default function LoginScreen() {
                 </ThemedText>
               </View>
             )}
+
+            <GoogleKnop
+              onGelukt={() => router.replace(useOnboardingStore.getState().afrondenOpen ? '/intro-pro' : '/')}
+              onFout={setFout}
+              onBezig={setBezig}
+            />
+            <OfScheiding />
 
             <AuthVeld
               label={t((s) => s.auth.email)}

@@ -1,10 +1,12 @@
 import type { Session, User } from '@supabase/supabase-js';
 import { useEffect } from 'react';
 
+import { googleLogin } from '@/lib/google-login';
 import { supabase } from '@/lib/supabase';
 import { useAuthStore, type Profiel } from '@/store/auth-store';
 import { useCharacterUnlockStore } from '@/store/character-unlock-store';
 import { bereidToestelVoorGebruiker } from '@/store/lokale-gegevens';
+import { useOnboardingStore } from '@/store/onboarding-store';
 import { useStoryProgressStore } from '@/store/story-progress-store';
 import { useVoortgangStore } from '@/store/voortgang-store';
 
@@ -142,6 +144,128 @@ async function maakGebruikersrijen(
   }
 }
 
+/** Een anoniem account (1.5.0): de intro start er een, tot de lezer Google of een e-mail koppelt. */
+export function isGast(user: User | null | undefined): boolean {
+  return user?.is_anonymous === true;
+}
+
+/**
+ * De naam voor een nieuwe `profiles`-rij: wat bij het registreren werd ingetikt, anders de naam uit
+ * de intro, anders wat Google meegeeft. Een Google-account heeft geen `username` in zijn metadata.
+ */
+function gebruikersnaamVoor(user: User): string | undefined {
+  const meta = user.user_metadata ?? {};
+  const kandidaten: unknown[] = [meta.username, useOnboardingStore.getState().naam, meta.full_name, meta.name];
+  for (const k of kandidaten) {
+    if (typeof k === 'string' && k.trim()) return k.trim();
+  }
+  return undefined;
+}
+
+/**
+ * Begin als gast (1.5.0): een anoniem Supabase-account, zodat de intro, het eerste verhaal en de
+ * sync meteen een `auth.uid()` hebben. Koppelen later houdt hetzelfde id, dus ook RevenueCat
+ * (`appUserID` = dit id) en alle rijen blijven van dezelfde lezer.
+ *
+ * Mislukt het (offline, of CAPTCHA staat aan in Supabase en we sturen nog geen token), dan gaat de
+ * intro gewoon verder zonder sessie en eindigt hij zoals vóór 1.5.0 bij registreren of inloggen.
+ */
+export async function startAlsGast(): Promise<boolean> {
+  if (useAuthStore.getState().user) return true;
+  const { data, error } = await supabase.auth.signInAnonymously();
+  if (error || !data.user) {
+    console.warn('[auth] als gast beginnen mislukt:', error?.message);
+    return false;
+  }
+  await bereidToestelVoorGebruiker(data.user.id, true);
+  useAuthStore.getState().setUser(data.user, null);
+  return true;
+}
+
+/**
+ * Zet de naam uit de intro op het gastaccount (`user_metadata.username`), zodat de profielkop en
+ * Phoxy's begroeting hem tonen voordat er een `profiles`-rij is. Stil bij een fout: het is een
+ * weergave, en bij het koppelen gaat dezelfde naam alsnog mee.
+ */
+export async function zetGastNaam(naam: string): Promise<void> {
+  const schoon = naam.trim();
+  if (!schoon || !isGast(useAuthStore.getState().user)) return;
+  const { data, error } = await supabase.auth.updateUser({ data: { username: schoon } });
+  if (error) {
+    console.warn('[auth] gastnaam zetten mislukt:', error.message);
+    return;
+  }
+  if (data.user) useAuthStore.getState().setUser(data.user, useAuthStore.getState().profiel);
+}
+
+export type GoogleAuthResultaat =
+  | { ok: true; nieuw: boolean }
+  | { ok: false; reden: 'afgebroken' | 'geen-play-services' | 'mislukt'; bericht?: string };
+
+/**
+ * "Continue with Google" (1.5.0), op elk scherm hetzelfde:
+ *
+ * - **Gast** → `linkIdentity` met het ID-token: hetzelfde id, de gast wordt een echt account en
+ *   houdt alles. Bestaat dat Google-account al bij ons (`identity_already_exists`), dan wordt het
+ *   gewoon inloggen op dat account; de voortgang van de gast gaat mee (zie `bereidToestelVoorGebruiker`).
+ * - **Niemand ingelogd** → `signInWithIdToken`: inloggen, of een nieuw account als het er nog niet is.
+ */
+export async function loginMetGoogle(): Promise<GoogleAuthResultaat> {
+  const token = await googleLogin.haalIdToken();
+  if (!token.ok) return token;
+
+  if (isGast(useAuthStore.getState().user)) {
+    const { data, error } = await supabase.auth.linkIdentity({ provider: 'google', token: token.idToken });
+    if (!error && data.session) {
+      await herstelSessie(data.session);
+      return { ok: true, nieuw: true };
+    }
+    if (error && error.code !== 'identity_already_exists') {
+      console.warn('[auth] Google koppelen mislukt:', error.message);
+      return { ok: false, reden: 'mislukt', bericht: error.message };
+    }
+    // Bestaat al: val door naar inloggen met hetzelfde token.
+  }
+
+  const { data, error } = await supabase.auth.signInWithIdToken({ provider: 'google', token: token.idToken });
+  if (error || !data.session) {
+    console.warn('[auth] inloggen met Google mislukt:', error?.message);
+    return { ok: false, reden: 'mislukt', bericht: error?.message };
+  }
+  // Nieuw = het account is in deze aanroep aangemaakt (geen eerdere inlog vóór deze).
+  const nieuw = Date.now() - new Date(data.user.created_at).getTime() < 60_000;
+  await herstelSessie(data.session);
+  return { ok: true, nieuw };
+}
+
+export type KoppelResultaat =
+  | { ok: true; bevestigingNodig: boolean }
+  | { ok: false; error: string; bestaatAl: boolean };
+
+/**
+ * Een e-mailadres en wachtwoord aan het gastaccount hangen (1.5.0). Eén `updateUser`: Supabase
+ * staat een wachtwoord op een gast alleen toe als er in dezelfde aanroep een e-mail meekomt. Met
+ * "Confirm email" uit (zo staat het project) is de gast daarna meteen een echt account; staat het
+ * ooit weer aan, dan blijft hij gast tot de bevestigingslink geopend is — dat meldt `bevestigingNodig`.
+ */
+export async function koppelEmail(email: string, password: string, username: string): Promise<KoppelResultaat> {
+  const schoon = email.trim();
+  const { data, error } = await supabase.auth.updateUser({ email: schoon, password, data: { username } });
+  if (error || !data.user) {
+    const bestaatAl = error?.code === 'email_exists' || error?.code === 'user_already_exists';
+    return { ok: false, error: error?.message ?? 'Koppelen mislukt.', bestaatAl };
+  }
+  if (isGast(data.user)) {
+    useAuthStore.getState().setUser(data.user, null);
+    return { ok: true, bevestigingNodig: true };
+  }
+  await maakGebruikersrijen(data.user.id, schoon, username);
+  const profiel = await haalProfiel(data.user.id);
+  await bereidToestelVoorGebruiker(data.user.id, false);
+  useAuthStore.getState().setUser(data.user, profiel);
+  return { ok: true, bevestigingNodig: false };
+}
+
 export async function logout(): Promise<void> {
   // Laatste kans om openstaande voortgang weg te schrijven: na `signOut()` is er geen token meer
   // en geeft elke upsert een 401. Mislukt hij (offline), dan blijft de vlag lokaal staan en gaat
@@ -181,18 +305,16 @@ async function herstelSessie(session: Session | null): Promise<void> {
 
   // Eerste login na een e-mailbevestiging: de signup kon de rijen nog niet schrijven omdat
   // er toen geen sessie was. Nu wel — alsnog aanmaken.
+  // Sinds 1.5.0 ook: een gast die net Google of een e-mailadres koppelde (zelfde id, nu met e-mail),
+  // en een nieuw Google-account. Een gast zelf heeft geen e-mail en dus (nog) geen `profiles`-rij.
   if (!profiel && session.user.email) {
-    await maakGebruikersrijen(
-      session.user.id,
-      session.user.email,
-      session.user.user_metadata?.username as string | undefined
-    );
+    await maakGebruikersrijen(session.user.id, session.user.email, gebruikersnaamVoor(session.user));
     profiel = await haalProfiel(session.user.id);
   }
 
   // Vóór `setUser`: zie `bereidToestelVoorGebruiker` — een ander account mag de voortgang van de
-  // vorige lezer op dit toestel niet erven.
-  await bereidToestelVoorGebruiker(session.user.id);
+  // vorige lezer op dit toestel niet erven. Een gast telt daar als "nog niemand".
+  await bereidToestelVoorGebruiker(session.user.id, isGast(session.user));
   store.setUser(session.user, profiel);
 }
 
