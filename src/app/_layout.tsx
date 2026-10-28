@@ -32,7 +32,7 @@ import { useAuthStore } from '@/store/auth-store';
 import { useOnboardingStore } from '@/store/onboarding-store';
 import { useSubscriptionStore } from '@/store/subscription-store';
 
-/** De routes die je zonder sessie mag zien. Alles daarbuiten stuurt de poort naar /login. */
+/** De routes die je zonder sessie mag zien. Alles daarbuiten stuurt de poort naar /intro. */
 // `intro` hoort erbij (1.4.5): een lezer zonder sessie mag daar zijn, en wie wél een sessie heeft
 // wordt er net zo hard weggestuurd als van `login`.
 const AUTH_ROUTES = ['login', 'signup', 'intro'];
@@ -203,7 +203,9 @@ function AuthPoort() {
     // de intro loopt als gast, en vanuit "inloggen" kan hij overstappen naar een bestaand account.
     const gast = user?.is_anonymous === true;
     if (!user && !opAuthScherm) {
-      router.replace(introGezien ? '/login' : '/intro');
+      // Altijd het welkomstscherm, ook na uitloggen (wens van de eigenaar, 2026-10-28): daar kies
+      // je zelf "Get started" of "I already have an account", in plaats van op een kaal inlogscherm.
+      router.replace('/intro');
     } else if (user && !gast && opAuthScherm) {
       router.replace(afrondenOpen ? '/intro-pro' : '/');
     } else if (gast && !introGezien && segments[0] !== 'intro') {

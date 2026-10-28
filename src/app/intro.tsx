@@ -144,6 +144,9 @@ export default function IntroScreen() {
     return (
       <Welkom
         onStart={() => {
+          // Na uitloggen staat `gezien` nog aan; opnieuw beginnen is dan een echte nieuwe intro, zodat
+          // de poort hem bij een herstart midden in de stappen ook weer hier terugzet.
+          if (useOnboardingStore.getState().gezien) heropenIntro();
           // Op de achtergrond: de intro wacht er niet op, en mislukt het, dan loopt hij zonder sessie.
           void startAlsGast();
           volgende();
