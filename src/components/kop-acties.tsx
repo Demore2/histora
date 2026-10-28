@@ -43,6 +43,8 @@ export function KopActies({ toonWinkel = true }: KopActiesProps) {
           accessibilityLabel={`${t((s) => s.winkel.titel)}, ${t((s) => s.winkel.dukaten)(saldo)}`}
           style={[styles.saldo, { backgroundColor: theme.backgroundElement }]}>
           <ThemedText type="smallBold">🪙 {saldo}</ThemedText>
+          {/* Het winkeltje maakt zichtbaar dat het saldo een knop naar de winkel is (wens van de eigenaar). */}
+          <Ionicons name="storefront-outline" size={16} color={theme.text} />
         </Pressable>
       ) : null}
       <Pressable
@@ -74,6 +76,9 @@ const styles = StyleSheet.create({
     gap: Spacing.two,
   },
   saldo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.one,
     paddingHorizontal: Spacing.three,
     paddingVertical: Spacing.one,
     borderRadius: Radii.button,
