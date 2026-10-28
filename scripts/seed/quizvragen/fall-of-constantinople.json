@@ -1,0 +1,181 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What did the Turks call the fortress Mehmed II built on the Bosphorus in 1452?",
+      "options": [
+        "The throat cutter",
+        "The eagle's nest",
+        "The iron gate",
+        "The sultan's shield"
+      ],
+      "explanation": "Boğazkesen, the \"throat cutter\", controlled the narrowest point of the strait together with an older castle opposite it, cutting Constantinople off from the Black Sea.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe noemden de Turken het fort dat Mehmed II in 1452 aan de Bosporus bouwde?",
+          "options": [
+            "De keelsnijder",
+            "Het adelaarsnest",
+            "De ijzeren poort",
+            "Het schild van de sultan"
+          ],
+          "explanation": "Boğazkesen, de \"keelsnijder\", beheerste samen met een ouder kasteel aan de overkant het smalste punt van de zeestraat en sneed Constantinopel af van de Zwarte Zee."
+        },
+        "fr": {
+          "question": "Comment les Turcs appelaient-ils la forteresse que Mehmed II fit bâtir sur le Bosphore en 1452 ?",
+          "options": [
+            "Le coupe-gorge",
+            "Le nid d'aigle",
+            "La porte de fer",
+            "Le bouclier du sultan"
+          ],
+          "explanation": "Boğazkesen, le « coupe-gorge », contrôlait avec un château plus ancien en face le point le plus étroit du détroit, coupant Constantinople de la mer Noire."
+        },
+        "de": {
+          "question": "Wie nannten die Türken die Festung, die Mehmed II. 1452 am Bosporus baute?",
+          "options": [
+            "Die Halsabschneiderin",
+            "Das Adlernest",
+            "Das eiserne Tor",
+            "Der Schild des Sultans"
+          ],
+          "explanation": "Boğazkesen, die „Halsabschneiderin“, beherrschte zusammen mit einer älteren Burg gegenüber die engste Stelle der Meerenge und schnitt Konstantinopel vom Schwarzen Meer ab."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Why did the cannon founder Orban end up working for Mehmed instead of the emperor?",
+      "options": [
+        "The pope had banned him",
+        "He was captured at sea",
+        "The emperor could not afford him",
+        "He refused to work for Christians"
+      ],
+      "explanation": "Orban first offered his services to Constantinople, but the emperor could not pay. Mehmed could, and Orban cast him a bombard about eight metres long.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom werkte de kanongieter Orban uiteindelijk voor Mehmed en niet voor de keizer?",
+          "options": [
+            "De paus had hem verboden",
+            "Hij was op zee gevangengenomen",
+            "De keizer kon hem niet betalen",
+            "Hij weigerde voor christenen te werken"
+          ],
+          "explanation": "Orban bood zijn diensten eerst aan Constantinopel aan, maar de keizer kon hem niet betalen. Mehmed wel, en Orban goot voor hem een kanon van zo'n acht meter lang."
+        },
+        "fr": {
+          "question": "Pourquoi le fondeur de canons Orban finit-il par travailler pour Mehmed plutôt que pour l'empereur ?",
+          "options": [
+            "Le pape le lui avait interdit",
+            "Il avait été capturé en mer",
+            "L'empereur ne pouvait pas le payer",
+            "Il refusait de travailler pour des chrétiens"
+          ],
+          "explanation": "Orban proposa d'abord ses services à Constantinople, mais l'empereur ne pouvait pas le payer. Mehmed le pouvait, et Orban lui fondit une bombarde d'environ huit mètres de long."
+        },
+        "de": {
+          "question": "Warum arbeitete der Kanonengießer Orban schließlich für Mehmed statt für den Kaiser?",
+          "options": [
+            "Der Papst hatte es ihm verboten",
+            "Er war auf See gefangen genommen worden",
+            "Der Kaiser konnte ihn nicht bezahlen",
+            "Er weigerte sich, für Christen zu arbeiten"
+          ],
+          "explanation": "Orban bot seine Dienste zuerst Konstantinopel an, doch der Kaiser konnte ihn nicht bezahlen. Mehmed schon, und Orban goss ihm eine etwa acht Meter lange Bombarde."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "How did the Ottoman fleet get into the Golden Horn past the great chain?",
+      "options": [
+        "They burned through the chain",
+        "They hauled the ships overland over a hill",
+        "They sailed through a secret canal",
+        "They bribed the guards on the chain"
+      ],
+      "explanation": "On 22 April 1453 some seventy ships were dragged on greased logs over the hill behind Galata and slid into the harbour, so the defenders also had to guard the sea walls.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe kwam de Ottomaanse vloot voorbij de grote ketting de Gouden Hoorn in?",
+          "options": [
+            "Ze brandden de ketting door",
+            "Ze sleepten de schepen over land, over een heuvel",
+            "Ze voeren door een geheim kanaal",
+            "Ze kochten de bewakers van de ketting om"
+          ],
+          "explanation": "Op 22 april 1453 werden zo'n zeventig schepen over ingevette boomstammen over de heuvel achter Galata gesleept en de haven in geschoven. Nu moesten de verdedigers ook de zeemuren bewaken."
+        },
+        "fr": {
+          "question": "Comment la flotte ottomane est-elle entrée dans la Corne d'Or malgré la grande chaîne ?",
+          "options": [
+            "Ils ont brûlé la chaîne",
+            "Ils ont traîné les navires par voie de terre, par-dessus une colline",
+            "Ils sont passés par un canal secret",
+            "Ils ont soudoyé les gardes de la chaîne"
+          ],
+          "explanation": "Le 22 avril 1453, quelque soixante-dix navires furent tirés sur des rondins graissés par-dessus la colline derrière Galata, puis glissés dans le port. Les défenseurs durent alors garder aussi les murailles maritimes."
+        },
+        "de": {
+          "question": "Wie gelangte die osmanische Flotte trotz der großen Kette ins Goldene Horn?",
+          "options": [
+            "Sie brannten die Kette durch",
+            "Sie zogen die Schiffe über Land, über einen Hügel",
+            "Sie fuhren durch einen geheimen Kanal",
+            "Sie bestachen die Wächter der Kette"
+          ],
+          "explanation": "Am 22. April 1453 wurden etwa siebzig Schiffe auf gefetteten Baumstämmen über den Hügel hinter Galata gezogen und in den Hafen gelassen. Nun mussten die Verteidiger auch die Seemauern bewachen."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What did Mehmed II do with Hagia Sophia after taking the city?",
+      "options": [
+        "He had it torn down",
+        "He gave it to the Venetians",
+        "He turned it into a palace",
+        "He turned it into a mosque"
+      ],
+      "explanation": "Mehmed rode into the great church on the day the city fell and had it made into a mosque. He took the title Fatih, \"the Conqueror\", and made the city his capital.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed Mehmed II met de Hagia Sophia na de verovering van de stad?",
+          "options": [
+            "Hij liet haar afbreken",
+            "Hij gaf haar aan de Venetianen",
+            "Hij maakte er een paleis van",
+            "Hij maakte er een moskee van"
+          ],
+          "explanation": "Mehmed reed op de dag van de val de grote kerk binnen en liet er een moskee van maken. Hij nam de titel Fatih aan, \"de Veroveraar\", en maakte de stad tot zijn hoofdstad."
+        },
+        "fr": {
+          "question": "Qu'a fait Mehmed II de Sainte-Sophie après avoir pris la ville ?",
+          "options": [
+            "Il l'a fait raser",
+            "Il l'a donnée aux Vénitiens",
+            "Il en a fait un palais",
+            "Il en a fait une mosquée"
+          ],
+          "explanation": "Mehmed entra dans la grande église le jour de la chute de la ville et la fit transformer en mosquée. Il prit le titre de Fatih, « le Conquérant », et fit de la ville sa capitale."
+        },
+        "de": {
+          "question": "Was machte Mehmed II. nach der Eroberung der Stadt mit der Hagia Sophia?",
+          "options": [
+            "Er ließ sie abreißen",
+            "Er gab sie den Venezianern",
+            "Er machte einen Palast daraus",
+            "Er machte eine Moschee daraus"
+          ],
+          "explanation": "Mehmed ritt am Tag des Falls in die große Kirche ein und ließ sie in eine Moschee umwandeln. Er nahm den Titel Fatih an, „der Eroberer“, und machte die Stadt zu seiner Hauptstadt."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

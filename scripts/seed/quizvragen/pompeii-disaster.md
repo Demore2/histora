@@ -1,162 +1,102 @@
-# Pompeii Disaster
+# The Destruction of Pompeii
 
-## Hoofdstuk 1 — nieuw
+## Hoofdstuk 1 — bestaand, GECORRIGEERD en vertaald
 
-**Roughly how many people lived in Pompeii before the eruption?**
+**What happened at Pompeii in 62 AD, seventeen years before the eruption?**
 
-- About 2,000
-- ✅ About 20,000
-- About 200,000
-- About a million
+- A great fire
+- ✅ A powerful earthquake
+- A slave revolt
+- A flood of the river
 
-_A prosperous trading town on the Bay of Naples, rich from wine grown on the fertile volcanic soil of the mountain that would bury it._
+_The earthquake damaged temples and houses across the bay. Pompeii was still rebuilding in 79, and nobody connected the quake with Vesuvius._
 
-**NL:** Ongeveer hoeveel mensen woonden er vóór de uitbarsting in Pompeii?
+**NL:** Wat gebeurde er in 62 n.Chr. in Pompeii, zeventien jaar voor de uitbarsting?
 
-- Zo'n 2.000
-- ✅ Zo'n 20.000
-- Zo'n 200.000
-- Zo'n miljoen
+- Een grote brand
+- ✅ Een zware aardbeving
+- Een slavenopstand
+- Een overstroming van de rivier
 
-_Een welvarende handelsstad aan de Golf van Napels, rijk geworden van wijn die groeide op de vruchtbare vulkanische grond van de berg die haar zou begraven._
+_De aardbeving beschadigde tempels en huizen rond de baai. In 79 was Pompeii nog steeds aan het herbouwen, en niemand legde het verband met de Vesuvius._
 
-## Hoofdstuk 2 — nieuw
+## Hoofdstuk 2 — bestaand, GECORRIGEERD en vertaald
 
-**What fell on Pompeii in the first hours of the eruption?**
+**Why do many historians now think Pompeii was destroyed in October rather than August?**
 
-- Rivers of lava
-- ✅ Ash and pumice
-- Boiling mud
-- Hot rain
+- Pliny's letter clearly says October
+- A coin shows the date of the eruption
+- ✅ Autumn fruits, heavy clothing and a charcoal note dated mid-October
+- Roman calendars ran two months behind
 
-_Within three hours it lay several feet deep. Lava never reached the city; the first danger was the weight of ash on the roofs and the air people had to breathe._
+_The surviving copies of Pliny's letter disagree. Pomegranates and chestnuts in the houses, lit braziers, sealed wine jars and a scribble dated 17 October all point to autumn._
 
-**NL:** Wat viel er in de eerste uren van de uitbarsting op Pompeii?
+**NL:** Waarom denken veel historici nu dat Pompeii in oktober werd verwoest en niet in augustus?
 
-- Lavastromen
-- ✅ As en puimsteen
-- Kokende modder
-- Hete regen
+- Plinius' brief noemt duidelijk oktober
+- Een munt toont de datum van de uitbarsting
+- ✅ Herfstvruchten, warme kleding en een houtskoolkrabbel van half oktober
+- De Romeinse kalender liep twee maanden achter
 
-_Binnen drie uur lag er een laag van ruim een meter. Lava bereikte de stad nooit; het eerste gevaar was het gewicht van de as op de daken en de lucht die mensen moesten inademen._
+_De bewaarde afschriften van Plinius' brief spreken elkaar tegen. Granaatappels en kastanjes in de huizen, brandende komforen, verzegelde wijnkruiken en een krabbel van 17 oktober wijzen allemaal op de herfst._
 
-## Hoofdstuk 3 — bestaand, vertaald
+## Hoofdstuk 3 — bestaand, GECORRIGEERD en vertaald
 
-**Which volcano destroyed Pompeii in AD 79?**
+**Why did Pliny the Elder sail towards the eruption instead of away from it?**
 
-- ✅ Vesuvius
-- Etna
-- Stromboli
-- Krakatoa
+- ✅ To rescue people trapped on the coast
+- To flee to Rome by sea
+- To chase pirates
+- To deliver grain to Pompeii
 
-_Vesuvius. Most Pompeians did not know it was a volcano at all — it had not erupted in living memory._
+_He first wanted to study the cloud up close. Then a woman named Rectina begged for help, and he launched the warships to rescue people. He died on the beach at Stabiae._
 
-**NL:** Welke vulkaan verwoestte Pompeii in 79 n.Chr.?
+**NL:** Waarom zeilde Plinius de Oudere naar de uitbarsting toe in plaats van ervandaan?
 
-- ✅ De Vesuvius
-- De Etna
-- De Stromboli
-- De Krakatau
+- ✅ Om mensen te redden die aan de kust vastzaten
+- Om over zee naar Rome te vluchten
+- Om piraten te achtervolgen
+- Om graan naar Pompeii te brengen
 
-_De Vesuvius. De meeste inwoners van Pompeii wisten niet eens dat het een vulkaan was – bij mensenheugenis was hij nooit uitgebarsten._
+_Eerst wilde hij de wolk van dichtbij bestuderen. Toen smeekte een vrouw die Rectina heette om hulp, en hij liet de oorlogsschepen uitvaren om mensen te redden. Hij stierf op het strand van Stabiae._
 
-## Hoofdstuk 4 — nieuw
+## Hoofdstuk 4 — bestaand, GECORRIGEERD en vertaald
 
-**What killed most of Pompeii's victims during the night?**
+**What did researchers find inside the skull of one victim at Herculaneum?**
 
-- Lava flowing into the streets
-- Collapsing city walls
-- ✅ The heat of pyroclastic surges
-- A tidal wave from the bay
+- A gold coin
+- Traces of poison
+- Pumice stones
+- ✅ Brain tissue turned to glass
 
-_Avalanches of superheated gas and rock raced down the mountain faster than anyone could run. Most victims did not suffocate; the heat killed them in moments._
+_The surge that hit Herculaneum was so hot that part of the man's brain turned into glass. Pompeii, further from the volcano, was reached by cooler but still deadly surges._
 
-**NL:** Wat doodde 's nachts de meeste slachtoffers in Pompeii?
+**NL:** Wat vonden onderzoekers in de schedel van een slachtoffer in Herculaneum?
 
-- Lava die de straten in stroomde
-- Instortende stadsmuren
-- ✅ De hitte van pyroclastische stromen
-- Een vloedgolf uit de baai
+- Een gouden munt
+- Sporen van gif
+- Puimsteentjes
+- ✅ Hersenweefsel dat in glas was veranderd
 
-_Lawines van oververhit gas en gesteente raasden sneller de berg af dan iemand kon rennen. De meeste slachtoffers stikten niet; de hitte doodde hen binnen enkele ogenblikken._
+_De gloedwolk die Herculaneum trof was zo heet dat een deel van de hersenen van de man in glas veranderde. Pompeii, verder van de vulkaan, werd getroffen door koelere maar nog steeds dodelijke gloedwolken._
 
-## Hoofdstuk 5 — nieuw
+## Hoofdstuk 5 — bestaand, GECORRIGEERD en vertaald
 
-**Why was Pompeii preserved so well?**
+**Which word did scientists read in 2023 from inside a burned scroll from Herculaneum?**
 
-- It was abandoned before the eruption
-- ✅ It was buried quickly under ash
-- Lava sealed it in rock
-- The Romans walled it off
+- Rome
+- ✅ Purple
+- Vesuvius
+- Love
 
-_Some six metres of ash and pumice covered it within a day, keeping out air and decay. The city lay forgotten for nearly 1,700 years._
+_The scrolls were turned into lumps of charcoal by the eruption. Scanners and artificial intelligence made it possible to read the Greek word for purple without unrolling it._
 
-**NL:** Waarom bleef Pompeii zo goed bewaard?
+**NL:** Welk woord lazen wetenschappers in 2023 in een verkoolde boekrol uit Herculaneum?
 
-- Het was vóór de uitbarsting verlaten
-- ✅ Het werd snel onder as begraven
-- Lava sloot het in steen in
-- De Romeinen ommuurden het
+- Rome
+- ✅ Purper
+- Vesuvius
+- Liefde
 
-_Binnen een dag lag er zo'n zes meter as en puimsteen over, waardoor lucht en verval buiten bleven. De stad lag bijna 1700 jaar vergeten._
-
-## Hoofdstuk 6 — nieuw
-
-**When was Pompeii rediscovered?**
-
-- 1348
-- ✅ 1748
-- 1863
-- 1912
-
-_Excavators found ovens, wine jars and walls covered in graffiti. The plaster casts of the victims came later, from 1863._
-
-**NL:** Wanneer werd Pompeii herontdekt?
-
-- 1348
-- ✅ 1748
-- 1863
-- 1912
-
-_De opgravers vonden ovens, wijnkruiken en muren vol graffiti. De gipsafgietsels van de slachtoffers kwamen later, vanaf 1863._
-
-## Hoofdstuk 7 — bestaand, vertaald
-
-**How do we know the shapes of Pompeii's victims?**
-
-- ✅ Plaster was poured into the cavities their bodies left in the ash
-- Bronze statues were cast later from eyewitness accounts
-- Wooden carvings survived the heat
-- Wall paintings recorded the scene
-
-_Giuseppe Fiorelli worked it out in 1863: the bodies had decayed, but the hardened ash kept their exact shape as a void._
-
-**NL:** Hoe kennen we de gedaanten van de slachtoffers van Pompeii?
-
-- ✅ Er werd gips gegoten in de holtes die hun lichamen in de as achterlieten
-- Er werden later bronzen beelden gegoten naar ooggetuigenverslagen
-- Houtsnijwerk overleefde de hitte
-- Muurschilderingen legden het tafereel vast
-
-_Giuseppe Fiorelli bedacht het in 1863: de lichamen waren vergaan, maar de verharde as hield hun precieze vorm vast als een holte._
-
-## Hoofdstuk 8 — nieuw
-
-**About how many people live in the danger zone around Vesuvius today?**
-
-- 30,000
-- 300,000
-- ✅ 3 million
-- 30 million
-
-_Vesuvius is still an active volcano. The same fertile slopes that drew the Romans draw people now._
-
-**NL:** Ongeveer hoeveel mensen wonen er nu in de gevarenzone rond de Vesuvius?
-
-- 30.000
-- 300.000
-- ✅ 3 miljoen
-- 30 miljoen
-
-_De Vesuvius is nog altijd een actieve vulkaan. Dezelfde vruchtbare hellingen die de Romeinen trokken, trekken nu nog steeds mensen._
+_De uitbarsting veranderde de boekrollen in brokken houtskool. Met scanners en kunstmatige intelligentie kon het Griekse woord voor purper gelezen worden zonder de rol open te rollen._
 

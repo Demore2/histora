@@ -1,0 +1,181 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "How was the program memory of the Apollo guidance computer made?",
+      "options": [
+        "Printed on punched paper tape",
+        "By threading copper wire through tiny magnetic rings by hand",
+        "Burned onto glass discs",
+        "Recorded on magnetic tape reels"
+      ],
+      "explanation": "This \"core rope\" memory was woven largely by women at a factory in Massachusetts. Once made, the programs could not be changed.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe werd het programmageheugen van de Apollo-boordcomputer gemaakt?",
+          "options": [
+            "Gedrukt op ponsband",
+            "Door met de hand koperdraad door piepkleine magnetische ringetjes te rijgen",
+            "Ingebrand op glazen schijven",
+            "Opgenomen op magneetbanden"
+          ],
+          "explanation": "Dit \"core rope\"-geheugen werd grotendeels door vrouwen in een fabriek in Massachusetts geweven. Als het eenmaal klaar was, konden de programma's niet meer veranderd worden."
+        },
+        "fr": {
+          "question": "Comment la mémoire de programme de l'ordinateur de bord d'Apollo était-elle fabriquée ?",
+          "options": [
+            "Imprimée sur ruban perforé",
+            "En faisant passer à la main du fil de cuivre dans de minuscules anneaux magnétiques",
+            "Gravée sur des disques de verre",
+            "Enregistrée sur des bandes magnétiques"
+          ],
+          "explanation": "Cette mémoire « à tores tressés » était tissée surtout par des femmes, dans une usine du Massachusetts. Une fois fabriqués, les programmes ne pouvaient plus être modifiés."
+        },
+        "de": {
+          "question": "Wie wurde der Programmspeicher des Apollo-Bordcomputers hergestellt?",
+          "options": [
+            "Auf Lochstreifen gedruckt",
+            "Indem Kupferdraht von Hand durch winzige Magnetringe gefädelt wurde",
+            "Auf Glasscheiben eingebrannt",
+            "Auf Magnetbänder aufgenommen"
+          ],
+          "explanation": "Dieser „Core-Rope“-Speicher wurde größtenteils von Frauen in einer Fabrik in Massachusetts gewoben. War er einmal fertig, ließen sich die Programme nicht mehr ändern."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What did a 1202 alarm mean during the landing?",
+      "options": [
+        "The fuel was running out",
+        "The radio had failed",
+        "The computer had more work than time and was dropping its least important tasks",
+        "A landing leg was damaged"
+      ],
+      "explanation": "The software had been designed to shed low-priority jobs and restart instead of crashing. Because the alarms were not constant, Houston decided it was safe to go on.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat betekende een 1202-alarm tijdens de landing?",
+          "options": [
+            "De brandstof raakte op",
+            "De radio was uitgevallen",
+            "De computer had meer werk dan tijd en liet de minst belangrijke taken vallen",
+            "Een landingspoot was beschadigd"
+          ],
+          "explanation": "De software was zo gebouwd dat hij taken met een lage prioriteit liet vallen en opnieuw opstartte in plaats van vast te lopen. Omdat de alarmen niet onafgebroken kwamen, besloot Houston dat het veilig was om door te gaan."
+        },
+        "fr": {
+          "question": "Que signifiait une alarme 1202 pendant l'alunissage ?",
+          "options": [
+            "Le carburant s'épuisait",
+            "La radio était en panne",
+            "L'ordinateur avait plus de travail que de temps et abandonnait ses tâches les moins importantes",
+            "Un pied d'atterrissage était endommagé"
+          ],
+          "explanation": "Le logiciel avait été conçu pour abandonner les tâches peu prioritaires et redémarrer au lieu de planter. Comme les alarmes n'étaient pas continues, Houston jugea qu'on pouvait continuer."
+        },
+        "de": {
+          "question": "Was bedeutete ein 1202-Alarm während der Landung?",
+          "options": [
+            "Der Treibstoff ging aus",
+            "Der Funk war ausgefallen",
+            "Der Computer hatte mehr Arbeit als Zeit und ließ seine unwichtigsten Aufgaben fallen",
+            "Ein Landebein war beschädigt"
+          ],
+          "explanation": "Die Software war so gebaut, dass sie Aufgaben mit niedriger Priorität fallen ließ und neu startete, statt abzustürzen. Weil die Alarme nicht ununterbrochen kamen, entschied Houston, dass man weitermachen konnte."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Who was the only person in Mission Control speaking directly to the crew during the landing?",
+      "options": [
+        "Charlie Duke",
+        "Gene Kranz",
+        "Margaret Hamilton",
+        "Michael Collins"
+      ],
+      "explanation": "Astronaut Charlie Duke was the capsule communicator. He called out the fuel warnings and answered \"The Eagle has landed\" with \"We're breathing again\".",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie was tijdens de landing de enige in Mission Control die rechtstreeks met de bemanning sprak?",
+          "options": [
+            "Charlie Duke",
+            "Gene Kranz",
+            "Margaret Hamilton",
+            "Michael Collins"
+          ],
+          "explanation": "Astronaut Charlie Duke was de capsule communicator. Hij riep de brandstofwaarschuwingen om en antwoordde op \"The Eagle has landed\" met \"We're breathing again\"."
+        },
+        "fr": {
+          "question": "Qui était, pendant l'alunissage, la seule personne du centre de contrôle à parler directement à l'équipage ?",
+          "options": [
+            "Charlie Duke",
+            "Gene Kranz",
+            "Margaret Hamilton",
+            "Michael Collins"
+          ],
+          "explanation": "L'astronaute Charlie Duke était le communicateur avec la capsule. Il annonçait les alertes de carburant et répondit à « The Eagle has landed » par « We're breathing again »."
+        },
+        "de": {
+          "question": "Wer sprach während der Landung als Einziger in Mission Control direkt mit der Besatzung?",
+          "options": [
+            "Charlie Duke",
+            "Gene Kranz",
+            "Margaret Hamilton",
+            "Michael Collins"
+          ],
+          "explanation": "Astronaut Charlie Duke war der Capsule Communicator. Er gab die Treibstoffwarnungen durch und antwortete auf „The Eagle has landed“ mit „We’re breathing again“."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What did Buzz Aldrin use to fix a broken switch before leaving the Moon?",
+      "options": [
+        "A spoon",
+        "A strip of tape",
+        "His glove",
+        "A felt-tip pen"
+      ],
+      "explanation": "A circuit breaker for arming the ascent engine had snapped off. Aldrin pushed it in with a felt-tip pen, and Eagle lifted off safely.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarmee repareerde Buzz Aldrin een afgebroken schakelaar voordat hij van de maan vertrok?",
+          "options": [
+            "Een lepel",
+            "Een stuk plakband",
+            "Zijn handschoen",
+            "Een viltstift"
+          ],
+          "explanation": "Een stroomonderbreker voor het inschakelen van de stijgmotor was afgebroken. Aldrin drukte hem in met een viltstift, en de Eagle steeg veilig op."
+        },
+        "fr": {
+          "question": "Avec quoi Buzz Aldrin a-t-il réparé un interrupteur cassé avant de quitter la Lune ?",
+          "options": [
+            "Une cuillère",
+            "Un bout de ruban adhésif",
+            "Son gant",
+            "Un feutre"
+          ],
+          "explanation": "Un disjoncteur servant à armer le moteur de remontée s'était cassé. Aldrin l'enfonça avec un feutre, et l'Eagle décolla sans encombre."
+        },
+        "de": {
+          "question": "Womit reparierte Buzz Aldrin einen abgebrochenen Schalter, bevor er den Mond verließ?",
+          "options": [
+            "Mit einem Löffel",
+            "Mit einem Stück Klebeband",
+            "Mit seinem Handschuh",
+            "Mit einem Filzstift"
+          ],
+          "explanation": "Ein Sicherungsschalter zum Scharfmachen des Aufstiegstriebwerks war abgebrochen. Aldrin drückte ihn mit einem Filzstift hinein, und die Eagle hob sicher ab."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

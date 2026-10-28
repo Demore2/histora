@@ -6,6 +6,7 @@ import { HorizontaleRij } from '@/components/horizontale-rij';
 import { SectieKop } from '@/components/sectie-kop';
 import { ThemedText } from '@/components/themed-text';
 import { Spacing } from '@/constants/theme';
+import { isEvent } from '@/content/queries';
 import { verhalen } from '@/content/verhalen';
 import { useVertaling } from '@/hooks/use-vertaling';
 import { useCharacterUnlockStore } from '@/store/character-unlock-store';
@@ -23,17 +24,22 @@ import { useCharacterUnlockStore } from '@/store/character-unlock-store';
  * elke nieuwe ontgrendeling laat je je eigen collectie steeds opnieuw zoeken; zo blijft elk
  * personage op zijn plek staan, als een plakboek dat volloopt.
  *
- * Het totaal is `verhalen.length`: elk verhaal levert precies één personage op, dus een nieuw
- * verhaal verhoogt de noemer vanzelf.
+ * Het totaal is het aantal verhalen zónder events: elk verhaal over een persoon levert precies één
+ * personage op, dus een nieuw verhaal verhoogt de noemer vanzelf. Een event (2026-10-28) heeft geen
+ * personage. Wie Rome of Pompeii vóór die wijziging ontgrendelde, houdt die rij in de store — ze
+ * tellen mee voor de mijlpalen, anders springt een behaalde badge terug op slot — maar ze staan hier
+ * niet als kaart, en de teller telt alleen de personages.
  */
+const PERSONAGE_VERHALEN = verhalen.filter((verhaal) => !isEvent(verhaal));
+
 export function ProfileCharacterCollection() {
   const { t } = useVertaling();
   const router = useRouter();
   const unlockedCharacters = useCharacterUnlockStore((state) => state.unlockedCharacters);
 
   const ontgrendeldeIds = new Set(unlockedCharacters.map((personage) => personage.verhaalId));
-  const totaal = verhalen.length;
-  const ontgrendeld = ontgrendeldeIds.size;
+  const totaal = PERSONAGE_VERHALEN.length;
+  const ontgrendeld = PERSONAGE_VERHALEN.filter((verhaal) => ontgrendeldeIds.has(verhaal.id)).length;
   const resterend = totaal - ontgrendeld;
 
   return (
@@ -44,7 +50,7 @@ export function ProfileCharacterCollection() {
       </ThemedText>
 
       <HorizontaleRij
-        data={verhalen}
+        data={PERSONAGE_VERHALEN}
         keyExtractor={(verhaal) => verhaal.id}
         itemBreedte={CHARACTER_CARD_BREEDTE}
         contentContainerStyle={styles.rij}

@@ -24,6 +24,7 @@ import { AD_ONDERBREKING_ENABLED } from '@/constants/monetisatie';
 import { Motion, staggerVertraging } from '@/constants/motion';
 import { MAX_LEESBREEDTE, Radii, Spacing } from '@/constants/theme';
 import { getTijdperk } from '@/constants/tijdperken';
+import { isEvent } from '@/content/queries';
 import { getVerhaal } from '@/content/verhalen';
 import { useAbonnement } from '@/hooks/use-abonnement';
 import { useHoofdstukInteractie } from '@/hooks/use-interactie';
@@ -146,7 +147,11 @@ export default function ReaderScreen() {
 
   const allChaptersRead = progress.completedChapters.length === verhaal?.chapters.length;
   const characterUnlocked = verhaal ? characterStore.isCharacterUnlocked(verhaal.id) : false;
-  const shouldShowUnlockButton = allChaptersRead && !characterUnlocked;
+  // Een event (2026-10-28) heeft geen personage: daar is de laatste knop "Finish event", en die
+  // verdwijnt zodra het event als uitgelezen staat in plaats van bij een ontgrendeling.
+  const event = verhaal ? isEvent(verhaal) : false;
+  const eventAfgerond = verhaal ? voortgangStore.completedStories.has(verhaal.id) : false;
+  const shouldShowUnlockButton = allChaptersRead && !(event ? eventAfgerond : characterUnlocked);
 
   // Let op (LAUNCH-PLAN.md B5): hier stond ook een useEffect die het hoofdstuk automatisch
   // afvinkte bij 80% scroll. Samen met de "Mark Complete"-knop waren dat twee mechanismen — de
@@ -292,6 +297,19 @@ export default function ReaderScreen() {
     }
   }
 
+  /**
+   * Het slot van een event: dezelfde boekhouding als `handleUnlockCharacter` (uitgelezen, de
+   * Dukaten voor het verhaal), maar zonder personage en dus zonder het venster. De onderbreking en
+   * het verlaten volgen daarna precies zoals na dat venster.
+   */
+  function handleRondEventAf() {
+    if (!verhaal) return;
+    voortgangStore.markStoryCompleted(verhaal.id);
+    useWinkelStore.getState().verdien([dukatenSleutel.verhaal(verhaal.id)]);
+    haptics.succes();
+    handleCloseUnlockModal();
+  }
+
   function handleCloseUnlockModal() {
     setShowUnlockModal(false);
     // De onderbreking komt ná het ontgrendelen, niet ervoor: het personage is de beloning voor
@@ -425,16 +443,18 @@ export default function ReaderScreen() {
           </AnimatedPressable>
         ) : shouldShowUnlockButton ? (
           <AnimatedPressable
-            onPress={handleUnlockCharacter}
+            onPress={event ? handleRondEventAf : handleUnlockCharacter}
             haptisch={false}
             style={[
               styles.footerKnop,
               { backgroundColor: tijdperk?.kleur ?? theme.accent, flex: 1 },
             ]}>
             <ThemedText type="smallBold" style={{ color: theme.background }}>
-              {t((s) => s.hoofdstuk.ontgrendelPersonage)(verhaal!.personage.naam)}
+              {event
+                ? t((s) => s.hoofdstuk.rondEventAf)
+                : t((s) => s.hoofdstuk.ontgrendelPersonage)(verhaal!.personage.naam)}
             </ThemedText>
-            <Ionicons name="star" size={16} color={theme.background} />
+            <Ionicons name={event ? 'checkmark-circle' : 'star'} size={16} color={theme.background} />
           </AnimatedPressable>
         ) : (
           <AnimatedPressable

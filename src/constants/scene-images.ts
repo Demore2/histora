@@ -507,6 +507,23 @@ const IMAGES = {
   'nelson-mandela-6': require('../../assets/images/scenes/nelson-mandela-6.webp'),
   'nelson-mandela-7': require('../../assets/images/scenes/nelson-mandela-7.webp'),
   'nelson-mandela-8': require('../../assets/images/scenes/nelson-mandela-8.webp'),
+  // Events (2026-10-28).
+  'fall-of-constantinople-1': require('../../assets/images/scenes/fall-of-constantinople-1.webp'),
+  'fall-of-constantinople-2': require('../../assets/images/scenes/fall-of-constantinople-2.webp'),
+  'fall-of-constantinople-3': require('../../assets/images/scenes/fall-of-constantinople-3.webp'),
+  'fall-of-constantinople-4': require('../../assets/images/scenes/fall-of-constantinople-4.webp'),
+  'black-death-1': require('../../assets/images/scenes/black-death-1.webp'),
+  'black-death-2': require('../../assets/images/scenes/black-death-2.webp'),
+  'black-death-3': require('../../assets/images/scenes/black-death-3.webp'),
+  'black-death-4': require('../../assets/images/scenes/black-death-4.webp'),
+  'fall-of-the-berlin-wall-1': require('../../assets/images/scenes/fall-of-the-berlin-wall-1.webp'),
+  'fall-of-the-berlin-wall-2': require('../../assets/images/scenes/fall-of-the-berlin-wall-2.webp'),
+  'fall-of-the-berlin-wall-3': require('../../assets/images/scenes/fall-of-the-berlin-wall-3.webp'),
+  'fall-of-the-berlin-wall-4': require('../../assets/images/scenes/fall-of-the-berlin-wall-4.webp'),
+  'moon-landing-1': require('../../assets/images/scenes/moon-landing-1.webp'),
+  'moon-landing-2': require('../../assets/images/scenes/moon-landing-2.webp'),
+  'moon-landing-3': require('../../assets/images/scenes/moon-landing-3.webp'),
+  'moon-landing-4': require('../../assets/images/scenes/moon-landing-4.webp'),
 };
 
 /** De `<verhaal-id>-<hoofdstuk-id>`-sleutels waarvoor een scènebeeld in de bundel zit. */

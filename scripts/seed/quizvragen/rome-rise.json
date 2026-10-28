@@ -1,190 +1,191 @@
 {
-  "nieuw": [
-    {
-      "chapter_index": 1,
-      "question": "In which year, by tradition, was Rome founded?",
-      "options": ["1000 BC", "753 BC", "509 BC", "264 BC"],
-      "explanation": "The Romans counted their years from it. The real beginning was humbler: shepherds and farmers on hills by the Tiber, learning from the Etruscans to the north and the Greeks to the south.",
-      "correct_answer": 1,
-      "vertalingen": {
-        "nl": {
-          "question": "In welk jaar werd Rome volgens de overlevering gesticht?",
-          "options": ["1000 v.Chr.", "753 v.Chr.", "509 v.Chr.", "264 v.Chr."],
-          "explanation": "De Romeinen telden hun jaren vanaf dat moment. Het echte begin was bescheidener: herders en boeren op heuvels aan de Tiber, die leerden van de Etrusken in het noorden en de Grieken in het zuiden."
-        },
-        "fr": {
-          "question": "En quelle année Rome fut-elle fondée selon la tradition ?",
-          "options": ["1000 av. J.-C.", "753 av. J.-C.", "509 av. J.-C.", "264 av. J.-C."],
-          "explanation": "Les Romains comptaient les années à partir de cette date. Le vrai début fut plus modeste : des bergers et des paysans sur des collines au bord du Tibre, qui apprenaient des Étrusques au nord et des Grecs au sud."
-        },
-        "de": {
-          "question": "In welchem Jahr wurde Rom der Überlieferung nach gegründet?",
-          "options": ["1000 v. Chr.", "753 v. Chr.", "509 v. Chr.", "264 v. Chr."],
-          "explanation": "Die Römer zählten ihre Jahre ab diesem Datum. Der wirkliche Anfang war bescheidener: Hirten und Bauern auf Hügeln am Tiber, die von den Etruskern im Norden und den Griechen im Süden lernten."
-        }
-      }
-    },
-    {
-      "chapter_index": 2,
-      "question": "What did Rome become after its last king was driven out around 509 BC?",
-      "options": ["An empire", "A republic", "An Etruscan province", "A Greek colony"],
-      "explanation": "A res publica, \"the public thing\". Even the kings had had to deal with a Senate of wealthy families who refused to hand all power to one man.",
-      "correct_answer": 1,
-      "vertalingen": {
-        "nl": {
-          "question": "Wat werd Rome nadat de laatste koning rond 509 v.Chr. was verdreven?",
-          "options": ["Een keizerrijk", "Een republiek", "Een Etruskische provincie", "Een Griekse kolonie"],
-          "explanation": "Een res publica, \"de publieke zaak\". Zelfs de koningen hadden al rekening moeten houden met een Senaat van rijke families die niet alle macht aan één man wilden geven."
-        },
-        "fr": {
-          "question": "Que devint Rome après l'expulsion de son dernier roi, vers 509 av. J.-C. ?",
-          "options": ["Un empire", "Une république", "Une province étrusque", "Une colonie grecque"],
-          "explanation": "Une res publica, « la chose publique ». Même les rois avaient dû compter avec un Sénat de familles riches qui refusaient de confier tout le pouvoir à un seul homme."
-        },
-        "de": {
-          "question": "Was wurde Rom, nachdem sein letzter König um 509 v. Chr. vertrieben worden war?",
-          "options": ["Ein Kaiserreich", "Eine Republik", "Eine etruskische Provinz", "Eine griechische Kolonie"],
-          "explanation": "Eine res publica, „die öffentliche Sache“. Schon die Könige hatten mit einem Senat reicher Familien rechnen müssen, die nicht alle Macht einem einzigen Mann überlassen wollten."
-        }
-      }
-    },
-    {
-      "chapter_index": 3,
-      "question": "Why did the Republic elect two consuls, each for a single year?",
-      "options": ["To lead two separate armies", "So no one could become king again", "Because Rome had two founders", "To govern Rome and its colonies"],
-      "explanation": "Each consul could veto the other, and a year was too short to build a throne. Later systems of checks and balances, including the American one, borrowed the idea.",
-      "correct_answer": 1,
-      "vertalingen": {
-        "nl": {
-          "question": "Waarom koos de Republiek twee consuls, elk voor één jaar?",
-          "options": ["Om twee aparte legers te leiden", "Zodat niemand ooit weer koning kon worden", "Omdat Rome twee stichters had", "Om Rome en de kolonies te besturen"],
-          "explanation": "De ene consul kon de ander met een veto tegenhouden, en een jaar was te kort om een troon op te bouwen. Latere stelsels van machtsevenwicht, ook het Amerikaanse, namen het idee over."
-        },
-        "fr": {
-          "question": "Pourquoi la République élisait-elle deux consuls, chacun pour un an seulement ?",
-          "options": ["Pour commander deux armées distinctes", "Pour que personne ne redevienne roi", "Parce que Rome avait deux fondateurs", "Pour gouverner Rome et ses colonies"],
-          "explanation": "Chaque consul pouvait opposer son veto à l'autre, et une année était trop courte pour se bâtir un trône. Des systèmes d'équilibre des pouvoirs plus récents, dont celui des États-Unis, ont repris l'idée."
-        },
-        "de": {
-          "question": "Warum wählte die Republik zwei Konsuln, jeden nur für ein Jahr?",
-          "options": ["Um zwei getrennte Heere zu führen", "Damit niemand wieder König werden konnte", "Weil Rom zwei Gründer hatte", "Um Rom und seine Kolonien zu regieren"],
-          "explanation": "Jeder Konsul konnte den anderen mit einem Veto stoppen, und ein Jahr war zu kurz, um sich einen Thron aufzubauen. Spätere Systeme der Gewaltenteilung, auch das amerikanische, übernahmen die Idee."
-        }
-      }
-    },
-    {
-      "chapter_index": 5,
-      "question": "What did the Romans call the Mediterranean?",
-      "options": ["Mare nostrum, \"our sea\"", "Mare magnum, \"the great sea\"", "Mare novum, \"the new sea\"", "Mare clausum, \"the closed sea\""],
-      "explanation": "By 100 BC, after Carthage and the kingdoms of the Greek east had fallen, the name was simply a description: Rome held every shore.",
-      "correct_answer": 0,
-      "vertalingen": {
-        "nl": {
-          "question": "Hoe noemden de Romeinen de Middellandse Zee?",
-          "options": ["Mare nostrum, \"onze zee\"", "Mare magnum, \"de grote zee\"", "Mare novum, \"de nieuwe zee\"", "Mare clausum, \"de gesloten zee\""],
-          "explanation": "Rond 100 v.Chr., na de val van Carthago en de koninkrijken in het Griekse oosten, was die naam gewoon een beschrijving: Rome bezat elke kust."
-        },
-        "fr": {
-          "question": "Comment les Romains appelaient-ils la Méditerranée ?",
-          "options": ["Mare nostrum, « notre mer »", "Mare magnum, « la grande mer »", "Mare novum, « la mer nouvelle »", "Mare clausum, « la mer fermée »"],
-          "explanation": "Vers 100 av. J.-C., après la chute de Carthage et des royaumes de l'Orient grec, le nom n'était plus qu'une description : Rome tenait toutes les côtes."
-        },
-        "de": {
-          "question": "Wie nannten die Römer das Mittelmeer?",
-          "options": ["Mare nostrum, „unser Meer“", "Mare magnum, „das große Meer“", "Mare novum, „das neue Meer“", "Mare clausum, „das geschlossene Meer“"],
-          "explanation": "Um 100 v. Chr., nach dem Fall Karthagos und der Königreiche im griechischen Osten, war der Name schlicht eine Beschreibung: Rom beherrschte jede Küste."
-        }
-      }
-    },
-    {
-      "chapter_index": 6,
-      "question": "Whose murder by senators in 133 BC was the Republic's first political killing?",
-      "options": ["Julius Caesar", "Tiberius Gracchus", "Marius", "Cicero"],
-      "explanation": "It was not the last. For nearly a century generals such as Marius, Sulla and Pompey turned their armies on each other, and Rome was more often at war with itself than with anyone else.",
-      "correct_answer": 1,
-      "vertalingen": {
-        "nl": {
-          "question": "Wiens moord door senatoren in 133 v.Chr. was de eerste politieke moord van de Republiek?",
-          "options": ["Julius Caesar", "Tiberius Gracchus", "Marius", "Cicero"],
-          "explanation": "Het bleef niet bij die ene. Bijna een eeuw lang keerden generaals als Marius, Sulla en Pompeius hun legers tegen elkaar, en was Rome vaker in oorlog met zichzelf dan met wie dan ook."
-        },
-        "fr": {
-          "question": "Quel meurtre commis par des sénateurs en 133 av. J.-C. fut le premier assassinat politique de la République ?",
-          "options": ["Jules César", "Tiberius Gracchus", "Marius", "Cicéron"],
-          "explanation": "Ce ne fut pas le dernier. Pendant près d'un siècle, des généraux comme Marius, Sylla et Pompée retournèrent leurs armées les uns contre les autres, et Rome fut plus souvent en guerre contre elle-même que contre quiconque."
-        },
-        "de": {
-          "question": "Wessen Ermordung durch Senatoren im Jahr 133 v. Chr. war der erste politische Mord der Republik?",
-          "options": ["Julius Caesar", "Tiberius Gracchus", "Marius", "Cicero"],
-          "explanation": "Es blieb nicht der letzte. Fast ein Jahrhundert lang richteten Feldherren wie Marius, Sulla und Pompeius ihre Heere gegeneinander, und Rom führte öfter Krieg gegen sich selbst als gegen andere."
-        }
-      }
-    },
-    {
-      "chapter_index": 8,
-      "question": "Which Roman legacy lives on in Italian, French, Spanish and Portuguese?",
-      "options": ["Roman law", "Latin", "Concrete", "The Senate"],
-      "explanation": "They all descend from Latin, the language that followed Roman roads, law and soldiers from Spain to Mesopotamia.",
-      "correct_answer": 1,
-      "vertalingen": {
-        "nl": {
-          "question": "Welke Romeinse erfenis leeft voort in het Italiaans, Frans, Spaans en Portugees?",
-          "options": ["Het Romeinse recht", "Het Latijn", "Beton", "De Senaat"],
-          "explanation": "Ze stammen allemaal af van het Latijn, de taal die met de Romeinse wegen, wetten en soldaten meereisde van Spanje tot Mesopotamië."
-        },
-        "fr": {
-          "question": "Quel héritage romain survit dans l'italien, le français, l'espagnol et le portugais ?",
-          "options": ["Le droit romain", "Le latin", "Le béton", "Le Sénat"],
-          "explanation": "Toutes descendent du latin, la langue qui suivit les routes, les lois et les soldats romains de l'Espagne à la Mésopotamie."
-        },
-        "de": {
-          "question": "Welches römische Erbe lebt im Italienischen, Französischen, Spanischen und Portugiesischen weiter?",
-          "options": ["Das römische Recht", "Das Latein", "Der Beton", "Der Senat"],
-          "explanation": "Sie alle stammen vom Latein ab, der Sprache, die mit römischen Straßen, Gesetzen und Soldaten von Spanien bis Mesopotamien reiste."
-        }
-      }
-    }
-  ],
+  "nieuw": [],
   "vertalingen": [
+    {
+      "id": "85e4572c-af14-4b63-abee-fcb5bb5c8f51",
+      "chapter_index": 1,
+      "correctie": {
+        "question": "According to the legend, who found the twins Romulus and Remus and raised them?",
+        "options": [
+          "A Vestal priestess",
+          "The king of Alba Longa",
+          "A shepherd named Faustulus",
+          "A Greek merchant"
+        ],
+        "explanation": "After the she-wolf had fed the babies, the royal shepherd Faustulus found them and took them home to his wife, who raised them.",
+        "correct_answer": 2
+      },
+      "vertalingen": {
+        "nl": {
+          "question": "Wie vond volgens de legende de tweeling Romulus en Remus en voedde hen op?",
+          "options": [
+            "Een Vestaalse priesteres",
+            "De koning van Alba Longa",
+            "Een herder die Faustulus heette",
+            "Een Griekse koopman"
+          ],
+          "explanation": "Nadat de wolvin de baby's had gezoogd, vond de koninklijke herder Faustulus hen. Hij nam ze mee naar huis, waar zijn vrouw ze opvoedde."
+        },
+        "fr": {
+          "question": "Selon la légende, qui a trouvé les jumeaux Romulus et Rémus et les a élevés ?",
+          "options": [
+            "Une prêtresse vestale",
+            "Le roi d'Albe-la-Longue",
+            "Un berger nommé Faustulus",
+            "Un marchand grec"
+          ],
+          "explanation": "Après que la louve eut nourri les bébés, le berger royal Faustulus les trouva et les ramena chez lui, où sa femme les éleva."
+        },
+        "de": {
+          "question": "Wer fand der Sage nach die Zwillinge Romulus und Remus und zog sie groß?",
+          "options": [
+            "Eine vestalische Priesterin",
+            "Der König von Alba Longa",
+            "Ein Hirte namens Faustulus",
+            "Ein griechischer Kaufmann"
+          ],
+          "explanation": "Nachdem die Wölfin die Säuglinge gesäugt hatte, fand der königliche Hirte Faustulus sie und brachte sie nach Hause, wo seine Frau sie aufzog."
+        }
+      }
+    },
+    {
+      "id": "f715584f-1de9-4b5f-a7e5-a2d0b10b0b54",
+      "chapter_index": 2,
+      "correctie": {
+        "question": "Who worked out the famous founding date of Rome, 753 BC?",
+        "options": [
+          "The scholar Varro, in the 1st century BC",
+          "Romulus himself",
+          "The first two consuls",
+          "A Greek astronomer in Alexandria"
+        ],
+        "explanation": "Marcus Terentius Varro calculated it by counting back through lists of officials and kings, some seven hundred years after the date itself. Other Roman writers had suggested different years.",
+        "correct_answer": 0
+      },
+      "vertalingen": {
+        "nl": {
+          "question": "Wie rekende de beroemde stichtingsdatum van Rome, 753 v.Chr., uit?",
+          "options": [
+            "De geleerde Varro, in de 1e eeuw v.Chr.",
+            "Romulus zelf",
+            "De eerste twee consuls",
+            "Een Griekse sterrenkundige in Alexandrië"
+          ],
+          "explanation": "Marcus Terentius Varro rekende terug via lijsten van magistraten en koningen, zo'n zevenhonderd jaar na de datum zelf. Andere Romeinse schrijvers noemden andere jaren."
+        },
+        "fr": {
+          "question": "Qui a calculé la célèbre date de fondation de Rome, 753 av. J.-C. ?",
+          "options": [
+            "Le savant Varron, au Ier siècle av. J.-C.",
+            "Romulus lui-même",
+            "Les deux premiers consuls",
+            "Un astronome grec d'Alexandrie"
+          ],
+          "explanation": "Marcus Terentius Varro la calcula en remontant les listes de magistrats et de rois, quelque sept cents ans après la date elle-même. D'autres auteurs romains proposaient d'autres années."
+        },
+        "de": {
+          "question": "Wer berechnete das berühmte Gründungsdatum Roms, 753 v. Chr.?",
+          "options": [
+            "Der Gelehrte Varro, im 1. Jahrhundert v. Chr.",
+            "Romulus selbst",
+            "Die ersten beiden Konsuln",
+            "Ein griechischer Astronom in Alexandria"
+          ],
+          "explanation": "Marcus Terentius Varro rechnete anhand von Beamten- und Königslisten zurück, rund siebenhundert Jahre nach dem Datum selbst. Andere römische Autoren nannten andere Jahre."
+        }
+      }
+    },
+    {
+      "id": "7e4988b6-a298-475f-9557-f2b92c23072c",
+      "chapter_index": 3,
+      "correctie": {
+        "question": "What did the nickname Brutus, carried by the man who drove out the last king, mean?",
+        "options": [
+          "The brave",
+          "The tall one",
+          "The red-haired",
+          "Dullard"
+        ],
+        "explanation": "Lucius Junius Brutus survived at the court of his uncle Tarquin by pretending to be slow-witted. After Lucretia's death he led the revolt that ended the monarchy.",
+        "correct_answer": 3
+      },
+      "vertalingen": {
+        "nl": {
+          "question": "Wat betekende de bijnaam Brutus van de man die de laatste koning verdreef?",
+          "options": [
+            "De dappere",
+            "De lange",
+            "De roodharige",
+            "Domkop"
+          ],
+          "explanation": "Lucius Junius Brutus overleefde aan het hof van zijn oom Tarquinius door zich dom voor te doen. Na de dood van Lucretia leidde hij de opstand die de monarchie beëindigde."
+        },
+        "fr": {
+          "question": "Que signifiait le surnom Brutus, porté par l'homme qui chassa le dernier roi ?",
+          "options": [
+            "Le courageux",
+            "Le grand",
+            "Le roux",
+            "L'idiot"
+          ],
+          "explanation": "Lucius Junius Brutus survécut à la cour de son oncle Tarquin en se faisant passer pour un simple d'esprit. Après la mort de Lucrèce, il mena la révolte qui mit fin à la royauté."
+        },
+        "de": {
+          "question": "Was bedeutete der Beiname Brutus des Mannes, der den letzten König vertrieb?",
+          "options": [
+            "Der Tapfere",
+            "Der Große",
+            "Der Rothaarige",
+            "Dummkopf"
+          ],
+          "explanation": "Lucius Junius Brutus überlebte am Hof seines Onkels Tarquinius, indem er sich dumm stellte. Nach dem Tod der Lucretia führte er den Aufstand an, der das Königtum beendete."
+        }
+      }
+    },
     {
       "id": "51c9a819-f9f5-49fd-9796-a3463ee1e3a7",
       "chapter_index": 4,
+      "correctie": {
+        "question": "What did Horatius Cocles do, according to Roman legend?",
+        "options": [
+          "He killed the last king",
+          "He held a bridge over the Tiber almost alone",
+          "He wrote the first Roman laws",
+          "He found the bronze she-wolf"
+        ],
+        "explanation": "While the Romans behind him tore the wooden bridge down, Horatius held off the Etruscan army, then jumped into the river in full armour and swam back. Historians treat the story as legend.",
+        "correct_answer": 1
+      },
       "vertalingen": {
         "nl": {
-          "question": "Welke generaal trok met oorlogsolifanten over de Alpen om Rome aan te vallen?",
-          "options": ["Scipio Africanus", "Hannibal", "Pyrrhus van Epirus", "Vercingetorix"],
-          "explanation": "Hannibal, in 218 v.Chr. De meeste olifanten stierven tijdens de oversteek; de schok van zijn komst in Italië deed de echte schade."
+          "question": "Wat deed Horatius Cocles volgens de Romeinse legende?",
+          "options": [
+            "Hij doodde de laatste koning",
+            "Hij hield bijna in zijn eentje een brug over de Tiber",
+            "Hij schreef de eerste Romeinse wetten",
+            "Hij vond de bronzen wolvin"
+          ],
+          "explanation": "Terwijl de Romeinen achter hem de houten brug afbraken, hield Horatius het Etruskische leger tegen. Daarna sprong hij in volle wapenrusting in de rivier en zwom terug. Historici zien het als legende."
         },
         "fr": {
-          "question": "Quel général franchit les Alpes avec des éléphants de guerre pour attaquer Rome ?",
-          "options": ["Scipion l'Africain", "Hannibal", "Pyrrhus d'Épire", "Vercingétorix"],
-          "explanation": "Hannibal, en 218 av. J.-C. La plupart des éléphants moururent pendant la traversée ; c'est le choc de son arrivée en Italie qui fit les vrais dégâts."
+          "question": "Selon la légende romaine, qu'a fait Horatius Coclès ?",
+          "options": [
+            "Il a tué le dernier roi",
+            "Il a tenu presque seul un pont sur le Tibre",
+            "Il a écrit les premières lois romaines",
+            "Il a trouvé la louve de bronze"
+          ],
+          "explanation": "Pendant que les Romains derrière lui abattaient le pont de bois, Horatius retint l'armée étrusque, puis sauta dans le fleuve en armure et regagna la rive à la nage. Les historiens y voient une légende."
         },
         "de": {
-          "question": "Welcher Feldherr überquerte mit Kriegselefanten die Alpen, um Rom anzugreifen?",
-          "options": ["Scipio Africanus", "Hannibal", "Pyrrhos von Epirus", "Vercingetorix"],
-          "explanation": "Hannibal, 218 v. Chr. Die meisten Elefanten starben bei der Überquerung; den eigentlichen Schaden richtete der Schock seiner Ankunft in Italien an."
-        }
-      }
-    },
-    {
-      "id": "9fced899-fb10-412f-912f-bde736ca33f8",
-      "chapter_index": 7,
-      "vertalingen": {
-        "nl": {
-          "question": "Welke naam kreeg Octavianus in 27 v.Chr. van de Senaat?",
-          "options": ["Augustus", "Magnus", "Africanus", "Germanicus"],
-          "explanation": "Augustus – \"de verhevene\". Hij bleef volhouden dat hij de Republiek had hersteld, terwijl hij elke macht in handen had die ertoe deed."
-        },
-        "fr": {
-          "question": "Quel nom le Sénat accorda-t-il à Octave en 27 av. J.-C. ?",
-          "options": ["Augustus", "Magnus", "Africanus", "Germanicus"],
-          "explanation": "Augustus – « le vénérable ». Il ne cessa d'affirmer qu'il avait restauré la République, tout en détenant chaque pouvoir qui comptait."
-        },
-        "de": {
-          "question": "Welchen Namen verlieh der Senat Octavian im Jahr 27 v. Chr.?",
-          "options": ["Augustus", "Magnus", "Africanus", "Germanicus"],
-          "explanation": "Augustus – „der Erhabene“. Er beteuerte stets, die Republik wiederhergestellt zu haben, während er jede Macht besaß, auf die es ankam."
+          "question": "Was tat Horatius Cocles der römischen Sage nach?",
+          "options": [
+            "Er tötete den letzten König",
+            "Er hielt fast allein eine Brücke über den Tiber",
+            "Er schrieb die ersten römischen Gesetze",
+            "Er fand die bronzene Wölfin"
+          ],
+          "explanation": "Während die Römer hinter ihm die Holzbrücke einrissen, hielt Horatius das etruskische Heer auf. Dann sprang er in voller Rüstung in den Fluss und schwamm zurück. Historiker halten das für eine Sage."
         }
       }
     }

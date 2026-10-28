@@ -4,6 +4,7 @@ import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
 
 import { AdBanner } from '@/components/ad-banner';
 import { CollectieKaart } from '@/components/collectie-kaart';
+import { EventsSectie } from '@/components/events-sectie';
 import { HorizontaleRij } from '@/components/horizontale-rij';
 import { KopActies } from '@/components/kop-acties';
 import { LegeStaat } from '@/components/lege-staat';
@@ -83,6 +84,9 @@ export default function OntdekScreen() {
           <ReisKaart />
 
           {oppakken ? <OppakKaart verhaal={oppakken.verhaal} afgerond={oppakken.afgerond} /> : null}
+
+          {/* Losse events (2026-10-28): één uitgelicht, de rest als rij. Ze staan niet op de reis. */}
+          <EventsSectie />
 
           {/* De kaart "New story" staat sinds 1.4.5 op Explore, en nog maar één (wens van de eigenaar). */}
 

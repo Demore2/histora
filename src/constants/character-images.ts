@@ -81,6 +81,11 @@ const IMAGES = {
   'steve-jobs': require('../../assets/images/characters/steve-jobs.webp'),
   'malala-yousafzai': require('../../assets/images/characters/malala-yousafzai.webp'),
   'nelson-mandela': require('../../assets/images/characters/nelson-mandela.webp'),
+  // Events (2026-10-28).
+  'fall-of-constantinople': require('../../assets/images/characters/fall-of-constantinople.webp'),
+  'black-death': require('../../assets/images/characters/black-death.webp'),
+  'fall-of-the-berlin-wall': require('../../assets/images/characters/fall-of-the-berlin-wall.webp'),
+  'moon-landing': require('../../assets/images/characters/moon-landing.webp'),
 };
 
 /** De verhaal-id's waarvoor een portret in de bundel zit. */

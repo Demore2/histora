@@ -117,6 +117,33 @@ export function getReisTijdlijn(): Verhaal[] {
   return getTijdlijn().filter((verhaal) => !isEvent(verhaal));
 }
 
+/** Alle events, het nieuwste eerst (`toegevoegdOp`), bij gelijke datum op de tijdlijn. */
+export function getEvents(): Verhaal[] {
+  const tijdlijn = getTijdlijn();
+  return tijdlijn
+    .filter(isEvent)
+    .sort((a, b) => b.toegevoegdOp.localeCompare(a.toegevoegdOp) || tijdlijn.indexOf(a) - tijdlijn.indexOf(b));
+}
+
+/**
+ * De Home-sectie met events: één uitgelicht (het nieuwste dat je nog niet uit hebt; `null` als je
+ * ze allemaal gelezen hebt) en de rest als rij. Elk event draagt zijn stand, zodat de rij een
+ * vinkje kan tonen zonder zelf de voortgang te lezen.
+ */
+export type EventStand = { verhaal: Verhaal; afgerond: number; uit: boolean };
+
+export function bepaalEvents(
+  progress: Record<string, { completedChapters: number[] }>,
+  uitgelezenIds: Set<string>
+): { uitgelicht: EventStand | null; overige: EventStand[] } {
+  const standen = getEvents().map((verhaal) => {
+    const afgerond = progress[verhaal.id]?.completedChapters.length ?? 0;
+    return { verhaal, afgerond, uit: uitgelezenIds.has(verhaal.id) || afgerond >= verhaal.chapters.length };
+  });
+  const uitgelicht = standen.find((stand) => !stand.uit) ?? null;
+  return { uitgelicht, overige: standen.filter((stand) => stand !== uitgelicht) };
+}
+
 /** Waarom de intro dit eerste verhaal voorstelt. */
 export type InstapReden =
   | { soort: 'standaard' }
@@ -176,7 +203,8 @@ export function bepaalReis(
   progress: Record<string, { completedChapters: number[] }>,
   uitgelezenIds: Set<string>
 ): ReisStand {
-  const tijdlijn = getTijdlijn();
+  // Zonder events (2026-10-28): die staan in hun eigen sectie op Home, niet op de reis.
+  const tijdlijn = getReisTijdlijn();
   const totaal = tijdlijn.length;
   const afgerond = (verhaal: Verhaal) => progress[verhaal.id]?.completedChapters.length ?? 0;
   const isUit = (verhaal: Verhaal) => uitgelezenIds.has(verhaal.id) || afgerond(verhaal) >= verhaal.chapters.length;
@@ -207,6 +235,8 @@ export function bepaalOppakken(
     .filter(
       ({ verhaal, stand }) =>
         verhaal.id !== reisVerhaalId &&
+        // Een half gelezen event staat al met "Continue" in de events-sectie op Home.
+        !isEvent(verhaal) &&
         !uitgelezenIds.has(verhaal.id) &&
         (stand?.completedChapters.length ?? 0) > 0 &&
         (stand?.completedChapters.length ?? 0) < verhaal.chapters.length
@@ -235,7 +265,7 @@ export function bepaalRoute(
   progress: Record<string, { completedChapters: number[] }>,
   uitgelezenIds: Set<string>
 ): { haltes: Halte[]; volgende: number | null; uit: number } {
-  const haltes: Halte[] = getTijdlijn()
+  const haltes: Halte[] = getReisTijdlijn()
     .filter((verhaal) => verhaal.tijdperkId === tijdperkId)
     .map((verhaal) => {
       const afgerond = progress[verhaal.id]?.completedChapters.length ?? 0;

@@ -28,6 +28,15 @@ const nl: DeepPartial<Vertalingen> = {
     geenVerhalenTitel: 'Nog geen verhalen',
     geenVerhalenTekst: 'Er zijn nog geen verhalen beschikbaar.',
   },
+  // Losse events op Home (2026-10-28): korter dan een biografie, geen halte op de reis.
+  events: {
+    kop: 'Gebeurtenissen',
+    uitgelicht: 'Uitgelicht',
+    nieuw: 'Nieuwe gebeurtenis',
+    leesKnop: 'Nu lezen',
+    verderKnop: 'Verder lezen',
+    allesGelezen: 'Je hebt alle gebeurtenissen gelezen. Er komen er meer aan.',
+  },
   reis: {
     beginKop: 'Hier begint je reis',
     beginTitel: 'Van de farao’s tot de wereld van vandaag',
@@ -587,6 +596,7 @@ const nl: DeepPartial<Vertalingen> = {
     volgende: 'Volgend hoofdstuk',
     allesVoltooid: 'Alle hoofdstukken voltooid',
     ontgrendelPersonage: (naam: string) => `Ontgrendel ${naam}`,
+    rondEventAf: 'Gebeurtenis afronden',
   },
   blok: {
     weetjeLabel: 'Wist je dat?',

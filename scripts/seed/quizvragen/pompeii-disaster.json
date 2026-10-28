@@ -1,190 +1,238 @@
 {
-  "nieuw": [
-    {
-      "chapter_index": 1,
-      "question": "Roughly how many people lived in Pompeii before the eruption?",
-      "options": ["About 2,000", "About 20,000", "About 200,000", "About a million"],
-      "explanation": "A prosperous trading town on the Bay of Naples, rich from wine grown on the fertile volcanic soil of the mountain that would bury it.",
-      "correct_answer": 1,
-      "vertalingen": {
-        "nl": {
-          "question": "Ongeveer hoeveel mensen woonden er vóór de uitbarsting in Pompeii?",
-          "options": ["Zo'n 2.000", "Zo'n 20.000", "Zo'n 200.000", "Zo'n miljoen"],
-          "explanation": "Een welvarende handelsstad aan de Golf van Napels, rijk geworden van wijn die groeide op de vruchtbare vulkanische grond van de berg die haar zou begraven."
-        },
-        "fr": {
-          "question": "Combien d'habitants environ comptait Pompéi avant l'éruption ?",
-          "options": ["Environ 2 000", "Environ 20 000", "Environ 200 000", "Environ un million"],
-          "explanation": "Une ville marchande prospère au bord de la baie de Naples, enrichie par le vin cultivé sur le sol volcanique fertile de la montagne qui allait l'ensevelir."
-        },
-        "de": {
-          "question": "Wie viele Menschen lebten vor dem Ausbruch ungefähr in Pompeji?",
-          "options": ["Etwa 2.000", "Etwa 20.000", "Etwa 200.000", "Etwa eine Million"],
-          "explanation": "Eine wohlhabende Handelsstadt am Golf von Neapel, reich geworden durch Wein vom fruchtbaren Vulkanboden des Berges, der sie begraben sollte."
-        }
-      }
-    },
-    {
-      "chapter_index": 2,
-      "question": "What fell on Pompeii in the first hours of the eruption?",
-      "options": ["Rivers of lava", "Ash and pumice", "Boiling mud", "Hot rain"],
-      "explanation": "Within three hours it lay several feet deep. Lava never reached the city; the first danger was the weight of ash on the roofs and the air people had to breathe.",
-      "correct_answer": 1,
-      "vertalingen": {
-        "nl": {
-          "question": "Wat viel er in de eerste uren van de uitbarsting op Pompeii?",
-          "options": ["Lavastromen", "As en puimsteen", "Kokende modder", "Hete regen"],
-          "explanation": "Binnen drie uur lag er een laag van ruim een meter. Lava bereikte de stad nooit; het eerste gevaar was het gewicht van de as op de daken en de lucht die mensen moesten inademen."
-        },
-        "fr": {
-          "question": "Qu'est-ce qui tomba sur Pompéi pendant les premières heures de l'éruption ?",
-          "options": ["Des coulées de lave", "Des cendres et de la pierre ponce", "De la boue bouillante", "Une pluie brûlante"],
-          "explanation": "En trois heures, la couche atteignait plus d'un mètre. La lave n'atteignit jamais la ville ; le premier danger était le poids des cendres sur les toits et l'air qu'il fallait respirer."
-        },
-        "de": {
-          "question": "Was fiel in den ersten Stunden des Ausbruchs auf Pompeji?",
-          "options": ["Lavaströme", "Asche und Bimsstein", "Kochender Schlamm", "Heißer Regen"],
-          "explanation": "Nach drei Stunden lag über ein Meter davon. Lava erreichte die Stadt nie; die erste Gefahr war das Gewicht der Asche auf den Dächern und die Luft, die man atmen musste."
-        }
-      }
-    },
-    {
-      "chapter_index": 4,
-      "question": "What killed most of Pompeii's victims during the night?",
-      "options": ["Lava flowing into the streets", "Collapsing city walls", "The heat of pyroclastic surges", "A tidal wave from the bay"],
-      "explanation": "Avalanches of superheated gas and rock raced down the mountain faster than anyone could run. Most victims did not suffocate; the heat killed them in moments.",
-      "correct_answer": 2,
-      "vertalingen": {
-        "nl": {
-          "question": "Wat doodde 's nachts de meeste slachtoffers in Pompeii?",
-          "options": ["Lava die de straten in stroomde", "Instortende stadsmuren", "De hitte van pyroclastische stromen", "Een vloedgolf uit de baai"],
-          "explanation": "Lawines van oververhit gas en gesteente raasden sneller de berg af dan iemand kon rennen. De meeste slachtoffers stikten niet; de hitte doodde hen binnen enkele ogenblikken."
-        },
-        "fr": {
-          "question": "Qu'est-ce qui tua la plupart des victimes de Pompéi pendant la nuit ?",
-          "options": ["La lave envahissant les rues", "L'effondrement des remparts", "La chaleur des déferlantes pyroclastiques", "Un raz-de-marée venu de la baie"],
-          "explanation": "Des avalanches de gaz et de roches surchauffés dévalaient la montagne plus vite que quiconque ne pouvait courir. La plupart des victimes ne moururent pas étouffées : la chaleur les tua en quelques instants."
-        },
-        "de": {
-          "question": "Was tötete in der Nacht die meisten Opfer in Pompeji?",
-          "options": ["Lava, die in die Straßen floss", "Einstürzende Stadtmauern", "Die Hitze pyroklastischer Ströme", "Eine Flutwelle aus der Bucht"],
-          "explanation": "Lawinen aus überhitztem Gas und Gestein rasten schneller den Berg hinab, als jemand laufen konnte. Die meisten Opfer erstickten nicht; die Hitze tötete sie in Augenblicken."
-        }
-      }
-    },
-    {
-      "chapter_index": 5,
-      "question": "Why was Pompeii preserved so well?",
-      "options": ["It was abandoned before the eruption", "It was buried quickly under ash", "Lava sealed it in rock", "The Romans walled it off"],
-      "explanation": "Some six metres of ash and pumice covered it within a day, keeping out air and decay. The city lay forgotten for nearly 1,700 years.",
-      "correct_answer": 1,
-      "vertalingen": {
-        "nl": {
-          "question": "Waarom bleef Pompeii zo goed bewaard?",
-          "options": ["Het was vóór de uitbarsting verlaten", "Het werd snel onder as begraven", "Lava sloot het in steen in", "De Romeinen ommuurden het"],
-          "explanation": "Binnen een dag lag er zo'n zes meter as en puimsteen over, waardoor lucht en verval buiten bleven. De stad lag bijna 1700 jaar vergeten."
-        },
-        "fr": {
-          "question": "Pourquoi Pompéi a-t-elle été si bien conservée ?",
-          "options": ["Elle avait été abandonnée avant l'éruption", "Elle fut rapidement ensevelie sous les cendres", "La lave l'emprisonna dans la roche", "Les Romains l'entourèrent d'un mur"],
-          "explanation": "En une journée, quelque six mètres de cendres et de pierre ponce la recouvrirent, à l'abri de l'air et de la décomposition. La ville resta oubliée pendant près de 1 700 ans."
-        },
-        "de": {
-          "question": "Warum blieb Pompeji so gut erhalten?",
-          "options": ["Es war vor dem Ausbruch verlassen", "Es wurde schnell unter Asche begraben", "Lava schloss es in Gestein ein", "Die Römer ummauerten es"],
-          "explanation": "Binnen eines Tages bedeckten es rund sechs Meter Asche und Bimsstein und hielten Luft und Verfall fern. Die Stadt lag fast 1.700 Jahre vergessen."
-        }
-      }
-    },
-    {
-      "chapter_index": 6,
-      "question": "When was Pompeii rediscovered?",
-      "options": ["1348", "1748", "1863", "1912"],
-      "explanation": "Excavators found ovens, wine jars and walls covered in graffiti. The plaster casts of the victims came later, from 1863.",
-      "correct_answer": 1,
-      "vertalingen": {
-        "nl": {
-          "question": "Wanneer werd Pompeii herontdekt?",
-          "options": ["1348", "1748", "1863", "1912"],
-          "explanation": "De opgravers vonden ovens, wijnkruiken en muren vol graffiti. De gipsafgietsels van de slachtoffers kwamen later, vanaf 1863."
-        },
-        "fr": {
-          "question": "Quand Pompéi a-t-elle été redécouverte ?",
-          "options": ["1348", "1748", "1863", "1912"],
-          "explanation": "Les fouilleurs trouvèrent des fours, des jarres à vin et des murs couverts de graffitis. Les moulages en plâtre des victimes vinrent plus tard, à partir de 1863."
-        },
-        "de": {
-          "question": "Wann wurde Pompeji wiederentdeckt?",
-          "options": ["1348", "1748", "1863", "1912"],
-          "explanation": "Die Ausgräber fanden Öfen, Weinkrüge und Wände voller Graffiti. Die Gipsabgüsse der Opfer kamen später, ab 1863."
-        }
-      }
-    },
-    {
-      "chapter_index": 8,
-      "question": "About how many people live in the danger zone around Vesuvius today?",
-      "options": ["30,000", "300,000", "3 million", "30 million"],
-      "explanation": "Vesuvius is still an active volcano. The same fertile slopes that drew the Romans draw people now.",
-      "correct_answer": 2,
-      "vertalingen": {
-        "nl": {
-          "question": "Ongeveer hoeveel mensen wonen er nu in de gevarenzone rond de Vesuvius?",
-          "options": ["30.000", "300.000", "3 miljoen", "30 miljoen"],
-          "explanation": "De Vesuvius is nog altijd een actieve vulkaan. Dezelfde vruchtbare hellingen die de Romeinen trokken, trekken nu nog steeds mensen."
-        },
-        "fr": {
-          "question": "Combien de personnes vivent aujourd'hui environ dans la zone de danger autour du Vésuve ?",
-          "options": ["30 000", "300 000", "3 millions", "30 millions"],
-          "explanation": "Le Vésuve est toujours un volcan actif. Les mêmes pentes fertiles qui attiraient les Romains attirent encore les habitants."
-        },
-        "de": {
-          "question": "Wie viele Menschen leben heute ungefähr in der Gefahrenzone rund um den Vesuv?",
-          "options": ["30.000", "300.000", "3 Millionen", "30 Millionen"],
-          "explanation": "Der Vesuv ist noch immer ein aktiver Vulkan. Dieselben fruchtbaren Hänge, die die Römer anzogen, ziehen auch heute Menschen an."
-        }
-      }
-    }
-  ],
+  "nieuw": [],
   "vertalingen": [
+    {
+      "id": "0a07433b-bbc0-4cba-8d21-560a68e82919",
+      "chapter_index": 1,
+      "correctie": {
+        "question": "What happened at Pompeii in 62 AD, seventeen years before the eruption?",
+        "options": [
+          "A great fire",
+          "A powerful earthquake",
+          "A slave revolt",
+          "A flood of the river"
+        ],
+        "explanation": "The earthquake damaged temples and houses across the bay. Pompeii was still rebuilding in 79, and nobody connected the quake with Vesuvius.",
+        "correct_answer": 1
+      },
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er in 62 n.Chr. in Pompeii, zeventien jaar voor de uitbarsting?",
+          "options": [
+            "Een grote brand",
+            "Een zware aardbeving",
+            "Een slavenopstand",
+            "Een overstroming van de rivier"
+          ],
+          "explanation": "De aardbeving beschadigde tempels en huizen rond de baai. In 79 was Pompeii nog steeds aan het herbouwen, en niemand legde het verband met de Vesuvius."
+        },
+        "fr": {
+          "question": "Que s'est-il passé à Pompéi en 62, dix-sept ans avant l'éruption ?",
+          "options": [
+            "Un grand incendie",
+            "Un violent tremblement de terre",
+            "Une révolte d'esclaves",
+            "Une crue du fleuve"
+          ],
+          "explanation": "Le séisme endommagea temples et maisons autour de la baie. En 79, Pompéi était encore en reconstruction, et personne ne fit le lien avec le Vésuve."
+        },
+        "de": {
+          "question": "Was geschah 62 n. Chr. in Pompeji, siebzehn Jahre vor dem Ausbruch?",
+          "options": [
+            "Ein großer Brand",
+            "Ein schweres Erdbeben",
+            "Ein Sklavenaufstand",
+            "Ein Hochwasser des Flusses"
+          ],
+          "explanation": "Das Beben beschädigte Tempel und Häuser rund um die Bucht. 79 wurde in Pompeji noch immer gebaut, und niemand brachte das Beben mit dem Vesuv in Verbindung."
+        }
+      }
+    },
+    {
+      "id": "95419871-7c67-40f8-a354-84c42c0d55ad",
+      "chapter_index": 2,
+      "correctie": {
+        "question": "Why do many historians now think Pompeii was destroyed in October rather than August?",
+        "options": [
+          "Pliny's letter clearly says October",
+          "A coin shows the date of the eruption",
+          "Autumn fruits, heavy clothing and a charcoal note dated mid-October",
+          "Roman calendars ran two months behind"
+        ],
+        "explanation": "The surviving copies of Pliny's letter disagree. Pomegranates and chestnuts in the houses, lit braziers, sealed wine jars and a scribble dated 17 October all point to autumn.",
+        "correct_answer": 2
+      },
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom denken veel historici nu dat Pompeii in oktober werd verwoest en niet in augustus?",
+          "options": [
+            "Plinius' brief noemt duidelijk oktober",
+            "Een munt toont de datum van de uitbarsting",
+            "Herfstvruchten, warme kleding en een houtskoolkrabbel van half oktober",
+            "De Romeinse kalender liep twee maanden achter"
+          ],
+          "explanation": "De bewaarde afschriften van Plinius' brief spreken elkaar tegen. Granaatappels en kastanjes in de huizen, brandende komforen, verzegelde wijnkruiken en een krabbel van 17 oktober wijzen allemaal op de herfst."
+        },
+        "fr": {
+          "question": "Pourquoi beaucoup d'historiens pensent-ils aujourd'hui que Pompéi fut détruite en octobre plutôt qu'en août ?",
+          "options": [
+            "La lettre de Pline dit clairement octobre",
+            "Une pièce montre la date de l'éruption",
+            "Des fruits d'automne, des vêtements chauds et une inscription au charbon datée de la mi-octobre",
+            "Le calendrier romain avait deux mois de retard"
+          ],
+          "explanation": "Les copies conservées de la lettre de Pline ne concordent pas. Grenades et châtaignes dans les maisons, braseros allumés, jarres de vin scellées et une inscription datée du 17 octobre indiquent l'automne."
+        },
+        "de": {
+          "question": "Warum glauben viele Historiker heute, dass Pompeji im Oktober und nicht im August zerstört wurde?",
+          "options": [
+            "Plinius' Brief nennt eindeutig Oktober",
+            "Eine Münze zeigt das Datum des Ausbruchs",
+            "Herbstfrüchte, warme Kleidung und eine Kohlekritzelei von Mitte Oktober",
+            "Der römische Kalender hing zwei Monate hinterher"
+          ],
+          "explanation": "Die erhaltenen Abschriften von Plinius' Brief widersprechen sich. Granatäpfel und Kastanien in den Häusern, brennende Kohlebecken, versiegelte Weinkrüge und eine Kritzelei vom 17. Oktober deuten auf den Herbst."
+        }
+      }
+    },
     {
       "id": "d725e89a-9e83-41b3-b383-2adfaa95cc0d",
       "chapter_index": 3,
+      "correctie": {
+        "question": "Why did Pliny the Elder sail towards the eruption instead of away from it?",
+        "options": [
+          "To rescue people trapped on the coast",
+          "To flee to Rome by sea",
+          "To chase pirates",
+          "To deliver grain to Pompeii"
+        ],
+        "explanation": "He first wanted to study the cloud up close. Then a woman named Rectina begged for help, and he launched the warships to rescue people. He died on the beach at Stabiae.",
+        "correct_answer": 0
+      },
       "vertalingen": {
         "nl": {
-          "question": "Welke vulkaan verwoestte Pompeii in 79 n.Chr.?",
-          "options": ["De Vesuvius", "De Etna", "De Stromboli", "De Krakatau"],
-          "explanation": "De Vesuvius. De meeste inwoners van Pompeii wisten niet eens dat het een vulkaan was – bij mensenheugenis was hij nooit uitgebarsten."
+          "question": "Waarom zeilde Plinius de Oudere naar de uitbarsting toe in plaats van ervandaan?",
+          "options": [
+            "Om mensen te redden die aan de kust vastzaten",
+            "Om over zee naar Rome te vluchten",
+            "Om piraten te achtervolgen",
+            "Om graan naar Pompeii te brengen"
+          ],
+          "explanation": "Eerst wilde hij de wolk van dichtbij bestuderen. Toen smeekte een vrouw die Rectina heette om hulp, en hij liet de oorlogsschepen uitvaren om mensen te redden. Hij stierf op het strand van Stabiae."
         },
         "fr": {
-          "question": "Quel volcan détruisit Pompéi en 79 apr. J.-C. ?",
-          "options": ["Le Vésuve", "L'Etna", "Le Stromboli", "Le Krakatoa"],
-          "explanation": "Le Vésuve. La plupart des Pompéiens ne savaient même pas que c'était un volcan : de mémoire d'homme, il n'était jamais entré en éruption."
+          "question": "Pourquoi Pline l'Ancien a-t-il navigué vers l'éruption au lieu de s'en éloigner ?",
+          "options": [
+            "Pour sauver des gens bloqués sur la côte",
+            "Pour fuir à Rome par la mer",
+            "Pour pourchasser des pirates",
+            "Pour livrer du blé à Pompéi"
+          ],
+          "explanation": "Il voulait d'abord observer le nuage de près. Puis une femme nommée Rectina implora son aide, et il fit partir les navires de guerre pour secourir les habitants. Il mourut sur la plage de Stabies."
         },
         "de": {
-          "question": "Welcher Vulkan zerstörte Pompeji im Jahr 79 n. Chr.?",
-          "options": ["Der Vesuv", "Der Ätna", "Der Stromboli", "Der Krakatau"],
-          "explanation": "Der Vesuv. Die meisten Bewohner Pompejis wussten nicht einmal, dass er ein Vulkan war – seit Menschengedenken war er nicht ausgebrochen."
+          "question": "Warum segelte Plinius der Ältere auf den Ausbruch zu statt davon weg?",
+          "options": [
+            "Um Menschen an der Küste zu retten",
+            "Um per Schiff nach Rom zu fliehen",
+            "Um Piraten zu verfolgen",
+            "Um Getreide nach Pompeji zu bringen"
+          ],
+          "explanation": "Zuerst wollte er die Wolke aus der Nähe untersuchen. Dann bat eine Frau namens Rectina um Hilfe, und er ließ die Kriegsschiffe auslaufen, um Menschen zu retten. Er starb am Strand von Stabiae."
         }
       }
     },
     {
-      "id": "7fb0d7c4-9410-4d33-abf4-a674e3866e86",
-      "chapter_index": 7,
+      "id": "34d21366-1652-4df4-98b5-ab4938922a01",
+      "chapter_index": 4,
+      "correctie": {
+        "question": "What did researchers find inside the skull of one victim at Herculaneum?",
+        "options": [
+          "A gold coin",
+          "Traces of poison",
+          "Pumice stones",
+          "Brain tissue turned to glass"
+        ],
+        "explanation": "The surge that hit Herculaneum was so hot that part of the man's brain turned into glass. Pompeii, further from the volcano, was reached by cooler but still deadly surges.",
+        "correct_answer": 3
+      },
       "vertalingen": {
         "nl": {
-          "question": "Hoe kennen we de gedaanten van de slachtoffers van Pompeii?",
-          "options": ["Er werd gips gegoten in de holtes die hun lichamen in de as achterlieten", "Er werden later bronzen beelden gegoten naar ooggetuigenverslagen", "Houtsnijwerk overleefde de hitte", "Muurschilderingen legden het tafereel vast"],
-          "explanation": "Giuseppe Fiorelli bedacht het in 1863: de lichamen waren vergaan, maar de verharde as hield hun precieze vorm vast als een holte."
+          "question": "Wat vonden onderzoekers in de schedel van een slachtoffer in Herculaneum?",
+          "options": [
+            "Een gouden munt",
+            "Sporen van gif",
+            "Puimsteentjes",
+            "Hersenweefsel dat in glas was veranderd"
+          ],
+          "explanation": "De gloedwolk die Herculaneum trof was zo heet dat een deel van de hersenen van de man in glas veranderde. Pompeii, verder van de vulkaan, werd getroffen door koelere maar nog steeds dodelijke gloedwolken."
         },
         "fr": {
-          "question": "Comment connaissons-nous la silhouette des victimes de Pompéi ?",
-          "options": ["On a coulé du plâtre dans les cavités laissées par leurs corps dans la cendre", "Des statues de bronze ont été coulées plus tard d'après des témoins", "Des sculptures en bois ont résisté à la chaleur", "Des fresques ont représenté la scène"],
-          "explanation": "Giuseppe Fiorelli en eut l'idée en 1863 : les corps s'étaient décomposés, mais la cendre durcie avait gardé leur forme exacte sous forme de vide."
+          "question": "Qu'ont trouvé les chercheurs dans le crâne d'une victime d'Herculanum ?",
+          "options": [
+            "Une pièce d'or",
+            "Des traces de poison",
+            "Des pierres ponces",
+            "Du tissu cérébral transformé en verre"
+          ],
+          "explanation": "La nuée qui frappa Herculanum était si chaude qu'une partie du cerveau de l'homme se changea en verre. Pompéi, plus éloignée du volcan, fut atteinte par des nuées moins chaudes mais tout aussi mortelles."
         },
         "de": {
-          "question": "Woher kennen wir die Gestalt der Opfer von Pompeji?",
-          "options": ["Man goss Gips in die Hohlräume, die ihre Körper in der Asche hinterließen", "Später wurden nach Augenzeugenberichten Bronzestatuen gegossen", "Holzschnitzereien überstanden die Hitze", "Wandmalereien hielten die Szene fest"],
-          "explanation": "Giuseppe Fiorelli kam 1863 darauf: Die Körper waren zerfallen, doch die verhärtete Asche bewahrte ihre genaue Form als Hohlraum."
+          "question": "Was fanden Forscher im Schädel eines Opfers in Herculaneum?",
+          "options": [
+            "Eine Goldmünze",
+            "Spuren von Gift",
+            "Bimssteine",
+            "Hirngewebe, das zu Glas geworden war"
+          ],
+          "explanation": "Die Glutwolke, die Herculaneum traf, war so heiß, dass ein Teil des Gehirns des Mannes zu Glas wurde. Pompeji lag weiter vom Vulkan entfernt und wurde von kühleren, aber ebenso tödlichen Glutwolken erreicht."
+        }
+      }
+    },
+    {
+      "id": "3b082ac0-afe7-4a14-bd20-fb58538da914",
+      "chapter_index": 5,
+      "correctie": {
+        "question": "Which word did scientists read in 2023 from inside a burned scroll from Herculaneum?",
+        "options": [
+          "Rome",
+          "Purple",
+          "Vesuvius",
+          "Love"
+        ],
+        "explanation": "The scrolls were turned into lumps of charcoal by the eruption. Scanners and artificial intelligence made it possible to read the Greek word for purple without unrolling it.",
+        "correct_answer": 1
+      },
+      "vertalingen": {
+        "nl": {
+          "question": "Welk woord lazen wetenschappers in 2023 in een verkoolde boekrol uit Herculaneum?",
+          "options": [
+            "Rome",
+            "Purper",
+            "Vesuvius",
+            "Liefde"
+          ],
+          "explanation": "De uitbarsting veranderde de boekrollen in brokken houtskool. Met scanners en kunstmatige intelligentie kon het Griekse woord voor purper gelezen worden zonder de rol open te rollen."
+        },
+        "fr": {
+          "question": "Quel mot les scientifiques ont-ils lu en 2023 à l'intérieur d'un rouleau brûlé d'Herculanum ?",
+          "options": [
+            "Rome",
+            "Pourpre",
+            "Vésuve",
+            "Amour"
+          ],
+          "explanation": "L'éruption avait changé les rouleaux en blocs de charbon. Grâce à des scanners et à l'intelligence artificielle, le mot grec pour pourpre a pu être lu sans dérouler le rouleau."
+        },
+        "de": {
+          "question": "Welches Wort lasen Wissenschaftler 2023 im Inneren einer verkohlten Schriftrolle aus Herculaneum?",
+          "options": [
+            "Rom",
+            "Purpur",
+            "Vesuv",
+            "Liebe"
+          ],
+          "explanation": "Der Ausbruch hatte die Schriftrollen in Kohleklumpen verwandelt. Mit Scannern und künstlicher Intelligenz ließ sich das griechische Wort für Purpur lesen, ohne die Rolle aufzurollen."
         }
       }
     }

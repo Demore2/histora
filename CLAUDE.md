@@ -364,7 +364,8 @@ questions are in four languages.
 
 Fase 1 van het introplan (fase 2 = anoniem account + Google-login, met een build; fase 3 = meten).
 
-- **`AuthPoort` beslist**: geen sessie en `onboarding-store.gezien` onwaar → `/intro`, anders `/login`.
+- **`AuthPoort` beslist**: geen sessie → altijd `/intro` (het welkomstscherm, ook na uitloggen; sinds
+  2026-10-28, was `/login` als `gezien` aan stond). "Get started" met `gezien` aan roept `heropenIntro()`.
   `intro` staat in `AUTH_ROUTES`. Hij wacht op de hydratie van `onboarding-store`, anders flitst de
   intro bij een terugkerende lezer.
 - **Eén scherm met een stapteller** (`STAPPEN`), geen dertien routes; antwoorden staan meteen in de
@@ -1118,6 +1119,31 @@ redactionele hero ("Featured", `getUitgelichtVerhaal`), `RecommendedStoryCard` e
   ook de hoofdstukken van een verhaal zijn een routekaart in plaats van een raster van tegels. Daar is
   een halte **wél** een slot — een `RouteHalte` zonder `onPress` is gedimd en niet aan te tikken — en
   een vergrendeld hoofdstuk toont een slot in plaats van zijn scène. Wijzig het pad op één plek.
+
+### Events (`soort: 'gebeurtenis'`, `events-sectie.tsx`, `isEvent`/`bepaalEvents` in `queries.ts`, 2026-10-28)
+
+Gebeurtenissen zijn sinds 2026-10-28 **losse events** (wens van de eigenaar, naar Historo/Paladin):
+korter (4-5 hoofdstukken, ~5 min), **geen halte** op de routekaarten van Explore of op de reiskaart,
+en **geen personage**. Zes stuks: `rome-rise` ("The Founding of Rome") en `pompeii-disaster` (beide
+herschreven, zelfde id's), `fall-of-constantinople`, `black-death` (`middeleeuwen/gebeurtenissen.ts`),
+`fall-of-the-berlin-wall`, `moon-landing` (`twintigste-eeuw/gebeurtenissen.ts`).
+
+- **`getReisTijdlijn()` is de tijdlijn zonder events**; `bepaalReis`, `bepaalRoute` (dus ook
+  `TijdperkTegel`) en `bepaalInstapVerhaal` (de intro) gebruiken hem — een event is dus nooit het
+  eerste verhaal na de intro. `getTijdlijn()` houdt alles, onder meer voor de "New"-sortering.
+- **Home: `EventsSectie`** onder de oppak-tegel: één uitgelicht event (het nieuwste dat je niet uit
+  hebt, label "New event" binnen `NIEUW_DAGEN`) en een rij met de rest, gelezen met een vinkje.
+  `bepaalOppakken` en de `NieuwVerhaalKaart` op Explore slaan events over, anders staan ze dubbel.
+- **Reader**: de laatste knop is "Finish event" (`handleRondEventAf`): uitgelezen + de 40 Dukaten van
+  het verhaal, geen `unlockCharacter`, geen venster. `personage.naam` blijft verplicht en draagt de titel.
+- **Profiel**: de collectie telt en toont alleen verhalen over personen. Wie Rome of Pompeii vóór deze
+  wijziging ontgrendelde houdt die rij in `character-unlock-store`, en **die blijven meetellen voor de
+  mijlpalen** — de badges worden afgeleid, dus wegfilteren zou een behaalde badge terug op slot zetten.
+- Events houden hun `tijdperkId` (kleur, en de trivia leest het tijdperk uit `story_catalog`).
+- **Nieuw event = het recept "Adding a story"**, met `soort: 'gebeurtenis'`, 4-5 hoofdstukken en in
+  `<era>/gebeurtenissen.ts`; 16:9-beelden (4 scènes + omslag, 7,5 credits). De oude quizrijen van
+  Rome h5-8 en Pompeii h6-8 staan nog in `story_quizzes` (feitelijk juist, dus nuttig voor de trivia);
+  hun h1-4/h1-5 zijn via `correctie` op dezelfde id's vervangen.
 
 ### Images (portretten + scènes — gebundeld, LAUNCH-PLAN.md B1/B2)
 

@@ -9,7 +9,7 @@ import { ThemedView } from '@/components/themed-view';
 import { TijdperkTegel } from '@/components/tijdperk-tegel';
 import { Spacing } from '@/constants/theme';
 import { getActieveTijdperken } from '@/constants/tijdperken';
-import { getNieuweVerhalen } from '@/content/queries';
+import { getNieuweVerhalen, isEvent } from '@/content/queries';
 import { useVandaag } from '@/hooks/use-vandaag';
 import { useVertaling } from '@/hooks/use-vertaling';
 import { useVoortgangStore } from '@/store/voortgang-store';
@@ -27,7 +27,8 @@ export default function ExploreScreen() {
   const { t } = useVertaling();
   const vandaag = useVandaag();
   const uitgelezen = useVoortgangStore((state) => state.completedStories);
-  const nieuwVerhaal = getNieuweVerhalen(vandaag).find((verhaal) => !uitgelezen.has(verhaal.id)) ?? null;
+  // Een nieuw event staat uitgelicht in de events-sectie op Home, niet hier (2026-10-28).
+  const nieuwVerhaal = getNieuweVerhalen(vandaag).find((verhaal) => !isEvent(verhaal) && !uitgelezen.has(verhaal.id)) ?? null;
 
   return (
     <ThemedView style={styles.container}>

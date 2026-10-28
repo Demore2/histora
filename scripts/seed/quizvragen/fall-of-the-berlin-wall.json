@@ -1,0 +1,181 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "When was the Berlin Wall built?",
+      "options": [
+        "In the spring of 1949",
+        "At Christmas 1953",
+        "Overnight on 12-13 August 1961",
+        "In the summer of 1968"
+      ],
+      "explanation": "In the early hours of Sunday 13 August 1961, soldiers and workers rolled out barbed wire around West Berlin. Concrete followed in the days and years after.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wanneer werd de Berlijnse Muur gebouwd?",
+          "options": [
+            "In het voorjaar van 1949",
+            "Met kerst 1953",
+            "In de nacht van 12 op 13 augustus 1961",
+            "In de zomer van 1968"
+          ],
+          "explanation": "In de vroege ochtend van zondag 13 augustus 1961 rolden soldaten en arbeiders prikkeldraad uit rond West-Berlijn. In de dagen en jaren daarna volgde beton."
+        },
+        "fr": {
+          "question": "Quand le mur de Berlin a-t-il été construit ?",
+          "options": [
+            "Au printemps 1949",
+            "À Noël 1953",
+            "Dans la nuit du 12 au 13 août 1961",
+            "À l'été 1968"
+          ],
+          "explanation": "Aux premières heures du dimanche 13 août 1961, soldats et ouvriers déroulèrent des barbelés autour de Berlin-Ouest. Le béton suivit dans les jours et les années qui suivirent."
+        },
+        "de": {
+          "question": "Wann wurde die Berliner Mauer gebaut?",
+          "options": [
+            "Im Frühjahr 1949",
+            "An Weihnachten 1953",
+            "In der Nacht vom 12. auf den 13. August 1961",
+            "Im Sommer 1968"
+          ],
+          "explanation": "In den frühen Morgenstunden des Sonntags, 13. August 1961, rollten Soldaten und Arbeiter Stacheldraht um West-Berlin aus. In den Tagen und Jahren danach folgte Beton."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Which country began taking down its border fence with Austria in May 1989?",
+      "options": [
+        "Hungary",
+        "Poland",
+        "Czechoslovakia",
+        "Yugoslavia"
+      ],
+      "explanation": "East Germans were allowed to holiday in Hungary. Once the fence came down, thousands of them used it as a route to the West.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk land begon in mei 1989 het grenshek met Oostenrijk af te breken?",
+          "options": [
+            "Hongarije",
+            "Polen",
+            "Tsjecho-Slowakije",
+            "Joegoslavië"
+          ],
+          "explanation": "Oost-Duitsers mochten op vakantie naar Hongarije. Toen het hek weg was, gebruikten duizenden van hen die route naar het Westen."
+        },
+        "fr": {
+          "question": "Quel pays a commencé en mai 1989 à démanteler sa clôture frontalière avec l'Autriche ?",
+          "options": [
+            "La Hongrie",
+            "La Pologne",
+            "La Tchécoslovaquie",
+            "La Yougoslavie"
+          ],
+          "explanation": "Les Allemands de l'Est pouvaient passer leurs vacances en Hongrie. Une fois la clôture tombée, des milliers d'entre eux l'empruntèrent pour gagner l'Ouest."
+        },
+        "de": {
+          "question": "Welches Land begann im Mai 1989, seinen Grenzzaun zu Österreich abzubauen?",
+          "options": [
+            "Ungarn",
+            "Polen",
+            "Die Tschechoslowakei",
+            "Jugoslawien"
+          ],
+          "explanation": "DDR-Bürger durften in Ungarn Urlaub machen. Als der Zaun fiel, nutzten Tausende von ihnen diesen Weg in den Westen."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What did Günter Schabowski answer when asked when the new travel rules took effect?",
+      "options": [
+        "Next year",
+        "After the elections",
+        "He refused to answer",
+        "Immediately, without delay"
+      ],
+      "explanation": "The rules were meant to start the next day, with visa applications. Schabowski had not been told, and his live answer sent East Berliners straight to the border.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat antwoordde Günter Schabowski op de vraag wanneer de nieuwe reisregels ingingen?",
+          "options": [
+            "Volgend jaar",
+            "Na de verkiezingen",
+            "Hij weigerde te antwoorden",
+            "Onmiddellijk, zonder uitstel"
+          ],
+          "explanation": "De regels zouden pas de volgende dag ingaan, met visumaanvragen. Schabowski wist dat niet, en zijn antwoord op live televisie stuurde Oost-Berlijners rechtstreeks naar de grens."
+        },
+        "fr": {
+          "question": "Qu'a répondu Günter Schabowski quand on lui a demandé quand les nouvelles règles de voyage entraient en vigueur ?",
+          "options": [
+            "L'année prochaine",
+            "Après les élections",
+            "Il a refusé de répondre",
+            "Immédiatement, sans délai"
+          ],
+          "explanation": "Les règles devaient entrer en vigueur le lendemain, avec des demandes de visa. Schabowski ne le savait pas, et sa réponse en direct envoya les Berlinois de l'Est droit à la frontière."
+        },
+        "de": {
+          "question": "Was antwortete Günter Schabowski auf die Frage, wann die neue Reiseregelung in Kraft trete?",
+          "options": [
+            "Nächstes Jahr",
+            "Nach den Wahlen",
+            "Er verweigerte die Antwort",
+            "Sofort, unverzüglich"
+          ],
+          "explanation": "Die Regelung sollte erst am nächsten Tag gelten, mit Visumanträgen. Schabowski wusste das nicht, und seine Antwort im Live-Fernsehen schickte die Ost-Berliner direkt an die Grenze."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What were the Berliners who chipped pieces off the Wall nicknamed?",
+      "options": [
+        "Wall rats",
+        "Wall woodpeckers",
+        "Stone eaters",
+        "Hammer brothers"
+      ],
+      "explanation": "Mauerspechte, \"wall woodpeckers\", attacked the concrete with hammers and chisels to take home a souvenir. The official demolition began the following year.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke bijnaam kregen de Berlijners die stukken van de Muur afhakten?",
+          "options": [
+            "Muurratten",
+            "Muurspechten",
+            "Steeneters",
+            "Hamerbroeders"
+          ],
+          "explanation": "De Mauerspechte, \"muurspechten\", gingen met hamer en beitel het beton te lijf om een aandenken mee naar huis te nemen. De officiële afbraak begon het jaar erna."
+        },
+        "fr": {
+          "question": "Quel surnom a-t-on donné aux Berlinois qui arrachaient des morceaux du Mur ?",
+          "options": [
+            "Les rats du Mur",
+            "Les pics du Mur",
+            "Les mangeurs de pierre",
+            "Les frères marteau"
+          ],
+          "explanation": "Les Mauerspechte, les « pics du Mur », attaquaient le béton au marteau et au burin pour rapporter un souvenir. La démolition officielle commença l'année suivante."
+        },
+        "de": {
+          "question": "Welchen Spitznamen bekamen die Berliner, die Stücke aus der Mauer schlugen?",
+          "options": [
+            "Mauerratten",
+            "Mauerspechte",
+            "Steinfresser",
+            "Hammerbrüder"
+          ],
+          "explanation": "Die Mauerspechte rückten dem Beton mit Hammer und Meißel zu Leibe, um ein Andenken mitzunehmen. Der offizielle Abriss begann im Jahr darauf."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

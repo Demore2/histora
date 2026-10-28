@@ -1,0 +1,181 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Where did scientists in 2022 trace the origin of the Black Death?",
+      "options": [
+        "Southern China",
+        "The Nile delta",
+        "Northern India",
+        "Near Lake Issyk-Kul in Central Asia"
+      ],
+      "explanation": "Plague DNA from skeletons in a graveyard in today's Kyrgyzstan, with gravestones from 1338 and 1339 mentioning \"pestilence\", pointed to Central Asia as the starting point.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar vonden wetenschappers in 2022 de oorsprong van de Zwarte Dood?",
+          "options": [
+            "In Zuid-China",
+            "In de Nijldelta",
+            "In Noord-India",
+            "Bij het Issyk-Kulmeer in Centraal-Azië"
+          ],
+          "explanation": "Pest-DNA uit skeletten op een begraafplaats in het huidige Kirgizië, met grafstenen uit 1338 en 1339 die \"pestilentie\" noemen, wees Centraal-Azië aan als beginpunt."
+        },
+        "fr": {
+          "question": "Où les scientifiques ont-ils situé en 2022 l'origine de la peste noire ?",
+          "options": [
+            "Dans le sud de la Chine",
+            "Dans le delta du Nil",
+            "Dans le nord de l'Inde",
+            "Près du lac Issyk-Koul, en Asie centrale"
+          ],
+          "explanation": "De l'ADN de la peste prélevé sur des squelettes d'un cimetière de l'actuel Kirghizistan, dont des pierres tombales de 1338 et 1339 mentionnent la « pestilence », désigne l'Asie centrale comme point de départ."
+        },
+        "de": {
+          "question": "Wo verorteten Wissenschaftler 2022 den Ursprung des Schwarzen Todes?",
+          "options": [
+            "In Südchina",
+            "Im Nildelta",
+            "In Nordindien",
+            "Am Issyk-Kul-See in Zentralasien"
+          ],
+          "explanation": "Pest-DNA aus Skeletten eines Friedhofs im heutigen Kirgisistan, dessen Grabsteine von 1338 und 1339 eine „Pestilenz“ erwähnen, wies auf Zentralasien als Ausgangspunkt."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What were the painful swellings caused by the most common form of the plague called?",
+      "options": [
+        "Buboes",
+        "Carbuncles of Saint Anthony",
+        "Plague stars",
+        "Black roses"
+      ],
+      "explanation": "Buboes were swollen lymph nodes in the groin, armpits or neck. They gave bubonic plague its name.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe heetten de pijnlijke zwellingen die de meest voorkomende vorm van de pest veroorzaakte?",
+          "options": [
+            "Builen",
+            "Sint-Antoniusvuur",
+            "Peststerren",
+            "Zwarte rozen"
+          ],
+          "explanation": "Builen waren opgezwollen lymfeklieren in de liezen, de oksels of de hals. Ze gaven de builenpest haar naam."
+        },
+        "fr": {
+          "question": "Comment appelait-on les gonflements douloureux causés par la forme la plus courante de la peste ?",
+          "options": [
+            "Les bubons",
+            "Le feu de Saint-Antoine",
+            "Les étoiles de la peste",
+            "Les roses noires"
+          ],
+          "explanation": "Les bubons étaient des ganglions enflés à l'aine, aux aisselles ou au cou. Ils ont donné son nom à la peste bubonique."
+        },
+        "de": {
+          "question": "Wie hießen die schmerzhaften Schwellungen, die die häufigste Form der Pest verursachte?",
+          "options": [
+            "Beulen",
+            "Antoniusfeuer",
+            "Peststerne",
+            "Schwarze Rosen"
+          ],
+          "explanation": "Die Beulen waren geschwollene Lymphknoten in der Leiste, unter den Achseln oder am Hals. Nach ihnen ist die Beulenpest benannt."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What did the medical faculty of Paris say had caused the plague?",
+      "options": [
+        "Poisoned wells",
+        "Rats from the East",
+        "A conjunction of three planets",
+        "Dirty clothing"
+      ],
+      "explanation": "In 1348 the doctors told the king of France that Saturn, Jupiter and Mars had lined up in 1345 and corrupted the air. Nobody yet knew about bacteria.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was volgens de medische faculteit van Parijs de oorzaak van de pest?",
+          "options": [
+            "Vergiftigde putten",
+            "Ratten uit het Oosten",
+            "Een samenstand van drie planeten",
+            "Vuile kleding"
+          ],
+          "explanation": "In 1348 vertelden de artsen de Franse koning dat Saturnus, Jupiter en Mars in 1345 op één lijn hadden gestaan en de lucht hadden bedorven. Van bacteriën wist nog niemand."
+        },
+        "fr": {
+          "question": "Selon la faculté de médecine de Paris, quelle était la cause de la peste ?",
+          "options": [
+            "Des puits empoisonnés",
+            "Des rats venus d'Orient",
+            "Une conjonction de trois planètes",
+            "Des vêtements sales"
+          ],
+          "explanation": "En 1348, les médecins expliquèrent au roi de France que Saturne, Jupiter et Mars s'étaient alignés en 1345 et avaient corrompu l'air. Personne ne connaissait encore les bactéries."
+        },
+        "de": {
+          "question": "Was war nach Ansicht der medizinischen Fakultät von Paris die Ursache der Pest?",
+          "options": [
+            "Vergiftete Brunnen",
+            "Ratten aus dem Osten",
+            "Eine Konjunktion von drei Planeten",
+            "Schmutzige Kleidung"
+          ],
+          "explanation": "1348 erklärten die Ärzte dem französischen König, Saturn, Jupiter und Mars hätten 1345 in einer Reihe gestanden und die Luft verdorben. Von Bakterien wusste noch niemand."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Where does the word quarantine come from?",
+      "options": [
+        "A Latin word for \"closed door\"",
+        "The Italian for \"forty days\"",
+        "The name of a Venetian doctor",
+        "An Arabic word for \"island\""
+      ],
+      "explanation": "Ragusa, today Dubrovnik, made travellers wait thirty days in 1377. Later the wait became forty days, quaranta giorni in Italian.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar komt het woord quarantaine vandaan?",
+          "options": [
+            "Een Latijns woord voor \"gesloten deur\"",
+            "Het Italiaans voor \"veertig dagen\"",
+            "De naam van een Venetiaanse arts",
+            "Een Arabisch woord voor \"eiland\""
+          ],
+          "explanation": "Ragusa, het huidige Dubrovnik, liet reizigers in 1377 dertig dagen wachten. Later werd dat veertig dagen, quaranta giorni in het Italiaans."
+        },
+        "fr": {
+          "question": "D'où vient le mot quarantaine ?",
+          "options": [
+            "D'un mot latin signifiant « porte fermée »",
+            "De l'italien pour « quarante jours »",
+            "Du nom d'un médecin vénitien",
+            "D'un mot arabe signifiant « île »"
+          ],
+          "explanation": "En 1377, Raguse, l'actuelle Dubrovnik, fit attendre les voyageurs trente jours. Plus tard, l'attente passa à quarante jours, quaranta giorni en italien."
+        },
+        "de": {
+          "question": "Woher kommt das Wort Quarantäne?",
+          "options": [
+            "Von einem lateinischen Wort für „geschlossene Tür“",
+            "Vom Italienischen für „vierzig Tage“",
+            "Vom Namen eines venezianischen Arztes",
+            "Von einem arabischen Wort für „Insel“"
+          ],
+          "explanation": "Ragusa, das heutige Dubrovnik, ließ Reisende 1377 dreißig Tage warten. Später wurden daraus vierzig Tage, quaranta giorni auf Italienisch."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

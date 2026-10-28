@@ -43,6 +43,15 @@ const en = {
     geenVerhalenTitel: 'No stories yet',
     geenVerhalenTekst: 'There are no stories available yet.',
   },
+  // Losse events op Home (2026-10-28): korter dan een biografie, geen halte op de reis.
+  events: {
+    kop: 'Events',
+    uitgelicht: 'Featured event',
+    nieuw: 'New event',
+    leesKnop: 'Read now',
+    verderKnop: 'Continue',
+    allesGelezen: 'You have read every event. New ones are on their way.',
+  },
   /** De reiskaart bovenaan Home (`reis-kaart.tsx`): de tijdlijn van Rome tot vandaag. */
   reis: {
     beginKop: 'Your journey starts here',
@@ -868,6 +877,7 @@ const en = {
     volgende: 'Next Chapter',
     allesVoltooid: 'All Chapters Complete',
     ontgrendelPersonage: (naam: string) => `Unlock ${naam}`,
+    rondEventAf: 'Finish event',
   },
   /** Labels die `blok-weergave.tsx` zelf toevoegt aan een blok (LAUNCH-PLAN.md B3). */
   blok: {

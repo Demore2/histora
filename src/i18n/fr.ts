@@ -28,6 +28,15 @@ const fr: DeepPartial<Vertalingen> = {
     geenVerhalenTitel: 'Pas encore d’histoires',
     geenVerhalenTekst: 'Aucune histoire n’est encore disponible.',
   },
+  // Losse events op Home (2026-10-28): korter dan een biografie, geen halte op de reis.
+  events: {
+    kop: 'Événements',
+    uitgelicht: 'À la une',
+    nieuw: 'Nouvel événement',
+    leesKnop: 'Lire maintenant',
+    verderKnop: 'Continuer',
+    allesGelezen: "Vous avez lu tous les événements. D'autres arrivent bientôt.",
+  },
   reis: {
     beginKop: 'Votre voyage commence ici',
     beginTitel: "Des pharaons au monde d’aujourd’hui",
@@ -590,6 +599,7 @@ const fr: DeepPartial<Vertalingen> = {
     volgende: 'Chapitre suivant',
     allesVoltooid: 'Tous les chapitres terminés',
     ontgrendelPersonage: (naam: string) => `Débloquer ${naam}`,
+    rondEventAf: "Terminer l'événement",
   },
   blok: {
     weetjeLabel: 'Le saviez-vous ?',
