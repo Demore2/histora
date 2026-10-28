@@ -102,7 +102,7 @@ export function SettingsItem({
         </View>
       ) : null}
       {waarde ? (
-        <ThemedText type="small" themeColor="textSecondary" numberOfLines={1} style={styles.waarde}>
+        <ThemedText type="small" themeColor="textSecondary" numberOfLines={1} ellipsizeMode="middle" style={styles.waarde}>
           {waarde}
         </ThemedText>
       ) : null}
@@ -165,13 +165,12 @@ const styles = StyleSheet.create({
     gap: Spacing.half,
   },
   waarde: {
-    // Mag krimpen als het label lang is, maar niet tot niets: een half e-mailadres zegt meer
-    // dan een afgekapt label.
+    // Mag krimpen als het label lang is. Het label gaat vóór: met 62% brak "Contact opnemen"
+    // (nl) letter voor letter af naast het supportadres. Daarom hooguit de helft, en een te lang
+    // adres wordt in het midden ingekort (`ellipsizeMode="middle"`), zodat begin en domein blijven
+    // staan en het niet op een tikfout lijkt.
     flexShrink: 1,
-    // 62% en niet 50%: het langste dat hier staat is het supportadres, en op een smal toestel
-    // kapte dat halverwege af tot iets dat op een tikfout leek. De labels ernaast zijn kort
-    // ("Contact support", "Your plan"), dus die houden met `flex: 1` ruim genoeg over.
-    maxWidth: '62%',
+    maxWidth: '50%',
     textAlign: 'right',
   },
   badge: {
