@@ -1,6 +1,7 @@
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { AdBanner } from '@/components/ad-banner';
 import { KopActies } from '@/components/kop-acties';
 import { NieuwVerhaalKaart } from '@/components/nieuw-verhaal-kaart';
 import { ThemedText } from '@/components/themed-text';
@@ -46,6 +47,11 @@ export default function ExploreScreen() {
           {getActieveTijdperken().map((tijdperk) => (
             <TijdperkTegel key={tijdperk.id} tijdperk={tijdperk} />
           ))}
+
+          {/* Banner onder het laatste tijdperk (wens van de eigenaar, na 1.5.0). Mag hier sinds de
+              trivia van dit tabblad af is: er staan geen snel-tik-spelknoppen meer naast. Rendert
+              niets voor Pro of zolang er geen advertentie geladen is. */}
+          <AdBanner />
         </ScrollView>
       </SafeAreaView>
     </ThemedView>

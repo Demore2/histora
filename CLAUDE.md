@@ -1644,8 +1644,10 @@ Pro sees none of the three.
 - `ad-modal.tsx` (the 30-second placeholder) is **orphaned** since v1.2.
 - **1.4.3: banners also on Profiel (under the character collection) and at the bottom of the Shop**,
   and a **rewarded ad on Explore** ("Watch an ad for +1 life", only in the no-lives panel, only when
-  one is preloaded — `beloondKlaar` in `advertentie-store`). **Still no banner on Explore**: fast-tap
-  game buttons next to a banner is the accidental-click traffic AdMob suspends accounts for.
+  one is preloaded — `beloondKlaar` in `advertentie-store`). **Still no banner on the trivia screen**
+  (`app/trivia.tsx`, where that rewarded ad now lives): fast-tap game buttons next to a banner is the
+  accidental-click traffic AdMob suspends accounts for. **The Explore tab itself has a banner since
+  1.5.0** (under the last era tile) — since 1.4.5 it only holds era tiles, no game buttons.
   The life is granted **by the server** (`trivia_leven_bij_advertentie`,
   `supabase/trivia-advertentie-migratie.sql` + `-2.sql`), never by the app. **Since `-2.sql`: no daily
   cap, but only with zero lives** (owner, 2026-10-27: one life per ad, as often as they like — every view
