@@ -29,8 +29,10 @@ import { useSubscriptionStore } from '@/store/subscription-store';
  * Een vijfde ingang moet daarom een keuze maken in plaats van in een `undefined` te vallen.
  * Die is er sinds 1.2.1: `offline`, een gratis lezer zonder internet (`offline-modal.tsx`) — ook
  * een muur. Sinds 1.5 ook `trivia`: de levens in Explore zijn op — ook een muur.
+ * Sinds 1.4.5 ook `intro`: het aanbod aan het eind van de intro (`intro-pro.tsx`) — iemand die
+ * nog niets gezien heeft, dus geen muur en geen eigen keuze.
  */
-export type PaywallBron = 'banner' | 'settings' | 'limit' | 'ad' | 'offline' | 'trivia';
+export type PaywallBron = 'banner' | 'settings' | 'limit' | 'ad' | 'offline' | 'trivia' | 'intro';
 
 type ProPaywallProps = {
   visible: boolean;
@@ -83,7 +85,7 @@ function proefDagen(pakket: Pakket | undefined): number | null {
  * offerings pas worden opgevraagd wanneer iemand werkelijk kijkt. Zonder sleutel of op web blijft
  * de oude "binnenkort"-stand van `ProPaywall` staan — precies wat de build tot nu toe deed.
  */
-function Winkel({ bron, onGekocht }: { bron: PaywallBron; onGekocht: () => void }) {
+export function ProWinkel({ bron, onGekocht }: { bron: PaywallBron; onGekocht: () => void }) {
   const theme = useTheme();
   const { t, taal } = useVertaling();
   const pasWinkelstandToe = useSubscriptionStore((s) => s.pasWinkelstandToe);
@@ -408,7 +410,7 @@ export function ProPaywall({ visible, onClose, bron }: ProPaywallProps) {
             </View>
 
             {winkelOpen ? (
-              visible ? <Winkel bron={bron} onGekocht={sluit} /> : null
+              visible ? <ProWinkel bron={bron} onGekocht={sluit} /> : null
             ) : (
             <>
             {/* Plan selection */}

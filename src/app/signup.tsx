@@ -22,6 +22,7 @@ import { useVertaling } from '@/hooks/use-vertaling';
 import { logRegistreren } from '@/hooks/useAnalytics';
 import { signup } from '@/hooks/useAuth';
 import type { Vertalingen } from '@/i18n';
+import { useOnboardingStore } from '@/store/onboarding-store';
 
 /** De meter leent de semantische kleuren uit `theme.ts`; hier staat alleen de koppeling. */
 const STERKTE_KLEUR: Record<Wachtwoordsterkte, ThemeColor> = {
@@ -42,7 +43,8 @@ export default function SignupScreen() {
 
   const [email, setEmail] = useState('');
   const [wachtwoord, setWachtwoord] = useState('');
-  const [gebruikersnaam, setGebruikersnaam] = useState('');
+  // De naam uit de intro (1.4.5) staat er alvast; aanpassen kan gewoon.
+  const [gebruikersnaam, setGebruikersnaam] = useState(() => useOnboardingStore.getState().naam.trim());
   const [akkoord, setAkkoord] = useState(false);
   const [fout, setFout] = useState<string | null>(null);
   const [melding, setMelding] = useState<string | null>(null);
@@ -89,7 +91,9 @@ export default function SignupScreen() {
       setMelding(t((s) => s.auth.bevestigMail)(email.trim()));
       return;
     }
-    router.replace('/');
+    // Net uit de intro (1.4.5)? Dan eerst eenmalig het Pro-aanbod; zelfde keuze als de auth-poort,
+    // anders wint deze `replace` de race en verdwijnt dat scherm meteen weer.
+    router.replace(useOnboardingStore.getState().afrondenOpen ? '/intro-pro' : '/');
   }
 
   return (

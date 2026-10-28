@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useSyncExternalStore } from 'react';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
 import {
   DarkTheme,
@@ -29,10 +29,13 @@ import { useVoortgangSync } from '@/hooks/use-voortgang-sync';
 import { useAnalytics } from '@/hooks/useAnalytics';
 import { useAuth } from '@/hooks/useAuth';
 import { useAuthStore } from '@/store/auth-store';
+import { useOnboardingStore } from '@/store/onboarding-store';
 import { useSubscriptionStore } from '@/store/subscription-store';
 
 /** De routes die je zonder sessie mag zien. Alles daarbuiten stuurt de poort naar /login. */
-const AUTH_ROUTES = ['login', 'signup'];
+// `intro` hoort erbij (1.4.5): een lezer zonder sessie mag daar zijn, en wie wél een sessie heeft
+// wordt er net zo hard weggestuurd als van `login`.
+const AUTH_ROUTES = ['login', 'signup', 'intro'];
 
 export default function RootLayout() {
   const [showSplash, setShowSplash] = useState(true);
@@ -126,6 +129,9 @@ export default function RootLayout() {
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           <Stack.Screen name="login" options={{ headerShown: false }} />
           <Stack.Screen name="signup" options={{ headerShown: false }} />
+          {/* De intro voor nieuwe lezers en het Pro-aanbod erna (1.4.5): volledig scherm, eigen kop. */}
+          <Stack.Screen name="intro" options={{ headerShown: false }} />
+          <Stack.Screen name="intro-pro" options={{ headerShown: false, gestureEnabled: false }} />
           {/* Instellingen en de avatarkiezer horen bij de Profiel-tab, maar staan als
               stack-scherm *naast* de tabbladen — net als `verhaal/[id]`. Ze konden geen
               `(tabs)/profiel/settings.tsx` worden: dan zou `(tabs)/profiel.tsx` (dat niet
@@ -175,17 +181,27 @@ function AuthPoort() {
   // Zonder gemonteerde navigator gooit `replace()` "Attempted to navigate before mounting the
   // Root Layout component" — deze key is er pas als de boom staat.
   const navigatieKlaar = useRootNavigationState()?.key !== undefined;
+  // De intro (1.4.5): wie hem nog niet zag, komt daar in plaats van op `/login`; wie hem net
+  // afrondde, krijgt na het inloggen eenmalig het Pro-aanbod. Beslissen vóór `onboarding-store`
+  // gelezen is zou een terugkerende lezer de intro een frame laten zien.
+  const onboardingKlaar = useSyncExternalStore(
+    useOnboardingStore.persist.onFinishHydration,
+    useOnboardingStore.persist.hasHydrated,
+    () => false,
+  );
+  const introGezien = useOnboardingStore((state) => state.gezien);
+  const afrondenOpen = useOnboardingStore((state) => state.afrondenOpen);
 
   useEffect(() => {
-    if (isLoading || !navigatieKlaar) return;
+    if (isLoading || !navigatieKlaar || !onboardingKlaar) return;
 
     const opAuthScherm = AUTH_ROUTES.includes(segments[0] ?? '');
     if (!user && !opAuthScherm) {
-      router.replace('/login');
+      router.replace(introGezien ? '/login' : '/intro');
     } else if (user && opAuthScherm) {
-      router.replace('/');
+      router.replace(afrondenOpen ? '/intro-pro' : '/');
     }
-  }, [user, isLoading, navigatieKlaar, segments]);
+  }, [user, isLoading, navigatieKlaar, onboardingKlaar, introGezien, afrondenOpen, segments]);
 
   return null;
 }

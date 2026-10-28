@@ -358,6 +358,28 @@ questions are in four languages.
   every confirm/alert goes through `bevestig()` / `meld()` in **`src/constants/dialoog.ts`**, which
   falls back to `window.confirm` / `window.alert`. Use those, not `Alert.alert` directly.
 
+### De intro voor nieuwe lezers (`src/app/intro.tsx`, `intro-pro.tsx`, `onboarding-store.ts`, 1.4.5)
+
+Fase 1 van het introplan (fase 2 = anoniem account + Google-login, met een build; fase 3 = meten).
+
+- **`AuthPoort` beslist**: geen sessie en `onboarding-store.gezien` onwaar → `/intro`, anders `/login`.
+  `intro` staat in `AUTH_ROUTES`. Hij wacht op de hydratie van `onboarding-store`, anders flitst de
+  intro bij een terugkerende lezer.
+- **Eén scherm met een stapteller** (`STAPPEN`), geen dertien routes; antwoorden staan meteen in de
+  store. "I already have an account" zet `gezien` en gaat naar `/login`.
+- **Het account komt aan het eind**; het registratiescherm neemt de naam uit de intro over. De avatar
+  is een `{ soort: 'phoxy', tijdperkId }` in `profile-store` (de zes `ERA_KOP`-koppen).
+- **Het Pro-aanbod (`/intro-pro`) komt ná het inloggen**, want een aankoop vóór het koppelen van
+  RevenueCat aan het Supabase-id landt bij een anonieme klant. `rondIntroAf` zet `afrondenOpen`; zowel
+  de poort als `login.tsx`/`signup.tsx` sturen dan naar `/intro-pro` (anders wint hun eigen
+  `replace('/')` de race). Daarna opent `startVerhaalId`. Overgeslagen als Pro uit staat, Billing
+  ontbreekt of de lezer al Pro heeft. Hergebruikt `ProWinkel` uit `pro-paywall.tsx` (bron `intro`).
+- **Negen stappen, zonder opwarmquiz** (eigenaar: de app draait om lezen). `content/opwarmvragen.ts`
+  bestaat nog maar wordt niet gebruikt. **Het eerste verhaal is altijd `rome-rise`** (`EERSTE_VERHAAL`);
+  doel, tijdperken en niveau worden alleen bewaard, voor het persoonlijke gevoel.
+- **AdMob's UMP-toestemming wacht tot het Pro-scherm weg is**: `useAdvertenties` start pas als
+  `afrondenOpen` onwaar is (anders twee vensters over elkaar). Geslacht/leeftijd worden bewust niet gevraagd (AVG: niet verzamelen wat je niet gebruikt).
+
 ### Voortgang sync (R8.AUTH deel 3, R8.SYNC-B)
 
 **Three stores mirror themselves into Supabase**, all following the same pattern:

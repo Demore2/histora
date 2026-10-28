@@ -3,7 +3,9 @@ import type { ImageSourcePropType } from 'react-native';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 
+import { ERA_KOP } from '@/constants/era-koppen';
 import { getVerhaal } from '@/content/verhalen';
+import type { TijdperkId } from '@/lib/trivia';
 
 /**
  * De avatar op Profiel.
@@ -17,12 +19,15 @@ import { getVerhaal } from '@/content/verhalen';
  */
 export type Avatar =
   | { soort: 'personage'; verhaalId: string }
-  | { soort: 'foto'; uri: string };
+  | { soort: 'foto'; uri: string }
+  /** Phoxy met het hoofddeksel van een tijdperk (1.4.5): de keuze in de intro, waar een nieuwe lezer nog niets heeft vrijgespeeld. */
+  | { soort: 'phoxy'; tijdperkId: TijdperkId };
 
 type ProfileState = {
   avatar: Avatar | null;
   kiesPersonage: (verhaalId: string) => void;
   kiesFoto: (uri: string) => void;
+  kiesPhoxy: (tijdperkId: TijdperkId) => void;
   wisAvatar: () => void;
 };
 
@@ -45,6 +50,7 @@ export const useProfileStore = create<ProfileState>()(
       avatar: null,
       kiesPersonage: (verhaalId) => set({ avatar: { soort: 'personage', verhaalId } }),
       kiesFoto: (uri) => set({ avatar: { soort: 'foto', uri } }),
+      kiesPhoxy: (tijdperkId) => set({ avatar: { soort: 'phoxy', tijdperkId } }),
       wisAvatar: () => set({ avatar: null }),
     }),
     {
@@ -64,5 +70,6 @@ export const useProfileStore = create<ProfileState>()(
 export function avatarBron(avatar: Avatar | null): ImageSourcePropType | null {
   if (!avatar) return null;
   if (avatar.soort === 'foto') return { uri: avatar.uri };
+  if (avatar.soort === 'phoxy') return ERA_KOP[avatar.tijdperkId] ?? null;
   return getVerhaal(avatar.verhaalId)?.afbeelding ?? null;
 }

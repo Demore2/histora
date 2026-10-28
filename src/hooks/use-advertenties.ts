@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useAbonnement } from '@/hooks/use-abonnement';
 import { startAdvertenties } from '@/lib/advertenties';
 import { useAuthStore } from '@/store/auth-store';
+import { useOnboardingStore } from '@/store/onboarding-store';
 import { useSubscriptionStore } from '@/store/subscription-store';
 
 /**
@@ -21,9 +22,13 @@ export function useAdvertenties(): void {
   const laden = useSubscriptionStore((s) => s.loading);
   const { isPremium } = useAbonnement();
 
+  // Net uit de intro staat het Pro-aanbod (`/intro-pro`) nog open. Googles toestemmingsvenster komt
+  // pas als dat weg is (wens van de eigenaar, 1.4.5): twee vensters over elkaar heen leest als een muur.
+  const introAanbodOpen = useOnboardingStore((s) => s.afrondenOpen);
+
   const abonnementBekend = userId !== null && abonnementVan === userId && !laden;
 
   useEffect(() => {
-    if (abonnementBekend && !isPremium) void startAdvertenties();
-  }, [abonnementBekend, isPremium]);
+    if (abonnementBekend && !isPremium && !introAanbodOpen) void startAdvertenties();
+  }, [abonnementBekend, isPremium, introAanbodOpen]);
 }

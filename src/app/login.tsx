@@ -19,6 +19,7 @@ import { logInloggen } from '@/hooks/useAnalytics';
 // De losse `login` in plaats van `useAuth()`: de hook zet ook de sessie-listener op en die
 // hoort maar op één plek te draaien (de root layout). Zie de opmerking bij `useAuth`.
 import { login } from '@/hooks/useAuth';
+import { useOnboardingStore } from '@/store/onboarding-store';
 
 export default function LoginScreen() {
   const theme = useTheme();
@@ -56,7 +57,9 @@ export default function LoginScreen() {
     // De poort in de root layout stuurt óók door zodra de store een user heeft; dit is de
     // snelle weg zodat er geen frame met het inlogscherm blijft staan. Twee keer naar
     // dezelfde route vervangen is een no-op.
-    router.replace('/');
+    // Net uit de intro (1.4.5)? Dan eerst eenmalig het Pro-aanbod; zelfde keuze als de auth-poort,
+    // anders wint deze `replace` de race en verdwijnt dat scherm meteen weer.
+    router.replace(useOnboardingStore.getState().afrondenOpen ? '/intro-pro' : '/');
   }
 
   /**
