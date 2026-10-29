@@ -1,6 +1,7 @@
 import type { AuthError, Session, User } from '@supabase/supabase-js';
 import { useEffect } from 'react';
 
+import { MIN_WACHTWOORD_LENGTE } from '@/constants/auth-validatie';
 import { getVertalingen, type Vertalingen } from '@/i18n';
 import { googleLogin } from '@/lib/google-login';
 import { supabase } from '@/lib/supabase';
@@ -270,6 +271,49 @@ export async function wijzigGebruikersnaam(naam: string): Promise<NaamResultaat>
     if (!profiel) return { ok: false, reden: 'mislukt' };
   }
   useAuthStore.getState().setUser(bijgewerkt?.user ?? user, profiel);
+  return { ok: true };
+}
+
+/**
+ * Heeft dit account een wachtwoord? Een account dat alleen via Google bestaat niet; dan zet
+ * `wijzigWachtwoord` er een in plaats van naar het huidige te vragen.
+ */
+export function heeftWachtwoord(user: User | null | undefined): boolean {
+  return user?.identities?.some((identiteit) => identiteit.provider === 'email') ?? false;
+}
+
+export type WachtwoordResultaat =
+  | { ok: true }
+  | { ok: false; reden: 'huidigFout' | 'teKort' | 'zelfde' | 'zwak' | 'netwerk' | 'mislukt' };
+
+/**
+ * Wijzigt het wachtwoord (Instellingen → Wachtwoord wijzigen). Eerst het huidige controleren met
+ * een gewone inlog: dan kan iemand die even met een ontgrendelde telefoon zit het account niet
+ * overnemen, en is de sessie vers genoeg als "Secure password change" in Supabase aan staat.
+ * `huidig` is `null` voor een Google-account zonder wachtwoord.
+ */
+export async function wijzigWachtwoord(huidig: string | null, nieuw: string): Promise<WachtwoordResultaat> {
+  if (nieuw.length < MIN_WACHTWOORD_LENGTE) return { ok: false, reden: 'teKort' };
+  const user = useAuthStore.getState().user;
+  if (!user?.email) return { ok: false, reden: 'mislukt' };
+
+  if (huidig !== null) {
+    const { error } = await supabase.auth.signInWithPassword({ email: user.email, password: huidig });
+    if (error) {
+      if (error.name === 'AuthRetryableFetchError') return { ok: false, reden: 'netwerk' };
+      return { ok: false, reden: error.code === 'invalid_credentials' ? 'huidigFout' : 'mislukt' };
+    }
+  }
+
+  const { data, error } = await supabase.auth.updateUser({ password: nieuw });
+  if (error || !data.user) {
+    console.warn('[auth] wachtwoord wijzigen mislukt:', error?.message);
+    if (error?.name === 'AuthRetryableFetchError') return { ok: false, reden: 'netwerk' };
+    if (error?.code === 'same_password') return { ok: false, reden: 'zelfde' };
+    if (error?.code === 'weak_password') return { ok: false, reden: 'zwak' };
+    return { ok: false, reden: 'mislukt' };
+  }
+  useAuthStore.getState().setUser(data.user, useAuthStore.getState().profiel);
   return { ok: true };
 }
 

@@ -276,8 +276,7 @@ export default function InstellingenScreen() {
             <SettingsItem
               icoon="lock-closed-outline"
               label={t((s) => s.instellingen.wachtwoordWijzigen)}
-              badge={binnenkortBadge}
-              onPress={() => nogNiet(t((s) => s.instellingen.wachtwoordWijzigen))}
+              onPress={() => router.push('/profiel/wachtwoord')}
             />
           )}
           {/* Uitnodigen staat bij "Account" en niet bij "Support": het gaat over jouw code en
