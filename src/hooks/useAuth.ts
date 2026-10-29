@@ -227,6 +227,52 @@ export async function zetGastNaam(naam: string): Promise<void> {
   if (data.user) useAuthStore.getState().setUser(data.user, useAuthStore.getState().profiel);
 }
 
+/** Langer past niet in de profielkop en Phoxy's begroeting. */
+export const MAX_GEBRUIKERSNAAM = 30;
+
+export type NaamResultaat = { ok: true } | { ok: false; reden: 'leeg' | 'teLang' | 'bezet' | 'mislukt' };
+
+/**
+ * Wijzigt de gebruikersnaam (Instellingen → Gebruikersnaam). Eerst de `profiles`-rij, pas daarna
+ * `user_metadata`: weigert de rij (een unieke naam die al bestaat, of geen update-policy), dan is er
+ * niets veranderd. De metadata gaat mee omdat een gast nog geen rij heeft en de profielkop daarop
+ * terugvalt. `.select()` na de update, want een update die door RLS nul rijen raakt geeft geen fout.
+ */
+export async function wijzigGebruikersnaam(naam: string): Promise<NaamResultaat> {
+  const schoon = naam.trim();
+  if (!schoon) return { ok: false, reden: 'leeg' };
+  if (schoon.length > MAX_GEBRUIKERSNAAM) return { ok: false, reden: 'teLang' };
+
+  const store = useAuthStore.getState();
+  const user = store.user;
+  if (!user) return { ok: false, reden: 'mislukt' };
+
+  let profiel = store.profiel;
+  if (profiel) {
+    const { data, error } = await supabase
+      .from('profiles')
+      .update({ username: schoon })
+      .eq('id', user.id)
+      .select(PROFIEL_KOLOMMEN)
+      .maybeSingle();
+    if (error) {
+      console.warn('[auth] gebruikersnaam wijzigen mislukt:', error.message);
+      return { ok: false, reden: error.code === '23505' ? 'bezet' : 'mislukt' };
+    }
+    if (!data) return { ok: false, reden: 'mislukt' };
+    profiel = data as Profiel;
+  }
+
+  const { data: bijgewerkt, error: metaFout } = await supabase.auth.updateUser({ data: { username: schoon } });
+  if (metaFout) {
+    // De rij staat er al; alleen de terugval is oud. Bij een gast is de metadata alles wat er is.
+    console.warn('[auth] naam in metadata zetten mislukt:', metaFout.message);
+    if (!profiel) return { ok: false, reden: 'mislukt' };
+  }
+  useAuthStore.getState().setUser(bijgewerkt?.user ?? user, profiel);
+  return { ok: true };
+}
+
 export type GoogleAuthResultaat =
   | { ok: true; nieuw: boolean }
   | { ok: false; reden: 'afgebroken' | 'geen-play-services' | 'mislukt'; bericht?: string };

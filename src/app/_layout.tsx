@@ -142,6 +142,7 @@ export default function RootLayout() {
               De titels zetten de schermen zelf, zodat ze vertaald meebewegen. */}
           <Stack.Screen name="profiel/settings" />
           <Stack.Screen name="profiel/upload-avatar" options={{ presentation: 'modal' }} />
+          <Stack.Screen name="profiel/gebruikersnaam" options={{ presentation: 'modal' }} />
           {/* Vrienden uitnodigen. Staat hier en niet onder `(tabs)/profiel/`, om dezelfde reden
               als de twee schermen hierboven: `(tabs)/profiel.tsx` mag niet verwijderd worden en
               zou anders dezelfde route `/profiel` opeisen. */}

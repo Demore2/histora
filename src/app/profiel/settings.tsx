@@ -270,6 +270,7 @@ export default function InstellingenScreen() {
               (typeof user?.user_metadata?.username === 'string' ? user.user_metadata.username : null) ??
               t((s) => s.instellingen.geenGebruikersnaam)
             }
+            onPress={() => router.push('/profiel/gebruikersnaam')}
           />
           {gast ? null : (
             <SettingsItem
