@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  De telefoon-screenshots voor de Play Store (1.3, vernieuwd in 1.4), als sjabloon.
+  De telefoon-screenshots voor de Play Store (1.3, vernieuwd in 1.4 en 1.5), als sjabloon.
 
   Zelfde aanpak als feature-graphic.html: dit bestand is de bron, de PNG's niet. Elke dia is
   1080×1920 (9:16, wat Play wil) en wordt door `npm run generate:store-screenshots` met headless
@@ -137,37 +137,37 @@
   const WARM = { van: '#FFEBC2', naar: '#FDD48E', tekst: '#4A2C1A' };
   const DIAS = [
     {
-      kop: 'Travel from Rome<br>to today',
+      kop: 'From the pharaohs<br>to today',
       sub: 'One journey through history, one true story at a time.',
-      scherm: 'home-1.4.png', vos: 'zwaaiend.png', kant: 'links',
+      scherm: 'explore-1.5.png', vos: 'zwaaiend.png', kant: 'links',
       scene: 'scenes/klaar/scene-1-home.png', achtergrond: '#FFEBC2', tekst: '#4A2C1A',
     },
     {
       kop: 'Follow every story,<br>chapter by chapter',
       sub: 'Each chapter opens with an illustrated scene.',
-      ...WARM, scherm: 'route-verhaal-1.4.png', vos: 'op-weg.png', kant: 'links',
+      ...WARM, scherm: 'route-verhaal-1.5.png', vos: 'op-weg.png', kant: 'links',
     },
     {
       kop: 'Learn<br>as you read',
       sub: 'A quick question after every chapter, with a friendly fox as your teacher.',
-      ...WARM, scherm: 'quiz-goed.png', vos: 'leraar-wijzend.png', kant: 'rechts', spiegel: true, statusbalk: '#89847C',
+      ...WARM, scherm: 'quiz-goed-1.5.png', vos: 'leraar-wijzend.png', kant: 'rechts', spiegel: true, statusbalk: '#89847C',
     },
     {
-      kop: 'Spin the wheel,<br>win the crowns',
-      sub: 'History trivia from every era. How many crowns can you collect?',
-      ...WARM, scherm: 'explore-1.4.png', vos: 'era-middeleeuwen.png', kant: 'links',
+      kop: 'Spin the wheel,<br>beat the fox',
+      sub: 'History trivia from every era. Win six crowns before the fox does.',
+      ...WARM, scherm: 'trivia-1.5.png', vos: 'era-middeleeuwen.png', kant: 'links',
     },
     {
       kop: 'Keep your<br>streak alive',
       sub: 'One chapter a day. The fox cheers you on.',
-      scherm: 'voortgang-1.4.png', vos: 'fase-1-gevierd.png', kant: 'links',
+      scherm: 'home-1.5.png', vos: 'fase-1-gevierd.png', kant: 'links',
       // Hier staat de telefoon in het midden van de scène, dus gecentreerd: 540 − 640 × 1,35.
       scene: 'scenes/klaar/scene-2-streak.png', achtergrond: '#FFEBC2', tekst: '#4A2C1A', sceneLinks: -324,
     },
     {
       kop: 'Stories that read<br>like a novel',
       sub: 'Short chapters about real people and the moments that shaped our world.',
-      ...WARM, scherm: 'reader-1.4.png', vos: 'fase-2-ochtend.png', kant: 'rechts', spiegel: true,
+      ...WARM, scherm: 'reader-1.5.png', vos: 'fase-2-ochtend.png', kant: 'rechts', spiegel: true,
     },
   ];
 

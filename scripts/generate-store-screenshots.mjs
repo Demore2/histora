@@ -2,7 +2,7 @@
 /**
  * Render the Play Store phone screenshots (1.3) from store/screenshots.html:
  *
- *   store/assets/screenshots-1.4/phone-<n>.png   1080x1920 (9:16), 24-bit, no alpha
+ *   store/assets/screenshots-1.5/phone-<n>.png   1080x1920 (9:16), 24-bit, no alpha
  *
  * Same approach as generate-store-assets.mjs: the HTML is the source, headless Chrome renders
  * it once per slide (`?n=1` … `?n=6`), and the browser's RGBA output is flattened because Play
@@ -25,7 +25,7 @@ import { PNG } from 'pngjs';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.join(__dirname, '..');
 const bron = path.join(projectRoot, 'store/screenshots.html');
-const outDir = path.join(projectRoot, 'store/assets/screenshots-1.4');
+const outDir = path.join(projectRoot, 'store/assets/screenshots-1.5');
 const BREED = 1080;
 const HOOG = 1920;
 const AANTAL = 6;
@@ -59,8 +59,8 @@ execFileSync(
   { stdio: 'inherit' }
 );
 const SCENES = [
-  ['scene-1-home.png', 'home-1.4.png'],
-  ['scene-2-streak.png', 'voortgang-1.4.png'],
+  ['scene-1-home.png', 'explore-1.5.png'],
+  ['scene-2-streak.png', 'home-1.5.png'],
 ];
 fs.mkdirSync(path.join(projectRoot, 'store/scenes/klaar'), { recursive: true });
 for (const [scene, scherm] of SCENES) {
