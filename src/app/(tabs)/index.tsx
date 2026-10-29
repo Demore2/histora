@@ -83,15 +83,15 @@ export default function OntdekScreen() {
           */}
           <ReisKaart />
 
+          {/* De enige ingang naar de trivia tegen Phoxy (1.4.5); direct onder de reis (wens van de eigenaar). */}
+          <TriviaKaart />
+
           {oppakken ? <OppakKaart verhaal={oppakken.verhaal} afgerond={oppakken.afgerond} /> : null}
 
           {/* Losse events (2026-10-28): één uitgelicht, de rest als rij. Ze staan niet op de reis. */}
           <EventsSectie />
 
           {/* De kaart "New story" staat sinds 1.4.5 op Explore, en nog maar één (wens van de eigenaar). */}
-
-          {/* De enige ingang naar de trivia tegen Phoxy (1.4.5). */}
-          <TriviaKaart />
 
           {/* De banner (v1.2) staat onder de reiskaart, de oppak-tegel en een eventuele nieuw-kaart.
               Rendert niets voor Pro of zolang er geen echte advertentie

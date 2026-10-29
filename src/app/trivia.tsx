@@ -194,7 +194,7 @@ export default function TriviaScreen() {
   return (
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ title: '' }} />
-      <SafeAreaView edges={[]} style={styles.safeArea}>
+      <SafeAreaView edges={['bottom']} style={styles.safeArea}>
         <ScrollView style={styles.scrollVak} contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
           <View style={styles.inhoud}>
             <ThemedText type="title">{t((s) => s.explore.titel)}</ThemedText>

@@ -30,7 +30,30 @@ const FASE_BEELD: Record<StreakFase, number> = {
 
 const WIT = '#FFFFFF';
 const WIT_ZACHT = 'rgba(255, 255, 255, 0.82)';
-const VOS_MAAT = 128;
+// De PNG's zijn 1024² met de vos onderin: boven 35-40% en opzij ~20% is leeg, en per fase anders
+// (de slapende vos is lager). Dus per fase het vak om de vos heen (gemeten op alpha > 20, in px van
+// het 1024-beeld); we tonen alleen dat deel, VOS_MAAT hoog, zodat er boven Phoxy niets leeg blijft.
+const VOS_MAAT = 156;
+const BRON_MAAT = 1024;
+const FASE_VAK: Record<StreakFase, { x0: number; y0: number; x1: number; y1: number }> = {
+  gevierd: { x0: 197, y0: 360, x1: 827, y1: 1000 },
+  ochtend: { x0: 276, y0: 360, x1: 749, y1: 1000 },
+  middag: { x0: 276, y0: 360, x1: 749, y1: 1000 },
+  avond: { x0: 322, y0: 360, x1: 702, y1: 1000 },
+  paniek: { x0: 284, y0: 360, x1: 741, y1: 1000 },
+  ijs: { x0: 195, y0: 377, x1: 829, y1: 1000 },
+  skelet: { x0: 285, y0: 374, x1: 740, y1: 1000 },
+  slaap: { x0: 198, y0: 421, x1: 826, y1: 1000 },
+};
+
+function vosMaten(fase: StreakFase) {
+  const vak = FASE_VAK[fase];
+  const schaal = VOS_MAAT / (vak.y1 - vak.y0);
+  return {
+    vak: { width: Math.round((vak.x1 - vak.x0) * schaal), height: VOS_MAAT },
+    beeld: { width: BRON_MAAT * schaal, height: BRON_MAAT * schaal, left: -vak.x0 * schaal, top: -vak.y0 * schaal },
+  };
+}
 
 /**
  * De streak bovenaan Home (1.4.5, eerder de kop van Voortgang).
@@ -51,6 +74,7 @@ export function StreakKaart() {
   const bevriezers = useWinkelStore((s) => s.bevriezers);
   const max = useWinkelStore((s) => s.instellingen.maxBevriezers);
   const kleur = FASE_KLEUR[stand.fase];
+  const vos = vosMaten(stand.fase);
   const weekdagen = t((s) => s.widget.weekdagen);
   const wolk = theme.backgroundElement;
   // De naam die de lezer bij het registreren koos: de `profiles`-rij, anders `user_metadata` (zie
@@ -113,7 +137,9 @@ export function StreakKaart() {
       </View>
 
       <View style={styles.phoxyRij}>
-        <Image source={FASE_BEELD[stand.fase]} style={styles.vos} contentFit="contain" accessibilityIgnoresInvertColors />
+        <View style={[styles.vosVak, vos.vak]}>
+          <Image source={FASE_BEELD[stand.fase]} style={[styles.vos, vos.beeld]} contentFit="contain" accessibilityIgnoresInvertColors />
+        </View>
         <View style={styles.wolkVak}>
           {/* Statisch, zonder inspring-animatie (wens van de eigenaar): je komt hier elke dag langs. */}
           <View style={styles.wolkRij}>
@@ -183,9 +209,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
+  vosVak: {
+    overflow: 'hidden',
+    marginRight: Spacing.two,
+  },
   vos: {
-    width: VOS_MAAT,
-    height: VOS_MAAT,
+    position: 'absolute',
   },
   wolkVak: {
     flex: 1,
@@ -205,7 +234,7 @@ const styles = StyleSheet.create({
     borderBottomColor: 'transparent',
   },
   wolk: {
-    flex: 1,
+    flexShrink: 1,
     borderRadius: Radii.card,
     borderWidth: 1,
     paddingVertical: Spacing.three,
