@@ -131,7 +131,8 @@
 
 <script>
   // Elke dia: kop, onderregel, achtergrond, welk scherm, welke vos en aan welke kant.
-  // 1.4: zes dia's. Twee met een Higgsfield-scène (Home, streak), vier met de getekende telefoon
+  // 1.5: alle zes in een Higgsfield-scène (scènes 4-7 zijn 1024 px; `sceneBreed` schaalt ze zo dat vos
+  // én telefoon heel blijven). Vóór 1.5: twee scènes, vier met de getekende telefoon
   // in hetzelfde warme verloop. "Phoxy" is een interne naam en komt dus niet in de koppen; en geen
   // aantallen (verhalen, tijdperken, kroontjes) — die verouderen zodra er iets bijkomt.
   const WARM = { van: '#FFEBC2', naar: '#FDD48E', tekst: '#4A2C1A' };
@@ -145,17 +146,17 @@
     {
       kop: 'Follow every story,<br>chapter by chapter',
       sub: 'Each chapter opens with an illustrated scene.',
-      ...WARM, scherm: 'route-verhaal-1.5.png', vos: 'op-weg.png', kant: 'links',
+      scherm: 'route-verhaal-1.5.png', scene: 'scenes/klaar/scene-4-route.png', achtergrond: '#FEF1D0', tekst: '#4A2C1A', sceneBreed: 1480, sceneLinks: -62,
     },
     {
       kop: 'Learn<br>as you read',
       sub: 'A quick question after every chapter, with a friendly fox as your teacher.',
-      ...WARM, scherm: 'quiz-goed-1.5.png', vos: 'leraar-wijzend.png', kant: 'rechts', spiegel: true, statusbalk: '#89847C',
+      scherm: 'quiz-goed-1.5.png', scene: 'scenes/klaar/scene-5-quiz.png', achtergrond: '#FEEFCC', tekst: '#4A2C1A', sceneBreed: 1450, sceneLinks: -310,
     },
     {
       kop: 'Spin the wheel,<br>beat the fox',
       sub: 'History trivia from every era. Win six crowns before the fox does.',
-      ...WARM, scherm: 'trivia-1.5.png', vos: 'era-middeleeuwen.png', kant: 'links',
+      scherm: 'trivia-1.5.png', scene: 'scenes/klaar/scene-6-trivia.png', achtergrond: '#FDF1D2', tekst: '#4A2C1A', sceneBreed: 1480, sceneLinks: -67,
     },
     {
       kop: 'Keep your<br>streak alive',
@@ -167,7 +168,7 @@
     {
       kop: 'Stories that read<br>like a novel',
       sub: 'Short chapters about real people and the moments that shaped our world.',
-      ...WARM, scherm: 'reader-1.5.png', vos: 'fase-2-ochtend.png', kant: 'rechts', spiegel: true,
+      scherm: 'reader-1.5.png', scene: 'scenes/klaar/scene-7-reader.png', achtergrond: '#FEEECC', tekst: '#4A2C1A', sceneBreed: 1550, sceneLinks: -328,
     },
   ];
 
@@ -189,7 +190,7 @@
     dia.style.color = d.tekst;
     dia.innerHTML = `
       <div class="kop"><h1>${d.kop}</h1><p>${d.sub}</p></div>
-      <img class="scene" src="${d.scene}" alt=""${d.sceneLinks != null ? ` style="left:${d.sceneLinks}px"` : ''}>
+      <img class="scene" src="${d.scene}" alt="" style="${d.sceneLinks != null ? `left:${d.sceneLinks}px;` : ''}${d.sceneBreed ? `width:${d.sceneBreed}px;` : ''}">
     `;
   } else dia.innerHTML = `
     <div class="kop"><h1>${d.kop}</h1><p>${d.sub}</p></div>
