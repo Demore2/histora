@@ -1396,7 +1396,8 @@ lokaal: `npx http-server docs -p 5510`.
   `nieuwe_lezer_na_insert` op `auth.users` post bij elke registratie "er heeft iemand een account
   aangemaakt" + het totaal aantal lezers naar Discord. **Zonder edge function**: de trigger post zelf
   via `net.http_post`, de webhook-URL staat in het Vault-geheim `discord_webhook_nieuwe_lezers` (niet
-  `service_role_key`). Geen e-mail, naam of id in het bericht; beheerders en `is_testaccount` tellen
+  `service_role_key`). Sinds `-2.sql` (2026-10-29) staat de gebruikersnaam erin (uit
+  `raw_user_meta_data`: `username`, anders Google's `full_name`/`name`); nog steeds geen e-mail of id; beheerders en `is_testaccount` tellen
   niet mee en blijven stil. Tijdelijk bedoeld voor de beginperiode — uitzetten staat bovenaan het bestand.
 - **Statistieken tellen accounts, geen downloads** (die staan in Google Play), en "actief" is elke
   schrijfactie of login in de periode; de app openen zonder iets te doen telt niet. Beheerders en
