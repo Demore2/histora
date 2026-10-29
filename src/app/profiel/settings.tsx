@@ -68,6 +68,14 @@ const THEMA_LABEL_SLEUTEL = {
 const SHOW_LANGUAGE_PICKER = true;
 
 /**
+ * Vrienden uitnodigen staat uit (eigenaar, 2026-10-29). Een vriend kan de code nog nergens invullen
+ * en er is geen serverkant die een beloning toekent, terwijl het deelbericht de vriend "één gratis
+ * verhaal" belooft. Weer aan zodra het inwisselen bestaat (een `security definer` RPC, zie
+ * `referral-store.ts`). Het scherm `/profiel/invite-friends` zelf blijft staan.
+ */
+const UITNODIGEN_ZICHTBAAR = false;
+
+/**
  * Instellingen (`/profiel/settings`).
  *
  * Alles wat vroeger onderaan Profiel stond, plus de regels die tot v1.1 nog niets doen. Die
@@ -283,12 +291,14 @@ export default function InstellingenScreen() {
               jouw beloningen, niet over hulp. Geen "Soon"-badge — de code bestaat echt en delen
               werkt; wat er nog niet is (een vriend die de code invoert) staat als zin op het
               scherm zelf, waar het uit te leggen valt. */}
-          <SettingsItem
-            icoon="gift-outline"
-            label={t((s) => s.instellingen.uitnodigen)}
-            uitleg={t((s) => s.instellingen.uitnodigenUitleg)}
-            onPress={() => router.push('/profiel/invite-friends')}
-          />
+          {UITNODIGEN_ZICHTBAAR ? (
+            <SettingsItem
+              icoon="gift-outline"
+              label={t((s) => s.instellingen.uitnodigen)}
+              uitleg={t((s) => s.instellingen.uitnodigenUitleg)}
+              onPress={() => router.push('/profiel/invite-friends')}
+            />
+          ) : null}
           {/* De synchronisatiestatus stond op Profiel onder het account; hij hoort bij het
               account, niet bij de voortgangscijfers. Zonder sessie rendert hij niets. */}
           <View style={styles.blok}>
