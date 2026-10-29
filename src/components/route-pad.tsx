@@ -197,7 +197,9 @@ function HalteKnoop({
             left: x - KNOOP / 2,
             top: y - KNOOP / 2,
             borderColor: randKleur,
-            backgroundColor: halte.achtergrond,
+            // De grijze rand is half doorzichtig: onder een portret zou de portretKleur erdoorheen
+            // schijnen en als de kleur van een ander tijdperk lezen. Alleen zonder beeld is hij de vulling.
+            backgroundColor: halte.afbeelding ? theme.background : halte.achtergrond,
             opacity: opSlot ? 0.6 : 1,
           },
         ]}>
