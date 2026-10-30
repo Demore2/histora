@@ -14,6 +14,7 @@ import christopherColumbusNl from './nl/christopher-columbus';
 import cleopatraNl from './nl/cleopatra';
 import elizabethINl from './nl/elizabeth-i';
 import fallOfConstantinopleNl from './nl/fall-of-constantinople';
+import fallOfTheBerlinWallNl from './nl/fall-of-the-berlin-wall';
 import florenceNightingaleNl from './nl/florence-nightingale';
 import galileoGalileiNl from './nl/galileo-galilei';
 import genghisKhanNl from './nl/genghis-khan';
@@ -24,18 +25,22 @@ import hernanCortesNl from './nl/hernan-cortes';
 import jamesWattNl from './nl/james-watt';
 import joanOfArcNl from './nl/joan-of-arc';
 import johannesGutenbergNl from './nl/johannes-gutenberg';
+import johnFKennedyNl from './nl/john-f-kennedy';
 import josephStalinNl from './nl/joseph-stalin';
 import juliusCaesarNl from './nl/julius-caesar';
 import leonardoDaVinciNl from './nl/leonardo-da-vinci';
 import louisXivNl from './nl/louis-xiv';
 import mahatmaGandhiNl from './nl/mahatma-gandhi';
 import mansaMusaNl from './nl/mansa-musa';
+import maoZedongNl from './nl/mao-zedong';
 import marcoPoloNl from './nl/marco-polo';
 import marieAntoinetteNl from './nl/marie-antoinette';
 import marieCurieNl from './nl/marie-curie';
 import martinLutherNl from './nl/martin-luther';
 import martinLutherKingJrNl from './nl/martin-luther-king-jr';
+import moonLandingNl from './nl/moon-landing';
 import napoleonBonaparteNl from './nl/napoleon-bonaparte';
+import neilArmstrongNl from './nl/neil-armstrong';
 import neroNl from './nl/nero';
 import nikolaTeslaNl from './nl/nikola-tesla';
 import ottoVonBismarckNl from './nl/otto-von-bismarck';
@@ -75,6 +80,7 @@ const NL: Record<string, Vertaaltabel> = {
   'cleopatra': cleopatraNl,
   'elizabeth-i': elizabethINl,
   'fall-of-constantinople': fallOfConstantinopleNl,
+  'fall-of-the-berlin-wall': fallOfTheBerlinWallNl,
   'florence-nightingale': florenceNightingaleNl,
   'galileo-galilei': galileoGalileiNl,
   'genghis-khan': genghisKhanNl,
@@ -85,18 +91,22 @@ const NL: Record<string, Vertaaltabel> = {
   'james-watt': jamesWattNl,
   'joan-of-arc': joanOfArcNl,
   'johannes-gutenberg': johannesGutenbergNl,
+  'john-f-kennedy': johnFKennedyNl,
   'joseph-stalin': josephStalinNl,
   'julius-caesar': juliusCaesarNl,
   'leonardo-da-vinci': leonardoDaVinciNl,
   'louis-xiv': louisXivNl,
   'mahatma-gandhi': mahatmaGandhiNl,
   'mansa-musa': mansaMusaNl,
+  'mao-zedong': maoZedongNl,
   'marco-polo': marcoPoloNl,
   'marie-antoinette': marieAntoinetteNl,
   'marie-curie': marieCurieNl,
   'martin-luther': martinLutherNl,
   'martin-luther-king-jr': martinLutherKingJrNl,
+  'moon-landing': moonLandingNl,
   'napoleon-bonaparte': napoleonBonaparteNl,
+  'neil-armstrong': neilArmstrongNl,
   'nero': neroNl,
   'nikola-tesla': nikolaTeslaNl,
   'otto-von-bismarck': ottoVonBismarckNl,
