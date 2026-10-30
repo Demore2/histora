@@ -5,17 +5,18 @@ import { verhalen as vroegmoderneTijd } from './vroegmoderne-tijd';
 import { verhalen as industrieleRevolutie } from './industriele-revolutie';
 import { verhalen as twintigsteEeuw } from './twintigste-eeuw';
 import { verhalen as hedendaags } from './hedendaags';
+import { pasVertalingenToe } from '../vertalingen';
 
 // Eén bestand per tijdperk (REFACTOR-PLAN.md R3/R7), zodat een agent per tijdperk
 // conflictvrij alleen zijn eigen bestand kan schrijven.
-export const verhalen: Verhaal[] = [
+export const verhalen: Verhaal[] = pasVertalingenToe([
   ...oudheid,
   ...middeleeuwen,
   ...vroegmoderneTijd,
   ...industrieleRevolutie,
   ...twintigsteEeuw,
   ...hedendaags,
-];
+]);
 
 export function getVerhaal(id: string): Verhaal | undefined {
   return verhalen.find((verhaal) => verhaal.id === id);

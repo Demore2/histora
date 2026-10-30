@@ -92,6 +92,7 @@
     "generate:map-data": "node scripts/generate-map-data.mjs",
     "validate:content": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/validate-content.mjs",
     "content:read-times": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/recalculate-read-times.mjs",
+    "content:vertaling": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/vertaling-nl.mjs",
     "generate:images:r9": "node scripts/generate-portrait-images.mjs",
     "generate:images:scenes": "node scripts/generate-scene-images.mjs",
     "generate:app-icon": "node scripts/generate-app-icon.mjs",
