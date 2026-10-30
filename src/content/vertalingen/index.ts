@@ -31,6 +31,7 @@ import juliusCaesarNl from './nl/julius-caesar';
 import leonardoDaVinciNl from './nl/leonardo-da-vinci';
 import louisXivNl from './nl/louis-xiv';
 import mahatmaGandhiNl from './nl/mahatma-gandhi';
+import malalaYousafzaiNl from './nl/malala-yousafzai';
 import mansaMusaNl from './nl/mansa-musa';
 import maoZedongNl from './nl/mao-zedong';
 import marcoPoloNl from './nl/marco-polo';
@@ -41,6 +42,7 @@ import martinLutherKingJrNl from './nl/martin-luther-king-jr';
 import moonLandingNl from './nl/moon-landing';
 import napoleonBonaparteNl from './nl/napoleon-bonaparte';
 import neilArmstrongNl from './nl/neil-armstrong';
+import nelsonMandelaNl from './nl/nelson-mandela';
 import neroNl from './nl/nero';
 import nikolaTeslaNl from './nl/nikola-tesla';
 import ottoVonBismarckNl from './nl/otto-von-bismarck';
@@ -52,6 +54,7 @@ import romeRiseNl from './nl/rome-rise';
 import saladinNl from './nl/saladin';
 import socratesNl from './nl/socrates';
 import spartacusNl from './nl/spartacus';
+import steveJobsNl from './nl/steve-jobs';
 import suleimanTheMagnificentNl from './nl/suleiman-the-magnificent';
 import thomasEdisonNl from './nl/thomas-edison';
 import tutankhamunNl from './nl/tutankhamun';
@@ -97,6 +100,7 @@ const NL: Record<string, Vertaaltabel> = {
   'leonardo-da-vinci': leonardoDaVinciNl,
   'louis-xiv': louisXivNl,
   'mahatma-gandhi': mahatmaGandhiNl,
+  'malala-yousafzai': malalaYousafzaiNl,
   'mansa-musa': mansaMusaNl,
   'mao-zedong': maoZedongNl,
   'marco-polo': marcoPoloNl,
@@ -107,6 +111,7 @@ const NL: Record<string, Vertaaltabel> = {
   'moon-landing': moonLandingNl,
   'napoleon-bonaparte': napoleonBonaparteNl,
   'neil-armstrong': neilArmstrongNl,
+  'nelson-mandela': nelsonMandelaNl,
   'nero': neroNl,
   'nikola-tesla': nikolaTeslaNl,
   'otto-von-bismarck': ottoVonBismarckNl,
@@ -118,6 +123,7 @@ const NL: Record<string, Vertaaltabel> = {
   'saladin': saladinNl,
   'socrates': socratesNl,
   'spartacus': spartacusNl,
+  'steve-jobs': steveJobsNl,
   'suleiman-the-magnificent': suleimanTheMagnificentNl,
   'thomas-edison': thomasEdisonNl,
   'tutankhamun': tutankhamunNl,
