@@ -729,10 +729,6 @@
             <div class="grafiek-kop"><h2>Retentie</h2></div>
             <div class="kengetallen" id="retentie"></div>
           </section>
-          <section class="grafiek">
-            <div class="grafiek-kop"><h2>Winkel</h2></div>
-            <div class="kengetallen" id="winkel"></div>
-          </section>
         </div>
       </div>
       <section class="grafiek">
@@ -1823,7 +1819,9 @@
     if (inz.error && !stil) console.warn('beheer_inzichten:', inz.error.message);
     tekenInzichten();
     // De intro-trechter (1.5.0, `gast-accounts-migratie.sql`). Zelfde regel: ontbreekt hij, dan een zin.
-    const tr = await sb.rpc('beheer_intro_trechter', { p_dagen: 30 });
+    // Sinds `-8.sql` laat hij ook de eigen en testinstallaties weg; tot die gedraaid is de oude vorm.
+    let tr = await sb.rpc('beheer_intro_trechter', { p_dagen: 30, p_intern_meetellen: staat.internMeetellen });
+    if (tr.error) tr = await sb.rpc('beheer_intro_trechter', { p_dagen: 30 });
     staat.introTrechter = tr.error ? null : tr.data;
     tekenIntroTrechter();
   }
@@ -1874,7 +1872,6 @@
     if (!z) {
       $('#verhalen-lijst').replaceChildren(el('p', { class: 'leeg-melding', tekst: 'Nog niet beschikbaar: draai supabase/feedback-beheer-migratie-6.sql.' }));
       $('#retentie').replaceChildren();
-      $('#winkel').replaceChildren();
       $('#streaks-lijst').replaceChildren();
       return;
     }
@@ -1905,14 +1902,6 @@
     $('#retentie').replaceChildren(
       kengetal('Kwam terug (D1)', quote(r.d1_terug, r.d1_basis), `${r.d1_terug || 0} van ${r.d1_basis || 0} lezers`),
       kengetal('Na een week nog actief (D7)', quote(r.d7_terug, r.d7_basis), `${r.d7_terug || 0} van ${r.d7_basis || 0} lezers`),
-    );
-
-    const w = z.winkel || {};
-    $('#winkel').replaceChildren(
-      kengetal('Dukaten verdiend', getalFmt.format(w.verdiend || 0)),
-      kengetal('Dukaten uitgegeven', getalFmt.format(w.uitgegeven || 0)),
-      kengetal('Bevriezers gekocht', getalFmt.format(w.bevriezers_gekocht || 0), `${w.bevriezers_voorraad || 0} nu op voorraad`),
-      kengetal('Bevriezers gebruikt', getalFmt.format(w.bevriezers_gebruikt || 0), 'dagen gered'),
     );
 
     const top = z.streaks?.top || [];

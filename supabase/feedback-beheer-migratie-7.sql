@@ -11,6 +11,12 @@
 --     De robot verzint tegenwoordig "geloofwaardige" adressen die bij de app passen, ook op gmail.com,
 --     dus die gaan per adres en niet per domein — op gmail.com zitten ook echte lezers.
 -- Zie je een nieuw nep-adres opduiken, zet het in de lijst hieronder en draai dit bestand opnieuw.
+--
+-- ⚠️ VEROUDERD sinds 2026-10-30: de live functie is `stable security definer` en kijkt óók in de
+-- tabel `public.uitgesloten_accounts` (kennissen, eigenaars, Play-robots — per e-mail, alleen in de
+-- database omdat deze repo publiek is). Dit bestand opnieuw draaien haalt die controle eruit.
+-- Een nieuw account uitsluiten = `insert into public.uitgesloten_accounts (email) values ('…');`.
+-- Wijzig je de functie toch, neem dan de regel `or exists (select 1 from public.uitgesloten_accounts …)` mee.
 
 create or replace function public.is_testaccount(p_email text)
 returns boolean

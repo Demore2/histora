@@ -1405,6 +1405,11 @@ lokaal: `npx http-server docs -p 5510`.
   `public.is_testaccount(email)` (`-5.sql`): `@chronicles.app`, de nep-domeinen van RFC 2606 en de
   adressen die Google Play's pre-launch-robot en reviewers gebruiken. Daar zijn er bij elke ingediende
   versie nieuwe van; zie je een nieuw nep-adres opduiken, vul dan die functie aan.
+  **Sinds 2026-10-30 leest die functie ook `public.uitgesloten_accounts`** (e-mail, RLS zonder policy):
+  kennissen, eigenaars en losse robot-adressen staan dáár, niet in de repo (die is publiek). Een account
+  uitsluiten is één `insert` in die tabel; `-7.sql` opnieuw draaien zou de tabelcontrole wissen.
+  **Sinds `-8.sql` volgt de intro-trechter dezelfde regel**, per installatie: één rij met een
+  uitgesloten `user_id` haalt de hele installatie weg. Het blok "Winkel" is van het bord gehaald.
 
 #### Mail (`send-feedback-email`)
 
