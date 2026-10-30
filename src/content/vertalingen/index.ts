@@ -2,6 +2,8 @@ import type { Verhaal } from '@/constants/types';
 
 import { vertaalbareVelden, vertaalSleutel } from './sleutel';
 import abrahamLincolnNl from './nl/abraham-lincoln';
+import adolfHitlerNl from './nl/adolf-hitler';
+import albertEinsteinNl from './nl/albert-einstein';
 import alexanderTheGreatNl from './nl/alexander-the-great';
 import ashokaMauryaNl from './nl/ashoka-maurya';
 import blackDeathNl from './nl/black-death';
@@ -22,9 +24,11 @@ import hernanCortesNl from './nl/hernan-cortes';
 import jamesWattNl from './nl/james-watt';
 import joanOfArcNl from './nl/joan-of-arc';
 import johannesGutenbergNl from './nl/johannes-gutenberg';
+import josephStalinNl from './nl/joseph-stalin';
 import juliusCaesarNl from './nl/julius-caesar';
 import leonardoDaVinciNl from './nl/leonardo-da-vinci';
 import louisXivNl from './nl/louis-xiv';
+import mahatmaGandhiNl from './nl/mahatma-gandhi';
 import mansaMusaNl from './nl/mansa-musa';
 import marcoPoloNl from './nl/marco-polo';
 import marieAntoinetteNl from './nl/marie-antoinette';
@@ -59,6 +63,8 @@ export type Vertaaltabel = Record<string, string>;
 
 const NL: Record<string, Vertaaltabel> = {
   'abraham-lincoln': abrahamLincolnNl,
+  'adolf-hitler': adolfHitlerNl,
+  'albert-einstein': albertEinsteinNl,
   'alexander-the-great': alexanderTheGreatNl,
   'ashoka-maurya': ashokaMauryaNl,
   'black-death': blackDeathNl,
@@ -79,9 +85,11 @@ const NL: Record<string, Vertaaltabel> = {
   'james-watt': jamesWattNl,
   'joan-of-arc': joanOfArcNl,
   'johannes-gutenberg': johannesGutenbergNl,
+  'joseph-stalin': josephStalinNl,
   'julius-caesar': juliusCaesarNl,
   'leonardo-da-vinci': leonardoDaVinciNl,
   'louis-xiv': louisXivNl,
+  'mahatma-gandhi': mahatmaGandhiNl,
   'mansa-musa': mansaMusaNl,
   'marco-polo': marcoPoloNl,
   'marie-antoinette': marieAntoinetteNl,
