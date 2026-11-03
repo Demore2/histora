@@ -7,7 +7,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AuthKnop } from '@/components/auth-knop';
 import { AuthVeld } from '@/components/auth-veld';
-import { GoogleKnop, OfScheiding } from '@/components/google-knop';
+import { AppleKnop, GoogleKnop, OfScheiding } from '@/components/google-knop';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { MIN_WACHTWOORD_LENGTE, isGeldigEmail } from '@/constants/auth-validatie';
@@ -143,6 +143,15 @@ export default function AccountBewarenScherm() {
               </View>
             )}
 
+            <AppleKnop
+              onGelukt={() => {
+                if (vanuitIntro) meetIntroStap(INTRO_AFLOOP.apple.stap, INTRO_AFLOOP.apple.nummer);
+                verder();
+              }}
+              onFout={setFout}
+              onBezig={setGoogleBezig}
+              disabled={bezig}
+            />
             <GoogleKnop
               onGelukt={() => {
                 if (vanuitIntro) meetIntroStap(INTRO_AFLOOP.google.stap, INTRO_AFLOOP.google.nummer);

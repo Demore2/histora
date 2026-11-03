@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 
 import { MIN_WACHTWOORD_LENGTE } from '@/constants/auth-validatie';
 import { getVertalingen, type Vertalingen } from '@/i18n';
+import { appleLogin } from '@/lib/apple-login';
 import { googleLogin } from '@/lib/google-login';
 import { supabase } from '@/lib/supabase';
 import { useAuthStore, type Profiel } from '@/store/auth-store';
@@ -181,7 +182,7 @@ export function isGast(user: User | null | undefined): boolean {
 
 /**
  * De naam voor een nieuwe `profiles`-rij: wat bij het registreren werd ingetikt, anders de naam uit
- * de intro, anders wat Google meegeeft. Een Google-account heeft geen `username` in zijn metadata.
+ * de intro, anders wat Google of Apple meegeeft. Een Google- of Apple-account heeft geen `username` in zijn metadata.
  */
 function gebruikersnaamVoor(user: User): string | undefined {
   const meta = user.user_metadata ?? {};
@@ -321,40 +322,73 @@ export type GoogleAuthResultaat =
   | { ok: true; nieuw: boolean }
   | { ok: false; reden: 'afgebroken' | 'geen-play-services' | 'mislukt'; bericht?: string };
 
+export type AppleAuthResultaat =
+  | { ok: true; nieuw: boolean }
+  | { ok: false; reden: 'afgebroken' | 'mislukt'; bericht?: string };
+
+type IdTokenResultaat = { ok: true; nieuw: boolean } | { ok: false; reden: 'mislukt'; bericht?: string };
+
 /**
- * "Continue with Google" (1.5.0), op elk scherm hetzelfde:
+ * Inloggen of koppelen met een ID-token van Google of Apple, op elk scherm hetzelfde:
  *
  * - **Gast** → `linkIdentity` met het ID-token: hetzelfde id, de gast wordt een echt account en
- *   houdt alles. Bestaat dat Google-account al bij ons (`identity_already_exists`), dan wordt het
+ *   houdt alles. Bestaat dat account al bij ons (`identity_already_exists`), dan wordt het
  *   gewoon inloggen op dat account; de voortgang van de gast gaat mee (zie `bereidToestelVoorGebruiker`).
  * - **Niemand ingelogd** → `signInWithIdToken`: inloggen, of een nieuw account als het er nog niet is.
+ *
+ * `naam` is wat Apple bij de allereerste login meegeeft (en daarna nooit meer); hij gaat in de
+ * metadata vóór `herstelSessie`, zodat de nieuwe `profiles`-rij hem als gebruikersnaam krijgt.
  */
-export async function loginMetGoogle(): Promise<GoogleAuthResultaat> {
-  const token = await googleLogin.haalIdToken();
-  if (!token.ok) return token;
+async function loginMetIdToken(
+  provider: 'google' | 'apple',
+  token: string,
+  nonce?: string,
+  naam?: string | null,
+): Promise<IdTokenResultaat> {
+  const metNaam = async () => {
+    if (!naam) return;
+    const { error } = await supabase.auth.updateUser({ data: { full_name: naam } });
+    if (error) console.warn(`[auth] naam van ${provider} bewaren mislukt:`, error.message);
+  };
 
   if (isGast(useAuthStore.getState().user)) {
-    const { data, error } = await supabase.auth.linkIdentity({ provider: 'google', token: token.idToken });
+    const { data, error } = await supabase.auth.linkIdentity({ provider, token, nonce });
     if (!error && data.session) {
+      await metNaam();
       await herstelSessie(data.session);
       return { ok: true, nieuw: true };
     }
     if (error && error.code !== 'identity_already_exists') {
-      console.warn('[auth] Google koppelen mislukt:', error.message);
+      console.warn(`[auth] ${provider} koppelen mislukt:`, error.message);
       return { ok: false, reden: 'mislukt', bericht: error.message };
     }
     // Bestaat al: val door naar inloggen met hetzelfde token.
   }
 
-  const { data, error } = await supabase.auth.signInWithIdToken({ provider: 'google', token: token.idToken });
+  const { data, error } = await supabase.auth.signInWithIdToken({ provider, token, nonce });
   if (error || !data.session) {
-    console.warn('[auth] inloggen met Google mislukt:', error?.message);
+    console.warn(`[auth] inloggen met ${provider} mislukt:`, error?.message);
     return { ok: false, reden: 'mislukt', bericht: error?.message };
   }
   // Nieuw = het account is in deze aanroep aangemaakt (geen eerdere inlog vóór deze).
   const nieuw = Date.now() - new Date(data.user.created_at).getTime() < 60_000;
+  if (nieuw) await metNaam();
   await herstelSessie(data.session);
   return { ok: true, nieuw };
+}
+
+/** "Continue with Google" (1.5.0) — zie `loginMetIdToken`. */
+export async function loginMetGoogle(): Promise<GoogleAuthResultaat> {
+  const token = await googleLogin.haalIdToken();
+  if (!token.ok) return token;
+  return loginMetIdToken('google', token.idToken);
+}
+
+/** "Sign in with Apple" (iOS) — zie `loginMetIdToken`. Supabase controleert de nonce. */
+export async function loginMetApple(): Promise<AppleAuthResultaat> {
+  const token = await appleLogin.haalIdToken();
+  if (!token.ok) return token;
+  return loginMetIdToken('apple', token.idToken, token.nonce, token.naam);
 }
 
 export type KoppelResultaat =

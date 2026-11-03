@@ -852,6 +852,7 @@ const fr: DeepPartial<Vertalingen> = {
     of: 'ou',
     googleMislukt: 'La connexion avec Google a échoué. Réessayez ou utilisez votre e-mail.',
     googleGeenPlay: 'La connexion avec Google nécessite les services Google Play sur cet appareil. Utilisez votre e-mail.',
+    appleMislukt: "La connexion avec Apple n'a pas fonctionné. Réessayez ou utilisez votre e-mail.",
     emailBestaat: 'Un compte existe déjà avec cet e-mail. Connectez-vous plutôt.',
     account: 'Compte',
     uitloggen: 'Se déconnecter',

@@ -17,7 +17,7 @@ import Animated, { Easing, FadeIn, useAnimatedStyle, useSharedValue, withRepeat,
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AnimatedPressable } from '@/components/animated-pressable';
-import { GoogleKnop } from '@/components/google-knop';
+import { AppleKnop, GoogleKnop } from '@/components/google-knop';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { ERA_KOP } from '@/constants/era-koppen';
@@ -346,16 +346,28 @@ export default function IntroScreen() {
       // Als gast: bewaren (Google of e-mail) of later. Zonder sessie (gastaccount mislukt): zoals
       // vóór 1.5.0 registreren of inloggen — Google werkt daar ook, als gewone login.
       inhoud = <PhoxyZegt beeld={PHOXY.opWeg} tekst={t((s) => (gast ? s.intro.accountPhoxyGast : s.intro.accountPhoxy))} />;
+      // Op iOS staat Apple ernaast (richtlijn 4.8); elke knop rendert alleen waar hij kan.
       google = (
-        <GoogleKnop
-          onStart={() => rondIntroAf(startVerhaal.id)}
-          onNietGelukt={heropenIntro}
-          onGelukt={() => {
-            meetIntroStap(INTRO_AFLOOP.google.stap, INTRO_AFLOOP.google.nummer);
-            router.replace('/intro-pro');
-          }}
-          onFout={setGoogleFout}
-        />
+        <>
+          <AppleKnop
+            onStart={() => rondIntroAf(startVerhaal.id)}
+            onNietGelukt={heropenIntro}
+            onGelukt={() => {
+              meetIntroStap(INTRO_AFLOOP.apple.stap, INTRO_AFLOOP.apple.nummer);
+              router.replace('/intro-pro');
+            }}
+            onFout={setGoogleFout}
+          />
+          <GoogleKnop
+            onStart={() => rondIntroAf(startVerhaal.id)}
+            onNietGelukt={heropenIntro}
+            onGelukt={() => {
+              meetIntroStap(INTRO_AFLOOP.google.stap, INTRO_AFLOOP.google.nummer);
+              router.replace('/intro-pro');
+            }}
+            onFout={setGoogleFout}
+          />
+        </>
       );
       if (gast) {
         knop = { tekst: t((s) => s.intro.accountEmail), onPress: () => naarAccount('/account-bewaren') };

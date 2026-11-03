@@ -849,6 +849,7 @@ const nl: DeepPartial<Vertalingen> = {
     of: 'of',
     googleMislukt: 'Inloggen met Google lukte niet. Probeer het opnieuw, of gebruik je e-mail.',
     googleGeenPlay: 'Inloggen met Google heeft Google Play-services nodig op dit toestel. Gebruik je e-mail.',
+    appleMislukt: 'Inloggen met Apple lukte niet. Probeer het opnieuw, of gebruik je e-mail.',
     emailBestaat: 'Er bestaat al een account met dit e-mailadres. Log daarmee in.',
     account: 'Account',
     uitloggen: 'Uitloggen',

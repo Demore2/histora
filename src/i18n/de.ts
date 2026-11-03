@@ -853,6 +853,7 @@ const de: DeepPartial<Vertalingen> = {
     of: 'oder',
     googleMislukt: 'Die Anmeldung mit Google hat nicht geklappt. Versuche es erneut oder nutze deine E-Mail.',
     googleGeenPlay: 'Die Anmeldung mit Google braucht die Google-Play-Dienste auf diesem Gerät. Nutze deine E-Mail.',
+    appleMislukt: 'Die Anmeldung mit Apple hat nicht geklappt. Versuch es noch einmal oder nutze deine E-Mail.',
     emailBestaat: 'Mit dieser E-Mail gibt es schon ein Konto. Melde dich stattdessen an.',
     account: 'Konto',
     uitloggen: 'Abmelden',

@@ -49,4 +49,5 @@ export const INTRO_AFLOOP = {
   email: { stap: 'afloop_email', nummer: 101 },
   later: { stap: 'afloop_later', nummer: 102 },
   inloggen: { stap: 'afloop_inloggen', nummer: 103 },
+  apple: { stap: 'afloop_apple', nummer: 104 },
 } as const;

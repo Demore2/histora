@@ -1154,6 +1154,7 @@ const en = {
     of: 'or',
     googleMislukt: 'Signing in with Google didn\'t work. Try again, or use your email.',
     googleGeenPlay: 'Google sign-in needs Google Play services on this device. Use your email instead.',
+    appleMislukt: "Signing in with Apple didn't work. Try again, or use your email.",
     emailBestaat: 'There is already an account with this email. Sign in instead.',
     account: 'Account',
     uitloggen: 'Sign out',

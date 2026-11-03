@@ -7,7 +7,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
 import { AuthKnop } from '@/components/auth-knop';
 import { AuthVeld } from '@/components/auth-veld';
-import { GoogleKnop, OfScheiding } from '@/components/google-knop';
+import { AppleKnop, GoogleKnop, OfScheiding } from '@/components/google-knop';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import {
@@ -146,6 +146,11 @@ export default function SignupScreen() {
               </View>
             )}
 
+            <AppleKnop
+              onGelukt={() => router.replace(useOnboardingStore.getState().afrondenOpen ? '/intro-pro' : '/')}
+              onFout={setFout}
+              onBezig={setBezig}
+            />
             <GoogleKnop
               onGelukt={() => router.replace(useOnboardingStore.getState().afrondenOpen ? '/intro-pro' : '/')}
               onFout={setFout}

@@ -5,10 +5,11 @@ import { ActivityIndicator, StyleSheet, View } from 'react-native';
 import { AnimatedPressable } from '@/components/animated-pressable';
 import { ThemedText } from '@/components/themed-text';
 import { Radii, Spacing } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
+import { useEffectieveKleurenSchema, useTheme } from '@/hooks/use-theme';
 import { useVertaling } from '@/hooks/use-vertaling';
 import { logInloggen, logRegistreren } from '@/hooks/useAnalytics';
-import { loginMetGoogle } from '@/hooks/useAuth';
+import { loginMetApple, loginMetGoogle } from '@/hooks/useAuth';
+import { appleLogin } from '@/lib/apple-login';
 import { googleLogin } from '@/lib/google-login';
 
 type Props = {
@@ -37,37 +38,51 @@ type Props = {
  * er ingelogd of een account gemaakt. Hij oogt als een tweede knop (omlijnd), want op elk scherm is
  * hij een alternatief naast de hoofdactie.
  */
-export function GoogleKnop({ onGelukt, onFout, onStart, onNietGelukt, onBezig, disabled = false }: Props) {
-  const theme = useTheme();
-  const { t } = useVertaling();
+/**
+ * Wat elke inlogknop (Google, Apple) bij een tik doet: de callbacks in de goede volgorde, de twee
+ * analytics-gebeurtenissen, en afbreken stil laten. Alleen de aanroep en de fouttekst verschillen.
+ */
+function useInlogKnop(
+  methode: 'google' | 'apple',
+  login: () => Promise<{ ok: true; nieuw: boolean } | { ok: false; reden: string }>,
+  foutTekst: (reden: string) => string,
+  { onGelukt, onFout, onStart, onNietGelukt, onBezig }: Props,
+) {
   const [bezig, setBezig] = useState(false);
-
-  if (!googleLogin.beschikbaar) return null;
 
   async function handlePress() {
     onFout(null);
     onStart?.();
     setBezig(true);
     onBezig?.(true);
-    const resultaat = await loginMetGoogle();
+    const resultaat = await login();
     setBezig(false);
     onBezig?.(false);
 
     if (resultaat.ok) {
-      // Zelfde twee gebeurtenissen als de e-mailroute, met `google` als methode.
-      if (resultaat.nieuw) logRegistreren('google');
-      else logInloggen('google');
+      // Zelfde twee gebeurtenissen als de e-mailroute, met de provider als methode.
+      if (resultaat.nieuw) logRegistreren(methode);
+      else logInloggen(methode);
       onGelukt();
       return;
     }
     onNietGelukt?.();
     if (resultaat.reden === 'afgebroken') return;
-    onFout(
-      resultaat.reden === 'geen-play-services'
-        ? t((s) => s.auth.googleGeenPlay)
-        : t((s) => s.auth.googleMislukt),
-    );
+    onFout(foutTekst(resultaat.reden));
   }
+
+  return { bezig, handlePress };
+}
+
+export function GoogleKnop(props: Props) {
+  const theme = useTheme();
+  const { t } = useVertaling();
+  const { bezig, handlePress } = useInlogKnop('google', loginMetGoogle, (reden) =>
+    reden === 'geen-play-services' ? t((s) => s.auth.googleGeenPlay) : t((s) => s.auth.googleMislukt),
+  props);
+  const disabled = props.disabled ?? false;
+
+  if (!googleLogin.beschikbaar) return null;
 
   const inert = bezig || disabled;
   return (
@@ -90,11 +105,48 @@ export function GoogleKnop({ onGelukt, onFout, onStart, onNietGelukt, onBezig, d
   );
 }
 
-/** Een dunne lijn met "or" ertussen, tussen de Google-knop en het formulier. */
+/**
+ * "Sign in with Apple" (iOS-voorbereiding). Verplicht naast Google op iOS (App Store-richtlijn 4.8).
+ * Apple's eigen knop, want hun richtlijnen eisen die vorm; zwart in licht, wit in donker. Rendert
+ * **niets** buiten iOS.
+ */
+export function AppleKnop(props: Props) {
+  const theme = useTheme();
+  const { t } = useVertaling();
+  const schema = useEffectieveKleurenSchema();
+  const { bezig, handlePress } = useInlogKnop('apple', loginMetApple, () => t((s) => s.auth.appleMislukt), props);
+  const apple = appleLogin.sdk;
+  if (!apple) return null;
+
+  const inert = bezig || (props.disabled ?? false);
+  if (bezig) {
+    return (
+      <View style={[styles.knop, { borderColor: theme.backgroundSelected, backgroundColor: theme.backgroundElement }]}>
+        <ActivityIndicator color={theme.text} />
+        <View style={styles.hoogtevuller} />
+      </View>
+    );
+  }
+  return (
+    <View pointerEvents={inert ? 'none' : 'auto'} style={inert ? styles.inert : undefined}>
+      <apple.AppleAuthenticationButton
+        buttonType={apple.AppleAuthenticationButtonType.CONTINUE}
+        buttonStyle={
+          schema === 'dark' ? apple.AppleAuthenticationButtonStyle.WHITE : apple.AppleAuthenticationButtonStyle.BLACK
+        }
+        cornerRadius={Radii.button}
+        style={styles.appleKnop}
+        onPress={() => void handlePress()}
+      />
+    </View>
+  );
+}
+
+/** Een dunne lijn met "or" ertussen, tussen de inlogknoppen en het formulier. */
 export function OfScheiding() {
   const theme = useTheme();
   const { t } = useVertaling();
-  if (!googleLogin.beschikbaar) return null;
+  if (!googleLogin.beschikbaar && !appleLogin.beschikbaar) return null;
   return (
     <View style={styles.scheiding}>
       <View style={[styles.lijn, { backgroundColor: theme.backgroundSelected }]} />
@@ -118,6 +170,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
   hoogtevuller: { height: 24 },
+  appleKnop: { height: 50, width: '100%' },
+  inert: { opacity: 0.5 },
   scheiding: {
     flexDirection: 'row',
     alignItems: 'center',
