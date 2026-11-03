@@ -84,7 +84,7 @@ function base64url(bytes: Uint8Array): string {
 const base64urlTekst = (w: string) => base64url(new TextEncoder().encode(w));
 
 /** PEM naar DER; accepteert echte regeleindes én letterlijke `\n` uit een geplakt JSON-bestand. */
-function pemNaarDer(pem: string): Uint8Array {
+function pemNaarDer(pem: string): Uint8Array<ArrayBuffer> {
   const schoon = pem
     .replace(/\\n/g, '\n')
     .replace(/-----BEGIN [^-]+-----/, '')
