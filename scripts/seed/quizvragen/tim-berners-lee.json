@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What did Tim Berners-Lee's parents work on?",
+      "options": [
+        "The first television",
+        "One of the first computers ever sold",
+        "The first telephone exchange",
+        "Radar during the war"
+      ],
+      "explanation": "Conway Berners-Lee and Mary Lee Woods were mathematicians who worked on the Ferranti Mark 1.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waaraan werkten de ouders van Tim Berners-Lee?",
+          "options": [
+            "Aan de eerste televisie",
+            "Aan een van de eerste computers die ooit werden verkocht",
+            "Aan de eerste telefooncentrale",
+            "Aan radar in de oorlog"
+          ],
+          "explanation": "Conway Berners-Lee en Mary Lee Woods waren wiskundigen die aan de Ferranti Mark 1 werkten."
+        },
+        "fr": {
+          "question": "Sur quoi travaillaient les parents de Tim Berners-Lee ?",
+          "options": [
+            "Sur la première télévision",
+            "Sur l’un des premiers ordinateurs jamais vendus",
+            "Sur le premier central téléphonique",
+            "Sur le radar pendant la guerre"
+          ],
+          "explanation": "Conway Berners-Lee et Mary Lee Woods étaient mathématiciens et ont travaillé sur le Ferranti Mark 1."
+        },
+        "de": {
+          "question": "Woran arbeiteten die Eltern von Tim Berners-Lee?",
+          "options": [
+            "Am ersten Fernseher",
+            "An einem der ersten Computer, die je verkauft wurden",
+            "An der ersten Telefonzentrale",
+            "Am Radar im Krieg"
+          ],
+          "explanation": "Conway Berners-Lee und Mary Lee Woods waren Mathematiker und arbeiteten am Ferranti Mark 1."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What was ENQUIRE, the program Berners-Lee wrote at CERN in 1980?",
+      "options": [
+        "A game",
+        "A program to keep track of people and projects using links",
+        "An email system",
+        "A calculator for particle physics"
+      ],
+      "explanation": "It linked pages about people, projects and programs, but ran on only one computer. The idea of linking stayed with him.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was Enquire, het programma dat Berners-Lee in 1980 bij CERN schreef?",
+          "options": [
+            "Een spel",
+            "Een programma om mensen en projecten met links bij te houden",
+            "Een e-mailsysteem",
+            "Een rekenprogramma voor deeltjesfysica"
+          ],
+          "explanation": "Het verbond pagina’s over mensen, projecten en programma’s, maar draaide op maar één computer. Het idee van links liet hem niet meer los."
+        },
+        "fr": {
+          "question": "Qu’était ENQUIRE, le programme écrit par Berners-Lee au CERN en 1980 ?",
+          "options": [
+            "Un jeu",
+            "Un programme pour suivre personnes et projets grâce à des liens",
+            "Un système de courrier électronique",
+            "Une calculatrice pour la physique des particules"
+          ],
+          "explanation": "Il reliait des pages sur des personnes, des projets et des programmes, mais ne tournait que sur un ordinateur. L’idée des liens ne l’a plus quitté."
+        },
+        "de": {
+          "question": "Was war ENQUIRE, das Programm, das Berners-Lee 1980 am CERN schrieb?",
+          "options": [
+            "Ein Spiel",
+            "Ein Programm, das Personen und Projekte über Links verknüpfte",
+            "Ein E-Mail-System",
+            "Ein Rechner für Teilchenphysik"
+          ],
+          "explanation": "Es verknüpfte Seiten über Personen, Projekte und Programme, lief aber nur auf einem Computer. Die Idee der Verlinkung ließ ihn nicht mehr los."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What did his boss write on Berners-Lee's 1989 proposal for the Web?",
+      "options": [
+        "'Rejected'",
+        "'Brilliant, start tomorrow'",
+        "'Vague but exciting'",
+        "'Too expensive'"
+      ],
+      "explanation": "Mike Sendall did not officially approve it, but a year later he let Berners-Lee buy a computer and experiment.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat schreef zijn baas op het voorstel voor het web dat Berners-Lee in 1989 indiende?",
+          "options": [
+            "‘Afgewezen’",
+            "‘Briljant, begin morgen’",
+            "‘Vaag maar spannend’",
+            "‘Te duur’"
+          ],
+          "explanation": "Mike Sendall keurde het niet officieel goed, maar liet Berners-Lee een jaar later een computer kopen en experimenteren."
+        },
+        "fr": {
+          "question": "Qu’a écrit son chef sur la proposition de Berners-Lee pour le Web en 1989 ?",
+          "options": [
+            "« Refusé »",
+            "« Génial, commencez demain »",
+            "« Vague mais passionnant »",
+            "« Trop cher »"
+          ],
+          "explanation": "Mike Sendall ne l’a pas approuvée officiellement, mais un an plus tard il a laissé Berners-Lee acheter un ordinateur et expérimenter."
+        },
+        "de": {
+          "question": "Was schrieb sein Chef 1989 auf Berners-Lees Vorschlag für das Web?",
+          "options": [
+            "„Abgelehnt“",
+            "„Brillant, morgen anfangen“",
+            "„Vage, aber spannend“",
+            "„Zu teuer“"
+          ],
+          "explanation": "Mike Sendall genehmigte es nicht offiziell, ließ Berners-Lee aber ein Jahr später einen Computer kaufen und experimentieren."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Which company made the computer on which the first website ran?",
+      "options": [
+        "IBM",
+        "Apple",
+        "Microsoft",
+        "NeXT, founded by Steve Jobs"
+      ],
+      "explanation": "The black NeXT cube carried a sticker: 'This machine is a server. DO NOT POWER IT DOWN!!'",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk bedrijf maakte de computer waarop de eerste website draaide?",
+          "options": [
+            "IBM",
+            "Apple",
+            "Microsoft",
+            "NeXT, opgericht door Steve Jobs"
+          ],
+          "explanation": "Op de zwarte NeXT-kubus zat een sticker: ‘This machine is a server. DO NOT POWER IT DOWN!!’"
+        },
+        "fr": {
+          "question": "Quelle entreprise a fabriqué l’ordinateur sur lequel tournait le premier site web ?",
+          "options": [
+            "IBM",
+            "Apple",
+            "Microsoft",
+            "NeXT, fondée par Steve Jobs"
+          ],
+          "explanation": "Sur le cube noir NeXT, un autocollant disait : « This machine is a server. DO NOT POWER IT DOWN!! »"
+        },
+        "de": {
+          "question": "Welche Firma baute den Computer, auf dem die erste Website lief?",
+          "options": [
+            "IBM",
+            "Apple",
+            "Microsoft",
+            "NeXT, gegründet von Steve Jobs"
+          ],
+          "explanation": "Auf dem schwarzen NeXT-Würfel klebte ein Zettel: „This machine is a server. DO NOT POWER IT DOWN!!“"
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What did CERN do with the Web's software on 30 April 1993?",
+      "options": [
+        "It sold it to a big company",
+        "It patented it",
+        "It made it free for anyone to use",
+        "It kept it secret for scientists only"
+      ],
+      "explanation": "Berners-Lee believed that charging money would kill the Web. Anyone could now use and build on it without permission.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed CERN op 30 april 1993 met de software van het web?",
+          "options": [
+            "Het verkocht hem aan een groot bedrijf",
+            "Het vroeg er patent op aan",
+            "Het maakte hem gratis voor iedereen",
+            "Het hield hem geheim, alleen voor wetenschappers"
+          ],
+          "explanation": "Berners-Lee geloofde dat het web dood zou gaan als het geld kostte. Nu mocht iedereen het zonder toestemming gebruiken en erop voortbouwen."
+        },
+        "fr": {
+          "question": "Qu’a fait le CERN du logiciel du Web le 30 avril 1993 ?",
+          "options": [
+            "Il l’a vendu à une grande entreprise",
+            "Il l’a breveté",
+            "Il l’a rendu libre et gratuit pour tous",
+            "Il l’a gardé secret, réservé aux scientifiques"
+          ],
+          "explanation": "Berners-Lee pensait que le faire payer tuerait le Web. Chacun pouvait désormais l’utiliser et s’en servir sans permission."
+        },
+        "de": {
+          "question": "Was machte das CERN am 30. April 1993 mit der Software des Webs?",
+          "options": [
+            "Es verkaufte sie an eine große Firma",
+            "Es ließ sie patentieren",
+            "Es gab sie für alle kostenlos frei",
+            "Es hielt sie geheim, nur für Forscher"
+          ],
+          "explanation": "Berners-Lee glaubte, Gebühren würden das Web zerstören. Nun durfte jeder es ohne Erlaubnis nutzen und darauf aufbauen."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Which part of every web address did Berners-Lee say he would change if he could?",
+      "options": [
+        "The 'www'",
+        "The dots between words",
+        "The '.com' ending",
+        "The two slashes after 'http:'"
+      ],
+      "explanation": "The double slash was not really needed. He joked about all the ink, paper and time wasted typing it.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk deel van elk webadres zou Berners-Lee naar eigen zeggen veranderen als hij kon?",
+          "options": [
+            "De ‘www’",
+            "De punten tussen de woorden",
+            "Het einde ‘.com’",
+            "De twee schuine strepen na ‘http:’"
+          ],
+          "explanation": "De dubbele schuine streep was eigenlijk niet nodig. Hij grapte over alle inkt, papier en tijd die het typen ervan had gekost."
+        },
+        "fr": {
+          "question": "Quelle partie de chaque adresse web Berners-Lee dit-il qu’il changerait s’il le pouvait ?",
+          "options": [
+            "Le « www »",
+            "Les points entre les mots",
+            "La fin « .com »",
+            "Les deux barres obliques après « http: »"
+          ],
+          "explanation": "La double barre n’était pas vraiment nécessaire. Il a plaisanté sur toute l’encre, le papier et le temps perdus à la taper."
+        },
+        "de": {
+          "question": "Welchen Teil jeder Webadresse würde Berners-Lee nach eigener Aussage ändern, wenn er könnte?",
+          "options": [
+            "Das „www“",
+            "Die Punkte zwischen den Wörtern",
+            "Die Endung „.com“",
+            "Die beiden Schrägstriche nach „http:“"
+          ],
+          "explanation": "Der doppelte Schrägstrich war eigentlich unnötig. Er scherzte über all die Tinte, das Papier und die Zeit, die das Tippen gekostet habe."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "What message did Berners-Lee type during the opening ceremony of the London 2012 Olympics?",
+      "options": [
+        "'This is for everyone'",
+        "'Hello, world'",
+        "'Let the games begin'",
+        "'Thank you, CERN'"
+      ],
+      "explanation": "His words lit up the stadium in giant letters formed by lights held by the audience.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk bericht typte Berners-Lee tijdens de openingsceremonie van de Olympische Spelen van 2012?",
+          "options": [
+            "‘This is for everyone’",
+            "‘Hello, world’",
+            "‘Let the games begin’",
+            "‘Thank you, CERN’"
+          ],
+          "explanation": "Zijn woorden lichtten in reusachtige letters op in het stadion, gevormd door lampjes die het publiek vasthield."
+        },
+        "fr": {
+          "question": "Quel message Berners-Lee a-t-il tapé pendant la cérémonie d’ouverture des Jeux de Londres 2012 ?",
+          "options": [
+            "« This is for everyone »",
+            "« Hello, world »",
+            "« Let the games begin »",
+            "« Thank you, CERN »"
+          ],
+          "explanation": "Ses mots se sont allumés dans le stade en lettres géantes formées par les lumières tenues par le public."
+        },
+        "de": {
+          "question": "Welche Botschaft tippte Berners-Lee bei der Eröffnungsfeier der Olympischen Spiele 2012 in London?",
+          "options": [
+            "„This is for everyone“",
+            "„Hello, world“",
+            "„Let the games begin“",
+            "„Thank you, CERN“"
+          ],
+          "explanation": "Seine Worte leuchteten in riesigen Buchstaben im Stadion auf, gebildet aus Lichtern, die das Publikum hochhielt."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What is the idea behind Solid, Berners-Lee's later project?",
+      "options": [
+        "People keep their own data in a personal 'pod' and decide which apps may use it",
+        "A faster type of internet cable",
+        "A new social network that he owns",
+        "A search engine without adverts"
+      ],
+      "explanation": "Worried that a few giant companies controlled people's data, he wanted to give that control back to users.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat is het idee achter Solid, een later project van Berners-Lee?",
+          "options": [
+            "Mensen bewaren hun eigen gegevens in een persoonlijke ‘pod’ en bepalen welke apps die mogen gebruiken",
+            "Een snellere soort internetkabel",
+            "Een nieuw sociaal netwerk dat van hem is",
+            "Een zoekmachine zonder advertenties"
+          ],
+          "explanation": "Hij maakte zich zorgen dat een paar reusachtige bedrijven de gegevens van mensen beheersten, en wilde die controle teruggeven aan de gebruikers."
+        },
+        "fr": {
+          "question": "Quelle est l’idée de Solid, un projet plus récent de Berners-Lee ?",
+          "options": [
+            "Chacun garde ses données dans un « pod » personnel et décide quelles applis peuvent s’en servir",
+            "Un câble internet plus rapide",
+            "Un nouveau réseau social qui lui appartient",
+            "Un moteur de recherche sans publicité"
+          ],
+          "explanation": "Inquiet que quelques géants contrôlent les données des gens, il voulait rendre ce contrôle aux utilisateurs."
+        },
+        "de": {
+          "question": "Was ist die Idee hinter Solid, einem späteren Projekt von Berners-Lee?",
+          "options": [
+            "Menschen bewahren ihre Daten in einem persönlichen „Pod“ auf und bestimmen, welche Apps sie nutzen dürfen",
+            "Eine schnellere Art Internetkabel",
+            "Ein neues soziales Netzwerk, das ihm gehört",
+            "Eine Suchmaschine ohne Werbung"
+          ],
+          "explanation": "Besorgt, dass wenige Riesenkonzerne die Daten der Menschen kontrollieren, wollte er den Nutzern diese Kontrolle zurückgeben."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

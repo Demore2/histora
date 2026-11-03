@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Where was Barack Obama born?",
+      "options": [
+        "Chicago, Illinois",
+        "Nairobi, Kenya",
+        "Honolulu, Hawaii",
+        "Jakarta, Indonesia"
+      ],
+      "explanation": "He was born in Honolulu in 1961. His mother came from Kansas and his father from Kenya.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar werd Barack Obama geboren?",
+          "options": [
+            "Chicago, Illinois",
+            "Nairobi, Kenia",
+            "Honolulu, Hawaii",
+            "Jakarta, Indonesië"
+          ],
+          "explanation": "Hij werd in 1961 in Honolulu geboren. Zijn moeder kwam uit Kansas en zijn vader uit Kenia."
+        },
+        "fr": {
+          "question": "Où Barack Obama est-il né ?",
+          "options": [
+            "À Chicago, dans l’Illinois",
+            "À Nairobi, au Kenya",
+            "À Honolulu, à Hawaï",
+            "À Jakarta, en Indonésie"
+          ],
+          "explanation": "Il est né à Honolulu en 1961. Sa mère venait du Kansas et son père du Kenya."
+        },
+        "de": {
+          "question": "Wo wurde Barack Obama geboren?",
+          "options": [
+            "In Chicago, Illinois",
+            "In Nairobi, Kenia",
+            "In Honolulu, Hawaii",
+            "In Jakarta, Indonesien"
+          ],
+          "explanation": "Er kam 1961 in Honolulu zur Welt. Seine Mutter stammte aus Kansas, sein Vater aus Kenia."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What job did Obama do on the South Side of Chicago from 1985?",
+      "options": [
+        "Lawyer",
+        "Community organiser",
+        "Teacher",
+        "Journalist"
+      ],
+      "explanation": "For about 10,000 dollars a year he helped residents demand better schools, job training and asbestos removal.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk werk deed Obama vanaf 1985 in de South Side van Chicago?",
+          "options": [
+            "Advocaat",
+            "Buurtwerker",
+            "Leraar",
+            "Journalist"
+          ],
+          "explanation": "Voor zo’n 10.000 dollar per jaar hielp hij bewoners om betere scholen, beroepsopleidingen en het verwijderen van asbest te eisen."
+        },
+        "fr": {
+          "question": "Quel métier Obama a-t-il exercé dans le South Side de Chicago à partir de 1985 ?",
+          "options": [
+            "Avocat",
+            "Animateur de quartier",
+            "Enseignant",
+            "Journaliste"
+          ],
+          "explanation": "Pour environ 10 000 dollars par an, il aidait les habitants à réclamer de meilleures écoles, des formations et le retrait de l’amiante."
+        },
+        "de": {
+          "question": "Welchen Beruf übte Obama ab 1985 in der South Side von Chicago aus?",
+          "options": [
+            "Anwalt",
+            "Gemeinwesenarbeiter",
+            "Lehrer",
+            "Journalist"
+          ],
+          "explanation": "Für rund 10.000 Dollar im Jahr half er Bewohnern, bessere Schulen, Ausbildung und die Beseitigung von Asbest zu fordern."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What 'first' did Obama achieve at Harvard Law School in 1990?",
+      "options": [
+        "First Black president of the Harvard Law Review",
+        "First student to finish in one year",
+        "First Hawaiian to be admitted",
+        "First student to sue the university"
+      ],
+      "explanation": "The news reached the papers, and a publisher asked him to write the book that became Dreams from My Father.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed Obama in 1990 als eerste aan Harvard Law School?",
+          "options": [
+            "Hij werd de eerste zwarte voorzitter van de Harvard Law Review",
+            "Hij studeerde als eerste in één jaar af",
+            "Hij werd als eerste Hawaïaan toegelaten",
+            "Hij daagde als eerste student de universiteit voor de rechter"
+          ],
+          "explanation": "Het nieuws haalde de kranten, en een uitgever vroeg hem het boek te schrijven dat Dreams from My Father werd."
+        },
+        "fr": {
+          "question": "Quelle « première » Obama a-t-il réalisée à la faculté de droit de Harvard en 1990 ?",
+          "options": [
+            "Premier président noir de la Harvard Law Review",
+            "Premier étudiant diplômé en un an",
+            "Premier Hawaïen admis",
+            "Premier étudiant à poursuivre l’université"
+          ],
+          "explanation": "La nouvelle a fait les journaux, et un éditeur lui a demandé d’écrire le livre qui deviendra Les Rêves de mon père."
+        },
+        "de": {
+          "question": "Was erreichte Obama 1990 an der Harvard Law School als Erster?",
+          "options": [
+            "Er wurde erster schwarzer Präsident der Harvard Law Review",
+            "Er schloss als Erster in einem Jahr ab",
+            "Er wurde als erster Hawaiianer zugelassen",
+            "Er verklagte als erster Student die Universität"
+          ],
+          "explanation": "Die Nachricht kam in die Zeitungen, und ein Verlag bat ihn um das Buch, aus dem Ein amerikanischer Traum wurde."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "How did Obama describe himself in his famous 2004 convention speech?",
+      "options": [
+        "'A farm boy from Kansas'",
+        "'A lawyer with big dreams'",
+        "'The son of a Kenyan king'",
+        "'A skinny kid with a funny name'"
+      ],
+      "explanation": "He said such a kid believed America had a place for him too. The speech made him famous overnight.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe beschreef Obama zichzelf in zijn beroemde toespraak op de conventie van 2004?",
+          "options": [
+            "‘Een boerenjongen uit Kansas’",
+            "‘Een advocaat met grote dromen’",
+            "‘De zoon van een Keniaanse koning’",
+            "‘Een magere jongen met een rare naam’"
+          ],
+          "explanation": "Hij zei dat zo’n jongen geloofde dat er in Amerika ook voor hem een plek was. De toespraak maakte hem van de ene op de andere dag beroemd."
+        },
+        "fr": {
+          "question": "Comment Obama s’est-il décrit dans son célèbre discours de la convention de 2004 ?",
+          "options": [
+            "« Un garçon de ferme du Kansas »",
+            "« Un avocat aux grands rêves »",
+            "« Le fils d’un roi kényan »",
+            "« Un gamin maigre au nom bizarre »"
+          ],
+          "explanation": "Il a dit qu’un tel gamin croyait que l’Amérique avait aussi une place pour lui. Le discours l’a rendu célèbre du jour au lendemain."
+        },
+        "de": {
+          "question": "Wie beschrieb sich Obama in seiner berühmten Parteitagsrede von 2004?",
+          "options": [
+            "„Ein Bauernjunge aus Kansas“",
+            "„Ein Anwalt mit großen Träumen“",
+            "„Der Sohn eines kenianischen Königs“",
+            "„Ein dünner Junge mit einem komischen Namen“"
+          ],
+          "explanation": "Er sagte, so ein Junge glaube, dass Amerika auch für ihn einen Platz habe. Die Rede machte ihn über Nacht berühmt."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Why did Obama announce his run for president in 2007 at the old state capitol in Springfield?",
+      "options": [
+        "He had been born there",
+        "Abraham Lincoln had given his 'house divided' speech there",
+        "It was the only free venue",
+        "Martin Luther King had spoken there"
+      ],
+      "explanation": "Lincoln had warned there that 'a house divided against itself cannot stand' – a fitting place for a candidate who promised unity.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom maakte Obama zijn kandidatuur in 2007 bekend bij het oude Capitool in Springfield?",
+          "options": [
+            "Hij was daar geboren",
+            "Abraham Lincoln had daar zijn toespraak over het ‘verdeelde huis’ gehouden",
+            "Het was de enige gratis locatie",
+            "Martin Luther King had daar gesproken"
+          ],
+          "explanation": "Lincoln had daar gewaarschuwd dat ‘een huis dat tegen zichzelf verdeeld is, niet kan blijven staan’ – een passende plek voor een kandidaat die eenheid beloofde."
+        },
+        "fr": {
+          "question": "Pourquoi Obama a-t-il annoncé sa candidature en 2007 devant l’ancien capitole de Springfield ?",
+          "options": [
+            "Il y était né",
+            "Abraham Lincoln y avait prononcé son discours de la « maison divisée »",
+            "C’était le seul lieu gratuit",
+            "Martin Luther King y avait parlé"
+          ],
+          "explanation": "Lincoln y avait averti qu’« une maison divisée contre elle-même ne peut tenir » – un lieu bien choisi pour un candidat qui promettait l’unité."
+        },
+        "de": {
+          "question": "Warum gab Obama 2007 seine Kandidatur am alten Kapitol in Springfield bekannt?",
+          "options": [
+            "Er war dort geboren",
+            "Abraham Lincoln hatte dort seine Rede vom „geteilten Haus“ gehalten",
+            "Es war der einzige kostenlose Ort",
+            "Martin Luther King hatte dort gesprochen"
+          ],
+          "explanation": "Lincoln hatte dort gewarnt, dass „ein in sich geteiltes Haus nicht bestehen kann“ – ein passender Ort für einen Kandidaten, der Einheit versprach."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What surprising prize did Obama receive in 2009, after less than nine months as president?",
+      "options": [
+        "The Nobel Peace Prize",
+        "An Oscar",
+        "The Pulitzer Prize",
+        "An Olympic medal"
+      ],
+      "explanation": "Many people, Obama included, were surprised. He called it a call to action rather than a reward.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke verrassende prijs kreeg Obama in 2009, na nog geen negen maanden als president?",
+          "options": [
+            "De Nobelprijs voor de Vrede",
+            "Een Oscar",
+            "De Pulitzerprijs",
+            "Een Olympische medaille"
+          ],
+          "explanation": "Veel mensen waren verrast, Obama zelf ook. Hij noemde het eerder een oproep tot actie dan een beloning."
+        },
+        "fr": {
+          "question": "Quel prix surprenant Obama a-t-il reçu en 2009, après moins de neuf mois de présidence ?",
+          "options": [
+            "Le prix Nobel de la paix",
+            "Un Oscar",
+            "Le prix Pulitzer",
+            "Une médaille olympique"
+          ],
+          "explanation": "Beaucoup, Obama compris, ont été surpris. Il y a vu un appel à agir plutôt qu’une récompense."
+        },
+        "de": {
+          "question": "Welchen überraschenden Preis erhielt Obama 2009 nach nicht einmal neun Monaten im Amt?",
+          "options": [
+            "Den Friedensnobelpreis",
+            "Einen Oscar",
+            "Den Pulitzer-Preis",
+            "Eine olympische Medaille"
+          ],
+          "explanation": "Viele waren überrascht, Obama selbst auch. Er sah darin eher einen Auftrag als eine Belohnung."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "What was Obama doing the evening before the raid on Osama bin Laden's hideout?",
+      "options": [
+        "Flying secretly to Pakistan",
+        "Playing basketball with soldiers",
+        "Giving a speech to Congress",
+        "Telling jokes at the White House Correspondents' Dinner"
+      ],
+      "explanation": "For twenty minutes he joked with journalists, and nobody guessed he had just ordered one of the most dangerous missions of his presidency.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed Obama op de avond voor de aanval op de schuilplaats van Osama bin Laden?",
+          "options": [
+            "Hij vloog in het geheim naar Pakistan",
+            "Hij speelde basketbal met soldaten",
+            "Hij sprak het Congres toe",
+            "Hij vertelde grappen op het White House Correspondents’ Dinner"
+          ],
+          "explanation": "Twintig minuten lang maakte hij grappen met journalisten, en niemand vermoedde dat hij net het bevel had gegeven voor een van de gevaarlijkste missies van zijn presidentschap."
+        },
+        "fr": {
+          "question": "Que faisait Obama la veille du raid contre la cachette d’Oussama ben Laden ?",
+          "options": [
+            "Il s’envolait en secret pour le Pakistan",
+            "Il jouait au basket avec des soldats",
+            "Il s’adressait au Congrès",
+            "Il racontait des blagues au dîner des correspondants de la Maison-Blanche"
+          ],
+          "explanation": "Pendant vingt minutes, il a plaisanté avec les journalistes, et personne n’a deviné qu’il venait d’ordonner l’une des missions les plus dangereuses de sa présidence."
+        },
+        "de": {
+          "question": "Was tat Obama am Abend vor dem Angriff auf Osama bin Ladens Versteck?",
+          "options": [
+            "Er flog heimlich nach Pakistan",
+            "Er spielte Basketball mit Soldaten",
+            "Er sprach vor dem Kongress",
+            "Er erzählte Witze beim White House Correspondents’ Dinner"
+          ],
+          "explanation": "Zwanzig Minuten lang scherzte er mit Journalisten, und niemand ahnte, dass er gerade eine der gefährlichsten Missionen seiner Amtszeit befohlen hatte."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "What did Obama do at the funeral of Pastor Clementa Pinckney in Charleston in 2015?",
+      "options": [
+        "He read a poem by Maya Angelou",
+        "He announced a new law",
+        "He began to sing 'Amazing Grace'",
+        "He played the piano"
+      ],
+      "explanation": "After speaking about racism and grace he paused, then sang, and the whole church rose to sing with him.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed Obama in 2015 op de uitvaart van dominee Clementa Pinckney in Charleston?",
+          "options": [
+            "Hij las een gedicht van Maya Angelou voor",
+            "Hij kondigde een nieuwe wet aan",
+            "Hij begon ‘Amazing Grace’ te zingen",
+            "Hij speelde piano"
+          ],
+          "explanation": "Na te hebben gesproken over racisme en genade zweeg hij even en zong hij, en de hele kerk stond op om mee te zingen."
+        },
+        "fr": {
+          "question": "Qu’a fait Obama aux funérailles du pasteur Clementa Pinckney à Charleston en 2015 ?",
+          "options": [
+            "Il a lu un poème de Maya Angelou",
+            "Il a annoncé une nouvelle loi",
+            "Il s’est mis à chanter « Amazing Grace »",
+            "Il a joué du piano"
+          ],
+          "explanation": "Après avoir parlé du racisme et de la grâce, il a marqué une pause puis chanté, et toute l’église s’est levée pour chanter avec lui."
+        },
+        "de": {
+          "question": "Was tat Obama 2015 bei der Trauerfeier für Pastor Clementa Pinckney in Charleston?",
+          "options": [
+            "Er las ein Gedicht von Maya Angelou",
+            "Er kündigte ein neues Gesetz an",
+            "Er begann, „Amazing Grace“ zu singen",
+            "Er spielte Klavier"
+          ],
+          "explanation": "Nachdem er über Rassismus und Gnade gesprochen hatte, hielt er inne und sang – und die ganze Kirche stand auf und sang mit."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

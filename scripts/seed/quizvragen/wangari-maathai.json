@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What did Wangari Maathai's mother tell her never to do near the big fig tree by the stream?",
+      "options": [
+        "Swim in the stream",
+        "Climb into its branches",
+        "Pick up firewood or cut it, because it was sacred",
+        "Sing loudly"
+      ],
+      "explanation": "The fig tree was sacred. Years later Wangari understood that its roots held the soil together and kept the water flowing.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat mocht Wangari Maathai van haar moeder nooit doen bij de grote vijgenboom aan de beek?",
+          "options": [
+            "Zwemmen in de beek",
+            "In de takken klimmen",
+            "Er brandhout rapen of hem kappen, want hij was heilig",
+            "Hard zingen"
+          ],
+          "explanation": "De vijgenboom was heilig. Jaren later begreep Wangari dat zijn wortels de grond bij elkaar hielden en het water lieten stromen."
+        },
+        "fr": {
+          "question": "Que la mère de Wangari Maathai lui interdisait-elle près du grand figuier au bord du ruisseau ?",
+          "options": [
+            "Se baigner dans le ruisseau",
+            "Grimper dans ses branches",
+            "Y ramasser du bois ou le couper, car il était sacré",
+            "Chanter fort"
+          ],
+          "explanation": "Le figuier était sacré. Des années plus tard, Wangari a compris que ses racines retenaient la terre et gardaient l’eau vive."
+        },
+        "de": {
+          "question": "Was durfte Wangari Maathai laut ihrer Mutter beim großen Feigenbaum am Bach nie tun?",
+          "options": [
+            "Im Bach schwimmen",
+            "In seine Äste klettern",
+            "Dort Brennholz sammeln oder ihn fällen, denn er war heilig",
+            "Laut singen"
+          ],
+          "explanation": "Der Feigenbaum war heilig. Jahre später verstand Wangari, dass seine Wurzeln den Boden zusammenhielten und das Wasser fließen ließen."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "How did Wangari Maathai get to study in the United States in 1960?",
+      "options": [
+        "She won a sports scholarship",
+        "Through the 'Kennedy Airlift' for promising East African students",
+        "Her husband paid for it",
+        "She worked her way there on a ship"
+      ],
+      "explanation": "A programme supported by a Kennedy family foundation flew hundreds of young East Africans to American universities.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe kon Wangari Maathai in 1960 in de Verenigde Staten gaan studeren?",
+          "options": [
+            "Ze won een sportbeurs",
+            "Via de ‘Kennedy-luchtbrug’ voor veelbelovende Oost-Afrikaanse studenten",
+            "Haar man betaalde het",
+            "Ze werkte zich erheen op een schip"
+          ],
+          "explanation": "Een programma dat werd gesteund door een stichting van de familie Kennedy vloog honderden jonge Oost-Afrikanen naar Amerikaanse universiteiten."
+        },
+        "fr": {
+          "question": "Comment Wangari Maathai a-t-elle pu étudier aux États-Unis en 1960 ?",
+          "options": [
+            "Grâce à une bourse sportive",
+            "Par le « pont aérien Kennedy » pour les étudiants prometteurs d’Afrique de l’Est",
+            "Son mari a tout payé",
+            "Elle a travaillé à bord d’un bateau pour y aller"
+          ],
+          "explanation": "Un programme soutenu par une fondation de la famille Kennedy a envoyé par avion des centaines de jeunes Est-Africains dans des universités américaines."
+        },
+        "de": {
+          "question": "Wie kam Wangari Maathai 1960 zum Studium in die USA?",
+          "options": [
+            "Mit einem Sportstipendium",
+            "Über die „Kennedy-Luftbrücke“ für begabte Studierende aus Ostafrika",
+            "Ihr Mann bezahlte es",
+            "Sie arbeitete sich auf einem Schiff dorthin"
+          ],
+          "explanation": "Ein Programm, unterstützt von einer Stiftung der Familie Kennedy, flog Hunderte junge Ostafrikaner an amerikanische Universitäten."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What 'first' did Wangari Maathai achieve in 1971?",
+      "options": [
+        "First woman in East and Central Africa to earn a doctorate",
+        "First woman elected to the Kenyan parliament",
+        "First African to fly in space",
+        "First woman to run a Kenyan bank"
+      ],
+      "explanation": "She earned her PhD in veterinary anatomy at the University of Nairobi, then became head of her department.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deed Wangari Maathai in 1971 als eerste?",
+          "options": [
+            "Ze was de eerste vrouw in Oost- en Centraal-Afrika met een doctorstitel",
+            "Ze werd als eerste vrouw in het Keniaanse parlement gekozen",
+            "Ze was de eerste Afrikaanse in de ruimte",
+            "Ze leidde als eerste vrouw een Keniaanse bank"
+          ],
+          "explanation": "Ze promoveerde in de veterinaire anatomie aan de Universiteit van Nairobi en werd daarna hoofd van haar vakgroep."
+        },
+        "fr": {
+          "question": "Quelle « première » Wangari Maathai a-t-elle réalisée en 1971 ?",
+          "options": [
+            "Première femme d’Afrique de l’Est et centrale à obtenir un doctorat",
+            "Première femme élue au Parlement kényan",
+            "Première Africaine dans l’espace",
+            "Première femme à diriger une banque kényane"
+          ],
+          "explanation": "Elle a obtenu son doctorat en anatomie vétérinaire à l’université de Nairobi, puis a dirigé son département."
+        },
+        "de": {
+          "question": "Was schaffte Wangari Maathai 1971 als Erste?",
+          "options": [
+            "Sie war die erste Frau in Ost- und Zentralafrika mit Doktortitel",
+            "Sie wurde als erste Frau ins kenianische Parlament gewählt",
+            "Sie flog als erste Afrikanerin ins All",
+            "Sie leitete als erste Frau eine kenianische Bank"
+          ],
+          "explanation": "Sie promovierte in Veterinäranatomie an der Universität Nairobi und leitete danach ihr Institut."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What were the women of the Green Belt Movement paid for?",
+      "options": [
+        "Every tree they cut down for firewood",
+        "Every kilo of food they grew",
+        "Every seedling they planted that survived",
+        "Every protest they joined"
+      ],
+      "explanation": "Wangari called them 'foresters without diplomas'. Rural women grew seedlings, planted them and earned a small sum for each tree that lived.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarvoor kregen de vrouwen van de Green Belt Movement betaald?",
+          "options": [
+            "Voor elke boom die ze voor brandhout kapten",
+            "Voor elke kilo voedsel die ze verbouwden",
+            "Voor elk geplant boompje dat bleef leven",
+            "Voor elk protest waaraan ze meededen"
+          ],
+          "explanation": "Wangari noemde hen ‘bosbouwers zonder diploma’. Vrouwen op het platteland kweekten boompjes, plantten ze en kregen een klein bedrag voor elke boom die bleef leven."
+        },
+        "fr": {
+          "question": "Pour quoi les femmes du Green Belt Movement étaient-elles payées ?",
+          "options": [
+            "Pour chaque arbre abattu comme bois de chauffage",
+            "Pour chaque kilo de nourriture cultivée",
+            "Pour chaque jeune arbre planté qui survivait",
+            "Pour chaque manifestation à laquelle elles participaient"
+          ],
+          "explanation": "Wangari les appelait « forestières sans diplôme ». Elles cultivaient des plants, les mettaient en terre et touchaient une petite somme par arbre survivant."
+        },
+        "de": {
+          "question": "Wofür wurden die Frauen des Green Belt Movement bezahlt?",
+          "options": [
+            "Für jeden Baum, den sie als Brennholz fällten",
+            "Für jedes Kilo Nahrung, das sie anbauten",
+            "Für jeden gepflanzten Setzling, der überlebte",
+            "Für jeden Protest, an dem sie teilnahmen"
+          ],
+          "explanation": "Wangari nannte sie „Försterinnen ohne Diplom“. Die Frauen zogen Setzlinge, pflanzten sie und bekamen für jeden überlebenden Baum einen kleinen Betrag."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "How did Wangari change her surname after her divorce?",
+      "options": [
+        "She went back to her maiden name",
+        "She added an extra 'a': Mathai became Maathai",
+        "She took her mother's name",
+        "She chose a completely new name"
+      ],
+      "explanation": "Her ex-husband's lawyer demanded she stop using his name. She refused to give it up and simply added a letter.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe veranderde Wangari haar achternaam na haar scheiding?",
+          "options": [
+            "Ze nam haar meisjesnaam weer aan",
+            "Ze voegde een extra ‘a’ toe: Mathai werd Maathai",
+            "Ze nam de naam van haar moeder aan",
+            "Ze koos een heel nieuwe naam"
+          ],
+          "explanation": "De advocaat van haar ex-man eiste dat ze zijn naam niet meer zou gebruiken. Ze weigerde hem op te geven en voegde er gewoon een letter aan toe."
+        },
+        "fr": {
+          "question": "Comment Wangari a-t-elle modifié son nom après son divorce ?",
+          "options": [
+            "Elle a repris son nom de jeune fille",
+            "Elle a ajouté un « a » : Mathai est devenu Maathai",
+            "Elle a pris le nom de sa mère",
+            "Elle a choisi un nom entièrement nouveau"
+          ],
+          "explanation": "L’avocat de son ex-mari exigeait qu’elle cesse d’utiliser son nom. Elle a refusé d’y renoncer et a simplement ajouté une lettre."
+        },
+        "de": {
+          "question": "Wie änderte Wangari nach ihrer Scheidung ihren Nachnamen?",
+          "options": [
+            "Sie nahm wieder ihren Mädchennamen an",
+            "Sie fügte ein zusätzliches „a“ hinzu: Aus Mathai wurde Maathai",
+            "Sie nahm den Namen ihrer Mutter an",
+            "Sie wählte einen völlig neuen Namen"
+          ],
+          "explanation": "Der Anwalt ihres Ex-Mannes verlangte, dass sie seinen Namen nicht mehr benutzte. Sie weigerte sich und fügte einfach einen Buchstaben hinzu."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What did President Moi's party plan to build in Uhuru Park in 1989?",
+      "options": [
+        "A 60-storey skyscraper with a giant statue of the president",
+        "A new airport",
+        "A football stadium",
+        "An army base"
+      ],
+      "explanation": "Wangari's letters to the government, newspapers and foreign banks made the investors pull out. The park is still a park.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat wilde de partij van president Moi in 1989 in Uhuru Park bouwen?",
+          "options": [
+            "Een wolkenkrabber van zestig verdiepingen met een reusachtig standbeeld van de president",
+            "Een nieuw vliegveld",
+            "Een voetbalstadion",
+            "Een legerbasis"
+          ],
+          "explanation": "Door Wangari’s brieven aan de regering, kranten en buitenlandse banken trokken de geldschieters zich terug. Het park is nog steeds een park."
+        },
+        "fr": {
+          "question": "Que le parti du président Moi voulait-il construire dans le parc Uhuru en 1989 ?",
+          "options": [
+            "Un gratte-ciel de 60 étages avec une statue géante du président",
+            "Un nouvel aéroport",
+            "Un stade de football",
+            "Une base militaire"
+          ],
+          "explanation": "Les lettres de Wangari au gouvernement, aux journaux et aux banques étrangères ont fait fuir les investisseurs. Le parc est toujours un parc."
+        },
+        "de": {
+          "question": "Was wollte die Partei von Präsident Moi 1989 im Uhuru-Park bauen?",
+          "options": [
+            "Einen 60-stöckigen Wolkenkratzer mit einer riesigen Statue des Präsidenten",
+            "Einen neuen Flughafen",
+            "Ein Fußballstadion",
+            "Einen Militärstützpunkt"
+          ],
+          "explanation": "Wangaris Briefe an Regierung, Zeitungen und ausländische Banken ließen die Geldgeber abspringen. Der Park ist bis heute ein Park."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "In 2004 Wangari Maathai became the first African woman to win which prize?",
+      "options": [
+        "The Pulitzer Prize",
+        "The Right Livelihood Award",
+        "The Goldman Environmental Prize",
+        "The Nobel Peace Prize"
+      ],
+      "explanation": "She received it for her contribution to sustainable development, democracy and peace, and celebrated by planting a tree.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke prijs won Wangari Maathai in 2004 als eerste Afrikaanse vrouw?",
+          "options": [
+            "De Pulitzerprijs",
+            "De Right Livelihood Award",
+            "De Goldman Environmental Prize",
+            "De Nobelprijs voor de Vrede"
+          ],
+          "explanation": "Ze kreeg hem voor haar bijdrage aan duurzame ontwikkeling, democratie en vrede, en vierde het door een boom te planten."
+        },
+        "fr": {
+          "question": "Quel prix Wangari Maathai a-t-elle reçu en 2004, première Africaine à l’obtenir ?",
+          "options": [
+            "Le prix Pulitzer",
+            "Le Right Livelihood Award",
+            "Le prix Goldman pour l’environnement",
+            "Le prix Nobel de la paix"
+          ],
+          "explanation": "Elle l’a reçu pour sa contribution au développement durable, à la démocratie et à la paix, et l’a fêté en plantant un arbre."
+        },
+        "de": {
+          "question": "Welchen Preis gewann Wangari Maathai 2004 als erste Afrikanerin?",
+          "options": [
+            "Den Pulitzer-Preis",
+            "Den Right Livelihood Award",
+            "Den Goldman-Umweltpreis",
+            "Den Friedensnobelpreis"
+          ],
+          "explanation": "Sie erhielt ihn für ihren Beitrag zu nachhaltiger Entwicklung, Demokratie und Frieden und feierte, indem sie einen Baum pflanzte."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "In Wangari's favourite story, what does the hummingbird do when the forest is on fire?",
+      "options": [
+        "It flies away to warn other forests",
+        "It calls the elephants to help",
+        "It hides in a hollow tree",
+        "It carries drops of water to the fire, one at a time"
+      ],
+      "explanation": "The bigger animals laugh at it. The hummingbird answers: 'I am doing the best I can.'",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat doet de kolibrie in Wangari’s lievelingsverhaal als het bos in brand staat?",
+          "options": [
+            "Hij vliegt weg om andere bossen te waarschuwen",
+            "Hij roept de olifanten te hulp",
+            "Hij verstopt zich in een holle boom",
+            "Hij brengt druppel voor druppel water naar het vuur"
+          ],
+          "explanation": "De grotere dieren lachen hem uit. De kolibrie antwoordt: ‘Ik doe wat ik kan.’"
+        },
+        "fr": {
+          "question": "Dans l’histoire préférée de Wangari, que fait le colibri quand la forêt brûle ?",
+          "options": [
+            "Il s’envole prévenir les autres forêts",
+            "Il appelle les éléphants à l’aide",
+            "Il se cache dans un arbre creux",
+            "Il apporte de l’eau au feu, goutte après goutte"
+          ],
+          "explanation": "Les grands animaux se moquent de lui. Le colibri répond : « Je fais de mon mieux. »"
+        },
+        "de": {
+          "question": "Was tut der Kolibri in Wangaris Lieblingsgeschichte, als der Wald brennt?",
+          "options": [
+            "Er fliegt davon, um andere Wälder zu warnen",
+            "Er ruft die Elefanten zu Hilfe",
+            "Er versteckt sich in einem hohlen Baum",
+            "Er bringt Tropfen für Tropfen Wasser zum Feuer"
+          ],
+          "explanation": "Die größeren Tiere lachen ihn aus. Der Kolibri antwortet: „Ich tue, was ich kann.“"
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

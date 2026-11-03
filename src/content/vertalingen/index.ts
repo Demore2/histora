@@ -61,6 +61,13 @@ import tutankhamunNl from './nl/tutankhamun';
 import vladTheImpalerNl from './nl/vlad-the-impaler';
 import williamTheConquerorNl from './nl/william-the-conqueror';
 import winstonChurchillNl from './nl/winston-churchill';
+import elizabethIiNl from './nl/elizabeth-ii';
+import popeFrancisNl from './nl/pope-francis';
+import wangariMaathaiNl from './nl/wangari-maathai';
+import stephenHawkingNl from './nl/stephen-hawking';
+import angelaMerkelNl from './nl/angela-merkel';
+import timBernersLeeNl from './nl/tim-berners-lee';
+import barackObamaNl from './nl/barack-obama';
 
 // Vertalingen van de verhaaltekst, één bestand per verhaal per taal, gesleuteld op
 // `vertaalSleutel(en)`. Bewust een expliciete lijst (zoals CHARACTER_IMAGES): een verhaal dat
@@ -130,6 +137,13 @@ const NL: Record<string, Vertaaltabel> = {
   'vlad-the-impaler': vladTheImpalerNl,
   'william-the-conqueror': williamTheConquerorNl,
   'winston-churchill': winstonChurchillNl,
+  'elizabeth-ii': elizabethIiNl,
+  'pope-francis': popeFrancisNl,
+  'wangari-maathai': wangariMaathaiNl,
+  'stephen-hawking': stephenHawkingNl,
+  'angela-merkel': angelaMerkelNl,
+  'tim-berners-lee': timBernersLeeNl,
+  'barack-obama': barackObamaNl,
 };
 
 export const VERTALINGEN = { nl: NL } as const;

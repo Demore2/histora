@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Why did Elizabeth suddenly become heir to the throne in 1936?",
+      "options": [
+        "Her grandfather named her as his successor",
+        "Her uncle gave up the throne to marry Wallis Simpson",
+        "Her father refused to become king",
+        "Parliament changed the order of succession"
+      ],
+      "explanation": "Edward VIII abdicated to marry a twice-divorced American. Her father became George VI, and ten-year-old Elizabeth was next in line.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom werd Elizabeth in 1936 plotseling troonopvolger?",
+          "options": [
+            "Haar grootvader wees haar aan als opvolger",
+            "Haar oom deed afstand van de troon om met Wallis Simpson te trouwen",
+            "Haar vader weigerde koning te worden",
+            "Het parlement veranderde de volgorde van troonopvolging"
+          ],
+          "explanation": "Edward VIII deed afstand van de troon om met een twee keer gescheiden Amerikaanse te trouwen. Haar vader werd George VI, en de tienjarige Elizabeth was de volgende in de rij."
+        },
+        "fr": {
+          "question": "Pourquoi Elizabeth est-elle soudain devenue héritière du trône en 1936 ?",
+          "options": [
+            "Son grand-père l’a désignée comme successeure",
+            "Son oncle a renoncé au trône pour épouser Wallis Simpson",
+            "Son père a refusé de devenir roi",
+            "Le Parlement a modifié l’ordre de succession"
+          ],
+          "explanation": "Édouard VIII a abdiqué pour épouser une Américaine deux fois divorcée. Son père est devenu George VI, et Elizabeth, dix ans, était la suivante."
+        },
+        "de": {
+          "question": "Warum wurde Elizabeth 1936 plötzlich Thronfolgerin?",
+          "options": [
+            "Ihr Großvater ernannte sie zur Nachfolgerin",
+            "Ihr Onkel verzichtete auf den Thron, um Wallis Simpson zu heiraten",
+            "Ihr Vater weigerte sich, König zu werden",
+            "Das Parlament änderte die Thronfolge"
+          ],
+          "explanation": "Eduard VIII. dankte ab, um eine zweimal geschiedene Amerikanerin zu heiraten. Ihr Vater wurde Georg VI., und die zehnjährige Elizabeth war die Nächste in der Reihe."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What did Princess Elizabeth train as when she joined the army in 1945?",
+      "options": [
+        "A nurse",
+        "A radio operator",
+        "A driver and mechanic",
+        "A pilot"
+      ],
+      "explanation": "In the Auxiliary Territorial Service she learned to drive, read maps and repair engines, changing tyres and spark plugs.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarvoor werd prinses Elizabeth opgeleid toen ze in 1945 in het leger ging?",
+          "options": [
+            "Verpleegster",
+            "Marconist",
+            "Chauffeur en monteur",
+            "Piloot"
+          ],
+          "explanation": "In de Auxiliary Territorial Service leerde ze autorijden, kaartlezen en motoren repareren, inclusief banden en bougies verwisselen."
+        },
+        "fr": {
+          "question": "Quelle formation la princesse Elizabeth a-t-elle suivie en entrant dans l’armée en 1945 ?",
+          "options": [
+            "Infirmière",
+            "Opératrice radio",
+            "Conductrice et mécanicienne",
+            "Pilote"
+          ],
+          "explanation": "Dans l’Auxiliary Territorial Service, elle a appris à conduire, à lire des cartes et à réparer des moteurs, pneus et bougies compris."
+        },
+        "de": {
+          "question": "Wozu wurde Prinzessin Elizabeth ausgebildet, als sie 1945 zur Armee ging?",
+          "options": [
+            "Krankenschwester",
+            "Funkerin",
+            "Fahrerin und Mechanikerin",
+            "Pilotin"
+          ],
+          "explanation": "Im Auxiliary Territorial Service lernte sie Autofahren, Kartenlesen und Motoren reparieren, samt Reifen- und Zündkerzenwechsel."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What did Elizabeth promise in her radio speech from Cape Town on her 21st birthday?",
+      "options": [
+        "To devote her whole life to the service of the people",
+        "Never to marry",
+        "To visit every country of the Commonwealth",
+        "To give up her royal titles"
+      ],
+      "explanation": "In 1947 she declared that her whole life, whether long or short, would be devoted to their service.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat beloofde Elizabeth in haar radiotoespraak vanuit Kaapstad op haar 21e verjaardag?",
+          "options": [
+            "Haar hele leven te wijden aan de dienst van het volk",
+            "Nooit te trouwen",
+            "Elk land van het Gemenebest te bezoeken",
+            "Haar koninklijke titels op te geven"
+          ],
+          "explanation": "In 1947 verklaarde ze dat haar hele leven, of het nu lang of kort zou zijn, gewijd zou zijn aan hun dienst."
+        },
+        "fr": {
+          "question": "Qu’a promis Elizabeth dans son discours radio du Cap, le jour de ses 21 ans ?",
+          "options": [
+            "Consacrer toute sa vie au service du peuple",
+            "Ne jamais se marier",
+            "Visiter chaque pays du Commonwealth",
+            "Renoncer à ses titres royaux"
+          ],
+          "explanation": "En 1947, elle a déclaré que toute sa vie, longue ou courte, serait consacrée à leur service."
+        },
+        "de": {
+          "question": "Was versprach Elizabeth in ihrer Radioansprache aus Kapstadt an ihrem 21. Geburtstag?",
+          "options": [
+            "Ihr ganzes Leben dem Dienst am Volk zu widmen",
+            "Niemals zu heiraten",
+            "Jedes Land des Commonwealth zu besuchen",
+            "Auf ihre königlichen Titel zu verzichten"
+          ],
+          "explanation": "1947 erklärte sie, ihr ganzes Leben, ob lang oder kurz, werde ihrem Dienst gewidmet sein."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Where was Elizabeth when her father died and she became queen in 1952?",
+      "options": [
+        "At Buckingham Palace",
+        "On a ship to Australia",
+        "At Windsor Castle",
+        "On a visit to Kenya"
+      ],
+      "explanation": "She had spent the night at Treetops, a hotel in a fig tree. The news only reached her the next day, at a lodge near Nyeri.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar was Elizabeth toen haar vader in 1952 stierf en zij koningin werd?",
+          "options": [
+            "In Buckingham Palace",
+            "Op een schip naar Australië",
+            "In Windsor Castle",
+            "Op bezoek in Kenia"
+          ],
+          "explanation": "Ze had de nacht doorgebracht in Treetops, een hotel in een vijgenboom. Het nieuws bereikte haar pas de volgende dag, in een lodge bij Nyeri."
+        },
+        "fr": {
+          "question": "Où se trouvait Elizabeth quand son père est mort et qu’elle est devenue reine en 1952 ?",
+          "options": [
+            "À Buckingham Palace",
+            "Sur un bateau pour l’Australie",
+            "Au château de Windsor",
+            "En visite au Kenya"
+          ],
+          "explanation": "Elle avait passé la nuit à Treetops, un hôtel perché dans un figuier. La nouvelle ne lui est parvenue que le lendemain, près de Nyeri."
+        },
+        "de": {
+          "question": "Wo war Elizabeth, als ihr Vater 1952 starb und sie Königin wurde?",
+          "options": [
+            "Im Buckingham Palace",
+            "Auf einem Schiff nach Australien",
+            "Auf Schloss Windsor",
+            "Auf Besuch in Kenia"
+          ],
+          "explanation": "Sie hatte die Nacht in Treetops verbracht, einem Hotel in einem Feigenbaum. Die Nachricht erreichte sie erst am nächsten Tag in einer Lodge bei Nyeri."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Why did Elizabeth never need a driving licence or a passport?",
+      "options": [
+        "She never drove or travelled abroad herself",
+        "They were issued in her name",
+        "Royals are forbidden to carry documents",
+        "Her husband held them for her"
+      ],
+      "explanation": "British licences and passports were issued in the monarch's name, so she did not need one herself. She still loved to drive.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom had Elizabeth nooit een rijbewijs of paspoort nodig?",
+          "options": [
+            "Ze reed nooit zelf en reisde nooit naar het buitenland",
+            "Ze werden op haar naam uitgegeven",
+            "Koninklijken mogen geen documenten bij zich dragen",
+            "Haar man had ze voor haar"
+          ],
+          "explanation": "Britse rijbewijzen en paspoorten werden uitgegeven op naam van de vorst, dus zelf had ze er geen nodig. Ze reed wel graag auto."
+        },
+        "fr": {
+          "question": "Pourquoi Elizabeth n’a-t-elle jamais eu besoin de permis de conduire ni de passeport ?",
+          "options": [
+            "Elle ne conduisait ni ne voyageait jamais",
+            "Ils étaient délivrés en son nom",
+            "Les membres de la famille royale n’ont pas le droit d’en porter",
+            "Son mari les gardait pour elle"
+          ],
+          "explanation": "Les permis et passeports britanniques étaient délivrés au nom du monarque, elle n’en avait donc pas besoin. Elle adorait pourtant conduire."
+        },
+        "de": {
+          "question": "Warum brauchte Elizabeth nie einen Führerschein oder Reisepass?",
+          "options": [
+            "Sie fuhr nie selbst und reiste nie ins Ausland",
+            "Sie wurden in ihrem Namen ausgestellt",
+            "Royals dürfen keine Dokumente bei sich tragen",
+            "Ihr Mann bewahrte sie für sie auf"
+          ],
+          "explanation": "Britische Führerscheine und Pässe wurden im Namen der Monarchin ausgestellt, also brauchte sie selbst keinen. Sie fuhr trotzdem gern Auto."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "What Latin phrase did Elizabeth use to describe the year 1992?",
+      "options": [
+        "Annus horribilis",
+        "Annus mirabilis",
+        "Tempus fugit",
+        "Carpe diem"
+      ],
+      "explanation": "Divorces, scandals and a fire at Windsor Castle made it, in her words, a 'horrible year'.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Met welke Latijnse uitdrukking beschreef Elizabeth het jaar 1992?",
+          "options": [
+            "Annus horribilis",
+            "Annus mirabilis",
+            "Tempus fugit",
+            "Carpe diem"
+          ],
+          "explanation": "Scheidingen, schandalen en een brand in Windsor Castle maakten er volgens haar een ‘afschuwelijk jaar’ van."
+        },
+        "fr": {
+          "question": "Quelle expression latine Elizabeth a-t-elle employée pour décrire l’année 1992 ?",
+          "options": [
+            "Annus horribilis",
+            "Annus mirabilis",
+            "Tempus fugit",
+            "Carpe diem"
+          ],
+          "explanation": "Divorces, scandales et incendie au château de Windsor en ont fait, selon ses mots, une « année horrible »."
+        },
+        "de": {
+          "question": "Mit welchem lateinischen Ausdruck beschrieb Elizabeth das Jahr 1992?",
+          "options": [
+            "Annus horribilis",
+            "Annus mirabilis",
+            "Tempus fugit",
+            "Carpe diem"
+          ],
+          "explanation": "Scheidungen, Skandale und ein Brand auf Schloss Windsor machten es in ihren Worten zu einem „schrecklichen Jahr“."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "Which film character escorted the Queen in a short film at the London 2012 Olympics?",
+      "options": [
+        "Mr Bean",
+        "Harry Potter",
+        "Paddington Bear",
+        "James Bond"
+      ],
+      "explanation": "Daniel Craig as James Bond collected her from Buckingham Palace; a stunt double then 'parachuted' into the stadium.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk filmpersonage haalde de koningin op in een korte film bij de Olympische Spelen van 2012?",
+          "options": [
+            "Mr. Bean",
+            "Harry Potter",
+            "Paddington Beer",
+            "James Bond"
+          ],
+          "explanation": "Daniel Craig als James Bond haalde haar op in Buckingham Palace; daarna ‘sprong’ een stuntvrouw met een parachute het stadion in."
+        },
+        "fr": {
+          "question": "Quel personnage de cinéma a escorté la reine dans un court film aux Jeux de Londres 2012 ?",
+          "options": [
+            "Mr Bean",
+            "Harry Potter",
+            "L’ours Paddington",
+            "James Bond"
+          ],
+          "explanation": "Daniel Craig, en James Bond, est venu la chercher à Buckingham Palace ; une cascadeuse a ensuite « sauté » en parachute dans le stade."
+        },
+        "de": {
+          "question": "Welche Filmfigur holte die Queen in einem Kurzfilm bei den Olympischen Spielen 2012 ab?",
+          "options": [
+            "Mr. Bean",
+            "Harry Potter",
+            "Paddington Bär",
+            "James Bond"
+          ],
+          "explanation": "Daniel Craig als James Bond holte sie im Buckingham Palace ab; danach „sprang“ ein Double mit dem Fallschirm ins Stadion."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Who was the last prime minister Elizabeth appointed, two days before she died?",
+      "options": [
+        "Theresa May",
+        "Boris Johnson",
+        "Liz Truss",
+        "Rishi Sunak"
+      ],
+      "explanation": "On 6 September 2022 she received Liz Truss at Balmoral, her fifteenth prime minister. She died there on 8 September.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie was de laatste premier die Elizabeth benoemde, twee dagen voor haar dood?",
+          "options": [
+            "Theresa May",
+            "Boris Johnson",
+            "Liz Truss",
+            "Rishi Sunak"
+          ],
+          "explanation": "Op 6 september 2022 ontving ze Liz Truss in Balmoral, haar vijftiende premier. Ze overleed daar op 8 september."
+        },
+        "fr": {
+          "question": "Quelle Première ministre Elizabeth a-t-elle nommée en dernier, deux jours avant sa mort ?",
+          "options": [
+            "Theresa May",
+            "Boris Johnson",
+            "Liz Truss",
+            "Rishi Sunak"
+          ],
+          "explanation": "Le 6 septembre 2022, elle a reçu Liz Truss à Balmoral, sa quinzième Première ministre. Elle y est morte le 8 septembre."
+        },
+        "de": {
+          "question": "Wen ernannte Elizabeth zwei Tage vor ihrem Tod als letzte Premierministerin?",
+          "options": [
+            "Theresa May",
+            "Boris Johnson",
+            "Liz Truss",
+            "Rishi Sunak"
+          ],
+          "explanation": "Am 6. September 2022 empfing sie Liz Truss in Balmoral, ihre fünfzehnte Premierministerin. Sie starb dort am 8. September."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

@@ -86,6 +86,13 @@ const IMAGES = {
   'black-death': require('../../assets/images/characters/black-death.webp'),
   'fall-of-the-berlin-wall': require('../../assets/images/characters/fall-of-the-berlin-wall.webp'),
   'moon-landing': require('../../assets/images/characters/moon-landing.webp'),
+  'elizabeth-ii': require('../../assets/images/characters/elizabeth-ii.webp'),
+  'pope-francis': require('../../assets/images/characters/pope-francis.webp'),
+  'wangari-maathai': require('../../assets/images/characters/wangari-maathai.webp'),
+  'stephen-hawking': require('../../assets/images/characters/stephen-hawking.webp'),
+  'angela-merkel': require('../../assets/images/characters/angela-merkel.webp'),
+  'tim-berners-lee': require('../../assets/images/characters/tim-berners-lee.webp'),
+  'barack-obama': require('../../assets/images/characters/barack-obama.webp'),
 };
 
 /** De verhaal-id's waarvoor een portret in de bundel zit. */

@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Which famous scientist died exactly 300 years before Stephen Hawking was born?",
+      "options": [
+        "Isaac Newton",
+        "Galileo Galilei",
+        "Johannes Kepler",
+        "Nicolaus Copernicus"
+      ],
+      "explanation": "Hawking was born on 8 January 1942, 300 years after Galileo's death. He liked to point that out.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke beroemde wetenschapper stierf precies 300 jaar voordat Stephen Hawking werd geboren?",
+          "options": [
+            "Isaac Newton",
+            "Galileo Galilei",
+            "Johannes Kepler",
+            "Nicolaus Copernicus"
+          ],
+          "explanation": "Hawking werd op 8 januari 1942 geboren, 300 jaar na de dood van Galileo. Daar wees hij graag op."
+        },
+        "fr": {
+          "question": "Quel savant célèbre est mort exactement 300 ans avant la naissance de Stephen Hawking ?",
+          "options": [
+            "Isaac Newton",
+            "Galilée",
+            "Johannes Kepler",
+            "Nicolas Copernic"
+          ],
+          "explanation": "Hawking est né le 8 janvier 1942, 300 ans après la mort de Galilée. Il aimait le faire remarquer."
+        },
+        "de": {
+          "question": "Welcher berühmte Wissenschaftler starb genau 300 Jahre vor Stephen Hawkings Geburt?",
+          "options": [
+            "Isaac Newton",
+            "Galileo Galilei",
+            "Johannes Kepler",
+            "Nikolaus Kopernikus"
+          ],
+          "explanation": "Hawking wurde am 8. Januar 1942 geboren, 300 Jahre nach Galileis Tod. Darauf wies er gern hin."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "How long did doctors expect Hawking to live after his diagnosis in 1963?",
+      "options": [
+        "About two years",
+        "About six months",
+        "About ten years",
+        "About twenty years"
+      ],
+      "explanation": "He was 21 and had motor neurone disease (ALS). He lived for another 55 years.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe lang verwachtten de artsen dat Hawking na zijn diagnose in 1963 nog zou leven?",
+          "options": [
+            "Ongeveer twee jaar",
+            "Ongeveer een halfjaar",
+            "Ongeveer tien jaar",
+            "Ongeveer twintig jaar"
+          ],
+          "explanation": "Hij was 21 en had motorneuronziekte (ALS). Hij leefde daarna nog 55 jaar."
+        },
+        "fr": {
+          "question": "Combien de temps les médecins donnaient-ils à Hawking après son diagnostic en 1963 ?",
+          "options": [
+            "Environ deux ans",
+            "Environ six mois",
+            "Environ dix ans",
+            "Environ vingt ans"
+          ],
+          "explanation": "Il avait 21 ans et souffrait de la maladie de Charcot (SLA). Il a vécu encore 55 ans."
+        },
+        "de": {
+          "question": "Wie lange sollte Hawking laut den Ärzten nach seiner Diagnose 1963 noch leben?",
+          "options": [
+            "Etwa zwei Jahre",
+            "Etwa ein halbes Jahr",
+            "Etwa zehn Jahre",
+            "Etwa zwanzig Jahre"
+          ],
+          "explanation": "Er war 21 und hatte die Motoneuron-Krankheit ALS. Er lebte danach noch 55 Jahre."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Together with Roger Penrose, what did Hawking show about the universe?",
+      "options": [
+        "That it will last forever",
+        "That it is shrinking",
+        "That, if Einstein was right, it had a beginning",
+        "That there are many universes"
+      ],
+      "explanation": "Running the expanding universe backwards, everything must once have been squeezed into a single point. Time itself began there.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat lieten Hawking en Roger Penrose samen zien over het heelal?",
+          "options": [
+            "Dat het eeuwig zal bestaan",
+            "Dat het krimpt",
+            "Dat het een begin had, als Einstein gelijk had",
+            "Dat er veel heelallen zijn"
+          ],
+          "explanation": "Als je het uitdijende heelal terugspoelt, moet alles ooit in één punt samengeperst zijn geweest. Daar begon ook de tijd zelf."
+        },
+        "fr": {
+          "question": "Qu’ont montré Hawking et Roger Penrose sur l’Univers ?",
+          "options": [
+            "Qu’il durera éternellement",
+            "Qu’il rétrécit",
+            "Que, si Einstein avait raison, il a eu un commencement",
+            "Qu’il existe de nombreux univers"
+          ],
+          "explanation": "En remontant le film de l’Univers en expansion, tout a dû être comprimé en un seul point. Le temps lui-même y a commencé."
+        },
+        "de": {
+          "question": "Was zeigten Hawking und Roger Penrose gemeinsam über das Universum?",
+          "options": [
+            "Dass es ewig bestehen wird",
+            "Dass es schrumpft",
+            "Dass es, falls Einstein recht hatte, einen Anfang hatte",
+            "Dass es viele Universen gibt"
+          ],
+          "explanation": "Spult man das expandierende Universum zurück, muss alles einmal in einem einzigen Punkt zusammengepresst gewesen sein. Dort begann auch die Zeit."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What did Hawking discover about black holes in 1974?",
+      "options": [
+        "That they do not exist",
+        "That they give off faint radiation and slowly evaporate",
+        "That they only form near the Sun",
+        "That light can easily escape them"
+      ],
+      "explanation": "Combining relativity and quantum mechanics, he showed that black holes glow faintly. The radiation is now named after him.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat ontdekte Hawking in 1974 over zwarte gaten?",
+          "options": [
+            "Dat ze niet bestaan",
+            "Dat ze een zwakke straling uitzenden en langzaam verdampen",
+            "Dat ze alleen bij de zon ontstaan",
+            "Dat licht er makkelijk aan ontsnapt"
+          ],
+          "explanation": "Door relativiteitstheorie en kwantummechanica te combineren, liet hij zien dat zwarte gaten zwak gloeien. De straling is nu naar hem vernoemd."
+        },
+        "fr": {
+          "question": "Qu’a découvert Hawking sur les trous noirs en 1974 ?",
+          "options": [
+            "Qu’ils n’existent pas",
+            "Qu’ils émettent un faible rayonnement et s’évaporent lentement",
+            "Qu’ils ne se forment que près du Soleil",
+            "Que la lumière s’en échappe facilement"
+          ],
+          "explanation": "En combinant relativité et mécanique quantique, il a montré que les trous noirs rayonnent faiblement. Ce rayonnement porte aujourd’hui son nom."
+        },
+        "de": {
+          "question": "Was entdeckte Hawking 1974 über Schwarze Löcher?",
+          "options": [
+            "Dass es sie nicht gibt",
+            "Dass sie schwache Strahlung aussenden und langsam verdampfen",
+            "Dass sie nur in Sonnennähe entstehen",
+            "Dass Licht ihnen leicht entkommt"
+          ],
+          "explanation": "Indem er Relativitätstheorie und Quantenmechanik verband, zeigte er, dass Schwarze Löcher schwach leuchten. Die Strahlung trägt heute seinen Namen."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Which famous professorship at Cambridge did Hawking hold from 1979 to 2009?",
+      "options": [
+        "The Lucasian chair, once held by Isaac Newton",
+        "The Plumian chair of astronomy",
+        "The chair of the Royal Institution",
+        "The Rutherford chair of physics"
+      ],
+      "explanation": "Isaac Newton had held the Lucasian Professorship of Mathematics three centuries earlier.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke beroemde leerstoel in Cambridge bekleedde Hawking van 1979 tot 2009?",
+          "options": [
+            "De Lucasian-leerstoel, ooit van Isaac Newton",
+            "De Plumian-leerstoel sterrenkunde",
+            "De leerstoel van de Royal Institution",
+            "De Rutherford-leerstoel natuurkunde"
+          ],
+          "explanation": "Isaac Newton had de Lucasian-leerstoel wiskunde drie eeuwen eerder bekleed."
+        },
+        "fr": {
+          "question": "Quelle chaire célèbre de Cambridge Hawking a-t-il occupée de 1979 à 2009 ?",
+          "options": [
+            "La chaire lucasienne, autrefois tenue par Isaac Newton",
+            "La chaire plumienne d’astronomie",
+            "La chaire de la Royal Institution",
+            "La chaire Rutherford de physique"
+          ],
+          "explanation": "Isaac Newton avait occupé la chaire lucasienne de mathématiques trois siècles plus tôt."
+        },
+        "de": {
+          "question": "Welchen berühmten Lehrstuhl in Cambridge hatte Hawking von 1979 bis 2009 inne?",
+          "options": [
+            "Den Lucasischen Lehrstuhl, einst von Isaac Newton besetzt",
+            "Den Plumian-Lehrstuhl für Astronomie",
+            "Den Lehrstuhl der Royal Institution",
+            "Den Rutherford-Lehrstuhl für Physik"
+          ],
+          "explanation": "Isaac Newton hatte den Lucasischen Lehrstuhl für Mathematik drei Jahrhunderte zuvor inne."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Why did Hawking keep his robotic computer voice with an American accent?",
+      "options": [
+        "He could not afford a new one",
+        "It was required by his doctors",
+        "He said it had become part of his identity",
+        "No other voices existed"
+      ],
+      "explanation": "Better voices became available later, but he refused to change. The voice was his.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom hield Hawking zijn robotachtige computerstem met Amerikaans accent?",
+          "options": [
+            "Hij kon geen nieuwe betalen",
+            "Zijn artsen eisten het",
+            "Hij zei dat die een deel van zijn identiteit was geworden",
+            "Er bestonden geen andere stemmen"
+          ],
+          "explanation": "Later kwamen er betere stemmen, maar hij weigerde te wisselen. De stem was van hem."
+        },
+        "fr": {
+          "question": "Pourquoi Hawking a-t-il gardé sa voix robotique à l’accent américain ?",
+          "options": [
+            "Il ne pouvait pas en payer une autre",
+            "Ses médecins l’exigeaient",
+            "Il disait qu’elle faisait partie de son identité",
+            "Aucune autre voix n’existait"
+          ],
+          "explanation": "Des voix plus naturelles sont apparues ensuite, mais il a refusé d’en changer. Cette voix, c’était lui."
+        },
+        "de": {
+          "question": "Warum behielt Hawking seine Roboterstimme mit amerikanischem Akzent?",
+          "options": [
+            "Er konnte sich keine neue leisten",
+            "Seine Ärzte verlangten es",
+            "Er sagte, sie sei Teil seiner Identität geworden",
+            "Es gab keine anderen Stimmen"
+          ],
+          "explanation": "Später gab es bessere Stimmen, aber er wollte nicht wechseln. Die Stimme gehörte zu ihm."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "How many equations did Hawking put in A Brief History of Time?",
+      "options": [
+        "None at all",
+        "Over a hundred",
+        "Ten",
+        "Just one: E = mc²"
+      ],
+      "explanation": "His editor warned that every equation would halve the number of readers. The book still sold more than ten million copies.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoeveel formules zette Hawking in zijn bestseller A Brief History of Time?",
+          "options": [
+            "Helemaal geen",
+            "Meer dan honderd",
+            "Tien",
+            "Precies één: E = mc²"
+          ],
+          "explanation": "Zijn redacteur waarschuwde dat elke formule het aantal lezers zou halveren. Het boek ging toch meer dan tien miljoen keer over de toonbank."
+        },
+        "fr": {
+          "question": "Combien d’équations Hawking a-t-il mises dans Une brève histoire du temps ?",
+          "options": [
+            "Aucune",
+            "Plus de cent",
+            "Dix",
+            "Une seule : E = mc²"
+          ],
+          "explanation": "Son éditeur l’avait prévenu que chaque équation diviserait le nombre de lecteurs par deux. Le livre s’est quand même vendu à plus de dix millions d’exemplaires."
+        },
+        "de": {
+          "question": "Wie viele Formeln nahm Hawking in Eine kurze Geschichte der Zeit auf?",
+          "options": [
+            "Gar keine",
+            "Über hundert",
+            "Zehn",
+            "Genau eine: E = mc²"
+          ],
+          "explanation": "Sein Lektor warnte, jede Formel halbiere die Zahl der Leser. Das Buch verkaufte sich trotzdem mehr als zehn Millionen Mal."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Why did nobody come to Hawking's party for time travellers in 2009?",
+      "options": [
+        "It was held on the Moon",
+        "He forgot to send invitations",
+        "It was cancelled because of bad weather",
+        "He only sent the invitations after the party"
+      ],
+      "explanation": "He joked that the empty room was experimental evidence that time travel is impossible.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom kwam er niemand op Hawkings feest voor tijdreizigers in 2009?",
+          "options": [
+            "Het werd op de maan gehouden",
+            "Hij was vergeten uitnodigingen te sturen",
+            "Het ging niet door vanwege slecht weer",
+            "Hij verstuurde de uitnodigingen pas na het feest"
+          ],
+          "explanation": "Hij grapte dat de lege zaal experimenteel bewijs was dat tijdreizen onmogelijk is."
+        },
+        "fr": {
+          "question": "Pourquoi personne n’est-il venu à la fête de Hawking pour les voyageurs du temps en 2009 ?",
+          "options": [
+            "Elle avait lieu sur la Lune",
+            "Il avait oublié d’envoyer les invitations",
+            "Elle a été annulée à cause du mauvais temps",
+            "Il n’a envoyé les invitations qu’après la fête"
+          ],
+          "explanation": "Il a plaisanté en disant que la salle vide prouvait expérimentalement que le voyage dans le temps est impossible."
+        },
+        "de": {
+          "question": "Warum kam 2009 niemand zu Hawkings Party für Zeitreisende?",
+          "options": [
+            "Sie fand auf dem Mond statt",
+            "Er hatte vergessen, Einladungen zu verschicken",
+            "Sie wurde wegen schlechten Wetters abgesagt",
+            "Er verschickte die Einladungen erst nach der Party"
+          ],
+          "explanation": "Er scherzte, der leere Raum sei der experimentelle Beweis, dass Zeitreisen unmöglich sind."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

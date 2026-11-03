@@ -1,0 +1,357 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "In which city was the future Pope Francis born?",
+      "options": [
+        "Buenos Aires",
+        "Rome",
+        "Madrid",
+        "São Paulo"
+      ],
+      "explanation": "Jorge Mario Bergoglio was born in 1936 in Buenos Aires, the son of an Italian immigrant railway accountant.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "In welke stad werd de latere paus Franciscus geboren?",
+          "options": [
+            "Buenos Aires",
+            "Rome",
+            "Madrid",
+            "São Paulo"
+          ],
+          "explanation": "Jorge Mario Bergoglio werd in 1936 geboren in Buenos Aires, als zoon van een Italiaanse migrant die boekhouder bij de spoorwegen was."
+        },
+        "fr": {
+          "question": "Dans quelle ville le futur pape François est-il né ?",
+          "options": [
+            "Buenos Aires",
+            "Rome",
+            "Madrid",
+            "São Paulo"
+          ],
+          "explanation": "Jorge Mario Bergoglio est né en 1936 à Buenos Aires, fils d’un immigré italien comptable aux chemins de fer."
+        },
+        "de": {
+          "question": "In welcher Stadt wurde der spätere Papst Franziskus geboren?",
+          "options": [
+            "Buenos Aires",
+            "Rom",
+            "Madrid",
+            "São Paulo"
+          ],
+          "explanation": "Jorge Mario Bergoglio kam 1936 in Buenos Aires zur Welt, als Sohn eines italienischen Einwanderers, der Buchhalter bei der Eisenbahn war."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Which famous writer did the young teacher Bergoglio invite to speak to his pupils?",
+      "options": [
+        "Gabriel García Márquez",
+        "Pablo Neruda",
+        "Jorge Luis Borges",
+        "Mario Vargas Llosa"
+      ],
+      "explanation": "Borges came to the Jesuit school in Santa Fe and later wrote the introduction to a book of stories by the students.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke beroemde schrijver nodigde de jonge leraar Bergoglio uit om met zijn leerlingen te praten?",
+          "options": [
+            "Gabriel García Márquez",
+            "Pablo Neruda",
+            "Jorge Luis Borges",
+            "Mario Vargas Llosa"
+          ],
+          "explanation": "Borges kwam naar de jezuïetenschool in Santa Fe en schreef later het voorwoord bij een bundel verhalen van de leerlingen."
+        },
+        "fr": {
+          "question": "Quel écrivain célèbre le jeune professeur Bergoglio a-t-il invité devant ses élèves ?",
+          "options": [
+            "Gabriel García Márquez",
+            "Pablo Neruda",
+            "Jorge Luis Borges",
+            "Mario Vargas Llosa"
+          ],
+          "explanation": "Borges est venu au collège jésuite de Santa Fe et a ensuite préfacé un recueil de nouvelles des élèves."
+        },
+        "de": {
+          "question": "Welchen berühmten Schriftsteller lud der junge Lehrer Bergoglio zu seinen Schülern ein?",
+          "options": [
+            "Gabriel García Márquez",
+            "Pablo Neruda",
+            "Jorge Luis Borges",
+            "Mario Vargas Llosa"
+          ],
+          "explanation": "Borges kam an die Jesuitenschule in Santa Fe und schrieb später das Vorwort zu einem Erzählband der Schüler."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What did Bergoglio later say about his years as leader of the Argentine Jesuits?",
+      "options": [
+        "That they were the happiest of his life",
+        "That he had been too authoritarian and made many mistakes",
+        "That he had never wanted the job",
+        "That the dictatorship had forced him to resign"
+      ],
+      "explanation": "Made provincial at only 36, he later admitted he had been too quick and too sure of himself. He said it took years to learn to listen.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat zei Bergoglio later over zijn jaren als leider van de Argentijnse jezuïeten?",
+          "options": [
+            "Dat het de gelukkigste jaren van zijn leven waren",
+            "Dat hij te autoritair was geweest en veel fouten had gemaakt",
+            "Dat hij die baan nooit had gewild",
+            "Dat de dictatuur hem had gedwongen af te treden"
+          ],
+          "explanation": "Hij werd al op zijn 36e provinciaal en gaf later toe dat hij te snel en te zeker van zichzelf was geweest. Hij zei dat hij jaren nodig had om te leren luisteren."
+        },
+        "fr": {
+          "question": "Qu’a dit plus tard Bergoglio de ses années à la tête des jésuites argentins ?",
+          "options": [
+            "Que ce furent les plus heureuses de sa vie",
+            "Qu’il avait été trop autoritaire et avait commis beaucoup d’erreurs",
+            "Qu’il n’avait jamais voulu ce poste",
+            "Que la dictature l’avait forcé à démissionner"
+          ],
+          "explanation": "Nommé provincial à 36 ans seulement, il a reconnu avoir été trop rapide et trop sûr de lui. Il lui a fallu des années pour apprendre à écouter."
+        },
+        "de": {
+          "question": "Was sagte Bergoglio später über seine Jahre als Leiter der argentinischen Jesuiten?",
+          "options": [
+            "Dass es die glücklichsten seines Lebens waren",
+            "Dass er zu autoritär gewesen sei und viele Fehler gemacht habe",
+            "Dass er das Amt nie gewollt habe",
+            "Dass die Diktatur ihn zum Rücktritt gezwungen habe"
+          ],
+          "explanation": "Schon mit 36 Provinzial, gab er später zu, zu schnell und zu selbstsicher gewesen zu sein. Er brauchte Jahre, um zuhören zu lernen."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "How did Bergoglio usually travel around Buenos Aires as archbishop?",
+      "options": [
+        "In a chauffeur-driven car",
+        "On a bicycle",
+        "By taxi",
+        "By bus and underground"
+      ],
+      "explanation": "He refused the grand residence, a driver and a cook. He lived in a small flat, cooked for himself and took public transport.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe reisde Bergoglio als aartsbisschop meestal door Buenos Aires?",
+          "options": [
+            "In een auto met chauffeur",
+            "Op de fiets",
+            "Met de taxi",
+            "Met de bus en de metro"
+          ],
+          "explanation": "Hij weigerde de deftige ambtswoning, de chauffeur en de kok. Hij woonde in een klein appartement, kookte zelf en nam het openbaar vervoer."
+        },
+        "fr": {
+          "question": "Comment Bergoglio se déplaçait-il le plus souvent dans Buenos Aires quand il était archevêque ?",
+          "options": [
+            "En voiture avec chauffeur",
+            "À vélo",
+            "En taxi",
+            "En bus et en métro"
+          ],
+          "explanation": "Il a refusé la grande résidence, le chauffeur et le cuisinier. Il vivait dans un petit appartement, cuisinait lui-même et prenait les transports en commun."
+        },
+        "de": {
+          "question": "Wie bewegte sich Bergoglio als Erzbischof meistens durch Buenos Aires?",
+          "options": [
+            "Im Auto mit Chauffeur",
+            "Mit dem Fahrrad",
+            "Mit dem Taxi",
+            "Mit Bus und U-Bahn"
+          ],
+          "explanation": "Er lehnte die prächtige Residenz, den Fahrer und den Koch ab. Er wohnte in einer kleinen Wohnung, kochte selbst und fuhr mit öffentlichen Verkehrsmitteln."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "After whom did Bergoglio name himself when he became pope in 2013?",
+      "options": [
+        "Saint Francis Xavier, a Jesuit missionary",
+        "Saint Francis of Assisi, the saint of the poor",
+        "His father Mario's brother Francisco",
+        "Pope Francis I of the Middle Ages"
+      ],
+      "explanation": "A cardinal told him 'Don't forget the poor', and he thought of Francis of Assisi. No pope had ever been called Francis before.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Naar wie noemde Bergoglio zich toen hij in 2013 paus werd?",
+          "options": [
+            "Franciscus Xaverius, een jezuïtische missionaris",
+            "Franciscus van Assisi, de heilige van de armen",
+            "Francisco, de broer van zijn vader Mario",
+            "Paus Franciscus I uit de middeleeuwen"
+          ],
+          "explanation": "Een kardinaal zei tegen hem ‘Vergeet de armen niet’, en hij dacht aan Franciscus van Assisi. Nog nooit had een paus Franciscus geheten."
+        },
+        "fr": {
+          "question": "En l’honneur de qui Bergoglio a-t-il choisi son nom de pape en 2013 ?",
+          "options": [
+            "Saint François Xavier, missionnaire jésuite",
+            "Saint François d’Assise, le saint des pauvres",
+            "Francisco, le frère de son père Mario",
+            "Le pape François Ier du Moyen Âge"
+          ],
+          "explanation": "Un cardinal lui a dit « N’oublie pas les pauvres », et il a pensé à François d’Assise. Aucun pape ne s’était jamais appelé François."
+        },
+        "de": {
+          "question": "Nach wem benannte sich Bergoglio, als er 2013 Papst wurde?",
+          "options": [
+            "Nach Franz Xaver, einem jesuitischen Missionar",
+            "Nach Franz von Assisi, dem Heiligen der Armen",
+            "Nach Francisco, dem Bruder seines Vaters Mario",
+            "Nach Papst Franziskus I. aus dem Mittelalter"
+          ],
+          "explanation": "Ein Kardinal sagte ihm „Vergiss die Armen nicht“, und er dachte an Franz von Assisi. Noch nie hatte ein Papst Franziskus geheißen."
+        }
+      }
+    },
+    {
+      "chapter_index": 6,
+      "question": "Where did Pope Francis make his first journey outside Rome, in July 2013?",
+      "options": [
+        "Lampedusa, an island where many migrants arrive by boat",
+        "Buenos Aires, his home city",
+        "Assisi, the town of his patron saint",
+        "Jerusalem"
+      ],
+      "explanation": "He threw a wreath into the sea for drowned migrants and warned against the 'globalisation of indifference'.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar ging paus Franciscus in juli 2013 naartoe op zijn eerste reis buiten Rome?",
+          "options": [
+            "Lampedusa, een eiland waar veel migranten per boot aankomen",
+            "Buenos Aires, zijn geboortestad",
+            "Assisi, de stad van zijn naamheilige",
+            "Jeruzalem"
+          ],
+          "explanation": "Hij wierp een krans in zee voor verdronken migranten en waarschuwde voor de ‘globalisering van de onverschilligheid’."
+        },
+        "fr": {
+          "question": "Où le pape François a-t-il fait son premier voyage hors de Rome, en juillet 2013 ?",
+          "options": [
+            "À Lampedusa, île où arrivent de nombreux migrants par bateau",
+            "À Buenos Aires, sa ville natale",
+            "À Assise, la ville de son saint patron",
+            "À Jérusalem"
+          ],
+          "explanation": "Il a jeté une couronne de fleurs à la mer pour les migrants noyés et dénoncé la « mondialisation de l’indifférence »."
+        },
+        "de": {
+          "question": "Wohin führte die erste Reise von Papst Franziskus außerhalb Roms im Juli 2013?",
+          "options": [
+            "Nach Lampedusa, wo viele Migranten mit Booten ankommen",
+            "Nach Buenos Aires, in seine Heimatstadt",
+            "Nach Assisi, in die Stadt seines Namenspatrons",
+            "Nach Jerusalem"
+          ],
+          "explanation": "Er warf einen Kranz für ertrunkene Migranten ins Meer und warnte vor der „Globalisierung der Gleichgültigkeit“."
+        }
+      }
+    },
+    {
+      "chapter_index": 7,
+      "question": "In 2019, Francis became the first pope to visit which region?",
+      "options": [
+        "Antarctica",
+        "Siberia",
+        "Central Asia",
+        "The Arabian Peninsula"
+      ],
+      "explanation": "In Abu Dhabi he signed a document on human fraternity with the Grand Imam of al-Azhar, Ahmed el-Tayeb.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke regio bezocht Franciscus in 2019 als eerste paus ooit?",
+          "options": [
+            "Antarctica",
+            "Siberië",
+            "Centraal-Azië",
+            "Het Arabisch Schiereiland"
+          ],
+          "explanation": "In Abu Dhabi ondertekende hij met de grootimam van al-Azhar, Ahmed el-Tayeb, een document over menselijke broederschap."
+        },
+        "fr": {
+          "question": "En 2019, François a été le premier pape à visiter quelle région ?",
+          "options": [
+            "L’Antarctique",
+            "La Sibérie",
+            "L’Asie centrale",
+            "La péninsule Arabique"
+          ],
+          "explanation": "À Abou Dhabi, il a signé un document sur la fraternité humaine avec le grand imam d’al-Azhar, Ahmed el-Tayeb."
+        },
+        "de": {
+          "question": "Welche Region besuchte Franziskus 2019 als erster Papst überhaupt?",
+          "options": [
+            "Die Antarktis",
+            "Sibirien",
+            "Zentralasien",
+            "Die Arabische Halbinsel"
+          ],
+          "explanation": "In Abu Dhabi unterzeichnete er mit dem Großimam von al-Azhar, Ahmed el-Tayeb, ein Dokument über die Brüderlichkeit aller Menschen."
+        }
+      }
+    },
+    {
+      "chapter_index": 8,
+      "question": "Where was Pope Francis buried after his death in April 2025?",
+      "options": [
+        "In the crypt of St Peter's Basilica",
+        "In his home city of Buenos Aires",
+        "In the basilica of Santa Maria Maggiore in Rome",
+        "In Assisi"
+      ],
+      "explanation": "He chose a simple tomb outside the Vatican, marked with a single word: Franciscus.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar werd paus Franciscus begraven na zijn dood in april 2025?",
+          "options": [
+            "In de crypte van de Sint-Pietersbasiliek",
+            "In zijn geboortestad Buenos Aires",
+            "In de basiliek Santa Maria Maggiore in Rome",
+            "In Assisi"
+          ],
+          "explanation": "Hij koos een sober graf buiten het Vaticaan, met één woord erop: Franciscus."
+        },
+        "fr": {
+          "question": "Où le pape François a-t-il été enterré après sa mort en avril 2025 ?",
+          "options": [
+            "Dans la crypte de la basilique Saint-Pierre",
+            "Dans sa ville natale, Buenos Aires",
+            "Dans la basilique Sainte-Marie-Majeure à Rome",
+            "À Assise"
+          ],
+          "explanation": "Il a choisi une tombe simple hors du Vatican, portant un seul mot : Franciscus."
+        },
+        "de": {
+          "question": "Wo wurde Papst Franziskus nach seinem Tod im April 2025 begraben?",
+          "options": [
+            "In der Krypta des Petersdoms",
+            "In seiner Heimatstadt Buenos Aires",
+            "In der Basilika Santa Maria Maggiore in Rom",
+            "In Assisi"
+          ],
+          "explanation": "Er wählte ein schlichtes Grab außerhalb des Vatikans mit nur einem Wort darauf: Franciscus."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}
