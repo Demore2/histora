@@ -400,7 +400,9 @@ async function bron(admin: SupabaseClient, naam: Bron, dagen: number, vers: bool
     await admin.from('beheer_cache').upsert({ sleutel, data, opgehaald_op });
     return { status: 'ok', opgehaald_op, data };
   } catch (fout) {
-    const melding = fout instanceof Error ? fout.message : String(fout);
+    // Google stuurt sommige foutteksten HTML-geëscapet (`&#39;`); het bord toont platte tekst.
+    const melding = (fout instanceof Error ? fout.message : String(fout))
+      .replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
     console.error(`[beheer-dashboard] ${naam}:`, melding);
     return { status: 'fout', melding };
   }
