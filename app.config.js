@@ -41,21 +41,39 @@ function pluginNaam(plugin) {
  * fout dat je pas weken later in een lege console ontdekt.
  */
 function bewaakUitsluitlijst() {
-  const uitgesloten = require('./package.json').expo?.autolinking?.exclude ?? [];
-  const firebase = uitgesloten.filter((naam) => String(naam).startsWith('@react-native-firebase/'));
+  const autolinking = require('./package.json').expo?.autolinking ?? {};
+  // Sinds 1.5.1 mag `messaging` (Android) en alles op iOS uitgesloten blijven: alleen Analytics op
+  // Android staat aan. De platformlijst vervangt de algemene, dus Android leest `android.exclude`.
+  const uitgesloten = autolinking.android?.exclude ?? autolinking.exclude ?? [];
+  const nodig = ['@react-native-firebase/app', '@react-native-firebase/analytics'];
+  const firebase = uitgesloten.filter((naam) => nodig.includes(naam));
   if (firebase.length === 0) return;
   throw new Error(
     [
-      `${SLEUTEL}=true, maar package.json sluit ${firebase.join(', ')} nog uit van het autolinken.`,
-      'Haal "expo.autolinking.exclude" uit package.json en draai `npx expo prebuild --clean`.',
+      `${SLEUTEL}=true, maar package.json sluit ${firebase.join(', ')} op Android nog uit van het autolinken.`,
+      'Haal ze uit "expo.autolinking" in package.json en draai `npx expo prebuild --clean`.',
       'Zonder die stap bouwt de app wel, maar zit er geen Firebase in.',
     ].join(' ')
+  );
+}
+
+/**
+ * Firebase is (nog) Android-only: op iOS ontbreekt `GoogleService-Info.plist`, waar de plugin van
+ * `@react-native-firebase/app` op gooit, en de pods zijn daar uitgesloten van het autolinken. Een
+ * iOS-build op EAS krijgt de plugins dus niet. `EAS_BUILD_PLATFORM` zet EAS zelf.
+ */
+function zonderFirebasePlugins(config) {
+  return (config.plugins ?? []).filter(
+    (plugin) => !String(pluginNaam(plugin)).startsWith('@react-native-firebase/')
   );
 }
 
 module.exports = ({ config }) => {
   if (FIREBASE_AAN) {
     bewaakUitsluitlijst();
+    if (process.env.EAS_BUILD_PLATFORM === 'ios') {
+      return { ...config, plugins: zonderFirebasePlugins(config) };
+    }
     return config;
   }
 
@@ -64,8 +82,6 @@ module.exports = ({ config }) => {
   return {
     ...config,
     android,
-    plugins: (config.plugins ?? []).filter(
-      (plugin) => !String(pluginNaam(plugin)).startsWith('@react-native-firebase/')
-    ),
+    plugins: zonderFirebasePlugins(config),
   };
 };

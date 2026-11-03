@@ -47,6 +47,7 @@ export type PushBericht = Parameters<Parameters<PushSdk['onMessage']>[1]>[0];
  * blijven uit Instellingen, en de drie lokale meldingen werken gewoon door.
  */
 const FIREBASE_AAN = process.env.EXPO_PUBLIC_FIREBASE_ENABLED === 'true';
+const MESSAGING_GEKOPPELD = false;
 
 /** `undefined` = nog niet geprobeerd, `null` = niet beschikbaar op dit platform of deze build. */
 let sdk: PushSdk | null | undefined;
@@ -58,6 +59,10 @@ type Geladen = { sdk: PushSdk; messaging: Messaging };
 function laad(): Geladen | null {
   // De hoofdschakelaar staat vooraan: uit is uit, op elk platform.
   if (!FIREBASE_AAN) return null;
+  // Sinds 1.5.1 staat Firebase aan voor Analytics, maar `messaging` is op elk platform uitgesloten
+  // van het autolinken (zie `expo.autolinking` in package.json). Er valt dus niets te laden; haal
+  // deze regel weg samen met die uitsluiting.
+  if (!MESSAGING_GEKOPPELD) return null;
   if (Platform.OS === 'web') return null;
   if (sdk === null) return null;
 

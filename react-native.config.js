@@ -36,8 +36,15 @@ const FIREBASE_PAKKETTEN = [
   '@react-native-firebase/messaging',
 ];
 
+// Aan (sinds 1.5.1) = alleen app + analytics op Android, net als `expo.autolinking` in package.json.
 module.exports = FIREBASE_AAN
-  ? {}
+  ? {
+      dependencies: {
+        '@react-native-firebase/app': { platforms: { ios: null } },
+        '@react-native-firebase/analytics': { platforms: { ios: null } },
+        '@react-native-firebase/messaging': { platforms: { android: null, ios: null } },
+      },
+    }
   : {
       dependencies: Object.fromEntries(
         FIREBASE_PAKKETTEN.map((naam) => [naam, { platforms: { android: null, ios: null } }])

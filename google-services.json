@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "835298539154",
+    "project_id": "histora-183dd",
+    "storage_bucket": "histora-183dd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835298539154:android:14c7ba2247f3d2855e584b",
+        "android_client_info": {
+          "package_name": "com.chronicles.historyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZmBB6cXG0pvBaUoD_zS0vDiG4BGB_Rz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

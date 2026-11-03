@@ -1878,6 +1878,14 @@ Het draaiboek staat in `supabase/README-billing.md`; hier de regels die code rak
 
 ### Firebase-schakelaar (`EXPO_PUBLIC_FIREBASE_ENABLED`, `.env`, `app.config.js`)
 
+> **Sinds 1.5.1 staat de vlag op `true`, maar alleen voor Analytics op Android** (project
+> `histora-183dd`, `google-services.json` gecommit). `expo.autolinking` in `package.json` heeft nu
+> platformlijsten: `android.exclude` = `messaging` (botst met `expo-notifications` zonder zijn
+> plugin, en push wacht op een serviceaccount), `ios.exclude` = alle drie (geen
+> `GoogleService-Info.plist`, en Firebase eist daar `useFrameworks: static`). `app.config.js` haalt
+> de plugins weg bij `EAS_BUILD_PLATFORM=ios`; `lib/push.ts` heeft `MESSAGING_GEKOPPELD = false`.
+> iOS en push zijn elk een eigen stap later. Wat hieronder staat beschrijft de uit-stand.
+
 **Firebase staat uit voor de MVP, en dat is één vlag op drie plekken.** `google-services.json`
 bestaat nog niet; zonder dat bestand faalde `expo prebuild` — en dus élke EAS-build — op de
 `@react-native-firebase/app`-plugin. De vlag maakt dat een keuze in plaats van een blokkade.

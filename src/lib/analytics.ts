@@ -69,6 +69,8 @@ function laad(): Geladen | null {
   // wél praten, maar dan moet er een web-configuratie in `app.json` staan en gaat er vanuit de
   // browser-preview echt verkeer naar Google. Dat willen we niet tijdens het ontwikkelen.
   if (Platform.OS === 'web') return null;
+  // Op iOS zit de native module (nog) niet in de build: zie `expo.autolinking` in package.json.
+  if (Platform.OS !== 'android') return null;
   if (sdk === null) return null;
 
   try {
