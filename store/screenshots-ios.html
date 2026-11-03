@@ -80,7 +80,7 @@
   /* Een Android-capture (store/screenshots-bron/, 1080×2400) is relatief hoger dan het iPhone-scherm:
      op schermhoogte geschaald, gecentreerd, en de Android-statusbalk afgedekt door een iOS-balk
      met Dynamic Island. Alleen voor schermen waar we geen goede iOS-capture van hebben. */
-  .scherm.android { display: flex; justify-content: center; }
+  .scherm.android { display: flex; justify-content: center; background: linear-gradient(var(--status, #F7F1E4) 0 150px, #F7F1E4 150px); }
   .scherm.android img { width: auto; height: 100%; }
   .ios-status {
     position: absolute; left: 0; right: 0; top: 0; height: 104px;
@@ -134,9 +134,12 @@
       scherm: '06-milestones.png', vos: 'fase-1-gevierd.png', kant: 'rechts',
     },
     {
-      kop: 'Collect the people<br>you meet',
-      sub: 'Finish a story and its figure joins your collection.',
-      scherm: '05-profile.png', vos: 'leraar-wijzend.png', kant: 'links',
+      // Was het Profiel van een vers testaccount (Test123, alles op nul). De quiz is een sterker
+      // scherm en de Android-capture heeft een echt antwoord; het paneel ligt over een grijze waas,
+      // dus de iOS-statusbalk krijgt die kleur.
+      kop: 'Learn<br>as you read',
+      sub: 'A quick question after every chapter, with a friendly fox as your teacher.',
+      android: 'quiz-goed-1.5.png', statusKleur: '#88847D', vos: 'leraar-wijzend.png', kant: 'links',
     },
     {
       kop: 'The stories that<br>shaped our world',
@@ -150,9 +153,9 @@
   document.getElementById('dia').innerHTML = `
     <div class="kop"><h1>${d.kop}</h1><p>${d.sub}</p></div>
     <div class="telefoon">${d.android ? `
-      <div class="scherm android">
+      <div class="scherm android"${d.statusKleur ? ` style="--status:${d.statusKleur}"` : ''}>
         <img src="screenshots-bron/${d.android}" alt="">
-        <div class="ios-status">
+        <div class="ios-status"${d.statusKleur ? ` style="background:${d.statusKleur}"` : ''}>
           <span class="tijd">9:41</span><span class="eiland"></span>
           <span class="rechts">
             <i style="width:6px;height:9px"></i><i style="width:6px;height:13px"></i><i style="width:6px;height:17px"></i><i style="width:6px;height:21px"></i>
