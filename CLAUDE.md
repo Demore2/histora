@@ -1383,9 +1383,13 @@ lokaal: `npx http-server docs -p 5510`.
 - **Sinds 2026-11-03 opent het bord op *Overzicht*** (glaskaarten in beige/Phoxy-oranje, thema-knop
   systeem/licht/donker in `localStorage`): lezers en abonnementen uit `beheer_statistieken`, en
   **kosten met de hand** in `public.beheer_kosten` (`feedback-beheer-migratie-9.sql`, centen, per
-  maand/jaar/eenmalig, USD tegen een vaste koers `USD_NAAR_EUR`). Omzet (RevenueCat), Google Analytics
-  en AdMob zijn gemarkeerde plekken voor fase 2-4: die sleutels mogen nooit in deze publieke pagina,
-  dus ze komen via één edge function (`beheer-dashboard`) die eerst `is_beheerder()` controleert.
+  maand/jaar/eenmalig, USD tegen een vaste koers `USD_NAAR_EUR`). **RevenueCat, Google Analytics,
+  AdMob en Google Play komen via de edge function `beheer-dashboard`**: die sleutels mogen nooit in
+  deze publieke pagina. De function controleert zelf of het token van een beheerder is, haalt elke
+  bron los op (`ok` / `niet_geconfigureerd` / `fout`, één kapotte bron neemt de rest niet mee) en
+  cachet in `public.beheer_cache` (`-10.sql`, 1 uur, Play 6 uur). Secrets en de stappen per bron:
+  `supabase/README-beheer-dashboard.md`; het AdMob-refresh-token komt uit
+  `scripts/admob-refresh-token.mjs` (AdMob kent geen serviceaccounts).
 - **Drie tabbladen.** *Tickets*; de *Ideeënhub* (`public.beheer_notities`: idee/doel/taak — alleen
   voor de beheerders; sinds `-4.sql` hetzelfde bord als de tickets, met status
   open/in_behandeling/wacht/afgerond, prioriteit hoog/medium/lang en een eigenaar; de oude kolom

@@ -639,6 +639,8 @@
   }
   .label-fase.live { background: rgba(27, 175, 122, .14); color: var(--goed); border-color: transparent; }
   .label-fase.hand { background: var(--accent-zacht); color: var(--accent); border-color: transparent; }
+  .label-fase.fout-label { background: rgba(216, 58, 82, .12); color: var(--slecht); border-color: transparent; }
+  .bron .wat small { overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
   .ov-raster { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 16px; align-items: start; }
   .tabel-schuif { overflow-x: auto; }
   .ov-kolom { display: grid; gap: 16px; align-content: start; min-width: 0; }
@@ -774,6 +776,21 @@
       <div class="kpis" id="ov-lezers"></div>
       <div class="sectie-kop"><h2>Geld</h2><span class="zacht">per maand</span></div>
       <div class="kpis" id="ov-geld"></div>
+      <div class="sectie-kop"><h2>App</h2><span class="zacht">Google Play en Google Analytics</span></div>
+      <div class="kpis" id="ov-app"></div>
+      <div class="ov-raster">
+        <section class="grafiek">
+          <div class="grafiek-kop"><h2>Gebruik per dag</h2><span class="zacht" id="ov-app-periode"></span></div>
+          <div class="legenda" id="ov-app-legenda"></div>
+          <div class="canvas-houder"><canvas id="ov-grafiek-app" role="img" aria-label="Actieve gebruikers, downloads en advertentie-inkomsten per dag"></canvas></div>
+        </section>
+        <section class="grafiek">
+          <div class="grafiek-kop"><h2>Meest bekeken schermen</h2></div>
+          <div id="ov-schermen"></div>
+          <div class="grafiek-kop" style="margin-top:6px"><h2>Landen</h2></div>
+          <div id="ov-landen"></div>
+        </section>
+      </div>
 
       <div class="ov-raster">
         <section class="grafiek">
@@ -2419,14 +2436,16 @@
     { icoon: '🏗️', naam: 'EAS builds', url: 'https://expo.dev/accounts/quinten1234/projects/chronicles-app/builds' },
     { icoon: '🐙', naam: 'GitHub', url: 'https://github.com/Demore2/histora' },
   ];
+  // `sleutel` = de naam van de bron in het antwoord van de edge function `beheer-dashboard`.
   const BRONNEN = [
-    { icoon: '🗄️', naam: 'Supabase', wat: 'lezers, actief, abonnementen', status: 'live' },
-    { icoon: '✍️', naam: 'Kosten', wat: 'met de hand, hieronder', status: 'hand' },
-    { icoon: '🧾', naam: 'RevenueCat', wat: 'omzet, MRR, proefperiodes', status: 'Fase 2' },
-    { icoon: '📊', naam: 'Google Analytics', wat: 'DAU, retentie, schermen', status: 'Fase 3' },
-    { icoon: '💰', naam: 'AdMob', wat: 'advertentie-inkomsten', status: 'Fase 4' },
-    { icoon: '▶️', naam: 'Google Play', wat: 'downloads', status: 'Fase 4' },
+    { icoon: '🗄️', naam: 'Supabase', wat: 'lezers, actief, abonnementen' },
+    { icoon: '✍️', naam: 'Kosten', wat: 'met de hand, hieronder' },
+    { icoon: '🧾', naam: 'RevenueCat', wat: 'MRR, omzet, proefperiodes', sleutel: 'revenuecat' },
+    { icoon: '📊', naam: 'Google Analytics', wat: 'actieve gebruikers, schermen, landen', sleutel: 'analytics' },
+    { icoon: '💰', naam: 'AdMob', wat: 'advertentie-inkomsten', sleutel: 'admob' },
+    { icoon: '▶️', naam: 'Google Play', wat: 'downloads en verwijderingen', sleutel: 'play' },
   ];
+  const PERIODE_DAGEN = { '7d': 7, '30d': 30, '12w': 84, '12m': 365 };
 
   let laadtOverzicht = false;
   async function laadOverzicht(stil = false) {
@@ -2443,6 +2462,58 @@
     staat.kosten = ko.error ? null : ko.data || [];
     if (ko.error && !stil) console.warn('beheer_kosten_lijst:', ko.error.message);
     tekenOverzicht();
+    laadExtern();
+  }
+
+  /**
+   * RevenueCat, Analytics, AdMob en Play komen via de edge function `beheer-dashboard`: hun
+   * sleutels mogen niet in deze publieke pagina. Die function cachet een uur; `vers` slaat dat over.
+   * Los van `laadOverzicht`, zodat de Supabase-cijfers niet wachten op vier externe API's.
+   */
+  let laadtExtern = false;
+  async function laadExtern(vers = false) {
+    if (laadtExtern || !staat.ik) return;
+    laadtExtern = true;
+    const dagen = PERIODE_DAGEN[staat.periode] || 30;
+    const { data, error } = await sb.functions.invoke('beheer-dashboard', { body: { dagen, vers } });
+    laadtExtern = false;
+    if (error) {
+      // 404 = nog niet gedeployd. Dat is een stand, geen storing: de kaarten zeggen het zelf.
+      const status = error.context?.status;
+      staat.extern = { fout: status === 404 ? 'niet_gedeployd' : (error.message || 'fout') };
+    } else {
+      staat.extern = data;
+    }
+    staat.externDagen = dagen;
+    tekenGeld();
+    tekenApp();
+    tekenBronnen();
+  }
+
+  /** De gegevens van één externe bron, of null als die (nog) niet bruikbaar is. */
+  function extern(naam) {
+    const b = staat.extern?.bronnen?.[naam];
+    return b?.status === 'ok' && staat.externDagen === (PERIODE_DAGEN[staat.periode] || 30) ? b.data : null;
+  }
+  function externReden(naam) {
+    if (!staat.extern) return 'Laden…';
+    if (staat.extern.fout === 'niet_gedeployd') return 'Edge function beheer-dashboard is nog niet gedeployd';
+    if (staat.extern.fout) return 'Kon de edge function niet bereiken';
+    const b = staat.extern.bronnen?.[naam];
+    if (!b) return 'Onbekend';
+    if (b.status === 'niet_geconfigureerd') return `Nog niet ingesteld (${b.ontbreekt.length} secret${b.ontbreekt.length === 1 ? '' : 's'})`;
+    if (b.status === 'fout') return 'Fout: ' + b.melding;
+    return staat.externDagen !== (PERIODE_DAGEN[staat.periode] || 30) ? 'Laden…' : '';
+  }
+  /** RevenueCat rekent in de valuta van het project; meestal dollars. Alles op het bord is euro. */
+  function naarEuro(bedrag, valuta) {
+    return valuta === '$' || valuta === 'USD' ? bedrag * USD_NAAR_EUR : bedrag;
+  }
+  const kortDatum = (iso) => new Date(iso + 'T12:00:00').toLocaleDateString('nl-NL', { day: 'numeric', month: 'short' });
+  function duur(sec) {
+    if (!sec) return '—';
+    const m = Math.floor(sec / 60);
+    return m ? `${m} min ${Math.round(sec % 60)} s` : `${Math.round(sec)} s`;
   }
 
   /** Wat een post nu per maand kost, in centen euro. Eenmalig en niet-lopend = 0. */
@@ -2592,14 +2663,9 @@
     }
 
     tekenGeld();
+    tekenApp();
     tekenKosten();
-    $('#ov-bronnen').replaceChildren(...BRONNEN.map((b) => el('div', { class: 'bron' },
-      el('span', { tekst: b.icoon }),
-      el('span', { class: 'wat' }, el('strong', { tekst: b.naam }), el('small', { tekst: b.wat })),
-      el('span', {
-        class: 'label-fase' + (b.status === 'live' ? ' live' : b.status === 'hand' ? ' hand' : ''),
-        tekst: b.status === 'live' ? 'Live' : b.status === 'hand' ? 'Handmatig' : b.status,
-      }))));
+    tekenBronnen();
     $('#ov-links').replaceChildren(...LINKS.map((l) => el('a', { href: l.url, target: '_blank', rel: 'noopener noreferrer' },
       el('span', { tekst: l.icoon }), el('span', { tekst: l.naam }), el('span', { class: 'pijl', tekst: '↗' }))));
   }
@@ -2627,22 +2693,142 @@
     };
   }
 
+  function tekenBronnen() {
+    $('#ov-bronnen').replaceChildren(...BRONNEN.map((b) => {
+      let label = 'Live';
+      let klasse = ' live';
+      let wat = b.wat;
+      if (!b.sleutel) {
+        if (b.naam === 'Kosten') { label = 'Handmatig'; klasse = ' hand'; }
+      } else {
+        const st = staat.extern?.bronnen?.[b.sleutel];
+        if (st?.status === 'ok') {
+          wat = `${b.wat} · ${new Date(st.opgehaald_op).toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`;
+        } else {
+          label = !staat.extern ? '…' : st?.status === 'fout' ? 'Fout' : 'Uit';
+          klasse = st?.status === 'fout' ? ' fout-label' : '';
+          wat = externReden(b.sleutel) || b.wat;
+        }
+      }
+      return el('div', { class: 'bron', title: wat },
+        el('span', { tekst: b.icoon }),
+        el('span', { class: 'wat' }, el('strong', { tekst: b.naam }), el('small', { tekst: wat })),
+        el('span', { class: 'label-fase' + klasse, tekst: label }));
+    }));
+  }
+
   function tekenGeld() {
     const kosten = staat.kosten || [];
-    const perMaand = kosten.reduce((som, k) => som + maandCent(k), 0);
+    const perMaand = kosten.reduce((som, k) => som + maandCent(k), 0) / 100;
     const eenmalig = eenmaligCent(kosten);
+    const p = PERIODE[staat.periode] || PERIODE['30d'];
+    const dagen = PERIODE_DAGEN[staat.periode] || 30;
+    const rc = extern('revenuecat');
+    const ad = extern('admob');
+
+    const mrr = rc ? naarEuro(rc.mrr, rc.valuta) : null;
+    // Advertenties omgerekend naar een maand van 30 dagen, zodat ze naast MRR en kosten passen.
+    const adPerMaand = ad ? (ad.totaal.verdiensten / dagen) * 30 : null;
+    const resultaat = (mrr ?? 0) + (adPerMaand ?? 0) - perMaand;
+
     $('#ov-geld').replaceChildren(
-      kpi({ icoon: '📈', label: 'Omzet (abonnementen)', waarde: 'Nog niet gekoppeld',
-        sub: 'MRR, omzet en proefperiodes uit RevenueCat', fase: 'Fase 2' }),
-      kpi({ icoon: '💰', label: 'Advertenties', waarde: 'Nog niet gekoppeld',
-        sub: 'Inkomsten en eCPM uit AdMob', fase: 'Fase 4' }),
-      kpi({ icoon: '🧾', label: 'Kosten', waarde: staat.kosten ? euroFmt.format(perMaand / 100) : '—',
+      rc
+        ? kpi({ icoon: '📈', label: 'Abonnementen (MRR)', waarde: euroFmt.format(mrr),
+            sub: `${euroFmt.format(naarEuro(rc.omzet_28d, rc.valuta))} omzet in 28 dagen · ${rc.actieve_abonnementen} actief · ${rc.actieve_proeven} proef` })
+        : kpi({ icoon: '📈', label: 'Abonnementen (MRR)', waarde: 'Nog niet gekoppeld', sub: externReden('revenuecat'), fase: 'RevenueCat' }),
+      ad
+        ? kpi({ icoon: '💰', label: 'Advertenties', waarde: euroPrecies.format(ad.totaal.verdiensten),
+            sub: `${p.label} · eCPM ${euroPrecies.format(ad.totaal.ecpm)} · ${getalFmt.format(ad.totaal.vertoningen)} vertoningen`,
+            reeks: ad.reeks.map((x) => x.verdiensten), kleurNaam: '--serie-4' })
+        : kpi({ icoon: '💰', label: 'Advertenties', waarde: 'Nog niet gekoppeld', sub: externReden('admob'), fase: 'AdMob' }),
+      kpi({ icoon: '🧾', label: 'Kosten', waarde: staat.kosten ? euroFmt.format(perMaand) : '—',
         sub: staat.kosten
           ? (eenmalig ? `+ ${euroFmt.format(eenmalig / 100)} eenmalig (12 mnd)` : `${kosten.filter((k) => maandCent(k) > 0).length} lopende posten`)
           : 'Draai supabase/feedback-beheer-migratie-9.sql' }),
-      kpi({ icoon: '⚖️', label: 'Resultaat', waarde: staat.kosten ? euroFmt.format(-perMaand / 100) : '—',
-        sub: 'omzet min kosten; tot fase 2 alleen de kosten' }),
+      kpi({ icoon: '⚖️', label: 'Resultaat', waarde: staat.kosten ? euroFmt.format(resultaat) : '—',
+        delta: staat.kosten && (rc || ad)
+          ? { richting: resultaat >= 0 ? 'op' : 'neer', tekst: resultaat >= 0 ? 'winst per maand' : 'verlies per maand' }
+          : null,
+        sub: rc && ad ? 'MRR + advertenties − kosten'
+          : rc ? 'MRR − kosten (advertenties nog niet gekoppeld)'
+          : ad ? 'advertenties − kosten (MRR nog niet gekoppeld)'
+          : 'tot de koppelingen er zijn alleen de kosten' }),
     );
+  }
+
+  let ovApp = null;
+
+  function tekenApp() {
+    const ga = extern('analytics');
+    const pl = extern('play');
+    const ad = extern('admob');
+    const p = PERIODE[staat.periode] || PERIODE['30d'];
+    $('#ov-app-periode').textContent = p.label;
+
+    $('#ov-app').replaceChildren(
+      pl
+        ? kpi({ icoon: '⬇️', label: 'Downloads', waarde: getalFmt.format(pl.totaal.installaties),
+            sub: `${getalFmt.format(pl.totaal.verwijderingen)} verwijderd · t/m ${pl.laatste_dag ? kortDatum(pl.laatste_dag) : '—'}`,
+            reeks: pl.reeks.map((x) => x.installaties), kleurNaam: '--serie-2' })
+        : kpi({ icoon: '⬇️', label: 'Downloads', waarde: 'Nog niet gekoppeld', sub: externReden('play'), fase: 'Google Play' }),
+      pl
+        ? kpi({ icoon: '📱', label: 'Actieve installaties', waarde: getalFmt.format(pl.actieve_installaties),
+            sub: 'toestellen waar Histora nu op staat' })
+        : kpi({ icoon: '📱', label: 'Actieve installaties', waarde: '—', sub: 'uit Google Play' }),
+      ga
+        ? kpi({ icoon: '📊', label: 'Actieve gebruikers', waarde: getalFmt.format(ga.totaal.actief),
+            sub: `${p.label} · ${getalFmt.format(ga.totaal.nieuw)} nieuw`,
+            reeks: ga.reeks.map((x) => x.actief), kleurNaam: '--serie-1' })
+        : kpi({ icoon: '📊', label: 'Actieve gebruikers', waarde: 'Nog niet gekoppeld', sub: externReden('analytics'), fase: 'Analytics' }),
+      ga
+        ? kpi({ icoon: '⏱️', label: 'Gem. sessie', waarde: duur(ga.totaal.gem_sessie_s),
+            sub: `${getalFmt.format(ga.totaal.sessies)} sessies · ${getalFmt.format(ga.totaal.schermweergaven)} schermen` })
+        : kpi({ icoon: '⏱️', label: 'Gem. sessie', waarde: '—', sub: 'uit Google Analytics' }),
+    );
+
+    // Eén grafiek over de dagen, met wat er is: actief (Analytics), downloads (Play), € advertenties.
+    const dagen = new Set();
+    for (const r of [...(ga?.reeks || []), ...(pl?.reeks || []), ...(ad?.reeks || [])]) dagen.add(r.datum);
+    const as = [...dagen].sort();
+    const per = (reeks, veld) => {
+      const m = new Map((reeks || []).map((r) => [r.datum, r[veld]]));
+      return as.map((d) => m.get(d) ?? null);
+    };
+    const sets = [];
+    const legenda = [];
+    if (ga) { sets.push(lijn('Actieve gebruikers', per(ga.reeks, 'actief'), '--serie-1', true)); legenda.push(['Actieve gebruikers', '--serie-1']); }
+    if (pl) { sets.push(lijn('Downloads', per(pl.reeks, 'installaties'), '--serie-2')); legenda.push(['Downloads', '--serie-2']); }
+    if (ad) {
+      sets.push({ ...lijn('Advertenties (€)', per(ad.reeks, 'verdiensten'), '--serie-4'), yAxisID: 'geld' });
+      legenda.push(['Advertenties (€, rechter as)', '--serie-4']);
+    }
+    $('#ov-app-legenda').replaceChildren(...(legenda.length
+      ? legenda.map(([t, k]) => el('span', {}, el('i', { style: `background:var(${k})` }), t))
+      : [el('span', { tekst: 'Nog geen bron gekoppeld: Analytics, Play en AdMob verschijnen hier zodra ze aan staan.' })]));
+    if (window.Chart) {
+      ovApp?.destroy();
+      const opties = basisOpties();
+      if (ad) {
+        opties.scales.geld = {
+          position: 'right', beginAtZero: true, grid: { display: false }, border: { display: false },
+          ticks: { color: kleur('--muted'), callback: (w) => euroPrecies.format(w) },
+        };
+      }
+      ovApp = new Chart($('#ov-grafiek-app'), {
+        type: 'line',
+        data: { labels: as.map(kortDatum), datasets: sets },
+        options: opties,
+      });
+    }
+
+    const rangLijst = (items, leeg) => items?.length
+      ? el('table', { class: 'lijst' }, el('tbody', {}, items.map((x) => el('tr', {},
+          el('td', { tekst: x.naam }),
+          el('td', { class: 'getal', tekst: getalFmt.format(x.n) })))))
+      : el('p', { class: 'leeg-melding', tekst: leeg });
+    const gaLeeg = ga ? 'Nog geen gegevens in deze periode.' : 'Komt uit Google Analytics.';
+    $('#ov-schermen').replaceChildren(rangLijst(ga?.schermen, gaLeeg));
+    $('#ov-landen').replaceChildren(rangLijst(ga?.landen, gaLeeg));
   }
 
   function tekenKosten() {
@@ -2751,6 +2937,7 @@
     staat.periode = knop.dataset.periode;
     bewaarLokaal('histora-beheer-periode', staat.periode);
     tekenOverzicht();
+    laadExtern();
   });
   $('#ov-intern').addEventListener('change', (e) => {
     staat.internMeetellen = e.target.checked;
@@ -2778,7 +2965,7 @@
     else if (actie === 'stats-vernieuwen') laadStats();
     else if (actie === 'streaks-downloaden') downloadStreaks();
     else if (actie === 'thema') wisselThema();
-    else if (actie === 'overzicht-vernieuwen') laadOverzicht();
+    else if (actie === 'overzicht-vernieuwen') { laadOverzicht(); setTimeout(() => laadExtern(true), 0); }
     else if (actie === 'nieuwe-kost') openKost(null);
     else if (actie === 'verwijder-kost') verwijderKost();
   });
