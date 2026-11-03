@@ -1472,7 +1472,7 @@ the Play Console** — `listing.md` (all copy plus the answer to every Console f
   `node_modules/eas-cli/node_modules/typescript@5.9.3` for `@expo/require-utils`' optional peer,
   while local **npm 11** leaves it out of the lockfile — so `npm ci` passed here and failed there,
   every time, in the first two seconds. The `build:android:*` / `submit:android*` scripts go
-  through `npm run eas --` (`npx eas-cli@^21.4.0`), so nothing about the workflow changed. **Don't
+  through `npm run eas --` (`npx eas-cli@^27.3.0`; was 21, which fails the Apple login with "iTunes service key is empty"), so nothing about the workflow changed. **Don't
   add it back**, and if you ever change dependencies, sanity-check with
   `npx npm@10 ci --include=dev --dry-run`, not just the local npm.
 - **The Supabase keys live on EAS, not in the build.** `.env.local` is ignored, so a cloud build

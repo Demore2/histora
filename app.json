@@ -17,7 +17,7 @@
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/images/app-icon.png",
-      "supportsTablet": true,
+      "supportsTablet": false,
       "bundleIdentifier": "com.chronicles.historyapp",
       "usesAppleSignIn": true,
       "infoPlist": {

@@ -21,6 +21,15 @@
         "buildType": "apk"
       }
     },
+    "ios-simulator": {
+      "distribution": "internal",
+      "developmentClient": false,
+      "environment": "production",
+      "channel": "production",
+      "ios": {
+        "simulator": true
+      }
+    },
     "production": {
       "developmentClient": false,
       "autoIncrement": true,
@@ -44,6 +53,9 @@
         "serviceAccountKeyPath": "./play-service-account.json",
         "track": "production",
         "releaseStatus": "draft"
+      },
+      "ios": {
+        "ascAppId": "6830119670"
       }
     }
   }
