@@ -75,7 +75,22 @@
     overflow: hidden;
     background: #F7F1E4;
   }
+  .scherm { position: relative; }
   .scherm img { display: block; width: 100%; height: auto; }
+  /* Een Android-capture (store/screenshots-bron/, 1080×2400) is relatief hoger dan het iPhone-scherm:
+     op schermhoogte geschaald, gecentreerd, en de Android-statusbalk afgedekt door een iOS-balk
+     met Dynamic Island. Alleen voor schermen waar we geen goede iOS-capture van hebben. */
+  .scherm.android { display: flex; justify-content: center; }
+  .scherm.android img { width: auto; height: 100%; }
+  .ios-status {
+    position: absolute; left: 0; right: 0; top: 0; height: 104px;
+    background: #F7F1E4; color: #211F1A;
+    font: 600 28px/1 -apple-system, 'Segoe UI', Arial, sans-serif;
+  }
+  .ios-status .tijd { position: absolute; left: 100px; top: 38px; }
+  .ios-status .eiland { position: absolute; left: 50%; top: 22px; width: 226px; height: 66px; margin-left: -113px; border-radius: 33px; background: #000; }
+  .ios-status .rechts { position: absolute; right: 70px; top: 38px; display: flex; gap: 6px; align-items: flex-end; }
+  .ios-status i { display: block; background: currentColor; border-radius: 2px; }
 
   .vos {
     position: absolute;
@@ -96,9 +111,11 @@
 <script>
   const DIAS = [
     {
-      kop: 'From the pharaohs<br>to today',
-      sub: 'One journey through history, one true story at a time.',
-      scherm: '02-home.png', vos: 'zwaaiend.png', kant: 'links',
+      // Dia 5 van de Play-set: de Android-capture met een echte naam en een lopende streak, in
+      // plaats van de iOS-capture van een vers testaccount ("Test123", alles op nul).
+      kop: 'Keep your<br>streak alive',
+      sub: 'One chapter a day. The fox cheers you on.',
+      android: 'home-1.5.png', vos: 'zwaaiend.png', kant: 'links',
     },
     {
       kop: 'Every era,<br>its own route',
@@ -132,7 +149,17 @@
   const d = DIAS[n - 1];
   document.getElementById('dia').innerHTML = `
     <div class="kop"><h1>${d.kop}</h1><p>${d.sub}</p></div>
-    <div class="telefoon"><div class="scherm"><img src="screenshots-ios/${d.scherm}" alt=""></div></div>
+    <div class="telefoon">${d.android ? `
+      <div class="scherm android">
+        <img src="screenshots-bron/${d.android}" alt="">
+        <div class="ios-status">
+          <span class="tijd">9:41</span><span class="eiland"></span>
+          <span class="rechts">
+            <i style="width:6px;height:9px"></i><i style="width:6px;height:13px"></i><i style="width:6px;height:17px"></i><i style="width:6px;height:21px"></i>
+            <i style="width:42px;height:20px;border-radius:6px;margin-left:8px"></i>
+          </span>
+        </div>
+      </div>` : `<div class="scherm"><img src="screenshots-ios/${d.scherm}" alt=""></div>`}</div>
     <img class="vos ${d.kant}${d.spiegel ? ' gespiegeld' : ''}" src="../assets/images/vos/${d.vos}" alt="">
   `;
 </script>
