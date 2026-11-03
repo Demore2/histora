@@ -33,10 +33,16 @@ const LETTERS = 'ABCDEF';
 export function StoryQuiz({
   quiz: bron,
   accent,
+  compact = false,
+  onKies,
   onBeantwoord,
 }: {
   quiz: Quiz;
   accent: string;
+  /** Krappere maten, voor het vragenpaneel: met een grote systeemletter moet de knop nog passen. */
+  compact?: boolean;
+  /** Een optie aangetikt (nog niet gecontroleerd), zodat het paneel naar de knop kan scrollen. */
+  onKies?: (index: number) => void;
   /**
    * Aangeroepen zodra de lezer op "Check" drukt, één keer per vraag.
    *
@@ -81,6 +87,7 @@ export function StoryQuiz({
     <View
       style={[
         styles.kaart,
+        compact && styles.kaartCompact,
         { backgroundColor: theme.backgroundElement, borderColor: withAlpha(accent, 0.3) },
       ]}>
       <View style={styles.kop}>
@@ -90,19 +97,23 @@ export function StoryQuiz({
         </ThemedText>
       </View>
 
-      <ThemedText type="subtitle">{quiz.vraag}</ThemedText>
+      <ThemedText type={compact ? 'bodyBold' : 'subtitle'}>{quiz.vraag}</ThemedText>
 
       <View style={styles.opties} accessibilityRole="radiogroup">
         {quiz.opties.map((optie, index) => (
           <AnimatedPressable
             key={index}
-            onPress={() => setGekozen(index)}
+            onPress={() => {
+              setGekozen(index);
+              onKies?.(index);
+            }}
             disabled={gecontroleerd}
             accessibilityRole="radio"
             accessibilityState={{ selected: gekozen === index, disabled: gecontroleerd }}
             accessibilityLabel={t((s) => s.interactief.optieLabel)(LETTERS[index] ?? '?', optie)}
             style={[
               styles.optie,
+              compact && styles.optieCompact,
               { backgroundColor: theme.background, borderColor: optieRand(index) },
             ]}>
             <View
@@ -194,6 +205,10 @@ const styles = StyleSheet.create({
     borderRadius: Radii.card,
     borderWidth: 1,
   },
+  kaartCompact: {
+    gap: Spacing.two,
+    padding: Spacing.three,
+  },
   kop: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -210,6 +225,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.three,
     borderRadius: Radii.button,
     borderWidth: 1,
+  },
+  optieCompact: {
+    paddingVertical: Spacing.two,
   },
   letter: {
     width: 24,

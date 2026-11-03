@@ -17,6 +17,8 @@ const BEELD: Record<PhoxyStand, number> = {
 };
 
 const MAAT = 112;
+/** In het vragenpaneel: daar moet de hele vraag plus de knop op één scherm passen. */
+const MAAT_COMPACT = 80;
 
 /**
  * Phoxy als leraar naast de quizvraag (1.4): eerst wijzend, na het antwoord juichend of
@@ -30,7 +32,15 @@ const MAAT = 112;
  * wolkje springt op, de vos fade't van pose naar pose. Een doorlopende animatie is er bewust niet;
  * dit staat naast een vraag die gelezen moet worden.
  */
-export function PhoxyLeraar({ stand, tekst }: { stand: PhoxyStand; tekst: string }) {
+export function PhoxyLeraar({
+  stand,
+  tekst,
+  compact = false,
+}: {
+  stand: PhoxyStand;
+  tekst: string;
+  compact?: boolean;
+}) {
   const theme = useTheme();
   const wolk = theme.backgroundElement;
 
@@ -39,7 +49,7 @@ export function PhoxyLeraar({ stand, tekst }: { stand: PhoxyStand; tekst: string
       <Animated.View key={`vos-${stand}`} entering={FadeIn.duration(Motion.duration.normaal)}>
         <Image
           source={BEELD[stand]}
-          style={styles.vos}
+          style={[styles.vos, compact && styles.vosCompact]}
           contentFit="contain"
           accessible={false}
         />
@@ -74,6 +84,10 @@ const styles = StyleSheet.create({
     // een stukje overheen schuiven, anders hangt het los van zijn snuit. De negatieve marge staat
     // hier en niet op het wolkje: op het `flex: 1`-element maakt hij dat te breed voor de rij.
     marginRight: -Spacing.three,
+  },
+  vosCompact: {
+    width: MAAT_COMPACT,
+    height: MAAT_COMPACT,
   },
   wolkVak: {
     flex: 1,

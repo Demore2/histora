@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Modal, ScrollView, StyleSheet, View } from 'react-native';
 import Animated, { FadeInRight } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -62,6 +62,16 @@ export function HoofdstukVragen({
   const insets = useSafeAreaInsets();
   const [stapIndex, setStapIndex] = useState(0);
   const [reactie, setReactie] = useState<Reactie | null>(null);
+  const scrollRef = useRef<ScrollView>(null);
+  // Gezet bij kiezen/antwoorden, gelezen in `onContentSizeChange`: de toelichting bestaat pas
+  // ná de hertekening, dus direct `scrollToEnd` roepen zou naar het oude einde scrollen.
+  const scrollNaarEinde = useRef(false);
+
+  function scrollOmlaag() {
+    scrollNaarEinde.current = true;
+    // Kiezen verandert de hoogte niet; dan komt er geen `onContentSizeChange`.
+    requestAnimationFrame(() => scrollRef.current?.scrollToEnd({ animated: true }));
+  }
 
   const quizzes = interactie.quizzes;
   const quiz = quizzes[Math.min(stapIndex, quizzes.length - 1)];
@@ -105,13 +115,23 @@ export function HoofdstukVragen({
             )}
           </View>
 
+          {/* Op een telefoon met een grote systeemletter past de vraag niet op het scherm (de
+              emulator liet dat niet zien). Daarom scrolt het paneel bij kiezen naar de knop en
+              na het antwoord naar de toelichting. */}
           <ScrollView
+            ref={scrollRef}
+            onContentSizeChange={() => {
+              if (!scrollNaarEinde.current) return;
+              scrollNaarEinde.current = false;
+              scrollRef.current?.scrollToEnd({ animated: true });
+            }}
             style={styles.inhoud}
             contentContainerStyle={styles.inhoudContainer}
             showsVerticalScrollIndicator={false}>
             <PhoxyLeraar
               stand={!reactie ? 'vraag' : reactie.goed ? 'goed' : 'fout'}
               tekst={phoxyTekst}
+              compact
             />
 
             {/* `key` per vraag: elke vraag begint met een schone eigen state, en de animatie speelt
@@ -120,7 +140,10 @@ export function HoofdstukVragen({
               <StoryQuiz
                 quiz={quiz}
                 accent={accent}
+                compact
+                onKies={scrollOmlaag}
                 onBeantwoord={(gekozen, goed) => {
+                  scrollOmlaag();
                   // De zin wordt hier gekozen, bij het antwoord, en niet tijdens het renderen:
                   // anders wisselt Phoxy van woorden bij elke hertekening.
                   const zinnen = goed ? zinnenGoed : zinnenFout;
@@ -172,9 +195,9 @@ const styles = StyleSheet.create({
     maxHeight: '92%',
     borderTopLeftRadius: Radii.card,
     borderTopRightRadius: Radii.card,
-    paddingTop: Spacing.four,
-    paddingHorizontal: Spacing.four,
-    gap: Spacing.three,
+    paddingTop: Spacing.three,
+    paddingHorizontal: Spacing.three,
+    gap: Spacing.two,
   },
   kop: {
     flexDirection: 'row',
