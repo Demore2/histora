@@ -6,7 +6,6 @@ import { AnimatedPressable } from '@/components/animated-pressable';
 import { ThemedText } from '@/components/themed-text';
 import {
   prestatieMet,
-  type PrestatieCategorie,
   type PrestatieItem,
 } from '@/constants/prestaties';
 import { Radii, Spacing, withAlpha } from '@/constants/theme';
@@ -51,23 +50,6 @@ export function AchievementUnlockModal() {
   return <Venster key={prestatie.id} prestatie={prestatie} onClose={wisDetail} />;
 }
 
-/** Welke van de vier accentkleuren bij een categorie hoort. Gelijk aan `achievements-grid.tsx`. */
-function categorieKleur(
-  categorie: PrestatieCategorie,
-  theme: ReturnType<typeof useTheme>
-): string {
-  switch (categorie) {
-    case 'hoofdstukken':
-      return theme.statHoofdstuk;
-    case 'verhalen':
-      return theme.statVerhaal;
-    case 'personages':
-      return theme.statPersonage;
-    case 'streak':
-      return theme.statStreak;
-  }
-}
-
 function Venster({ prestatie, onClose }: { prestatie: PrestatieItem; onClose: () => void }) {
   const theme = useTheme();
   const { t, taal } = useVertaling();
@@ -80,7 +62,10 @@ function Venster({ prestatie, onClose }: { prestatie: PrestatieItem; onClose: ()
 
   const naam = t((s) => s.prestatie.namen)[prestatie.id];
   const uitleg = t((s) => s.prestatie.uitleg)[prestatie.categorie](prestatie.drempel);
-  const kleur = categorieKleur(prestatie.categorie, theme);
+  // De app-kleur, niet die van de categorie: dit is een venster met knoppen, en de vier
+  // categoriekleuren (het oude blauwgroen voor hoofdstukken) vielen buiten de rest van de app.
+  // Het raster op Profiel houdt ze wél — daar zijn ze een legenda.
+  const kleur = theme.accent;
 
   const behaald = ontgrendeling !== undefined;
   const huidig = stand ? stand[prestatie.categorie] : 0;

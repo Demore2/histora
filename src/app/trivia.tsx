@@ -1,7 +1,7 @@
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { Image } from 'expo-image';
 import { Stack, useFocusEffect } from 'expo-router';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { ActivityIndicator, ScrollView, StyleSheet, useWindowDimensions, View } from 'react-native';
 import Animated, { FadeIn, FadeInDown, ZoomIn } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -96,6 +96,11 @@ export default function TriviaScreen() {
   const [stand, setStand] = useState<TriviaStand | null>(null);
   const [nu, setNu] = useState(() => Date.now());
   const [toonPaywall, setToonPaywall] = useState(false);
+  // Na een antwoord verschijnt de uitleg onder de opties, en de vaste "Verder"-knop dekt de onderkant
+  // af: zonder te scrollen zag je de uitleg niet. De vlag zet `verwerkUitslag`; zodra de inhoud
+  // gegroeid is scrolt `onContentSizeChange` één keer naar beneden.
+  const scrollRef = useRef<ScrollView>(null);
+  const naarUitleg = useRef(false);
 
   // De stand bij elke keer dat het scherm in beeld komt: levens komen terug terwijl je weg bent.
   useFocusEffect(
@@ -176,6 +181,7 @@ export default function TriviaScreen() {
   function verwerkUitslag(uitslag: TriviaUitslag) {
     if (fase.soort !== 'vraag') return;
     const zinnen = uitslag.goed ? t((s) => s.interactief.phoxyGoed) : t((s) => s.interactief.phoxyFout);
+    naarUitleg.current = true;
     setFase({ ...fase, uitslag, zin: Math.floor(Math.random() * zinnen.length) });
     setStand(uitslag.stand);
     registreerAntwoord(fase.vraag.id, uitslag.goed, fase.kroon ? fase.vraag.tijdperkId : null);
@@ -195,7 +201,16 @@ export default function TriviaScreen() {
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ title: '' }} />
       <SafeAreaView edges={['bottom']} style={styles.safeArea}>
-        <ScrollView style={styles.scrollVak} contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
+        <ScrollView
+          ref={scrollRef}
+          style={styles.scrollVak}
+          contentContainerStyle={styles.scroll}
+          showsVerticalScrollIndicator={false}
+          onContentSizeChange={() => {
+            if (!naarUitleg.current) return;
+            naarUitleg.current = false;
+            scrollRef.current?.scrollToEnd({ animated: true });
+          }}>
           <View style={styles.inhoud}>
             <ThemedText type="title">{t((s) => s.explore.titel)}</ThemedText>
 
