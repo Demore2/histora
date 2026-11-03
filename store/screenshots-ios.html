@@ -1,0 +1,140 @@
+<!doctype html>
+<!--
+  De iPhone-screenshots voor de App Store, als sjabloon — de iOS-tegenhanger van screenshots.html.
+
+  Elke dia is 1320×2868 (iPhone 6.9", wat App Store Connect eist) en wordt door
+  `npm run generate:ios-screenshots` met headless Chrome gerenderd, één keer per dia (`?n=1` …).
+  Open hem in een browser met `?n=3` om één dia te bekijken.
+
+  Waarom niet de Play-dia's hergebruiken: die zijn Higgsfield-scènes met een Android-telefoon erin,
+  en Apple keurt screenshots met een niet-Apple-toestel af (guideline 2.3.3). Hier is de telefoon
+  daarom getekend als iPhone, en de schermen zijn echte iOS-captures (`store/screenshots-ios/`,
+  Appetize, iPhone 16 Pro Max). Die bevatten hun eigen statusbalk en Dynamic Island, dus er hoeft
+  niets afgedekt te worden.
+
+  Geen aantallen in de koppen en geen "Phoxy" — zelfde regels als de Play-set.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Histora App Store screenshots</title>
+<style>
+  :root { --breed: 1320px; --hoog: 2868px; }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: var(--breed); height: var(--hoog); overflow: hidden; background: #FFEBC2; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; }
+
+  .dia {
+    position: relative;
+    width: var(--breed);
+    height: var(--hoog);
+    overflow: hidden;
+    color: #4A2C1A;
+    background: linear-gradient(180deg, #FFEBC2 0%, #FDD48E 100%);
+  }
+  /* Zachte cirkels achter de telefoon, zodat de achtergrond niet vlak oogt. */
+  .dia::before, .dia::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.28);
+  }
+  .dia::before { width: 1100px; height: 1100px; right: -380px; top: 760px; }
+  .dia::after { width: 700px; height: 700px; left: -260px; top: 1900px; }
+
+  .kop {
+    position: absolute;
+    left: 90px;
+    right: 90px;
+    top: 150px;
+    text-align: center;
+    z-index: 3;
+  }
+  .kop h1 { font-size: 124px; line-height: 1.02; font-weight: 800; letter-spacing: -2px; }
+  .kop p { margin-top: 30px; font-size: 52px; line-height: 1.28; font-weight: 500; opacity: 0.9; }
+
+  /* iPhone: dunne titanium rand, grote hoekstraal. Het scherm heeft de verhouding van de capture
+     (1320×2868), dus 800 breed = 1738 hoog; plus 2 × 20 rand. */
+  .telefoon {
+    position: absolute;
+    left: 50%;
+    top: 760px;
+    width: 840px;
+    height: 1778px;
+    transform: translateX(-50%);
+    border-radius: 132px;
+    background: #1A1814;
+    padding: 20px;
+    box-shadow: 0 50px 110px rgba(74, 44, 26, 0.35), inset 0 0 0 4px #4A4540, inset 0 0 0 8px #1A1814;
+    z-index: 1;
+  }
+  .scherm {
+    width: 100%;
+    height: 100%;
+    border-radius: 112px;
+    overflow: hidden;
+    background: #F7F1E4;
+  }
+  .scherm img { display: block; width: 100%; height: auto; }
+
+  .vos {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+    z-index: 2;
+    filter: drop-shadow(0 22px 30px rgba(74, 44, 26, 0.3));
+  }
+  .vos.links { left: -70px; bottom: 40px; }
+  .vos.rechts { right: -70px; bottom: 40px; }
+  .vos.gespiegeld { transform: scaleX(-1); }
+</style>
+</head>
+<body>
+<div class="dia" id="dia"></div>
+
+<script>
+  const DIAS = [
+    {
+      kop: 'From the pharaohs<br>to today',
+      sub: 'One journey through history, one true story at a time.',
+      scherm: '02-home.png', vos: 'zwaaiend.png', kant: 'links',
+    },
+    {
+      kop: 'Every era,<br>its own route',
+      sub: 'Pick an era and follow its stories in order.',
+      scherm: '03-explore.png', vos: 'op-weg.png', kant: 'rechts',
+    },
+    {
+      kop: 'Spin the wheel,<br>beat the fox',
+      sub: 'History trivia from every era. Win a crown for each one.',
+      scherm: '04-trivia.png', vos: 'leraar-juichend.png', kant: 'links',
+    },
+    {
+      // Niet de winkel (07-shop): die noemt Pro en "coming soon", en geen van beide bestaat op iOS.
+      kop: 'Unlock milestones<br>as you read',
+      sub: 'Chapters, finished stories and your daily streak all count.',
+      scherm: '06-milestones.png', vos: 'fase-1-gevierd.png', kant: 'rechts',
+    },
+    {
+      kop: 'Collect the people<br>you meet',
+      sub: 'Finish a story and its figure joins your collection.',
+      scherm: '05-profile.png', vos: 'leraar-wijzend.png', kant: 'links',
+    },
+    {
+      kop: 'The stories that<br>shaped our world',
+      sub: 'Short illustrated chapters, ready when you are.',
+      scherm: '01-welcome.png', vos: 'leraar-bemoedigend.png', kant: 'rechts',
+    },
+  ];
+
+  const n = Math.min(DIAS.length, Math.max(1, Number(new URLSearchParams(location.search).get('n')) || 1));
+  const d = DIAS[n - 1];
+  document.getElementById('dia').innerHTML = `
+    <div class="kop"><h1>${d.kop}</h1><p>${d.sub}</p></div>
+    <div class="telefoon"><div class="scherm"><img src="screenshots-ios/${d.scherm}" alt=""></div></div>
+    <img class="vos ${d.kant}${d.spiegel ? ' gespiegeld' : ''}" src="../assets/images/vos/${d.vos}" alt="">
+  `;
+</script>
+</body>
+</html>
