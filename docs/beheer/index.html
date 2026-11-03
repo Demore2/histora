@@ -7,6 +7,17 @@
 <title>Histora Beheer</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap">
+<script>
+  // Het thema vóór de eerste verf, anders flitst het bord licht op bij wie donker koos.
+  try {
+    const t = localStorage.getItem('histora-beheer-thema');
+    if (t === 'licht') document.documentElement.dataset.theme = 'light';
+    else if (t === 'donker') document.documentElement.dataset.theme = 'dark';
+  } catch { /* privévenster */ }
+</script>
 <!--
   Het beheerbord voor Quinten en Mike: tickets, de ideeënhub en de statistieken. Statisch, zodat
   GitHub Pages het vanuit docs/ serveert.
@@ -21,15 +32,29 @@
   innerHTML: dit is de tweede plek waar door gebruikers getypte tekst bij iemand anders belandt.
 -->
 <style>
+  /*
+    Histora-kleuren: beige achtergrond en Phoxy-oranje als accent, met een warmbruine donkere stand
+    (zelfde palet als src/constants/theme.ts). De kaarten zijn glas: --glass is half doorzichtig en
+    ligt over de zachte kleurvlekken van body::before. Menu's, vensters en het zijpaneel houden een
+    dichte --panel, anders lees je de tekst eronder door.
+  */
   :root {
-    --bg: #f6f7fb;
-    --panel: #ffffff;
-    --text: #323338;
-    --muted: #676879;
-    --line: #e6e9ef;
-    --hover: #f5f6f8;
-    --accent: #0073ea;
-    --shadow: 0 4px 16px rgba(0, 0, 0, .12);
+    --bg: #f7f1e4;
+    --panel: #fffbf4;
+    --glass: rgba(255, 251, 244, .66);
+    --glass-rand: rgba(255, 255, 255, .75);
+    --text: #2a241c;
+    --muted: #7a6e5e;
+    --line: rgba(120, 95, 60, .16);
+    --hover: rgba(201, 84, 28, .07);
+    --accent: #c9541c;
+    --op-accent: #ffffff;
+    --accent-zacht: rgba(201, 84, 28, .12);
+    --vlek-1: rgba(228, 104, 43, .22);
+    --vlek-2: rgba(14, 165, 233, .14);
+    --vlek-3: rgba(234, 179, 8, .16);
+    --shadow: 0 10px 30px rgba(90, 60, 20, .12);
+    --kaart-schaduw: 0 1px 2px rgba(90, 60, 20, .05), 0 8px 24px rgba(90, 60, 20, .07);
 
     --st-nieuw: #c4c4c4;
     --st-bezig: #fdab3d;
@@ -50,66 +75,105 @@
     --hub-taak: #fdab3d;
 
     /* Grafieken: gevalideerd categorisch palet (dataviz), slot 1-4 + neutraal voor "gratis". */
-    --serie-1: #2a78d6;
-    --serie-2: #eb6834;
+    /* Slot 1 is het oranje (de merkkleur), slot 2 het blauw: dezelfde gevalideerde set, omgewisseld. */
+    --serie-1: #eb6834;
+    --serie-2: #2a78d6;
     --serie-3: #1baf7a;
     --serie-4: #eda100;
-    --serie-neutraal: #c3c6d4;
-    --raster: #eceef3;
+    --serie-neutraal: #cfc6b5;
+    --raster: rgba(120, 95, 60, .1);
     --goed: #00854d;
     --slecht: #d83a52;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #181b34;
-      --panel: #1f2341;
-      --text: #d5d8df;
-      --muted: #9699a6;
-      --line: #393d5c;
-      --hover: #2b2f52;
-      --accent: #579bfc;
-      --shadow: 0 4px 16px rgba(0, 0, 0, .5);
-      --st-nieuw: #5c5f78;
-      --serie-1: #3987e5;
-      --serie-2: #d95926;
+      --bg: #1c1a16;
+      --panel: #2a2620;
+      --glass: rgba(46, 41, 34, .58);
+      --glass-rand: rgba(255, 240, 215, .07);
+      --text: #ede6da;
+      --muted: #a89c8a;
+      --line: rgba(255, 235, 205, .1);
+      --hover: rgba(238, 122, 62, .1);
+      --accent: #ee7a3e;
+      --op-accent: #1c1a16;
+      --accent-zacht: rgba(238, 122, 62, .16);
+      --vlek-1: rgba(228, 104, 43, .2);
+      --vlek-2: rgba(14, 165, 233, .1);
+      --vlek-3: rgba(234, 179, 8, .08);
+      --shadow: 0 10px 30px rgba(0, 0, 0, .5);
+      --kaart-schaduw: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+      --st-nieuw: #6b6458;
+      --serie-1: #d95926;
+      --serie-2: #3987e5;
       --serie-3: #199e70;
       --serie-4: #c98500;
-      --serie-neutraal: #4b4f73;
-      --raster: #30345a;
+      --serie-neutraal: #5a5347;
+      --raster: rgba(255, 235, 205, .08);
       --goed: #33d391;
       --slecht: #ff7a8a;
     }
   }
   :root[data-theme="dark"] {
-    --bg: #181b34;
-    --panel: #1f2341;
-    --text: #d5d8df;
-    --muted: #9699a6;
-    --line: #393d5c;
-    --hover: #2b2f52;
-    --accent: #579bfc;
-    --shadow: 0 4px 16px rgba(0, 0, 0, .5);
-    --st-nieuw: #5c5f78;
-    --serie-1: #3987e5;
-    --serie-2: #d95926;
+    --bg: #1c1a16;
+    --panel: #2a2620;
+    --glass: rgba(46, 41, 34, .58);
+    --glass-rand: rgba(255, 240, 215, .07);
+    --text: #ede6da;
+    --muted: #a89c8a;
+    --line: rgba(255, 235, 205, .1);
+    --hover: rgba(238, 122, 62, .1);
+    --accent: #ee7a3e;
+    --op-accent: #1c1a16;
+    --accent-zacht: rgba(238, 122, 62, .16);
+    --vlek-1: rgba(228, 104, 43, .2);
+    --vlek-2: rgba(14, 165, 233, .1);
+    --vlek-3: rgba(234, 179, 8, .08);
+    --shadow: 0 10px 30px rgba(0, 0, 0, .5);
+    --kaart-schaduw: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+    --st-nieuw: #6b6458;
+    --serie-1: #d95926;
+    --serie-2: #3987e5;
     --serie-3: #199e70;
     --serie-4: #c98500;
-    --serie-neutraal: #4b4f73;
-    --raster: #30345a;
+    --serie-neutraal: #5a5347;
+    --raster: rgba(255, 235, 205, .08);
     --goed: #33d391;
     --slecht: #ff7a8a;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, sans-serif;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: var(--bg);
     color: var(--text);
     font-size: 14px;
     min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  /* De kleurvlekken waar het glas overheen ligt. Vast, dus ze scrollen niet mee. */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      radial-gradient(42vmax 42vmax at 8% 0%, var(--vlek-1), transparent 70%),
+      radial-gradient(38vmax 38vmax at 100% 18%, var(--vlek-2), transparent 70%),
+      radial-gradient(40vmax 40vmax at 60% 110%, var(--vlek-3), transparent 70%);
   }
   button, input, select, textarea { font: inherit; color: inherit; }
   [hidden] { display: none !important; }
+
+  /* Glas: half doorzichtig met een waas erachter. Elke kaart op het bord gebruikt dit. */
+  .glas, .tabel, .tegel, .grafiek, .login form, header.kop {
+    background: var(--glass);
+    -webkit-backdrop-filter: blur(18px) saturate(1.4);
+    backdrop-filter: blur(18px) saturate(1.4);
+    border: 1px solid var(--glass-rand);
+    box-shadow: var(--kaart-schaduw);
+  }
 
   /* ---------- Login ---------- */
   .login {
@@ -119,9 +183,7 @@
     padding: 16px;
   }
   .login form {
-    background: var(--panel);
-    border-radius: 12px;
-    box-shadow: var(--shadow);
+    border-radius: 20px;
     padding: 32px 28px;
     width: 100%;
     max-width: 380px;
@@ -133,19 +195,22 @@
   .login label { display: grid; gap: 6px; font-weight: 600; font-size: 13px; }
   .login input {
     border: 1px solid var(--line);
-    background: var(--bg);
-    border-radius: 6px;
+    background: var(--panel);
+    border-radius: 10px;
     padding: 10px 12px;
   }
   .knop {
     border: 0;
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 10px 14px;
     background: var(--accent);
-    color: #fff;
-    font-weight: 600;
+    color: var(--op-accent);
+    font-weight: 700;
     cursor: pointer;
+    transition: filter .12s, transform .12s;
   }
+  .knop:hover:not(:disabled) { filter: brightness(1.06); }
+  .knop:active:not(:disabled) { transform: translateY(1px); }
   .knop.klein { padding: 7px 12px; }
   .knop.stil {
     background: transparent;
@@ -162,50 +227,60 @@
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     gap: 12px;
-    padding: 12px 24px;
-    background: var(--panel);
-    border-bottom: 1px solid var(--line);
+    padding: 10px 16px;
+    margin: 12px 16px 0;
+    border-radius: 18px;
     position: sticky;
-    top: 0;
+    top: 12px;
     z-index: 5;
   }
   header.kop h1 { display: flex; align-items: center; justify-self: start; }
   header.kop h1 img { width: 36px; height: 36px; border-radius: 10px; display: block; }
   header.kop .wie { justify-self: end; }
-  .tabs { display: flex; gap: 4px; justify-content: center; min-width: 0; }
+  .tabs {
+    display: flex; gap: 2px; justify-content: center; min-width: 0;
+    background: var(--hover); padding: 4px; border-radius: 999px;
+    overflow-x: auto; scrollbar-width: none;
+  }
   .tab {
     border: 0;
     background: none;
-    padding: 8px 12px;
-    border-radius: 6px;
+    padding: 7px 14px;
+    border-radius: 999px;
     cursor: pointer;
     color: var(--muted);
     font-weight: 600;
     white-space: nowrap;
+    transition: background .15s, color .15s;
   }
-  .tab:hover { background: var(--hover); }
-  .tab[aria-selected="true"] { color: var(--accent); background: var(--hover); }
-  .tab .tel { font-weight: 400; margin-left: 4px; }
+  .tab:hover { color: var(--text); }
+  .tab[aria-selected="true"] { color: var(--op-accent); background: var(--accent); box-shadow: 0 2px 8px var(--accent-zacht); }
+  .tab .tel { font-weight: 400; margin-left: 4px; opacity: .8; }
   .wie { display: flex; align-items: center; gap: 8px; color: var(--muted); }
+  .thema-knop {
+    border: 1px solid var(--line); background: var(--panel); border-radius: 999px;
+    width: 34px; height: 34px; cursor: pointer; display: inline-grid; place-items: center; font-size: 15px;
+  }
+  .thema-knop:hover { border-color: var(--accent); }
 
   .balk {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    padding: 14px 24px;
+    padding: 16px 24px;
     align-items: center;
   }
   .balk input[type="search"], .balk select {
     border: 1px solid var(--line);
     background: var(--panel);
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 7px 10px;
   }
   .balk input[type="search"] { min-width: 200px; flex: 1; max-width: 320px; }
   .chip-knop {
     border: 1px solid var(--line);
     background: var(--panel);
-    border-radius: 6px;
+    border-radius: 999px;
     padding: 7px 12px;
     cursor: pointer;
   }
@@ -234,11 +309,9 @@
   .teller { color: var(--muted); font-size: 13px; }
 
   .tabel {
-    background: var(--panel);
-    border-radius: 8px;
+    border-radius: 14px;
     overflow: hidden;
-    border-left: 6px solid var(--grp);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .06);
+    border-left: 5px solid var(--grp);
   }
   .rij {
     display: grid;
@@ -419,7 +492,7 @@
   /* ---------- Venster (nieuw ticket / notitie) ---------- */
   dialog.venster {
     border: 0;
-    border-radius: 12px;
+    border-radius: 20px;
     box-shadow: var(--shadow);
     background: var(--panel);
     color: var(--text);
@@ -431,7 +504,7 @@
   .venster form { display: grid; gap: 14px; padding: 22px; }
   .venster h2 { font-size: 18px; }
   .venster label.veld { display: grid; gap: 6px; font-size: 13px; font-weight: 600; }
-  .venster input[type="text"], .venster textarea, .venster select {
+  .venster input[type="text"], .venster input[type="date"], .venster textarea, .venster select {
     border: 1px solid var(--line);
     background: var(--bg);
     border-radius: 6px;
@@ -467,16 +540,14 @@
     gap: 12px;
   }
   .tegel {
-    background: var(--panel);
-    border-radius: 10px;
-    padding: 14px 16px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .06);
+    border-radius: 18px;
+    padding: 16px 18px;
     display: grid;
     gap: 4px;
     align-content: start;
   }
   .tegel .label { color: var(--muted); font-size: 12px; font-weight: 600; }
-  .tegel .waarde { font-size: 30px; font-weight: 600; line-height: 1.15; }
+  .tegel .waarde { font-size: 30px; font-weight: 800; line-height: 1.15; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
   .tegel .sub { color: var(--muted); font-size: 12px; }
   .tegel .delta { font-size: 12px; font-weight: 600; }
   .tegel .delta.op { color: var(--goed); }
@@ -485,10 +556,8 @@
 
   .grafieken { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; }
   .grafiek {
-    background: var(--panel);
-    border-radius: 10px;
-    padding: 16px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .06);
+    border-radius: 18px;
+    padding: 18px;
     display: grid;
     gap: 12px;
     align-content: start;
@@ -496,9 +565,9 @@
   }
   .grafiek-kop { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
   .grafiek-kop h2 { font-size: 15px; flex: 1; }
-  .segment { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
-  .segment button { border: 0; background: none; padding: 5px 10px; cursor: pointer; color: var(--muted); }
-  .segment button[aria-pressed="true"] { background: var(--hover); color: var(--text); font-weight: 600; }
+  .segment { display: inline-flex; gap: 2px; padding: 3px; background: var(--hover); border-radius: 999px; }
+  .segment button { border: 0; background: none; padding: 5px 12px; border-radius: 999px; cursor: pointer; color: var(--muted); font-weight: 600; }
+  .segment button[aria-pressed="true"] { background: var(--panel); color: var(--accent); box-shadow: 0 1px 4px rgba(0,0,0,.08); }
   .canvas-houder { position: relative; height: 260px; }
   .legenda { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12px; color: var(--muted); }
   .legenda span { display: inline-flex; align-items: center; gap: 6px; }
@@ -539,7 +608,7 @@
     left: 50%;
     bottom: 24px;
     transform: translateX(-50%);
-    background: #323338;
+    background: #2a241c;
     color: #fff;
     padding: 10px 16px;
     border-radius: 8px;
@@ -549,12 +618,72 @@
   }
   .toast.fout-toast { background: var(--pr-hoog); }
 
+  /* ---------- Overzicht ---------- */
+  .overzicht { padding: 0 24px 48px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .sectie-kop { display: flex; align-items: baseline; gap: 10px; margin: 6px 2px -4px; }
+  .sectie-kop h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 700; }
+  .kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+  .kpi { overflow: hidden; min-height: 132px; }
+  .kpi .kpi-kop { display: flex; align-items: center; gap: 10px; }
+  .kpi .icoon {
+    width: 34px; height: 34px; border-radius: 11px; flex: none;
+    display: grid; place-items: center; font-size: 16px;
+    background: var(--accent-zacht);
+  }
+  /* De sparkline staat onderaan in de stroom van de tegel, zodat hij nooit over de tekst valt. */
+  .kpi .spark { display: block; width: calc(100% + 36px); height: 38px; margin: 4px -18px -16px; pointer-events: none; }
+  .kpi.gepland .waarde { color: var(--muted); font-size: 18px; font-weight: 700; padding: 6px 0 2px; }
+  .label-fase {
+    display: inline-block; font-size: 11px; font-weight: 700; border-radius: 999px; padding: 2px 8px;
+    background: var(--hover); color: var(--muted); border: 1px solid var(--line);
+  }
+  .label-fase.live { background: rgba(27, 175, 122, .14); color: var(--goed); border-color: transparent; }
+  .label-fase.hand { background: var(--accent-zacht); color: var(--accent); border-color: transparent; }
+  .ov-raster { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+  .tabel-schuif { overflow-x: auto; }
+  .ov-kolom { display: grid; gap: 16px; align-content: start; min-width: 0; }
+  .donut-houder { position: relative; height: 200px; }
+  .donut-midden {
+    position: absolute; inset: 0; display: grid; place-content: center; text-align: center; pointer-events: none;
+  }
+  .donut-midden strong { font-size: 22px; font-weight: 800; }
+  .donut-midden span { color: var(--muted); font-size: 12px; }
+  .bronnen { display: grid; gap: 2px; }
+  .bron { display: grid; grid-template-columns: 28px 1fr auto; gap: 10px; align-items: center; padding: 8px 4px; border-bottom: 1px solid var(--line); }
+  .bron:last-child { border-bottom: 0; }
+  .bron .wat { display: grid; gap: 1px; }
+  .bron .wat small { color: var(--muted); font-size: 12px; }
+  .links-raster { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .links-raster a {
+    display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 12px;
+    background: var(--hover); color: var(--text); text-decoration: none; font-weight: 600; font-size: 13px;
+    border: 1px solid transparent; transition: border-color .12s, transform .12s;
+  }
+  .links-raster a:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .links-raster a span.pijl { margin-left: auto; color: var(--muted); }
+  table.lijst tr.kost-rij { cursor: pointer; }
+  table.lijst tr.kost-rij:hover td { background: var(--hover); }
+  table.lijst tr.gestopt td { color: var(--muted); text-decoration: line-through; }
+  .categorie-stip { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; }
+
+  @media (max-width: 1100px) {
+    .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .ov-raster { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 600px) {
+    table.lijst .kost-soort { display: none; }
+  }
+
   /* ---------- Smal scherm ---------- */
   @media (max-width: 860px) {
     header.kop { grid-template-columns: auto 1fr; row-gap: 8px; padding: 10px 16px; }
     .tabs { order: 3; grid-column: 1 / -1; }
     .balk { padding-left: 16px; padding-right: 16px; }
-    main.bord, .hub, .stats { padding: 0 16px 40px; }
+    main.bord, .hub, .stats, .overzicht { padding: 0 16px 40px; }
+    header.kop { margin: 8px 8px 0; top: 8px; }
+    .kpis { gap: 10px; }
+    .links-raster { grid-template-columns: 1fr; }
+    .tegel .waarde { font-size: 24px; }
     .rij.kopregel { display: none; }
     .rij {
       grid-template-columns: 1fr 1fr;
@@ -612,20 +741,93 @@
   <header class="kop">
     <h1><img src="favicon.png" alt="Histora" title="Histora"></h1>
     <nav class="tabs" role="tablist" aria-label="Onderdelen">
-      <button class="tab" type="button" role="tab" data-tab="tickets" aria-selected="true">Tickets<span class="tel" id="tel-tickets"></span></button>
+      <button class="tab" type="button" role="tab" data-tab="overzicht" aria-selected="true">Overzicht</button>
+      <button class="tab" type="button" role="tab" data-tab="tickets" aria-selected="false">Tickets<span class="tel" id="tel-tickets"></span></button>
       <button class="tab" type="button" role="tab" data-tab="hub" aria-selected="false">Ideeënhub<span class="tel" id="tel-hub"></span></button>
       <button class="tab" type="button" role="tab" data-tab="stats" aria-selected="false">Statistieken</button>
       <button class="tab" type="button" role="tab" data-tab="trends" aria-selected="false">Trends</button>
     </nav>
     <div class="wie">
+      <button class="thema-knop" type="button" data-actie="thema" id="thema-knop" title="Thema" aria-label="Thema wisselen"></button>
       <span class="avatar" id="ik-avatar"></span>
       <span class="naam" id="ik-naam"></span>
       <button class="knop stil klein" type="button" data-actie="uitloggen">Uitloggen</button>
     </div>
   </header>
 
+  <!-- Overzicht: de startpagina. Gebruikers en abonnementen uit Supabase, kosten met de hand;
+       omzet (RevenueCat), Analytics en AdMob komen er in latere fasen bij. -->
+  <section id="tab-overzicht" hidden>
+    <div class="balk">
+      <div class="segment" id="ov-periode" role="group" aria-label="Periode">
+        <button type="button" data-periode="7d" aria-pressed="false">7 dagen</button>
+        <button type="button" data-periode="30d" aria-pressed="true">30 dagen</button>
+        <button type="button" data-periode="12w" aria-pressed="false">12 weken</button>
+        <button type="button" data-periode="12m" aria-pressed="false">12 maanden</button>
+      </div>
+      <label class="schakel"><input type="checkbox" id="ov-intern"> Eigen en testaccounts meetellen</label>
+      <button class="chip-knop" type="button" data-actie="overzicht-vernieuwen" title="Vernieuwen">↻</button>
+      <span class="rechts" id="ov-gemeten"></span>
+    </div>
+    <div class="overzicht">
+      <div class="sectie-kop"><h2>Lezers</h2></div>
+      <div class="kpis" id="ov-lezers"></div>
+      <div class="sectie-kop"><h2>Geld</h2><span class="zacht">per maand</span></div>
+      <div class="kpis" id="ov-geld"></div>
+
+      <div class="ov-raster">
+        <section class="grafiek">
+          <div class="grafiek-kop"><h2>Groei</h2><span class="zacht" id="ov-groei-periode"></span></div>
+          <div class="legenda">
+            <span><i style="background:var(--serie-1)"></i>Actief</span>
+            <span><i style="background:var(--serie-2)"></i>Nieuw</span>
+          </div>
+          <div class="canvas-houder"><canvas id="ov-grafiek-groei" role="img" aria-label="Actieve en nieuwe lezers in de gekozen periode"></canvas></div>
+        </section>
+        <section class="grafiek">
+          <div class="grafiek-kop"><h2>Abonnementen</h2></div>
+          <div class="donut-houder">
+            <canvas id="ov-grafiek-abo" role="img" aria-label="Verdeling van abonnementen"></canvas>
+            <div class="donut-midden"><strong id="ov-abo-midden">—</strong><span>premium</span></div>
+          </div>
+          <div class="verdeling-lijst" id="ov-abo-lijst"></div>
+        </section>
+      </div>
+
+      <div class="ov-raster">
+        <section class="grafiek">
+          <div class="grafiek-kop">
+            <h2>Kosten</h2>
+            <button class="knop klein" type="button" data-actie="nieuwe-kost">+ Kost toevoegen</button>
+          </div>
+          <div id="ov-kosten"></div>
+          <p class="voetnoot">Per maand omgerekend: een jaarbedrag telt voor een twaalfde, eenmalige
+            kosten tellen niet mee in het maandbedrag maar staan apart. Dollars worden omgerekend tegen
+            een vaste koers van <span id="ov-koers"></span>.</p>
+        </section>
+        <div class="ov-kolom">
+          <section class="grafiek">
+            <div class="grafiek-kop"><h2>Kosten per soort</h2></div>
+            <div class="donut-houder">
+              <canvas id="ov-grafiek-kosten" role="img" aria-label="Kosten per categorie"></canvas>
+              <div class="donut-midden"><strong id="ov-kosten-midden">—</strong><span>per maand</span></div>
+            </div>
+          </section>
+          <section class="grafiek">
+            <div class="grafiek-kop"><h2>Bronnen</h2></div>
+            <div class="bronnen" id="ov-bronnen"></div>
+          </section>
+          <section class="grafiek">
+            <div class="grafiek-kop"><h2>Snelkoppelingen</h2></div>
+            <div class="links-raster" id="ov-links"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Tickets -->
-  <section id="tab-tickets">
+  <section id="tab-tickets" hidden>
     <div class="balk">
       <button class="knop klein" type="button" data-actie="nieuw-ticket">+ Nieuw ticket</button>
       <input type="search" id="zoek" placeholder="Zoek in tickets…" aria-label="Zoeken">
@@ -840,6 +1042,52 @@
   </form>
 </dialog>
 
+<!-- Kostenpost -->
+<dialog class="venster" id="venster-kost">
+  <form method="dialog" id="form-kost">
+    <h2 id="kost-titel">Kost toevoegen</h2>
+    <label class="veld">Naam
+      <input type="text" name="naam" maxlength="120" required placeholder="Bijv. Supabase Pro">
+    </label>
+    <div class="rijtje">
+      <label class="veld">Bedrag
+        <input type="text" name="bedrag" inputmode="decimal" required placeholder="25,00">
+      </label>
+      <label class="veld">Valuta
+        <select name="valuta"><option value="EUR">€ euro</option><option value="USD">$ dollar</option></select>
+      </label>
+    </div>
+    <div class="rijtje">
+      <label class="veld">Per
+        <select name="interval">
+          <option value="maand">Maand</option>
+          <option value="jaar">Jaar</option>
+          <option value="eenmalig">Eenmalig</option>
+        </select>
+      </label>
+      <label class="veld">Soort
+        <select name="categorie"></select>
+      </label>
+    </div>
+    <div class="rijtje">
+      <label class="veld">Vanaf
+        <input type="date" name="begin_op" required>
+      </label>
+      <label class="veld">Tot en met (leeg = loopt nog)
+        <input type="date" name="eind_op">
+      </label>
+    </div>
+    <label class="veld">Notitie
+      <input type="text" name="notitie" maxlength="1000" placeholder="Optioneel">
+    </label>
+    <div class="knoppen">
+      <button class="knop gevaar links" type="button" data-actie="verwijder-kost" id="knop-verwijder-kost">Verwijderen</button>
+      <button class="knop stil" type="button" data-actie="sluit-venster">Annuleren</button>
+      <button class="knop" type="submit">Opslaan</button>
+    </div>
+  </form>
+</dialog>
+
 <div class="menu" id="menu" hidden></div>
 <div class="toast" id="toast" hidden></div>
 
@@ -886,7 +1134,11 @@
     tickets: [],
     notities: [],
     stats: null,
-    tab: leesLokaal('histora-beheer-tab', 'tickets'),
+    tab: leesLokaal('histora-beheer-tab', 'overzicht'),
+    periode: leesLokaal('histora-beheer-periode', '30d'),
+    thema: leesLokaal('histora-beheer-thema', 'systeem'),
+    kosten: [],
+    kostId: null,
     zoek: '',
     soort: '',
     bron: '',
@@ -980,12 +1232,13 @@
   }
 
   function kiesTab(tab) {
-    if (!['tickets', 'hub', 'stats', 'trends'].includes(tab)) tab = 'tickets';
+    if (!['overzicht', 'tickets', 'hub', 'stats', 'trends'].includes(tab)) tab = 'overzicht';
     staat.tab = tab;
     bewaarLokaal('histora-beheer-tab', tab);
     for (const knop of document.querySelectorAll('.tab')) {
       knop.setAttribute('aria-selected', String(knop.dataset.tab === tab));
     }
+    $('#tab-overzicht').hidden = tab !== 'overzicht';
     $('#tab-tickets').hidden = tab !== 'tickets';
     $('#tab-hub').hidden = tab !== 'hub';
     $('#tab-stats').hidden = tab !== 'stats';
@@ -993,6 +1246,7 @@
     if (tab !== 'tickets') sluitPaneel();
     if (tab === 'hub') laadNotities();
     if (tab === 'stats') laadStats();
+    if (tab === 'overzicht') laadOverzicht();
   }
 
   async function start() {
@@ -1045,6 +1299,7 @@
     staat.tickets = [];
     staat.notities = [];
     staat.stats = null;
+    staat.kosten = [];
     toon('login');
   }
 
@@ -2095,9 +2350,415 @@
   }
 
   // Thema gewisseld: de grafieken lezen hun kleuren één keer, dus opnieuw tekenen.
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', hertekenGrafieken);
+  function hertekenGrafieken() {
     if (staat.tab === 'stats') tekenReeks();
+    if (staat.tab === 'overzicht') tekenOverzicht();
+  }
+
+  // =========================================================================================
+  // Thema
+  // =========================================================================================
+
+  // Systeem → licht → donker → systeem. De keuze staat alleen in deze browser.
+  const THEMA = {
+    systeem: { icoon: '🖥️', naam: 'Thema: volgt het systeem', volgende: 'licht', data: null },
+    licht:   { icoon: '☀️', naam: 'Thema: licht', volgende: 'donker', data: 'light' },
+    donker:  { icoon: '🌙', naam: 'Thema: donker', volgende: 'systeem', data: 'dark' },
+  };
+
+  function pasThemaToe() {
+    const t = THEMA[staat.thema] || THEMA.systeem;
+    if (t.data) document.documentElement.dataset.theme = t.data;
+    else delete document.documentElement.dataset.theme;
+    const knop = $('#thema-knop');
+    knop.textContent = t.icoon;
+    knop.title = t.naam;
+  }
+
+  function wisselThema() {
+    staat.thema = (THEMA[staat.thema] || THEMA.systeem).volgende;
+    bewaarLokaal('histora-beheer-thema', staat.thema);
+    pasThemaToe();
+    hertekenGrafieken();
+  }
+
+  // =========================================================================================
+  // Overzicht
+  // =========================================================================================
+
+  // De reeksen uit `beheer_statistieken`: 30 dagen, 12 weken, 12 maanden.
+  const PERIODE = {
+    '7d':  { stap: 'dag',   n: 7,  label: 'afgelopen 7 dagen' },
+    '30d': { stap: 'dag',   n: 30, label: 'afgelopen 30 dagen' },
+    '12w': { stap: 'week',  n: 12, label: 'afgelopen 12 weken' },
+    '12m': { stap: 'maand', n: 12, label: 'afgelopen 12 maanden' },
+  };
+  const KOST_CATEGORIE = {
+    hosting:      { label: 'Hosting & backend', kleur: '--serie-1' },
+    ontwikkeling: { label: 'Ontwikkeling & builds', kleur: '--serie-2' },
+    content:      { label: 'Content (beeld, stem)', kleur: '--serie-3' },
+    marketing:    { label: 'Marketing', kleur: '--serie-4' },
+    winkel:       { label: 'Winkels (Apple, Google)', kleur: '--serie-neutraal' },
+    overig:       { label: 'Overig', kleur: '--muted' },
+  };
+  // Een vaste koers, met opzet: een live koers vraagt een extra dienst voor een paar dollars.
+  const USD_NAAR_EUR = 0.92;
+  const euroFmt = new Intl.NumberFormat('nl-NL', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+  const euroPrecies = new Intl.NumberFormat('nl-NL', { style: 'currency', currency: 'EUR' });
+  const dollarPrecies = new Intl.NumberFormat('nl-NL', { style: 'currency', currency: 'USD' });
+
+  const LINKS = [
+    { icoon: '🔥', naam: 'Firebase', url: 'https://console.firebase.google.com/project/histora-183dd/overview' },
+    { icoon: '📊', naam: 'Google Analytics', url: 'https://analytics.google.com/' },
+    { icoon: '💰', naam: 'AdMob', url: 'https://apps.admob.com/' },
+    { icoon: '▶️', naam: 'Play Console', url: 'https://play.google.com/console' },
+    { icoon: '🍎', naam: 'App Store Connect', url: 'https://appstoreconnect.apple.com/' },
+    { icoon: '🧾', naam: 'RevenueCat', url: 'https://app.revenuecat.com/' },
+    { icoon: '🗄️', naam: 'Supabase', url: 'https://supabase.com/dashboard/project/nxwdhuuouhbmykgykbov' },
+    { icoon: '🏗️', naam: 'EAS builds', url: 'https://expo.dev/accounts/quinten1234/projects/chronicles-app/builds' },
+    { icoon: '🐙', naam: 'GitHub', url: 'https://github.com/Demore2/histora' },
+  ];
+  const BRONNEN = [
+    { icoon: '🗄️', naam: 'Supabase', wat: 'lezers, actief, abonnementen', status: 'live' },
+    { icoon: '✍️', naam: 'Kosten', wat: 'met de hand, hieronder', status: 'hand' },
+    { icoon: '🧾', naam: 'RevenueCat', wat: 'omzet, MRR, proefperiodes', status: 'Fase 2' },
+    { icoon: '📊', naam: 'Google Analytics', wat: 'DAU, retentie, schermen', status: 'Fase 3' },
+    { icoon: '💰', naam: 'AdMob', wat: 'advertentie-inkomsten', status: 'Fase 4' },
+    { icoon: '▶️', naam: 'Google Play', wat: 'downloads', status: 'Fase 4' },
+  ];
+
+  let laadtOverzicht = false;
+  async function laadOverzicht(stil = false) {
+    if (laadtOverzicht || !staat.ik) return;
+    laadtOverzicht = true;
+    const [st, ko] = await Promise.all([
+      sb.rpc('beheer_statistieken', { p_intern_meetellen: staat.internMeetellen }),
+      sb.rpc('beheer_kosten_lijst'),
+    ]);
+    laadtOverzicht = false;
+    if (st.error) { if (!stil) toast(foutTekst(st.error), true); }
+    else staat.stats = st.data;
+    // Zonder ronde 9 bestaat de kostentabel nog niet; dan zegt de kaart dat, de rest blijft staan.
+    staat.kosten = ko.error ? null : ko.data || [];
+    if (ko.error && !stil) console.warn('beheer_kosten_lijst:', ko.error.message);
+    tekenOverzicht();
+  }
+
+  /** Wat een post nu per maand kost, in centen euro. Eenmalig en niet-lopend = 0. */
+  function maandCent(k, vandaag = new Date().toISOString().slice(0, 10)) {
+    if (k.begin_op > vandaag || (k.eind_op && k.eind_op < vandaag)) return 0;
+    const euro = k.valuta === 'USD' ? k.bedrag_cent * USD_NAAR_EUR : k.bedrag_cent;
+    if (k.interval === 'maand') return euro;
+    if (k.interval === 'jaar') return euro / 12;
+    return 0;
+  }
+  /** Eenmalige kosten van de afgelopen 12 maanden, in centen euro. */
+  function eenmaligCent(kosten) {
+    const grens = new Date();
+    grens.setFullYear(grens.getFullYear() - 1);
+    const g = grens.toISOString().slice(0, 10);
+    return kosten
+      .filter((k) => k.interval === 'eenmalig' && k.begin_op >= g)
+      .reduce((som, k) => som + (k.valuta === 'USD' ? k.bedrag_cent * USD_NAAR_EUR : k.bedrag_cent), 0);
+  }
+
+  /** Een sparkline als inline SVG: geen as, geen labels, alleen de vorm van de reeks. */
+  function spark(waarden, kleurNaam) {
+    const ns = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(ns, 'svg');
+    svg.setAttribute('class', 'spark');
+    svg.setAttribute('viewBox', '0 0 100 40');
+    svg.setAttribute('preserveAspectRatio', 'none');
+    svg.setAttribute('aria-hidden', 'true');
+    if (!waarden || waarden.length < 2) return svg;
+    const max = Math.max(...waarden, 1);
+    const min = Math.min(...waarden, 0);
+    const xy = waarden.map((w, i) => [
+      (i / (waarden.length - 1)) * 100,
+      36 - ((w - min) / (max - min || 1)) * 30,
+    ]);
+    const lijnPad = xy.map(([x, y], i) => `${i ? 'L' : 'M'}${x.toFixed(1)},${y.toFixed(1)}`).join(' ');
+    const c = kleur(kleurNaam);
+    const vlak = document.createElementNS(ns, 'path');
+    vlak.setAttribute('d', `${lijnPad} L100,40 L0,40 Z`);
+    vlak.setAttribute('fill', c);
+    vlak.setAttribute('fill-opacity', '.12');
+    const lijnEl = document.createElementNS(ns, 'path');
+    lijnEl.setAttribute('d', lijnPad);
+    lijnEl.setAttribute('fill', 'none');
+    lijnEl.setAttribute('stroke', c);
+    lijnEl.setAttribute('stroke-width', '2');
+    lijnEl.setAttribute('vector-effect', 'non-scaling-stroke');
+    svg.append(vlak, lijnEl);
+    return svg;
+  }
+
+  function kpi({ icoon, label, waarde, sub, delta, reeks, kleurNaam = '--serie-1', fase }) {
+    return el('div', { class: 'tegel kpi' + (fase ? ' gepland' : '') },
+      el('div', { class: 'kpi-kop' },
+        el('span', { class: 'icoon', tekst: icoon }),
+        el('span', { class: 'label', tekst: label })),
+      el('span', { class: 'waarde', tekst: waarde }),
+      delta ? el('span', { class: 'delta ' + delta.richting, tekst: delta.tekst }) : null,
+      sub ? el('span', { class: 'sub', tekst: sub }) : null,
+      fase ? el('span', {}, el('span', { class: 'label-fase', tekst: fase })) : null,
+      reeks ? spark(reeks, kleurNaam) : null,
+    );
+  }
+
+  let ovGroei = null;
+  let ovAbo = null;
+  let ovKosten = null;
+
+  function tekenOverzicht() {
+    const s = staat.stats;
+    const p = PERIODE[staat.periode] || PERIODE['30d'];
+    for (const b of document.querySelectorAll('#ov-periode button')) {
+      b.setAttribute('aria-pressed', String(b.dataset.periode === staat.periode));
+    }
+    $('#ov-intern').checked = staat.internMeetellen;
+    $('#ov-groei-periode').textContent = p.label;
+    $('#ov-koers').textContent = `$1 = ${euroPrecies.format(USD_NAAR_EUR)}`;
+
+    if (s) {
+      $('#ov-gemeten').textContent =
+        `Gemeten ${new Date(s.gemeten_op).toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`;
+      const t = s.tel;
+      const a = s.abonnementen || {};
+      const alle = s.reeksen?.[p.stap] || [];
+      const punten = alle.slice(-p.n);
+      const totaal = t.totaal || 0;
+      const betalend = (a.maand || 0) + (a.jaar || 0);
+      const premium = betalend + (a.proef || 0) + (a.handmatig || 0);
+      // Bij 30 dagen het getal uit `tel`, zodat het getal en de vergelijking dezelfde telling zijn.
+      const nieuw = staat.periode === '30d'
+        ? t.nieuw_30d
+        : punten.reduce((som, x) => som + (x.nieuw || 0), 0);
+
+      // Vergelijken kan alleen waar de reeks de periode ervoor nog bevat.
+      let nieuwDelta = null;
+      if (staat.periode === '7d') {
+        const vorig = (s.reeksen?.dag || []).slice(-14, -7).reduce((som, x) => som + (x.nieuw || 0), 0);
+        nieuwDelta = verschil(nieuw, vorig, 'de 7 dagen ervoor');
+      } else if (staat.periode === '30d') {
+        nieuwDelta = verschil(t.nieuw_30d, t.nieuw_30d_vorige, 'de 30 dagen ervoor');
+      }
+      const actiefWeek = staat.periode === '7d';
+
+      $('#ov-lezers').replaceChildren(
+        kpi({ icoon: '👥', label: 'Lezers', waarde: getalFmt.format(totaal),
+          sub: t.gasten != null ? `accounts · plus ${getalFmt.format(t.gasten)} gast(en)` : 'accounts in totaal',
+          reeks: punten.map((x) => x.totaal) }),
+        kpi({ icoon: '✨', label: 'Nieuw', waarde: getalFmt.format(nieuw), sub: p.label, delta: nieuwDelta,
+          reeks: punten.map((x) => x.nieuw), kleurNaam: '--serie-2' }),
+        kpi({ icoon: '📖', label: actiefWeek ? 'Actief deze week' : 'Actief deze maand',
+          waarde: getalFmt.format(actiefWeek ? t.actief_7d : t.actief_30d),
+          delta: actiefWeek ? verschil(t.actief_7d, t.actief_7d_vorige, 'vorige week') : null,
+          sub: `${getalFmt.format(t.actief_1d)} vandaag`,
+          reeks: punten.map((x) => x.actief), kleurNaam: '--serie-3' }),
+        kpi({ icoon: '👑', label: 'Premium', waarde: getalFmt.format(premium),
+          sub: `${totaal ? pctFmt.format(betalend / totaal) : '—'} betaalt · ${a.maand || 0} maand · ${a.jaar || 0} jaar` }),
+      );
+
+      // Abonnementen als donut, met de getallen ernaast (een donut alleen leest slecht).
+      $('#ov-abo-midden').textContent = getalFmt.format(premium);
+      const segmenten = ABO.map((x) => ({ ...x, n: a[x.id] || 0 }));
+      $('#ov-abo-lijst').replaceChildren(...segmenten.map((x) => el('div', {},
+        el('i', { style: `background:var(${x.kleur})` }),
+        el('span', { tekst: x.label }),
+        el('span', { class: 'n', tekst: String(x.n) }),
+        el('span', { class: 'pct', tekst: totaal ? pctFmt.format(x.n / totaal) : '—' }))));
+      if (window.Chart) {
+        ovAbo?.destroy();
+        // De donut toont alleen premium (het midden zegt dat ook); gratis staat in de lijst eronder.
+        const betaald = segmenten.filter((x) => x.id !== 'gratis' && x.n > 0);
+        ovAbo = new Chart($('#ov-grafiek-abo'), betaald.length
+          ? donut(betaald.map((x) => x.label), betaald.map((x) => x.n), betaald.map((x) => x.kleur))
+          : donut(['Nog niemand'], [1], ['--raster']));
+        ovGroei?.destroy();
+        ovGroei = new Chart($('#ov-grafiek-groei'), {
+          type: 'line',
+          data: {
+            labels: punten.map((x) => asLabel[p.stap](x.begin)),
+            datasets: [
+              lijn('Actief', punten.map((x) => x.actief), '--serie-1', true),
+              lijn('Nieuw', punten.map((x) => x.nieuw), '--serie-2'),
+            ],
+          },
+          options: basisOpties(),
+        });
+      }
+    }
+
+    tekenGeld();
+    tekenKosten();
+    $('#ov-bronnen').replaceChildren(...BRONNEN.map((b) => el('div', { class: 'bron' },
+      el('span', { tekst: b.icoon }),
+      el('span', { class: 'wat' }, el('strong', { tekst: b.naam }), el('small', { tekst: b.wat })),
+      el('span', {
+        class: 'label-fase' + (b.status === 'live' ? ' live' : b.status === 'hand' ? ' hand' : ''),
+        tekst: b.status === 'live' ? 'Live' : b.status === 'hand' ? 'Handmatig' : b.status,
+      }))));
+    $('#ov-links').replaceChildren(...LINKS.map((l) => el('a', { href: l.url, target: '_blank', rel: 'noopener noreferrer' },
+      el('span', { tekst: l.icoon }), el('span', { tekst: l.naam }), el('span', { class: 'pijl', tekst: '↗' }))));
+  }
+
+  function donut(labels, data, kleurNamen) {
+    return {
+      type: 'doughnut',
+      data: {
+        labels,
+        datasets: [{
+          data,
+          backgroundColor: kleurNamen.map(kleur),
+          borderColor: kleur('--panel'),
+          borderWidth: 2,
+          hoverOffset: 4,
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: false,
+        cutout: '72%',
+        plugins: { legend: { display: false }, tooltip: { padding: 10, boxPadding: 4, usePointStyle: true } },
+      },
+    };
+  }
+
+  function tekenGeld() {
+    const kosten = staat.kosten || [];
+    const perMaand = kosten.reduce((som, k) => som + maandCent(k), 0);
+    const eenmalig = eenmaligCent(kosten);
+    $('#ov-geld').replaceChildren(
+      kpi({ icoon: '📈', label: 'Omzet (abonnementen)', waarde: 'Nog niet gekoppeld',
+        sub: 'MRR, omzet en proefperiodes uit RevenueCat', fase: 'Fase 2' }),
+      kpi({ icoon: '💰', label: 'Advertenties', waarde: 'Nog niet gekoppeld',
+        sub: 'Inkomsten en eCPM uit AdMob', fase: 'Fase 4' }),
+      kpi({ icoon: '🧾', label: 'Kosten', waarde: staat.kosten ? euroFmt.format(perMaand / 100) : '—',
+        sub: staat.kosten
+          ? (eenmalig ? `+ ${euroFmt.format(eenmalig / 100)} eenmalig (12 mnd)` : `${kosten.filter((k) => maandCent(k) > 0).length} lopende posten`)
+          : 'Draai supabase/feedback-beheer-migratie-9.sql' }),
+      kpi({ icoon: '⚖️', label: 'Resultaat', waarde: staat.kosten ? euroFmt.format(-perMaand / 100) : '—',
+        sub: 'omzet min kosten; tot fase 2 alleen de kosten' }),
+    );
+  }
+
+  function tekenKosten() {
+    const doel = $('#ov-kosten');
+    if (staat.kosten === null) {
+      doel.replaceChildren(el('p', { class: 'leeg-melding', tekst: 'Nog niet beschikbaar: draai supabase/feedback-beheer-migratie-9.sql.' }));
+      ovKosten?.destroy();
+      ovKosten = null;
+      $('#ov-kosten-midden').textContent = '—';
+      return;
+    }
+    const kosten = staat.kosten;
+    if (!kosten.length) {
+      doel.replaceChildren(el('p', { class: 'leeg-melding', tekst: 'Nog geen kosten ingevoerd. Begin met de vaste lasten: Supabase, Expo, Apple, Google.' }));
+    } else {
+      doel.replaceChildren(el('div', { class: 'tabel-schuif' }, el('table', { class: 'lijst' },
+        el('thead', {}, el('tr', {},
+          el('th', { tekst: 'Post' }), el('th', { class: 'kost-soort', tekst: 'Soort' }),
+          el('th', { class: 'getal', tekst: 'Bedrag' }), el('th', { class: 'getal', tekst: 'Per maand' }))),
+        el('tbody', {}, kosten.map((k) => {
+          const c = KOST_CATEGORIE[k.categorie] || KOST_CATEGORIE.overig;
+          const bedrag = (k.valuta === 'USD' ? dollarPrecies : euroPrecies).format(k.bedrag_cent / 100);
+          const per = { maand: '/ maand', jaar: '/ jaar', eenmalig: 'eenmalig' }[k.interval];
+          const gestopt = k.eind_op && k.eind_op < new Date().toISOString().slice(0, 10);
+          return el('tr', { class: 'kost-rij' + (gestopt ? ' gestopt' : ''), onclick: () => openKost(k.id), title: k.notitie || '' },
+            el('td', {}, el('div', { tekst: k.naam }), k.notitie ? el('div', { class: 'zacht', tekst: k.notitie }) : null),
+            el('td', { class: 'kost-soort' }, el('span', { class: 'categorie-stip', style: `background:var(${c.kleur})` }), c.label),
+            el('td', { class: 'getal', tekst: `${bedrag} ${per}` }),
+            el('td', { class: 'getal', tekst: maandCent(k) ? euroPrecies.format(maandCent(k) / 100) : '—' }));
+        })))));
+    }
+
+    const perCat = Object.keys(KOST_CATEGORIE).map((id) => ({
+      id, ...KOST_CATEGORIE[id],
+      cent: kosten.filter((k) => k.categorie === id).reduce((som, k) => som + maandCent(k), 0),
+    })).filter((x) => x.cent > 0);
+    $('#ov-kosten-midden').textContent = euroFmt.format(perCat.reduce((som, x) => som + x.cent, 0) / 100);
+    if (window.Chart) {
+      ovKosten?.destroy();
+      ovKosten = new Chart($('#ov-grafiek-kosten'), perCat.length
+        ? donut(perCat.map((x) => x.label), perCat.map((x) => Math.round(x.cent) / 100), perCat.map((x) => x.kleur))
+        : donut(['Nog niets'], [1], ['--raster']));
+    }
+  }
+
+  function openKost(id) {
+    if (staat.kosten === null) return toast('Draai eerst supabase/feedback-beheer-migratie-9.sql.', true);
+    const k = id ? staat.kosten.find((x) => x.id === id) : null;
+    staat.kostId = k?.id || null;
+    const form = $('#form-kost');
+    form.categorie.replaceChildren(...Object.entries(KOST_CATEGORIE).map(([v, c]) => el('option', { value: v, tekst: c.label })));
+    $('#kost-titel').textContent = k ? 'Kost bewerken' : 'Kost toevoegen';
+    $('#knop-verwijder-kost').hidden = !k;
+    form.naam.value = k?.naam || '';
+    form.bedrag.value = k ? (k.bedrag_cent / 100).toFixed(2).replace('.', ',') : '';
+    form.valuta.value = k?.valuta || 'EUR';
+    form.interval.value = k?.interval || 'maand';
+    form.categorie.value = k?.categorie || 'hosting';
+    form.begin_op.value = k?.begin_op || new Date().toISOString().slice(0, 10);
+    form.eind_op.value = k?.eind_op || '';
+    form.notitie.value = k?.notitie || '';
+    $('#venster-kost').showModal();
+    form.naam.focus();
+  }
+
+  $('#form-kost').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    // "25,00", "25.00" en "1.250,50" mogen allemaal.
+    const rauw = form.bedrag.value.trim().replace(/\s|€|\$/g, '');
+    const getal = Number(rauw.includes(',') ? rauw.replace(/\./g, '').replace(',', '.') : rauw);
+    if (!Number.isFinite(getal) || getal < 0) return toast('Dat bedrag kan ik niet lezen.', true);
+    const knop = form.querySelector('button[type="submit"]');
+    knop.disabled = true;
+    const { error } = await sb.rpc('beheer_kost_opslaan', {
+      p_id: staat.kostId,
+      p_naam: form.naam.value,
+      p_categorie: form.categorie.value,
+      p_bedrag_cent: Math.round(getal * 100),
+      p_valuta: form.valuta.value,
+      p_interval: form.interval.value,
+      p_begin_op: form.begin_op.value,
+      p_eind_op: form.eind_op.value || null,
+      p_notitie: form.notitie.value,
+    });
+    knop.disabled = false;
+    if (error) return toast(foutTekst(error), true);
+    $('#venster-kost').close();
+    toast(staat.kostId ? 'Kost bijgewerkt.' : 'Kost toegevoegd.');
+    await laadOverzicht(true);
   });
+
+  async function verwijderKost() {
+    const k = staat.kosten?.find((x) => x.id === staat.kostId);
+    if (!k || !confirm(`"${k.naam}" verwijderen? Wil je hem alleen stoppen, vul dan een einddatum in.`)) return;
+    const { error } = await sb.rpc('beheer_kost_verwijderen', { p_id: k.id });
+    if (error) return toast(foutTekst(error), true);
+    $('#venster-kost').close();
+    toast('Kost verwijderd.');
+    await laadOverzicht(true);
+  }
+
+  $('#ov-periode').addEventListener('click', (e) => {
+    const knop = e.target.closest('button');
+    if (!knop) return;
+    staat.periode = knop.dataset.periode;
+    bewaarLokaal('histora-beheer-periode', staat.periode);
+    tekenOverzicht();
+  });
+  $('#ov-intern').addEventListener('change', (e) => {
+    staat.internMeetellen = e.target.checked;
+    $('#stats-intern').checked = e.target.checked;
+    laadOverzicht();
+  });
+
+  pasThemaToe();
 
   // =========================================================================================
   // Bediening
@@ -2116,6 +2777,10 @@
     else if (actie === 'sluit-venster') e.target.closest('dialog')?.close();
     else if (actie === 'stats-vernieuwen') laadStats();
     else if (actie === 'streaks-downloaden') downloadStreaks();
+    else if (actie === 'thema') wisselThema();
+    else if (actie === 'overzicht-vernieuwen') laadOverzicht();
+    else if (actie === 'nieuwe-kost') openKost(null);
+    else if (actie === 'verwijder-kost') verwijderKost();
   });
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
@@ -2158,6 +2823,7 @@
     if (staat.tab === 'tickets') laad(true);
     else if (staat.tab === 'hub') laadNotities(true);
     else if (staat.tab === 'stats') laadStats(true);
+    else if (staat.tab === 'overzicht') laadOverzicht(true);
   }
   setInterval(ververs, VERVERS_MS);
   document.addEventListener('visibilitychange', ververs);

@@ -1380,6 +1380,12 @@ lokaal: `npx http-server docs -p 5510`.
   `-3.sql`), niet op persoon, en een rij naar een groep slepen zet die status. Eigenaar is een
   kolom plus filter. Bewust: slepen betekent zo altijd één ding. HTML5-slepen werkt niet op touch;
   daar blijven de klikmenu's.
+- **Sinds 2026-11-03 opent het bord op *Overzicht*** (glaskaarten in beige/Phoxy-oranje, thema-knop
+  systeem/licht/donker in `localStorage`): lezers en abonnementen uit `beheer_statistieken`, en
+  **kosten met de hand** in `public.beheer_kosten` (`feedback-beheer-migratie-9.sql`, centen, per
+  maand/jaar/eenmalig, USD tegen een vaste koers `USD_NAAR_EUR`). Omzet (RevenueCat), Google Analytics
+  en AdMob zijn gemarkeerde plekken voor fase 2-4: die sleutels mogen nooit in deze publieke pagina,
+  dus ze komen via één edge function (`beheer-dashboard`) die eerst `is_beheerder()` controleert.
 - **Drie tabbladen.** *Tickets*; de *Ideeënhub* (`public.beheer_notities`: idee/doel/taak — alleen
   voor de beheerders; sinds `-4.sql` hetzelfde bord als de tickets, met status
   open/in_behandeling/wacht/afgerond, prioriteit hoog/medium/lang en een eigenaar; de oude kolom
