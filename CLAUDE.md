@@ -1389,7 +1389,12 @@ lokaal: `npx http-server docs -p 5510`.
   bron los op (`ok` / `niet_geconfigureerd` / `fout`, één kapotte bron neemt de rest niet mee) en
   cachet in `public.beheer_cache` (`-10.sql`, 1 uur, Play 6 uur). Secrets en de stappen per bron:
   `supabase/README-beheer-dashboard.md`; het AdMob-refresh-token komt uit
-  `scripts/admob-refresh-token.mjs` (AdMob kent geen serviceaccounts).
+  `scripts/admob-refresh-token.mjs` (AdMob kent geen serviceaccounts). **Het tabblad Statistieken is
+  weg**; wat alleen daar stond (verhalen, retentie, top 10 streaks, intro-trechter) staat onderaan het
+  Overzicht. De trechter telt *installaties* (ook Play-/Apple-reviewers en robots, die geen e-mail
+  hebben) en heeft sinds `-11.sql` een stand "Met account". `-11.sql` zet ook `@cloudtestlabaccounts.com`
+  (Firebase Test Lab = Play's prelanceringsrobots) in `is_testaccount()`, mét de regel die
+  `uitgesloten_accounts` leest — die staat niet in `-7.sql`, dus neem hem mee bij elke herdefinitie.
 - **Drie tabbladen.** *Tickets*; de *Ideeënhub* (`public.beheer_notities`: idee/doel/taak — alleen
   voor de beheerders; sinds `-4.sql` hetzelfde bord als de tickets, met status
   open/in_behandeling/wacht/afgerond, prioriteit hoog/medium/lang en een eigenaar; de oude kolom

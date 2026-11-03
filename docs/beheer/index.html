@@ -668,12 +668,52 @@
   table.lijst tr.gestopt td { color: var(--muted); text-decoration: line-through; }
   .categorie-stip { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; }
 
+  /* Intro-trechter: vier kerngetallen, dan één balk per stap met de afhakers ertussen. */
+  .trechter-samenvatting { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+  .trechter-stappen { display: grid; gap: 6px; }
+  .trechter-rij {
+    display: grid; grid-template-columns: 26px minmax(110px, 170px) minmax(0, 1fr) 44px 52px 64px;
+    gap: 10px; align-items: center; font-size: 13px;
+  }
+  .trechter-rij .nr {
+    width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--accent-zacht); color: var(--accent); font-weight: 800; font-size: 11px;
+  }
+  .trechter-rij .baan { height: 14px; border-radius: 7px; background: var(--hover); overflow: hidden; }
+  .trechter-rij .vul {
+    height: 100%; border-radius: 7px; min-width: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--serie-4));
+    transition: width .4s ease;
+  }
+  .trechter-rij .n { text-align: right; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .trechter-rij .pct { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .trechter-rij .weg { white-space: nowrap; text-align: right; font-size: 12px; color: var(--slecht); font-weight: 700; font-variant-numeric: tabular-nums; }
+  .trechter-rij .weg.nul { color: var(--muted); font-weight: 400; }
+  .afloop { display: flex; flex-wrap: wrap; gap: 8px; }
+  .afloop .pil {
+    display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px;
+    background: var(--hover); font-size: 13px; font-weight: 600;
+  }
+  .afloop .pil strong { font-size: 15px; }
+  .afloop .pil i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+  .streak-lijst { display: grid; gap: 4px; }
+  .streak-rij { display: grid; grid-template-columns: 28px minmax(0, 1fr) auto; gap: 8px; align-items: center; padding: 6px 4px; border-bottom: 1px solid var(--line); }
+  .streak-rij:last-child { border-bottom: 0; }
+  .streak-rij .plek { text-align: center; font-weight: 800; color: var(--muted); }
+  .streak-rij .wie { display: grid; min-width: 0; }
+  .streak-rij .wie span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .streak-rij .wie small { color: var(--muted); font-size: 11px; }
+  .streak-rij .dagen { font-weight: 800; background: var(--accent-zacht); color: var(--accent); border-radius: 999px; padding: 3px 10px; font-size: 12px; white-space: nowrap; }
+
   @media (max-width: 1100px) {
     .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .ov-raster { grid-template-columns: minmax(0, 1fr); }
   }
   @media (max-width: 600px) {
     table.lijst .kost-soort { display: none; }
+    .trechter-samenvatting { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .trechter-rij { grid-template-columns: 24px minmax(80px, 110px) minmax(0, 1fr) 36px 44px; }
+    .trechter-rij .weg { display: none; }
   }
 
   /* ---------- Smal scherm ---------- */
@@ -746,7 +786,6 @@
       <button class="tab" type="button" role="tab" data-tab="overzicht" aria-selected="true">Overzicht</button>
       <button class="tab" type="button" role="tab" data-tab="tickets" aria-selected="false">Tickets<span class="tel" id="tel-tickets"></span></button>
       <button class="tab" type="button" role="tab" data-tab="hub" aria-selected="false">Ideeënhub<span class="tel" id="tel-hub"></span></button>
-      <button class="tab" type="button" role="tab" data-tab="stats" aria-selected="false">Statistieken</button>
       <button class="tab" type="button" role="tab" data-tab="trends" aria-selected="false">Trends</button>
     </nav>
     <div class="wie">
@@ -812,6 +851,7 @@
       </div>
 
       <div class="ov-raster">
+        <div class="ov-kolom">
         <section class="grafiek">
           <div class="grafiek-kop">
             <h2>Kosten</h2>
@@ -822,6 +862,16 @@
             kosten tellen niet mee in het maandbedrag maar staan apart. Dollars worden omgerekend tegen
             een vaste koers van <span id="ov-koers"></span>.</p>
         </section>
+        <section class="grafiek">
+          <div class="grafiek-kop"><h2>Populairste verhalen</h2></div>
+          <div id="verhalen-lijst"></div>
+        </section>
+        <section class="grafiek">
+          <div class="grafiek-kop"><h2>Retentie</h2></div>
+          <div class="kengetallen" id="retentie"></div>
+          <p class="voetnoot">D1: van wie op een dag begon, hoeveel de dag erna terugkwamen. D7: hoeveel er een week later nog actief waren. Telt accounts, net als Lezers.</p>
+        </section>
+        </div>
         <div class="ov-kolom">
           <section class="grafiek">
             <div class="grafiek-kop"><h2>Kosten per soort</h2></div>
@@ -829,6 +879,13 @@
               <canvas id="ov-grafiek-kosten" role="img" aria-label="Kosten per categorie"></canvas>
               <div class="donut-midden"><strong id="ov-kosten-midden">—</strong><span>per maand</span></div>
             </div>
+          </section>
+          <section class="grafiek">
+            <div class="grafiek-kop">
+              <h2>Top 10 streaks</h2>
+              <button class="knop stil klein" type="button" data-actie="streaks-downloaden">CSV</button>
+            </div>
+            <div id="streaks-lijst"></div>
           </section>
           <section class="grafiek">
             <div class="grafiek-kop"><h2>Bronnen</h2></div>
@@ -840,6 +897,22 @@
           </section>
         </div>
       </div>
+
+      <div class="sectie-kop"><h2>Lezen</h2><span class="zacht">intro, verhalen en terugkeer</span></div>
+      <section class="grafiek">
+        <div class="grafiek-kop">
+          <h2>Intro-trechter</h2>
+          <span class="zacht">laatste 30 dagen</span>
+          <div class="segment" id="trechter-wie" role="group" aria-label="Welke installaties">
+            <button type="button" data-wie="alle" aria-pressed="true">Alle installaties</button>
+            <button type="button" data-wie="accounts" aria-pressed="false">Met account</button>
+          </div>
+        </div>
+        <div class="trechter-samenvatting" id="trechter-samenvatting"></div>
+        <div id="intro-trechter"></div>
+        <div class="afloop" id="trechter-afloop"></div>
+        <p class="voetnoot" id="trechter-uitleg"></p>
+      </section>
     </div>
   </section>
 
@@ -888,7 +961,6 @@
     <main class="bord" id="hub-bord"></main>
   </section>
 
-  <!-- Statistieken -->
   <!-- Trends: een lege plek voor de Google Trends-koppeling (zoekwoorden voor ads en content). -->
   <section id="tab-trends" hidden>
     <div class="onderhoud">
@@ -899,74 +971,6 @@
     </div>
   </section>
 
-  <section id="tab-stats" hidden>
-    <div class="balk">
-      <label class="schakel"><input type="checkbox" id="stats-intern"> Eigen accounts en testaccounts meetellen</label>
-      <button class="chip-knop" type="button" data-actie="stats-vernieuwen" title="Vernieuwen">↻</button>
-      <span class="rechts" id="stats-gemeten"></span>
-    </div>
-    <div class="stats">
-      <div class="tegels" id="tegels"></div>
-      <div class="grafieken">
-        <section class="grafiek">
-          <div class="grafiek-kop">
-            <h2>Nieuwe en actieve gebruikers</h2>
-            <div class="segment" id="reeks-stap" role="group" aria-label="Periode">
-              <button type="button" data-stap="dag" aria-pressed="false">Dag</button>
-              <button type="button" data-stap="week" aria-pressed="true">Week</button>
-              <button type="button" data-stap="maand" aria-pressed="false">Maand</button>
-            </div>
-          </div>
-          <div class="legenda">
-            <span><i style="background:var(--serie-1)"></i>Actief</span>
-            <span><i style="background:var(--serie-2)"></i>Nieuw</span>
-          </div>
-          <div class="canvas-houder"><canvas id="grafiek-activiteit" role="img" aria-label="Nieuwe en actieve gebruikers per periode"></canvas></div>
-          <details class="tabelweergave"><summary>Als tabel</summary><div id="tabel-activiteit"></div></details>
-        </section>
-        <section class="grafiek">
-          <div class="grafiek-kop"><h2>Abonnementen</h2></div>
-          <div class="verdeling" id="verdeling" role="img" aria-label="Verdeling van abonnementen"></div>
-          <div class="verdeling-lijst" id="verdeling-lijst"></div>
-        </section>
-      </div>
-      <section class="grafiek">
-        <div class="grafiek-kop"><h2>Totaal aantal gebruikers</h2></div>
-        <div class="canvas-houder"><canvas id="grafiek-totaal" role="img" aria-label="Totaal aantal gebruikers in de tijd"></canvas></div>
-      </section>
-      <section class="grafiek">
-        <div class="grafiek-kop"><h2>Intro-trechter (30 dagen)</h2></div>
-        <div id="intro-trechter"></div>
-      </section>
-      <div class="grafieken">
-        <section class="grafiek">
-          <div class="grafiek-kop"><h2>Populairste verhalen</h2></div>
-          <div id="verhalen-lijst"></div>
-        </section>
-        <div style="display:grid;gap:16px;align-content:start;min-width:0">
-          <section class="grafiek">
-            <div class="grafiek-kop"><h2>Retentie</h2></div>
-            <div class="kengetallen" id="retentie"></div>
-          </section>
-        </div>
-      </div>
-      <section class="grafiek">
-        <div class="grafiek-kop">
-          <h2>Top 10 streaks</h2>
-          <button class="knop stil klein" type="button" data-actie="streaks-downloaden">Download CSV</button>
-        </div>
-        <div id="streaks-lijst"></div>
-      </section>
-      <p class="voetnoot">
-        <strong>Gebruikers</strong> zijn accounts, geen downloads: downloads houdt Google Play bij
-        en staan niet in Supabase. <strong>Actief</strong> betekent dat iemand in die periode
-        inlogde, een hoofdstuk las, een verhaal opende, stemde of feedback stuurde — de app openen
-        zonder iets te doen telt (nog) niet mee. <strong>Conversie</strong> is betalende abonnees
-        (maand + jaar) gedeeld door alle gebruikers; proefperiodes en handmatig premium tellen daar
-        niet in mee.
-      </p>
-    </div>
-  </section>
 </div>
 
 <!-- Zijpaneel met één ticket -->
@@ -1156,6 +1160,7 @@
     thema: leesLokaal('histora-beheer-thema', 'systeem'),
     kosten: [],
     kostId: null,
+    trechterAccounts: false,
     zoek: '',
     soort: '',
     bron: '',
@@ -1249,7 +1254,7 @@
   }
 
   function kiesTab(tab) {
-    if (!['overzicht', 'tickets', 'hub', 'stats', 'trends'].includes(tab)) tab = 'overzicht';
+    if (!['overzicht', 'tickets', 'hub', 'trends'].includes(tab)) tab = 'overzicht';
     staat.tab = tab;
     bewaarLokaal('histora-beheer-tab', tab);
     for (const knop of document.querySelectorAll('.tab')) {
@@ -1258,11 +1263,9 @@
     $('#tab-overzicht').hidden = tab !== 'overzicht';
     $('#tab-tickets').hidden = tab !== 'tickets';
     $('#tab-hub').hidden = tab !== 'hub';
-    $('#tab-stats').hidden = tab !== 'stats';
     $('#tab-trends').hidden = tab !== 'trends';
     if (tab !== 'tickets') sluitPaneel();
     if (tab === 'hub') laadNotities();
-    if (tab === 'stats') laadStats();
     if (tab === 'overzicht') laadOverzicht();
   }
 
@@ -2076,27 +2079,42 @@
   // Statistieken
   // =========================================================================================
 
-  let laadtStats = false;
-  async function laadStats(stil = false) {
-    if (laadtStats || !staat.ik) return;
-    laadtStats = true;
-    const { data, error } = await sb.rpc('beheer_statistieken', { p_intern_meetellen: staat.internMeetellen });
-    laadtStats = false;
-    if (error) { if (!stil) toast(foutTekst(error), true); return; }
-    staat.stats = data;
-    tekenStats();
-    // De inzichten zijn een tweede functie (ronde 6). Ontbreekt die nog, dan blijft de rest staan.
-    const inz = await sb.rpc('beheer_inzichten', { p_intern_meetellen: staat.internMeetellen });
+  /**
+   * De sectie Lezen onderaan het Overzicht: verhalen, retentie, streaks (`beheer_inzichten`) en de
+   * intro-trechter. Twee losse functies; ontbreekt er één, dan zegt die kaart dat en blijft de rest.
+   */
+  let laadtLezen = false;
+  async function laadLezen(stil = false) {
+    if (laadtLezen || !staat.ik) return;
+    laadtLezen = true;
+    const [inz, tr] = await Promise.all([
+      sb.rpc('beheer_inzichten', { p_intern_meetellen: staat.internMeetellen }),
+      haalTrechter(),
+    ]);
+    laadtLezen = false;
     staat.inzichten = inz.error ? null : inz.data;
     if (inz.error && !stil) console.warn('beheer_inzichten:', inz.error.message);
     tekenInzichten();
-    // De intro-trechter (1.5.0, `gast-accounts-migratie.sql`). Zelfde regel: ontbreekt hij, dan een zin.
-    // Sinds `-8.sql` laat hij ook de eigen en testinstallaties weg; tot die gedraaid is de oude vorm.
-    let tr = await sb.rpc('beheer_intro_trechter', { p_dagen: 30, p_intern_meetellen: staat.internMeetellen });
-    if (tr.error) tr = await sb.rpc('beheer_intro_trechter', { p_dagen: 30 });
-    staat.introTrechter = tr.error ? null : tr.data;
+    staat.introTrechter = tr;
     tekenIntroTrechter();
   }
+
+  /** Met `p_alleen_accounts` sinds ronde 11; zonder die migratie de vorige vorm (alle installaties). */
+  async function haalTrechter() {
+    const basis = { p_dagen: 30, p_intern_meetellen: staat.internMeetellen };
+    let r = await sb.rpc('beheer_intro_trechter', { ...basis, p_alleen_accounts: staat.trechterAccounts });
+    if (!r.error) return r.data;
+    r = await sb.rpc('beheer_intro_trechter', basis);
+    return r.error ? null : { ...r.data, oudeVorm: true };
+  }
+
+  // De afloop van de accountstap (nummer ≥ 100) is geen stap maar een uitkomst; die staat apart.
+  const AFLOOP = {
+    afloop_google: { label: 'Bewaard met Google', kleur: '--serie-3', bewaard: true },
+    afloop_email: { label: 'Bewaard met e-mail', kleur: '--serie-2', bewaard: true },
+    afloop_inloggen: { label: 'Ingelogd op bestaand account', kleur: '--serie-1', bewaard: true },
+    afloop_later: { label: 'Later (bleef gast)', kleur: '--serie-neutraal', bewaard: false },
+  };
 
   const INTRO_STAP_NAAM = {
     welkom: 'Welkom', hallo: 'Phoxy zegt hallo', doel: 'Doel', tijdperken: 'Tijdperken', niveau: 'Niveau',
@@ -2107,29 +2125,70 @@
 
   function tekenIntroTrechter() {
     const t = staat.introTrechter;
+    for (const b of document.querySelectorAll('#trechter-wie button')) {
+      b.setAttribute('aria-pressed', String((b.dataset.wie === 'accounts') === staat.trechterAccounts));
+    }
     const doel = $('#intro-trechter');
-    if (!t) {
-      doel.replaceChildren(el('p', { class: 'leeg-melding', tekst: 'Nog niet beschikbaar: draai supabase/gast-accounts-migratie.sql.' }));
-      return;
-    }
-    const stappen = t.stappen || [];
+    const leeg = (tekst) => {
+      doel.replaceChildren(el('p', { class: 'leeg-melding', tekst }));
+      $('#trechter-samenvatting').replaceChildren();
+      $('#trechter-afloop').replaceChildren();
+      $('#trechter-uitleg').textContent = '';
+    };
+    if (!t) return leeg('Nog niet beschikbaar: draai supabase/gast-accounts-migratie.sql.');
+    if (staat.trechterAccounts && t.oudeVorm) return leeg('"Met account" vraagt supabase/feedback-beheer-migratie-11.sql.');
+
+    const alle = t.stappen || [];
+    const stappen = alle.filter((x) => x.nummer < 100);
+    const afloop = alle.filter((x) => x.nummer >= 100);
     if (!stappen.length) {
-      doel.replaceChildren(el('p', { class: 'leeg-melding', tekst: 'Nog niemand heeft de intro (1.5.0) doorlopen.' }));
-      return;
+      return leeg(staat.trechterAccounts
+        ? 'Nog niemand heeft via de intro een account gemaakt.'
+        : 'Nog niemand heeft de intro (1.5.0) doorlopen.');
     }
-    const start = Math.max(1, ...stappen.filter((s) => s.nummer === 0).map((s) => s.installaties), stappen[0].installaties);
-    doel.replaceChildren(el('table', { class: 'lijst' },
-      el('thead', {}, el('tr', {},
-        el('th', { tekst: 'Stap' }), el('th', { class: 'getal', tekst: 'Installaties' }),
-        el('th', { class: 'getal', tekst: 'van welkom' }), el('th', { tekst: '' }))),
-      el('tbody', {}, stappen.map((s) => el('tr', {},
-        el('td', { tekst: INTRO_STAP_NAAM[s.stap] || s.stap }),
-        el('td', { class: 'getal', tekst: getalFmt.format(s.installaties) }),
-        el('td', { class: 'getal zacht', tekst: pctFmt.format(s.installaties / start) }),
-        el('td', { style: 'width:40%' },
-          el('div', { style: `height:10px;border-radius:5px;background:var(--serie-1);width:${Math.round((s.installaties / start) * 100)}%` })),
-      )))));
+
+    const start = Math.max(1, stappen[0].installaties);
+    const opAccount = stappen.find((x) => x.stap === 'account')?.installaties ?? 0;
+    const bewaard = afloop.filter((x) => AFLOOP[x.stap]?.bewaard).reduce((som, x) => som + x.installaties, 0);
+    const wie = staat.trechterAccounts ? 'accounts' : 'installaties';
+
+    $('#trechter-samenvatting').replaceChildren(
+      kengetal('Begonnen', getalFmt.format(start), `${wie} op het welkomstscherm`),
+      kengetal('Tot de accountstap', getalFmt.format(opAccount), pctFmt.format(opAccount / start) + ' van wie begon'),
+      kengetal('Account bewaard', getalFmt.format(bewaard), 'met Google, e-mail of inloggen'),
+      kengetal('Doorloop', pctFmt.format(bewaard / start), 'van welkom tot een echt account'),
+    );
+
+    doel.replaceChildren(el('div', { class: 'trechter-stappen' }, stappen.map((x, i) => {
+      const vorige = i ? stappen[i - 1].installaties : x.installaties;
+      const weg = vorige - x.installaties;
+      return el('div', { class: 'trechter-rij', title: `${INTRO_STAP_NAAM[x.stap] || x.stap}: ${x.installaties} ${wie}` },
+        el('span', { class: 'nr', tekst: String(i + 1) }),
+        el('span', { tekst: INTRO_STAP_NAAM[x.stap] || x.stap }),
+        el('div', { class: 'baan' }, el('div', { class: 'vul', style: `width:${Math.round((x.installaties / start) * 100)}%` })),
+        el('span', { class: 'n', tekst: getalFmt.format(x.installaties) }),
+        el('span', { class: 'pct', tekst: pctFmt.format(x.installaties / start) }),
+        el('span', { class: 'weg' + (weg > 0 ? '' : ' nul'), tekst: i === 0 ? '' : weg > 0 ? `−${weg}` : '—', title: weg > 0 ? `${weg} afgehaakt na de vorige stap` : 'niemand afgehaakt' }));
+    })));
+
+    $('#trechter-afloop').replaceChildren(...Object.entries(AFLOOP).map(([stap, a]) => {
+      const n = afloop.find((x) => x.stap === stap)?.installaties ?? 0;
+      return el('span', { class: 'pil' }, el('i', { style: `background:var(${a.kleur})` }), a.label, el('strong', { tekst: String(n) }));
+    }));
+
+    $('#trechter-uitleg').textContent = staat.trechterAccounts
+      ? 'Alleen installaties die een echt account werden: dezelfde lezers als bovenaan het Overzicht.'
+      : 'Telt toestellen, niet accounts. Daar zitten de testrobots en reviewers van Google en Apple in (die openen de app bij elke ingestuurde versie en hebben geen e-mailadres om op te filteren), en gasten die niet bewaarden. Kies "Met account" voor alleen de echte lezers.';
   }
+
+  $('#trechter-wie').addEventListener('click', async (e) => {
+    const knop = e.target.closest('button');
+    if (!knop) return;
+    staat.trechterAccounts = knop.dataset.wie === 'accounts';
+    tekenIntroTrechter();
+    staat.introTrechter = await haalTrechter();
+    tekenIntroTrechter();
+  });
 
   function kengetal(label, waarde, sub) {
     return el('div', { class: 'kengetal' },
@@ -2177,18 +2236,16 @@
     );
 
     const top = z.streaks?.top || [];
+    const medaille = ['🥇', '🥈', '🥉'];
     $('#streaks-lijst').replaceChildren(top.length
-      ? el('div', {},
-          el('table', { class: 'lijst' },
-            el('thead', {}, el('tr', {},
-              el('th', { tekst: '#' }), el('th', { tekst: 'Lezer' }),
-              el('th', { class: 'getal', tekst: 'Dagen' }), el('th', { class: 'getal', tekst: 'Laatst gelezen' }))),
-            el('tbody', {}, top.map((s, i) => el('tr', {},
-              el('td', { class: 'zacht', tekst: String(i + 1) }),
-              el('td', { tekst: s.naam }),
-              el('td', { class: 'getal', tekst: '🔥 ' + s.dagen }),
-              el('td', { class: 'getal zacht', tekst: new Date(s.laatst).toLocaleDateString('nl-NL', { day: 'numeric', month: 'short' }) }))))),
-          el('p', { class: 'zacht', style: 'margin-top:8px', tekst: `${z.streaks.levend} lezer(s) hebben nu een lopende streak.` }))
+      ? el('div', { class: 'streak-lijst' },
+          top.map((x, i) => el('div', { class: 'streak-rij' },
+            el('span', { class: 'plek', tekst: medaille[i] || String(i + 1) }),
+            el('span', { class: 'wie' },
+              el('span', { tekst: x.naam }),
+              el('small', { tekst: 'laatst ' + new Date(x.laatst).toLocaleDateString('nl-NL', { day: 'numeric', month: 'short' }) })),
+            el('span', { class: 'dagen', tekst: `🔥 ${x.dagen}` }))),
+          el('p', { class: 'zacht', style: 'margin-top:6px', tekst: `${z.streaks.levend} lezer(s) hebben nu een lopende streak.` }))
       : el('p', { class: 'leeg-melding', tekst: 'Nog geen lopende streaks.' }));
   }
 
@@ -2211,15 +2268,6 @@
     return getComputedStyle(document.documentElement).getPropertyValue(naam).trim();
   }
 
-  function tegel(label, waarde, sub, delta) {
-    return el('div', { class: 'tegel' },
-      el('span', { class: 'label', tekst: label }),
-      el('span', { class: 'waarde', tekst: waarde }),
-      delta ? el('span', { class: 'delta ' + delta.richting, tekst: delta.tekst }) : null,
-      sub ? el('span', { class: 'sub', tekst: sub }) : null,
-    );
-  }
-
   /** "+2 t.o.v. vorige 7 dagen" — groen omhoog, rood omlaag, niets bij gelijk. */
   function verschil(nu, vorig, periode) {
     const d = nu - vorig;
@@ -2234,55 +2282,6 @@
     { id: 'handmatig', label: 'Handmatig premium', kleur: '--serie-4' },
     { id: 'gratis', label: 'Gratis', kleur: '--serie-neutraal' },
   ];
-
-  function tekenStats() {
-    const s = staat.stats;
-    if (!s) return;
-    const t = s.tel;
-    const a = s.abonnementen || {};
-    const totaal = t.totaal || 0;
-    const betalend = (a.maand || 0) + (a.jaar || 0);
-    const premium = betalend + (a.proef || 0) + (a.handmatig || 0);
-    const deel = (n) => (totaal ? pctFmt.format(n / totaal) : '—');
-
-    $('#stats-gemeten').textContent =
-      `Gemeten ${new Date(s.gemeten_op).toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`;
-
-    $('#tegels').replaceChildren(
-      tegel('Gebruikers', getalFmt.format(totaal),
-        t.gasten != null ? `accounts · plus ${getalFmt.format(t.gasten)} gast(en), ${t.gasten_30d} deze maand` : 'accounts in totaal'),
-      tegel('Nieuw (30 dagen)', getalFmt.format(t.nieuw_30d), null, verschil(t.nieuw_30d, t.nieuw_30d_vorige, 'de 30 dagen ervoor')),
-      tegel('Actief vandaag', getalFmt.format(t.actief_1d), 'laatste 24 uur'),
-      tegel('Actief deze week', getalFmt.format(t.actief_7d), null, verschil(t.actief_7d, t.actief_7d_vorige, 'vorige week')),
-      tegel('Actief deze maand', getalFmt.format(t.actief_30d), totaal ? `${deel(t.actief_30d)} van alle gebruikers` : null),
-      tegel('Premium', getalFmt.format(premium), `${deel(premium)} · ${a.maand || 0} maand · ${a.jaar || 0} jaar`),
-      tegel('Conversie', totaal ? pctFmt.format(betalend / totaal) : '—', `${betalend} betalend van ${totaal}`),
-      el('div', { class: 'tegel leeg-tegel' },
-        el('span', { class: 'label', tekst: 'Downloads (Google Play)' }),
-        el('span', { class: 'waarde', tekst: 'Nog niet gekoppeld' }),
-        el('span', { class: 'sub', tekst: 'Staat in de Play Console, niet in Supabase' }),
-      ),
-    );
-
-    // Verdeling als één gestapelde balk: deel-van-het-geheel, met de getallen er altijd naast.
-    const segmenten = ABO.map((x) => ({ ...x, n: a[x.id] || 0 })).filter((x) => x.n > 0);
-    $('#verdeling').replaceChildren(...segmenten.map((x) =>
-      el('div', { style: `flex:${x.n};background:var(${x.kleur})`, title: `${x.label}: ${x.n} (${deel(x.n)})` })));
-    $('#verdeling-lijst').replaceChildren(...ABO.map((x) => {
-      const n = a[x.id] || 0;
-      return el('div', {},
-        el('i', { style: `background:var(${x.kleur})` }),
-        el('span', { tekst: x.label }),
-        el('span', { class: 'n', tekst: String(n) }),
-        el('span', { class: 'pct', tekst: deel(n) }),
-      );
-    }));
-
-    tekenReeks();
-  }
-
-  let grafiekActiviteit = null;
-  let grafiekTotaal = null;
 
   const asLabel = {
     dag: (d) => new Date(d).toLocaleDateString('nl-NL', { day: 'numeric', month: 'short' }),
@@ -2327,49 +2326,9 @@
     };
   }
 
-  function tekenReeks() {
-    const s = staat.stats;
-    if (!s || !window.Chart) return;
-    const punten = s.reeksen?.[staat.stap] || [];
-    const labels = punten.map((p) => asLabel[staat.stap](p.begin));
-
-    grafiekActiviteit?.destroy();
-    grafiekActiviteit = new Chart($('#grafiek-activiteit'), {
-      type: 'line',
-      data: {
-        labels,
-        datasets: [
-          lijn('Actief', punten.map((p) => p.actief), '--serie-1'),
-          lijn('Nieuw', punten.map((p) => p.nieuw), '--serie-2'),
-        ],
-      },
-      options: basisOpties(),
-    });
-
-    grafiekTotaal?.destroy();
-    grafiekTotaal = new Chart($('#grafiek-totaal'), {
-      type: 'line',
-      data: { labels, datasets: [lijn('Gebruikers', punten.map((p) => p.totaal), '--serie-1', true)] },
-      options: basisOpties(),
-    });
-
-    // Dezelfde cijfers als tabel: voor wie de kleuren niet uit elkaar houdt, en om over te nemen.
-    $('#tabel-activiteit').replaceChildren(el('table', {},
-      el('thead', {}, el('tr', {},
-        el('th', { tekst: 'Periode' }), el('th', { tekst: 'Actief' }),
-        el('th', { tekst: 'Nieuw' }), el('th', { tekst: 'Totaal' }))),
-      el('tbody', {}, punten.slice().reverse().map((p) => el('tr', {},
-        el('td', { tekst: asLabel[staat.stap](p.begin) }),
-        el('td', { tekst: String(p.actief) }),
-        el('td', { tekst: String(p.nieuw) }),
-        el('td', { tekst: String(p.totaal) })))),
-    ));
-  }
-
   // Thema gewisseld: de grafieken lezen hun kleuren één keer, dus opnieuw tekenen.
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', hertekenGrafieken);
   function hertekenGrafieken() {
-    if (staat.tab === 'stats') tekenReeks();
     if (staat.tab === 'overzicht') tekenOverzicht();
   }
 
@@ -2463,6 +2422,7 @@
     if (ko.error && !stil) console.warn('beheer_kosten_lijst:', ko.error.message);
     tekenOverzicht();
     laadExtern();
+    laadLezen(stil);
   }
 
   /**
@@ -2941,7 +2901,6 @@
   });
   $('#ov-intern').addEventListener('change', (e) => {
     staat.internMeetellen = e.target.checked;
-    $('#stats-intern').checked = e.target.checked;
     laadOverzicht();
   });
 
@@ -2962,7 +2921,6 @@
     else if (actie === 'nieuwe-notitie') openNotitie(null);
     else if (actie === 'verwijder-notitie') verwijderNotitie();
     else if (actie === 'sluit-venster') e.target.closest('dialog')?.close();
-    else if (actie === 'stats-vernieuwen') laadStats();
     else if (actie === 'streaks-downloaden') downloadStreaks();
     else if (actie === 'thema') wisselThema();
     else if (actie === 'overzicht-vernieuwen') { laadOverzicht(); setTimeout(() => laadExtern(true), 0); }
@@ -2995,21 +2953,12 @@
   $('#hub-zoek').addEventListener('input', (e) => { staat.hubZoek = e.target.value.trim(); tekenHub(); });
   $('#hub-eigenaar').addEventListener('change', (e) => { staat.hubEigenaar = e.target.value; tekenHub(); });
 
-  $('#reeks-stap').addEventListener('click', (e) => {
-    const knop = e.target.closest('button');
-    if (!knop) return;
-    staat.stap = knop.dataset.stap;
-    for (const b of e.currentTarget.querySelectorAll('button')) b.setAttribute('aria-pressed', String(b === knop));
-    tekenReeks();
-  });
-  $('#stats-intern').addEventListener('change', (e) => { staat.internMeetellen = e.target.checked; laadStats(); });
 
   // Vers houden zonder realtime: elke minuut, en zodra je terugkomt naar het tabblad.
   function ververs() {
     if (document.hidden || !staat.ik) return;
     if (staat.tab === 'tickets') laad(true);
     else if (staat.tab === 'hub') laadNotities(true);
-    else if (staat.tab === 'stats') laadStats(true);
     else if (staat.tab === 'overzicht') laadOverzicht(true);
   }
   setInterval(ververs, VERVERS_MS);
