@@ -2,6 +2,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
@@ -46,6 +47,10 @@ export default function ChaptersScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
   const theme = useTheme();
+  // De kop staat zonder AppHeader (headerShown: false), dus hij moet zelf onder de statusbalk
+  // blijven. Een vaste paddingTop liet de Home-knop op toestellen met een hoge statusbalk of
+  // camera-uitsparing er half onder schuiven.
+  const insets = useSafeAreaInsets();
   const { t, v } = useVertaling();
 
   const verhaal = getVerhaal(id);
@@ -266,7 +271,7 @@ export default function ChaptersScreen() {
     <ThemedView style={styles.container}>
       <Stack.Screen options={{ headerShown: false }} />
 
-      <View style={styles.headerBar}>
+      <View style={[styles.headerBar, { paddingTop: insets.top + Spacing.three }]}>
         <AnimatedPressable
           onPress={handleHome}
           style={[styles.homeButton, { backgroundColor: theme.backgroundElement }]}>
@@ -341,7 +346,6 @@ const styles = StyleSheet.create({
   },
   headerBar: {
     paddingHorizontal: Spacing.four,
-    paddingTop: Spacing.five,
     paddingBottom: Spacing.three,
     flexDirection: 'row',
   },

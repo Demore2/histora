@@ -9,6 +9,7 @@ import {
   useRootNavigationState,
   useSegments,
 } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { AppHeader } from '@/components/app-header';
@@ -107,6 +108,10 @@ export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <ThemeProvider value={kleurenSchema === 'dark' ? DarkTheme : DefaultTheme}>
+        {/* De iconen in de statusbalk volgen het thema van de app, niet dat van het toestel. Zonder
+            deze regel kiest Android zelf, en kreeg je witte klok- en batterij-iconen op de beige
+            achtergrond (de app staat standaard op licht, ook als de telefoon donker staat). */}
+        <StatusBar style={kleurenSchema === 'dark' ? 'light' : 'dark'} />
         {showSplash && <SplashScreen onFinish={() => setShowSplash(false)} />}
         {/* Zolang de sessie nog niet is gecontroleerd mag er niets van de app te zien zijn: anders
             flitst Home voorbij voordat de poort naar /login stuurt. */}

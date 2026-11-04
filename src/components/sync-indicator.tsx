@@ -132,7 +132,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     gap: Spacing.two,
-    marginTop: Spacing.three,
+    // Geen marginTop meer: de enige plek waar hij staat (Instellingen) zet al een `gap` tussen
+    // de kop "Sync" en deze regel, en de twee samen gaven een gat van een halve kaart.
   },
   spinner: {
     // Zo breed als het icoon dat hij vervangt, anders verspringt de tekst bij elke statuswissel.
