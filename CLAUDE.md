@@ -1294,6 +1294,13 @@ five (`delete-account`, `send-push`, `push-sweep`, `send-feedback-email`,
   analytics consent stay, because they describe the device, and resetting the analytics switch to
   its default would silently re-enable a measurement someone turned off. **Do not call this on
   logout** — logout promises the opposite.
+- **Sign in with Apple is revoked on delete (App Store 5.1.1(v)).** An Apple-linked reader on iOS
+  confirms once more with Apple (`appleLogin.haalAutorisatieCode`); the fresh `authorizationCode` goes
+  in the body, and the function exchanges it at `appleid.apple.com/auth/token` and revokes it. Nothing
+  is stored at login. Cancelling the Apple sheet aborts the delete; any other Apple failure, or missing
+  secrets (`APPLE_TEAM_ID`, `APPLE_KEY_ID`, `APPLE_PRIVATE_KEY`), only logs and the delete goes on.
+- **Pro does not exist on iOS**: the Shop's Pro/bundle lines and the subscription section in Settings
+  are hidden there (`Platform.OS`), because App Review rejects promoting what can't be bought.
 - **The screen does not navigate.** `AuthPoort` sees the empty session and goes to `/login`, same
   as logout.
 - **`supabase/functions/` is excluded from `tsconfig.json`, `eslint.config.js` and `.easignore`** —

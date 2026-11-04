@@ -77,6 +77,34 @@ async function haalIdToken(): Promise<AppleResultaat> {
   }
 }
 
+export type AppleCodeResultaat =
+  | { ok: true; code: string }
+  | { ok: false; reden: 'afgebroken' | 'mislukt' };
+
+/**
+ * Een verse `authorizationCode` voor het intrekken bij accountverwijdering (richtlijn 5.1.1(v)).
+ *
+ * Apple's revoke-endpoint wil een token dat je alleen krijgt door een autorisatiecode in te wisselen,
+ * en die code is vijf minuten geldig en eenmalig. Dus wordt er niets bewaard bij het inloggen: de
+ * lezer bevestigt het verwijderen nog één keer met Apple, en `delete-account` wisselt de code in en
+ * trekt hem meteen in. Geen tabel met refresh-tokens die zelf weer een geheim is.
+ */
+async function haalAutorisatieCode(): Promise<AppleCodeResultaat> {
+  const s = laad();
+  if (!s) return { ok: false, reden: 'mislukt' };
+  try {
+    const credential = await s.apple.signInAsync({ requestedScopes: [] });
+    if (!credential.authorizationCode) return { ok: false, reden: 'mislukt' };
+    return { ok: true, code: credential.authorizationCode };
+  } catch (fout) {
+    if ((fout as { code?: string } | null)?.code === 'ERR_REQUEST_CANCELED') {
+      return { ok: false, reden: 'afgebroken' };
+    }
+    console.warn('[apple] code voor intrekken mislukt:', fout);
+    return { ok: false, reden: 'mislukt' };
+  }
+}
+
 export const appleLogin = {
   /** Of de knop getoond mag worden. Laadt de module bij de eerste vraag. */
   get beschikbaar(): boolean {
@@ -87,4 +115,5 @@ export const appleLogin = {
     return laad()?.apple ?? null;
   },
   haalIdToken,
+  haalAutorisatieCode,
 };

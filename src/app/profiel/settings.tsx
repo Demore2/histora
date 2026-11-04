@@ -2,7 +2,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { Stack, useRouter } from 'expo-router';
 import * as WebBrowser from 'expo-web-browser';
 import { useState } from 'react';
-import { Linking, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { Linking, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import { AnalyticsVoorkeuren } from '@/components/analytics-preferences';
 import { HerinneringRegel, HerinneringTijd } from '@/components/daily-reminder-settings';
@@ -238,6 +238,8 @@ export default function InstellingenScreen() {
             );
             return;
           }
+          // Het Apple-venster weggeklikt: niets verwijderd, en dat wist de lezer al.
+          if (resultaat.afgebroken) return;
           meld(
             t((s) => s.instellingen.accountVerwijderenMisluktTitel),
             t((s) => s.instellingen.accountVerwijderenMisluktTekst)(SUPPORT_EMAIL),
@@ -426,6 +428,10 @@ export default function InstellingenScreen() {
             Het *upgraden* is een aparte regel eronder, en alleen voor wie gratis is — één vraag,
             één antwoord, en geen chevron op een regel waar niets te bedienen valt (huisregel van
             `SettingsItem`). Staat het Pro-aanbod uit, dan blijft alleen de plan-regel over. */}
+        {/* Op iOS bestaat Pro (nog) niet: aankopen lopen via Google Play. Een plan-regel "Free" met
+            een upgrade-knop met "Soon" prijst daar iets aan dat niet te koop is (App Review 2.1/3.1).
+            Alleen een met de hand toegekend Pro ziet de sectie daar nog, want dat is wél waar. */}
+        {Platform.OS === 'android' || isPremium ? (
         <SettingsSectie titel={t((s) => s.instellingen.sectieAbonnement)}>
           <SettingsItem
             icoon="card-outline"
@@ -490,6 +496,7 @@ export default function InstellingenScreen() {
               Pro-ervaring die op een tweede toestel niet bestond. `setPro` blijft in de store
               staan — hij is nu alleen ongebruikt. */}
         </SettingsSectie>
+        ) : null}
 
         <SettingsSectie titel={t((s) => s.instellingen.sectieSupport)}>
           <SettingsItem

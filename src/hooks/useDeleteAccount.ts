@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import { appleLogin } from '@/lib/apple-login';
 import { supabase } from '@/lib/supabase';
 import { useAuthStore } from '@/store/auth-store';
 import { wisLokaleGebruikersgegevens } from '@/store/lokale-gegevens';
@@ -8,7 +9,7 @@ import { foutTekst } from '@/store/sync-hulp';
 /** De naam van de edge function; de bron staat in `supabase/functions/delete-account/`. */
 const FUNCTIE = 'delete-account';
 
-export type VerwijderResultaat = { ok: true } | { ok: false; fout: string };
+export type VerwijderResultaat = { ok: true } | { ok: false; fout: string; afgebroken?: boolean };
 
 /**
  * Accountverwijdering, in één handeling (AVG art. 17, en Play's eis van een in-app route).
@@ -48,7 +49,25 @@ export function useDeleteAccount() {
       if (sessieFout) throw sessieFout;
       if (!data.session) throw new Error('Geen sessie.');
 
-      const { error } = await supabase.functions.invoke(FUNCTIE, { method: 'POST' });
+      // Sign in with Apple (richtlijn 5.1.1(v)): wie met Apple is ingelogd, bevestigt nog één keer
+      // met Apple, zodat de function het token bij Apple kan intrekken. Wegklikken breekt het
+      // verwijderen af — dat is een keuze van de lezer, geen fout. Mislukt het om een andere reden,
+      // dan gaat het verwijderen gewoon door: het account moet weg kunnen, ook zonder intrekking.
+      let appleAuthorizationCode: string | undefined;
+      const providers = data.session.user.identities?.map((i) => i.provider) ?? [];
+      if (providers.includes('apple') && appleLogin.beschikbaar) {
+        const code = await appleLogin.haalAutorisatieCode();
+        if (!code.ok && code.reden === 'afgebroken') {
+          setIsBezig(false);
+          return { ok: false, fout: 'afgebroken', afgebroken: true };
+        }
+        if (code.ok) appleAuthorizationCode = code.code;
+      }
+
+      const { error } = await supabase.functions.invoke(FUNCTIE, {
+        method: 'POST',
+        body: appleAuthorizationCode ? { appleAuthorizationCode } : {},
+      });
       if (error) throw error;
 
       // Pas nu het toestel leegmaken. Andersom zou een mislukte aanroep de lezer met een lege

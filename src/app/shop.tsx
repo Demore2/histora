@@ -2,7 +2,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { Stack, useFocusEffect } from 'expo-router';
 import { Image } from 'expo-image';
 import { useCallback, useState } from 'react';
-import { ScrollView, StyleSheet, View } from 'react-native';
+import { Platform, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AdBanner } from '@/components/ad-banner';
@@ -31,6 +31,14 @@ import { useWinkelStore, type KoopUitkomst } from '@/store/winkel-store';
  * Bewust nog geen Dukaten-pakketten voor echt geld (1.3b): die hebben producten in de Play Console
  * nodig en een `revenuecat-sync` die ze bijschrijft. De regel onderaan zegt dat ze eraan komen.
  */
+/**
+ * Pro en Dukaten-pakketten bestaan alleen op Android (aankopen lopen via Google Play). Op iOS zou een
+ * regel over Pro of "pakketten komen eraan" iets aanprijzen dat daar niet te koop is — App Review
+ * wijst dat af (richtlijn 2.1/3.1). Wordt Apple IAP ooit gekoppeld, dan hoort dit aan het aanbod
+ * te hangen in plaats van aan het platform.
+ */
+const PRO_OP_DIT_PLATFORM = Platform.OS === 'android';
+
 export default function ShopScreen() {
   const theme = useTheme();
   const { t } = useVertaling();
@@ -146,9 +154,11 @@ export default function ShopScreen() {
               </ThemedText>
             ) : null}
 
-            <ThemedText type="caption" themeColor="textSecondary" style={styles.melding}>
-              {t((s) => s.winkel.proRegel)(instellingen.proBevriezersPerMaand)}
-            </ThemedText>
+            {PRO_OP_DIT_PLATFORM ? (
+              <ThemedText type="caption" themeColor="textSecondary" style={styles.melding}>
+                {t((s) => s.winkel.proRegel)(instellingen.proBevriezersPerMaand)}
+              </ThemedText>
+            ) : null}
           </View>
 
           <View style={[styles.kaart, { backgroundColor: theme.backgroundElement }]}>
@@ -167,9 +177,11 @@ export default function ShopScreen() {
             </View>
           </View>
 
-          <ThemedText type="caption" themeColor="textSecondary" style={styles.voet}>
-            {t((s) => s.winkel.pakkettenBinnenkort)}
-          </ThemedText>
+          {PRO_OP_DIT_PLATFORM ? (
+            <ThemedText type="caption" themeColor="textSecondary" style={styles.voet}>
+              {t((s) => s.winkel.pakkettenBinnenkort)}
+            </ThemedText>
+          ) : null}
 
           {/* Onderaan, onder alles wat je kunt kopen (1.4.3): een banner tussen de producten zou
               op een knop lijken. Rendert niets voor Pro of zonder geladen advertentie. */}
