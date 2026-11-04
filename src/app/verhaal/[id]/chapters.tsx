@@ -284,7 +284,6 @@ export default function ChaptersScreen() {
             styles.homeButton,
             { backgroundColor: withAlpha(theme.accent, 0.12), borderColor: withAlpha(theme.accent, 0.25) },
           ]}>
-          <Ionicons name="chevron-back" size={18} color={theme.accent} />
           <ThemedText type="smallBold" style={{ color: theme.accent }}>
             {t((s) => s.tabs.ontdek)}
           </ThemedText>
@@ -362,12 +361,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   homeButton: {
-    flexDirection: 'row',
     alignItems: 'center',
-    gap: Spacing.one,
     paddingVertical: Spacing.two,
-    paddingLeft: Spacing.two + 2,
-    paddingRight: Spacing.three + 2,
+    paddingHorizontal: Spacing.three + 2,
     borderRadius: 999,
     borderWidth: 1,
   },
