@@ -21,7 +21,12 @@ Sinds 05 worden de video's in code gemaakt: `marketing/remotion/` (zie de README
 | 03 | Pompeii | 2026-10-31 21:00 | `gepost/03-pompeii` |
 | 04 | Adolf Hitler | 2026-11-02 20:00 | `gepost/04-adolf-hitler` |
 | 05 | Spartacus | 2026-11-03 20:00 | `gepost/05-spartacus` |
-| 06 | Alexander the Great | – (v3 gerenderd in de oude kaartstijl; opnieuw in 9:16) | `te-posten/06-alexander-the-great` |
+| 06 | Alexander the Great | 2026-11-04 20:00 (gepland) | `te-posten/06-alexander-the-great` |
+| 07 | Mansa Musa | 2026-11-06 20:00 (gepland) | `te-posten/07-mansa-musa` |
+| 08 | Napoleon Bonaparte | 2026-11-08 20:00 (gepland) | `te-posten/08-napoleon-bonaparte` |
+| 09 | Cleopatra | 2026-11-09 20:00 (gepland) | `te-posten/09-cleopatra` |
+
+Vast schema sinds 2026-11-04: **maandag, woensdag, vrijdag en zondag om 20:00** (NL-tijd), op alle drie tegelijk.
 
 ## Checklist vóór het renderen (uit de stats van 01-03)
 

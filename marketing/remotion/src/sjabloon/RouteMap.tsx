@@ -15,6 +15,7 @@ type Props = {
   returnTo?: number;
   zoom?: [number, number];
   territory?: Territory;
+  draw?: number;
 };
 
 type Punt = [number, number];
@@ -46,7 +47,7 @@ const CAM_Y = H * 0.42;
  * alleen grenzen over land te zien zijn. De camera volgt de kop van de lijn; met `zoom` schuift hij
  * tegelijk naar het midden van het rijk.
  */
-export const RouteMap = ({ stops, fromStop, toStop, span, returnTo, zoom, territory }: Props) => {
+export const RouteMap = ({ stops, fromStop, toStop, span, returnTo, zoom, territory, draw }: Props) => {
   const frame = useCurrentFrame();
   const { durationInFrames, fps } = useVideoConfig();
 
@@ -86,7 +87,8 @@ export const RouteMap = ({ stops, fromStop, toStop, span, returnTo, zoom, territ
     };
   }, [stops, span, returnTo, territory]);
 
-  const loop = interpolate(frame, [3, Math.max(4, durationInFrames - 8)], [0, 1], {
+  const aankomst = draw !== undefined ? Math.round(durationInFrames * draw) : durationInFrames - 8;
+  const loop = interpolate(frame, [3, Math.max(4, aankomst)], [0, 1], {
     extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic),
   });
   const stilstaand = fromStop === toStop;
@@ -105,8 +107,16 @@ export const RouteMap = ({ stops, fromStop, toStop, span, returnTo, zoom, territ
   const intro = interpolate(frame, [0, 10], [1.05, 1], { extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
 
   const totaal = cum[cum.length - 1];
-  const pxPerFrame = Math.max(1, (cum[toStop] - cum[fromStop]) / Math.max(1, durationInFrames - 11));
-  const framesSinds = (i: number) => (i <= fromStop ? Infinity : (d - cum[i]) / pxPerFrame);
+  // Frames sinds de kop stop i bereikte. Uit de klok, niet uit de afstand: na aankomst staat de afstand stil,
+  // en dan zou de laatste stop eeuwig op frame 0 van zijn veer blijven hangen (onzichtbaar label).
+  const loopOp = (fr: number) => interpolate(fr, [3, Math.max(4, aankomst)], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic) });
+  const framesSinds = (i: number) => {
+    if (i <= fromStop) return Infinity;
+    const doel = (cum[i] - cum[fromStop]) / (cum[toStop] - cum[fromStop] || 1);
+    let fr = 0;
+    while (fr < frame && loopOp(fr) < doel - 1e-6) fr++;
+    return frame - fr;
+  };
 
   // Rijk: een veroveringsfront dat met de kop mee naar het oosten schuift, met een zachte rand. Binnen het
   // front staan de echte grenzen van het rijk; bij `full` schuift het front door tot het hele rijk gekleurd is.

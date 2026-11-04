@@ -60,9 +60,64 @@ export type Shot =
       zoom?: [number, number];
       /** Het gebied dat de figuur bezit. Groeit rond elke bereikte stop; `full` = het hele gebied kleurt in. */
       territory?: Territory;
+      /** Op welk deel van de shot (0..1) de lijn aankomt; standaard ~8 frames voor het eind. Korter = de laatste stop staat langer in beeld. */
+      draw?: number;
+      flash?: boolean;
+      lead?: number;
+    }
+  | {
+      /**
+       * Een tijdlijn op schaal: punten op een lijn die zich van links naar rechts intekent, met onder (of boven)
+       * de lijn de afstand in jaren tussen twee punten. Voor "dichter bij X dan bij Y".
+       */
+      kind: 'timeline';
+      from: number | 'cta';
+      points: TimelinePoint[];
+      /** Afstanden die verschijnen nadat de punten staan: tussen punt `a` en `b`, boven of onder de lijn. */
+      gaps: { a: number; b: number; label: string; side: 'above' | 'below' }[];
+      /** Vage achtergrond onder de tijdlijn (pad onder public/). */
+      backdrop?: string;
+      flash?: boolean;
+      lead?: number;
+    }
+  | {
+      /** Staande staven die op schaal opgroeien, voor een vergelijking (lengtes, aantallen). */
+      kind: 'bars';
+      from: number | 'cta';
+      bars: Bar[];
+      /** De laagste waarde op de as (de staven beginnen hier), zodat kleine verschillen zichtbaar worden. */
+      floor: number;
+      /** Kop boven de staven, bijv. 'HEIGHT'. */
+      title?: string;
+      backdrop?: string;
       flash?: boolean;
       lead?: number;
     };
+
+export type TimelinePoint = {
+  /** Jaar; negatief = v.Chr. */
+  year: number;
+  /** Het jaartal zoals het in beeld staat, bijv. '2560 BC'. */
+  yearLabel: string;
+  label: string;
+  /** Pad onder public/ voor een rond plaatje boven het punt; anders een getekend icoon. */
+  img?: string;
+  icon?: 'pyramid' | 'moon';
+  highlight?: boolean;
+};
+
+export type Bar = {
+  label: string;
+  value: number;
+  /** Wat er boven de staaf staat, bijv. '1.69 m'. */
+  display: string;
+  /** Kleine regel onder de waarde, bijv. "5'2\" in French inches". */
+  sub?: string;
+  /** Oranje en als laatste opgroeiend; de rest is room. */
+  highlight?: boolean;
+  /** Gestreept en doorgestreept: de mythe. */
+  myth?: boolean;
+};
 
 /** Grote tekst die bij een beat in beeld springt: een jaartal, een getal, één woord. */
 export type Stamp = {
@@ -110,6 +165,11 @@ export type Cover = {
   name: string[];
   /** De claim in één regel, bijv. 'NEVER LOST A {MAJOR BATTLE}'. */
   hook: string;
+  /**
+   * Alleen voor een liggend beeld: snijd het bij tot het hele 3:4-rastervak gevuld is, met het gezicht op
+   * deze horizontale positie (0..1). Zonder `focus` staat een liggend beeld er héél in, als smalle strook.
+   */
+  focus?: number;
 };
 
 /** Uitkomst van scripts/timing.mjs, in seconden op de tijdlijn van de video. */

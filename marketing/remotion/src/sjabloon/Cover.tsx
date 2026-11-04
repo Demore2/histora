@@ -31,7 +31,19 @@ export const Cover = ({ config }: { config: ShortConfig }) => {
     <AbsoluteFill style={{ backgroundColor: '#0C0B08', fontFamily: FONT }}>
       {vullend ? (
         <Img src={staticFile(cover.src)} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-      ) : (<>
+      ) : cover.focus !== undefined ? (<>
+        <Img src={staticFile(cover.src)} style={{
+          position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover',
+          filter: 'blur(40px) brightness(0.35)', transform: 'scale(1.2)',
+        }} />
+        {/* Liggend portret bijgesneden tot het rastervak, het gezicht op `focus`. */}
+        <Img src={staticFile(cover.src)} style={{
+          position: 'absolute', left: 0, top: RASTER_TOP, width: W, height: RASTER_H, objectFit: 'cover',
+          objectPosition: `${cover.focus * 100}% 30%`,
+          maskImage: 'linear-gradient(to bottom, transparent 0%, black 7%, black 92%, transparent 100%)',
+          WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 7%, black 92%, transparent 100%)',
+        }} />
+      </>) : (<>
       <Img src={staticFile(cover.src)} style={{
         position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover',
         filter: 'blur(40px) brightness(0.35)', transform: 'scale(1.2)',

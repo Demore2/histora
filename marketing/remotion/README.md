@@ -57,10 +57,20 @@ Wat een config bevat (`src/sjabloon/types.ts`):
 |---|---|
 | `hook` | De claim, volledig in beeld vanaf frame 1. `{deel}` = oranje, `\|` = nieuwe regel. |
 | `beats` | Eén zin per beat: `say` (gesproken), `cap` (ondertitelkaarten), `pauseAfter`. |
-| `shots` | `scene` (het hele schilderij als kaart over een vage kopie, met `pan`/`push` en `flash`) of `map` (route die zich intekent, `zoom: [van, naar]`, `territory` = het gebied dat meegroeit). |
+| `shots` | `scene` (het hele schilderij als kaart over een vage kopie, met `pan`/`push` en `flash`), `map` (route die zich intekent, `zoom: [van, naar]`, `territory` = het gebied dat meegroeit, `draw` = wanneer de lijn aankomt), `timeline` (punten op schaal met de afstanden in jaren, Cleopatra) of `bars` (staven op schaal met een mythe en een gemarkeerde, Napoleon). |
 | `years` | Jaartal linksboven vanaf een beat. Het rolt naar het volgende jaartal. |
 | `stamps` | Groot getal midden-boven ("KING AT 20"), optioneel optellend. |
 | `silenceOn` | Beats waarop de muziek hard stilvalt. Ter documentatie; de partituur regelt het. |
+
+## Historische bronbeelden (`extra/`)
+
+Echte beelden die niet in de app zitten (een middeleeuwse kaart, een spotprent) staan in `extra/<storyId>/`, en
+`npm run assets` kopieert ze naar `public/extra/<storyId>/`. **Alleen publiek domein of CC0**, met de bron in
+`extra/BRONNEN.md`. Een echt document uit de tijd zelf naast de geschilderde scènes is het sterkste beeld dat een
+short kan hebben: het bewijst dat het verhaal waar is.
+
+Let op bij de kaart: met een `territory` centreert het uitzoomen op het midden van dat gebied, niet op de route.
+Moet de hele route in beeld (Mansa Musa), laat `territory` dan weg.
 
 ## Wat het sjabloon vastlegt (uit de stats van 01-03)
 

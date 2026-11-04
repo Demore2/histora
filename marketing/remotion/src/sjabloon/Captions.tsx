@@ -26,6 +26,8 @@ const maakKaarten = (c: ShortConfig, t: Timing): Kaart[] => {
       let q = p;
       for (const deel of kleurDelen(k)) {
         for (const w of deel.tekst.split(/\s+/).filter(Boolean)) {
+          // Een los leesteken na een oranje deel ("{Mali},") hoort aan het vorige woord, anders staat er "Mali ,".
+          if (/^[,.;:!?]+$/.test(w) && woorden.length) { woorden[woorden.length - 1].tekst += w; continue; }
           woorden.push({ tekst: w, oranje: deel.oranje, van: f(q) });
           q += (duur * (w.length + 1)) / (lens[j] + 1);
         }

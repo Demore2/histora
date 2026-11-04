@@ -4,6 +4,8 @@ import { Cta } from './Cta';
 import { Flitsen, Hook, Jaartal, Stempels, Vignet, Voortgang } from './Overlays';
 import { RouteMap } from './RouteMap';
 import { Scene } from './Scene';
+import { Staven } from './Staven';
+import { Tijdlijn } from './Tijdlijn';
 import type { ShortConfig, Timing } from './types';
 import { f, planShots } from './tijd';
 
@@ -25,9 +27,10 @@ const Beelden = ({ config, timing }: ThirtySecondsProps) => {
     <>
       {shots.map(({ shot, van, tot }, i) => (
         <Sequence key={i} from={van} durationInFrames={Math.max(1, tot - van)}>
-          {shot.kind === 'scene'
-            ? <Scene src={shot.src} aspect={shot.aspect ?? 16 / 9} motion={shot.motion} />
-            : <RouteMap stops={shot.stops} fromStop={shot.fromStop} toStop={shot.toStop} span={shot.span ?? 22} returnTo={shot.returnTo} zoom={shot.zoom} territory={shot.territory} />}
+          {shot.kind === 'scene' ? <Scene src={shot.src} aspect={shot.aspect ?? 16 / 9} motion={shot.motion} />
+            : shot.kind === 'timeline' ? <Tijdlijn points={shot.points} gaps={shot.gaps} backdrop={shot.backdrop} />
+            : shot.kind === 'bars' ? <Staven bars={shot.bars} floor={shot.floor} title={shot.title} backdrop={shot.backdrop} />
+            : <RouteMap stops={shot.stops} fromStop={shot.fromStop} toStop={shot.toStop} span={shot.span ?? 22} returnTo={shot.returnTo} zoom={shot.zoom} territory={shot.territory} draw={shot.draw} />}
         </Sequence>
       ))}
       <Flitsen shots={shots} />
