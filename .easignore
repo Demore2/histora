@@ -70,3 +70,11 @@ supabase/
 
 # Supabase CLI cache (versiecheck), geen projectbestand
 supabase/.temp/
+
+# Marketing-scripts (shorts), geen app-inhoud
+marketing/
+
+# Social-media-materiaal en graphify-uitvoer, geen app-inhoud
+social/
+graphify-out/
+src/graphify-out/
