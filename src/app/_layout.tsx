@@ -25,6 +25,7 @@ import { usePushRegistratie } from '@/hooks/use-push-registratie';
 import { useStreakHerinnering } from '@/hooks/use-streak-herinnering';
 import { useStreakWidget } from '@/hooks/use-streak-widget';
 import { useWinkel } from '@/hooks/use-winkel';
+import { Colors } from '@/constants/theme';
 import { useEffectieveKleurenSchema, useTheme } from '@/hooks/use-theme';
 import { useVoortgangSync } from '@/hooks/use-voortgang-sync';
 import { useAnalytics } from '@/hooks/useAnalytics';
@@ -37,6 +38,18 @@ import { useSubscriptionStore } from '@/store/subscription-store';
 // `intro` hoort erbij (1.4.5): een lezer zonder sessie mag daar zijn, en wie wél een sessie heeft
 // wordt er net zo hard weggestuurd als van `login`.
 const AUTH_ROUTES = ['login', 'signup', 'intro'];
+
+// Het navigatiethema met de achtergrond van de app. Met de standaardthema's van React Navigation schoof een
+// nieuw scherm over wit (licht) of bijna-zwart (donker) in, en dat zag je als een witte flits na het inloggen
+// met Apple (TestFlight, 2026-11-04). `card` is de achtergrond achter elk scherm in de Stack.
+const NAVIGATIE_LICHT = {
+  ...DefaultTheme,
+  colors: { ...DefaultTheme.colors, background: Colors.light.background, card: Colors.light.background },
+};
+const NAVIGATIE_DONKER = {
+  ...DarkTheme,
+  colors: { ...DarkTheme.colors, background: Colors.dark.background, card: Colors.dark.background },
+};
 
 export default function RootLayout() {
   const [showSplash, setShowSplash] = useState(true);
@@ -107,7 +120,7 @@ export default function RootLayout() {
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <ThemeProvider value={kleurenSchema === 'dark' ? DarkTheme : DefaultTheme}>
+      <ThemeProvider value={kleurenSchema === 'dark' ? NAVIGATIE_DONKER : NAVIGATIE_LICHT}>
         {/* De iconen in de statusbalk volgen het thema van de app, niet dat van het toestel. Zonder
             deze regel kiest Android zelf, en kreeg je witte klok- en batterij-iconen op de beige
             achtergrond (de app staat standaard op licht, ook als de telefoon donker staat). */}
