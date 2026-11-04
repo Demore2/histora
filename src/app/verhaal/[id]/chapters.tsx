@@ -272,10 +272,22 @@ export default function ChaptersScreen() {
       <Stack.Screen options={{ headerShown: false }} />
 
       <View style={[styles.headerBar, { paddingTop: insets.top + Spacing.three }]}>
+        {/* Een pil in Phoxy-oranje: een zachte tint van het accent met het accent als tekst. Bewust
+            niet vol oranje — dan wint hij het van de "Continue"-knop eronder, en die is de actie
+            op dit scherm; deze knop is alleen de weg terug. */}
         <AnimatedPressable
           onPress={handleHome}
-          style={[styles.homeButton, { backgroundColor: theme.backgroundElement }]}>
-          <ThemedText type="smallBold">{t((s) => s.tabs.ontdek)}</ThemedText>
+          accessibilityRole="button"
+          accessibilityLabel={t((s) => s.tabs.ontdek)}
+          hitSlop={8}
+          style={[
+            styles.homeButton,
+            { backgroundColor: withAlpha(theme.accent, 0.12), borderColor: withAlpha(theme.accent, 0.25) },
+          ]}>
+          <Ionicons name="chevron-back" size={18} color={theme.accent} />
+          <ThemedText type="smallBold" style={{ color: theme.accent }}>
+            {t((s) => s.tabs.ontdek)}
+          </ThemedText>
         </AnimatedPressable>
       </View>
 
@@ -350,11 +362,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   homeButton: {
-    paddingVertical: Spacing.three,
-    paddingHorizontal: Spacing.four,
-    borderRadius: Radii.button,
+    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
+    gap: Spacing.one,
+    paddingVertical: Spacing.two,
+    paddingLeft: Spacing.two + 2,
+    paddingRight: Spacing.three + 2,
+    borderRadius: 999,
+    borderWidth: 1,
   },
   content: {
     padding: Spacing.four,
