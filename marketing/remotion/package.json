@@ -1,0 +1,37 @@
+{
+  "name": "histora-shorts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio",
+    "assets": "node scripts/sync-assets.mjs",
+    "vo:placeholder": "node scripts/placeholder-vo.mjs",
+    "timing": "node scripts/timing.mjs",
+    "music": "node scripts/music.mjs",
+    "render": "node scripts/render.mjs",
+    "typecheck": "tsc --noEmit",
+    "vo:kokoro": "node scripts/kokoro.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.533",
+    "@remotion/google-fonts": "4.0.533",
+    "d3-geo": "^3.1.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.533",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/d3-geo": "^3.1.0",
+    "@types/react": "19.1.10",
+    "@types/topojson-client": "^3.1.5",
+    "ffmpeg-static": "5.2.0",
+    "kokoro-js": "1.2.1",
+    "typescript": "5.9.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "ffmpeg-static@5.2.0": true
+  }
+}

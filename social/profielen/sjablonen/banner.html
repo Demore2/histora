@@ -1,0 +1,63 @@
+<!doctype html>
+<!--
+  YouTube channel banner, 2560x1440.
+  Everything that has to be read sits inside the 1235x338 safe area in the
+  middle (x 662-1897, y 551-889): that is all a phone shows. Desktop shows the
+  full width at 423px high, TV the whole canvas, so the scenes on the left and
+  right are decoration that may be cropped away.
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      html, body { margin: 0; width: 2560px; height: 1440px; overflow: hidden; }
+      body { background: #F7F1E4; position: relative; font-family: 'Segoe UI', Arial, sans-serif; }
+
+      .zijde {
+        position: absolute;
+        top: 0;
+        width: 760px;
+        height: 1440px;
+        background-size: cover;
+        background-position: center;
+      }
+      .links { left: 0; background-image: url('../../../assets/images/scenes/julius-caesar-6.webp'); }
+      .rechts { right: 0; background-image: url('../../../assets/images/scenes/marie-curie-3.webp'); }
+      .links::after, .rechts::after { content: ''; position: absolute; inset: 0; }
+      .links::after { background: linear-gradient(to right, rgba(247,241,228,0) 30%, #F7F1E4 100%); }
+      .rechts::after { background: linear-gradient(to left, rgba(247,241,228,0) 30%, #F7F1E4 100%); }
+
+      /* Debug outline of the safe area: add ?veilig to the URL. */
+      .veilig {
+        position: absolute;
+        left: 662px; top: 551px; width: 1235px; height: 338px;
+        display: flex; align-items: center; justify-content: center; gap: 56px;
+      }
+      body.toon-veilig .veilig { outline: 4px dashed #C9541C; }
+
+      .merk { width: 250px; height: 250px; border-radius: 56px; }
+      .tekst { display: flex; flex-direction: column; gap: 14px; }
+      .naam {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 128px; line-height: 1; color: #211F1A; letter-spacing: -1px;
+      }
+      .regel { font-size: 46px; font-weight: 700; color: #C9541C; }
+      .sub { font-size: 34px; color: #6B6355; }
+    </style>
+  </head>
+  <body>
+    <div class="zijde links"></div>
+    <div class="zijde rechts"></div>
+    <div class="veilig">
+      <img class="merk" src="../../../assets/images/app-icon.png" alt="" />
+      <div class="tekst">
+        <div class="naam">Histora</div>
+        <div class="regel">History you actually finish.</div>
+        <div class="sub">Real people and turning points in 30 seconds</div>
+      </div>
+    </div>
+    <script>
+      if (location.search.includes('veilig')) document.body.classList.add('toon-veilig');
+    </script>
+  </body>
+</html>

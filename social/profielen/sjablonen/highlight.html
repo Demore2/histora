@@ -1,0 +1,46 @@
+<!doctype html>
+<!--
+  Instagram highlight cover, 1080x1920. Instagram shows only the centre as a
+  circle on the profile, so the fox sits inside a circle the full width of the canvas in the middle;
+  the rest of the canvas is plain parchment for the moment the cover is opened.
+  ?vos=<file name in assets/images/vos without .png>
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; }
+      body {
+        background: #F7F1E4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .schijf {
+        width: 1080px;
+        height: 1080px;
+        border-radius: 50%;
+        background: #EEE4D0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .schijf img { width: 900px; height: 900px; object-fit: contain; }
+      /* zwaaiend.png has a lot of empty space above the fox; crop it to the figure. */
+      /* The era heads are busts cut off straight at the bottom; push that cut
+         down until the round edge of the circle hides it. */
+      .schijf img[class^='era-'] { transform: translateY(110px); }
+      .schijf img.zwaaiend { width: 1300px; height: 1300px; flex-shrink: 0; transform: translateY(-206px); }
+    </style>
+  </head>
+  <body>
+    <div class="schijf"><img id="vos" alt="" /></div>
+    <script>
+      const naam = new URLSearchParams(location.search).get('vos') || 'zwaaiend';
+      const img = document.getElementById('vos');
+      img.src = `../../../assets/images/vos/${naam}.png`;
+      img.className = naam;
+    </script>
+  </body>
+</html>

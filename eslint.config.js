@@ -7,6 +7,6 @@ module.exports = defineConfig([
   {
     // `supabase/functions` draait op Deno (eigen globals, jsr:-imports); die code hoort
     // niet bij het Expo-project en wordt daarom ook door tsconfig uitgesloten.
-    ignores: ["dist/*", "supabase/functions/*"],
+    ignores: ["dist/*", "supabase/functions/*", "marketing/*"],
   }
 ]);

@@ -1,0 +1,95 @@
+<meta charset="utf-8">
+<title>How Histora Works</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=block">
+<style>
+  /* Layout: one 16:9 stage letterboxed in the window, a slim control bar under it. Single warm-dark look so the clay set glows. */
+  :root { --bg: #1C1A16; --bar: #26231D; --fg: #F3ECDC; --muted: #A89E89; --accent: #EE7A3E; --track: #3A3428; color-scheme: dark; }
+  html, body { height: 100%; }
+  body { background: var(--bg); color: var(--fg); font-family: "Roboto", system-ui, sans-serif; margin: 0; display: grid; grid-template-rows: 1fr auto; overflow: hidden;
+    padding-left: max(0px, env(safe-area-inset-left, 0px)); padding-right: max(0px, env(safe-area-inset-right, 0px)); }
+  #stage { position: relative; min-height: 0; display: grid; place-items: center; }
+  canvas { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; background: #efe5d0; }
+  #play-overlay { position: absolute; inset: 0; display: grid; place-items: center; background: none; border: 0; cursor: pointer; }
+  #play-overlay span { width: 84px; height: 84px; border-radius: 50%; background: var(--accent); display: grid; place-items: center; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+  #play-overlay svg { width: 34px; margin-left: 6px; fill: #fff; }
+  .bar { display: flex; align-items: center; gap: 12px; padding: 10px max(16px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); background: var(--bar); }
+  .bar button { background: none; border: 0; color: var(--fg); font: 600 14px "Roboto", sans-serif; padding: 6px 8px; border-radius: 8px; cursor: pointer; min-width: 40px; }
+  .bar button:hover, .bar button:focus-visible { background: var(--track); outline: none; }
+  .bar button[aria-pressed="false"] { color: var(--muted); }
+  #scrub { flex: 1; min-width: 0; accent-color: var(--accent); }
+  #time { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; min-width: 92px; text-align: right; }
+</style>
+
+<div id="stage">
+  <canvas id="cv" width="1280" height="720" aria-label="How Histora works, animated explainer"></canvas>
+  <button id="play-overlay" aria-label="Play"><span><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span></button>
+</div>
+<div class="bar">
+  <button id="pp" aria-label="Play">Play</button>
+  <input id="scrub" type="range" min="0" max="25" step="0.01" value="0" aria-label="Scrub">
+  <span id="time">0.0 / 25.0 s</span>
+  <button id="snd" aria-pressed="true">Sound on</button>
+  <button id="vo" aria-pressed="true">Voice on</button>
+  <button id="loop" aria-pressed="true">Loop</button>
+</div>
+
+<script>/*@HARNESS@*/</script>
+<script>/*@SOUND@*/</script>
+<script>/*@ASSETS@*/</script>
+<script>/*@VO@*/</script>
+<script>/*@LAYOUT@*/</script>
+<script>/*@EXPLAINER@*/</script>
+<script>
+const cv = document.getElementById('cv'); cv.width = L.W; cv.height = L.H; cv.style.aspectRatio = L.W + ' / ' + L.H;
+const ctx = cv.getContext('2d', { willReadFrequently: true });
+const pp = document.getElementById('pp'), scrub = document.getElementById('scrub'), timeEl = document.getElementById('time');
+const sndBtn = document.getElementById('snd'), voBtn = document.getElementById('vo'), loopBtn = document.getElementById('loop'), playBtn = document.getElementById('play-overlay');
+scrub.max = DURATION;
+let t = 0, playing = false, last = 0, stopSound = null, sound = true, voice = true, loop = true, ready = false;
+const voEl = new Audio(); voEl.preload = 'auto'; if (window.VO_SRC) voEl.src = window.VO_SRC;
+
+function draw(tt) {
+  ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over'; ctx.filter = 'none';
+  ctx.clearRect(0, 0, L.W, L.H); explainer(ctx, L.W, L.H, tt);
+}
+window.seek = (tt) => { t = Math.max(0, Math.min(DURATION, tt)); draw(t); };
+window.DURATION = DURATION; window.scoreSound = scoreSound;
+
+function startAudio() {
+  stopAudio();
+  if (!sound) return;
+  stopSound = SOUND.live(scoreSound, t, { voiceover: voice });
+  if (voice && voEl.src) { try { voEl.currentTime = t; voEl.play().catch(() => {}); } catch (e) {} }
+}
+function stopAudio() { if (stopSound) { stopSound(); stopSound = null; } voEl.pause(); }
+function setPlaying(p) {
+  playing = p; pp.textContent = p ? 'Pause' : 'Play'; pp.setAttribute('aria-label', p ? 'Pause' : 'Play'); playBtn.hidden = p;
+  if (p) { if (t >= DURATION) t = 0; last = performance.now(); startAudio(); requestAnimationFrame(tick); } else stopAudio();
+}
+function tick(now) {
+  if (!playing) return;
+  t += (now - last) / 1000; last = now;
+  if (t >= DURATION) { if (loop) { t = 0; startAudio(); } else { t = DURATION; draw(t); ui(); setPlaying(false); return; } }
+  draw(t); ui(); requestAnimationFrame(tick);
+}
+function ui() { scrub.value = t; timeEl.textContent = `${t.toFixed(1)} / ${DURATION.toFixed(1)} s`; }
+pp.onclick = () => ready && setPlaying(!playing);
+playBtn.onclick = () => ready && setPlaying(true);
+cv.onclick = () => ready && setPlaying(!playing);
+scrub.oninput = () => { t = +scrub.value; draw(t); ui(); if (playing) { last = performance.now(); startAudio(); } else stopAudio(); };
+sndBtn.onclick = () => { sound = !sound; sndBtn.setAttribute('aria-pressed', sound); sndBtn.textContent = sound ? 'Sound on' : 'Sound off'; if (playing && sound) startAudio(); else stopAudio(); };
+voBtn.onclick = () => { voice = !voice; voBtn.setAttribute('aria-pressed', voice); voBtn.textContent = voice ? 'Voice on' : 'Voice off'; if (playing) startAudio(); };
+loopBtn.onclick = () => { loop = !loop; loopBtn.setAttribute('aria-pressed', loop); };
+document.addEventListener('keydown', (e) => { if (e.code === 'Space' && e.target === document.body) { e.preventDefault(); ready && setPlaying(!playing); } });
+
+(async () => {
+  window.IMG = {};
+  const wacht = (p, ms) => Promise.race([p, new Promise((r) => setTimeout(r, ms))]);
+  await Promise.all(Object.entries(window.ASSETS).map(([k, src]) => { const im = new Image(); window.IMG[k] = im;
+    const p = new Promise((r) => { im.onload = r; im.onerror = r; }); im.src = src; return wacht(p, 4000); }));
+  try { await wacht(Promise.all(['700 52px "Fredoka"', '600 28px "Fredoka"', '400 40px "Roboto"', '500 40px "Roboto"', '700 40px "Roboto"', '900 40px "Roboto"', 'italic 400 40px "Roboto"'].map((f) => document.fonts.load(f, 'AaZz09'))), 4000); } catch (e) {}
+  ready = true; window.seek(1.9); ui(); document.body.dataset.ready = '1';
+})();
+</script>

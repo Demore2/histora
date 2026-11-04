@@ -1,0 +1,118 @@
+<meta charset="utf-8">
+<title>Histora Explainer Storyboard</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=block">
+<style>
+  /* Layout: a contact sheet in Histora's parchment — one key frame per beat, director's notes under it, assumptions at the foot. */
+  :root {
+    --bg: #F7F1E4; --panel: #FFFBF2; --fg: #211F1A; --muted: #6B6355; --line: #E3D6B8;
+    --accent: #C9541C; --chip: #EEE4D0;
+    --display: "Fredoka", "Roboto", system-ui, sans-serif;
+    --body: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #1C1A16; --panel: #26231D; --fg: #F3ECDC; --muted: #A89E89; --line: #3A3428; --accent: #EE7A3E; --chip: #332E24; color-scheme: dark } }
+  :root[data-theme="dark"] {
+    --bg: #1C1A16; --panel: #26231D; --fg: #F3ECDC; --muted: #A89E89; --line: #3A3428; --accent: #EE7A3E; --chip: #332E24; color-scheme: dark }
+  body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.5;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 32px 56px; }
+  .wrap { max-width: 1240px; margin: 0 auto; display: grid; gap: 28px; }
+  header { display: grid; gap: 8px; }
+  h1 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 4vw, 40px); margin: 0; text-wrap: balance; }
+  h1 span { color: var(--accent); }
+  header p { margin: 0; color: var(--muted); max-width: 72ch; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; }
+  .meta span { background: var(--chip); border-radius: 999px; padding: 3px 12px; font-size: 13px; font-weight: 500; font-variant-numeric: tabular-nums; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 520px), 1fr)); gap: 22px; }
+  figure { margin: 0; background: var(--panel); border-radius: 20px; overflow: hidden; display: grid; grid-template-rows: auto 1fr; border: 1px solid var(--line); }
+  canvas { width: 100%; height: auto; display: block; aspect-ratio: 16 / 9; background: #efe5d0; }
+  figcaption { padding: 16px 18px 18px; display: grid; gap: 10px; min-width: 0; }
+  .head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .num { font-family: var(--display); font-weight: 700; font-size: 22px; color: var(--accent); }
+  .name { font-family: var(--display); font-weight: 600; font-size: 20px; }
+  .time { margin-left: auto; font-variant-numeric: tabular-nums; color: var(--muted); font-weight: 500; font-size: 13px; }
+  dl { margin: 0; display: grid; grid-template-columns: 92px 1fr; gap: 6px 12px; }
+  dt { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 700; padding-top: 2px; }
+  dd { margin: 0; min-width: 0; }
+  .notes { background: var(--panel); border: 1px solid var(--line); border-radius: 20px; padding: 20px 22px; display: grid; gap: 10px; }
+  .notes h2 { font-family: var(--display); font-size: 22px; margin: 0; }
+  .notes ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; max-width: 95ch; }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>How Histora works <span>· storyboard v2</span></h1>
+    <p>A black phone on a parchment set runs the real app: the screens are rebuilt from the store captures, with the app's own portraits, chapter paintings and fox poses. Whatever matters on screen pops out of the phone as soft clay, big enough to read on a phone. Still key frames, drawn with the code the animation will use.</p>
+    <div class="meta"><span>1280 × 720</span><span>24.0 s</span><span>7 beats</span><span>No voiceover · full SFX mix</span></div>
+  </header>
+  <div class="grid" id="grid"></div>
+  <section class="notes">
+    <h2>Assumptions to check</h2>
+    <ul>
+      <li><b>Screens are rebuilt, not screenshots.</b> Layouts follow the store captures (era route, reader, quiz sheet, chapter route, unlock window, Home) in today's orange accent. Text and images come from the app itself. The tab bar shows Home, Explore and Profile as in 1.4.5.</li>
+      <li><b>The quiz is the real chapter-1 question</b> from <code>scripts/seed/quizvragen/julius-caesar.json</code>: “With whom did Caesar form the First Triumvirate?” Answer B, Pompey and Crassus, with the app's own explanation. The reader shows the real opening of chapter 1 and its caption.</li>
+      <li><b>The era route is simplified</b> to Alexander → Caesar → Cleopatra. The real Antiquity route has more stops in between (Ashoka, Spartacus). Lifespans shown: Alexander 356–323 BC, Caesar 100–44 BC, Cleopatra 69–30 BC.</li>
+      <li><b>“A few chapters later…”</b> stands in for reading the rest of the story, so no chapter count appears anywhere. The reader header says “Chapter 1” without “of 8”.</li>
+      <li><b>Example values:</b> a streak going from 6 to 7 days, 290 Ducats on Home. +10 Ducats per finished chapter is the app's real rate.</li>
+      <li><b>The fox appears only as the app's own art</b> (waving, pointing, cheering, travelling, the laurel-wreath era head). It is never redrawn and never named.</li>
+      <li><b>“Every chapter opens with a painting”</b> is the same claim as the store listing, which was checked against the content.</li>
+      <li><b>Not in this cut:</b> trivia, the shop and the widget. The Home screen at the end does show the “Test your history skills!” card.</li>
+    </ul>
+  </section>
+</div>
+
+<script>/*@HARNESS@*/</script>
+<script>/*@ASSETS@*/</script>
+<script>/*@EXPLAINER@*/</script>
+<script>
+const BEATS = [
+  { n: 1, name: 'Hook', a: 0.0, b: 2.45, key: 1.9,
+    text: 'Clay card: “History you / actually finish.” · on screen: the waving fox and “Histora”',
+    flow: 'Opening shot. A black clay phone drops onto the parchment sweep with squash-and-stretch while its shadow grows; the screen flickers on to the splash, the fox waves, the wordmark pops. The headline card springs on beside it.',
+    sound: 'Room bed + soft pad start · thud 0.45 (phone lands) · flicker blips 0.55–0.75 · pop 0.85 (headline card) · pop 1.2 (wordmark)' },
+  { n: 2, name: 'Pick a real life', a: 2.45, b: 6.15, key: 5.5,
+    text: '“Pick a real life” · “Julius Caesar” · “Real people from every era” · on screen: Antiquity route, Caesar is the next stop',
+    flow: 'Continuous. The splash pushes left like app navigation and the Antiquity route slides in. An orange clay tube grows out of Caesar’s stop and his real portrait flies out of the screen as a gold clay coin. The cursor taps his stop.',
+    sound: 'Swish 2.4 (screen push) · pop 2.95 (heading) · tape-squish 3.5 (tube) · pop 4.1 (coin lands) · pops 4.15 / 4.45 · swish 4.85 · click 5.45' },
+  { n: 3, name: 'One chapter at a time', a: 6.15, b: 9.8, key: 8.2,
+    text: '“One chapter at a time” · “Every chapter opens with a painting” · on screen: reader, “The Rise of an Ambitious Youth”',
+    flow: 'Continuous. The route pushes away and chapter 1 opens. Its real painting lifts out of the screen into a clay frame; the page scrolls through the real opening text. The cursor presses “Mark Complete”.',
+    sound: 'Swish 6.15 · pop 6.55 · tape-squish 6.85 · thud 7.4 (frame lands) · pop 7.55 · soft paper scroll 7.6–8.8 · swish 8.75 · click 9.3' },
+  { n: 4, name: 'Answer one question', a: 9.8, b: 13.85, key: 12.7,
+    text: '“Answer one question” · “After every chapter” · “Pompey and Crassus” ✓ · “Right or wrong, you learn why”',
+    flow: 'Continuous. The quiz sheet slides up over the reader exactly as in the app, the fox pointing. The cursor taps B: it turns green, the fox cheers “Great job!”, the explanation appears, and the right answer pops out as a green clay pill. Cursor taps “Finish chapter”.',
+    sound: 'Whoosh 9.8 (sheet up) · pop 10.3 · pop 10.7 · swish 11.45 · click 11.95 · success 12.0 · pop 12.4 (pill lands) · pop 12.6 · click 13.25' },
+  { n: 5, name: 'Keep your streak', a: 13.85, b: 16.9, key: 16.2,
+    text: '“Keep your streak” · badge “7 day streak” · “+10 Ducats” · on screen: chapter route, chapter II unlocks',
+    flow: 'Continuous. The sheet drops away and the chapter route slides back in: the path fills to chapter II, which unlocks and the travelling fox steps up. A clay flame drops onto the floor, the gold badge flips 6 → 7 with a stamp and the flame grows, then the Ducats pill pops.',
+    sound: 'Swish 13.85 · pop 14.25 · thud 14.65 (flame) · ding 14.9 (chapter unlocks) · pop 14.85 (badge) · stamp 15.2 (the 7) · coin 15.75' },
+  { n: 6, name: 'Unlock the figure', a: 16.9, b: 20.7, key: 19.1,
+    text: '“A few chapters later…” · “Unlock the figure” · “Julius Caesar” · “Added to your collection” · on screen: “Character Unlocked!”',
+    flow: 'Time jump done the clay way: a parchment pill sweeps across the set while the screen fades to the finished route. The app’s unlock window springs up and Caesar’s portrait slams out of it as a big gold medallion; the camera punches in, a warm glow and stars burst. The emphasis move.',
+    sound: 'Long whoosh 16.9 (sweep) · riser 17.6 → impact 18.25 (the biggest hit) · sparkle 18.3 · pop 18.4 · pops 18.6 / 18.95' },
+  { n: 7, name: 'Takeaway', a: 20.7, b: 24.0, key: 23.0,
+    text: 'Clay card: “Real stories, / one chapter at a time.” · “Histora” · on screen: Home, “Continue your journey: Cleopatra”',
+    flow: 'Continuous, settling. The clay clears, the screen fades to Home where the journey moves on to the next story, the waving fox drops in beside the phone, and the takeaway card plus the orange wordmark spring on and hold. A slow drift back.',
+    sound: 'Thud 21.1 (fox lands) · pop + success 21.0 (takeaway) · resolving ding 21.45 (wordmark) · pad resolves and fades by 24.0' },
+];
+const fmt = (s) => s.toFixed(1) + ' s';
+const grid = document.getElementById('grid');
+const canvases = BEATS.map((b) => {
+  const fig = document.createElement('figure');
+  const c = document.createElement('canvas'); c.width = 1280; c.height = 720; c.setAttribute('aria-label', `Beat ${b.n} key frame at ${fmt(b.key)}`);
+  const cap = document.createElement('figcaption');
+  cap.innerHTML = `<div class="head"><span class="num">${b.n}</span><span class="name">${b.name}</span><span class="time">${fmt(b.a)} – ${fmt(b.b)} · frame @ ${fmt(b.key)}</span></div>
+    <dl><dt>On screen</dt><dd>${b.text}</dd><dt>Getting here</dt><dd>${b.flow}</dd><dt>Sound</dt><dd>${b.sound}</dd></dl>`;
+  fig.append(c, cap); grid.append(fig); return c;
+});
+(async () => {
+  window.IMG = {};
+  const wacht = (p, ms) => Promise.race([p, new Promise((r) => setTimeout(r, ms))]);
+  await Promise.all(Object.entries(window.ASSETS).map(([k, src]) => { const im = new Image(); window.IMG[k] = im;
+    const p = new Promise((r) => { im.onload = r; im.onerror = r; }); im.src = src; return wacht(p, 4000); }));
+  try { await wacht(Promise.all(['700 52px "Fredoka"', '600 28px "Fredoka"', '400 40px "Roboto"', '500 40px "Roboto"', '700 40px "Roboto"', '900 40px "Roboto"', 'italic 400 40px "Roboto"'].map((f) => document.fonts.load(f, 'AaZz09'))), 4000); } catch (e) {}
+  BEATS.forEach((b, i) => { const ctx = canvases[i].getContext('2d', { willReadFrequently: true }); explainer(ctx, 1280, 720, b.key); });
+  document.body.dataset.ready = '1';
+})();
+</script>

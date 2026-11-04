@@ -76,3 +76,20 @@ docs/TEST_ACCOUNTS.md
 
 # Supabase CLI cache (versiecheck), geen projectbestand
 supabase/.temp/
+
+# Gerenderde shorts (grote mp4-bestanden, niet in git)
+marketing/**/renders/
+
+# Voice-overs en muziek van de shorts (groot, opnieuw te genereren)
+marketing/**/*.mp3
+marketing/**/*.wav
+social/**/*.mp3
+social/**/*.wav
+
+# Gegenereerd door graphify, en de lockfile van een losse `deno check`
+graphify-out/
+src/graphify-out/
+deno.lock
+
+# Wegwerpscripts
+scripts/_tmp-*.mjs
