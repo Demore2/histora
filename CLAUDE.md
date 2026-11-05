@@ -1408,7 +1408,10 @@ lokaal: `npx http-server docs -p 5510`.
   `beheer-dashboard` krijgt `platformen` mee en filtert GA4/AdMob zelf; Play (Android), de nieuwe bron
   **App Store** (Sales Reports, secrets `ASC_*`) en RevenueCat (alleen Android, Pro bestaat niet op iOS)
   telt het bord. Kosten hebben `platform` algemeen/android/ios. Zonder `-12.sql` valt het bord terug op
-  de oude aanroepen.
+  de oude aanroepen. **App Store staat op "Fout: Invalid vendor number" tot de eerste download**: een
+  account zonder verkooprapport bestaat nog niet voor Apple's rapportage (vendor 95095000 klopt).
+  ⚠️ Apple stopt in 2027 met Sales & Trends-rapporten → vóór die tijd `haalAppStore` omzetten naar de
+  Analytics Reports API (geeft dan ook installaties/verwijderingen).
 - **Drie tabbladen.** *Tickets*; de *Ideeënhub* (`public.beheer_notities`: idee/doel/taak — alleen
   voor de beheerders; sinds `-4.sql` hetzelfde bord als de tickets, met status
   open/in_behandeling/wacht/afgerond, prioriteit hoog/medium/lang en een eigenaar; de oude kolom
