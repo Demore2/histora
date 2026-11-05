@@ -26,6 +26,8 @@
 // Gedeeld met `react-native.config.js`. Zie dat bestand: het autolinken draait in een ander
 // proces dan de Expo-CLI, en als die twee de vlag verschillend lezen valt de build pas om in de
 // manifest-merger.
+const fs = require('fs');
+const path = require('path');
 const { FIREBASE_AAN, SLEUTEL } = require('./firebase-vlag');
 
 /** De plugin-invoer kan een string zijn of een `[naam, opties]`-paar. */
@@ -58,21 +60,72 @@ function bewaakUitsluitlijst() {
 }
 
 /**
- * Firebase is (nog) Android-only: op iOS ontbreekt `GoogleService-Info.plist`, waar de plugin van
- * `@react-native-firebase/app` op gooit, en de pods zijn daar uitgesloten van het autolinken. Een
- * iOS-build op EAS krijgt de plugins dus niet. `EAS_BUILD_PLATFORM` zet EAS zelf.
+ * Firebase op iOS hangt aan één bestand: `GoogleService-Info.plist` in de repo-root (gecommit,
+ * net als `google-services.json` — het is configuratie, geen geheim).
+ *
+ * - **Zonder dat bestand** krijgt een iOS-build geen Firebase-plugins: de plugin van
+ *   `@react-native-firebase/app` gooit op een ontbrekende plist, en de pods staan dan uitgesloten
+ *   in `expo.autolinking.ios.exclude`. Zo is het sinds 1.5.1.
+ * - **Met dat bestand** blijven de plugins staan, wijst `ios.googleServicesFile` ernaar, en zet
+ *   `expo-build-properties` `useFrameworks: 'static'` — dat eist React Native Firebase op iOS.
+ *   Dan moeten `app` en `analytics` uit `ios.exclude` (messaging blijft eruit tot push er is).
+ *
+ * De twee helften (bestand en uitsluitlijst) moeten het eens zijn, anders bouwt hij zonder Firebase
+ * of met pods zonder configuratie. `bewaakIos()` gooit dan met de ontbrekende stap erin.
+ * `EAS_BUILD_PLATFORM` zet EAS zelf.
  */
+const IOS_PLIST = './GoogleService-Info.plist';
+const IOS_FIREBASE = fs.existsSync(path.join(__dirname, IOS_PLIST));
+
+function bewaakIos() {
+  const uitgesloten = require('./package.json').expo?.autolinking?.ios?.exclude ?? [];
+  const nodig = ['@react-native-firebase/app', '@react-native-firebase/analytics'];
+  const nogUit = nodig.filter((naam) => uitgesloten.includes(naam));
+  if (IOS_FIREBASE && nogUit.length) {
+    throw new Error(
+      `${IOS_PLIST} staat er, maar package.json sluit ${nogUit.join(', ')} op iOS nog uit van het autolinken. ` +
+        'Haal ze uit "expo.autolinking.ios.exclude" (messaging mag blijven), anders zit er geen Firebase in de iOS-build.'
+    );
+  }
+  if (!IOS_FIREBASE && nogUit.length < nodig.length) {
+    throw new Error(
+      `package.json linkt Firebase op iOS, maar ${IOS_PLIST} ontbreekt. ` +
+        'Zet het bestand uit de Firebase Console in de repo-root, of zet de pods terug in "expo.autolinking.ios.exclude".'
+    );
+  }
+  if (IOS_FIREBASE) {
+    try {
+      require.resolve('expo-build-properties');
+    } catch {
+      throw new Error(`${IOS_PLIST} staat er, maar expo-build-properties ontbreekt: \`npx expo install expo-build-properties\`.`);
+    }
+  }
+}
+
 function zonderFirebasePlugins(config) {
   return (config.plugins ?? []).filter(
     (plugin) => !String(pluginNaam(plugin)).startsWith('@react-native-firebase/')
   );
 }
 
+/** iOS mét Firebase: plist erbij en statische frameworks (eis van React Native Firebase). */
+function metIosFirebase(config) {
+  return {
+    ...config,
+    ios: { ...config.ios, googleServicesFile: IOS_PLIST },
+    plugins: [
+      ...(config.plugins ?? []).filter((p) => pluginNaam(p) !== 'expo-build-properties'),
+      ['expo-build-properties', { ios: { useFrameworks: 'static' } }],
+    ],
+  };
+}
+
 module.exports = ({ config }) => {
   if (FIREBASE_AAN) {
     bewaakUitsluitlijst();
+    bewaakIos();
     if (process.env.EAS_BUILD_PLATFORM === 'ios') {
-      return { ...config, plugins: zonderFirebasePlugins(config) };
+      return IOS_FIREBASE ? metIosFirebase(config) : { ...config, plugins: zonderFirebasePlugins(config) };
     }
     return config;
   }

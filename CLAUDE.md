@@ -1917,6 +1917,16 @@ Het draaiboek staat in `supabase/README-billing.md`; hier de regels die code rak
 > `GoogleService-Info.plist`, en Firebase eist daar `useFrameworks: static`). `app.config.js` haalt
 > de plugins weg bij `EAS_BUILD_PLATFORM=ios`; `lib/push.ts` heeft `MESSAGING_GEKOPPELD = false`.
 > iOS en push zijn elk een eigen stap later. Wat hieronder staat beschrijft de uit-stand.
+>
+> **iOS-Analytics staat klaar maar is inert (2026-11-05)**: `app.config.js` zet Firebase op iOS aan
+> zodra `GoogleService-Info.plist` in de repo-root staat (plugins + `ios.googleServicesFile` +
+> `expo-build-properties` `useFrameworks: 'static'`), en `lib/analytics.ts` laadt ook op iOS. Aanzetten:
+> plist neerzetten en committen, `npx expo install expo-build-properties`, `app` + `analytics` uit
+> `expo.autolinking.ios.exclude` (messaging blijft), versie ophogen, EAS iOS-build. `bewaakIos()` gooit
+> met de ontbrekende stap als die drie het oneens zijn. **De eerste iOS-build met statische frameworks
+> is niet getest** — reken op een mogelijke tweede build. Daarna `IOS_ANALYTICS_AAN = true` in
+> `docs/beheer/index.html`. iOS-OTA: `npm run update:production:ios` — pas ná goedkeuring van Apple
+> (een OTA tijdens de review verandert de app die Apple test).
 
 **Firebase staat uit voor de MVP, en dat is één vlag op drie plekken.** `google-services.json`
 bestaat nog niet; zonder dat bestand faalde `expo prebuild` — en dus élke EAS-build — op de

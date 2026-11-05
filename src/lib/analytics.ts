@@ -69,8 +69,10 @@ function laad(): Geladen | null {
   // wél praten, maar dan moet er een web-configuratie in `app.json` staan en gaat er vanuit de
   // browser-preview echt verkeer naar Google. Dat willen we niet tijdens het ontwikkelen.
   if (Platform.OS === 'web') return null;
-  // Op iOS zit de native module (nog) niet in de build: zie `expo.autolinking` in package.json.
-  if (Platform.OS !== 'android') return null;
+  // Android en iOS. Op iOS zit de native module pas in de build zodra `GoogleService-Info.plist`
+  // er is (zie app.config.js); daarvóór gooit de `require` of `getAnalytics()` hieronder, en dat
+  // vangt de `catch` op: één waarschuwing, daarna `sdk === null`.
+  if (Platform.OS !== 'android' && Platform.OS !== 'ios') return null;
   if (sdk === null) return null;
 
   try {
