@@ -151,7 +151,16 @@ export type ShortConfig = {
   cover: Cover;
   /** Beats waarop de muziek hard stil valt (dramatische zin). Leest ook scripts/music.mjs. */
   silenceOn: number[];
+  /** Echte geluidseffecten (skill `sound-designer`), bestanden in `public/<id>/sfx/`. */
+  sfx?: Sfx[];
 };
+
+/**
+ * Eén geluidseffect, vastgemaakt aan een beat in plaats van aan een tijd: na `npm run timing` schuift het mee.
+ * Het bestand begint op het begin (of `vanaf: 'eind'`) van die beat plus `plus` seconden. Een klap die op de cue
+ * moet vallen staat dus zijn eigen aanloop (onset in het bestand) eerder.
+ */
+export type Sfx = { beat: number; vanaf?: 'begin' | 'eind'; plus?: number; src: string; volume?: number };
 
 /**
  * Omslag, 1080x1920. Alles wat telt staat binnen het middelste 3:4-vak (1080x1440), want het profielraster van

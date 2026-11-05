@@ -2,3 +2,5 @@ node_modules/
 # Gegenereerd door scripts/sync-assets.mjs, scripts/timing.mjs en scripts/music.mjs
 public/
 out/
+# Gedownloade geluidskandidaten (sound-designer-skill): nooit committen of publiceren
+sfx/*/downloads/

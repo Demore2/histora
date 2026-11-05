@@ -57,6 +57,15 @@ export const ThirtySeconds = ({ config, timing, balk = 'boven' }: ThirtySecondsP
       <Voortgang plek={balk} />
       {timing.hasVoice && <Audio src={staticFile(`${config.id}/vo.wav`)} />}
       {timing.hasMusic && <Audio src={staticFile(`${config.id}/music.wav`)} volume={muziekVolume(timing)} />}
+      {(config.sfx ?? []).map((s, i) => {
+        const [begin, eind] = timing.beats[s.beat];
+        const van = Math.max(0, f((s.vanaf === 'eind' ? eind : begin) + (s.plus ?? 0)));
+        return (
+          <Sequence key={`sfx-${i}`} from={van}>
+            <Audio src={staticFile(`${config.id}/sfx/${s.src}`)} volume={s.volume ?? 1} />
+          </Sequence>
+        );
+      })}
     </AbsoluteFill>
   );
 };

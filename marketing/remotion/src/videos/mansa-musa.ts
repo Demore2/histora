@@ -53,6 +53,12 @@ const config: ShortConfig = {
     { beat: 7, over: 'THE RICHEST KING', big: 'IN DEBT' },
   ],
   silenceOn: [6],
+  // Echte munten (Freesound, CC0; bronnen en trims in sfx/mansa-musa/MANIFEST.md). De klap zit 0,046 s in elk bestand.
+  // Geen munten op frame 0: onder de eerste zin lazen ze als sissen (earshot) en duwden ze de true peak boven -1 dBTP.
+  sfx: [
+    { beat: 4, plus: 1.5, src: '2-cairo-munten.wav', volume: 0.6 }, // "he gave it away", op de glinsterregen
+    { beat: 6, vanaf: 'eind', plus: -0.01, src: '3-laatste-munt.wav', volume: 0.7 }, // de stilte na "he ran out"
+  ],
 };
 
 export default config;

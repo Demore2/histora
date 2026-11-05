@@ -31,7 +31,7 @@ export default ({ s, e, cta, total, out }) => {
 
   // 0-1. Koude opening: dreun, glinsterregen (het goud), kora en djembé eronder.
   boem(0);
-  glinster(0.02, 7);
+  glinster(0.02, 7); // Getest met echte munten ervoor in de plaats: onder de stem lazen die als sissen en de piek ging naar 0 dBTP.
   chord(0, s(2), ['A1', 'E2', 'A2', 'C3'], { a: 0.12, rel: 0.2, gain: 0.11, cut: 650 });
   koraLoop(0.25, s(1), ['A3', 'E4', 'C4', 'E4', 'G4', 'E4']);
   djembe(0.3, s(1), 0.19, 0.45);
