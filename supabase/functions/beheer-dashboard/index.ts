@@ -22,6 +22,14 @@
  *                AdMob kent geen serviceaccounts; het refresh-token komt uit
  *                `scripts/admob-refresh-token.mjs`.
  *   Play:        PLAY_REPORTS_BUCKET (pubsite_prod_…), PLAY_PACKAGE (standaard com.chronicles.historyapp)
+ *   App Store:   ASC_ISSUER_ID, ASC_KEY_ID, ASC_PRIVATE_KEY (de .p8, rol Sales of Finance),
+ *                ASC_VENDOR_NUMBER (Payments and Financial Reports), ASC_APP_ID (standaard 6830119670)
+ *
+ * **Platformen** (ronde 12): de body mag `platformen: ['android', 'ios']` meegeven (standaard
+ * beide). Analytics en AdMob filteren dan zelf op platform, want die zijn niet op te tellen (een
+ * lezer op twee toestellen is één actieve gebruiker). Play is altijd Android, de App Store altijd
+ * iOS, RevenueCat kan (nog) niet splitsen — die drie haalt de function altijd op, en het bord telt
+ * mee wat bij de aangevinkte platformen hoort.
  *
  * Deno-code: uitgesloten van tsconfig, eslint en .easignore, net als de andere functions.
  */
@@ -35,9 +43,13 @@ const CORS = {
 };
 
 /** Hoe lang een antwoord in de cache blijft. Play werkt zijn rapporten maar één keer per dag bij. */
-const TTL_MIN: Record<Bron, number> = { revenuecat: 60, analytics: 60, admob: 60, play: 360 };
+const TTL_MIN: Record<Bron, number> = { revenuecat: 60, analytics: 60, admob: 60, play: 360, appstore: 360 };
 
-type Bron = 'revenuecat' | 'analytics' | 'admob' | 'play';
+type Bron = 'revenuecat' | 'analytics' | 'admob' | 'play' | 'appstore';
+type Platform = 'android' | 'ios';
+const ALLE_PLATFORMEN: Platform[] = ['android', 'ios'];
+/** Zo heten ze in GA4 en AdMob. */
+const PLATFORM_NAAM: Record<Platform, string> = { android: 'Android', ios: 'iOS' };
 type Uitkomst =
   | { status: 'ok'; opgehaald_op: string; data: unknown }
   | { status: 'niet_geconfigureerd'; ontbreekt: string[] }
@@ -169,9 +181,12 @@ async function haalRevenueCat(): Promise<unknown> {
 // Google Analytics 4 — Data API, één batch van vijf rapporten
 // --------------------------------------------------------------------------------------------
 
-async function haalAnalytics(dagen: number): Promise<unknown> {
+async function haalAnalytics(dagen: number, plat: Platform[]): Promise<unknown> {
   const token = await serviceaccountToken('https://www.googleapis.com/auth/analytics.readonly');
   const bereik = [{ startDate: `${dagen - 1}daysAgo`, endDate: 'today' }];
+  const dimensionFilter = {
+    filter: { fieldName: 'platform', inListFilter: { values: plat.map((p) => PLATFORM_NAAM[p]) } },
+  };
   const data = await googleJson(
     `https://analyticsdata.googleapis.com/v1beta/properties/${env('GA4_PROPERTY_ID')}:batchRunReports`,
     token,
@@ -179,16 +194,19 @@ async function haalAnalytics(dagen: number): Promise<unknown> {
       requests: [
         {
           dateRanges: bereik,
+          dimensionFilter,
           metrics: [{ name: 'activeUsers' }, { name: 'newUsers' }, { name: 'sessions' }, { name: 'averageSessionDuration' }, { name: 'screenPageViews' }],
         },
         {
           dateRanges: bereik,
+          dimensionFilter,
           dimensions: [{ name: 'date' }],
           metrics: [{ name: 'activeUsers' }, { name: 'newUsers' }],
           orderBys: [{ dimension: { dimensionName: 'date' } }],
         },
         {
           dateRanges: bereik,
+          dimensionFilter,
           dimensions: [{ name: 'unifiedScreenName' }],
           metrics: [{ name: 'screenPageViews' }],
           orderBys: [{ metric: { metricName: 'screenPageViews' }, desc: true }],
@@ -196,6 +214,7 @@ async function haalAnalytics(dagen: number): Promise<unknown> {
         },
         {
           dateRanges: bereik,
+          dimensionFilter,
           dimensions: [{ name: 'country' }],
           metrics: [{ name: 'activeUsers' }],
           orderBys: [{ metric: { metricName: 'activeUsers' }, desc: true }],
@@ -203,6 +222,7 @@ async function haalAnalytics(dagen: number): Promise<unknown> {
         },
         {
           dateRanges: bereik,
+          dimensionFilter,
           dimensions: [{ name: 'appVersion' }],
           metrics: [{ name: 'activeUsers' }],
           orderBys: [{ metric: { metricName: 'activeUsers' }, desc: true }],
@@ -261,7 +281,7 @@ function admobDatum(d: Date) {
   return { year, month, day };
 }
 
-async function haalAdmob(dagen: number): Promise<unknown> {
+async function haalAdmob(dagen: number, plat: Platform[]): Promise<unknown> {
   const token = await admobToken();
   const pub = env('ADMOB_PUBLISHER_ID')!.replace(/^ca-app-/, '');
   const rijen = await googleJson(
@@ -272,6 +292,7 @@ async function haalAdmob(dagen: number): Promise<unknown> {
         dateRange: { startDate: admobDatum(dagenTerug(dagen - 1)), endDate: admobDatum(new Date()) },
         dimensions: ['DATE'],
         metrics: ['ESTIMATED_EARNINGS', 'IMPRESSIONS', 'CLICKS'],
+        dimensionFilters: [{ dimension: 'PLATFORM', matchesAny: { values: plat.map((p) => PLATFORM_NAAM[p]) } }],
         sortConditions: [{ dimension: 'DATE', order: 'ASCENDING' }],
         localizationSettings: { currencyCode: 'EUR' },
       },
@@ -372,22 +393,127 @@ async function haalPlay(dagen: number): Promise<unknown> {
 }
 
 // --------------------------------------------------------------------------------------------
+// App Store Connect — Sales and Trends (dagrapporten, gzip-TSV, één dag vertraging)
+// --------------------------------------------------------------------------------------------
+
+/** JWT voor de App Store Connect API: ES256, hooguit 20 minuten geldig. */
+async function ascToken(): Promise<string> {
+  const nu = Math.floor(Date.now() / 1000);
+  const header = base64urlTekst(JSON.stringify({ alg: 'ES256', kid: env('ASC_KEY_ID'), typ: 'JWT' }));
+  const claims = base64urlTekst(JSON.stringify({ iss: env('ASC_ISSUER_ID'), iat: nu, exp: nu + 1100, aud: 'appstoreconnect-v1' }));
+  const sleutel = await crypto.subtle.importKey(
+    'pkcs8',
+    pemNaarDer(env('ASC_PRIVATE_KEY')!),
+    { name: 'ECDSA', namedCurve: 'P-256' },
+    false,
+    ['sign'],
+  );
+  // WebCrypto geeft r‖s (64 bytes) terug, precies de vorm die een JWT wil.
+  const handtekening = await crypto.subtle.sign(
+    { name: 'ECDSA', hash: 'SHA-256' },
+    sleutel,
+    new TextEncoder().encode(`${header}.${claims}`),
+  );
+  return `${header}.${claims}.${base64url(new Uint8Array(handtekening))}`;
+}
+
+async function gunzip(bytes: Uint8Array<ArrayBuffer>): Promise<string> {
+  if (bytes[0] !== 0x1f || bytes[1] !== 0x8b) return new TextDecoder().decode(bytes);
+  const stroom = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+  return await new Response(stroom).text();
+}
+
+type AppStoreDag = { datum: string; installaties: number; herdownloads: number };
+
+/**
+ * Downloads per dag uit het SALES SUMMARY-dagrapport. Een dag zonder downloads (of vóór de
+ * lancering) is bij Apple een 404; dat is nul, geen fout. `installaties` zijn eerste downloads
+ * (producttype 1…), `herdownloads` 3…; updates (7…) en in-app-aankopen tellen niet.
+ * Hooguit de laatste 84 dagen (één aanroep per dag); bij 12 maanden staat dat in `dagen_gemeten`.
+ */
+async function haalAppStore(dagen: number): Promise<unknown> {
+  const token = await ascToken();
+  const appId = env('ASC_APP_ID') || '6830119670';
+  const vendor = env('ASC_VENDOR_NUMBER')!;
+  const n = Math.min(dagen, 84);
+  // Het rapport van gisteren komt in de loop van vandaag; dat van vandaag bestaat nog niet.
+  const datums = Array.from({ length: n }, (_, i) => dagSleutel(dagenTerug(i + 1))).reverse();
+
+  async function dag(datum: string): Promise<AppStoreDag> {
+    const q = new URLSearchParams({
+      'filter[frequency]': 'DAILY',
+      'filter[reportDate]': datum,
+      'filter[reportSubType]': 'SUMMARY',
+      'filter[reportType]': 'SALES',
+      'filter[vendorNumber]': vendor,
+      'filter[version]': '1_0',
+    });
+    const respons = await fetch(`https://api.appstoreconnect.apple.com/v1/salesReports?${q}`, {
+      headers: { Authorization: `Bearer ${token}`, Accept: 'application/a-gzip' },
+    });
+    if (respons.status === 404) return { datum, installaties: 0, herdownloads: 0 };
+    if (!respons.ok) throw new Error(`${respons.status} op ${datum}: ${(await respons.text()).slice(0, 200)}`);
+    const tekst = await gunzip(new Uint8Array(await respons.arrayBuffer()));
+    const [kop = [], ...rijen] = tekst.split(/\r?\n/).filter((r) => r.trim()).map((r) => r.split('\t'));
+    const k = (naam: string) => kop.findIndex((x) => x.trim().toLowerCase() === naam.toLowerCase());
+    const iType = k('Product Type Identifier');
+    const iUnits = k('Units');
+    const iApp = k('Apple Identifier');
+    let installaties = 0;
+    let herdownloads = 0;
+    for (const r of rijen) {
+      if (iApp >= 0 && r[iApp]?.trim() !== appId) continue;
+      const type = (r[iType] || '').trim().toUpperCase();
+      const units = Number(r[iUnits]) || 0;
+      if (/^(1|1F|1T|1E|1EP|1EU|F1)$/.test(type)) installaties += units;
+      else if (/^(3|3F|3T|F3)$/.test(type)) herdownloads += units;
+    }
+    return { datum, installaties, herdownloads };
+  }
+
+  // Acht tegelijk: 84 rondes achter elkaar duurt te lang voor één aanroep van het bord.
+  const reeks: AppStoreDag[] = [];
+  for (let i = 0; i < datums.length; i += 8) reeks.push(...await Promise.all(datums.slice(i, i + 8).map(dag)));
+  return {
+    totaal: {
+      installaties: reeks.reduce((s, r) => s + r.installaties, 0),
+      herdownloads: reeks.reduce((s, r) => s + r.herdownloads, 0),
+    },
+    dagen_gemeten: n,
+    laatste_dag: reeks.at(-1)?.datum ?? null,
+    reeks,
+  };
+}
+
+// --------------------------------------------------------------------------------------------
 // Per bron: configuratie, cache, ophalen
 // --------------------------------------------------------------------------------------------
 
-const BRONNEN: Record<Bron, { secrets: string[]; haal: (dagen: number) => Promise<unknown>; perPeriode: boolean }> = {
-  revenuecat: { secrets: ['REVENUECAT_V2_KEY', 'REVENUECAT_PROJECT_ID'], haal: () => haalRevenueCat(), perPeriode: false },
-  analytics: { secrets: ['GOOGLE_SA_EMAIL', 'GOOGLE_SA_PRIVATE_KEY', 'GA4_PROPERTY_ID'], haal: haalAnalytics, perPeriode: true },
-  admob: { secrets: ['ADMOB_CLIENT_ID', 'ADMOB_CLIENT_SECRET', 'ADMOB_REFRESH_TOKEN', 'ADMOB_PUBLISHER_ID'], haal: haalAdmob, perPeriode: true },
-  play: { secrets: ['GOOGLE_SA_EMAIL', 'GOOGLE_SA_PRIVATE_KEY', 'PLAY_REPORTS_BUCKET'], haal: haalPlay, perPeriode: true },
+type BronDef = {
+  secrets: string[];
+  haal: (dagen: number, plat: Platform[]) => Promise<unknown>;
+  perPeriode: boolean;
+  /** Filtert de bron zelf op platform? Dan hoort de keuze in de cachesleutel. */
+  perPlatform: boolean;
 };
 
-async function bron(admin: SupabaseClient, naam: Bron, dagen: number, vers: boolean): Promise<Uitkomst> {
+const BRONNEN: Record<Bron, BronDef> = {
+  revenuecat: { secrets: ['REVENUECAT_V2_KEY', 'REVENUECAT_PROJECT_ID'], haal: () => haalRevenueCat(), perPeriode: false, perPlatform: false },
+  analytics: { secrets: ['GOOGLE_SA_EMAIL', 'GOOGLE_SA_PRIVATE_KEY', 'GA4_PROPERTY_ID'], haal: haalAnalytics, perPeriode: true, perPlatform: true },
+  admob: { secrets: ['ADMOB_CLIENT_ID', 'ADMOB_CLIENT_SECRET', 'ADMOB_REFRESH_TOKEN', 'ADMOB_PUBLISHER_ID'], haal: haalAdmob, perPeriode: true, perPlatform: true },
+  play: { secrets: ['GOOGLE_SA_EMAIL', 'GOOGLE_SA_PRIVATE_KEY', 'PLAY_REPORTS_BUCKET'], haal: (d) => haalPlay(d), perPeriode: true, perPlatform: false },
+  appstore: { secrets: ['ASC_ISSUER_ID', 'ASC_KEY_ID', 'ASC_PRIVATE_KEY', 'ASC_VENDOR_NUMBER'], haal: (d) => haalAppStore(d), perPeriode: true, perPlatform: false },
+};
+
+async function bron(admin: SupabaseClient, naam: Bron, dagen: number, plat: Platform[], vers: boolean): Promise<Uitkomst> {
   const b = BRONNEN[naam];
   const mist = ontbrekend(...b.secrets);
   if (mist.length) return { status: 'niet_geconfigureerd', ontbreekt: mist };
 
-  const sleutel = b.perPeriode ? `${naam}:${dagen}` : naam;
+  // `p:` = het platformfilter (ronde 12). Cacherijen van vóór het filter hebben die niet en worden
+  // dus vanzelf genegeerd.
+  const sleutel = [naam, b.perPeriode ? String(dagen) : null, b.perPlatform ? `p:${plat.join('+')}` : null]
+    .filter((x) => x !== null).join(':');
   if (!vers) {
     const { data } = await admin.from('beheer_cache').select('data, opgehaald_op').eq('sleutel', sleutel).maybeSingle();
     if (data && Date.now() - new Date(data.opgehaald_op).getTime() < TTL_MIN[naam] * 60_000) {
@@ -395,7 +521,7 @@ async function bron(admin: SupabaseClient, naam: Bron, dagen: number, vers: bool
     }
   }
   try {
-    const data = await b.haal(dagen);
+    const data = await b.haal(dagen, plat);
     const opgehaald_op = new Date().toISOString();
     await admin.from('beheer_cache').upsert({ sleutel, data, opgehaald_op });
     return { status: 'ok', opgehaald_op, data };
@@ -436,10 +562,15 @@ Deno.serve(async (req: Request) => {
   const body = await req.json().catch(() => ({}));
   const dagen = [7, 30, 84, 365].includes(Number(body?.dagen)) ? Number(body.dagen) : 30;
   const vers = body?.vers === true;
+  const gekozen = Array.isArray(body?.platformen)
+    ? ALLE_PLATFORMEN.filter((p) => body.platformen.includes(p))
+    : ALLE_PLATFORMEN;
+  const plat = gekozen.length ? gekozen : ALLE_PLATFORMEN;
   const namen = Object.keys(BRONNEN) as Bron[];
-  const uitkomsten = await Promise.all(namen.map((n) => bron(admin, n, dagen, vers)));
+  const uitkomsten = await Promise.all(namen.map((n) => bron(admin, n, dagen, plat, vers)));
   return antwoord(200, {
     dagen,
+    platformen: plat,
     bronnen: Object.fromEntries(namen.map((n, i) => [n, uitkomsten[i]])),
   });
 });

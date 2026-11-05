@@ -1402,6 +1402,13 @@ lokaal: `npx http-server docs -p 5510`.
   hebben) en heeft sinds `-11.sql` een stand "Met account". `-11.sql` zet ook `@cloudtestlabaccounts.com`
   (Firebase Test Lab = Play's prelanceringsrobots) in `is_testaccount()`, mét de regel die
   `uitgesloten_accounts` leest — die staat niet in `-7.sql`, dus neem hem mee bij elke herdefinitie.
+- **Android/iOS-vinkjes (ronde 12, `-12.sql`, 2026-11-05)**: bovenaan het Overzicht, standaard allebei
+  aan en bewust niet bewaard. Elke `beheer_*`-RPC heeft `p_platformen`; het platform van een lezer komt
+  uit `platformen_van(uid)` (intro_stappen, feedback, `auth.sessions.user_agent`; geen spoor = android).
+  `beheer-dashboard` krijgt `platformen` mee en filtert GA4/AdMob zelf; Play (Android), de nieuwe bron
+  **App Store** (Sales Reports, secrets `ASC_*`) en RevenueCat (alleen Android, Pro bestaat niet op iOS)
+  telt het bord. Kosten hebben `platform` algemeen/android/ios. Zonder `-12.sql` valt het bord terug op
+  de oude aanroepen.
 - **Drie tabbladen.** *Tickets*; de *Ideeënhub* (`public.beheer_notities`: idee/doel/taak — alleen
   voor de beheerders; sinds `-4.sql` hetzelfde bord als de tickets, met status
   open/in_behandeling/wacht/afgerond, prioriteit hoog/medium/lang en een eigenaar; de oude kolom

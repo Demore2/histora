@@ -287,6 +287,11 @@
   .chip-knop[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); font-weight: 600; }
   .balk .rechts { margin-left: auto; color: var(--muted); font-size: 12px; }
   .balk label.schakel { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; color: var(--muted); }
+  .platform-keuze { display: inline-flex; align-items: center; gap: 12px; padding: 4px 12px;
+    border: 1px solid var(--line); border-radius: 999px; }
+  .platform-keuze label:has(input:checked) { color: var(--text); }
+  .platform-tag { display: inline-block; margin-left: 6px; padding: 0 6px; border-radius: 999px; font-size: 11px;
+    border: 1px solid var(--line); color: var(--muted); }
 
   /* ---------- Tickets ---------- */
   main.bord { padding: 0 24px 48px; display: grid; gap: 28px; }
@@ -806,6 +811,10 @@
         <button type="button" data-periode="12w" aria-pressed="false">12 weken</button>
         <button type="button" data-periode="12m" aria-pressed="false">12 maanden</button>
       </div>
+      <div class="platform-keuze" id="ov-platformen" role="group" aria-label="Platformen">
+        <label class="schakel"><input type="checkbox" data-platform="android" checked> 🤖 Android</label>
+        <label class="schakel"><input type="checkbox" data-platform="ios" checked> 🍎 iOS</label>
+      </div>
       <label class="schakel"><input type="checkbox" id="ov-intern"> Eigen en testaccounts meetellen</label>
       <button class="chip-knop" type="button" data-actie="overzicht-vernieuwen" title="Vernieuwen">↻</button>
       <span class="rechts" id="ov-gemeten"></span>
@@ -815,7 +824,7 @@
       <div class="kpis" id="ov-lezers"></div>
       <div class="sectie-kop"><h2>Geld</h2><span class="zacht">per maand</span></div>
       <div class="kpis" id="ov-geld"></div>
-      <div class="sectie-kop"><h2>App</h2><span class="zacht">Google Play en Google Analytics</span></div>
+      <div class="sectie-kop"><h2>App</h2><span class="zacht" id="ov-app-bronnen">Google Play, App Store en Google Analytics</span></div>
       <div class="kpis" id="ov-app"></div>
       <div class="ov-raster">
         <section class="grafiek">
@@ -1090,6 +1099,13 @@
         <select name="categorie"></select>
       </label>
     </div>
+    <label class="veld">Platform
+      <select name="platform">
+        <option value="algemeen">Algemeen (telt altijd mee)</option>
+        <option value="android">Alleen Android</option>
+        <option value="ios">Alleen iOS</option>
+      </select>
+    </label>
     <div class="rijtje">
       <label class="veld">Vanaf
         <input type="date" name="begin_op" required>
@@ -1177,7 +1193,28 @@
     notitieId: null,
     stap: 'week',
     internMeetellen: false,
+    // Bewust niet bewaard: het bord opent altijd met beide platformen, alles samen.
+    platformen: { android: true, ios: true },
   };
+
+  /** De aangevinkte platformen, als lijst voor de RPC's en de edge function. */
+  const gekozenPlatformen = () => ['android', 'ios'].filter((p) => staat.platformen[p]);
+  const platformSleutel = () => gekozenPlatformen().join('+');
+  const toontAndroid = () => staat.platformen.android;
+  const toontIos = () => staat.platformen.ios;
+  const alleenIos = () => toontIos() && !toontAndroid();
+
+  /**
+   * Een RPC met `p_platformen` (ronde 12). Bestaat die vorm nog niet (migratie niet gedraaid), dan
+   * de oude aanroep; `oudeVorm` zegt het bord dat er niet op platform gefilterd is.
+   */
+  async function rpcPerPlatform(naam, params) {
+    const r = await sb.rpc(naam, { ...params, p_platformen: gekozenPlatformen() });
+    if (!r.error || !/p_platformen|function .* does not exist|PGRST202/i.test(`${r.error.code} ${r.error.message}`)) return r;
+    const oud = await sb.rpc(naam, params);
+    if (!oud.error && oud.data && typeof oud.data === 'object' && !Array.isArray(oud.data)) oud.data = { ...oud.data, oudeVorm: true };
+    return oud;
+  }
 
   // ---------- kleine helpers ----------
 
@@ -2087,11 +2124,13 @@
   async function laadLezen(stil = false) {
     if (laadtLezen || !staat.ik) return;
     laadtLezen = true;
+    const keuze = platformSleutel();
     const [inz, tr] = await Promise.all([
-      sb.rpc('beheer_inzichten', { p_intern_meetellen: staat.internMeetellen }),
+      rpcPerPlatform('beheer_inzichten', { p_intern_meetellen: staat.internMeetellen }),
       haalTrechter(),
     ]);
     laadtLezen = false;
+    if (keuze !== platformSleutel()) return laadLezen(stil);
     staat.inzichten = inz.error ? null : inz.data;
     if (inz.error && !stil) console.warn('beheer_inzichten:', inz.error.message);
     tekenInzichten();
@@ -2102,7 +2141,7 @@
   /** Met `p_alleen_accounts` sinds ronde 11; zonder die migratie de vorige vorm (alle installaties). */
   async function haalTrechter() {
     const basis = { p_dagen: 30, p_intern_meetellen: staat.internMeetellen };
-    let r = await sb.rpc('beheer_intro_trechter', { ...basis, p_alleen_accounts: staat.trechterAccounts });
+    let r = await rpcPerPlatform('beheer_intro_trechter', { ...basis, p_alleen_accounts: staat.trechterAccounts });
     if (!r.error) return r.data;
     r = await sb.rpc('beheer_intro_trechter', basis);
     return r.error ? null : { ...r.data, oudeVorm: true };
@@ -2402,18 +2441,28 @@
     { icoon: '🧾', naam: 'RevenueCat', wat: 'MRR, omzet, proefperiodes', sleutel: 'revenuecat' },
     { icoon: '📊', naam: 'Google Analytics', wat: 'actieve gebruikers, schermen, landen', sleutel: 'analytics' },
     { icoon: '💰', naam: 'AdMob', wat: 'advertentie-inkomsten', sleutel: 'admob' },
-    { icoon: '▶️', naam: 'Google Play', wat: 'downloads en verwijderingen', sleutel: 'play' },
+    { icoon: '▶️', naam: 'Google Play', wat: 'Android: downloads en verwijderingen', sleutel: 'play' },
+    { icoon: '🍎', naam: 'App Store', wat: 'iOS: downloads', sleutel: 'appstore' },
   ];
   const PERIODE_DAGEN = { '7d': 7, '30d': 30, '12w': 84, '12m': 365 };
+  // Firebase Analytics zit (nog) niet in de iOS-build; zet op true zodra die meet.
+  const IOS_ANALYTICS_AAN = false;
+  const PLATFORM_LABEL = { algemeen: 'Algemeen', android: 'Android', ios: 'iOS' };
 
   let laadtOverzicht = false;
   async function laadOverzicht(stil = false) {
     if (laadtOverzicht || !staat.ik) return;
     laadtOverzicht = true;
+    const keuze = platformSleutel();
     const [st, ko] = await Promise.all([
-      sb.rpc('beheer_statistieken', { p_intern_meetellen: staat.internMeetellen }),
+      rpcPerPlatform('beheer_statistieken', { p_intern_meetellen: staat.internMeetellen }),
       sb.rpc('beheer_kosten_lijst'),
     ]);
+    // Tijdens het laden een vinkje omgezet: dit antwoord hoort bij de vorige keuze.
+    if (keuze !== platformSleutel()) { laadtOverzicht = false; return laadOverzicht(stil); }
+    if (!st.error && st.data?.oudeVorm && gekozenPlatformen().length < 2 && !stil) {
+      toast('Filteren op platform vraagt supabase/feedback-beheer-migratie-12.sql; de lezers tonen nu beide.', true);
+    }
     laadtOverzicht = false;
     if (st.error) { if (!stil) toast(foutTekst(st.error), true); }
     else staat.stats = st.data;
@@ -2435,8 +2484,13 @@
     if (laadtExtern || !staat.ik) return;
     laadtExtern = true;
     const dagen = PERIODE_DAGEN[staat.periode] || 30;
-    const { data, error } = await sb.functions.invoke('beheer-dashboard', { body: { dagen, vers } });
+    const sleutel = platformSleutel();
+    const { data, error } = await sb.functions.invoke('beheer-dashboard', {
+      body: { dagen, vers, platformen: gekozenPlatformen() },
+    });
     laadtExtern = false;
+    // Is de keuze intussen veranderd, dan is dit antwoord al oud: haal opnieuw.
+    if (sleutel !== platformSleutel()) return laadExtern(vers);
     if (error) {
       // 404 = nog niet gedeployd. Dat is een stand, geen storing: de kaarten zeggen het zelf.
       const status = error.context?.status;
@@ -2445,6 +2499,7 @@
       staat.extern = data;
     }
     staat.externDagen = dagen;
+    staat.externPlatformen = sleutel;
     tekenGeld();
     tekenApp();
     tekenBronnen();
@@ -2453,7 +2508,8 @@
   /** De gegevens van één externe bron, of null als die (nog) niet bruikbaar is. */
   function extern(naam) {
     const b = staat.extern?.bronnen?.[naam];
-    return b?.status === 'ok' && staat.externDagen === (PERIODE_DAGEN[staat.periode] || 30) ? b.data : null;
+    return b?.status === 'ok' && staat.externDagen === (PERIODE_DAGEN[staat.periode] || 30)
+      && staat.externPlatformen === platformSleutel() ? b.data : null;
   }
   function externReden(naam) {
     if (!staat.extern) return 'Laden…';
@@ -2463,7 +2519,8 @@
     if (!b) return 'Onbekend';
     if (b.status === 'niet_geconfigureerd') return `Nog niet ingesteld (${b.ontbreekt.length} secret${b.ontbreekt.length === 1 ? '' : 's'})`;
     if (b.status === 'fout') return 'Fout: ' + b.melding;
-    return staat.externDagen !== (PERIODE_DAGEN[staat.periode] || 30) ? 'Laden…' : '';
+    return staat.externDagen !== (PERIODE_DAGEN[staat.periode] || 30)
+      || staat.externPlatformen !== platformSleutel() ? 'Laden…' : '';
   }
   /** RevenueCat rekent in de valuta van het project; meestal dollars. Alles op het bord is euro. */
   function naarEuro(bedrag, valuta) {
@@ -2677,13 +2734,22 @@
     }));
   }
 
+  /** Kosten die bij de aangevinkte platformen horen; `algemeen` (en oud, zonder kolom) telt altijd. */
+  function zichtbareKosten() {
+    return (staat.kosten || []).filter((k) => !k.platform || k.platform === 'algemeen' || staat.platformen[k.platform]);
+  }
+
   function tekenGeld() {
-    const kosten = staat.kosten || [];
+    const kosten = zichtbareKosten();
     const perMaand = kosten.reduce((som, k) => som + maandCent(k), 0) / 100;
     const eenmalig = eenmaligCent(kosten);
     const p = PERIODE[staat.periode] || PERIODE['30d'];
     const dagen = PERIODE_DAGEN[staat.periode] || 30;
-    const rc = extern('revenuecat');
+    // RevenueCat kan niet per winkel splitsen, en Pro bestaat alleen op Android. Alleen iOS = nul.
+    const rcBron = extern('revenuecat');
+    const rc = rcBron && alleenIos()
+      ? { ...rcBron, mrr: 0, omzet_28d: 0, actieve_abonnementen: 0, actieve_proeven: 0, alleenIos: true }
+      : rcBron;
     const ad = extern('admob');
 
     const mrr = rc ? naarEuro(rc.mrr, rc.valuta) : null;
@@ -2694,7 +2760,9 @@
     $('#ov-geld').replaceChildren(
       rc
         ? kpi({ icoon: '📈', label: 'Abonnementen (MRR)', waarde: euroFmt.format(mrr),
-            sub: `${euroFmt.format(naarEuro(rc.omzet_28d, rc.valuta))} omzet in 28 dagen · ${rc.actieve_abonnementen} actief · ${rc.actieve_proeven} proef` })
+            sub: rc.alleenIos
+              ? 'Pro is nog niet te koop op iOS'
+              : `${euroFmt.format(naarEuro(rc.omzet_28d, rc.valuta))} omzet in 28 dagen · ${rc.actieve_abonnementen} actief · ${rc.actieve_proeven} proef` })
         : kpi({ icoon: '📈', label: 'Abonnementen (MRR)', waarde: 'Nog niet gekoppeld', sub: externReden('revenuecat'), fase: 'RevenueCat' }),
       ad
         ? kpi({ icoon: '💰', label: 'Advertenties', waarde: euroPrecies.format(ad.totaal.verdiensten),
@@ -2718,26 +2786,60 @@
 
   let ovApp = null;
 
+  /**
+   * Downloads van de aangevinkte winkels bij elkaar: Play (Android) en de App Store (iOS). Een
+   * winkel die (nog) niet gekoppeld is telt niet mee, en de sub zegt dat.
+   */
+  function downloads() {
+    const pl = toontAndroid() ? extern('play') : null;
+    const as = toontIos() ? extern('appstore') : null;
+    if (!pl && !as) return null;
+    const perDag = new Map();
+    for (const r of pl?.reeks || []) perDag.set(r.datum, (perDag.get(r.datum) || 0) + r.installaties);
+    for (const r of as?.reeks || []) perDag.set(r.datum, (perDag.get(r.datum) || 0) + r.installaties + (r.herdownloads || 0));
+    const reeks = [...perDag.entries()].sort(([a], [b]) => a.localeCompare(b)).map(([datum, installaties]) => ({ datum, installaties }));
+    const delen = [];
+    if (pl) delen.push(`Android ${getalFmt.format(pl.totaal.installaties)} (${getalFmt.format(pl.totaal.verwijderingen)} verwijderd)`);
+    else if (toontAndroid()) delen.push('Android: ' + (externReden('play') || 'niet gekoppeld'));
+    if (as) delen.push(`iOS ${getalFmt.format(as.totaal.installaties + as.totaal.herdownloads)}`
+      + ((PERIODE_DAGEN[staat.periode] || 30) > as.dagen_gemeten ? ` (laatste ${as.dagen_gemeten} dagen)` : ''));
+    else if (toontIos()) delen.push('iOS: ' + (externReden('appstore') || 'niet gekoppeld'));
+    const laatste = [pl?.laatste_dag, as?.laatste_dag].filter(Boolean).sort()[0];
+    return {
+      totaal: (pl?.totaal.installaties || 0) + (as ? as.totaal.installaties + as.totaal.herdownloads : 0),
+      reeks,
+      sub: delen.join(' · ') + (laatste ? ` · t/m ${kortDatum(laatste)}` : ''),
+      play: pl,
+    };
+  }
+
   function tekenApp() {
     const ga = extern('analytics');
-    const pl = extern('play');
+    const dl = downloads();
+    const pl = dl?.play || null;
     const ad = extern('admob');
     const p = PERIODE[staat.periode] || PERIODE['30d'];
     $('#ov-app-periode').textContent = p.label;
+    $('#ov-app-bronnen').textContent = [
+      toontAndroid() ? 'Google Play' : null, toontIos() ? 'App Store' : null, 'Google Analytics',
+    ].filter(Boolean).join(', ');
 
     $('#ov-app').replaceChildren(
-      pl
-        ? kpi({ icoon: '⬇️', label: 'Downloads', waarde: getalFmt.format(pl.totaal.installaties),
-            sub: `${getalFmt.format(pl.totaal.verwijderingen)} verwijderd · t/m ${pl.laatste_dag ? kortDatum(pl.laatste_dag) : '—'}`,
-            reeks: pl.reeks.map((x) => x.installaties), kleurNaam: '--serie-2' })
-        : kpi({ icoon: '⬇️', label: 'Downloads', waarde: 'Nog niet gekoppeld', sub: externReden('play'), fase: 'Google Play' }),
+      dl
+        ? kpi({ icoon: '⬇️', label: 'Downloads', waarde: getalFmt.format(dl.totaal), sub: dl.sub,
+            reeks: dl.reeks.map((x) => x.installaties), kleurNaam: '--serie-2' })
+        : kpi({ icoon: '⬇️', label: 'Downloads', waarde: 'Nog niet gekoppeld',
+            sub: alleenIos() ? externReden('appstore') : externReden('play'),
+            fase: alleenIos() ? 'App Store' : 'Google Play' }),
       pl
         ? kpi({ icoon: '📱', label: 'Actieve installaties', waarde: getalFmt.format(pl.actieve_installaties),
-            sub: 'toestellen waar Histora nu op staat' })
-        : kpi({ icoon: '📱', label: 'Actieve installaties', waarde: '—', sub: 'uit Google Play' }),
+            sub: toontIos() ? 'Android-toestellen · Apple geeft dit getal niet via zijn API' : 'toestellen waar Histora nu op staat' })
+        : kpi({ icoon: '📱', label: 'Actieve installaties', waarde: '—',
+            sub: alleenIos() ? 'Apple geeft dit getal niet via zijn API (zie App Store Connect → Analytics)' : 'uit Google Play' }),
       ga
         ? kpi({ icoon: '📊', label: 'Actieve gebruikers', waarde: getalFmt.format(ga.totaal.actief),
-            sub: `${p.label} · ${getalFmt.format(ga.totaal.nieuw)} nieuw`,
+            sub: `${p.label} · ${getalFmt.format(ga.totaal.nieuw)} nieuw`
+              + (toontIos() && !IOS_ANALYTICS_AAN ? ' · iOS meet nog niet (Firebase volgt)' : ''),
             reeks: ga.reeks.map((x) => x.actief), kleurNaam: '--serie-1' })
         : kpi({ icoon: '📊', label: 'Actieve gebruikers', waarde: 'Nog niet gekoppeld', sub: externReden('analytics'), fase: 'Analytics' }),
       ga
@@ -2748,7 +2850,7 @@
 
     // Eén grafiek over de dagen, met wat er is: actief (Analytics), downloads (Play), € advertenties.
     const dagen = new Set();
-    for (const r of [...(ga?.reeks || []), ...(pl?.reeks || []), ...(ad?.reeks || [])]) dagen.add(r.datum);
+    for (const r of [...(ga?.reeks || []), ...(dl?.reeks || []), ...(ad?.reeks || [])]) dagen.add(r.datum);
     const as = [...dagen].sort();
     const per = (reeks, veld) => {
       const m = new Map((reeks || []).map((r) => [r.datum, r[veld]]));
@@ -2757,7 +2859,7 @@
     const sets = [];
     const legenda = [];
     if (ga) { sets.push(lijn('Actieve gebruikers', per(ga.reeks, 'actief'), '--serie-1', true)); legenda.push(['Actieve gebruikers', '--serie-1']); }
-    if (pl) { sets.push(lijn('Downloads', per(pl.reeks, 'installaties'), '--serie-2')); legenda.push(['Downloads', '--serie-2']); }
+    if (dl) { sets.push(lijn('Downloads', per(dl.reeks, 'installaties'), '--serie-2')); legenda.push(['Downloads', '--serie-2']); }
     if (ad) {
       sets.push({ ...lijn('Advertenties (€)', per(ad.reeks, 'verdiensten'), '--serie-4'), yAxisID: 'geld' });
       legenda.push(['Advertenties (€, rechter as)', '--serie-4']);
@@ -2815,7 +2917,8 @@
           const gestopt = k.eind_op && k.eind_op < new Date().toISOString().slice(0, 10);
           return el('tr', { class: 'kost-rij' + (gestopt ? ' gestopt' : ''), onclick: () => openKost(k.id), title: k.notitie || '' },
             el('td', {}, el('div', { tekst: k.naam }), k.notitie ? el('div', { class: 'zacht', tekst: k.notitie }) : null),
-            el('td', { class: 'kost-soort' }, el('span', { class: 'categorie-stip', style: `background:var(${c.kleur})` }), c.label),
+            el('td', { class: 'kost-soort' }, el('span', { class: 'categorie-stip', style: `background:var(${c.kleur})` }), c.label,
+              k.platform && k.platform !== 'algemeen' ? el('span', { class: 'platform-tag', tekst: PLATFORM_LABEL[k.platform] }) : null),
             el('td', { class: 'getal', tekst: `${bedrag} ${per}` }),
             el('td', { class: 'getal', tekst: maandCent(k) ? euroPrecies.format(maandCent(k) / 100) : '—' }));
         })))));
@@ -2823,7 +2926,7 @@
 
     const perCat = Object.keys(KOST_CATEGORIE).map((id) => ({
       id, ...KOST_CATEGORIE[id],
-      cent: kosten.filter((k) => k.categorie === id).reduce((som, k) => som + maandCent(k), 0),
+      cent: zichtbareKosten().filter((k) => k.categorie === id).reduce((som, k) => som + maandCent(k), 0),
     })).filter((x) => x.cent > 0);
     $('#ov-kosten-midden').textContent = euroFmt.format(perCat.reduce((som, x) => som + x.cent, 0) / 100);
     if (window.Chart) {
@@ -2847,6 +2950,7 @@
     form.valuta.value = k?.valuta || 'EUR';
     form.interval.value = k?.interval || 'maand';
     form.categorie.value = k?.categorie || 'hosting';
+    form.platform.value = k?.platform || 'algemeen';
     form.begin_op.value = k?.begin_op || new Date().toISOString().slice(0, 10);
     form.eind_op.value = k?.eind_op || '';
     form.notitie.value = k?.notitie || '';
@@ -2863,7 +2967,7 @@
     if (!Number.isFinite(getal) || getal < 0) return toast('Dat bedrag kan ik niet lezen.', true);
     const knop = form.querySelector('button[type="submit"]');
     knop.disabled = true;
-    const { error } = await sb.rpc('beheer_kost_opslaan', {
+    const velden = {
       p_id: staat.kostId,
       p_naam: form.naam.value,
       p_categorie: form.categorie.value,
@@ -2873,7 +2977,13 @@
       p_begin_op: form.begin_op.value,
       p_eind_op: form.eind_op.value || null,
       p_notitie: form.notitie.value,
-    });
+    };
+    let { error } = await sb.rpc('beheer_kost_opslaan', { ...velden, p_platform: form.platform.value });
+    // Zonder ronde 12 kent de functie `p_platform` nog niet: dan zonder, en zeggen waarom.
+    if (error && /PGRST202|p_platform/i.test(`${error.code} ${error.message}`)) {
+      ({ error } = await sb.rpc('beheer_kost_opslaan', velden));
+      if (!error && form.platform.value !== 'algemeen') toast('Platform niet bewaard: draai supabase/feedback-beheer-migratie-12.sql.', true);
+    }
     knop.disabled = false;
     if (error) return toast(foutTekst(error), true);
     $('#venster-kost').close();
@@ -2901,6 +3011,19 @@
   });
   $('#ov-intern').addEventListener('change', (e) => {
     staat.internMeetellen = e.target.checked;
+    laadOverzicht();
+  });
+  // Android en iOS: standaard allebei aan. Minstens één blijft aan, anders is er niets te tonen.
+  $('#ov-platformen').addEventListener('change', (e) => {
+    const vak = e.target.closest('input[data-platform]');
+    if (!vak) return;
+    const p = vak.dataset.platform;
+    if (!vak.checked && gekozenPlatformen().filter((x) => x !== p).length === 0) {
+      vak.checked = true;
+      return toast('Minstens één platform moet aan staan.');
+    }
+    staat.platformen[p] = vak.checked;
+    tekenOverzicht();
     laadOverzicht();
   });
 
