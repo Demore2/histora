@@ -438,6 +438,7 @@ async function haalAppStore(dagen: number): Promise<unknown> {
   const n = Math.min(dagen, 84);
   // Het rapport van gisteren komt in de loop van vandaag; dat van vandaag bestaat nog niet.
   const datums = Array.from({ length: n }, (_, i) => dagSleutel(dagenTerug(i + 1))).reverse();
+  const ongeldig: string[] = [];
 
   async function dag(datum: string): Promise<AppStoreDag> {
     const q = new URLSearchParams({
@@ -452,6 +453,13 @@ async function haalAppStore(dagen: number): Promise<unknown> {
       headers: { Authorization: `Bearer ${token}`, Accept: 'application/a-gzip' },
     });
     if (respons.status === 404) return { datum, installaties: 0, herdownloads: 0 };
+    // 400 PARAMETER_ERROR.INVALID = een datum van vóór het account (of vóór de eerste verkoop).
+    // Dat is ook nul; alleen als élke dag zo antwoordt is er echt iets mis (zie hieronder).
+    if (respons.status === 400) {
+      const fout = await respons.json().catch(() => null);
+      ongeldig.push(`${datum}: ${fout?.errors?.[0]?.detail || fout?.errors?.[0]?.title || 'ongeldige parameter'}`);
+      return { datum, installaties: 0, herdownloads: 0 };
+    }
     if (!respons.ok) throw new Error(`${respons.status} op ${datum}: ${(await respons.text()).slice(0, 200)}`);
     const tekst = await gunzip(new Uint8Array(await respons.arrayBuffer()));
     const [kop = [], ...rijen] = tekst.split(/\r?\n/).filter((r) => r.trim()).map((r) => r.split('\t'));
@@ -474,6 +482,8 @@ async function haalAppStore(dagen: number): Promise<unknown> {
   // Acht tegelijk: 84 rondes achter elkaar duurt te lang voor één aanroep van het bord.
   const reeks: AppStoreDag[] = [];
   for (let i = 0; i < datums.length; i += 8) reeks.push(...await Promise.all(datums.slice(i, i + 8).map(dag)));
+  // Geen enkele dag geaccepteerd: dan ligt het niet aan de datum maar aan bijv. het vendornummer.
+  if (ongeldig.length === datums.length) throw new Error(`Apple weigert elke dag (${ongeldig.at(-1)})`);
   return {
     totaal: {
       installaties: reeks.reduce((s, r) => s + r.installaties, 0),
