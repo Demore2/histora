@@ -1,0 +1,225 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Why could a quarrel between two European countries in 1914 drag in all the great powers?",
+      "options": [
+        "Because they all shared one army",
+        "Because the League of Nations ordered it",
+        "Because they were tied together in rival alliances",
+        "Because they had all signed a treaty to fight Serbia"
+      ],
+      "explanation": "Germany was allied with Austria-Hungary, France with Russia, and Britain had close ties with both. A conflict between two of them could pull in the rest.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom kon een ruzie tussen twee Europese landen in 1914 alle grootmachten meesleuren?",
+          "options": [
+            "Omdat ze samen één leger hadden",
+            "Omdat de Volkenbond dat beval",
+            "Omdat ze aan elkaar vastzaten in rivaliserende bondgenootschappen",
+            "Omdat ze allemaal een verdrag hadden getekend om tegen Servië te vechten"
+          ],
+          "explanation": "Duitsland was bondgenoot van Oostenrijk-Hongarije, Frankrijk van Rusland, en Groot-Brittannië had nauwe banden met die twee. Een conflict tussen twee van hen kon de rest meetrekken."
+        },
+        "fr": {
+          "question": "Pourquoi une querelle entre deux pays européens pouvait-elle entraîner toutes les grandes puissances en 1914 ?",
+          "options": [
+            "Parce qu'elles partageaient une seule armée",
+            "Parce que la Société des Nations l'ordonnait",
+            "Parce qu'elles étaient liées par des alliances rivales",
+            "Parce qu'elles avaient toutes signé un traité pour combattre la Serbie"
+          ],
+          "explanation": "L'Allemagne était alliée à l'Autriche-Hongrie, la France à la Russie, et la Grande-Bretagne avait des liens étroits avec ces deux dernières. Un conflit entre deux d'entre elles pouvait entraîner les autres."
+        },
+        "de": {
+          "question": "Warum konnte ein Streit zwischen zwei europäischen Ländern 1914 alle Großmächte mit hineinziehen?",
+          "options": [
+            "Weil sie gemeinsam eine Armee hatten",
+            "Weil der Völkerbund es befahl",
+            "Weil sie in rivalisierenden Bündnissen aneinander gebunden waren",
+            "Weil sie alle einen Vertrag gegen Serbien unterzeichnet hatten"
+          ],
+          "explanation": "Deutschland war mit Österreich-Ungarn verbündet, Frankreich mit Russland, und Großbritannien hatte enge Bindungen zu beiden. Ein Konflikt zwischen zwei von ihnen konnte die übrigen mitreißen."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "How did Gavrilo Princip get his chance to shoot Archduke Franz Ferdinand?",
+      "options": [
+        "The archduke's driver took a wrong turn and stopped right in front of him",
+        "He was one of the archduke's bodyguards",
+        "He hid inside the town hall",
+        "He fired from a train window"
+      ],
+      "explanation": "Nobody had told the driver the route had changed. He turned into a side street, stopped to reverse, and Princip was standing a few metres away.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe kreeg Gavrilo Princip de kans om aartshertog Frans Ferdinand neer te schieten?",
+          "options": [
+            "De chauffeur van de aartshertog sloeg verkeerd af en stopte vlak voor hem",
+            "Hij was een van de lijfwachten van de aartshertog",
+            "Hij had zich in het stadhuis verstopt",
+            "Hij schoot vanuit een treinraam"
+          ],
+          "explanation": "Niemand had de chauffeur verteld dat de route was gewijzigd. Hij sloeg een zijstraat in, stopte om achteruit te rijden, en Princip stond een paar meter verderop."
+        },
+        "fr": {
+          "question": "Comment Gavrilo Princip eut-il l'occasion de tirer sur l'archiduc François-Ferdinand ?",
+          "options": [
+            "Le chauffeur de l'archiduc se trompa de rue et s'arrêta juste devant lui",
+            "Il faisait partie des gardes du corps de l'archiduc",
+            "Il s'était caché dans l'hôtel de ville",
+            "Il tira depuis la fenêtre d'un train"
+          ],
+          "explanation": "Personne n'avait prévenu le chauffeur du changement d'itinéraire. Il tourna dans une rue latérale, s'arrêta pour faire marche arrière, et Princip se trouvait à quelques mètres."
+        },
+        "de": {
+          "question": "Wie bekam Gavrilo Princip die Gelegenheit, auf Erzherzog Franz Ferdinand zu schießen?",
+          "options": [
+            "Der Fahrer des Erzherzogs bog falsch ab und hielt direkt vor ihm",
+            "Er war einer der Leibwächter des Erzherzogs",
+            "Er hatte sich im Rathaus versteckt",
+            "Er schoss aus einem Zugfenster"
+          ],
+          "explanation": "Niemand hatte dem Fahrer gesagt, dass die Route geändert worden war. Er bog in eine Seitenstraße ein, hielt an, um zurückzusetzen, und Princip stand wenige Meter entfernt."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What finally brought Britain into the war in August 1914?",
+      "options": [
+        "An attack on London by airships",
+        "The murder of a British diplomat in Sarajevo",
+        "A Russian request for help",
+        "Germany's invasion of neutral Belgium"
+      ],
+      "explanation": "Britain had guaranteed Belgium's neutrality in 1839. When German troops crossed the Belgian border on 4 August, Britain declared war.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waardoor raakte Groot-Brittannië in augustus 1914 uiteindelijk bij de oorlog betrokken?",
+          "options": [
+            "Een aanval op Londen met luchtschepen",
+            "De moord op een Britse diplomaat in Sarajevo",
+            "Een verzoek om hulp van Rusland",
+            "De Duitse inval in het neutrale België"
+          ],
+          "explanation": "Groot-Brittannië had in 1839 de neutraliteit van België gegarandeerd. Toen Duitse troepen op 4 augustus de Belgische grens overstaken, verklaarde Groot-Brittannië de oorlog."
+        },
+        "fr": {
+          "question": "Qu'est-ce qui fit finalement entrer la Grande-Bretagne en guerre en août 1914 ?",
+          "options": [
+            "Une attaque de Londres par des dirigeables",
+            "L'assassinat d'un diplomate britannique à Sarajevo",
+            "Une demande d'aide de la Russie",
+            "L'invasion de la Belgique neutre par l'Allemagne"
+          ],
+          "explanation": "La Grande-Bretagne garantissait la neutralité de la Belgique depuis 1839. Quand les troupes allemandes franchirent la frontière belge le 4 août, elle déclara la guerre."
+        },
+        "de": {
+          "question": "Was brachte Großbritannien im August 1914 schließlich in den Krieg?",
+          "options": [
+            "Ein Angriff auf London mit Luftschiffen",
+            "Die Ermordung eines britischen Diplomaten in Sarajevo",
+            "Ein russisches Hilfeersuchen",
+            "Der deutsche Einmarsch in das neutrale Belgien"
+          ],
+          "explanation": "Großbritannien hatte 1839 die Neutralität Belgiens garantiert. Als deutsche Truppen am 4. August die belgische Grenze überschritten, erklärte Großbritannien den Krieg."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What happened along parts of the Western Front at Christmas 1914?",
+      "options": [
+        "The biggest attack of the war began",
+        "Soldiers stopped fighting and met in no man's land",
+        "The first tanks were used",
+        "The Kaiser visited the British trenches"
+      ],
+      "explanation": "In the unofficial Christmas truce, British and German soldiers sang carols, exchanged gifts and buried their dead. Commanders made sure it was not repeated.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er met Kerstmis 1914 op delen van het westfront?",
+          "options": [
+            "De grootste aanval van de oorlog begon",
+            "Soldaten hielden op met vechten en ontmoetten elkaar in niemandsland",
+            "De eerste tanks werden ingezet",
+            "De keizer bezocht de Britse loopgraven"
+          ],
+          "explanation": "Tijdens het onofficiële kerstbestand zongen Britse en Duitse soldaten kerstliederen, ruilden ze cadeautjes en begroeven ze hun doden. De bevelhebbers zorgden ervoor dat het niet herhaald werd."
+        },
+        "fr": {
+          "question": "Que se passa-t-il sur certaines parties du front occidental à Noël 1914 ?",
+          "options": [
+            "La plus grande offensive de la guerre commença",
+            "Des soldats cessèrent le combat et se rencontrèrent dans le no man's land",
+            "Les premiers chars furent utilisés",
+            "Le Kaiser visita les tranchées britanniques"
+          ],
+          "explanation": "Lors de la trêve de Noël, non officielle, soldats britanniques et allemands chantèrent des cantiques, échangèrent des cadeaux et enterrèrent leurs morts. Les chefs veillèrent à ce que cela ne se reproduise pas."
+        },
+        "de": {
+          "question": "Was geschah an Teilen der Westfront zu Weihnachten 1914?",
+          "options": [
+            "Der größte Angriff des Krieges begann",
+            "Soldaten hörten auf zu kämpfen und trafen sich im Niemandsland",
+            "Die ersten Panzer wurden eingesetzt",
+            "Der Kaiser besuchte die britischen Schützengräben"
+          ],
+          "explanation": "Beim inoffiziellen Weihnachtsfrieden sangen britische und deutsche Soldaten Weihnachtslieder, tauschten Geschenke und begruben ihre Toten. Die Befehlshaber sorgten dafür, dass es sich nicht wiederholte."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Where was the armistice that ended the fighting signed, on 11 November 1918?",
+      "options": [
+        "In the Hall of Mirrors at Versailles",
+        "In a palace in Vienna",
+        "In a railway carriage in a forest near Compiègne",
+        "On a ship in the North Sea"
+      ],
+      "explanation": "German delegates signed it in a railway carriage in the forest of Compiègne. It took effect at eleven o'clock that morning.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar werd op 11 november 1918 de wapenstilstand getekend die een einde maakte aan de gevechten?",
+          "options": [
+            "In de Spiegelzaal van Versailles",
+            "In een paleis in Wenen",
+            "In een treinwagon in een bos bij Compiègne",
+            "Op een schip op de Noordzee"
+          ],
+          "explanation": "Duitse afgevaardigden tekenden hem in een treinwagon in het bos van Compiègne. Hij ging om elf uur die ochtend in."
+        },
+        "fr": {
+          "question": "Où fut signé, le 11 novembre 1918, l'armistice qui mit fin aux combats ?",
+          "options": [
+            "Dans la galerie des Glaces à Versailles",
+            "Dans un palais à Vienne",
+            "Dans un wagon de chemin de fer, dans une forêt près de Compiègne",
+            "Sur un navire en mer du Nord"
+          ],
+          "explanation": "Les délégués allemands le signèrent dans un wagon en forêt de Compiègne. Il entra en vigueur à onze heures ce matin-là."
+        },
+        "de": {
+          "question": "Wo wurde am 11. November 1918 der Waffenstillstand unterzeichnet, der die Kämpfe beendete?",
+          "options": [
+            "Im Spiegelsaal von Versailles",
+            "In einem Palast in Wien",
+            "In einem Eisenbahnwagen in einem Wald bei Compiègne",
+            "Auf einem Schiff in der Nordsee"
+          ],
+          "explanation": "Die deutschen Delegierten unterzeichneten ihn in einem Eisenbahnwagen im Wald von Compiègne. Er trat um elf Uhr an diesem Vormittag in Kraft."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

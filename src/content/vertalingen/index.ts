@@ -68,6 +68,14 @@ import stephenHawkingNl from './nl/stephen-hawking';
 import angelaMerkelNl from './nl/angela-merkel';
 import timBernersLeeNl from './nl/tim-berners-lee';
 import barackObamaNl from './nl/barack-obama';
+import september11AttacksNl from './nl/september-11-attacks';
+import chernobylDisasterNl from './nl/chernobyl-disaster';
+import dDayNl from './nl/d-day';
+import russianRevolutionNl from './nl/russian-revolution';
+import firstWorldWarNl from './nl/first-world-war';
+import titanicNl from './nl/titanic';
+import californiaGoldRushNl from './nl/california-gold-rush';
+import stormingOfTheBastilleNl from './nl/storming-of-the-bastille';
 
 // Vertalingen van de verhaaltekst, één bestand per verhaal per taal, gesleuteld op
 // `vertaalSleutel(en)`. Bewust een expliciete lijst (zoals CHARACTER_IMAGES): een verhaal dat
@@ -144,6 +152,14 @@ const NL: Record<string, Vertaaltabel> = {
   'angela-merkel': angelaMerkelNl,
   'tim-berners-lee': timBernersLeeNl,
   'barack-obama': barackObamaNl,
+  'september-11-attacks': september11AttacksNl,
+  'chernobyl-disaster': chernobylDisasterNl,
+  'd-day': dDayNl,
+  'russian-revolution': russianRevolutionNl,
+  'first-world-war': firstWorldWarNl,
+  'titanic': titanicNl,
+  'california-gold-rush': californiaGoldRushNl,
+  'storming-of-the-bastille': stormingOfTheBastilleNl,
 };
 
 export const VERTALINGEN = { nl: NL } as const;

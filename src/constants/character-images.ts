@@ -93,6 +93,15 @@ const IMAGES = {
   'angela-merkel': require('../../assets/images/characters/angela-merkel.webp'),
   'tim-berners-lee': require('../../assets/images/characters/tim-berners-lee.webp'),
   'barack-obama': require('../../assets/images/characters/barack-obama.webp'),
+  // Events, 2026-11-05
+  'storming-of-the-bastille': require('../../assets/images/characters/storming-of-the-bastille.webp'),
+  'california-gold-rush': require('../../assets/images/characters/california-gold-rush.webp'),
+  'titanic': require('../../assets/images/characters/titanic.webp'),
+  'first-world-war': require('../../assets/images/characters/first-world-war.webp'),
+  'russian-revolution': require('../../assets/images/characters/russian-revolution.webp'),
+  'd-day': require('../../assets/images/characters/d-day.webp'),
+  'chernobyl-disaster': require('../../assets/images/characters/chernobyl-disaster.webp'),
+  'september-11-attacks': require('../../assets/images/characters/september-11-attacks.webp'),
 };
 
 /** De verhaal-id's waarvoor een portret in de bundel zit. */

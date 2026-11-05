@@ -1,0 +1,181 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Why did the hijackers choose flights bound for California on 11 September 2001?",
+      "options": [
+        "They wanted to escape to the West Coast",
+        "The planes were the smallest available",
+        "Long flights meant full fuel tanks",
+        "Those flights had no crew on board"
+      ],
+      "explanation": "All four planes were flying across the country, so they carried large amounts of fuel, which made the impacts far more destructive.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom kozen de kapers op 11 september 2001 vluchten naar Californië?",
+          "options": [
+            "Ze wilden naar de westkust vluchten",
+            "Het waren de kleinste vliegtuigen die er waren",
+            "Lange vluchten betekenden volle brandstoftanks",
+            "Op die vluchten zat geen bemanning"
+          ],
+          "explanation": "Alle vier de vliegtuigen vlogen dwars over het land, dus ze hadden grote hoeveelheden brandstof aan boord, waardoor de inslagen veel verwoestender waren."
+        },
+        "fr": {
+          "question": "Pourquoi les pirates de l'air choisirent-ils des vols à destination de la Californie le 11 septembre 2001 ?",
+          "options": [
+            "Ils voulaient s'enfuir sur la côte Ouest",
+            "C'étaient les plus petits avions disponibles",
+            "Les longs vols impliquaient des réservoirs pleins de carburant",
+            "Ces vols n'avaient pas d'équipage"
+          ],
+          "explanation": "Les quatre avions traversaient le pays et transportaient donc beaucoup de carburant, ce qui rendit les impacts bien plus destructeurs."
+        },
+        "de": {
+          "question": "Warum wählten die Entführer am 11. September 2001 Flüge nach Kalifornien?",
+          "options": [
+            "Sie wollten an die Westküste fliehen",
+            "Es waren die kleinsten verfügbaren Flugzeuge",
+            "Lange Flüge bedeuteten volle Treibstofftanks",
+            "Auf diesen Flügen war keine Besatzung"
+          ],
+          "explanation": "Alle vier Flugzeuge sollten quer durch das Land fliegen und hatten daher große Mengen Treibstoff an Bord, was die Einschläge weit zerstörerischer machte."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "How were around half a million people evacuated from Lower Manhattan on 11 September?",
+      "options": [
+        "By hundreds of boats across the water",
+        "By helicopters from the rooftops",
+        "By the subway, which kept running",
+        "By army trucks through the tunnels"
+      ],
+      "explanation": "With bridges and tunnels closed, ferries, tugboats and private boats carried people to safety in about nine hours, one of the largest sea evacuations in history.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe werden op 11 september zo’n half miljoen mensen uit Lower Manhattan geëvacueerd?",
+          "options": [
+            "Met honderden boten over het water",
+            "Met helikopters vanaf de daken",
+            "Met de metro, die bleef rijden",
+            "Met legertrucks door de tunnels"
+          ],
+          "explanation": "Omdat bruggen en tunnels dicht waren, brachten veerboten, sleepboten en particuliere boten de mensen in ongeveer negen uur in veiligheid, een van de grootste evacuaties over zee uit de geschiedenis."
+        },
+        "fr": {
+          "question": "Comment environ un demi-million de personnes furent-elles évacuées du sud de Manhattan le 11 septembre ?",
+          "options": [
+            "Par des centaines de bateaux",
+            "Par hélicoptère depuis les toits",
+            "Par le métro, qui continuait de rouler",
+            "Par des camions de l'armée dans les tunnels"
+          ],
+          "explanation": "Les ponts et les tunnels étant fermés, ferries, remorqueurs et bateaux privés mirent les gens à l'abri en neuf heures environ, l'une des plus grandes évacuations par mer de l'histoire."
+        },
+        "de": {
+          "question": "Wie wurden am 11. September rund eine halbe Million Menschen aus Lower Manhattan evakuiert?",
+          "options": [
+            "Mit Hunderten Booten über das Wasser",
+            "Mit Hubschraubern von den Dächern",
+            "Mit der U-Bahn, die weiterfuhr",
+            "Mit Armeelastwagen durch die Tunnel"
+          ],
+          "explanation": "Da Brücken und Tunnel gesperrt waren, brachten Fähren, Schlepper und private Boote die Menschen in etwa neun Stunden in Sicherheit, eine der größten Evakuierungen über See in der Geschichte."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What happened on board United Airlines Flight 93?",
+      "options": [
+        "It landed safely in Canada",
+        "The hijackers gave up and surrendered",
+        "It was shot down over New York",
+        "The passengers fought back and the plane crashed in a field"
+      ],
+      "explanation": "Having learned of the other attacks by phone, passengers rushed the cockpit. The plane crashed near Shanksville, Pennsylvania, short of its target in Washington.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er aan boord van United Airlines-vlucht 93?",
+          "options": [
+            "Het toestel landde veilig in Canada",
+            "De kapers gaven zich over",
+            "Het werd boven New York neergeschoten",
+            "De passagiers vochten terug en het vliegtuig stortte neer in een veld"
+          ],
+          "explanation": "Nadat ze via de telefoon over de andere aanslagen hadden gehoord, bestormden passagiers de cockpit. Het vliegtuig stortte neer bij Shanksville, Pennsylvania, voordat het zijn doelwit in Washington bereikte."
+        },
+        "fr": {
+          "question": "Que se passa-t-il à bord du vol 93 de United Airlines ?",
+          "options": [
+            "Il atterrit sans encombre au Canada",
+            "Les pirates de l'air se rendirent",
+            "Il fut abattu au-dessus de New York",
+            "Les passagers se révoltèrent et l'avion s'écrasa dans un champ"
+          ],
+          "explanation": "Informés des autres attaques par téléphone, des passagers se ruèrent sur le cockpit. L'avion s'écrasa près de Shanksville, en Pennsylvanie, avant d'atteindre sa cible à Washington."
+        },
+        "de": {
+          "question": "Was geschah an Bord von United-Airlines-Flug 93?",
+          "options": [
+            "Er landete sicher in Kanada",
+            "Die Entführer gaben auf",
+            "Er wurde über New York abgeschossen",
+            "Die Passagiere wehrten sich, und das Flugzeug stürzte auf ein Feld"
+          ],
+          "explanation": "Nachdem sie telefonisch von den anderen Anschlägen erfahren hatten, stürmten Passagiere das Cockpit. Das Flugzeug stürzte bei Shanksville in Pennsylvania ab, bevor es sein Ziel in Washington erreichte."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What is the \"Survivor Tree\" at the 9/11 Memorial?",
+      "options": [
+        "A tree planted by the president in 2001",
+        "A pear tree found burned in the rubble that was nursed back to health",
+        "A bronze sculpture of a tree",
+        "A tree grown from seeds sent by every country"
+      ],
+      "explanation": "Workers found the pear tree in the rubble with one living branch. It was cared for and replanted at the memorial, where it blossoms every spring.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat is de „Survivor Tree” bij het 9/11 Memorial?",
+          "options": [
+            "Een boom die in 2001 door de president werd geplant",
+            "Een verbrande perenboom uit het puin die weer werd opgekweekt",
+            "Een bronzen beeld van een boom",
+            "Een boom gekweekt uit zaden die elk land stuurde"
+          ],
+          "explanation": "Werkers vonden de perenboom in het puin met nog één levende tak. Hij werd verzorgd en bij het monument herplant, waar hij elk voorjaar bloeit."
+        },
+        "fr": {
+          "question": "Qu'est-ce que le « Survivor Tree » du mémorial du 11-Septembre ?",
+          "options": [
+            "Un arbre planté par le président en 2001",
+            "Un poirier brûlé retrouvé dans les décombres et soigné",
+            "Une sculpture d'arbre en bronze",
+            "Un arbre issu de graines envoyées par chaque pays"
+          ],
+          "explanation": "Des ouvriers découvrirent le poirier dans les décombres avec une seule branche vivante. Soigné, il fut replanté au mémorial, où il fleurit chaque printemps."
+        },
+        "de": {
+          "question": "Was ist der „Survivor Tree“ an der 9/11-Gedenkstätte?",
+          "options": [
+            "Ein Baum, den der Präsident 2001 pflanzte",
+            "Ein verbrannter Birnbaum aus den Trümmern, der wieder aufgepäppelt wurde",
+            "Eine Bronzeskulptur eines Baumes",
+            "Ein Baum aus Samen, die jedes Land schickte"
+          ],
+          "explanation": "Arbeiter fanden den Birnbaum mit nur einem lebenden Ast in den Trümmern. Er wurde gepflegt und an der Gedenkstätte wieder eingepflanzt, wo er jedes Frühjahr blüht."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

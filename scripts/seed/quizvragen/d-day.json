@@ -1,0 +1,225 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Why did the Allies bring their own artificial harbours to Normandy?",
+      "options": [
+        "To fool the Germans into expecting a landing at Calais",
+        "Because the Navy refused to land on beaches",
+        "To store gold for the French Resistance",
+        "Because Normandy had no large harbour they could capture quickly"
+      ],
+      "explanation": "The two Mulberry harbours were built in sections in Britain and towed across the Channel after the landings, so supplies could come ashore.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom namen de geallieerden hun eigen kunstmatige havens mee naar Normandië?",
+          "options": [
+            "Om de Duitsers een landing bij Calais te laten verwachten",
+            "Omdat de marine weigerde op stranden te landen",
+            "Om goud voor het Franse verzet op te slaan",
+            "Omdat Normandië geen grote haven had die ze snel konden innemen"
+          ],
+          "explanation": "De twee Mulberry-havens werden in Groot-Brittannië in delen gebouwd en na de landing over het Kanaal gesleept, zodat er voorraden aan land konden komen."
+        },
+        "fr": {
+          "question": "Pourquoi les Alliés apportèrent-ils leurs propres ports artificiels en Normandie ?",
+          "options": [
+            "Pour faire croire aux Allemands à un débarquement à Calais",
+            "Parce que la marine refusait de débarquer sur des plages",
+            "Pour stocker de l'or destiné à la Résistance",
+            "Parce que la Normandie n'avait pas de grand port qu'ils puissent prendre rapidement"
+          ],
+          "explanation": "Les deux ports Mulberry furent construits en éléments en Grande-Bretagne et remorqués à travers la Manche après le débarquement, pour faire arriver le ravitaillement."
+        },
+        "de": {
+          "question": "Warum brachten die Alliierten ihre eigenen künstlichen Häfen in die Normandie mit?",
+          "options": [
+            "Um die Deutschen eine Landung bei Calais erwarten zu lassen",
+            "Weil die Marine sich weigerte, an Stränden zu landen",
+            "Um Gold für die französische Résistance zu lagern",
+            "Weil es in der Normandie keinen großen Hafen gab, den sie schnell erobern konnten"
+          ],
+          "explanation": "Die beiden Mulberry-Häfen wurden in Großbritannien in Teilen gebaut und nach der Landung über den Ärmelkanal geschleppt, damit Nachschub an Land kommen konnte."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "What was special about the army placed under General Patton in south-east England?",
+      "options": [
+        "It did not exist: it was a fake army with inflatable tanks",
+        "It was made up entirely of paratroopers",
+        "It landed first, on Omaha Beach",
+        "It was secretly German"
+      ],
+      "explanation": "Operation Fortitude invented a whole army, with rubber tanks and fake radio traffic, to convince the Germans the invasion would come at the Pas-de-Calais.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was er bijzonder aan het leger onder generaal Patton in het zuidoosten van Engeland?",
+          "options": [
+            "Het bestond niet: het was een nepleger met opblaasbare tanks",
+            "Het bestond helemaal uit parachutisten",
+            "Het landde als eerste, op Omaha Beach",
+            "Het was in het geheim Duits"
+          ],
+          "explanation": "Operatie Fortitude verzon een compleet leger, met rubberen tanks en nepradioverkeer, om de Duitsers ervan te overtuigen dat de invasie bij het Pas-de-Calais zou komen."
+        },
+        "fr": {
+          "question": "Qu'avait de particulier l'armée placée sous le général Patton dans le sud-est de l'Angleterre ?",
+          "options": [
+            "Elle n'existait pas : c'était une fausse armée avec des chars gonflables",
+            "Elle était entièrement composée de parachutistes",
+            "Elle débarqua la première, à Omaha Beach",
+            "Elle était secrètement allemande"
+          ],
+          "explanation": "L'opération Fortitude inventa une armée entière, avec des chars en caoutchouc et de faux messages radio, pour convaincre les Allemands que l'invasion viendrait par le Pas-de-Calais."
+        },
+        "de": {
+          "question": "Was war das Besondere an der Armee unter General Patton im Südosten Englands?",
+          "options": [
+            "Es gab sie nicht: Es war eine Scheinarmee mit aufblasbaren Panzern",
+            "Sie bestand nur aus Fallschirmjägern",
+            "Sie landete als Erste am Omaha Beach",
+            "Sie war insgeheim deutsch"
+          ],
+          "explanation": "Die Operation Fortitude erfand eine ganze Armee mit Gummipanzern und falschem Funkverkehr, um die Deutschen zu überzeugen, dass die Invasion am Pas-de-Calais kommen würde."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Why was the invasion launched on 6 June 1944?",
+      "options": [
+        "It was Eisenhower's birthday",
+        "The Germans had announced a holiday",
+        "A meteorologist predicted a short break in a storm",
+        "The moon was full and bright all night"
+      ],
+      "explanation": "A storm forced a one-day delay. James Stagg spotted a brief gap in the weather for 6 June, and Eisenhower decided not to wait weeks for the next chance.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom begon de invasie op 6 juni 1944?",
+          "options": [
+            "Het was de verjaardag van Eisenhower",
+            "De Duitsers hadden een feestdag aangekondigd",
+            "Een meteoroloog voorspelde een korte opklaring in een storm",
+            "De maan was de hele nacht vol en helder"
+          ],
+          "explanation": "Door een storm moest de invasie een dag worden uitgesteld. James Stagg zag voor 6 juni een korte opklaring aankomen, en Eisenhower besloot niet weken op de volgende kans te wachten."
+        },
+        "fr": {
+          "question": "Pourquoi l'invasion fut-elle lancée le 6 juin 1944 ?",
+          "options": [
+            "C'était l'anniversaire d'Eisenhower",
+            "Les Allemands avaient annoncé un jour férié",
+            "Un météorologue prévit une courte accalmie dans une tempête",
+            "La lune était pleine et brillante toute la nuit"
+          ],
+          "explanation": "Une tempête imposa un report d'un jour. James Stagg repéra une brève accalmie pour le 6 juin, et Eisenhower décida de ne pas attendre des semaines la prochaine occasion."
+        },
+        "de": {
+          "question": "Warum begann die Invasion am 6. Juni 1944?",
+          "options": [
+            "Es war Eisenhowers Geburtstag",
+            "Die Deutschen hatten einen Feiertag angekündigt",
+            "Ein Meteorologe sagte eine kurze Wetterberuhigung in einem Sturm voraus",
+            "Der Mond war die ganze Nacht voll und hell"
+          ],
+          "explanation": "Ein Sturm erzwang einen Aufschub um einen Tag. James Stagg sah für den 6. Juni eine kurze Wetterlücke kommen, und Eisenhower beschloss, nicht wochenlang auf die nächste Gelegenheit zu warten."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Which of the five D-Day beaches cost the most lives and was hardest to take?",
+      "options": [
+        "Utah",
+        "Omaha",
+        "Juno",
+        "Sword"
+      ],
+      "explanation": "At Omaha the bombing missed, the supporting tanks sank, and German guns on the bluffs swept the beach. It cost around 2,400 American casualties.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk van de vijf D-Day-stranden kostte de meeste levens en was het moeilijkst in te nemen?",
+          "options": [
+            "Utah",
+            "Omaha",
+            "Juno",
+            "Sword"
+          ],
+          "explanation": "Op Omaha misten de bommen hun doel, zonken de ondersteunende tanks en bestreken Duitse kanonnen op de kliffen het strand. Het kostte de Amerikanen zo’n 2.400 doden en gewonden."
+        },
+        "fr": {
+          "question": "Laquelle des cinq plages du Débarquement fut la plus meurtrière et la plus difficile à prendre ?",
+          "options": [
+            "Utah",
+            "Omaha",
+            "Juno",
+            "Sword"
+          ],
+          "explanation": "À Omaha, les bombardements manquèrent leur cible, les chars d'appui coulèrent et les mitrailleuses allemandes sur les falaises balayaient la plage. Les Américains y eurent environ 2 400 tués et blessés."
+        },
+        "de": {
+          "question": "Welcher der fünf Strände am D-Day forderte die meisten Opfer und war am schwersten einzunehmen?",
+          "options": [
+            "Utah",
+            "Omaha",
+            "Juno",
+            "Sword"
+          ],
+          "explanation": "Am Omaha Beach verfehlten die Bomben ihr Ziel, die unterstützenden Panzer sanken, und deutsche Maschinengewehre auf den Steilhängen bestrichen den Strand. Die Amerikaner hatten dort rund 2.400 Tote und Verwundete."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What does the \"D\" in D-Day stand for?",
+      "options": [
+        "Nothing special: it marks the start day of any military operation",
+        "Deliverance",
+        "Dwight, after Eisenhower",
+        "Destruction"
+      ],
+      "explanation": "Planners used \"D-Day\" and \"H-Hour\" for the day and hour an operation began, so plans could be drawn up before the date was fixed.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waar staat de „D” in D-Day voor?",
+          "options": [
+            "Nergens bijzonders voor: het geeft de startdag van elke militaire operatie aan",
+            "Deliverance, bevrijding",
+            "Dwight, naar Eisenhower",
+            "Destruction, vernietiging"
+          ],
+          "explanation": "Planners gebruikten „D-Day” en „H-Hour” voor de dag en het uur waarop een operatie begon, zodat er plannen gemaakt konden worden voordat de datum vaststond."
+        },
+        "fr": {
+          "question": "Que signifie le « D » de D-Day ?",
+          "options": [
+            "Rien de particulier : il désigne le jour de lancement de toute opération militaire",
+            "Deliverance, délivrance",
+            "Dwight, comme Eisenhower",
+            "Destruction"
+          ],
+          "explanation": "Les planificateurs utilisaient « Jour J » (D-Day) et « heure H » pour le jour et l'heure du début d'une opération, afin de préparer les plans avant que la date soit fixée."
+        },
+        "de": {
+          "question": "Wofür steht das „D“ in D-Day?",
+          "options": [
+            "Für nichts Besonderes: Es bezeichnet den Starttag jeder militärischen Operation",
+            "Deliverance, Befreiung",
+            "Dwight, nach Eisenhower",
+            "Destruction, Zerstörung"
+          ],
+          "explanation": "Planer verwendeten „D-Day“ und „H-Hour“ für Tag und Stunde des Beginns einer Operation, damit Pläne erstellt werden konnten, bevor das Datum feststand."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

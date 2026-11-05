@@ -1,0 +1,225 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Roughly how many people could the Titanic's lifeboats hold?",
+      "options": [
+        "Everyone on board, about 2,200",
+        "About 400",
+        "About 3,000",
+        "About 1,178, barely half of those on board"
+      ],
+      "explanation": "The twenty boats had room for about 1,178 people. The outdated rules were based on a ship's weight, not on how many people it carried.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Voor hoeveel mensen was er ongeveer plaats in de sloepen van de Titanic?",
+          "options": [
+            "Voor iedereen aan boord, zo’n 2.200",
+            "Zo’n 400",
+            "Zo’n 3.000",
+            "Zo’n 1.178, nog geen helft van de opvarenden"
+          ],
+          "explanation": "De twintig sloepen hadden plaats voor zo’n 1.178 mensen. De verouderde regels gingen uit van het gewicht van een schip, niet van het aantal mensen aan boord."
+        },
+        "fr": {
+          "question": "Combien de personnes environ les canots du Titanic pouvaient-ils accueillir ?",
+          "options": [
+            "Tout le monde à bord, environ 2 200",
+            "Environ 400",
+            "Environ 3 000",
+            "Environ 1 178, à peine la moitié des passagers"
+          ],
+          "explanation": "Les vingt canots offraient environ 1 178 places. Les règles dépassées se fondaient sur le tonnage du navire, pas sur le nombre de personnes à bord."
+        },
+        "de": {
+          "question": "Wie viele Menschen fanden ungefähr in den Rettungsbooten der Titanic Platz?",
+          "options": [
+            "Alle an Bord, rund 2.200",
+            "Etwa 400",
+            "Etwa 3.000",
+            "Etwa 1.178, kaum die Hälfte der Menschen an Bord"
+          ],
+          "explanation": "Die zwanzig Boote boten Platz für etwa 1.178 Menschen. Die veralteten Vorschriften richteten sich nach der Größe des Schiffes, nicht nach der Zahl der Menschen an Bord."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Why was the iceberg so hard to see that night?",
+      "options": [
+        "It was hidden by heavy fog",
+        "The sea was flat calm and there was no moon",
+        "A storm was raging",
+        "The lookouts were asleep"
+      ],
+      "explanation": "Without waves breaking white at its foot and without moonlight, the iceberg was almost invisible against the dark water.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom was de ijsberg die nacht zo moeilijk te zien?",
+          "options": [
+            "Hij ging schuil in dichte mist",
+            "De zee was spiegelglad en er was geen maan",
+            "Er raasde een storm",
+            "De uitkijken lagen te slapen"
+          ],
+          "explanation": "Zonder golven die wit braken aan zijn voet en zonder maanlicht was de ijsberg tegen het donkere water bijna onzichtbaar."
+        },
+        "fr": {
+          "question": "Pourquoi l'iceberg était-il si difficile à voir cette nuit-là ?",
+          "options": [
+            "Il était caché par un épais brouillard",
+            "La mer était d'huile et il n'y avait pas de lune",
+            "Une tempête faisait rage",
+            "Les vigies dormaient"
+          ],
+          "explanation": "Sans vagues se brisant en écume blanche à sa base et sans clair de lune, l'iceberg était presque invisible sur l'eau sombre."
+        },
+        "de": {
+          "question": "Warum war der Eisberg in jener Nacht so schwer zu sehen?",
+          "options": [
+            "Er war in dichtem Nebel verborgen",
+            "Das Meer war spiegelglatt und es gab keinen Mond",
+            "Es tobte ein Sturm",
+            "Die Ausguckposten schliefen"
+          ],
+          "explanation": "Ohne Wellen, die sich weiß an seinem Fuß brachen, und ohne Mondlicht war der Eisberg vor dem dunklen Wasser fast unsichtbar."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Why could the Titanic not survive the damage, even with watertight compartments?",
+      "options": [
+        "Too many compartments flooded, and water spilled over the top of each wall into the next",
+        "The watertight doors had been left open",
+        "The iceberg split the ship in two at once",
+        "The engines exploded"
+      ],
+      "explanation": "Five or six compartments were opened to the sea. As the bow sank, the water overflowed each wall in turn, and designer Thomas Andrews knew she would sink.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom kon de Titanic de schade niet overleven, ondanks haar waterdichte compartimenten?",
+          "options": [
+            "Er liepen te veel compartimenten vol, en het water stroomde over de bovenkant van elke wand de volgende in",
+            "De waterdichte deuren stonden open",
+            "De ijsberg spleet het schip meteen in tweeën",
+            "De machines ontploften"
+          ],
+          "explanation": "Vijf of zes compartimenten lagen open naar zee. Terwijl de boeg zakte, liep het water over de ene wand na de andere, en ontwerper Thomas Andrews wist dat ze zou zinken."
+        },
+        "fr": {
+          "question": "Pourquoi le Titanic ne put-il survivre aux dégâts, malgré ses compartiments étanches ?",
+          "options": [
+            "Trop de compartiments furent envahis, et l'eau passa par-dessus chaque cloison vers la suivante",
+            "Les portes étanches étaient restées ouvertes",
+            "L'iceberg coupa le navire en deux d'un coup",
+            "Les machines explosèrent"
+          ],
+          "explanation": "Cinq ou six compartiments étaient ouverts à la mer. À mesure que la proue s'enfonçait, l'eau débordait d'une cloison à l'autre, et le concepteur Thomas Andrews sut que le navire allait couler."
+        },
+        "de": {
+          "question": "Warum konnte die Titanic den Schaden trotz wasserdichter Abteilungen nicht überstehen?",
+          "options": [
+            "Zu viele Abteilungen liefen voll, und das Wasser schwappte über jede Wand in die nächste",
+            "Die wasserdichten Türen standen offen",
+            "Der Eisberg riss das Schiff sofort in zwei Teile",
+            "Die Maschinen explodierten"
+          ],
+          "explanation": "Fünf oder sechs Abteilungen waren zum Meer hin offen. Als der Bug sank, lief das Wasser über eine Wand nach der anderen, und Konstrukteur Thomas Andrews wusste, dass sie sinken würde."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "What did the Titanic's musicians do while the ship was sinking?",
+      "options": [
+        "They took the first lifeboat",
+        "They helped row the boats",
+        "They kept playing on deck almost to the end",
+        "They hid in the cargo hold"
+      ],
+      "explanation": "Led by violinist Wallace Hartley, the eight musicians played to keep people calm. None of them survived.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat deden de muzikanten van de Titanic terwijl het schip zonk?",
+          "options": [
+            "Ze namen de eerste sloep",
+            "Ze hielpen de sloepen te roeien",
+            "Ze bleven bijna tot het einde aan dek doorspelen",
+            "Ze verstopten zich in het vrachtruim"
+          ],
+          "explanation": "Onder leiding van violist Wallace Hartley speelden de acht muzikanten om de mensen kalm te houden. Geen van hen overleefde het."
+        },
+        "fr": {
+          "question": "Que firent les musiciens du Titanic pendant le naufrage ?",
+          "options": [
+            "Ils prirent le premier canot",
+            "Ils aidèrent à ramer",
+            "Ils continuèrent à jouer sur le pont presque jusqu'à la fin",
+            "Ils se cachèrent dans la cale"
+          ],
+          "explanation": "Menés par le violoniste Wallace Hartley, les huit musiciens jouèrent pour calmer les passagers. Aucun d'eux ne survécut."
+        },
+        "de": {
+          "question": "Was taten die Musiker der Titanic, während das Schiff sank?",
+          "options": [
+            "Sie nahmen das erste Rettungsboot",
+            "Sie halfen beim Rudern",
+            "Sie spielten fast bis zum Ende an Deck weiter",
+            "Sie versteckten sich im Laderaum"
+          ],
+          "explanation": "Unter der Leitung des Geigers Wallace Hartley spielten die acht Musiker, um die Menschen zu beruhigen. Keiner von ihnen überlebte."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "Which rule became international law after the Titanic disaster?",
+      "options": [
+        "Ships may not sail at night",
+        "Every ship must carry lifeboats for everyone on board",
+        "Ships must have four funnels",
+        "Only one class of passengers is allowed"
+      ],
+      "explanation": "The 1914 Safety of Life at Sea convention required lifeboats for all, lifeboat drills and a radio watch around the clock.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke regel werd na de ramp met de Titanic internationaal vastgelegd?",
+          "options": [
+            "Schepen mogen ’s nachts niet varen",
+            "Elk schip moet sloepen hebben voor iedereen aan boord",
+            "Schepen moeten vier schoorstenen hebben",
+            "Er mag maar één klasse passagiers zijn"
+          ],
+          "explanation": "Het verdrag voor de beveiliging van mensenlevens op zee van 1914 eiste sloepen voor iedereen, sloepenoefeningen en een radiowacht de klok rond."
+        },
+        "fr": {
+          "question": "Quelle règle devint obligatoire à l'échelle internationale après le naufrage du Titanic ?",
+          "options": [
+            "Les navires ne peuvent pas naviguer de nuit",
+            "Chaque navire doit avoir des canots pour toutes les personnes à bord",
+            "Les navires doivent avoir quatre cheminées",
+            "Une seule classe de passagers est autorisée"
+          ],
+          "explanation": "La convention de 1914 pour la sauvegarde de la vie humaine en mer imposa des canots pour tous, des exercices d'évacuation et une veille radio permanente."
+        },
+        "de": {
+          "question": "Welche Regel wurde nach dem Untergang der Titanic international vorgeschrieben?",
+          "options": [
+            "Schiffe dürfen nachts nicht fahren",
+            "Jedes Schiff muss Rettungsboote für alle Menschen an Bord haben",
+            "Schiffe müssen vier Schornsteine haben",
+            "Es ist nur eine Passagierklasse erlaubt"
+          ],
+          "explanation": "Das Abkommen zum Schutz des menschlichen Lebens auf See von 1914 verlangte Rettungsboote für alle, Rettungsübungen und eine Funkwache rund um die Uhr."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

@@ -1,0 +1,225 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What were the engineers of reactor 4 trying to do on the night of the disaster?",
+      "options": [
+        "Shut the plant down for good",
+        "Carry out a safety test for a power cut",
+        "Build a new reactor",
+        "Test a nuclear weapon"
+      ],
+      "explanation": "They wanted to see whether the slowing turbines could keep the cooling pumps running until the emergency generators started.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat probeerden de ingenieurs van reactor 4 in de nacht van de ramp te doen?",
+          "options": [
+            "De centrale voorgoed stilleggen",
+            "Een veiligheidstest voor een stroomstoring uitvoeren",
+            "Een nieuwe reactor bouwen",
+            "Een kernwapen testen"
+          ],
+          "explanation": "Ze wilden zien of de uitlopende turbines de koelpompen draaiende konden houden tot de noodgeneratoren waren opgestart."
+        },
+        "fr": {
+          "question": "Que cherchaient à faire les ingénieurs du réacteur 4 la nuit de la catastrophe ?",
+          "options": [
+            "Fermer définitivement la centrale",
+            "Réaliser un essai de sûreté en cas de coupure de courant",
+            "Construire un nouveau réacteur",
+            "Tester une arme nucléaire"
+          ],
+          "explanation": "Ils voulaient vérifier si les turbines, en ralentissant, pouvaient faire tourner les pompes de refroidissement jusqu'au démarrage des générateurs de secours."
+        },
+        "de": {
+          "question": "Was wollten die Ingenieure von Reaktor 4 in der Nacht der Katastrophe tun?",
+          "options": [
+            "Das Kraftwerk endgültig abschalten",
+            "Einen Sicherheitstest für einen Stromausfall durchführen",
+            "Einen neuen Reaktor bauen",
+            "Eine Atomwaffe testen"
+          ],
+          "explanation": "Sie wollten prüfen, ob die auslaufenden Turbinen die Kühlpumpen in Gang halten konnten, bis die Notstromaggregate anliefen."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Why did pressing the emergency button make things worse at Chernobyl?",
+      "options": [
+        "The button was wired to the wrong reactor",
+        "It switched off the cooling water",
+        "The tips of the control rods briefly increased the reaction",
+        "It opened the lid of the reactor"
+      ],
+      "explanation": "A design flaw in the RBMK meant that the rods' tips first boosted the reaction for a few seconds. The power surged and the reactor exploded.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom maakte het indrukken van de noodknop in Tsjernobyl de situatie erger?",
+          "options": [
+            "De knop was aangesloten op de verkeerde reactor",
+            "Hij sloot het koelwater af",
+            "De uiteinden van de regelstaven versterkten de reactie even",
+            "Hij opende het deksel van de reactor"
+          ],
+          "explanation": "Door een ontwerpfout in de RBMK maakten de uiteinden van de staven de reactie eerst een paar seconden sterker. Het vermogen schoot omhoog en de reactor ontplofte."
+        },
+        "fr": {
+          "question": "Pourquoi le bouton d'arrêt d'urgence aggrava-t-il la situation à Tchernobyl ?",
+          "options": [
+            "Il était relié au mauvais réacteur",
+            "Il coupa l'eau de refroidissement",
+            "L'extrémité des barres de contrôle accéléra brièvement la réaction",
+            "Il ouvrit le couvercle du réacteur"
+          ],
+          "explanation": "Un défaut de conception du RBMK faisait que l'extrémité des barres renforçait d'abord la réaction pendant quelques secondes. La puissance s'emballa et le réacteur explosa."
+        },
+        "de": {
+          "question": "Warum verschlimmerte das Drücken des Notknopfs in Tschernobyl die Lage?",
+          "options": [
+            "Der Knopf war mit dem falschen Reaktor verbunden",
+            "Er stellte das Kühlwasser ab",
+            "Die Spitzen der Steuerstäbe verstärkten die Reaktion kurzzeitig",
+            "Er öffnete den Deckel des Reaktors"
+          ],
+          "explanation": "Wegen eines Konstruktionsfehlers des RBMK verstärkten die Spitzen der Stäbe die Reaktion zunächst für einige Sekunden. Die Leistung schoss hoch und der Reaktor explodierte."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "How did the outside world first find out about Chernobyl?",
+      "options": [
+        "Gorbachev announced it on television the next morning",
+        "A Soviet newspaper printed it on 26 April",
+        "An American spy satellite took photographs",
+        "Radiation alarms went off at a nuclear plant in Sweden"
+      ],
+      "explanation": "On 28 April workers at Sweden's Forsmark plant set off radiation alarms with contamination carried on the wind. Only then did Moscow admit there had been an accident.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe hoorde de buitenwereld voor het eerst van Tsjernobyl?",
+          "options": [
+            "Gorbatsjov maakte het de volgende ochtend op televisie bekend",
+            "Een Sovjetkrant meldde het op 26 april",
+            "Een Amerikaanse spionagesatelliet maakte foto’s",
+            "Er gingen stralingsalarmen af in een kerncentrale in Zweden"
+          ],
+          "explanation": "Op 28 april lieten werknemers van de Zweedse centrale Forsmark de stralingsalarmen afgaan door besmetting die met de wind was meegekomen. Pas daarna gaf Moskou toe dat er een ongeluk was gebeurd."
+        },
+        "fr": {
+          "question": "Comment le reste du monde apprit-il l'existence de la catastrophe de Tchernobyl ?",
+          "options": [
+            "Gorbatchev l'annonça à la télévision le lendemain matin",
+            "Un journal soviétique l'imprima le 26 avril",
+            "Un satellite espion américain prit des photos",
+            "Des alarmes de radiation se déclenchèrent dans une centrale suédoise"
+          ],
+          "explanation": "Le 28 avril, des employés de la centrale suédoise de Forsmark déclenchèrent les alarmes à cause d'une contamination apportée par le vent. C'est seulement alors que Moscou reconnut l'accident."
+        },
+        "de": {
+          "question": "Wie erfuhr die Außenwelt zuerst von Tschernobyl?",
+          "options": [
+            "Gorbatschow verkündete es am nächsten Morgen im Fernsehen",
+            "Eine sowjetische Zeitung berichtete am 26. April darüber",
+            "Ein amerikanischer Spionagesatellit machte Fotos",
+            "In einem schwedischen Kernkraftwerk gingen die Strahlenalarme los"
+          ],
+          "explanation": "Am 28. April lösten Beschäftigte des schwedischen Kraftwerks Forsmark mit vom Wind herangetragener Verseuchung die Strahlenalarme aus. Erst dann gab Moskau einen Unfall zu."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Why were men sent onto the reactor roof to clear debris, instead of machines?",
+      "options": [
+        "Remote-controlled robots broke down in the radiation",
+        "Machines were too expensive",
+        "The roof was too small for machines",
+        "The army wanted to test new uniforms"
+      ],
+      "explanation": "The radiation destroyed the robots' electronics. The liquidators ran out, shovelled radioactive graphite off the roof, and ran back, often within a minute.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom werden er mannen in plaats van machines het reactordak op gestuurd om puin te ruimen?",
+          "options": [
+            "Op afstand bestuurde robots raakten defect door de straling",
+            "Machines waren te duur",
+            "Het dak was te klein voor machines",
+            "Het leger wilde nieuwe uniformen testen"
+          ],
+          "explanation": "De straling vernielde de elektronica van de robots. De liquidatoren renden naar buiten, schepten radioactief grafiet van het dak en renden terug, vaak binnen een minuut."
+        },
+        "fr": {
+          "question": "Pourquoi envoya-t-on des hommes plutôt que des machines déblayer le toit du réacteur ?",
+          "options": [
+            "Les robots télécommandés tombaient en panne à cause des radiations",
+            "Les machines coûtaient trop cher",
+            "Le toit était trop petit pour des machines",
+            "L'armée voulait tester de nouveaux uniformes"
+          ],
+          "explanation": "Les radiations détruisaient l'électronique des robots. Les liquidateurs sortaient en courant, jetaient du graphite radioactif par-dessus le bord et revenaient, souvent en moins d'une minute."
+        },
+        "de": {
+          "question": "Warum wurden statt Maschinen Männer auf das Reaktordach geschickt, um Trümmer zu räumen?",
+          "options": [
+            "Ferngesteuerte Roboter fielen wegen der Strahlung aus",
+            "Maschinen waren zu teuer",
+            "Das Dach war zu klein für Maschinen",
+            "Die Armee wollte neue Uniformen testen"
+          ],
+          "explanation": "Die Strahlung zerstörte die Elektronik der Roboter. Die Liquidatoren rannten hinaus, schaufelten radioaktiven Graphit vom Dach und rannten zurück, oft in weniger als einer Minute."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What has happened to wildlife in the Chernobyl exclusion zone since people left?",
+      "options": [
+        "All animals have died out",
+        "Only insects survive there",
+        "Wolves, elk, bears and wild horses now roam it",
+        "It has been turned into a zoo"
+      ],
+      "explanation": "Without people, many animals have returned, including wolves, lynx and bears, and a herd of rare Przewalski's horses released in the 1990s.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat is er met de dieren in de verboden zone van Tsjernobyl gebeurd sinds de mensen vertrokken?",
+          "options": [
+            "Alle dieren zijn uitgestorven",
+            "Er overleven alleen insecten",
+            "Er zwerven nu wolven, elanden, beren en wilde paarden",
+            "Er is een dierentuin van gemaakt"
+          ],
+          "explanation": "Zonder mensen zijn veel dieren teruggekeerd, waaronder wolven, lynxen en beren, en een kudde zeldzame przewalskipaarden die er in de jaren negentig werd uitgezet."
+        },
+        "fr": {
+          "question": "Qu'est devenue la faune de la zone d'exclusion de Tchernobyl depuis le départ des habitants ?",
+          "options": [
+            "Tous les animaux ont disparu",
+            "Seuls les insectes y survivent",
+            "Loups, élans, ours et chevaux sauvages y vivent désormais",
+            "Elle a été transformée en zoo"
+          ],
+          "explanation": "En l'absence des humains, de nombreux animaux sont revenus, dont des loups, des lynx et des ours, ainsi qu'un troupeau de rares chevaux de Przewalski relâchés dans les années 1990."
+        },
+        "de": {
+          "question": "Was ist mit den Tieren in der Sperrzone von Tschernobyl geschehen, seit die Menschen fort sind?",
+          "options": [
+            "Alle Tiere sind ausgestorben",
+            "Nur Insekten überleben dort",
+            "Wölfe, Elche, Bären und Wildpferde streifen jetzt umher",
+            "Sie wurde in einen Zoo verwandelt"
+          ],
+          "explanation": "Ohne Menschen sind viele Tiere zurückgekehrt, darunter Wölfe, Luchse und Bären, und eine Herde seltener Przewalski-Pferde, die in den 1990er-Jahren ausgesetzt wurde."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

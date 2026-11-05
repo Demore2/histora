@@ -1,0 +1,181 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "Why did Louis XVI call the Estates-General in 1789?",
+      "options": [
+        "To declare war on Britain",
+        "To choose a new king",
+        "Because the crown was out of money",
+        "To end the Tennis Court Oath"
+      ],
+      "explanation": "Decades of wars had left France deeply in debt. The king needed the representatives of the three estates to agree to new taxes.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom riep Lodewijk XVI in 1789 de Staten-Generaal bijeen?",
+          "options": [
+            "Om Groot-Brittannië de oorlog te verklaren",
+            "Om een nieuwe koning te kiezen",
+            "Omdat de kroon geen geld meer had",
+            "Om de Eed op de Kaatsbaan te beëindigen"
+          ],
+          "explanation": "Tientallen jaren oorlog hadden Frankrijk diep in de schulden gestoken. De koning had de vertegenwoordigers van de drie standen nodig om nieuwe belastingen goed te keuren."
+        },
+        "fr": {
+          "question": "Pourquoi Louis XVI convoqua-t-il les états généraux en 1789 ?",
+          "options": [
+            "Pour déclarer la guerre à la Grande-Bretagne",
+            "Pour choisir un nouveau roi",
+            "Parce que les caisses de la couronne étaient vides",
+            "Pour mettre fin au serment du Jeu de paume"
+          ],
+          "explanation": "Des décennies de guerres avaient profondément endetté la France. Le roi avait besoin des représentants des trois ordres pour faire accepter de nouveaux impôts."
+        },
+        "de": {
+          "question": "Warum berief Ludwig XVI. 1789 die Generalstände ein?",
+          "options": [
+            "Um Großbritannien den Krieg zu erklären",
+            "Um einen neuen König zu wählen",
+            "Weil der Krone das Geld ausgegangen war",
+            "Um den Ballhausschwur zu beenden"
+          ],
+          "explanation": "Jahrzehnte voller Kriege hatten Frankreich tief verschuldet. Der König brauchte die Vertreter der drei Stände, um neue Steuern durchzusetzen."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Why did the crowd go to the Bastille on 14 July 1789?",
+      "options": [
+        "To find gunpowder for the muskets they had taken",
+        "To free hundreds of political prisoners",
+        "To capture the king",
+        "To hear a speech by Necker"
+      ],
+      "explanation": "That morning the crowd had taken around 30,000 muskets from the Invalides. The gunpowder had just been moved to the Bastille.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom trok de menigte op 14 juli 1789 naar de Bastille?",
+          "options": [
+            "Om buskruit te halen voor de geweren die ze had buitgemaakt",
+            "Om honderden politieke gevangenen te bevrijden",
+            "Om de koning gevangen te nemen",
+            "Om een toespraak van Necker te horen"
+          ],
+          "explanation": "Die ochtend had de menigte zo’n 30.000 geweren uit het Hôtel des Invalides meegenomen. Het buskruit was net naar de Bastille gebracht."
+        },
+        "fr": {
+          "question": "Pourquoi la foule se rendit-elle à la Bastille le 14 juillet 1789 ?",
+          "options": [
+            "Pour trouver de la poudre pour les fusils qu'elle avait pris",
+            "Pour libérer des centaines de prisonniers politiques",
+            "Pour capturer le roi",
+            "Pour écouter un discours de Necker"
+          ],
+          "explanation": "Le matin même, la foule avait emporté environ 30 000 fusils aux Invalides. La poudre venait d'être transférée à la Bastille."
+        },
+        "de": {
+          "question": "Warum zog die Menge am 14. Juli 1789 zur Bastille?",
+          "options": [
+            "Um Schießpulver für die erbeuteten Gewehre zu holen",
+            "Um Hunderte politische Gefangene zu befreien",
+            "Um den König gefangen zu nehmen",
+            "Um eine Rede Neckers zu hören"
+          ],
+          "explanation": "Am Morgen hatte die Menge rund 30.000 Gewehre aus dem Invalidendom geholt. Das Pulver war gerade erst in die Bastille gebracht worden."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "What finally made the Bastille surrender?",
+      "options": [
+        "The defenders ran out of food",
+        "The king ordered it from Versailles",
+        "A fire destroyed the towers",
+        "Rebel soldiers arrived with cannons aimed at the gate"
+      ],
+      "explanation": "In the afternoon, French Guards who had joined the people brought cannons. The governor's own men refused to fight on, and the fortress gave up at around five o'clock.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Waardoor gaf de Bastille zich uiteindelijk over?",
+          "options": [
+            "De verdedigers hadden geen eten meer",
+            "De koning gaf er vanuit Versailles opdracht toe",
+            "Een brand verwoestte de torens",
+            "Opstandige soldaten kwamen met kanonnen die op de poort gericht werden"
+          ],
+          "explanation": "In de middag brachten soldaten van de Franse Garde die zich bij het volk hadden aangesloten kanonnen mee. De eigen mannen van de gouverneur weigerden verder te vechten, en rond vijf uur gaf het fort zich over."
+        },
+        "fr": {
+          "question": "Qu'est-ce qui poussa finalement la Bastille à se rendre ?",
+          "options": [
+            "Les défenseurs n'avaient plus de vivres",
+            "Le roi en donna l'ordre depuis Versailles",
+            "Un incendie détruisit les tours",
+            "Des soldats rebelles arrivèrent avec des canons pointés sur la porte"
+          ],
+          "explanation": "L'après-midi, des gardes-françaises ralliés au peuple amenèrent des canons. Les hommes du gouverneur refusèrent de continuer le combat, et la forteresse se rendit vers cinq heures."
+        },
+        "de": {
+          "question": "Was brachte die Bastille schließlich zur Kapitulation?",
+          "options": [
+            "Den Verteidigern gingen die Vorräte aus",
+            "Der König befahl es aus Versailles",
+            "Ein Feuer zerstörte die Türme",
+            "Aufständische Soldaten kamen mit Kanonen, die auf das Tor gerichtet wurden"
+          ],
+          "explanation": "Am Nachmittag brachten Soldaten der Französischen Garde, die sich dem Volk angeschlossen hatten, Kanonen mit. Die eigenen Männer des Gouverneurs weigerten sich weiterzukämpfen, und gegen fünf Uhr gab die Festung auf."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "How many prisoners were inside the Bastille when it fell?",
+      "options": [
+        "None at all",
+        "Seven",
+        "About two hundred",
+        "Over a thousand"
+      ],
+      "explanation": "Four were accused of forgery, two were considered mentally ill, and one was a nobleman locked up at his family's request.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoeveel gevangenen zaten er in de Bastille toen die viel?",
+          "options": [
+            "Helemaal geen",
+            "Zeven",
+            "Zo’n tweehonderd",
+            "Meer dan duizend"
+          ],
+          "explanation": "Vier werden beschuldigd van valsemunterij, twee werden als geesteszieken beschouwd, en één was een edelman die op verzoek van zijn familie was opgesloten."
+        },
+        "fr": {
+          "question": "Combien de prisonniers se trouvaient à la Bastille lors de sa chute ?",
+          "options": [
+            "Aucun",
+            "Sept",
+            "Environ deux cents",
+            "Plus de mille"
+          ],
+          "explanation": "Quatre étaient accusés de faux, deux étaient considérés comme aliénés, et le dernier était un noble enfermé à la demande de sa famille."
+        },
+        "de": {
+          "question": "Wie viele Gefangene saßen in der Bastille, als sie fiel?",
+          "options": [
+            "Gar keine",
+            "Sieben",
+            "Etwa zweihundert",
+            "Über tausend"
+          ],
+          "explanation": "Vier waren der Fälschung beschuldigt, zwei galten als geisteskrank, und einer war ein Adliger, der auf Wunsch seiner Familie eingesperrt worden war."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

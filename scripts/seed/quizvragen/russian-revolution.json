@@ -1,0 +1,225 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What happened on \"Bloody Sunday\" in January 1905?",
+      "options": [
+        "The tsar was crowned in Moscow",
+        "Soldiers fired on peaceful marchers bringing a petition to the tsar",
+        "Rasputin was murdered",
+        "The Bolsheviks seized the Winter Palace"
+      ],
+      "explanation": "Workers and their families led by Father Gapon marched to the Winter Palace with icons and a petition. Troops opened fire and hundreds were killed.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat gebeurde er op „Bloedige Zondag” in januari 1905?",
+          "options": [
+            "De tsaar werd in Moskou gekroond",
+            "Soldaten schoten op vreedzame demonstranten die de tsaar een petitie wilden aanbieden",
+            "Raspoetin werd vermoord",
+            "De bolsjewieken namen het Winterpaleis in"
+          ],
+          "explanation": "Arbeiders en hun gezinnen trokken onder leiding van pater Gapon met iconen en een petitie naar het Winterpaleis. Soldaten openden het vuur en er vielen honderden doden."
+        },
+        "fr": {
+          "question": "Que se passa-t-il lors du « Dimanche rouge » en janvier 1905 ?",
+          "options": [
+            "Le tsar fut couronné à Moscou",
+            "Des soldats tirèrent sur des manifestants pacifiques venus remettre une pétition au tsar",
+            "Raspoutine fut assassiné",
+            "Les bolcheviks prirent le palais d'Hiver"
+          ],
+          "explanation": "Des ouvriers et leurs familles, menés par le pope Gapone, marchèrent vers le palais d'Hiver avec des icônes et une pétition. La troupe ouvrit le feu et des centaines de personnes furent tuées."
+        },
+        "de": {
+          "question": "Was geschah am „Blutsonntag“ im Januar 1905?",
+          "options": [
+            "Der Zar wurde in Moskau gekrönt",
+            "Soldaten schossen auf friedliche Demonstranten, die dem Zaren eine Bittschrift bringen wollten",
+            "Rasputin wurde ermordet",
+            "Die Bolschewiki nahmen den Winterpalast ein"
+          ],
+          "explanation": "Arbeiter und ihre Familien zogen unter der Führung von Pater Gapon mit Ikonen und einer Bittschrift zum Winterpalast. Soldaten eröffneten das Feuer, Hunderte wurden getötet."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Who started the protests that toppled the tsar in 1917?",
+      "options": [
+        "Bolshevik soldiers returning from the front",
+        "Nobles angry about Rasputin",
+        "Foreign troops",
+        "Women textile workers protesting for bread"
+      ],
+      "explanation": "On International Women's Day 1917, women workers in Petrograd walked out and marched for bread. Within days the soldiers joined them and the tsar abdicated.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Wie begonnen in 1917 de protesten die de tsaar ten val brachten?",
+          "options": [
+            "Bolsjewistische soldaten die terugkwamen van het front",
+            "Edelen die boos waren over Raspoetin",
+            "Buitenlandse troepen",
+            "Textielarbeidsters die om brood protesteerden"
+          ],
+          "explanation": "Op Internationale Vrouwendag 1917 legden arbeidsters in Petrograd het werk neer en trokken ze door de stad om brood. Binnen een paar dagen sloten de soldaten zich bij hen aan en deed de tsaar afstand van de troon."
+        },
+        "fr": {
+          "question": "Qui lança les manifestations qui renversèrent le tsar en 1917 ?",
+          "options": [
+            "Des soldats bolcheviks revenus du front",
+            "Des nobles furieux contre Raspoutine",
+            "Des troupes étrangères",
+            "Des ouvrières du textile qui réclamaient du pain"
+          ],
+          "explanation": "Lors de la Journée internationale des femmes de 1917, des ouvrières de Petrograd quittèrent leurs usines pour réclamer du pain. En quelques jours, les soldats les rejoignirent et le tsar abdiqua."
+        },
+        "de": {
+          "question": "Wer begann 1917 die Proteste, die den Zaren stürzten?",
+          "options": [
+            "Bolschewistische Soldaten, die von der Front zurückkehrten",
+            "Adlige, die über Rasputin empört waren",
+            "Ausländische Truppen",
+            "Textilarbeiterinnen, die für Brot protestierten"
+          ],
+          "explanation": "Am Internationalen Frauentag 1917 legten Arbeiterinnen in Petrograd die Arbeit nieder und zogen für Brot durch die Stadt. Innerhalb weniger Tage schlossen sich die Soldaten an, und der Zar dankte ab."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "Why did Germany let Lenin travel home through its territory in 1917?",
+      "options": [
+        "It hoped he would pull Russia out of the war",
+        "Lenin was a German citizen",
+        "It wanted him to restore the tsar",
+        "He promised to join the German army"
+      ],
+      "explanation": "Germany was fighting Russia. It sent Lenin home in a sealed train carriage in the hope that his revolution would end Russia's part in the war, which is what happened.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom liet Duitsland Lenin in 1917 via Duits grondgebied naar huis reizen?",
+          "options": [
+            "Het hoopte dat hij Rusland uit de oorlog zou halen",
+            "Lenin was Duits staatsburger",
+            "Het wilde dat hij de tsaar weer op de troon zette",
+            "Hij beloofde dienst te nemen in het Duitse leger"
+          ],
+          "explanation": "Duitsland was in oorlog met Rusland. Het stuurde Lenin in een verzegelde treinwagon naar huis in de hoop dat zijn revolutie Rusland uit de oorlog zou halen, en dat gebeurde ook."
+        },
+        "fr": {
+          "question": "Pourquoi l'Allemagne laissa-t-elle Lénine traverser son territoire pour rentrer en 1917 ?",
+          "options": [
+            "Elle espérait qu'il ferait sortir la Russie de la guerre",
+            "Lénine était citoyen allemand",
+            "Elle voulait qu'il rétablisse le tsar",
+            "Il avait promis de rejoindre l'armée allemande"
+          ],
+          "explanation": "L'Allemagne était en guerre contre la Russie. Elle renvoya Lénine dans un wagon plombé en espérant que sa révolution mettrait fin à la participation russe à la guerre, ce qui arriva."
+        },
+        "de": {
+          "question": "Warum ließ Deutschland Lenin 1917 durch sein Gebiet nach Hause reisen?",
+          "options": [
+            "Es hoffte, er würde Russland aus dem Krieg holen",
+            "Lenin war deutscher Staatsbürger",
+            "Es wollte, dass er den Zaren wieder einsetzt",
+            "Er versprach, in die deutsche Armee einzutreten"
+          ],
+          "explanation": "Deutschland führte Krieg gegen Russland. Es schickte Lenin in einem plombierten Waggon nach Hause, in der Hoffnung, seine Revolution würde Russland aus dem Krieg führen, und so kam es auch."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Why is it called the \"October\" Revolution, although it happened in November by our calendar?",
+      "options": [
+        "It was planned in October",
+        "Lenin chose the name to confuse his enemies",
+        "Russia still used the old Julian calendar, thirteen days behind",
+        "The fighting lasted from October to November"
+      ],
+      "explanation": "In the old Russian calendar the Bolsheviks took power on 25 October; in the calendar used elsewhere in Europe that was 7 November.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Waarom heet het de „Oktoberrevolutie”, terwijl die volgens onze kalender in november plaatsvond?",
+          "options": [
+            "Ze werd in oktober gepland",
+            "Lenin koos de naam om zijn vijanden in verwarring te brengen",
+            "Rusland gebruikte nog de oude juliaanse kalender, die dertien dagen achterliep",
+            "De gevechten duurden van oktober tot november"
+          ],
+          "explanation": "Volgens de oude Russische kalender grepen de bolsjewieken op 25 oktober de macht; in de kalender die elders in Europa gold, was dat 7 november."
+        },
+        "fr": {
+          "question": "Pourquoi parle-t-on de révolution d'« Octobre », alors qu'elle eut lieu en novembre selon notre calendrier ?",
+          "options": [
+            "Elle avait été préparée en octobre",
+            "Lénine choisit ce nom pour tromper ses ennemis",
+            "La Russie utilisait encore l'ancien calendrier julien, en retard de treize jours",
+            "Les combats durèrent d'octobre à novembre"
+          ],
+          "explanation": "Selon l'ancien calendrier russe, les bolcheviks prirent le pouvoir le 25 octobre ; dans le calendrier utilisé ailleurs en Europe, c'était le 7 novembre."
+        },
+        "de": {
+          "question": "Warum heißt sie „Oktoberrevolution“, obwohl sie nach unserem Kalender im November stattfand?",
+          "options": [
+            "Sie wurde im Oktober geplant",
+            "Lenin wählte den Namen, um seine Feinde zu verwirren",
+            "Russland nutzte noch den alten julianischen Kalender, der dreizehn Tage zurücklag",
+            "Die Kämpfe dauerten von Oktober bis November"
+          ],
+          "explanation": "Nach dem alten russischen Kalender ergriffen die Bolschewiki am 25. Oktober die Macht; nach dem im übrigen Europa gültigen Kalender war das der 7. November."
+        }
+      }
+    },
+    {
+      "chapter_index": 5,
+      "question": "What state was founded in 1922, after the Reds won the civil war?",
+      "options": [
+        "The Russian Empire",
+        "The Soviet Union",
+        "The Duma Republic",
+        "The Kingdom of Russia"
+      ],
+      "explanation": "In December 1922 Russia and several neighbouring republics were joined into the Union of Soviet Socialist Republics, which lasted until 1991.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Welke staat werd in 1922 opgericht, nadat de Roden de burgeroorlog hadden gewonnen?",
+          "options": [
+            "Het Russische Keizerrijk",
+            "De Sovjet-Unie",
+            "De Doemarepubliek",
+            "Het Koninkrijk Rusland"
+          ],
+          "explanation": "In december 1922 werden Rusland en een aantal buurrepublieken samengevoegd tot de Unie van Socialistische Sovjetrepublieken, die bleef bestaan tot 1991."
+        },
+        "fr": {
+          "question": "Quel État fut fondé en 1922, après la victoire des Rouges dans la guerre civile ?",
+          "options": [
+            "L'Empire russe",
+            "L'Union soviétique",
+            "La République de la Douma",
+            "Le royaume de Russie"
+          ],
+          "explanation": "En décembre 1922, la Russie et plusieurs républiques voisines furent réunies dans l'Union des républiques socialistes soviétiques, qui exista jusqu'en 1991."
+        },
+        "de": {
+          "question": "Welcher Staat wurde 1922 gegründet, nachdem die Roten den Bürgerkrieg gewonnen hatten?",
+          "options": [
+            "Das Russische Kaiserreich",
+            "Die Sowjetunion",
+            "Die Duma-Republik",
+            "Das Königreich Russland"
+          ],
+          "explanation": "Im Dezember 1922 wurden Russland und mehrere Nachbarrepubliken zur Union der Sozialistischen Sowjetrepubliken vereinigt, die bis 1991 bestand."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}

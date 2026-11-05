@@ -1,0 +1,181 @@
+{
+  "nieuw": [
+    {
+      "chapter_index": 1,
+      "question": "What was James Marshall building when he found gold in 1848?",
+      "options": [
+        "A railway bridge",
+        "A sawmill for John Sutter",
+        "A church in San Francisco",
+        "A fort for the army"
+      ],
+      "explanation": "Marshall was building a sawmill on the American River. He spotted the flakes in the channel that carried water away from it.",
+      "correct_answer": 1,
+      "vertalingen": {
+        "nl": {
+          "question": "Wat was James Marshall aan het bouwen toen hij in 1848 goud vond?",
+          "options": [
+            "Een spoorbrug",
+            "Een zagerij voor John Sutter",
+            "Een kerk in San Francisco",
+            "Een fort voor het leger"
+          ],
+          "explanation": "Marshall bouwde een zagerij aan de American River. Hij zag de schilfers in de goot die het water van de molen afvoerde."
+        },
+        "fr": {
+          "question": "Que construisait James Marshall lorsqu'il trouva de l'or en 1848 ?",
+          "options": [
+            "Un pont de chemin de fer",
+            "Une scierie pour John Sutter",
+            "Une église à San Francisco",
+            "Un fort pour l'armée"
+          ],
+          "explanation": "Marshall construisait une scierie sur l'American River. Il repéra les paillettes dans le canal qui évacuait l'eau du moulin."
+        },
+        "de": {
+          "question": "Was baute James Marshall, als er 1848 Gold fand?",
+          "options": [
+            "Eine Eisenbahnbrücke",
+            "Ein Sägewerk für John Sutter",
+            "Eine Kirche in San Francisco",
+            "Ein Fort für die Armee"
+          ],
+          "explanation": "Marshall baute ein Sägewerk am American River. Er entdeckte die Flocken im Kanal, der das Wasser von der Mühle ableitete."
+        }
+      }
+    },
+    {
+      "chapter_index": 2,
+      "question": "Roughly how many people came to California during the gold rush, between 1848 and 1855?",
+      "options": [
+        "About 3,000",
+        "About 30,000",
+        "About 3 million",
+        "About 300,000"
+      ],
+      "explanation": "Around 300,000 people arrived from all over the world, one of the largest migrations in American history.",
+      "correct_answer": 3,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoeveel mensen kwamen er tijdens de goldrush, tussen 1848 en 1855, ongeveer naar Californië?",
+          "options": [
+            "Zo’n 3.000",
+            "Zo’n 30.000",
+            "Zo’n 3 miljoen",
+            "Zo’n 300.000"
+          ],
+          "explanation": "Er kwamen zo’n 300.000 mensen uit de hele wereld, een van de grootste migraties uit de Amerikaanse geschiedenis."
+        },
+        "fr": {
+          "question": "Combien de personnes environ arrivèrent en Californie pendant la ruée vers l'or, entre 1848 et 1855 ?",
+          "options": [
+            "Environ 3 000",
+            "Environ 30 000",
+            "Environ 3 millions",
+            "Environ 300 000"
+          ],
+          "explanation": "Quelque 300 000 personnes vinrent du monde entier, l'une des plus grandes migrations de l'histoire américaine."
+        },
+        "de": {
+          "question": "Wie viele Menschen kamen während des Goldrauschs zwischen 1848 und 1855 ungefähr nach Kalifornien?",
+          "options": [
+            "Etwa 3.000",
+            "Etwa 30.000",
+            "Etwa 3 Millionen",
+            "Etwa 300.000"
+          ],
+          "explanation": "Rund 300.000 Menschen kamen aus aller Welt, eine der größten Wanderungsbewegungen der amerikanischen Geschichte."
+        }
+      }
+    },
+    {
+      "chapter_index": 3,
+      "question": "How does a gold pan separate gold from gravel?",
+      "options": [
+        "Heavy gold sinks to the bottom while light sand washes away",
+        "Gold sticks to the magnetic metal of the pan",
+        "The gold floats on top of the water",
+        "Heat melts the gold out of the stone"
+      ],
+      "explanation": "Gold is very heavy. Swirling water and gravel in the pan washes the lighter sand over the edge and leaves the gold behind.",
+      "correct_answer": 0,
+      "vertalingen": {
+        "nl": {
+          "question": "Hoe scheidt een goudpan goud van grind?",
+          "options": [
+            "Zwaar goud zakt naar de bodem terwijl licht zand wegspoelt",
+            "Goud blijft plakken aan het magnetische metaal van de pan",
+            "Het goud drijft boven op het water",
+            "Hitte smelt het goud uit de steen"
+          ],
+          "explanation": "Goud is erg zwaar. Door water en grind in de pan te laten ronddraaien spoelt het lichtere zand over de rand en blijft het goud achter."
+        },
+        "fr": {
+          "question": "Comment une batée sépare-t-elle l'or du gravier ?",
+          "options": [
+            "L'or, lourd, coule au fond tandis que le sable léger est emporté",
+            "L'or colle au métal magnétique de la batée",
+            "L'or flotte à la surface de l'eau",
+            "La chaleur fait fondre l'or hors de la pierre"
+          ],
+          "explanation": "L'or est très lourd. En faisant tourner l'eau et le gravier dans la batée, le sable plus léger passe par-dessus le bord et l'or reste au fond."
+        },
+        "de": {
+          "question": "Wie trennt eine Goldwaschpfanne Gold von Kies?",
+          "options": [
+            "Das schwere Gold sinkt nach unten, der leichte Sand wird weggespült",
+            "Gold bleibt am magnetischen Metall der Pfanne haften",
+            "Das Gold schwimmt oben auf dem Wasser",
+            "Hitze schmilzt das Gold aus dem Stein"
+          ],
+          "explanation": "Gold ist sehr schwer. Wenn man Wasser und Kies in der Pfanne kreisen lässt, spült der leichtere Sand über den Rand und das Gold bleibt zurück."
+        }
+      }
+    },
+    {
+      "chapter_index": 4,
+      "question": "Which famous product came out of a gold rush business in San Francisco?",
+      "options": [
+        "Canned soup",
+        "The safety razor",
+        "Riveted blue jeans",
+        "Chewing gum"
+      ],
+      "explanation": "Levi Strauss came to San Francisco to sell cloth. With tailor Jacob Davis he patented work trousers strengthened with copper rivets in 1873.",
+      "correct_answer": 2,
+      "vertalingen": {
+        "nl": {
+          "question": "Welk beroemd product kwam voort uit een goldrushbedrijf in San Francisco?",
+          "options": [
+            "Soep in blik",
+            "Het veiligheidsscheermes",
+            "De spijkerbroek met klinknagels",
+            "Kauwgom"
+          ],
+          "explanation": "Levi Strauss kwam naar San Francisco om stof te verkopen. Samen met kleermaker Jacob Davis vroeg hij in 1873 octrooi aan op werkbroeken die met koperen klinknagels waren verstevigd."
+        },
+        "fr": {
+          "question": "Quel produit célèbre est né d'un commerce de la ruée vers l'or à San Francisco ?",
+          "options": [
+            "La soupe en conserve",
+            "Le rasoir de sûreté",
+            "Le jean à rivets",
+            "Le chewing-gum"
+          ],
+          "explanation": "Levi Strauss vint à San Francisco pour vendre du tissu. Avec le tailleur Jacob Davis, il fit breveter en 1873 un pantalon de travail renforcé de rivets en cuivre."
+        },
+        "de": {
+          "question": "Welches berühmte Produkt ging aus einem Goldrausch-Geschäft in San Francisco hervor?",
+          "options": [
+            "Dosensuppe",
+            "Der Rasierhobel",
+            "Die genietete Bluejeans",
+            "Kaugummi"
+          ],
+          "explanation": "Levi Strauss kam nach San Francisco, um Stoffe zu verkaufen. Mit dem Schneider Jacob Davis ließ er sich 1873 eine mit Kupfernieten verstärkte Arbeitshose patentieren."
+        }
+      }
+    }
+  ],
+  "vertalingen": []
+}
