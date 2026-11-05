@@ -11,6 +11,19 @@ kinderen". Omslag uit `renders/`, geen frame uit de video.
 De vastgezette vraag is een echte discussievraag ("wie was de rijkste ooit?"): daar heeft iedereen een
 mening over, en de comments gaan vanzelf heen en weer.
 
+## Slagingskans (inschatting 2026-11-05)
+
+**Viraal (>10k views op één platform): ~15%** · normaal resultaat verwacht: 800-2.000 views.
+
+**Waarom het kan werken:** een paradox in de hook (zoveel goud, en tóch schulden) is de sterkste vorm van
+open vraag. Het antwoord komt pas aan het eind. Mansa Musa is bewezen virale stof ("richest man ever"), en
+de echte Catalaanse Atlas geeft geloofwaardigheid. De vastgezette vraag lokt discussie uit.
+
+**Waarom het kan floppen:** veel kijkers kennen het verhaal al via de "crashed the economy"-memes. Onze
+eerlijke versie ("fell", "worth less") is minder spectaculair dan wat ze al zagen. Het Nederlandse
+TikTok-testpubliek heeft weinig band met Mali. En op 0:01 haken kijkers af als het eerste
+beeld (de karavaan) niet meteen goud en beweging laat zien.
+
 ---
 
 ## TikTok

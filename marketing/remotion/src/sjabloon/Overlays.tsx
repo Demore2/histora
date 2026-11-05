@@ -21,9 +21,11 @@ export const Vignet = () => (
 /**
  * Oranje voortgangsbalk: kijkers zien dat het kort is, en dat houdt ze vast. Een donker spoor eronder maakt hem
  * op elk beeld zichtbaar. `onder` staat op de rand van de veilige zone (80%), boven de knoppen en de caption van
- * TikTok/Reels/Shorts; helemaal onderin zou hij onder hun eigen UI verdwijnen.
+ * TikTok/Reels/Shorts; helemaal onderin zou hij onder hun eigen UI verdwijnen. Sinds 2026-11-05 is `boven` de standaard
+ * (eigenaar): onderin viel hij op Reels over de profielfoto en de knoppen; bovenin staat hij tussen de statusbalk en
+ * "Reels".
  */
-export const Voortgang = ({ plek = 'onder' }: { plek?: 'boven' | 'onder' }) => {
+export const Voortgang = ({ plek = 'boven' }: { plek?: 'boven' | 'onder' }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
   const dik = 18;

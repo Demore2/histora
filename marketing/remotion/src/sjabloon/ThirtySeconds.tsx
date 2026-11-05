@@ -38,7 +38,7 @@ const Beelden = ({ config, timing }: ThirtySecondsProps) => {
   );
 };
 
-export const ThirtySeconds = ({ config, timing, balk = 'onder' }: ThirtySecondsProps) => {
+export const ThirtySeconds = ({ config, timing, balk = 'boven' }: ThirtySecondsProps) => {
   const frame = useCurrentFrame();
   const ctaVan = f(timing.cta[0]);
   return (

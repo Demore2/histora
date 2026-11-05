@@ -3,13 +3,26 @@
 Video: `renders/napoleon-bonaparte-30s-remotion.mp4` · omslag: `renders/napoleon-bonaparte-cover.png`
 Script en bronnen: [script.md](script.md).
 
-**Plannen: zondag 8 november 2026, 20:00 (NL-tijd), op alle drie tegelijk.** Schema ma / wo / vr / zo, 20:00.
+**📅 POSTEN: vrijdag 6 november 2026 om 20:00 (NL-tijd), op alle drie tegelijk.**
 
 Instellingen zoals altijd: AI-label aan, TikTok *Disclose content → Your brand* aan, YouTube "niet voor
 kinderen". Omslag uit `renders/`.
 
 Een mythe-ontkrachter vraagt om de vraag "welke andere geschiedenismythe ken je?". Elke reactie is een
 gratis idee voor een volgende short.
+
+## Slagingskans (inschatting 2026-11-05)
+
+**Viraal (>10k views op één platform): ~15%** · meeste reacties van de reeks verwacht.
+
+**Waarom het kan werken:** een mythe-ontkrachter over iets wat iedereen "weet" levert reacties op
+("I always thought…") en mensen die het al wisten gaan dat ook in de reacties zeggen. Allebei is dat
+signaal voor het algoritme. Een balkgrafiek op schaal is visueel bewijs, en "And lost to a cartoon" is een
+punchline die een herhaling uitlokt.
+
+**Waarom het kan floppen:** "Napoleon wasn't short" is zelf al een cliché. Een deel van de kijkers denkt
+"weet ik" en swipet op 0:01. De eerste zin is een complete bewering, en dat is het Hitler-patroon (liken en
+weg). Inches, pieds en pouces zijn rekenwerk en kosten aandacht in het midden.
 
 ---
 

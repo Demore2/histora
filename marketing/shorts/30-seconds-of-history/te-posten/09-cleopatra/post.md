@@ -3,13 +3,26 @@
 Video: `renders/cleopatra-30s-remotion.mp4` · omslag: `renders/cleopatra-cover.png`
 Script en bronnen: [script.md](script.md).
 
-**Plannen: maandag 9 november 2026, 20:00 (NL-tijd), op alle drie tegelijk.** Schema ma / wo / vr / zo, 20:00.
+**📅 POSTEN: maandag 9 november 2026 om 01:00 (NL-tijd), op alle drie tegelijk.** Dat is zondagavond 19:00 in New York: de test voor het Amerikaanse publiek. Inplannen op zondag 8 november, want om 01:00 slaap je.
 
 Instellingen zoals altijd: AI-label aan, TikTok *Disclose content → Your brand* aan, YouTube "niet voor
 kinderen". Omslag uit `renders/`.
 
 Dit is de meest deelbare van de drie: de tijdlijn is een feit dat mensen doorsturen ("wist jij dit?"). De
 vastgezette vraag vraagt om nog zo'n feit, dus de comments vullen zich met ideeën voor volgende shorts.
+
+## Slagingskans (inschatting 2026-11-05)
+
+**Viraal (>10k views op één platform): ~20%** · hoogste kans van deze reeks.
+
+**Waarom het kan werken:** "closer to the Moon landing than to the pyramids" is een van de meest gedeelde
+geschiedenisfeiten op internet, en bewezen deelbaar. De tijdlijn op schaal laat het zien in plaats van het
+te zeggen. Daarna een tweede, minder bekende twist (ze was geen Egyptische, en de eerste die Egyptisch leerde)
+die beloont wie blijft. Universeel onderwerp, net als Pompeii (onze benchmark).
+
+**Waarom het kan floppen:** de hook is een complete claim die zichzelf beantwoordt. Wie het feit kent, liket
+en swipet op 0:01, precies zoals bij Hitler. "So who was she, really?" is een zwakke open vraag na zo'n sterke
+opener. "Cleopatra wasn't Egyptian" raakt de discussie rond de Netflix-serie: dat geeft reacties, maar ook ruzie in de comments, en daar kan een platform het bereik op terugschroeven.
 
 ---
 

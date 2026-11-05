@@ -11,6 +11,14 @@ import napoleon from './napoleon-bonaparte';
 import napoleonTiming from './timing/napoleon-bonaparte.json';
 import spartacus from './spartacus';
 import spartacusTiming from './timing/spartacus.json';
+import ashoka from './ashoka-maurya';
+import ashokaTiming from './timing/ashoka-maurya.json';
+import qin from './qin-shi-huang';
+import qinTiming from './timing/qin-shi-huang.json';
+import moon from './moon-landing';
+import moonTiming from './timing/moon-landing.json';
+import genghis from './genghis-khan';
+import genghisTiming from './timing/genghis-khan.json';
 
 export const VIDEOS: { config: ShortConfig; timing: Timing }[] = [
   { config: alexander, timing: alexanderTiming as Timing },
@@ -18,4 +26,8 @@ export const VIDEOS: { config: ShortConfig; timing: Timing }[] = [
   { config: mansaMusa, timing: mansaMusaTiming as Timing },
   { config: napoleon, timing: napoleonTiming as Timing },
   { config: cleopatra, timing: cleopatraTiming as Timing },
+  { config: ashoka, timing: ashokaTiming as Timing },
+  { config: qin, timing: qinTiming as Timing },
+  { config: moon, timing: moonTiming as Timing },
+  { config: genghis, timing: genghisTiming as Timing },
 ];

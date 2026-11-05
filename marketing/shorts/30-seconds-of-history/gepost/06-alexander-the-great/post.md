@@ -12,6 +12,19 @@ aan, "Your brand" op TikTok, "niet voor kinderen" op YouTube. Omslag uit `render
 De vraag in de captions is een echte open vraag (waar ligt hij begraven?): niemand weet het, dus iedereen kan
 reageren. Vastgezette reactie op alle drie.
 
+## Slagingskans (inschatting 2026-11-05)
+
+**Viraal (>10k views op één platform): ~10%** · normaal resultaat verwacht: 700-1.500 views.
+
+**Waarom het kan werken:** de hook is een open vraag ("So who stopped him?") en het antwoord komt pas
+halverwege. Dat is precies de regel die Hitler en Caesar v2 beter maakte. Het onbekende graf aan het eind
+is een kleine twist die tot de laatste seconde trekt.
+
+**Waarom het kan floppen:** het antwoord ("zijn eigen soldaten") is voor geschiedenisfans bekend en niet
+schokkend, dus het voelt niet als een echte onthulling. De TikTok-post is verwijderd en opnieuw geplaatst,
+en duplicaatdetectie kan het bereik dempen. Alexander-content is verzadigd: elke geschiedenispagina doet
+"never lost a battle".
+
 ---
 
 ## Instagram (Reel)

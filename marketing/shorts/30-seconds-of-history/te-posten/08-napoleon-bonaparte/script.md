@@ -1,7 +1,7 @@
 # 30 seconds of history: Napoleon Bonaparte
 
 **Story in the app:** `napoleon-bonaparte` · **Era:** Industrial Revolution · **Spoken words:** 86 (+ shared CTA) · **33 s**
-**Live:** zondag 8 november 2026, 20:00 · Remotion-config: `marketing/remotion/src/videos/napoleon-bonaparte.ts`
+**Live:** vrijdag 6 november 2026, 20:00 · Remotion-config: `marketing/remotion/src/videos/napoleon-bonaparte.ts`
 
 ## v1 (2026-11-04)
 

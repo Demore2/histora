@@ -46,7 +46,10 @@ public.user_subscriptions  →  subscription-store  →  useAbonnement()  →  P
    `monthly` en `yearly`. Een gratis proefperiode is een *offer* op het base plan
    (`trial-monthly`, `trial-yearly`), niet een apart product. Alles wat een lezer ziet is in het
    Engels (keuze van de eigenaar).
-   **Gekozen op 2026-10-19:** €4,99/maand en €39,99/jaar (33% korting, €3,33/maand), met op
+   **Gekozen op 2026-11-05 (na marktonderzoek, dollar leidend):** $7,99/maand en $39,99/jaar (58% korting), in de
+   eurolanden met de hand op €7,99 en €39,99 (Play telt anders per land de btw erbij op). Proef van 7 dagen **alleen op
+   jaar** (`trial-monthly` inactief): de gratis week stuurt naar jaar. Concurrent Historo: $8,99 / $39,99.
+   Daarvoor (2026-10-19): €4,99/maand en €39,99/jaar (33% korting, €3,33/maand), met op
    beide base plans een offer van 7 dagen gratis voor *alleen nieuwe klanten*.
 4. Een **serviceaccount** dat RevenueCat de aankopen laat controleren (RevenueCat legt de rechten
    stap voor stap uit onder *Google Play service credentials*).

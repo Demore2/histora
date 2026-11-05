@@ -1,7 +1,7 @@
 # 30 seconds of history: Cleopatra
 
 **Story in the app:** `cleopatra` · **Era:** Antiquity · **Spoken words:** 83 (+ shared CTA) · **~32 s**
-**Live:** maandag 9 november 2026, 20:00 · Remotion-config: `marketing/remotion/src/videos/cleopatra.ts`
+**Live:** maandag 9 november 2026, 01:00 NL (US-test) · Remotion-config: `marketing/remotion/src/videos/cleopatra.ts`
 
 ## v1 (2026-11-04)
 
