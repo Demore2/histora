@@ -86,7 +86,7 @@ export const Jaartal = ({ config, timing }: { config: ShortConfig; timing: Timin
   );
   return (
     <div style={{
-      position: 'absolute', left: VEILIG.links, top: VEILIG.boven, height: 76, width: 330, overflow: 'hidden',
+      position: 'absolute', left: VEILIG.links, top: VEILIG.boven, height: 76, width: 460, overflow: 'hidden',
       fontFamily: FONT, fontWeight: 800, fontSize: 58, lineHeight: '76px', color: KLEUR.room, textShadow: TEKST_SCHADUW,
       borderLeft: `8px solid ${KLEUR.oranje}`, paddingLeft: 22,
     }}>

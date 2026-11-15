@@ -34,3 +34,11 @@ Boven de typische lijn van het account, 86,8% mannen, piek 25-34. Zelfde verhaal
 
 **v2 Instagram-retentie:** 86% na 1 s · 55% na 3 s · 20% kijkt hem uit — de huidige lat voor Instagram.
 De tweede zin ("And you still say his name every summer") laat een vraag open; Hitler (79/38/10) gaf zijn antwoord meteen.
+
+## Meting 2026-11-15 (sinds publicatie, via Claude in Chrome)
+
+- **YouTube** (weergaven / gem. kijkduur / bleef kijken): 437 / 0:17 / 32,1% / 9 likes
+- **Instagram** (weergaven / gem. kijktijd): 761 / 9s / 16 likes
+- **TikTok** (views / gem. kijktijd / volledig / op 0:03 / land): 731 / 4,5s / 2,0% / 30% / NL 43% / +4 volgers
+
+Overzicht en conclusies: ../../stats-2026-11-15.md

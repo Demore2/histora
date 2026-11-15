@@ -13,3 +13,11 @@ Live 2026-10-29 19:00 op alle drie. Video 35,5 s, zonder muziek. Gemeten 2026-11
 
 Lessen: zwart eerste frame (fade-in), opening is een titelkaart op een bekend stilstaand gezicht, beige
 eindkaart halveert de YouTube-retentie. Na seconde 3 een rustige daling: het verhaal zelf werkt.
+
+## Meting 2026-11-15 (sinds publicatie, via Claude in Chrome)
+
+- **YouTube** (weergaven / gem. kijkduur / bleef kijken): 168 / 0:21 / 35,6% / 3 likes
+- **Instagram** (weergaven / gem. kijktijd): 463 / 12s / 18 likes / 3 opsl.
+- **TikTok** (views / gem. kijktijd / volledig / op 0:03 / land): 720 / 6,4s / 2,0% / 32% / NL 59%
+
+Overzicht en conclusies: ../../stats-2026-11-15.md

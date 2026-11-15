@@ -13,18 +13,24 @@
     "vo:kokoro": "node scripts/kokoro.mjs"
   },
   "dependencies": {
+    "@react-three/fiber": "^9.3.0",
+    "@react-three/postprocessing": "^3.0.4",
     "@remotion/cli": "4.0.533",
     "@remotion/google-fonts": "4.0.533",
+    "@remotion/three": "^4.0.533",
     "d3-geo": "^3.1.1",
+    "postprocessing": "^6.37.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "remotion": "4.0.533",
+    "three": "^0.178.0",
     "topojson-client": "^3.1.0",
     "world-atlas": "^2.0.2"
   },
   "devDependencies": {
     "@types/d3-geo": "^3.1.0",
     "@types/react": "19.1.10",
+    "@types/three": "^0.178.1",
     "@types/topojson-client": "^3.1.5",
     "ffmpeg-static": "5.2.0",
     "kokoro-js": "1.2.1",

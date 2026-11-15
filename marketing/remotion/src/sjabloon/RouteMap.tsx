@@ -64,7 +64,9 @@ export const RouteMap = ({ stops, fromStop, toStop, span, returnTo, zoom, territ
         .filter((poly) => poly[0].some(([, lat]) => lat > -58)),
     };
     const p = stops.map((s) => proj([s.lon, s.lat]) as Punt);
-    const t = returnTo !== undefined ? ([p[p.length - 1], p[returnTo]] as Punt[]) : null;
+    // Vanaf de stop waar de route nu staat (bij Mansa Musa is dat ook de laatste). Zo kan de stippellijn ook naar een
+    // stop ná `toStop` wijzen die nooit bereikt werd (Flight 93 → Washington).
+    const t = returnTo !== undefined ? ([p[toStop], p[returnTo]] as Punt[]) : null;
 
     let rijkPad = '';
     let oost = 0;
@@ -85,7 +87,7 @@ export const RouteMap = ({ stops, fromStop, toStop, span, returnTo, zoom, territ
       landPad: pad(landGeo) ?? '', raster: pad(geoGraticule10()) ?? '', pts: p, cum: lengtes(p),
       terug: t, terugCum: t ? lengtes(t) : null, rijk: rijkPad, rijkOost: oost, midden: centrum, graad: W / span,
     };
-  }, [stops, span, returnTo, territory]);
+  }, [stops, span, returnTo, toStop, territory]);
 
   const aankomst = draw !== undefined ? Math.round(durationInFrames * draw) : durationInFrames - 8;
   const loop = interpolate(frame, [3, Math.max(4, aankomst)], [0, 1], {
@@ -166,10 +168,14 @@ export const RouteMap = ({ stops, fromStop, toStop, span, returnTo, zoom, territ
               strokeLinecap="round" strokeDasharray={`${2 * k} ${22 * k}`} />
           )}
           {stops.map((s, i) => {
-            if (cum[i] > d + 0.5) return null;
+            // Het doel van de stippellijn, als dat voorbij de gelopen route ligt: springt open als de lijn aankomt.
+            const stippelDoel = terugModus && i === returnTo && cum[i] > d + 0.5;
+            if (cum[i] > d + 0.5 && !stippelDoel) return null;
             // Stops die in deze shot bereikt worden springen open; eerdere staan er al.
             const s0 = framesSinds(i);
-            const pop = s0 === Infinity ? 1 : spring({ frame: Math.round(s0), fps, config: { damping: 11, stiffness: 190 } });
+            const pop = stippelDoel
+              ? interpolate(loop, [0.85, 1], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.back(2)) })
+              : s0 === Infinity ? 1 : spring({ frame: Math.round(s0), fps, config: { damping: 11, stiffness: 190 } });
             const [x, y] = pts[i];
             return (
               <g key={s.name} transform={`translate(${x} ${y}) scale(${Math.max(0.01, pop) * k})`}>

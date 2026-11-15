@@ -15,3 +15,22 @@ Ingeschatte slagingskans: ~10%. **Uitkomst: geflopt** (~370 views samen, normaal
 - **De hook houdt 3 seconden vast, de biografie daarna verliest ze.** Op Instagram en TikTok zit de grootste val op 0:03-0:04,
   precies bij "At twenty, Alexander became king" (KING AT 20). Na de hook moet er meteen iets op het spel staan, geen levensloop.
 - YouTube doet het weer goed (52% bleef, net als Hitler). YouTube is het platform waar het format nu werkt.
+
+## Tweede meting: 6 november 2026 (~44 uur)
+
+| | Views | Gem. kijktijd | Volledig / bleef | Overig |
+|---|---|---|---|---|
+| YouTube | **1.171** | 0:17 van 0:28 | **51,8% bleef kijken** | +1 abonnee, 97,2% Shorts-feed; curve begint op ~150% (herhalingen), grootste val rond 0:04-0:05, daarna vlak rond 60% |
+| Instagram | 225 | 7 s | 46% op 0:03 | India 34,2%, NL 13,5%, VS 7,2% |
+| TikTok | 24 | 5 s | 6% | dood na de herpost |
+
+- **Beste YouTube-short tot nu toe** (Hitler: 993 na ~40 u). YouTube bleef twee dagen doorduwen, de grafiek liep op dag 1-2 steil op.
+- Funnel: 0 bit.ly-kliks, 0 aanmeldingen.
+
+## Meting 2026-11-15 (sinds publicatie, via Claude in Chrome)
+
+- **YouTube** (weergaven / gem. kijkduur / bleef kijken): 1.196 / 0:17 / 51,8% / 20 likes / +2 abo
+- **Instagram** (weergaven / gem. kijktijd): 226 / 7s
+- **TikTok** (views / gem. kijktijd / volledig / op 0:03 / land): 39 / 2,3s (geen testbatch)
+
+Overzicht en conclusies: ../../stats-2026-11-15.md

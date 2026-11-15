@@ -48,3 +48,11 @@ Landen: NL 20%, VK 15,8%, DE 8,5%, VS 6,7%. Na de eerste dag bijna niet meer geg
 - "Unieke kijkers 79" tegenover 993 weergaven: dat cijfer loopt bij YouTube dagen achter, niet gebruiken.
 
 Conclusie: YouTube is het platform waar deze stijl werkt en nog dagen doorloopt. Meet YouTube dus na 48 uur, niet na 24.
+
+## Meting 2026-11-15 (sinds publicatie, via Claude in Chrome)
+
+- **YouTube** (weergaven / gem. kijkduur / bleef kijken): 1.059 / 0:38 (115%) / 52,3% / 43 likes / +2 abo
+- **Instagram** (weergaven / gem. kijktijd): 170 / 6s
+- **TikTok** (views / gem. kijktijd / volledig / op 0:03 / land): 753 / 11,4s / 5,3% / 41% / NL 55%
+
+Overzicht en conclusies: ../../stats-2026-11-15.md

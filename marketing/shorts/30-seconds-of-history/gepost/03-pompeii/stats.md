@@ -17,3 +17,11 @@ YouTube: 100% van de 6 weergaven uit zoeken, 0% uit de Shorts-feed — de Short 
 Beste retentie van alle video's, ondanks titelkaart en 34 s. Waarom: de hook is dramatische ironie (de kijker weet
 wat komt, de inwoners niet; niets wordt beantwoord), het onderwerp is universeel, en er zit een twist aan het eind
 ("not bodies — plaster") die tot het einde vasthoudt. **Dit is de lat voor Instagram.**
+
+## Meting 2026-11-15 (sinds publicatie, via Claude in Chrome)
+
+- **YouTube** (weergaven / gem. kijkduur / bleef kijken): 15 / 0:21 / 33,3% (nauwelijks uitgeleverd)
+- **Instagram** (weergaven / gem. kijktijd): 1.499 / 13s / 22 likes / +2 volgers
+- **TikTok** (views / gem. kijktijd / volledig / op 0:03 / land): 959 / 4,6s / 1,7% / 26% / NL 56%, VS 18%
+
+Overzicht en conclusies: ../../stats-2026-11-15.md

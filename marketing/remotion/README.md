@@ -1,8 +1,7 @@
 # Histora shorts in Remotion
 
 Het sjabloon voor "30 seconds of history". De beelden, de kaart, de ondertitels en de muziek worden
-allemaal in code gemaakt. Higgsfield is alleen nog nodig voor de **stem** (~1,5 credit per video), niet
-meer voor Kling-clips (22,5 credits per video). Merkregels: skill `histora-brand`. Checklist: README in
+allemaal in code gemaakt. De stem is Onyx (Kokoro, lokaal); Higgsfield maakt alleen nog 9:16-beelden voor een short. Merkregels: skill `histora-brand`. Checklist: README in
 `marketing/shorts/30-seconds-of-history/`.
 
 Een apart npm-project, los van de app: eigen `node_modules`, uitgesloten in de `tsconfig.json`, de
@@ -28,12 +27,12 @@ Een render zonder echte stem krijgt `-placeholder` of `-estimate` in de bestands
 
 ## De echte stem
 
-1. Laat **Alistair** (de vaste stem, voice_id `d9d5c263-f84e-4752-97b5-3750fcc6fd2f`) de tekst uit `## Voice-over`
-   van het script als **één opname** inspreken (Higgsfield, `text2speech_v2` met `variant: elevenlabs`, 1,5 credit). Elke beat is één hele zin, zodat `timing` de
-   grenzen tussen de zinnen kan vinden.
-2. Zet de opname neer als `voice/<id>/take.mp3` (of `.wav` / `.m4a`).
+1. **Onyx** (Kokoro `am_onyx`, lokaal en gratis, sinds 2026-11-04) is de vaste stem: `npm run vo:kokoro -- <id> am_onyx --take`
+   schrijft `voice/<id>/take.mp3` (per zin, komma's eruit) en `voice/shared/cta-kokoro-am_onyx.mp3`.
+   Alistair (Higgsfield/ElevenLabs) is met pensioen; zijn opnames staan in `voice/_weg/`.
+2. Elke beat is één hele zin, zodat `timing` de grenzen tussen de zinnen kan vinden.
 3. De afsluiter "The full story is in Histora. Follow for more." is één opname voor alle video's:
-   `voice/shared/cta.mp3`. Neem die opnieuw op als er een andere stem komt.
+   `voice/shared/cta.mp3` (Onyx).
 4. `npm run timing -- <id>` vindt de zinnen met silencedetect en drukt per zin de lengte en het aantal woorden
    per seconde af. Een uitschieter betekent dat twee zinnen verkeerd zijn samengevoegd. Het tempo komt uit `voiceTempo` in de config
    (standaard 1,1: rustig, ~35-40 s; Alexander staat op 1,2). `--tempo` overschrijft dat.

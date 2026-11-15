@@ -21,3 +21,11 @@ hook tegenover een open vraag? Levert de open vraag in de caption reacties op?
 - TikTok (~24 u, 2026-11-04): 56% vrouw / 44% man, **78% NL**. bit.ly: 0 klikken.
 - Slechtste TikTok tot nu toe (Hitler 11,9 s / 5,3%). Tussen 1 en 3 s haakt 51% af: "Spartacus versus Rome" is
   een naam plus een bekend conflict, zonder vraag of verrassing. Een naam-hook werkt niet, dat is beantwoord.
+
+## Meting 2026-11-15 (sinds publicatie, via Claude in Chrome)
+
+- **YouTube** (weergaven / gem. kijkduur / bleef kijken): 210 / 0:17 / 25,8%
+- **Instagram** (weergaven / gem. kijktijd): 224 / 9s
+- **TikTok** (views / gem. kijktijd / volledig / op 0:03 / land): 719 / 3,9s / 1,5% / 15% / NL 75%
+
+Overzicht en conclusies: ../../stats-2026-11-15.md

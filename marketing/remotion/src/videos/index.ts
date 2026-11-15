@@ -19,6 +19,12 @@ import moon from './moon-landing';
 import moonTiming from './timing/moon-landing.json';
 import genghis from './genghis-khan';
 import genghisTiming from './timing/genghis-khan.json';
+import titanic from './titanic';
+import titanicTiming from './timing/titanic.json';
+import wwi from './first-world-war';
+import wwiTiming from './timing/first-world-war.json';
+import nineEleven from './september-11-attacks';
+import nineElevenTiming from './timing/september-11-attacks.json';
 
 export const VIDEOS: { config: ShortConfig; timing: Timing }[] = [
   { config: alexander, timing: alexanderTiming as Timing },
@@ -30,4 +36,7 @@ export const VIDEOS: { config: ShortConfig; timing: Timing }[] = [
   { config: qin, timing: qinTiming as Timing },
   { config: moon, timing: moonTiming as Timing },
   { config: genghis, timing: genghisTiming as Timing },
+  { config: titanic, timing: titanicTiming as Timing },
+  { config: wwi, timing: wwiTiming as Timing },
+  { config: nineEleven, timing: nineElevenTiming as Timing },
 ];
