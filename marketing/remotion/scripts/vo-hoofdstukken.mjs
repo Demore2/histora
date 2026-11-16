@@ -21,13 +21,39 @@ hoofdstukken.forEach((h, hi) => {
   const duur = duurVan(pad);
   const eigen = zinnen.filter((z) => z.h === h);
   // stiltes binnen het hoofdstuk
-  const log = ffStderr(['-i', pad, '-af', 'silencedetect=n=-38dB:d=0.12', '-f', 'null', '-']);
+  const log = ffStderr(['-i', pad, '-af', 'silencedetect=n=-38dB:d=0.08', '-f', 'null', '-']);
   const st = [...log.matchAll(/silence_start: ([\d.]+)[\s\S]*?silence_end: ([\d.]+)/g)].map((m) => ({ a: +m[1], b: +m[2] }));
   const binnen = st.filter((s) => s.a > 0.2 && s.b < duur - 0.2);
-  const grenzen = binnen.sort((x, y) => (y.b - y.a) - (x.b - x.a)).slice(0, eigen.length - 1).sort((x, y) => x.a - y.a);
-  if (grenzen.length !== eigen.length - 1) console.warn(`! ${h}: ${grenzen.length + 1} stukken gevonden voor ${eigen.length} zinnen`);
   const begin = st.length && st[0].a < 0.05 ? st[0].b : 0;
   const eindSpraak = st.length && st.at(-1).b > duur - 0.05 ? st.at(-1).a : duur;
+  // Kies de n-1 zinsgrenzen uit de stiltes zo dat elke zin ongeveer zo lang duurt als zijn tekst
+  // (tekens x tempo), met een bonus voor lange stiltes. Alleen de langste stiltes nemen pakt soms een
+  // adempauze midden in een zin.
+  const n = eigen.length;
+  const tekens = eigen.map((z) => z.zin.length + 8);
+  const tempo = (eindSpraak - begin) / tekens.reduce((x, y) => x + y, 0);
+  const verwacht = tekens.map((c) => c * tempo);
+  const kand = binnen.sort((x, y) => x.a - y.a);
+  const m = kand.length;
+  const kost = (van, tot, k) => { const d = tot - van; return ((d - verwacht[k]) ** 2) / verwacht[k]; };
+  // dp[k][j] = minimale kost als zin k eindigt op kandidaat j
+  const INF = 1e18;
+  const dp = Array.from({ length: n }, () => new Array(m).fill(INF));
+  const terug = Array.from({ length: n }, () => new Array(m).fill(-1));
+  for (let j = 0; j < m; j++) dp[0][j] = kost(begin, kand[j].a, 0) - 2 * (kand[j].b - kand[j].a);
+  for (let k = 1; k < n - 1; k++)
+    for (let j = k; j < m; j++)
+      for (let i = k - 1; i < j; i++) {
+        const c = dp[k - 1][i] + kost(kand[i].b, kand[j].a, k) - 2 * (kand[j].b - kand[j].a);
+        if (c < dp[k][j]) { dp[k][j] = c; terug[k][j] = i; }
+      }
+  let grenzen = [];
+  if (n > 1 && m >= n - 1) {
+    let best = INF, bj = -1;
+    for (let j = n - 2; j < m; j++) { const c = dp[n - 2][j] + kost(kand[j].b, eindSpraak, n - 1); if (c < best) { best = c; bj = j; } }
+    for (let k = n - 2, j = bj; k >= 0; k--) { grenzen.unshift(kand[j]); j = terug[k][j]; }
+  }
+  if (grenzen.length !== n - 1) console.warn(`! ${h}: ${grenzen.length + 1} stukken voor ${n} zinnen`);
   eigen.forEach((z, k) => {
     const s = k === 0 ? begin : grenzen[k - 1]?.b ?? begin;
     const e = k === eigen.length - 1 ? eindSpraak : grenzen[k]?.a ?? eindSpraak;
