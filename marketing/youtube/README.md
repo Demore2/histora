@@ -19,7 +19,10 @@ youtube/
   dan 3 snelle klappen uit het leven in de "you"-vorm ("You'd…"), eindigend met een vraag ("So how does … get there?"),
   dan de titelkaart. Stem iets energieker (speech_rate 0). Daarna begint het verhaal.
 - **Thumbnail**: gesplitst met schuine knip, links het begin ("AGE 9"), rechts de top ("EMPEROR"), dikke labels.
-- Nog open: zachte themamuziek per hoofdstuk (ElevenLabs Music via Higgsfield, ~47 credits per 5 min; eerst proefjes).
+- **Muziek per hoofdstuk** (eigenaar koos stijl A "orkestraal"): ElevenLabs Music v2.5 via Higgsfield, instrumentaal,
+  één stuk per hoofdstuk met de sfeer van dat hoofdstuk (teaser = timpani/brass-knal), elk genormaliseerd op −18 LUFS,
+  in `public/lokaal/<id>-muziek/hN.mp3`; volume 0,2 onder het verhaal (~13 dB onder de stem), 0,42 in de teaser,
+  1,5 s overlap tussen hoofdstukken. ~50 credits per 5 min. Prompts: zie de sessie van 2026-11-16 / `werk/muziek/`.
 
 ## Werkwijze, in deze volgorde
 

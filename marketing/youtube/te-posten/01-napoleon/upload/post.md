@@ -2,7 +2,7 @@
 
 Gemaakt 2026-11-16. 16:9, 1920×1080, ~5:15, opent met een teaser van 14 s ("What if you were Napoleon?"). Stem: Dylan (Higgsfield Seed Audio, speech_rate −10), per
 hoofdstuk ingesproken, lange stiltes ingekort (`dylan-kort/`). Beeld: Remotion + three.js
-(`marketing/remotion/src/lang/`, compositie `lang-napoleon`). Geen muziek; sfeer en effecten per shot.
+(`marketing/remotion/src/lang/`, compositie `lang-napoleon`). Muziek: per hoofdstuk een orkestraal stuk (ElevenLabs Music via Higgsfield, commercieel bruikbaar), plus sfeer en effecten per shot.
 
 **Upload:** `napoleon.mp4` (genormaliseerd naar ~−14 LUFS) + `thumbnail.png` in deze map. Werkbestanden (script, stem, ruwe render) in `../werk/`.
 

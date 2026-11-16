@@ -31,7 +31,9 @@ Full step-by-step in `marketing/youtube/README.md`.
   ("EMPEROR", gold crown, sunset), Inter 900 labels with thick dark stroke.
 - **No app link / "in Histora"** until the app is live on Android and iOS (`APP_IN_BEELD` in
   `src/watals/Afsluiter.tsx`); outro: "Who should be next? Tell us in the comments. Subscribe for more."
-- Mix: loudnorm two-pass to -14 LUFS. Music: still being decided (ElevenLabs Music via Higgsfield).
+- **Music**: orchestral style A (soft strings, light military snare, warm French horn), one ElevenLabs Music v2.5
+  track per chapter via Higgsfield with that chapter's mood (teaser: timpani/brass hit), normalised to -18 LUFS,
+  volume 0.2 under the story, 0.42 in the teaser, 1.5 s overlap. Mix: loudnorm two-pass to -14 LUFS.
 
 ## Folders
 

@@ -429,6 +429,39 @@ const Ondertitels = () => {
   );
 };
 
+
+/* ---------- muziek per hoofdstuk (ElevenLabs Music via Higgsfield, stijl "orkestraal", genormaliseerd op -18 LUFS) ---------- */
+const MUZIEK_DUUR = [18.08, 35.06, 39.05, 41.06, 36.08, 37.07, 37.07, 42.06, 55.07];
+const HOOFDSTUK_START = (() => {
+  const uit: number[] = [];
+  let vorige = '';
+  for (const z of ZINNEN) if (z.hoofdstuk !== vorige) { vorige = z.hoofdstuk; uit.push(z.start); }
+  return uit;
+})();
+const MUZIEK = MUZIEK_DUUR.map((duur, i) => {
+  const van = i === 0 ? 0 : HOOFDSTUK_START[i] - 0.6;
+  const volgende = i < MUZIEK_DUUR.length - 1 ? HOOFDSTUK_START[i + 1] - 0.6 + 1.5 : EIND;
+  return { i, van, tot: Math.min(van + duur, volgende), vol: i === 0 ? 0.42 : 0.2 };
+});
+
+const Muziek = () => (
+  <>
+    {MUZIEK.map((m) => {
+      const lengte = Math.round((m.tot - m.van) * FPS);
+      return (
+        <Sequence key={`m${m.i}`} from={Math.round(m.van * FPS)} durationInFrames={lengte}>
+          <Audio
+            src={staticFile(`lokaal/napoleon-muziek/h${m.i}.mp3`)}
+            volume={(fr) =>
+              interpolate(fr, [0, m.i === 0 ? 1 : 36, lengte - 45, lengte], [m.i === 0 ? m.vol : 0, m.vol, m.vol, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })
+            }
+          />
+        </Sequence>
+      );
+    })}
+  </>
+);
+
 export const NapoleonLang = () => (
   <AbsoluteFill style={{ background: '#000' }}>
     {SHOTS.map((s, i) => {
@@ -454,6 +487,7 @@ export const NapoleonLang = () => (
     ))}
     <Ondertitels />
     <LangWatermerk />
+    <Muziek />
     <Audio src={staticFile('lokaal/napoleon-lang-voice.mp3')} volume={1.25} />
   </AbsoluteFill>
 );
