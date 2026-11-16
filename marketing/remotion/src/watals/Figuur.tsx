@@ -56,6 +56,7 @@ export type Kleding = {
   cape?: string;
   riem?: string;
   borst?: string; // borstpantser over de tuniek
+  laarzen?: string; // kaplaarzen tot onder de knie
 };
 
 /** Arm: schouder- en elleboogrotatie. Elleboog: y = draai (naar binnen), x = buigen naar voren. */
@@ -83,7 +84,7 @@ export const wijs = (op = 1.4): ArmPose => ({ schouder: [-op, 0, -0.1], elleboog
 export const omhoog = (): ArmPose => ({ schouder: [-2.9, 0, -0.15], elleboog: [0, -0.2] });
 
 export type Haar = 'kort' | 'bob' | 'lang' | 'kaal' | 'grijs';
-export type Hoofddeksel = 'krans' | 'bandana' | 'helm' | 'hoofdband' | 'kap' | null;
+export type Hoofddeksel = 'krans' | 'bandana' | 'helm' | 'hoofdband' | 'kap' | 'steek' | null;
 
 type Props = {
   kleding: Kleding;
@@ -163,6 +164,7 @@ export const Figuur = ({
         <group key={x}>
           <Blok p={[x, 0.42, 0]} s={[0.23, 0.68, 0.25]} c={benen} o={o} />
           <Blok p={[x, 0.06, 0.03]} s={[0.25, 0.12, 0.31]} c={k.schoenen} o={o} />
+          {k.laarzen && <Blok p={[x, 0.27, 0]} s={[0.27, 0.42, 0.29]} c={k.laarzen} rough={0.45} o={o} />}
         </group>
       ))}
       <Blok p={[0, 0.86, 0]} s={[0.64, 0.42, 0.4]} c={rok} o={o} />
@@ -280,6 +282,20 @@ export const Figuur = ({
           </>
         )}
         {hoofddeksel === 'kap' && <Blok p={[0, 0.62, -0.06]} s={[0.72, 0.32, 0.64]} c={k.cape ?? k.tuniek} o={o} />}
+        {hoofddeksel === 'steek' && (
+          // Napoleons steek, "en bataille": dwars op het hoofd, punten naar links en rechts
+          <>
+            <Blok p={[0, 0.8, -0.01]} s={[0.72, 0.12, 0.66]} c="#141210" rough={0.7} o={o} />
+            <Blok p={[0, 0.98, -0.02]} s={[0.9, 0.3, 0.3]} c="#141210" rough={0.7} o={o} />
+            <Blok p={[0, 1.15, -0.02]} s={[0.56, 0.1, 0.26]} c="#141210" rough={0.7} o={o} />
+            {[-1, 1].map((k2) => (
+              <Blok key={k2} p={[k2 * 0.52, 1.0, -0.02]} s={[0.28, 0.2, 0.26]} r={[0, 0, k2 * 0.35]} c="#141210" rough={0.7} o={o} />
+            ))}
+            <Blok p={[-0.28, 1.0, 0.14]} s={[0.12, 0.12, 0.03]} c="#2A4D9A" o={o} />
+            <Blok p={[-0.28, 1.0, 0.16]} s={[0.07, 0.07, 0.02]} c="#F2EEE6" o={o} />
+            <Blok p={[-0.28, 1.0, 0.18]} s={[0.035, 0.035, 0.02]} c="#B3312B" o={o} />
+          </>
+        )}
       </group>
       {extra}
     </group>
@@ -300,7 +316,39 @@ export const CALPURNIA: Kleding = { huid: '#E8BF98', haar: '#3A2418', tuniek: '#
 export const CLEOPATRA: Kleding = { huid: '#C9925F', haar: '#141010', tuniek: '#F2EAD8', rand: '#D8A945', schoenen: '#B8912F', riem: '#D8A945' };
 export const POMPEIUS: Kleding = { huid: '#DDB08A', haar: '#6B4A30', tuniek: '#ECE6D8', rand: '#3E4F7A', schoenen: '#5A4030', cape: '#3E4F7A' };
 
+// Napoleon: overal dezelfde blauwe jas met wit vest, witte broek, zwarte laarzen en de steek.
+export const NAPOLEON: Kleding = { huid: '#E8C09A', haar: '#3A2A1E', tuniek: '#1F3A6E', rand: '#ECE6D8', benen: '#ECE6D8', schoenen: '#141210', laarzen: '#141210', riem: '#ECE6D8' };
+export const NAPOLEON_KROONMANTEL: Kleding = { ...NAPOLEON, cape: '#8E1F2A' };
+export const JOSEPHINE: Kleding = { huid: '#EEC9A6', haar: '#2E1E16', tuniek: '#F4EEE2', rok: '#F1E9DA', schoenen: '#D8C9A8', riem: '#C9A646' };
+export const PAUS: Kleding = { huid: '#E2B892', haar: '#B9B4AA', tuniek: '#F4F1EA', schoenen: '#9E1F25', cape: '#9E1F25' };
+export const AFGEVAARDIGDE: Kleding = { huid: '#DDB08A', haar: '#4A3A2C', tuniek: '#A8322B', rand: '#ECE6D8', schoenen: '#2A211B', benen: '#ECE6D8' };
+export const GIDS: Kleding = { huid: '#C98F62', haar: '#3A2A1E', tuniek: '#6B5236', benen: '#4A3A2C', schoenen: '#2A211B', riem: '#2A211B' };
+export const SCHOLIER: Kleding = { huid: '#E6BE98', haar: '#6B4A30', tuniek: '#3E4F7A', benen: '#ECE6D8', schoenen: '#2A211B' };
+
 /* ---------- rekwisieten ---------- */
+
+/** Kroon, rechtop (ring horizontaal). Los in de scène plaatsen, niet in de hand. */
+export const Kroon = ({ position }: { position?: V3 }) => (
+  <group position={position}>
+    {Array.from({ length: 10 }, (_, i) => {
+      const a = (i / 10) * Math.PI * 2;
+      return (
+        <group key={i}>
+          <Blok p={[Math.sin(a) * 0.3, 0.12, Math.cos(a) * 0.3]} s={[0.2, 0.14, 0.06]} r={[0, a, 0]} c="#D8B54E" rough={0.3} metal={0.6} />
+          {i % 2 === 0 && <Blok p={[Math.sin(a) * 0.3, 0.27, Math.cos(a) * 0.3]} s={[0.07, 0.16, 0.05]} r={[0, a, 0]} c="#E2BE58" rough={0.3} metal={0.6} />}
+        </group>
+      );
+    })}
+    <Blok p={[0, 0.12, 0.31]} s={[0.07, 0.07, 0.03]} c="#9E1F25" rough={0.2} />
+  </group>
+);
+
+export const Verrekijker = () => (
+  <group rotation={[Math.PI / 2, 0, 0]}>
+    <Blok p={[0, 0.12, 0]} s={[0.09, 0.4, 0.09]} c="#3A2A1C" />
+    <Blok p={[0, 0.38, 0]} s={[0.12, 0.16, 0.12]} c="#B8912F" metal={0.7} rough={0.3} />
+  </group>
+);
 
 export const Zwaard = ({ o }: { o?: Overschrijf }) => (
   <group rotation={[Math.PI / 2, 0, 0]}>
