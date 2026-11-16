@@ -169,7 +169,7 @@ export const N14_Toulon = () => {
 export const N15_Generaal = ({ van }: ScèneProps) => {
   const f = useCurrentFrame();
   const t = f / FPS;
-  const wissel = lok(16, van);
+  const wissel = lok(17, van);
   return (
     <Shot
       focus={[0, 2.1, 0]}
@@ -551,7 +551,7 @@ export const N35_KaartCode = () => {
 
 export const N36_Kroning = ({ van }: ScèneProps) => {
   const f = useCurrentFrame();
-  const k0 = lok(37, van);
+  const k0 = lok(38, van);
   const kroonY = ease(f, k0, k0 + 60, 3.15, 2.56);
   const t = f / FPS;
   return (
@@ -650,7 +650,7 @@ export const N42_Broers = () => {
 
 export const N43_Scheiding = ({ van }: ScèneProps) => {
   const f = useCurrentFrame();
-  const wissel = lok(43, van) + 2.8 * FPS;
+  const wissel = lok(44, van) + 2.8 * FPS;
   const MARIE_LOUISE: Kleding = { ...JOSEPHINE, haar: '#B8864E', tuniek: '#F4EEF2', rok: '#F4EEF2' };
   if (f < wissel)
     return (
@@ -905,8 +905,8 @@ export const N55_Ontsnapping = () => {
 export const N56_Laffrey = ({ van }: ScèneProps) => {
   const f = useCurrentFrame();
   const t = f / FPS;
-  const loop = lok(57, van);
-  const om = lok(58, van);
+  const loop = lok(58, van);
+  const om = lok(59, van);
   const dicht = loop + 5 * FPS;
   const over = f >= om;
   const armen = ease(f, loop + 60, loop + 90, 0.1, 1.1);
@@ -964,7 +964,7 @@ export const N59_HonderdDagen = () => {
 export const N60_Waterloo = ({ van }: ScèneProps) => {
   const f = useCurrentFrame();
   const t = f / FPS;
-  const wissel = lok(60, van) + 4.4 * FPS;
+  const wissel = lok(61, van) + 4.4 * FPS;
   if (f < wissel)
     return (
       <Shot focus={[0, 2.9, 0]} scherpte={2.5} mist={['#7E827E', 10, 70]} over={<JaarLabel jaar="18 June 1815" sub="Waterloo" />}>
@@ -1091,7 +1091,7 @@ export const N65_Invalides = () => {
 
 export const N66_Lengte = ({ van }: ScèneProps) => {
   const f = useCurrentFrame();
-  const teller = lok(67, van);
+  const teller = lok(68, van);
   return (
     <Shot focus={[0, 1.4, 0]} scherpte={3.5} mist={['#3A2A1E', 8, 30]} over={f >= teller ? <LangTeller label="Height" waarde="1.69 m" pil="average for his time" /> : undefined}>
       <Lucht boven="#2A1E16" horizon="#4A3626" />
@@ -1130,7 +1130,7 @@ export const N69_Krimp = () => {
 
 export const N70_Beeld = ({ van }: ScèneProps) => {
   const f = useCurrentFrame();
-  const af = lok(71, van);
+  const af = lok(72, van);
   return (
     <>
       <Shot focus={[0, 3.6, 0]} scherpte={2} mist={['#E8DCC4', 20, 90]} over={f < af ? <LangTeller label="Since 1804" waarde="Civil Code" pil="still French law" /> : undefined}>

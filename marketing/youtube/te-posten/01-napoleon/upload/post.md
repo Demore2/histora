@@ -1,6 +1,6 @@
 # Napoleon in 5 minutes (YouTube long-form #01, pilot)
 
-Gemaakt 2026-11-16. 16:9, 1920×1080, 5:20. Stem: Dylan (Higgsfield Seed Audio, speech_rate −10), per
+Gemaakt 2026-11-16. 16:9, 1920×1080, ~5:15, opent met een teaser van 14 s ("What if you were Napoleon?"). Stem: Dylan (Higgsfield Seed Audio, speech_rate −10), per
 hoofdstuk ingesproken, lange stiltes ingekort (`dylan-kort/`). Beeld: Remotion + three.js
 (`marketing/remotion/src/lang/`, compositie `lang-napoleon`). Geen muziek; sfeer en effecten per shot.
 
@@ -16,17 +16,17 @@ Alternatieven om te testen: "What Really Happened to Napoleon?" · "He Was Mocke
 
 **Beschrijving:**
 
-He was mocked for his accent at school. Twenty-five years later he crowned himself emperor, and he died on a rock in the middle of the South Atlantic. This is the whole life of Napoleon Bonaparte in five minutes: Corsica, the Revolution, Toulon, Italy and Egypt, the Alps on a mule, Austerlitz, Russia, Elba, Waterloo and Saint Helena.
+What if you were Napoleon? You'd put the crown on your own head, rule almost all of Europe, then march into Russia and lose almost everything. Mocked at school at nine, emperor at thirty-five, dead on a rock in the South Atlantic at fifty-one. This is the whole life of Napoleon Bonaparte in five minutes: Corsica, the Revolution, Toulon, Italy and Egypt, the Alps on a mule, Austerlitz, Russia, Elba, Waterloo and Saint Helena.
 
-0:00 Mocked at school, crowned emperor
-0:19 The boy from Corsica
-0:52 The Revolution
-1:28 Italy and Egypt
-2:07 First Consul
-2:40 Emperor
-3:15 Russia
-3:49 Elba and Waterloo
-4:29 Saint Helena
+0:00 What if you were Napoleon?
+0:15 The boy from Corsica
+0:48 The Revolution
+1:24 Italy and Egypt
+2:03 First Consul
+2:36 Emperor
+3:11 Russia
+3:45 Elba and Waterloo
+4:25 Saint Helena
 
 Who should be next? Tell us in the comments.
 

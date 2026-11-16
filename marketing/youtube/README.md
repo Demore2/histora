@@ -13,6 +13,14 @@ youtube/
   gepost/<nn-id>/          na het posten hierheen verplaatsen (mv, nooit rm) + stats.md
 ```
 
+## Vast format (eigenaar + maat, 2026-11-16)
+
+- **Teaser vooraf (~12-15 s)**, los gemaakt, niet uit de video geknipt: knal (kanonschot) + "What if you were <naam>?",
+  dan 3 snelle klappen uit het leven in de "you"-vorm ("You'd…"), eindigend met een vraag ("So how does … get there?"),
+  dan de titelkaart. Stem iets energieker (speech_rate 0). Daarna begint het verhaal.
+- **Thumbnail**: gesplitst met schuine knip, links het begin ("AGE 9"), rechts de top ("EMPEROR"), dikke labels.
+- Nog open: zachte themamuziek per hoofdstuk (ElevenLabs Music via Higgsfield, ~47 credits per 5 min; eerst proefjes).
+
 ## Werkwijze, in deze volgorde
 
 1. **Script** `script.md`: `## Hoofdstuk` + één zin per regel, ~750 woorden voor 5 min, feitentabel onderaan.
