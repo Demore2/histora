@@ -18,6 +18,8 @@ en modereer de eerste uren.
 Bij Genghis/Caesar was 4 uur te kort op IG (Genghis bleef op 51 steken). Als Khalid om 21:00 nog
 duidelijk aan het groeien is, schuif Napoleon dan naar morgen.
 
+> **App-verwijzing uit (eigenaar, 2026-11-16):** geen link of "in Histora" in teksten en beeld tot de app op Android én iOS live is (`APP_IN_BEELD` in `marketing/remotion/src/watals/Afsluiter.tsx`).
+
 ## Reactie op de volger (Instagram, onder Caesar)
 
 Antwoord met de Reel ("Reply with reel"), of zet na het posten als tekstreactie onder zijn commentaar:
@@ -28,8 +30,6 @@ Antwoord met de Reel ("Reply with reel"), of zet na het posten als tekstreactie 
 
 What if you were Khalid ibn al-Walid? You fought against the Muslims at Uhud, switched sides, and became the Sword of God. Who should be next? 👇
 
-The full story is in Histora, link in bio.
-
 #history #khalidibnalwalid #islamichistory #historytok #swordofgod
 
 ## YouTube Shorts
@@ -38,8 +38,6 @@ Titel: What if you were Khalid ibn al-Walid?
 
 Uhud, the switch, nine broken swords at Mu'tah, the desert march to Syria, Yarmouk, and a death in bed. The Sword of God's life in 70 seconds, as if you were him.
 
-The full story is in Histora: real people from every era, one chapter at a time.
-
 #shorts #history #khalidibnalwalid #islamichistory
 
 ## Instagram
@@ -47,8 +45,6 @@ The full story is in Histora: real people from every era, one chapter at a time.
 What if you were Khalid ibn al-Walid? Nine swords broke in your hand in one battle. You died in bed, and hated it.
 
 You asked for him, so here he is. Who's next? 👇
-
-The full story is in Histora, link in bio.
 
 #history #khalidibnalwalid #islamichistory #swordofgod #historyfacts
 

@@ -6,6 +6,12 @@ import { FONT, KLEUR, TEKST_SCHADUW } from '../sjabloon/theme';
  * donkerder, de zwaaiende vos, "The full story is in Histora." en het app-icoon. Zonder de kicker
  * "30 SECONDS OF HISTORY" (ander format) en zonder de oude stem.
  */
+/**
+ * Eigenaar 2026-11-16: geen app-verwijzing in beeld tot de app op Android EN iOS live is.
+ * Zet dan op true; dan komen "The full story is in Histora.", het icoon en "Link in bio" terug.
+ */
+export const APP_IN_BEELD = false;
+
 export const Afsluiter = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -25,13 +31,13 @@ export const Afsluiter = () => {
         }}
       />
       <div style={{ position: 'absolute', top: 1010, width: '100%', textAlign: 'center', transform: `scale(${tekst})`, fontFamily: FONT, fontWeight: 900, color: KLEUR.wit, textShadow: TEKST_SCHADUW }}>
-        <div style={{ fontSize: 76, lineHeight: 1.1 }}>The full story is in</div>
-        <div style={{ fontSize: 76, lineHeight: 1.1, color: KLEUR.oranje }}>Histora.</div>
+        <div style={{ fontSize: 76, lineHeight: 1.1 }}>{APP_IN_BEELD ? 'The full story is in' : 'Who should be next?'}</div>
+        <div style={{ fontSize: 76, lineHeight: 1.1, color: KLEUR.oranje }}>{APP_IN_BEELD ? 'Histora.' : 'Follow for more.'}</div>
       </div>
-      <div style={{ position: 'absolute', top: 1250, width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 26, transform: `scale(${icoon})`, fontFamily: FONT }}>
+      {APP_IN_BEELD && <div style={{ position: 'absolute', top: 1250, width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 26, transform: `scale(${icoon})`, fontFamily: FONT }}>
         <Img src={staticFile('app-icon.png')} style={{ width: 120, height: 120, borderRadius: 28, boxShadow: '0 8px 24px rgba(0,0,0,0.5)' }} />
         <div style={{ fontWeight: 800, fontSize: 52, color: KLEUR.room, textShadow: TEKST_SCHADUW }}>Link in bio</div>
-      </div>
+      </div>}
     </AbsoluteFill>
   );
 };

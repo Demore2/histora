@@ -1,10 +1,12 @@
 # Napoleon in 5 minutes (YouTube long-form #01, pilot)
 
-Gemaakt 2026-11-16. 16:9, 1920×1080, 5:23. Stem: Dylan (Higgsfield Seed Audio, speech_rate −10), per
+Gemaakt 2026-11-16. 16:9, 1920×1080, 5:20. Stem: Dylan (Higgsfield Seed Audio, speech_rate −10), per
 hoofdstuk ingesproken, lange stiltes ingekort (`dylan-kort/`). Beeld: Remotion + three.js
 (`marketing/remotion/src/lang/`, compositie `lang-napoleon`). Geen muziek; sfeer en effecten per shot.
 
 **Render:** `renders/napoleon.mp4` (genormaliseerd naar ~−14 LUFS), `renders/napoleon-ruw.mp4` (zonder normalisatie).
+
+> **App-verwijzing uit (eigenaar, 2026-11-16):** geen link of "in Histora" in teksten en beeld tot de app op Android én iOS live is (`APP_IN_BEELD` in `marketing/remotion/src/watals/Afsluiter.tsx`).
 
 ## YouTube
 
@@ -26,8 +28,7 @@ He was mocked for his accent at school. Twenty-five years later he crowned himse
 3:49 Elba and Waterloo
 4:29 Saint Helena
 
-The full story, chapter by chapter, is in Histora: real people from every era, one chapter at a time.
-👉 https://play.google.com/store/apps/details?id=com.chronicles.historyapp
+Who should be next? Tell us in the comments.
 
 Maps show modern borders and are approximate.
 

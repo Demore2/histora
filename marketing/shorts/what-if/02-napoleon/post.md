@@ -30,11 +30,11 @@ fragmenten van 40 s in `<scratchpad>/muziek-dl/wav/`.
 Posten: niet binnen 24 uur na een andere post op hetzelfde platform (Genghis Khan bleef op IG op 51
 steken omdat Caesar 4 uur later kwam).
 
+> **App-verwijzing uit (eigenaar, 2026-11-16):** geen link of "in Histora" in teksten en beeld tot de app op Android én iOS live is (`APP_IN_BEELD` in `marketing/remotion/src/watals/Afsluiter.tsx`).
+
 ## TikTok
 
 What if you were Napoleon? Mocked at school at 9, emperor at 35, dead on a rock in the Atlantic at 51. Which moment would you change? 👇
-
-The full story is in Histora, link in bio.
 
 #history #napoleon #napoleonbonaparte #historytok #frenchhistory
 
@@ -44,8 +44,6 @@ Titel: What if you were Napoleon?
 
 Corsica, Toulon, the Pyramids, the Alps on a mule, a crown he put on his own head, Moscow on fire and Waterloo. Napoleon's whole life in 80 seconds, as if you were him.
 
-The full story is in Histora: real people from every era, one chapter at a time.
-
 #shorts #history #napoleon #napoleonbonaparte
 
 ## Instagram
@@ -53,8 +51,6 @@ The full story is in Histora: real people from every era, one chapter at a time.
 What if you were Napoleon? Schoolboys laughed at your accent. Twenty-five years later the pope came to Paris and you crowned yourself.
 
 Who should be next? Tell me below 👇
-
-The full story is in Histora, link in bio.
 
 #history #napoleon #napoleonbonaparte #frenchhistory #historyfacts
 

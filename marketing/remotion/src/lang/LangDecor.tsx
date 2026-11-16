@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { Blok, type V3 } from '../watals/Figuur';
 import { opKaart } from './Kaarttafel';
+import { APP_IN_BEELD } from '../watals/Afsluiter';
 import { ORANJE, SERIF } from './LangHud';
 
 /* ---------------- schepen en vlaggen ---------------- */
@@ -155,14 +156,15 @@ export const LangAfsluiter = () => {
       <AbsoluteFill style={{ backgroundColor: `rgba(28,26,22,${scrim})` }} />
       <Img src={staticFile('vos/zwaaiend.png')} style={{ position: 'absolute', left: 300, top: 250, height: 560, transform: `scale(${vos}) rotate(${Math.sin(frame / 4) * 3}deg)`, transformOrigin: 'bottom center' }} />
       <div style={{ position: 'absolute', left: 820, top: 330, opacity: tekst, transform: `translateY(${(1 - tekst) * 30}px)` }}>
-        <div style={{ fontFamily: SERIF, fontSize: 84, fontWeight: 800, color: 'white', lineHeight: 1.05 }}>The full story</div>
+        <div style={{ fontFamily: SERIF, fontSize: 84, fontWeight: 800, color: 'white', lineHeight: 1.05 }}>{APP_IN_BEELD ? 'The full story' : 'Who should be'}</div>
         <div style={{ fontFamily: SERIF, fontSize: 84, fontWeight: 800, color: 'white', lineHeight: 1.05 }}>
-          is in <span style={{ color: ORANJE }}>Histora.</span>
+          {APP_IN_BEELD ? <>is in <span style={{ color: ORANJE }}>Histora.</span></> : <span style={{ color: ORANJE }}>next?</span>}
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 22, marginTop: 34, transform: `scale(${icoon})`, transformOrigin: 'left center' }}>
+        {!APP_IN_BEELD && <div style={{ fontFamily: SERIF, fontSize: 46, color: '#FFF4E0', marginTop: 26, opacity: icoon }}>Tell us in the comments. Subscribe for more.</div>}
+        {APP_IN_BEELD && <div style={{ display: 'flex', alignItems: 'center', gap: 22, marginTop: 34, transform: `scale(${icoon})`, transformOrigin: 'left center' }}>
           <Img src={staticFile('app-icon.png')} style={{ width: 110, height: 110, borderRadius: 26, boxShadow: '0 8px 24px rgba(0,0,0,0.5)' }} />
           <div style={{ fontFamily: SERIF, fontSize: 40, color: '#FFF4E0' }}>Link in the description</div>
-        </div>
+        </div>}
       </div>
     </AbsoluteFill>
   );

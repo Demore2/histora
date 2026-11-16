@@ -410,7 +410,7 @@ const SHOTS: ShotDef[] = [
   { zin: 70, C: S2.N70_Beeld, sfeer: 'wind', vol: 0.05, accent: [{ bij: 0.2, src: 'glans', vol: 0.16 }, { bij: 4.2, src: 'afsluiter', vol: 0.22 }] },
 ];
 const STARTS = SHOTS.map((s) => (s.zin === 0 ? 0 : ZINNEN[s.zin].start - 0.3 + (s.na ?? 0)));
-const EIND = ZINNEN.at(-1)!.eind + 2.2;
+const EIND = ZINNEN.at(-1)!.eind + 3.5;
 export const NAPOLEON_LANG_DUUR = Math.round(EIND * FPS);
 const sfx = (n: string) => staticFile(`watals-sfx/${n}.wav`);
 
