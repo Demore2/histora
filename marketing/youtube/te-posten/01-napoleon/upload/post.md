@@ -4,7 +4,7 @@ Gemaakt 2026-11-16. 16:9, 1920×1080, 5:20. Stem: Dylan (Higgsfield Seed Audio, 
 hoofdstuk ingesproken, lange stiltes ingekort (`dylan-kort/`). Beeld: Remotion + three.js
 (`marketing/remotion/src/lang/`, compositie `lang-napoleon`). Geen muziek; sfeer en effecten per shot.
 
-**Render:** `renders/napoleon.mp4` (genormaliseerd naar ~−14 LUFS), `renders/napoleon-ruw.mp4` (zonder normalisatie).
+**Upload:** `napoleon.mp4` (genormaliseerd naar ~−14 LUFS) + `thumbnail.png` in deze map. Werkbestanden (script, stem, ruwe render) in `../werk/`.
 
 > **App-verwijzing uit (eigenaar, 2026-11-16):** geen link of "in Histora" in teksten en beeld tot de app op Android én iOS live is (`APP_IN_BEELD` in `marketing/remotion/src/watals/Afsluiter.tsx`).
 

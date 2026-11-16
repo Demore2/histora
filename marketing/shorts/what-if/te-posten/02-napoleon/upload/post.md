@@ -9,7 +9,7 @@ Nieuw in de bouwdoos: steek (`hoofddeksel="steek"`), laarzen, soldaten rond 1800
 sjako + geweer), muilezel (`ezel`), kanon, piramide, berg, rots, koepelkerk, vuur, rook, sneeuw/regen,
 kathedraal, kroon, verrekijker.
 
-**Renders** (`renders/`, niet in git):
+**Renders** (niet in git): de versie zonder muziek staat in deze map (`upload/`), die met muziek in `../extra/`:
 - `napoleon-muziek.mp4`: met Amour Plastique (vanaf 0:14 van het nummer). Auteursrechtelijk
   beschermd: op TikTok/IG gemute (Caesar), op YouTube kans op een claim.
 - `napoleon-zonder-muziek.mp4`: alleen de geluidseffecten. **Gebruik deze op TikTok en Instagram**

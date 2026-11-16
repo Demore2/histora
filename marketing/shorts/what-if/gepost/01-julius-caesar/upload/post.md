@@ -3,7 +3,7 @@
 Gemaakt 2026-11-15, volledig in Remotion + three.js (`watals-caesar` / `watals-caesar-stil`).
 Lengte ~79 s, 18 scènes, afsluiter (vos + "The full story is in Histora.") over het laatste beeld. Geen stem. Zachte geluidseffecten (zee, wind, vuur, rivier, menigte, whoosh op de knippen, munt, inslag), gemiddeld ~25 dB onder de muziek.
 
-**Renders** (`renders/`, niet in git):
+**Renders** (niet in git): de versie zonder muziek staat in deze map (`upload/`), die met muziek in `../extra/`:
 - `julius-caesar-muziek.mp4` — met Amour Plastique (vanaf 0:14 van het nummer). Auteursrechtelijk
   beschermd: kans op een claim (YouTube) of dempen (IG/TikTok).
 - `julius-caesar-zonder-muziek.mp4` — alleen de geluidseffecten; voeg het nummer in de app toe als het daar staat.

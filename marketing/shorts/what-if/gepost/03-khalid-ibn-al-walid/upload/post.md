@@ -10,7 +10,7 @@ geen standbeeld. Er staat nergens een zwaard dat als kruis leest (twee keer uit 
 Uhud wordt verteld zoals het was: hij vocht toen tegen de moslims. Reken op felle reacties van beide kanten
 en modereer de eerste uren.
 
-**Renders** (`renders/`, niet in git):
+**Renders** (niet in git): de versie zonder muziek staat in deze map (`upload/`), die met muziek in `../extra/`:
 - `khalid-zonder-muziek.mp4`: alleen geluidseffecten. Voor TikTok/IG, geluid in de app toevoegen.
 - `khalid-muziek.mp4`: met Amour Plastique (vanaf 0:14).
 
