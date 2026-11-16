@@ -42,6 +42,14 @@ New person = new `WatAls<Name>.tsx` built like `WatAlsCaesar.tsx` (copy it), new
 stripes + red cape + laurel; Napoleon = bicorne + blue coat; Cleopatra = black bob + gold band.
 Keep a person in **the same costume in every scene** (owner noticed a brown armour swap).
 
+## Cover (always, the owner asked for it)
+
+Every video gets `omslag.png` (1080x1920) in its folder: the hero in close-up in his own scene,
+"WHAT IF YOU WERE" + the name in gold at the top (`src/watals/Omslagen.tsx`, one `Still` per person
+in `Root.tsx`, id `watals-omslag-<id>`). Keep the title inside the 3:4 middle (y 240-1680) so the
+Instagram grid does not crop it, and the head under the title. Short name only ("KHALID?").
+`npx remotion still src/index.ts watals-omslag-<id> ../shorts/what-if/<nn-id>/omslag.png --gl=angle`
+
 ## Render and check
 
 ```bash

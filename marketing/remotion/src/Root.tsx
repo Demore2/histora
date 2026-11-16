@@ -6,6 +6,7 @@ import { VIDEOS } from './videos';
 import { CAESAR_DUUR, WatAlsCaesar } from './watals/WatAlsCaesar';
 import { NAPOLEON_DUUR, WatAlsNapoleon } from './watals/WatAlsNapoleon';
 import { KHALID_DUUR, WatAlsKhalid } from './watals/WatAlsKhalid';
+import { OmslagCaesar, OmslagKhalid, OmslagNapoleon } from './watals/Omslagen';
 
 export const Root = () => (
   <>
@@ -29,6 +30,9 @@ export const Root = () => (
     <Composition id="watals-napoleon-stil" component={WatAlsNapoleon} durationInFrames={NAPOLEON_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />
     <Composition id="watals-khalid" component={WatAlsKhalid} durationInFrames={KHALID_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true, muziekVanaf: 14 }} />
     <Composition id="watals-khalid-stil" component={WatAlsKhalid} durationInFrames={KHALID_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />
+    <Still id="watals-omslag-khalid" component={OmslagKhalid} width={W} height={H} />
+    <Still id="watals-omslag-napoleon" component={OmslagNapoleon} width={W} height={H} />
+    <Still id="watals-omslag-caesar" component={OmslagCaesar} width={W} height={H} />
     <Composition id="watals-caesar-stil" component={WatAlsCaesar} durationInFrames={CAESAR_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />
   </>
 );
