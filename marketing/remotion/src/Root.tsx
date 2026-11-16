@@ -9,6 +9,7 @@ import { KHALID_DUUR, WatAlsKhalid } from './watals/WatAlsKhalid';
 import { OmslagCaesar, OmslagKhalid, OmslagNapoleon } from './watals/Omslagen';
 import { NAPOLEON_LANG_DUUR, NapoleonLang } from './lang/NapoleonLang';
 import { NapoleonThumb } from './lang/Thumbnail';
+import { NapoleonThumbStaand } from './lang/ThumbnailStaand';
 import { KanaalBanner } from './lang/Banner';
 
 export const Root = () => (
@@ -39,6 +40,7 @@ export const Root = () => (
     <Composition id="lang-napoleon" component={NapoleonLang} durationInFrames={NAPOLEON_LANG_DUUR} fps={FPS} width={1920} height={1080} />
     <Still id="lang-napoleon-thumb" component={NapoleonThumb} width={1920} height={1080} />
     <Still id="kanaal-banner" component={KanaalBanner} width={2560} height={1440} />
+    <Still id="lang-napoleon-thumb-staand" component={NapoleonThumbStaand} width={1080} height={1920} />
     <Composition id="watals-caesar-stil" component={WatAlsCaesar} durationInFrames={CAESAR_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />
   </>
 );
