@@ -5,7 +5,7 @@ description: Build a Histora long-form YouTube video (16:9, ~5 min, voiced) in t
 
 # Histora long-form YouTube videos (approved 2026-11-16: "echt goated")
 
-First one: **Napoleon in 5 minutes** (`marketing/youtube/te-posten/01-napoleon/`). Copy it; don't reinvent.
+First one: **Napoleon in 5 minutes** (`marketing/youtube/gepost/01-napoleon/`). Copy it; don't reinvent.
 Full step-by-step in `marketing/youtube/README.md`.
 
 ## The style (what the owner approved)
