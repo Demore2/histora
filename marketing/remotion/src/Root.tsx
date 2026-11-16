@@ -7,6 +7,7 @@ import { CAESAR_DUUR, WatAlsCaesar } from './watals/WatAlsCaesar';
 import { NAPOLEON_DUUR, WatAlsNapoleon } from './watals/WatAlsNapoleon';
 import { KHALID_DUUR, WatAlsKhalid } from './watals/WatAlsKhalid';
 import { OmslagCaesar, OmslagKhalid, OmslagNapoleon } from './watals/Omslagen';
+import { NAPOLEON_LANG_DUUR, NapoleonLang } from './lang/NapoleonLang';
 
 export const Root = () => (
   <>
@@ -33,6 +34,7 @@ export const Root = () => (
     <Still id="watals-omslag-khalid" component={OmslagKhalid} width={W} height={H} />
     <Still id="watals-omslag-napoleon" component={OmslagNapoleon} width={W} height={H} />
     <Still id="watals-omslag-caesar" component={OmslagCaesar} width={W} height={H} />
+    <Composition id="lang-napoleon" component={NapoleonLang} durationInFrames={NAPOLEON_LANG_DUUR} fps={FPS} width={1920} height={1080} />
     <Composition id="watals-caesar-stil" component={WatAlsCaesar} durationInFrames={CAESAR_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />
   </>
 );
