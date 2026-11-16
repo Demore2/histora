@@ -84,7 +84,7 @@ export const wijs = (op = 1.4): ArmPose => ({ schouder: [-op, 0, -0.1], elleboog
 export const omhoog = (): ArmPose => ({ schouder: [-2.9, 0, -0.15], elleboog: [0, -0.2] });
 
 export type Haar = 'kort' | 'bob' | 'lang' | 'kaal' | 'grijs';
-export type Hoofddeksel = 'krans' | 'bandana' | 'helm' | 'hoofdband' | 'kap' | 'steek' | null;
+export type Hoofddeksel = 'krans' | 'bandana' | 'helm' | 'hoofdband' | 'kap' | 'steek' | 'tulband' | null;
 
 type Props = {
   kleding: Kleding;
@@ -282,6 +282,15 @@ export const Figuur = ({
           </>
         )}
         {hoofddeksel === 'kap' && <Blok p={[0, 0.62, -0.06]} s={[0.72, 0.32, 0.64]} c={k.cape ?? k.tuniek} o={o} />}
+        {hoofddeksel === 'tulband' && (
+          // gewikkelde tulband: drie lagen, met een slip die achter het hoofd hangt
+          <>
+            <Blok p={[0, 0.72, -0.01]} s={[0.7, 0.14, 0.66]} c={k.riem ?? '#9E2A22'} rough={0.9} o={o} />
+            <Blok p={[0, 0.84, -0.02]} s={[0.64, 0.12, 0.6]} c={k.riem ?? '#9E2A22'} r={[0, 0.3, 0]} rough={0.9} o={o} />
+            <Blok p={[0, 0.95, -0.02]} s={[0.48, 0.1, 0.46]} c={k.riem ?? '#9E2A22'} r={[0, -0.2, 0]} rough={0.9} o={o} />
+            <Blok p={[0.08, 0.48, -0.36]} s={[0.16, 0.4, 0.05]} c={k.riem ?? '#9E2A22'} rough={0.9} o={o} />
+          </>
+        )}
         {hoofddeksel === 'steek' && (
           // Napoleons steek, "en bataille": dwars op het hoofd, punten naar links en rechts
           <>
@@ -324,6 +333,12 @@ export const PAUS: Kleding = { huid: '#E2B892', haar: '#B9B4AA', tuniek: '#F4F1E
 export const AFGEVAARDIGDE: Kleding = { huid: '#DDB08A', haar: '#4A3A2C', tuniek: '#A8322B', rand: '#ECE6D8', schoenen: '#2A211B', benen: '#ECE6D8' };
 export const GIDS: Kleding = { huid: '#C98F62', haar: '#3A2A1E', tuniek: '#6B5236', benen: '#4A3A2C', schoenen: '#2A211B', riem: '#2A211B' };
 export const SCHOLIER: Kleding = { huid: '#E6BE98', haar: '#6B4A30', tuniek: '#3E4F7A', benen: '#ECE6D8', schoenen: '#2A211B' };
+
+// Khalid: overal rode tulband (riem = tulbandkleur), zwarte baard, grijze maliënkolder, donkerrode mantel.
+export const KHALID: Kleding = { huid: '#B98257', haar: '#17110D', tuniek: '#4A3A2E', borst: '#7E8088', benen: '#4A3A2E', schoenen: '#3A2A1C', cape: '#6E1C1C', riem: '#A3261F' };
+export const KHALID_JONG: Kleding = { ...KHALID, borst: undefined, cape: undefined, tuniek: '#E9DFC8', rok: '#E9DFC8', benen: '#E9DFC8' };
+export const KRIJGER: Kleding = { huid: '#B07A4E', haar: '#1A1210', tuniek: '#E2D6BC', borst: '#7E8088', benen: '#6B5236', schoenen: '#3A2A1C', riem: '#E2D6BC' };
+export const PERZ: Kleding = { huid: '#C9925F', haar: '#1A1210', tuniek: '#4E3A7A', borst: '#B8912F', benen: '#3A2A5A', schoenen: '#2A1E16' };
 
 /* ---------- rekwisieten ---------- */
 

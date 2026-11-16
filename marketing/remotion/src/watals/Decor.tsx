@@ -714,3 +714,96 @@ export const Kathedraal = ({ lengte = 6 }: { lengte?: number }) => (
     </mesh>
   </group>
 );
+
+/* ---------------- Khalid: woestijn, kameel, moskee, bed, ketting ---------------- */
+
+/** Kameel met één bult. Kop naar -z, zoals het paard. */
+export const Kameel = ({ position, rotation, t = 0, loopt = false, kleur = '#B88A55' }: { position?: V3; rotation?: V3; t?: number; loopt?: boolean; kleur?: string }) => {
+  const stap = loopt ? Math.sin(t * 4 + (position?.[0] ?? 0)) * 0.3 : 0;
+  return (
+    <group position={position} rotation={rotation}>
+      <Blok p={[0, 2.0, 0]} s={[0.9, 0.8, 2.0]} c={kleur} />
+      <Blok p={[0, 2.6, 0.1]} s={[0.7, 0.5, 0.9]} c={kleur} />
+      <Blok p={[0, 2.95, 0.1]} s={[0.4, 0.25, 0.5]} c={kleur} />
+      <group position={[0, 2.1, -0.95]} rotation={[0.35, 0, 0]}>
+        <Blok p={[0, 0.5, -0.2]} s={[0.32, 1.2, 0.32]} c={kleur} />
+        <Blok p={[0, 1.1, -0.45]} s={[0.36, 0.32, 0.7]} c={kleur} />
+        <Blok p={[0, 1.05, -0.82]} s={[0.3, 0.22, 0.08]} c="#5A3E28" />
+        {[-0.13, 0.13].map((x) => <Blok key={x} p={[x, 1.3, -0.25]} s={[0.07, 0.12, 0.07]} c={kleur} />)}
+      </group>
+      {[[-0.28, -0.75, stap], [0.28, -0.75, -stap], [-0.28, 0.75, -stap], [0.28, 0.75, stap]].map(([x, z, r], i) => (
+        <group key={i} position={[x, 1.7, z]} rotation={[r, 0, 0]}>
+          <Blok p={[0, -0.85, 0]} s={[0.2, 1.7, 0.2]} c={kleur} />
+          <Blok p={[0, -1.66, 0.04]} s={[0.26, 0.08, 0.3]} c="#8A6A44" />
+        </group>
+      ))}
+      <Blok p={[0, 1.8, 1.05]} s={[0.12, 0.6, 0.12]} c="#8A6A44" r={[-0.3, 0, 0]} />
+    </group>
+  );
+};
+
+/** Zandduinen: zachte, platte rotsen in zandkleur. */
+export const Duinen = ({ kleur = '#D9B57A', n = 10, z = -20 }: { kleur?: string; n?: number; z?: number }) => (
+  <>
+    {Array.from({ length: n }, (_, i) => {
+      const x = (i - n / 2) * 12 + (i % 3) * 3;
+      return (
+        <mesh key={i} position={[x, -1.5, z - (i % 4) * 10]} scale={[9, 3 + (i % 3), 6]} rotation={[0, i * 0.7, 0]} receiveShadow>
+          <dodecahedronGeometry args={[1, 1]} />
+          <meshStandardMaterial color={kleur} roughness={1} flatShading />
+        </mesh>
+      );
+    })}
+  </>
+);
+
+/** Moskee met koepels en twee minaretten (de Khalid ibn al-Walid-moskee in Homs, vereenvoudigd). */
+export const Moskee = ({ position, kleur = '#E6DCC8', koepel = '#8E9AA0' }: { position: V3; kleur?: string; koepel?: string }) => (
+  <group position={position}>
+    <Blok p={[0, 2.5, 0]} s={[12, 5, 8]} c={kleur} />
+    {[0, 1, 2, 3, 4].map((i) => <Blok key={i} p={[-4 + i * 2, 1.6, 4.02]} s={[1.0, 2.4, 0.06]} c="#6A5A48" />)}
+    {[[0, 0, 2.6], [-3.6, 0, 1.4], [3.6, 0, 1.4], [-3.6, 2.2, 1.2], [3.6, 2.2, 1.2]].map(([x, z, r], i) => (
+      <mesh key={i} position={[x, 5, z]} castShadow>
+        <sphereGeometry args={[r, 14, 8, 0, Math.PI * 2, 0, Math.PI / 2]} />
+        <meshStandardMaterial color={koepel} roughness={0.5} metalness={0.2} flatShading />
+      </mesh>
+    ))}
+    <Blok p={[0, 7.75, 0]} s={[0.06, 0.5, 0.06]} c="#D8B54E" metal={0.6} rough={0.3} />
+    {[-5.4, 5.4].map((x) => (
+      <group key={x} position={[x, 0, 4.4]}>
+        <mesh position={[0, 6, 0]} castShadow>
+          <cylinderGeometry args={[0.45, 0.55, 12, 8]} />
+          <meshStandardMaterial color={kleur} roughness={0.8} flatShading />
+        </mesh>
+        <Blok p={[0, 10.5, 0]} s={[1.3, 0.3, 1.3]} c={kleur} />
+        <mesh position={[0, 13, 0]}>
+          <coneGeometry args={[0.55, 2, 8]} />
+          <meshStandardMaterial color={koepel} roughness={0.5} flatShading />
+        </mesh>
+      </group>
+    ))}
+  </group>
+);
+
+export const Bed = ({ position, rotation }: { position: V3; rotation?: V3 }) => (
+  <group position={position} rotation={rotation}>
+    <Blok p={[0, 0.3, 0]} s={[1.2, 0.6, 2.8]} c="#6B4A2E" />
+    <Blok p={[0, 0.66, 0]} s={[1.1, 0.14, 2.7]} c="#E9DFC8" rough={0.95} />
+    <Blok p={[0, 0.8, -1.1]} s={[0.8, 0.16, 0.4]} c="#F2EAD8" rough={0.95} />
+    <Blok p={[0, 0.76, 0.4]} s={[1.14, 0.06, 1.7]} c="#7A3B26" rough={0.95} />
+  </group>
+);
+
+/** Ketting tussen twee punten (op dezelfde hoogte, langs x). */
+export const Ketting = ({ van, tot, y = 1.0, z = 0 }: { van: number; tot: number; y?: number; z?: number }) => {
+  const n = Math.max(2, Math.round(Math.abs(tot - van) / 0.16));
+  return (
+    <>
+      {Array.from({ length: n }, (_, i) => {
+        const x = van + ((tot - van) * (i + 0.5)) / n;
+        const zak = Math.sin((Math.PI * (i + 0.5)) / n) * 0.15;
+        return <Blok key={i} p={[x, y - zak, z]} s={[0.16, 0.09, i % 2 ? 0.09 : 0.03]} c="#6E7076" metal={0.7} rough={0.35} />;
+      })}
+    </>
+  );
+};
