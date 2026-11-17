@@ -1,0 +1,607 @@
+[
+ {
+  "i": 0,
+  "h": "Teaser",
+  "zin": "What if you were Julius Caesar?"
+ },
+ {
+  "i": 1,
+  "h": "Teaser",
+  "zin": "You'd be kidnapped by pirates, and laugh at them."
+ },
+ {
+  "i": 2,
+  "h": "Teaser",
+  "zin": "You'd conquer a land bigger than Italy."
+ },
+ {
+  "i": 3,
+  "h": "Teaser",
+  "zin": "You'd cross a small river and start a civil war."
+ },
+ {
+  "i": 4,
+  "h": "Teaser",
+  "zin": "And you'd be stabbed twenty-three times by your own friends."
+ },
+ {
+  "i": 5,
+  "h": "Teaser",
+  "zin": "So how does a broke boy from the backstreets of Rome get there?"
+ },
+ {
+  "i": 6,
+  "h": "I · The boy from the Subura",
+  "zin": "You're born in July, in the year 100 BC, in Rome."
+ },
+ {
+  "i": 7,
+  "h": "I · The boy from the Subura",
+  "zin": "Your name is Gaius Julius Caesar."
+ },
+ {
+  "i": 8,
+  "h": "I · The boy from the Subura",
+  "zin": "Your family says it descends from the goddess Venus."
+ },
+ {
+  "i": 9,
+  "h": "I · The boy from the Subura",
+  "zin": "But your family has no money, and no real power."
+ },
+ {
+  "i": 10,
+  "h": "I · The boy from the Subura",
+  "zin": "You grow up in the Subura, a loud and dirty part of the city, full of shops, smoke and crowded apartment blocks."
+ },
+ {
+  "i": 11,
+  "h": "I · The boy from the Subura",
+  "zin": "Rome rules the Mediterranean, but it is tearing itself apart."
+ },
+ {
+  "i": 12,
+  "h": "I · The boy from the Subura",
+  "zin": "Generals fight each other with private armies, and politicians are murdered in the street."
+ },
+ {
+  "i": 13,
+  "h": "I · The boy from the Subura",
+  "zin": "You're about fifteen when your father dies suddenly, one morning, while putting on his shoes."
+ },
+ {
+  "i": 14,
+  "h": "I · The boy from the Subura",
+  "zin": "Now you're the head of the family."
+ },
+ {
+  "i": 15,
+  "h": "II · Hunted by a dictator",
+  "zin": "At eighteen, you're already married, to Cornelia, the daughter of a powerful politician."
+ },
+ {
+  "i": 16,
+  "h": "II · Hunted by a dictator",
+  "zin": "Then a general named Sulla takes Rome and makes himself dictator."
+ },
+ {
+  "i": 17,
+  "h": "II · Hunted by a dictator",
+  "zin": "He hunts down his enemies, and your new family is on the wrong side."
+ },
+ {
+  "i": 18,
+  "h": "II · Hunted by a dictator",
+  "zin": "Sulla gives you an order: divorce your wife."
+ },
+ {
+  "i": 19,
+  "h": "II · Hunted by a dictator",
+  "zin": "You say no."
+ },
+ {
+  "i": 20,
+  "h": "II · Hunted by a dictator",
+  "zin": "So you lose your money, and your name goes on a list of people to be found."
+ },
+ {
+  "i": 21,
+  "h": "II · Hunted by a dictator",
+  "zin": "You hide in the hills, sick with fever, sleeping in a different house every night."
+ },
+ {
+  "i": 22,
+  "h": "II · Hunted by a dictator",
+  "zin": "Your mother's family begs Sulla to spare you, and in the end he gives in."
+ },
+ {
+  "i": 23,
+  "h": "II · Hunted by a dictator",
+  "zin": "But he warns them: in this boy, I see many Mariuses."
+ },
+ {
+  "i": 24,
+  "h": "II · Hunted by a dictator",
+  "zin": "Marius was the man Sulla hated most."
+ },
+ {
+  "i": 25,
+  "h": "III · Kidnapped by pirates",
+  "zin": "At twenty-five, you sail to Rhodes to study public speaking."
+ },
+ {
+  "i": 26,
+  "h": "III · Kidnapped by pirates",
+  "zin": "On the way, pirates capture your ship."
+ },
+ {
+  "i": 27,
+  "h": "III · Kidnapped by pirates",
+  "zin": "They want twenty talents of silver for your release."
+ },
+ {
+  "i": 28,
+  "h": "III · Kidnapped by pirates",
+  "zin": "You laugh, and tell them you're worth at least fifty."
+ },
+ {
+  "i": 29,
+  "h": "III · Kidnapped by pirates",
+  "zin": "For thirty-eight days you live among them like their leader."
+ },
+ {
+  "i": 30,
+  "h": "III · Kidnapped by pirates",
+  "zin": "You order them to be quiet when you want to sleep."
+ },
+ {
+  "i": 31,
+  "h": "III · Kidnapped by pirates",
+  "zin": "You read them your poems, and call them savages when they don't clap."
+ },
+ {
+  "i": 32,
+  "h": "III · Kidnapped by pirates",
+  "zin": "And you promise, smiling, that one day you'll come back and kill them all."
+ },
+ {
+  "i": 33,
+  "h": "III · Kidnapped by pirates",
+  "zin": "They think it's a joke."
+ },
+ {
+  "i": 34,
+  "h": "III · Kidnapped by pirates",
+  "zin": "When the ransom arrives, you're set free."
+ },
+ {
+  "i": 35,
+  "h": "III · Kidnapped by pirates",
+  "zin": "You raise a small fleet, you hunt the pirates down, and you capture them."
+ },
+ {
+  "i": 36,
+  "h": "III · Kidnapped by pirates",
+  "zin": "And you keep your promise."
+ },
+ {
+  "i": 37,
+  "h": "IV · Deep in debt",
+  "zin": "In Spain, you see a statue of Alexander the Great, and you start to cry."
+ },
+ {
+  "i": 38,
+  "h": "IV · Deep in debt",
+  "zin": "Alexander had conquered the known world by your age, and you've done nothing."
+ },
+ {
+  "i": 39,
+  "h": "IV · Deep in debt",
+  "zin": "So you go all in."
+ },
+ {
+  "i": 40,
+  "h": "IV · Deep in debt",
+  "zin": "You borrow huge sums and spend them on games, feasts and gladiators for the people of Rome."
+ },
+ {
+  "i": 41,
+  "h": "IV · Deep in debt",
+  "zin": "The people love you."
+ },
+ {
+  "i": 42,
+  "h": "IV · Deep in debt",
+  "zin": "You run for chief priest of Rome against two older, richer men."
+ },
+ {
+  "i": 43,
+  "h": "IV · Deep in debt",
+  "zin": "That morning you tell your mother: today you'll see me either as chief priest, or as an exile."
+ },
+ {
+  "i": 44,
+  "h": "IV · Deep in debt",
+  "zin": "You win."
+ },
+ {
+  "i": 45,
+  "h": "IV · Deep in debt",
+  "zin": "Then you make a secret deal with Rome's greatest general, Pompey, and its richest man, Crassus."
+ },
+ {
+  "i": 46,
+  "h": "IV · Deep in debt",
+  "zin": "Together, the three of you run Rome from behind the scenes."
+ },
+ {
+  "i": 47,
+  "h": "IV · Deep in debt",
+  "zin": "To seal the deal, Pompey marries your daughter, Julia."
+ },
+ {
+  "i": 48,
+  "h": "IV · Deep in debt",
+  "zin": "And in 59 BC, you become consul, the highest office in Rome."
+ },
+ {
+  "i": 49,
+  "h": "V · Gaul",
+  "zin": "Next, you take command of the provinces that border Gaul, roughly modern France and Belgium."
+ },
+ {
+  "i": 50,
+  "h": "V · Gaul",
+  "zin": "It's a land of proud and warlike tribes."
+ },
+ {
+  "i": 51,
+  "h": "V · Gaul",
+  "zin": "Over the next eight years, you conquer all of it."
+ },
+ {
+  "i": 52,
+  "h": "V · Gaul",
+  "zin": "You build a bridge across the Rhine in just ten days, march into Germania, and then tear the bridge down behind you."
+ },
+ {
+  "i": 53,
+  "h": "V · Gaul",
+  "zin": "You become the first Roman general to land in Britain."
+ },
+ {
+  "i": 54,
+  "h": "V · Gaul",
+  "zin": "In 52 BC, the Gauls unite behind one leader, Vercingetorix."
+ },
+ {
+  "i": 55,
+  "h": "V · Gaul",
+  "zin": "You trap him in the hill fort of Alesia, and around it you build a ring of walls, eighteen kilometres long."
+ },
+ {
+  "i": 56,
+  "h": "V · Gaul",
+  "zin": "Then a huge Gallic army arrives to rescue him, so you build a second wall, facing outward."
+ },
+ {
+  "i": 57,
+  "h": "V · Gaul",
+  "zin": "You fight in the middle, between two armies."
+ },
+ {
+  "i": 58,
+  "h": "V · Gaul",
+  "zin": "And you win."
+ },
+ {
+  "i": 59,
+  "h": "V · Gaul",
+  "zin": "Vercingetorix rides out and lays his weapons at your feet."
+ },
+ {
+  "i": 60,
+  "h": "V · Gaul",
+  "zin": "But the price is terrible."
+ },
+ {
+  "i": 61,
+  "h": "V · Gaul",
+  "zin": "Ancient writers say a million Gauls were killed, and another million enslaved."
+ },
+ {
+  "i": 62,
+  "h": "V · Gaul",
+  "zin": "Historians think those numbers are too high, but whole peoples were destroyed."
+ },
+ {
+  "i": 63,
+  "h": "V · Gaul",
+  "zin": "And you send the writing home: a book about your own war, starring you."
+ },
+ {
+  "i": 64,
+  "h": "VI · The Rubicon",
+  "zin": "While you're away, everything falls apart."
+ },
+ {
+  "i": 65,
+  "h": "VI · The Rubicon",
+  "zin": "Your daughter Julia dies, and Crassus is killed in a war in the East."
+ },
+ {
+  "i": 66,
+  "h": "VI · The Rubicon",
+  "zin": "Now only you and Pompey are left, and Pompey has chosen the Senate's side."
+ },
+ {
+  "i": 67,
+  "h": "VI · The Rubicon",
+  "zin": "The Senate orders you to give up your army and come home as a private man."
+ },
+ {
+  "i": 68,
+  "h": "VI · The Rubicon",
+  "zin": "Without your army, your enemies will put you on trial and end your career."
+ },
+ {
+  "i": 69,
+  "h": "VI · The Rubicon",
+  "zin": "In January of 49 BC, you stand at a small river called the Rubicon, the border of Italy."
+ },
+ {
+  "i": 70,
+  "h": "VI · The Rubicon",
+  "zin": "No general may cross it with an army."
+ },
+ {
+  "i": 71,
+  "h": "VI · The Rubicon",
+  "zin": "You hesitate."
+ },
+ {
+  "i": 72,
+  "h": "VI · The Rubicon",
+  "zin": "Then you say: let the die be cast."
+ },
+ {
+  "i": 73,
+  "h": "VI · The Rubicon",
+  "zin": "And you cross."
+ },
+ {
+  "i": 74,
+  "h": "VI · The Rubicon",
+  "zin": "Pompey and half the Senate flee from Rome."
+ },
+ {
+  "i": 75,
+  "h": "VI · The Rubicon",
+  "zin": "A year later, you crush Pompey's army at Pharsalus in Greece."
+ },
+ {
+  "i": 76,
+  "h": "VI · The Rubicon",
+  "zin": "Pompey escapes to Egypt."
+ },
+ {
+  "i": 77,
+  "h": "VI · The Rubicon",
+  "zin": "When you arrive, the Egyptians hand you his head."
+ },
+ {
+  "i": 78,
+  "h": "VI · The Rubicon",
+  "zin": "And you weep."
+ },
+ {
+  "i": 79,
+  "h": "VII · Cleopatra",
+  "zin": "Egypt is in a civil war of its own, between a young king and his sister, Cleopatra."
+ },
+ {
+  "i": 80,
+  "h": "VII · Cleopatra",
+  "zin": "Cleopatra is not allowed into the palace."
+ },
+ {
+  "i": 81,
+  "h": "VII · Cleopatra",
+  "zin": "So, according to the story, she has herself carried in, rolled up in a bedding sack."
+ },
+ {
+  "i": 82,
+  "h": "VII · Cleopatra",
+  "zin": "You're fifty-two, she's about twenty-one."
+ },
+ {
+  "i": 83,
+  "h": "VII · Cleopatra",
+  "zin": "You take her side, and for months you are trapped in Alexandria, fighting the king's army in the streets."
+ },
+ {
+  "i": 84,
+  "h": "VII · Cleopatra",
+  "zin": "Part of the city burns, and with it, books from the great library."
+ },
+ {
+  "i": 85,
+  "h": "VII · Cleopatra",
+  "zin": "You win, and Cleopatra becomes queen."
+ },
+ {
+  "i": 86,
+  "h": "VII · Cleopatra",
+  "zin": "Soon she has a son, and she names him Caesarion, little Caesar."
+ },
+ {
+  "i": 87,
+  "h": "VII · Cleopatra",
+  "zin": "Then you march into Asia and beat a king in five days."
+ },
+ {
+  "i": 88,
+  "h": "VII · Cleopatra",
+  "zin": "Your report to Rome is just three words: I came, I saw, I conquered."
+ },
+ {
+  "i": 89,
+  "h": "VIII · Dictator",
+  "zin": "By 45 BC, nobody is left to fight you."
+ },
+ {
+  "i": 90,
+  "h": "VIII · Dictator",
+  "zin": "Rome gives you everything: a golden chair, your face on coins, a month named after you."
+ },
+ {
+  "i": 91,
+  "h": "VIII · Dictator",
+  "zin": "That month is still called July."
+ },
+ {
+  "i": 92,
+  "h": "VIII · Dictator",
+  "zin": "You fix the calendar, which had drifted months away from the seasons."
+ },
+ {
+  "i": 93,
+  "h": "VIII · Dictator",
+  "zin": "To catch up, one year has to last four hundred and forty-five days."
+ },
+ {
+  "i": 94,
+  "h": "VIII · Dictator",
+  "zin": "Your calendar, with a leap day every four years, is used for more than sixteen hundred years."
+ },
+ {
+  "i": 95,
+  "h": "VIII · Dictator",
+  "zin": "You forgive many of your old enemies, and give some of them jobs."
+ },
+ {
+  "i": 96,
+  "h": "VIII · Dictator",
+  "zin": "One of them is a young senator named Brutus."
+ },
+ {
+  "i": 97,
+  "h": "VIII · Dictator",
+  "zin": "Then, in February of 44 BC, you are named dictator for life."
+ },
+ {
+  "i": 98,
+  "h": "VIII · Dictator",
+  "zin": "To many senators, that means one thing."
+ },
+ {
+  "i": 99,
+  "h": "VIII · Dictator",
+  "zin": "You are a king, and Rome hates kings."
+ },
+ {
+  "i": 100,
+  "h": "IX · The Ides of March",
+  "zin": "A fortune teller warns you: beware the fifteenth of March, the Ides."
+ },
+ {
+  "i": 101,
+  "h": "IX · The Ides of March",
+  "zin": "The night before, your wife Calpurnia dreams that you die in her arms."
+ },
+ {
+  "i": 102,
+  "h": "IX · The Ides of March",
+  "zin": "She begs you to stay home."
+ },
+ {
+  "i": 103,
+  "h": "IX · The Ides of March",
+  "zin": "But you go to the Senate anyway."
+ },
+ {
+  "i": 104,
+  "h": "IX · The Ides of March",
+  "zin": "On the way you pass the fortune teller and joke: the Ides of March have come."
+ },
+ {
+  "i": 105,
+  "h": "IX · The Ides of March",
+  "zin": "He answers: yes, but they have not gone."
+ },
+ {
+  "i": 106,
+  "h": "IX · The Ides of March",
+  "zin": "Inside, a group of senators surrounds you."
+ },
+ {
+  "i": 107,
+  "h": "IX · The Ides of March",
+  "zin": "More than sixty men are in on the plot."
+ },
+ {
+  "i": 108,
+  "h": "IX · The Ides of March",
+  "zin": "The first knife strikes your neck."
+ },
+ {
+  "i": 109,
+  "h": "IX · The Ides of March",
+  "zin": "You fight back, until you see Brutus among them."
+ },
+ {
+  "i": 110,
+  "h": "IX · The Ides of March",
+  "zin": "Then you pull your toga over your face."
+ },
+ {
+  "i": 111,
+  "h": "IX · The Ides of March",
+  "zin": "You fall at the foot of a statue of Pompey."
+ },
+ {
+  "i": 112,
+  "h": "IX · The Ides of March",
+  "zin": "Twenty-three wounds, and only one was deadly."
+ },
+ {
+  "i": 113,
+  "h": "IX · The Ides of March",
+  "zin": "They believed they were saving the Republic."
+ },
+ {
+  "i": 114,
+  "h": "IX · The Ides of March",
+  "zin": "Instead, they destroyed it."
+ },
+ {
+  "i": 115,
+  "h": "IX · The Ides of March",
+  "zin": "Your will names your great-nephew, Octavian, as your son."
+ },
+ {
+  "i": 116,
+  "h": "IX · The Ides of March",
+  "zin": "He's eighteen."
+ },
+ {
+  "i": 117,
+  "h": "IX · The Ides of March",
+  "zin": "He becomes Augustus, Rome's first emperor."
+ },
+ {
+  "i": 118,
+  "h": "IX · The Ides of March",
+  "zin": "And your name becomes a word for ruler: Kaiser, Tsar."
+ },
+ {
+  "i": 119,
+  "h": "Outro",
+  "zin": "Who should be born next? Tell us in the comments."
+ },
+ {
+  "i": 120,
+  "h": "Outro",
+  "zin": "Subscribe for more."
+ }
+]
