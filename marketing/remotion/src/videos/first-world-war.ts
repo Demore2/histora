@@ -1,5 +1,5 @@
 // De Eerste Wereldoorlog — v1 (2026-11-06). Tekst en bronnen:
-// marketing/shorts/30-seconds-of-history/te-posten/15-first-world-war/script.md
+// marketing/9.archief/30-seconds-of-history/te-posten/15-first-world-war/script.md
 // Hook = één verkeerde afslag, twintig miljoen doden (open vraag: hoe?). Spanning: de mislukte bomaanslag. Twist: de
 // chauffeur stopt om te keren, recht voor Princip.
 // Echt beeld: de auto bij het stadhuis, Princip in zijn cel en de plaat van de Domenica del Corriere (1914, publiek

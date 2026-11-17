@@ -1,5 +1,5 @@
 // Alexander the Great — v5 (30-secondenformaat, hook: "So who stopped him?") voor het Remotion-sjabloon. Tekst en bronnen:
-// marketing/shorts/30-seconds-of-history/te-posten/06-alexander-the-great/script.md
+// marketing/9.archief/30-seconds-of-history/te-posten/06-alexander-the-great/script.md
 // Elke beat is één hele zin: zo vindt scripts/timing.mjs de grenzen in een doorlopende opname.
 import type { MapStop, ShortConfig } from '../sjabloon/types';
 

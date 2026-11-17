@@ -1,16 +1,16 @@
 # Lange YouTube-video's (16:9)
 
-Eerste: `te-posten/01-napoleon/` (5:20, 2026-11-16).
+Eerste: `2.gepost/01-napoleon/` (5:20, 2026-11-16). Tweede: `1.te-posten/02-saladin/` (10:31, 2026-11-17).
 
 ## Mappen
 
 ```
-youtube/
+2.youtube/
   kanaal/                  banner (kanaal-banner.png) + kanaaltekst (kanaal.md)
-  te-posten/<nn-id>/
+  1.te-posten/<nn-id>/
     upload/                alleen wat je uploadt: <id>.mp4, thumbnail.png, post.md
     werk/                  script.md, zinnen.json, stem/ (opnames, timing, proeven), renders/ (ruw, proef)
-  gepost/<nn-id>/          na het posten hierheen verplaatsen (mv, nooit rm) + stats.md
+  2.gepost/<nn-id>/        na het posten hierheen verplaatsen (mv, nooit rm) + stats.md
 ```
 
 ## Vast format (eigenaar + maat, 2026-11-16)

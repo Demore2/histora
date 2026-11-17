@@ -1,4 +1,4 @@
-// Rendert een video naar zijn map in marketing/shorts/30-seconds-of-history/<te-posten|gepost>/<nn>-<id>/renders/,
+// Rendert een video naar zijn map in marketing/9.archief/30-seconds-of-history/<te-posten|gepost>/<nn>-<id>/renders/,
 // plus frame 1 als png (de eerste indruk) en de omslag (src/sjabloon/Cover.tsx).
 // Gebruik: npm run render -- <id>
 import { execFileSync } from 'node:child_process';

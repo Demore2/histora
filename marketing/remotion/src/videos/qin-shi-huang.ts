@@ -1,5 +1,5 @@
 // Qin Shi Huang — v1 (woensdag 11 november 2026, 20:00 NL). Tekst en bronnen:
-// marketing/shorts/30-seconds-of-history/te-posten/11-qin-shi-huang/script.md
+// marketing/9.archief/30-seconds-of-history/te-posten/11-qin-shi-huang/script.md
 // Hook = "So what killed him at forty-nine?", antwoord halverwege (kwik), twist: het graf is nooit geopend.
 // 9:16-beelden gemaakt voor deze short (public/qin-shi-huang-v1/) + echte foto's van het terracottaleger (extra/).
 import type { MapStop, ShortConfig } from '../sjabloon/types';

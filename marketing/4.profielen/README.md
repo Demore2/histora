@@ -75,7 +75,7 @@ Gemaakt met headless Chrome uit de HTML in `sjablonen/`, met bestaande beelden u
 andere scène in de banner, een andere vos op een cover), pas dan de HTML aan en draai:
 
 ```bash
-node social/profielen/render.mjs
+node marketing/4.profielen/render.mjs
 ```
 
 De twee `controle-*.png` zijn alleen om te kijken (de cirkeluitsnede en de veilige zone van de

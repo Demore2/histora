@@ -1,5 +1,5 @@
 // Napoleon Bonaparte — v1 (zondag 8 november 2026). Tekst en bronnen:
-// marketing/shorts/30-seconds-of-history/te-posten/08-napoleon-bonaparte/script.md
+// marketing/9.archief/30-seconds-of-history/te-posten/08-napoleon-bonaparte/script.md
 // Mythe-ontkrachter. Hook = "Not short. So who made him small?", antwoord in drie stappen: Franse duimen,
 // de staven (mythe · gemiddelde Fransman · Napoleon), en de echte Britse spotprent van 1803 (Gillray, CC0).
 import type { ShortConfig } from '../sjabloon/types';

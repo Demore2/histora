@@ -12,7 +12,7 @@ export const REPO = resolve(ROOT, '../..');
 export const ASSETS = join(REPO, 'assets/images');
 export const PUBLIC = join(ROOT, 'public');
 export const VOICE = join(ROOT, 'voice');
-export const SHORTS = join(REPO, 'marketing/shorts/30-seconds-of-history');
+export const SHORTS = join(REPO, 'marketing/9.archief/30-seconds-of-history');
 
 export const ff = (args, opts = {}) => execFileSync(FFMPEG, ['-y', '-hide_banner', '-loglevel', 'error', ...args], { stdio: 'inherit', ...opts });
 /** ffmpeg draaien en zijn stderr teruggeven (silencedetect, duur). */

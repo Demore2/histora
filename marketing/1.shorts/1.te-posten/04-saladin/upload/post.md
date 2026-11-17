@@ -26,7 +26,7 @@ Who should be next? Tell us below 👇
 
 ## Fact notes
 
-Zie `marketing/youtube/te-posten/02-saladin/werk/script.md`. Kort: geboren c. 1137/38 in Tikrit (vlucht-verhaal is overlevering); vizier van Egypte 1169 op ~31; Montgisard 1177 tegen Boudewijn IV (16, lepra), vlucht op een renkameel; Reynald brak in 1187 een bestand; Hattin 4 juli 1187; "kings do not kill kings" (Ibn Shaddad / Imad ad-Din); Jeruzalem 2 okt 1187, losgeld, duizenden vrijgelaten; twee paarden bij Jaffa 1192 (kroniekschrijvers, waarschijnlijk via al-Adil — de short zegt "you send him two", dus een vereenvoudiging); schatkist bij zijn dood: 1 gouden en 47 zilveren munten (Ibn Shaddad).
+Zie `marketing/2.youtube/1.te-posten/02-saladin/werk/script.md`. Kort: geboren c. 1137/38 in Tikrit (vlucht-verhaal is overlevering); vizier van Egypte 1169 op ~31; Montgisard 1177 tegen Boudewijn IV (16, lepra), vlucht op een renkameel; Reynald brak in 1187 een bestand; Hattin 4 juli 1187; "kings do not kill kings" (Ibn Shaddad / Imad ad-Din); Jeruzalem 2 okt 1187, losgeld, duizenden vrijgelaten; twee paarden bij Jaffa 1192 (kroniekschrijvers, waarschijnlijk via al-Adil — de short zegt "you send him two", dus een vereenvoudiging); schatkist bij zijn dood: 1 gouden en 47 zilveren munten (Ibn Shaddad).
 
 ## Slagingskans
 

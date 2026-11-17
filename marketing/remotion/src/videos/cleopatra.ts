@@ -1,5 +1,5 @@
 // Cleopatra — v1 (maandag 9 november 2026). Tekst en bronnen:
-// marketing/shorts/30-seconds-of-history/te-posten/09-cleopatra/script.md
+// marketing/9.archief/30-seconds-of-history/te-posten/09-cleopatra/script.md
 // Opent op een tijdlijn op schaal (piramide · Cleopatra · maanlanding). Hook = "So who was she, really?",
 // antwoord aan het eind: een Macedonische Griekse, de eerste van haar familie die Egyptisch leerde.
 // Haakt aan op de Alexander-short: haar familie stamde af van een van zijn generaals.

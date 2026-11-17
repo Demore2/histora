@@ -1,5 +1,5 @@
 // Genghis Khan — v1 (zondag 15 november 2026, 20:00 NL). Tekst en bronnen:
-// marketing/shorts/30-seconds-of-history/te-posten/13-genghis-khan/script.md
+// marketing/9.archief/30-seconds-of-history/te-posten/13-genghis-khan/script.md
 // Hook = het DNA-raadsel (1 op 200 mannen), de naam pas op beat 7. Twist: nooit bewezen, en zijn graf is nooit gevonden.
 // 9:16-beelden gemaakt voor deze short (public/genghis-khan-v1/) + het Yuan-portret (extra/, public domain).
 import type { MapStop, ShortConfig } from '../sjabloon/types';

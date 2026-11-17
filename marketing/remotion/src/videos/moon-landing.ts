@@ -1,5 +1,5 @@
 // De maanlanding — v1 (vrijdag 13 november 2026, 20:00 NL). Tekst en bronnen:
-// marketing/shorts/30-seconds-of-history/te-posten/12-moon-landing/script.md
+// marketing/9.archief/30-seconds-of-history/te-posten/12-moon-landing/script.md
 // Hook = de rouwspeech die Nixon klaar had. Spanning: één motor, geen reserve. Twist: de viltstift.
 // Bijna alleen echt beeld: NASA-foto's en de Safire-memo (public domain, extra/moon-landing/); twee cabinebeelden gemaakt
 // voor deze short (public/moon-landing-v1/).

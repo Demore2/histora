@@ -5,11 +5,11 @@ description: Build a Histora "What if you were <person>?" short - a 70-90 s 3D v
 
 # "What if you were …?" videos (format since 2026-11-15)
 
-First video: **Julius Caesar** (`marketing/shorts/what-if/gepost/01-julius-caesar/`, live 2026-11-15 23:45).
+First video: **Julius Caesar** (`marketing/1.shorts/2.gepost/01-julius-caesar/`, live 2026-11-15 23:45).
 
-**Folders:** a new video goes in `marketing/shorts/what-if/te-posten/<nn-id>/` with `upload/` (exactly what the
+**Folders:** a new video goes in `marketing/1.shorts/1.te-posten/<nn-id>/` with `upload/` (exactly what the
 owner uploads: `<id>-zonder-muziek.mp4`, `omslag.png`, `post.md`) and `extra/` (`<id>-muziek.mp4`). After posting,
-move the folder to `gepost/` (`mv`, never `rm`) and add `stats.md` there.
+move the folder from `marketing/1.shorts/1.te-posten/` to `marketing/1.shorts/2.gepost/` (`mv`, never `rm`) and add `stats.md` there.
 The owner loved it. Copy its structure; don't reinvent it.
 
 ## What the format is
@@ -52,7 +52,7 @@ Every video gets `omslag.png` (1080x1920) in its folder: the hero in close-up in
 "WHAT IF YOU WERE" + the name in gold at the top (`src/watals/Omslagen.tsx`, one `Still` per person
 in `Root.tsx`, id `watals-omslag-<id>`). Keep the title inside the 3:4 middle (y 240-1680) so the
 Instagram grid does not crop it, and the head under the title. Short name only ("KHALID?").
-`npx remotion still src/index.ts watals-omslag-<id> ../shorts/what-if/te-posten/<nn-id>/upload/omslag.png --gl=angle`
+`npx remotion still src/index.ts watals-omslag-<id> ../1.shorts/1.te-posten/<nn-id>/upload/omslag.png --gl=angle`
 
 ## Render and check
 
@@ -62,8 +62,8 @@ npx tsc --noEmit
 npx remotion render src/index.ts watals-<id>-stil out/<id>/check.mp4 --gl=angle --concurrency=4 --scale=0.5   # ~1.5 min
 # one frame per scene (local ffmpeg is a minimal build: put ffmpeg-static first on PATH)
 PATH="$PWD/node_modules/ffmpeg-static:$PATH" python <scratchpad>/frames.py out/<id>/check.mp4 out/<id>/a.jpg 3.5,7.7,...
-npx remotion render src/index.ts watals-<id> ../shorts/what-if/te-posten/<nn-id>/extra/<id>-muziek.mp4 --gl=angle --concurrency=4
-npx remotion render src/index.ts watals-<id>-stil ../shorts/what-if/te-posten/<nn-id>/upload/<id>-zonder-muziek.mp4 --gl=angle --concurrency=4
+npx remotion render src/index.ts watals-<id> ../1.shorts/1.te-posten/<nn-id>/extra/<id>-muziek.mp4 --gl=angle --concurrency=4
+npx remotion render src/index.ts watals-<id>-stil ../1.shorts/1.te-posten/<nn-id>/upload/<id>-zonder-muziek.mp4 --gl=angle --concurrency=4
 ```
 
 `frames.py` = seek with ffmpeg per timestamp, paste the PNGs into one grid with PIL (rewrite it if the

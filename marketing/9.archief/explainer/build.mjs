@@ -1,5 +1,5 @@
 // Assembles the self-contained explainer pages: inlines the harness, the explainer and the app images.
-//   node marketing/explainer/build.mjs            -> histora-explainer-storyboard.html (+ histora-explainer.html when its template exists)
+//   node marketing/9.archief/explainer/build.mjs            -> histora-explainer-storyboard.html (+ histora-explainer.html when its template exists)
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';

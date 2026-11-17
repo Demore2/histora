@@ -2,7 +2,7 @@
 
 Het sjabloon voor "30 seconds of history". De beelden, de kaart, de ondertitels en de muziek worden
 allemaal in code gemaakt. De stem is Onyx (Kokoro, lokaal); Higgsfield maakt alleen nog 9:16-beelden voor een short. Merkregels: skill `histora-brand`. Checklist: README in
-`marketing/shorts/30-seconds-of-history/`.
+`marketing/9.archief/30-seconds-of-history/`.
 
 Een apart npm-project, los van de app: eigen `node_modules`, uitgesloten in de `tsconfig.json`, de
 `eslint.config.js` en de `.easignore` van de app.

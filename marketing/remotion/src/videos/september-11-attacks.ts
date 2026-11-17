@@ -1,5 +1,5 @@
 // 9/11: Flight 93 — v1 (2026-11-06). Tekst en bronnen:
-// marketing/shorts/30-seconds-of-history/te-posten/16-september-11-attacks/script.md
+// marketing/9.archief/30-seconds-of-history/te-posten/16-september-11-attacks/script.md
 // Ingetogen: geen inslagen, geen brandende torens, geen kaping in beeld. Hook = het vierde vliegtuig haalde Washington
 // niet, omdat het te laat was (open vraag: hoezo?). Antwoord halverwege: door de vertraging wisten de passagiers het.
 // Slot: twintig minuten van Washington.

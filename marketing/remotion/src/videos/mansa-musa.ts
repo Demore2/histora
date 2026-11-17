@@ -1,5 +1,5 @@
 // Mansa Musa — v1 (vrijdag 6 november 2026). Tekst en bronnen:
-// marketing/shorts/30-seconds-of-history/te-posten/07-mansa-musa/script.md
+// marketing/9.archief/30-seconds-of-history/te-posten/07-mansa-musa/script.md
 // Hook = open vraag ("So why did he go home in debt?"), antwoord pas aan het eind: op de terugweg was het op.
 // Het echte bronbeeld (de Catalaanse Atlas, 1375) bij de onthulling van wie hij is.
 import type { MapStop, ShortConfig } from '../sjabloon/types';

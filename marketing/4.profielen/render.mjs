@@ -5,7 +5,7 @@
  * Chrome/Edge + pngjs, no Higgsfield, no cost. The HTML is the source; edit
  * that and re-run, never edit the PNGs.
  *
- *   node social/profielen/render.mjs
+ *   node marketing/4.profielen/render.mjs
  */
 
 import fs from 'fs';

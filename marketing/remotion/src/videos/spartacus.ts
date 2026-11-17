@@ -1,5 +1,5 @@
 // Spartacus — v3, na de review van de eigenaar. Tekst en bronnen:
-// marketing/shorts/30-seconds-of-history/gepost/05-spartacus/script.md
+// marketing/9.archief/30-seconds-of-history/gepost/05-spartacus/script.md
 // Eén doorlopende lijn: de berg waar de opstand begon, is de berg die Pompeii begroef. Alle beelden zijn voor
 // deze short gemaakt (9:16, schermvullend, één stijl) en staan in public/spartacus-v3/.
 import type { MapStop, ShortConfig } from '../sjabloon/types';

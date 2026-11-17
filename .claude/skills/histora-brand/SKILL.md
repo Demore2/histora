@@ -86,11 +86,16 @@ a time."* · *"Finish a story, unlock the figure."*
 - Every script carries a short **Fact notes** section listing claims and their source, so a
   reviewer can check it in two minutes.
 
-## Format: "30 seconds of history"
+## Format: "30 seconds of history" (archived)
+
+> **Retired on 2026-11-17.** The old 30-second shorts were taken off every platform. Current formats:
+> **What-if shorts**, skill `what-if-video`, in `marketing/1.shorts/`, and **long YouTube videos**, skill
+> `youtube-long-video`, in `marketing/2.youtube/`. Each has `1.te-posten/` (to post) and `2.gepost/` (posted).
+> The spec below is kept for reference.
 
 Histora's recurring short-video series for TikTok, Instagram Reels and YouTube Shorts. Full spec
 and template: [references/shorts-30-seconds.md](references/shorts-30-seconds.md). Finished scripts
-live in `marketing/shorts/30-seconds-of-history/` — one folder per video under `te-posten/` or `gepost/`; see its README for the status table and the pre-render checklist.
+live in `marketing/9.archief/30-seconds-of-history/` — one folder per video under `te-posten/` or `gepost/`; see its README for the status table and the pre-render checklist.
 
 The essentials:
 - **75–85 spoken words** (~30 s at a calm 160 wpm). Count them.

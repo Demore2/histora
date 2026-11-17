@@ -31,7 +31,7 @@ ffmpeg/ffprobe: `G:/dev-tools/ffmpeg/` (copied from Remotion's compositor; put i
   read on the page, duration, earshot verdicts, kept/rejected + why.
 - `marketing/remotion/public/<id>/sfx/<n>-<label>.wav` the chosen, trimmed takes the render uses. `public/` is
   gitignored, so the MANIFEST (source URL + trim start/end) must be enough to rebuild them.
-- Credits for CC BY sounds go into the post's description text (`te-posten/<nn>-<id>/`), in the creator's requested form.
+- Credits for CC BY sounds go into the post's description text (`1.te-posten/<nn>-<id>/upload/post.md`), in the creator's requested form.
 
 ## Step 1: find the moments
 

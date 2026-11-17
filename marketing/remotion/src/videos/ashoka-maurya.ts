@@ -1,5 +1,5 @@
 // Ashoka — v1 (dinsdag 10 november 2026, 15:30 NL = avond in India). Tekst en bronnen:
-// marketing/shorts/30-seconds-of-history/te-posten/10-ashoka-maurya/script.md
+// marketing/9.archief/30-seconds-of-history/te-posten/10-ashoka-maurya/script.md
 // Hook = "So why did he say sorry?", meteen daarna de oorlog (geen biografie). Twist: zijn wiel staat op de vlag van India.
 // 9:16-beelden gemaakt voor deze short (public/ashoka-maurya-v1/, Higgsfield gpt_image_2_5) + echte bronbeelden (extra/).
 import type { MapStop, ShortConfig } from '../sjabloon/types';

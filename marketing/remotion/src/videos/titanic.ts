@@ -1,5 +1,5 @@
 // De Titanic — v1 (2026-11-06). Tekst en bronnen:
-// marketing/shorts/30-seconds-of-history/te-posten/14-titanic/script.md
+// marketing/9.archief/30-seconds-of-history/te-posten/14-titanic/script.md
 // Hook = een schip zag de noodvuurpijlen en bewoog niet (open vraag: waarom?). Antwoord halverwege: de marconist
 // sliep. Twist aan het eind: niemand maakte hem wakker.
 // Echt beeld: de ijsberg en de laatste reddingssloep (1912, publiek domein, extra/titanic/); de rest gemaakt voor

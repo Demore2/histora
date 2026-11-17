@@ -5,8 +5,8 @@ description: Build a Histora long-form YouTube video (16:9, ~5 min, voiced) in t
 
 # Histora long-form YouTube videos (approved 2026-11-16: "echt goated")
 
-First one: **Napoleon in 5 minutes** (`marketing/youtube/gepost/01-napoleon/`). Copy it; don't reinvent.
-Full step-by-step in `marketing/youtube/README.md`.
+First one: **Napoleon in 5 minutes** (`marketing/2.youtube/2.gepost/01-napoleon/`). Copy it; don't reinvent.
+Full step-by-step in `marketing/2.youtube/README.md`.
 
 ## The style (what the owner approved)
 
@@ -37,8 +37,8 @@ Full step-by-step in `marketing/youtube/README.md`.
 
 ## Folders
 
-`marketing/youtube/te-posten/<nn-id>/upload/` = only what gets uploaded (mp4, thumbnail.png, post.md);
-`werk/` = script, zinnen.json, stem/, renders/. Move to `gepost/` after posting.
+`marketing/2.youtube/1.te-posten/<nn-id>/upload/` = only what gets uploaded (mp4, thumbnail.png, post.md);
+`werk/` = script, zinnen.json, stem/, renders/. Move from `1.te-posten/` to `2.gepost/` after posting.
 
 ## Rendering
 
