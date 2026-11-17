@@ -19,4 +19,7 @@ werkmateriaal. Na het posten verplaats je de map van `1.te-posten/` naar `2.gepo
 Vast schema (eigenaar, 2026-11-17): **lange video om 16:00** (YouTube + TikTok), **short om 17:00** (YouTube Shorts
 met "Related video" naar de lange video, plus Instagram). Tussen twee posts op hetzelfde platform zit minstens 24 uur.
 
+Ritme vanaf december (eigenaar, 2026-11-17): **3 lange video's per week, di/do/zo 16:00**, ondergrens 2. Muziek komt uit een
+vaste bibliotheek van ~10 sferen (eenmalig ~120 credits); per video kost dan alleen de stem nog ~55 credits (Higgsfield, 1.200/maand).
+
 mp4, mp3 en wav en de testframes staan bewust niet in git (`.gitignore`).
