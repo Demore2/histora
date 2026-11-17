@@ -40,5 +40,7 @@ youtube/
    één shot per zin (`SHOTS` met `zin` + optioneel `na`). Check: render `--scale=0.5`, één frame per shot.
 6. **Geluid**: per shot sfeer + accenten, whoosh op elke knip; daarna loudnorm 2 doorgangen naar −14 LUFS.
 7. **Thumbnail** `lang-<id>-thumb` (1920×1080) en `post.md` (titel, beschrijving met hoofdstukken).
+8. **Renderen altijd met `--gl=angle`** (videokaart): zonder schiet een video van 10 minuten in 40 minuten nauwelijks op
+   (SwiftShader op de processor), met angle duurt het ~13 minuten. Testframes per shot: `node scripts/stills.mjs`.
 
 Stijl: de 3D-blokstijl van de What-if-shorts. Geen platte 2D-wereldkaart (eigenaar).

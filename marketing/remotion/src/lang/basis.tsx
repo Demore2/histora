@@ -1,5 +1,5 @@
 import { ThreeCanvas } from '@remotion/three';
-import type { ReactNode } from 'react';
+import { createContext, useContext, type ReactNode } from 'react';
 import { AbsoluteFill, interpolate, useVideoConfig } from 'remotion';
 import { Scherpte } from '../watals/Decor';
 import { NAPOLEON, type V3 } from '../watals/Figuur';
@@ -12,8 +12,12 @@ export const ease = (f: number, a: number, b: number, from: number, to: number) 
 export const lin = (f: number, a: number, b: number, from: number, to: number) =>
   interpolate(f, [a, b], [from, to], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
+/** In een short (9:16) de 16:9-overlays van een scène verbergen; de short zet er zijn eigen HUD overheen. */
+export const ZonderOver = createContext(false);
+
 export const Shot = ({ children, focus, scherpte = 3, mist, over }: { children: ReactNode; focus: V3; scherpte?: number; mist?: [string, number, number]; over?: ReactNode }) => {
   const { width, height } = useVideoConfig();
+  const zonder = useContext(ZonderOver);
   return (
     <AbsoluteFill>
       <ThreeCanvas width={width} height={height} shadows="soft" gl={{ antialias: true }} camera={{ fov: 35, near: 0.3, far: 400 }}>
@@ -22,7 +26,7 @@ export const Shot = ({ children, focus, scherpte = 3, mist, over }: { children: 
         <Scherpte focus={focus} sterkte={scherpte} />
       </ThreeCanvas>
       <LangVignet />
-      {over}
+      {!zonder && over}
     </AbsoluteFill>
   );
 };

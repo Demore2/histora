@@ -3,3 +3,11 @@
 *.mp4
 *.mp3
 *.wav
+
+# Controlebeelden (testframes per shot, contactvellen): werkmateriaal, niet in de repo
+stills/
+stills2/
+vellen/
+check/
+werk-stills*/
+vel*.jpg

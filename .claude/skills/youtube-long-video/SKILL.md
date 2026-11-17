@@ -40,6 +40,14 @@ Full step-by-step in `marketing/youtube/README.md`.
 `marketing/youtube/te-posten/<nn-id>/upload/` = only what gets uploaded (mp4, thumbnail.png, post.md);
 `werk/` = script, zinnen.json, stem/, renders/. Move to `gepost/` after posting.
 
+## Rendering
+
+**Always render with `--gl=angle`** (the GPU): `npx remotion render src/index.ts lang-<id> <out>.mp4 --gl=angle --concurrency=5 --timeout=180000`.
+Without it, Remotion draws the three.js scenes with SwiftShader on the CPU: 10 minutes of video barely moved in
+40 minutes (2026-11-17). With angle it ran at ~25 fps, about 13 minutes for 10:30. Don't render stills at the same
+time as the full render: the extra load made an audio `delayRender` time out. For one still per shot use
+`node scripts/stills.mjs <composition> <outdir> <frames,comma,separated> 0.4`.
+
 ## Checks before handing over
 
 Half-scale render, one frame per shot in grids (`frames.py`), fix: smoke blocks in front of the camera,

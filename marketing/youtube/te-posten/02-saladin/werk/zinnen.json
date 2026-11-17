@@ -1,0 +1,662 @@
+[
+{
+"i": 0,
+"h": "Teaser",
+"zin": "What if you were Saladin?"
+},
+{
+"i": 1,
+"h": "Teaser",
+"zin": "You'd start as a soldier who never wanted to go to war."
+},
+{
+"i": 2,
+"h": "Teaser",
+"zin": "You'd destroy a crusader army on a burning hillside."
+},
+{
+"i": 3,
+"h": "Teaser",
+"zin": "You'd take Jerusalem, and spare the people inside."
+},
+{
+"i": 4,
+"h": "Teaser",
+"zin": "And you'd die with just one gold coin to your name."
+},
+{
+"i": 5,
+"h": "Teaser",
+"zin": "So how does a Kurdish boy from Tikrit get there?"
+},
+{
+"i": 6,
+"h": "A boy from Tikrit",
+"zin": "His real name was Yusuf ibn Ayyub."
+},
+{
+"i": 7,
+"h": "A boy from Tikrit",
+"zin": "He was born around 1137 in Tikrit, a fortress town on the Tigris River, in what is now Iraq."
+},
+{
+"i": 8,
+"h": "A boy from Tikrit",
+"zin": "His family were Kurdish soldiers, and his father was governor of the fortress."
+},
+{
+"i": 9,
+"h": "A boy from Tikrit",
+"zin": "According to an old story, they had to flee Tikrit on the very night he was born."
+},
+{
+"i": 10,
+"h": "A boy from Tikrit",
+"zin": "His uncle Shirkuh had killed a man in a quarrel."
+},
+{
+"i": 11,
+"h": "A boy from Tikrit",
+"zin": "The family found work with Zengi, a powerful Turkish lord in northern Syria, and later with his son, Nur ad-Din."
+},
+{
+"i": 12,
+"h": "A boy from Tikrit",
+"zin": "Yusuf grew up in Damascus, one of the great cities of the Islamic world."
+},
+{
+"i": 13,
+"h": "A boy from Tikrit",
+"zin": "As a young man, he was said to care more about religion and books than about war."
+},
+{
+"i": 14,
+"h": "A boy from Tikrit",
+"zin": "The world around him was deeply divided."
+},
+{
+"i": 15,
+"h": "A boy from Tikrit",
+"zin": "In 1099, the knights of the First Crusade had taken Jerusalem and slaughtered many of the people inside."
+},
+{
+"i": 16,
+"h": "A boy from Tikrit",
+"zin": "They had built four Christian states along the coast."
+},
+{
+"i": 17,
+"h": "A boy from Tikrit",
+"zin": "And the Muslim world was split between rival princes, and between two rival caliphs, one in Baghdad and one in Cairo."
+},
+{
+"i": 18,
+"h": "A boy from Tikrit",
+"zin": "Nobody expected the quiet boy from Damascus to change any of that."
+},
+{
+"i": 19,
+"h": "Master of Egypt",
+"zin": "Egypt was rich, but weak."
+},
+{
+"i": 20,
+"h": "Master of Egypt",
+"zin": "The crusaders wanted it, and so did Nur ad-Din."
+},
+{
+"i": 21,
+"h": "Master of Egypt",
+"zin": "In the 1160s he sent Shirkuh to Egypt three times, and young Yusuf had to go with his uncle."
+},
+{
+"i": 22,
+"h": "Master of Egypt",
+"zin": "He later said he went like a man being led to his death."
+},
+{
+"i": 23,
+"h": "Master of Egypt",
+"zin": "In 1169 Shirkuh became vizier, the most powerful minister in Egypt."
+},
+{
+"i": 24,
+"h": "Master of Egypt",
+"zin": "Two months later, Shirkuh was dead."
+},
+{
+"i": 25,
+"h": "Master of Egypt",
+"zin": "To everyone's surprise, the caliph chose the nephew to replace him."
+},
+{
+"i": 26,
+"h": "Master of Egypt",
+"zin": "He was about thirty-one."
+},
+{
+"i": 27,
+"h": "Master of Egypt",
+"zin": "The courtiers in Cairo probably thought he would be easy to control."
+},
+{
+"i": 28,
+"h": "Master of Egypt",
+"zin": "They were wrong."
+},
+{
+"i": 29,
+"h": "Master of Egypt",
+"zin": "He crushed a revolt of the palace guards and took firm control of the country."
+},
+{
+"i": 30,
+"h": "Master of Egypt",
+"zin": "In 1171, as the last Fatimid caliph lay dying, Saladin had the Friday prayers said in the name of the caliph in Baghdad."
+},
+{
+"i": 31,
+"h": "Master of Egypt",
+"zin": "Two hundred years of Fatimid rule ended without a battle."
+},
+{
+"i": 32,
+"h": "Master of Egypt",
+"zin": "He began building a great citadel on a hill above Cairo."
+},
+{
+"i": 33,
+"h": "Master of Egypt",
+"zin": "Egypt's rulers would govern from it for nearly seven hundred years."
+},
+{
+"i": 34,
+"h": "Master of Egypt",
+"zin": "On paper he was still Nur ad-Din's servant."
+},
+{
+"i": 35,
+"h": "Master of Egypt",
+"zin": "But Nur ad-Din was starting to suspect that his general wanted Egypt for himself."
+},
+{
+"i": 36,
+"h": "A leper king",
+"zin": "In 1174, Nur ad-Din died, leaving an eleven-year-old son."
+},
+{
+"i": 37,
+"h": "A leper king",
+"zin": "Saladin rode to Damascus and took the city."
+},
+{
+"i": 38,
+"h": "A leper king",
+"zin": "Over the next twelve years he fought, negotiated and married his way to power over Aleppo, Mosul and the rest of Syria."
+},
+{
+"i": 39,
+"h": "A leper king",
+"zin": "His enemies said he spent more time fighting other Muslims than fighting the crusaders."
+},
+{
+"i": 40,
+"h": "A leper king",
+"zin": "There was some truth in that."
+},
+{
+"i": 41,
+"h": "A leper king",
+"zin": "But slowly, his lands closed around the crusader states like a fist."
+},
+{
+"i": 42,
+"h": "A leper king",
+"zin": "He did not always win."
+},
+{
+"i": 43,
+"h": "A leper king",
+"zin": "In 1177 he invaded the Kingdom of Jerusalem."
+},
+{
+"i": 44,
+"h": "A leper king",
+"zin": "Its king, Baldwin the Fourth, was sixteen years old, and he had leprosy."
+},
+{
+"i": 45,
+"h": "A leper king",
+"zin": "At Montgisard, the boy king and his knights caught Saladin's army by surprise and broke it."
+},
+{
+"i": 46,
+"h": "A leper king",
+"zin": "Saladin only escaped on a fast racing camel."
+},
+{
+"i": 47,
+"h": "A leper king",
+"zin": "It took him years to rebuild his army."
+},
+{
+"i": 48,
+"h": "A leper king",
+"zin": "He waited."
+},
+{
+"i": 49,
+"h": "Thirst at Hattin",
+"zin": "A crusader lord named Reynald of Chatillon gave him his chance."
+},
+{
+"i": 50,
+"h": "Thirst at Hattin",
+"zin": "Reynald attacked Muslim caravans, and even sent raiding ships into the Red Sea, towards Mecca and Medina."
+},
+{
+"i": 51,
+"h": "Thirst at Hattin",
+"zin": "In 1187, in the middle of a truce, he attacked another caravan."
+},
+{
+"i": 52,
+"h": "Thirst at Hattin",
+"zin": "Saladin swore he would kill Reynald with his own hand."
+},
+{
+"i": 53,
+"h": "Thirst at Hattin",
+"zin": "He gathered the largest army he had ever led."
+},
+{
+"i": 54,
+"h": "Thirst at Hattin",
+"zin": "In July, he besieged the town of Tiberias, beside the Sea of Galilee."
+},
+{
+"i": 55,
+"h": "Thirst at Hattin",
+"zin": "The crusader army of King Guy of Jerusalem marched out to save it, across dry hills, in the summer heat."
+},
+{
+"i": 56,
+"h": "Thirst at Hattin",
+"zin": "Saladin's men blocked the way to the water."
+},
+{
+"i": 57,
+"h": "Thirst at Hattin",
+"zin": "His archers rode in close, shot, and rode away again."
+},
+{
+"i": 58,
+"h": "Thirst at Hattin",
+"zin": "Then they set the dry grass on fire, so the smoke blew into the faces of thirsty men in heavy armour."
+},
+{
+"i": 59,
+"h": "Thirst at Hattin",
+"zin": "On the fourth of July, on a hill with two peaks called the Horns of Hattin, the crusader army was destroyed."
+},
+{
+"i": 60,
+"h": "Thirst at Hattin",
+"zin": "King Guy and Reynald were brought to Saladin's tent."
+},
+{
+"i": 61,
+"h": "Thirst at Hattin",
+"zin": "Saladin handed the exhausted king a cup of iced water."
+},
+{
+"i": 62,
+"h": "Thirst at Hattin",
+"zin": "Guy drank, and passed the cup to Reynald."
+},
+{
+"i": 63,
+"h": "Thirst at Hattin",
+"zin": "Saladin made it clear that he had not given Reynald anything."
+},
+{
+"i": 64,
+"h": "Thirst at Hattin",
+"zin": "By custom, a man who is given a drink by his captor is under his protection."
+},
+{
+"i": 65,
+"h": "Thirst at Hattin",
+"zin": "Then he killed Reynald."
+},
+{
+"i": 66,
+"h": "Thirst at Hattin",
+"zin": "To the terrified king he said: kings do not kill kings."
+},
+{
+"i": 67,
+"h": "Jerusalem",
+"zin": "After Hattin, the crusader kingdom had almost no soldiers left."
+},
+{
+"i": 68,
+"h": "Jerusalem",
+"zin": "Town after town opened its gates."
+},
+{
+"i": 69,
+"h": "Jerusalem",
+"zin": "In September 1187, Saladin reached Jerusalem."
+},
+{
+"i": 70,
+"h": "Jerusalem",
+"zin": "Its defence was led by a nobleman named Balian of Ibelin."
+},
+{
+"i": 71,
+"h": "Jerusalem",
+"zin": "He knighted every boy of noble birth he could find, just to put men on the walls."
+},
+{
+"i": 72,
+"h": "Jerusalem",
+"zin": "When Saladin's engineers broke through the wall, Balian came out to talk."
+},
+{
+"i": 73,
+"h": "Jerusalem",
+"zin": "He warned that if there were no terms, the defenders would fight to the last man and take the city down with them."
+},
+{
+"i": 74,
+"h": "Jerusalem",
+"zin": "Saladin agreed to a surrender."
+},
+{
+"i": 75,
+"h": "Jerusalem",
+"zin": "The people could leave, if they paid a ransom."
+},
+{
+"i": 76,
+"h": "Jerusalem",
+"zin": "On the second of October 1187, Saladin entered Jerusalem."
+},
+{
+"i": 77,
+"h": "Jerusalem",
+"zin": "Eighty-eight years earlier, the crusaders had filled these streets with blood."
+},
+{
+"i": 78,
+"h": "Jerusalem",
+"zin": "This time, there was no massacre."
+},
+{
+"i": 79,
+"h": "Jerusalem",
+"zin": "Thousands who could not pay were sold into slavery."
+},
+{
+"i": 80,
+"h": "Jerusalem",
+"zin": "But thousands more were simply let go."
+},
+{
+"i": 81,
+"h": "Jerusalem",
+"zin": "His brother asked for a thousand poor people as a gift, and set them all free."
+},
+{
+"i": 82,
+"h": "Jerusalem",
+"zin": "Saladin released many of the old people and widows himself."
+},
+{
+"i": 83,
+"h": "Jerusalem",
+"zin": "He did not destroy the Church of the Holy Sepulchre, and later he let Christian pilgrims visit it."
+},
+{
+"i": 84,
+"h": "Jerusalem",
+"zin": "He also invited Jews to come back and live in the city."
+},
+{
+"i": 85,
+"h": "Jerusalem",
+"zin": "Even Christian writers noticed the difference."
+},
+{
+"i": 86,
+"h": "The Lionheart",
+"zin": "The fall of Jerusalem shocked Europe."
+},
+{
+"i": 87,
+"h": "The Lionheart",
+"zin": "The Pope called a new crusade, and three of the most powerful kings in Christendom answered."
+},
+{
+"i": 88,
+"h": "The Lionheart",
+"zin": "The German emperor, Frederick Barbarossa, drowned crossing a river on the way, and most of his army went home."
+},
+{
+"i": 89,
+"h": "The Lionheart",
+"zin": "King Philip of France came."
+},
+{
+"i": 90,
+"h": "The Lionheart",
+"zin": "And so did King Richard of England, the man they called the Lionheart."
+},
+{
+"i": 91,
+"h": "The Lionheart",
+"zin": "They met Saladin at the port of Acre."
+},
+{
+"i": 92,
+"h": "The Lionheart",
+"zin": "For two years, the armies were locked around the city, in a war of hunger, disease and endless fighting."
+},
+{
+"i": 93,
+"h": "The Lionheart",
+"zin": "In July 1191, Acre surrendered."
+},
+{
+"i": 94,
+"h": "The Lionheart",
+"zin": "Talks about the prisoners dragged on."
+},
+{
+"i": 95,
+"h": "The Lionheart",
+"zin": "In August, Richard lost his patience, and had about two thousand seven hundred Muslim prisoners killed, in sight of Saladin's army."
+},
+{
+"i": 96,
+"h": "The Lionheart",
+"zin": "It was the darkest moment of the war."
+},
+{
+"i": 97,
+"h": "The Lionheart",
+"zin": "Richard beat Saladin at Arsuf."
+},
+{
+"i": 98,
+"h": "The Lionheart",
+"zin": "Twice he marched close enough to see the hills around Jerusalem."
+},
+{
+"i": 99,
+"h": "The Lionheart",
+"zin": "And twice he turned back."
+},
+{
+"i": 100,
+"h": "The Lionheart",
+"zin": "He knew that even if he took the city, he could never hold it once his army sailed home."
+},
+{
+"i": 101,
+"h": "A gift of horses",
+"zin": "The two kings never met in person."
+},
+{
+"i": 102,
+"h": "A gift of horses",
+"zin": "But they sent each other messages, and gifts."
+},
+{
+"i": 103,
+"h": "A gift of horses",
+"zin": "In 1192, Saladin attacked the port of Jaffa."
+},
+{
+"i": 104,
+"h": "A gift of horses",
+"zin": "Richard arrived by sea and jumped into the water to lead the counter-attack."
+},
+{
+"i": 105,
+"h": "A gift of horses",
+"zin": "During the fighting, his horse was killed under him."
+},
+{
+"i": 106,
+"h": "A gift of horses",
+"zin": "According to the chroniclers, Saladin's brother sent him two fine horses, so a king would not have to fight on foot."
+},
+{
+"i": 107,
+"h": "A gift of horses",
+"zin": "When Richard fell ill with fever, Saladin is said to have sent him fruit, and snow from the mountains to cool his drinks."
+},
+{
+"i": 108,
+"h": "A gift of horses",
+"zin": "Both armies were sick."
+},
+{
+"i": 109,
+"h": "A gift of horses",
+"zin": "Both kings were exhausted."
+},
+{
+"i": 110,
+"h": "A gift of horses",
+"zin": "In September 1192, they signed the Treaty of Jaffa."
+},
+{
+"i": 111,
+"h": "A gift of horses",
+"zin": "The crusaders kept a strip of coast."
+},
+{
+"i": 112,
+"h": "A gift of horses",
+"zin": "Jerusalem stayed with Saladin, but unarmed Christian pilgrims could visit freely."
+},
+{
+"i": 113,
+"h": "A gift of horses",
+"zin": "Richard sailed home in October."
+},
+{
+"i": 114,
+"h": "A gift of horses",
+"zin": "He never saw the Holy Land again."
+},
+{
+"i": 115,
+"h": "One gold coin",
+"zin": "Saladin went back to Damascus, worn out by twenty years of war."
+},
+{
+"i": 116,
+"h": "One gold coin",
+"zin": "In February 1193 he caught a fever."
+},
+{
+"i": 117,
+"h": "One gold coin",
+"zin": "On the fourth of March, he died, aged about fifty-five."
+},
+{
+"i": 118,
+"h": "One gold coin",
+"zin": "His friend and biographer wrote that the city mourned him as no ruler had ever been mourned before."
+},
+{
+"i": 119,
+"h": "One gold coin",
+"zin": "All his life, Saladin had given money away, to his soldiers, to scholars, to the poor."
+},
+{
+"i": 120,
+"h": "One gold coin",
+"zin": "When his treasury was opened, it held one gold coin and forty-seven silver ones."
+},
+{
+"i": 121,
+"h": "One gold coin",
+"zin": "There was not enough to pay for his funeral."
+},
+{
+"i": 122,
+"h": "One gold coin",
+"zin": "The money had to be borrowed."
+},
+{
+"i": 123,
+"h": "One gold coin",
+"zin": "His empire did not last; his sons and brothers soon divided it."
+},
+{
+"i": 124,
+"h": "One gold coin",
+"zin": "But his name grew, and strangely, it grew most of all among his enemies."
+},
+{
+"i": 125,
+"h": "One gold coin",
+"zin": "European writers turned him into the perfect knight."
+},
+{
+"i": 126,
+"h": "One gold coin",
+"zin": "The Italian poet Dante placed him among the noble souls, beside the great heroes of ancient Greece and Rome."
+},
+{
+"i": 127,
+"h": "One gold coin",
+"zin": "In 1898, the German emperor paid for a new marble coffin for his tomb in Damascus."
+},
+{
+"i": 128,
+"h": "One gold coin",
+"zin": "It stands there to this day, empty."
+},
+{
+"i": 129,
+"h": "One gold coin",
+"zin": "Saladin still lies in his old wooden one."
+},
+{
+"i": 130,
+"h": "Outro",
+"zin": "Who should be next? Tell us in the comments."
+},
+{
+"i": 131,
+"h": "Outro",
+"zin": "And subscribe for more."
+}
+]

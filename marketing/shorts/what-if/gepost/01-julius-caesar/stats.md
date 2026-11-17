@@ -14,3 +14,14 @@ Gepost 2026-11-15 ~23:45 (IG 23:51, TikTok 00:03, YouTube 00:28). Lengte 1:15-1:
 - IG-reactie van een volger: **sukuna_malvront_shrine: "Khalid bin Walid"**, als antwoord op onze vraag wie de volgende moet zijn.
 - IG: de Genghis Khan-Reel ging 4 uur eerder online en bleef op 51 weergaven steken; Caesar heeft vermoedelijk zijn verspreiding overgenomen.
 - YouTube: 60,5% bleef kijken, tegen 25-52% voor de 30s-shorts. In het eerste uur kwamen 157 van de 163 weergaven uit de Shorts-feed.
+
+## Meting 2026-11-17 (~32 uur na posten)
+
+| | Weergaven | Gem. kijktijd | Bleef kijken / volledig | Likes | Opslaan | Delen | Reacties | Volgers |
+|---|---|---|---|---|---|---|---|---|
+| Instagram | 1.946 (98,7% niet-volgers) | 22 s | – | 64 | 15 | 8 (MBS) | 3 | 1 |
+| YouTube | 1.174 (Shorts-feed 1,1K, zoeken 26) | ~22 s (7,1 uur) | **62,8%** bleef kijken | 20 | – | – | 0 | +2 |
+| TikTok | 716 | 7,0 s | 0,8% volledig, 41% op 0:03 | 20 | 2 | 1 | 2 | 0 |
+
+- YouTube-landen: VS 18%, Filipijnen 6%, Canada 6%. TikTok: NL 74,8%, VK 7,1%, BE 5,6%.
+- Groeit nog op YT en IG; TikTok verdubbelde maar blijft rond de ~700 waar alles stopt.
