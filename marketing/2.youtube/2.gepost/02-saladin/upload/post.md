@@ -38,3 +38,18 @@ Saladin's whole life in 10 minutes: Tikrit, Egypt, Hattin, Jerusalem, Richard th
 
 **YouTube ~35%** om boven de 1.000 weergaven te komen in de eerste week (de Napoleon-video staat na een dag op 10). Waarom het kan werken: Saladin heeft een groot publiek dat zelf deelt (Midden-Oosten, India, Pakistan; de Khalid-short ging op Instagram juist daar hard), en "Kingdom of Heaven"-fans zoeken op Saladin. Waarom het kan floppen: een nieuw kanaal met weinig abonnees krijgt voor lange video's nauwelijks browse-verkeer; 10 minuten vraagt om een thumbnail die klikt (CTR boven 5%).
 **TikTok ~20%** voor meer dan 2.000: lang formaat werkt daar alleen als de eerste 3 seconden pakken; Napoleon (lang) haalde 687 met de beste kijktijd tot nu toe.
+
+## Instagram (volledige video als reel, test nieuwe opbouw)
+
+Posten: **woensdag 2026-11-18 06:00 NL** (inplannen in Meta Business Suite; test van het vroege tijdslot van Born in Lore). Bestand: `saladin.mp4` (de hele 10:31).
+Omslag: kies in Instagram het beeld met de gouden titel "WHAT IF YOU WERE SALADIN?" (rond 0:01-0:03), of upload `thumbnail.png`.
+
+**Tekst:**
+
+What if you were born as Saladin?
+
+You're born in Tikrit on the night your family flees the city. Forty years later you've crushed a crusader army at Hattin, taken Jerusalem without a massacre, and fought Richard the Lionheart to a standstill. And when you die, your treasury holds one gold coin. The whole life of Saladin, told as if it were yours.
+
+Would you have let the people of Jerusalem go? And who should be born next? Tell me in the comments.
+
+#saladin #salahuddinayyubi #crusades #islamichistory #history
