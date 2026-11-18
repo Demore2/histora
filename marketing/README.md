@@ -16,7 +16,7 @@ met titel, tekst, hashtags en tijdstip per platform. Daarnaast staat `werk/` (of
 werkmateriaal. Na het posten verplaats je de map van `1.te-posten/` naar `2.gepost/`.
 
 Sinds 2026-11-18 (eigenaar): **alleen nog lange video's, geen shorts meer** (ook niet op YouTube Shorts). Elke video krijgt
-`thumbnail.png` (breed, YouTube) en `omslag-3x4.png` (gestapeld, Instagram/TikTok; staat ook in de eerste 3 frames van de mp4).
+`thumbnail.png` (breed, YouTube) en `omslag-reel.png` (1080x1920, gestapeld, Instagram/TikTok: upload hem als omslag via "filmrol"; woorden en gezichten staan binnen het 3:4-midden, y 240-1680, want dat toont het profielraster).
 Tussen twee posts op hetzelfde platform zit minstens 24 uur.
 
 Ritme vanaf december (eigenaar, 2026-11-17): **3 lange video's per week, di/do/zo**, ondergrens 2. Tijdstip in test:

@@ -8,7 +8,7 @@ Eerste: `2.gepost/01-napoleon/` (5:20, 2026-11-16). Tweede: `1.te-posten/02-sala
 1.videos/
   kanaal/                  banner (kanaal-banner.png) + kanaaltekst (kanaal.md)
   1.te-posten/<nn-id>/
-    upload/                alleen wat je uploadt: <id>.mp4, thumbnail.png (YouTube), omslag-3x4.png (Instagram/TikTok), post.md
+    upload/                alleen wat je uploadt: <id>.mp4, thumbnail.png (YouTube), omslag-reel.png (Instagram/TikTok, 1080x1920), post.md
     werk/                  script.md, zinnen.json, stem/ (opnames, timing, proeven), renders/ (ruw, proef)
   2.gepost/<nn-id>/        na het posten hierheen verplaatsen (mv, nooit rm) + stats.md
 ```

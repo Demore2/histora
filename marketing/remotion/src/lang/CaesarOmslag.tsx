@@ -53,9 +53,56 @@ const Boos = ({ x, y, maat }: { x: number; y: number; maat: number }) => (
  */
 const Smal = createContext(false);
 
+/**
+ * Staand = de echte Reel-omslag (1080x1920). Instagram neemt een omslag als 9:16 en toont in het profielraster het
+ * 3:4-midden daarvan (y 240-1680); TikTok doet hetzelfde. Dus: een volle 9:16-afbeelding waarin woorden en gezichten
+ * binnen dat midden staan, en boven en onder alleen achtergrond. Twee banden van 1080x1000 met een schuine naad op ~960.
+ */
+const Staand = createContext(false);
+
+const BandStaand = ({ boven, children, focus }: { boven: boolean; children: ReactNode; focus: V3 }) => (
+  <div
+    style={{
+      position: 'absolute',
+      left: 0,
+      top: boven ? 0 : 920,
+      width: 1080,
+      height: 1000,
+      clipPath: boven ? 'polygon(0 0, 1080px 0, 1080px 940px, 0 1000px)' : 'polygon(0 60px, 1080px 0, 1080px 1000px, 0 1000px)',
+    }}
+  >
+    <ThreeCanvas width={1080} height={1000} shadows="soft" gl={{ antialias: true }} camera={{ fov: 35, near: 0.3, far: 400 }}>
+      {children}
+      <Scherpte focus={focus} sterkte={3} />
+    </ThreeCanvas>
+  </div>
+);
+
+const StapelStaand = ({ boven, onder, woordBoven, woordOnder, focusOnder, kijkOnder }: { boven: ReactNode; onder: ReactNode; woordBoven: string; woordOnder: string; focusOnder: V3; kijkOnder: number }) => (
+  <AbsoluteFill style={{ background: '#1A120A' }}>
+    <BandStaand boven focus={[0.2, 0.92, 0.2]}>
+      <Camera pos={[0.2, 0.98, 2.3]} kijk={[0.2, 1.06, 0.2]} fov={30} />
+      {boven}
+    </BandStaand>
+    <BandStaand boven={false} focus={focusOnder}>
+      {onder}
+      <Camera pos={[0, kijkOnder, 3.45]} kijk={[0, kijkOnder, 0]} fov={30} />
+    </BandStaand>
+    <svg width="1080" height="1920" style={{ position: 'absolute', inset: 0 }}>
+      <line x1="0" y1="980" x2="1080" y2="920" stroke="#FFF4E0" strokeWidth="12" />
+      <line x1="0" y1="980" x2="1080" y2="920" stroke="#1A120A" strokeWidth="3" />
+    </svg>
+    <Boos x={700} y={540} maat={120} />
+    <Label tekst={woordBoven} top={262} links={60} kleur="#FFFFFF" rot={-4} maat={120} />
+    <Label tekst={woordOnder} top={880} kleur="#FF5436" rot={-3} maat={Math.min(140, Math.floor(1000 / woordOnder.length))} />
+  </AbsoluteFill>
+);
+
 /** Gedeelde opbouw: boven het kind (vaste camera, kind op schaal 0,45), onder de held, labels en boos-teken in de strook. */
-const Stapel = ({ boven, onder, woordBoven, woordOnder, focusOnder = [0, 2.1, 0] }: { boven: ReactNode; onder: ReactNode; woordBoven: string; woordOnder: string; focusOnder?: V3 }) => {
+const Stapel = ({ boven, onder, woordBoven, woordOnder, focusOnder = [0, 2.1, 0], kijkOnder = 1.98 }: { boven: ReactNode; onder: ReactNode; woordBoven: string; woordOnder: string; focusOnder?: V3; kijkOnder?: number }) => {
   const smal = useContext(Smal);
+  const staand = useContext(Staand);
+  if (staand) return <StapelStaand boven={boven} onder={onder} woordBoven={woordBoven} woordOnder={woordOnder} focusOnder={focusOnder} kijkOnder={kijkOnder} />;
   return (
   <AbsoluteFill style={{ background: '#1A120A' }}>
     <Band boven focus={[0.2, 0.95, 0.2]}>
@@ -79,6 +126,11 @@ const Stapel = ({ boven, onder, woordBoven, woordOnder, focusOnder = [0, 2.1, 0]
 export const CaesarOmslagSmal = () => <Smal.Provider value><CaesarOmslag /></Smal.Provider>;
 export const SaladinOmslagSmal = () => <Smal.Provider value><SaladinOmslag /></Smal.Provider>;
 export const NapoleonOmslagSmal = () => <Smal.Provider value><NapoleonOmslag /></Smal.Provider>;
+
+export const CaesarReel = () => <Staand.Provider value><CaesarOmslag /></Staand.Provider>;
+export const SaladinReel = () => <Staand.Provider value><SaladinOmslag /></Staand.Provider>;
+export const NapoleonReel = () => <Staand.Provider value><NapoleonOmslag /></Staand.Provider>;
+export const KhalidReel = () => <Staand.Provider value><KhalidOmslag /></Staand.Provider>;
 
 const Raam = ({ x = -0.35, glas = '#9FD0EE' }: { x?: number; glas?: string }) => (
   <>
@@ -162,6 +214,7 @@ export const NapoleonOmslag = () => (
     woordBoven="AGE 9"
     woordOnder="EMPEROR"
     focusOnder={[0, 2.2, 0]}
+    kijkOnder={2.1}
     boven={
       <>
         <Lucht boven="#9EC1DB" horizon="#EADFC6" />
