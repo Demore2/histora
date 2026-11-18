@@ -84,3 +84,98 @@ export const CaesarThumb = () => (
     {void [CAESAR, SENATOR, Dolk, AURELIA, Avondlicht, SERIF]}
   </AbsoluteFill>
 );
+
+/** Gedeelde opbouw van de brede thumbnail (sinds Caesar): close-ups, lichte achtergrond, boos-teken, geen kleine tekst. */
+const Breed = ({ links, rechts, woordLinks, woordRechts }: { links: ReactNode; rechts: ReactNode; woordLinks: string; woordRechts: string }) => (
+  <AbsoluteFill style={{ background: '#1A120A' }}>
+    <Helft links focus={[0.2, 0.95, 0.2]}>
+      <Camera pos={[0.35, 1.0, 1.55]} kijk={[0.22, 0.86, 0.2]} fov={34} />
+      {links}
+    </Helft>
+    <Helft links={false} focus={[0, 2.2, 0]}>
+      {rechts}
+    </Helft>
+    <svg width="1920" height="1080" style={{ position: 'absolute', inset: 0 }}>
+      <line x1="1060" y1="0" x2="860" y2="1080" stroke="#FFF4E0" strokeWidth="14" />
+      <line x1="1060" y1="0" x2="860" y2="1080" stroke="#1A120A" strokeWidth="4" />
+    </svg>
+    <Boos x={640} y={250} maat={150} />
+    <Label tekst={woordLinks} x={70} y={40} kleur="#FFFFFF" rot={-4} />
+    <Label tekst={woordRechts} x={woordRechts.length > 7 ? 1150 : 1220} y={40} kleur="#FF5436" rot={-3} />
+  </AbsoluteFill>
+);
+
+/** Saladin (YouTube): links het kind in de nacht van de vlucht, rechts de sultan voor zijn leger. */
+export const SaladinThumbBreed = () => (
+  <Breed
+    woordLinks="AGE 0"
+    woordRechts="SULTAN"
+    links={
+      <>
+        <Lucht boven="#1C2A4A" horizon="#3A5080" />
+        <Nachtlicht />
+        <hemisphereLight args={['#9DB4E0', '#3A2A20', 0.9]} />
+        <Grond kleur="#6A5A44" />
+        <Blok p={[0, 3, -1.2]} s={[8, 6, 0.4]} c="#7A6A58" />
+        <Blok p={[-0.5, 1.3, -0.95]} s={[0.9, 0.9, 0.05]} c="#8A5A32" />
+        <Blok p={[-0.5, 1.3, -0.92]} s={[0.76, 0.76, 0.05]} c="#2A3A66" />
+        <Blok p={[-0.5, 1.3, -0.88]} s={[0.05, 0.76, 0.04]} c="#8A5A32" />
+        <Blok p={[-0.5, 1.3, -0.88]} s={[0.76, 0.05, 0.04]} c="#8A5A32" />
+        <Fakkel position={[0.85, 0, -0.6]} />
+        <pointLight position={[0.8, 1.0, -0.2]} intensity={2.2} distance={2.2} color="#FFA850" />
+        <pointLight position={[0.5, 0.95, 0.9]} intensity={2.4} distance={2.5} color="#FFC890" />
+        <Figuur kleding={YUSUF} hoofddeksel="tulband" position={[0.2, 0, 0.2]} rotation={[0, 0.12, 0]} scale={0.45} pose={{ wenk: 1, mond: 'open', armL: { schouder: [-1.2, 0, 0.4], elleboog: [0, -1.0] }, armR: { schouder: [-1.2, 0, -0.4], elleboog: [0, 1.0] } }} />
+      </>
+    }
+    rechts={
+      <>
+        <Lucht boven="#3E2E52" horizon="#F0904A" onder="#2A1A12" />
+        <Zon position={[-12, 6, -90]} grootte={16} kleur="#FFC07A" />
+        <Avondlicht />
+        <Daglicht zon={[4, 10, 10]} kracht={1.2} />
+        <Camera pos={[-0.15, 2.2, 3.0]} kijk={[-0.15, 2.1, 0]} fov={36} />
+        <Grond kleur="#B8986A" />
+        <Duinen kleur="#A8865A" />
+        <Blok p={[0, 3, -16]} s={[30, 6, 2]} c="#CDB894" />
+        <Leger rijen={2} kolommen={12} kleur="#E2D6BC" schild="#C99A2E" position={[0, 0, -9]} />
+        <Figuur kleding={SALADIN} hoofddeksel="tulband" baard position={[0, 0, 0]} rotation={[0, -0.12, 0]} pose={{ ...ARMEN_GEKRUIST, wenk: 0.6 }} />
+        <pointLight position={[0.6, 3.0, 1.6]} intensity={4} distance={4} color="#FFE08A" />
+      </>
+    }
+  />
+);
+
+/** Napoleon (YouTube): links de gepeste scholier van negen, rechts de keizer met kroon en driekleuren. */
+export const NapoleonThumbBreed = () => (
+  <Breed
+    woordLinks="AGE 9"
+    woordRechts="EMPEROR"
+    links={
+      <>
+        <Lucht boven="#9EC1DB" horizon="#EADFC6" />
+        <Daglicht zon={[3, 6, 6]} kracht={1.6} omgeving={1.5} />
+        <Grond kleur="#B7A88A" />
+        <Blok p={[0, 3, -1.2]} s={[8, 6, 0.4]} c="#D9CDB6" />
+        <Blok p={[-0.55, 1.25, -0.97]} s={[0.95, 0.6, 0.04]} c="#3A4A3A" />
+        <Figuur kleding={{ ...NAPOLEON, laarzen: undefined }} position={[0.2, 0, 0.2]} rotation={[0, 0.12, 0]} scale={0.45} pose={{ wenk: 1, mond: 'dicht', ...ARMEN_GEKRUIST }} />
+      </>
+    }
+    rechts={
+      <>
+        <Lucht boven="#3E2E52" horizon="#F0904A" onder="#2A1A12" />
+        <Zon position={[-12, 6, -90]} grootte={16} kleur="#FFC07A" />
+        <Avondlicht />
+        <Binnenlicht zon={[4, 8, 10]} kleur="#FFD8A8" />
+        <Camera pos={[-0.15, 2.3, 3.3]} kijk={[-0.15, 2.3, 0]} fov={36} />
+        <Grond kleur="#4A3424" />
+        <Leger tijd="1800" rijen={2} kolommen={12} position={[0, 0, -11]} />
+        <Driekleur position={[2.0, 0, -2.6]} hoogte={3.2} />
+        <Figuur kleding={NAPOLEON_KROONMANTEL} position={[0, 0, 0]} rotation={[0, -0.12, 0]} pose={{ ...ARMEN_GEKRUIST, wenk: 0.7 }} />
+        <group position={[0, 2.38, 0]} scale={1.15}>
+          <Kroon />
+        </group>
+        <pointLight position={[0.6, 3.2, 1.6]} intensity={4} distance={4} color="#FFE08A" />
+      </>
+    }
+  />
+);

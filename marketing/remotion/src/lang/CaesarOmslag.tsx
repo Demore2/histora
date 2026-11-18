@@ -59,7 +59,7 @@ const Stapel = ({ boven, onder, woordBoven, woordOnder, focusOnder = [0, 2.1, 0]
   return (
   <AbsoluteFill style={{ background: '#1A120A' }}>
     <Band boven focus={[0.2, 0.95, 0.2]}>
-      <Camera pos={[0.2, 0.92, 1.85]} kijk={[0.2, 0.95, 0.2]} fov={30} />
+      <Camera pos={[0.2, 0.92, 1.85]} kijk={[0.2, smal ? 1.07 : 0.95, 0.2]} fov={30} />
       {boven}
     </Band>
     <Band boven={false} focus={focusOnder}>
@@ -69,8 +69,8 @@ const Stapel = ({ boven, onder, woordBoven, woordOnder, focusOnder = [0, 2.1, 0]
       <line x1="0" y1="560" x2="1920" y2="520" stroke="#FFF4E0" strokeWidth="12" />
       <line x1="0" y1="560" x2="1920" y2="520" stroke="#1A120A" strokeWidth="3" />
     </svg>
-    <Boos x={smal ? 1095 : 1085} y={smal ? 190 : 175} maat={smal ? 100 : 115} />
-    <Label tekst={woordBoven} top={smal ? 36 : 28} links={smal ? 676 : 590} kleur="#FFFFFF" rot={-4} maat={smal ? 78 : 96} />
+    <Boos x={smal ? 1095 : 1085} y={smal ? 265 : 175} maat={smal ? 100 : 115} />
+    <Label tekst={woordBoven} top={smal ? 104 : 28} links={smal ? 676 : 590} kleur="#FFFFFF" rot={-4} maat={smal ? 78 : 96} />
     <Label tekst={woordOnder} top={smal ? 490 : 478} kleur="#FF5436" rot={-3} maat={smal ? Math.min(100, Math.floor(600 / woordOnder.length)) : 108} />
   </AbsoluteFill>
   );
