@@ -1,5 +1,5 @@
 import { ThreeCanvas } from '@remotion/three';
-import type { ReactNode } from 'react';
+import { createContext, useContext, type ReactNode } from 'react';
 import { AbsoluteFill } from 'remotion';
 import { FONT } from '../sjabloon/theme';
 import { ARMEN_GEKRUIST, Blok, Figuur, Kroon, NAPOLEON, NAPOLEON_KROONMANTEL, type V3 } from '../watals/Figuur';
@@ -46,8 +46,17 @@ const Boos = ({ x, y, maat }: { x: number; y: number; maat: number }) => (
   </svg>
 );
 
+/**
+ * Smal = de 9:16-variant voor YouTube Shorts: die knipt de omslag tot het middelste 9:16-vlak (x 656-1264 van 1920),
+ * nog smaller dan 3:4. Dan schuiven de woorden naar binnen en worden ze kleiner. Render met --scale=1.7778 en knip
+ * 1080x1920 uit het midden.
+ */
+const Smal = createContext(false);
+
 /** Gedeelde opbouw: boven het kind (vaste camera, kind op schaal 0,45), onder de held, labels en boos-teken in de strook. */
-const Stapel = ({ boven, onder, woordBoven, woordOnder, focusOnder = [0, 2.1, 0] }: { boven: ReactNode; onder: ReactNode; woordBoven: string; woordOnder: string; focusOnder?: V3 }) => (
+const Stapel = ({ boven, onder, woordBoven, woordOnder, focusOnder = [0, 2.1, 0] }: { boven: ReactNode; onder: ReactNode; woordBoven: string; woordOnder: string; focusOnder?: V3 }) => {
+  const smal = useContext(Smal);
+  return (
   <AbsoluteFill style={{ background: '#1A120A' }}>
     <Band boven focus={[0.2, 0.95, 0.2]}>
       <Camera pos={[0.2, 0.92, 1.85]} kijk={[0.2, 0.95, 0.2]} fov={30} />
@@ -60,11 +69,16 @@ const Stapel = ({ boven, onder, woordBoven, woordOnder, focusOnder = [0, 2.1, 0]
       <line x1="0" y1="560" x2="1920" y2="520" stroke="#FFF4E0" strokeWidth="12" />
       <line x1="0" y1="560" x2="1920" y2="520" stroke="#1A120A" strokeWidth="3" />
     </svg>
-    <Boos x={1085} y={175} maat={115} />
-    <Label tekst={woordBoven} top={28} links={590} kleur="#FFFFFF" rot={-4} maat={96} />
-    <Label tekst={woordOnder} top={478} kleur="#FF5436" rot={-3} maat={108} />
+    <Boos x={smal ? 1095 : 1085} y={smal ? 190 : 175} maat={smal ? 100 : 115} />
+    <Label tekst={woordBoven} top={smal ? 36 : 28} links={smal ? 676 : 590} kleur="#FFFFFF" rot={-4} maat={smal ? 78 : 96} />
+    <Label tekst={woordOnder} top={smal ? 490 : 478} kleur="#FF5436" rot={-3} maat={smal ? Math.min(100, Math.floor(600 / woordOnder.length)) : 108} />
   </AbsoluteFill>
-);
+  );
+};
+
+export const CaesarOmslagSmal = () => <Smal.Provider value><CaesarOmslag /></Smal.Provider>;
+export const SaladinOmslagSmal = () => <Smal.Provider value><SaladinOmslag /></Smal.Provider>;
+export const NapoleonOmslagSmal = () => <Smal.Provider value><NapoleonOmslag /></Smal.Provider>;
 
 const Raam = ({ x = -0.35, glas = '#9FD0EE' }: { x?: number; glas?: string }) => (
   <>

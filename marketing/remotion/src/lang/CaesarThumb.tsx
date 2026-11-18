@@ -2,10 +2,12 @@ import { ThreeCanvas } from '@remotion/three';
 import type { ReactNode } from 'react';
 import { AbsoluteFill } from 'remotion';
 import { FONT } from '../sjabloon/theme';
-import { Avondlicht, Camera, Daglicht, Grond, Leger, Lucht, Scherpte, Zon, Zuil } from '../watals/Decor';
-import { Blok, CAESAR, Dolk, Figuur, SENATOR, type V3 } from '../watals/Figuur';
+import { Avondlicht, Binnenlicht, Camera, Daglicht, Duinen, Fakkel, Grond, Leger, Lucht, Nachtlicht, Scherpte, Zon, Zuil } from '../watals/Decor';
+import { ARMEN_GEKRUIST, Blok, CAESAR, Dolk, Figuur, Kroon, NAPOLEON, NAPOLEON_KROONMANTEL, SENATOR, type V3 } from '../watals/Figuur';
 import { SERIF } from './LangHud';
 import { AURELIA, CAESAR_JONG, TOGA_TRIOMF } from './CaesarScenes';
+import { Driekleur } from './LangDecor';
+import { SALADIN, YUSUF } from './SaladinScenes';
 
 /**
  * Thumbnail Caesar in het vaste formaat (les van de concurrent): links de boze baby ("AGE 0"), rechts het hoogtepunt
