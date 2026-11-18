@@ -35,41 +35,50 @@ const Label = ({ tekst, x, y, kleur, rot }: { tekst: string; x: number; y: numbe
   </div>
 );
 
+/** Het rode boos-teken (zoals in een manga) naast het hoofd van het kind. */
+const Boos = ({ x, y, maat }: { x: number; y: number; maat: number }) => (
+  <svg width={maat} height={maat} viewBox="-50 -50 100 100" style={{ position: 'absolute', left: x, top: y, filter: 'drop-shadow(0 4px 0 rgba(0,0,0,0.35))' }}>
+    {[0, 90, 180, 270].map((r) => (
+      <path key={r} transform={`rotate(${r})`} d="M 8 -40 Q 10 -12 40 -8" fill="none" stroke="#1A120A" strokeWidth="20" strokeLinecap="round" />
+    ))}
+    {[0, 90, 180, 270].map((r) => (
+      <path key={r} transform={`rotate(${r})`} d="M 8 -40 Q 10 -12 40 -8" fill="none" stroke="#E8382B" strokeWidth="11" strokeLinecap="round" />
+    ))}
+  </svg>
+);
+
 export const CaesarThumb = () => (
   <AbsoluteFill style={{ background: '#1A120A' }}>
-    <Helft links focus={[0, 0.8, 0]}>
-      <Lucht boven="#3E2E3A" horizon="#D0784A" />
-      <Avondlicht />
-      <Camera pos={[0.3, 1.0, 2.6]} kijk={[0.1, 0.75, 0]} fov={36} />
-      <Grond kleur="#7A6A54" />
-      {[-1, 1].map((k) => <Blok key={k} p={[k * 2.6, 3, -1.5]} s={[2, 6, 5]} c={k > 0 ? '#B8906A' : '#C9A27A'} />)}
-      <Blok p={[0, 3, -4.5]} s={[4, 6, 1]} c="#A88060" />
-      <Figuur kleding={AURELIA} haar="lang" position={[-0.9, 0, -1.0]} rotation={[0, 0.5, 0]} pose={{ wenk: -0.4 }} />
-      <Figuur kleding={CAESAR_JONG} position={[0.2, 0, 0.2]} rotation={[0, 0.1, 0]} scale={0.45} pose={{ wenk: 1, mond: 'open', armL: { schouder: [-1.2, 0, 0.4], elleboog: [0, -1.0] }, armR: { schouder: [-1.2, 0, -0.4], elleboog: [0, 1.0] } }} />
+    <Helft links focus={[0.2, 0.95, 0.2]}>
+      <Lucht boven="#F3E2C4" horizon="#F3E2C4" />
+      <Daglicht zon={[3, 6, 6]} kracht={1.6} omgeving={1.5} />
+      <Camera pos={[0.35, 1.0, 1.55]} kijk={[0.22, 0.86, 0.2]} fov={34} />
+      <Grond kleur="#B08A62" />
+      <Blok p={[0, 3, -1.2]} s={[8, 6, 0.4]} c="#E7C79C" />
+      <Blok p={[-0.5, 1.3, -0.95]} s={[0.9, 0.9, 0.05]} c="#8A5A32" />
+      <Blok p={[-0.5, 1.3, -0.92]} s={[0.76, 0.76, 0.05]} c="#9FD0EE" />
+      <Blok p={[-0.5, 1.3, -0.88]} s={[0.05, 0.76, 0.04]} c="#8A5A32" />
+      <Blok p={[-0.5, 1.3, -0.88]} s={[0.76, 0.05, 0.04]} c="#8A5A32" />
+      <Figuur kleding={CAESAR_JONG} position={[0.2, 0, 0.2]} rotation={[0, 0.12, 0]} scale={0.45} pose={{ wenk: 1, mond: 'open', armL: { schouder: [-1.2, 0, 0.4], elleboog: [0, -1.0] }, armR: { schouder: [-1.2, 0, -0.4], elleboog: [0, 1.0] } }} />
     </Helft>
     <Helft links={false} focus={[0, 2.2, 0]}>
-      <Lucht boven="#8DB6DA" horizon="#EFE3CC" />
-      <Zon position={[-14, 10, -90]} grootte={10} kleur="#FFF0C0" />
-      <Daglicht zon={[6, 12, 8]} kracht={2.0} />
-      <Camera pos={[-0.2, 2.15, 4.8]} kijk={[-0.25, 2.25, 0]} fov={36} />
-      <Grond kleur="#D8CCB4" />
-      {[-3.2, 3.2].map((x) => <Zuil key={x} position={[x, 0, -3]} h={7} />)}
+      <Lucht boven="#C94A2E" horizon="#FFC36A" />
+      <Zon position={[-12, 6, -90]} grootte={16} kleur="#FFE9A8" />
+      <Daglicht zon={[6, 12, 8]} kracht={2.2} />
+      <Camera pos={[-0.15, 2.2, 3.0]} kijk={[-0.15, 2.05, 0]} fov={36} />
+      <Grond kleur="#D8B88A" />
+      {[-2.6, 2.6].map((x) => <Zuil key={x} position={[x, 0, -3]} h={7} />)}
       <Leger rijen={2} kolommen={12} position={[0, 0, -10]} />
-      <Figuur kleding={TOGA_TRIOMF} hoofddeksel="krans" position={[0, 0, 0]} rotation={[0, -0.12, 0]} pose={{ wenk: 0.7, armR: { schouder: [-2.9, 0, -0.15], elleboog: [0, -0.2] } }} />
-      {[-1.4, 1.5].map((x, i) => (
-        <group key={x} position={[x, 0, 1.2]} rotation={[0, x > 0 ? -2.6 : 2.6, 0]}>
-          <Figuur kleding={SENATOR} haar={i ? 'grijs' : 'kort'} pose={{ armR: { schouder: [-2.4, 0, -0.1], elleboog: [0, -0.3] }, wenk: 1 }} inHand={<Dolk />} />
-        </group>
-      ))}
-      <pointLight position={[0.6, 3.4, 1.6]} intensity={4} distance={4} color="#FFE08A" />
+      <Figuur kleding={TOGA_TRIOMF} hoofddeksel="krans" position={[0, 0, 0]} rotation={[0, -0.12, 0]} pose={{ wenk: 0.8 }} />
+      <pointLight position={[0.6, 3.0, 1.6]} intensity={4} distance={4} color="#FFE08A" />
     </Helft>
     <svg width="1920" height="1080" style={{ position: 'absolute', inset: 0 }}>
       <line x1="1060" y1="0" x2="860" y2="1080" stroke="#FFF4E0" strokeWidth="14" />
       <line x1="1060" y1="0" x2="860" y2="1080" stroke="#1A120A" strokeWidth="4" />
     </svg>
+    <Boos x={640} y={250} maat={150} />
     <Label tekst="AGE 0" x={70} y={40} kleur="#FFFFFF" rot={-4} />
-    <Label tekst="DICTATOR" x={1130} y={40} kleur="#F2C25A" rot={-3} />
-    <div style={{ position: 'absolute', left: 80, bottom: 46, fontFamily: SERIF, fontStyle: 'italic', fontSize: 60, color: '#FFF4E0', textShadow: '0 4px 14px rgba(0,0,0,0.9)' }}>born broke in the backstreets of Rome</div>
-    {void CAESAR}
+    <Label tekst="DICTATOR" x={1150} y={40} kleur="#FF5436" rot={-3} />
+    {void [CAESAR, SENATOR, Dolk, AURELIA, Avondlicht, SERIF]}
   </AbsoluteFill>
 );

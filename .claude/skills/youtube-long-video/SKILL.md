@@ -29,6 +29,9 @@ Full step-by-step in `marketing/2.youtube/README.md`.
   Mark, Kevin, Andre, Xavier, Orion, Leo and others (too flat/old).
 - **Thumbnail**: split with a slanted cut, left the humble start ("AGE 9", angry kid), right the peak
   ("EMPEROR", gold crown, sunset), Inter 900 labels with thick dark stroke.
+  Since Caesar (2026-11-18, after Saladin got CTR 0.8%): **face close-ups** filling each half (head + shoulders, no
+  half-cut extra figures), light/bright backgrounds with one clear prop (window, sunset), red manga anger mark
+  next to the kid, right word in red-orange #FF5436, **no small italic line** (unreadable at 120 px). See `CaesarThumb.tsx`.
 - **No app link / "in Histora"** until the app is live on Android and iOS (`APP_IN_BEELD` in
   `src/watals/Afsluiter.tsx`); outro: "Who should be next? Tell us in the comments. Subscribe for more."
 - **Music**: orchestral style A (soft strings, light military snare, warm French horn), one ElevenLabs Music v2.5
