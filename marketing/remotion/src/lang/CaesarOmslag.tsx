@@ -2,7 +2,7 @@ import { ThreeCanvas } from '@remotion/three';
 import { createContext, useContext, type ReactNode } from 'react';
 import { AbsoluteFill } from 'remotion';
 import { FONT } from '../sjabloon/theme';
-import { ARMEN_GEKRUIST, Blok, Figuur, Kroon, NAPOLEON, NAPOLEON_KROONMANTEL, type V3 } from '../watals/Figuur';
+import { ARMEN_GEKRUIST, Blok, Figuur, KHALID, KHALID_JONG, Kroon, NAPOLEON, NAPOLEON_KROONMANTEL, type V3 } from '../watals/Figuur';
 import { Avondlicht, Binnenlicht, Camera, Daglicht, Duinen, Fakkel, Grond, Leger, Lucht, Nachtlicht, Scherpte, Zon, Zuil } from '../watals/Decor';
 import { CAESAR_JONG, TOGA_TRIOMF } from './CaesarScenes';
 import { Driekleur } from './LangDecor';
@@ -71,7 +71,7 @@ const Stapel = ({ boven, onder, woordBoven, woordOnder, focusOnder = [0, 2.1, 0]
     </svg>
     <Boos x={smal ? 1095 : 1085} y={smal ? 265 : 175} maat={smal ? 100 : 115} />
     <Label tekst={woordBoven} top={smal ? 104 : 28} links={smal ? 676 : 590} kleur="#FFFFFF" rot={-4} maat={smal ? 78 : 96} />
-    <Label tekst={woordOnder} top={smal ? 490 : 478} kleur="#FF5436" rot={-3} maat={smal ? Math.min(100, Math.floor(600 / woordOnder.length)) : 108} />
+    <Label tekst={woordOnder} top={smal ? 490 : 478} kleur="#FF5436" rot={-3} maat={smal ? Math.min(100, Math.floor(600 / woordOnder.length)) : Math.min(108, Math.floor(864 / woordOnder.length))} />
   </AbsoluteFill>
   );
 };
@@ -189,6 +189,41 @@ export const NapoleonOmslag = () => (
           <Kroon />
         </group>
         <pointLight position={[0.6, 3.2, 1.6]} intensity={4} distance={4} color="#FFE08A" />
+      </>
+    }
+  />
+);
+
+/**
+ * Khalid ibn al-Walid (What-if-short, Instagram/TikTok): boven het kind in een woestijntent, onder de veldheer voor zijn
+ * leger ("UNDEFEATED": nooit een veldslag verloren). Bewust zonder zwaard in beeld en zonder heilige plaatsen.
+ */
+export const KhalidOmslag = () => (
+  <Stapel
+    woordBoven="AGE 0"
+    woordOnder="UNDEFEATED"
+    boven={
+      <>
+        <Lucht boven="#F3D9B0" horizon="#F3D9B0" />
+        <Daglicht zon={[3, 6, 6]} kracht={1.6} omgeving={1.5} />
+        <Grond kleur="#C9A070" />
+        <Blok p={[0, 3, -1.2]} s={[8, 6, 0.4]} c="#D8B482" />
+        {[-0.9, -0.45, 0.85, 1.3].map((x) => <Blok key={x} p={[x, 1.5, -0.97]} s={[0.18, 3, 0.04]} c="#A3261F" />)}
+        <Figuur kleding={KHALID_JONG} hoofddeksel="tulband" position={[0.2, 0, 0.2]} scale={0.45} pose={{ wenk: 1, mond: 'open' }} />
+      </>
+    }
+    onder={
+      <>
+        <fog attach="fog" args={['#E8A468', 20, 120]} />
+        <Lucht boven="#4E3A6A" horizon="#F4A35A" />
+        <Zon position={[-16, 4, -90]} grootte={16} kleur="#FFD08A" />
+        <Daglicht zon={[-6, 8, 8]} kleur="#FFC890" kracht={2.2} />
+        <Camera pos={[0, 2.05, 3.45]} kijk={[0, 2.15, 0]} fov={30} />
+        <Grond kleur="#D9A866" />
+        <Duinen kleur="#C9925A" z={-22} />
+        <Leger rijen={2} kolommen={12} position={[0, 0, -9]} kleur="#E2D6BC" schild="#8A6A44" />
+        <Figuur kleding={KHALID} hoofddeksel="tulband" baard position={[0, 0, 0]} pose={{ ...ARMEN_GEKRUIST, wenk: 0.7 }} />
+        <pointLight position={[0.6, 3.0, 1.6]} intensity={4} distance={4} color="#FFE08A" />
       </>
     }
   />

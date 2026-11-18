@@ -14,7 +14,7 @@ import { SALADIN_LANG_DUUR, SaladinLang } from './lang/SaladinLang';
 import { SaladinThumb } from './lang/SaladinThumb';
 import { CAESAR_LANG_DUUR, CaesarLang } from './lang/CaesarLang';
 import { CaesarThumb, NapoleonThumbBreed, SaladinThumbBreed } from './lang/CaesarThumb';
-import { CaesarOmslag, CaesarOmslagSmal, NapoleonOmslag, NapoleonOmslagSmal, SaladinOmslag, SaladinOmslagSmal } from './lang/CaesarOmslag';
+import { CaesarOmslag, CaesarOmslagSmal, KhalidOmslag, NapoleonOmslag, NapoleonOmslagSmal, SaladinOmslag, SaladinOmslagSmal } from './lang/CaesarOmslag';
 import { CAESAR_TRAILER_DUUR, WatAlsCaesarTrailer } from './watals/WatAlsCaesarTrailer';
 import { NapoleonThumbStaand } from './lang/ThumbnailStaand';
 import { KanaalBanner } from './lang/Banner';
@@ -60,6 +60,7 @@ export const Root = () => (
     <Still id="lang-caesar-omslag" component={CaesarOmslag} width={1920} height={1080} />
     <Still id="lang-saladin-omslag" component={SaladinOmslag} width={1920} height={1080} />
     <Still id="lang-napoleon-omslag" component={NapoleonOmslag} width={1920} height={1080} />
+    <Still id="lang-khalid-omslag" component={KhalidOmslag} width={1920} height={1080} />
     <Still id="lang-caesar-omslag-916" component={CaesarOmslagSmal} width={1920} height={1080} />
     <Still id="lang-saladin-omslag-916" component={SaladinOmslagSmal} width={1920} height={1080} />
     <Still id="lang-napoleon-omslag-916" component={NapoleonOmslagSmal} width={1920} height={1080} />
