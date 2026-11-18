@@ -7,7 +7,7 @@ import path from 'node:path';
 const [id, uit, lijst, schaal = '0.5'] = process.argv.slice(2);
 mkdirSync(uit, { recursive: true });
 const serveUrl = await bundle({ entryPoint: path.resolve('src/index.ts') });
-const browser = await openBrowser('chrome');
+const browser = await openBrowser('chrome', { chromiumOptions: { gl: 'angle' } });
 const composition = await selectComposition({ serveUrl, id, puppeteerInstance: browser });
 const frames = lijst.split(',').map(Number);
 const opEen = async (fr) => {

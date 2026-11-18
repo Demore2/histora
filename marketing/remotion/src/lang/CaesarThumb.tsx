@@ -8,6 +8,7 @@ import { SERIF } from './LangHud';
 import { AURELIA, CAESAR_JONG, TOGA_TRIOMF } from './CaesarScenes';
 import { Driekleur } from './LangDecor';
 import { SALADIN, YUSUF } from './SaladinScenes';
+import { Baby, Falanx, LEONIDAS, Spartaan, Wieg } from './LeonidasKit';
 
 /**
  * Thumbnail Caesar in het vaste formaat (les van de concurrent): links de boze baby ("AGE 0"), rechts het hoogtepunt
@@ -86,7 +87,7 @@ export const CaesarThumb = () => (
 );
 
 /** Gedeelde opbouw van de brede thumbnail (sinds Caesar): close-ups, lichte achtergrond, boos-teken, geen kleine tekst. */
-const Breed = ({ links, rechts, woordLinks, woordRechts }: { links: ReactNode; rechts: ReactNode; woordLinks: string; woordRechts: string }) => (
+const Breed = ({ links, rechts, woordLinks, woordRechts, boos = [640, 250] }: { links: ReactNode; rechts: ReactNode; woordLinks: string; woordRechts: string; boos?: [number, number] }) => (
   <AbsoluteFill style={{ background: '#1A120A' }}>
     <Helft links focus={[0.2, 0.95, 0.2]}>
       <Camera pos={[0.35, 1.0, 1.55]} kijk={[0.22, 0.86, 0.2]} fov={34} />
@@ -99,7 +100,7 @@ const Breed = ({ links, rechts, woordLinks, woordRechts }: { links: ReactNode; r
       <line x1="1060" y1="0" x2="860" y2="1080" stroke="#FFF4E0" strokeWidth="14" />
       <line x1="1060" y1="0" x2="860" y2="1080" stroke="#1A120A" strokeWidth="4" />
     </svg>
-    <Boos x={640} y={250} maat={150} />
+    <Boos x={boos[0]} y={boos[1]} maat={150} />
     <Label tekst={woordLinks} x={70} y={40} kleur="#FFFFFF" rot={-4} />
     <Label tekst={woordRechts} x={woordRechts.length > 7 ? 1150 : 1220} y={40} kleur="#FF5436" rot={-3} />
   </AbsoluteFill>
@@ -175,6 +176,41 @@ export const NapoleonThumbBreed = () => (
           <Kroon />
         </group>
         <pointLight position={[0.6, 3.2, 1.6]} intensity={4} distance={4} color="#FFE08A" />
+      </>
+    }
+  />
+);
+
+/** Leonidas (YouTube): links de boze baby in zijn wieg, rechts de koning met de rode dwarskam voor de falanx bij zonsondergang. */
+export const LeonidasThumb = () => (
+  <Breed
+    woordLinks="AGE 0"
+    woordRechts="300"
+    boos={[790, 140]}
+    links={
+      <>
+        <Lucht boven="#F3E2C4" horizon="#F3E2C4" />
+        <Daglicht zon={[3, 6, 6]} kracht={1.6} omgeving={1.5} />
+        <Grond kleur="#B08A62" />
+        <Blok p={[0, 3, -1.2]} s={[8, 6, 0.4]} c="#E7C79C" />
+        <Blok p={[-0.5, 1.3, -0.95]} s={[0.9, 0.9, 0.05]} c="#8A5A32" />
+        <Blok p={[-0.5, 1.3, -0.92]} s={[0.76, 0.76, 0.05]} c="#9FD0EE" />
+        <Blok p={[-0.5, 1.12, -0.89]} s={[0.74, 0.3, 0.02]} c="#8A8A7A" />
+        <Wieg position={[0.22, 0, 0.0]} label={false}>
+          <Baby position={[0, 0, 0.12]} boos={1} rotation={[0, 0.12, 0]} />
+        </Wieg>
+      </>
+    }
+    rechts={
+      <>
+        <Lucht boven="#C94A2E" horizon="#FFC36A" />
+        <Zon position={[-12, 6, -90]} grootte={16} kleur="#FFE9A8" />
+        <Daglicht zon={[6, 12, 8]} kracht={2.2} />
+        <Camera pos={[-0.15, 2.2, 3.0]} kijk={[-0.15, 2.1, 0]} fov={36} />
+        <Grond kleur="#C9A070" />
+        <Falanx rijen={2} kolommen={12} position={[0, 0, -7]} />
+        <Spartaan kleding={LEONIDAS} koning speer={false} schild={false} rotation={[0, -0.12, 0]} pose={{ wenk: 0.8 }} />
+        <pointLight position={[0.6, 3.0, 1.6]} intensity={4} distance={4} color="#FFE08A" />
       </>
     }
   />

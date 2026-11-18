@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { useCurrentFrame } from 'remotion';
 
 /**
  * Eén blokkerig figuur voor de "What if you were…"-reeks. Iedereen heeft hetzelfde lijf;
@@ -84,7 +85,7 @@ export const wijs = (op = 1.4): ArmPose => ({ schouder: [-op, 0, -0.1], elleboog
 export const omhoog = (): ArmPose => ({ schouder: [-2.9, 0, -0.15], elleboog: [0, -0.2] });
 
 export type Haar = 'kort' | 'bob' | 'lang' | 'kaal' | 'grijs';
-export type Hoofddeksel = 'krans' | 'bandana' | 'helm' | 'hoofdband' | 'kap' | 'steek' | 'tulband' | null;
+export type Hoofddeksel = 'krans' | 'bandana' | 'helm' | 'hoofdband' | 'kap' | 'steek' | 'tulband' | 'korinth' | 'korinthDwars' | 'kidaris' | null;
 
 type Props = {
   kleding: Kleding;
@@ -99,6 +100,7 @@ type Props = {
   o?: Overschrijf;
   inHand?: ReactNode; // in de rechterhand (bv. zwaard, rol)
   extra?: ReactNode;
+  levend?: boolean; // knipperen, ademen, hoofd een beetje bewegen (Leonidas e.v.)
 };
 
 const Arm = ({ x, pose, mouw, huid, o, inHand }: { x: number; pose: ArmPose; mouw: string; huid: string; o?: Overschrijf; inHand?: ReactNode }) => {
@@ -152,14 +154,23 @@ export const Figuur = ({
   o,
   inHand,
   extra,
+  levend = false,
 }: Props) => {
+  const frame = useCurrentFrame();
+  const zaad = ((position?.[0] ?? 0) * 13.7 + (position?.[2] ?? 0) * 7.3 + k.huid.charCodeAt(2) + k.tuniek.charCodeAt(3)) % 97;
+  const leeft = levend && !o;
+  const knipper = leeft && frame > 10 && (frame + Math.round(zaad * 3)) % 104 < 4;
+  const adem = leeft ? 1 + Math.sin(frame / 22 + zaad) * 0.012 : 1;
+  const kijk = leeft ? Math.sin(frame / 47 + zaad) * 0.07 : 0;
+  const knik = leeft ? Math.sin(frame / 31 + zaad * 1.3) * 0.025 : 0;
+  const hoofdRot: [number, number, number] = [(pose.hoofd?.[0] ?? 0) + knik, (pose.hoofd?.[1] ?? 0) + kijk, pose.hoofd?.[2] ?? 0];
   const rok = k.rok ?? k.tuniek;
   const benen = k.benen ?? k.huid;
   const wenk = pose.wenk ?? 0;
-  const armen = { ...ARMEN_LOS, ...pose };
-  const oogDicht = pose.ogen === 'dicht';
+  const armen = { ...ARMEN_LOS, ...pose, armL: pose.armL ?? ARMEN_LOS.armL, armR: pose.armR ?? ARMEN_LOS.armR };
+  const oogDicht = pose.ogen === 'dicht' || knipper;
   return (
-    <group position={position} rotation={rotation} scale={scale}>
+    <group position={position} rotation={rotation} scale={[scale, scale * adem, scale]}>
       {[-0.14, 0.14].map((x) => (
         <group key={x}>
           <Blok p={[x, 0.42, 0]} s={[0.23, 0.68, 0.25]} c={benen} o={o} />
@@ -187,7 +198,7 @@ export const Figuur = ({
       )}
       <Arm x={-0.42} pose={armen.armL!} mouw={k.tuniek} huid={k.huid} o={o} />
       <Arm x={0.42} pose={armen.armR!} mouw={k.tuniek} huid={k.huid} o={o} inHand={inHand} />
-      <group position={[0, 1.66, 0]} rotation={pose.hoofd}>
+      <group position={[0, 1.66, 0]} rotation={hoofdRot}>
         <Blok p={[0, 0.06, 0]} s={[0.2, 0.12, 0.2]} c={k.huid} o={o} />
         <Blok p={[0, 0.38, 0]} s={[0.62, 0.6, 0.56]} c={k.huid} o={o} />
         {/* oren */}
@@ -273,6 +284,43 @@ export const Figuur = ({
             <Blok p={[0, 0.92, 0]} s={[0.1, 0.18, 0.5]} c="#A8322B" o={o} />
             <Blok p={[-0.34, 0.45, 0.12]} s={[0.04, 0.3, 0.2]} c="#8D8A84" rough={0.35} metal={0.8} o={o} />
             <Blok p={[0.34, 0.45, 0.12]} s={[0.04, 0.3, 0.2]} c="#8D8A84" rough={0.35} metal={0.8} o={o} />
+          </>
+        )}
+        {(hoofddeksel === 'korinth' || hoofddeksel === 'korinthDwars') && (
+          // Korinthische bronzen helm (Sparta): wangstukken en neusstuk laten de ogen vrij; rode paardenhaarkam,
+          // overlangs voor een soldaat, dwars voor de koning
+          <>
+            <Blok p={[0, 0.72, 0]} s={[0.7, 0.22, 0.64]} c="#B8863A" rough={0.3} metal={0.75} o={o} />
+            <Blok p={[0, 0.62, 0.3]} s={[0.68, 0.07, 0.05]} c="#A57630" rough={0.3} metal={0.75} o={o} />
+            <Blok p={[0, 0.42, -0.31]} s={[0.7, 0.62, 0.06]} c="#B8863A" rough={0.3} metal={0.75} o={o} />
+            {[-1, 1].map((k2) => (
+              <group key={k2}>
+                <Blok p={[k2 * 0.335, 0.4, 0.04]} s={[0.04, 0.5, 0.56]} c="#B8863A" rough={0.3} metal={0.75} o={o} />
+                <Blok p={[k2 * 0.27, 0.27, 0.3]} s={[0.1, 0.24, 0.04]} c="#B8863A" rough={0.3} metal={0.75} o={o} />
+              </group>
+            ))}
+            <Blok p={[0, 0.43, 0.32]} s={[0.05, 0.2, 0.03]} c="#A57630" rough={0.3} metal={0.75} o={o} />
+            <Blok p={[0, 0.88, 0]} s={[0.07, 0.12, 0.07]} c="#5A3B24" o={o} />
+            {hoofddeksel === 'korinthDwars' ? (
+              <>
+                <Blok p={[0, 1.02, 0]} s={[1.0, 0.2, 0.14]} c="#B3312B" rough={1} o={o} />
+                <Blok p={[0, 1.13, 0]} s={[0.84, 0.06, 0.12]} c="#C9443A" rough={1} o={o} />
+              </>
+            ) : (
+              <>
+                <Blok p={[0, 1.02, -0.04]} s={[0.12, 0.22, 0.8]} c="#B3312B" rough={1} o={o} />
+                <Blok p={[0, 0.82, -0.47]} s={[0.12, 0.34, 0.1]} c="#B3312B" rough={1} o={o} />
+              </>
+            )}
+          </>
+        )}
+        {hoofddeksel === 'kidaris' && (
+          // hoge Perzische koningskroon (Xerxes, Darius)
+          <>
+            <Blok p={[0, 0.9, -0.01]} s={[0.6, 0.5, 0.56]} c="#D8A945" rough={0.3} metal={0.8} o={o} />
+            <Blok p={[0, 0.7, -0.01]} s={[0.66, 0.08, 0.62]} c="#B8912F" rough={0.3} metal={0.8} o={o} />
+            {[-0.22, 0, 0.22].map((x2) => <Blok key={x2} p={[x2, 1.2, 0.26]} s={[0.12, 0.12, 0.04]} c="#E2BE58" rough={0.3} metal={0.8} o={o} />)}
+            <Blok p={[0, 0.92, 0.29]} s={[0.1, 0.1, 0.02]} c="#2E5DA8" rough={0.2} metal={0.3} o={o} />
           </>
         )}
         {hoofddeksel === 'hoofdband' && (
@@ -394,7 +442,7 @@ export const Phoxy = ({ position, rotation, scale = 1, pose = {} }: { position?:
   const wit = '#FFF1DC';
   const bril = '#4A2F1E';
   const sjaal = '#0EA5E9';
-  const armen = { ...ARMEN_LOS, ...pose };
+  const armen = { ...ARMEN_LOS, ...pose, armL: pose.armL ?? ARMEN_LOS.armL, armR: pose.armR ?? ARMEN_LOS.armR };
   return (
     <group position={position} rotation={rotation} scale={scale}>
       {[-0.14, 0.14].map((x) => (

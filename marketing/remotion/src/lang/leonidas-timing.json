@@ -1,0 +1,686 @@
+[
+ {
+  "hoofdstuk": "Teaser",
+  "zin": "What if you were Leonidas?",
+  "start": 0.35,
+  "eind": 2.13
+ },
+ {
+  "hoofdstuk": "Teaser",
+  "zin": "At seven, you'd be taken from your mother and starved, on purpose.",
+  "start": 2.57,
+  "eind": 6.58
+ },
+ {
+  "hoofdstuk": "Teaser",
+  "zin": "You'd become king by accident.",
+  "start": 7.02,
+  "eind": 8.79
+ },
+ {
+  "hoofdstuk": "Teaser",
+  "zin": "You'd march against the biggest army the world had ever seen, with three hundred men.",
+  "start": 9.23,
+  "eind": 14.2
+ },
+ {
+  "hoofdstuk": "Teaser",
+  "zin": "And you'd know you were never coming home.",
+  "start": 14.64,
+  "eind": 17.38
+ },
+ {
+  "hoofdstuk": "Teaser",
+  "zin": "So how does a third son nobody wanted on the throne end up in the most famous last stand in history?",
+  "start": 17.82,
+  "eind": 24.71
+ },
+ {
+  "hoofdstuk": "I · Born in Sparta",
+  "zin": "You're born around 540 BC, in Sparta, in the south of Greece.",
+  "start": 26.73,
+  "eind": 31.22
+ },
+ {
+  "hoofdstuk": "I · Born in Sparta",
+  "zin": "Your father is a king, because Sparta has two kings at the same time.",
+  "start": 31.66,
+  "eind": 36.85
+ },
+ {
+  "hoofdstuk": "I · Born in Sparta",
+  "zin": "But you're not his first son.",
+  "start": 37.29,
+  "eind": 39.62
+ },
+ {
+  "hoofdstuk": "I · Born in Sparta",
+  "zin": "Your father's first wife couldn't have children, so the elders forced him to take a second wife.",
+  "start": 40.06,
+  "eind": 46.34
+ },
+ {
+  "hoofdstuk": "I · Born in Sparta",
+  "zin": "She gives him a son, Cleomenes.",
+  "start": 46.78,
+  "eind": 49.11
+ },
+ {
+  "hoofdstuk": "I · Born in Sparta",
+  "zin": "Then, suddenly, the first wife has three sons of her own.",
+  "start": 49.55,
+  "eind": 53.68
+ },
+ {
+  "hoofdstuk": "I · Born in Sparta",
+  "zin": "You're the second of them.",
+  "start": 54.12,
+  "eind": 56.09
+ },
+ {
+  "hoofdstuk": "I · Born in Sparta",
+  "zin": "So there are two brothers ahead of you, and nobody expects you to wear a crown.",
+  "start": 56.53,
+  "eind": 62.44
+ },
+ {
+  "hoofdstuk": "I · Born in Sparta",
+  "zin": "In Sparta, even a baby has to pass a test.",
+  "start": 62.88,
+  "eind": 66.65
+ },
+ {
+  "hoofdstuk": "I · Born in Sparta",
+  "zin": "According to Plutarch, the elders look at every newborn, and a weak one is left on the mountain.",
+  "start": 67.09,
+  "eind": 73.73
+ },
+ {
+  "hoofdstuk": "I · Born in Sparta",
+  "zin": "You pass.",
+  "start": 74.17,
+  "eind": 75.06
+ },
+ {
+  "hoofdstuk": "II · The agoge",
+  "zin": "At seven, you're taken from your mother and sent to the agoge, Sparta's school for boys.",
+  "start": 77.09,
+  "eind": 83.0
+ },
+ {
+  "hoofdstuk": "II · The agoge",
+  "zin": "Your hair is cut short, and you walk barefoot, summer and winter.",
+  "start": 83.44,
+  "eind": 87.92
+ },
+ {
+  "hoofdstuk": "II · The agoge",
+  "zin": "You get one cloak a year, and you sleep on reeds you pick yourself, by hand, from the river.",
+  "start": 88.36,
+  "eind": 95.36
+ },
+ {
+  "hoofdstuk": "II · The agoge",
+  "zin": "They feed you too little, on purpose, so you learn to steal food.",
+  "start": 95.8,
+  "eind": 100.64
+ },
+ {
+  "hoofdstuk": "II · The agoge",
+  "zin": "If you're caught, you're beaten.",
+  "start": 101.08,
+  "eind": 103.05
+ },
+ {
+  "hoofdstuk": "II · The agoge",
+  "zin": "Not for stealing, but for getting caught.",
+  "start": 103.49,
+  "eind": 106.18
+ },
+ {
+  "hoofdstuk": "II · The agoge",
+  "zin": "One story tells of a boy who hid a stolen fox under his cloak.",
+  "start": 106.62,
+  "eind": 111.82
+ },
+ {
+  "hoofdstuk": "II · The agoge",
+  "zin": "The fox bit into him, and he said nothing, until he fell down dead.",
+  "start": 112.26,
+  "eind": 117.46
+ },
+ {
+  "hoofdstuk": "II · The agoge",
+  "zin": "You also learn to speak in as few words as possible.",
+  "start": 117.9,
+  "eind": 122.02
+ },
+ {
+  "hoofdstuk": "II · The agoge",
+  "zin": "Sparta's region is called Laconia, and that's where our word laconic comes from.",
+  "start": 122.46,
+  "eind": 127.31
+ },
+ {
+  "hoofdstuk": "II · The agoge",
+  "zin": "At twenty, you become a soldier.",
+  "start": 127.75,
+  "eind": 130.08
+ },
+ {
+  "hoofdstuk": "II · The agoge",
+  "zin": "At thirty, you may finally live in your own house.",
+  "start": 130.52,
+  "eind": 134.28
+ },
+ {
+  "hoofdstuk": "II · The agoge",
+  "zin": "And for the rest of your life, you eat in a mess hall with fifteen other men, every single night.",
+  "start": 134.72,
+  "eind": 142.07
+ },
+ {
+  "hoofdstuk": "III · King by accident",
+  "zin": "Your half-brother Cleomenes becomes king.",
+  "start": 144.1,
+  "eind": 146.07
+ },
+ {
+  "hoofdstuk": "III · King by accident",
+  "zin": "Your older brother Dorieus is so angry that he leaves Sparta forever, and dies in a war far away, in Sicily.",
+  "start": 146.51,
+  "eind": 154.22
+ },
+ {
+  "hoofdstuk": "III · King by accident",
+  "zin": "Cleomenes rules for almost thirty years, but in the end he loses his mind.",
+  "start": 154.66,
+  "eind": 159.86
+ },
+ {
+  "hoofdstuk": "III · King by accident",
+  "zin": "His family puts him in chains, and soon he's dead.",
+  "start": 160.3,
+  "eind": 164.07
+ },
+ {
+  "hoofdstuk": "III · King by accident",
+  "zin": "He leaves no son, only a daughter.",
+  "start": 164.51,
+  "eind": 167.2
+ },
+ {
+  "hoofdstuk": "III · King by accident",
+  "zin": "So in 490 BC, the crown lands on your head.",
+  "start": 167.64,
+  "eind": 171.4
+ },
+ {
+  "hoofdstuk": "III · King by accident",
+  "zin": "You're about fifty, and you never trained to be king.",
+  "start": 171.84,
+  "eind": 175.6
+ },
+ {
+  "hoofdstuk": "III · King by accident",
+  "zin": "You marry Cleomenes' daughter, Gorgo, your own niece.",
+  "start": 176.04,
+  "eind": 179.1
+ },
+ {
+  "hoofdstuk": "III · King by accident",
+  "zin": "And Gorgo is not a quiet queen.",
+  "start": 179.53,
+  "eind": 182.22
+ },
+ {
+  "hoofdstuk": "III · King by accident",
+  "zin": "As a girl of eight, she had warned her father not to take a foreigner's bribe, and he listened.",
+  "start": 182.66,
+  "eind": 189.66
+ },
+ {
+  "hoofdstuk": "III · King by accident",
+  "zin": "A foreign woman once asked her why Spartan women were the only ones who ruled their men.",
+  "start": 190.1,
+  "eind": 196.37
+ },
+ {
+  "hoofdstuk": "III · King by accident",
+  "zin": "Gorgo answered: because we're the only ones who give birth to men.",
+  "start": 196.81,
+  "eind": 201.29
+ },
+ {
+  "hoofdstuk": "IV · Earth and water",
+  "zin": "To the east lies the Persian Empire, the largest empire the world has ever seen.",
+  "start": 203.31,
+  "eind": 208.88
+ },
+ {
+  "hoofdstuk": "IV · Earth and water",
+  "zin": "Its king, Darius, sends messengers to every Greek city.",
+  "start": 209.32,
+  "eind": 212.72
+ },
+ {
+  "hoofdstuk": "IV · Earth and water",
+  "zin": "They ask for earth and water, a sign that you surrender.",
+  "start": 213.16,
+  "eind": 217.29
+ },
+ {
+  "hoofdstuk": "IV · Earth and water",
+  "zin": "In Athens, the messengers are thrown into a pit.",
+  "start": 217.73,
+  "eind": 221.13
+ },
+ {
+  "hoofdstuk": "IV · Earth and water",
+  "zin": "In Sparta, they're thrown down a well.",
+  "start": 221.57,
+  "eind": 224.26
+ },
+ {
+  "hoofdstuk": "IV · Earth and water",
+  "zin": "Dig it out yourselves, the Spartans tell them.",
+  "start": 224.7,
+  "eind": 227.75
+ },
+ {
+  "hoofdstuk": "IV · Earth and water",
+  "zin": "Darius dies before he can take revenge.",
+  "start": 228.19,
+  "eind": 230.87
+ },
+ {
+  "hoofdstuk": "IV · Earth and water",
+  "zin": "But his son Xerxes doesn't forget.",
+  "start": 231.31,
+  "eind": 233.64
+ },
+ {
+  "hoofdstuk": "IV · Earth and water",
+  "zin": "For four years he prepares the biggest invasion of the ancient world.",
+  "start": 234.08,
+  "eind": 238.57
+ },
+ {
+  "hoofdstuk": "IV · Earth and water",
+  "zin": "He builds two bridges of boats across the sea, more than a kilometre long.",
+  "start": 239.01,
+  "eind": 244.2
+ },
+ {
+  "hoofdstuk": "IV · Earth and water",
+  "zin": "When a storm destroys them, he orders the sea to be whipped three hundred times.",
+  "start": 244.64,
+  "eind": 250.21
+ },
+ {
+  "hoofdstuk": "IV · Earth and water",
+  "zin": "Then he builds them again, and his army crosses for seven days and seven nights.",
+  "start": 250.65,
+  "eind": 256.21
+ },
+ {
+  "hoofdstuk": "V · The oracle",
+  "zin": "Herodotus says Xerxes brought more than two and a half million men.",
+  "start": 258.23,
+  "eind": 262.72
+ },
+ {
+  "hoofdstuk": "V · The oracle",
+  "zin": "Historians today think it was more like one or two hundred thousand.",
+  "start": 263.16,
+  "eind": 267.63
+ },
+ {
+  "hoofdstuk": "V · The oracle",
+  "zin": "That's still one of the biggest armies the world had ever seen.",
+  "start": 268.07,
+  "eind": 272.56
+ },
+ {
+  "hoofdstuk": "V · The oracle",
+  "zin": "Sparta asks the oracle at Delphi what will happen.",
+  "start": 273.0,
+  "eind": 276.41
+ },
+ {
+  "hoofdstuk": "V · The oracle",
+  "zin": "The answer is terrible: either Sparta will fall, or Sparta will mourn a dead king.",
+  "start": 276.85,
+  "eind": 282.4
+ },
+ {
+  "hoofdstuk": "V · The oracle",
+  "zin": "You're that king.",
+  "start": 282.84,
+  "eind": 284.09
+ },
+ {
+  "hoofdstuk": "V · The oracle",
+  "zin": "But Sparta is celebrating a sacred festival, and the army isn't allowed to march.",
+  "start": 284.53,
+  "eind": 289.74
+ },
+ {
+  "hoofdstuk": "V · The oracle",
+  "zin": "So you go ahead, with a small guard of three hundred men.",
+  "start": 290.18,
+  "eind": 294.66
+ },
+ {
+  "hoofdstuk": "V · The oracle",
+  "zin": "You choose only men who already have sons, so that no family line dies out.",
+  "start": 295.1,
+  "eind": 300.66
+ },
+ {
+  "hoofdstuk": "V · The oracle",
+  "zin": "On the way, other Greek cities join you, until you have about seven thousand men.",
+  "start": 301.1,
+  "eind": 306.66
+ },
+ {
+  "hoofdstuk": "V · The oracle",
+  "zin": "That's the part the movies leave out.",
+  "start": 307.1,
+  "eind": 309.79
+ },
+ {
+  "hoofdstuk": "VI · The hot gates",
+  "zin": "You march to Thermopylae, the hot gates, named after its hot springs.",
+  "start": 311.81,
+  "eind": 316.3
+ },
+ {
+  "hoofdstuk": "VI · The hot gates",
+  "zin": "On one side are steep mountains, and on the other side is the sea.",
+  "start": 316.74,
+  "eind": 321.93
+ },
+ {
+  "hoofdstuk": "VI · The hot gates",
+  "zin": "In one place the road is so narrow that only one wagon can pass.",
+  "start": 322.37,
+  "eind": 327.57
+ },
+ {
+  "hoofdstuk": "VI · The hot gates",
+  "zin": "There, you rebuild an old stone wall, and wait.",
+  "start": 328.01,
+  "eind": 331.42
+ },
+ {
+  "hoofdstuk": "VI · The hot gates",
+  "zin": "Xerxes sends a rider to look at your camp.",
+  "start": 331.86,
+  "eind": 335.26
+ },
+ {
+  "hoofdstuk": "VI · The hot gates",
+  "zin": "He sees Spartans exercising, and calmly combing their long hair.",
+  "start": 335.7,
+  "eind": 339.47
+ },
+ {
+  "hoofdstuk": "VI · The hot gates",
+  "zin": "Xerxes laughs, but an exiled Spartan king in his tent warns him.",
+  "start": 339.91,
+  "eind": 344.39
+ },
+ {
+  "hoofdstuk": "VI · The hot gates",
+  "zin": "When Spartans are about to risk their lives, he says, they do their hair.",
+  "start": 344.83,
+  "eind": 350.03
+ },
+ {
+  "hoofdstuk": "VI · The hot gates",
+  "zin": "Xerxes waits four days, sure that you'll run.",
+  "start": 350.47,
+  "eind": 353.52
+ },
+ {
+  "hoofdstuk": "VI · The hot gates",
+  "zin": "Then he sends you a message: hand over your weapons.",
+  "start": 353.96,
+  "eind": 357.72
+ },
+ {
+  "hoofdstuk": "VI · The hot gates",
+  "zin": "Your answer is two words: come and take them.",
+  "start": 358.16,
+  "eind": 361.58
+ },
+ {
+  "hoofdstuk": "VII · Fighting in the shade",
+  "zin": "On the fifth day, the attack begins.",
+  "start": 363.6,
+  "eind": 366.28
+ },
+ {
+  "hoofdstuk": "VII · Fighting in the shade",
+  "zin": "Wave after wave runs into your shield wall, and breaks.",
+  "start": 366.72,
+  "eind": 370.48
+ },
+ {
+  "hoofdstuk": "VII · Fighting in the shade",
+  "zin": "Your men pretend to flee, then turn around and cut down the soldiers chasing them.",
+  "start": 370.92,
+  "eind": 376.49
+ },
+ {
+  "hoofdstuk": "VII · Fighting in the shade",
+  "zin": "A Spartan named Dienekes is told that the Persian arrows will block out the sun.",
+  "start": 376.93,
+  "eind": 382.49
+ },
+ {
+  "hoofdstuk": "VII · Fighting in the shade",
+  "zin": "Good, he answers, then we'll fight in the shade.",
+  "start": 382.93,
+  "eind": 386.33
+ },
+ {
+  "hoofdstuk": "VII · Fighting in the shade",
+  "zin": "Xerxes sends in his best troops, the ten thousand Immortals.",
+  "start": 386.77,
+  "eind": 390.53
+ },
+ {
+  "hoofdstuk": "VII · Fighting in the shade",
+  "zin": "They fail too.",
+  "start": 390.97,
+  "eind": 392.23
+ },
+ {
+  "hoofdstuk": "VII · Fighting in the shade",
+  "zin": "Three times, Herodotus says, Xerxes jumps up from his throne in fear for his army.",
+  "start": 392.67,
+  "eind": 398.23
+ },
+ {
+  "hoofdstuk": "VII · Fighting in the shade",
+  "zin": "The second day goes the same way.",
+  "start": 398.67,
+  "eind": 401.36
+ },
+ {
+  "hoofdstuk": "VII · Fighting in the shade",
+  "zin": "For a moment, it looks like the impossible might happen.",
+  "start": 401.8,
+  "eind": 405.56
+ },
+ {
+  "hoofdstuk": "VIII · The goat path",
+  "zin": "Then a local man named Ephialtes comes to Xerxes' tent.",
+  "start": 407.58,
+  "eind": 411.35
+ },
+ {
+  "hoofdstuk": "VIII · The goat path",
+  "zin": "For a reward, he shows the Persians a goat path through the mountains, around the pass.",
+  "start": 411.79,
+  "eind": 417.71
+ },
+ {
+  "hoofdstuk": "VIII · The goat path",
+  "zin": "That night, the Immortals climb it in the dark.",
+  "start": 418.15,
+  "eind": 421.56
+ },
+ {
+  "hoofdstuk": "VIII · The goat path",
+  "zin": "At dawn, your lookouts run down the mountain: you're surrounded.",
+  "start": 422.0,
+  "eind": 425.76
+ },
+ {
+  "hoofdstuk": "VIII · The goat path",
+  "zin": "You know what the oracle said.",
+  "start": 426.2,
+  "eind": 428.53
+ },
+ {
+  "hoofdstuk": "VIII · The goat path",
+  "zin": "You send most of the Greeks home, to fight another day.",
+  "start": 428.97,
+  "eind": 433.1
+ },
+ {
+  "hoofdstuk": "VIII · The goat path",
+  "zin": "You stay, with your three hundred, and seven hundred men from Thespiae who refuse to leave.",
+  "start": 433.54,
+  "eind": 439.45
+ },
+ {
+  "hoofdstuk": "VIII · The goat path",
+  "zin": "According to later writers, you tell your men: eat a good breakfast, for tonight we dine in the underworld.",
+  "start": 439.89,
+  "eind": 446.88
+ },
+ {
+  "hoofdstuk": "VIII · The goat path",
+  "zin": "This time you don't wait behind the wall.",
+  "start": 447.32,
+  "eind": 450.38
+ },
+ {
+  "hoofdstuk": "VIII · The goat path",
+  "zin": "You march out into the open, and fight.",
+  "start": 450.82,
+  "eind": 453.86
+ },
+ {
+  "hoofdstuk": "VIII · The goat path",
+  "zin": "Somewhere in that fight, you fall.",
+  "start": 454.3,
+  "eind": 456.63
+ },
+ {
+  "hoofdstuk": "VIII · The goat path",
+  "zin": "Your men fight over your body, and drag it back four times.",
+  "start": 457.07,
+  "eind": 461.55
+ },
+ {
+  "hoofdstuk": "VIII · The goat path",
+  "zin": "When their spears break, they fight with swords.",
+  "start": 461.99,
+  "eind": 465.04
+ },
+ {
+  "hoofdstuk": "VIII · The goat path",
+  "zin": "When their swords break, Herodotus says, they fight with their hands and their teeth.",
+  "start": 465.47,
+  "eind": 470.68
+ },
+ {
+  "hoofdstuk": "VIII · The goat path",
+  "zin": "And then it's over.",
+  "start": 471.12,
+  "eind": 472.73
+ },
+ {
+  "hoofdstuk": "IX · Go tell the Spartans",
+  "zin": "Xerxes takes the pass, and he burns Athens.",
+  "start": 474.75,
+  "eind": 477.8
+ },
+ {
+  "hoofdstuk": "IX · Go tell the Spartans",
+  "zin": "But he has lost about twenty thousand men, among them two of his own brothers.",
+  "start": 478.24,
+  "eind": 483.8
+ },
+ {
+  "hoofdstuk": "IX · Go tell the Spartans",
+  "zin": "And the Greeks have seen that the Persians can be stopped.",
+  "start": 484.24,
+  "eind": 488.37
+ },
+ {
+  "hoofdstuk": "IX · Go tell the Spartans",
+  "zin": "A few weeks later, the Greek fleet crushes the Persian navy at Salamis.",
+  "start": 488.8,
+  "eind": 493.65
+ },
+ {
+  "hoofdstuk": "IX · Go tell the Spartans",
+  "zin": "The next summer, your nephew leads the Greeks to victory at Plataea.",
+  "start": 494.09,
+  "eind": 498.57
+ },
+ {
+  "hoofdstuk": "IX · Go tell the Spartans",
+  "zin": "Persia never invades Greece again.",
+  "start": 499.01,
+  "eind": 500.98
+ },
+ {
+  "hoofdstuk": "IX · Go tell the Spartans",
+  "zin": "At Thermopylae, the Greeks set up a stone with a short poem.",
+  "start": 501.42,
+  "eind": 505.9
+ },
+ {
+  "hoofdstuk": "IX · Go tell the Spartans",
+  "zin": "Go tell the Spartans, stranger passing by, that here, obeying their laws, we lie.",
+  "start": 506.34,
+  "eind": 511.55
+ },
+ {
+  "hoofdstuk": "IX · Go tell the Spartans",
+  "zin": "Forty years later, your bones are brought home to Sparta.",
+  "start": 511.99,
+  "eind": 515.75
+ },
+ {
+  "hoofdstuk": "IX · Go tell the Spartans",
+  "zin": "And today, on a bronze statue of you at the pass, are two Greek words.",
+  "start": 516.19,
+  "eind": 521.75
+ },
+ {
+  "hoofdstuk": "IX · Go tell the Spartans",
+  "zin": "Molon labe: come and take them.",
+  "start": 522.19,
+  "eind": 524.52
+ },
+ {
+  "hoofdstuk": "Outro",
+  "zin": "Who should be born next? Tell us in the comments.",
+  "start": 526.54,
+  "eind": 530.3
+ },
+ {
+  "hoofdstuk": "Outro",
+  "zin": "Subscribe for more.",
+  "start": 530.74,
+  "eind": 532.0
+ }
+]

@@ -3,7 +3,7 @@
 Posten: **donderdag 2026-11-19 06:00 NL** (test van het vroege tijdslot van Born in Lore: India 10:30, Dubai 09:00, Iran 08:30, VS-oost 00:00, VS-west 21:00).
 Bestand: `caesar.mp4` (8:53). YouTube: video + `thumbnail.png`. TikTok en Instagram: dezelfde mp4, volledig.
 YouTube: `thumbnail.png` (breed). Instagram/TikTok: kies bij de omslag "Toevoegen via filmrol" en neem `omslag-reel.png` (1080x1920, alles binnen het 3:4-midden dat het profielraster toont).
-De What-if-short van Caesar als trailer: **vrijdag 2026-11-20 17:00** op YouTube Shorts, met "Related video" naar deze video.
+~~Trailer-short op vrijdag~~: geschrapt (sinds 2026-11-18 alleen lange video's).
 
 ## YouTube
 

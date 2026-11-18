@@ -7,6 +7,7 @@ import { Avondlicht, Binnenlicht, Camera, Daglicht, Duinen, Fakkel, Grond, Leger
 import { CAESAR_JONG, TOGA_TRIOMF } from './CaesarScenes';
 import { Driekleur } from './LangDecor';
 import { SALADIN, YUSUF } from './SaladinScenes';
+import { Baby, Falanx, LEONIDAS, Spartaan, Wieg } from './LeonidasKit';
 
 /**
  * Staande omslagen voor Instagram/TikTok, in de eerste frames van de 16:9-video. Die apps knippen er een 3:4-vlak uit het
@@ -131,6 +132,7 @@ export const CaesarReel = () => <Staand.Provider value><CaesarOmslag /></Staand.
 export const SaladinReel = () => <Staand.Provider value><SaladinOmslag /></Staand.Provider>;
 export const NapoleonReel = () => <Staand.Provider value><NapoleonOmslag /></Staand.Provider>;
 export const KhalidReel = () => <Staand.Provider value><KhalidOmslag /></Staand.Provider>;
+export const LeonidasReel = () => <Staand.Provider value><LeonidasOmslag /></Staand.Provider>;
 
 const Raam = ({ x = -0.35, glas = '#9FD0EE' }: { x?: number; glas?: string }) => (
   <>
@@ -276,6 +278,38 @@ export const KhalidOmslag = () => (
         <Duinen kleur="#C9925A" z={-22} />
         <Leger rijen={2} kolommen={12} position={[0, 0, -9]} kleur="#E2D6BC" schild="#8A6A44" />
         <Figuur kleding={KHALID} hoofddeksel="tulband" baard position={[0, 0, 0]} pose={{ ...ARMEN_GEKRUIST, wenk: 0.7 }} />
+        <pointLight position={[0.6, 3.0, 1.6]} intensity={4} distance={4} color="#FFE08A" />
+      </>
+    }
+  />
+);
+
+/** Leonidas: boven de boze baby in zijn wieg (Spartaans huis, raam met bergen), onder de koning met de dwarse kam bij zonsondergang. */
+export const LeonidasOmslag = () => (
+  <Stapel
+    woordBoven="AGE 0"
+    woordOnder="300"
+    boven={
+      <>
+        <Lucht boven="#F3E2C4" horizon="#F3E2C4" />
+        <Daglicht zon={[3, 6, 6]} kracht={1.6} omgeving={1.5} />
+        <Grond kleur="#B08A62" />
+        <Blok p={[0, 3, -1.2]} s={[8, 6, 0.4]} c="#E7C79C" />
+        <Raam />
+        <Wieg position={[0.2, 0, 0.0]} label={false}>
+          <Baby position={[0, 0, 0.12]} boos={1} />
+        </Wieg>
+      </>
+    }
+    onder={
+      <>
+        <Lucht boven="#C94A2E" horizon="#FFC36A" />
+        <Zon position={[-16, 4, -90]} grootte={16} kleur="#FFE9A8" />
+        <Daglicht zon={[6, 12, 8]} kracht={2.2} />
+        <Camera pos={[0, 2.05, 3.45]} kijk={[0, 2.12, 0]} fov={30} />
+        <Grond kleur="#C9A070" />
+        <Falanx rijen={2} kolommen={12} position={[0, 0, -7]} />
+        <Spartaan kleding={LEONIDAS} koning speer={false} schild={false} pose={{ wenk: 0.8 }} />
         <pointLight position={[0.6, 3.0, 1.6]} intensity={4} distance={4} color="#FFE08A" />
       </>
     }
