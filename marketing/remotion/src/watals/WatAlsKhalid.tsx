@@ -30,7 +30,7 @@ import { Onderschrift, Teller, Vignet, Watermerk, type Deel } from './Hud';
 
 /**
  * "What if you were Khalid ibn al-Walid?" — 15 scènes + afsluiter, alles in code.
- * Zelfde opbouw als WatAlsCaesar. Bronnen: zie marketing/1.shorts/2.gepost/03-khalid-ibn-al-walid/upload/post.md.
+ * Zelfde opbouw als WatAlsCaesar. Bronnen: zie marketing/9.archief/what-if-shorts/2.gepost/03-khalid-ibn-al-walid/upload/post.md.
  * Bewust: de Profeet komt nergens in beeld, geen heilige plaatsen, geen standbeeld aan het eind
  * (een moskee met zijn naam). Khalid draagt overal rode tulband, zwarte baard, maliënkolder, donkerrode mantel.
  */

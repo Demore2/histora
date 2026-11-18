@@ -1,12 +1,12 @@
 ---
 name: social-stats
-description: Read the stats of Histora's shorts (@gethistora) on YouTube, Instagram and TikTok through Claude in Chrome, and write them into marketing/3.stats/ plus a stats.md per video in marketing/1.shorts/2.gepost/ and marketing/2.youtube/2.gepost/. Use when the owner asks for stats, a stats review, "hoe doen de video's het", or invokes /social-stats. Read-only - never post, edit, promote or change settings.
+description: Read the stats of Histora's videos (long videos; the archived What-if shorts too) (@gethistora) on YouTube, Instagram and TikTok through Claude in Chrome, and write them into marketing/2.stats/ plus a stats.md per video in marketing/9.archief/what-if-shorts/2.gepost/ and marketing/1.videos/2.gepost/. Use when the owner asks for stats, a stats review, "hoe doen de video's het", or invokes /social-stats. Read-only - never post, edit, promote or change settings.
 ---
 
 # Social stats (YouTube, Instagram, TikTok)
 
 The owner is signed in to all three in his Chrome. You only read. First run: 2026-11-15
-(`marketing/3.stats/stats-2026-11-15.md` is the format to follow).
+(`marketing/2.stats/stats-2026-11-15.md` is the format to follow).
 
 ## Setup (once per session)
 
@@ -15,7 +15,7 @@ The owner is signed in to all three in his Chrome. You only read. First run: 202
 2. `tabs_context_mcp` → own tab. If the tools are missing, the owner must run `/chrome` first.
 3. **Do YouTube yourself and start two background subagents for Instagram and TikTok in
    parallel** (owner's wish: much faster). Give each the matching section below plus the list of
-   videos (folders in `marketing/1.shorts/2.gepost/` and `marketing/2.youtube/2.gepost/`), and tell them: own tab, read-only, close the tab, return one
+   videos (folders in `marketing/9.archief/what-if-shorts/2.gepost/` and `marketing/1.videos/2.gepost/`), and tell them: own tab, read-only, close the tab, return one
    markdown table.
 
 Studio pages render late: every JS extractor starts with a 4-5 s wait. Use `browser_batch`
@@ -73,7 +73,7 @@ Countries are empty below ~100 views. Channel totals: the channel dashboard `get
 
 ## Writing it down
 
-1. `marketing/3.stats/stats-<date>.md`: accounts table, one row per short
+1. `marketing/2.stats/stats-<date>.md`: accounts table, one row per short
    across the three platforms, then "Wat de data zegt" (numbered, concrete).
 2. Append a `## Meting <date>` section to `2.gepost/<nn-id>/stats.md` per video (keep the file's
    line endings).

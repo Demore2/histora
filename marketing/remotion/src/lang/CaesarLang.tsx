@@ -88,7 +88,7 @@ import {
 
 /**
  * "What if you were Julius Caesar?" — lange YouTube-video #03 (16:9, ~8:50), stem Dylan, één shot per zin,
- * hele video in de "you"-vorm. Script: marketing/2.youtube/1.te-posten/03-julius-caesar/werk/script.md.
+ * hele video in de "you"-vorm. Script: marketing/1.videos/1.te-posten/03-julius-caesar/werk/script.md.
  * Muziek: hergebruik van Napoleon (en het Egypte-stuk van Saladin), geen nieuwe credits.
  */
 

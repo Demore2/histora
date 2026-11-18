@@ -55,7 +55,7 @@ import { Onderschrift, Teller, Vignet, Watermerk, type Deel } from './Hud';
 
 /**
  * "What if you were Napoleon?" — 19 scènes + afsluiter, alles in code (Remotion + three.js).
- * Zelfde opbouw als WatAlsCaesar. Bronnen: zie marketing/1.shorts/1.te-posten/02-napoleon/upload/post.md.
+ * Zelfde opbouw als WatAlsCaesar. Bronnen: zie marketing/9.archief/what-if-shorts/1.te-posten/02-napoleon/upload/post.md.
  * Napoleon draagt in elke scène dezelfde blauwe jas, witte broek, laarzen en steek
  * (alleen bij de kroning de lauwerkrans en de kroningsmantel).
  */

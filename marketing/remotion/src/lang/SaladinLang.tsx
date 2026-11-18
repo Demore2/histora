@@ -94,7 +94,7 @@ import { Leger } from '../watals/Decor';
 
 /**
  * "Saladin" — lange YouTube-video #02 (16:9, ~10:30), stem Dylan, één shot per zin.
- * Script: marketing/2.youtube/1.te-posten/02-saladin/werk/hoofdstukken.txt.
+ * Script: marketing/1.videos/1.te-posten/02-saladin/werk/hoofdstukken.txt.
  */
 
 type Zin = { hoofdstuk: string; zin: string; start: number; eind: number };
