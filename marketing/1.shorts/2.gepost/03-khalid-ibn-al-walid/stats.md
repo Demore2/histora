@@ -14,3 +14,9 @@ Gepost 2026-11-16 (IG 11:05, TikTok 11:16, YouTube 11:24). Lengte 1:08. Gevraagd
 - YouTube stokt: 2 weergaven in het laatste uur. YT-landen: te weinig gegevens.
 - TikTok: NL 71,1%, BE 12,6%; de meesten haken af op 0:01.
 - IG-caption: `#swordofgog` is een typfout voor `#swordofgod`, en `#historyfacts` staat er dubbel in.
+
+## Meting 2026-11-18
+
+- YouTube: 1.096 weergaven, 52,7% bleef kijken, 16 likes; Saoedi-Arabië 10%, Maleisië 10%.
+- Instagram: **4.926 weergaven (+780 in een nacht)**, bereik 3.873, 28 s gem., 321 likes, 9 reacties, 48 opslagen, 65 delen, 9 follows.
+- TikTok: 687 views, 5,1 s gem., 0:03 26%, 0 volgers; NL 71,6%, BE 12,4%.

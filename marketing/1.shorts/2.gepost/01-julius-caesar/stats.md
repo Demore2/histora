@@ -25,3 +25,9 @@ Gepost 2026-11-15 ~23:45 (IG 23:51, TikTok 00:03, YouTube 00:28). Lengte 1:15-1:
 
 - YouTube-landen: VS 18%, Filipijnen 6%, Canada 6%. TikTok: NL 74,8%, VK 7,1%, BE 5,6%.
 - Groeit nog op YT en IG; TikTok verdubbelde maar blijft rond de ~700 waar alles stopt.
+
+## Meting 2026-11-18
+
+- YouTube: 1.183 weergaven, 63,0% bleef kijken, 20 likes; VS 14%, Filipijnen 12%. Uitgegroeid (+9 in een dag).
+- Instagram: 1.983 weergaven, bereik 1.578, 22 s gem., 64 likes, 16 opslagen, 8 delen, 1 follow, 98,5% niet-volgers.
+- TikTok: 717 views, 7,0 s gem., 0:03 41%, 0 volgers; NL 74,9%, VK 7,0%.
