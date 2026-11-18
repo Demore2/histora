@@ -2,7 +2,7 @@
 
 Posten: **donderdag 2026-11-19 06:00 NL** (test van het vroege tijdslot van Born in Lore: India 10:30, Dubai 09:00, Iran 08:30, VS-oost 00:00, VS-west 21:00).
 Bestand: `caesar.mp4` (8:53). YouTube: video + `thumbnail.png`. TikTok en Instagram: dezelfde mp4, volledig.
-De thumbnail staat ook in de eerste 3 frames van de video, dus op Instagram/TikTok kies je als omslag gewoon het eerste beeld.
+YouTube: `thumbnail.png` (breed). Instagram/TikTok: de eerste 3 frames van de video zijn een **staande omslag** (AGE 0 boven, DICTATOR onder) in het 3:4-midden, dus kies het eerste beeld als omslag. Wil een app een losse afbeelding: `omslag-3x4.png`.
 De What-if-short van Caesar als trailer: **vrijdag 2026-11-20 17:00** op YouTube Shorts, met "Related video" naar deze video.
 
 ## YouTube

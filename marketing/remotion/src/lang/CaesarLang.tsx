@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame } from 'remotion';
 import { Figuur } from '../watals/Figuur';
 import { FPS } from './basis';
-import { CaesarThumb } from './CaesarThumb';
+import { CaesarOmslag } from './CaesarOmslag';
 import timing from './caesar-timing.json';
 import { R_100, R_49, R_50, R_58, R_75, STAD } from './KaarttafelRome';
 import { LangAfsluiter } from './LangDecor';
@@ -336,9 +336,9 @@ export const CaesarLang = ({ muziek = true }: { muziek?: boolean }) => (
       <LangAfsluiter />
     </Sequence>
     <LangWatermerk />
-    {/* de thumbnail in de eerste 3 frames (0,1 s): zo kiest Instagram/TikTok hem vanzelf als omslag */}
+    {/* de staande omslag (gestapeld in het 3:4-midden) in de eerste 3 frames: zo kiest Instagram/TikTok hem vanzelf als omslag */}
     <Sequence from={0} durationInFrames={3}>
-      <CaesarThumb />
+      <CaesarOmslag />
     </Sequence>
     {muziek && <Muziek />}
     <Audio src={staticFile('lokaal/caesar-lang-voice.mp3')} volume={1.25} />
