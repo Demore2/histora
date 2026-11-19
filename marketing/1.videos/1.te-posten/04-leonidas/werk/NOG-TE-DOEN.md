@@ -15,6 +15,9 @@ al, maar pas na de stem kloppen de knippen exact. Higgsfield stond op 1,33 credi
 6. **Render**: `npx remotion render src/index.ts lang-leonidas-stem ../1.videos/1.te-posten/04-leonidas/werk/renders/ruw.mp4 --gl=angle --concurrency=5 --timeout=180000`
    (~13 min), daarna loudnorm in 2 doorgangen naar -14 LUFS → `upload/leonidas.mp4`.
 7. **Inplannen** voor do 26 nov 06:00 NL.
+8. **Vertaalde titel + beschrijving** (ar, fa, hi, ur, ms, tr): staan klaar in `marketing/1.videos/kanaal/vertalingen.py`.
+   Vul daar `TIJDEN["leonidas"]` (10 tijden, gelijk aan CHAPTERS_HIER) en `VIDEO_ID["leonidas"]` in, draai het script,
+   en zet ze via YouTube Studio → Talen erop (README stap 7b).
 
 Muziek: hergebruikte Caesar-stukken, per hoofdstuk gekozen (`STUK` in `LeonidasLang.tsx`: VII = de Gallische veldslag,
 VIII = de Iden van maart). Niet beluisterd door Claude; de eigenaar beslist op het gehoor.

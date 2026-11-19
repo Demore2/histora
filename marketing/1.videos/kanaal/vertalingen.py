@@ -8,13 +8,17 @@ HASHTAGS = {
     "caesar": "#juliuscaesar #history #ancientrome #rome #cleopatra #romanempire",
     "saladin": "#saladin #history #crusades #jerusalem #richardthelionheart #islamichistory",
     "napoleon": "#napoleon #history #napoleonbonaparte #napoleonhistory #frenchrevolution #waterloo #historyexplained",
+    "leonidas": "#leonidas #sparta #thermopylae #300 #history #ancientgreece",
 }
+# Leonidas: tijden pas na de stemopname (25 nov) invullen uit leonidas-timing.json; tot dan wordt hij overgeslagen.
 TIJDEN = {
     "caesar": ["0:00", "0:17", "0:59", "1:48", "2:35", "3:35", "4:45", "5:46", "6:42", "7:35"],
     "saladin": ["0:00", "0:21", "1:36", "2:58", "3:53", "5:20", "6:45", "8:03", "9:06"],
     "napoleon": ["0:00", "0:15", "0:48", "1:24", "2:03", "2:36", "3:11", "3:45", "4:25"],
+    "leonidas": None,  # 10 tijden: 0:00 + I-IX
 }
-VIDEO_ID = {"caesar": "dVwHUOQrxSg", "saladin": "NW6It7-_wu0", "napoleon": "DbLH1zzDYJE"}
+VIDEO_ID = {"caesar": "dVwHUOQrxSg", "saladin": "NW6It7-_wu0", "napoleon": "DbLH1zzDYJE", "leonidas": None}
+MET_ROMEINS = {"caesar", "leonidas"}
 ROMEINS = ["", "I · ", "II · ", "III · ", "IV · ", "V · ", "VI · ", "VII · ", "VIII · ", "IX · "]
 
 # per taal: (titel, haak, hoofdstukken, bronnen/kaarten, vraag, "video in het Engels")
@@ -115,16 +119,51 @@ V = {
    "Haritalar bugünkü sınırları gösterir ve yaklaşıktır.",
    "Sırada kim olsun? Yorumlarda yaz.", "Video İngilizcedir."),
  },
+ "leonidas": {
+  "ar": ("ماذا لو كنتَ ليونيداس؟",
+   "تولد في إسبرطة، ابنًا ثالثًا لا يتوقع أحد أن يحكم. في السابعة يأخذونك من أمك ويجوّعونك عمدًا. وبالصدفة تصبح ملكًا. ثم يزحف أكبر جيش عرفه العالم نحو اليونان، فتخرج لملاقاته مع ثلاثمئة رجل. القصة الحقيقية لليونيداس وتيرموبيلاي، تُروى كأنها قصتك، بما في ذلك الجزء الذي تتجاهله الأفلام.",
+   ["ماذا لو كنتَ ليونيداس؟", "وُلدتَ في إسبرطة", "الأغوجي", "ملك بالصدفة", "التراب والماء", "العرّافة", "البوابات الحارّة", "القتال في الظل", "طريق الماعز", "أخبِر الإسبرطيين"],
+   "الخرائط تُظهر الحدود الحديثة وهي تقريبية. المصادر الرئيسية: هيرودوت (التواريخ، الكتب 5-7) وبلوتارخ (حياة ليكورغوس؛ أقوال الإسبرطيين؛ أقوال النساء الإسبرطيات). عبارتا «تعالَ وخذها» و«الليلة نتعشى في العالم السفلي» جاءتا من كتّاب لاحقين، لا من هيرودوت.",
+   "مَن يجب أن يولد في المرة القادمة؟ أخبرنا في التعليقات.", "الفيديو باللغة الإنجليزية."),
+  "fa": ("اگر تو لئونیداس بودی چه می‌شد؟",
+   "در اسپارت به دنیا می‌آیی، پسر سوم، کسی که هیچ‌کس انتظار ندارد پادشاه شود. در هفت‌سالگی تو را از مادرت جدا می‌کنند و عمداً گرسنه نگهت می‌دارند. از روی تصادف پادشاه می‌شوی. سپس بزرگ‌ترین سپاهی که جهان تا آن روز دیده به سوی یونان می‌آید و تو با سیصد مرد به مقابله‌اش می‌روی. داستان واقعی لئونیداس و ترموپیل، طوری روایت شده که انگار داستان خود توست، همراه با بخشی که فیلم‌ها نمی‌گویند.",
+   ["اگر تو لئونیداس بودی چه می‌شد؟", "تولد در اسپارت", "آگوگه", "پادشاه از روی تصادف", "خاک و آب", "پیشگو", "دروازه‌های گرم", "جنگ در سایه", "راه بزها", "به اسپارتی‌ها بگو"],
+   "نقشه‌ها مرزهای امروزی را نشان می‌دهند و تقریبی هستند. منابع اصلی: هرودوت (تواریخ، کتاب‌های ۵ تا ۷) و پلوتارک (زندگی لیکورگوس؛ گفته‌های اسپارتیان؛ گفته‌های زنان اسپارتی). «بیا و بگیرش» و «امشب در جهان زیرین شام می‌خوریم» از نویسندگان بعدی است، نه از هرودوت.",
+   "نفر بعدی چه کسی باشد؟ در نظرات بگو.", "ویدیو به زبان انگلیسی است."),
+  "hi": ("अगर आप लियोनिडास होते तो?",
+   "आप स्पार्टा में पैदा होते हैं, तीसरे बेटे के रूप में, जिससे कोई राजा बनने की उम्मीद नहीं करता। सात साल की उम्र में आपको माँ से अलग कर दिया जाता है और जानबूझकर भूखा रखा जाता है। संयोग से आप राजा बन जाते हैं। फिर दुनिया की अब तक की सबसे बड़ी सेना ग्रीस पर चढ़ाई करती है, और आप तीन सौ आदमियों के साथ उसका सामना करने निकलते हैं। लियोनिडास और थर्मोपाइली की असली कहानी, ऐसे सुनाई गई जैसे वह आपकी अपनी हो, उस हिस्से के साथ जिसे फ़िल्में छोड़ देती हैं।",
+   ["अगर आप लियोनिडास होते तो?", "स्पार्टा में जन्म", "अगोगे", "संयोग से राजा", "मिट्टी और पानी", "भविष्यवक्ता", "गर्म द्वार", "छाँव में लड़ाई", "बकरियों का रास्ता", "स्पार्टा वालों से कहना"],
+   "नक्शे आज की सीमाएँ दिखाते हैं और अनुमानित हैं। मुख्य स्रोत: हेरोडोटस (इतिहास, किताबें 5-7) और प्लूटार्क (लाइकर्गस का जीवन; स्पार्टावासियों की कहावतें; स्पार्टा की महिलाओं की कहावतें)। \"मोलोन लाबे\" और \"आज रात हम पाताल में खाना खाएँगे\" बाद के लेखकों से आए हैं, हेरोडोटस से नहीं।",
+   "अगला कौन पैदा हो? कमेंट में बताइए।", "वीडियो अंग्रेज़ी में है।"),
+  "ur": ("اگر آپ لیونیڈاس ہوتے تو کیا ہوتا؟",
+   "آپ اسپارٹا میں پیدا ہوتے ہیں، تیسرے بیٹے کے طور پر، جس سے کوئی بادشاہ بننے کی توقع نہیں کرتا۔ سات سال کی عمر میں آپ کو ماں سے الگ کر دیا جاتا ہے اور جان بوجھ کر بھوکا رکھا جاتا ہے۔ اتفاق سے آپ بادشاہ بن جاتے ہیں۔ پھر دنیا کی اب تک کی سب سے بڑی فوج یونان پر چڑھائی کرتی ہے، اور آپ تین سو آدمیوں کے ساتھ اس کا سامنا کرنے نکلتے ہیں۔ لیونیڈاس اور تھرموپلی کی اصل کہانی، ایسے سنائی گئی جیسے یہ آپ کی اپنی ہو، اس حصے سمیت جو فلمیں چھوڑ دیتی ہیں۔",
+   ["اگر آپ لیونیڈاس ہوتے تو؟", "اسپارٹا میں پیدائش", "اگوگے", "اتفاق سے بادشاہ", "مٹی اور پانی", "کاہنہ", "گرم دروازے", "سائے میں لڑائی", "بکریوں کا راستہ", "اسپارٹا والوں سے کہنا"],
+   "نقشے آج کی سرحدیں دکھاتے ہیں اور تخمینی ہیں۔ اہم ماخذ: ہیروڈوٹس (تواریخ، کتب 5 تا 7) اور پلوٹارک (لائیکرگس کی زندگی؛ اسپارٹنوں کے اقوال؛ اسپارٹن عورتوں کے اقوال)۔ \"مولون لابے\" اور \"آج رات ہم پاتال میں کھانا کھائیں گے\" بعد کے مصنفین سے ہیں، ہیروڈوٹس سے نہیں۔",
+   "اگلا کون پیدا ہو؟ کمنٹس میں بتائیں۔", "ویڈیو انگریزی میں ہے۔"),
+  "ms": ("Bagaimana Jika Anda Dilahirkan Sebagai Leonidas?",
+   "Anda dilahirkan di Sparta, anak ketiga yang tiada siapa sangka akan memerintah. Pada usia tujuh tahun anda diambil daripada ibu anda dan sengaja dibiarkan lapar. Secara kebetulan anda menjadi raja. Kemudian tentera terbesar yang pernah dilihat dunia mara ke Greece, dan anda pergi menghadapinya dengan tiga ratus orang. Kisah sebenar Leonidas dan Thermopylae, diceritakan seolah-olah ia kisah anda, termasuk bahagian yang tidak diceritakan oleh filem.",
+   ["Bagaimana jika anda Leonidas?", "Lahir di Sparta", "Agoge", "Raja secara kebetulan", "Tanah dan air", "Orakel", "Pintu panas", "Berperang di bawah teduh", "Laluan kambing", "Beritahu orang Sparta"],
+   "Peta menunjukkan sempadan moden dan hanya anggaran. Sumber utama: Herodotus (Histories, buku 5-7) dan Plutarch (Kehidupan Lycurgus; Kata-kata Orang Sparta; Kata-kata Wanita Sparta). \"Molon labe\" dan \"malam ini kita makan di alam bawah\" datang daripada penulis kemudian, bukan daripada Herodotus.",
+   "Siapa patut dilahirkan seterusnya? Beritahu kami di ruangan komen.", "Video dalam bahasa Inggeris."),
+  "tr": ("Leonidas Olarak Doğsaydın Ne Olurdu?",
+   "Sparta'da doğuyorsun; kimsenin kral olmasını beklemediği üçüncü oğul. Yedi yaşında annenden alınıyor ve bilerek aç bırakılıyorsun. Bir tesadüf sonucu kral oluyorsun. Sonra dünyanın o güne kadar gördüğü en büyük ordu Yunanistan'a yürüyor, sen de onu üç yüz adamla karşılamaya gidiyorsun. Leonidas'ın ve Termopylai'nin gerçek hikâyesi, sanki senin hikâyenmiş gibi; filmlerin atladığı kısım da dahil.",
+   ["Leonidas olsaydın?", "Sparta'da doğmak", "Agoge", "Tesadüfen kral", "Toprak ve su", "Kâhin", "Sıcak kapılar", "Gölgede savaş", "Keçi yolu", "Spartalılara söyle"],
+   "Haritalar bugünkü sınırları gösterir ve yaklaşıktır. Başlıca kaynaklar: Herodot (Tarih, 5-7. kitaplar) ve Plutarkhos (Lykurgos'un Hayatı; Spartalıların Sözleri; Spartalı Kadınların Sözleri). \"Molon labe\" ve \"bu gece yeraltında yemek yiyeceğiz\" sonraki yazarlardan gelir, Herodot'tan değil.",
+   "Sırada kim doğsun? Yorumlarda yaz.", "Video İngilizcedir."),
+ },
 }
 
 uit = {}
 for video, talen in V.items():
+    if TIJDEN[video] is None:
+        print(f"overgeslagen: {video} (hoofdstuktijden nog niet ingevuld)")
+        continue
     uit[video] = {"id": VIDEO_ID[video], "talen": {}}
     for taal, (titel, haak, hfst, bron, vraag, engels) in talen.items():
         tijden = TIJDEN[video]
         assert len(hfst) == len(tijden), (video, taal)
         assert len(titel) <= 100, (video, taal)
-        pre = ROMEINS if video == "caesar" else [""] * len(tijden)
+        pre = ROMEINS if video in MET_ROMEINS else [""] * len(tijden)
         regels = "\n".join(f"{t} {pre[i]}{h}" for i, (t, h) in enumerate(zip(tijden, hfst)))
         if video == "napoleon":
             beschr = f"{haak}\n\n{regels}\n\n{vraag}\n\n{bron}\n\n{engels}\n\n{HASHTAGS[video]}"
