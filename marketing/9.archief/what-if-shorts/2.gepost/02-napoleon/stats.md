@@ -18,3 +18,8 @@ Gepost 2026-11-16 ~20:00 (IG 20:02, TikTok 20:00). Niet als short op YouTube; da
 - YouTube (short sinds 17 nov): 1.565 weergaven, **63,4% bleef kijken (record)**, 20 likes.
 - Instagram: 1.177 weergaven (+188), bereik 1.016, 18 s gem., 24 likes, 4 opslagen, 3 delen, 0 follows; 19% van de interacties van volgers.
 - TikTok (5:15-versie): 691 views, 9,5 s gem., 0:03 32%, 0 volgers; NL 29,0%, VK 20,2%.
+
+## Meting 2026-11-19
+
+- Instagram: 1.201 views (+24), 18 s gem., 3 delen, 0 follows.
+- YouTube: niet meer op het kanaal. TikTok: zie lang Napoleon (5:15-versie).

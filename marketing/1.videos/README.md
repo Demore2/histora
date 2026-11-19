@@ -40,6 +40,9 @@ Eerste: `2.gepost/01-napoleon/` (5:20, 2026-11-16). Tweede: `1.te-posten/02-sala
    één shot per zin (`SHOTS` met `zin` + optioneel `na`). Check: render `--scale=0.5`, één frame per shot.
 6. **Geluid**: per shot sfeer + accenten, whoosh op elke knip; daarna loudnorm 2 doorgangen naar −14 LUFS.
 7. **Thumbnail** `lang-<id>-thumb` (1920×1080) en `post.md` (titel, beschrijving met hoofdstukken).
+7b. **Vertaalde titel + beschrijving** (YouTube Studio → Talen): Arabisch, Perzisch, Hindi, Urdu, Maleis, Turks,
+   gekozen op onze kijkers. Teksten in `kanaal/vertalingen.py` (nieuwe video erbij, `python -X utf8 vertalingen.py`).
+   Gedaan voor Napoleon, Saladin en Caesar op 2026-11-19. Automatisch dubben bestaat nog niet voor dit kanaal.
 8. **Renderen altijd met `--gl=angle`** (videokaart): zonder schiet een video van 10 minuten in 40 minuten nauwelijks op
    (SwiftShader op de processor), met angle duurt het ~13 minuten. Testframes per shot: `node scripts/stills.mjs`.
 

@@ -20,3 +20,8 @@ Gepost 2026-11-16 (IG 11:05, TikTok 11:16, YouTube 11:24). Lengte 1:08. Gevraagd
 - YouTube: 1.096 weergaven, 52,7% bleef kijken, 16 likes; Saoedi-Arabië 10%, Maleisië 10%.
 - Instagram: **4.926 weergaven (+780 in een nacht)**, bereik 3.873, 28 s gem., 321 likes, 9 reacties, 48 opslagen, 65 delen, 9 follows.
 - TikTok: 687 views, 5,1 s gem., 0:03 26%, 0 volgers; NL 71,6%, BE 12,4%.
+
+## Meting 2026-11-19
+
+- Instagram: 5.029 views (+103), 27 s gem., 323 likes, 49 opslagen, 67 delen, 9 follows.
+- YouTube en TikTok: niet meer op het account.

@@ -31,3 +31,7 @@ Gepost 2026-11-15 ~23:45 (IG 23:51, TikTok 00:03, YouTube 00:28). Lengte 1:15-1:
 - YouTube: 1.183 weergaven, 63,0% bleef kijken, 20 likes; VS 14%, Filipijnen 12%. Uitgegroeid (+9 in een dag).
 - Instagram: 1.983 weergaven, bereik 1.578, 22 s gem., 64 likes, 16 opslagen, 8 delen, 1 follow, 98,5% niet-volgers.
 - TikTok: 717 views, 7,0 s gem., 0:03 41%, 0 volgers; NL 74,9%, VK 7,0%.
+
+## Meting 2026-11-19
+
+- Niet meer te vinden op YouTube, Instagram en TikTok (laatste meting 18 nov: YT 1.183, IG 1.983, TT 717).
