@@ -9,6 +9,7 @@ import { AURELIA, CAESAR_JONG, TOGA_TRIOMF } from './CaesarScenes';
 import { Driekleur } from './LangDecor';
 import { SALADIN, YUSUF } from './SaladinScenes';
 import { Baby, Falanx, LEONIDAS, Spartaan, Wieg } from './LeonidasKit';
+import { Baibars, Eskadron, LeeuwVaandel, NekBordje } from './BaibarsKit';
 
 /**
  * Thumbnail Caesar in het vaste formaat (les van de concurrent): links de boze baby ("AGE 0"), rechts het hoogtepunt
@@ -210,6 +211,40 @@ export const LeonidasThumb = () => (
         <Grond kleur="#C9A070" />
         <Falanx rijen={2} kolommen={12} position={[0, 0, -7]} />
         <Spartaan kleding={LEONIDAS} koning speer={false} schild={false} rotation={[0, -0.12, 0]} pose={{ wenk: 0.8 }} />
+        <pointLight position={[0.6, 3.0, 1.6]} intensity={4} distance={4} color="#FFE08A" />
+      </>
+    }
+  />
+);
+
+/** Baibars (YouTube): links de boze slavenjongen met het bordje "damaged goods" (wit vlekje in zijn oog), rechts de sultan
+ * met het leeuwenvaandel voor zijn Mamelukken bij zonsondergang. */
+export const BaibarsThumb = () => (
+  <Breed
+    woordLinks="AGE 14"
+    woordRechts="SULTAN"
+    boos={[790, 140]}
+    links={
+      <>
+        <Lucht boven="#F3E2C4" horizon="#F3E2C4" />
+        <Daglicht zon={[3, 6, 6]} kracht={1.6} omgeving={1.5} />
+        <Grond kleur="#CDB48A" />
+        <Blok p={[0, 3, -1.2]} s={[8, 6, 0.4]} c="#E2D2AE" />
+        <Blok p={[-0.55, 1.45, -0.98]} s={[0.6, 0.8, 0.05]} c="#5A3B24" />
+        <Blok p={[-0.55, 1.95, -0.7]} s={[0.9, 0.04, 0.55]} r={[0.3, 0, 0]} c="#3E6B8A" />
+        <Baibars leeftijd="kind" scale={0.45} position={[0.2, 0, 0.2]} rotation={[0, 0.12, 0]} pose={{ wenk: 1, mond: 'open' }} extra={<NekBordje tekst="DAMAGED|GOODS" y={1.18} />} />
+      </>
+    }
+    rechts={
+      <>
+        <Lucht boven="#C94A2E" horizon="#FFC36A" />
+        <Zon position={[-12, 6, -90]} grootte={16} kleur="#FFE9A8" />
+        <Daglicht zon={[6, 12, 8]} kracht={2.2} />
+        <Camera pos={[-0.15, 2.2, 3.0]} kijk={[-0.15, 2.1, 0]} fov={36} />
+        <Grond kleur="#C9A070" />
+        <Eskadron rijen={2} kolommen={10} position={[0, 0, -8]} />
+        <LeeuwVaandel position={[-1.9, 0, -4.6]} t={0.4} h={4.6} />
+        <Baibars leeftijd="sultan" rotation={[0, -0.12, 0]} pose={{ wenk: 0.8 }} />
         <pointLight position={[0.6, 3.0, 1.6]} intensity={4} distance={4} color="#FFE08A" />
       </>
     }

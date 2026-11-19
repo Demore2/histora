@@ -8,6 +8,7 @@ import { CAESAR_JONG, TOGA_TRIOMF } from './CaesarScenes';
 import { Driekleur } from './LangDecor';
 import { SALADIN, YUSUF } from './SaladinScenes';
 import { Baby, Falanx, LEONIDAS, Spartaan, Wieg } from './LeonidasKit';
+import { Baibars, Eskadron, LeeuwVaandel, NekBordje } from './BaibarsKit';
 
 /**
  * Staande omslagen voor Instagram/TikTok, in de eerste frames van de 16:9-video. Die apps knippen er een 3:4-vlak uit het
@@ -133,6 +134,7 @@ export const SaladinReel = () => <Staand.Provider value><SaladinOmslag /></Staan
 export const NapoleonReel = () => <Staand.Provider value><NapoleonOmslag /></Staand.Provider>;
 export const KhalidReel = () => <Staand.Provider value><KhalidOmslag /></Staand.Provider>;
 export const LeonidasReel = () => <Staand.Provider value><LeonidasOmslag /></Staand.Provider>;
+export const BaibarsReel = () => <Staand.Provider value><BaibarsOmslag /></Staand.Provider>;
 
 const Raam = ({ x = -0.35, glas = '#9FD0EE' }: { x?: number; glas?: string }) => (
   <>
@@ -310,6 +312,38 @@ export const LeonidasOmslag = () => (
         <Grond kleur="#C9A070" />
         <Falanx rijen={2} kolommen={12} position={[0, 0, -7]} />
         <Spartaan kleding={LEONIDAS} koning speer={false} schild={false} pose={{ wenk: 0.8 }} />
+        <pointLight position={[0.6, 3.0, 1.6]} intensity={4} distance={4} color="#FFE08A" />
+      </>
+    }
+  />
+);
+
+/** Baibars: boven de boze slavenjongen (AGE 14), onder de sultan met het leeuwenvaandel bij zonsondergang. */
+export const BaibarsOmslag = () => (
+  <Stapel
+    woordBoven="AGE 14"
+    woordOnder="SULTAN"
+    boven={
+      <>
+        <Lucht boven="#F3E2C4" horizon="#F3E2C4" />
+        <Daglicht zon={[3, 6, 6]} kracht={1.6} omgeving={1.5} />
+        <Grond kleur="#CDB48A" />
+        <Blok p={[0, 3, -1.2]} s={[8, 6, 0.4]} c="#E2D2AE" />
+        <Blok p={[-0.55, 1.45, -0.98]} s={[0.6, 0.8, 0.05]} c="#5A3B24" />
+        <Blok p={[-0.55, 1.95, -0.7]} s={[0.9, 0.04, 0.55]} r={[0.3, 0, 0]} c="#3E6B8A" />
+        <Baibars leeftijd="kind" scale={0.45} position={[0.2, 0, 0.2]} rotation={[0, 0.12, 0]} pose={{ wenk: 1, mond: 'open' }} extra={<NekBordje tekst="DAMAGED|GOODS" y={1.18} />} />
+      </>
+    }
+    onder={
+      <>
+        <Lucht boven="#C94A2E" horizon="#FFC36A" />
+        <Zon position={[-12, 6, -90]} grootte={16} kleur="#FFE9A8" />
+        <Daglicht zon={[6, 12, 8]} kracht={2.2} />
+        <Camera pos={[0, 2.05, 3.45]} kijk={[0, 2.12, 0]} fov={30} />
+        <Grond kleur="#C9A070" />
+        <Eskadron rijen={2} kolommen={10} position={[0, 0, -8]} />
+        <LeeuwVaandel position={[-1.9, 0, -4.6]} t={0.4} h={4.6} />
+        <Baibars leeftijd="sultan" rotation={[0, -0.12, 0]} pose={{ wenk: 0.8 }} />
         <pointLight position={[0.6, 3.0, 1.6]} intensity={4} distance={4} color="#FFE08A" />
       </>
     }

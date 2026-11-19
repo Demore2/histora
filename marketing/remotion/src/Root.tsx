@@ -14,9 +14,11 @@ import { SALADIN_LANG_DUUR, SaladinLang } from './lang/SaladinLang';
 import { SaladinThumb } from './lang/SaladinThumb';
 import { CAESAR_LANG_DUUR, CaesarLang } from './lang/CaesarLang';
 import { LEONIDAS_LANG_DUUR, LeonidasLang } from './lang/LeonidasLang';
-import { CaesarThumb, LeonidasThumb, NapoleonThumbBreed, SaladinThumbBreed } from './lang/CaesarThumb';
-import { CaesarOmslag, CaesarOmslagSmal, CaesarReel, KhalidOmslag, KhalidReel, LeonidasOmslag, LeonidasReel, NapoleonReel, SaladinReel, NapoleonOmslag, NapoleonOmslagSmal, SaladinOmslag, SaladinOmslagSmal } from './lang/CaesarOmslag';
+import { BAIBARS_LANG_DUUR, BaibarsLang } from './lang/BaibarsLang';
+import { BaibarsThumb, CaesarThumb, LeonidasThumb, NapoleonThumbBreed, SaladinThumbBreed } from './lang/CaesarThumb';
+import { BaibarsOmslag, BaibarsReel, CaesarOmslag, CaesarOmslagSmal, CaesarReel, KhalidOmslag, KhalidReel, LeonidasOmslag, LeonidasReel, NapoleonReel, SaladinReel, NapoleonOmslag, NapoleonOmslagSmal, SaladinOmslag, SaladinOmslagSmal } from './lang/CaesarOmslag';
 import { CAESAR_TRAILER_DUUR, WatAlsCaesarTrailer } from './watals/WatAlsCaesarTrailer';
+import { CAESAR_SHORT_DUUR, WatAlsCaesarShort } from './watals/WatAlsCaesarShort';
 import { NapoleonThumbStaand } from './lang/ThumbnailStaand';
 import { KanaalBanner } from './lang/Banner';
 
@@ -55,12 +57,18 @@ export const Root = () => (
     <Still id="lang-saladin-thumb" component={SaladinThumb} width={1920} height={1080} />
     <Composition id="lang-caesar" component={CaesarLang} durationInFrames={CAESAR_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true }} />
     <Composition id="watals-caesar-trailer" component={WatAlsCaesarTrailer} durationInFrames={CAESAR_TRAILER_DUUR} fps={FPS} width={W} height={H} />
+    <Composition id="watals-caesar-short" component={WatAlsCaesarShort} durationInFrames={CAESAR_SHORT_DUUR} fps={FPS} width={W} height={H} />
     <Still id="lang-caesar-thumb" component={CaesarThumb} width={1920} height={1080} />
     <Composition id="lang-leonidas" component={LeonidasLang} durationInFrames={LEONIDAS_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true, stem: false }} />
     <Composition id="lang-leonidas-stem" component={LeonidasLang} durationInFrames={LEONIDAS_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true, stem: true }} />
     <Still id="lang-leonidas-thumb" component={LeonidasThumb} width={1920} height={1080} />
     <Still id="lang-leonidas-omslag" component={LeonidasOmslag} width={1920} height={1080} />
     <Still id="lang-leonidas-reel" component={LeonidasReel} width={1080} height={1920} />
+    <Composition id="lang-baibars" component={BaibarsLang} durationInFrames={BAIBARS_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true, stem: false }} />
+    <Still id="lang-baibars-thumb" component={BaibarsThumb} width={1920} height={1080} />
+    <Still id="lang-baibars-omslag" component={BaibarsOmslag} width={1920} height={1080} />
+    <Still id="lang-baibars-reel" component={BaibarsReel} width={1080} height={1920} />
+    <Composition id="lang-baibars-stem" component={BaibarsLang} durationInFrames={BAIBARS_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true, stem: true }} />
     <Still id="lang-saladin-thumb-breed" component={SaladinThumbBreed} width={1920} height={1080} />
     <Still id="lang-napoleon-thumb-breed" component={NapoleonThumbBreed} width={1920} height={1080} />
     <Still id="lang-caesar-omslag" component={CaesarOmslag} width={1920} height={1080} />

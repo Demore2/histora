@@ -101,6 +101,9 @@ type Props = {
   inHand?: ReactNode; // in de rechterhand (bv. zwaard, rol)
   extra?: ReactNode;
   levend?: boolean; // knipperen, ademen, hoofd een beetje bewegen (Leonidas e.v.)
+  oogKleur?: string; // gekleurde iris in plaats van zwart (Baibars: blauw)
+  oogVlek?: boolean; // wit vlekje in het oog aan de kant x < 0 (Baibars)
+  hoofdExtra?: ReactNode; // in de hoofdgroep, draait mee met het hoofd (eigen hoofddeksels); oorsprong = hals
 };
 
 const Arm = ({ x, pose, mouw, huid, o, inHand }: { x: number; pose: ArmPose; mouw: string; huid: string; o?: Overschrijf; inHand?: ReactNode }) => {
@@ -155,6 +158,9 @@ export const Figuur = ({
   inHand,
   extra,
   levend = false,
+  oogKleur,
+  oogVlek = false,
+  hoofdExtra,
 }: Props) => {
   const frame = useCurrentFrame();
   const zaad = ((position?.[0] ?? 0) * 13.7 + (position?.[2] ?? 0) * 7.3 + k.huid.charCodeAt(2) + k.tuniek.charCodeAt(3)) % 97;
@@ -212,8 +218,10 @@ export const Figuur = ({
             ) : (
               <>
                 <Blok p={[0, 0, 0]} s={[0.13, 0.15, 0.02]} c="#F4EFE6" rough={0.5} />
-                <Blok p={[x > 0 ? -0.015 : 0.015, -0.01, 0.012]} s={[0.075, 0.1, 0.01]} c="#151210" rough={0.3} />
-                <Blok p={[x > 0 ? -0.03 : 0, 0.02, 0.018]} s={[0.025, 0.025, 0.005]} c="#FFFFFF" rough={0.2} />
+                <Blok p={[x > 0 ? -0.015 : 0.015, -0.01, 0.012]} s={[0.075, 0.1, 0.01]} c={oogKleur ?? '#151210'} rough={0.3} />
+                {oogKleur && <Blok p={[x > 0 ? -0.015 : 0.015, -0.01, 0.016]} s={[0.035, 0.05, 0.006]} c="#151210" rough={0.3} />}
+                <Blok p={[x > 0 ? -0.03 : 0, 0.02, 0.02]} s={[0.025, 0.025, 0.005]} c="#FFFFFF" rough={0.2} />
+                {oogVlek && x < 0 && <Blok p={[0.035, -0.035, 0.022]} s={[0.032, 0.032, 0.006]} c="#F4F6F8" rough={0.2} />}
               </>
             )}
             <Blok
@@ -353,6 +361,7 @@ export const Figuur = ({
             <Blok p={[-0.28, 1.0, 0.18]} s={[0.035, 0.035, 0.02]} c="#B3312B" o={o} />
           </>
         )}
+        {hoofdExtra}
       </group>
       {extra}
     </group>
