@@ -1,13 +1,19 @@
 import { DepthOfField, EffectComposer } from '@react-three/postprocessing';
 import { useThree } from '@react-three/fiber';
 import { useMemo } from 'react';
+import { useVideoConfig } from 'remotion';
 import * as THREE from 'three';
 import { Blok, type Overschrijf, type V3 } from './Figuur';
 
 /* ---------------- camera, licht, lucht, scherptediepte ---------------- */
 
 /** Zet de camera elke frame op een berekende plek (Remotion rendert frame voor frame). */
-export const Camera = ({ pos, kijk, fov = 35 }: { pos: V3; kijk: V3; fov?: number }) => {
+/** Shorts die 16:9-scènes van een lange video hergebruiken: daar is de lens breder, zodat het staande beeld niet te krap wordt. */
+const BREDE_LENS: Record<string, number> = { 'watals-baibars': 1.5, 'watals-baibars-stil': 1.5 };
+
+export const Camera = ({ pos, kijk, fov: fov0 = 35 }: { pos: V3; kijk: V3; fov?: number }) => {
+  const { id } = useVideoConfig();
+  const fov = fov0 * (BREDE_LENS[id] ?? 1);
   const camera = useThree((s) => s.camera) as THREE.PerspectiveCamera;
   camera.position.set(...pos);
   camera.lookAt(...kijk);

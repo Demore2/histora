@@ -25,3 +25,12 @@ Gepost 2026-11-16 (IG 11:05, TikTok 11:16, YouTube 11:24). Lengte 1:08. Gevraagd
 
 - Instagram: 5.029 views (+103), 27 s gem., 323 likes, 49 opslagen, 67 delen, 9 follows.
 - YouTube en TikTok: niet meer op het account.
+
+
+## Meting 2026-11-20
+
+| Platform | Weergaven | Kijkgedrag | Verder |
+|---|---|---|---|
+| Instagram | 5.089 (bereik 3.987) | 27 s gem. | 328 likes, 50 opslagen, 68 delen, 9 follows, 98,8% niet-volgers |
+
+Reactie met 9 likes: "You can't show him as a cartoon character bro with actual music in the background".

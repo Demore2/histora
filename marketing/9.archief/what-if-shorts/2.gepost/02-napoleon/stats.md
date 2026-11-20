@@ -23,3 +23,10 @@ Gepost 2026-11-16 ~20:00 (IG 20:02, TikTok 20:00). Niet als short op YouTube; da
 
 - Instagram: 1.201 views (+24), 18 s gem., 3 delen, 0 follows.
 - YouTube: niet meer op het kanaal. TikTok: zie lang Napoleon (5:15-versie).
+
+
+## Meting 2026-11-20
+
+| Platform | Weergaven | Kijkgedrag | Verder |
+|---|---|---|---|
+| Instagram | 1.220 (bereik 1.041) | 18 s gem. | 24 likes, 4 opslagen, 3 delen, 0 follows |

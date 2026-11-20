@@ -5,6 +5,7 @@ import { AbsoluteFill } from 'remotion';
 import { Banier, Camera, Daglicht, Duinen, Grond, Leger, Lucht, Paard, Scherpte, Zon, Zuil, Avondlicht } from './Decor';
 import { ARMEN_GEKRUIST, CAESAR, Figuur, KHALID, NAPOLEON, omhoog, wijs, Zwaard, type V3 } from './Figuur';
 import { SALADIN } from '../lang/SaladinScenes';
+import { Baibars, LeeuwVaandel, Sabel } from '../lang/BaibarsKit';
 
 /**
  * Omslagen voor de "What if"-video's: held in close-up in zijn eigen scène, titel groot bovenaan.
@@ -114,5 +115,20 @@ export const OmslagSaladin = () => (
     <Banier position={[2.4, 0, -4.2]} kleur="#ECE6D8" />
     <Leger rijen={2} kolommen={8} position={[1, 0, -8]} kleur="#E2D6BC" schild="#C99A2E" />
     <Figuur kleding={SALADIN} hoofddeksel="tulband" baard position={[0, 0, 0]} rotation={[0, 0.3, 0]} pose={{ armR: { schouder: [-0.55, 0, -0.55], elleboog: [0, -0.2] }, wenk: 0.5 }} inHand={<Zwaard />} />
+  </Omslag>
+);
+
+export const OmslagBaibars = () => (
+  <Omslag naam="BAIBARS?" grootte={170} focus={[0, 3.2, 0]}>
+    <fog attach="fog" args={['#E8A468', 20, 120]} />
+    <Lucht boven="#4A2A4A" horizon="#F49A4A" />
+    <Zon position={[5, 4, -110]} grootte={16} kleur="#FFD08A" />
+    <Camera pos={[1.2, 1.9, 5.0]} kijk={[0, 2.35, 0]} fov={36} />
+    <Daglicht zon={[6, 8, 8]} kleur="#FFC890" kracht={2.2} />
+    <Grond kleur="#C9925A" />
+    <Duinen kleur="#B9824A" z={-22} />
+    <LeeuwVaandel position={[-2.6, 0, -3.2]} h={4.6} />
+    <Leger rijen={2} kolommen={8} position={[1, 0, -8]} kleur="#B3312B" schild="#E0A93A" />
+    <Baibars leeftijd="sultan" position={[0, 0, 0]} rotation={[0, 0.3, 0]} pose={{ armR: { schouder: [-0.55, 0, -0.55], elleboog: [0, -0.2] }, wenk: 0.6 }} inHand={<Sabel />} />
   </Omslag>
 );

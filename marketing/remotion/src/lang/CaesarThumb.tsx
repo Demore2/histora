@@ -8,7 +8,7 @@ import { SERIF } from './LangHud';
 import { AURELIA, CAESAR_JONG, TOGA_TRIOMF } from './CaesarScenes';
 import { Driekleur } from './LangDecor';
 import { SALADIN, YUSUF } from './SaladinScenes';
-import { Baby, Falanx, LEONIDAS, Spartaan, Wieg } from './LeonidasKit';
+import { Baby, Falanx, LEONIDAS, PersLeger, Spartaan, Wieg } from './LeonidasKit';
 import { Baibars, Eskadron, LeeuwVaandel, NekBordje } from './BaibarsKit';
 
 /**
@@ -33,8 +33,8 @@ const Helft = ({ links, children, focus }: { links: boolean; children: ReactNode
   </div>
 );
 
-const Label = ({ tekst, x, y, kleur, rot }: { tekst: string; x: number; y: number; kleur: string; rot: number }) => (
-  <div style={{ position: 'absolute', left: x, top: y, fontFamily: FONT, fontWeight: 900, fontSize: 132, letterSpacing: 2, color: kleur, WebkitTextStroke: '10px #1A120A', paintOrder: 'stroke fill', transform: `rotate(${rot}deg)`, filter: 'drop-shadow(0 8px 0 rgba(0,0,0,0.45))' }}>
+const Label = ({ tekst, x, y, kleur, rot, maat = 132 }: { tekst: string; x: number; y: number; kleur: string; rot: number; maat?: number }) => (
+  <div style={{ position: 'absolute', left: x, top: y, fontFamily: FONT, fontWeight: 900, fontSize: maat, letterSpacing: 2, color: kleur, WebkitTextStroke: '10px #1A120A', paintOrder: 'stroke fill', transform: `rotate(${rot}deg)`, filter: 'drop-shadow(0 8px 0 rgba(0,0,0,0.45))' }}>
     {tekst}
   </div>
 );
@@ -88,7 +88,7 @@ export const CaesarThumb = () => (
 );
 
 /** Gedeelde opbouw van de brede thumbnail (sinds Caesar): close-ups, lichte achtergrond, boos-teken, geen kleine tekst. */
-const Breed = ({ links, rechts, woordLinks, woordRechts, boos = [640, 250] }: { links: ReactNode; rechts: ReactNode; woordLinks: string; woordRechts: string; boos?: [number, number] }) => (
+const Breed = ({ links, rechts, woordLinks, woordRechts, boos = [640, 250], rechtsX, rechtsMaat }: { links: ReactNode; rechts: ReactNode; woordLinks: string; woordRechts: string; boos?: [number, number]; rechtsX?: number; rechtsMaat?: number }) => (
   <AbsoluteFill style={{ background: '#1A120A' }}>
     <Helft links focus={[0.2, 0.95, 0.2]}>
       <Camera pos={[0.35, 1.0, 1.55]} kijk={[0.22, 0.86, 0.2]} fov={34} />
@@ -103,7 +103,7 @@ const Breed = ({ links, rechts, woordLinks, woordRechts, boos = [640, 250] }: { 
     </svg>
     <Boos x={boos[0]} y={boos[1]} maat={150} />
     <Label tekst={woordLinks} x={70} y={40} kleur="#FFFFFF" rot={-4} />
-    <Label tekst={woordRechts} x={woordRechts.length > 7 ? 1150 : 1220} y={40} kleur="#FF5436" rot={-3} />
+    <Label tekst={woordRechts} x={rechtsX ?? (woordRechts.length > 7 ? 1150 : 1220)} y={40} kleur="#FF5436" rot={-3} maat={rechtsMaat} />
   </AbsoluteFill>
 );
 
@@ -246,6 +246,76 @@ export const BaibarsThumb = () => (
         <LeeuwVaandel position={[-1.9, 0, -4.6]} t={0.4} h={4.6} />
         <Baibars leeftijd="sultan" rotation={[0, -0.12, 0]} pose={{ wenk: 0.8 }} />
         <pointLight position={[0.6, 3.0, 1.6]} intensity={4} distance={4} color="#FFE08A" />
+      </>
+    }
+  />
+);
+
+/** Leonidas links, gedeeld door de testvarianten B en C: de boze baby in een koude nachtkamer, één fakkel. */
+const LeonidasBabyNacht = () => (
+  <>
+    <Lucht boven="#1C2A4A" horizon="#3A5080" />
+    <Nachtlicht />
+    <hemisphereLight args={['#9DB4E0', '#3A2A20', 0.9]} />
+    <Grond kleur="#3A3A48" />
+    <Blok p={[0, 3, -1.2]} s={[8, 6, 0.4]} c="#4A4E62" />
+    <Blok p={[-0.5, 1.3, -0.95]} s={[0.9, 0.9, 0.05]} c="#5A3B24" />
+    <Blok p={[-0.5, 1.3, -0.92]} s={[0.76, 0.76, 0.05]} c="#22325A" />
+    <Fakkel position={[1.1, 0, -0.7]} />
+    <pointLight position={[1.0, 1.0, 0.5]} intensity={2.2} distance={2.0} color="#FFB060" />
+    <pointLight position={[-0.4, 1.1, 1.0]} intensity={0.9} distance={2.5} color="#9DB8FF" />
+    <Wieg position={[0.22, 0, 0.0]} label={false}>
+      <Baby position={[0, 0, 0.12]} boos={1} rotation={[0, 0.12, 0]} />
+    </Wieg>
+  </>
+);
+
+/** Testvariant B (YouTube "Testen en vergelijken"): zelfde woorden, maar koud tegen warm. Links de nacht, rechts een
+ * diepe zonsondergang in rood en goud. */
+export const LeonidasThumbB = () => (
+  <Breed
+    woordLinks="AGE 0"
+    woordRechts="300"
+    boos={[790, 140]}
+    links={<LeonidasBabyNacht />}
+    rechts={
+      <>
+        <Lucht boven="#5A1E2A" horizon="#FF9A3E" onder="#2A1A12" />
+        <Zon position={[-12, 5, -90]} grootte={18} kleur="#FFD27A" />
+        <Avondlicht />
+        <Daglicht zon={[4, 10, 10]} kracht={1.1} />
+        <Camera pos={[-0.15, 2.2, 3.0]} kijk={[-0.15, 2.1, 0]} fov={36} />
+        <Grond kleur="#8A5A3A" />
+        <Falanx rijen={2} kolommen={12} position={[0, 0, -7]} />
+        <Spartaan kleding={LEONIDAS} koning speer={false} schild={false} rotation={[0, -0.12, 0]} pose={{ wenk: 0.8 }} />
+        <pointLight position={[0.6, 3.0, 1.6]} intensity={5} distance={4} color="#FFD27A" />
+      </>
+    }
+  />
+);
+
+/** Testvariant C: de overmacht. Leonidas met schild en speer vooraan, achter hem de Perzische massa onder een donkere
+ * hemel; "VS 150,000" is het getal dat de video zelf noemt (moderne schatting, zin "Historians: 100-200k"). */
+export const LeonidasThumbC = () => (
+  <Breed
+    woordLinks="AGE 0"
+    woordRechts="VS 150,000"
+    rechtsX={1090}
+    rechtsMaat={112}
+    boos={[790, 140]}
+    links={<LeonidasBabyNacht />}
+    rechts={
+      <>
+        <Lucht boven="#2A1A3A" horizon="#C9603A" onder="#1A1210" />
+        <Avondlicht />
+        <Daglicht zon={[4, 10, 10]} kracht={1.0} />
+        <Camera pos={[-0.1, 3.0, 3.6]} kijk={[-0.1, 1.85, 0]} fov={40} />
+        <Grond kleur="#6A4A34" />
+        <PersLeger rijen={6} kolommen={18} afstand={0.9} position={[0, 0, -7]} />
+        <PersLeger rijen={8} kolommen={24} afstand={0.9} position={[0, 0, -12]} />
+        <PersLeger rijen={8} kolommen={34} afstand={0.9} position={[0, 0, -21]} />
+        <Spartaan kleding={LEONIDAS} koning schild="voor" rotation={[0, -0.1, 0]} pose={{ wenk: 0.9 }} />
+        <pointLight position={[0.6, 3.0, 1.8]} intensity={5} distance={4.5} color="#FFD27A" />
       </>
     }
   />

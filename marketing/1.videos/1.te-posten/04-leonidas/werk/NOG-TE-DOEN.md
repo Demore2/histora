@@ -21,3 +21,12 @@ al, maar pas na de stem kloppen de knippen exact. Higgsfield stond op 1,33 credi
 
 Muziek: hergebruikte Caesar-stukken, per hoofdstuk gekozen (`STUK` in `LeonidasLang.tsx`: VII = de Gallische veldslag,
 VIII = de Iden van maart). Niet beluisterd door Claude; de eigenaar beslist op het gehoor.
+
+## Thumbnail-test (sinds 20 nov)
+
+YouTube Studio → video → Thumbnail → **Testen en vergelijken**, met alle drie uit `upload/`:
+`thumbnail.png` (origineel), `thumbnail-b-contrast.png` (koude nacht tegen warme zonsondergang) en
+`thumbnail-c-vs150k.png` (links nacht, rechts Leonidas met schild voor de Perzische massa, "VS 150,000"). Code:
+`LeonidasThumbB`/`LeonidasThumbC` in `CaesarThumb.tsx`, Stills `lang-leonidas-thumb-b`/`-c`. Reden: de CTR van de lange
+video's op YouTube is 1,2-2,7% (stats 2026-11-20). Na ~1 week de winnaar noteren en die variant de vaste formule maken.
+De reel-omslag voor IG/TikTok blijft het origineel.

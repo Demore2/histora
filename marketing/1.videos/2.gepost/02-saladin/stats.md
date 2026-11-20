@@ -13,3 +13,12 @@ Gepost 2026-11-17 16:00 NL op YouTube + TikTok, Instagram 2026-11-18 06:00 NL.
 - YouTube: 28 views, 497 vertoningen, CTR 0,6%, 2:15 gem., 80% browse.
 - Instagram: 87 views (57 bereik), 6 s gem., 67% niet-volgers, 0 delen/follows.
 - TikTok: 654 (+2, uitgegroeid), 16,1 s, 0:03 32%, NL 43% / VK 21,5%.
+
+
+## Meting 2026-11-20
+
+| Platform | Weergaven | Kijkgedrag | Verder |
+|---|---|---|---|
+| YouTube | ~85 | 755 vertoningen, CTR 1,2%, 1:49 gem. (17%) | – |
+| Instagram | – | – | niet meer op het profiel |
+| TikTok | 654 (=) | 16,1 s gem., 0:02 46% / 0:04 25%, 0:30 7% | 35 likes, 2 delen, 3 opslagen, 0 volgers, NL 43% + VK 22% |
