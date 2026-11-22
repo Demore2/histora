@@ -20,3 +20,12 @@ Beste start van alle lange video's op IG en TikTok; YouTube nul.
 | TikTok | 215 | 27,0 s gem., 0:03 44%, 0:30 10%, 0,9% helemaal | FYP 98,7%, 9 likes, 1 opslag, 0 volgers, NL 53% + BE 16% |
 
 Op TikTok uitgegroeid rond 200; op YouTube ligt het knelpunt bij de klik.
+
+## Meting 2026-11-22
+
+| Platform | Views | Kijkgedrag | Overig |
+|---|---|---|---|
+| YouTube | 14 | 337 vertoningen, CTR 1,2%, 1:09 gem. (13%) | browse 71%, aanbevolen 14% |
+| TikTok | 215 (=) | 27,0 s gem., 0:03 44%, 0:30 10% | 9 likes, 0 volgers, NL 53% + BE 16% |
+
+YouTube blijft hangen op de klik (CTR 1,2%).

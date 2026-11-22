@@ -18,3 +18,12 @@ Gepost 2026-11-16 20:00 NL op YouTube.
 |---|---|---|---|
 | YouTube | ~68 | 631 vertoningen, CTR 2,7%, 1:03 gem. (20%) | – |
 | TikTok | 701 | 9,8 s gem., 0:03 33%, 0:30 5% | zoeken 2,4%, 23 likes, 0 volgers, NL 29% + VK 20% |
+
+## Meting 2026-11-22
+
+| Platform | Views | Kijkgedrag | Overig |
+|---|---|---|---|
+| YouTube | 76 | 729 vertoningen, CTR 2,6%, 1:06 gem. (21%) | – |
+| TikTok | 707 | 9,8 s gem., 0:03 33%, 0:30 5% | zoeken 3,5%, 23 likes, 0 volgers, NL 28% + VK 20% |
+
+Staat stil; de thumbnail klikt wel het best van de drie lange video's.

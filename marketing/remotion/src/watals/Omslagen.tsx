@@ -6,6 +6,7 @@ import { Banier, Camera, Daglicht, Duinen, Grond, Leger, Lucht, Paard, Scherpte,
 import { ARMEN_GEKRUIST, CAESAR, Figuur, KHALID, NAPOLEON, omhoog, wijs, Zwaard, type V3 } from './Figuur';
 import { SALADIN } from '../lang/SaladinScenes';
 import { Baibars, LeeuwVaandel, Sabel } from '../lang/BaibarsKit';
+import { Janitsaren, Kavuk, Koepelgebouw, MEHMED, Stadsmuur } from './MehmedKit';
 
 /**
  * Omslagen voor de "What if"-video's: held in close-up in zijn eigen scène, titel groot bovenaan.
@@ -130,5 +131,21 @@ export const OmslagBaibars = () => (
     <LeeuwVaandel position={[-2.6, 0, -3.2]} h={4.6} />
     <Leger rijen={2} kolommen={8} position={[1, 0, -8]} kleur="#B3312B" schild="#E0A93A" />
     <Baibars leeftijd="sultan" position={[0, 0, 0]} rotation={[0, 0.3, 0]} pose={{ armR: { schouder: [-0.55, 0, -0.55], elleboog: [0, -0.2] }, wenk: 0.6 }} inHand={<Sabel />} />
+  </Omslag>
+);
+
+export const OmslagMehmed = () => (
+  <Omslag naam="MEHMED?" grootte={170} focus={[0, 2.6, 0]}>
+    <fog attach="fog" args={['#E8A468', 20, 140]} />
+    <Lucht boven="#4E3A6A" horizon="#F4A35A" />
+    <Zon position={[-8, 5, -120]} grootte={16} kleur="#FFD08A" />
+    <Camera pos={[1.2, 2.1, 5.4]} kijk={[0, 2.6, 0]} fov={36} />
+    <Daglicht zon={[-6, 8, 8]} kleur="#FFC890" kracht={2.2} />
+    <Grond kleur="#B39A6A" />
+    <Stadsmuur position={[-4, 0, -30]} lengte={70} h={6} torens={8} kleur="#C9B392" />
+    <Koepelgebouw position={[-6, 0, -48]} schaal={1.1} />
+    <Banier position={[-2.4, 0, -3.2]} kleur="#9E1F25" />
+    <Janitsaren rijen={2} kolommen={8} position={[1, 0, -8]} />
+    <Figuur kleding={MEHMED} baard hoofdExtra={<Kavuk />} position={[0, 0, 0]} rotation={[0, 0.3, 0]} pose={{ armR: { schouder: [-0.55, 0, -0.55], elleboog: [0, -0.2] }, wenk: 0.6 }} inHand={<Zwaard />} />
   </Omslag>
 );

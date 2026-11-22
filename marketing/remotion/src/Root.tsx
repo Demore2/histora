@@ -6,8 +6,9 @@ import { VIDEOS } from './videos';
 import { CAESAR_DUUR, WatAlsCaesar } from './watals/WatAlsCaesar';
 import { NAPOLEON_DUUR, WatAlsNapoleon } from './watals/WatAlsNapoleon';
 import { KHALID_DUUR, WatAlsKhalid } from './watals/WatAlsKhalid';
+import { MEHMED_DUUR, WatAlsMehmed } from './watals/WatAlsMehmed';
 import { SALADIN_KORT_DUUR, WatAlsSaladin } from './watals/WatAlsSaladin';
-import { OmslagBaibars, OmslagCaesar, OmslagKhalid, OmslagNapoleon, OmslagSaladin } from './watals/Omslagen';
+import { OmslagBaibars, OmslagCaesar, OmslagKhalid, OmslagMehmed, OmslagNapoleon, OmslagSaladin } from './watals/Omslagen';
 import { BAIBARS_SHORT_DUUR, WatAlsBaibars } from './watals/WatAlsBaibars';
 import { NAPOLEON_LANG_DUUR, NapoleonLang } from './lang/NapoleonLang';
 import { NapoleonThumb } from './lang/Thumbnail';
@@ -48,6 +49,9 @@ export const Root = () => (
     <Composition id="watals-saladin" component={WatAlsSaladin} durationInFrames={SALADIN_KORT_DUUR} fps={FPS} width={W} height={H} />
     <Composition id="watals-saladin-muziek" component={WatAlsSaladin} durationInFrames={SALADIN_KORT_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true }} />
     <Still id="watals-omslag-khalid" component={OmslagKhalid} width={W} height={H} />
+    <Still id="watals-omslag-mehmed" component={OmslagMehmed} width={W} height={H} />
+    <Composition id="watals-mehmed" component={WatAlsMehmed} durationInFrames={MEHMED_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true, muziekVanaf: 14 }} />
+    <Composition id="watals-mehmed-stil" component={WatAlsMehmed} durationInFrames={MEHMED_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />
     <Still id="watals-omslag-napoleon" component={OmslagNapoleon} width={W} height={H} />
     <Still id="watals-omslag-saladin" component={OmslagSaladin} width={W} height={H} />
     <Still id="watals-omslag-baibars" component={OmslagBaibars} width={W} height={H} />

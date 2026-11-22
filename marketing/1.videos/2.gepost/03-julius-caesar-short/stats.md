@@ -9,3 +9,11 @@ Geplaatst op Instagram op do 19 nov 2026 om 16:14.
 | Instagram | 268 (bereik 229) | 17 s gem. | 8 likes, 2 reacties, 4 opslagen, 0 delen, 0 follows, 90,5% niet-volgers |
 
 Een veel tragere start dan Saladin (~3.900 na een dag) en Khalid.
+
+## Meting 2026-11-22
+
+| Platform | Views | Kijkgedrag | Overig |
+|---|---|---|---|
+| Instagram | 291 (bereik 248) | 17 s gem. | 11 likes, 2 reacties, 4 opslagen, 0 delen, 0 follows, 89,5% niet-volgers |
+
+Uitgegroeid rond 300.
