@@ -39,9 +39,11 @@ import { useSubscriptionStore } from '@/store/subscription-store';
 import { useThemaStore, type ThemaVoorkeur } from '@/store/thema-store';
 import { wisLeesvoortgang } from '@/store/voortgang-wissen';
 
-/** Het abonnementenoverzicht van Google Play, gefilterd op deze app. */
-const PLAY_ABONNEMENTEN_URL =
-  'https://play.google.com/store/account/subscriptions?package=com.chronicles.historyapp';
+/** Het abonnementenoverzicht van de winkel: Google Play (gefilterd op deze app) of de App Store. */
+const ABONNEMENTEN_URL =
+  Platform.OS === 'ios'
+    ? 'https://apps.apple.com/account/subscriptions'
+    : 'https://play.google.com/store/account/subscriptions?package=com.chronicles.historyapp';
 
 const THEMA_OPTIES: { waarde: ThemaVoorkeur; icoonNaam: IoniconNaam }[] = [
   { waarde: 'licht', icoonNaam: 'sunny-outline' },
@@ -428,10 +430,10 @@ export default function InstellingenScreen() {
             Het *upgraden* is een aparte regel eronder, en alleen voor wie gratis is — één vraag,
             één antwoord, en geen chevron op een regel waar niets te bedienen valt (huisregel van
             `SettingsItem`). Staat het Pro-aanbod uit, dan blijft alleen de plan-regel over. */}
-        {/* Op iOS bestaat Pro (nog) niet: aankopen lopen via Google Play. Een plan-regel "Free" met
-            een upgrade-knop met "Soon" prijst daar iets aan dat niet te koop is (App Review 2.1/3.1).
-            Alleen een met de hand toegekend Pro ziet de sectie daar nog, want dat is wél waar. */}
-        {Platform.OS === 'android' || isPremium ? (
+        {/* Op iOS alleen als er echt iets te koop is (App Store IAP geladen) of als je al Pro bent:
+            een plan-regel "Free" met een "Soon"-knop prijst iets aan dat niet te koop is (App Review
+            2.1/3.1). Op Android blijft de sectie altijd staan, zoals voorheen. */}
+        {Platform.OS === 'android' || isPremium || aanbodZichtbaar ? (
         <SettingsSectie titel={t((s) => s.instellingen.sectieAbonnement)}>
           <SettingsItem
             icoon="card-outline"
@@ -452,7 +454,7 @@ export default function InstellingenScreen() {
             <SettingsItem
               icoon="open-outline"
               label={t((s) => s.instellingen.abonnementBeheren)}
-              onPress={() => void Linking.openURL(PLAY_ABONNEMENTEN_URL)}
+              onPress={() => void Linking.openURL(ABONNEMENTEN_URL)}
             />
           ) : null}
           {/* Alleen zichtbaar voor wie nog gratis is — een Pro-lezer een upgradeknop voorhouden is

@@ -8,6 +8,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { AdBanner } from '@/components/ad-banner';
 import { AnimatedPressable } from '@/components/animated-pressable';
 import { KopActies } from '@/components/kop-acties';
+import { useProAanbodZichtbaar } from '@/components/pro-access-banner';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { haptics } from '@/constants/haptics';
@@ -32,12 +33,11 @@ import { useWinkelStore, type KoopUitkomst } from '@/store/winkel-store';
  * nodig en een `revenuecat-sync` die ze bijschrijft. De regel onderaan zegt dat ze eraan komen.
  */
 /**
- * Pro en Dukaten-pakketten bestaan alleen op Android (aankopen lopen via Google Play). Op iOS zou een
- * regel over Pro of "pakketten komen eraan" iets aanprijzen dat daar niet te koop is — App Review
- * wijst dat af (richtlijn 2.1/3.1). Wordt Apple IAP ooit gekoppeld, dan hoort dit aan het aanbod
- * te hangen in plaats van aan het platform.
+ * "Dukaten-pakketten komen eraan" alleen op Android: App Review wijst een aankondiging van iets dat
+ * niet te koop is af (richtlijn 2.1). De Pro-regel hangt sinds Apple IAP (1.5.1 build 5) aan het
+ * aanbod zelf (`useProAanbodZichtbaar`), op beide platforms.
  */
-const PRO_OP_DIT_PLATFORM = Platform.OS === 'android';
+const PAKKETTEN_AANKONDIGEN = Platform.OS === 'android';
 
 export default function ShopScreen() {
   const theme = useTheme();
@@ -45,6 +45,7 @@ export default function ShopScreen() {
   const saldo = useWinkelStore((s) => s.saldo);
   const bevriezers = useWinkelStore((s) => s.bevriezers);
   const instellingen = useWinkelStore((s) => s.instellingen);
+  const proTeKoop = useProAanbodZichtbaar();
   const [bezig, setBezig] = useState(false);
   const [uitkomst, setUitkomst] = useState<KoopUitkomst | null>(null);
 
@@ -154,7 +155,7 @@ export default function ShopScreen() {
               </ThemedText>
             ) : null}
 
-            {PRO_OP_DIT_PLATFORM ? (
+            {proTeKoop ? (
               <ThemedText type="caption" themeColor="textSecondary" style={styles.melding}>
                 {t((s) => s.winkel.proRegel)(instellingen.proBevriezersPerMaand)}
               </ThemedText>
@@ -177,7 +178,7 @@ export default function ShopScreen() {
             </View>
           </View>
 
-          {PRO_OP_DIT_PLATFORM ? (
+          {PAKKETTEN_AANKONDIGEN ? (
             <ThemedText type="caption" themeColor="textSecondary" style={styles.voet}>
               {t((s) => s.winkel.pakkettenBinnenkort)}
             </ThemedText>

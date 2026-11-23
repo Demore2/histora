@@ -31,7 +31,13 @@ export type Pakket = Awaited<ReturnType<Purchases['getOfferings']>>['all'][strin
 /** Het entitlement-id zoals het in het RevenueCat-dashboard heet. Zelfde waarde als in `revenuecat-sync`. */
 export const PREMIUM_ENTITLEMENT = 'premium';
 
-const SLEUTEL = process.env.EXPO_PUBLIC_REVENUECAT_ANDROID_KEY?.trim();
+// Eén publieke SDK-sleutel per winkel: `goog_…` voor Google Play, `appl_…` voor de App Store.
+// Babel inlinet alleen een letterlijke `process.env.EXPO_PUBLIC_…`, dus allebei voluit.
+const SLEUTEL = (
+  Platform.OS === 'ios'
+    ? process.env.EXPO_PUBLIC_REVENUECAT_IOS_KEY
+    : process.env.EXPO_PUBLIC_REVENUECAT_ANDROID_KEY
+)?.trim();
 
 /** `undefined` = nog niet geprobeerd, `null` = niet beschikbaar op dit platform of deze build. */
 let sdk: AankoopSdk | null | undefined;
@@ -40,9 +46,8 @@ let waarschuwingGetoond = false;
 
 function laad(): AankoopSdk | null {
   if (!SLEUTEL) return null;
-  // Alleen Android: de iOS-kant heeft een eigen sleutel (`appl_…`) en een App Store-product, en
-  // die bestaan nog niet.
-  if (Platform.OS !== 'android') return null;
+  // Android (Google Play) en iOS (App Store, sinds 1.5.1 build 5); web heeft geen winkel.
+  if (Platform.OS !== 'android' && Platform.OS !== 'ios') return null;
   if (sdk === null) return null;
 
   try {

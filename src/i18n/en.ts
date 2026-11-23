@@ -560,6 +560,16 @@ const en = {
     hersteldTekst: 'Your Pro subscription is active again on this device.',
     nietsGevondenTitel: 'Nothing to restore',
     nietsGevondenTekst: 'We found no active subscription for this Google account.',
+    proefUitlegApple: (dagen: number, prijs: string) =>
+      `Free for ${dagen} days, then ${prijs}. Cancel anytime in your Apple ID settings at least 24 hours before the trial ends and you pay nothing.`,
+    // App Store 3.1.2: betaling, automatisch verlengen en opzeggen bij de koopknop.
+    verlengUitlegApple:
+      'Payment is charged to your Apple ID when you confirm the purchase. Your subscription renews automatically unless you cancel it at least 24 hours before the end of the current period. Manage or cancel it in your App Store account settings.',
+    voorbehoudApple: 'Subscriptions are managed by the App Store. See our privacy policy for details.',
+    inBehandelingTekstApple: 'Apple is still processing your payment. Pro switches on as soon as it goes through.',
+    nietsGevondenTekstApple: 'We found no active subscription for this Apple ID.',
+    voorwaardenLink: 'Terms of Use',
+    privacyLink: 'Privacy Policy',
   },
   /**
    * De dagelijkse leeslimiet voor gratis lezers (`story-limit-modal.tsx`).

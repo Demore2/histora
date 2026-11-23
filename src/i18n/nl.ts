@@ -372,6 +372,15 @@ const nl: DeepPartial<Vertalingen> = {
     hersteldTekst: 'Je Pro-abonnement staat weer aan op dit toestel.',
     nietsGevondenTitel: 'Niets om te herstellen',
     nietsGevondenTekst: 'We vonden geen lopend abonnement voor dit Google-account.',
+    proefUitlegApple: (dagen: number, prijs: string) =>
+      `${dagen} dagen gratis, daarna ${prijs}. Zeg minstens 24 uur vóór het einde van de proefperiode op in je Apple ID-instellingen en je betaalt niets.`,
+    verlengUitlegApple:
+      'De betaling loopt via je Apple ID zodra je de aankoop bevestigt. Je abonnement verlengt automatisch, tenzij je het minstens 24 uur vóór het einde van de lopende periode opzegt. Beheren of opzeggen doe je in je App Store-accountinstellingen.',
+    voorbehoudApple: 'Abonnementen worden beheerd door de App Store. Zie ons privacybeleid voor details.',
+    inBehandelingTekstApple: 'Apple verwerkt je betaling nog. Pro gaat aan zodra die rond is.',
+    nietsGevondenTekstApple: 'We vonden geen lopend abonnement voor deze Apple ID.',
+    voorwaardenLink: 'Gebruiksvoorwaarden',
+    privacyLink: 'Privacybeleid',
   },
   limiet: {
     titel: 'Dat was vandaag',

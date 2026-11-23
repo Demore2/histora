@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Modal, Pressable, StyleSheet, View } from 'react-native';
 
 import { AnimatedPressable } from '@/components/animated-pressable';
-import { ProPaywall } from '@/components/pro-paywall';
+import { IS_APPLE, ProPaywall } from '@/components/pro-paywall';
 import { ThemedText } from '@/components/themed-text';
 import { DAGELIJKSE_VERHAAL_LIMIET } from '@/constants/monetisatie';
 import { Radii, Spacing, withAlpha } from '@/constants/theme';
@@ -36,7 +36,7 @@ export function StoryLimitModal({ visible, onClose }: StoryLimitModalProps) {
 
   const voordelen: { icoon: IoniconNaam; tekst: string }[] = [
     { icoon: 'infinite-outline', tekst: t((s) => s.limiet.voordeelOnbeperkt) },
-    { icoon: 'eye-off-outline', tekst: t((s) => s.pro.voordeelGeenAds) },
+    ...(IS_APPLE ? [] : [{ icoon: 'eye-off-outline' as IoniconNaam, tekst: t((s) => s.pro.voordeelGeenAds) }]),
     { icoon: 'people-outline', tekst: t((s) => s.limiet.voordeelAlles) },
   ];
 

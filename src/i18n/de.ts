@@ -376,6 +376,15 @@ const de: DeepPartial<Vertalingen> = {
     hersteldTekst: 'Dein Pro-Abo ist auf diesem Gerät wieder aktiv.',
     nietsGevondenTitel: 'Nichts wiederherzustellen',
     nietsGevondenTekst: 'Wir haben für dieses Google-Konto kein aktives Abo gefunden.',
+    proefUitlegApple: (dagen: number, prijs: string) =>
+      `${dagen} Tage kostenlos, danach ${prijs}. Kündige mindestens 24 Stunden vor Ende der Testphase in deinen Apple-ID-Einstellungen, dann zahlst du nichts.`,
+    verlengUitlegApple:
+      'Die Zahlung wird bei Bestätigung des Kaufs über deine Apple-ID abgerechnet. Dein Abo verlängert sich automatisch, sofern du es nicht mindestens 24 Stunden vor Ende des laufenden Zeitraums kündigst. Verwalten oder kündigen kannst du es in deinen App-Store-Accounteinstellungen.',
+    voorbehoudApple: 'Abonnements werden vom App Store verwaltet. Weitere Details findest du in unserer Datenschutzerklärung.',
+    inBehandelingTekstApple: 'Apple bearbeitet deine Zahlung noch. Pro wird aktiviert, sobald sie durch ist.',
+    nietsGevondenTekstApple: 'Wir haben für diese Apple-ID kein aktives Abo gefunden.',
+    voorwaardenLink: 'Nutzungsbedingungen',
+    privacyLink: 'Datenschutzerklärung',
   },
   limiet: {
     titel: 'Das war heute',

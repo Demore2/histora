@@ -1,12 +1,14 @@
 import { Ionicons } from '@expo/vector-icons';
 import { useEffect, useState } from 'react';
-import { ActivityIndicator, Modal, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { ActivityIndicator, Linking, Modal, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import { AnimatedPressable } from '@/components/animated-pressable';
 import { ThemedText } from '@/components/themed-text';
 import { ANALYTICS_EVENTS } from '@/constants/analytics';
 import { meld } from '@/constants/dialoog';
+import { VOORWAARDEN_URL } from '@/constants/app-info';
 import { haptics } from '@/constants/haptics';
+import { PRIVACY_BELEID_URL } from '@/constants/juridisch';
 import { Radii, Spacing, withAlpha } from '@/constants/theme';
 import type { IoniconNaam } from '@/constants/types';
 import { useTheme } from '@/hooks/use-theme';
@@ -85,6 +87,13 @@ function proefDagen(pakket: Pakket | undefined): number | null {
  * offerings pas worden opgevraagd wanneer iemand werkelijk kijkt. Zonder sleutel of op web blijft
  * de oude "binnenkort"-stand van `ProPaywall` staan — precies wat de build tot nu toe deed.
  */
+/**
+ * Op iOS loopt alles via de App Store en Apple ID, op Android via Google Play. De teksten die de
+ * winkel noemen hebben daarom een `…Apple`-variant. Er staan op iOS ook geen advertenties, dus
+ * "nooit advertenties" is daar geen voordeel van Pro en valt weg (App Review 2.3.1/3.1.2).
+ */
+export const IS_APPLE = Platform.OS === 'ios';
+
 export function ProWinkel({ bron, onGekocht }: { bron: PaywallBron; onGekocht: () => void }) {
   const theme = useTheme();
   const { t, taal } = useVertaling();
@@ -179,7 +188,7 @@ export function ProWinkel({ bron, onGekocht }: { bron: PaywallBron; onGekocht: (
     } else if (uitkomst.soort === 'in-behandeling') {
       meld(
         t((s) => s.pro.inBehandelingTitel),
-        t((s) => s.pro.inBehandelingTekst),
+        t((s) => (IS_APPLE ? s.pro.inBehandelingTekstApple : s.pro.inBehandelingTekst)),
         t((s) => s.instellingen.ok),
       );
     } else if (uitkomst.soort === 'mislukt') {
@@ -200,7 +209,7 @@ export function ProWinkel({ bron, onGekocht }: { bron: PaywallBron; onGekocht: (
     } else if (uitkomst.soort === 'niets-gevonden') {
       meld(
         t((s) => s.pro.nietsGevondenTitel),
-        t((s) => s.pro.nietsGevondenTekst),
+        t((s) => (IS_APPLE ? s.pro.nietsGevondenTekstApple : s.pro.nietsGevondenTekst)),
         t((s) => s.instellingen.ok),
       );
     } else {
@@ -265,7 +274,7 @@ export function ProWinkel({ bron, onGekocht }: { bron: PaywallBron; onGekocht: (
               {t((s) => s.pro.proefDagen)(dagen)}
             </ThemedText>
             <ThemedText type="caption" themeColor="textSecondary">
-              {t((s) => s.pro.proefUitleg)(dagen, prijsLabel(keuze))}
+              {t((s) => (IS_APPLE ? s.pro.proefUitlegApple : s.pro.proefUitleg))(dagen, prijsLabel(keuze))}
             </ThemedText>
           </View>
         </View>
@@ -288,8 +297,24 @@ export function ProWinkel({ bron, onGekocht }: { bron: PaywallBron; onGekocht: (
       </AnimatedPressable>
 
       <ThemedText type="caption" themeColor="textSecondary" style={styles.gecentreerd}>
-        {t((s) => s.pro.verlengUitleg)}
+        {t((s) => (IS_APPLE ? s.pro.verlengUitlegApple : s.pro.verlengUitleg))}
       </ThemedText>
+
+      {/* App Store 3.1.2 eist links naar de gebruiksvoorwaarden en het privacybeleid in het
+          venster dat het abonnement verkoopt; op Android kan het geen kwaad. */}
+      <View style={styles.juridischeLinks}>
+        <Pressable onPress={() => void Linking.openURL(VOORWAARDEN_URL)} accessibilityRole="link">
+          <ThemedText type="caption" themeColor="textSecondary" style={styles.onderstreept}>
+            {t((s) => s.pro.voorwaardenLink)}
+          </ThemedText>
+        </Pressable>
+        <ThemedText type="caption" themeColor="textSecondary">·</ThemedText>
+        <Pressable onPress={() => void Linking.openURL(PRIVACY_BELEID_URL)} accessibilityRole="link">
+          <ThemedText type="caption" themeColor="textSecondary" style={styles.onderstreept}>
+            {t((s) => s.pro.privacyLink)}
+          </ThemedText>
+        </Pressable>
+      </View>
 
       <Pressable onPress={herstel} disabled={bezig} accessibilityRole="button" style={styles.laterKnop}>
         <ThemedText type="link" themeColor="textSecondary">
@@ -313,7 +338,7 @@ export function ProPaywall({ visible, onClose, bron }: ProPaywallProps) {
   // zag, moet hier hetzelfde teruglezen in plaats van vijf andere beloften.
   const voordelen: { icoon: IoniconNaam; tekst: string }[] = [
     { icoon: 'infinite-outline', tekst: t((s) => s.pro.voordeelOnbeperkt) },
-    { icoon: 'eye-off-outline', tekst: t((s) => s.pro.voordeelGeenAds) },
+    ...(IS_APPLE ? [] : [{ icoon: 'eye-off-outline' as IoniconNaam, tekst: t((s) => s.pro.voordeelGeenAds) }]),
     { icoon: 'heart-outline', tekst: t((s) => s.pro.voordeelSupport) },
   ];
 
@@ -517,7 +542,7 @@ export function ProPaywall({ visible, onClose, bron }: ProPaywallProps) {
             </Pressable>
 
             <ThemedText type="caption" themeColor="textSecondary" style={styles.gecentreerd}>
-              {t((s) => s.pro.voorbehoud)}
+              {t((s) => (IS_APPLE ? s.pro.voorbehoudApple : s.pro.voorbehoud))}
             </ThemedText>
           </ScrollView>
         </View>
@@ -527,6 +552,13 @@ export function ProPaywall({ visible, onClose, bron }: ProPaywallProps) {
 }
 
 const styles = StyleSheet.create({
+  juridischeLinks: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: Spacing.two,
+  },
+  onderstreept: { textDecorationLine: 'underline' },
   overlay: {
     flex: 1,
     alignItems: 'center',

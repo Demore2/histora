@@ -375,6 +375,15 @@ const fr: DeepPartial<Vertalingen> = {
     hersteldTekst: 'Votre abonnement Pro est de nouveau actif sur cet appareil.',
     nietsGevondenTitel: 'Rien à restaurer',
     nietsGevondenTekst: 'Aucun abonnement actif n’a été trouvé pour ce compte Google.',
+    proefUitlegApple: (dagen: number, prijs: string) =>
+      `Gratuit pendant ${dagen} jour${dagen > 1 ? 's' : ''}, puis ${prijs}. Annulez dans les réglages de votre identifiant Apple au moins 24 heures avant la fin de l’essai et vous ne payez rien.`,
+    verlengUitlegApple:
+      "Le paiement est débité sur votre identifiant Apple à la confirmation de l’achat. Votre abonnement se renouvelle automatiquement, sauf si vous l’annulez au moins 24 heures avant la fin de la période en cours. Gérez-le ou annulez-le dans les réglages de votre compte App Store.",
+    voorbehoudApple: "Les abonnements sont gérés par l’App Store. Consultez notre politique de confidentialité pour plus de détails.",
+    inBehandelingTekstApple: 'Apple traite encore votre paiement. Pro s’activera dès qu’il sera validé.',
+    nietsGevondenTekstApple: 'Aucun abonnement actif n’a été trouvé pour cet identifiant Apple.',
+    voorwaardenLink: 'Conditions d’utilisation',
+    privacyLink: 'Politique de confidentialité',
   },
   limiet: {
     titel: "Voilà pour aujourd’hui",
