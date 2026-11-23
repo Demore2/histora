@@ -6,7 +6,7 @@ import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { PRO_BANNER_ENABLED } from '@/components/pro-access-banner';
-import { ProWinkel } from '@/components/pro-paywall';
+import { IS_APPLE, ProWinkel } from '@/components/pro-paywall';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { MAX_LEESBREEDTE, Radii, Spacing, withAlpha } from '@/constants/theme';
@@ -61,7 +61,8 @@ export default function IntroProScreen() {
 
   const rijen: { label: string; gratis: Cel; pro: Cel }[] = [
     { label: t((s) => s.intro.rijVerhalen), gratis: t((s) => s.intro.rijVerhalenGratis), pro: t((s) => s.intro.rijVerhalenPro) },
-    { label: t((s) => s.intro.rijAds), gratis: false, pro: true },
+    // Op iOS staan er geen advertenties, dus "geen advertenties" is daar geen voordeel van Pro.
+    ...(IS_APPLE ? [] : [{ label: t((s) => s.intro.rijAds), gratis: false as Cel, pro: true as Cel }]),
     { label: t((s) => s.intro.rijOffline), gratis: false, pro: true },
     { label: t((s) => s.intro.rijLevens), gratis: t((s) => s.intro.rijLevensGratis), pro: t((s) => s.intro.rijLevensPro) },
     { label: t((s) => s.intro.rijBevriezers), gratis: t((s) => s.intro.rijBevriezersGratis), pro: t((s) => s.intro.rijBevriezersPro) },

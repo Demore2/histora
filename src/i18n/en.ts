@@ -391,7 +391,7 @@ const en = {
     voortgangWissen: 'Reset reading progress',
     voortgangWissenTitel: 'Start over?',
     voortgangWissenTekst:
-      'This clears every chapter and story you have read and locks your characters again. Your account, streak, Dukaten, streak freezes and Pro stay. This cannot be undone.',
+      'This clears every chapter and story you have read and locks your characters again. Your account, streak, Ducats, streak freezes and Pro stay. This cannot be undone.',
     voortgangWissenBevestig: 'Reset progress',
     voortgangWissenBezig: 'Resetting…',
     voortgangGewistTitel: 'Progress reset',
@@ -1088,7 +1088,7 @@ const en = {
     rijLevensGratis: '5',
     rijLevensPro: 'Unlimited',
     rijBevriezers: 'Streak freezes',
-    rijBevriezersGratis: 'With Dukaten',
+    rijBevriezersGratis: 'With Ducats',
     rijBevriezersPro: '2 free a month',
     rijProef: 'Free trial',
     rijProefPro: '7 days',
