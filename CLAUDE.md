@@ -1299,8 +1299,16 @@ five (`delete-account`, `send-push`, `push-sweep`, `send-feedback-email`,
   in the body, and the function exchanges it at `appleid.apple.com/auth/token` and revokes it. Nothing
   is stored at login. Cancelling the Apple sheet aborts the delete; any other Apple failure, or missing
   secrets (`APPLE_TEAM_ID`, `APPLE_KEY_ID`, `APPLE_PRIVATE_KEY`), only logs and the delete goes on.
-- **Pro does not exist on iOS**: the Shop's Pro/bundle lines and the subscription section in Settings
-  are hidden there (`Platform.OS`), because App Review rejects promoting what can't be bought.
+- **Pro is sold on iOS through Apple IAP since 1.5.1 (7)** (App Review 2.1(b), 2026-11-23): products
+  `histora_pro_monthly` / `histora_pro_yearly` in group "Histora Pro", RevenueCat app "Histora iOS",
+  `EXPO_PUBLIC_REVENUECAT_IOS_KEY` (`appl_…`). The Shop's Pro line and the Settings subscription section
+  follow the offer (`useProAanbodZichtbaar`); the "Ducat bundles coming soon" line and every "No ads"
+  benefit stay Android-only (`IS_APPLE` in `pro-paywall.tsx`), because iOS has no ads. Paywall strings
+  that name the store have an `…Apple` variant, and the paywall links Terms of Use + Privacy (3.1.2).
+  China mainland is excluded from the app and both subscriptions (it demands AI-content filings).
+- **`lib/analytics.ts` must not load Firebase on iOS without the native module** — the `try/catch`
+  does not catch React Native Firebase's load error and build 1.5.1 (5) crashed on launch.
+  `app.config.js` passes `extra.iosFirebase`; smoke-test every iOS build in Appetize before submitting.
 - **The screen does not navigate.** `AuthPoort` sees the empty session and goes to `/login`, same
   as logout.
 - **`supabase/functions/` is excluded from `tsconfig.json`, `eslint.config.js` and `.easignore`** —
@@ -1406,7 +1414,7 @@ lokaal: `npx http-server docs -p 5510`.
   aan en bewust niet bewaard. Elke `beheer_*`-RPC heeft `p_platformen`; het platform van een lezer komt
   uit `platformen_van(uid)` (intro_stappen, feedback, `auth.sessions.user_agent`; geen spoor = android).
   `beheer-dashboard` krijgt `platformen` mee en filtert GA4/AdMob zelf; Play (Android), de nieuwe bron
-  **App Store** (Sales Reports, secrets `ASC_*`) en RevenueCat (alleen Android, Pro bestaat niet op iOS)
+  **App Store** (Sales Reports, secrets `ASC_*`) en RevenueCat (Android + iOS samen; RevenueCat splitst niet per winkel)
   telt het bord. Kosten hebben `platform` algemeen/android/ios. Zonder `-12.sql` valt het bord terug op
   de oude aanroepen. **App Store staat op "Fout: Invalid vendor number" tot de eerste download**: een
   account zonder verkooprapport bestaat nog niet voor Apple's rapportage (vendor 95095000 klopt).
@@ -1886,8 +1894,8 @@ Het draaiboek staat in `supabase/README-billing.md`; hier de regels die code rak
 - **`subscription-store.winkelPremiumTot` is alleen de weergave op dit toestel**: het recht zoals
   de winkel het meldt, zodat Pro direct na het betalen zichtbaar is. `isAbonnementActief` weegt
   het mee, de server leest het nooit.
-- **`lib/aankopen.ts` heeft de vorm van `lib/push.ts`**: lui `require`, alleen op Android, nooit
-  gooien. Zonder `EXPO_PUBLIC_REVENUECAT_ANDROID_KEY` (de publieke `goog_…`-sleutel) is
+- **`lib/aankopen.ts` heeft de vorm van `lib/push.ts`**: lui `require`, Android en iOS, nooit
+  gooien. Zonder `EXPO_PUBLIC_REVENUECAT_ANDROID_KEY` / `_IOS_KEY` (`goog_…` / `appl_…`) is
   `aankopen.beschikbaar` onwaar en toont de paywall de oude "binnenkort"-stand. De geheime `sk_…`
   hoort alleen in de secrets van de function.
 - **De prijzen komen van Google** (`product.priceString`), en het kortingspercentage wordt

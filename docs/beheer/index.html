@@ -2745,11 +2745,11 @@
     const eenmalig = eenmaligCent(kosten);
     const p = PERIODE[staat.periode] || PERIODE['30d'];
     const dagen = PERIODE_DAGEN[staat.periode] || 30;
-    // RevenueCat kan niet per winkel splitsen, en Pro bestaat alleen op Android. Alleen iOS = nul.
+    // RevenueCat kan niet per winkel splitsen. Sinds 2026-11-23 is Pro ook op iOS te koop (Apple IAP),
+    // dus de cijfers zijn altijd Google Play + App Store samen; met één platform aangevinkt zegt de
+    // regel dat erbij in plaats van een deel te verzinnen.
     const rcBron = extern('revenuecat');
-    const rc = rcBron && alleenIos()
-      ? { ...rcBron, mrr: 0, omzet_28d: 0, actieve_abonnementen: 0, actieve_proeven: 0, alleenIos: true }
-      : rcBron;
+    const rc = rcBron && (alleenIos() || !staat.platformen.ios) ? { ...rcBron, beideWinkels: true } : rcBron;
     const ad = extern('admob');
 
     const mrr = rc ? naarEuro(rc.mrr, rc.valuta) : null;
@@ -2760,9 +2760,7 @@
     $('#ov-geld').replaceChildren(
       rc
         ? kpi({ icoon: '📈', label: 'Abonnementen (MRR)', waarde: euroFmt.format(mrr),
-            sub: rc.alleenIos
-              ? 'Pro is nog niet te koop op iOS'
-              : `${euroFmt.format(naarEuro(rc.omzet_28d, rc.valuta))} omzet in 28 dagen · ${rc.actieve_abonnementen} actief · ${rc.actieve_proeven} proef` })
+            sub: `${euroFmt.format(naarEuro(rc.omzet_28d, rc.valuta))} omzet in 28 dagen · ${rc.actieve_abonnementen} actief · ${rc.actieve_proeven} proef${rc.beideWinkels ? ' · Android + iOS samen' : ''}` })
         : kpi({ icoon: '📈', label: 'Abonnementen (MRR)', waarde: 'Nog niet gekoppeld', sub: externReden('revenuecat'), fase: 'RevenueCat' }),
       ad
         ? kpi({ icoon: '💰', label: 'Advertenties', waarde: euroPrecies.format(ad.totaal.verdiensten),
