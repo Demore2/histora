@@ -1,3 +1,4 @@
+import Constants from 'expo-constants';
 import { Platform } from 'react-native';
 import type { Analytics } from '@react-native-firebase/analytics';
 
@@ -69,9 +70,11 @@ function laad(): Geladen | null {
   // wél praten, maar dan moet er een web-configuratie in `app.json` staan en gaat er vanuit de
   // browser-preview echt verkeer naar Google. Dat willen we niet tijdens het ontwikkelen.
   if (Platform.OS === 'web') return null;
-  // Android en iOS. Op iOS zit de native module pas in de build zodra `GoogleService-Info.plist`
-  // er is (zie app.config.js); daarvóór gooit de `require` of `getAnalytics()` hieronder, en dat
-  // vangt de `catch` op: één waarschuwing, daarna `sdk === null`.
+  // Android, en iOS alleen als de native module echt in de build zit (`extra.iosFirebase`, gezet
+  // door app.config.js zodra `GoogleService-Info.plist` er is). **Niet op de `catch` hieronder
+  // vertrouwen**: zonder native module gooit React Native Firebase bij het laden een fout die
+  // buiten deze `try` opnieuw opduikt en de app laat crashen — dat deed build 1.5.1 (5).
+  if (Platform.OS === 'ios' && Constants.expoConfig?.extra?.iosFirebase !== true) return null;
   if (Platform.OS !== 'android' && Platform.OS !== 'ios') return null;
   if (sdk === null) return null;
 

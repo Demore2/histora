@@ -120,7 +120,12 @@ function metIosFirebase(config) {
   };
 }
 
-module.exports = ({ config }) => {
+module.exports = ({ config: basis }) => {
+  // `extra.iosFirebase` vertelt `lib/analytics.ts` of de native Firebase-module in een iOS-build
+  // zit. Zonder die vlag probeerde de app hem op iOS toch te laden, en dat gooit een fout die
+  // geen `try` opvangt ("NativeRNFBTurboApp is not registered"): build 1.5.1 (5) crashte daardoor
+  // bij het opstarten.
+  const config = { ...basis, extra: { ...basis.extra, iosFirebase: FIREBASE_AAN && IOS_FIREBASE } };
   if (FIREBASE_AAN) {
     bewaakUitsluitlijst();
     bewaakIos();
