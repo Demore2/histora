@@ -50,7 +50,7 @@ import {
   wijs,
   type V3,
 } from './Figuur';
-import { Afsluiter } from './Afsluiter';
+import { Afsluiter, MAX_SHORT_FRAMES } from './Afsluiter';
 import { Onderschrift, Teller, Vignet, Watermerk, type Deel } from './Hud';
 
 /**
@@ -629,15 +629,22 @@ const S19 = () => {
 
 /* ---------- montage ---------- */
 
-const SCÈNES = [S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18, S19];
-const DUUR = [140, 115, 120, 110, 115, 130, 110, 125, 120, 115, 115, 120, 115, 120, 110, 120, 115, 120, 210];
+const ALLE_SCÈNES = [S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18, S19];
+const ALLE_DUUR = [140, 115, 120, 110, 115, 130, 110, 125, 120, 115, 115, 120, 115, 120, 110, 120, 115, 120, 185];
+// Shorts/Reels altijd onder de minuut (max MAX_SHORT_FRAMES frames = 58 s): langer en de app-muziek stopt op 1:00 of
+// YouTube blokkeert de short. Deze scènes vallen daarom weg (0-based); de volledige montage staat in ALLE_*.
+const WEG = [3, 4, 5, 6, 10];
+const BEHOUD = ALLE_SCÈNES.map((_, i) => i).filter((i) => !WEG.includes(i));
+const SCÈNES = BEHOUD.map((i) => ALLE_SCÈNES[i]);
+const DUUR = BEHOUD.map((i) => ALLE_DUUR[i]);
 const STARTS = DUUR.map((_, i) => DUUR.slice(0, i).reduce((x, y) => x + y, 0));
 export const NAPOLEON_DUUR = DUUR.reduce((a, b) => a + b, 0);
+if (NAPOLEON_DUUR > MAX_SHORT_FRAMES) throw new Error(`NAPOLEON_DUUR is ${NAPOLEON_DUUR} frames, max ${MAX_SHORT_FRAMES} (58 s)`);
 const AFSLUITER_VANAF = NAPOLEON_DUUR - 90;
 
 type Klank = { s: number; bij?: number; src: string; vol: number; lus?: boolean };
 const sfx = (n: string) => staticFile(`watals-sfx/${n}.wav`);
-const KLANKEN: Klank[] = [
+const ALLE_KLANKEN: Klank[] = [
   { s: 0, src: 'zee', vol: 0.14, lus: true },
   { s: 0, src: 'wind', vol: 0.06, lus: true },
   { s: 1, src: 'menigte', vol: 0.05, lus: true },
@@ -671,6 +678,7 @@ const KLANKEN: Klank[] = [
   { s: 17, src: 'wind', vol: 0.08, lus: true },
   { s: 18, bij: 6, src: 'glans', vol: 0.12 },
 ];
+const KLANKEN = ALLE_KLANKEN.filter((k) => BEHOUD.includes(k.s)).map((k) => ({ ...k, s: BEHOUD.indexOf(k.s) }));
 
 export const WatAlsNapoleon = ({ muziek = true, muziekVanaf = 14 }: { muziek?: boolean; muziekVanaf?: number }) => (
   <AbsoluteFill style={{ background: '#000' }}>

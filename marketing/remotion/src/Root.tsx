@@ -47,7 +47,8 @@ export const Root = () => (
     <Composition id="watals-khalid" component={WatAlsKhalid} durationInFrames={KHALID_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true, muziekVanaf: 14 }} />
     <Composition id="watals-khalid-stil" component={WatAlsKhalid} durationInFrames={KHALID_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />
     <Composition id="watals-saladin" component={WatAlsSaladin} durationInFrames={SALADIN_KORT_DUUR} fps={FPS} width={W} height={H} />
-    <Composition id="watals-saladin-muziek" component={WatAlsSaladin} durationInFrames={SALADIN_KORT_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true }} />
+    <Composition id="watals-saladin-amour" component={WatAlsSaladin} durationInFrames={SALADIN_KORT_DUUR} fps={FPS} width={W} height={H} defaultProps={{ amour: true }} />
+    <Composition id="watals-saladin-muziek"component={WatAlsSaladin} durationInFrames={SALADIN_KORT_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true }} />
     <Still id="watals-omslag-khalid" component={OmslagKhalid} width={W} height={H} />
     <Still id="watals-omslag-mehmed" component={OmslagMehmed} width={W} height={H} />
     <Composition id="watals-mehmed" component={WatAlsMehmed} durationInFrames={MEHMED_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true, muziekVanaf: 14 }} />

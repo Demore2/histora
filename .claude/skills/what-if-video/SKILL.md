@@ -1,6 +1,6 @@
 ---
 name: what-if-video
-description: Build a Histora "What if you were <person>?" short - a 70-90 s 3D video with blocky figures, made entirely in code (Remotion + three.js, no Higgsfield), modelled on the owner's Instagram references. Use when the owner asks for a new What-if video, the next person in that series, or changes to the Caesar video / the 3D template in marketing/remotion/src/watals/.
+description: Build a Histora "What if you were <person>?" short - a 3D video of at most 58 s with blocky figures, made entirely in code (Remotion + three.js, no Higgsfield), modelled on the owner's Instagram references. Use when the owner asks for a new What-if video, the next person in that series, or changes to the Caesar video / the 3D template in marketing/remotion/src/watals/.
 ---
 
 > **Retired 2026-11-18** (owner): no more shorts, only long videos (skill `youtube-long-video`). The What-if
@@ -17,8 +17,13 @@ The owner loved it. Copy its structure; don't reinvent it.
 
 ## What the format is
 
-- 9:16, 70-90 s, **no voice**. Second person ("you cross", "you weep"), one life from start to end.
-- **16-20 scenes of ~4 s**, hard cuts. Each scene = one moment, a slow camera move, and:
+- 9:16, **max 58 s (hard rule, owner 2026-11-23)**, **no voice**. Second person ("you cross", "you weep"), one life from start to end.
+- **Never longer than 58 s (1740 frames).** Music added in the YouTube/IG app stops at 1:00, and a YouTube Short over
+  1 min with a music claim is blocked worldwide. So: **12-14 scenes of ~4 s** plus the final scene (~7 s). Every
+  composition checks `MAX_SHORT_FRAMES` from `watals/Afsluiter.tsx` and throws if it is longer. Writing the script,
+  plan for the limit from the start; don't write 18 scenes and cut later (that happened to Caesar, Napoleon, Saladin
+  and Mehmed on 2026-11-23, see `WEG` in those files).
+- **~4 s per scene**, hard cuts. Each scene = one moment, a slow camera move, and:
   - **counter top-left** (`Teller`): small label ("Year", "Age", "Wounds"), big value ("75 BC",
     "31", count-ups like 0→23), orange pill with context or source ("Plutarch", "Alesia").
   - **caption** (`Onderschrift`): EB Garamond italic, word by word, the **last word in accent**.

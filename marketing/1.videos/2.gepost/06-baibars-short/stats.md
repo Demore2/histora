@@ -10,3 +10,12 @@ Geplaatst op do 20 nov 2026 om ~15:40.
 | TikTok | 638 (463 kijkers) | 5,3 s gem., 0:03 30%, 0:30 4%, 0,6% helemaal | FYP 99,7%, 6 likes, 3 opslagen, 0 volgers, NL 36% + VK 12% + BE 11% |
 
 Zwakke start: op TikTok haakt bijna iedereen af bij 0:01, op IG nauwelijks buiten de volgers getest.
+
+## Meting 2026-11-23 (ochtend)
+
+- Instagram: 362 views (+19), bereik 276, gem. 17 s, 8 likes, 3 reacties, 2 opslagen, 2 delen, 0 follows, 70,2% niet-volgers.
+- TikTok: 638 (=), gem. 5,34 s, 0,6% helemaal gekeken, FYP 99,7%, NL 36,3% + VK 12,4%, 0 volgers.
+
+## Meting 2026-11-23 (11:00+)
+
+- IG ongewijzigd (362). TikTok retentie: 0:02 40%, 0:03 30%, 0:04 23%.

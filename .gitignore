@@ -93,3 +93,8 @@ deno.lock
 
 # Wegwerpscripts
 scripts/_tmp-*.mjs
+
+# ffmpeg two-pass logs
+*.log.mbtree
+ffmpeg2pass-*.log
+p-0.log

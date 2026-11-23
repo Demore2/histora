@@ -27,3 +27,12 @@ Gepost 2026-11-16 20:00 NL op YouTube.
 | TikTok | 707 | 9,8 s gem., 0:03 33%, 0:30 5% | zoeken 3,5%, 23 likes, 0 volgers, NL 28% + VK 20% |
 
 Staat stil; de thumbnail klikt wel het best van de drie lange video's.
+
+## Meting 2026-11-23 (ochtend)
+
+- YouTube: 76 (=), gem. 1:06 (21,1%).
+- TikTok: 710 (+3), gem. 9,75 s, search 3,9%, NL 28,2% + VK 19,4%, 0 volgers.
+
+## Meting 2026-11-23 (11:00+)
+
+- YouTube 77 (+1). TikTok retentie: 0:01 78%, 0:02 48%, 0:03 33%.

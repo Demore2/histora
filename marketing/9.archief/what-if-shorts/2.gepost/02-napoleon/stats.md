@@ -30,3 +30,7 @@ Gepost 2026-11-16 ~20:00 (IG 20:02, TikTok 20:00). Niet als short op YouTube; da
 | Platform | Weergaven | Kijkgedrag | Verder |
 |---|---|---|---|
 | Instagram | 1.220 (bereik 1.041) | 18 s gem. | 24 likes, 4 opslagen, 3 delen, 0 follows |
+
+## Meting 2026-11-23 (ochtend)
+
+- Instagram: 1.257 views (+11), bereik 1.069, gem. 18 s, 0 follows.

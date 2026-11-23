@@ -51,7 +51,7 @@ import {
   type Kleding,
   type V3,
 } from './Figuur';
-import { Afsluiter } from './Afsluiter';
+import { Afsluiter, MAX_SHORT_FRAMES } from './Afsluiter';
 import { Onderschrift, Teller, Vignet, Watermerk, type Deel } from './Hud';
 
 /**
@@ -630,10 +630,17 @@ const S18 = () => {
 
 /* ---------- montage ---------- */
 
-const SCÈNES = [S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18];
-const DUUR = [140, 120, 120, 120, 120, 120, 120, 120, 110, 120, 120, 125, 115, 120, 120, 120, 125, 210];
+const ALLE_SCÈNES = [S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18];
+const ALLE_DUUR = [140, 120, 120, 120, 120, 120, 120, 120, 110, 120, 120, 125, 115, 120, 120, 120, 125, 210];
+// Shorts/Reels altijd onder de minuut (max MAX_SHORT_FRAMES frames = 58 s): langer en de app-muziek stopt op 1:00 of
+// YouTube blokkeert de short. Deze scènes vallen daarom weg (0-based); de volledige montage staat in ALLE_*.
+const WEG = [3, 5, 6, 10, 15];
+const BEHOUD = ALLE_SCÈNES.map((_, i) => i).filter((i) => !WEG.includes(i));
+const SCÈNES = BEHOUD.map((i) => ALLE_SCÈNES[i]);
+const DUUR = BEHOUD.map((i) => ALLE_DUUR[i]);
 const STARTS = DUUR.map((_, i) => DUUR.slice(0, i).reduce((x, y) => x + y, 0));
 export const CAESAR_DUUR = DUUR.reduce((a, b) => a + b, 0);
+if (CAESAR_DUUR > MAX_SHORT_FRAMES) throw new Error(`CAESAR_DUUR is ${CAESAR_DUUR} frames, max ${MAX_SHORT_FRAMES} (58 s)`);
 const AFSLUITER_VANAF = CAESAR_DUUR - 90; // laatste 3 s, over het bronzen beeld
 
 /**
@@ -643,7 +650,7 @@ const AFSLUITER_VANAF = CAESAR_DUUR - 90; // laatste 3 s, over het bronzen beeld
  */
 type Klank = { s: number; bij?: number; src: string; vol: number; lus?: boolean };
 const sfx = (n: string) => staticFile(`watals-sfx/${n}.wav`);
-const KLANKEN: Klank[] = [
+const ALLE_KLANKEN: Klank[] = [
   { s: 0, src: 'zee', vol: 0.16, lus: true },
   { s: 1, src: 'zee', vol: 0.1, lus: true },
   ...[64, 72, 80, 88].map((bij) => ({ s: 1, bij, src: 'munt', vol: 0.12 })),
@@ -669,6 +676,7 @@ const KLANKEN: Klank[] = [
   { s: 16, bij: 60, src: 'val', vol: 0.12 },
   { s: 17, bij: 6, src: 'glans', vol: 0.12 },
 ];
+const KLANKEN = ALLE_KLANKEN.filter((k) => BEHOUD.includes(k.s)).map((k) => ({ ...k, s: BEHOUD.indexOf(k.s) }));
 
 export const WatAlsCaesar = ({ muziek = true, muziekVanaf = 14 }: { muziek?: boolean; muziekVanaf?: number }) => (
   <AbsoluteFill style={{ background: '#000' }}>

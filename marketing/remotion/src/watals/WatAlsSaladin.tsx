@@ -2,7 +2,7 @@ import type React from 'react';
 import { AbsoluteFill, Audio, interpolate, Sequence, staticFile } from 'remotion';
 import { ZonderOver } from '../lang/basis';
 import { Figuur, Kroon } from './Figuur';
-import { Afsluiter } from './Afsluiter';
+import { Afsluiter, MAX_SHORT_FRAMES } from './Afsluiter';
 import { Onderschrift, Teller, Watermerk, type Deel } from './Hud';
 import {
   BOUDEWIJN,
@@ -57,8 +57,6 @@ type Scène = { C: () => React.ReactElement; duur: number; teller?: { label: str
 const SCÈNES: Scène[] = [
   { C: T5_Titel, duur: 130, teller: { label: 'Born', waarde: 'Tikrit', pil: 'c. 1137' }, tekst: [{ t: 'What if you were ' }, { t: 'Saladin', accent: true }, { t: '?' }], klank: [{ src: 'inslag', vol: 0.3 }, { src: 'wind', vol: 0.08, lus: true }] },
   { C: () => <S_Fort nacht />, duur: 125, tekst: [{ t: 'your family ' }, { t: 'flees', accent: true }, { t: ' the night you are born' }], klank: [{ src: 'wind', vol: 0.1, lus: true }] },
-  { C: () => <S_Lezen />, duur: 120, teller: { label: 'Grew up in', waarde: 'Damascus' }, tekst: [{ t: 'you would rather ' }, { t: 'read', accent: true }, { t: ' than fight' }], klank: [{ src: 'vuur', vol: 0.05, lus: true }] },
-  { C: S_Onwillig, duur: 125, teller: { label: 'Campaigns to Egypt', waarde: '3' }, tekst: [{ t: 'your uncle drags you to ' }, { t: 'Egypt', accent: true }], klank: [{ src: 'wind', vol: 0.1, lus: true }] },
   { C: () => <InHal kijk={[0, 2.0, -1.2]} van={[0.4, 2.3, 5.2]} naar={[0.2, 2.2, 4.2]}><Figuur kleding={SALADIN_HOF} hoofddeksel="tulband" baard position={[0, 0, -1.2]} pose={{ wenk: 0.6 }} /></InHal>, duur: 125, teller: { label: 'Age', waarde: '31', pil: 'vizier of Egypt' }, tekst: [{ t: 'at 31 you ' }, { t: 'rule Egypt', accent: true }], klank: [{ src: 'glans', vol: 0.14, bij: 20 }] },
   { C: () => <Portret wie={<group position={[0, 0, 0.4]} scale={0.88}><Figuur kleding={BOUDEWIJN} /><Kroon position={[0, 2.56, 0]} /></group>} />, duur: 130, teller: { label: 'Montgisard', waarde: '1177' }, tekst: [{ t: 'a 16-year-old ' }, { t: 'leper king', accent: true }, { t: ' beats you' }], klank: [{ src: 'inslag', vol: 0.14, bij: 30 }] },
   { C: S_Kameel, duur: 115, tekst: [{ t: 'you escape on a ' }, { t: 'racing camel', accent: true }], klank: [{ src: 'wind', vol: 0.14, lus: true }] },
@@ -69,15 +67,17 @@ const SCÈNES: Scène[] = [
   { C: () => <S_Poort uit />, duur: 135, teller: { label: 'Jerusalem', waarde: '1187', pil: 'no massacre' }, tekst: [{ t: 'you take ' }, { t: 'Jerusalem', accent: true }, { t: ' and let thousands go' }], klank: [{ src: 'menigte', vol: 0.08, lus: true }] },
   { C: () => <S_Koning k={RICHARD} label="" waarde="" vlag="#A8322B" />, duur: 125, teller: { label: 'Third Crusade', waarde: 'Richard', pil: 'the Lionheart' }, tekst: [{ t: 'then ' }, { t: 'Richard the Lionheart', accent: true }, { t: ' arrives' }], klank: [{ src: 'zee', vol: 0.1, lus: true }] },
   { C: TweePaarden, duur: 130, tekst: [{ t: 'his horse dies, you send him ' }, { t: 'two', accent: true }], klank: [{ src: 'wind', vol: 0.06, lus: true }, { src: 'glans', vol: 0.12, bij: 70 }] },
-  { C: () => <S_Schatkist />, duur: 220, teller: { label: '1193', waarde: 'Damascus' }, tekst: [{ t: 'and you die with ' }, { t: 'one gold coin', accent: true }], klank: [{ src: 'munt', vol: 0.28, bij: 40 }] },
+  { C: () => <S_Schatkist />, duur: 210, teller: { label: '1193', waarde: 'Damascus' }, tekst: [{ t: 'and you die with ' }, { t: 'one gold coin', accent: true }], klank: [{ src: 'munt', vol: 0.28, bij: 40 }] },
 ];
 
 const STARTS = SCÈNES.map((_, i) => SCÈNES.slice(0, i).reduce((x, s) => x + s.duur, 0));
 export const SALADIN_KORT_DUUR = SCÈNES.reduce((a, s) => a + s.duur, 0);
+// Shorts altijd onder de minuut: 'lezen' en 'de oom sleept je naar Egypte' zijn eruit (was 66,5 s).
+if (SALADIN_KORT_DUUR > MAX_SHORT_FRAMES) throw new Error(`SALADIN_KORT_DUUR is ${SALADIN_KORT_DUUR} frames, max ${MAX_SHORT_FRAMES} (58 s)`);
 const AFSLUITER_VANAF = SALADIN_KORT_DUUR - 90;
 const sfx = (n: string) => staticFile(`watals-sfx/${n}.wav`);
 
-export const WatAlsSaladin = ({ muziek = false }: { muziek?: boolean }) => (
+export const WatAlsSaladin = ({ muziek = false, amour = false }: { muziek?: boolean; amour?: boolean }) => (
   <AbsoluteFill style={{ background: '#000' }}>
     {SCÈNES.map((s, i) => (
       <Sequence key={i} from={STARTS[i]} durationInFrames={s.duur}>
@@ -103,6 +103,8 @@ export const WatAlsSaladin = ({ muziek = false }: { muziek?: boolean }) => (
       </Sequence>
     ))}
     <Watermerk />
+    {/* YouTube-short met het nummer erin gebakken (zelfde nummer en startpunt als op IG): alleen veilig onder de minuut. */}
+    {amour && <Audio src={staticFile('lokaal/amour-plastique.mp3')} startFrom={14 * 30} volume={(fr) => interpolate(fr, [0, 10, SALADIN_KORT_DUUR - 45, SALADIN_KORT_DUUR], [0, 0.9, 0.9, 0], { extrapolateRight: 'clamp' })} />}
     {muziek && <Audio src={staticFile('lokaal/saladin-muziek/h4.mp3')} volume={(fr) => interpolate(fr, [0, 15, SALADIN_KORT_DUUR - 100, SALADIN_KORT_DUUR], [0, 0.5, 0.5, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })} />}
     <Sequence from={AFSLUITER_VANAF}>
       <Afsluiter />

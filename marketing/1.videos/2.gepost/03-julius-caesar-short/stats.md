@@ -17,3 +17,7 @@ Een veel tragere start dan Saladin (~3.900 na een dag) en Khalid.
 | Instagram | 291 (bereik 248) | 17 s gem. | 11 likes, 2 reacties, 4 opslagen, 0 delen, 0 follows, 89,5% niet-volgers |
 
 Uitgegroeid rond 300.
+
+## Meting 2026-11-23 (ochtend)
+
+- Instagram: 299 views (+8), bereik 254, gem. 17 s, 11 likes, 4 opslagen, 0 delen, 0 follows, 89,2% niet-volgers.

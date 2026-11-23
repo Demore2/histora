@@ -20,3 +20,11 @@ Gepost 2026-11-17 17:00 NL op YouTube Shorts + Instagram.
 | Instagram | 8.379 (bereik 6.598) | 24 s gem. | 385 likes, 9 reacties, 63 opslagen, 44 delen, **22 follows**, 98,7% niet-volgers |
 
 Reacties: opnieuw "Baibars", "Prophet Muhammad" (13 likes, niet doen), Uyghur-figuren (Elihan Tore / Sabit Damolla).
+
+## Meting 2026-11-23 (ochtend)
+
+- Instagram: 11.089 views (+221), bereik 8.753, gem. 25 s, 509 likes, 76 opslagen, 47 delen, 26 follows, 99,0% niet-volgers.
+
+## Meting 2026-11-23 (11:00+)
+
+- Instagram: 11.117 views, 511 likes, 27 follows.

@@ -29,3 +29,12 @@ Op TikTok uitgegroeid rond 200; op YouTube ligt het knelpunt bij de klik.
 | TikTok | 215 (=) | 27,0 s gem., 0:03 44%, 0:30 10% | 9 likes, 0 volgers, NL 53% + BE 16% |
 
 YouTube blijft hangen op de klik (CTR 1,2%).
+
+## Meting 2026-11-23 (ochtend)
+
+- YouTube: 14 (=), 337 vertoningen, CTR 1,5%, gem. 1:09 (13%).
+- TikTok: 215 (=), gem. 27,0 s, NL 53,4% + BE 15,8%, 0 volgers.
+
+## Meting 2026-11-23 (11:00+)
+
+- TikTok retentie: 0:01 81%, 0:02 56%, 0:03 44%, 0:04 35%. YouTube 14 (=).

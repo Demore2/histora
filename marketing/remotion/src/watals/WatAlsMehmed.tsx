@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { Banier, Binnenlicht, Camera, Daglicht, Fakkel, Galei, Grond, Heuvels, Lucht, Nachtlicht, Avondlicht, Paard, Rook, Scherpte, Soldaat, Tent, Vuur, Zee, Zon } from './Decor';
 import { ARMEN_GEKRUIST, Blok, Figuur, omhoog, wijs, Zwaard, type V3 } from './Figuur';
-import { Afsluiter } from './Afsluiter';
+import { Afsluiter, MAX_SHORT_FRAMES } from './Afsluiter';
 import { Onderschrift, Teller, Vignet, Watermerk, type Deel } from './Hud';
 import {
   BYZANTIJN,
@@ -575,15 +575,22 @@ const S18 = () => {
 
 /* ---------- montage ---------- */
 
-const SCÈNES = [S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18];
-const DUUR = [140, 115, 120, 115, 115, 130, 125, 130, 130, 120, 130, 120, 135, 120, 125, 125, 125, 210];
+const ALLE_SCÈNES = [S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18];
+const ALLE_DUUR = [140, 115, 120, 115, 115, 130, 125, 130, 130, 120, 130, 120, 135, 120, 125, 125, 125, 210];
+// Shorts/Reels altijd onder de minuut (max MAX_SHORT_FRAMES frames = 58 s): langer en de app-muziek stopt op 1:00 of
+// YouTube blokkeert de short. Deze scènes vallen daarom weg (0-based); de volledige montage staat in ALLE_*.
+const WEG = [4, 6, 13, 14, 15];
+const BEHOUD = ALLE_SCÈNES.map((_, i) => i).filter((i) => !WEG.includes(i));
+const SCÈNES = BEHOUD.map((i) => ALLE_SCÈNES[i]);
+const DUUR = BEHOUD.map((i) => ALLE_DUUR[i]);
 const STARTS = DUUR.map((_, i) => DUUR.slice(0, i).reduce((x, y) => x + y, 0));
 export const MEHMED_DUUR = DUUR.reduce((a, b) => a + b, 0);
+if (MEHMED_DUUR > MAX_SHORT_FRAMES) throw new Error(`MEHMED_DUUR is ${MEHMED_DUUR} frames, max ${MAX_SHORT_FRAMES} (58 s)`);
 const AFSLUITER_VANAF = MEHMED_DUUR - 90;
 
 type Klank = { s: number; bij?: number; src: string; vol: number; lus?: boolean };
 const sfx = (n: string) => staticFile(`watals-sfx/${n}.wav`);
-const KLANKEN: Klank[] = [
+const ALLE_KLANKEN: Klank[] = [
   { s: 0, src: 'wind', vol: 0.12, lus: true },
   { s: 0, bij: 4, src: 'inslag', vol: 0.2 },
   { s: 1, src: 'wind', vol: 0.06, lus: true },
@@ -620,6 +627,7 @@ const KLANKEN: Klank[] = [
   { s: 17, src: 'zee', vol: 0.08, lus: true },
   { s: 17, bij: 6, src: 'glans', vol: 0.12 },
 ];
+const KLANKEN = ALLE_KLANKEN.filter((k) => BEHOUD.includes(k.s)).map((k) => ({ ...k, s: BEHOUD.indexOf(k.s) }));
 
 export const WatAlsMehmed = ({ muziek = true, muziekVanaf = 14 }: { muziek?: boolean; muziekVanaf?: number }) => (
   <AbsoluteFill style={{ background: '#000' }}>

@@ -92,6 +92,9 @@ a time."* · *"Finish a story, unlock the figure."*
 > **What-if shorts**, skill `what-if-video`, in `marketing/9.archief/what-if-shorts/`, and **long YouTube videos**, skill
 > `youtube-long-video`, in `marketing/1.videos/`. Each has `1.te-posten/` (to post) and `2.gepost/` (posted).
 > The spec below is kept for reference.
+>
+> **Hard rule for every short/reel (owner, 2026-11-23): max 58 seconds.** Music added in the YouTube/Instagram/TikTok
+> app stops at 1:00, and YouTube blocks a Short over 1 min that has a music claim. No exceptions, on any platform.
 
 Histora's recurring short-video series for TikTok, Instagram Reels and YouTube Shorts. Full spec
 and template: [references/shorts-30-seconds.md](references/shorts-30-seconds.md). Finished scripts

@@ -12,6 +12,13 @@ import { FONT, KLEUR, TEKST_SCHADUW } from '../sjabloon/theme';
  */
 export const APP_IN_BEELD = false;
 
+/**
+ * Vaste regel (eigenaar 2026-11-23): elke short/reel is hooguit 58 s. Langer en de muziek die je in de
+ * YouTube-/IG-app toevoegt stopt op 1:00, en een YouTube-short > 1 min met een muziekclaim wordt geblokkeerd.
+ * Elke What-if-compositie gooit bij het renderen als hij hierboven komt.
+ */
+export const MAX_SHORT_FRAMES = 58 * 30;
+
 export const Afsluiter = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
