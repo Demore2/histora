@@ -51,7 +51,7 @@ Naast de vaste zes ook **nl, de, es, it, fr**: een Europees verhaal (Willem is i
 
 ## Instagram (ingepland via Meta Business Suite, wo 25 nov 17:00 NL)
 
-`*-zonder-muziek-upload.mp4` + omslag.png, audio "Amour plastique (Napoleon's Song)". Caption (alleen Engels):
+`*-zonder-muziek-upload.mp4` + omslag.png, audio: de bovenste gewone "Amour plastique" (NIET "(Napoleon's Song)", die stopt na 30 s; opnieuw ingepland 24 nov). Caption (alleen Engels):
 
 A prince at 11. The emperor leaned on his shoulder. Then he started an 80-year war against the most powerful empire on earth, flooded his own land to save a city, and got a price on his head. 🧡
 

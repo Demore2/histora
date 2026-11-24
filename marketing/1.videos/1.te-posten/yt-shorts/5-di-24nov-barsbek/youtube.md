@@ -53,7 +53,7 @@ Naast de vaste zes ook **ky** (Kirgizisch) en **ru** (Russisch): het publiek van
 
 ## Instagram (ingepland via Meta Business Suite, di 24 nov 17:00 NL)
 
-`*-zonder-muziek-upload.mp4` + omslag.png, audio "Amour plastique (Napoleon's Song)". Caption (alleen Engels):
+`*-zonder-muziek-upload.mp4` + omslag.png, audio: de bovenste gewone "Amour plastique" (NIET "(Napoleon's Song)", die stopt na 30 s; opnieuw ingepland 24 nov). Caption (alleen Engels):
 
 Khagan of the Yenisei Kyrgyz. The Turks gave him a title and a princess. He plotted with China behind their backs. Then they crossed his mountains in a winter no army should survive. 🏔️
 
