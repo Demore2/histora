@@ -51,6 +51,16 @@ Naast de vaste zes ook **ky** (Kirgizisch) en **ru** (Russisch): het publiek van
 | it | E se fossi Barsbek? #shorts | Khagan dei kirghisi dello Enisej. I turchi ti danno un titolo e una principessa. Tu cospiri con la Cina alle loro spalle. Poi attraversano le tue montagne in un inverno a cui nessun esercito dovrebbe sopravvivere. Su richiesta nei commenti. Chi dovrebbe essere il prossimo? 👇 #shorts #storia #barsbek |
 | nl | Wat als jij Barsbek was? #shorts | Khagan van de Jenisej-Kirgiezen. De Turken geven je een titel en een prinses. Achter hun rug smeed je een pact met China. Dan trekken ze over je bergen, in een winter die geen leger zou moeten overleven. Op verzoek uit de reacties. Wie moet de volgende zijn? 👇 #shorts #geschiedenis #barsbek |
 
+## Instagram (ingepland via Meta Business Suite, di 24 nov 17:00 NL)
+
+`*-zonder-muziek-upload.mp4` + omslag.png, audio "Amour plastique (Napoleon's Song)". Caption (alleen Engels):
+
+Khagan of the Yenisei Kyrgyz. The Turks gave him a title and a princess. He plotted with China behind their backs. Then they crossed his mountains in a winter no army should survive. 🏔️
+
+You asked for him. Who should be next? 👇
+
+#barsbek #kyrgyzstan #kyrgyz #turkichistory #history
+
 ## Fact notes
 
 | Op het scherm | Bron / opmerking |

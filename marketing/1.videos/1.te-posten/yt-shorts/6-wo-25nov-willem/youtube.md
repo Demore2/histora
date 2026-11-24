@@ -49,6 +49,16 @@ Naast de vaste zes ook **nl, de, es, it, fr**: een Europees verhaal (Willem is i
 | id | Bagaimana jika kamu William dari Oranye? #shorts | Pangeran di usia 11 tahun. Kaisar bersandar di bahumu. Lalu kamu memulai perang 80 tahun melawan kekaisaran terkuat di dunia, menenggelamkan tanahmu sendiri demi menyelamatkan sebuah kota, dan kepalamu dihargai dengan hadiah. Atas permintaan di kolom komentar. Siapa berikutnya? 👇 #shorts #sejarah #williamoforange |
 | ru | Что, если бы ты был Вильгельмом Оранским? #shorts | Принц в 11 лет. Император опирается на твоё плечо. Потом ты начинаешь 80-летнюю войну против самой могущественной империи мира, затопляешь собственную землю, чтобы спасти город, и за твою голову назначают награду. По просьбе из комментариев. Кто следующий? 👇 #shorts #history #williamoforange |
 
+## Instagram (ingepland via Meta Business Suite, wo 25 nov 17:00 NL)
+
+`*-zonder-muziek-upload.mp4` + omslag.png, audio "Amour plastique (Napoleon's Song)". Caption (alleen Engels):
+
+A prince at 11. The emperor leaned on his shoulder. Then he started an 80-year war against the most powerful empire on earth, flooded his own land to save a city, and got a price on his head. 🧡
+
+You asked for him. Who should be next? 👇
+
+#williamoforange #dutchhistory #netherlands #eightyyearswar #history
+
 ## Fact notes
 
 | Op het scherm | Bron / opmerking |
