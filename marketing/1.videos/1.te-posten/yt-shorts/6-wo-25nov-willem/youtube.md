@@ -30,12 +30,15 @@ You asked, we made it 🧡 Who should be next? The most-liked answer gets the ne
 
 ## Vertalingen (Studio → Talen)
 
-Naast de vaste zes ook **nl** (Nederlands) en **de** (Duits): Willem is in Duitsland geboren (Dillenburg).
+Naast de vaste zes ook **nl, de, es, it, fr**: een Europees verhaal (Willem is in Dillenburg geboren, Spanje is de tegenstander). Alle 11 staan in Studio.
 
 | Taal | Titel | Beschrijving |
 |---|---|---|
 | nl | Wat als jij Willem van Oranje was? #shorts | Prins op je elfde. De keizer leunt op jouw schouder. Dan begin je een oorlog van 80 jaar tegen het machtigste rijk ter wereld, zet je je eigen land onder water om een stad te redden en komt er een prijs op je hoofd. Op verzoek uit de reacties. Wie moet de volgende zijn? 👇 #shorts #geschiedenis #willemvanoranje #tachtigjarigeoorlog |
 | de | Was wäre, wenn du Wilhelm von Oranien wärst? #shorts | Mit elf ein Fürst. Der Kaiser stützt sich auf deine Schulter. Dann beginnst du einen 80-jährigen Krieg gegen das mächtigste Reich der Welt, setzt dein eigenes Land unter Wasser, um eine Stadt zu retten, und auf deinen Kopf wird ein Preis ausgesetzt. Auf Wunsch aus den Kommentaren. Wer soll der Nächste sein? 👇 #shorts #geschichte #wilhelmvonoranien |
+| es | ¿Y si fueras Guillermo de Orange? #shorts | Príncipe a los 11 años. El emperador se apoya en tu hombro. Luego empiezas una guerra de 80 años contra el imperio más poderoso del mundo, inundas tu propia tierra para salvar una ciudad y ponen precio a tu cabeza. A petición de los comentarios. ¿Quién debería ser el siguiente? 👇 #shorts #historia #guillermodeorange |
+| it | E se fossi Guglielmo d'Orange? #shorts | Principe a 11 anni. L'imperatore si appoggia alla tua spalla. Poi inizi una guerra di 80 anni contro l'impero più potente del mondo, allaghi la tua stessa terra per salvare una città e mettono una taglia sulla tua testa. Su richiesta nei commenti. Chi dovrebbe essere il prossimo? 👇 #shorts #storia #guglielmodorange |
+| fr | Et si tu étais Guillaume d'Orange ? #shorts | Prince à 11 ans. L'empereur s'appuie sur ton épaule. Puis tu lances une guerre de 80 ans contre l'empire le plus puissant du monde, tu inondes ta propre terre pour sauver une ville et ta tête est mise à prix. À la demande des commentaires. Qui devrait être le prochain ? 👇 #shorts #histoire #guillaumedorange |
 | tr | Orange'lı William olsaydın ne olurdu? #shorts | 11 yaşında prens. İmparator omzuna yaslanıyor. Sonra dünyanın en güçlü imparatorluğuna karşı 80 yıl sürecek bir savaş başlatıyor, bir şehri kurtarmak için kendi topraklarını sular altında bırakıyorsun ve başına ödül konuyor. Yorumlardan gelen istek. Sırada kim olsun? 👇 #shorts #history #williamoforange |
 | ar | ماذا لو كنتَ وليام أورانج؟ #shorts | أمير في الحادية عشرة. الإمبراطور يتكئ على كتفك. ثم تبدأ حربًا دامت 80 عامًا ضد أقوى إمبراطورية في العالم، وتُغرق أرضك لتنقذ مدينة، وتوضع جائزة على رأسك. بناءً على طلبكم في التعليقات. الفيديو باللغة الإنجليزية. مَن يجب أن يكون التالي؟ 👇 #shorts #history #williamoforange |
 | fa | اگر تو ویلیام اورنج بودی چه می‌شد؟ #shorts | شاهزاده در یازده‌سالگی. امپراتور به شانه‌ات تکیه می‌دهد. سپس جنگی ۸۰ ساله علیه قدرتمندترین امپراتوری جهان آغاز می‌کنی، سرزمین خودت را زیر آب می‌بری تا شهری را نجات دهی و برای سرت جایزه تعیین می‌شود. به درخواست شما در نظرها. ویدیو به زبان انگلیسی است. نفر بعدی چه کسی باشد؟ 👇 #shorts #history #williamoforange |
