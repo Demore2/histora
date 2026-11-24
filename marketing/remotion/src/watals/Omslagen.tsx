@@ -9,6 +9,7 @@ import { Baibars, LeeuwVaandel, Sabel } from '../lang/BaibarsKit';
 import { Janitsaren, Kavuk, Koepelgebouw, MEHMED, Stadsmuur } from './MehmedKit';
 import { OmslagBarsbekScène } from './WatAlsBarsbek';
 import { OmslagWillemScène } from './WatAlsWillem';
+import { OmslagStalinScène } from './WatAlsStalin';
 
 /**
  * Omslagen voor de "What if"-video's: held in close-up in zijn eigen scène, titel groot bovenaan.
@@ -162,5 +163,11 @@ export const OmslagBarsbek = () => (
 export const OmslagWillem = () => (
   <Omslag naam="WILLIAM OF ORANGE?" grootte={128} focus={[0, 2.6, 0]}>
     <OmslagWillemScène />
+  </Omslag>
+);
+
+export const OmslagStalin = () => (
+  <Omslag naam="STALIN?" grootte={190} focus={[0, 3.4, 0]}>
+    <OmslagStalinScène />
   </Omslag>
 );

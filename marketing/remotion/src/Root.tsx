@@ -8,10 +8,11 @@ import { NAPOLEON_DUUR, WatAlsNapoleon } from './watals/WatAlsNapoleon';
 import { KHALID_DUUR, WatAlsKhalid } from './watals/WatAlsKhalid';
 import { MEHMED_DUUR, WatAlsMehmed } from './watals/WatAlsMehmed';
 import { SALADIN_KORT_DUUR, WatAlsSaladin } from './watals/WatAlsSaladin';
-import { OmslagBaibars, OmslagBarsbek, OmslagWillem, OmslagCaesar, OmslagKhalid, OmslagMehmed, OmslagNapoleon, OmslagSaladin } from './watals/Omslagen';
+import { OmslagBaibars, OmslagBarsbek, OmslagWillem, OmslagStalin, OmslagCaesar, OmslagKhalid, OmslagMehmed, OmslagNapoleon, OmslagSaladin } from './watals/Omslagen';
 import { BAIBARS_SHORT_DUUR, WatAlsBaibars } from './watals/WatAlsBaibars';
 import { BARSBEK_DUUR, WatAlsBarsbek } from './watals/WatAlsBarsbek';
 import { WILLEM_DUUR, WatAlsWillem } from './watals/WatAlsWillem';
+import { STALIN_DUUR, WatAlsStalin } from './watals/WatAlsStalin';
 import { NAPOLEON_LANG_DUUR, NapoleonLang } from './lang/NapoleonLang';
 import { NapoleonThumb } from './lang/Thumbnail';
 import { SALADIN_LANG_DUUR, SaladinLang } from './lang/SaladinLang';
@@ -55,6 +56,9 @@ export const Root = () => (
     <Still id="watals-omslag-willem" component={OmslagWillem} width={W} height={H} />
     <Composition id="watals-willem" component={WatAlsWillem} durationInFrames={WILLEM_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true, muziekVanaf: 14 }} />
     <Composition id="watals-willem-stil" component={WatAlsWillem} durationInFrames={WILLEM_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />
+    <Still id="watals-omslag-stalin" component={OmslagStalin} width={W} height={H} />
+    <Composition id="watals-stalin" component={WatAlsStalin} durationInFrames={STALIN_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true, muziekVanaf: 14 }} />
+    <Composition id="watals-stalin-stil" component={WatAlsStalin} durationInFrames={STALIN_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />
     <Still id="watals-omslag-barsbek" component={OmslagBarsbek} width={W} height={H} />
     <Composition id="watals-barsbek" component={WatAlsBarsbek} durationInFrames={BARSBEK_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true, muziekVanaf: 14 }} />
     <Composition id="watals-barsbek-stil" component={WatAlsBarsbek} durationInFrames={BARSBEK_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />

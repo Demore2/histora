@@ -47,3 +47,4 @@ Geen app-link en geen "in Histora" in titel, beschrijving of reactie, totdat de 
 | Napoleon | OJyg8MwLX8o | live 23 nov (eigenaar zette hem meteen live), 6 vertalingen, reactie vastgezet |
 | Barsbek | 68xNSozkLdQ | ingepland di 24 nov 19:00 NL, omslag + Saladin-lang als gerelateerde video, 15 vertalingen (vaste 14 + ky); reactie vastzetten + aanvrager taggen na livegang |
 | Willem van Oranje | JuK_PLEvlFA | ingepland wo 25 nov 19:00 NL, omslag + Napoleon-lang als gerelateerde video, 14 vertalingen (vaste set); reactie vastzetten + @OrangeLeo-m8t antwoorden na livegang |
+| Stalin | dHak7tvvIpQ | live di 24 nov ~20:20 NL (eigenaar: meteen posten), omslag + Napoleon-lang, 14 vertalingen, reactie vastgezet; IG + TikTok ook live |
