@@ -160,7 +160,7 @@ export const OmslagBarsbek = () => (
 );
 
 export const OmslagWillem = () => (
-  <Omslag naam="WILLIAM?" grootte={170} focus={[0, 2.6, 0]}>
+  <Omslag naam="WILLIAM OF ORANGE?" grootte={128} focus={[0, 2.6, 0]}>
     <OmslagWillemScène />
   </Omslag>
 );
