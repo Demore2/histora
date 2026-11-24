@@ -8,6 +8,7 @@ import { SALADIN } from '../lang/SaladinScenes';
 import { Baibars, LeeuwVaandel, Sabel } from '../lang/BaibarsKit';
 import { Janitsaren, Kavuk, Koepelgebouw, MEHMED, Stadsmuur } from './MehmedKit';
 import { OmslagBarsbekScène } from './WatAlsBarsbek';
+import { OmslagWillemScène } from './WatAlsWillem';
 
 /**
  * Omslagen voor de "What if"-video's: held in close-up in zijn eigen scène, titel groot bovenaan.
@@ -155,5 +156,11 @@ export const OmslagMehmed = () => (
 export const OmslagBarsbek = () => (
   <Omslag naam="BARSBEK?" grootte={170} focus={[0, 2.6, 0]}>
     <OmslagBarsbekScène />
+  </Omslag>
+);
+
+export const OmslagWillem = () => (
+  <Omslag naam="WILLIAM?" grootte={170} focus={[0, 2.6, 0]}>
+    <OmslagWillemScène />
   </Omslag>
 );
