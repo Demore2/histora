@@ -56,6 +56,7 @@ TikTok-trucs die tijd (en dus credits) schelen:
 - **Omslag**: de file-input "Upload cover" bestaat al zodra het venster "Edit cover" open is; niet op de knop klikken.
 - **Geluid**: het 1:00-fragment loopt bij een short ≤ 58 s vanzelf tot het einde. Langere video (Baibars 1:20): fade-out 3 s.
 - **Inplannen**: de tijdkiezer reageert slecht op scrollen; klik de uren/minuten aan (elke klik op een zichtbare
-  waarde centreert die). Wacht tot "Content check lite" klaar is, anders vraagt TikTok "Post now".
+  waarde centreert die). Loopt "Content check lite" nog, dan vraagt TikTok "Post now": klik Cancel, zet de schakelaar "Content check lite"
+  uit en klik opnieuw op Schedule (de controle bleef bij Willem langer dan 5 min hangen).
 - **AI-label uit** (standaard uit; code-gemaakte 3D, geen realistische AI).
 - **Reactie vastzetten kan op TikTok alleen in de telefoon-app**; web en Studio bieden alleen Reply/Delete.
