@@ -25,3 +25,37 @@ vergelijken met Napoleon/Saladin om 16:00 op het eerste etmaal. De winnaar wordt
 vaste bibliotheek van ~10 sferen (eenmalig ~120 credits); per video kost dan alleen de stem nog ~55 credits (Higgsfield, 1.200/maand).
 
 mp4, mp3 en wav en de testframes staan bewust niet in git (`.gitignore`).
+
+## Een What-if-short op alle drie de platformen (sinds 2026-11-24)
+
+Elke short gaat in één keer naar **YouTube (19:00, 14 vaste talen) + Instagram (17:00) + TikTok (19:00, ingepland)**.
+
+**Stap 1, lokaal (kost geen credits):**
+
+```bash
+node marketing/posten-klaar.mjs marketing/1.videos/1.te-posten/yt-shorts/<map>
+```
+
+Dat controleert de lengte (max 58 s), maakt `*-upload.mp4` van < 10 MB (de browser-uploadgrens), leest `youtube.md`
+en schrijft **`posten.json`**: per platform het bestand, de caption, de reactie en de audio-instructie, met absolute
+paden. Staat er geen `## TikTok`-sectie in `youtube.md`, dan bouwt het script de caption uit de titel + beschrijving
+(zonder `#shorts` en zonder "on the channel", 3 eigen tags + `#history #historytok`). `--check` = alleen kijken.
+
+**Stap 2, in Chrome (Claude):** lees alleen `posten.json`, niet de hele map. Vaste route per platform:
+
+| Platform | Route |
+|---|---|
+| YouTube | Studio, `bestanden.youtube` (nummer ingebakken), titel/beschrijving/gerelateerde video, inplannen 19:00, daarna Talen |
+| Instagram | Meta Business Suite, `bestanden.instagram` + omslag, audio = bovenste gewone "Amour plastique", 17:00 |
+| TikTok | Studio upload → file-input → caption plakken → omslag → Sounds → Favorites → **01:00 "Amour plastique"** → Schedule 19:00 |
+
+TikTok-trucs die tijd (en dus credits) schelen:
+- **Caption**: `ClipboardEvent('paste')` met een `DataTransfer` op `.public-DraftEditor-content`. Nooit
+  `execCommand('insertParagraph')`, dat laat de editor crashen. TikTok zet de bestandsnaam vóór de geplakte tekst: klik
+  in het veld, `ctrl+Home`, en `Delete` × de lengte van de bestandsnaam (zonder `.mp4`).
+- **Omslag**: de file-input "Upload cover" bestaat al zodra het venster "Edit cover" open is; niet op de knop klikken.
+- **Geluid**: het 1:00-fragment loopt bij een short ≤ 58 s vanzelf tot het einde. Langere video (Baibars 1:20): fade-out 3 s.
+- **Inplannen**: de tijdkiezer reageert slecht op scrollen; klik de uren/minuten aan (elke klik op een zichtbare
+  waarde centreert die). Wacht tot "Content check lite" klaar is, anders vraagt TikTok "Post now".
+- **AI-label uit** (standaard uit; code-gemaakte 3D, geen realistische AI).
+- **Reactie vastzetten kan op TikTok alleen in de telefoon-app**; web en Studio bieden alleen Reply/Delete.
