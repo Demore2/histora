@@ -104,6 +104,19 @@ if (/histora|app store|play store/i.test(`${titel} ${beschrijving} ${instagram} 
 if (tiktok.length > 2200) fouten.push(`TikTok-caption ${tiktok.length} tekens (max 2200)`);
 if (hashtags(instagram).length > 5) waarschuwingen.push(`Instagram heeft ${hashtags(instagram).length} hashtags (advies 3-5)`);
 
+// ---- vertalingen: tabel "| taal | titel | beschrijving |" onder "## Vertalingen" ----
+// studio = de taalnaam zoals YouTube Studio (NL-interface) hem in "Taal toevoegen" toont
+const STUDIO = { es: 'Spaans', pt: 'Portugees', hi: 'Hindi', id: 'Indonesisch', ar: 'Arabisch', ur: 'Urdu', tr: 'Turks', fa: 'Perzisch',
+  ms: 'Maleis', ru: 'Russisch', fr: 'Frans', de: 'Duits', it: 'Italiaans', nl: 'Nederlands', ky: 'Kirgizisch', ka: 'Georgisch' };
+const talen = sectie(/^## Vertalingen/)
+  .split('\n')
+  .filter((r) => /^\|\s*[a-z]{2}\s*\|/.test(r))
+  .map((r) => {
+    const [code, t, b] = r.split('|').slice(1, 4).map((x) => x.trim());
+    return { code, studio: STUDIO[code] || code, titel: t, beschrijving: b };
+  });
+if (!talen.length) waarschuwingen.push('geen vertalingentabel in youtube.md');
+
 // ---- video's ----
 const zonder = zoek(/zonder-muziek\.mp4$/);
 const met = zoek(/met-muziek\.mp4$/);
@@ -127,7 +140,7 @@ const uit = {
     tiktok: zonderUpload, // + Favorites → 01:00 "Amour plastique", einde naar het einde van de video slepen
     omslag,
   },
-  youtube: { titel, beschrijving, gerelateerd, reactie, tijd: '19:00 NL', talen: 'vaste 14, tabel in youtube.md' },
+  youtube: { titel, beschrijving, gerelateerd, reactie, tijd: '19:00 NL', talen },
   instagram: { caption: instagram, tijd: '17:00 NL', audio: 'Amour plastique (bovenste gewone, NIET Napoleon\'s Song)', reactie },
   tiktok: { caption: tiktok, tijd: '17:00 NL (zelfde als Instagram; alleen YouTube 19:00)', audio: 'Favorites → Amour plastique 01:00', aiLabel: false, reactie },
 };

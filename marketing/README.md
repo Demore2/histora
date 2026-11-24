@@ -69,3 +69,45 @@ TikTok-trucs die tijd (en dus credits) schelen:
   ```
   Typen met de muis/toetsen komt niet aan (en een losse "L" liket de video). Een ingeplande video kan pas een reactie
   krijgen als hij live is. De video-URL's staan als links op tiktok.com/tiktokstudio/content.
+
+YouTube-trucs (Studio, NL-interface; getest 2026-11-24 bij Stalin):
+- **Upload**: klik het upload-icoon rechtsboven, dan bestaat er een verborgen `file-input` in het dialoog → `file_upload`.
+  Omslag: de tweede `file-input` (onder "Thumbnail") → `omslag.png`.
+- **Titel/beschrijving**: typ de titel, klik dan op de kop "Details" om het hashtag-menu te sluiten, en pas daarna in
+  de beschrijving. Klik je meteen door, dan landt de klik in het hashtag-menu en komt alles in de titel. **Nooit Escape**,
+  dat sluit het uploadvenster.
+- **Gerelateerde video** zit niet bij Details maar in de stap **Video-elementen** → "Gerelateerde video" → Toevoegen.
+- AI-gebruik **Nee**, betaalde promotie **Nee**. De check meldt "geclaimde content, geblokkeerd in Rusland": dat is
+  het nummer, en dat is in orde.
+- **Talen** (`studio.youtube.com/video/<id>/translations`): `posten.json → youtube.talen` heeft per taal `studio`
+  (de naam in het menu), titel en beschrijving. Per taal, alles in één `browser_batch`:
+  klik "Taal toevoegen" (818,205) → JS `[...document.querySelectorAll('tp-yt-paper-item')].find(e=>e.offsetParent&&e.textContent.trim()==='<studio>').click()`
+  → klik titelveld (330,345) → typ → klik de kop (220,303) → klik beschrijving (330,450) → typ → klik de kop → "Publiceren" (703,265).
+  Drie of vier talen per batch. **Staat de taal al als rij** (Frans heeft vaak automatische ondertiteling): klik de
+  `button "Frans"` in de tabel; het dialoog staat dan 20 px hoger (330,325 / 330,430 / 220,283 / 703,245).
+- **Reactie + vastzetten**: op de Shorts-pagina → reactie-icoon → typen → Reageren → ⋮ → Vastzetten → bevestigen.
+
+Instagram-trucs (Meta Business Suite → `business.facebook.com/latest/reels_composer`):
+- **Er bestaat geen file-input tot je klikt**, en klikken opent een onzichtbaar systeemvenster. Vang hem af in één
+  `javascript_tool`-aanroep en upload daarna met `file_upload` op de gevonden `file-input`:
+  ```js
+  const o=HTMLInputElement.prototype.click;HTMLInputElement.prototype.click=function(){if(this.type==='file'){window.__fi=this;
+  if(!this.isConnected)document.body.appendChild(this);return}return o.call(this)};
+  [...document.querySelectorAll('[role=button]')].find(b=>b.textContent.trim()==='Add Video').click();
+  ```
+  Omslag: tab "Upload image", dan dezelfde haak op de link "Upload image" (`window.__fi=null` vooraf) → `omslag.png`.
+- Next → Edit → Audio: zoek "amour plastique" → bovenste gewone → Next → Share now / Schedule.
+- **Reacties**: de webversie kan niet vastzetten, en de antwoordknop is via JS niet te raken. Plaats een losse reactie
+  met `@gebruiker` ervoor. **Hooguit twee reacties kort na elkaar**: daarna geeft Instagram "Kan opmerking niet
+  plaatsen" (en de MBS-inbox "Reply failed"). Blijf dan van het account af en probeer het later.
+
+Reacties scannen op verzoeken (bijv. "wie willen ze hierna"):
+- **YouTube**: `studio.youtube.com/channel/UC4zE-VpdoGv7uXAtLSF6sWw/comments/inbox?filter=%5B%7B%22name%22%3A%22SORT_BY%22%2C%22value%22%3A%22SORT_BY_NEWEST%22%7D%5D`
+  → `get_page_text`. De zoekfilter in de URL werkt niet. Antwoorden: zoek de `ytcp-comment` met JS, klik zijn
+  "Beantwoorden", focus `[contenteditable=true]` en typ. **Typ het `@handle` zelf**, Studio vult het niet aan.
+- **TikTok**: `tiktok.com/tiktokstudio/comment` → `get_page_text`.
+- **Instagram**: per reel `document.querySelector('main').innerText` (reel-links op `instagram.com/gethistora/reels/`).
+  De MBS-inbox (`latest/inbox/instagram`) toont de reacties per post handig, maar antwoorden faalt daar.
+- Vaste lijnen van de eigenaar: verzoeken om **Mohammed** negeren. Antwoord op een verzoek = "Noted! <naam> is on the
+  list …" plus "follow so you don't miss it (long videos are on the way too)". Een eigen reactie onder een nieuwe
+  video krijgt geen tag; de aanvrager krijgt een antwoord onder zijn eigen verzoek.
