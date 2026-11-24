@@ -8,8 +8,9 @@ import { NAPOLEON_DUUR, WatAlsNapoleon } from './watals/WatAlsNapoleon';
 import { KHALID_DUUR, WatAlsKhalid } from './watals/WatAlsKhalid';
 import { MEHMED_DUUR, WatAlsMehmed } from './watals/WatAlsMehmed';
 import { SALADIN_KORT_DUUR, WatAlsSaladin } from './watals/WatAlsSaladin';
-import { OmslagBaibars, OmslagCaesar, OmslagKhalid, OmslagMehmed, OmslagNapoleon, OmslagSaladin } from './watals/Omslagen';
+import { OmslagBaibars, OmslagBarsbek, OmslagCaesar, OmslagKhalid, OmslagMehmed, OmslagNapoleon, OmslagSaladin } from './watals/Omslagen';
 import { BAIBARS_SHORT_DUUR, WatAlsBaibars } from './watals/WatAlsBaibars';
+import { BARSBEK_DUUR, WatAlsBarsbek } from './watals/WatAlsBarsbek';
 import { NAPOLEON_LANG_DUUR, NapoleonLang } from './lang/NapoleonLang';
 import { NapoleonThumb } from './lang/Thumbnail';
 import { SALADIN_LANG_DUUR, SaladinLang } from './lang/SaladinLang';
@@ -50,6 +51,9 @@ export const Root = () => (
     <Composition id="watals-saladin-amour" component={WatAlsSaladin} durationInFrames={SALADIN_KORT_DUUR} fps={FPS} width={W} height={H} defaultProps={{ amour: true }} />
     <Composition id="watals-saladin-muziek"component={WatAlsSaladin} durationInFrames={SALADIN_KORT_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true }} />
     <Still id="watals-omslag-khalid" component={OmslagKhalid} width={W} height={H} />
+    <Still id="watals-omslag-barsbek" component={OmslagBarsbek} width={W} height={H} />
+    <Composition id="watals-barsbek" component={WatAlsBarsbek} durationInFrames={BARSBEK_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true, muziekVanaf: 14 }} />
+    <Composition id="watals-barsbek-stil" component={WatAlsBarsbek} durationInFrames={BARSBEK_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />
     <Still id="watals-omslag-mehmed" component={OmslagMehmed} width={W} height={H} />
     <Composition id="watals-mehmed" component={WatAlsMehmed} durationInFrames={MEHMED_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true, muziekVanaf: 14 }} />
     <Composition id="watals-mehmed-stil" component={WatAlsMehmed} durationInFrames={MEHMED_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />

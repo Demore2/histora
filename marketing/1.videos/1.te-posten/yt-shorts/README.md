@@ -10,6 +10,7 @@ op IG piekte.
 | `2-di-24nov-saladin` | di 24 nov 17:00 | What if you were Saladin? | 0:58 | Saladin lang |
 | `3-wo-25nov-caesar` | wo 25 nov 17:00 | What if you were Julius Caesar? (oude versie, 15 nov) | 0:56 | Caesar lang |
 | – | do 26 nov | *Leonidas lang (geen short)* | – | – |
+| `5-di-24nov-barsbek` | di 24 nov 19:00 | What if you were Barsbek? (nieuw, fanverzoek) | 0:57 | Saladin lang |
 | `4-vr-27nov-napoleon` | vr 27 nov 17:00 | What if you were Napoleon? | 0:58 | Napoleon lang |
 
 ## Zo post je er een (via de YouTube-app op je telefoon, niet via Studio)
@@ -41,5 +42,6 @@ Geen app-link en geen "in Histora" in titel, beschrijving of reactie, totdat de 
 | Saladin | 81kRae2x7Ro | live 23 nov, 6 vertalingen, reactie vastgezet |
 | Mehmed | p90ytvovs38 | live 23 nov, 6 vertalingen, reactie vastgezet |
 | Baibars (1:21, door eigenaar gepost) | 3clDjR6xbGw | live, titel/beschrijving/gerelateerde video/vertalingen/reactie bijgewerkt |
-| Caesar | KexdutgJP-g | ingepland wo 25 nov 17:00, 6 vertalingen; reactie nog vastzetten na livegang |
-| Napoleon | OJyg8MwLX8o | ingepland vr 27 nov 17:00, 6 vertalingen; reactie nog vastzetten na livegang |
+| Caesar | KexdutgJP-g | live 23 nov (eigenaar zette hem meteen live), 6 vertalingen, reactie vastgezet |
+| Napoleon | OJyg8MwLX8o | live 23 nov (eigenaar zette hem meteen live), 6 vertalingen, reactie vastgezet |
+| Barsbek | 68xNSozkLdQ | ingepland di 24 nov 19:00 NL, omslag + Saladin-lang als gerelateerde video, 8 vertalingen (incl. ky/ru); reactie vastzetten + aanvrager taggen na livegang |

@@ -7,6 +7,7 @@ import { ARMEN_GEKRUIST, CAESAR, Figuur, KHALID, NAPOLEON, omhoog, wijs, Zwaard,
 import { SALADIN } from '../lang/SaladinScenes';
 import { Baibars, LeeuwVaandel, Sabel } from '../lang/BaibarsKit';
 import { Janitsaren, Kavuk, Koepelgebouw, MEHMED, Stadsmuur } from './MehmedKit';
+import { OmslagBarsbekScène } from './WatAlsBarsbek';
 
 /**
  * Omslagen voor de "What if"-video's: held in close-up in zijn eigen scène, titel groot bovenaan.
@@ -147,5 +148,12 @@ export const OmslagMehmed = () => (
     <Banier position={[-2.4, 0, -3.2]} kleur="#9E1F25" />
     <Janitsaren rijen={2} kolommen={8} position={[1, 0, -8]} />
     <Figuur kleding={MEHMED} baard hoofdExtra={<Kavuk />} position={[0, 0, 0]} rotation={[0, 0.3, 0]} pose={{ armR: { schouder: [-0.55, 0, -0.55], elleboog: [0, -0.2] }, wenk: 0.6 }} inHand={<Zwaard />} />
+  </Omslag>
+);
+
+/** Barsbek in de opbouw van what.if.atlas (2026-11-24): held ten voeten uit te paard, midden in zijn scène, in plaats van een close-up van het hoofd. */
+export const OmslagBarsbek = () => (
+  <Omslag naam="BARSBEK?" grootte={170} focus={[0, 2.6, 0]}>
+    <OmslagBarsbekScène />
   </Omslag>
 );
