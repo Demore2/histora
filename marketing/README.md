@@ -28,7 +28,7 @@ mp4, mp3 en wav en de testframes staan bewust niet in git (`.gitignore`).
 
 ## Een What-if-short op alle drie de platformen (sinds 2026-11-24)
 
-Elke short gaat in één keer naar **YouTube (19:00, 14 vaste talen) + Instagram (17:00) + TikTok (19:00, ingepland)**.
+Elke short gaat in één keer naar **YouTube (19:00, 14 vaste talen) + Instagram (17:00) + TikTok (17:00, ingepland)**. Alleen YouTube gaat om 19:00.
 
 **Stap 1, lokaal (kost geen credits):**
 
@@ -47,7 +47,7 @@ paden. Staat er geen `## TikTok`-sectie in `youtube.md`, dan bouwt het script de
 |---|---|
 | YouTube | Studio, `bestanden.youtube` (nummer ingebakken), titel/beschrijving/gerelateerde video, inplannen 19:00, daarna Talen |
 | Instagram | Meta Business Suite, `bestanden.instagram` + omslag, audio = bovenste gewone "Amour plastique", 17:00 |
-| TikTok | Studio upload → file-input → caption plakken → omslag → Sounds → Favorites → **01:00 "Amour plastique"** → Schedule 19:00 |
+| TikTok | Studio upload → file-input → caption plakken → omslag → Sounds → Favorites → **01:00 "Amour plastique"** → Schedule **17:00** |
 
 TikTok-trucs die tijd (en dus credits) schelen:
 - **Caption**: `ClipboardEvent('paste')` met een `DataTransfer` op `.public-DraftEditor-content`. Nooit

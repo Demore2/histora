@@ -129,7 +129,7 @@ const uit = {
   },
   youtube: { titel, beschrijving, gerelateerd, reactie, tijd: '19:00 NL', talen: 'vaste 14, tabel in youtube.md' },
   instagram: { caption: instagram, tijd: '17:00 NL', audio: 'Amour plastique (bovenste gewone, NIET Napoleon\'s Song)', reactie },
-  tiktok: { caption: tiktok, audio: 'Favorites → Amour plastique 01:00', aiLabel: false, reactie },
+  tiktok: { caption: tiktok, tijd: '17:00 NL (zelfde als Instagram; alleen YouTube 19:00)', audio: 'Favorites → Amour plastique 01:00', aiLabel: false, reactie },
 };
 
 for (const w of waarschuwingen) console.log(`  ⚠ ${w}`);
