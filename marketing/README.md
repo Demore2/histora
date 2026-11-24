@@ -59,4 +59,13 @@ TikTok-trucs die tijd (en dus credits) schelen:
   waarde centreert die). Loopt "Content check lite" nog, dan vraagt TikTok "Post now": klik Cancel, zet de schakelaar "Content check lite"
   uit en klik opnieuw op Schedule (de controle bleef bij Willem langer dan 5 min hangen).
 - **AI-label uit** (standaard uit; code-gemaakte 3D, geen realistische AI).
-- **Reactie vastzetten kan op TikTok alleen in de telefoon-app**; web en Studio bieden alleen Reply/Delete.
+- **Reactie plaatsen** (vastzetten is niet nodig, eigenaar 2026-11-24): open de videopagina en draai in één
+  `javascript_tool`-aanroep:
+  ```js
+  const w=ms=>new Promise(r=>setTimeout(r,ms));document.querySelector('[data-e2e=comment-icon]').click();await w(2500);
+  const box=document.querySelector('[data-e2e=comment-text] [contenteditable=true]');box.focus();const dt=new DataTransfer();
+  dt.setData('text/plain','<reactie uit posten.json>');box.dispatchEvent(new ClipboardEvent('paste',{clipboardData:dt,bubbles:true,cancelable:true}));
+  await w(800);document.querySelector('[data-e2e=comment-post]').click();
+  ```
+  Typen met de muis/toetsen komt niet aan (en een losse "L" liket de video). Een ingeplande video kan pas een reactie
+  krijgen als hij live is. De video-URL's staan als links op tiktok.com/tiktokstudio/content.
