@@ -11,6 +11,7 @@ import { SALADIN, YUSUF } from './SaladinScenes';
 import { Baby, Falanx, LEONIDAS, PersLeger, Spartaan, Wieg } from './LeonidasKit';
 import { Baibars, Eskadron, LeeuwVaandel, NekBordje } from './BaibarsKit';
 import { Kremlin as KremlinS, RodeVlag as RodeVlagS, SOSO as SOSO_K, STALIN_P as STALIN_THUMB } from './StalinKit';
+import { Fez as FezA, KEMAL_KIND, MAARSCHALK_P, Mausoleum as MausoleumA, TurkseVlag } from './AtaturkKit';
 import { Molen, ORANJE as W_ORANJE, Prinsenvlag, W as WILLEM_P, WILLEM_KIND } from './WillemKit';
 
 /**
@@ -421,4 +422,37 @@ export const StalinStory = () => (
       <div style={{ fontFamily: SERIF, fontSize: 40, color: 'rgba(255,244,224,0.75)', marginTop: 150 }}>tap the link ↓</div>
     </div>
   </AbsoluteFill>
+);
+
+/** Atatürk: links het jongetje met fez (AGE 7, net zijn vader verloren), rechts de maarschalk met kalpak en de vlag. */
+export const AtaturkThumb = () => (
+  <Breed
+    woordLinks="AGE 7"
+    woordRechts="FOUNDER"
+    boos={[790, 140]}
+    links={
+      <>
+        <Lucht boven="#F3E2C4" horizon="#F3E2C4" />
+        <Daglicht zon={[3, 6, 6]} kracht={1.6} omgeving={1.5} />
+        <Grond kleur="#6A5A44" />
+        <Blok p={[0, 3, -1.2]} s={[8, 6, 0.4]} c="#D8C8A8" />
+        <Blok p={[-0.55, 1.35, -0.98]} s={[0.8, 0.9, 0.05]} c="#5A3B24" />
+        <Blok p={[-0.55, 1.35, -0.95]} s={[0.68, 0.78, 0.05]} c="#A8D2EE" />
+        <Figuur kleding={KEMAL_KIND} oogKleur="#4A88C8" hoofdExtra={<FezA />} position={[0.2, 0, 0.2]} rotation={[0, 0.12, 0]} scale={0.45} pose={{ wenk: 1, mond: 'open', armL: { schouder: [-1.2, 0, 0.4], elleboog: [0, -1.0] }, armR: { schouder: [-1.2, 0, -0.4], elleboog: [0, 1.0] } }} />
+      </>
+    }
+    rechts={
+      <>
+        <Lucht boven="#B83A2A" horizon="#FFC36A" />
+        <Zon position={[-12, 6, -90]} grootte={16} kleur="#FFE9A8" />
+        <Daglicht zon={[6, 12, 8]} kracht={2.2} />
+        <Camera pos={[-0.15, 2.2, 3.0]} kijk={[-0.15, 2.1, 0]} fov={36} />
+        <Grond kleur="#A8966A" />
+        <MausoleumA position={[6, 0, -40]} />
+        <TurkseVlag position={[-2.6, 0, -2]} h={4.2} />
+        <Figuur {...MAARSCHALK_P} rotation={[0, -0.12, 0]} pose={{ wenk: 0.5 }} />
+        <pointLight position={[0.6, 3.0, 1.6]} intensity={4} distance={4} color="#FFE08A" />
+      </>
+    }
+  />
 );

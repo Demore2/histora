@@ -11,6 +11,7 @@ import { OmslagBarsbekScène } from './WatAlsBarsbek';
 import { OmslagWillemScène } from './WatAlsWillem';
 import { OmslagStalinScène } from './WatAlsStalin';
 import { Falanx, LEONIDAS, Spartaan } from '../lang/LeonidasKit';
+import { Geweer, MAARSCHALK_P, OSM_SOLDAAT, Kalpak, TurkseVlag } from '../lang/AtaturkKit';
 
 /**
  * Omslagen voor de "What if"-video's: held in close-up in zijn eigen scène, titel groot bovenaan.
@@ -184,5 +185,21 @@ export const OmslagLeonidas = () => (
     <Grond kleur="#B8A27A" />
     <Falanx rijen={2} kolommen={9} position={[0.6, 0, -6]} />
     <Spartaan koning kleding={LEONIDAS} schild="voor" position={[0, 0, 0]} rotation={[0, 0.3, 0]} pose={{ wenk: 0.7 }} />
+  </Omslag>
+);
+
+/** Atatürk: de maarschalk met kalpak voor de vlag en zijn soldaten, in de avondzon. */
+export const OmslagAtaturk = () => (
+  <Omslag naam="ATATÜRK?" grootte={160} focus={[0, 2.4, 0]}>
+    <fog attach="fog" args={['#C8845A', 20, 120]} />
+    <Lucht boven="#4A2E4A" horizon="#F08A4A" />
+    <Zon position={[5, 4, -110]} grootte={16} kleur="#FFC07A" />
+    <Camera pos={[1.1, 1.9, 5.0]} kijk={[0, 2.3, 0]} fov={36} />
+    <Avondlicht />
+    <Daglicht zon={[6, 8, 8]} kleur="#FFC890" kracht={1.9} />
+    <Grond kleur="#B8A27A" />
+    <TurkseVlag position={[-1.6, 0, -2.4]} h={5.2} />
+    {[-3, -1.8, -0.6, 0.6, 1.8, 3].map((x, i) => <Figuur key={i} kleding={OSM_SOLDAAT} hoofdExtra={<Kalpak kleur="#4A4440" />} position={[x + 0.6, 0, -6]} inHand={<Geweer />} />)}
+    <Figuur {...MAARSCHALK_P} levend={false} position={[0, 0, 0]} rotation={[0, 0.3, 0]} pose={{ wenk: 0.5 }} />
   </Omslag>
 );

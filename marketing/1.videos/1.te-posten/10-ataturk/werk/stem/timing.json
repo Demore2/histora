@@ -1,0 +1,752 @@
+[
+ {
+  "i": 0,
+  "zin": "What if you were Mustafa Kemal Ataturk?",
+  "begin": 0.0,
+  "eind": 2.98
+ },
+ {
+  "i": 1,
+  "zin": "You'd lose your father at seven, and your hometown to a war.",
+  "begin": 3.679,
+  "eind": 7.419
+ },
+ {
+  "i": 2,
+  "zin": "You'd stop an invasion at Gallipoli, and a piece of shrapnel would hit your pocket watch instead of your heart.",
+  "begin": 7.946,
+  "eind": 13.526
+ },
+ {
+  "i": 3,
+  "zin": "You'd build a brand-new country from the ruins of an empire, and change its alphabet in a few months.",
+  "begin": 14.143,
+  "eind": 19.543
+ },
+ {
+  "i": 4,
+  "zin": "And every year, at five past nine, a whole nation would still stop for you.",
+  "begin": 20.056,
+  "eind": 24.796
+ },
+ {
+  "i": 5,
+  "zin": "So how does a boy from Salonica become the father of the Turks?",
+  "begin": 25.392,
+  "eind": 28.612
+ },
+ {
+  "i": 6,
+  "zin": "You're born in 1881, in Salonica, a busy port city of the Ottoman Empire.",
+  "begin": 29.686,
+  "eind": 34.526
+ },
+ {
+  "i": 7,
+  "zin": "Today that city is called Thessaloniki, and it lies in Greece.",
+  "begin": 35.036,
+  "eind": 39.776
+ },
+ {
+  "i": 8,
+  "zin": "Nobody writes down your birthday, so later in life you'll pick one yourself.",
+  "begin": 40.367,
+  "eind": 44.267
+ },
+ {
+  "i": 9,
+  "zin": "For now, your name is simply Mustafa.",
+  "begin": 44.774,
+  "eind": 46.874
+ },
+ {
+  "i": 10,
+  "zin": "Your father, Ali Riza, is a customs officer who later tries his luck in the timber trade.",
+  "begin": 47.452,
+  "eind": 53.692
+ },
+ {
+  "i": 11,
+  "zin": "Your mother, Zubeyde, is deeply religious, and wants you at the old school next to the mosque.",
+  "begin": 54.205,
+  "eind": 60.165
+ },
+ {
+  "i": 12,
+  "zin": "Your father wants a modern school, with desks, maps and a blackboard.",
+  "begin": 60.681,
+  "eind": 65.641
+ },
+ {
+  "i": 13,
+  "zin": "They compromise: a few days at the old school, then off to the new one.",
+  "begin": 66.217,
+  "eind": 70.777
+ },
+ {
+  "i": 14,
+  "zin": "When you're about seven, your father dies.",
+  "begin": 71.426,
+  "eind": 74.026
+ },
+ {
+  "i": 15,
+  "zin": "The money runs out, and you're sent to your uncle's farm, to chase crows off the bean fields.",
+  "begin": 74.549,
+  "eind": 78.889
+ },
+ {
+  "i": 16,
+  "zin": "Your mother worries, because you're growing up without any school at all.",
+  "begin": 79.429,
+  "eind": 83.269
+ },
+ {
+  "i": 17,
+  "zin": "But you've seen the officers in the streets of Salonica, in their sharp uniforms.",
+  "begin": 83.882,
+  "eind": 88.762
+ },
+ {
+  "i": 18,
+  "zin": "And you know exactly what you want to be.",
+  "begin": 89.432,
+  "eind": 92.232
+ },
+ {
+  "i": 19,
+  "zin": "At twelve, you take the entrance exam for the military school, without telling your mother.",
+  "begin": 93.348,
+  "eind": 98.008
+ },
+ {
+  "i": 20,
+  "zin": "You pass, and she has no choice but to accept it.",
+  "begin": 98.579,
+  "eind": 101.539
+ },
+ {
+  "i": 21,
+  "zin": "You're brilliant at maths, so good that you sometimes help the teacher.",
+  "begin": 102.215,
+  "eind": 106.415
+ },
+ {
+  "i": 22,
+  "zin": "According to the story, your maths teacher gives you a second name: Kemal, which means perfection.",
+  "begin": 106.923,
+  "eind": 112.083
+ },
+ {
+  "i": 23,
+  "zin": "From now on, you're Mustafa Kemal.",
+  "begin": 112.738,
+  "eind": 115.038
+ },
+ {
+  "i": 24,
+  "zin": "At the military high school in Monastir, you learn French and fall in love with poetry and the French Revolution.",
+  "begin": 115.59,
+  "eind": 122.03
+ },
+ {
+  "i": 25,
+  "zin": "In 1899, you move to the War College in Istanbul, the capital of the empire.",
+  "begin": 122.556,
+  "eind": 127.976
+ },
+ {
+  "i": 26,
+  "zin": "The empire is old and weak, and people in Europe call it the sick man of Europe.",
+  "begin": 128.497,
+  "eind": 133.457
+ },
+ {
+  "i": 27,
+  "zin": "The Sultan has spies everywhere, and many books are forbidden.",
+  "begin": 134.013,
+  "eind": 137.073
+ },
+ {
+  "i": 28,
+  "zin": "You read them anyway, and you even start a secret student newspaper.",
+  "begin": 137.719,
+  "eind": 141.559
+ },
+ {
+  "i": 29,
+  "zin": "In 1905, you graduate as a staff captain, but the police arrest you for your secret meetings.",
+  "begin": 142.092,
+  "eind": 148.212
+ },
+ {
+  "i": 30,
+  "zin": "Soon after, they send you far away, to an army post in Damascus.",
+  "begin": 148.817,
+  "eind": 153.697
+ },
+ {
+  "i": 31,
+  "zin": "There, you start a secret society with a few friends, called Homeland and Freedom.",
+  "begin": 154.312,
+  "eind": 159.312
+ },
+ {
+  "i": 32,
+  "zin": "In 1908, a group of young officers forces the Sultan to bring back the constitution.",
+  "begin": 160.386,
+  "eind": 165.506
+ },
+ {
+  "i": 33,
+  "zin": "They're called the Young Turks, and you know them well, but they don't really trust you.",
+  "begin": 166.105,
+  "eind": 170.825
+ },
+ {
+  "i": 34,
+  "zin": "In 1911, Italy invades Libya, the empire's last province in Africa.",
+  "begin": 171.336,
+  "eind": 176.396
+ },
+ {
+  "i": 35,
+  "zin": "You travel there in secret, through Egypt, disguised as a journalist.",
+  "begin": 176.907,
+  "eind": 180.727
+ },
+ {
+  "i": 36,
+  "zin": "In the desert near Tobruk, you organise local fighters against the Italians.",
+  "begin": 181.264,
+  "eind": 185.924
+ },
+ {
+  "i": 37,
+  "zin": "But while you're away, a much bigger disaster happens at home.",
+  "begin": 186.546,
+  "eind": 190.026
+ },
+ {
+  "i": 38,
+  "zin": "In 1912, the Balkan states attack, and the empire loses almost all its land in Europe.",
+  "begin": 190.603,
+  "eind": 196.183
+ },
+ {
+  "i": 39,
+  "zin": "Your hometown, Salonica, is handed to Greece without a fight.",
+  "begin": 196.74,
+  "eind": 200.28
+ },
+ {
+  "i": 40,
+  "zin": "Your mother and your sister flee to Istanbul as refugees.",
+  "begin": 200.885,
+  "eind": 204.825
+ },
+ {
+  "i": 41,
+  "zin": "Then you're sent to Sofia, in Bulgaria, as a military attache, where you go to balls and learn to dance.",
+  "begin": 205.407,
+  "eind": 211.407
+ },
+ {
+  "i": 42,
+  "zin": "When the First World War begins, the empire joins Germany's side.",
+  "begin": 211.961,
+  "eind": 216.141
+ },
+ {
+  "i": 43,
+  "zin": "You think it's a terrible mistake.",
+  "begin": 216.784,
+  "eind": 218.704
+ },
+ {
+  "i": 44,
+  "zin": "In 1915, Britain and France want to sail straight to Istanbul and knock the empire out of the war.",
+  "begin": 219.844,
+  "eind": 226.164
+ },
+ {
+  "i": 45,
+  "zin": "First, their warships try to force their way through the Dardanelles strait, and they fail.",
+  "begin": 226.707,
+  "eind": 231.007
+ },
+ {
+  "i": 46,
+  "zin": "So on the twenty-fifth of April, they land troops on the Gallipoli peninsula: British, French, Australians and New Zealanders.",
+  "begin": 231.611,
+  "eind": 238.291
+ },
+ {
+  "i": 47,
+  "zin": "You're a lieutenant colonel with a division in reserve, and you see the enemy climbing the hills.",
+  "begin": 238.885,
+  "eind": 243.605
+ },
+ {
+  "i": 48,
+  "zin": "The soldiers in front of you are running back, out of ammunition.",
+  "begin": 244.263,
+  "eind": 247.763
+ },
+ {
+  "i": 49,
+  "zin": "You tell them to fix their bayonets and lie down, and the enemy stops too.",
+  "begin": 248.394,
+  "eind": 253.074
+ },
+ {
+  "i": 50,
+  "zin": "Then you give your most famous order, to the fifty-seventh regiment.",
+  "begin": 253.626,
+  "eind": 257.246
+ },
+ {
+  "i": 51,
+  "zin": "I don't order you to attack. I order you to die.",
+  "begin": 257.923,
+  "eind": 261.683
+ },
+ {
+  "i": 52,
+  "zin": "In the time it takes us to die, other troops and commanders can take our place.",
+  "begin": 262.204,
+  "eind": 266.764
+ },
+ {
+  "i": 53,
+  "zin": "Almost the whole regiment is killed, but the line holds.",
+  "begin": 267.339,
+  "eind": 270.939
+ },
+ {
+  "i": 54,
+  "zin": "For eight months, both armies fight from trenches, sometimes only a few metres apart.",
+  "begin": 271.575,
+  "eind": 276.775
+ },
+ {
+  "i": 55,
+  "zin": "In August, a piece of shrapnel hits you right in the chest.",
+  "begin": 277.303,
+  "eind": 280.663
+ },
+ {
+  "i": 56,
+  "zin": "But it hits the pocket watch in your breast pocket, and you walk away with a bruise.",
+  "begin": 281.251,
+  "eind": 284.911
+ },
+ {
+  "i": 57,
+  "zin": "In January 1916, the Allies give up and sail away.",
+  "begin": 285.418,
+  "eind": 289.718
+ },
+ {
+  "i": 58,
+  "zin": "Hundreds of thousands of soldiers on both sides have been killed or wounded.",
+  "begin": 290.338,
+  "eind": 294.638
+ },
+ {
+  "i": 59,
+  "zin": "Words attributed to you are carved in stone there today: to us, there is no difference between the Johnnies and the Mehmets.",
+  "begin": 295.276,
+  "eind": 302.656
+ },
+ {
+  "i": 60,
+  "zin": "You're a hero now, and at thirty-five, you become a general: Mustafa Kemal Pasha.",
+  "begin": 303.259,
+  "eind": 308.919
+ },
+ {
+  "i": 61,
+  "zin": "But in 1918, the empire loses the war anyway.",
+  "begin": 310.094,
+  "eind": 313.754
+ },
+ {
+  "i": 62,
+  "zin": "Allied warships sail into Istanbul and anchor in front of the Sultan's palace.",
+  "begin": 314.31,
+  "eind": 318.71
+ },
+ {
+  "i": 63,
+  "zin": "According to tradition, you look at them and say: they will leave the way they came.",
+  "begin": 319.335,
+  "eind": 323.615
+ },
+ {
+  "i": 64,
+  "zin": "The winners start dividing the empire between the British, the French, the Italians and the Greeks.",
+  "begin": 324.222,
+  "eind": 329.962
+ },
+ {
+  "i": 65,
+  "zin": "In May 1919, Greek troops land in Izmir, on the west coast.",
+  "begin": 330.567,
+  "eind": 334.627
+ },
+ {
+  "i": 66,
+  "zin": "The Sultan only wants to keep his throne, and he does what the occupiers say.",
+  "begin": 335.209,
+  "eind": 339.569
+ },
+ {
+  "i": 67,
+  "zin": "So he sends you to the Black Sea, to break up what's left of the army there.",
+  "begin": 340.22,
+  "eind": 343.94
+ },
+ {
+  "i": 68,
+  "zin": "On the nineteenth of May 1919, you step ashore in Samsun, from a tired old steamship.",
+  "begin": 344.61,
+  "eind": 350.27
+ },
+ {
+  "i": 69,
+  "zin": "And you do the exact opposite of your orders.",
+  "begin": 350.856,
+  "eind": 353.096
+ },
+ {
+  "i": 70,
+  "zin": "You travel from town to town, sending telegrams and gathering officers and ordinary people.",
+  "begin": 353.715,
+  "eind": 359.715
+ },
+ {
+  "i": 71,
+  "zin": "The nation's independence, you write, will be saved by the nation's own will.",
+  "begin": 360.226,
+  "eind": 364.646
+ },
+ {
+  "i": 72,
+  "zin": "The Sultan orders you back, so you resign from the army.",
+  "begin": 365.272,
+  "eind": 368.612
+ },
+ {
+  "i": 73,
+  "zin": "Then the Sultan's government sentences you to death.",
+  "begin": 369.229,
+  "eind": 371.669
+ },
+ {
+  "i": 74,
+  "zin": "In April 1920, you open a new parliament in Ankara, a small, dusty town in the middle of Anatolia.",
+  "begin": 372.348,
+  "eind": 379.148
+ },
+ {
+  "i": 75,
+  "zin": "That summer, the Sultan signs the Treaty of Sevres, which would leave the Turks only a small piece of their own land.",
+  "begin": 379.795,
+  "eind": 386.315
+ },
+ {
+  "i": 76,
+  "zin": "Now there are two governments, and you lead the one that fights back.",
+  "begin": 386.867,
+  "eind": 390.147
+ },
+ {
+  "i": 77,
+  "zin": "The Greek army marches deeper and deeper into Anatolia, toward Ankara.",
+  "begin": 391.224,
+  "eind": 395.904
+ },
+ {
+  "i": 78,
+  "zin": "Your army is short of everything: guns, boots and food.",
+  "begin": 396.524,
+  "eind": 400.164
+ },
+ {
+  "i": 79,
+  "zin": "Women carry shells to the front, on ox carts and on their own backs.",
+  "begin": 400.668,
+  "eind": 405.408
+ },
+ {
+  "i": 80,
+  "zin": "In August 1921, you're made commander-in-chief, but you fall from your horse and break a rib.",
+  "begin": 405.991,
+  "eind": 411.431
+ },
+ {
+  "i": 81,
+  "zin": "You command anyway, in pain, from a map table near the Sakarya river.",
+  "begin": 411.962,
+  "eind": 416.822
+ },
+ {
+  "i": 82,
+  "zin": "You tell your men: there is no line of defence, there is a surface of defence, and that surface is the whole country.",
+  "begin": 417.343,
+  "eind": 424.563
+ },
+ {
+  "i": 83,
+  "zin": "The battle lasts twenty-two days and nights.",
+  "begin": 425.073,
+  "eind": 427.653
+ },
+ {
+  "i": 84,
+  "zin": "Then the Greek army turns back.",
+  "begin": 428.292,
+  "eind": 429.952
+ },
+ {
+  "i": 85,
+  "zin": "Parliament makes you a marshal, and gives you the title Gazi, the veteran.",
+  "begin": 430.475,
+  "eind": 435.075
+ },
+ {
+  "i": 86,
+  "zin": "For a whole year, you rebuild the army in silence.",
+  "begin": 435.619,
+  "eind": 438.619
+ },
+ {
+  "i": 87,
+  "zin": "Then, on the twenty-sixth of August 1922, you attack.",
+  "begin": 439.19,
+  "eind": 443.21
+ },
+ {
+  "i": 88,
+  "zin": "Within days, the enemy front breaks.",
+  "begin": 443.867,
+  "eind": 446.307
+ },
+ {
+  "i": 89,
+  "zin": "And you give your next order: armies, your first goal is the Mediterranean. Forward!",
+  "begin": 446.821,
+  "eind": 452.061
+ },
+ {
+  "i": 90,
+  "zin": "On the ninth of September, your cavalry rides into Izmir.",
+  "begin": 452.642,
+  "eind": 456.482
+ },
+ {
+  "i": 91,
+  "zin": "The war is won.",
+  "begin": 457.081,
+  "eind": 458.341
+ },
+ {
+  "i": 92,
+  "zin": "In November 1922, parliament abolishes the sultanate, after more than six hundred years.",
+  "begin": 459.518,
+  "eind": 465.358
+ },
+ {
+  "i": 93,
+  "zin": "The last Sultan leaves Istanbul quietly, on a British warship.",
+  "begin": 466.005,
+  "eind": 469.525
+ },
+ {
+  "i": 94,
+  "zin": "In 1923, the Treaty of Lausanne recognises the borders of a new Turkey.",
+  "begin": 470.181,
+  "eind": 474.841
+ },
+ {
+  "i": 95,
+  "zin": "That same year, you marry Latife, a young woman who studied law in Europe.",
+  "begin": 475.391,
+  "eind": 479.511
+ },
+ {
+  "i": 96,
+  "zin": "She travels with you and stands at your side in public, which surprises a lot of people.",
+  "begin": 480.085,
+  "eind": 484.565
+ },
+ {
+  "i": 97,
+  "zin": "But the marriage lasts only two and a half years.",
+  "begin": 485.13,
+  "eind": 488.05
+ },
+ {
+  "i": 98,
+  "zin": "On the twenty-ninth of October 1923, the Republic of Turkey is proclaimed.",
+  "begin": 488.709,
+  "eind": 493.329
+ },
+ {
+  "i": 99,
+  "zin": "Ankara becomes the capital, and you become the first president.",
+  "begin": 494.002,
+  "eind": 497.322
+ },
+ {
+  "i": 100,
+  "zin": "A few months later, you abolish the caliphate as well.",
+  "begin": 497.849,
+  "eind": 500.649
+ },
+ {
+  "i": 101,
+  "zin": "Now you want to change everything, and fast.",
+  "begin": 501.684,
+  "eind": 504.224
+ },
+ {
+  "i": 102,
+  "zin": "In 1925, men have to stop wearing the fez, and wear hats instead.",
+  "begin": 504.766,
+  "eind": 510.326
+ },
+ {
+  "i": 103,
+  "zin": "You show them how, by touring the country in a Panama hat.",
+  "begin": 510.868,
+  "eind": 514.708
+ },
+ {
+  "i": 104,
+  "zin": "New laws, based on European ones, give women equal rights in marriage and divorce.",
+  "begin": 515.295,
+  "eind": 520.755
+ },
+ {
+  "i": 105,
+  "zin": "Then, in 1928, the biggest change of all: the Arabic letters are replaced by a new Latin alphabet.",
+  "begin": 521.361,
+  "eind": 527.821
+ },
+ {
+  "i": 106,
+  "zin": "You travel from town to town with a chalkboard, and teach the new letters yourself.",
+  "begin": 528.368,
+  "eind": 533.108
+ },
+ {
+  "i": 107,
+  "zin": "People start calling you the head teacher.",
+  "begin": 533.609,
+  "eind": 536.249
+ },
+ {
+  "i": 108,
+  "zin": "In 1934, Turkish women get the right to vote and to be elected, earlier than in France or Italy.",
+  "begin": 536.825,
+  "eind": 542.905
+ },
+ {
+  "i": 109,
+  "zin": "That same year, everyone in Turkey has to choose a surname.",
+  "begin": 543.471,
+  "eind": 546.511
+ },
+ {
+  "i": 110,
+  "zin": "Parliament gives you yours: Ataturk, Father of the Turks, and nobody else is allowed to use it.",
+  "begin": 547.113,
+  "eind": 552.773
+ },
+ {
+  "i": 111,
+  "zin": "Your adopted daughter, Sabiha Gokcen, becomes one of the first female fighter pilots in the world.",
+  "begin": 553.445,
+  "eind": 558.385
+ },
+ {
+  "i": 112,
+  "zin": "But it all happens under one party, yours, and revolts against your reforms are put down hard.",
+  "begin": 559.009,
+  "eind": 565.189
+ },
+ {
+  "i": 113,
+  "zin": "Your motto for the world is simple: peace at home, peace in the world.",
+  "begin": 565.782,
+  "eind": 569.782
+ },
+ {
+  "i": 114,
+  "zin": "But years of hard work and little sleep wear you down, and your liver is failing.",
+  "begin": 570.905,
+  "eind": 575.445
+ },
+ {
+  "i": 115,
+  "zin": "In 1938, you lie sick in Dolmabahce Palace, on the water in Istanbul.",
+  "begin": 576.067,
+  "eind": 581.207
+ },
+ {
+  "i": 116,
+  "zin": "On the tenth of November, at five past nine in the morning, you die, at fifty-seven.",
+  "begin": 581.717,
+  "eind": 586.557
+ },
+ {
+  "i": 117,
+  "zin": "According to tradition, the clock in your room is stopped at that exact minute.",
+  "begin": 587.218,
+  "eind": 591.118
+ },
+ {
+  "i": 118,
+  "zin": "Hundreds of thousands of people line the streets to say goodbye.",
+  "begin": 591.759,
+  "eind": 595.579
+ },
+ {
+  "i": 119,
+  "zin": "Today, you rest in Anitkabir, a huge mausoleum on a hill in Ankara.",
+  "begin": 596.236,
+  "eind": 601.916
+ },
+ {
+  "i": 120,
+  "zin": "Your face is on every banknote, and your portrait hangs in schools and offices.",
+  "begin": 602.56,
+  "eind": 606.76
+ },
+ {
+  "i": 121,
+  "zin": "And every tenth of November, at exactly five past nine, sirens sound.",
+  "begin": 607.331,
+  "eind": 613.111
+ },
+ {
+  "i": 122,
+  "zin": "Cars stop on the highway, people step out, and the whole country stands still.",
+  "begin": 613.682,
+  "eind": 618.702
+ },
+ {
+  "i": 123,
+  "zin": "Who should be born next? Tell us in the comments.",
+  "begin": 619.723,
+  "eind": 622.343
+ },
+ {
+  "i": 124,
+  "zin": "Subscribe for more.",
+  "begin": 622.957,
+  "eind": 624.077
+ }
+]

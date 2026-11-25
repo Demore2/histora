@@ -1,0 +1,140 @@
+{
+  "tijden": ["0:00", "0:29", "1:33", "2:40", "3:39", "5:09", "6:30", "7:39", "8:21", "9:30"],
+  "talen": {
+    "nl": {
+      "studio": "Nederlands",
+      "titel": "Wat als je geboren was als Atatürk?",
+      "haak": "Je wordt geboren in Saloniki, verliest je vader op je zevende en jaagt kraaien weg op de boerderij van je oom. Je doet stiekem examen voor de militaire school, houdt een invasie tegen bij Gallipoli en overleeft omdat een zakhorloge de granaatscherf opvangt. Dan bouw je uit de ruïnes van een rijk een nieuw land, verander je het alfabet en geef je iedereen een achternaam. Het echte verhaal van Mustafa Kemal Atatürk, verteld alsof het het jouwe is.",
+      "hoofdstukken": ["Wat als je Atatürk was?", "I · Kleine Mustafa", "II · Kemal", "III · De jonge officier", "IV · Gallipoli", "V · Samsun", "VI · Onafhankelijkheid", "VII · De Republiek", "VIII · De grote verandering", "IX · Vijf over negen"],
+      "vraag": "Wie moet er als volgende geboren worden? Zet het in de reacties.",
+      "engels": "De video is in het Engels.",
+      "tags": "#atatürk #turkije #geschiedenis #gallipoli"
+    },
+    "de": {
+      "studio": "Deutsch",
+      "titel": "Was wäre, wenn du als Atatürk geboren wärst?",
+      "haak": "Du wirst in Saloniki geboren, verlierst mit sieben deinen Vater und verscheuchst Krähen auf dem Hof deines Onkels. Heimlich machst du die Aufnahmeprüfung für die Militärschule, stoppst bei Gallipoli eine Invasion und überlebst, weil eine Taschenuhr den Granatsplitter abfängt. Dann baust du aus den Trümmern eines Reiches ein neues Land, änderst das Alphabet und gibst allen einen Nachnamen. Die wahre Geschichte von Mustafa Kemal Atatürk, erzählt, als wäre es deine.",
+      "hoofdstukken": ["Was wäre, wenn du Atatürk wärst?", "I · Der kleine Mustafa", "II · Kemal", "III · Der junge Offizier", "IV · Gallipoli", "V · Samsun", "VI · Unabhängigkeit", "VII · Die Republik", "VIII · Der große Wandel", "IX · Fünf nach neun"],
+      "vraag": "Wer soll als Nächstes geboren werden? Schreib es in die Kommentare.",
+      "engels": "Das Video ist auf Englisch.",
+      "tags": "#atatürk #türkei #geschichte #gallipoli"
+    },
+    "fr": {
+      "studio": "Français",
+      "titel": "Et si tu étais né Atatürk ?",
+      "haak": "Tu nais à Salonique, tu perds ton père à sept ans et tu chasses les corbeaux dans la ferme de ton oncle. Tu passes en cachette l'examen de l'école militaire, tu arrêtes une invasion à Gallipoli et tu survis parce qu'une montre de poche arrête l'éclat d'obus. Puis tu bâtis un nouveau pays sur les ruines d'un empire, tu changes son alphabet et tu donnes un nom de famille à tout le monde. La vraie histoire de Mustafa Kemal Atatürk, racontée comme si c'était la tienne.",
+      "hoofdstukken": ["Et si tu étais Atatürk ?", "I · Le petit Mustafa", "II · Kemal", "III · Le jeune officier", "IV · Gallipoli", "V · Samsun", "VI · L'indépendance", "VII · La République", "VIII · Le grand changement", "IX · Neuf heures cinq"],
+      "vraag": "Qui doit naître ensuite ? Dis-le dans les commentaires.",
+      "engels": "La vidéo est en anglais.",
+      "tags": "#atatürk #turquie #histoire #gallipoli"
+    },
+    "es": {
+      "studio": "Español",
+      "titel": "¿Y si hubieras nacido como Atatürk?",
+      "haak": "Naces en Salónica, pierdes a tu padre a los siete años y espantas cuervos en la granja de tu tío. Haces a escondidas el examen de la escuela militar, frenas una invasión en Galípoli y sobrevives porque un reloj de bolsillo detiene la metralla. Después construyes un país nuevo sobre las ruinas de un imperio, cambias su alfabeto y das a todos un apellido. La historia real de Mustafa Kemal Atatürk, contada como si fuera la tuya.",
+      "hoofdstukken": ["¿Y si fueras Atatürk?", "I · El pequeño Mustafa", "II · Kemal", "III · El joven oficial", "IV · Galípoli", "V · Samsun", "VI · Independencia", "VII · La República", "VIII · El gran cambio", "IX · Las nueve y cinco"],
+      "vraag": "¿Quién debería nacer después? Dínoslo en los comentarios.",
+      "engels": "El vídeo está en inglés.",
+      "tags": "#atatürk #turquía #historia #galípoli"
+    },
+    "pt": {
+      "studio": "Português (Brasil)",
+      "titel": "E se você tivesse nascido como Atatürk?",
+      "haak": "Você nasce em Salônica, perde o pai aos sete anos e espanta corvos na fazenda do seu tio. Faz escondido a prova da escola militar, detém uma invasão em Galípoli e sobrevive porque um relógio de bolso segura o estilhaço. Depois constrói um país novo sobre as ruínas de um império, muda o alfabeto e dá um sobrenome a todo mundo. A história real de Mustafa Kemal Atatürk, contada como se fosse a sua.",
+      "hoofdstukken": ["E se você fosse Atatürk?", "I · O pequeno Mustafa", "II · Kemal", "III · O jovem oficial", "IV · Galípoli", "V · Samsun", "VI · Independência", "VII · A República", "VIII · A grande mudança", "IX · Nove e cinco"],
+      "vraag": "Quem deve nascer a seguir? Conta pra gente nos comentários.",
+      "engels": "O vídeo está em inglês.",
+      "tags": "#atatürk #turquia #história #galípoli"
+    },
+    "it": {
+      "studio": "Italiano",
+      "titel": "E se fossi nato come Atatürk?",
+      "haak": "Nasci a Salonicco, perdi tuo padre a sette anni e scacci i corvi nella fattoria di tuo zio. Fai di nascosto l'esame per la scuola militare, fermi un'invasione a Gallipoli e sopravvivi perché un orologio da tasca blocca la scheggia. Poi costruisci un nuovo paese sulle rovine di un impero, cambi il suo alfabeto e dai a tutti un cognome. La vera storia di Mustafa Kemal Atatürk, raccontata come se fosse la tua.",
+      "hoofdstukken": ["E se fossi Atatürk?", "I · Il piccolo Mustafa", "II · Kemal", "III · Il giovane ufficiale", "IV · Gallipoli", "V · Samsun", "VI · Indipendenza", "VII · La Repubblica", "VIII · Il grande cambiamento", "IX · Le nove e cinque"],
+      "vraag": "Chi dovrebbe nascere dopo? Scrivilo nei commenti.",
+      "engels": "Il video è in inglese.",
+      "tags": "#atatürk #turchia #storia #gallipoli"
+    },
+    "ru": {
+      "studio": "Русский",
+      "titel": "Что, если бы ты родился Ататюрком?",
+      "haak": "Ты рождаешься в Салониках, в семь лет теряешь отца и гоняешь ворон на ферме дяди. Тайком сдаёшь экзамен в военную школу, останавливаешь вторжение при Галлиполи и выживаешь, потому что осколок попадает в карманные часы. Потом ты строишь новую страну на руинах империи, меняешь её алфавит и даёшь всем фамилии. Настоящая история Мустафы Кемаля Ататюрка, рассказанная так, будто это твоя жизнь.",
+      "hoofdstukken": ["Что, если бы ты был Ататюрком?", "I · Маленький Мустафа", "II · Кемаль", "III · Молодой офицер", "IV · Галлиполи", "V · Самсун", "VI · Независимость", "VII · Республика", "VIII · Великие перемены", "IX · Девять часов пять минут"],
+      "vraag": "Кто должен родиться следующим? Пиши в комментариях.",
+      "engels": "Видео на английском языке.",
+      "tags": "#ататюрк #турция #история #галлиполи"
+    },
+    "tr": {
+      "studio": "Türkçe",
+      "titel": "Atatürk olarak doğsaydın ne olurdu?",
+      "haak": "Selanik'te doğuyorsun, yedi yaşında babanı kaybediyorsun ve dayının çiftliğinde kargaları kovalıyorsun. Askeri okulun sınavına gizlice giriyorsun, Çanakkale'de bir istilayı durduruyorsun ve şarapnel parçasını cep saatin durdurduğu için hayatta kalıyorsun. Sonra bir imparatorluğun yıkıntılarından yeni bir ülke kuruyorsun, alfabeyi değiştiriyorsun ve herkese bir soyadı veriyorsun. Mustafa Kemal Atatürk'ün gerçek hikâyesi, sanki senin hikâyenmiş gibi anlatılıyor.",
+      "hoofdstukken": ["Atatürk olsaydın?", "I · Küçük Mustafa", "II · Kemal", "III · Genç subay", "IV · Çanakkale", "V · Samsun", "VI · Bağımsızlık", "VII · Cumhuriyet", "VIII · Büyük değişim", "IX · Dokuzu beş geçe"],
+      "vraag": "Sırada kim doğmalı? Yorumlarda yaz.",
+      "engels": "Video İngilizcedir.",
+      "tags": "#atatürk #türkiye #tarih #çanakkale"
+    },
+    "ar": {
+      "studio": "العربية",
+      "titel": "ماذا لو وُلدت أتاتورك؟",
+      "haak": "تولد في سالونيك، وتفقد والدك في السابعة، وتطارد الغربان في مزرعة خالك. تخوض سرًّا امتحان المدرسة العسكرية، وتوقف غزوًا في غاليبولي، وتنجو لأن ساعة الجيب أوقفت شظية القذيفة. ثم تبني بلدًا جديدًا من أنقاض إمبراطورية، وتغيّر أبجديته، وتمنح الجميع ألقابًا عائلية. القصة الحقيقية لمصطفى كمال أتاتورك، كأنها قصتك أنت.",
+      "hoofdstukken": ["ماذا لو كنت أتاتورك؟", "I · مصطفى الصغير", "II · كمال", "III · الضابط الشاب", "IV · غاليبولي", "V · سامسون", "VI · الاستقلال", "VII · الجمهورية", "VIII · التغيير الكبير", "IX · التاسعة وخمس دقائق"],
+      "vraag": "من يجب أن يولد بعد ذلك؟ اكتب في التعليقات.",
+      "engels": "الفيديو باللغة الإنجليزية.",
+      "tags": "#أتاتورك #تركيا #تاريخ #غاليبولي"
+    },
+    "fa": {
+      "studio": "فارسی",
+      "titel": "اگر آتاتورک به دنیا می‌آمدی چه می‌شد؟",
+      "haak": "در سالونیک به دنیا می‌آیی، در هفت‌سالگی پدرت را از دست می‌دهی و در مزرعهٔ دایی‌ات کلاغ‌ها را فراری می‌دهی. پنهانی در امتحان مدرسهٔ نظامی شرکت می‌کنی، در گالیپولی جلوی یک تهاجم را می‌گیری و زنده می‌مانی چون ساعت جیبی‌ات ترکش را متوقف می‌کند. بعد از ویرانه‌های یک امپراتوری کشوری تازه می‌سازی، الفبایش را عوض می‌کنی و به همه نام خانوادگی می‌دهی. داستان واقعی مصطفی کمال آتاتورک، طوری که انگار داستان خود توست.",
+      "hoofdstukken": ["اگر آتاتورک بودی؟", "I · مصطفای کوچک", "II · کمال", "III · افسر جوان", "IV · گالیپولی", "V · سامسون", "VI · استقلال", "VII · جمهوری", "VIII · تغییر بزرگ", "IX · نه و پنج دقیقه"],
+      "vraag": "نفر بعدی چه کسی باشد؟ در نظرها بنویس.",
+      "engels": "این ویدیو به زبان انگلیسی است.",
+      "tags": "#آتاتورک #ترکیه #تاریخ #گالیپولی"
+    },
+    "hi": {
+      "studio": "हिन्दी",
+      "titel": "अगर तुम अतातुर्क के रूप में पैदा होते तो?",
+      "haak": "तुम सलोनिका में पैदा होते हो, सात साल की उम्र में पिता को खो देते हो और मामा के खेत पर कौवे भगाते हो। चुपके से सैन्य स्कूल की परीक्षा देते हो, गैलीपोली में एक हमले को रोकते हो और इसलिए बच जाते हो क्योंकि जेब घड़ी छर्रे को रोक लेती है। फिर एक साम्राज्य के खंडहरों से नया देश बनाते हो, उसकी वर्णमाला बदलते हो और सबको उपनाम देते हो। मुस्तफ़ा कमाल अतातुर्क की असली कहानी, जैसे वह तुम्हारी अपनी हो।",
+      "hoofdstukken": ["अगर तुम अतातुर्क होते?", "I · छोटा मुस्तफ़ा", "II · कमाल", "III · युवा अफ़सर", "IV · गैलीपोली", "V · सामसुन", "VI · आज़ादी", "VII · गणराज्य", "VIII · बड़ा बदलाव", "IX · नौ बजकर पाँच मिनट"],
+      "vraag": "अगला कौन पैदा होना चाहिए? कमेंट में बताओ।",
+      "engels": "यह वीडियो अंग्रेज़ी में है।",
+      "tags": "#अतातुर्क #तुर्की #इतिहास #गैलीपोली"
+    },
+    "ur": {
+      "studio": "اردو",
+      "titel": "اگر آپ اتاترک کے طور پر پیدا ہوتے تو؟",
+      "haak": "آپ سالونیکا میں پیدا ہوتے ہیں، سات سال کی عمر میں والد کو کھو دیتے ہیں اور ماموں کے کھیت پر کوّے اڑاتے ہیں۔ چھپ کر فوجی اسکول کا امتحان دیتے ہیں، گیلی پولی میں ایک حملہ روکتے ہیں اور اس لیے بچ جاتے ہیں کہ جیبی گھڑی گولے کا ٹکڑا روک لیتی ہے۔ پھر ایک سلطنت کے کھنڈروں سے نیا ملک بناتے ہیں، اس کا حروفِ تہجی بدلتے ہیں اور سب کو خاندانی نام دیتے ہیں۔ مصطفیٰ کمال اتاترک کی سچی کہانی، جیسے وہ آپ کی اپنی ہو۔",
+      "hoofdstukken": ["اگر آپ اتاترک ہوتے؟", "I · ننھا مصطفیٰ", "II · کمال", "III · نوجوان افسر", "IV · گیلی پولی", "V · سامسون", "VI · آزادی", "VII · جمہوریہ", "VIII · بڑی تبدیلی", "IX · نو بج کر پانچ منٹ"],
+      "vraag": "اگلا کون پیدا ہونا چاہیے؟ کمنٹس میں بتائیں۔",
+      "engels": "یہ ویڈیو انگریزی میں ہے۔",
+      "tags": "#اتاترک #ترکی #تاریخ #گیلی_پولی"
+    },
+    "id": {
+      "studio": "Indonesia",
+      "titel": "Bagaimana jika kamu lahir sebagai Atatürk?",
+      "haak": "Kamu lahir di Salonika, kehilangan ayahmu pada usia tujuh tahun, dan mengusir burung gagak di ladang pamanmu. Diam-diam kamu ikut ujian sekolah militer, menghentikan invasi di Gallipoli, dan selamat karena jam saku menahan serpihan peluru. Lalu kamu membangun negara baru dari reruntuhan sebuah kekaisaran, mengganti alfabetnya, dan memberi semua orang nama keluarga. Kisah nyata Mustafa Kemal Atatürk, diceritakan seolah-olah itu kisahmu.",
+      "hoofdstukken": ["Bagaimana jika kamu Atatürk?", "I · Mustafa kecil", "II · Kemal", "III · Perwira muda", "IV · Gallipoli", "V · Samsun", "VI · Kemerdekaan", "VII · Republik", "VIII · Perubahan besar", "IX · Pukul sembilan lewat lima"],
+      "vraag": "Siapa yang harus lahir berikutnya? Tulis di kolom komentar.",
+      "engels": "Video ini dalam bahasa Inggris.",
+      "tags": "#atatürk #turki #sejarah #gallipoli"
+    },
+    "ms": {
+      "studio": "Melayu",
+      "titel": "Bagaimana jika anda dilahirkan sebagai Atatürk?",
+      "haak": "Anda lahir di Salonika, kehilangan ayah pada usia tujuh tahun dan menghalau burung gagak di ladang bapa saudara anda. Secara senyap anda menduduki peperiksaan sekolah tentera, menghentikan pencerobohan di Gallipoli dan terselamat kerana jam poket menahan serpihan peluru. Kemudian anda membina negara baharu daripada runtuhan sebuah empayar, menukar abjadnya dan memberi semua orang nama keluarga. Kisah sebenar Mustafa Kemal Atatürk, diceritakan seolah-olah ia kisah anda.",
+      "hoofdstukken": ["Bagaimana jika anda Atatürk?", "I · Mustafa kecil", "II · Kemal", "III · Pegawai muda", "IV · Gallipoli", "V · Samsun", "VI · Kemerdekaan", "VII · Republik", "VIII · Perubahan besar", "IX · Pukul sembilan lima minit"],
+      "vraag": "Siapa yang patut lahir seterusnya? Tulis di ruangan komen.",
+      "engels": "Video ini dalam bahasa Inggeris.",
+      "tags": "#atatürk #turki #sejarah #gallipoli"
+    },
+    "az": {
+      "studio": "Azərbaycan",
+      "titel": "Atatürk kimi doğulsaydın nə olardı?",
+      "haak": "Salonikdə doğulursan, yeddi yaşında atanı itirirsən və dayının fermasında qarğaları qovursan. Hərbi məktəbin imtahanına gizlicə girirsən, Çanaqqalada bir işğalı dayandırırsan və qəlpəni cib saatın saxladığı üçün sağ qalırsan. Sonra bir imperiyanın xarabalıqlarından yeni ölkə qurursan, əlifbanı dəyişirsən və hamıya soyad verirsən. Mustafa Kamal Atatürkün əsl hekayəsi, sanki sənin hekayənmiş kimi danışılır.",
+      "hoofdstukken": ["Atatürk olsaydın?", "I · Balaca Mustafa", "II · Kamal", "III · Gənc zabit", "IV · Çanaqqala", "V · Samsun", "VI · İstiqlal", "VII · Respublika", "VIII · Böyük dəyişiklik", "IX · Doqquzu beş keçə"],
+      "vraag": "Növbəti kim doğulmalıdır? Şərhlərdə yaz.",
+      "engels": "Video ingilis dilindədir.",
+      "tags": "#atatürk #türkiyə #tarix #çanaqqala"
+    }
+  }
+}
