@@ -10,6 +10,7 @@ import { Janitsaren, Kavuk, Koepelgebouw, MEHMED, Stadsmuur } from './MehmedKit'
 import { OmslagBarsbekScène } from './WatAlsBarsbek';
 import { OmslagWillemScène } from './WatAlsWillem';
 import { OmslagStalinScène } from './WatAlsStalin';
+import { Falanx, LEONIDAS, Spartaan } from '../lang/LeonidasKit';
 
 /**
  * Omslagen voor de "What if"-video's: held in close-up in zijn eigen scène, titel groot bovenaan.
@@ -169,5 +170,19 @@ export const OmslagWillem = () => (
 export const OmslagStalin = () => (
   <Omslag naam="STALIN?" grootte={190} focus={[0, 3.4, 0]}>
     <OmslagStalinScène />
+  </Omslag>
+);
+
+export const OmslagLeonidas = () => (
+  <Omslag naam="LEONIDAS?" grootte={160} focus={[0, 2.4, 0]}>
+    <fog attach="fog" args={['#C8845A', 20, 120]} />
+    <Lucht boven="#4A2E4A" horizon="#F08A4A" />
+    <Zon position={[5, 4, -110]} grootte={16} kleur="#FFC07A" />
+    <Camera pos={[1.1, 1.9, 5.0]} kijk={[0, 2.3, 0]} fov={36} />
+    <Avondlicht />
+    <Daglicht zon={[6, 8, 8]} kleur="#FFC890" kracht={1.9} />
+    <Grond kleur="#B8A27A" />
+    <Falanx rijen={2} kolommen={9} position={[0.6, 0, -6]} />
+    <Spartaan koning kleding={LEONIDAS} schild="voor" position={[0, 0, 0]} rotation={[0, 0.3, 0]} pose={{ wenk: 0.7 }} />
   </Omslag>
 );

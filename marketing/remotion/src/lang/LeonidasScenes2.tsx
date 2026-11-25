@@ -817,7 +817,7 @@ export const S_Ontbijt = () => {
 };
 
 /** Losse Korinthische helm met de dwarse koningskam (om in het stof te leggen). */
-const Helm = () => (
+export const Helm = () => (
   <group>
     <Blok p={[0, 0.3, 0]} s={[0.7, 0.42, 0.66]} c="#B8863A" rough={0.3} metal={0.75} />
     <Blok p={[0, -0.12, -0.3]} s={[0.7, 0.5, 0.06]} c="#B8863A" rough={0.3} metal={0.75} />

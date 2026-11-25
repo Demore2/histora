@@ -33,7 +33,7 @@ Elke short gaat in één keer naar **YouTube (19:00, 14 vaste talen) + Instagram
 **Stap 1, lokaal (kost geen credits):**
 
 ```bash
-node marketing/posten-klaar.mjs marketing/1.videos/1.te-posten/yt-shorts/<map>
+node marketing/posten-klaar.mjs marketing/1.videos/1.te-posten/<nn>-<id>-short
 ```
 
 Dat controleert de lengte (max 58 s), maakt `*-upload.mp4` van < 10 MB (de browser-uploadgrens), leest `youtube.md`

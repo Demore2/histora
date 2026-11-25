@@ -1,9 +1,9 @@
-# Leonidas — lange video #04 (YouTube + TikTok + Instagram)
+# Leonidas — lange video #04 (YouTube)
 
-Posten: **donderdag 2026-11-26 06:00 NL**, ingepland (tweede test van het vroege tijdslot, na Caesar op 19 nov).
-Bestand: `leonidas.mp4` (~9:00, komt pas na de stemopname op 25 nov). YouTube: video + `thumbnail.png`. TikTok en
-Instagram: dezelfde mp4, volledig; kies bij de omslag "Toevoegen via filmrol" en neem `omslag-reel.png` (1080x1920,
-alles binnen het 3:4-midden dat het profielraster toont). De gestapelde omslag zit ook in de eerste 3 frames.
+Posten: **donderdag 2026-11-26 16:00 NL** op YouTube. Een uur later (17:00) gaat de What-if-short van Leonidas uit op
+YouTube, Instagram en TikTok (`../../04-leonidas-short/`), met deze video als gerelateerde video.
+Bestand: `leonidas.mp4` (7:57) + `thumbnail.png` (AGE 0 / 300). Stem: lokaal Chatterbox (Dylan). Muziek: de Caesar-stukken.
+Vertalingen: `vertalingen.json` (de vaste 14 + Grieks). Thumbnail-test: zie `werk/NOG-TE-DOEN.md`.
 
 ## YouTube
 
@@ -16,7 +16,15 @@ alles binnen het 3:4-midden dat het profielraster toont). De gestapelde omslag z
 You're born in Sparta, a third son nobody expects to rule. At seven you're taken from your mother and starved on purpose. By accident you become king. Then the biggest army the world has ever seen marches on Greece, and you go to meet it with three hundred men. The real story of Leonidas and Thermopylae, told as if it were yours, including the part the movies leave out.
 
 0:00 What if you were Leonidas?
-CHAPTERS_HIER (na de stemopname invullen uit leonidas-timing.json)
+0:23 I · Born in Sparta
+1:06 II · The agoge
+2:03 III · King by accident
+2:56 IV · Earth and water
+3:43 V · The oracle
+4:31 VI · The hot gates
+5:19 VII · Fighting in the shade
+6:00 VIII · The goat path
+7:01 IX · Go tell the Spartans
 
 Maps show modern borders and are approximate. Main sources: Herodotus (Histories, books 5-7) and Plutarch (Life of Lycurgus; Sayings of Spartans; Sayings of Spartan Women). "Molon labe" and "tonight we dine in the underworld" come from later writers, not from Herodotus.
 
@@ -24,23 +32,11 @@ Who should be born next? Tell us in the comments.
 
 #leonidas #sparta #thermopylae #300 #history #ancientgreece
 
-## TikTok
+## Vastgezette reactie
 
-You're born in Sparta. At seven they starve you on purpose. Around sixty, you hold the most famous pass in history with 300 men. Would you have stayed? Who should be born next? #leonidas #sparta #thermopylae #history #ancientgreece
-
-## Instagram (volledige video als reel)
-
-**Tekst:**
-
-What if you were born as Leonidas?
-
-You're born in Sparta, the third son, nobody's choice for king. At seven you're taken from your mother and taught to steal your own food. Fifty years later the crown lands on your head, and the largest army on Earth is coming. You march to the hot gates with three hundred men, knowing the oracle said a king must die. The real story, not the movie one.
-
-Would you have stayed at Thermopylae? And who should be born next? Tell me in the comments.
-
-#leonidas #sparta #thermopylae #ancientgreece #history
+Would you have stayed at Thermopylae? 🛡️ And who should be born next? Tell us below 👇
 
 ## Slagingskans
 
 **YouTube ~45%** om boven de 1.000 weergaven te komen in de eerste week. Waarom het kan werken: Leonidas heeft het grootste fandom van de oudheid na Caesar (de film 300, games, "This is Sparta"-memes), precies het "real story behind the film"-onderwerp waarmee Born in Lore groeit; de thumbnail AGE 0 / 300 leest in een halve seconde. Waarom het kan floppen: het kanaal is nog klein, en Thermopylae is een druk onderwerp met grote kanalen die er al een video over hebben.
-**Instagram ~40%** voor meer dan 5.000: Sparta doet het traditioneel goed bij het publiek in India, de VS en het Midden-Oosten. **TikTok ~25%** voor meer dan 2.000.
+Instagram en TikTok krijgen alleen de short (17:00).

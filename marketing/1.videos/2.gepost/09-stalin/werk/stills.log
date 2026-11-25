@@ -1,0 +1,83 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+SymbolicateableError: R3F: Circle is not part of the THREE namespace! Did you forget to extend? See: https://docs.pmnd.rs/react-three-fiber/api/objects#using-3rd-party-objects-declaratively
+    at validateInstance (http://localhost:3002/bundle.js:85007:46)
+    at createInstance (http://localhost:3002/bundle.js:85019:3)
+    at completeWork (http://localhost:3002/bundle.js:150073:32)
+    at completeUnitOfWork (http://localhost:3002/bundle.js:153101:18)
+    at performUnitOfWork (http://localhost:3002/bundle.js:152995:21)
+    at workLoopSync (http://localhost:3002/bundle.js:152866:39)
+    at renderRootSync (http://localhost:3002/bundle.js:152847:9)
+    at performWorkOnRoot (http://localhost:3002/bundle.js:152440:42)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3002/bundle.js:145211:5)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3002/bundle.js:155231:44) {
+  stackFrame: [
+    {
+      columnNumber: 45,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'validateInstance',
+      lineNumber: 85006
+    },
+    {
+      columnNumber: 2,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'createInstance',
+      lineNumber: 85018
+    },
+    {
+      columnNumber: 31,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'completeWork',
+      lineNumber: 150072
+    },
+    {
+      columnNumber: 17,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'completeUnitOfWork',
+      lineNumber: 153100
+    },
+    {
+      columnNumber: 20,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'performUnitOfWork',
+      lineNumber: 152994
+    },
+    {
+      columnNumber: 38,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'workLoopSync',
+      lineNumber: 152865
+    },
+    {
+      columnNumber: 8,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'renderRootSync',
+      lineNumber: 152846
+    },
+    {
+      columnNumber: 41,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'performWorkOnRoot',
+      lineNumber: 152439
+    },
+    {
+      columnNumber: 4,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'performWorkOnRootViaSchedulerTask',
+      lineNumber: 145210
+    },
+    {
+      columnNumber: 43,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'performWorkUntilDeadline',
+      lineNumber: 155230
+    }
+  ],
+  delayRenderCall: null,
+  frame: null,
+  chunk: null
+}
+
+Node.js v24.18.0

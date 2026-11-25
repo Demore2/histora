@@ -4,7 +4,7 @@ description: Build a Histora "What if you were <person>?" short - a 3D video of 
 ---
 
 > **Active again since 2026-11-23**: one What-if per day on fan request (YouTube Shorts + Instagram + TikTok), next
-> to the long videos. New shorts go in `marketing/1.videos/1.te-posten/yt-shorts/<n>-<dag>-<id>/` (flat: the mp4s,
+> to the long videos. New shorts go in `marketing/1.videos/1.te-posten/<nn>-<id>-short/` (flat: the mp4s,
 > `omslag.png`, `youtube.md`); posting runs through `node marketing/posten-klaar.mjs <map>` → `posten.json` and the
 > routes in `marketing/README.md`. Newest template to copy: `WatAlsStalin.tsx` / `WatAlsWillem.tsx` (14 scenes,
 > `DUUR = [140,110,120,120,110,115,115,115,115,110,110,110,115,210]` = 57.2 s).

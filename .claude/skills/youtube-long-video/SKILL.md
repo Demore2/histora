@@ -5,7 +5,7 @@ description: Build a Histora long-form YouTube video (16:9, 8-10 min, voiced) in
 
 # Histora long-form YouTube videos (approved 2026-11-16: "echt goated")
 
-**Current template: William of Orange** (#08, 2026-11-25, built in one afternoon): `marketing/1.videos/1.te-posten/08-willem/`
+**Current template: William of Orange** (#08, 2026-11-25, built in one afternoon): `marketing/1.videos/2.gepost/08-willem/`
 and `marketing/remotion/src/lang/Willem*.tsx` + `KaarttafelNL.tsx`. Copy that one, not Napoleon: it uses the new
 voice, the set-with-`fase` approach and the Studio routine below. Older notes in `marketing/1.videos/README.md`.
 

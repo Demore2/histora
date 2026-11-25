@@ -324,7 +324,7 @@ export const LeonidasLang = ({ muziek = true, stem = false }: { muziek?: boolean
       <LeonidasOmslag />
     </Sequence>
     {muziek && <Muziek />}
-    {stem && <Audio src={staticFile('lokaal/leonidas-lang-voice.mp3')} volume={1.25} />}
+    {stem && <Audio src={staticFile('lokaal/leonidas-lang-voice.wav')} volume={1.25} />}
   </AbsoluteFill>
 );
 
