@@ -15,7 +15,7 @@ for (const [k, t] of Object.entries(v.talen)) {
 const M = {
   nl: 'Nederlands', de: 'Duits', fr: 'Frans', es: 'Spaans', pt: 'Portugees (Brazilië)', it: 'Italiaans', ru: 'Russisch',
   tr: 'Turks', ar: 'Arabisch', fa: 'Perzisch', hi: 'Hindi', ur: 'Urdu', id: 'Indonesisch', ms: 'Maleis',
-  el: 'Grieks', ky: 'Kirgizisch', mn: 'Mongools', pl: 'Pools', vi: 'Vietnamees',
+  el: 'Grieks', ka: 'Georgisch', uk: 'Oekraïens', ky: 'Kirgizisch', mn: 'Mongools', pl: 'Pools', vi: 'Vietnamees',
 };
 process.stdout.write(`window.__T=${JSON.stringify(T)};window.__M=${JSON.stringify(M)};
 const w=ms=>new Promise(r=>setTimeout(r,ms));

@@ -10,6 +10,7 @@ import { Driekleur } from './LangDecor';
 import { SALADIN, YUSUF } from './SaladinScenes';
 import { Baby, Falanx, LEONIDAS, PersLeger, Spartaan, Wieg } from './LeonidasKit';
 import { Baibars, Eskadron, LeeuwVaandel, NekBordje } from './BaibarsKit';
+import { Kremlin as KremlinS, RodeVlag as RodeVlagS, SOSO as SOSO_K, STALIN_P as STALIN_THUMB } from './StalinKit';
 import { Molen, ORANJE as W_ORANJE, Prinsenvlag, W as WILLEM_P, WILLEM_KIND } from './WillemKit';
 
 /**
@@ -355,4 +356,69 @@ export const WillemThumb = () => (
       </>
     }
   />
+);
+/** Stalin (YouTube): links het boze jongetje van zeven in het arme huis in Gori, rechts Stalin met pijp voor het
+ * Kremlin bij zonsondergang: "DICTATOR". */
+export const StalinThumb = () => (
+  <Breed
+    woordLinks="AGE 7"
+    woordRechts="DICTATOR"
+    boos={[790, 140]}
+    links={
+      <>
+        <Lucht boven="#F3E2C4" horizon="#F3E2C4" />
+        <Daglicht zon={[3, 6, 6]} kracht={1.6} omgeving={1.5} />
+        <Grond kleur="#6A5A44" />
+        <Blok p={[0, 3, -1.2]} s={[8, 6, 0.4]} c="#B8A88A" />
+        <Blok p={[-0.55, 1.35, -0.98]} s={[0.8, 0.9, 0.05]} c="#5A3B24" />
+        <Blok p={[-0.55, 1.35, -0.95]} s={[0.68, 0.78, 0.05]} c="#A8D2EE" />
+        <Figuur kleding={SOSO_K} position={[0.2, 0, 0.2]} rotation={[0, 0.12, 0]} scale={0.45} pose={{ wenk: 1, mond: 'open', armL: { schouder: [-1.2, 0, 0.4], elleboog: [0, -1.0] }, armR: { schouder: [-1.2, 0, -0.4], elleboog: [0, 1.0] } }} />
+      </>
+    }
+    rechts={
+      <>
+        <Lucht boven="#B83A2A" horizon="#FFC36A" />
+        <Zon position={[-12, 6, -90]} grootte={16} kleur="#FFE9A8" />
+        <Daglicht zon={[6, 12, 8]} kracht={2.2} />
+        <Camera pos={[-0.15, 2.2, 3.0]} kijk={[-0.15, 2.1, 0]} fov={36} />
+        <Grond kleur="#6E6A66" />
+        <KremlinS position={[0, 0, -30]} />
+        <RodeVlagS position={[-2.6, 0, -2]} h={4.2} />
+        <Figuur {...STALIN_THUMB} rotation={[0, -0.12, 0]} pose={{ wenk: 0.8 }} />
+        <pointLight position={[0.6, 3.0, 1.6]} intensity={4} distance={4} color="#FFE08A" />
+      </>
+    }
+  />
+);
+
+/** Instagram-story (1080x1920) bij de lange Stalin-video: Stalin voor het Kremlin, "FULL VIDEO NOW ON YOUTUBE",
+ * met een lege strook onderin voor de link-sticker die in de app wordt geplakt. */
+export const StalinStory = () => (
+  <AbsoluteFill style={{ background: '#1A120A' }}>
+    <ThreeCanvas width={1080} height={1920} shadows="soft" gl={{ antialias: true }} camera={{ fov: 35, near: 0.3, far: 400 }}>
+      <Lucht boven="#B83A2A" horizon="#FFC36A" />
+      <Zon position={[-6, 8, -90]} grootte={16} kleur="#FFE9A8" />
+      <Daglicht zon={[6, 12, 8]} kracht={2.2} />
+      <Camera pos={[0.4, 2.0, 5.2]} kijk={[0.1, 2.15, 0]} fov={42} />
+      <Grond kleur="#6E6A66" />
+      <KremlinS position={[0, 0, -30]} />
+      <RodeVlagS position={[-2.4, 0, -2]} h={4.2} />
+      <Figuur {...STALIN_THUMB} rotation={[0, -0.12, 0]} pose={{ wenk: 0.8 }} />
+      <pointLight position={[0.6, 3.0, 1.6]} intensity={4} distance={4} color="#FFE08A" />
+      <Scherpte focus={[0, 2.2, 0]} sterkte={2} />
+    </ThreeCanvas>
+    <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(20,12,6,0.75) 0%, rgba(20,12,6,0) 30%, rgba(20,12,6,0) 55%, rgba(20,12,6,0.9) 78%)' }} />
+    <div style={{ position: 'absolute', top: 150, left: 0, right: 0, textAlign: 'center' }}>
+      <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 92, color: '#FFFFFF', WebkitTextStroke: '9px #1A120A', paintOrder: 'stroke fill', letterSpacing: 2 }}>FULL VIDEO</div>
+      <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 168, color: '#FF5436', WebkitTextStroke: '12px #1A120A', paintOrder: 'stroke fill', lineHeight: 1, filter: 'drop-shadow(0 8px 0 rgba(0,0,0,0.45))' }}>STALIN</div>
+    </div>
+    <div style={{ position: 'absolute', top: 1290, left: 0, right: 0, textAlign: 'center' }}>
+      <div style={{ display: 'inline-flex', alignItems: 'center', gap: 26, background: '#FF0033', borderRadius: 30, padding: '22px 46px', boxShadow: '0 10px 0 rgba(0,0,0,0.4)' }}>
+        <svg width="70" height="70" viewBox="0 0 70 70"><polygon points="20,12 60,35 20,58" fill="#FFFFFF" /></svg>
+        <span style={{ fontFamily: FONT, fontWeight: 900, fontSize: 70, color: '#FFFFFF' }}>NOW ON YOUTUBE</span>
+      </div>
+      <div style={{ fontFamily: SERIF, fontStyle: 'italic', fontSize: 52, color: '#FFF4E0', marginTop: 34 }}>his whole life in 9 minutes</div>
+      <div style={{ fontFamily: SERIF, fontSize: 40, color: 'rgba(255,244,224,0.75)', marginTop: 150 }}>tap the link ↓</div>
+    </div>
+  </AbsoluteFill>
 );

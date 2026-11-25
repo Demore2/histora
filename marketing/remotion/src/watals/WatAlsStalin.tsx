@@ -38,51 +38,51 @@ const Scène = ({ children, focus, scherpte = 3, mist, teller, tekst }: ScenePro
 
 /* ================= kit ================= */
 
-const ROOD = '#B3241E';
-const KHAKI = '#7E7A5E';
+export const ROOD = '#B3241E';
+export const KHAKI = '#7E7A5E';
 export const STALIN: Kleding = { huid: '#DDAE88', haar: '#2E2622', tuniek: KHAKI, benen: KHAKI, schoenen: '#151210', laarzen: '#151210', riem: '#3A2A1C' };
-const SOSO: Kleding = { huid: '#E2B48E', haar: '#2E2622', tuniek: '#6A5A44', benen: '#4A3E30', schoenen: '#2A1E16' };
-const SEMINARIST: Kleding = { huid: '#DDAE88', haar: '#2E2622', tuniek: '#151210', rok: '#151210', schoenen: '#151210' };
-const VADER: Kleding = { huid: '#D8A880', haar: '#2A1E16', tuniek: '#5A4A3A', benen: '#3A3028', schoenen: '#2A1E16', riem: '#2A1E16' };
-const PRIESTER: Kleding = { huid: '#D8A880', haar: '#6A6058', tuniek: '#151210', rok: '#151210', schoenen: '#151210' };
-const LENIN: Kleding = { huid: '#E2B48E', haar: '#8A5A3A', tuniek: '#2A2A30', benen: '#2A2A30', schoenen: '#151210' };
-const YEZHOV: Kleding = { huid: '#DDAE88', haar: '#2A1E16', tuniek: '#4A5A44', benen: '#2A3A6A', schoenen: '#151210', laarzen: '#151210', riem: '#3A2A1C' };
-const SOLDAAT: Kleding = { huid: '#DDAE88', haar: '#4A3A2C', tuniek: '#6E6A4A', benen: '#5A563E', schoenen: '#151210', laarzen: '#151210', riem: '#3A2A1C' };
-const BOER: Kleding = { huid: '#D8A880', haar: '#6B4A30', tuniek: '#8A7A5E', benen: '#5A4A3A', schoenen: '#3A2A1C' };
-const BOERIN: Kleding = { huid: '#E2B48E', haar: '#6B4A30', tuniek: '#7A3A2E', rok: '#4A3A2E', schoenen: '#3A2A1C' };
-const WACHT: Kleding = { huid: '#DDAE88', haar: '#2A1E16', tuniek: '#4A5A44', benen: '#2A3A6A', schoenen: '#151210', laarzen: '#151210', riem: '#3A2A1C' };
+export const SOSO: Kleding = { huid: '#E2B48E', haar: '#2E2622', tuniek: '#6A5A44', benen: '#4A3E30', schoenen: '#2A1E16' };
+export const SEMINARIST: Kleding = { huid: '#DDAE88', haar: '#2E2622', tuniek: '#151210', rok: '#151210', schoenen: '#151210' };
+export const VADER: Kleding = { huid: '#D8A880', haar: '#2A1E16', tuniek: '#5A4A3A', benen: '#3A3028', schoenen: '#2A1E16', riem: '#2A1E16' };
+export const PRIESTER: Kleding = { huid: '#D8A880', haar: '#6A6058', tuniek: '#151210', rok: '#151210', schoenen: '#151210' };
+export const LENIN: Kleding = { huid: '#E2B48E', haar: '#8A5A3A', tuniek: '#2A2A30', benen: '#2A2A30', schoenen: '#151210' };
+export const YEZHOV: Kleding = { huid: '#DDAE88', haar: '#2A1E16', tuniek: '#4A5A44', benen: '#2A3A6A', schoenen: '#151210', laarzen: '#151210', riem: '#3A2A1C' };
+export const SOLDAAT: Kleding = { huid: '#DDAE88', haar: '#4A3A2C', tuniek: '#6E6A4A', benen: '#5A563E', schoenen: '#151210', laarzen: '#151210', riem: '#3A2A1C' };
+export const BOER: Kleding = { huid: '#D8A880', haar: '#6B4A30', tuniek: '#8A7A5E', benen: '#5A4A3A', schoenen: '#3A2A1C' };
+export const BOERIN: Kleding = { huid: '#E2B48E', haar: '#6B4A30', tuniek: '#7A3A2E', rok: '#4A3A2E', schoenen: '#3A2A1C' };
+export const WACHT: Kleding = { huid: '#DDAE88', haar: '#2A1E16', tuniek: '#4A5A44', benen: '#2A3A6A', schoenen: '#151210', laarzen: '#151210', riem: '#3A2A1C' };
 
 /** Dikke borstelsnor + pijp in de mond (hoofdgroep; oorsprong = hals). */
-const Snor = () => <Blok p={[0, 0.235, 0.3]} s={[0.36, 0.08, 0.05]} c="#2A221E" rough={1} />;
+export const Snor = () => <Blok p={[0, 0.235, 0.3]} s={[0.36, 0.08, 0.05]} c="#2A221E" rough={1} />;
 export const Pijp = () => (
   <>
     <Blok p={[0.08, 0.17, 0.4]} s={[0.04, 0.04, 0.22]} r={[0.25, 0.3, 0]} c="#2A1A12" />
     <Blok p={[0.13, 0.14, 0.52]} s={[0.11, 0.14, 0.11]} c="#4A2A18" />
   </>
 );
-const HoofdS = ({ pijp = true }: { pijp?: boolean }) => (
+export const HoofdS = ({ pijp = true }: { pijp?: boolean }) => (
   <>
     <Snor />
     {pijp && <Pijp />}
   </>
 );
-const Helm = ({ kleur = '#4E5A3A' }: { kleur?: string }) => (
+export const Helm = ({ kleur = '#4E5A3A' }: { kleur?: string }) => (
   <>
     <Blok p={[0, 0.72, 0]} s={[0.72, 0.18, 0.68]} c={kleur} />
     <Blok p={[0, 0.62, 0]} s={[0.8, 0.06, 0.76]} c={kleur} />
   </>
 );
-const Pet = ({ kleur = '#2A3A6A' }: { kleur?: string }) => (
+export const Pet = ({ kleur = '#2A3A6A' }: { kleur?: string }) => (
   <>
     <Blok p={[0, 0.74, 0]} s={[0.68, 0.14, 0.64]} c={kleur} />
     <Blok p={[0, 0.66, 0.36]} s={[0.5, 0.04, 0.2]} c="#151210" />
   </>
 );
 
-const SL = { kleding: STALIN, haar: 'kort' as const, hoofdExtra: <HoofdS />, levend: true };
+export const SL = { kleding: STALIN, haar: 'kort' as const, hoofdExtra: <HoofdS />, levend: true };
 
 /** Rode vlag met gouden ster, doek naar +x. */
-const RodeVlag = ({ position, t = 0, h = 4.6 }: { position: V3; t?: number; h?: number }) => (
+export const RodeVlag = ({ position, t = 0, h = 4.6 }: { position: V3; t?: number; h?: number }) => (
   <group position={position}>
     <Blok p={[0, h / 2, 0]} s={[0.1, h, 0.1]} c="#5A3B24" />
     <group position={[1.05, h - 0.75, 0.03]} rotation={[0, Math.sin(t * 2) * 0.12, 0]}>
@@ -93,7 +93,7 @@ const RodeVlag = ({ position, t = 0, h = 4.6 }: { position: V3; t?: number; h?: 
 );
 
 /** Kremlinmuur met kantelen en een toren met groene spits en rode ster (naar +z). */
-const Kremlin = ({ position, lengte = 50 }: { position: V3; lengte?: number }) => (
+export const Kremlin = ({ position, lengte = 50 }: { position: V3; lengte?: number }) => (
   <group position={position}>
     <Blok p={[0, 3.5, 0]} s={[lengte, 7, 2]} c="#9A3A2E" rough={1} />
     {Array.from({ length: Math.floor(lengte / 1.6) }, (_, i) => (
@@ -114,7 +114,7 @@ const Kremlin = ({ position, lengte = 50 }: { position: V3; lengte?: number }) =
 );
 
 /** Fabriek: hal met zaagtanddak en schoorstenen die roken. */
-const Fabriek = ({ position, t = 0, schaal = 1 }: { position: V3; t?: number; schaal?: number }) => (
+export const Fabriek = ({ position, t = 0, schaal = 1 }: { position: V3; t?: number; schaal?: number }) => (
   <group position={position} scale={schaal}>
     <Blok p={[0, 2.5, 0]} s={[12, 5, 6]} c="#6A4A3A" rough={1} />
     {[-4.5, -1.5, 1.5, 4.5].map((x) => <Blok key={x} p={[x, 5.5, 0]} s={[2.8, 1.2, 6]} r={[0, 0, 0.35]} c="#4A3A30" />)}
@@ -132,7 +132,7 @@ const Fabriek = ({ position, t = 0, schaal = 1 }: { position: V3; t?: number; sc
 );
 
 /** Zwarte auto uit de jaren '30, neus naar +x, koplampen aan. */
-const Auto = ({ position, rotation }: { position: V3; rotation?: V3 }) => (
+export const Auto = ({ position, rotation }: { position: V3; rotation?: V3 }) => (
   <group position={position} rotation={rotation}>
     <Blok p={[0, 0.7, 0]} s={[3.6, 0.7, 1.6]} c="#141416" metal={0.3} rough={0.35} />
     <Blok p={[-0.3, 1.35, 0]} s={[2.0, 0.7, 1.5]} c="#141416" metal={0.3} rough={0.35} />
@@ -154,7 +154,7 @@ const Auto = ({ position, rotation }: { position: V3; rotation?: V3 }) => (
 );
 
 /** Houten blokhut in de sneeuw (naar +z). */
-const Blokhut = ({ position, rotation }: { position: V3; rotation?: V3 }) => (
+export const Blokhut = ({ position, rotation }: { position: V3; rotation?: V3 }) => (
   <group position={position} rotation={rotation}>
     {Array.from({ length: 7 }, (_, i) => <Blok key={i} p={[0, 0.2 + i * 0.36, 0]} s={[4.4, 0.34, 3.4]} c={i % 2 ? '#5A3E28' : '#6A4A30'} rough={1} />)}
     <Blok p={[0, 2.95, 0.9]} s={[4.8, 0.2, 2.4]} r={[0.55, 0, 0]} c="#ECF0F4" />
@@ -165,7 +165,7 @@ const Blokhut = ({ position, rotation }: { position: V3; rotation?: V3 }) => (
 );
 
 /** Ruïnes: kapotte muren in verschillende hoogtes. */
-const Ruines = ({ z = -10 }: { z?: number }) => (
+export const Ruines = ({ z = -10 }: { z?: number }) => (
   <>
     {Array.from({ length: 14 }, (_, i) => {
       const x = -26 + i * 4;
@@ -182,7 +182,7 @@ const Ruines = ({ z = -10 }: { z?: number }) => (
 );
 
 /** Sovjetsoldaten in een colonne langs x. */
-const Colonne = ({ z = 0, n = 8, t = 0, x0 = -8 }: { z?: number; n?: number; t?: number; x0?: number }) => (
+export const Colonne = ({ z = 0, n = 8, t = 0, x0 = -8 }: { z?: number; n?: number; t?: number; x0?: number }) => (
   <>
     {Array.from({ length: n * 2 }, (_, i) => {
       const x = x0 + (i % n) * 1.6 + ((t * 1.2) % 1.6);
@@ -191,7 +191,7 @@ const Colonne = ({ z = 0, n = 8, t = 0, x0 = -8 }: { z?: number; n?: number; t?:
   </>
 );
 
-const Kamer = ({ kleur = '#C9B48E', vloer = '#4A3428' }: { kleur?: string; vloer?: string }) => (
+export const Kamer = ({ kleur = '#C9B48E', vloer = '#4A3428' }: { kleur?: string; vloer?: string }) => (
   <>
     <Grond kleur={vloer} />
     <Blok p={[0, 3, -3]} s={[16, 6, 0.3]} c={kleur} rough={0.95} />

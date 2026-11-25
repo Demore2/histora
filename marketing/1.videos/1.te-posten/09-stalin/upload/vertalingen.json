@@ -1,0 +1,149 @@
+{
+  "tijden": ["0:00", "0:28", "1:14", "1:59", "3:12", "4:26", "5:39", "6:45", "7:54", "8:40"],
+  "talen": {
+    "nl": {
+      "studio": "Nederlands",
+      "titel": "Wat als je geboren was als Jozef Stalin?",
+      "haak": "Je bent de zoon van een dronken schoenmaker in een klein Georgisch stadje. Je leert voor priester, overvalt een bank voor de revolutie, ontsnapt uit Siberië en geeft jezelf een naam van staal. Dan neem je een saaie kantoorbaan die niemand wil, en gebruik je die om een zesde van de wereld te regeren. Het echte verhaal van Jozef Stalin, en van de miljoenen die ervoor betaalden, verteld alsof het het jouwe is.",
+      "hoofdstukken": ["Wat als je Jozef Stalin was?", "I · De zoon van de schoenmaker", "II · De priester die het niet werd", "III · Koba", "IV · Revolutie", "V · Man van staal", "VI · De Terreur", "VII · De oorlog", "VIII · De laatste deur", "IX · Held of monster?"],
+      "vraag": "Wie moet er als volgende geboren worden? Zet het in de reacties.",
+      "engels": "De video is in het Engels.",
+      "tags": "#stalin #sovjetunie #geschiedenis #tweedewereldoorlog"
+    },
+    "de": {
+      "studio": "Duits",
+      "titel": "Was wäre, wenn du als Josef Stalin geboren wärst?",
+      "haak": "Du bist der Sohn eines trinkenden Schusters in einer kleinen georgischen Stadt. Du lernst für das Priesteramt, überfällst eine Bank für die Revolution, fliehst aus Sibirien und gibst dir einen Namen aus Stahl. Dann nimmst du einen langweiligen Bürojob, den niemand will, und beherrschst damit ein Sechstel der Welt. Die wahre Geschichte Josef Stalins und der Millionen, die dafür bezahlten, so erzählt, als wäre es deine.",
+      "hoofdstukken": ["Was wäre, wenn du Josef Stalin wärst?", "I · Der Sohn des Schusters", "II · Der Priester, der keiner wurde", "III · Koba", "IV · Revolution", "V · Der Mann aus Stahl", "VI · Der Terror", "VII · Der Krieg", "VIII · Die letzte Tür", "IX · Held oder Monster?"],
+      "vraag": "Wer soll als Nächstes geboren werden? Schreib es in die Kommentare.",
+      "engels": "Das Video ist auf Englisch.",
+      "tags": "#stalin #sowjetunion #geschichte #zweiterweltkrieg"
+    },
+    "fr": {
+      "studio": "Frans",
+      "titel": "Et si tu étais né Joseph Staline ?",
+      "haak": "Tu es le fils d'un cordonnier ivrogne dans une petite ville de Géorgie. Tu étudies pour devenir prêtre, tu braques une banque pour la révolution, tu t'évades de Sibérie et tu te donnes un nom d'acier. Puis tu prends un poste de bureau ennuyeux dont personne ne veut, et tu t'en sers pour gouverner un sixième du monde. La vraie histoire de Joseph Staline, et des millions de gens qui l'ont payée, racontée comme si c'était la tienne.",
+      "hoofdstukken": ["Et si tu étais Joseph Staline ?", "I · Le fils du cordonnier", "II · Le prêtre qu'il n'est pas devenu", "III · Koba", "IV · Révolution", "V · L'homme d'acier", "VI · La Terreur", "VII · La guerre", "VIII · La dernière porte", "IX · Héros ou monstre ?"],
+      "vraag": "Qui doit naître ensuite ? Dis-le-nous en commentaire.",
+      "engels": "La vidéo est en anglais.",
+      "tags": "#staline #urss #histoire #secondeguerremondiale"
+    },
+    "es": {
+      "studio": "Spaans",
+      "titel": "¿Y si hubieras nacido como Iósif Stalin?",
+      "haak": "Eres el hijo de un zapatero borracho en un pequeño pueblo de Georgia. Estudias para ser sacerdote, asaltas un banco para la revolución, escapas de Siberia y te pones un nombre de acero. Luego aceptas un aburrido trabajo de oficina que nadie quiere, y lo usas para gobernar una sexta parte del mundo. La historia real de Iósif Stalin, y de los millones que pagaron por ella, contada como si fuera la tuya.",
+      "hoofdstukken": ["¿Y si fueras Iósif Stalin?", "I · El hijo del zapatero", "II · El cura que no fue", "III · Koba", "IV · Revolución", "V · El hombre de acero", "VI · El Terror", "VII · La guerra", "VIII · La última puerta", "IX · ¿Héroe o monstruo?"],
+      "vraag": "¿Quién debería nacer después? Dínoslo en los comentarios.",
+      "engels": "El vídeo está en inglés.",
+      "tags": "#stalin #unionsovietica #historia #segundaguerramundial"
+    },
+    "pt": {
+      "studio": "Portugees (Brazilië)",
+      "titel": "E se você tivesse nascido como Josef Stalin?",
+      "haak": "Você é filho de um sapateiro bêbado numa pequena cidade da Geórgia. Você estuda para ser padre, assalta um banco pela revolução, foge da Sibéria e se dá um nome de aço. Depois aceita um emprego chato de escritório que ninguém quer, e usa isso para governar um sexto do mundo. A história real de Josef Stalin, e dos milhões que pagaram por ela, contada como se fosse a sua.",
+      "hoofdstukken": ["E se você fosse Josef Stalin?", "I · O filho do sapateiro", "II · O padre que não foi", "III · Koba", "IV · Revolução", "V · O homem de aço", "VI · O Terror", "VII · A guerra", "VIII · A última porta", "IX · Herói ou monstro?"],
+      "vraag": "Quem deve nascer a seguir? Conta pra gente nos comentários.",
+      "engels": "O vídeo está em inglês.",
+      "tags": "#stalin #uniaosovietica #historia #segundaguerramundial"
+    },
+    "it": {
+      "studio": "Italiaans",
+      "titel": "E se fossi nato come Iosif Stalin?",
+      "haak": "Sei il figlio di un calzolaio ubriacone in una piccola città della Georgia. Studi per diventare prete, rapini una banca per la rivoluzione, fuggi dalla Siberia e ti dai un nome d'acciaio. Poi accetti un noioso lavoro d'ufficio che nessuno vuole, e lo usi per governare un sesto del mondo. La vera storia di Iosif Stalin, e dei milioni che l'hanno pagata, raccontata come se fosse la tua.",
+      "hoofdstukken": ["E se fossi Iosif Stalin?", "I · Il figlio del calzolaio", "II · Il prete che non fu", "III · Koba", "IV · Rivoluzione", "V · L'uomo d'acciaio", "VI · Il Terrore", "VII · La guerra", "VIII · L'ultima porta", "IX · Eroe o mostro?"],
+      "vraag": "Chi deve nascere dopo? Scrivilo nei commenti.",
+      "engels": "Il video è in inglese.",
+      "tags": "#stalin #unionesovietica #storia #secondaguerramondiale"
+    },
+    "ru": {
+      "studio": "Russisch",
+      "titel": "Что, если бы ты родился Иосифом Сталиным?",
+      "haak": "Ты сын пьющего сапожника из маленького грузинского городка. Ты учишься на священника, грабишь банк ради революции, бежишь из Сибири и берёшь себе стальное имя. Потом ты получаешь скучную канцелярскую должность, которую никто не хочет, и с её помощью правишь шестой частью мира. Настоящая история Иосифа Сталина и миллионов людей, заплативших за неё, рассказанная так, будто она твоя.",
+      "hoofdstukken": ["Что, если бы ты был Иосифом Сталиным?", "I · Сын сапожника", "II · Несостоявшийся священник", "III · Коба", "IV · Революция", "V · Человек из стали", "VI · Террор", "VII · Война", "VIII · Последняя дверь", "IX · Герой или чудовище?"],
+      "vraag": "Кем родиться в следующий раз? Напиши в комментариях.",
+      "engels": "Видео на английском языке.",
+      "tags": "#сталин #ссср #история #втораямировая"
+    },
+    "tr": {
+      "studio": "Turks",
+      "titel": "Ya Josef Stalin olarak doğsaydın?",
+      "haak": "Küçük bir Gürcü kasabasında içkici bir ayakkabıcının oğlusun. Rahip olmak için okursun, devrim için banka soyarsın, Sibirya'dan kaçarsın ve kendine çelikten bir isim verirsin. Sonra kimsenin istemediği sıkıcı bir büro işini alırsın ve onunla dünyanın altıda birini yönetirsin. Josef Stalin'in ve bunun bedelini ödeyen milyonların gerçek hikâyesi, seninmiş gibi anlatılıyor.",
+      "hoofdstukken": ["Ya Josef Stalin olsaydın?", "I · Ayakkabıcının oğlu", "II · Olamayan rahip", "III · Koba", "IV · Devrim", "V · Çelik adam", "VI · Terör", "VII · Savaş", "VIII · Son kapı", "IX · Kahraman mı, canavar mı?"],
+      "vraag": "Sırada kim doğsun? Yorumlarda yaz.",
+      "engels": "Video İngilizcedir.",
+      "tags": "#stalin #sovyetler #tarih #ikincidunyasavasi"
+    },
+    "ar": {
+      "studio": "Arabisch",
+      "titel": "ماذا لو وُلدت جوزيف ستالين؟",
+      "haak": "أنت ابن إسكافي سكير في بلدة جورجية صغيرة. تدرس لتصبح كاهنًا، وتسرق بنكًا من أجل الثورة، وتهرب من سيبيريا، وتمنح نفسك اسمًا من الفولاذ. ثم تقبل وظيفة مكتبية مملة لا يريدها أحد، وتستخدمها لتحكم سُدس العالم. القصة الحقيقية لجوزيف ستالين، وللملايين الذين دفعوا ثمنها، تُروى كأنها قصتك.",
+      "hoofdstukken": ["ماذا لو كنت جوزيف ستالين؟", "I · ابن الإسكافي", "II · الكاهن الذي لم يكن", "III · كوبا", "IV · الثورة", "V · رجل الفولاذ", "VI · الرعب", "VII · الحرب", "VIII · الباب الأخير", "IX · بطل أم وحش؟"],
+      "vraag": "من يجب أن يولد بعد ذلك؟ أخبرنا في التعليقات.",
+      "engels": "الفيديو باللغة الإنجليزية.",
+      "tags": "#ستالين #الاتحاد_السوفيتي #تاريخ #الحرب_العالمية_الثانية"
+    },
+    "fa": {
+      "studio": "Perzisch",
+      "titel": "اگر جوزف استالین به دنیا می‌آمدی چه می‌شد؟",
+      "haak": "تو پسر یک کفاش میخواره در شهری کوچک در گرجستان هستی. برای کشیش شدن درس می‌خوانی، برای انقلاب بانک می‌زنی، از سیبری فرار می‌کنی و نامی از فولاد برای خودت می‌گذاری. بعد یک کار اداری کسل‌کننده را که هیچ‌کس نمی‌خواهد قبول می‌کنی و با آن بر یک‌ششم جهان حکومت می‌کنی. داستان واقعی جوزف استالین، و میلیون‌ها نفری که بهایش را پرداختند، طوری روایت می‌شود که انگار داستان خودِ توست.",
+      "hoofdstukken": ["اگر جوزف استالین بودی چه؟", "I · پسر کفاش", "II · کشیشی که نشد", "III · کوبا", "IV · انقلاب", "V · مرد پولادین", "VI · ترور", "VII · جنگ", "VIII · آخرین در", "IX · قهرمان یا هیولا؟"],
+      "vraag": "نفر بعدی چه کسی به دنیا بیاید؟ در نظرها بنویس.",
+      "engels": "این ویدیو به زبان انگلیسی است.",
+      "tags": "#استالین #شوروی #تاریخ #جنگ_جهانی_دوم"
+    },
+    "hi": {
+      "studio": "Hindi",
+      "titel": "अगर तुम जोसेफ़ स्टालिन के रूप में पैदा होते तो?",
+      "haak": "तुम जॉर्जिया के एक छोटे से कस्बे में एक शराबी मोची के बेटे हो। तुम पादरी बनने के लिए पढ़ते हो, क्रांति के लिए बैंक लूटते हो, साइबेरिया से भागते हो और खुद को फ़ौलाद का नाम देते हो। फिर तुम एक उबाऊ दफ़्तरी नौकरी लेते हो जो कोई नहीं चाहता, और उसी से दुनिया के छठे हिस्से पर राज करते हो। जोसेफ़ स्टालिन की असली कहानी, और उन लाखों लोगों की जिन्होंने इसकी क़ीमत चुकाई, ऐसे सुनाई गई जैसे यह तुम्हारी हो।",
+      "hoofdstukken": ["अगर तुम जोसेफ़ स्टालिन होते तो?", "I · मोची का बेटा", "II · जो पादरी नहीं बना", "III · कोबा", "IV · क्रांति", "V · फ़ौलादी आदमी", "VI · आतंक", "VII · युद्ध", "VIII · आख़िरी दरवाज़ा", "IX · नायक या राक्षस?"],
+      "vraag": "अगला कौन पैदा हो? कमेंट में बताओ।",
+      "engels": "यह वीडियो अंग्रेज़ी में है।",
+      "tags": "#स्टालिन #सोवियतसंघ #इतिहास #द्वितीयविश्वयुद्ध"
+    },
+    "ur": {
+      "studio": "Urdu",
+      "titel": "اگر تم جوزف اسٹالن پیدا ہوتے تو؟",
+      "haak": "تم جارجیا کے ایک چھوٹے سے قصبے میں ایک شرابی موچی کے بیٹے ہو۔ تم پادری بننے کے لیے پڑھتے ہو، انقلاب کے لیے بینک لوٹتے ہو، سائبیریا سے فرار ہوتے ہو اور خود کو فولاد کا نام دیتے ہو۔ پھر تم ایک بورنگ دفتری نوکری لیتے ہو جو کوئی نہیں چاہتا، اور اسی سے دنیا کے چھٹے حصے پر حکومت کرتے ہو۔ جوزف اسٹالن کی سچی کہانی، اور ان لاکھوں لوگوں کی جنہوں نے اس کی قیمت چکائی، ایسے سنائی گئی جیسے یہ تمہاری ہو۔",
+      "hoofdstukken": ["اگر تم جوزف اسٹالن ہوتے تو؟", "I · موچی کا بیٹا", "II · جو پادری نہ بنا", "III · کوبا", "IV · انقلاب", "V · فولادی آدمی", "VI · دہشت", "VII · جنگ", "VIII · آخری دروازہ", "IX · ہیرو یا عفریت؟"],
+      "vraag": "اگلا کون پیدا ہو؟ تبصروں میں بتاؤ۔",
+      "engels": "یہ ویڈیو انگریزی میں ہے۔",
+      "tags": "#اسٹالن #سوویت_یونین #تاریخ #دوسری_جنگ_عظیم"
+    },
+    "id": {
+      "studio": "Indonesisch",
+      "titel": "Bagaimana jika kamu lahir sebagai Joseph Stalin?",
+      "haak": "Kamu anak seorang tukang sepatu pemabuk di sebuah kota kecil di Georgia. Kamu belajar untuk jadi pendeta, merampok bank demi revolusi, kabur dari Siberia, dan memberi dirimu nama dari baja. Lalu kamu mengambil pekerjaan kantor membosankan yang tak diinginkan siapa pun, dan memakainya untuk menguasai seperenam dunia. Kisah nyata Joseph Stalin, dan jutaan orang yang membayar harganya, diceritakan seolah-olah itu kisahmu.",
+      "hoofdstukken": ["Bagaimana jika kamu Joseph Stalin?", "I · Anak tukang sepatu", "II · Pendeta yang gagal", "III · Koba", "IV · Revolusi", "V · Manusia baja", "VI · Teror", "VII · Perang", "VIII · Pintu terakhir", "IX · Pahlawan atau monster?"],
+      "vraag": "Siapa yang harus lahir berikutnya? Tulis di komentar.",
+      "engels": "Video ini berbahasa Inggris.",
+      "tags": "#stalin #unisoviet #sejarah #perangduniakedua"
+    },
+    "ms": {
+      "studio": "Maleis",
+      "titel": "Bagaimana jika anda dilahirkan sebagai Joseph Stalin?",
+      "haak": "Anda anak seorang tukang kasut kaki botol di sebuah pekan kecil di Georgia. Anda belajar untuk menjadi paderi, merompak bank demi revolusi, melarikan diri dari Siberia dan memberi diri anda nama daripada besi waja. Kemudian anda mengambil kerja pejabat yang membosankan yang tiada siapa mahu, dan menggunakannya untuk memerintah satu perenam dunia. Kisah sebenar Joseph Stalin, dan jutaan yang membayar harganya, diceritakan seolah-olah ia kisah anda.",
+      "hoofdstukken": ["Bagaimana jika anda Joseph Stalin?", "I · Anak tukang kasut", "II · Paderi yang tidak jadi", "III · Koba", "IV · Revolusi", "V · Lelaki besi waja", "VI · Keganasan", "VII · Perang", "VIII · Pintu terakhir", "IX · Wira atau raksasa?"],
+      "vraag": "Siapa patut dilahirkan seterusnya? Beritahu kami di ruangan komen.",
+      "engels": "Video ini dalam bahasa Inggeris.",
+      "tags": "#stalin #kesatuansoviet #sejarah #perangduniakedua"
+    },
+    "uk": {
+      "studio": "Oekraïens",
+      "titel": "Що, якби ти народився Йосипом Сталіним?",
+      "haak": "Ти син сапожника-пияка з маленького грузинського містечка. Ти вчишся на священника, грабуєш банк заради революції, тікаєш із Сибіру і береш собі ім'я зі сталі. Потім ти отримуєш нудну канцелярську посаду, якої ніхто не хоче, і з її допомогою правиш шостою частиною світу. Справжня історія Йосипа Сталіна і мільйонів людей, які за неї заплатили, розказана так, ніби вона твоя.",
+      "hoofdstukken": ["Що, якби ти був Йосипом Сталіним?", "I · Син шевця", "II · Священник, яким він не став", "III · Коба", "IV · Революція", "V · Людина зі сталі", "VI · Терор", "VII · Війна", "VIII · Останні двері", "IX · Герой чи чудовисько?"],
+      "vraag": "Ким народитися наступного разу? Напиши в коментарях.",
+      "engels": "Відео англійською мовою.",
+      "tags": "#сталін #срср #історія #голодомор"
+    },
+    "ka": {
+      "studio": "Georgisch",
+      "titel": "რა მოხდებოდა, იოსებ სტალინად რომ დაბადებულიყავი?",
+      "haak": "შენ ხარ მსმელი მეწაღის შვილი პატარა ქართულ ქალაქში. სწავლობ მღვდლობისთვის, რევოლუციისთვის ბანკს ძარცვავ, ციმბირიდან გარბიხარ და საკუთარ თავს ფოლადის სახელს არქმევ. შემდეგ იღებ მოსაწყენ კანცელარიულ თანამდებობას, რომელიც არავის უნდა, და მისი მეშვეობით მართავ მსოფლიოს მეექვსედს. იოსებ სტალინის და იმ მილიონების ნამდვილი ისტორია, ვინც ამის ფასი გადაიხადა, ისე მოთხრობილი, თითქოს შენი იყოს.",
+      "hoofdstukken": ["რა იქნებოდა, იოსებ სტალინი რომ ყოფილიყავი?", "I · მეწაღის შვილი", "II · მღვდელი, რომელიც არ გახდა", "III · კობა", "IV · რევოლუცია", "V · ფოლადის კაცი", "VI · ტერორი", "VII · ომი", "VIII · ბოლო კარი", "IX · გმირი თუ ურჩხული?"],
+      "vraag": "ვინ უნდა დაიბადოს შემდეგ? დაწერე კომენტარებში.",
+      "engels": "ვიდეო ინგლისურ ენაზეა.",
+      "tags": "#სტალინი #საბჭოთაკავშირი #ისტორია #გორი"
+    }
+  }
+}

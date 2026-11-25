@@ -21,7 +21,8 @@ import { CAESAR_LANG_DUUR, CaesarLang } from './lang/CaesarLang';
 import { LEONIDAS_LANG_DUUR, LeonidasLang } from './lang/LeonidasLang';
 import { BAIBARS_LANG_DUUR, BaibarsLang } from './lang/BaibarsLang';
 import { WILLEM_LANG_DUUR, WillemLang } from './lang/WillemLang';
-import { WillemThumb, BaibarsThumb, CaesarThumb, LeonidasThumb, LeonidasThumbB, LeonidasThumbC, NapoleonThumbBreed, SaladinThumbBreed } from './lang/CaesarThumb';
+import { STALIN_LANG_DUUR, StalinLang } from './lang/StalinLang';
+import { StalinStory, StalinThumb, WillemThumb, BaibarsThumb, CaesarThumb, LeonidasThumb, LeonidasThumbB, LeonidasThumbC, NapoleonThumbBreed, SaladinThumbBreed } from './lang/CaesarThumb';
 import { BaibarsOmslag, BaibarsReel, CaesarOmslag, CaesarOmslagSmal, CaesarReel, KhalidOmslag, KhalidReel, LeonidasOmslag, LeonidasReel, NapoleonReel, SaladinReel, NapoleonOmslag, NapoleonOmslagSmal, SaladinOmslag, SaladinOmslagSmal } from './lang/CaesarOmslag';
 import { CAESAR_TRAILER_DUUR, WatAlsCaesarTrailer } from './watals/WatAlsCaesarTrailer';
 import { CAESAR_SHORT_DUUR, WatAlsCaesarShort } from './watals/WatAlsCaesarShort';
@@ -87,6 +88,10 @@ export const Root = () => (
     <Still id="lang-willem-thumb" component={WillemThumb} width={1920} height={1080} />
     <Composition id="lang-willem" component={WillemLang} durationInFrames={WILLEM_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true, stem: false }} />
     <Composition id="lang-willem-stem" component={WillemLang} durationInFrames={WILLEM_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true, stem: true }} />
+    <Still id="lang-stalin-story" component={StalinStory} width={1080} height={1920} />
+    <Still id="lang-stalin-thumb" component={StalinThumb} width={1920} height={1080} />
+    <Composition id="lang-stalin" component={StalinLang} durationInFrames={STALIN_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true, stem: false }} />
+    <Composition id="lang-stalin-stem" component={StalinLang} durationInFrames={STALIN_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true, stem: true }} />
     <Still id="lang-leonidas-thumb-b" component={LeonidasThumbB} width={1920} height={1080} />
     <Still id="lang-leonidas-thumb-c" component={LeonidasThumbC} width={1920} height={1080} />
     <Still id="lang-leonidas-omslag" component={LeonidasOmslag} width={1920} height={1080} />
