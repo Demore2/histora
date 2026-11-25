@@ -12,7 +12,7 @@ op IG piekte.
 | – | do 26 nov | *Leonidas lang (geen short)* | – | – |
 | `5-di-24nov-barsbek` | di 24 nov 19:00 | What if you were Barsbek? (nieuw, fanverzoek) | 0:57 | Saladin lang |
 | `6-wo-25nov-willem` | wo 25 nov 19:00 | What if you were William of Orange? (nieuw, fanverzoek) | 0:57 | Napoleon lang |
-| `4-vr-27nov-napoleon` | vr 27 nov 17:00 | What if you were Napoleon? | 0:58 | Napoleon lang |
+| `4-vr-27nov-napoleon` | al gepost 23 nov (OJyg8MwLX8o) | What if you were Napoleon? | 0:58 | Napoleon lang |
 
 ## Zo post je er een (via de YouTube-app op je telefoon, niet via Studio)
 
