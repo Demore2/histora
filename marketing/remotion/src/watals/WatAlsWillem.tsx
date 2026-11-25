@@ -38,16 +38,16 @@ const Scène = ({ children, focus, scherpte = 3, mist, teller, tekst }: ScenePro
 
 /* ================= kit ================= */
 
-const ORANJE = '#E8742A';
+export const ORANJE = '#E8742A';
 export const WILLEM: Kleding = { huid: '#E2B48E', haar: '#6B4A30', tuniek: '#1E1A18', benen: '#1E1A18', schoenen: '#2A1E16', riem: ORANJE, cape: '#2A2420' };
-const WILLEM_KIND: Kleding = { huid: '#E9C29E', haar: '#7A5636', tuniek: '#2E4A7A', benen: '#2A2A3A', schoenen: '#2A1E16', riem: ORANJE };
-const KAREL: Kleding = { huid: '#E2B48E', haar: '#3A2A1E', tuniek: '#151210', rok: '#151210', schoenen: '#151210', cape: '#5A3A24', riem: '#D8A945' };
-const HENDRIK: Kleding = { huid: '#E2B48E', haar: '#2A1E16', tuniek: '#2F4F9E', benen: '#2F4F9E', schoenen: '#2A1E16', laarzen: '#3A2A1C', riem: '#D8A945', cape: '#1E3A7A' };
-const ALVA: Kleding = { huid: '#D8A880', haar: '#B9B4AA', tuniek: '#151210', borst: '#5A5C62', benen: '#151210', schoenen: '#151210', laarzen: '#151210', riem: '#B3241E' };
-const ZOON: Kleding = { huid: '#E9C29E', haar: '#7A5636', tuniek: '#1E1A18', benen: '#1E1A18', schoenen: '#2A1E16', riem: ORANJE };
-const BURGER: Kleding = { huid: '#E2B48E', haar: '#6B4A30', tuniek: '#5A4A3A', rok: '#4A3A2E', schoenen: '#2A1E16', riem: '#E9DFC8' };
-const ZANGER: Kleding = { huid: '#E2B48E', haar: '#A0703A', tuniek: '#7A2A24', benen: '#4A3A2A', schoenen: '#2A1E16', riem: '#E9DFC8' };
-const CHARLOTTE: Kleding = { huid: '#EAC7A2', haar: '#6B4A30', tuniek: '#151210', rok: '#151210', schoenen: '#2A1E16', cape: '#E9DFC8' };
+export const WILLEM_KIND: Kleding = { huid: '#E9C29E', haar: '#7A5636', tuniek: '#2E4A7A', benen: '#2A2A3A', schoenen: '#2A1E16', riem: ORANJE };
+export const KAREL: Kleding = { huid: '#E2B48E', haar: '#3A2A1E', tuniek: '#151210', rok: '#151210', schoenen: '#151210', cape: '#5A3A24', riem: '#D8A945' };
+export const HENDRIK: Kleding = { huid: '#E2B48E', haar: '#2A1E16', tuniek: '#2F4F9E', benen: '#2F4F9E', schoenen: '#2A1E16', laarzen: '#3A2A1C', riem: '#D8A945', cape: '#1E3A7A' };
+export const ALVA: Kleding = { huid: '#D8A880', haar: '#B9B4AA', tuniek: '#151210', borst: '#5A5C62', benen: '#151210', schoenen: '#151210', laarzen: '#151210', riem: '#B3241E' };
+export const ZOON: Kleding = { huid: '#E9C29E', haar: '#7A5636', tuniek: '#1E1A18', benen: '#1E1A18', schoenen: '#2A1E16', riem: ORANJE };
+export const BURGER: Kleding = { huid: '#E2B48E', haar: '#6B4A30', tuniek: '#5A4A3A', rok: '#4A3A2E', schoenen: '#2A1E16', riem: '#E9DFC8' };
+export const ZANGER: Kleding = { huid: '#E2B48E', haar: '#A0703A', tuniek: '#7A2A24', benen: '#4A3A2A', schoenen: '#2A1E16', riem: '#E9DFC8' };
+export const CHARLOTTE: Kleding = { huid: '#EAC7A2', haar: '#6B4A30', tuniek: '#151210', rok: '#151210', schoenen: '#2A1E16', cape: '#E9DFC8' };
 
 /** Witte molensteenkraag + zwarte baret (in de hoofdgroep; oorsprong = hals). */
 export const Baret = ({ veer = false, kleur = '#151210' }: { veer?: boolean; kleur?: string }) => (
@@ -57,18 +57,18 @@ export const Baret = ({ veer = false, kleur = '#151210' }: { veer?: boolean; kle
     {veer && <Blok p={[0.3, 0.98, -0.05]} s={[0.06, 0.3, 0.06]} r={[0, 0, -0.5]} c="#F2EEE6" />}
   </>
 );
-const Kraag = () => <Blok p={[0, 0.02, 0]} s={[0.78, 0.12, 0.62]} c="#F4F0E6" rough={0.95} />;
-const HoofdW = ({ veer = false }: { veer?: boolean }) => (
+export const Kraag = () => <Blok p={[0, 0.02, 0]} s={[0.78, 0.12, 0.62]} c="#F4F0E6" rough={0.95} />;
+export const HoofdW = ({ veer = false }: { veer?: boolean }) => (
   <>
     <Baret veer={veer} />
     <Kraag />
   </>
 );
 
-const WL = { kleding: WILLEM, baard: true, snor: true, hoofdExtra: <HoofdW />, levend: true };
+export const WL = { kleding: WILLEM, baard: true, snor: true, hoofdExtra: <HoofdW />, levend: true };
 
 /** Prinsenvlag: oranje-wit-blauw, doek naar +x. */
-const Prinsenvlag = ({ position, t = 0, h = 4.6 }: { position: V3; t?: number; h?: number }) => (
+export const Prinsenvlag = ({ position, t = 0, h = 4.6 }: { position: V3; t?: number; h?: number }) => (
   <group position={position}>
     <Blok p={[0, h / 2, 0]} s={[0.1, h, 0.1]} c="#5A3B24" />
     <group position={[1.05, h - 0.9, 0.03]} rotation={[0, Math.sin(t * 2) * 0.12, 0]}>
@@ -78,7 +78,7 @@ const Prinsenvlag = ({ position, t = 0, h = 4.6 }: { position: V3; t?: number; h
 );
 
 /** Molen: stenen romp, kap, vier draaiende wieken (naar +z). */
-const Molen = ({ position, t = 0, schaal = 1 }: { position: V3; t?: number; schaal?: number }) => (
+export const Molen = ({ position, t = 0, schaal = 1 }: { position: V3; t?: number; schaal?: number }) => (
   <group position={position} scale={schaal}>
     <mesh position={[0, 2.6, 0]} castShadow>
       <cylinderGeometry args={[0.9, 1.4, 5.2, 8]} />
@@ -100,7 +100,7 @@ const Molen = ({ position, t = 0, schaal = 1 }: { position: V3; t?: number; scha
 );
 
 /** Rij Hollandse trapgevelhuizen langs x, gevel naar +z. */
-const Trapgevels = ({ position, n = 8, zaad = 1 }: { position: V3; n?: number; zaad?: number }) => (
+export const Trapgevels = ({ position, n = 8, zaad = 1 }: { position: V3; n?: number; zaad?: number }) => (
   <group position={position}>
     {Array.from({ length: n }, (_, i) => {
       const h = 4 + ((i * 7 + zaad) % 3) * 0.8;
@@ -118,7 +118,7 @@ const Trapgevels = ({ position, n = 8, zaad = 1 }: { position: V3; n?: number; z
   </group>
 );
 
-const Polder = ({ t = 0 }: { t?: number }) => (
+export const Polder = ({ t = 0 }: { t?: number }) => (
   <>
     <Grond kleur="#7E9A4E" />
     {[-30, -12, 14, 34].map((x, i) => <Molen key={x} position={[x, 0, -40 - (i % 2) * 12]} t={t + i} schaal={1.4} />)}
@@ -126,7 +126,7 @@ const Polder = ({ t = 0 }: { t?: number }) => (
   </>
 );
 
-const Zaal = ({ kleur = '#D9C4A0' }: { kleur?: string }) => (
+export const Zaal = ({ kleur = '#D9C4A0' }: { kleur?: string }) => (
   <>
     <Grond kleur="#5A4030" />
     <Blok p={[0, 3, -3]} s={[16, 6, 0.3]} c={kleur} rough={0.95} />
@@ -135,7 +135,7 @@ const Zaal = ({ kleur = '#D9C4A0' }: { kleur?: string }) => (
   </>
 );
 
-const PAARD_W = { kleur: '#4A3424', manen: '#1A1310', dek: ORANJE };
+export const PAARD_W = { kleur: '#4A3424', manen: '#1A1310', dek: ORANJE };
 
 /* ================= scènes ================= */
 
@@ -317,7 +317,7 @@ const S10 = () => {
   );
 };
 
-const Verband = () => <Blok p={[-0.2, 0.33, 0.29]} s={[0.26, 0.2, 0.04]} c="#F4F0E6" />;
+export const Verband = () => <Blok p={[-0.2, 0.33, 0.29]} s={[0.26, 0.2, 0.04]} c="#F4F0E6" />;
 
 const S11 = () => {
   const f = useCurrentFrame();

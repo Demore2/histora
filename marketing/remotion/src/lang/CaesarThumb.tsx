@@ -10,6 +10,7 @@ import { Driekleur } from './LangDecor';
 import { SALADIN, YUSUF } from './SaladinScenes';
 import { Baby, Falanx, LEONIDAS, PersLeger, Spartaan, Wieg } from './LeonidasKit';
 import { Baibars, Eskadron, LeeuwVaandel, NekBordje } from './BaibarsKit';
+import { Molen, ORANJE as W_ORANJE, Prinsenvlag, W as WILLEM_P, WILLEM_KIND } from './WillemKit';
 
 /**
  * Thumbnail Caesar in het vaste formaat (les van de concurrent): links de boze baby ("AGE 0"), rechts het hoogtepunt
@@ -316,6 +317,41 @@ export const LeonidasThumbC = () => (
         <PersLeger rijen={8} kolommen={34} afstand={0.9} position={[0, 0, -21]} />
         <Spartaan kleding={LEONIDAS} koning schild="voor" rotation={[0, -0.1, 0]} pose={{ wenk: 0.9 }} />
         <pointLight position={[0.6, 3.0, 1.8]} intensity={5} distance={4.5} color="#FFD27A" />
+      </>
+    }
+  />
+);
+
+/** Willem van Oranje (YouTube): links het rijke jongetje van elf met een te grote kroon, rechts Willem met de
+ * Prinsenvlag voor de molens bij zonsondergang: "VS SPAIN". */
+export const WillemThumb = () => (
+  <Breed
+    woordLinks="AGE 11"
+    woordRechts="VS SPAIN"
+    boos={[790, 140]}
+    links={
+      <>
+        <Lucht boven="#F3E2C4" horizon="#F3E2C4" />
+        <Daglicht zon={[3, 6, 6]} kracht={1.6} omgeving={1.5} />
+        <Grond kleur="#7A5A3A" />
+        <Blok p={[0, 3, -1.2]} s={[8, 6, 0.4]} c="#D8C4A0" />
+        <Blok p={[-0.55, 1.35, -0.98]} s={[0.8, 0.9, 0.05]} c="#5A3B24" />
+        <Blok p={[-0.55, 1.35, -0.95]} s={[0.68, 0.78, 0.05]} c="#A8D2EE" />
+        <Figuur kleding={WILLEM_KIND} position={[0.2, 0, 0.2]} rotation={[0, 0.12, 0]} scale={0.45} pose={{ wenk: 1, mond: 'open', armL: { schouder: [-1.2, 0, 0.4], elleboog: [0, -1.0] }, armR: { schouder: [-1.2, 0, -0.4], elleboog: [0, 1.0] } }} hoofdExtra={<group position={[0, 0.8, 0]} scale={0.95}><Kroon /></group>} />
+      </>
+    }
+    rechts={
+      <>
+        <Lucht boven="#C94A2E" horizon="#FFC36A" />
+        <Zon position={[-12, 6, -90]} grootte={16} kleur="#FFE9A8" />
+        <Daglicht zon={[6, 12, 8]} kracht={2.2} />
+        <Camera pos={[-0.15, 2.2, 3.0]} kijk={[-0.15, 2.1, 0]} fov={36} />
+        <Grond kleur="#7E9A4E" />
+        {[-14, 10].map((x) => <Molen key={x} position={[x, 0, -30]} schaal={1.3} />)}
+        <Leger rijen={2} kolommen={12} position={[0, 0, -9]} kleur={W_ORANJE} schild="#2A4A9A" />
+        <Prinsenvlag position={[-2.6, 0, -2]} h={4.2} />
+        <Figuur {...WILLEM_P} levend={false} rotation={[0, -0.12, 0]} pose={{ wenk: 0.8 }} />
+        <pointLight position={[0.6, 3.0, 1.6]} intensity={4} distance={4} color="#FFE08A" />
       </>
     }
   />

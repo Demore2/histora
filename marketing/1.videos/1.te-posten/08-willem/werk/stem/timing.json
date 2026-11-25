@@ -1,0 +1,722 @@
+[
+ {
+  "i": 0,
+  "zin": "What if you were William of Orange?",
+  "begin": 0.0,
+  "eind": 1.64
+ },
+ {
+  "i": 1,
+  "zin": "At eleven, you'd inherit a fortune and a whole principality.",
+  "begin": 2.339,
+  "eind": 5.999
+ },
+ {
+  "i": 2,
+  "zin": "You'd stand at the side of the most powerful man on earth.",
+  "begin": 6.526,
+  "eind": 9.686
+ },
+ {
+  "i": 3,
+  "zin": "Then you'd give it all up, to fight his son.",
+  "begin": 10.303,
+  "eind": 12.603
+ },
+ {
+  "i": 4,
+  "zin": "And you'd become one of the first leaders in history to be killed with a pistol.",
+  "begin": 13.116,
+  "eind": 17.096
+ },
+ {
+  "i": 5,
+  "zin": "So how does the richest nobleman in the Netherlands end up starting a war that lasts eighty years?",
+  "begin": 17.692,
+  "eind": 23.812
+ },
+ {
+  "i": 6,
+  "zin": "You're born in 1533, in a castle called Dillenburg, in the middle of Germany.",
+  "begin": 24.886,
+  "eind": 29.546
+ },
+ {
+  "i": 7,
+  "zin": "Your father is a count, but not a rich one.",
+  "begin": 30.056,
+  "eind": 32.236
+ },
+ {
+  "i": 8,
+  "zin": "You're the oldest of twelve children, and the house is loud.",
+  "begin": 32.827,
+  "eind": 36.107
+ },
+ {
+  "i": 9,
+  "zin": "Your family is Lutheran, and you grow up with Bible lessons at the table.",
+  "begin": 36.614,
+  "eind": 40.854
+ },
+ {
+  "i": 10,
+  "zin": "Then, in 1544, a cousin you barely know is killed in a siege in France.",
+  "begin": 41.432,
+  "eind": 47.612
+ },
+ {
+  "i": 11,
+  "zin": "He has no children, and in his will, he leaves everything to you.",
+  "begin": 48.125,
+  "eind": 52.185
+ },
+ {
+  "i": 12,
+  "zin": "The little principality of Orange, in the south of France.",
+  "begin": 52.701,
+  "eind": 56.961
+ },
+ {
+  "i": 13,
+  "zin": "And huge estates all over the Netherlands.",
+  "begin": 57.537,
+  "eind": 60.397
+ },
+ {
+  "i": 14,
+  "zin": "At eleven, you're suddenly a prince, and one of the richest people in Europe.",
+  "begin": 61.046,
+  "eind": 65.166
+ },
+ {
+  "i": 15,
+  "zin": "But there's a catch.",
+  "begin": 65.689,
+  "eind": 66.949
+ },
+ {
+  "i": 16,
+  "zin": "The emperor, Charles the Fifth, only agrees if you're raised a Catholic, at his court in Brussels.",
+  "begin": 67.589,
+  "eind": 73.449
+ },
+ {
+  "i": 17,
+  "zin": "So you say goodbye to your parents, and you leave.",
+  "begin": 74.062,
+  "eind": 76.402
+ },
+ {
+  "i": 18,
+  "zin": "In Brussels, you learn French, Spanish, fencing and dancing.",
+  "begin": 77.591,
+  "eind": 81.111
+ },
+ {
+  "i": 19,
+  "zin": "You learn to ride, to hunt, and to keep your thoughts to yourself.",
+  "begin": 81.715,
+  "eind": 85.475
+ },
+ {
+  "i": 20,
+  "zin": "And Charles the Fifth starts to like you.",
+  "begin": 86.046,
+  "eind": 88.026
+ },
+ {
+  "i": 21,
+  "zin": "He rules Spain, half of Italy, the Netherlands, and a new empire in America.",
+  "begin": 88.702,
+  "eind": 93.562
+ },
+ {
+  "i": 22,
+  "zin": "It's said the sun never sets on his lands.",
+  "begin": 94.071,
+  "eind": 97.051
+ },
+ {
+  "i": 23,
+  "zin": "At eighteen, you marry Anna of Egmond, one of the richest girls in the country.",
+  "begin": 97.705,
+  "eind": 102.185
+ },
+ {
+  "i": 24,
+  "zin": "You throw huge parties, and you spend money like water.",
+  "begin": 102.737,
+  "eind": 105.737
+ },
+ {
+  "i": 25,
+  "zin": "At twenty-one, the emperor puts you in charge of an army.",
+  "begin": 106.263,
+  "eind": 109.403
+ },
+ {
+  "i": 26,
+  "zin": "Then, in 1555, the old emperor is tired and sick.",
+  "begin": 109.924,
+  "eind": 113.504
+ },
+ {
+  "i": 27,
+  "zin": "In a great hall in Brussels, he gives up his throne.",
+  "begin": 114.06,
+  "eind": 117.32
+ },
+ {
+  "i": 28,
+  "zin": "And as he walks in, he leans on one shoulder for support.",
+  "begin": 117.967,
+  "eind": 121.207
+ },
+ {
+  "i": 29,
+  "zin": "Your shoulder.",
+  "begin": 121.739,
+  "eind": 123.279
+ },
+ {
+  "i": 30,
+  "zin": "The new ruler of the Netherlands is his son, Philip the Second.",
+  "begin": 123.704,
+  "eind": 127.304
+ },
+ {
+  "i": 31,
+  "zin": "And Philip doesn't like you at all.",
+  "begin": 127.919,
+  "eind": 129.519
+ },
+ {
+  "i": 32,
+  "zin": "In 1559, you're sent to France, as a hostage for a peace treaty.",
+  "begin": 130.594,
+  "eind": 135.114
+ },
+ {
+  "i": 33,
+  "zin": "One day, you go hunting with the French king, Henry the Second.",
+  "begin": 135.712,
+  "eind": 139.392
+ },
+ {
+  "i": 34,
+  "zin": "He thinks you're in on Philip's plans, so he tells you a secret.",
+  "begin": 139.903,
+  "eind": 143.583
+ },
+ {
+  "i": 35,
+  "zin": "Together, the two kings want to root out every Protestant in their lands.",
+  "begin": 144.094,
+  "eind": 148.074
+ },
+ {
+  "i": 36,
+  "zin": "You think of your parents, and your brothers and sisters.",
+  "begin": 148.611,
+  "eind": 151.751
+ },
+ {
+  "i": 37,
+  "zin": "But you say nothing.",
+  "begin": 152.374,
+  "eind": 153.274
+ },
+ {
+  "i": 38,
+  "zin": "That's what you yourself would later write, and the legend gave you a nickname: William the Silent.",
+  "begin": 153.951,
+  "eind": 159.111
+ },
+ {
+  "i": 39,
+  "zin": "Back home, Philip makes you governor of Holland, Zeeland and Utrecht.",
+  "begin": 159.667,
+  "eind": 164.587
+ },
+ {
+  "i": 40,
+  "zin": "Then he sails to Spain, and never comes back.",
+  "begin": 165.193,
+  "eind": 167.713
+ },
+ {
+  "i": 41,
+  "zin": "From far away, he sends orders: hunt down the heretics.",
+  "begin": 168.294,
+  "eind": 171.654
+ },
+ {
+  "i": 42,
+  "zin": "People are burned for owning the wrong book.",
+  "begin": 172.208,
+  "eind": 175.028
+ },
+ {
+  "i": 43,
+  "zin": "And in 1564, in front of the whole council, you say it out loud.",
+  "begin": 175.671,
+  "eind": 180.611
+ },
+ {
+  "i": 44,
+  "zin": "A king, you say, has no right to rule over the consciences of his people.",
+  "begin": 181.237,
+  "eind": 186.317
+ },
+ {
+  "i": 45,
+  "zin": "In 1566, hundreds of nobles march into the palace with a petition.",
+  "begin": 187.366,
+  "eind": 192.026
+ },
+ {
+  "i": 46,
+  "zin": "An adviser sneers that they're nothing but beggars.",
+  "begin": 192.629,
+  "eind": 195.169
+ },
+ {
+  "i": 47,
+  "zin": "So they turn it into their name, and start wearing beggar's bowls around their necks.",
+  "begin": 195.764,
+  "eind": 199.724
+ },
+ {
+  "i": 48,
+  "zin": "That summer, angry crowds storm the churches and smash the statues.",
+  "begin": 200.381,
+  "eind": 204.921
+ },
+ {
+  "i": 49,
+  "zin": "In Madrid, Philip is furious.",
+  "begin": 205.553,
+  "eind": 207.753
+ },
+ {
+  "i": 50,
+  "zin": "He sends his hardest general, the Duke of Alba, with about ten thousand veteran soldiers.",
+  "begin": 208.304,
+  "eind": 213.084
+ },
+ {
+  "i": 51,
+  "zin": "You see it coming, and you flee to Germany before he arrives.",
+  "begin": 213.761,
+  "eind": 217.061
+ },
+ {
+  "i": 52,
+  "zin": "Your friends, the counts of Egmont and Horn, decide to stay.",
+  "begin": 217.582,
+  "eind": 221.302
+ },
+ {
+  "i": 53,
+  "zin": "Alba sets up a court the people call the Council of Blood.",
+  "begin": 221.877,
+  "eind": 225.297
+ },
+ {
+  "i": 54,
+  "zin": "More than a thousand people are executed, among them Egmont and Horn.",
+  "begin": 225.934,
+  "eind": 230.774
+ },
+ {
+  "i": 55,
+  "zin": "Your lands are taken.",
+  "begin": 231.301,
+  "eind": 232.881
+ },
+ {
+  "i": 56,
+  "zin": "And your oldest son, thirteen years old, is taken from his university and shipped to Spain.",
+  "begin": 233.569,
+  "eind": 238.629
+ },
+ {
+  "i": 57,
+  "zin": "You will never see him again.",
+  "begin": 239.136,
+  "eind": 240.936
+ },
+ {
+  "i": 58,
+  "zin": "So you do something no one expects from the emperor's old favourite.",
+  "begin": 242.07,
+  "eind": 246.21
+ },
+ {
+  "i": 59,
+  "zin": "You sell your silver, your jewels, everything you have, and you raise an army.",
+  "begin": 246.847,
+  "eind": 252.027
+ },
+ {
+  "i": 60,
+  "zin": "In 1568, your brothers win the first battle, at Heiligerlee.",
+  "begin": 252.63,
+  "eind": 256.79
+ },
+ {
+  "i": 61,
+  "zin": "But your brother Adolf dies in the fighting.",
+  "begin": 257.448,
+  "eind": 259.508
+ },
+ {
+  "i": 62,
+  "zin": "Your own army marches into the south, waiting for the cities to rise up.",
+  "begin": 260.065,
+  "eind": 264.185
+ },
+ {
+  "i": 63,
+  "zin": "They don't.",
+  "begin": 264.81,
+  "eind": 265.53
+ },
+ {
+  "i": 64,
+  "zin": "Alba refuses to fight, and simply follows you until your money runs out.",
+  "begin": 266.237,
+  "eind": 270.757
+ },
+ {
+  "i": 65,
+  "zin": "Your soldiers go home, unpaid, and you're broke.",
+  "begin": 271.361,
+  "eind": 274.421
+ },
+ {
+  "i": 66,
+  "zin": "Then, help comes from the sea.",
+  "begin": 275.003,
+  "eind": 277.023
+ },
+ {
+  "i": 67,
+  "zin": "The Sea Beggars, rebel pirates sailing in your name, take the port of Brill.",
+  "begin": 277.674,
+  "eind": 282.014
+ },
+ {
+  "i": 68,
+  "zin": "It's the first of April, 1572.",
+  "begin": 282.684,
+  "eind": 285.324
+ },
+ {
+  "i": 69,
+  "zin": "Brill means glasses in Dutch, so people joke: on April Fools' Day, Alba lost his glasses.",
+  "begin": 285.91,
+  "eind": 291.27
+ },
+ {
+  "i": 70,
+  "zin": "One city after another opens its gates to the rebels.",
+  "begin": 291.889,
+  "eind": 295.549
+ },
+ {
+  "i": 71,
+  "zin": "And around this time, someone writes a song about you.",
+  "begin": 296.06,
+  "eind": 298.66
+ },
+ {
+  "i": 72,
+  "zin": "The first letters of its verses spell your name, William of Nassau.",
+  "begin": 299.286,
+  "eind": 303.786
+ },
+ {
+  "i": 73,
+  "zin": "It's called the Wilhelmus, and today it's the Dutch national anthem.",
+  "begin": 304.403,
+  "eind": 309.003
+ },
+ {
+  "i": 74,
+  "zin": "But in the south, everything goes wrong.",
+  "begin": 310.202,
+  "eind": 312.662
+ },
+ {
+  "i": 75,
+  "zin": "In Paris, thousands of Protestants are murdered in a single night, and your French allies are gone.",
+  "begin": 313.31,
+  "eind": 318.63
+ },
+ {
+  "i": 76,
+  "zin": "You go to Holland, and write that you'll make your grave there.",
+  "begin": 319.181,
+  "eind": 322.041
+ },
+ {
+  "i": 77,
+  "zin": "In 1573, you officially become a Calvinist.",
+  "begin": 322.61,
+  "eind": 326.77
+ },
+ {
+  "i": 78,
+  "zin": "A year later, your brothers Louis and Henry are killed in a battle on the heath of Mook.",
+  "begin": 327.391,
+  "eind": 332.051
+ },
+ {
+  "i": 79,
+  "zin": "Now three of your brothers have died in this war.",
+  "begin": 332.555,
+  "eind": 335.015
+ },
+ {
+  "i": 80,
+  "zin": "Meanwhile, the Spanish surround the city of Leiden.",
+  "begin": 335.598,
+  "eind": 338.638
+ },
+ {
+  "i": 81,
+  "zin": "Inside, people are eating rats, and dying of hunger and plague.",
+  "begin": 339.168,
+  "eind": 343.168
+ },
+ {
+  "i": 82,
+  "zin": "So you make a terrible choice.",
+  "begin": 343.689,
+  "eind": 345.229
+ },
+ {
+  "i": 83,
+  "zin": "You order the dikes to be cut, and you flood your own land.",
+  "begin": 345.74,
+  "eind": 349.16
+ },
+ {
+  "i": 84,
+  "zin": "Farms and fields disappear under the water.",
+  "begin": 349.798,
+  "eind": 352.298
+ },
+ {
+  "i": 85,
+  "zin": "Your fleet sails over the meadows, right up to the walls of the city.",
+  "begin": 352.821,
+  "eind": 356.481
+ },
+ {
+  "i": 86,
+  "zin": "The Spanish flee, and the starving people of Leiden get herring and white bread.",
+  "begin": 357.026,
+  "eind": 362.646
+ },
+ {
+  "i": 87,
+  "zin": "As a reward, you give the city a university, the first one in the north.",
+  "begin": 363.216,
+  "eind": 367.936
+ },
+ {
+  "i": 88,
+  "zin": "In 1579, the northern provinces sign the Union of Utrecht, and promise to fight together.",
+  "begin": 369.11,
+  "eind": 375.83
+ },
+ {
+  "i": 89,
+  "zin": "Philip has had enough.",
+  "begin": 376.345,
+  "eind": 377.385
+ },
+ {
+  "i": 90,
+  "zin": "In 1580, he declares you an outlaw, an enemy of the human race.",
+  "begin": 378.066,
+  "eind": 382.506
+ },
+ {
+  "i": 91,
+  "zin": "Anyone who kills you will get twenty-five thousand gold crowns, and a title.",
+  "begin": 383.105,
+  "eind": 387.365
+ },
+ {
+  "i": 92,
+  "zin": "You answer with a long letter to every court in Europe.",
+  "begin": 388.024,
+  "eind": 391.164
+ },
+ {
+  "i": 93,
+  "zin": "In it, you call the king a liar and a murderer.",
+  "begin": 391.811,
+  "eind": 395.031
+ },
+ {
+  "i": 94,
+  "zin": "A year later, the rebel provinces go even further.",
+  "begin": 395.687,
+  "eind": 398.767
+ },
+ {
+  "i": 95,
+  "zin": "They declare that a king who oppresses his people is no longer their king.",
+  "begin": 399.317,
+  "eind": 403.657
+ },
+ {
+  "i": 96,
+  "zin": "Some historians see it as one of the models for the American Declaration of Independence, two centuries later.",
+  "begin": 404.232,
+  "eind": 411.092
+ },
+ {
+  "i": 97,
+  "zin": "In March 1582, in Antwerp, a young man walks up to you after dinner.",
+  "begin": 412.163,
+  "eind": 416.783
+ },
+ {
+  "i": 98,
+  "zin": "He fires a pistol, right into your face.",
+  "begin": 417.442,
+  "eind": 420.422
+ },
+ {
+  "i": 99,
+  "zin": "The bullet goes through your cheek and your jaw, and you survive.",
+  "begin": 421.095,
+  "eind": 424.535
+ },
+ {
+  "i": 100,
+  "zin": "Your third wife, Charlotte, nurses you day and night.",
+  "begin": 425.062,
+  "eind": 429.062
+ },
+ {
+  "i": 101,
+  "zin": "You get better, but she is exhausted, and she dies a few weeks later.",
+  "begin": 429.594,
+  "eind": 433.694
+ },
+ {
+  "i": 102,
+  "zin": "Two years later, you're living in Delft, in an old convent called the Prinsenhof.",
+  "begin": 434.235,
+  "eind": 438.515
+ },
+ {
+  "i": 103,
+  "zin": "A quiet young man has been visiting you, pretending to be a Protestant refugee.",
+  "begin": 439.057,
+  "eind": 443.477
+ },
+ {
+  "i": 104,
+  "zin": "His name is Balthasar Gérard, and he wants the reward.",
+  "begin": 444.065,
+  "eind": 447.625
+ },
+ {
+  "i": 105,
+  "zin": "On the tenth of July, 1584, you walk out of the dining room.",
+  "begin": 448.231,
+  "eind": 452.231
+ },
+ {
+  "i": 106,
+  "zin": "He's waiting at the foot of the stairs.",
+  "begin": 452.778,
+  "eind": 455.498
+ },
+ {
+  "i": 107,
+  "zin": "This time, he doesn't miss.",
+  "begin": 455.999,
+  "eind": 458.039
+ },
+ {
+  "i": 108,
+  "zin": "According to tradition, your last words are: my God, have pity on my soul, and on this poor people.",
+  "begin": 458.614,
+  "eind": 465.374
+ },
+ {
+  "i": 109,
+  "zin": "The bullet holes are still in the wall today.",
+  "begin": 465.941,
+  "eind": 468.841
+ },
+ {
+  "i": 110,
+  "zin": "You die at fifty-one, deep in debt, because you spent your whole fortune on the war.",
+  "begin": 469.954,
+  "eind": 475.014
+ },
+ {
+  "i": 111,
+  "zin": "The war goes on for sixty-four more years.",
+  "begin": 475.686,
+  "eind": 478.506
+ },
+ {
+  "i": 112,
+  "zin": "In 1648, Spain finally recognises the Dutch Republic as a free country.",
+  "begin": 479.13,
+  "eind": 484.67
+ },
+ {
+  "i": 113,
+  "zin": "The Dutch call you the Father of the Fatherland.",
+  "begin": 485.263,
+  "eind": 487.963
+ },
+ {
+  "i": 114,
+  "zin": "Your family still sits on the Dutch throne, as the House of Orange.",
+  "begin": 488.574,
+  "eind": 492.194
+ },
+ {
+  "i": 115,
+  "zin": "And on the king's birthday, the whole country dresses in orange.",
+  "begin": 492.816,
+  "eind": 496.956
+ },
+ {
+  "i": 116,
+  "zin": "There's even a story that Dutch farmers bred orange carrots in your honour, but that one is probably a myth.",
+  "begin": 497.465,
+  "eind": 502.905
+ },
+ {
+  "i": 117,
+  "zin": "Not bad, for the boy from Dillenburg who said nothing.",
+  "begin": 503.567,
+  "eind": 506.587
+ },
+ {
+  "i": 118,
+  "zin": "Who should be born next? Tell us in the comments.",
+  "begin": 507.743,
+  "eind": 510.103
+ },
+ {
+  "i": 119,
+  "zin": "Subscribe for more.",
+  "begin": 510.761,
+  "eind": 512.021
+ }
+]

@@ -100,7 +100,7 @@ export const LangWatermerk = () => (
 );
 
 /** Grote titel in het midden (de "NAPOLEON"-kaart na de hook). */
-export const GroteTitel = ({ boven, naam, onder }: { boven: string; naam: string; onder?: string }) => {
+export const GroteTitel = ({ boven, naam, onder, grootte = 190 }: { boven: string; naam: string; onder?: string; grootte?: number }) => {
   const f = useCurrentFrame();
   const s = interpolate(f, [0, 14], [0.88, 1], { extrapolateRight: 'clamp', easing: (x) => 1 - (1 - x) ** 3 });
   const o = interpolate(f, [0, 10], [0, 1], { extrapolateRight: 'clamp' });
@@ -111,7 +111,7 @@ export const GroteTitel = ({ boven, naam, onder }: { boven: string; naam: string
         style={{
           fontFamily: SERIF,
           fontWeight: 800,
-          fontSize: 190,
+          fontSize: grootte,
           lineHeight: 0.95,
           background: 'linear-gradient(180deg, #FFE7A0 0%, #F2C25A 45%, #C9821E 100%)',
           WebkitBackgroundClip: 'text',
