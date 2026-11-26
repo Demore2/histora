@@ -1,7 +1,7 @@
 # Leonidas — lange video #04 (YouTube)
 
 Posten: **donderdag 2026-11-26 16:00 NL** op YouTube. Een uur later (17:00) gaat de What-if-short van Leonidas uit op
-YouTube, Instagram en TikTok (`../../04-leonidas-short/`), met deze video als gerelateerde video.
+YouTube, Instagram en TikTok (`../../2.short/`), met deze video als gerelateerde video.
 Bestand: `leonidas.mp4` (7:57) + `thumbnail.png` (AGE 0 / 300). Stem: lokaal Chatterbox (Dylan). Muziek: de Caesar-stukken.
 Vertalingen: `vertalingen.json` (de vaste 14 + Grieks). Thumbnail-test: zie `werk/NOG-TE-DOEN.md`.
 

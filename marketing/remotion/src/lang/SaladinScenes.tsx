@@ -71,11 +71,11 @@ export const AL_ADIL: Kleding = { ...SALADIN_HOF, cape: '#5E8A5A', riem: '#5E8A5
 
 const SAL = { kleding: SALADIN, hoofddeksel: 'tulband' as const, baard: true };
 const SAL_HOF = { kleding: SALADIN_HOF, hoofddeksel: 'tulband' as const, baard: true };
-const kroonOp = (x: number, y: number, z: number, s = 1) => <Kroon position={[x, y + 2.28 * s, z]} />;
+export const kroonOp = (x: number, y: number, z: number, s = 1) => <Kroon position={[x, y + 2.28 * s, z]} />;
 
 /* ---------------- decors ---------------- */
 
-const Woestijn = ({ avond = false }: { avond?: boolean }) => (
+export const Woestijn = ({ avond = false }: { avond?: boolean }) => (
   <>
     <Lucht boven={avond ? '#3E2E52' : '#8FB4D8'} horizon={avond ? '#F0904A' : '#F2DDB2'} />
     {avond ? <Avondlicht /> : <Daglicht zon={[-10, 14, 8]} />}
@@ -86,7 +86,7 @@ const Woestijn = ({ avond = false }: { avond?: boolean }) => (
 );
 
 /** Stadsmuur met torens en een poort op z = 0 (gevel naar +z). */
-const Muur = ({ kleur = '#CDB894', open = 0, bres = false, vlag }: { kleur?: string; open?: number; bres?: boolean; vlag?: string }) => (
+export const Muur = ({ kleur = '#CDB894', open = 0, bres = false, vlag }: { kleur?: string; open?: number; bres?: boolean; vlag?: string }) => (
   <group>
     {[-1, 1].map((k) => (
       <group key={k}>
@@ -120,7 +120,7 @@ const BresMuur = ({ kleur = '#CDB894' }: { kleur?: string }) => (
 );
 
 /** Stadssilhouet: blokhuizen met platte daken, een paar koepels. */
-const Stad = ({ z = -14, koepels = true, kleur = '#E6D6B6' }: { z?: number; koepels?: boolean; kleur?: string }) => (
+export const Stad = ({ z = -14, koepels = true, kleur = '#E6D6B6' }: { z?: number; koepels?: boolean; kleur?: string }) => (
   <group position={[0, 0, z]}>
     {Array.from({ length: 18 }, (_, i) => {
       const x = -17 + i * 2;
@@ -132,7 +132,7 @@ const Stad = ({ z = -14, koepels = true, kleur = '#E6D6B6' }: { z?: number; koep
 );
 
 /** Paleishal: zuilen, tapijt, troon achterin. */
-const Hal = ({ troon = true }: { troon?: boolean }) => (
+export const Hal = ({ troon = true }: { troon?: boolean }) => (
   <>
     <Lucht boven="#3A2A20" horizon="#5A4432" />
     <Binnenlicht zon={[3, 12, 6]} kleur="#FFE2B8" />
@@ -151,7 +151,7 @@ const Hal = ({ troon = true }: { troon?: boolean }) => (
 );
 
 /** Binnenkant van een tent. */
-const TentBinnen = ({ nacht = false }: { nacht?: boolean }) => (
+export const TentBinnen = ({ nacht = false }: { nacht?: boolean }) => (
   <>
     <Lucht boven="#3A2A1A" horizon="#5A4028" />
     <hemisphereLight args={['#FFD8A0', '#3A2A1A', nacht ? 0.35 : 0.7]} />
@@ -181,7 +181,7 @@ const Kamer = () => (
 );
 
 /** Ruiter: figuur op een paard. */
-const Ruiter = ({ k, position, rotation, t = 0, loopt = false, kleur = '#7A5A3A', dek = '#C99A2E', pose, hoofddeksel = 'tulband', baard = true, inHand }: { k: Kleding; position: V3; rotation?: V3; t?: number; loopt?: boolean; kleur?: string; dek?: string; pose?: Pose; hoofddeksel?: 'tulband' | 'helm' | null; baard?: boolean; inHand?: ReactNode }) => (
+export const Ruiter = ({ k, position, rotation, t = 0, loopt = false, kleur = '#7A5A3A', dek = '#C99A2E', pose, hoofddeksel = 'tulband', baard = true, inHand }: { k: Kleding; position: V3; rotation?: V3; t?: number; loopt?: boolean; kleur?: string; dek?: string; pose?: Pose; hoofddeksel?: 'tulband' | 'helm' | null; baard?: boolean; inHand?: ReactNode }) => (
   <Paard position={position} rotation={rotation} kleur={kleur} dek={dek} t={t} loopt={loopt} ruiter={<Figuur kleding={k} hoofddeksel={hoofddeksel} baard={baard} pose={{ hoofd: [0, -0.8, 0], ...pose }} inHand={inHand} />} />
 );
 

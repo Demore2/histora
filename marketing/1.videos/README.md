@@ -7,29 +7,33 @@ Eerste: `2.gepost/01-napoleon/` (5:20, 2026-11-16). Tweede: `1.te-posten/02-sala
 ```
 1.videos/
   kanaal/                  banner (kanaal-banner.png) + kanaaltekst (kanaal.md)
-  1.te-posten/<nn-id>/
-    upload/                alleen wat je uploadt: <id>.mp4, thumbnail.png (YouTube), omslag-reel.png (Instagram, 1080x1920), post.md
-    werk/                  script.md, zinnen.json, stem/ (opnames, timing, proeven), renders/ (ruw, proef)
-  1.te-posten/<nn>-<id>-short/   What-if-short (9:16): mp4's, omslag.png, youtube.md, posten.json (plat, geen upload/)
-  2.gepost/<nn-id>/        na het posten of inplannen hierheen verplaatsen (mv, nooit rm) + stats.md
+  1.te-posten/<nn>-<id>/   één map per persoon (sinds 26 nov)
+    1.video/               de lange video
+      upload/              alleen wat je uploadt: <id>.mp4, thumbnail.png (YouTube), omslag-reel.png (Instagram), post.md
+      werk/                script.md, zinnen.json, stem/, renders/
+    2.short/               de What-if-short (9:16), plat: mp4's, omslag.png, youtube.md, posten.json, trials/
+  2.gepost/<nn>-<id>/      zodra alles van die persoon live is: hele map hierheen (mv, nooit rm) + stats.md
   2.gepost/yt-shorts/      de What-ifs van 23-25 nov (Mehmed t/m Stalin), allemaal live
 ```
 
+**Opruimen hoort bij het posten.** In `1.te-posten/` staat alleen wat nog moet. Oudere mappen in `2.gepost/`
+(01 t/m 09) hebben nog de oude indeling.
+
 Vervallen (wordt niet meer gepost): `../9.archief/what-if-shorts/3.vervallen/` (Caesar-trailer).
 
-## Stand 25 nov
+## Stand 26 nov
 
 | Map | Wat | Status |
 |---|---|---|
-| `1.te-posten/04-leonidas` | lang #04 | klaar (`upload/leonidas.mp4`), wacht op upload door eigenaar; daarna inplannen do 26 nov 16:00 |
-| `1.te-posten/04-leonidas-short` | What-if Leonidas | ingepland do 26 nov 17:00 op YouTube (9foDrkLReFY), Instagram (TikTok ook nog, ingepland vóór de stop) |
-| `1.te-posten/05-baibars` | lang #05 | scènes klaar, nog geen stem; later inplannen |
-| `2.gepost/08-willem` | lang #08 | ingepland wo 25 nov 18:00 (eigenaar) |
-| `2.gepost/09-stalin` | lang #09 | openbaar 25 nov |
+| `1.te-posten/05-baibars` | lang #05 | alleen script en scènes, nog geen stem; later |
+| `1.te-posten/10-ataturk` | lang #10 + short | ingepland vr 27 nov (lang 16:00, short 17:00); na livegang: short linken, reacties, map naar `2.gepost/` |
+| `1.te-posten/12-baldwin` | short (+ trials A/B/C) | za 28 nov 17:00; eerste trial-reel-pilot op IG |
+| `2.gepost/04-leonidas` | lang #04 + short | live 26 nov |
 
 ## Vast format (eigenaar + maat, 2026-11-16)
 
-- **Teaser vooraf (~12-15 s)**, los gemaakt, niet uit de video geknipt: knal (kanonschot) + "What if you were <naam>?",
+- **Teaser vooraf (~12-15 s)**, los gemaakt, niet uit de video geknipt. ⚠️ Sinds 26 nov géén knal + chaos meer aan het begin
+  (eigenaar): eerst de hook-audit met de skills `viral-hooks` + `short-form-video`, zie skill `youtube-long-video`. Was: knal (kanonschot) + "What if you were <naam>?",
   dan 3 snelle klappen uit het leven in de "you"-vorm ("You'd…"), eindigend met een vraag ("So how does … get there?"),
   dan de titelkaart. Stem iets energieker (speech_rate 0). Daarna begint het verhaal.
 - **Thumbnail**: gesplitst met schuine knip, links het begin ("AGE 9"), rechts de top ("EMPEROR"), dikke labels.

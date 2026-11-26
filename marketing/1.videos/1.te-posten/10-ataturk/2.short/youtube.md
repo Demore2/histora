@@ -11,7 +11,7 @@ omslag). Nog te doen: gerelateerde video = Atatürk lang zodra die (nieuwe versi
 - `ataturk-met-muziek.mp4` ("Amour plastique" ingebakken): YouTube via Studio in de browser.
 - `ataturk-zonder-muziek.mp4`: Instagram en TikTok, nummer in de app eronder.
 - `omslag.png`: de maarschalk met kalpak voor de Turkse vlag in de avondzon.
-- `node marketing/posten-klaar.mjs marketing/1.videos/1.te-posten/11-ataturk-short` maakt de *-upload.mp4's (< 10 MB) en posten.json.
+- `node marketing/posten-klaar.mjs marketing/1.videos/1.te-posten/10-ataturk/2.short` maakt de *-upload.mp4's (< 10 MB) en posten.json.
 
 ## Titel
 

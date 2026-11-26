@@ -4,7 +4,7 @@ description: Build a Histora "What if you were <person>?" short - a 3D video of 
 ---
 
 > **Active again since 2026-11-23**: one What-if per day on fan request (YouTube Shorts + Instagram; TikTok stopped 2026-11-26), next
-> to the long videos. New shorts go in `marketing/1.videos/1.te-posten/<nn>-<id>-short/` (flat: the mp4s,
+> to the long videos. New shorts go in `marketing/1.videos/1.te-posten/<nn>-<id>/2.short/` (next to `1.video/` if the person has a long video; flat: the mp4s,
 > `omslag.png`, `youtube.md`); posting runs through `node marketing/posten-klaar.mjs <map>` → `posten.json` and the
 > routes in `marketing/README.md`. Newest template to copy: `WatAlsStalin.tsx` / `WatAlsWillem.tsx` (14 scenes,
 > `DUUR = [140,110,120,120,110,115,115,115,115,110,110,110,115,210]` = 57.2 s).
@@ -13,6 +13,11 @@ description: Build a Histora "What if you were <person>?" short - a 3D video of 
 > (B = the peak scene, C = a shock detail; never 0 or the last scene) and a `hook` prop via `src/watals/hooks.ts`, as in
 > `WatAlsAtaturk.tsx`; register `watals-<id>-stil-B/-C` in `Root.tsx`. Render all three with
 > `node scripts/trial-hooks.mjs <id>` (`--alleen-frames` to check the openings). Only matters once IG has trial reels (200 followers).
+
+> **Hooks (since 2026-11-26, owner: "deze skill is het nu al waard")**: before writing scene 1 and the B/C hook
+> openers, load **`viral-hooks`** + **`short-form-video`** and run the four-killer audit (delay, confusion, irrelevance,
+> disinterest). Every opener: topic clear in 1-2 s, "you"-framing, an A-vs-B contrast that opens a question, answer later.
+> B/C openers get their own line via `hookTekst`/`hookTeller` on the scene (see `WatAlsBaldwin.tsx`), never the mid-story caption.
 
 ## Cheapest route (Stalin, 2026-11-24: script → posted on 3 platforms (now 2) in one evening)
 

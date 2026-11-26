@@ -58,6 +58,7 @@ export type Kleding = {
   riem?: string;
   borst?: string; // borstpantser over de tuniek
   laarzen?: string; // kaplaarzen tot onder de knie
+  handen?: string; // verbonden handen (Baldwin): andere kleur voor de hand
 };
 
 /** Arm: schouder- en elleboogrotatie. Elleboog: y = draai (naar binnen), x = buigen naar voren. */
@@ -106,7 +107,7 @@ type Props = {
   hoofdExtra?: ReactNode; // in de hoofdgroep, draait mee met het hoofd (eigen hoofddeksels); oorsprong = hals
 };
 
-const Arm = ({ x, pose, mouw, huid, o, inHand }: { x: number; pose: ArmPose; mouw: string; huid: string; o?: Overschrijf; inHand?: ReactNode }) => {
+const Arm = ({ x, pose, mouw, huid, hand, o, inHand }: { x: number; pose: ArmPose; mouw: string; huid: string; hand?: string; o?: Overschrijf; inHand?: ReactNode }) => {
   const [draai, buig] = pose.elleboog ?? [0, 0];
   return (
     <group position={[x, 1.62, 0]} rotation={pose.schouder ?? [0, 0, 0]}>
@@ -114,7 +115,7 @@ const Arm = ({ x, pose, mouw, huid, o, inHand }: { x: number; pose: ArmPose; mou
       <group position={[0, -0.34, 0]} rotation={[0, draai, 0]}>
         <group rotation={[buig, 0, 0]}>
           <Blok p={[0, -0.17, 0]} s={[0.19, 0.34, 0.21]} c={huid} o={o} />
-          <Blok p={[0, -0.39, 0.01]} s={[0.18, 0.14, 0.2]} c={huid} o={o} />
+          <Blok p={[0, -0.39, 0.01]} s={[0.18, 0.14, 0.2]} c={hand ?? huid} o={o} />
           {inHand && <group position={[0, -0.4, 0.02]}>{inHand}</group>}
         </group>
       </group>
@@ -202,8 +203,8 @@ export const Figuur = ({
           <Blok p={[-0.34, 1.6, 0.2]} s={[0.12, 0.12, 0.04]} c="#C9A646" metal={0.8} rough={0.3} o={o} />
         </>
       )}
-      <Arm x={-0.42} pose={armen.armL!} mouw={k.tuniek} huid={k.huid} o={o} />
-      <Arm x={0.42} pose={armen.armR!} mouw={k.tuniek} huid={k.huid} o={o} inHand={inHand} />
+      <Arm x={-0.42} pose={armen.armL!} mouw={k.tuniek} huid={k.huid} hand={k.handen} o={o} />
+      <Arm x={0.42} pose={armen.armR!} mouw={k.tuniek} huid={k.huid} hand={k.handen} o={o} inHand={inHand} />
       <group position={[0, 1.66, 0]} rotation={hoofdRot}>
         <Blok p={[0, 0.06, 0]} s={[0.2, 0.12, 0.2]} c={k.huid} o={o} />
         <Blok p={[0, 0.38, 0]} s={[0.62, 0.6, 0.56]} c={k.huid} o={o} />

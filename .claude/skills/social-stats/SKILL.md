@@ -70,7 +70,7 @@ Countries are empty below ~100 views. Channel totals: the channel dashboard `get
    across the two platforms, then "Wat de data zegt" (numbered, concrete).
 2. Append a `## Meting <date>` section to `2.gepost/<nn-id>/stats.md` per video (keep the file's
    line endings).
-3. Move shorts that are live from `1.te-posten/` to `2.gepost/` (`mv`, never `rm`).
+3. Move a person's folder `<nn>-<id>/` (with `1.video/` + `2.short/`) from `1.te-posten/` to `2.gepost/` as soon as everything in it is live (`mv`, never `rm`); fix the absolute paths in `2.short/posten.json`.
 4. Compare with the previous `stats-*.md` and say what changed.
 
 Known traps: YouTube sometimes gives a short no test

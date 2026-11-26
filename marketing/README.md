@@ -13,7 +13,13 @@
 
 Elke videomap heeft een **`upload/`** met precies wat je uploadt: de mp4, de thumbnail of omslag, en `post.md`
 met titel, tekst, hashtags en tijdstip per platform. Daarnaast staat `werk/` (of `extra/`) met het
-werkmateriaal. Na het posten verplaats je de map van `1.te-posten/` naar `2.gepost/`.
+werkmateriaal.
+
+**Mappen (sinds 2026-11-26, eigenaar): één map per persoon**, `<nn>-<id>/` met `1.video/` (de lange video: `upload/` +
+`werk/`) en `2.short/` (de What-if-short, plat: mp4's, `omslag.png`, `youtube.md`, `posten.json`, `trials/`).
+**Opruimen hoort bij het posten:** staat alles van een persoon live (lange video én short, voor zover die er zijn), dan
+verplaats je meteen de hele map `1.te-posten/<nn>-<id>/` naar `2.gepost/` (`mv`, nooit `rm`) en zet je de absolute
+paden in `posten.json` recht. Zo staat in `1.te-posten/` alleen wat nog moet. Oudere mappen in `2.gepost/` hebben nog de oude indeling.
 
 Sinds 2026-11-18 (eigenaar): **alleen nog lange video's, geen shorts meer** (ook niet op YouTube Shorts). Elke video krijgt
 `thumbnail.png` (breed, YouTube) en `omslag-reel.png` (1080x1920, gestapeld, Instagram: upload hem als omslag via "filmrol"; woorden en gezichten staan binnen het 3:4-midden, y 240-1680, want dat toont het profielraster).
@@ -36,7 +42,7 @@ Elke short gaat in één keer naar **YouTube (19:00, 14 vaste talen) + Instagram
 **Stap 1, lokaal (kost geen credits):**
 
 ```bash
-node marketing/posten-klaar.mjs marketing/1.videos/1.te-posten/<nn>-<id>-short
+node marketing/posten-klaar.mjs marketing/1.videos/1.te-posten/<nn>-<id>/2.short
 ```
 
 Dat controleert de lengte (max 58 s), maakt `*-upload.mp4` van < 10 MB (de browser-uploadgrens), leest `youtube.md`

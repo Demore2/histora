@@ -11,6 +11,8 @@ import { OmslagBarsbekScène } from './WatAlsBarsbek';
 import { OmslagWillemScène } from './WatAlsWillem';
 import { OmslagStalinScène } from './WatAlsStalin';
 import { Falanx, LEONIDAS, Spartaan } from '../lang/LeonidasKit';
+import { BLAUW as BW_BLAUW, BW as BW_P, GOUD_VLAG as BW_GOUD } from './WatAlsBaldwin';
+import { Muur as BW_Muur, Stad as BW_Stad, RIDDER as BW_RIDDER } from '../lang/SaladinScenes';
 import { Geweer, MAARSCHALK_P, OSM_SOLDAAT, Kalpak, TurkseVlag } from '../lang/AtaturkKit';
 
 /**
@@ -201,5 +203,25 @@ export const OmslagAtaturk = () => (
     <TurkseVlag position={[-1.6, 0, -2.4]} h={5.2} />
     {[-3, -1.8, -0.6, 0.6, 1.8, 3].map((x, i) => <Figuur key={i} kleding={OSM_SOLDAAT} hoofdExtra={<Kalpak kleur="#4A4440" />} position={[x + 0.6, 0, -6]} inHand={<Geweer />} />)}
     <Figuur {...MAARSCHALK_P} levend={false} position={[0, 0, 0]} rotation={[0, 0.3, 0]} pose={{ wenk: 0.5 }} />
+  </Omslag>
+);
+
+export const OmslagBaldwin = () => (
+  <Omslag naam="THE LEPER KING?" grootte={118} focus={[0, 2.4, 0]}>
+    <fog attach="fog" args={['#C8845A', 20, 140]} />
+    <Lucht boven="#4A2E4A" horizon="#F08A4A" />
+    <Zon position={[-6, 6, -120]} grootte={16} kleur="#FFC07A" />
+    <Camera pos={[1.0, 2.0, 5.2]} kijk={[0, 2.3, 0]} fov={36} />
+    <Avondlicht />
+    <Daglicht zon={[6, 8, 8]} kleur="#FFC890" kracht={1.9} />
+    <Grond kleur="#C8AC7A" />
+    <group position={[0, 0, -24]}>
+      <BW_Muur vlag={BW_BLAUW} />
+      <BW_Stad z={-6} koepels={false} />
+    </group>
+    {[-3, -1.8, 1.8, 3].map((x, i) => <Figuur key={i} kleding={BW_RIDDER} hoofddeksel="helm" position={[x, 0, -5]} />)}
+    <Banier position={[-2.4, 0, -3]} kleur={BW_BLAUW} />
+    <Banier position={[2.6, 0, -3.4]} kleur={BW_GOUD} />
+    <Figuur {...BW_P(0, false, true)} levend={false} position={[0, 0, 0]} rotation={[0, 0.25, 0]} pose={{ armR: { schouder: [-2.6, 0, 0.4], elleboog: [0, -0.3] } }} />
   </Omslag>
 );

@@ -8,12 +8,13 @@ import { NAPOLEON_DUUR, WatAlsNapoleon } from './watals/WatAlsNapoleon';
 import { KHALID_DUUR, WatAlsKhalid } from './watals/WatAlsKhalid';
 import { MEHMED_DUUR, WatAlsMehmed } from './watals/WatAlsMehmed';
 import { SALADIN_KORT_DUUR, WatAlsSaladin } from './watals/WatAlsSaladin';
-import { OmslagAtaturk, OmslagLeonidas, OmslagBaibars, OmslagBarsbek, OmslagWillem, OmslagStalin, OmslagCaesar, OmslagKhalid, OmslagMehmed, OmslagNapoleon, OmslagSaladin } from './watals/Omslagen';
+import { OmslagBaldwin, OmslagAtaturk, OmslagLeonidas, OmslagBaibars, OmslagBarsbek, OmslagWillem, OmslagStalin, OmslagCaesar, OmslagKhalid, OmslagMehmed, OmslagNapoleon, OmslagSaladin } from './watals/Omslagen';
 import { BAIBARS_SHORT_DUUR, WatAlsBaibars } from './watals/WatAlsBaibars';
 import { BARSBEK_DUUR, WatAlsBarsbek } from './watals/WatAlsBarsbek';
 import { WILLEM_DUUR, WatAlsWillem } from './watals/WatAlsWillem';
 import { LEONIDAS_SHORT_DUUR, WatAlsLeonidas } from './watals/WatAlsLeonidas';
 import { ATATURK_SHORT_DUUR, WatAlsAtaturk } from './watals/WatAlsAtaturk';
+import { BALDWIN_DUUR, WatAlsBaldwin } from './watals/WatAlsBaldwin';
 import { STALIN_DUUR, WatAlsStalin } from './watals/WatAlsStalin';
 import { NAPOLEON_LANG_DUUR, NapoleonLang } from './lang/NapoleonLang';
 import { NapoleonThumb } from './lang/Thumbnail';
@@ -60,6 +61,10 @@ export const Root = () => (
     <Still id="watals-omslag-khalid" component={OmslagKhalid} width={W} height={H} />
     <Still id="watals-omslag-willem" component={OmslagWillem} width={W} height={H} />
     <Still id="watals-omslag-leonidas" component={OmslagLeonidas} width={W} height={H} />
+    <Still id="watals-omslag-baldwin" component={OmslagBaldwin} width={W} height={H} />
+    <Composition id="watals-baldwin" component={WatAlsBaldwin} durationInFrames={BALDWIN_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true, muziekVanaf: 14 }} />
+    <Composition id="watals-baldwin-stil" component={WatAlsBaldwin} durationInFrames={BALDWIN_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />
+    {(["B", "C"] as const).map((h) => <Composition key={`baldwin-${h}`} id={`watals-baldwin-stil-${h}`} component={WatAlsBaldwin} durationInFrames={BALDWIN_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14, hook: h }} />)}
     <Still id="watals-omslag-ataturk" component={OmslagAtaturk} width={W} height={H} />
     <Composition id="watals-ataturk" component={WatAlsAtaturk} durationInFrames={ATATURK_SHORT_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true, muziekVanaf: 14 }} />
     <Composition id="watals-ataturk-stil" component={WatAlsAtaturk} durationInFrames={ATATURK_SHORT_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />

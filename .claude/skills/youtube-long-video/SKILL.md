@@ -61,9 +61,16 @@ Find the id: `studio.youtube.com/channel/UC4zE-VpdoGv7uXAtLSF6sWw/videos/upload`
 ## The style (what the owner approved)
 
 - **3D blocky look of the What-if shorts**, 16:9, warm light, depth of field. Never a flat 2D world map.
-- **Teaser cold open, 12-15 s, made separately** (not cut from the video): cannon bang + camera shake +
-  big gold title "WHAT IF YOU WERE <NAME>?", then 3 quick "You'd …" highlights (rise, peak, fall), ending
-  on a question ("So how does … get there?"), then the title card "THE LIFE OF <NAME> in five minutes".
+- **Teaser cold open, 12-15 s, made separately** (not cut from the video): big gold title "WHAT IF YOU WERE
+  <NAME>?", then 3 quick "You'd …" highlights (rise, peak, fall), ending on a question ("So how does … get
+  there?"), then the title card "THE LIFE OF <NAME> in five minutes".
+  ⚠️ **Since 2026-11-26 (owner): no more cannon bang + camera shake + chaos as the opening.** "The long videos open
+  with a very loud sound and a lot of chaos, while the story after it is good." Before writing the teaser, load
+  the **`viral-hooks`** and **`short-form-video`** skills and audit the first 15-30 s with them (YouTube row: title +
+  thumbnail earn the click, the first 30 s confirm it): topic clear in 1-2 s, "you"-framing, one A-vs-B contrast
+  that opens a question (e.g. "You're 13, dying of leprosy, and king of Jerusalem"), answer only later. One clear
+  striking image, not many fast cuts; no hard hit at frame 0 — start the music soft, save the loudest hit for the
+  turn of the teaser. Write the audit (four killers, pass/flag) into `werk/` before building.
 - **Story in third person**, ~750 words, 8 chapters from the app story, one sentence per line.
 - **One shot per sentence** (`SHOTS` with `zin`, optional `na` offset), slow camera moves, a whoosh on every cut,
   ambience per shot + accents (cannon hits, glints, ticks).
@@ -98,8 +105,10 @@ stills as contact sheets (20 per image) instead of one by one; re-render only sh
 
 ## Folders
 
-`marketing/1.videos/1.te-posten/<nn-id>/upload/` = only what gets uploaded (mp4, thumbnail.png, post.md);
-`werk/` = script, zinnen.json, stem/, renders/. Move from `1.te-posten/` to `2.gepost/` after posting.
+`marketing/1.videos/1.te-posten/<nn>-<id>/1.video/upload/` = only what gets uploaded (mp4, thumbnail.png, post.md);
+`1.video/werk/` = script, zinnen.json, stem/, renders/. The person's What-if short sits next to it in `2.short/`.
+**Cleanup is part of posting (owner, 2026-11-26):** once the long video and its short are both live, `mv` the whole
+`<nn>-<id>/` from `1.te-posten/` to `2.gepost/` in the same session and fix the absolute paths in `2.short/posten.json`.
 
 ## Rendering
 
