@@ -12,6 +12,9 @@ import { Baby, Falanx, LEONIDAS, PersLeger, Spartaan, Wieg } from './LeonidasKit
 import { Baibars, Eskadron, LeeuwVaandel, NekBordje } from './BaibarsKit';
 import { Kremlin as KremlinS, RodeVlag as RodeVlagS, SOSO as SOSO_K, STALIN_P as STALIN_THUMB } from './StalinKit';
 import { Fez as FezA, KEMAL_KIND, MAARSCHALK_P, Mausoleum as MausoleumA, TurkseVlag } from './AtaturkKit';
+import { BALDWIN as BALDWIN_T, BALDWIN_KIND as BALDWIN_KIND_T, BW as BW_T, Masker as MaskerT, BLAUW as BLAUW_T } from '../watals/WatAlsBaldwin';
+import { Muur as MuurT, Stad as StadT } from './SaladinScenes';
+import { Banier as BanierT } from '../watals/Decor';
 import { Molen, ORANJE as W_ORANJE, Prinsenvlag, W as WILLEM_P, WILLEM_KIND } from './WillemKit';
 
 /**
@@ -456,3 +459,46 @@ export const AtaturkThumb = () => (
     }
   />
 );
+
+
+/** Baldwin IV (YouTube): links de jongen van 9 die naar zijn gevoelloze arm kijkt, rechts de koning voor Jeruzalem.
+ * A = met het zilveren masker (de herkenning uit de film; de video zegt zelf dat het een mythe is), B = zonder. */
+const BaldwinThumbBasis = ({ masker }: { masker: boolean }) => (
+  <Breed
+    woordLinks="AGE 9"
+    woordRechts="LEPER KING"
+    boos={[-600, -600]}
+    rechtsX={1110}
+    rechtsMaat={118}
+    links={
+      <>
+        <Lucht boven="#F3E2C4" horizon="#F3E2C4" />
+        <Daglicht zon={[3, 6, 6]} kracht={1.6} omgeving={1.5} />
+        <Grond kleur="#C8B48A" />
+        <Blok p={[0, 3, -1.2]} s={[8, 6, 0.4]} c="#DCC9A2" />
+        <Blok p={[-0.6, 1.35, -0.98]} s={[0.8, 0.9, 0.05]} c="#5A3B24" />
+        <Blok p={[-0.6, 1.35, -0.95]} s={[0.68, 0.78, 0.05]} c="#A8D2EE" />
+        <Figuur kleding={BALDWIN_KIND_T} haar="kort" position={[0.2, 0, 0.2]} rotation={[0, 0.12, 0]} scale={0.45} pose={{ wenk: -0.6, mond: 'open', hoofd: [0.3, -0.35, 0], armR: { schouder: [-1.2, 0, 0.5], elleboog: [0, 0] } }} />
+      </>
+    }
+    rechts={
+      <>
+        <Lucht boven="#5A3A6A" horizon="#FFB86A" />
+        <Zon position={[-12, 6, -90]} grootte={16} kleur="#FFE9A8" />
+        <Daglicht zon={[6, 12, 8]} kracht={2.2} />
+        <Camera pos={[-0.15, 2.2, 3.0]} kijk={[-0.15, 2.1, 0]} fov={36} />
+        <Grond kleur="#C8AC7A" />
+        <group position={[0, 0, -26]} scale={1.3}><MuurT vlag={BLAUW_T} /><StadT z={-6} koepels={false} /></group>
+        <BanierT position={[-2.6, 0, -2]} kleur={BLAUW_T} />
+        {masker ? (
+          <Figuur kleding={BALDWIN_T} haar="kaal" hoofdExtra={<><MaskerT /><Kroon position={[0, 0.74, 0]} /></>} rotation={[0, -0.12, 0]} pose={{ armL: { schouder: [-1.0, 0, 0.35], elleboog: [0, 0.9] } }} />
+        ) : (
+          <Figuur {...BW_T(2)} rotation={[0, -0.12, 0]} pose={{ wenk: 0.6, armL: { schouder: [-1.0, 0, 0.35], elleboog: [0, 0.9] } }} />
+        )}
+        <pointLight position={[0.6, 3.0, 1.6]} intensity={4} distance={4} color="#FFE08A" />
+      </>
+    }
+  />
+);
+export const BaldwinThumb = () => <BaldwinThumbBasis masker />;
+export const BaldwinThumbB = () => <BaldwinThumbBasis masker={false} />;

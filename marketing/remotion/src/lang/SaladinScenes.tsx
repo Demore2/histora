@@ -185,7 +185,7 @@ export const Ruiter = ({ k, position, rotation, t = 0, loopt = false, kleur = '#
   <Paard position={position} rotation={rotation} kleur={kleur} dek={dek} t={t} loopt={loopt} ruiter={<Figuur kleding={k} hoofddeksel={hoofddeksel} baard={baard} pose={{ hoofd: [0, -0.8, 0], ...pose }} inHand={inHand} />} />
 );
 
-const Beker = () => <Blok p={[0, 0, 0.08]} s={[0.14, 0.2, 0.14]} c="#C9CDD2" metal={0.7} rough={0.3} />;
+export const Beker = () => <Blok p={[0, 0, 0.08]} s={[0.14, 0.2, 0.14]} c="#C9CDD2" metal={0.7} rough={0.3} />;
 const Munt = ({ p, goud = true }: { p: V3; goud?: boolean }) => <Blok p={p} s={[0.16, 0.03, 0.16]} c={goud ? '#E2BE58' : '#C9CDD2'} metal={0.8} rough={0.25} />;
 
 /** Citaat in het midden van het beeld. */
@@ -202,15 +202,15 @@ export const Citaat = ({ tekst, wie }: { tekst: string; wie?: string }) => {
 
 /* ---------------- kaart ---------------- */
 
-type KS = { lon: number; lat: number; h: number; a: number; dx?: number };
-const kaartCam = (a: KS, b: KS, p: number) => {
+export type KS = { lon: number; lat: number; h: number; a: number; dx?: number };
+export const kaartCam = (a: KS, b: KS, p: number) => {
   const m = (x: number, y: number) => x + (y - x) * p;
   const kijk = opMO(m(a.lon, b.lon), m(a.lat, b.lat), 0.3);
   return { kijk, pos: [kijk[0] + m(a.dx ?? 0, b.dx ?? 0), m(a.h, b.h), kijk[2] + m(a.a, b.a)] as V3 };
 };
 const VER: KS = { lon: 38, lat: 31.5, h: 24, a: 13 };
 
-const RouteMO = ({ punten, p, kleur = ORANJE, kop }: { punten: [number, number][]; p: number; kleur?: string; kop?: ReactNode }) => {
+export const RouteMO = ({ punten, p, kleur = ORANJE, kop }: { punten: [number, number][]; p: number; kleur?: string; kop?: ReactNode }) => {
   const pts = punten.map(([lon, lat]) => opMO(lon, lat, 0.5));
   const lengtes = pts.slice(1).map((q, i) => Math.hypot(q[0] - pts[i][0], q[2] - pts[i][2]));
   const totaal = lengtes.reduce((x, y) => x + y, 0);

@@ -20,20 +20,20 @@ import { BOUDEWIJN, Hal, MONNIK, Muur, RIDDER, Ruiter, SALADIN, SARACEEN, S_Kame
 
 /* ================= kit ================= */
 
-const VERBAND = '#EDE6D6';
+export const VERBAND = '#EDE6D6';
 export const BALDWIN: Kleding = { ...BOUDEWIJN, handen: VERBAND };
-const BALDWIN_KIND: Kleding = { ...BOUDEWIJN, borst: undefined, benen: '#5A4632', cape: undefined, tuniek: '#E8E0D0', handen: undefined };
-const JONGEN_A: Kleding = { huid: '#E2B48E', haar: '#6B4A30', tuniek: '#8E3A2E', benen: '#5A4632', schoenen: '#3A2A1C' };
-const JONGEN_B: Kleding = { huid: '#DDAE88', haar: '#2E2622', tuniek: '#3E5A7A', benen: '#4A3A2E', schoenen: '#3A2A1C' };
-const WILLEM: Kleding = { ...MONNIK, tuniek: '#2A2A34', rok: '#2A2A34', haar: '#5A4A3A' };
-const PATRIARCH: Kleding = { huid: '#DDB08A', haar: '#B9B4AA', tuniek: '#F2ECE0', rok: '#F2ECE0', schoenen: '#B8912F', cape: '#C9A646' };
-const EDEL_A: Kleding = { huid: '#E2B48E', haar: '#4A3A2C', tuniek: '#6A2E4A', rok: '#6A2E4A', schoenen: '#2A1E16', cape: '#3A1E2E' };
-const EDEL_B: Kleding = { huid: '#DDAE88', haar: '#8A6A40', tuniek: '#2F5A4A', rok: '#2F5A4A', schoenen: '#2A1E16', cape: '#1E3A30' };
+export const BALDWIN_KIND: Kleding = { ...BOUDEWIJN, borst: undefined, benen: '#5A4632', cape: undefined, tuniek: '#E8E0D0', handen: undefined };
+export const JONGEN_A: Kleding = { huid: '#E2B48E', haar: '#6B4A30', tuniek: '#8E3A2E', benen: '#5A4632', schoenen: '#3A2A1C' };
+export const JONGEN_B: Kleding = { huid: '#DDAE88', haar: '#2E2622', tuniek: '#3E5A7A', benen: '#4A3A2E', schoenen: '#3A2A1C' };
+export const WILLEM: Kleding = { ...MONNIK, tuniek: '#2A2A34', rok: '#2A2A34', haar: '#5A4A3A' };
+export const PATRIARCH: Kleding = { huid: '#DDB08A', haar: '#B9B4AA', tuniek: '#F2ECE0', rok: '#F2ECE0', schoenen: '#B8912F', cape: '#C9A646' };
+export const EDEL_A: Kleding = { huid: '#E2B48E', haar: '#4A3A2C', tuniek: '#6A2E4A', rok: '#6A2E4A', schoenen: '#2A1E16', cape: '#3A1E2E' };
+export const EDEL_B: Kleding = { huid: '#DDAE88', haar: '#8A6A40', tuniek: '#2F5A4A', rok: '#2F5A4A', schoenen: '#2A1E16', cape: '#1E3A30' };
 export const BLAUW = '#2F4F8E';
 export const GOUD_VLAG = '#C99A2E';
 
 /** Kroon in de hoofdgroep (draait mee met het hoofd) plus, vanaf `ziek` 1, vlekjes op het gezicht. */
-const Hoofd = ({ ziek = 0, kroon = true }: { ziek?: number; kroon?: boolean }) => (
+export const Hoofd = ({ ziek = 0, kroon = true }: { ziek?: number; kroon?: boolean }) => (
   <>
     {kroon && <Kroon position={[0, 0.58, 0]} />}
     {ziek >= 1 && (
@@ -51,8 +51,8 @@ const Hoofd = ({ ziek = 0, kroon = true }: { ziek?: number; kroon?: boolean }) =
   </>
 );
 /** Zilveren masker + witte kap (de herkenning uit edits en de film; niet historisch, zie youtube.md). Hoofdgroep, oorsprong = hals. */
-const KAP = '#ECE8DE';
-const Masker = () => (
+export const KAP = '#ECE8DE';
+export const Masker = () => (
   <>
     <Blok p={[0, 0.74, -0.02]} s={[0.76, 0.14, 0.68]} c={KAP} rough={0.95} />
     {[-1, 1].map((k) => <Blok key={k} p={[k * 0.37, 0.36, -0.02]} s={[0.07, 0.76, 0.66]} c={KAP} rough={0.95} />)}
@@ -72,14 +72,14 @@ const Masker = () => (
 export const BW = (ziek = 0, blind = false, masker = false) => ({ kleding: BALDWIN, haar: (masker ? 'kaal' : 'kort') as 'kaal' | 'kort', levend: true, hoofdExtra: masker ? <Masker /> : <Hoofd ziek={ziek} />, oogKleur: blind ? '#C9CED2' : undefined });
 
 /** Draagbaar: vier ridders dragen een plank waarop Baldwin ligt, hoofd iets omhoog (lengte langs x). */
-const Draagbaar = ({ t = 0 }: { t?: number }) => {
+export const Draagbaar = ({ t = 0, masker = true }: { t?: number; masker?: boolean }) => {
   const deining = Math.sin(t * 5) * 0.04;
   return (
     <group position={[0, deining, 0]}>
       <Blok p={[0, 1.72, 0]} s={[2.8, 0.1, 1.1]} c="#5A3B24" />
       {[-0.5, 0.5].map((z) => <Blok key={z} p={[0, 1.74, z]} s={[4.2, 0.08, 0.08]} c="#4A2E1C" />)}
       <Blok p={[0, 1.8, 0]} s={[2.7, 0.06, 1.0]} c={BLAUW} />
-      <Figuur {...BW(2, true, true)} position={[1.2, 2.25, 0]} rotation={[0, 0, Math.PI / 2 - 0.12]} pose={{ wenk: 0.6, hoofd: [0, 0, -0.25] }} />
+      <Figuur {...BW(2, true, masker)} position={[1.2, 2.25, 0]} rotation={[0, 0, Math.PI / 2 - 0.12]} pose={{ wenk: 0.6, hoofd: [0, 0, -0.25] }} />
       {[[-1.9, -0.75], [1.9, -0.75], [-1.9, 0.75], [1.9, 0.75]].map(([x, z], i) => (
         <Figuur key={i} kleding={RIDDER} hoofddeksel="helm" levend position={[x, -deining, z]} rotation={[0, Math.PI / 2, 0]} pose={{ armL: { schouder: [-0.2, 0, z < 0 ? 0.1 : -0.1], elleboog: [0, 0] }, armR: { schouder: [-0.2, 0, z < 0 ? 0.1 : -0.1], elleboog: [0, 0] } }} />
       ))}
@@ -90,7 +90,7 @@ const Draagbaar = ({ t = 0 }: { t?: number }) => {
 /* ================= scènes ================= */
 
 /** 1 — De hook: de jonge koning te paard, naar de camera, met zijn ridders en Jeruzalem achter zich. */
-const S_Hook = ({ omslag = false }: { omslag?: boolean }) => {
+export const S_Hook = ({ omslag = false, masker = true }: { omslag?: boolean; masker?: boolean }) => {
   const fr = useCurrentFrame();
   const f = omslag ? 60 : fr;
   const t = f / FPS;
@@ -108,14 +108,14 @@ const S_Hook = ({ omslag = false }: { omslag?: boolean }) => {
       </group>
       <Leger rijen={3} kolommen={11} kleur="#ECE6D8" schild={BLAUW} position={[0, 0, -10]} t={t} />
       {[-5, -2.6, 2.6, 5].map((x, i) => <Banier key={x} position={[x, 0, -6.5]} kleur={i % 2 ? GOUD_VLAG : BLAUW} t={t + i} />)}
-      <Paard position={[0, 0, 0]} rotation={[0, Math.PI - 0.35, 0]} kleur="#6A4A30" dek={BLAUW} t={t} ruiter={<Figuur {...BW(0, false, true)} pose={{ armR: { schouder: [-2.3, 0, 0.35], elleboog: [0, -0.2] }, wenk: 0.3 }} inHand={<Zwaard />} />} />
+      <Paard position={[0, 0, 0]} rotation={[0, Math.PI - 0.35, 0]} kleur="#6A4A30" dek={BLAUW} t={t} ruiter={<Figuur {...BW(0, false, masker)} pose={{ armR: { schouder: [-2.3, 0, 0.35], elleboog: [0, -0.2] }, wenk: 0.3 }} inHand={<Zwaard />} />} />
       {[-2.6, 2.6].map((x, i) => <Ruiter key={x} k={RIDDER} hoofddeksel="helm" baard={false} position={[x, 0, -2.4]} rotation={[0, Math.PI - (i ? 0.5 : 0.2), 0]} t={t + i} kleur={i ? '#3A2A20' : '#8A7058'} dek={BLAUW} />)}
     </Shot>
   );
 };
 
 /** 2 — Leeftijd 9: de jongens knijpen elkaar en schreeuwen, Baldwin glimlacht. */
-const S_Knijpen = () => {
+export const S_Knijpen = () => {
   const f = useCurrentFrame();
   const t = f / FPS;
   const kneep = Math.sin(t * 6) * 0.15;
@@ -135,7 +135,7 @@ const S_Knijpen = () => {
 };
 
 /** 3 — Zijn leraar Willem van Tyrus bekijkt de arm bij kaarslicht. */
-const S_Leraar = () => {
+export const S_Leraar = () => {
   const f = useCurrentFrame();
   return (
     <Shot focus={[0, 1.4, 0]} scherpte={3.8} mist={['#1A120C', 6, 22]}>
@@ -155,7 +155,7 @@ const S_Leraar = () => {
 };
 
 /** 4 — Gekroond op zijn dertiende: de kroon zakt op zijn hoofd. */
-const S_Kroning = () => {
+export const S_Kroning = () => {
   const f = useCurrentFrame();
   const y = ease(f, 15, 70, 1.0, 0);
   return (
@@ -170,7 +170,7 @@ const S_Kroning = () => {
 };
 
 /** 5 — De hofadel fluistert achter zijn rug. */
-const S_Fluisteren = () => {
+export const S_Fluisteren = () => {
   const f = useCurrentFrame();
   return (
     <Shot focus={[-0.8, 1.9, 0.6]} scherpte={3.2} mist={['#3A2A20', 14, 60]}>
@@ -185,7 +185,7 @@ const S_Fluisteren = () => {
 };
 
 /** 6 — Met één verdoofde arm leert hij toch rijden: galop door groen land. */
-const S_Rijden = () => {
+export const S_Rijden = () => {
   const f = useCurrentFrame();
   const t = f / FPS;
   const x = lin(f, 0, 105, -5, 3);
@@ -203,7 +203,7 @@ const S_Rijden = () => {
 };
 
 /** 7 — Saladin komt met een enorm leger (teller loopt op naar 26.000). */
-const S_Saladin = () => {
+export const S_Saladin = () => {
   const f = useCurrentFrame();
   const t = f / FPS;
   return (
@@ -218,7 +218,7 @@ const S_Saladin = () => {
 };
 
 /** 8 — 375 ridders: klein groepje, Baldwin ervoor. */
-const S_Ridders = () => {
+export const S_Ridders = ({ masker = true }: { masker?: boolean }) => {
   const f = useCurrentFrame();
   const t = f / FPS;
   return (
@@ -230,7 +230,7 @@ const S_Ridders = () => {
       <Camera pos={[ease(f, 0, 95, 2.2, 1.2), ease(f, 0, 95, 2.4, 2.2), ease(f, 0, 95, 8.4, 7.0)]} kijk={[0, 2.0, -1]} fov={34} />
       <Leger rijen={2} kolommen={6} kleur="#ECE6D8" schild={BLAUW} position={[0, 0, -4.5]} t={t} />
       <Banier position={[-2.2, 0, -3]} kleur={BLAUW} t={t} />
-      <Figuur {...BW(1, false, true)} position={[0, 0, 0]} rotation={[0, 0.15, 0]} pose={{ armR: wijs(1.3) }} inHand={<Zwaard />} />
+      <Figuur {...BW(1, false, masker)} position={[0, 0, 0]} rotation={[0, 0.15, 0]} pose={{ armR: wijs(1.3) }} inHand={<Zwaard />} />
       <Figuur kleding={RIDDER} hoofddeksel="helm" levend position={[-1.4, 0, -1.2]} rotation={[0, 0.5, 0]} pose={{ wenk: -0.5 }} />
       <Figuur kleding={RIDDER} hoofddeksel="helm" levend position={[1.5, 0, -1.0]} rotation={[0, -0.4, 0]} pose={{ wenk: -0.6 }} />
     </Shot>
@@ -238,7 +238,7 @@ const S_Ridders = () => {
 };
 
 /** 9 — Montgisard: de charge naar de camera, stof erachter. Hero moment. */
-const S_Charge = () => {
+export const S_Charge = ({ masker = true }: { masker?: boolean }) => {
   const f = useCurrentFrame();
   const t = f / FPS;
   const z = lin(f, 0, 110, -6, 1);
@@ -249,7 +249,7 @@ const S_Charge = () => {
       <Grond kleur="#B8A070" />
       <Heuvels kleur="#A08A5A" />
       <Camera pos={[1.2, ease(f, 0, 110, 2.0, 2.6), z + 9.5]} kijk={[0, 2.9, z]} fov={36} />
-      <Paard position={[0, 0, z]} rotation={[0, Math.PI, 0]} kleur="#6A4A30" dek={BLAUW} t={t * 1.6} loopt ruiter={<Figuur {...BW(1, false, true)} pose={{ armR: { schouder: [-2.5, 0, 0.4], elleboog: [0, -0.2] } }} inHand={<Zwaard />} />} />
+      <Paard position={[0, 0, z]} rotation={[0, Math.PI, 0]} kleur="#6A4A30" dek={BLAUW} t={t * 1.6} loopt ruiter={<Figuur {...BW(1, false, masker)} pose={{ armR: { schouder: [-2.5, 0, 0.4], elleboog: [0, -0.2] } }} inHand={<Zwaard />} />} />
       {[[-2.2, -1.8], [2.2, -1.6], [-4.2, -3.6], [4.0, -3.8], [-1.2, -4.4], [1.4, -5]].map(([x, dz], i) => (
         <Ruiter key={i} k={RIDDER} hoofddeksel="helm" baard={false} position={[x, 0, z + dz]} rotation={[0, Math.PI, 0]} t={t * 1.6 + i} loopt kleur={['#3A2A20', '#8A7058', '#5A4030'][i % 3]} dek={i % 2 ? '#ECE6D8' : BLAUW} pose={{ armR: omhoog() }} inHand={<Zwaard />} />
       ))}
@@ -258,7 +258,7 @@ const S_Charge = () => {
 };
 
 /** 11 — Blind: alleen bij het raam, troebele ogen, verbonden handen. */
-const S_Blind = () => {
+export const S_Blind = () => {
   const f = useCurrentFrame();
   return (
     <Shot focus={[0, 2.0, 0]} scherpte={3.6} mist={['#141418', 8, 30]}>
@@ -276,7 +276,7 @@ const S_Blind = () => {
 };
 
 /** 12 — Kerak 1183: ze dragen hem op een draagbaar naar het slagveld; de burcht op de rots erachter. */
-const S_Draagbaar = () => {
+export const S_Draagbaar = ({ masker = true }: { masker?: boolean }) => {
   const f = useCurrentFrame();
   const t = f / FPS;
   const x = lin(f, 0, 115, -2.5, 1.5);
@@ -292,7 +292,7 @@ const S_Draagbaar = () => {
         {[-3.8, 0, 3.8].map((bx) => <Blok key={bx} p={[bx, 3.2, 0]} s={[1.4, 6.4, 1.4]} c="#7E6E58" />)}
       </group>
       <group position={[x, 0, 0]}>
-        <Draagbaar t={t} />
+        <Draagbaar t={t} masker={masker} />
       </group>
       <Leger rijen={2} kolommen={7} kleur="#ECE6D8" schild={BLAUW} position={[x - 1, 0, -7]} t={t} />
       <Banier position={[x - 3.4, 0, -2]} kleur={BLAUW} t={t} />
@@ -301,7 +301,7 @@ const S_Draagbaar = () => {
 };
 
 /** 13 — Sterfbed, Jeruzalem, maart 1185: de kroon ligt naast hem. */
-const S_Sterfbed = () => {
+export const S_Sterfbed = () => {
   const f = useCurrentFrame();
   return (
     <Shot focus={[0, 1.0, 0]} scherpte={3.4} mist={['#1A120C', 6, 24]}>
@@ -326,7 +326,7 @@ const S_Sterfbed = () => {
 };
 
 /** 14 — 1187: Saladins vlaggen op de muur van Jeruzalem bij zonsondergang. Einde (met de afsluiter). */
-const S_Valt = () => {
+export const S_Valt = () => {
   const f = useCurrentFrame();
   const t = f / FPS;
   const wissel = f > 70;

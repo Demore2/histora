@@ -1,0 +1,698 @@
+[
+ {
+  "i": 0,
+  "zin": "What if you were Baldwin the Fourth, the Leper King of Jerusalem?",
+  "begin": 0.0,
+  "eind": 4.0
+ },
+ {
+  "i": 1,
+  "zin": "You'd be crowned at thirteen, already knowing that your own body is slowly dying.",
+  "begin": 4.699,
+  "eind": 9.779
+ },
+ {
+  "i": 2,
+  "zin": "At sixteen, you'd beat the great Saladin with just a few hundred knights.",
+  "begin": 10.306,
+  "eind": 14.466
+ },
+ {
+  "i": 3,
+  "zin": "When you could no longer walk or see, your men would carry you into battle on a stretcher.",
+  "begin": 15.083,
+  "eind": 19.903
+ },
+ {
+  "i": 4,
+  "zin": "And you'd be dead at twenty-three, with your kingdom still in one piece.",
+  "begin": 20.416,
+  "eind": 24.476
+ },
+ {
+  "i": 5,
+  "zin": "So how does a sick boy hold off the most powerful sultan of his time?",
+  "begin": 25.072,
+  "eind": 29.952
+ },
+ {
+  "i": 6,
+  "zin": "You're born in 1161, in Jerusalem, in a Christian kingdom built by crusaders along the coast of the Holy Land.",
+  "begin": 31.026,
+  "eind": 37.106
+ },
+ {
+  "i": 7,
+  "zin": "Your father, Amalric, is the younger brother of the king.",
+  "begin": 37.616,
+  "eind": 41.356
+ },
+ {
+  "i": 8,
+  "zin": "When you're two, your uncle dies, and your father gets the crown.",
+  "begin": 41.947,
+  "eind": 45.827
+ },
+ {
+  "i": 9,
+  "zin": "But the nobles have one condition: he has to leave your mother, Agnes.",
+  "begin": 46.334,
+  "eind": 51.414
+ },
+ {
+  "i": 10,
+  "zin": "So you grow up in the palace, with a famous scholar as your teacher, William of Tyre.",
+  "begin": 51.992,
+  "eind": 56.732
+ },
+ {
+  "i": 11,
+  "zin": "One day, you're playing with the other boys, and they pinch each other's arms to see who screams first.",
+  "begin": 57.245,
+  "eind": 62.625
+ },
+ {
+  "i": 12,
+  "zin": "Everyone screams, except you.",
+  "begin": 63.141,
+  "eind": 65.641
+ },
+ {
+  "i": 13,
+  "zin": "William thinks you're just tough, until he sees that you can't feel your right arm at all.",
+  "begin": 66.317,
+  "eind": 70.697
+ },
+ {
+  "i": 14,
+  "zin": "The doctors rub it with oils and give you medicines, but nothing helps.",
+  "begin": 71.346,
+  "eind": 75.486
+ },
+ {
+  "i": 15,
+  "zin": "Years later, the doctors will finally say the word out loud: leprosy.",
+  "begin": 76.009,
+  "eind": 80.069
+ },
+ {
+  "i": 16,
+  "zin": "In your time, many people with leprosy have to live apart, outside the city walls.",
+  "begin": 80.609,
+  "eind": 85.329
+ },
+ {
+  "i": 17,
+  "zin": "But you're the son of the king, so you stay in the palace.",
+  "begin": 85.942,
+  "eind": 89.182
+ },
+ {
+  "i": 18,
+  "zin": "You learn to ride a horse with your knees, because one hand is already weak.",
+  "begin": 89.852,
+  "eind": 94.432
+ },
+ {
+  "i": 19,
+  "zin": "And you're good at it, better than most of the boys who can feel everything.",
+  "begin": 95.036,
+  "eind": 98.916
+ },
+ {
+  "i": 20,
+  "zin": "In 1174, your father catches a fever and dies, at only thirty-eight.",
+  "begin": 99.995,
+  "eind": 104.895
+ },
+ {
+  "i": 21,
+  "zin": "You're thirteen, and on the fifteenth of July, they put the crown on your head.",
+  "begin": 105.571,
+  "eind": 110.631
+ },
+ {
+  "i": 22,
+  "zin": "A boy with leprosy is now the king of Jerusalem.",
+  "begin": 111.14,
+  "eind": 114.56
+ },
+ {
+  "i": 23,
+  "zin": "Everyone knows you won't live long, so the nobles start fighting over who really rules.",
+  "begin": 115.214,
+  "eind": 119.774
+ },
+ {
+  "i": 24,
+  "zin": "The first regent, Miles of Plancy, is stabbed to death in a street in Acre that same autumn.",
+  "begin": 120.326,
+  "eind": 126.246
+ },
+ {
+  "i": 25,
+  "zin": "Then your father's cousin, Count Raymond of Tripoli, rules for you until you're old enough.",
+  "begin": 126.772,
+  "eind": 131.772
+ },
+ {
+  "i": 26,
+  "zin": "Your kingdom is small: a thin strip of land along the sea, with a castle on every hill.",
+  "begin": 132.293,
+  "eind": 138.233
+ },
+ {
+  "i": 27,
+  "zin": "And all around it, one man is building an empire.",
+  "begin": 138.789,
+  "eind": 141.869
+ },
+ {
+  "i": 28,
+  "zin": "His name is Saladin, and he's the sultan of Egypt.",
+  "begin": 143.032,
+  "eind": 146.472
+ },
+ {
+  "i": 29,
+  "zin": "In the same year that you're crowned, he takes the city of Damascus.",
+  "begin": 147.005,
+  "eind": 150.925
+ },
+ {
+  "i": 30,
+  "zin": "Now his lands surround your kingdom on almost every side.",
+  "begin": 151.529,
+  "eind": 154.949
+ },
+ {
+  "i": 31,
+  "zin": "He's more than twenty years older than you, and he has more soldiers than you could ever pay.",
+  "begin": 155.564,
+  "eind": 161.024
+ },
+ {
+  "i": 32,
+  "zin": "Your advisers tell you to stay inside your castles and wait.",
+  "begin": 161.591,
+  "eind": 164.971
+ },
+ {
+  "i": 33,
+  "zin": "At fifteen, you're old enough to rule on your own, and you decide you won't wait.",
+  "begin": 165.57,
+  "eind": 169.57
+ },
+ {
+  "i": 34,
+  "zin": "You send your riders to raid the land around Damascus, right into Saladin's backyard.",
+  "begin": 170.081,
+  "eind": 174.961
+ },
+ {
+  "i": 35,
+  "zin": "Meanwhile, you look for a husband for your sister, Sibylla.",
+  "begin": 175.472,
+  "eind": 178.872
+ },
+ {
+  "i": 36,
+  "zin": "Because a dying king without children needs an heir.",
+  "begin": 179.409,
+  "eind": 182.449
+ },
+ {
+  "i": 37,
+  "zin": "She marries an Italian nobleman, William of Montferrat.",
+  "begin": 183.072,
+  "eind": 186.592
+ },
+ {
+  "i": 38,
+  "zin": "A few months later, he dies of a fever, and she's pregnant.",
+  "begin": 187.169,
+  "eind": 190.089
+ },
+ {
+  "i": 39,
+  "zin": "In November 1177, Saladin marches out of Egypt with one of the biggest armies your kingdom has ever seen.",
+  "begin": 191.151,
+  "eind": 198.691
+ },
+ {
+  "i": 40,
+  "zin": "One chronicler counts twenty-six thousand men.",
+  "begin": 199.297,
+  "eind": 202.057
+ },
+ {
+  "i": 41,
+  "zin": "You're sixteen, your hands are getting worse, and you have about three hundred and seventy-five knights.",
+  "begin": 202.638,
+  "eind": 206.978
+ },
+ {
+  "i": 42,
+  "zin": "You ride to the coastal town of Ascalon, and Saladin's army simply marches past you.",
+  "begin": 207.532,
+  "eind": 212.692
+ },
+ {
+  "i": 43,
+  "zin": "He's heading for Jerusalem, and he thinks you're no longer a threat.",
+  "begin": 213.335,
+  "eind": 216.835
+ },
+ {
+  "i": 44,
+  "zin": "His soldiers spread out to plunder the villages along the way.",
+  "begin": 217.461,
+  "eind": 220.421
+ },
+ {
+  "i": 45,
+  "zin": "So you slip out of Ascalon, and follow them along the coast.",
+  "begin": 220.965,
+  "eind": 224.285
+ },
+ {
+  "i": 46,
+  "zin": "The Knights Templar join you, and so does a hard old warrior called Reynald of Chatillon.",
+  "begin": 224.888,
+  "eind": 230.108
+ },
+ {
+  "i": 47,
+  "zin": "On the twenty-fifth of November, near a hill called Montgisard, you catch Saladin's army by surprise.",
+  "begin": 230.703,
+  "eind": 235.743
+ },
+ {
+  "i": 48,
+  "zin": "His men are scattered, and their own baggage blocks the way.",
+  "begin": 236.401,
+  "eind": 239.561
+ },
+ {
+  "i": 49,
+  "zin": "You charge, and his army breaks.",
+  "begin": 240.192,
+  "eind": 242.592
+ },
+ {
+  "i": 50,
+  "zin": "Saladin himself only just escapes, according to the chroniclers on a fast racing camel.",
+  "begin": 243.144,
+  "eind": 249.364
+ },
+ {
+  "i": 51,
+  "zin": "Of his huge army, only a part ever makes it back to Egypt.",
+  "begin": 250.04,
+  "eind": 253.54
+ },
+ {
+  "i": 52,
+  "zin": "A sick sixteen-year-old has beaten the greatest sultan of his age.",
+  "begin": 254.061,
+  "eind": 258.101
+ },
+ {
+  "i": 53,
+  "zin": "But Saladin doesn't give up, and he's very patient.",
+  "begin": 259.185,
+  "eind": 262.505
+ },
+ {
+  "i": 54,
+  "zin": "You start building a new castle at Jacob's Ford, on the river Jordan, just a few days' ride from Damascus.",
+  "begin": 263.141,
+  "eind": 268.881
+ },
+ {
+  "i": 55,
+  "zin": "In 1179, Saladin comes back and catches your army by surprise at Marj Ayyun.",
+  "begin": 269.409,
+  "eind": 274.789
+ },
+ {
+  "i": 56,
+  "zin": "You're thrown off your horse, and because you can't hold the reins, a knight has to carry you to safety on his back.",
+  "begin": 275.377,
+  "eind": 282.697
+ },
+ {
+  "i": 57,
+  "zin": "A few weeks later, Saladin attacks your new castle before the walls are even finished.",
+  "begin": 283.204,
+  "eind": 287.784
+ },
+ {
+  "i": 58,
+  "zin": "The castle falls, and its defenders are killed or taken prisoner.",
+  "begin": 288.404,
+  "eind": 291.764
+ },
+ {
+  "i": 59,
+  "zin": "You need time, so in 1180 you sign a truce with Saladin.",
+  "begin": 292.402,
+  "eind": 296.722
+ },
+ {
+  "i": 60,
+  "zin": "And at home, the fight over who comes after you gets worse.",
+  "begin": 297.325,
+  "eind": 300.825
+ },
+ {
+  "i": 61,
+  "zin": "Your sister Sibylla falls for a handsome young knight from France, Guy of Lusignan.",
+  "begin": 301.482,
+  "eind": 307.162
+ },
+ {
+  "i": 62,
+  "zin": "Many nobles think he's weak and arrogant, but you allow the marriage anyway.",
+  "begin": 307.719,
+  "eind": 312.599
+ },
+ {
+  "i": 63,
+  "zin": "Raymond of Tripoli can't stand Guy, and your court splits into two camps.",
+  "begin": 313.224,
+  "eind": 317.764
+ },
+ {
+  "i": 64,
+  "zin": "Then Reynald of Chatillon starts attacking Muslim caravans, truce or no truce.",
+  "begin": 318.371,
+  "eind": 323.991
+ },
+ {
+  "i": 65,
+  "zin": "He even sends ships into the Red Sea, toward the holy cities of Mecca and Medina.",
+  "begin": 324.595,
+  "eind": 329.235
+ },
+ {
+  "i": 66,
+  "zin": "Saladin swears that one day he will kill Reynald with his own hands.",
+  "begin": 329.817,
+  "eind": 333.857
+ },
+ {
+  "i": 67,
+  "zin": "In 1182, Saladin invades again, and you ride out to meet him near Belvoir castle.",
+  "begin": 335.025,
+  "eind": 340.585
+ },
+ {
+  "i": 68,
+  "zin": "It's a long, hot fight, and neither side really wins.",
+  "begin": 341.255,
+  "eind": 344.835
+ },
+ {
+  "i": 69,
+  "zin": "But your body is losing its own fight.",
+  "begin": 345.421,
+  "eind": 348.181
+ },
+ {
+  "i": 70,
+  "zin": "You lose the feeling in your feet, and soon you can't walk anymore.",
+  "begin": 348.8,
+  "eind": 352.6
+ },
+ {
+  "i": 71,
+  "zin": "Your hands are wrapped in bandages, and your eyes are slowly going blind.",
+  "begin": 353.111,
+  "eind": 357.271
+ },
+ {
+  "i": 72,
+  "zin": "In 1183, a high fever almost kills you in Nazareth.",
+  "begin": 357.898,
+  "eind": 361.558
+ },
+ {
+  "i": 73,
+  "zin": "So you make Guy of Lusignan regent, to lead the army in your place.",
+  "begin": 362.174,
+  "eind": 365.934
+ },
+ {
+  "i": 74,
+  "zin": "That autumn, Saladin camps right next to Guy's army, the biggest Christian army in years.",
+  "begin": 366.613,
+  "eind": 371.953
+ },
+ {
+  "i": 75,
+  "zin": "Guy doesn't attack, his barons argue, and Saladin simply leaves, plundering as he goes.",
+  "begin": 372.601,
+  "eind": 378.141
+ },
+ {
+  "i": 76,
+  "zin": "When you hear what happened, you're furious.",
+  "begin": 378.692,
+  "eind": 380.992
+ },
+ {
+  "i": 77,
+  "zin": "You take the regency back from Guy, and you crown your little nephew, five-year-old Baldwin, as your co-king.",
+  "begin": 381.561,
+  "eind": 387.201
+ },
+ {
+  "i": 78,
+  "zin": "Guy will not be the next king, you decide, not while you still breathe.",
+  "begin": 387.822,
+  "eind": 392.722
+ },
+ {
+  "i": 79,
+  "zin": "That same winter, there's a wedding at Kerak, a huge desert castle east of the Dead Sea.",
+  "begin": 393.726,
+  "eind": 399.266
+ },
+ {
+  "i": 80,
+  "zin": "Your half-sister Isabella, only eleven, marries the young lord Humphrey of Toron.",
+  "begin": 399.849,
+  "eind": 405.289
+ },
+ {
+  "i": 81,
+  "zin": "Kerak is Reynald's castle, and Saladin finally has him trapped.",
+  "begin": 405.82,
+  "eind": 409.96
+ },
+ {
+  "i": 82,
+  "zin": "His army surrounds the walls, and his catapults hit the castle day and night.",
+  "begin": 410.481,
+  "eind": 415.101
+ },
+ {
+  "i": 83,
+  "zin": "Inside, the wedding party goes on.",
+  "begin": 415.611,
+  "eind": 417.891
+ },
+ {
+  "i": 84,
+  "zin": "According to one story, the groom's mother sends Saladin a plate of food from the wedding.",
+  "begin": 418.53,
+  "eind": 423.47
+ },
+ {
+  "i": 85,
+  "zin": "And Saladin asks which tower the young couple sleeps in, so his catapults can spare it.",
+  "begin": 423.993,
+  "eind": 430.333
+ },
+ {
+  "i": 86,
+  "zin": "It might be a legend, but people still tell it today.",
+  "begin": 430.877,
+  "eind": 433.837
+ },
+ {
+  "i": 87,
+  "zin": "Help can only come from one person, and that person can't walk and can't see.",
+  "begin": 434.408,
+  "eind": 439.508
+ },
+ {
+  "i": 88,
+  "zin": "So your men lay you on a stretcher, and carry you at the front of the army.",
+  "begin": 440.165,
+  "eind": 444.065
+ },
+ {
+  "i": 89,
+  "zin": "When Saladin hears that the leper king is coming, he packs up and leaves.",
+  "begin": 444.579,
+  "eind": 449.459
+ },
+ {
+  "i": 90,
+  "zin": "The next summer, he attacks Kerak again, and again your army marches, and again he leaves.",
+  "begin": 450.04,
+  "eind": 455.46
+ },
+ {
+  "i": 91,
+  "zin": "You're twenty-three now, and you know you're running out of time.",
+  "begin": 456.57,
+  "eind": 459.37
+ },
+ {
+  "i": 92,
+  "zin": "You send the Patriarch of Jerusalem to Europe, to beg the kings there for help.",
+  "begin": 460.029,
+  "eind": 464.709
+ },
+ {
+  "i": 93,
+  "zin": "He even offers the keys of Jerusalem to King Henry the Second of England.",
+  "begin": 465.356,
+  "eind": 469.676
+ },
+ {
+  "i": 94,
+  "zin": "Henry politely says no.",
+  "begin": 470.332,
+  "eind": 472.732
+ },
+ {
+  "i": 95,
+  "zin": "So you make your barons swear an oath: little Baldwin will be king, and Raymond will rule for him.",
+  "begin": 473.382,
+  "eind": 478.882
+ },
+ {
+  "i": 96,
+  "zin": "Guy of Lusignan will not get the crown.",
+  "begin": 479.457,
+  "eind": 482.317
+ },
+ {
+  "i": 97,
+  "zin": "In the spring of 1185, you die in Jerusalem, at just twenty-three.",
+  "begin": 482.881,
+  "eind": 487.281
+ },
+ {
+  "i": 98,
+  "zin": "You never married, and you never had children of your own.",
+  "begin": 487.94,
+  "eind": 491.78
+ },
+ {
+  "i": 99,
+  "zin": "Did you hide your face behind a silver mask, like in the movies?",
+  "begin": 492.453,
+  "eind": 495.653
+ },
+ {
+  "i": 100,
+  "zin": "There's no proof of that at all: the mask comes from a film made in 2005.",
+  "begin": 496.326,
+  "eind": 500.866
+ },
+ {
+  "i": 101,
+  "zin": "What the sources do say is that you kept showing up, until the very end.",
+  "begin": 501.397,
+  "eind": 505.677
+ },
+ {
+  "i": 102,
+  "zin": "Your nephew, the boy king, dies the next year, at only eight.",
+  "begin": 506.724,
+  "eind": 511.264
+ },
+ {
+  "i": 103,
+  "zin": "Your sister Sibylla becomes queen, and she makes Guy king anyway.",
+  "begin": 511.806,
+  "eind": 515.626
+ },
+ {
+  "i": 104,
+  "zin": "It's exactly what you tried to stop.",
+  "begin": 516.213,
+  "eind": 518.013
+ },
+ {
+  "i": 105,
+  "zin": "In 1187, Guy marches the whole army out into the summer heat, to a hill called the Horns of Hattin.",
+  "begin": 518.619,
+  "eind": 525.099
+ },
+ {
+  "i": 106,
+  "zin": "There's no water, and Saladin's army destroys them.",
+  "begin": 525.646,
+  "eind": 528.506
+ },
+ {
+  "i": 107,
+  "zin": "Reynald of Chatillon is captured, and Saladin keeps his promise.",
+  "begin": 529.007,
+  "eind": 533.387
+ },
+ {
+  "i": 108,
+  "zin": "Three months later, Jerusalem surrenders to Saladin.",
+  "begin": 533.962,
+  "eind": 536.922
+ },
+ {
+  "i": 109,
+  "zin": "The kingdom you held together for eleven years falls apart in just two.",
+  "begin": 537.489,
+  "eind": 541.809
+ },
+ {
+  "i": 110,
+  "zin": "Historians still wonder what would have happened if you had lived longer.",
+  "begin": 542.411,
+  "eind": 546.791
+ },
+ {
+  "i": 111,
+  "zin": "You never really won the war, but as long as you were alive, you never lost it either.",
+  "begin": 547.462,
+  "eind": 552.122
+ },
+ {
+  "i": 112,
+  "zin": "More than eight hundred years later, people still call you the Leper King.",
+  "begin": 552.747,
+  "eind": 557.207
+ },
+ {
+  "i": 113,
+  "zin": "A teenager who couldn't feel his hands, and still held off Saladin.",
+  "begin": 557.799,
+  "eind": 561.419
+ },
+ {
+  "i": 114,
+  "zin": "Who should be born next? Tell us in the comments.",
+  "begin": 562.543,
+  "eind": 565.943
+ },
+ {
+  "i": 115,
+  "zin": "Subscribe for more.",
+  "begin": 566.565,
+  "eind": 567.985
+ }
+]

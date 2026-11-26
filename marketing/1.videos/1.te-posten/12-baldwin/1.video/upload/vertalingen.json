@@ -1,0 +1,316 @@
+{
+ "tijden": [
+  "0:00",
+  "0:16",
+  "1:25",
+  "2:08",
+  "2:56",
+  "4:05",
+  "5:20",
+  "6:19",
+  "7:22",
+  "8:12"
+ ],
+ "talen": {
+  "nl": {
+   "studio": "Nederlands",
+   "titel": "Wat als je geboren was als Boudewijn IV, de Melaatse Koning?",
+   "haak": "Je bent negen en je voelt niets als de andere jongens in je arm knijpen. Het is lepra. Op je dertiende ben je koning van Jeruzalem, op je zestiende versla je Saladin met een paar honderd ridders, en als je niet meer kunt lopen of zien, dragen ze je op een draagbaar de strijd in. Het echte verhaal van Boudewijn IV, verteld alsof het het jouwe is.",
+   "hoofdstukken": [
+    "Wat als je Boudewijn IV was?",
+    "I · De jongen die niets voelde",
+    "II · Een kroon op je dertiende",
+    "III · Saladin",
+    "IV · Montgisard",
+    "V · De scheuren",
+    "VI · De blinde koning",
+    "VII · Kerak",
+    "VIII · De laatste maanden",
+    "IX · Na jou"
+   ],
+   "vraag": "Wie moet er als volgende geboren worden? Zet het in de reacties.",
+   "engels": "De video is in het Engels.",
+   "tags": "#boudewijniv #melaatsekoning #kruistochten #geschiedenis"
+  },
+  "de": {
+   "studio": "Deutsch",
+   "titel": "Was wäre, wenn du als Balduin IV., der Aussätzige König, geboren wärst?",
+   "haak": "Du bist neun und spürst nichts, wenn die anderen Jungen dich in den Arm kneifen. Es ist Lepra. Mit dreizehn bist du König von Jerusalem, mit sechzehn besiegst du Saladin mit ein paar hundert Rittern, und als du weder gehen noch sehen kannst, trägt man dich auf einer Bahre in die Schlacht. Die wahre Geschichte von Balduin IV., erzählt, als wäre es deine.",
+   "hoofdstukken": [
+    "Was wäre, wenn du Balduin IV. wärst?",
+    "I · Der Junge, der nichts spürte",
+    "II · Eine Krone mit dreizehn",
+    "III · Saladin",
+    "IV · Montgisard",
+    "V · Die Risse",
+    "VI · Der blinde König",
+    "VII · Kerak",
+    "VIII · Die letzten Monate",
+    "IX · Nach dir"
+   ],
+   "vraag": "Wer soll als Nächstes geboren werden? Schreib es in die Kommentare.",
+   "engels": "Das Video ist auf Englisch.",
+   "tags": "#balduiniv #aussätzigerkönig #kreuzzüge #geschichte"
+  },
+  "fr": {
+   "studio": "Français",
+   "titel": "Et si tu étais né Baudouin IV, le Roi lépreux ?",
+   "haak": "Tu as neuf ans et tu ne sens rien quand les autres garçons te pincent le bras. C'est la lèpre. À treize ans, tu es roi de Jérusalem, à seize ans tu bats Saladin avec quelques centaines de chevaliers, et quand tu ne peux plus marcher ni voir, on te porte au combat sur une civière. La vraie histoire de Baudouin IV, racontée comme si c'était la tienne.",
+   "hoofdstukken": [
+    "Et si tu étais Baudouin IV ?",
+    "I · Le garçon qui ne sentait rien",
+    "II · Une couronne à treize ans",
+    "III · Saladin",
+    "IV · Montgisard",
+    "V · Les fissures",
+    "VI · Le roi aveugle",
+    "VII · Kerak",
+    "VIII · Les derniers mois",
+    "IX · Après toi"
+   ],
+   "vraag": "Qui doit naître ensuite ? Dis-le dans les commentaires.",
+   "engels": "La vidéo est en anglais.",
+   "tags": "#baudouiniv #roilépreux #croisades #histoire"
+  },
+  "es": {
+   "studio": "Español",
+   "titel": "¿Y si hubieras nacido como Balduino IV, el Rey Leproso?",
+   "haak": "Tienes nueve años y no sientes nada cuando los otros chicos te pellizcan el brazo. Es lepra. A los trece eres rey de Jerusalén, a los dieciséis derrotas a Saladino con unos cientos de caballeros, y cuando ya no puedes caminar ni ver, te llevan a la batalla en una camilla. La historia real de Balduino IV, contada como si fuera la tuya.",
+   "hoofdstukken": [
+    "¿Y si fueras Balduino IV?",
+    "I · El niño que no sentía nada",
+    "II · Una corona a los trece",
+    "III · Saladino",
+    "IV · Montgisard",
+    "V · Las grietas",
+    "VI · El rey ciego",
+    "VII · Kerak",
+    "VIII · Los últimos meses",
+    "IX · Después de ti"
+   ],
+   "vraag": "¿Quién debería nacer después? Dínoslo en los comentarios.",
+   "engels": "El vídeo está en inglés.",
+   "tags": "#balduinoiv #reyleproso #cruzadas #historia"
+  },
+  "pt": {
+   "studio": "Português (Brasil)",
+   "titel": "E se você tivesse nascido como Balduíno IV, o Rei Leproso?",
+   "haak": "Você tem nove anos e não sente nada quando os outros meninos beliscam seu braço. É lepra. Aos treze, você é rei de Jerusalém, aos dezesseis derrota Saladino com algumas centenas de cavaleiros, e quando já não consegue andar nem enxergar, levam você para a batalha numa maca. A história real de Balduíno IV, contada como se fosse sua.",
+   "hoofdstukken": [
+    "E se você fosse Balduíno IV?",
+    "I · O menino que não sentia nada",
+    "II · Uma coroa aos treze",
+    "III · Saladino",
+    "IV · Montgisard",
+    "V · As rachaduras",
+    "VI · O rei cego",
+    "VII · Kerak",
+    "VIII · Os últimos meses",
+    "IX · Depois de você"
+   ],
+   "vraag": "Quem deve nascer em seguida? Conte nos comentários.",
+   "engels": "O vídeo está em inglês.",
+   "tags": "#balduínoiv #reileproso #cruzadas #história"
+  },
+  "it": {
+   "studio": "Italiano",
+   "titel": "E se fossi nato come Baldovino IV, il Re lebbroso?",
+   "haak": "Hai nove anni e non senti nulla quando gli altri ragazzi ti pizzicano il braccio. È lebbra. A tredici anni sei re di Gerusalemme, a sedici sconfiggi Saladino con poche centinaia di cavalieri, e quando non puoi più camminare né vedere, ti portano in battaglia su una barella. La vera storia di Baldovino IV, raccontata come se fosse la tua.",
+   "hoofdstukken": [
+    "E se fossi Baldovino IV?",
+    "I · Il ragazzo che non sentiva nulla",
+    "II · Una corona a tredici anni",
+    "III · Saladino",
+    "IV · Montgisard",
+    "V · Le crepe",
+    "VI · Il re cieco",
+    "VII · Kerak",
+    "VIII · Gli ultimi mesi",
+    "IX · Dopo di te"
+   ],
+   "vraag": "Chi dovrebbe nascere dopo? Scrivilo nei commenti.",
+   "engels": "Il video è in inglese.",
+   "tags": "#baldovinoiv #relebbroso #crociate #storia"
+  },
+  "ru": {
+   "studio": "Русский",
+   "titel": "Что, если бы ты родился Балдуином IV, королём-прокажённым?",
+   "haak": "Тебе девять, и ты ничего не чувствуешь, когда другие мальчики щиплют тебя за руку. Это проказа. В тринадцать ты король Иерусалима, в шестнадцать побеждаешь Саладина с несколькими сотнями рыцарей, а когда уже не можешь ни ходить, ни видеть, тебя несут в бой на носилках. Настоящая история Балдуина IV, рассказанная так, будто она твоя.",
+   "hoofdstukken": [
+    "Что, если бы ты был Балдуином IV?",
+    "I · Мальчик, который ничего не чувствовал",
+    "II · Корона в тринадцать",
+    "III · Саладин",
+    "IV · Монжизар",
+    "V · Трещины",
+    "VI · Слепой король",
+    "VII · Керак",
+    "VIII · Последние месяцы",
+    "IX · После тебя"
+   ],
+   "vraag": "Кто должен родиться следующим? Напиши в комментариях.",
+   "engels": "Видео на английском языке.",
+   "tags": "#балдуин #корольпрокажённый #крестовыепоходы #история"
+  },
+  "tr": {
+   "studio": "Türkçe",
+   "titel": "Cüzzamlı Kral IV. Baldwin olarak doğsaydın ne olurdu?",
+   "haak": "Dokuz yaşındasın ve diğer çocuklar kolunu çimdiklediğinde hiçbir şey hissetmiyorsun. Bu cüzzam. On üç yaşında Kudüs kralısın, on altında birkaç yüz şövalyeyle Selahaddin'i yeniyorsun ve artık ne yürüyebildiğinde ne görebildiğinde seni bir sedyeyle savaşa taşıyorlar. IV. Baldwin'in gerçek hikâyesi, sanki seninmiş gibi anlatılıyor.",
+   "hoofdstukken": [
+    "IV. Baldwin olsaydın?",
+    "I · Hiçbir şey hissetmeyen çocuk",
+    "II · On üçünde bir taç",
+    "III · Selahaddin",
+    "IV · Montgisard",
+    "V · Çatlaklar",
+    "VI · Kör kral",
+    "VII · Kerak",
+    "VIII · Son aylar",
+    "IX · Senden sonra"
+   ],
+   "vraag": "Sırada kim doğmalı? Yorumlarda yaz.",
+   "engels": "Video İngilizcedir.",
+   "tags": "#baldwin #cüzzamlıkral #haçlıseferleri #tarih"
+  },
+  "ar": {
+   "studio": "Arabisch",
+   "titel": "ماذا لو وُلدت بلدوين الرابع، الملك المجذوم؟",
+   "haak": "عمرك تسع سنوات ولا تشعر بشيء عندما يقرصك الأولاد الآخرون في ذراعك. إنه الجذام. في الثالثة عشرة تصبح ملك القدس، وفي السادسة عشرة تهزم صلاح الدين ببضع مئات من الفرسان، وحين لا تعود قادرًا على المشي أو الرؤية يحملونك إلى المعركة على نقالة. القصة الحقيقية لبلدوين الرابع، تُروى كأنها قصتك.",
+   "hoofdstukken": [
+    "ماذا لو كنت بلدوين الرابع؟",
+    "I · الصبي الذي لا يشعر بشيء",
+    "II · تاج في الثالثة عشرة",
+    "III · صلاح الدين",
+    "IV · مونجيزار",
+    "V · الشقوق",
+    "VI · الملك الأعمى",
+    "VII · الكرك",
+    "VIII · الأشهر الأخيرة",
+    "IX · بعدك"
+   ],
+   "vraag": "من يجب أن يولد بعد ذلك؟ اكتب في التعليقات.",
+   "engels": "الفيديو باللغة الإنجليزية.",
+   "tags": "#بلدوين_الرابع #الحروب_الصليبية #صلاح_الدين #تاريخ"
+  },
+  "fa": {
+   "studio": "Perzisch",
+   "titel": "اگر به‌عنوان بالدوین چهارم، پادشاه جذامی، به دنیا آمده بودی چه می‌شد؟",
+   "haak": "نه ساله‌ای و وقتی پسرهای دیگر بازویت را نیشگون می‌گیرند هیچ حس نمی‌کنی. جذام است. در سیزده‌سالگی پادشاه اورشلیم می‌شوی، در شانزده‌سالگی با چند صد شوالیه صلاح‌الدین را شکست می‌دهی و وقتی دیگر نه می‌توانی راه بروی و نه ببینی، تو را روی برانکارد به جنگ می‌برند. داستان واقعی بالدوین چهارم، طوری روایت‌شده که انگار داستان توست.",
+   "hoofdstukken": [
+    "اگر بالدوین چهارم بودی؟",
+    "I · پسری که هیچ حس نمی‌کرد",
+    "II · تاجی در سیزده‌سالگی",
+    "III · صلاح‌الدین",
+    "IV · مونژیزار",
+    "V · ترک‌ها",
+    "VI · پادشاه نابینا",
+    "VII · کرک",
+    "VIII · ماه‌های آخر",
+    "IX · پس از تو"
+   ],
+   "vraag": "چه کسی باید بعدی به دنیا بیاید؟ در نظرات بنویس.",
+   "engels": "ویدیو به زبان انگلیسی است.",
+   "tags": "#بالدوین #جنگهای_صلیبی #صلاح_الدین #تاریخ"
+  },
+  "hi": {
+   "studio": "Hindi",
+   "titel": "अगर तुम बाल्डविन चतुर्थ, कोढ़ी राजा, के रूप में पैदा हुए होते तो?",
+   "haak": "तुम नौ साल के हो और जब दूसरे लड़के तुम्हारी बाँह पर चुटकी काटते हैं तो तुम्हें कुछ महसूस नहीं होता। यह कुष्ठ रोग है। तेरह की उम्र में तुम यरूशलम के राजा हो, सोलह में कुछ सौ शूरवीरों के साथ सलादीन को हरा देते हो, और जब तुम न चल पाते हो न देख पाते हो, तो वे तुम्हें स्ट्रेचर पर युद्ध में ले जाते हैं। बाल्डविन चतुर्थ की सच्ची कहानी, जैसे वह तुम्हारी हो।",
+   "hoofdstukken": [
+    "अगर तुम बाल्डविन चतुर्थ होते?",
+    "I · वह लड़का जिसे कुछ महसूस नहीं होता था",
+    "II · तेरह की उम्र में ताज",
+    "III · सलादीन",
+    "IV · मोंटगिसार्ड",
+    "V · दरारें",
+    "VI · अंधा राजा",
+    "VII · केराक",
+    "VIII · आख़िरी महीने",
+    "IX · तुम्हारे बाद"
+   ],
+   "vraag": "अगला किसे पैदा होना चाहिए? कमेंट में बताओ।",
+   "engels": "वीडियो अंग्रेज़ी में है।",
+   "tags": "#बाल्डविन #धर्मयुद्ध #सलादीन #इतिहास"
+  },
+  "ur": {
+   "studio": "Urdu",
+   "titel": "اگر تم بالڈون چہارم، کوڑھی بادشاہ، کے طور پر پیدا ہوتے تو؟",
+   "haak": "تم نو سال کے ہو اور جب دوسرے لڑکے تمہارے بازو پر چٹکی کاٹتے ہیں تو تمہیں کچھ محسوس نہیں ہوتا۔ یہ کوڑھ ہے۔ تیرہ سال کی عمر میں تم یروشلم کے بادشاہ ہو، سولہ میں چند سو نائٹوں کے ساتھ صلاح الدین کو شکست دیتے ہو، اور جب تم نہ چل سکتے ہو نہ دیکھ سکتے ہو تو وہ تمہیں اسٹریچر پر جنگ میں لے جاتے ہیں۔ بالڈون چہارم کی سچی کہانی، جیسے وہ تمہاری ہو۔",
+   "hoofdstukken": [
+    "اگر تم بالڈون چہارم ہوتے؟",
+    "I · وہ لڑکا جسے کچھ محسوس نہیں ہوتا تھا",
+    "II · تیرہ سال میں تاج",
+    "III · صلاح الدین",
+    "IV · مونٹگیزار",
+    "V · دراڑیں",
+    "VI · نابینا بادشاہ",
+    "VII · کرک",
+    "VIII · آخری مہینے",
+    "IX · تمہارے بعد"
+   ],
+   "vraag": "اگلا کون پیدا ہونا چاہیے؟ کمنٹس میں بتاؤ۔",
+   "engels": "ویڈیو انگریزی میں ہے۔",
+   "tags": "#بالڈون #صلیبی_جنگیں #صلاح_الدین #تاریخ"
+  },
+  "id": {
+   "studio": "Indonesisch",
+   "titel": "Bagaimana jika kamu lahir sebagai Baldwin IV, Raja Kusta?",
+   "haak": "Kamu berumur sembilan tahun dan tidak merasakan apa-apa saat anak-anak lain mencubit lenganmu. Itu kusta. Di usia tiga belas kamu menjadi raja Yerusalem, di usia enam belas kamu mengalahkan Saladin dengan beberapa ratus ksatria, dan saat kamu tak bisa lagi berjalan atau melihat, mereka membawamu ke medan perang di atas tandu. Kisah nyata Baldwin IV, diceritakan seolah-olah itu kisahmu.",
+   "hoofdstukken": [
+    "Bagaimana jika kamu Baldwin IV?",
+    "I · Anak yang tidak merasakan apa-apa",
+    "II · Mahkota di usia tiga belas",
+    "III · Saladin",
+    "IV · Montgisard",
+    "V · Retakan",
+    "VI · Raja yang buta",
+    "VII · Kerak",
+    "VIII · Bulan-bulan terakhir",
+    "IX · Setelah kamu"
+   ],
+   "vraag": "Siapa yang harus lahir berikutnya? Tulis di komentar.",
+   "engels": "Video ini berbahasa Inggris.",
+   "tags": "#baldwiniv #rajakusta #perangsalib #sejarah"
+  },
+  "ms": {
+   "studio": "Maleis",
+   "titel": "Bagaimana jika anda dilahirkan sebagai Baldwin IV, Raja Kusta?",
+   "haak": "Anda berumur sembilan tahun dan tidak merasa apa-apa apabila budak-budak lain mencubit lengan anda. Itu kusta. Pada usia tiga belas anda raja Baitulmaqdis, pada usia enam belas anda mengalahkan Salahuddin dengan beberapa ratus kesatria, dan apabila anda tidak lagi boleh berjalan atau melihat, mereka mengusung anda ke medan perang. Kisah sebenar Baldwin IV, diceritakan seolah-olah ia kisah anda.",
+   "hoofdstukken": [
+    "Bagaimana jika anda Baldwin IV?",
+    "I · Budak yang tidak merasa apa-apa",
+    "II · Mahkota pada usia tiga belas",
+    "III · Salahuddin",
+    "IV · Montgisard",
+    "V · Retakan",
+    "VI · Raja yang buta",
+    "VII · Kerak",
+    "VIII · Bulan-bulan terakhir",
+    "IX · Selepas anda"
+   ],
+   "vraag": "Siapa yang patut dilahirkan seterusnya? Tulis di ruangan komen.",
+   "engels": "Video ini dalam bahasa Inggeris.",
+   "tags": "#baldwiniv #rajakusta #perangsalib #sejarah"
+  },
+  "he": {
+   "studio": "Hebreeuws",
+   "titel": "מה אם היית נולד בתור בלדווין הרביעי, המלך המצורע?",
+   "haak": "אתה בן תשע ולא מרגיש כלום כשהבנים האחרים צובטים לך את הזרוע. זו צרעת. בגיל שלוש־עשרה אתה מלך ירושלים, בגיל שש־עשרה אתה מביס את צלאח א־דין עם כמה מאות אבירים, וכשאתה כבר לא יכול ללכת או לראות, נושאים אותך לקרב על אלונקה. הסיפור האמיתי של בלדווין הרביעי, מסופר כאילו הוא שלך.",
+   "hoofdstukken": [
+    "מה אם היית בלדווין הרביעי?",
+    "I · הילד שלא הרגיש כלום",
+    "II · כתר בגיל שלוש־עשרה",
+    "III · צלאח א־דין",
+    "IV · מונז׳יזאר",
+    "V · הסדקים",
+    "VI · המלך העיוור",
+    "VII · כרכ",
+    "VIII · החודשים האחרונים",
+    "IX · אחריך"
+   ],
+   "vraag": "מי צריך להיוולד הבא? כתבו בתגובות.",
+   "engels": "הסרטון באנגלית.",
+   "tags": "#בלדווין #מסעיהצלב #ירושלים #היסטוריה"
+  }
+ }
+}

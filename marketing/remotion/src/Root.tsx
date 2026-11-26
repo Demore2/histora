@@ -25,8 +25,10 @@ import { LEONIDAS_LANG_DUUR, LeonidasLang } from './lang/LeonidasLang';
 import { BAIBARS_LANG_DUUR, BaibarsLang } from './lang/BaibarsLang';
 import { WILLEM_LANG_DUUR, WillemLang } from './lang/WillemLang';
 import { STALIN_LANG_DUUR, StalinLang } from './lang/StalinLang';
+import { BALDWIN_LANG_DUUR, BaldwinLang } from './lang/BaldwinLang';
+import { BaldwinThumbPro } from './lang/BaldwinThumb';
 import { ATATURK_LANG_DUUR, AtaturkLang } from './lang/AtaturkLang';
-import { AtaturkThumb, StalinStory, StalinThumb, WillemThumb, BaibarsThumb, CaesarThumb, LeonidasThumb, LeonidasThumbB, LeonidasThumbC, NapoleonThumbBreed, SaladinThumbBreed } from './lang/CaesarThumb';
+import { BaldwinThumb, BaldwinThumbB, AtaturkThumb, StalinStory, StalinThumb, WillemThumb, BaibarsThumb, CaesarThumb, LeonidasThumb, LeonidasThumbB, LeonidasThumbC, NapoleonThumbBreed, SaladinThumbBreed } from './lang/CaesarThumb';
 import { BaibarsOmslag, BaibarsReel, CaesarOmslag, CaesarOmslagSmal, CaesarReel, KhalidOmslag, KhalidReel, LeonidasOmslag, LeonidasReel, NapoleonReel, SaladinReel, NapoleonOmslag, NapoleonOmslagSmal, SaladinOmslag, SaladinOmslagSmal } from './lang/CaesarOmslag';
 import { CAESAR_TRAILER_DUUR, WatAlsCaesarTrailer } from './watals/WatAlsCaesarTrailer';
 import { CAESAR_SHORT_DUUR, WatAlsCaesarShort } from './watals/WatAlsCaesarShort';
@@ -106,8 +108,13 @@ export const Root = () => (
     <Composition id="lang-willem-stem" component={WillemLang} durationInFrames={WILLEM_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true, stem: true }} />
     <Still id="lang-stalin-story" component={StalinStory} width={1080} height={1920} />
     <Still id="lang-stalin-thumb" component={StalinThumb} width={1920} height={1080} />
+    <Still id="lang-baldwin-thumb" component={BaldwinThumb} width={1920} height={1080} />
+    <Still id="lang-baldwin-thumb-b" component={BaldwinThumbB} width={1920} height={1080} />
+    <Still id="lang-baldwin-thumb-pro" component={BaldwinThumbPro} width={1920} height={1080} />
     <Composition id="lang-stalin" component={StalinLang} durationInFrames={STALIN_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true, stem: false }} />
     <Composition id="lang-stalin-stem" component={StalinLang} durationInFrames={STALIN_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true, stem: true }} />
+    <Composition id="lang-baldwin" component={BaldwinLang} durationInFrames={BALDWIN_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true, stem: false }} />
+    <Composition id="lang-baldwin-stem" component={BaldwinLang} durationInFrames={BALDWIN_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true, stem: true }} />
     <Still id="lang-ataturk-thumb" component={AtaturkThumb} width={1920} height={1080} />
     <Composition id="lang-ataturk" component={AtaturkLang} durationInFrames={ATATURK_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true, stem: false }} />
     <Composition id="lang-ataturk-stem" component={AtaturkLang} durationInFrames={ATATURK_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true, stem: true }} />

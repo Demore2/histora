@@ -100,7 +100,9 @@ export const KaarttafelMO = ({
   p = 1,
   licht,
   gloed = 0,
+  kleuren,
 }: {
+  kleuren?: Partial<Record<string, string>>;
   van: Record<string, MOStand>;
   naar?: Record<string, MOStand>;
   p?: number;
@@ -109,6 +111,7 @@ export const KaarttafelMO = ({
 }) => {
   const lijst = useMemo(ringen, []);
   const doel = naar ?? van;
+  const K = kleuren ? { ...KLEUR, ...kleuren } : KLEUR;
   return (
     <group>
       <Blok p={[0, -0.6, 0]} s={[38, 1.0, 26]} c="#6B4428" rough={0.7} />
@@ -124,7 +127,7 @@ export const KaarttafelMO = ({
         const oplicht = licht?.includes(r.naam) ? gloed : 0;
         return (
           <mesh key={i} geometry={geometrie(r, i)} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.03, 0]} scale={[1, 1, h + oplicht * 0.25]} castShadow receiveShadow>
-            <meshStandardMaterial color={meng(KLEUR[sv], KLEUR[sn], p)} roughness={0.85} flatShading emissive={oplicht ? '#FFD27A' : '#000000'} emissiveIntensity={oplicht * 0.6} />
+            <meshStandardMaterial color={meng(K[sv] as string, K[sn] as string, p)} roughness={0.85} flatShading emissive={oplicht ? '#FFD27A' : '#000000'} emissiveIntensity={oplicht * 0.6} />
           </mesh>
         );
       })}

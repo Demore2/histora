@@ -61,7 +61,13 @@ Find the id: `studio.youtube.com/channel/UC4zE-VpdoGv7uXAtLSF6sWw/videos/upload`
 ## The style (what the owner approved)
 
 - **3D blocky look of the What-if shorts**, 16:9, warm light, depth of field. Never a flat 2D world map.
-- **Teaser cold open, 12-15 s, made separately** (not cut from the video): big gold title "WHAT IF YOU WERE
+- ⚠️ **Since 2026-11-26 (owner, after Baldwin): NO teaser and NO music at the start.** Open with ~15 s, 3 voiced lines:
+  "Welcome to What If, where I take you through history as if you were really there." → "Today, you're <name>, <epithet>."
+  → one contrast line → chapter I starts right away (no title card). Calm shots (establishing shot with a small
+  "WELCOME TO / WHAT IF" title, the person, one peak image). Music only from chapter I at 0.16 with a 3 s fade-in.
+  Template: `BaldwinLang.tsx` (`N_INTRO`, `ti()`). Thumbnails: illustrated portrait + big serif name + years, as in
+  `marketing/referenties/thumbnails/` — not the blocky AGE/WORD split (needs an image model, see werk/thumbnail-prompt.md).
+- (old, replaced) **Teaser cold open, 12-15 s, made separately** (not cut from the video): big gold title "WHAT IF YOU WERE
   <NAME>?", then 3 quick "You'd …" highlights (rise, peak, fall), ending on a question ("So how does … get
   there?"), then the title card "THE LIFE OF <NAME> in five minutes".
   ⚠️ **Since 2026-11-26 (owner): no more cannon bang + camera shake + chaos as the opening.** "The long videos open
