@@ -11,7 +11,9 @@ Renderen: `node marketing/remotion/scripts/trial-hooks.mjs <id>` → `marketing/
 
 | Datum | Persoon | Hook | Opent met | Weergaven | Kijktijd | Delen % | Opslagen % | Follows/1K | "Lijkt op eerder"? | Winnaar |
 |---|---|---|---|---|---|---|---|---|---|---|
-| | | | | | | | | | | |
+| (24 nov, controle) | Stalin | A (origineel, raster) | "What if you were Stalin?" | 12,9K | 25 s | 1,27 | 1,26 | 2,6 | – | – |
+| 26 nov (live ~22:30) | Stalin | B | "a shoemaker's son. now you command the biggest army on Earth" | | | | | | | |
+| 26 nov (live ~22:30) | Stalin | C | "before you ruled the Soviet Union, you planned a bank robbery" | | | | | | | |
 
 ## Klaar om te testen
 

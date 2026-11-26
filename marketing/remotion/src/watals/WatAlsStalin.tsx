@@ -1,5 +1,5 @@
 import { ThreeCanvas } from '@remotion/three';
-import type { ReactNode } from 'react';
+import { createContext, useContext, type ReactNode } from 'react';
 import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { Avondlicht, Binnenlicht, Camera, Daglicht, Grond, Lucht, Nachtlicht, Neerslag, Paard, Rook, Scherpte, Sokkel, TekstVlak, Zee, Zon } from './Decor';
 import { ARMEN_GEKRUIST, Blok, Figuur, omhoog, Rol, wijs, type Kleding, type V3 } from './Figuur';
@@ -21,8 +21,13 @@ const lin = (f: number, a: number, b: number, from: number, to: number) =>
 
 type SceneProps = { children: ReactNode; focus: V3; scherpte?: number; mist?: [string, number, number]; teller?: { label: string; waarde: string; pil?: string }; tekst?: Deel[] };
 
+/** Waar bij hook B/C de opener staat: die scène toont dan zijn eigen openingszin (`HOOK_TEKST`), zoals Baldwin. */
+const OpenerCtx = createContext<Hook | null>(null);
+
 const Scène = ({ children, focus, scherpte = 3, mist, teller, tekst }: SceneProps) => {
   const { width, height } = useVideoConfig();
+  const opener = useContext(OpenerCtx);
+  const hookTekst = opener && opener !== 'A' ? HOOK_TEKST[opener] : undefined;
   return (
     <AbsoluteFill>
       <ThreeCanvas width={width} height={height} shadows="soft" gl={{ antialias: true }} camera={{ fov: 35, near: 0.3, far: 400 }}>
@@ -32,7 +37,7 @@ const Scène = ({ children, focus, scherpte = 3, mist, teller, tekst }: ScenePro
       </ThreeCanvas>
       <Vignet />
       {teller && <Teller label={teller.label} waarde={teller.waarde} pil={teller.pil} start={3} />}
-      {tekst && <Onderschrift start={9} delen={tekst} />}
+      {hookTekst ? <Onderschrift start={-15} delen={hookTekst} /> : tekst && <Onderschrift start={9} delen={tekst} />}
     </AbsoluteFill>
   );
 };
@@ -537,6 +542,12 @@ const SCÈNES = [S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14];
 const DUUR = [140, 110, 120, 120, 110, 115, 115, 115, 115, 110, 110, 110, 115, 210];
 /** Trial-reel-hooks: B = de oorlog gewonnen (de top), C = de bankoverval (schokdetail). */
 export const STALIN_HOOKS: HookPlan = { B: 11, C: 3 };
+/** Eigen eerste zin voor de opener van B/C (viral-hooks: je-vorm, contrast van toen naar later, geen zin uit het midden).
+ *  B noemt Hitler bewust niet in de eerste zin; de scène zelf zegt het daarna niet meer, de vraag "What if you were Stalin?" volgt. */
+const HOOK_TEKST: Record<'B' | 'C', Deel[]> = {
+  B: [{ t: "a shoemaker's son. now you command " }, { t: 'the biggest army on Earth', accent: true }],
+  C: [{ t: 'before you ruled the Soviet Union, you planned a ' }, { t: 'bank robbery', accent: true }],
+};
 export const STALIN_DUUR = DUUR.reduce((a, b) => a + b, 0);
 if (STALIN_DUUR > MAX_SHORT_FRAMES) throw new Error(`STALIN_DUUR is ${STALIN_DUUR} frames, max ${MAX_SHORT_FRAMES} (58 s)`);
 const AFSLUITER_VANAF = STALIN_DUUR - 90;
@@ -575,12 +586,15 @@ const KLANKEN: Klank[] = [
 ];
 
 export const WatAlsStalin = ({ muziek = true, muziekVanaf = 14, hook = 'A' }: { muziek?: boolean; muziekVanaf?: number; hook?: Hook }) => {
-  const STARTS = startsVoor(DUUR, hookVolgorde(SCÈNES.length, STALIN_HOOKS, hook));
+  const VOLGORDE = hookVolgorde(SCÈNES.length, STALIN_HOOKS, hook);
+  const STARTS = startsVoor(DUUR, VOLGORDE);
   return (
   <AbsoluteFill style={{ background: '#000' }}>
     {SCÈNES.map((C, i) => (
       <Sequence key={i} from={STARTS[i]} durationInFrames={DUUR[i]}>
-        <C />
+        <OpenerCtx.Provider value={i === VOLGORDE[0] ? hook : null}>
+          <C />
+        </OpenerCtx.Provider>
       </Sequence>
     ))}
     <Sequence from={AFSLUITER_VANAF}>

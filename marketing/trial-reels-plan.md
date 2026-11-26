@@ -60,6 +60,7 @@ Views tellen pas als de rest klopt (zoals de video zegt).
 - Na 7 dagen: welk hooktype wint? Dat wordt de standaard.
 
 ### Fase 2, week 2: winnaars opnieuw
+- **Een remake gaat nooit op het raster** (eigenaar, 26 nov): het origineel staat er al. De trial is dan de post zelf (alleen niet-volgers), en het resultaat is de les welk hooktype wint. Eerste test: Stalin B + C, 26 nov.
 - Stalin, Saladin en Khalid opnieuw, met de winnende hook plus nieuwe visuals in de eerste 3 seconden (andere camera, andere openingsscène, ander fragment uit het nummer).
 - Nooit een letterlijke herpost zolang de reputatie laag is. Verschijnt de melding "lijkt op eerder gedeeld", dan meer veranderen.
 - Nichepersonen en fanverzoeken met twijfel (Barsbek-type) alleen nog als trial.
