@@ -38,3 +38,7 @@ YouTube blijft hangen op de klik (CTR 1,2%).
 ## Meting 2026-11-23 (11:00+)
 
 - TikTok retentie: 0:01 81%, 0:02 56%, 0:03 44%, 0:04 35%. YouTube 14 (=).
+
+## Meting 2026-11-26
+
+YT lang 20 weergaven, 9,6% bekeken.

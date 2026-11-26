@@ -8,7 +8,7 @@ Eerste: `2.gepost/01-napoleon/` (5:20, 2026-11-16). Tweede: `1.te-posten/02-sala
 1.videos/
   kanaal/                  banner (kanaal-banner.png) + kanaaltekst (kanaal.md)
   1.te-posten/<nn-id>/
-    upload/                alleen wat je uploadt: <id>.mp4, thumbnail.png (YouTube), omslag-reel.png (Instagram/TikTok, 1080x1920), post.md
+    upload/                alleen wat je uploadt: <id>.mp4, thumbnail.png (YouTube), omslag-reel.png (Instagram, 1080x1920), post.md
     werk/                  script.md, zinnen.json, stem/ (opnames, timing, proeven), renders/ (ruw, proef)
   1.te-posten/<nn>-<id>-short/   What-if-short (9:16): mp4's, omslag.png, youtube.md, posten.json (plat, geen upload/)
   2.gepost/<nn-id>/        na het posten of inplannen hierheen verplaatsen (mv, nooit rm) + stats.md
@@ -22,7 +22,7 @@ Vervallen (wordt niet meer gepost): `../9.archief/what-if-shorts/3.vervallen/` (
 | Map | Wat | Status |
 |---|---|---|
 | `1.te-posten/04-leonidas` | lang #04 | klaar (`upload/leonidas.mp4`), wacht op upload door eigenaar; daarna inplannen do 26 nov 16:00 |
-| `1.te-posten/04-leonidas-short` | What-if Leonidas | ingepland do 26 nov 17:00 op YouTube (9foDrkLReFY), Instagram en TikTok |
+| `1.te-posten/04-leonidas-short` | What-if Leonidas | ingepland do 26 nov 17:00 op YouTube (9foDrkLReFY), Instagram (TikTok ook nog, ingepland vóór de stop) |
 | `1.te-posten/05-baibars` | lang #05 | scènes klaar, nog geen stem; later inplannen |
 | `2.gepost/08-willem` | lang #08 | ingepland wo 25 nov 18:00 (eigenaar) |
 | `2.gepost/09-stalin` | lang #09 | openbaar 25 nov |

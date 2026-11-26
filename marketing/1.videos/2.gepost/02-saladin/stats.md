@@ -39,3 +39,7 @@ Gepost 2026-11-17 16:00 NL op YouTube + TikTok, Instagram 2026-11-18 06:00 NL.
 ## Meting 2026-11-23 (11:00+)
 
 - TikTok retentie: 0:03 32%, 0:04 25%. YouTube 99 (=).
+
+## Meting 2026-11-26
+
+YT lang 106 weergaven, 949 vertoningen, CTR 1,4%.

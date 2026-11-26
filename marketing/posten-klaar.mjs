@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-// posten-klaar.mjs: zet één short klaar voor YouTube + Instagram + TikTok in één keer.
+// posten-klaar.mjs: zet één short klaar voor YouTube + Instagram in één keer.
+// TikTok is gestopt (eigenaar, 2026-11-26): bleef hangen op ~600 views, 60-86% NL/BE, nul volgers.
 //
 //   node marketing/posten-klaar.mjs <map-van-de-short>          # klaarzetten
 //   node marketing/posten-klaar.mjs <map> --check               # alleen controleren, niets schrijven
@@ -8,8 +9,7 @@
 //  1. zoekt *-zonder-muziek.mp4 en (optioneel) *-met-muziek.mp4 in de map;
 //  2. controleert de lengte (max 58 s, zie feedback-shorts-max-58s);
 //  3. maakt van elk een *-upload.mp4 van < 10 MB (2-pass, logbestanden in %TEMP%, niet in de map);
-//  4. leest youtube.md: titel, beschrijving, vastgezette reactie, Instagram- en TikTok-caption
-//     (geen "## TikTok"-sectie? dan wordt hij afgeleid uit de beschrijving);
+//  4. leest youtube.md: titel, beschrijving, vastgezette reactie, Instagram-caption;
 //  5. schrijft posten.json (alles wat in de browser geplakt wordt, met absolute paden).
 //
 // Daarna in Chrome, per platform één keer posten.json lezen en plakken. Zie marketing/README.md → "Posten".
@@ -20,7 +20,7 @@ import os from 'node:os';
 import path from 'node:path';
 
 const MAX_SEC = 58;
-const MAX_MB = 9.6; // browseruploads (MBS, TikTok) weigeren > 10 MB
+const MAX_MB = 9.6; // browseruploads (MBS) weigeren > 10 MB
 const args = process.argv.slice(2);
 const check = args.includes('--check');
 const mapArg = args.find((a) => !a.startsWith('--'));
@@ -77,31 +77,15 @@ const titel = sectie(/^## Titel/).split('\n')[0].trim();
 const beschrijving = sectie(/^## Beschrijving/);
 const reactie = sectie(/^## Vastgezette reactie/).split('\n')[0].trim();
 const gerelateerd = (sectie(/^## Gerelateerde video/).match(/https?:\/\/\S+/) || [null])[0];
-// IG/TikTok-secties beginnen vaak met een uitlegregel in backticks; de caption is de rest
+// IG-secties beginnen vaak met een uitlegregel in backticks; de caption is de rest
 const caption = (s) => s.split('\n').filter((r) => !/^`|^Caption|^\*\*Caption|\(alleen Engels\)/.test(r.trim())).join('\n').trim();
 const hashtags = (t) => t.match(/#[\p{L}\p{N}_]+/gu) || [];
 
 const instagram = caption(sectie(/^## Instagram/)) || beschrijving.replace(/#shorts\s*/g, '').trim();
-let tiktok = caption(sectie(/^## TikTok/));
-if (!tiktok) {
-  // afgeleid: beschrijving zonder #shorts en zonder "on the channel"-regels (TikTok heeft geen link), max 5 tags
-  const tekst = beschrijving
-    .split('\n')
-    .filter((r) => !/on the channel|^#/.test(r))
-    .join('\n')
-    .replace(/\n{3,}/g, '\n\n')
-    .trim();
-  const tags = [...new Set(hashtags(beschrijving).filter((h) => h !== '#shorts'))];
-  const gekozen = [...tags.filter((h) => h !== '#history').slice(0, 3), '#history', '#historytok'];
-  const kop = titel.replace(/#shorts/g, '').trim(); // TikTok heeft geen titelveld: de vraag gaat bovenaan
-  tiktok = `${kop} ${tekst}\n\n${gekozen.join(' ')}`;
-  waarschuwingen.push('geen "## TikTok"-sectie in youtube.md, caption afgeleid uit de beschrijving');
-}
 if (!titel) fouten.push('geen titel');
 if (!reactie) waarschuwingen.push('geen vastgezette reactie');
-if (/histora|app store|play store/i.test(`${titel} ${beschrijving} ${instagram} ${tiktok} ${reactie}`))
+if (/histora|app store|play store/i.test(`${titel} ${beschrijving} ${instagram} ${reactie}`))
   fouten.push('app-link/"Histora" in de tekst (niet toegestaan tot iOS live is)');
-if (tiktok.length > 2200) fouten.push(`TikTok-caption ${tiktok.length} tekens (max 2200)`);
 if (hashtags(instagram).length > 5) waarschuwingen.push(`Instagram heeft ${hashtags(instagram).length} hashtags (advies 3-5)`);
 
 // ---- vertalingen: tabel "| taal | titel | beschrijving |" onder "## Vertalingen" ----
@@ -125,7 +109,7 @@ if (!zonder) fouten.push('geen *-zonder-muziek.mp4');
 if (!omslag) waarschuwingen.push('geen omslag.png');
 for (const f of [zonder, met].filter(Boolean)) {
   const s = duur(f);
-  if (s > MAX_SEC + 0.5) waarschuwingen.push(`${path.basename(f)} duurt ${s.toFixed(1)} s (> ${MAX_SEC} s: TikTok-/IG-muziek stopt na 1:00)`);
+  if (s > MAX_SEC + 0.5) waarschuwingen.push(`${path.basename(f)} duurt ${s.toFixed(1)} s (> ${MAX_SEC} s: IG-muziek stopt na 1:00)`);
 }
 console.log(`Short: ${titel || '(geen titel)'}`);
 const zonderUpload = uploadVersie(zonder);
@@ -137,12 +121,10 @@ const uit = {
   bestanden: {
     youtube: metUpload, // nummer ingebakken, Studio in de browser
     instagram: zonderUpload, // + "Amour plastique" (bovenste gewone) in MBS
-    tiktok: zonderUpload, // + Favorites → 01:00 "Amour plastique", einde naar het einde van de video slepen
     omslag,
   },
   youtube: { titel, beschrijving, gerelateerd, reactie, tijd: '19:00 NL', talen },
   instagram: { caption: instagram, tijd: '17:00 NL', audio: 'Amour plastique (bovenste gewone, NIET Napoleon\'s Song)', reactie },
-  tiktok: { caption: tiktok, tijd: '17:00 NL (zelfde als Instagram; alleen YouTube 19:00)', audio: 'Favorites → Amour plastique 01:00', aiLabel: false, reactie },
 };
 
 for (const w of waarschuwingen) console.log(`  ⚠ ${w}`);

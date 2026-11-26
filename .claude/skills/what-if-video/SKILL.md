@@ -3,13 +3,18 @@ name: what-if-video
 description: Build a Histora "What if you were <person>?" short - a 3D video of at most 58 s with blocky figures, made entirely in code (Remotion + three.js, no Higgsfield), modelled on the owner's Instagram references. Use when the owner asks for a new What-if video, the next person in that series, or changes to the Caesar video / the 3D template in marketing/remotion/src/watals/.
 ---
 
-> **Active again since 2026-11-23**: one What-if per day on fan request (YouTube Shorts + Instagram + TikTok), next
+> **Active again since 2026-11-23**: one What-if per day on fan request (YouTube Shorts + Instagram; TikTok stopped 2026-11-26), next
 > to the long videos. New shorts go in `marketing/1.videos/1.te-posten/<nn>-<id>-short/` (flat: the mp4s,
 > `omslag.png`, `youtube.md`); posting runs through `node marketing/posten-klaar.mjs <map>` → `posten.json` and the
 > routes in `marketing/README.md`. Newest template to copy: `WatAlsStalin.tsx` / `WatAlsWillem.tsx` (14 scenes,
 > `DUUR = [140,110,120,120,110,115,115,115,115,110,110,110,115,210]` = 57.2 s).
 
-## Cheapest route (Stalin, 2026-11-24: script → posted on 3 platforms in one evening)
+> **Trial-reel hooks (2026-11-26, plan `marketing/trial-reels-plan.md`)**: give every new What-if a `<NAAM>_HOOKS: HookPlan = { B, C }`
+> (B = the peak scene, C = a shock detail; never 0 or the last scene) and a `hook` prop via `src/watals/hooks.ts`, as in
+> `WatAlsAtaturk.tsx`; register `watals-<id>-stil-B/-C` in `Root.tsx`. Render all three with
+> `node scripts/trial-hooks.mjs <id>` (`--alleen-frames` to check the openings). Only matters once IG has trial reels (200 followers).
+
+## Cheapest route (Stalin, 2026-11-24: script → posted on 3 platforms (now 2) in one evening)
 
 1. Script in your head first: 14 lines, each = teller (label/value/pill) + caption with one accent word. Facts checked.
 2. Copy the newest `WatAls*.tsx`, keep `Scène`/montage/`KLANKEN` as is, write the kit (2-3 signature items) and S1-S14.
@@ -19,7 +24,7 @@ description: Build a Histora "What if you were <person>?" short - a 3D video of 
    → read `grid0.jpg` + `grid1.jpg` (2 images for 14 scenes). Fix, then re-check only the changed scenes with
    `npx remotion still … --frame=<n> --scale=0.4` instead of a full render.
 4. Final renders + cover in one background command, then `node marketing/posten-klaar.mjs <map>`, write `youtube.md`
-   (Titel, Beschrijving, Gerelateerde video, Vastgezette reactie, Instagram, TikTok, Vertalingen-tabel, Fact notes,
+   (Titel, Beschrijving, Gerelateerde video, Vastgezette reactie, Instagram, Vertalingen-tabel, Fact notes,
    Slagingskans) BEFORE running it, so `posten.json` carries all 14 translations.
 5. Post via the routes in `marketing/README.md`; reply to the requester under their own comment.
 
@@ -134,4 +139,4 @@ Files in `public/watals-sfx/` (gitignored):
 
 Load the `histora-brand` skill. Write our own captions (don't copy the reference accounts' lines),
 check every claim against Plutarch/Suetonius-level sources, put a Fact notes table + platform
-captions (TikTok, YouTube title/description, Instagram) + a Slagingskans in `post.md`.
+captions (YouTube title/description, Instagram) + a Slagingskans in `post.md`.

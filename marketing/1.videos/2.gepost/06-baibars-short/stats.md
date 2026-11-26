@@ -19,3 +19,7 @@ Zwakke start: op TikTok haakt bijna iedereen af bij 0:01, op IG nauwelijks buite
 ## Meting 2026-11-23 (11:00+)
 
 - IG ongewijzigd (362). TikTok retentie: 0:02 40%, 0:03 30%, 0:04 23%.
+
+## Meting 2026-11-26
+
+YT 1.169, IG 434, TikTok 557 (0:03 42%).

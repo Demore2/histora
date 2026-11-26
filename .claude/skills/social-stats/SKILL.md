@@ -1,11 +1,13 @@
 ---
 name: social-stats
-description: Read the stats of Histora's videos (long videos; the archived What-if shorts too) (@gethistora) on YouTube, Instagram and TikTok through Claude in Chrome, and write them into marketing/2.stats/ plus a stats.md per video in marketing/9.archief/what-if-shorts/2.gepost/ and marketing/1.videos/2.gepost/. Use when the owner asks for stats, a stats review, "hoe doen de video's het", or invokes /social-stats. Read-only - never post, edit, promote or change settings.
+description: Read the stats of Histora's videos (long videos; the archived What-if shorts too) (@gethistora) on YouTube and Instagram through Claude in Chrome, and write them into marketing/2.stats/ plus a stats.md per video in marketing/9.archief/what-if-shorts/2.gepost/ and marketing/1.videos/2.gepost/. Use when the owner asks for stats, a stats review, "hoe doen de video's het", or invokes /social-stats. Read-only - never post, edit, promote or change settings.
 ---
 
-# Social stats (YouTube, Instagram, TikTok)
+# Social stats (YouTube, Instagram)
 
-The owner is signed in to all three in his Chrome. You only read. First run: 2026-11-15
+> **TikTok is stopped (owner, 2026-11-26)**: every video stalled at ~600 views, 60-86% NL/BE, zero followers. Do not measure it any more.
+
+The owner is signed in to both in his Chrome. You only read. First run: 2026-11-15
 (`marketing/2.stats/stats-2026-11-15.md` is the format to follow).
 
 ## Setup (once per session)
@@ -13,7 +15,7 @@ The owner is signed in to all three in his Chrome. You only read. First run: 202
 1. Load the Chrome tools in ONE ToolSearch call:
    `select:mcp__claude-in-chrome__tabs_context_mcp,mcp__claude-in-chrome__tabs_create_mcp,mcp__claude-in-chrome__navigate,mcp__claude-in-chrome__javascript_tool,mcp__claude-in-chrome__get_page_text,mcp__claude-in-chrome__browser_batch,mcp__claude-in-chrome__tabs_close_mcp`
 2. `tabs_context_mcp` → own tab. If the tools are missing, the owner must run `/chrome` first.
-3. **Do YouTube yourself and start two background subagents for Instagram and TikTok in
+3. **Do YouTube yourself and start one background subagent for Instagram in
    parallel** (owner's wish: much faster). Give each the matching section below plus the list of
    videos (folders in `marketing/9.archief/what-if-shorts/2.gepost/` and `marketing/1.videos/2.gepost/`), and tell them: own tab, read-only, close the tab, return one
    markdown table.
@@ -59,28 +61,18 @@ Countries are empty below ~100 views. Channel totals: the channel dashboard `get
 - **Not on the web:** retention at 0:03 and countries per Reel. Ask the owner for app
   screenshots only if that is really needed.
 - Shares differ between MBS and instagram.com: report the MBS value.
-
-## TikTok (subagent)
-
-- List: `https://www.tiktok.com/tiktokstudio/content`. Per video:
-  `https://www.tiktok.com/tiktokstudio/analytics/<videoId>`. `document.body.innerText` after a
-  4 s wait has nearly everything. Check the overview, viewers and retention tabs.
-- Per video: views, total play time, avg watch time, % watched fully, retention at 0:03 (tooltip
-  on the curve), traffic sources (For You/profile/search), likes/comments/shares/saves, new
-  followers, top 2 countries.
-- Below 100 views TikTok hides sources and countries. Audience demographics only from 100
-  followers. Never open Promote.
+- **Trial reels:** the owner wants to use them as soon as the account passes **200 followers** (187 on
+  2026-11-26). Report the follower count against 200, and once past it, whether the trial option is visible.
 
 ## Writing it down
 
 1. `marketing/2.stats/stats-<date>.md`: accounts table, one row per short
-   across the three platforms, then "Wat de data zegt" (numbered, concrete).
+   across the two platforms, then "Wat de data zegt" (numbered, concrete).
 2. Append a `## Meting <date>` section to `2.gepost/<nn-id>/stats.md` per video (keep the file's
    line endings).
 3. Move shorts that are live from `1.te-posten/` to `2.gepost/` (`mv`, never `rm`).
 4. Compare with the previous `stats-*.md` and say what changed.
 
-Known traps (2026-11-15): TikTok showed our English shorts mostly to NL/BE (55-83%), so every
-video stalls at ~700 - check whether that is still true. YouTube sometimes gives a short no test
+Known traps: YouTube sometimes gives a short no test
 batch at all (4-40 views): that is distribution, not quality. Ignore views from the owner's own
 circle (sudden high NL share on YouTube/Instagram).

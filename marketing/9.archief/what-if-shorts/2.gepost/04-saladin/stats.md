@@ -28,3 +28,7 @@ Reacties: opnieuw "Baibars", "Prophet Muhammad" (13 likes, niet doen), Uyghur-fi
 ## Meting 2026-11-23 (11:00+)
 
 - Instagram: 11.117 views, 511 likes, 27 follows.
+
+## Meting 2026-11-26
+
+YT short 1.213, IG 11.786 / 29 follows, TikTok 647.

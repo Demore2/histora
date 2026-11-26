@@ -35,3 +35,7 @@ Gepost 2026-11-15 ~23:45 (IG 23:51, TikTok 00:03, YouTube 00:28). Lengte 1:15-1:
 ## Meting 2026-11-19
 
 - Niet meer te vinden op YouTube, Instagram en TikTok (laatste meting 18 nov: YT 1.183, IG 1.983, TT 717).
+
+## Meting 2026-11-26
+
+Zie 03-julius-caesar-short: YT 1.230, IG 410, TikTok 627.

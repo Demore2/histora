@@ -38,3 +38,7 @@ Reactie met 9 likes: "You can't show him as a cartoon character bro with actual 
 ## Meting 2026-11-23 (ochtend)
 
 - Instagram: 5.220 views (+30), bereik 4.089, gem. 27 s, 330 likes, 50 opslagen, 68 delen, 9 follows.
+
+## Meting 2026-11-26
+
+IG 5.320 / 10 follows, TikTok 633.

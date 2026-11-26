@@ -63,6 +63,7 @@ export const Root = () => (
     <Still id="watals-omslag-ataturk" component={OmslagAtaturk} width={W} height={H} />
     <Composition id="watals-ataturk" component={WatAlsAtaturk} durationInFrames={ATATURK_SHORT_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true, muziekVanaf: 14 }} />
     <Composition id="watals-ataturk-stil" component={WatAlsAtaturk} durationInFrames={ATATURK_SHORT_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />
+    {(["B", "C"] as const).map((h) => <Composition key={`ataturk-${h}`} id={`watals-ataturk-stil-${h}`} component={WatAlsAtaturk} durationInFrames={ATATURK_SHORT_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14, hook: h }} />)}
     <Composition id="watals-leonidas" component={WatAlsLeonidas} durationInFrames={LEONIDAS_SHORT_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true, muziekVanaf: 14 }} />
     <Composition id="watals-leonidas-stil" component={WatAlsLeonidas} durationInFrames={LEONIDAS_SHORT_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />
     <Composition id="watals-willem" component={WatAlsWillem} durationInFrames={WILLEM_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true, muziekVanaf: 14 }} />
@@ -70,6 +71,7 @@ export const Root = () => (
     <Still id="watals-omslag-stalin" component={OmslagStalin} width={W} height={H} />
     <Composition id="watals-stalin" component={WatAlsStalin} durationInFrames={STALIN_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true, muziekVanaf: 14 }} />
     <Composition id="watals-stalin-stil" component={WatAlsStalin} durationInFrames={STALIN_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />
+    {(["B", "C"] as const).map((h) => <Composition key={`stalin-${h}`} id={`watals-stalin-stil-${h}`} component={WatAlsStalin} durationInFrames={STALIN_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14, hook: h }} />)}
     <Still id="watals-omslag-barsbek" component={OmslagBarsbek} width={W} height={H} />
     <Composition id="watals-barsbek" component={WatAlsBarsbek} durationInFrames={BARSBEK_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: true, muziekVanaf: 14 }} />
     <Composition id="watals-barsbek-stil" component={WatAlsBarsbek} durationInFrames={BARSBEK_DUUR} fps={FPS} width={W} height={H} defaultProps={{ muziek: false, muziekVanaf: 14 }} />

@@ -10,3 +10,7 @@ Ingepland op zo 22 nov 2026 om 17:00 NL.
 ## Meting 2026-11-23 (11:00+)
 
 - Instagram: 1.874 views, bereik 1.606, gem. 19 s, 93 likes, 12 opslagen, 7 delen, 2 follows, 98,4% niet-volgers. 1 door Instagram verborgen reactie (bijlage).
+
+## Meting 2026-11-26
+
+YT 1.157, IG 2.247 / 3 follows, TikTok 650 (0:03 31%).

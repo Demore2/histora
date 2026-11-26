@@ -5,6 +5,7 @@ import { Avondlicht, Binnenlicht, Camera, Daglicht, Grond, Lucht, Nachtlicht, Ne
 import { ARMEN_GEKRUIST, Blok, Figuur, omhoog, Rol, wijs, type Kleding, type V3 } from './Figuur';
 import { Afsluiter, MAX_SHORT_FRAMES } from './Afsluiter';
 import { Onderschrift, Teller, Vignet, Watermerk, type Deel } from './Hud';
+import { hookVolgorde, knippen, startsVoor, type Hook, type HookPlan } from './hooks';
 
 /**
  * "What if you were Stalin?" — 14 scènes, onder de 58 s. Fanverzoek (3 stemmen, stats 2026-11-24).
@@ -534,7 +535,8 @@ export const OmslagStalinScène = () => (
 
 const SCÈNES = [S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14];
 const DUUR = [140, 110, 120, 120, 110, 115, 115, 115, 115, 110, 110, 110, 115, 210];
-const STARTS = DUUR.map((_, i) => DUUR.slice(0, i).reduce((x, y) => x + y, 0));
+/** Trial-reel-hooks: B = de oorlog gewonnen (de top), C = de bankoverval (schokdetail). */
+export const STALIN_HOOKS: HookPlan = { B: 11, C: 3 };
 export const STALIN_DUUR = DUUR.reduce((a, b) => a + b, 0);
 if (STALIN_DUUR > MAX_SHORT_FRAMES) throw new Error(`STALIN_DUUR is ${STALIN_DUUR} frames, max ${MAX_SHORT_FRAMES} (58 s)`);
 const AFSLUITER_VANAF = STALIN_DUUR - 90;
@@ -572,7 +574,9 @@ const KLANKEN: Klank[] = [
   { s: 13, bij: 6, src: 'glans', vol: 0.12 },
 ];
 
-export const WatAlsStalin = ({ muziek = true, muziekVanaf = 14 }: { muziek?: boolean; muziekVanaf?: number }) => (
+export const WatAlsStalin = ({ muziek = true, muziekVanaf = 14, hook = 'A' }: { muziek?: boolean; muziekVanaf?: number; hook?: Hook }) => {
+  const STARTS = startsVoor(DUUR, hookVolgorde(SCÈNES.length, STALIN_HOOKS, hook));
+  return (
   <AbsoluteFill style={{ background: '#000' }}>
     {SCÈNES.map((C, i) => (
       <Sequence key={i} from={STARTS[i]} durationInFrames={DUUR[i]}>
@@ -584,7 +588,7 @@ export const WatAlsStalin = ({ muziek = true, muziekVanaf = 14 }: { muziek?: boo
       <Audio src={sfx('afsluiter')} volume={0.22} />
     </Sequence>
     <Watermerk />
-    {STARTS.slice(1).map((st, i) => (
+    {knippen(STARTS).map((st, i) => (
       <Sequence key={`w${i}`} from={st - 12} durationInFrames={24}>
         <Audio src={sfx('whoosh')} volume={0.1} />
       </Sequence>
@@ -610,4 +614,5 @@ export const WatAlsStalin = ({ muziek = true, muziekVanaf = 14 }: { muziek?: boo
       />
     )}
   </AbsoluteFill>
-);
+  );
+};

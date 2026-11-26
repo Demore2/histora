@@ -8,6 +8,7 @@ import { S_Bal, S_Horloge, S_Kemal, S_SalonikiVal, S_Sterven, S_TeaserVader, T0_
 import { S_Ataturk, S_Doodvonnis, S_Krijtbord, S_Middellandse, S_Stil, S_Vrouwen } from '../lang/AtaturkScenes2';
 import { Afsluiter, MAX_SHORT_FRAMES } from './Afsluiter';
 import { Onderschrift, Teller, Watermerk, type Deel } from './Hud';
+import { hookVolgorde, knippen, startsVoor, type Hook, type HookPlan } from './hooks';
 
 /**
  * "What if you were Atatürk?" — What-if-short (9:16, < 58 s) uit de 3D-scènes van lange video #10, zoals Leonidas:
@@ -61,19 +62,23 @@ const SCÈNES: Scène[] = [
 const STARTS = SCÈNES.map((_, i) => SCÈNES.slice(0, i).reduce((x, s) => x + s.duur, 0));
 export const ATATURK_SHORT_DUUR = SCÈNES.reduce((a, s) => a + s.duur, 0);
 export const ATATURK_SHORT_STARTS = STARTS;
+/** Trial-reel-hooks: B = de aanval naar de Middellandse Zee (de top), C = "I order you to die" (schokdetail). */
+export const ATATURK_HOOKS: HookPlan = { B: 10, C: 6 };
 if (ATATURK_SHORT_DUUR > MAX_SHORT_FRAMES) throw new Error(`ATATURK_SHORT_DUUR is ${ATATURK_SHORT_DUUR} frames, max ${MAX_SHORT_FRAMES} (58 s)`);
 const AFSLUITER_VANAF = ATATURK_SHORT_DUUR - 90;
 const sfx = (n: string) => staticFile(`watals-sfx/${n}.wav`);
 
-export const WatAlsAtaturk = ({ muziek = true, muziekVanaf = 14 }: { muziek?: boolean; muziekVanaf?: number }) => (
+export const WatAlsAtaturk = ({ muziek = true, muziekVanaf = 14, hook = 'A' }: { muziek?: boolean; muziekVanaf?: number; hook?: Hook }) => {
+  const starts = startsVoor(SCÈNES.map((s) => s.duur), hookVolgorde(SCÈNES.length, ATATURK_HOOKS, hook));
+  return (
   <AbsoluteFill style={{ background: '#000' }}>
     {SCÈNES.map((s, i) => (
-      <Sequence key={i} from={STARTS[i]} durationInFrames={s.duur}>
+      <Sequence key={i} from={starts[i]} durationInFrames={s.duur}>
         <ZonderOver.Provider value>
           <s.C />
         </ZonderOver.Provider>
-        {s.teller && <Teller label={s.teller.label} waarde={s.teller.waarde} pil={s.teller.pil} start={i === 0 ? 0 : 3} />}
-        <Onderschrift start={i === 0 ? 0 : 9} delen={s.tekst} top={1330} />
+        {s.teller && <Teller label={s.teller.label} waarde={s.teller.waarde} pil={s.teller.pil} start={starts[i] === 0 ? 0 : 3} />}
+        <Onderschrift start={starts[i] === 0 ? 0 : 9} delen={s.tekst} top={1330} />
         {s.klank?.map((k, j) =>
           k.lus ? (
             <Audio key={j} src={sfx(k.src)} loop volume={(fr) => interpolate(fr, [0, 8, s.duur - 8, s.duur], [0, k.vol, k.vol, 0], { extrapolateRight: 'clamp' })} />
@@ -85,7 +90,7 @@ export const WatAlsAtaturk = ({ muziek = true, muziekVanaf = 14 }: { muziek?: bo
         )}
       </Sequence>
     ))}
-    {STARTS.slice(1).map((st, i) => (
+    {knippen(starts).map((st, i) => (
       <Sequence key={`w${i}`} from={Math.max(0, st - 8)} durationInFrames={20}>
         <Audio src={sfx('whoosh')} volume={0.1} />
       </Sequence>
@@ -103,4 +108,5 @@ export const WatAlsAtaturk = ({ muziek = true, muziekVanaf = 14 }: { muziek?: bo
       <Audio src={sfx('afsluiter')} volume={0.22} />
     </Sequence>
   </AbsoluteFill>
-);
+  );
+};

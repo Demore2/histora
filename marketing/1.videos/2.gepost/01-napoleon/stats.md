@@ -36,3 +36,7 @@ Staat stil; de thumbnail klikt wel het best van de drie lange video's.
 ## Meting 2026-11-23 (11:00+)
 
 - YouTube 77 (+1). TikTok retentie: 0:01 78%, 0:02 48%, 0:03 33%.
+
+## Meting 2026-11-26
+
+YT lang 80 weergaven.

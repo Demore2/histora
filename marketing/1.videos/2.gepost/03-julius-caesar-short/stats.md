@@ -21,3 +21,7 @@ Uitgegroeid rond 300.
 ## Meting 2026-11-23 (ochtend)
 
 - Instagram: 299 views (+8), bereik 254, gem. 17 s, 11 likes, 4 opslagen, 0 delen, 0 follows, 89,2% niet-volgers.
+
+## Meting 2026-11-26
+
+YT 1.230, IG 410, TikTok 627 (0:03 39%).
