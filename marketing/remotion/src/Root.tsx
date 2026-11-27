@@ -27,6 +27,7 @@ import { WILLEM_LANG_DUUR, WillemLang } from './lang/WillemLang';
 import { STALIN_LANG_DUUR, StalinLang } from './lang/StalinLang';
 import { BALDWIN_LANG_DUUR, BaldwinLang } from './lang/BaldwinLang';
 import { BaldwinThumbPro } from './lang/BaldwinThumb';
+import { StalinThumbPro } from './lang/StalinThumbPro';
 import { ATATURK_LANG_DUUR, AtaturkLang } from './lang/AtaturkLang';
 import { BaldwinThumb, BaldwinThumbB, AtaturkThumb, StalinStory, StalinThumb, WillemThumb, BaibarsThumb, CaesarThumb, LeonidasThumb, LeonidasThumbB, LeonidasThumbC, NapoleonThumbBreed, SaladinThumbBreed } from './lang/CaesarThumb';
 import { BaibarsOmslag, BaibarsReel, CaesarOmslag, CaesarOmslagSmal, CaesarReel, KhalidOmslag, KhalidReel, LeonidasOmslag, LeonidasReel, NapoleonReel, SaladinReel, NapoleonOmslag, NapoleonOmslagSmal, SaladinOmslag, SaladinOmslagSmal } from './lang/CaesarOmslag';
@@ -108,6 +109,7 @@ export const Root = () => (
     <Composition id="lang-willem-stem" component={WillemLang} durationInFrames={WILLEM_LANG_DUUR} fps={FPS} width={1920} height={1080} defaultProps={{ muziek: true, stem: true }} />
     <Still id="lang-stalin-story" component={StalinStory} width={1080} height={1920} />
     <Still id="lang-stalin-thumb" component={StalinThumb} width={1920} height={1080} />
+    <Still id="lang-stalin-thumb-pro" component={StalinThumbPro} width={1920} height={1080} />
     <Still id="lang-baldwin-thumb" component={BaldwinThumb} width={1920} height={1080} />
     <Still id="lang-baldwin-thumb-b" component={BaldwinThumbB} width={1920} height={1080} />
     <Still id="lang-baldwin-thumb-pro" component={BaldwinThumbPro} width={1920} height={1080} />

@@ -2,6 +2,7 @@
 
 Gemaakt op 2026-11-25 omdat de What-if-short van Stalin viraal gaat: zet deze video als **gerelateerde video** onder
 die short, zodat de kijkers doorklikken. Bestand: `stalin.mp4` (9:19) + `thumbnail.png` (AGE 7 / DICTATOR).
+**27 nov: A/B-test thumbnail gestart** (YT id `16Zys_P-Dfo`): oud AGE 7/DICTATOR vs nieuw `thumbnail-pro.png` (RULED 1/6 OF EARTH, Baldwin-stijl, `lang-stalin-thumb-pro`). YouTube kiest de winnaar op kijktijd.
 Stem: lokaal Chatterbox (Dylan). Muziek: de Caesar-stukken. QA: −14,3 LUFS, true peak −1,3 dBTP.
 Vertalingen (`vertalingen.json`): de vaste 14 + Oekraïens en Georgisch als onderwerptalen.
 
