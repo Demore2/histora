@@ -24,7 +24,7 @@ Who should be next? 👇
 
 ## Gerelateerde video
 
-Baldwin lang (gaat za 28 nov om 16:00 live, een uur vóór deze short). Id volgt na de upload. Nooit een andere persoon.
+Baldwin lang (gaat za 28 nov om 16:00 live, een uur vóór deze short). Id **`kxBd7-EcaAA`** (gepland 16:00). Nooit een andere persoon.
 
 ## Vastgezette reactie
 

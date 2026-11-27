@@ -176,23 +176,23 @@ export const Z69 = () => {
       <Grond kleur="#3A2A20" />
       <Blok p={[0, 3, -1.6]} s={[10, 6, 0.3]} c="#5A4232" />
       <Camera pos={[ease(f, 0, 150, 0.8, 0.4), 2.0, ease(f, 0, 150, 5.0, 4.2)]} kijk={[0, 1.6, 0]} fov={34} />
-      <Koning ziek={2} position={[0, 0, 0]} pose={{ wenk: -0.6, hoofd: [0.45, 0, 0], armR: { schouder: [-0.9, 0, -0.25], elleboog: [0, -0.8] }, armL: { schouder: [-0.9, 0, 0.25], elleboog: [0, 0.8] } }} />
+      <Koning masker ziek={2} position={[0, 0, 0]} pose={{ wenk: -0.6, hoofd: [0.45, 0, 0], armR: { schouder: [-0.9, 0, -0.25], elleboog: [0, -0.8] }, armL: { schouder: [-0.9, 0, 0.25], elleboog: [0, 0.8] } }} />
     </Shot>
   );
 };
 /** 70 — op de troon, kan niet meer staan; twee dienaren ondersteunen hem. */
 export const Z70 = () => (
   <InHal kijk={[0, 1.9, -4.2]} van={[1.4, 2.4, 2.6]} naar={[0.6, 2.2, 1.2]} over={<LangTeller label="Your feet" waarde="numb" pil="you can't walk" />}>
-    <Koning ziek={2} scale={0.88} position={[0, 0.6, -4.4]} pose={{ wenk: -0.4 }} />
+    <Koning masker ziek={2} scale={0.88} position={[0, 0.6, -4.4]} pose={{ wenk: -0.4 }} />
     <Figuur kleding={BEDIENDE} levend position={[-1.0, 0.6, -4.0]} rotation={[0, 0.6, 0]} pose={{ armR: wijs(0.7) }} />
     <Figuur kleding={BEDIENDE} levend position={[1.0, 0.6, -4.0]} rotation={[0, -0.6, 0]} pose={{ armL: wijs(0.7) }} />
   </InHal>
 );
-export const Z71 = () => <S_Blind />;
-export const Z72 = () => <Ziekbed over={<JaarLabel jaar="1183" sub="a fever in Nazareth" />} wie={{ ...BW(2, true), pose: { ogen: 'dicht', wenk: -0.5 } }} bij={<Figuur kleding={WILLEM} haar="kort" levend position={[-0.6, 0, -1.4]} rotation={[0, 0.2, 0]} pose={{ wenk: -0.8, hoofd: [0.3, 0, 0] }} />} />;
+export const Z71 = () => <S_Blind masker />;
+export const Z72 = () => <Ziekbed over={<JaarLabel jaar="1183" sub="a fever in Nazareth" />} wie={{ ...BW(2, true, true), pose: { ogen: 'dicht', wenk: -0.5 } }} bij={<Figuur kleding={WILLEM} haar="kort" levend position={[-0.6, 0, -1.4]} rotation={[0, 0.2, 0]} pose={{ wenk: -0.8, hoofd: [0.3, 0, 0] }} />} />;
 export const Z73 = () => (
   <InHal over={<LangTeller label="Regent" waarde="Guy of Lusignan" />}>
-    <Koning ziek={2} blind scale={0.88} position={[0, 0.6, -4.4]} pose={{ armR: wijs(0.9) }} />
+    <Koning masker ziek={2} blind scale={0.88} position={[0, 0.6, -4.4]} pose={{ armR: wijs(0.9) }} />
     <Figuur kleding={GUY} haar="kort" levend position={[0, 0, -2.4]} rotation={[0, Math.PI, 0]} pose={{ armR: omhoog(), mond: 'lach' }} inHand={<Zwaard />} />
   </InHal>
 );
@@ -229,13 +229,13 @@ export const Z76 = () => {
       <Grond kleur="#3A2A20" />
       <Blok p={[0, 3, -1.6]} s={[10, 6, 0.3]} c="#5A4232" />
       <Camera pos={[ease(f, 0, 100, 0.5, 0.1), 2.0, ease(f, 0, 100, 5.0, 4.2)]} kijk={[0, 1.75, 0]} fov={34} />
-      <Koning ziek={2} blind position={[0, 0, 0]} pose={{ wenk: 1, mond: 'open', armR: omhoog() }} />
+      <Koning masker ziek={2} blind position={[0, 0, 0]} pose={{ wenk: 1, mond: 'open', armR: omhoog() }} />
     </Shot>
   );
 };
 export const Z77 = () => (
   <InHal over={<JaarLabel jaar="November 1183" sub="Baldwin V, co-king at five" />}>
-    <Koning ziek={2} blind scale={0.88} position={[-1.0, 0.6, -4.4]} rotation={[0, 0.3, 0]} />
+    <Koning masker ziek={2} blind scale={0.88} position={[-1.0, 0.6, -4.4]} rotation={[0, 0.3, 0]} />
     <KleineKoning position={[0.6, 0.6, -4.2]} rotation={[0, -0.2, 0]} />
     <Figuur kleding={PATRIARCH} baard haar="grijs" levend position={[1.8, 0, -2.6]} rotation={[0, -0.8, 0]} pose={{ armR: { schouder: [-2.0, 0, -0.4], elleboog: [0, -0.3] } }} />
     <Figuur kleding={GUY} haar="kort" levend position={[-2.6, 0, 0.6]} rotation={[0, 0.6, 0]} pose={{ ...ARMEN_GEKRUIST, wenk: 0.9 }} />
@@ -251,7 +251,7 @@ export const Z78 = () => {
       <Grond kleur="#3A2A20" />
       <Blok p={[0, 3, -1.6]} s={[10, 6, 0.3]} c="#5A4232" />
       <Camera pos={[ease(f, 0, 150, -0.6, -0.2), 2.0, ease(f, 0, 150, 5.0, 4.2)]} kijk={[0, 1.75, 0]} fov={34} />
-      <Koning ziek={2} blind position={[0, 0, 0]} pose={{ wenk: 0.8 }} />
+      <Koning masker ziek={2} blind position={[0, 0, 0]} pose={{ wenk: 0.8 }} />
     </Shot>
   );
 };
@@ -342,8 +342,8 @@ export const Z86 = () => {
     </Shot>
   );
 };
-export const Z87 = () => <Ziekbed over={<LangTeller label="Your body" waarde="can't walk, can't see" />} wie={{ ...BW(2, true), pose: { wenk: 0.6, hoofd: [0, 0, -0.25] } }} />;
-export const Z88 = () => <S_Draagbaar masker={false} />;
+export const Z87 = () => <Ziekbed over={<LangTeller label="Your body" waarde="can't walk, can't see" />} wie={{ ...BW(2, true, true), pose: { wenk: 0.6, hoofd: [0, 0, -0.25] } }} />;
+export const Z88 = () => <S_Draagbaar />;
 export const Z89 = () => {
   const f = useCurrentFrame();
   const t = f / FPS;
@@ -371,7 +371,7 @@ export const Z91 = () => {
       <Blok p={[-1.4, 3.0, -1.44]} s={[1.2, 1.8, 0.04]} c="#F2A060" emissive="#C8602A" />
       <directionalLight position={[-3, 3, 2]} intensity={1.6} color="#FFB070" />
       <Camera pos={[ease(f, 0, 150, 1.4, 0.8), 2.1, ease(f, 0, 150, 4.6, 3.6)]} kijk={[0, 1.9, 0]} fov={34} />
-      <Koning ziek={2} blind position={[0, 0, 0]} rotation={[0, -0.3, 0]} pose={{ wenk: -0.3, hoofd: [0.2, 0.3, 0] }} />
+      <Koning masker ziek={2} blind position={[0, 0, 0]} rotation={[0, -0.3, 0]} pose={{ wenk: -0.3, hoofd: [0.2, 0.3, 0] }} />
     </Shot>
   );
 };
@@ -407,7 +407,7 @@ export const Z94 = () => {
 };
 export const Z95 = () => (
   <InHal over={<LangTeller label="The oath" waarde="Baldwin V king" pil="Raymond regent" />}>
-    <Koning ziek={2} blind scale={0.88} position={[-1.0, 0.6, -4.4]} rotation={[0, 0.3, 0]} />
+    <Koning masker ziek={2} blind scale={0.88} position={[-1.0, 0.6, -4.4]} rotation={[0, 0.3, 0]} />
     <KleineKoning position={[0.6, 0.6, -4.2]} rotation={[0, -0.2, 0]} />
     {[-2.0, -0.6, 0.8, 2.2].map((x, i) => <Figuur key={x} kleding={[RAYMOND, EDEL_A, EDEL_B, RIDDER][i]} baard={i === 0} haar="kort" levend position={[x, 0, -1.6]} rotation={[0, Math.PI, 0]} pose={{ armR: omhoog() }} />)}
   </InHal>
@@ -429,7 +429,7 @@ export const Z96 = () => {
 };
 export const Z97 = () => (
   <>
-    <S_Sterfbed />
+    <S_Sterfbed masker />
     <JaarLabel jaar="Spring 1185" sub="Jerusalem" />
   </>
 );
@@ -472,7 +472,7 @@ export const Z100 = () => {
   );
 };
 /** 101 — wat de bronnen zeggen: hij kwam opdagen. Draagbaar voor het leger bij dageraad. */
-export const Z101 = () => <S_Draagbaar masker={false} />;
+export const Z101 = () => <S_Draagbaar />;
 
 /* ---------- IX · After you ---------- */
 
@@ -527,7 +527,7 @@ export const Z111 = () => {
       <Grond kleur="#C8AC7A" />
       <Heuvels kleur="#A88A5A" />
       <Camera pos={[0, ease(f, 0, 150, 2.4, 2.8), ease(f, 0, 150, 13, 11)]} kijk={[0, 2.4, 0]} fov={36} />
-      <Paard position={[-3.2, 0, 0]} rotation={[0, Math.PI / 2, 0]} kleur="#6A4A30" dek={BLAUW} t={t} ruiter={<Figuur {...BW(1)} pose={{ hoofd: [0, -1.2, 0] }} />} />
+      <Paard position={[-3.2, 0, 0]} rotation={[0, Math.PI / 2, 0]} kleur="#6A4A30" dek={BLAUW} t={t} ruiter={<Figuur {...BW(1, false, true)} pose={{ hoofd: [0, -1.2, 0] }} />} />
       <Paard position={[3.2, 0, 0]} rotation={[0, -Math.PI / 2, 0]} kleur="#ECE6D8" dek={GOUD_VLAG} t={t + 1} ruiter={<Figuur {...SAL} pose={{ hoofd: [0, -1.2, 0] }} />} />
     </Shot>
   );
@@ -551,7 +551,7 @@ export const Z113 = () => {
       <Camera pos={[ease(f, 0, 200, 1.6, 2.6), ease(f, 0, 200, 3.2, 3.6), ease(f, 0, 200, 8.2, 11)]} kijk={[0, 3.1, 0]} fov={34} />
       <group position={[0, 0, -30]} scale={1.3}><Muur vlag={BLAUW} /><Stad z={-6} koepels={false} /></group>
       <Leger rijen={2} kolommen={9} kleur="#ECE6D8" schild={BLAUW} position={[0, 0, -8]} t={t} />
-      <Paard position={[0, 0, 0]} rotation={[0, Math.PI - 0.35, 0]} kleur="#6A4A30" dek={BLAUW} t={t} ruiter={<Figuur {...BW(1)} pose={{ armR: { schouder: [-2.3, 0, 0.35], elleboog: [0, -0.2] }, wenk: 0.3 }} inHand={<Zwaard />} />} />
+      <Paard position={[0, 0, 0]} rotation={[0, Math.PI - 0.35, 0]} kleur="#6A4A30" dek={BLAUW} t={t} ruiter={<Figuur {...BW(1, false, true)} pose={{ armR: { schouder: [-2.3, 0, 0.35], elleboog: [0, -0.2] }, wenk: 0.3 }} inHand={<Zwaard />} />} />
     </Shot>
   );
 };

@@ -12,8 +12,19 @@ Renderen: `node marketing/remotion/scripts/trial-hooks.mjs <id>` → `marketing/
 | Datum | Persoon | Hook | Opent met | Weergaven | Kijktijd | Delen % | Opslagen % | Follows/1K | "Lijkt op eerder"? | Winnaar |
 |---|---|---|---|---|---|---|---|---|---|---|
 | (24 nov, controle) | Stalin | A (origineel, raster) | "What if you were Stalin?" | 12,9K | 25 s | 1,27 | 1,26 | 2,6 | – | – |
-| 26 nov (live ~22:30) | Stalin | B | "a shoemaker's son. now you command the biggest army on Earth" | | | | | | | |
-| 26 nov (live ~22:30) | Stalin | C | "before you ruled the Soviet Union, you planned a bank robbery" | | | | | | | |
+| 26 nov (live ~22:30) | Stalin | B | "a shoemaker's son. now you command the biggest army on Earth" | 3,1K (27 nov) | | | | | | |
+| 26 nov (live ~22:30) | Stalin | B (per ongeluk 2×, was bedoeld als C) | idem | 2,1K (27 nov) | | | | | | |
+| (vervallen, te laat) | Stalin | C | "before you ruled the Soviet Union, you planned a bank robbery" | | | | | | | |
+
+**Ruismeting (27 nov):** Stalin B stond per ongeluk twee keer live. Dezelfde video haalde 3,1K en 2,1K, dus ~1,5×
+verschil puur door toeval. Een trial "wint" pas bij een duidelijk groter verschil dan dat, of op de percentages
+(kijktijd, delen, opslagen) in plaats van op weergaven.
+| 27 nov | Baldwin IV | A | "What if you were the Leper King?" | | | | | | | |
+| 27 nov | Baldwin IV | B | "You're 16. You have leprosy. 26,000 men are coming for you." | | | | | | | |
+| 27 nov | Baldwin IV | C | "You can't feel pain. Sounds like a superpower. It's leprosy." | | | | | | | |
+| 28 nov | Castro | A | "What if you were Fidel Castro?" (49 years) | | | | | | | |
+| 28 nov | Castro | B | "You're 32. You started with 82 men. Now you rule Cuba." | | | | | | | |
+| 28 nov | Castro | C | "The CIA planned to kill you with an exploding cigar." (638) | | | | | | | |
 
 ## Klaar om te testen
 

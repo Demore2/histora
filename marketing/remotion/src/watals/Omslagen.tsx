@@ -14,6 +14,7 @@ import { Falanx, LEONIDAS, Spartaan } from '../lang/LeonidasKit';
 import { BLAUW as BW_BLAUW, BW as BW_P, GOUD_VLAG as BW_GOUD } from './WatAlsBaldwin';
 import { Muur as BW_Muur, Stad as BW_Stad, RIDDER as BW_RIDDER } from '../lang/SaladinScenes';
 import { Geweer, MAARSCHALK_P, OSM_SOLDAAT, Kalpak, TurkseVlag } from '../lang/AtaturkKit';
+import { OmslagCastroScène } from './WatAlsCastro';
 
 /**
  * Omslagen voor de "What if"-video's: held in close-up in zijn eigen scène, titel groot bovenaan.
@@ -223,5 +224,22 @@ export const OmslagBaldwin = () => (
     <Banier position={[-2.4, 0, -3]} kleur={BW_BLAUW} />
     <Banier position={[2.6, 0, -3.4]} kleur={BW_GOUD} />
     <Figuur {...BW_P(0, false, true)} levend={false} position={[0, 0, 0]} rotation={[0, 0.25, 0]} pose={{ armR: { schouder: [-2.6, 0, 0.4], elleboog: [0, -0.3] } }} />
+  </Omslag>
+);
+
+/** Castro, drie omslagen voor de drie trial reels (27 nov): A = de toespraak, B = op de tank Havana in, C = de sigaar. */
+export const OmslagCastroA = () => (
+  <Omslag naam="CASTRO?" focus={[0, 3.4, 0]}>
+    <OmslagCastroScène hook="A" />
+  </Omslag>
+);
+export const OmslagCastroB = () => (
+  <Omslag naam="CASTRO?" focus={[0.1, 3.8, 0]}>
+    <OmslagCastroScène hook="B" />
+  </Omslag>
+);
+export const OmslagCastroC = () => (
+  <Omslag naam="CASTRO?" focus={[0, 2.2, 0.3]}>
+    <OmslagCastroScène hook="C" />
   </Omslag>
 );

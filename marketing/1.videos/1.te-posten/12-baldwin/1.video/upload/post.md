@@ -3,13 +3,16 @@
 Gebouwd op 26 nov 2026 naar het model van **Stalin lang** (beste lange video: CTR 3,8%, 13,6% bekeken): jij-vorm,
 korte concrete zinnen, eerlijke toon, slotvraag. Live **za 28 nov 16:00**; de What-if-short (`../2.short/`) gaat om
 17:00 en krijgt deze video als **gerelateerde video**.
-Bestand: `baldwin.mp4` (9:13) + `thumbnail.png`: de jonge koning groot links met de zon als halo, Saladins leger in
+Bestand: `baldwin.mp4` (9:10) + `thumbnail.png`: de jonge koning groot links met de zon als halo, Saladins leger in
 stof rechts, tekst **375 VS 26,000** + label AGE 16 (`BaldwinThumb.tsx`, still `lang-baldwin-thumb-pro`). De oude
 split-thumbs (AGE 9 / LEPER KING) staan in `../werk/oud/`.
-Stem: lokaal Chatterbox (Dylan), whisper-check schoon. Muziek: de Caesar-stukken. Intro (26 nov, eigenaar): geen teaser en geen muziek meer, maar 16 s welkom ("Welcome to What If …"), daarna
-meteen hoofdstuk I; muziek pas vanaf I, zachter (0,16). Vertalingen (`vertalingen.json`): de vaste 14 + Hebreeuws.
+Stem: lokaal Chatterbox (Dylan), whisper-check schoon. Muziek: de Caesar-stukken. Intro (27 nov, eigenaar): 10 s welkom, stopt na "…the Leper King", daarna meteen hoofdstuk I; zachte muziek
+(0,12) ook onder de intro, daarna 0,16. Vanaf zin 69 ("your body is losing its own fight") draagt Baldwin het masker
+(eigenaar); zin 99-100 zeggen eerlijk dat het uit de film komt. Vertalingen (`vertalingen.json`): de vaste 14 + Hebreeuws.
 
 ## YouTube
+
+**YT id `kxBd7-EcaAA`**, gepland za 28 nov 2026 16:00 (27 nov aangevuld: titel, beschrijving, thumbnail, tags, promotie/AI Nee, taal Engels, 15 vertalingen).
 
 **Titel:** What If You Were Born as Baldwin IV, the Leper King?
 
@@ -20,15 +23,15 @@ meteen hoofdstuk I; muziek pas vanaf I, zachter (0,16). Vertalingen (`vertalinge
 At nine, the other boys scream when they pinch each other. You feel nothing. It's leprosy. At thirteen you're crowned King of Jerusalem, at sixteen you beat the great Saladin with a few hundred knights, and when you can no longer walk or see, your men carry you into battle on a stretcher. The real story of Baldwin IV, the Leper King, told as if it were yours.
 
 0:00 What if you were Baldwin IV?
-0:16 I · The boy who felt nothing
-1:25 II · A crown at thirteen
-2:08 III · Saladin
-2:56 IV · Montgisard
-4:05 V · The cracks
-5:20 VI · The blind king
-6:19 VII · Kerak
-7:22 VIII · The last months
-8:12 IX · After you
+0:10 I · The boy who felt nothing
+1:19 II · A crown at thirteen
+2:02 III · Saladin
+2:50 IV · Montgisard
+3:58 V · The cracks
+5:14 VI · The blind king
+6:12 VII · Kerak
+7:15 VIII · The last months
+8:05 IX · After you
 
 Maps show modern borders and are approximate. Army sizes at Montgisard come from William of Tyre and are probably exaggerated. Saladin's racing camel and the wedding food at Kerak come from chroniclers and may be legend. The silver mask comes from the 2005 film Kingdom of Heaven, not from the sources.
 
@@ -81,4 +84,4 @@ fanbase-onderwerp (Kingdom of Heaven, "Leper King"-edits), hij werd twee keer ge
 17:00 linkt ernaar, en het verhaal heeft sterke haken (niets voelen, Montgisard op je zestiende, op een draagbaar de
 strijd in). De teaser opent rustig en duidelijk in plaats van met een knal. Waarom het kan floppen: YouTube geeft
 lange video's op dit kanaal nog nauwelijks vertoningen (Willem 24, Stalin 317), en de eerste 30 seconden moeten de
-kijkers van de short vasthouden; de thumbnail belooft Montgisard, en dat komt pas in hoofdstuk IV (2:56).
+kijkers van de short vasthouden; de thumbnail belooft Montgisard, en dat komt pas in hoofdstuk IV (2:50).

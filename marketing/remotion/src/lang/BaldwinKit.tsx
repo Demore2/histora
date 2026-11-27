@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 import { useCurrentFrame } from 'remotion';
 import { Bed, Binnenlicht, Camera, Grond, Lucht } from '../watals/Decor';
 import { Blok, Figuur, Kroon, type Kleding, type Pose, type V3 } from '../watals/Figuur';
-import { BALDWIN_KIND, BLAUW, BW } from '../watals/WatAlsBaldwin';
+import { BALDWIN_KIND, BLAUW, BW, Masker } from '../watals/WatAlsBaldwin';
 import { ease, lin, Shot } from './basis';
 import { KaarttafelMO, SpeldMO, type MOStand } from './KaarttafelMO';
 import { GUY, kaartCam, type KS, MONNIK, REYNALD, RIDDER, RouteMO, SALADIN, VROUW } from './SaladinScenes';
@@ -34,9 +34,10 @@ export { BLAUW, GUY, REYNALD, SALADIN };
 export const Kind = (p: { position?: V3; rotation?: V3; pose?: Pose; scale?: number; extra?: ReactNode }) => (
   <Figuur kleding={BALDWIN_KIND} haar="kort" levend scale={p.scale ?? 0.72} position={p.position} rotation={p.rotation} pose={p.pose} extra={p.extra} />
 );
-export const Koning = ({ ziek = 0, blind = false, scale = 0.9, kroon = true, ...p }: { ziek?: number; blind?: boolean; scale?: number; kroon?: boolean; position?: V3; rotation?: V3; pose?: Pose; inHand?: ReactNode }) => {
-  const b = BW(ziek, blind);
-  return <Figuur {...b} hoofdExtra={kroon ? b.hoofdExtra : undefined} scale={scale} {...p} />;
+export const Koning = ({ ziek = 0, blind = false, masker = false, scale = 0.9, kroon = true, ...p }: { ziek?: number; blind?: boolean; masker?: boolean; scale?: number; kroon?: boolean; position?: V3; rotation?: V3; pose?: Pose; inHand?: ReactNode }) => {
+  const b = BW(ziek, blind, masker);
+  const hoofd = masker ? <><Masker />{kroon && <Kroon position={[0, 0.84, 0]} />}</> : kroon ? b.hoofdExtra : undefined;
+  return <Figuur {...b} hoofdExtra={hoofd} scale={scale} {...p} />;
 };
 export const KleineKoning = (p: { position?: V3; rotation?: V3 }) => (
   <Figuur kleding={BALDWIN_KIND} haar="kort" levend scale={0.58} position={p.position} rotation={p.rotation} hoofdExtra={<Kroon position={[0, 0.58, 0]} />} />

@@ -57,12 +57,13 @@ const ACCENT: Record<number, { bij: number; src: string; vol: number }[]> = {
 
 /** Intro (26 nov, eigenaar): 4 rustige zinnen zonder muziek, dan meteen hoofdstuk I. De oude teaser (zin 0-5) is eruit;
  * `zin` in SHOTS is vanaf hier de index in de timing, `ti(z)` zet een oud zinnummer (6+) om. */
-const N_INTRO = 3;
+// 27 nov (eigenaar): intro stopt na "…the Leper King" (~10 s); de zin "Crowned at thirteen…" is uit stem en timing
+// geknipt (oude versie in 12-baldwin/1.video/werk/oud/). Onder de intro nu wél zachte muziek.
+const N_INTRO = 2;
 const ti = (z: number) => z - 6 + N_INTRO;
 const SHOTS: ShotDef[] = [
   { zin: 0, C: A.I0, sfeer: 'wind', vol: 0.05 },
   { zin: 1, C: A.I1 },
-  { zin: 2, C: A.Z52, sfeer: 'wind', vol: 0.06 },
 ];
 void S_Draagbaar;
 for (let z = 6; z <= 114; z++) {
@@ -99,7 +100,7 @@ type Stuk = { i: number; k: number; van: number; tot: number; vol: number };
 const STUKKEN: Stuk[] = HOOFDSTUK_START.flatMap((st, i) => {
   const van = i === 0 ? 0 : st - 0.6;
   const tot = i < HOOFDSTUK_START.length - 1 ? HOOFDSTUK_START[i + 1] - 0.6 + 1.5 : EIND;
-  const vol = 0.16;
+  const vol = i === 0 ? 0.12 : 0.16;
   const L = CAESAR_LENGTE[STUK[i]];
   const uit: Stuk[] = [];
   let t = van;
@@ -115,10 +116,10 @@ const STUKKEN: Stuk[] = HOOFDSTUK_START.flatMap((st, i) => {
 });
 const Muziek = () => (
   <>
-    {STUKKEN.filter((m) => m.i > 0).map((m) => {
+    {STUKKEN.map((m) => {
       const lengte = Math.round((m.tot - m.van) * FPS);
-      // teaser: zacht invloeien over 1,5 s (geen harde inzet op frame 0)
-      const inF = Math.min(m.k > 0 ? Math.round(OVERLAP * FPS) : m.i === 1 ? 90 : 36, Math.floor(lengte / 2));
+      // intro: zacht invloeien over 1 s (geen harde inzet op frame 0); I neemt het daarna over met een crossfade
+      const inF = Math.min(m.k > 0 ? Math.round(OVERLAP * FPS) : m.i === 0 ? 30 : m.i === 1 ? 60 : 36, Math.floor(lengte / 2));
       return (
         <Sequence key={`m${m.i}-${m.k}`} from={Math.round(m.van * FPS)} durationInFrames={lengte}>
           <Audio

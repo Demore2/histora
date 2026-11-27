@@ -258,7 +258,7 @@ export const S_Charge = ({ masker = true }: { masker?: boolean }) => {
 };
 
 /** 11 — Blind: alleen bij het raam, troebele ogen, verbonden handen. */
-export const S_Blind = () => {
+export const S_Blind = ({ masker = false }: { masker?: boolean }) => {
   const f = useCurrentFrame();
   return (
     <Shot focus={[0, 2.0, 0]} scherpte={3.6} mist={['#141418', 8, 30]}>
@@ -270,7 +270,7 @@ export const S_Blind = () => {
       <directionalLight position={[-3, 4, 4]} intensity={1.4} color="#B8CCE8" />
       <pointLight position={[1.4, 2.4, 1.6]} intensity={3} distance={6} color="#FFB060" />
       <Camera pos={[ease(f, 0, 120, 0.9, 0.3), ease(f, 0, 120, 2.1, 2.05), ease(f, 0, 120, 4.4, 3.2)]} kijk={[0, 1.95, 0]} fov={34} />
-      <Figuur {...BW(2, true)} position={[0, 0, 0]} rotation={[0, 0.1, 0]} pose={{ wenk: -0.4, hoofd: [-0.15, 0, 0], armR: { schouder: [-1.2, 0, -0.5], elleboog: [0, -0.5] }, armL: { schouder: [-1.2, 0, 0.5], elleboog: [0, 0.5] } }} />
+      <Figuur {...BW(2, true, masker)} position={[0, 0, 0]} rotation={[0, 0.1, 0]} pose={{ wenk: -0.4, hoofd: [-0.15, 0, 0], armR: { schouder: [-1.2, 0, -0.5], elleboog: [0, -0.5] }, armL: { schouder: [-1.2, 0, 0.5], elleboog: [0, 0.5] } }} />
     </Shot>
   );
 };
@@ -301,7 +301,7 @@ export const S_Draagbaar = ({ masker = true }: { masker?: boolean }) => {
 };
 
 /** 13 — Sterfbed, Jeruzalem, maart 1185: de kroon ligt naast hem. */
-export const S_Sterfbed = () => {
+export const S_Sterfbed = ({ masker = false }: { masker?: boolean }) => {
   const f = useCurrentFrame();
   return (
     <Shot focus={[0, 1.0, 0]} scherpte={3.4} mist={['#1A120C', 6, 24]}>
@@ -313,7 +313,7 @@ export const S_Sterfbed = () => {
       <pointLight position={[-0.4, 2.0, 3.2]} intensity={5} distance={7} color="#FFC890" />
       <Camera pos={[ease(f, 0, 115, 0.5, 0.1), ease(f, 0, 115, 2.1, 1.9), ease(f, 0, 115, 7.4, 6.4)]} kijk={[-0.1, 1.3, 0]} fov={34} />
       <Bed position={[0, 0, 0]} rotation={[0, Math.PI / 2, 0]} />
-      <Figuur {...BW(2, true)} hoofdExtra={<Hoofd ziek={2} kroon={false} />} position={[1.25, 1.15, 0]} rotation={[0, 0, Math.PI / 2 - 0.08]} pose={{ ogen: 'dicht', hoofd: [0, 0, -0.2] }} />
+      <Figuur {...BW(2, true, masker)} hoofdExtra={masker ? <Masker /> : <Hoofd ziek={2} kroon={false} />} position={[1.25, 1.15, 0]} rotation={[0, 0, Math.PI / 2 - 0.08]} pose={{ ogen: 'dicht', hoofd: [0, 0, -0.2] }} />
       <Blok p={[2.2, 0.45, 0.4]} s={[0.6, 0.9, 0.6]} c="#5A3B24" />
       <Blok p={[2.2, 0.93, 0.4]} s={[0.5, 0.06, 0.5]} c="#8E1F2A" />
       <Kroon position={[2.2, 0.92, 0.4]} />
