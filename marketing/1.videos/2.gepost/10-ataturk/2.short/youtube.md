@@ -27,7 +27,7 @@ Full story on the channel. Who should be next? 👇
 
 ## Gerelateerde video
 
-What If You Were Born as Atatürk? (lange video, gaat om 16:00 live): id volgt na de upload.
+What If You Were Born as Atatürk? `euEQLOwFGzc`: **gekoppeld 27 nov 16:05**. Reactie onder de lange geplaatst + vastgezet; reactie onder de short na 17:00.
 
 ## Vastgezette reactie
 
